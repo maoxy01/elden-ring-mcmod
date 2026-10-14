@@ -1,0 +1,190 @@
+{
+  "staticPass": true,
+  "oldSelectedModelsUnchanged": true,
+  "representatives": 6,
+  "mappings": 42,
+  "ownPngs": 4,
+  "providerResearchPngs": 6,
+  "states": [
+    {
+      "id": "straight_sword",
+      "variants": [
+        {
+          "state": "standby",
+          "bounds": [
+            0,
+            0,
+            15,
+            15
+          ],
+          "components8": [
+            84
+          ]
+        }
+      ]
+    },
+    {
+      "id": "great_sword",
+      "variants": [
+        {
+          "state": "front",
+          "bounds": [
+            2,
+            2,
+            29,
+            29
+          ],
+          "components8": [
+            176
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spear",
+      "variants": [
+        {
+          "state": "standby",
+          "bounds": [
+            0,
+            1,
+            30,
+            31
+          ],
+          "components8": [
+            113
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shield",
+      "variants": [
+        {
+          "state": "front",
+          "bounds": [
+            4,
+            2,
+            27,
+            29
+          ],
+          "components8": [
+            560
+          ]
+        },
+        {
+          "state": "back",
+          "bounds": [
+            4,
+            2,
+            27,
+            29
+          ],
+          "components8": [
+            560
+          ]
+        }
+      ]
+    },
+    {
+      "id": "long_bow",
+      "variants": [
+        {
+          "state": "standby",
+          "bounds": [
+            0,
+            0,
+            15,
+            15
+          ],
+          "components8": [
+            76
+          ]
+        },
+        {
+          "state": "pulling_0",
+          "bounds": [
+            0,
+            0,
+            15,
+            15
+          ],
+          "components8": [
+            94
+          ]
+        },
+        {
+          "state": "pulling_1",
+          "bounds": [
+            0,
+            0,
+            15,
+            15
+          ],
+          "components8": [
+            96
+          ]
+        },
+        {
+          "state": "pulling_2",
+          "bounds": [
+            1,
+            1,
+            15,
+            15
+          ],
+          "components8": [
+            96
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sacred_relic_sword",
+      "variants": [
+        {
+          "state": "front",
+          "bounds": [
+            2,
+            2,
+            61,
+            61
+          ],
+          "components8": [
+            400
+          ]
+        }
+      ]
+    }
+  ],
+  "browserVerified": true,
+  "visualReview": true,
+  "visualReviewDate": "2026-10-14",
+  "visualReviewNotes": "Inspected desktop light and dark/state captures plus mobile capture. Grip markers are on opaque grip regions; front/back shield and four bow states distinguishable. Browser hand fixture only, not Minecraft hand alignment.",
+  "runtimeIntegrated": false,
+  "inGameAccepted": false,
+  "browserChecks": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1080
+      },
+      "imagesLoaded": true,
+      "noOverflow": true,
+      "bowStates": 4,
+      "shieldStates": 3,
+      "bothHands": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "imagesLoaded": true,
+      "noOverflow": true,
+      "bowStates": 4,
+      "shieldStates": 3,
+      "bothHands": true
+    }
+  ]
+}

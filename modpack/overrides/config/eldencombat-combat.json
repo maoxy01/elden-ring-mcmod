@@ -1,0 +1,52 @@
+{
+  "stamina": { "max": 100.0, "regenDelayTicks": 12, "regenPerTick": 1.0, "guardRegenMultiplier": 0.5 },
+  "guard": { "coneDegrees": 120.0, "breakTicks": 24 },
+  "poise": { "max": 100.0, "regenDelayTicks": 80, "regenPerTick": 2.5 },
+  "boss": { "maxHealth": 200.0, "phaseTwoThreshold": 0.6, "collisionWidth": 1.35, "collisionHeight": 3.1 },
+  "ai": {
+    "meleeRange": 2.1,
+    "slamRangeMin": 1.7,
+    "slamRangeMax": 2.6,
+    "attackConeDegrees": 90.0,
+    "actionCooldownTicks": 10,
+    "observeTicks": 12,
+    "turnSlowDegreesPerTick": 6.0,
+    "maxSameMoveRepeat": 2,
+    "chaseSpeed": 0.28,
+    "stopDistance": 1.6,
+    "loseTargetRange": 48.0,
+    "phaseWeights": {
+      "1": { "staff_sweep": 35.0, "staff_slam": 30.0, "dagger_slash": 35.0 },
+      "2": { "staff_sweep": 25.0, "staff_slam": 25.0, "dagger_slash": 20.0, "hammer_slam": 30.0 }
+    }
+  },
+  "lockOn": { "range": 24.0, "breakRange": 32.0 },
+  "drink": { "totalTicks": 28, "consumeTick": 18, "heal": 8.0, "charges": 4, "staminaCost": 0.0 },
+  "roll": { "staminaCost": 22.0, "totalTicks": 20, "iframeStart": 4, "iframeEnd": 11, "speed": 0.45, "moveStart": 2, "moveEnd": 14 },
+  "parry": { "staminaCost": 15.0, "totalTicks": 18, "windowStart": 3, "windowEnd": 7 },
+  "rollCancelLastTicks": 6,
+  "parryChainWindowTicks": 100,
+  "parryChainRequired": 2,
+  "parryPoiseDamage": 50.0,
+  "attackKnockback": 0.35,
+  "weapons": {
+    "light_sword": {
+      "light": { "staminaCost": 15.0, "totalTicks": 22, "hitStart": 8, "hitEnd": 12, "damage": 5.0, "poiseDamage": 8.0 },
+      "heavy": { "staminaCost": 25.0, "totalTicks": 34, "hitStart": 15, "hitEnd": 20, "damage": 8.0, "poiseDamage": 22.0 },
+      "chargedHeavy": { "staminaCost": 35.0, "totalTicks": 36, "hitStart": 16, "hitEnd": 22, "damage": 11.0, "poiseDamage": 30.0 },
+      "chargeFullTicks": 20, "chargeMaxTicks": 30, "reach": 2.6, "sweepDegrees": 120.0, "bladeRadius": 0.18
+    },
+    "great_sword": {
+      "light": { "staminaCost": 20.0, "totalTicks": 30, "hitStart": 12, "hitEnd": 17, "damage": 7.0, "poiseDamage": 10.0 },
+      "heavy": { "staminaCost": 25.0, "totalTicks": 34, "hitStart": 15, "hitEnd": 20, "damage": 11.0, "poiseDamage": 28.0 },
+      "chargedHeavy": { "staminaCost": 35.0, "totalTicks": 36, "hitStart": 16, "hitEnd": 22, "damage": 15.0, "poiseDamage": 34.0 },
+      "chargeFullTicks": 20, "chargeMaxTicks": 30, "reach": 3.2, "sweepDegrees": 140.0, "bladeRadius": 0.24
+    }
+  },
+  "bossAttacks": {
+    "staff_sweep": { "damage": 12.0, "guardCost": 20.0, "parryable": true, "capsuleRadius": 0.28, "hammerHead": [0.9, 0.7, 0.7], "hitBone": "staff_socket", "hammerBox": false, "weightPhaseOne": 35.0, "weightPhaseTwo": 25.0 },
+    "staff_slam": { "damage": 18.0, "guardCost": 35.0, "parryable": false, "capsuleRadius": 0.34, "hammerHead": [0.9, 0.7, 0.7], "hitBone": "staff_socket", "hammerBox": false, "weightPhaseOne": 30.0, "weightPhaseTwo": 25.0 },
+    "dagger_slash": { "damage": 8.0, "guardCost": 12.0, "parryable": true, "capsuleRadius": 0.2, "hammerHead": [0.9, 0.7, 0.7], "hitBone": "spectral_socket", "hammerBox": false, "weightPhaseOne": 35.0, "weightPhaseTwo": 35.0 },
+    "hammer_slam": { "damage": 22.0, "guardCost": 45.0, "parryable": false, "capsuleRadius": 0.4, "hammerHead": [0.9, 0.7, 0.7], "hitBone": "spectral_socket", "hammerBox": true, "weightPhaseOne": 0.0, "weightPhaseTwo": 30.0 }
+  }
+}

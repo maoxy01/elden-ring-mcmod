@@ -1,0 +1,414 @@
+{
+  "schemaVersion": 1,
+  "id": "eldencombat:player_slim",
+  "unitsPerBlock": 16,
+  "textureSize": [
+    64,
+    64
+  ],
+  "texture": "player-preview.png",
+  "rotationOrder": "XYZ",
+  "animationRotation": "additive_degrees",
+  "bones": [
+    {
+      "name": "root",
+      "parent": null,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pelvis",
+      "parent": "root",
+      "pivot": [
+        0,
+        12.6,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "torso",
+      "parent": "pelvis",
+      "pivot": [
+        0,
+        12.6,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "head",
+      "parent": "torso",
+      "pivot": [
+        0,
+        21.6,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "upper_arm_r",
+      "parent": "torso",
+      "pivot": [
+        -4.95,
+        20.7,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "forearm_r",
+      "parent": "upper_arm_r",
+      "pivot": [
+        -4.95,
+        16.2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "hand_r",
+      "parent": "forearm_r",
+      "pivot": [
+        -4.95,
+        10.8,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "upper_arm_l",
+      "parent": "torso",
+      "pivot": [
+        4.95,
+        20.7,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "forearm_l",
+      "parent": "upper_arm_l",
+      "pivot": [
+        4.95,
+        16.2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "hand_l",
+      "parent": "forearm_l",
+      "pivot": [
+        4.95,
+        10.8,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "sword_socket",
+      "parent": "hand_r",
+      "pivot": [
+        -4.95,
+        11.700000000000001,
+        0
+      ],
+      "rotation": [
+        -90,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "shield_socket",
+      "parent": "hand_l",
+      "pivot": [
+        4.95,
+        12.6,
+        -2.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "drink_socket",
+      "parent": "hand_r",
+      "pivot": [
+        -4.95,
+        11.700000000000001,
+        -0.9
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "thigh_r",
+      "parent": "pelvis",
+      "pivot": [
+        -1.8,
+        10.8,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "shin_r",
+      "parent": "thigh_r",
+      "pivot": [
+        -1.8,
+        5.4,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "thigh_l",
+      "parent": "pelvis",
+      "pivot": [
+        1.8,
+        10.8,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "shin_l",
+      "parent": "thigh_l",
+      "pivot": [
+        1.8,
+        5.4,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "cubes": [
+    {
+      "name": "head",
+      "bone": "head",
+      "from": [
+        -3.6,
+        21.6,
+        -3.6
+      ],
+      "to": [
+        3.6,
+        28.8,
+        3.6
+      ],
+      "material": "skin"
+    },
+    {
+      "name": "body",
+      "bone": "torso",
+      "from": [
+        -3.6,
+        10.8,
+        -1.8
+      ],
+      "to": [
+        3.6,
+        21.6,
+        1.8
+      ],
+      "material": "skin"
+    },
+    {
+      "name": "arm_r_upper",
+      "bone": "upper_arm_r",
+      "from": [
+        -6.3,
+        16.2,
+        -1.8
+      ],
+      "to": [
+        -3.6,
+        21.6,
+        1.8
+      ],
+      "material": "skin"
+    },
+    {
+      "name": "arm_r_lower",
+      "bone": "forearm_r",
+      "from": [
+        -6.3,
+        10.8,
+        -1.8
+      ],
+      "to": [
+        -3.6,
+        16.2,
+        1.8
+      ],
+      "material": "skin"
+    },
+    {
+      "name": "arm_l_upper",
+      "bone": "upper_arm_l",
+      "from": [
+        3.6,
+        16.2,
+        -1.8
+      ],
+      "to": [
+        6.3,
+        21.6,
+        1.8
+      ],
+      "material": "skin"
+    },
+    {
+      "name": "arm_l_lower",
+      "bone": "forearm_l",
+      "from": [
+        3.6,
+        10.8,
+        -1.8
+      ],
+      "to": [
+        6.3,
+        16.2,
+        1.8
+      ],
+      "material": "skin"
+    },
+    {
+      "name": "leg_r_upper",
+      "bone": "thigh_r",
+      "from": [
+        -3.6,
+        5.4,
+        -1.8
+      ],
+      "to": [
+        0,
+        10.8,
+        1.8
+      ],
+      "material": "skin"
+    },
+    {
+      "name": "leg_r_lower",
+      "bone": "shin_r",
+      "from": [
+        -3.6,
+        0,
+        -1.8
+      ],
+      "to": [
+        0,
+        5.4,
+        1.8
+      ],
+      "material": "skin"
+    },
+    {
+      "name": "leg_l_upper",
+      "bone": "thigh_l",
+      "from": [
+        0,
+        5.4,
+        -1.8
+      ],
+      "to": [
+        3.6,
+        10.8,
+        1.8
+      ],
+      "material": "skin"
+    },
+    {
+      "name": "leg_l_lower",
+      "bone": "shin_l",
+      "from": [
+        0,
+        0,
+        -1.8
+      ],
+      "to": [
+        3.6,
+        5.4,
+        1.8
+      ],
+      "material": "skin"
+    }
+  ],
+  "materials": {
+    "skin": {
+      "uv": [
+        8,
+        8,
+        16,
+        16
+      ]
+    }
+  }
+}

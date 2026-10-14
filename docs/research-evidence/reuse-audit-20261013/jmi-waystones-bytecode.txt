@@ -1,0 +1,550 @@
+Compiled from "WaystonesMarker.java"
+class me.frankv.jmi.compat.waystones.WaystonesMarker$1 {
+  static final int[] $SwitchMap$journeymap$api$v2$client$event$MappingEvent$Stage;
+
+  static {};
+    Code:
+       0: invokestatic  #1                  // Method journeymap/api/v2/client/event/MappingEvent$Stage.values:()[Ljourneymap/api/v2/client/event/MappingEvent$Stage;
+       3: arraylength
+       4: newarray       int
+       6: putstatic     #7                  // Field $SwitchMap$journeymap$api$v2$client$event$MappingEvent$Stage:[I
+       9: getstatic     #7                  // Field $SwitchMap$journeymap$api$v2$client$event$MappingEvent$Stage:[I
+      12: getstatic     #13                 // Field journeymap/api/v2/client/event/MappingEvent$Stage.MAPPING_STARTED:Ljourneymap/api/v2/client/event/MappingEvent$Stage;
+      15: invokevirtual #17                 // Method journeymap/api/v2/client/event/MappingEvent$Stage.ordinal:()I
+      18: iconst_1
+      19: iastore
+      20: goto          24
+      23: astore_0
+      24: getstatic     #7                  // Field $SwitchMap$journeymap$api$v2$client$event$MappingEvent$Stage:[I
+      27: getstatic     #23                 // Field journeymap/api/v2/client/event/MappingEvent$Stage.MAPPING_STOPPED:Ljourneymap/api/v2/client/event/MappingEvent$Stage;
+      30: invokevirtual #17                 // Method journeymap/api/v2/client/event/MappingEvent$Stage.ordinal:()I
+      33: iconst_2
+      34: iastore
+      35: goto          39
+      38: astore_0
+      39: return
+    Exception table:
+       from    to  target type
+           9    20    23   Class java/lang/NoSuchFieldError
+          24    35    38   Class java/lang/NoSuchFieldError
+}
+Compiled from "WaystonesMarker.java"
+public final class me.frankv.jmi.compat.waystones.WaystonesMarker extends java.lang.Enum<me.frankv.jmi.compat.waystones.WaystonesMarker> implements me.frankv.jmi.api.jmoverlay.ToggleableOverlay {
+  public static final me.frankv.jmi.compat.waystones.WaystonesMarker INSTANCE;
+
+  private static final org.slf4j.Logger log;
+
+  private final net.minecraft.client.Minecraft mc;
+
+  private final java.lang.String buttonLabel;
+
+  private final int order;
+
+  private final java.util.Map<net.minecraft.resources.ResourceLocation, java.util.Set<me.frankv.jmi.compat.waystones.WaystonesMarker$WaystoneMeta>> waystones;
+
+  private final java.util.HashMap<me.frankv.jmi.compat.waystones.WaystonesMarker$WaystoneMeta, journeymap.api.v2.client.display.MarkerOverlay> markers;
+
+  private journeymap.api.v2.client.IClientAPI jmAPI;
+
+  private me.frankv.jmi.api.jmoverlay.ClientConfig clientConfig;
+
+  private boolean activated;
+
+  private static final me.frankv.jmi.compat.waystones.WaystonesMarker[] $VALUES;
+
+  public static me.frankv.jmi.compat.waystones.WaystonesMarker[] values();
+    Code:
+       0: getstatic     #7                  // Field $VALUES:[Lme/frankv/jmi/compat/waystones/WaystonesMarker;
+       3: invokevirtual #11                 // Method "[Lme/frankv/jmi/compat/waystones/WaystonesMarker;".clone:()Ljava/lang/Object;
+       6: checkcast     #12                 // class "[Lme/frankv/jmi/compat/waystones/WaystonesMarker;"
+       9: areturn
+
+  public static me.frankv.jmi.compat.waystones.WaystonesMarker valueOf(java.lang.String);
+    Code:
+       0: ldc           #1                  // class me/frankv/jmi/compat/waystones/WaystonesMarker
+       2: aload_0
+       3: invokestatic  #16                 // Method java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+       6: checkcast     #1                  // class me/frankv/jmi/compat/waystones/WaystonesMarker
+       9: areturn
+
+  private me.frankv.jmi.compat.waystones.WaystonesMarker();
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: invokespecial #22                 // Method java/lang/Enum."<init>":(Ljava/lang/String;I)V
+       6: aload_0
+       7: invokestatic  #26                 // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+      10: putfield      #32                 // Field mc:Lnet/minecraft/client/Minecraft;
+      13: aload_0
+      14: ldc           #36                 // String jmi.toggleable_overlay.waystones
+      16: putfield      #38                 // Field buttonLabel:Ljava/lang/String;
+      19: aload_0
+      20: iconst_2
+      21: putfield      #42                 // Field order:I
+      24: aload_0
+      25: new           #46                 // class java/util/HashMap
+      28: dup
+      29: invokespecial #48                 // Method java/util/HashMap."<init>":()V
+      32: putfield      #51                 // Field waystones:Ljava/util/Map;
+      35: aload_0
+      36: new           #46                 // class java/util/HashMap
+      39: dup
+      40: invokespecial #48                 // Method java/util/HashMap."<init>":()V
+      43: putfield      #55                 // Field markers:Ljava/util/HashMap;
+      46: aload_0
+      47: iconst_1
+      48: putfield      #59                 // Field activated:Z
+      51: return
+
+  public void init(journeymap.api.v2.client.IClientAPI, me.frankv.jmi.api.jmoverlay.ClientConfig);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #63                 // Field jmAPI:Ljourneymap/api/v2/client/IClientAPI;
+       5: aload_0
+       6: aload_2
+       7: putfield      #67                 // Field clientConfig:Lme/frankv/jmi/api/jmoverlay/ClientConfig;
+      10: invokestatic  #71                 // Method net/blay09/mods/balm/api/Balm.getEvents:()Lnet/blay09/mods/balm/api/event/BalmEvents;
+      13: ldc           #77                 // class net/blay09/mods/waystones/api/event/WaystonesListReceivedEvent
+      15: aload_0
+      16: invokedynamic #79,  0             // InvokeDynamic #0:accept:(Lme/frankv/jmi/compat/waystones/WaystonesMarker;)Ljava/util/function/Consumer;
+      21: invokeinterface #83,  3           // InterfaceMethod net/blay09/mods/balm/api/event/BalmEvents.onEvent:(Ljava/lang/Class;Ljava/util/function/Consumer;)V
+      26: return
+
+  private void createMarker(me.frankv.jmi.compat.waystones.WaystonesMarker$WaystoneMeta);
+    Code:
+       0: ldc           #91                 // String jmi
+       2: ldc           #93                 // String images/waystone.png
+       4: invokestatic  #95                 // Method net/minecraft/resources/ResourceLocation.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+       7: astore_2
+       8: new           #101                // class journeymap/api/v2/client/model/MapImage
+      11: dup
+      12: aload_2
+      13: bipush        32
+      15: bipush        32
+      17: invokespecial #103                // Method journeymap/api/v2/client/model/MapImage."<init>":(Lnet/minecraft/resources/ResourceLocation;II)V
+      20: ldc2_w        #106                // double 16.0d
+      23: invokevirtual #108                // Method journeymap/api/v2/client/model/MapImage.setAnchorX:(D)Ljourneymap/api/v2/client/model/MapImage;
+      26: ldc2_w        #112                // double 38.0d
+      29: invokevirtual #114                // Method journeymap/api/v2/client/model/MapImage.setAnchorY:(D)Ljourneymap/api/v2/client/model/MapImage;
+      32: ldc2_w        #117                // double 32.0d
+      35: invokevirtual #119                // Method journeymap/api/v2/client/model/MapImage.setDisplayWidth:(D)Ljourneymap/api/v2/client/model/MapImage;
+      38: ldc2_w        #117                // double 32.0d
+      41: invokevirtual #122                // Method journeymap/api/v2/client/model/MapImage.setDisplayHeight:(D)Ljourneymap/api/v2/client/model/MapImage;
+      44: aload_0
+      45: getfield      #67                 // Field clientConfig:Lme/frankv/jmi/api/jmoverlay/ClientConfig;
+      48: invokeinterface #125,  1          // InterfaceMethod me/frankv/jmi/api/jmoverlay/ClientConfig.getWaystoneColor:()Ljava/lang/Integer;
+      53: invokevirtual #131                // Method java/lang/Integer.intValue:()I
+      56: invokevirtual #137                // Method journeymap/api/v2/client/model/MapImage.setColor:(I)Ljourneymap/api/v2/client/model/MapImage;
+      59: astore_3
+      60: new           #141                // class journeymap/api/v2/client/model/TextProperties
+      63: dup
+      64: invokespecial #143                // Method journeymap/api/v2/client/model/TextProperties."<init>":()V
+      67: ldc           #144                // float 0.4f
+      69: invokevirtual #145                // Method journeymap/api/v2/client/model/TextProperties.setBackgroundOpacity:(F)Ljourneymap/api/v2/client/model/TextProperties;
+      72: fconst_1
+      73: invokevirtual #149                // Method journeymap/api/v2/client/model/TextProperties.setOpacity:(F)Ljourneymap/api/v2/client/model/TextProperties;
+      76: astore        4
+      78: new           #152                // class journeymap/api/v2/client/display/MarkerOverlay
+      81: dup
+      82: ldc           #91                 // String jmi
+      84: aload_1
+      85: getfield      #154                // Field me/frankv/jmi/compat/waystones/WaystonesMarker$WaystoneMeta.pos:Lnet/minecraft/core/BlockPos;
+      88: aload_3
+      89: invokespecial #160                // Method journeymap/api/v2/client/display/MarkerOverlay."<init>":(Ljava/lang/String;Lnet/minecraft/core/BlockPos;Ljourneymap/api/v2/client/model/MapImage;)V
+      92: astore        5
+      94: aload         5
+      96: aload_1
+      97: getfield      #163                // Field me/frankv/jmi/compat/waystones/WaystonesMarker$WaystoneMeta.dim:Lnet/minecraft/resources/ResourceKey;
+     100: invokevirtual #167                // Method journeymap/api/v2/client/display/MarkerOverlay.setDimension:(Lnet/minecraft/resources/ResourceKey;)Ljourneymap/api/v2/client/display/Overlay;
+     103: aload_1
+     104: getfield      #171                // Field me/frankv/jmi/compat/waystones/WaystonesMarker$WaystoneMeta.name:Ljava/lang/String;
+     107: invokevirtual #174                // Method journeymap/api/v2/client/display/Overlay.setLabel:(Ljava/lang/String;)Ljourneymap/api/v2/client/display/Overlay;
+     110: aload         4
+     112: invokevirtual #180                // Method journeymap/api/v2/client/display/Overlay.setTextProperties:(Ljourneymap/api/v2/client/model/TextProperties;)Ljourneymap/api/v2/client/display/Overlay;
+     115: pop
+     116: aload         5
+     118: new           #184                // class me/frankv/jmi/compat/waystones/WaystonesMarkerListener
+     121: dup
+     122: aload         5
+     124: aload_0
+     125: getfield      #63                 // Field jmAPI:Ljourneymap/api/v2/client/IClientAPI;
+     128: invokespecial #186                // Method me/frankv/jmi/compat/waystones/WaystonesMarkerListener."<init>":(Ljourneymap/api/v2/client/display/MarkerOverlay;Ljourneymap/api/v2/client/IClientAPI;)V
+     131: invokevirtual #189                // Method journeymap/api/v2/client/display/MarkerOverlay.setOverlayListener:(Ljourneymap/api/v2/client/display/IOverlayListener;)Ljourneymap/api/v2/client/display/Overlay;
+     134: pop
+     135: aload_0
+     136: getfield      #55                 // Field markers:Ljava/util/HashMap;
+     139: aload_1
+     140: aload         5
+     142: invokevirtual #193                // Method java/util/HashMap.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     145: pop
+     146: aload_0
+     147: getfield      #59                 // Field activated:Z
+     150: ifeq          158
+     153: aload         5
+     155: invokestatic  #197                // Method me/frankv/jmi/util/OverlayHelper.showOverlay:(Ljourneymap/api/v2/client/display/Displayable;)V
+     158: return
+
+  private void removeMarker(me.frankv.jmi.compat.waystones.WaystonesMarker$WaystoneMeta);
+    Code:
+       0: aload_0
+       1: getfield      #55                 // Field markers:Ljava/util/HashMap;
+       4: aload_1
+       5: invokevirtual #203                // Method java/util/HashMap.containsKey:(Ljava/lang/Object;)Z
+       8: ifne          12
+      11: return
+      12: aload_0
+      13: getfield      #63                 // Field jmAPI:Ljourneymap/api/v2/client/IClientAPI;
+      16: aload_0
+      17: getfield      #55                 // Field markers:Ljava/util/HashMap;
+      20: aload_1
+      21: invokevirtual #207                // Method java/util/HashMap.remove:(Ljava/lang/Object;)Ljava/lang/Object;
+      24: checkcast     #211                // class journeymap/api/v2/client/display/Displayable
+      27: invokeinterface #213,  2          // InterfaceMethod journeymap/api/v2/client/IClientAPI.remove:(Ljourneymap/api/v2/client/display/Displayable;)V
+      32: aload_0
+      33: getfield      #55                 // Field markers:Ljava/util/HashMap;
+      36: aload_1
+      37: invokevirtual #207                // Method java/util/HashMap.remove:(Ljava/lang/Object;)Ljava/lang/Object;
+      40: pop
+      41: goto          57
+      44: astore_2
+      45: getstatic     #219                // Field log:Lorg/slf4j/Logger;
+      48: aload_2
+      49: invokestatic  #223                // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+      52: invokeinterface #228,  2          // InterfaceMethod org/slf4j/Logger.error:(Ljava/lang/String;)V
+      57: return
+    Exception table:
+       from    to  target type
+          12    41    44   Class java/lang/Exception
+
+  private void createMarkersOnMappingStarted();
+    Code:
+       0: aload_0
+       1: getfield      #32                 // Field mc:Lnet/minecraft/client/Minecraft;
+       4: getfield      #234                // Field net/minecraft/client/Minecraft.level:Lnet/minecraft/client/multiplayer/ClientLevel;
+       7: astore_1
+       8: aload_1
+       9: ifnonnull     13
+      12: return
+      13: aload_0
+      14: getfield      #51                 // Field waystones:Ljava/util/Map;
+      17: invokeinterface #238,  1          // InterfaceMethod java/util/Map.values:()Ljava/util/Collection;
+      22: invokeinterface #244,  1          // InterfaceMethod java/util/Collection.stream:()Ljava/util/stream/Stream;
+      27: invokedynamic #250,  0            // InvokeDynamic #1:apply:()Ljava/util/function/Function;
+      32: invokeinterface #254,  2          // InterfaceMethod java/util/stream/Stream.flatMap:(Ljava/util/function/Function;)Ljava/util/stream/Stream;
+      37: aload_1
+      38: invokedynamic #260,  0            // InvokeDynamic #2:test:(Lnet/minecraft/client/multiplayer/ClientLevel;)Ljava/util/function/Predicate;
+      43: invokeinterface #264,  2          // InterfaceMethod java/util/stream/Stream.filter:(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+      48: aload_0
+      49: invokedynamic #268,  0            // InvokeDynamic #3:accept:(Lme/frankv/jmi/compat/waystones/WaystonesMarker;)Ljava/util/function/Consumer;
+      54: invokeinterface #269,  2          // InterfaceMethod java/util/stream/Stream.forEach:(Ljava/util/function/Consumer;)V
+      59: return
+
+  public void onToggle(journeymap.api.v2.client.fullscreen.IThemeButton);
+    Code:
+       0: aload_0
+       1: getfield      #59                 // Field activated:Z
+       4: ifeq          20
+       7: aload_0
+       8: getfield      #55                 // Field markers:Ljava/util/HashMap;
+      11: invokevirtual #273                // Method java/util/HashMap.values:()Ljava/util/Collection;
+      14: invokestatic  #274                // Method me/frankv/jmi/util/OverlayHelper.removeOverlays:(Ljava/util/Collection;)V
+      17: goto          30
+      20: aload_0
+      21: getfield      #55                 // Field markers:Ljava/util/HashMap;
+      24: invokevirtual #273                // Method java/util/HashMap.values:()Ljava/util/Collection;
+      27: invokestatic  #278                // Method me/frankv/jmi/util/OverlayHelper.showOverlays:(Ljava/util/Collection;)V
+      30: aload_0
+      31: aload_0
+      32: getfield      #59                 // Field activated:Z
+      35: ifne          42
+      38: iconst_1
+      39: goto          43
+      42: iconst_0
+      43: putfield      #59                 // Field activated:Z
+      46: aload_1
+      47: aload_0
+      48: getfield      #59                 // Field activated:Z
+      51: invokestatic  #281                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      54: invokeinterface #286,  2          // InterfaceMethod journeymap/api/v2/client/fullscreen/IThemeButton.setToggled:(Ljava/lang/Boolean;)V
+      59: return
+
+  public void onJMMapping(me.frankv.jmi.api.event.Event$JMMappingEvent);
+    Code:
+       0: getstatic     #292                // Field me/frankv/jmi/compat/waystones/WaystonesMarker$1.$SwitchMap$journeymap$api$v2$client$event$MappingEvent$Stage:[I
+       3: aload_1
+       4: invokevirtual #298                // Method me/frankv/jmi/api/event/Event$JMMappingEvent.mappingEvent:()Ljourneymap/api/v2/client/event/MappingEvent;
+       7: invokevirtual #304                // Method journeymap/api/v2/client/event/MappingEvent.getStage:()Ljourneymap/api/v2/client/event/MappingEvent$Stage;
+      10: invokevirtual #310                // Method journeymap/api/v2/client/event/MappingEvent$Stage.ordinal:()I
+      13: iaload
+      14: lookupswitch  { // 2
+
+                     1: 40
+
+                     2: 65
+               default: 72
+          }
+      40: aload_1
+      41: invokevirtual #315                // Method me/frankv/jmi/api/event/Event$JMMappingEvent.firstLogin:()Z
+      44: ifne          51
+      47: aload_0
+      48: invokevirtual #319                // Method createMarkersOnMappingStarted:()V
+      51: getstatic     #219                // Field log:Lorg/slf4j/Logger;
+      54: ldc_w         #322                // String re-added waystones overlays
+      57: invokeinterface #324,  2          // InterfaceMethod org/slf4j/Logger.debug:(Ljava/lang/String;)V
+      62: goto          72
+      65: aload_0
+      66: getfield      #55                 // Field markers:Ljava/util/HashMap;
+      69: invokevirtual #327                // Method java/util/HashMap.clear:()V
+      72: return
+
+  public void onWaystonesListReceived(net.blay09.mods.waystones.api.event.WaystonesListReceivedEvent);
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field clientConfig:Lme/frankv/jmi/api/jmoverlay/ClientConfig;
+       4: invokeinterface #330,  1          // InterfaceMethod me/frankv/jmi/api/jmoverlay/ClientConfig.getWaystone:()Ljava/lang/Boolean;
+       9: invokevirtual #334                // Method java/lang/Boolean.booleanValue:()Z
+      12: ifne          16
+      15: return
+      16: aload_0
+      17: getfield      #51                 // Field waystones:Ljava/util/Map;
+      20: aload_1
+      21: invokevirtual #337                // Method net/blay09/mods/waystones/api/event/WaystonesListReceivedEvent.getWaystoneType:()Lnet/minecraft/resources/ResourceLocation;
+      24: invokeinterface #341,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      29: checkcast     #344                // class java/util/Set
+      32: invokestatic  #346                // Method java/util/Optional.ofNullable:(Ljava/lang/Object;)Ljava/util/Optional;
+      35: invokedynamic #352,  0            // InvokeDynamic #4:get:()Ljava/util/function/Supplier;
+      40: invokevirtual #355                // Method java/util/Optional.orElseGet:(Ljava/util/function/Supplier;)Ljava/lang/Object;
+      43: checkcast     #344                // class java/util/Set
+      46: astore_2
+      47: new           #359                // class java/util/HashSet
+      50: dup
+      51: aload_1
+      52: invokestatic  #361                // Method me/frankv/jmi/compat/waystones/WaystonesMarker$WaystoneMeta.fromEvent:(Lnet/blay09/mods/waystones/api/event/WaystonesListReceivedEvent;)Ljava/util/Set;
+      55: invokespecial #365                // Method java/util/HashSet."<init>":(Ljava/util/Collection;)V
+      58: astore_3
+      59: new           #359                // class java/util/HashSet
+      62: dup
+      63: aload_3
+      64: invokespecial #365                // Method java/util/HashSet."<init>":(Ljava/util/Collection;)V
+      67: astore        4
+      69: new           #359                // class java/util/HashSet
+      72: dup
+      73: aload_2
+      74: invokespecial #365                // Method java/util/HashSet."<init>":(Ljava/util/Collection;)V
+      77: astore        5
+      79: aload         5
+      81: aload_3
+      82: invokevirtual #367                // Method java/util/HashSet.removeAll:(Ljava/util/Collection;)Z
+      85: pop
+      86: aload         4
+      88: aload_2
+      89: invokevirtual #367                // Method java/util/HashSet.removeAll:(Ljava/util/Collection;)Z
+      92: pop
+      93: aload         5
+      95: aload_0
+      96: invokedynamic #371,  0            // InvokeDynamic #5:accept:(Lme/frankv/jmi/compat/waystones/WaystonesMarker;)Ljava/util/function/Consumer;
+     101: invokevirtual #372                // Method java/util/HashSet.forEach:(Ljava/util/function/Consumer;)V
+     104: aload         4
+     106: aload_0
+     107: invokedynamic #268,  0            // InvokeDynamic #3:accept:(Lme/frankv/jmi/compat/waystones/WaystonesMarker;)Ljava/util/function/Consumer;
+     112: invokevirtual #372                // Method java/util/HashSet.forEach:(Ljava/util/function/Consumer;)V
+     115: aload_0
+     116: getfield      #51                 // Field waystones:Ljava/util/Map;
+     119: aload_1
+     120: invokevirtual #337                // Method net/blay09/mods/waystones/api/event/WaystonesListReceivedEvent.getWaystoneType:()Lnet/minecraft/resources/ResourceLocation;
+     123: aload_3
+     124: invokeinterface #373,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     129: pop
+     130: return
+
+  public net.minecraft.resources.ResourceLocation getButtonIconName();
+    Code:
+       0: ldc_w         #374                // String waypoints
+       3: invokestatic  #376                // Method me/frankv/jmi/util/OverlayHelper.getIcon:(Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+       6: areturn
+
+  public java.lang.String getButtonLabel();
+    Code:
+       0: aload_0
+       1: invokestatic  #380                // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+       4: pop
+       5: ldc           #36                 // String jmi.toggleable_overlay.waystones
+       7: areturn
+
+  public int getOrder();
+    Code:
+       0: aload_0
+       1: invokestatic  #380                // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+       4: pop
+       5: iconst_2
+       6: ireturn
+
+  public java.util.Map<net.minecraft.resources.ResourceLocation, java.util.Set<me.frankv.jmi.compat.waystones.WaystonesMarker$WaystoneMeta>> getWaystones();
+    Code:
+       0: aload_0
+       1: getfield      #51                 // Field waystones:Ljava/util/Map;
+       4: areturn
+
+  public boolean isActivated();
+    Code:
+       0: aload_0
+       1: getfield      #59                 // Field activated:Z
+       4: ireturn
+
+  private static boolean lambda$createMarkersOnMappingStarted$0(net.minecraft.client.multiplayer.ClientLevel, me.frankv.jmi.compat.waystones.WaystonesMarker$WaystoneMeta);
+    Code:
+       0: aload_1
+       1: getfield      #163                // Field me/frankv/jmi/compat/waystones/WaystonesMarker$WaystoneMeta.dim:Lnet/minecraft/resources/ResourceKey;
+       4: aload_0
+       5: invokevirtual #385                // Method net/minecraft/client/multiplayer/ClientLevel.dimension:()Lnet/minecraft/resources/ResourceKey;
+       8: invokevirtual #391                // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+      11: ireturn
+
+  private static me.frankv.jmi.compat.waystones.WaystonesMarker[] $values();
+    Code:
+       0: iconst_1
+       1: anewarray     #1                  // class me/frankv/jmi/compat/waystones/WaystonesMarker
+       4: dup
+       5: iconst_0
+       6: getstatic     #3                  // Field INSTANCE:Lme/frankv/jmi/compat/waystones/WaystonesMarker;
+       9: aastore
+      10: areturn
+
+  static {};
+    Code:
+       0: new           #1                  // class me/frankv/jmi/compat/waystones/WaystonesMarker
+       3: dup
+       4: ldc_w         #396                // String INSTANCE
+       7: iconst_0
+       8: invokespecial #397                // Method "<init>":(Ljava/lang/String;I)V
+      11: putstatic     #3                  // Field INSTANCE:Lme/frankv/jmi/compat/waystones/WaystonesMarker;
+      14: invokestatic  #398                // Method $values:()[Lme/frankv/jmi/compat/waystones/WaystonesMarker;
+      17: putstatic     #7                  // Field $VALUES:[Lme/frankv/jmi/compat/waystones/WaystonesMarker;
+      20: ldc           #1                  // class me/frankv/jmi/compat/waystones/WaystonesMarker
+      22: invokestatic  #402                // Method org/slf4j/LoggerFactory.getLogger:(Ljava/lang/Class;)Lorg/slf4j/Logger;
+      25: putstatic     #219                // Field log:Lorg/slf4j/Logger;
+      28: return
+}
+Compiled from "WaystonesMarkerListener.java"
+public class me.frankv.jmi.compat.waystones.WaystonesMarkerListener implements journeymap.api.v2.client.display.IOverlayListener {
+  private static final org.slf4j.Logger log;
+
+  private final journeymap.api.v2.client.display.MarkerOverlay overlay;
+
+  private final journeymap.api.v2.client.IClientAPI jmAPI;
+
+  public me.frankv.jmi.compat.waystones.WaystonesMarkerListener(journeymap.api.v2.client.display.MarkerOverlay, journeymap.api.v2.client.IClientAPI);
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #7                  // Field overlay:Ljourneymap/api/v2/client/display/MarkerOverlay;
+       9: aload_0
+      10: aload_2
+      11: putfield      #13                 // Field jmAPI:Ljourneymap/api/v2/client/IClientAPI;
+      14: return
+
+  public void onActivate(journeymap.api.v2.client.util.UIState);
+    Code:
+       0: return
+
+  public void onDeactivate(journeymap.api.v2.client.util.UIState);
+    Code:
+       0: return
+
+  public void onMouseMove(journeymap.api.v2.client.util.UIState, java.awt.geom.Point2D$Double, net.minecraft.core.BlockPos);
+    Code:
+       0: return
+
+  public void onMouseOut(journeymap.api.v2.client.util.UIState, java.awt.geom.Point2D$Double, net.minecraft.core.BlockPos);
+    Code:
+       0: return
+
+  public boolean onMouseClick(journeymap.api.v2.client.util.UIState, java.awt.geom.Point2D$Double, net.minecraft.core.BlockPos, int, boolean);
+    Code:
+       0: iload         4
+       2: iconst_1
+       3: if_icmpne     8
+       6: iconst_0
+       7: ireturn
+       8: aload_0
+       9: getfield      #13                 // Field jmAPI:Ljourneymap/api/v2/client/IClientAPI;
+      12: ldc           #19                 // String jmi
+      14: invokeinterface #21,  2           // InterfaceMethod journeymap/api/v2/client/IClientAPI.getWaypoints:(Ljava/lang/String;)Ljava/util/List;
+      19: invokeinterface #27,  1           // InterfaceMethod java/util/List.stream:()Ljava/util/stream/Stream;
+      24: aload_0
+      25: invokedynamic #33,  0             // InvokeDynamic #0:test:(Lme/frankv/jmi/compat/waystones/WaystonesMarkerListener;)Ljava/util/function/Predicate;
+      30: invokeinterface #37,  2           // InterfaceMethod java/util/stream/Stream.filter:(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+      35: aload_0
+      36: invokedynamic #43,  0             // InvokeDynamic #1:test:(Lme/frankv/jmi/compat/waystones/WaystonesMarkerListener;)Ljava/util/function/Predicate;
+      41: invokeinterface #44,  2           // InterfaceMethod java/util/stream/Stream.anyMatch:(Ljava/util/function/Predicate;)Z
+      46: istore        6
+      48: iload         6
+      50: ifeq          55
+      53: iconst_0
+      54: ireturn
+      55: ldc           #19                 // String jmi
+      57: aload_0
+      58: getfield      #7                  // Field overlay:Ljourneymap/api/v2/client/display/MarkerOverlay;
+      61: invokevirtual #48                 // Method journeymap/api/v2/client/display/MarkerOverlay.getPoint:()Lnet/minecraft/core/BlockPos;
+      64: aload_0
+      65: getfield      #7                  // Field overlay:Ljourneymap/api/v2/client/display/MarkerOverlay;
+      68: invokevirtual #54                 // Method journeymap/api/v2/client/display/MarkerOverlay.getLabel:()Ljava/lang/String;
+      71: aload_0
+      72: getfield      #7                  // Field overlay:Ljourneymap/api/v2/client/display/MarkerOverlay;
+      75: invokevirtual #58                 // Method journeymap/api/v2/client/display/MarkerOverlay.getDimension:()Lnet/minecraft/resources/ResourceKey;
+      78: iconst_1
+      79: invokestatic  #62                 // Method journeymap/api/v2/common/waypoint/WaypointFactory.createClientWaypoint:(Ljava/lang/String;Lnet/minecraft/core/BlockPos;Ljava/lang/String;Lnet/minecraft/resources/ResourceKey;Z)Ljourneymap/api/v2/common/waypoint/Waypoint;
+      82: astore        7
+      84: aload_0
+      85: getfield      #13                 // Field jmAPI:Ljourneymap/api/v2/client/IClientAPI;
+      88: ldc           #19                 // String jmi
+      90: aload         7
+      92: invokeinterface #68,  3           // InterfaceMethod journeymap/api/v2/client/IClientAPI.addWaypoint:(Ljava/lang/String;Ljourneymap/api/v2/common/waypoint/Waypoint;)V
+      97: goto          117
+     100: astore        8
+     102: getstatic     #74                 // Field log:Lorg/slf4j/Logger;
+     105: aload         8
+     107: invokevirtual #78                 // Method java/lang/Exception.getMessage:()Ljava/lang/String;
+     110: aload         8
+     112: invokeinterface #81,  3           // InterfaceMethod org/slf4j/Logger.error:(Ljava/lang/String;Ljava/lang/Throwable;)V
+     117: iconst_0
+     118: ireturn
+    Exception table:
+       from    to  target type
+          84    97   100   Class java/lang/Exception
+
+  public void onOverlayMenuPopup(journeymap.api.v2.client.util.UIState, java.awt.geom.Point2D$Double, net.minecraft.core.BlockPos, journeymap.api.v2.client.fullscreen.ModPopupMenu);
+    Code:
+       0: return
+
+  private boolean lambda$onMouseClick$1(journeymap.api.v2.common.waypoint.Waypoint);
+    Code:
+       0: aload_1
+       1: invokeinterface #87,  1           // InterfaceMethod journeymap/api/v2/common/waypoint/Waypoint.getName:()Ljava/lang/String;
+       6: aload_0
+       7: getfield      #7                  // Field overlay:Ljourneymap/api/v2/client/display/MarkerOverlay;
+      10: invokevirtual #54                 // Method journeymap/api/v2/client/display/MarkerOverlay.getLabel:()Ljava/lang/String;
+      13: invokevirtual #92                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      16: ireturn
+
+  private boolean lambda$onMouseClick$0(journeymap.api.v2.common.waypoint.Waypoint);
+    Code:
+       0: aload_1
+       1: invokeinterface #98,  1           // InterfaceMethod journeymap/api/v2/common/waypoint/Waypoint.getBlockPos:()Lnet/minecraft/core/BlockPos;
+       6: aload_0
+       7: getfield      #7                  // Field overlay:Ljourneymap/api/v2/client/display/MarkerOverlay;
+      10: invokevirtual #48                 // Method journeymap/api/v2/client/display/MarkerOverlay.getPoint:()Lnet/minecraft/core/BlockPos;
+      13: invokevirtual #101                // Method net/minecraft/core/BlockPos.equals:(Ljava/lang/Object;)Z
+      16: ireturn
+
+  static {};
+    Code:
+       0: ldc           #8                  // class me/frankv/jmi/compat/waystones/WaystonesMarkerListener
+       2: invokestatic  #104                // Method org/slf4j/LoggerFactory.getLogger:(Ljava/lang/Class;)Lorg/slf4j/Logger;
+       5: putstatic     #74                 // Field log:Lorg/slf4j/Logger;
+       8: return
+}

@@ -1,0 +1,39 @@
+art/node_modules/
+.pnpm-store/
+.gradle/
+build/
+dist/
+run/
+src/generated/
+
+# Local history and tooling caches (current sources are tracked).
+art/backups/
+**/backups/
+docs/code-backups/
+docs/coordination-backups/
+docs/review-backups/
+**/node_modules/
+**/__pycache__/
+*.pyc
+.idea/
+.vscode/
+.env
+.env.*
+*.pem
+*.key
+
+# Third-party research binaries are not project assets.
+docs/research-evidence/**/*.jar
+docs/research-evidence/**/*.zip
+docs/research-evidence/**/*.png
+docs/research-evidence/**/*.jpg
+docs/research-evidence/**/*.jpeg
+docs/research-evidence/**/*.webp
+docs/research-evidence/**/*.html
+art/equipment-reuse/research-only-six/*.png
+art/equipment-2d/six-*.png
+
+# Generated diagnostic pages and runtime evidence dumps.
+art/remembrance-game/qa/*probe.html
+hs_err_pid*.log
+replay_pid*.log

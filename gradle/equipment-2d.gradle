@@ -1,0 +1,54 @@
+// Only manifest-ready models override the old model resources. No textures are generated.
+def routeFile = file('src/main/resources/assets/eldencombat/routes/2d.json')
+def output2d = layout.buildDirectory.dir('generated/equipment2d')
+tasks.register('generateEquipment2d') {
+    inputs.file(routeFile)
+    inputs.dir('src/main/resources')
+    outputs.dir(output2d)
+    doLast {
+        def manifest = new groovy.json.JsonSlurper().parse(routeFile)
+        def ids = manifest.equipment.collect { it.id }
+        if (ids.size()!=ids.toSet().size()) throw new GradleException('Duplicate equipment route')
+        def source = file('src/main/java/com/dsh/eldencombat/registry/ModItems.java').text
+        def expected = (source =~ /(?:weapon|bow|crossbow|shield)\("([a-z_]+)"/).collect { 'eldencombat:'+it[1] }.toSet()
+        if(expected.size()!=41 || !ids.containsAll(expected) || !ids.contains('eldencombat:test_flask'))
+            throw new GradleException('2D routes must cover all 41 equipment IDs and test_flask')
+        def root=output2d.get().asFile
+        if(!root.canonicalPath.startsWith(layout.buildDirectory.get().asFile.canonicalPath+File.separator))
+            throw new GradleException('Generated model output escaped build directory')
+        // Generated output only, under build; Sync-style replacement prevents stale ready models.
+        delete(root)
+        root.mkdirs()
+        def validId = { value -> value instanceof String && value ==~ /[a-z0-9_.-]+:[a-z0-9_\/.\-]+/ && !value.contains('..') }
+        def resourceFile = { id, prefix, suffix ->
+            if(!validId(id)) throw new GradleException('Invalid resource ID: '+id)
+            def parts=id.split(':',2)
+            file('src/main/resources/assets/'+parts[0]+'/'+prefix+parts[1]+suffix)
+        }
+        manifest.equipment.each { entry ->
+            if(!validId(entry.id)||!validId(entry.texture)||!validId(entry.parent))throw new GradleException('Invalid route: '+entry.id)
+            if(!(entry.status in ['pending','ready']))throw new GradleException('Unknown status: '+entry.id)
+            if(entry.status!='ready')return
+            if(entry.kind in ['ranged','shield'] && !entry.statesReady)throw new GradleException('State models pending: '+entry.id)
+            def model
+            if(entry.route=='external_model') {
+                throw new GradleException('External provider adapter pending; keep model route pending: '+entry.id)
+            } else if(entry.route=='sprite') {
+                if(!resourceFile(entry.texture,'textures/','.png').isFile())throw new GradleException('Missing independent sprite: '+entry.id)
+                if(!(entry.parent in ['minecraft:item/handheld','minecraft:item/generated']))throw new GradleException('Unsupported sprite parent')
+                entry.overrides.each { override ->
+                    if(!resourceFile(override.model,'models/','.json').isFile())throw new GradleException('Missing state model: '+override.model)
+                }
+                model=[parent:entry.parent,textures:[layer0:entry.texture],overrides:entry.overrides]
+            } else throw new GradleException('Unknown route: '+entry.route)
+            def target=new File(root,'assets/eldencombat/models/item/'+entry.id.split(':',2)[1]+'.json')
+            target.parentFile.mkdirs();target.text=groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(model))
+        }
+        logger.lifecycle('2D route coverage: 41 equipment + flask; ready={}, pending={}',manifest.equipment.count{it.status=='ready'},manifest.equipment.count{it.status=='pending'})
+    }
+}
+tasks.named('processResources') {
+    dependsOn 'generateEquipment2d'
+    inputs.dir(output2d)
+    doLast { copy { from output2d; into destinationDir } }
+}

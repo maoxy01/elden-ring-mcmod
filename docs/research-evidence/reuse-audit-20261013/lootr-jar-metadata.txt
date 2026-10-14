@@ -1,0 +1,32 @@
+ENTRY META-INF/neoforge.mods.toml
+modLoader="javafml" 
+loaderVersion="[2,)"
+issueTrackerURL="https://github.com/noobanidus/Lootr/issues"
+license="https://github.com/noobanidus/Lootr/blob/1.16/LICENSE"
+[[mods]]
+    modId="lootr"
+    version="1.21.1-1.11.38.127"
+    displayName="Lootr"
+    displayURL="https://minecraft.curseforge.com/projects/lootr"
+    authors="Noobanidus"
+    description="Generates unique loot for each player that opens a loot container."
+
+[[mixins]]
+    config="lootr-common.mixins.json"
+
+[[mixins]]
+    config="lootr-neoforge.mixins.json"
+
+[[mixins]]
+    config="lootr-neoforge-digsite_workshop.mixins.json"
+    requiredMods=["digsite_workshop"]
+
+[[dependencies.lootr]]
+    modId="minecraft"
+    type="required"
+    versionRange="1.21.1"
+
+ [[dependencies.lootr]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1.195,)"

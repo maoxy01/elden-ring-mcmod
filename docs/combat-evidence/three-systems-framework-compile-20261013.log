@@ -1,0 +1,19 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.12/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+
+> Task :compileJava
+D:\codexout\mcmod\src\main\java\com\dsh\eldencombat\client\EldenCombatClient.java:30: 警告: [removal] EventBusSubscriber 中的 bus() 已过时, 且标记为待删除
+@EventBusSubscriber(modid = EldenCombat.MODID, value = Dist.CLIENT, bus = EventBusSubscriber.Bus.MOD)
+                                                                    ^
+D:\codexout\mcmod\src\main\java\com\dsh\eldencombat\client\EldenCombatClient.java:30: 警告: [removal] EventBusSubscriber 中的 Bus 已过时, 且标记为待删除
+@EventBusSubscriber(modid = EldenCombat.MODID, value = Dist.CLIENT, bus = EventBusSubscriber.Bus.MOD)
+                                                                                            ^
+注: 某些输入文件使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+2 个警告
+
+[Incubating] Problems report is available at: file:///D:/codexout/mcmod/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 11s
+2 actionable tasks: 1 executed, 1 up-to-date

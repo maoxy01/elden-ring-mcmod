@@ -1,0 +1,16 @@
+// Seed only missing presets. Existing users retain later changes to labels, zoom and markers.
+tasks.register('prepareMinimapDefaults') {
+    onlyIf { project.hasProperty('gracePrototype') }
+    doLast {
+        def target = layout.buildDirectory.dir('gracePrototypeClient').get().asFile
+        fileTree('modpack-defaults').matching { include 'journeymap/config/6.0/journeymap.minimap*.config' }.each { source ->
+            def relative = file('modpack-defaults').toPath().relativize(source.toPath()).toString()
+            def destination = new File(target, relative)
+            if (!destination.exists()) {
+                destination.parentFile.mkdirs()
+                destination.bytes = source.bytes
+            }
+        }
+    }
+}
+tasks.matching { it.name == 'runClient' }.configureEach { dependsOn 'prepareMinimapDefaults' }

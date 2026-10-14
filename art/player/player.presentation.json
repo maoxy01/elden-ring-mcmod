@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "unitsPerBlock": 16,
+  "playerHeightBlocks": 1.8,
+  "textureSource": "live_player_skin",
+  "skinVariants": {
+    "default": "player_classic",
+    "slim": "player_slim"
+  },
+  "sockets": {
+    "mainhand": "sword_socket",
+    "offhand": "shield_socket",
+    "drink": "drink_socket"
+  },
+  "actionBindings": {
+    "NONE": [
+      "idle",
+      "walk",
+      "run"
+    ],
+    "LIGHT_ATTACK": [
+      "light_1",
+      "light_2"
+    ],
+    "HEAVY_CHARGE": "heavy_windup",
+    "HEAVY_ATTACK": "heavy_release",
+    "CHARGED_HEAVY": "charged_release",
+    "ROLL": "roll",
+    "PARRY": "parry",
+    "DRINK": "drink",
+    "GUARD": "guard_idle",
+    "GUARD_BROKEN": "guard_break",
+    "STAGGER": "hit_stagger",
+    "DEATH": "death"
+  },
+  "profiles": {
+    "light_sword": "straight_sword.animations.json",
+    "great_sword": "great_sword.animations.json"
+  },
+  "variantAnimationOverrides": {
+    "great_sword": {
+      "default": "player_classic.great_sword.animations.json",
+      "slim": "player_slim.great_sword.animations.json"
+    }
+  },
+  "visibility": {
+    "default": [
+      "mainhand",
+      "offhand"
+    ],
+    "roll": [],
+    "death": [],
+    "drink": [
+      "drink"
+    ]
+  },
+  "unsupportedMechanics": [
+    "execution",
+    "riposte",
+    "jump_attack"
+  ],
+  "positionChannels": {
+    "file": "player.visual-offsets.json",
+    "space": "parent_model_units",
+    "affectsEntityMovement": false,
+    "axes": [
+      "y"
+    ]
+  },
+  "leftHanded": "mirror geometry, animation and hit axis together; do not mirror the skin UV",
+  "twoHandGrip": {
+    "weapon": "great_sword",
+    "leftHandTargetLocal": [
+      0,
+      -3,
+      0
+    ],
+    "implementation": "use baked variant animation overrides; no Java IK needed",
+    "shieldHiddenFor": [
+      "idle",
+      "walk",
+      "run",
+      "light_1",
+      "light_2",
+      "heavy_windup",
+      "heavy_release",
+      "charged_release",
+      "hit_stagger"
+    ]
+  }
+}

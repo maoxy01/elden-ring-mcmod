@@ -1,0 +1,77 @@
+ENTRY META-INF/neoforge.mods.toml
+modLoader = "javafml"
+loaderVersion = "[1,)" #
+issueTrackerURL = "https://github.com/TeamJM/journeymap/issues"
+license = "All rights reserved"
+
+[[mods]]
+modId = "journeymap"
+version = "1.21.1-6.0.9"
+displayName = "Journeymap"
+updateJSONURL = "https://neoforge.curseupdate.com/32274/journeymap"
+displayURL = "http://journeymap.info"
+logoFile = "journeymap.png"
+credits = "Techbrew, Mysticdrew, gdude"
+authors = "Techbrew, Mysticdrew"
+
+description = '''
+JourneyMap: Real-time map in-game or in a web browser as you explore. JourneyMap API: v2.0.0-1.21.1. Built: 2026-09-19-18:41:34.
+'''
+
+[[mixins]]
+config = "journeymap.mixins.json"
+[[mixins]]
+config = "journeymap.neoforge.mixins.json"
+
+[[dependencies.journeymap]]
+modId = "neoforge"
+type = "required"
+versionRange = "[1.0.0,)"
+
+[[dependencies.journeymap]]
+modId = "commonnetworking"
+type = "required"
+versionRange = "[1.0.16,)"
+
+ENTRY META-INF/jarjar/metadata.json
+{
+  "jars": [
+    {
+      "identifier": {
+        "group": "ar.com.hjg",
+        "artifact": "pngj"
+      },
+      "version": {
+        "range": "[2.1.0]",
+        "artifactVersion": "2.1.0"
+      },
+      "path": "META-INF/jarjar/pngj-2.1.0.jar",
+      "isObfuscated": false
+    },
+    {
+      "identifier": {
+        "group": "info.journeymap",
+        "artifact": "journeymap-api-neoforge"
+      },
+      "version": {
+        "range": "[2.0.0-1.21.1]",
+        "artifactVersion": "2.0.0-1.21.1"
+      },
+      "path": "META-INF/jarjar/journeymap-api-neoforge-2.0.0-1.21.1.jar",
+      "isObfuscated": false
+    },
+    {
+      "identifier": {
+        "group": "mysticdrew",
+        "artifact": "common-networking-neoforge"
+      },
+      "version": {
+        "range": "[1.0.21-1.21.1]",
+        "artifactVersion": "1.0.21-1.21.1"
+      },
+      "path": "META-INF/jarjar/common-networking-neoforge-1.0.21-1.21.1.jar",
+      "isObfuscated": false
+    }
+  ]
+}
+

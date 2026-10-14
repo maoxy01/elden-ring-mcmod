@@ -1,0 +1,3008 @@
+[
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "CtFE7hwT",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.9+neoforge",
+    "version_number": "1.21.1-6.0.9+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.9 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>NeoForge 21.1.228</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0-1.21.1</a></li>\n</ul>\n<p><strong>CHANGELOG (2026-09-19-18:41:38):</strong></p>\n\n<p>New in 1.21.1-6.0.9</p>\n<ul>\n    <li>Fixed: Map not rendering when Dynamic Surroundings biome fog is enabled.</li>\n    <li>Fixed: Minimap Preset 2 cave layer slider only enabled when Preset 1 was set to Underground.</li>\n    <li>Fixed: Viewing minimap preset options switching the active preset and rewriting config files.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2026-09-19T18:45:42.087078Z",
+    "downloads": 49842,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "MBg5Jh16",
+        "hashes": {
+          "sha512": "8900ee4cdb7d1ffb6559decdeec84ad479d04b2e7b01a60be9f6e328809af2bfd7a80077b7da0e49bc96261fe8fe274ba33c62f6c9f65302c783ed823c4ff746",
+          "sha1": "3a5c86e620a7d5aa53b6e42ca4a1577bbba1d332"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/CtFE7hwT/journeymap-neoforge-1.21.1-6.0.9.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.9.jar",
+        "primary": true,
+        "size": 4320499,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "F1lEUGxf",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.8+neoforge",
+    "version_number": "1.21.1-6.0.8+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.8 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>NeoForge 21.1.228</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0-1.21.1</a></li>\n</ul>\n<p><strong>CHANGELOG (2026-09-09-17:16:23):</strong></p>\n\n<p>New in 1.21.1-6.0.8</p>\n<ul>\n    <li>Fixed: Death waypoints sometimes being removed instantly on death, before ever being seen, when the body came to rest near the auto-remove distance.</li>\n    <li>Fixed: Hostile mobs using custom spawn categories (e.g. Fungal Infection: Spore) not appearing on the radar.</li>\n    <li>Fixed: Radar icons not generating for modded mobs with capitalized head model parts.</li>\n    <li>Fixed: Generated radar icons for some modded mobs showing a sideways head instead of the face.</li>\n    <li>Fixed: Waypoint share target list empty after a server restart until players reconnected.</li>\n    <li>Fixed: One addon failing to load preventing all other JourneyMap addons from loading.</li>\n    <li>Fixed: Color palette flag edits on modded blocks reverting to defaults after saving.</li>\n    <li>Fixed: Stopping Auto-Map leaving a white region square on the map.</li>\n    <li>Fixed: Minecraft item waypoint icons drawing 4x too large on the map.</li>\n    <li>Fixed: Cave map rendering black in modded dimensions without sky light, such as The Bumblezone.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2026-09-09T17:20:39.122913Z",
+    "downloads": 23092,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "J8SbKfGm",
+        "hashes": {
+          "sha512": "0085d74664f65e7d62124ce1526c8e1dbe59f0d195a7dda6da55a488af249c8c708ab8bb76aa824a7d6b84865b4b2e08f09b105a0d50f7d522119834508b9f59",
+          "sha1": "e964f91ee6319bb1d789a7011e30772907962b90"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/F1lEUGxf/journeymap-neoforge-1.21.1-6.0.8.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.8.jar",
+        "primary": true,
+        "size": 4303084,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "IAVJBO0C",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.7+neoforge",
+    "version_number": "1.21.1-6.0.7+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.7 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>NeoForge 21.1.228</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0-1.21.1</a></li>\n</ul>\n<p><strong>CHANGELOG (2026-08-29-20:30:10):</strong></p>\n\n<p>New in 1.21.1-6.0.7</p>\n<ul>\n    <li>Fixed: Teleport dropdown missing from the server admin settings.</li>\n    <li>Fixed: Teleporting blocked for creative and singleplayer players when the server teleport option is set to Ops.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2026-08-29T20:34:00.686021Z",
+    "downloads": 27567,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "zJ4XjaGe",
+        "hashes": {
+          "sha1": "cecb19e67cb5d9023057c1a94bab328723ba30dc",
+          "sha512": "5e79ec5aaf06329513e9b4537d8ef91a9d91ab3091fa475df4ba15bbd5907192c100f7870ae705dfc31f3ea7e82b8e98173ffc04dda9c292eeaa816bd33076fa"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/IAVJBO0C/journeymap-neoforge-1.21.1-6.0.7.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.7.jar",
+        "primary": true,
+        "size": 4299852,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "3xPNjfk3",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.6+neoforge",
+    "version_number": "1.21.1-6.0.6+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.6 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>NeoForge 21.1.228</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0-1.21.1</a></li>\n</ul>\n<p><strong>CHANGELOG (2026-08-29-02:11:15):</strong></p>\n\n<p>New in 1.21.1-6.0.6</p>\n<ul>\n    <li>Added: Teleport server option dropdown (None, All, Ops, Waypoint Only, Global Only) replacing the teleport checkboxes.</li>\n    <li>Added: Separate minimum and maximum display distance options for other players' head waypoints.</li>\n    <li>Added: Server option to stop Ops from seeing players who disabled \"Visible to Others\".</li>\n    <li>Changed: Waypoint and group settings colors moved into their own Color Settings popup.</li>\n    <li>Changed: Waypoint editor group dropdown shows longer group names and uses the waypoint manager's group sorting.</li>\n    <li>Fixed: Import world not including a singleplayer world's waypoints and player settings.</li>\n    <li>Fixed: Unable to switch dimensions in waypoint manager when \"Open in dimension\" option is selected.</li>\n    <li>Fixed: Fullscreen map right-click menu offered Edit and Remove on global waypoints to players without permission to modify them.</li>\n    <li>Fixed: Waypoint editor group dropdown overlapped the buttons next to it after creating a group.</li>\n    <li>Fixed: Reduced lag spikes and memory use from the background chunk cache re-writing unchanged chunks to disk.</li>\n    <li>Fixed: Bulk waypoint enable/disable reverting after dimension change or relog on servers with server-managed waypoints.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2026-08-29T02:14:29.525024Z",
+    "downloads": 3917,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "vi4YJiwu",
+        "hashes": {
+          "sha1": "7ebad83e8d8ca4f249e1f593c03134f43512ac48",
+          "sha512": "4f54fb0f57feb4e2582da1facf89a96686b665120bdce6e2c90be6c4c4472d67c3b71abe0f0797eaf453d2eca60f14e8e5e1f831a48e3d825db68f278b65ce4c"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/3xPNjfk3/journeymap-neoforge-1.21.1-6.0.6.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.6.jar",
+        "primary": true,
+        "size": 4299627,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "35TPQTuf",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.5+neoforge",
+    "version_number": "1.21.1-6.0.5+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.5 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>NeoForge 21.1.228</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0-1.21.1</a></li>\n</ul>\n<p><strong>CHANGELOG (2026-08-15-23:17:54):</strong></p>\n\n<p>New in 1.21.1-6.0.5</p>\n<ul>\n    <li>Updated: Smoother fullscreen map panning and zooming when viewing large explored areas, with reduced memory use</li>\n    <li>Updated: Improved client performance and memory usage when addons create or update large overlay sets</li>\n    <li>Fixed: Waypoint beacons, icons, and labels popping instead of fading at the min distance</li>\n    <li>Fixed: Native groups not saving settings on relog</li>\n    <li>Fixed: Addon overlays sometimes retaining stale geometry, labels, textures, or dimension state after being updated</li>\n    <li>Fixed: Addon overlay updates sometimes being missed by the minimap, fullscreen map, or WebMap</li>\n    <li>Fixed: Textured addon polygon fills not rendering correctly</li>\n    <li>Fixed: WebMap polygon textures not refreshing after resource pack reloads</li>\n    <li>Fixed: Removing all API waypoints could also remove overlays belonging to the same addon</li>\n    <li>Fixed: Server-provided overlays remaining registered after the mapping session ended</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2026-08-15T23:21:28.337447Z",
+    "downloads": 34621,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "Ng1JQcbH",
+        "hashes": {
+          "sha512": "2cef3904af7988b8a70607b43f1ed37eb7938611ce7c40931ba29d911a47097d086e5148beec0d3e3641ccccf1300859e3ef8fd6ef1c169d86de59eaa7fdd498",
+          "sha1": "ea0972ae15abe509d045d1db7685c94e612f1769"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/35TPQTuf/journeymap-neoforge-1.21.1-6.0.5.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.5.jar",
+        "primary": true,
+        "size": 4283584,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "BWZbAAhc",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.4+neoforge",
+    "version_number": "1.21.1-6.0.4+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.4 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>NeoForge 21.1.228</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0-1.21.1</a></li>\n</ul>\n<p><strong>CHANGELOG (2026-08-10-22:32:54):</strong></p>\n\n<p>New in 1.21.1-6.0.4</p>\n<ul>\n    <li>Fixed: Race conditions causing flickering or missing map areas</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2026-08-10T22:36:17.208753Z",
+    "downloads": 147785,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "QHtFzvr8",
+        "hashes": {
+          "sha1": "6d87dd99e34fafb520be2550719c47a4b126c6e8",
+          "sha512": "1e4472f7c57f49a5c0797109745c1da9ae9800646696b0d64e3fb3465d134f51f58e43f924dc1cc2f44f1e31a22accc6da4656a826c3b328032364d528371211"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/BWZbAAhc/journeymap-neoforge-1.21.1-6.0.4.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.4.jar",
+        "primary": true,
+        "size": 4161814,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "WEOAmpDC",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.3+neoforge",
+    "version_number": "1.21.1-6.0.3+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.3 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>NeoForge 21.1.228</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0-1.21.1</a></li>\n</ul>\n<p><strong>CHANGELOG (2026-08-05-19:56:18):</strong></p>\n\n<p>New in 1.21.1-6.0.3</p>\n<ul>\n    <li>Fixed: Theme assets failed to extract from the mod jar, so themes did not load (all entries were skipped as \"unsafe\")</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2026-08-05T19:59:47.470014Z",
+    "downloads": 16130,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "24du449f",
+        "hashes": {
+          "sha512": "c3e5f6e821831bf93369d91d9f7a731b8b797c9844a62bb40273e9f6e87bf122a119bd241f16861ef7e203d29cbb40e73af1d7cf07e3fa01089b25a8cf873814",
+          "sha1": "6198235df6cbc4fd0182aad565241ce375204e99"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/WEOAmpDC/journeymap-neoforge-1.21.1-6.0.3.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.3.jar",
+        "primary": true,
+        "size": 4156889,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "GhkNvBWk",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.2+neoforge",
+    "version_number": "1.21.1-6.0.2+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.2 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>NeoForge 21.1.228</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0-1.21.1</a></li>\n</ul>\n<p><strong>CHANGELOG (2026-07-27-21:43:27):</strong></p>\n\n<p>New in 1.21.1-6.0.2</p>\n<ul>\n    <li>Fixed: Auto-Map performance issues.</li>\n    <li>Fixed: Addon marker icons are now centred exactly within their block at every minimap zoom level</li>\n    <li>Fixed: Addon overlays could appear a moment late on the minimap after switching dimension, map type, or toggling a layer</li>\n    <li>Fixed: Individual addon claim polygons could blink out on the minimap while neighbouring ones stayed visible</li>\n    <li>Fixed: Addon marker icons and labels were not clipped to the minimap edge and could spill outside it</li>\n    <li>Fixed: Addon overlays could be missing from the minimap after closing the fullscreen map while standing still</li>\n    <li>Fixed: Addon marker, image, and polygon overlays leaked textures when removed or replaced</li>\n    <li>Fixed: A replaced addon overlay could briefly flicker when the minimap and fullscreen map were both active</li>\n    <li>Fixed: Theme border issues.</li>\n    <li>Fixed: Entity texture used as raw map icon.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2026-07-27T21:53:49.709327Z",
+    "downloads": 39059,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "ITkhx25I",
+        "hashes": {
+          "sha1": "506e8d9be74aea1467f3abc7529ad17fbdada748",
+          "sha512": "dd14516a7f9513e3c843dc45c9cc608bae852e8774dd9d94968670d3f809c37cb50a6ebda07a55cd07517cca1cc51b4beafbb2adfb71380cc998aad58e7e06a0"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/GhkNvBWk/journeymap-neoforge-1.21.1-6.0.2.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.2.jar",
+        "primary": true,
+        "size": 4156387,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "plEVc4Oq",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.1+neoforge",
+    "version_number": "1.21.1-6.0.1+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.1 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>NeoForge 21.1.228</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0-1.21.1</a></li>\n</ul>\n<p><strong>CHANGELOG (2026-07-17-01:53:29):</strong></p>\n\n<p>New in 1.21.1-6.0.1</p>\n<ul>\n    <li>Fixed: Action dropdown not persisting enable/disable state of waypoints on relog</li>\n    <li>Fixed: Addon map markers now refresh their icon and label when shown again, instead of keeping stale values until the marker is re-created</li>\n    <li>Fixed: Addon marker labels with a set zoom range no longer hide the hover title outside that range</li>\n    <li>Fixed: Removed or replaced addon overlays no longer keep receiving mouse and click events</li>\n    <li>Fixed: Replacing an addon overlay (showing a new one and removing the old) no longer flickers for a frame</li>\n    <li>Fixed: Addon markers whose icon points at a shared texture such as the block atlas now render instead of silently failing</li>\n    <li>Fixed: Clicking and dragging addon overlays on the fullscreen map now registers on the overlay under the cursor at GUI scales other than normal</li>\n    <li>Fixed: Addon markers, polygons and images no longer drift off their block or collapse together on the minimap when zoomed out</li>\n    <li>Fixed: Addon map markers no longer disappear near the edge of the minimap while still in view</li>\n    <li>Fixed: Harmless startup warning about a missing mixin reference map (journeymap-refmap.json)</li>\n    <li>Fixed: Server could crash on shutdown while players were still connected</li>\n    <li>Fixed: Global waypoint group description showed a translation key instead of its text</li>\n    <li>Fixed: Waypoints could be moved into the Temp group but not back out in the waypoint editor</li>\n    <li>Fixed: Dedicated server crash when a player joined, caused by client-only code loading during waypoint group setup</li>\n    <li>Fixed: Xaero waypoint import now finds worlds whose save folder name contains special characters that Xaero stores using escape tokens</li>\n    <li>Fixed: Mob and NPC map icons could render as a full skin instead of a face when Entity Texture Features was installed</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2026-07-17T01:57:48.390437Z",
+    "downloads": 30301,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "e3Uabe18",
+        "hashes": {
+          "sha512": "f8ec1b71f1f85a1295d29d77f4ce479f91172089e3fc9ab4e1dad4fad18b280ca46889768d59e4740d5fbc96904d4b678d1e303a96bf0969d3e8cf9ab48a74a9",
+          "sha1": "41989e3f82ab332c242b02253a95e06bcdcfafc1"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/plEVc4Oq/journeymap-neoforge-1.21.1-6.0.1.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.1.jar",
+        "primary": true,
+        "size": 4151399,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "edtgHsxe",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0+neoforge",
+    "version_number": "1.21.1-6.0.0+neoforge",
+    "changelog": "No changelog was specified.",
+    "changelog_url": null,
+    "date_published": "2026-06-26T19:52:57.292191Z",
+    "downloads": 50832,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "Y4T2rVjS",
+        "hashes": {
+          "sha512": "5478e1162fb0637dcbb9e3d2d523d0ca0d3a6cb5acbe5f6ada2948e77b67070e94ea1511882053598b366c29837285f9573b7df1e7a6978cbf710d8282605fdb",
+          "sha1": "40f8124b68c778b53d4037e604e9a29b8fe1be6d"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/edtgHsxe/journeymap-neoforge-1.21.1-6.0.0.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0.jar",
+        "primary": true,
+        "size": 4135013,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "RKfLrEYQ",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.88+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.88+neoforge",
+    "changelog": "No changelog was specified.",
+    "changelog_url": null,
+    "date_published": "2026-06-20T02:12:29.347209Z",
+    "downloads": 32886,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "o3v2Vtnu",
+        "hashes": {
+          "sha1": "0a489466570cfe2a1788633a914e32d8fdeb38db",
+          "sha512": "251ffe3cd68d0ca83e1cc25d1ee2dbcbb9164d5aa4b5debcbfd3f73fca3bebc551e861f26c71a13f8b8f3bae9e88df25235901dbc5f654bdb6d1d0cf3c2896aa"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/RKfLrEYQ/journeymap-neoforge-1.21.1-6.0.0-beta.88.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.88.jar",
+        "primary": true,
+        "size": 4133334,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "VsBzKki1",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.87+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.87+neoforge",
+    "changelog": "No changelog was specified.",
+    "changelog_url": null,
+    "date_published": "2026-06-19T23:43:50.847815Z",
+    "downloads": 420,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "X1ZdzVfg",
+        "hashes": {
+          "sha512": "d0b249c8da7bcc6a9d3ac7626d6abe7afd9e0d8de0bb575fa974ad375d049c18ae67429555b84bdfd6a230e5e2b79443398634e00d8a5684ddf530dee755e2bb",
+          "sha1": "b2d0e2ea96de9e6c1ff8746f3d48c2ef9d1a6d2a"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/VsBzKki1/journeymap-neoforge-1.21.1-6.0.0-beta.87.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.87.jar",
+        "primary": true,
+        "size": 4133327,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "xfyEZjJ4",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.86+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.86+neoforge",
+    "changelog": "No changelog was specified.",
+    "changelog_url": null,
+    "date_published": "2026-06-19T17:57:51.88858Z",
+    "downloads": 699,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "HTo4clPG",
+        "hashes": {
+          "sha1": "2dcb02060e65e01c3998bedb289d607eef80c566",
+          "sha512": "5d2ca363794291c758e29ef46948abee5ff4ddb774cf3dfb721cc35091c564c08d706572c7565dd00e7d6fce3b1adb824e90469594bf88f846934a684aec575f"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/xfyEZjJ4/journeymap-neoforge-1.21.1-6.0.0-beta.86.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.86.jar",
+        "primary": true,
+        "size": 4133220,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "S6y2f7fD",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.85+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.85+neoforge",
+    "changelog": "No changelog was specified.",
+    "changelog_url": null,
+    "date_published": "2026-06-15T18:37:22.447228Z",
+    "downloads": 11153,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "9yD2iPx9",
+        "hashes": {
+          "sha1": "002cd679e5684750eb9584ce5de87a2febd228a5",
+          "sha512": "f4dce8deeb7789568e6c5d9476b6d0d861bad428afb428a1118e723efb1251f649f5d6ea3de612195627130e886853e0e749c6549c08172fa5717108d6c0be9c"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/S6y2f7fD/journeymap-neoforge-1.21.1-6.0.0-beta.85.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.85.jar",
+        "primary": true,
+        "size": 4132744,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "2oFtejNz",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.84+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.84+neoforge",
+    "changelog": "No changelog was specified.",
+    "changelog_url": null,
+    "date_published": "2026-06-15T02:58:05.152977Z",
+    "downloads": 2348,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "jTLlujpg",
+        "hashes": {
+          "sha1": "b9476e794097b32741b111af4b0c01d70dd3f53f",
+          "sha512": "63a77105da0dc261a96d06d754067585dc4758f3a6ba4747688bfeab1646fe78a458b128cd26e9295fb5af0897907ac8a62ecb06c4f329bc14da646fe5277770"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/2oFtejNz/journeymap-neoforge-1.21.1-6.0.0-beta.84.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.84.jar",
+        "primary": true,
+        "size": 4128387,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "s1EZERLo",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.83+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.83+neoforge",
+    "changelog": "No changelog was specified.",
+    "changelog_url": null,
+    "date_published": "2026-06-10T19:06:34.284389Z",
+    "downloads": 12672,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "OsIgNlep",
+        "hashes": {
+          "sha512": "243445aa08b44d3292cffe3001dc757d0ec592d842fc2ae2a9a0707fe9fcafb7cbb6e72f7b4d3e61e7a7b23055f3eeb98a8030135b0d094867013ebac8c91336",
+          "sha1": "9a0fd79ffb95e0f3065911a9bfc74bcd9c5207b2"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/s1EZERLo/journeymap-neoforge-1.21.1-6.0.0-beta.83.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.83.jar",
+        "primary": true,
+        "size": 4124972,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "1wPOSxW0",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.82+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.82+neoforge",
+    "changelog": "No changelog was specified.",
+    "changelog_url": null,
+    "date_published": "2026-06-08T01:50:33.473586Z",
+    "downloads": 7174,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "HyMsPdwx",
+        "hashes": {
+          "sha512": "b8633e61879a4e9072a08ad5676588a60bc52fcdc82a05b9f5ea4ace15956f8b63130b5ef2984583d3cfdbe2e1887f788d41e82b566d1725e2d9b3824ce65f5d",
+          "sha1": "c8c2b7e73072ab41d0f2fc088032b53e54dabea5"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/1wPOSxW0/journeymap-neoforge-1.21.1-6.0.0-beta.82.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.82.jar",
+        "primary": true,
+        "size": 4105440,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "Ex7ZcbHn",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.81+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.81+neoforge",
+    "changelog": "No changelog was specified.",
+    "changelog_url": null,
+    "date_published": "2026-06-02T20:11:51.438799Z",
+    "downloads": 14669,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "WfyUC7yS",
+        "hashes": {
+          "sha1": "03e7bf1ea1e276574dd81b1ee6b415d298ad67f6",
+          "sha512": "5651c50ca53cd33a73aaba6851cbca4ca6c7c20108c284d98c0f1e6dc7b92681b6e8b18e3f99b45f3207750f36604a733982e9ff3ad73a0504f74168cad9b8e5"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/Ex7ZcbHn/journeymap-neoforge-1.21.1-6.0.0-beta.81.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.81.jar",
+        "primary": true,
+        "size": 4102376,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "AqeqzAK9",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.80+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.80+neoforge",
+    "changelog": "No changelog was specified.",
+    "changelog_url": null,
+    "date_published": "2026-06-01T17:49:04.498098Z",
+    "downloads": 3138,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "Iez1BK4W",
+        "hashes": {
+          "sha1": "3970c1374c88f91a38598324a939c4dde3c74929",
+          "sha512": "7c6e59d1c9970e68aeadd15614814154e4e70dee29e6d438323eb97210357ad35ba16ef00fae131bd077eac3bf62a5e84a8df7d9fc997a2370d42c20635bee8d"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/AqeqzAK9/journeymap-neoforge-1.21.1-6.0.0-beta.80.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.80.jar",
+        "primary": true,
+        "size": 4101712,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "hJvkjktT",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.79+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.79+neoforge",
+    "changelog": "No changelog was specified.",
+    "changelog_url": null,
+    "date_published": "2026-05-29T16:22:53.807874Z",
+    "downloads": 8910,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "SLnhVyvy",
+        "hashes": {
+          "sha1": "fc82d6483d4f61ae13eaded7ee19b1d53a67e5b9",
+          "sha512": "39b3787a7c4f501f6455b49e23c25d9446a23c5823533a35ea6f50053460bd3003b6aa1beb77fd626805e1a6ce2842da5787966af9631229bf1338edc08cd639"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/hJvkjktT/journeymap-neoforge-1.21.1-6.0.0-beta.79.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.79.jar",
+        "primary": true,
+        "size": 4097480,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "a0k4neCF",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.78+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.78+neoforge",
+    "changelog": "No changelog was specified.",
+    "changelog_url": null,
+    "date_published": "2026-05-27T21:19:24.23242Z",
+    "downloads": 5100,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "RWrEosRp",
+        "hashes": {
+          "sha1": "cd05367622aa491a7a9ab0b439763abda3c9b982",
+          "sha512": "d907d894551719de44802da768cf52ef8a762d0fb3139f58537f9370f147691070ae037c7f34231629201c47d0ddb7ede641fba4cb6dc747a2aa7238886a99c1"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/a0k4neCF/journeymap-neoforge-1.21.1-6.0.0-beta.78.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.78.jar",
+        "primary": true,
+        "size": 4094919,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "dnk2VOks",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.77+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.77+neoforge",
+    "changelog": "No changelog was specified.",
+    "changelog_url": null,
+    "date_published": "2026-05-21T21:45:07.864904Z",
+    "downloads": 16244,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "BEpPi0ye",
+        "hashes": {
+          "sha512": "7d7645dec99dd22716e90371b8f64b694d90a27a9d206a7d54f12512590b1f770a5912f3450606f73a1f502c53a02b22f167fcc870a6d7054b58b729d639c279",
+          "sha1": "93bfd25b37809c245cd2f77bc5794857536bcba6"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/dnk2VOks/journeymap-neoforge-1.21.1-6.0.0-beta.77.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.77.jar",
+        "primary": true,
+        "size": 4044521,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "a7FdRfYf",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.76+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.76+neoforge",
+    "changelog": "No changelog was specified.",
+    "changelog_url": null,
+    "date_published": "2026-05-20T02:22:43.919516Z",
+    "downloads": 4633,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "vbB8CnN9",
+        "hashes": {
+          "sha1": "4b8d7b7d86d2450a60bbee0a0fd58a0d7c03e20d",
+          "sha512": "b763644ffab588bd77fa57cf1e938231545da100fc1207de454ec7baa5fdc7dd242e9c35b6f6c07aea1eb70986cd4d205027d8873ad9e008846b73156c94b235"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/a7FdRfYf/journeymap-neoforge-1.21.1-6.0.0-beta.76.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.76.jar",
+        "primary": true,
+        "size": 4022470,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "9Reyl5BJ",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.75+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.75+neoforge",
+    "changelog": "No changelog was specified.",
+    "changelog_url": null,
+    "date_published": "2026-05-19T16:11:46.123003Z",
+    "downloads": 1107,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "YlKJIc5e",
+        "hashes": {
+          "sha1": "0ed84e6d3cdf890e0edf16a4855f926edf28b641",
+          "sha512": "18810033d70404c6f99bad22c4a86c02f70cfd133795b69995affa92e54908ba5009e4ec8156ba388c13e53c036a19d04e1f0feb3e27fd72c783aa758c958488"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/9Reyl5BJ/journeymap-neoforge-1.21.1-6.0.0-beta.75.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.75.jar",
+        "primary": true,
+        "size": 4021889,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "95hGLCsp",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.74+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.74+neoforge",
+    "changelog": "No changelog was specified.",
+    "changelog_url": null,
+    "date_published": "2026-05-16T20:51:27.925477Z",
+    "downloads": 8114,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "Ne5nwIw9",
+        "hashes": {
+          "sha1": "4a8589bff3ccef81b88c1ff1d48d0a14151dbc7e",
+          "sha512": "59ff5d8a8ceaf75e6106a52b4f680cbfb1e61906391fa2f6656db9c090986f91a94fac491bed308edc6d81487db8fdd889c45edcb7fcd4626477c6c919d99798"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/95hGLCsp/journeymap-neoforge-1.21.1-6.0.0-beta.74.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.74.jar",
+        "primary": true,
+        "size": 4021157,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "yS4vSHRC",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.73+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.73+neoforge",
+    "changelog": "No changelog was specified.",
+    "changelog_url": null,
+    "date_published": "2026-05-15T21:43:04.469556Z",
+    "downloads": 3888,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "Nm74dRh6",
+        "hashes": {
+          "sha1": "f6391570006b1e971007553b03c4119f03a57a29",
+          "sha512": "e5b557541055b15e4099690507de415a7eb914ef1d7f525de660dc02fc505ff504f93eedaee2bec702744200d43715f4827699e5cf444e704b32c201932283db"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/yS4vSHRC/journeymap-neoforge-1.21.1-6.0.0-beta.73.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.73.jar",
+        "primary": true,
+        "size": 4003232,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "GJK0zDM4",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.72+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.72+neoforge",
+    "changelog": "No changelog was specified.",
+    "changelog_url": null,
+    "date_published": "2026-05-12T22:02:16.845206Z",
+    "downloads": 9822,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "vWiHPnA1",
+        "hashes": {
+          "sha1": "e36e15ea09297378de1a7161466575a82767351d",
+          "sha512": "76529993826db63d21f9b270ce9059844d5b44db6360367209481e323462cb4cfaec8fe576efd6ffd3f7b4683d760bfef5301f47bc4514acacd7faa8a8f5d37d"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/GJK0zDM4/journeymap-neoforge-1.21.1-6.0.0-beta.72.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.72.jar",
+        "primary": true,
+        "size": 3988712,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "gNKGNwQm",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.71+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.71+neoforge",
+    "changelog": "No changelog was specified.",
+    "changelog_url": null,
+    "date_published": "2026-05-12T04:27:50.183727Z",
+    "downloads": 2436,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "kPWokDFB",
+        "hashes": {
+          "sha1": "a4220acae360c416477031a332b63877d01477c1",
+          "sha512": "2fb672a0331e843ade694c3392021678a2dcab1d34271f82fba3624a3c8ab1fd1da5152ecec9242cc0ddc65e9bdaed7ce64fe3c4a0b262798f90481e52605779"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/gNKGNwQm/journeymap-neoforge-1.21.1-6.0.0-beta.71.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.71.jar",
+        "primary": true,
+        "size": 3989179,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "bqzQ9J2c",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.70+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.70+neoforge",
+    "changelog": "No changelog was specified.",
+    "changelog_url": null,
+    "date_published": "2026-05-12T02:32:49.292441Z",
+    "downloads": 380,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "v2LCBmZD",
+        "hashes": {
+          "sha1": "8b6505371b1cd76292fe51f0b1a47778d74dabe0",
+          "sha512": "88e6ebb5193b98abca39d7cc595073f74fb2626f88d1bb36f701cf4310bbe852e138918d7ea4736763c09e114cadf02be81abd5ce542d104a0bd4d6ec2aeba36"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/bqzQ9J2c/journeymap-neoforge-1.21.1-6.0.0-beta.70.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.70.jar",
+        "primary": true,
+        "size": 3902558,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "bEZfIT2g",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.69+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.69+neoforge",
+    "changelog": "No changelog was specified.",
+    "changelog_url": null,
+    "date_published": "2026-05-10T21:52:40.917126Z",
+    "downloads": 4572,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "v8mvPAAW",
+        "hashes": {
+          "sha1": "ca90a7de5ded9937e1b8608d91310bc34b4f5903",
+          "sha512": "7b1034991fdb7e423a0443b756168550bc9120585a999ab0bc1711b3d3b0525ee77410d226f7907e41e20fe7d20d6382dc82b548ce21bd557effb1dd5cf765ef"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/bEZfIT2g/journeymap-neoforge-1.21.1-6.0.0-beta.69.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.69.jar",
+        "primary": true,
+        "size": 3896080,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "lZRvDIPc",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.68+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.68+neoforge",
+    "changelog": "No changelog was specified.",
+    "changelog_url": null,
+    "date_published": "2026-05-10T14:39:12.868642Z",
+    "downloads": 1137,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "KEEghSBt",
+        "hashes": {
+          "sha512": "79a33bfd8374d373716704e750ae89ec7ccb519213c5c4c29202b567a022cd70a8bdc463ed46a36802418046a7c468182b1d04b15eec494c832cac990149b829",
+          "sha1": "9a9146440443daa52148553b8e862dcb37a40ff2"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/lZRvDIPc/journeymap-neoforge-1.21.1-6.0.0-beta.68.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.68.jar",
+        "primary": true,
+        "size": 3896039,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "uSyuU1n5",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.67+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.67+neoforge",
+    "changelog": "No changelog was specified.",
+    "changelog_url": null,
+    "date_published": "2026-05-08T17:33:50.238216Z",
+    "downloads": 16122,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "stt9xytQ",
+        "hashes": {
+          "sha1": "5c1fb67431c7fd2074be0ebf760206c8f21cf0fd",
+          "sha512": "928be3791f01f87148f3dc7aa33d54540fccb4ed70fd7b10e0f3a1a855ab26fefa19b4d4fe6f13397a5a5a5662b053531ca4bebe47fe6f68715b37372a63d1f6"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/uSyuU1n5/journeymap-neoforge-1.21.1-6.0.0-beta.67.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.67.jar",
+        "primary": true,
+        "size": 3895173,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "E44vwUJO",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.66+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.66+neoforge",
+    "changelog": "No changelog was specified.",
+    "changelog_url": null,
+    "date_published": "2026-04-28T18:05:26.973574Z",
+    "downloads": 27940,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "sqe2zDYm",
+        "hashes": {
+          "sha1": "8f3a5d415e8d5548ec1d15695af4a125bd3860dc",
+          "sha512": "a6e6fc436020c4d4d3625147c271b04535765e0ae9c59703aa66cd1d3c986e077ddafe2daf9c00b45fd9f4dfbf82ab0f1ca1ea730253ea9e0b4d954729b2c632"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/E44vwUJO/journeymap-neoforge-1.21.1-6.0.0-beta.66.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.66.jar",
+        "primary": true,
+        "size": 3666530,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "NGxV13VB",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.65+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.65+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.65 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>NeoForge 21.1.209</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2026-04-25-00:21:29):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.65</p>\n<ul>\n    <li>Fixed: waypoint codecs returning immutable maps</li>\n    <li>Fixed: Deleting a specific region forces nearby remap</li>\n    <li>Fixed: Server biome blending on newly generate chunks not blending on chunk borders</li>\n    <li>Fixed: regions randomly going blank while playing</li>\n    <li>Fixed: Map type swap missing regions</li>\n    <li>Fixed: Region tiles stuck blank</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2026-04-25T00:22:56.661082Z",
+    "downloads": 8008,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "OQU7OceP",
+        "hashes": {
+          "sha1": "730b0a627e3720dcf2054663677d0c356e397c60",
+          "sha512": "1e2be23e7caacc988ae95e957214a062793a1568dfd7abd993a1fd4c402d47f7aeebbe6b54859ce77f7282dddfa1b5101619c2d8218096eb7f86d9c5c5fea9fd"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/NGxV13VB/journeymap-neoforge-1.21.1-6.0.0-beta.65.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.65.jar",
+        "primary": true,
+        "size": 3667250,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "cYlR4bJh",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.64+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.64+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.64 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>NeoForge 21.1.209</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2026-04-23-15:28:06):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.64</p>\n<ul>\n    <li>Fixed: Performance hit in singleplayer with block events.</li>\n    <li>Fixed: Render-thread stall caused by per-frame <code>glGetError</code> polling. GL error checks are now opt-in via <code>-Djourneymap.checkGlErrors=true</code>.</li>\n    <li>Fixed: Redundant filesystem checks on the minimap render path when resolving dimension folder names.</li>\n    <li>Fixed: Stuttering near large farms, TNT chains, or bulk world-edit operations caused by per-block-update cache invalidations. Render-time resets are now coalesced once per tick.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2026-04-23T15:29:31.748568Z",
+    "downloads": 5509,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "WGDh6LrL",
+        "hashes": {
+          "sha512": "81726116edc31e97987e31b2f27a49f092942fc640d38954facfe5004234e69c32c90bd590697db43e71b1ff9ebc23cdc2b73d78df8961fa2f797528fb8cd60f",
+          "sha1": "70f0e176211ea6a9797e7ae8f609987c4cdb8714"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/cYlR4bJh/journeymap-neoforge-1.21.1-6.0.0-beta.64.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.64.jar",
+        "primary": true,
+        "size": 3666378,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "kVC1rF8K",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.63+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.63+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.63 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>NeoForge 21.1.209</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2026-04-11-16:27:03):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.63</p>\n<ul>\n    <li>Changed: Added more waypoint backups</li>\n    <li>Changed: Import safety checks and pre-backup before import, with some file saving safety checks</li>\n    <li>Fixed: Xaero Minimap waypoints not detected when connected to a Realms server</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2026-04-11T16:36:03.523749Z",
+    "downloads": 27449,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "jkYahEf9",
+        "hashes": {
+          "sha512": "c84c78b958aaca297e48901418bf63fa9caa639871823558051147a6291f111b3da8d4bd60600c7a926dde6b62c597d636d5158ecd852475785cda925417e089",
+          "sha1": "a8e1ede3e79f241c58be7183b389a3bc2e7c3938"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/kVC1rF8K/journeymap-neoforge-1.21.1-6.0.0-beta.63.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.63.jar",
+        "primary": true,
+        "size": 3662599,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "BtLjrFeO",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.62+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.62+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.62 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>NeoForge 21.1.209</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2026-04-10-15:27:11):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.62</p>\n<ul>\n    <li>Fixed: Underground y level fix</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2026-04-10T15:37:37.209244Z",
+    "downloads": 2366,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "hVEvZNkF",
+        "hashes": {
+          "sha1": "2582523f50a8146886d118fb1853485e14e143dc",
+          "sha512": "d3bde836929f0f103ee18dfb531b5a9ff28326b0304e75fb74cd8e2fef524a7866e559b7cb8cae215d1593f4b495f989af39de8811f07458520adc999358b024"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/BtLjrFeO/journeymap-neoforge-1.21.1-6.0.0-beta.62.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.62.jar",
+        "primary": true,
+        "size": 3654621,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "9DzP2bVB",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.61+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.61+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.61 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>NeoForge 21.1.209</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2026-04-09-23:06:54):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.61</p>\n<ul>\n    <li>Added: Cartography option \"Use Nether Surface Lighting\" - when disabled, Nether surface map uses maximum brightness; when enabled, uses actual world light levels</li>\n    <li>Added: Brightness map filter option</li>\n    <li>Added: Icon generation from AzureLib models</li>\n    <li>Added: Minimap Option for which layer to render on, default: Last</li>\n    <li>Fixed: GameTime InfoSlot skipping minutes</li>\n    <li>Fixed: Zombie Villagers not respecting Show Villagers toggle and ignoring Show Villager Names setting</li>\n    <li>Fixed: JVM crash when writing region map images to disk</li>\n    <li>Fixed: Chunk cache not persisting data; block data only available in render range</li>\n    <li>Fixed: Zoomed-out map (LOD tiles) not updating live when new chunks are mapped; tiles now refresh correctly without requiring a relog</li>\n    <li>Fixed: Map color filters not applying to zoomed-out (LOD) tiles</li>\n    <li>Fixed: Map colors in custom dimensions (e.g. Pixelmon Ultra Space) changing with day/night cycle</li>\n    <li>Fixed: The End night map button no longer shown; The End uses day map only</li>\n    <li>Fixed: Team prefix rendered twice when Show Team Names is enabled</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2026-04-09T23:16:06.164707Z",
+    "downloads": 975,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "ryzT7Fhd",
+        "hashes": {
+          "sha512": "52bbf88dabb072b4e131c1e8916fc487bf730754b20e91ace97e72f1045f4ba5d2d08e0faa404d991e4ee7418c63a39a3ec31a4633a4ce1f4e836afee6d0f43a",
+          "sha1": "7db8edf0500e401fa11b534ef92e4c0e91114c4c"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/9DzP2bVB/journeymap-neoforge-1.21.1-6.0.0-beta.61.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.61.jar",
+        "primary": true,
+        "size": 3653955,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "nu4oHXle",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.60+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.60+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.60 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>NeoForge 21.1.197</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2026-03-31-23:10:02):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.60</p>\n<ul>\n    <li>Fixed: Some GC thrashing and memory issues introduced last update to speed up map rendering</li>\n    <li>Fixed: Player heads are blurry.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2026-04-01T04:11:01.23324Z",
+    "downloads": 10527,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "m4jSnLRe",
+        "hashes": {
+          "sha512": "04863f7db23d610c77c3f0221ed513c77867a69a7b28e715b30f7fd8e4165af0cf62691ae3945530d88357164f4bd55e446e0af6c717b1848239802c43746a3b",
+          "sha1": "9de6d0269a154f813e0b7788ed8f6cd87e8b919a"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/nu4oHXle/journeymap-neoforge-1.21.1-6.0.0-beta.60.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.60.jar",
+        "primary": true,
+        "size": 3644656,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "IaUQgm2T",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.59+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.59+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.59 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>NeoForge 21.1.197</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2026-03-27-13:11:03):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.59</p>\n<ul>\n    <li>Fixed: Weird mouse behavior when initially opening fullscreen map and not following player</li>\n    <li>Fixed: GameTime display regression for info slot</li>\n    <li>Fixed: Issue with map data going funky on resourcepack change</li>\n    <li>Fixed: Map render distance.</li>\n    <li>Fixed: Always Map Caves Option caused some issues with rendering distance when enabled</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2026-03-27T18:14:58.159053Z",
+    "downloads": 4953,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "ng55zKz4",
+        "hashes": {
+          "sha512": "60fa6ede14dc799ed9c11faf6dbbdc005e5f8b32c0fbefe473e94abac831cda1cd4e4f64496b132b51d76b1606814fdd3fc9c572acd8651cf8051b45f789ae1b",
+          "sha1": "50f22a100adb8a06711a37ef4007364f535a774c"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/IaUQgm2T/journeymap-neoforge-1.21.1-6.0.0-beta.59.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.59.jar",
+        "primary": true,
+        "size": 3646485,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "QpQf6MQJ",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.58+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.58+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.58 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>NeoForge 21.1.197</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2026-03-25-10:37:50):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.58</p>\n<ul>\n    <li>Added: Zoomout uses LOD to significantly reduce memory usage on maps, very noticeable on huge maps.</li>\n    <li>Added: Pokemon Icon Scaling</li>\n    <li>Added: Option to hide the background rectangle behind waypoint beacon labels</li>\n    <li>Added: Advanced option to disable number overlay on minimap preset switch</li>\n    <li>Added: Waypoint Beacon option, autohide label vertically. default:true</li>\n    <li>Changed: handle stb-image-resize issues between lwjgl 3.3.3 and 3.3.6</li>\n    <li>Changed: RegionTile file reading, region tiles may be a little slower on ssd depending on map size, but much faster on hdd with this change.</li>\n    <li>Changed: map rendering speed increased, map updates much faster now!</li>\n    <li>Changed: API requestMapTile updated to remove modId checks</li>\n    <li>Changed: Player names switched to Display names</li>\n    <li>Updated: Significant memory reduction on top of LOD memory reductions</li>\n    <li>Updated: Nether surface is brighter and removed night map type from nether</li>\n    <li>Fixed: Some fullscreen map issues on MACOS retina displays</li>\n    <li>Fixed: world close log spam</li>\n    <li>Fixed: Minecraft Days info display not respecting dodaylightcycle gamerule or /time set</li>\n    <li>Fixed: Waypoint editor ignoring first keypress</li>\n    <li>Fixed: Import dialog blocking the game thread, causing disconnects on servers and hitching in singleplayer</li>\n    <li>Fixed: \"What's New\" entries duplicating each time the About screen is revisited after navigating to a feature</li>\n    <li>Fixed: Waypoint folders not refreshing in manager after import until reconnect</li>\n    <li>Fixed: Getting correct blockentity colors</li>\n    <li>Fixed: After using /transfer, JourneyMap now switches to the correct map data directory for the new server</li>\n    <li>Fixed: JourneyMap's minimap no longer interferes with other mods' HUD rendering (e.g. ChunkDebug)</li>\n    <li>Fixed: CaveSurface rendering no longer starting as black</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2026-03-25T15:39:17.422201Z",
+    "downloads": 1807,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "dnBojq2e",
+        "hashes": {
+          "sha512": "7cb1320089072e8343ec27727b92c8dd4100451e731176af7411be8e7c5d51b3fe8b83e94b0f465a8fc538fa252672b632240350438c5150f575568a0b7edbba",
+          "sha1": "8f1a465323c90a5dcd3d938608b525863432315a"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/QpQf6MQJ/journeymap-neoforge-1.21.1-6.0.0-beta.58.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.58.jar",
+        "primary": true,
+        "size": 3605279,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "yDBzIDgF",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.57+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.57+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.57 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>NeoForge 21.1.197</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2026-03-25-09:41:18):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.57</p>\n<ul>\n    <li>Added: Zoomout uses LOD to significantly reduce memory usage on maps, very noticeable on huge maps.</li>\n    <li>Added: Pokemon Icon Scaling</li>\n    <li>Added: Option to hide the background rectangle behind waypoint beacon labels</li>\n    <li>Added: Advanced option to disable number overlay on minimap preset switch</li>\n    <li>Added: Waypoint Beacon option, autohide label vertically. default:true</li>\n    <li>Changed: handle stb-image-resize issues between lwjgl 3.3.3 and 3.3.6</li>\n    <li>Changed: RegionTile file reading, region tiles may be a little slower on ssd depending on map size, but much faster on hdd with this change.</li>\n    <li>Changed: map rendering speed increased, map updates much faster now!</li>\n    <li>Changed: API requestMapTile updated to remove modId checks</li>\n    <li>Changed: Player names switched to Display names</li>\n    <li>Updated: Significant memory reduction on top of LOD memory reductions</li>\n    <li>Updated: Nether surface is brighter and removed night map type from nether</li>\n    <li>Fixed: Some fullscreen map issues on MACOS retina displays</li>\n    <li>Fixed: world close log spam</li>\n    <li>Fixed: Minecraft Days info display not respecting dodaylightcycle gamerule or /time set</li>\n    <li>Fixed: Waypoint editor ignoring first keypress</li>\n    <li>Fixed: Import dialog blocking the game thread, causing disconnects on servers and hitching in singleplayer</li>\n    <li>Fixed: \"What's New\" entries duplicating each time the About screen is revisited after navigating to a feature</li>\n    <li>Fixed: Waypoint folders not refreshing in manager after import until reconnect</li>\n    <li>Fixed: Getting correct blockentity colors</li>\n    <li>Fixed: After using /transfer, JourneyMap now switches to the correct map data directory for the new server</li>\n    <li>Fixed: JourneyMap's minimap no longer interferes with other mods' HUD rendering (e.g. ChunkDebug)</li>\n    <li>Fixed: CaveSurface rendering no longer starting as black</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2026-03-25T14:46:42.950318Z",
+    "downloads": 154,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "l9SboqjW",
+        "hashes": {
+          "sha512": "43a34d04eea151d6d7375d0d14e6b3bab14579961a7ffb9f168ee7b855fd5d8226f8e8db090c6f99fe79ac2a11edefd0bf6f4e164ed6eed32635dcfa76c6004a",
+          "sha1": "4d3e6351cc6b8e64f73f041e6cb21e2c86aa0683"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/yDBzIDgF/journeymap-neoforge-1.21.1-6.0.0-beta.57.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.57.jar",
+        "primary": true,
+        "size": 3604900,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "rUGIhJpD",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.56+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.56+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.56 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>NeoForge 21.1.197</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2026-03-14-16:16:18):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.56</p>\n<ul>\n    <li>Fixed: Some unknown mod causing service loader to load on incorrect classloader in NeoForge environments</li>\n    <li>Fixed: Crash when worldId is sent before player is loaded in the world.</li>\n    <li>Fixed: Rare occasion when a player dies before the world is fully loaded, causing a brand-new waypoint file to be created, wiping the existing one.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2026-03-14T16:25:52.047835Z",
+    "downloads": 11972,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "biOR1HN4",
+        "hashes": {
+          "sha512": "aa9ace9367172bc609668029db44b838d7ac81fc2332539611f19efa925a3455905a5003a58543b34de0981265e3500f4b80d2d01624db261aa877b33f0256e5",
+          "sha1": "af54bc27ae0e5f77004625cfba8889c43a6241d0"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/rUGIhJpD/journeymap-neoforge-1.21.1-6.0.0-beta.56.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.56.jar",
+        "primary": true,
+        "size": 3564785,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "pYCESymm",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.55+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.55+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.55 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>neoforge 21.1.197</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2026-02-22-18:50:42):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.55</p>\n<ul>\n    <li>Added: Support for Controlify to the fullscreen map.</li>\n    <li>Changed: Rewrote how keybinds work, this modernizes our keybind logic. Please report any issues.</li>\n    <li>Added: rolling waypoint backup files and auto-loading the latest if failure, also improved saving so less change of file corruption.</li>\n    <li>Added: dropping .dat files into the waypoint folder with proper waypoint data will merge the files.</li>\n    <li>Fixed: Aliasing issues with grid lines and text on the map when zoomed in.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2026-02-22T19:03:05.254929Z",
+    "downloads": 20816,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "Ro3Ahetu",
+        "hashes": {
+          "sha1": "0e62411962a347279cac90042a259174a2088314",
+          "sha512": "abe6f6ff65ca3f8a9b4261baca4b81cd0eefa139a71e07b3c2990f5e224af82ad0c3a8828268bfb2a8d458c262372102fc410340e30b31c134872571a14e99be"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/pYCESymm/journeymap-neoforge-1.21.1-6.0.0-beta.55.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.55.jar",
+        "primary": true,
+        "size": 3563733,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "eFMHVijM",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.54+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.54+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.54 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>neoforge 21.1.197</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2026-02-06-18:56:05):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.54</p>\n<ul>\n    <li>Added: Checkbox to singleplayer world delete confirmation to also delete JM data for world.</li>\n    <li>Added: API: keyed customdata so mods that write to it do no overwrite eacho ther</li>\n    <li>Fixed: Fabric - disconnect when messages do not have a signature for waypoint sharing.</li>\n    <li>Fixed: Waypoint name not highlighted when opening editor.</li>\n    <li>Fixed: An issue with importing waypoints from another mod with multiplayer</li>\n    <li>Fixed: Options screen tabs do not reset mouse position to center of screen.</li>\n    <li>ModCompat: TFC trees causing chunks to not map.</li>\n    <li>ModCompat: TFC Fixed some tree and grass colors (not perfect).</li>\n    <li>ModCompat: TFC removed twigs from mapping to clean up clutter.</li>\n    <li>Changed: Moved Forge and NeoForge waypoint decoration rendering to modloader apis.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2026-02-06T19:10:26.118176Z",
+    "downloads": 17984,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "naeSr3N4",
+        "hashes": {
+          "sha512": "1082b251a0cd1a3aa3034d220a76a0cc77cd53495060f35ceb15f9cf563f6359dced9e9873fdac66dca2d5815f81d529a9ccce6c61e9e6521acc4fde1e0b9988",
+          "sha1": "c18ead3d7e536cbf3f44e4ee487cb5dd3c57e63a"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/eFMHVijM/journeymap-neoforge-1.21.1-6.0.0-beta.54.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.54.jar",
+        "primary": true,
+        "size": 3546019,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "3AZpZoxN",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.53+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.53+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.53 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>neoforge 21.1.55</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2025-12-11-03:55:59):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.53</p>\n<ul>\n    <li>Fixed: Possible thread lock with mouse movement on the fullscreen map (Very rare)</li>\n    <li>Fixed: Decorative cages from Bosses'Rise appear as mobs.</li>\n    <li>Fixed: Pixelmon icons missing when using [EMF] Entity Model Features.</li>\n    <li>Fixed: Some Environmental mobs do not generate icons.</li>\n    <li>Changed: Always Map Caves will map all cave layers. My have a slight performance hit.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2025-12-11T03:58:40.005451Z",
+    "downloads": 74183,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "8E6SlYeV",
+        "hashes": {
+          "sha1": "12fd4aade628dd0997f00f9452db04e0ac1aec00",
+          "sha512": "d828616cd627f9a09e804b52199f9884215623e76583a73c952669d66fd52f4868385cad59e5bd79dee6e899a634c2b067ba34283829c0151ef759a66bb2a090"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/3AZpZoxN/journeymap-neoforge-1.21.1-6.0.0-beta.53.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.53.jar",
+        "primary": true,
+        "size": 3538767,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "vyOPsWNv",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.52+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.52+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.52 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>neoforge 21.1.55</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2025-06-23-23:42:09):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.52</p>\n<ul>\n    <li>Added: Import/Export button in the options screen to backup or load backed up date.</li>\n    <li>Updated: Localization updates</li>\n    <li>Fixed: Forge and NeoForge issue with f3+f4</li>\n    <li>Fixed: Crash when setting group icon overrided.</li>\n    <li>Fixed: Scaling compat with QDAA</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2025-06-23T23:44:17.705266Z",
+    "downloads": 125453,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "zbC2fdxg",
+        "hashes": {
+          "sha1": "bedf8c1dae0accd66ed869b703b7f3176b00cabf",
+          "sha512": "14cab1df5ef4f650afb7e677e808a6e082aae723171d7a0c4de9c2bbee468af0a06a1fbcbdc89649ff759b044b4653d2295a9fb8c46e250b22d552387a527ae2"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/vyOPsWNv/journeymap-neoforge-1.21.1-6.0.0-beta.52.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.52.jar",
+        "primary": true,
+        "size": 3537576,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "7PI4yofJ",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.52+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.52+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.52 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>neoforge 21.1.55</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2025-06-23-18:44:32):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.52</p>\n<ul>\n    <li>Added: Import/Export button in the options screen to backup or load backed up date.</li>\n    <li>Updated: Localization updates</li>\n    <li>Fixed: Forge and NeoForge issue with f3+f4</li>\n    <li>Fixed: Crash when setting group icon overrided.</li>\n    <li>Fixed: Scaling compat with QDAA</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2025-06-23T18:57:06.132093Z",
+    "downloads": 1725,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "IDwVXn6X",
+        "hashes": {
+          "sha512": "38f447ab38f792301d936073835fd18c737d4f1310ff91e2aba6b69320f47cb79aedd41215aedbd38b2d99beef596c602ffa51720ca1e99bbf9c70206f8b314e",
+          "sha1": "e2b98ce60a50c3f08bfee7a83ef88a078dfd8c52"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/7PI4yofJ/journeymap-neoforge-1.21.1-6.0.0-beta.52.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.52.jar",
+        "primary": true,
+        "size": 3537579,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "pGVfGqAU",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.51+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.51+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.51 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>neoforge 21.1.55</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2025-06-20-22:19:29):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.51</p>\n<ul>\n    <li>Changed: share waypoint no longer uses chat mixes, uses modloader specific client commands</li>\n    <li>Fixed: Some issues with importing waypoints from other minimap mods.</li>\n    <li>Added: Support to create groups from imported waypoints.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2025-06-20T22:21:30.902717Z",
+    "downloads": 2552,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "CDUeN3kR",
+        "hashes": {
+          "sha1": "08acc47d8b7a0fa728ecc6163e39ec74fa755277",
+          "sha512": "b8c09ad581c9d455b188480c52f7635f2ce471b73d69619403444d7de7f74a5ade99540e975966ee25e6926deeddb95a805f44b52e6c8e368a7a3bc17a9210ae"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/pGVfGqAU/journeymap-neoforge-1.21.1-6.0.0-beta.51.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.51.jar",
+        "primary": true,
+        "size": 3500930,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "uZp1IkkO",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.50+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.50+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.50 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>neoforge 21.1.55</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2025-06-17-17:32:19):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.50</p>\n<ul>\n    <li>Added: New waypoint icon selection menu for when there are a lot of icons added via resource pack.</li>\n    <li>Added: Waypoint Beacon option to ignore vanilla max render distance setting.</li>\n    <li>Added: Color palette to the color picker.</li>\n    <li>Fixed: Made it so Npc.class interface is handled a bit differently than pathfindermob.class</li>\n    <li>Fixed: Compatibility with hiding effect icons and Raised mod</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2025-06-17T17:42:23.563879Z",
+    "downloads": 2569,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "TpEL8Qck",
+        "hashes": {
+          "sha512": "2de4fd8457d611179c9b0adc962e3c2c09f86d315b2b99c5c83f41c33c795a3a90d2996cb774074224f50c31ca886764e2508d89e3c10e7472cc26aedc6fb63e",
+          "sha1": "751c86554ce4e6d15c8bd6b3d875e817f467d63c"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/uZp1IkkO/journeymap-neoforge-1.21.1-6.0.0-beta.50.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.50.jar",
+        "primary": true,
+        "size": 3498174,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "tSe2TntB",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.49+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.49+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.49 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>neoforge 21.1.55</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2025-06-17-11:42:40):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.49</p>\n<ul>\n    <li>Added: New waypoint icon selection menu for when there are a lot of icons added via resource pack.</li>\n    <li>Added: Waypoint Beacon option to ignore vanilla max render distance setting.</li>\n    <li>Added: Color palette to the color picker.</li>\n    <li>Fixed: Made it so Npc.class interface is handled a bit differently than pathfindermob.class</li>\n    <li>Fixed: Compatibility with hiding effect icons and Raised mod</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2025-06-17T11:53:27.643034Z",
+    "downloads": 306,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "2NSSD4fw",
+        "hashes": {
+          "sha512": "862eff98ce2e2e027cd22f10709e2c6d6f4c9cc4f532cf7f8299f75437e51877fbc57cbfdfa5c23b2554639a822c6ead6924b553c4d17bcf4c013c4f208cef93",
+          "sha1": "b58cc5d4cf77c5ddea9fbcd40c11a6a0e583cedd"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/tSe2TntB/journeymap-neoforge-1.21.1-6.0.0-beta.49.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.49.jar",
+        "primary": true,
+        "size": 3498200,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "qv3qT6AO",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.48+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.48+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.48 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>neoforge 21.1.55</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2025-06-10-00:19:16):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.48</p>\n<ul>\n    <li>Changed: Server commands moved under the /jm prefix. So the waypoint command is now \"/jm waypoint\" or \"/jm wp\"</li>\n    <li>Added: Ability to add temp waypoints via /jm waypoint temp create ....</li>\n    <li>Added: New Grid Editor screen.</li>\n    <li>Added: New Delete Map screen.</li>\n    <li>Added: New AutoMap Screen</li>\n    <li>Rewrite: About Screen to use layouts.</li>\n    <li>Added: API: fire group transfer event when transferring waypoints to groups.</li>\n    <li>Fixed: Pixelmon icons blurring when first rendered on map.</li>\n    <li>Fixed: Deleting waypoint groups is deleting all waypoints.</li>\n    <li>Fixed: Group Create Event firing twice.</li>\n    <li>Fixed: Cave lighting when disabled \"use cave lighting\" option only rendering blocks with a light value.</li>\n    <li>Fixed: Cobblemon npc waypoint chat sharing.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2025-06-10T00:30:32.619677Z",
+    "downloads": 723008,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "nFQWVbvX",
+        "hashes": {
+          "sha1": "968800d66e36889e29f9609d6bc8651dcc214a2f",
+          "sha512": "8ac8b876386c44a7a7f13e11bca60919eb5eafeb9b73eb031e4f46253c894a22c2c7e4447961e7ceb3205b9400e7a0469c5d71fd49e292b28f003e3b1335bbb6"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/qv3qT6AO/journeymap-neoforge-1.21.1-6.0.0-beta.48.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.48.jar",
+        "primary": true,
+        "size": 3482455,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "sKqKyezs",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.47+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.47+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.47 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>neoforge 21.1.55</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2025-05-20-14:11:42):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.47</p>\n<ul>\n    <li>Added: API: fromJsonString methods for groups and waypoints. toString yields a json string.</li>\n    <li>Added: API: Persist methods for groups, so they do not save to disk.</li>\n    <li>Fixed: Waypoint Editor new Group Creation button not creating new group</li>\n    <li>Fixed: Issues when migrating 1000's of waypoints from old versions.</li>\n    <li>Fixed: Compat with Chococraft icons</li>\n    <li>Fixed: Compat with Doggy Talent Icons</li>\n    <li>Fixed: New WaypointGroup created sending update event instead of create event.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2025-05-20T14:23:20.594226Z",
+    "downloads": 14511,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "vbUhWDRU",
+        "hashes": {
+          "sha512": "ccb1f8036a2a00f62e75baabbad49887c54536ac85c5ae5c7dcb8f5ecafebb83a24e04bcf3b4787a3f4672fd3f16289d3c18024abe9bef5c72b4072bd7e66464",
+          "sha1": "401201bac450e5b55828bc30b2bffbb6f1d89ccb"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/sKqKyezs/journeymap-neoforge-1.21.1-6.0.0-beta.47.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.47.jar",
+        "primary": true,
+        "size": 3475583,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "EMdtxXeV",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.46+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.46+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.46 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>neoforge 21.1.55</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2025-05-07-20:43:48):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.46</p>\n<ul>\n    <li>Added: API: FullscreenRenderEvent to do custom rendering on the fullscreen map.</li>\n    <li>Fixed: Clearing of player radar cache on server disconnect.</li>\n    <li>Fixed: Transparency of mob icons blends with the dot color.</li>\n    <li>Fixed: Map tiles not saving when exiting the game right after the tile is generated.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2025-05-07T20:55:01.092981Z",
+    "downloads": 57789,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "aS6BJvHi",
+        "hashes": {
+          "sha512": "5001ffa5fcecb6fc1d4b1640ccfd6da2fd46dc79fe9a91b698029d30fe2a509705ca5696a02ef7ef2c2a5be90b38584855d8aa5a79be3cc7bcd0b776047ff836",
+          "sha1": "968bdbf7a3459196322cac56cbf85e4fdff71d24"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/EMdtxXeV/journeymap-neoforge-1.21.1-6.0.0-beta.46.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.46.jar",
+        "primary": true,
+        "size": 3473011,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "3ZAmRYtn",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.45+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.45+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.45 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>neoforge 21.1.55</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2025-05-04-14:30:50):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.45</p>\n<ul>\n    <li>Added: New button to waypoint manager to configure some editor options.</li>\n    <li>Added: In Waypoint Options: \"X, Y, Z\", \"X, Z, Y\", or \"Single field\" for coordinate input in the waypoint editor.</li>\n    <li>Added: Auto backup of WaypointData.dat file on load. Will load backup if issues are found with main file.</li>\n    <li>Added: Waypoint Groups can use custom icons for all waypoints in the group.</li>\n    <li>Added: In Waypoint Options: Using a single Actions button or multi buttons for waypoints in the waypoint manager.</li>\n    <li>Added: Server Admin option to disable minimap.</li>\n    <li>Added: Server Admin option to disable all coordinate displays. (Does not affect existing waypoint names)</li>\n    <li>Added: API Hook to disable minimap.</li>\n    <li>Added: New option in Minimap Position screen to hide effect icons.</li>\n    <li>Added: Cartography Option: Map only player chunk</li>\n    <li>Added: Waypoint Option to display Player Heads in world.</li>\n    <li>Added: When updating the x and z values of a waypoint, it will pull the top-y value from cache if it exists.</li>\n    <li>Changed: Cleaned up the Waypoint Manager, a bit less cluttered with Actions Button enabled, made buttons a bit larger.</li>\n    <li>Changed: Moved server disabling/enabling to info logs instead of debug.</li>\n    <li>Changed: Default vanilla teleport command to use \"/execute in {dim} run tp {name} {x} {y} {z}\"</li>\n    <li>Changed: Villager Icon for flat theme images, added a bit of gaussian blur.</li>\n    <li>Fixed: File theme and webmap asset extraction on some linux distros.</li>\n    <li>Fixed: Importing and migrating ancient waypoints (1.7.10/1.12.2)</li>\n    <li>Fixed: Custom theme minimap frame persists when switching themes.</li>\n    <li>Fixed: Automap on unlimited height worlds.</li>\n    <li>Fixed: Mouse may get stuck dragging the map while switching themes.</li>\n    <li>Fixed: Biome map mapping water with mapBathymetry enabled.</li>\n    <li>Fixed: Popup menus do not close completely when clicking on an item.</li>\n    <li>Fixed: Some issues with the map on MacOS Retina displays.</li>\n    <li>Fixed: Api overlay titles at mouse position not rendering.</li>\n    <li>Fixed: ModCompat amecs-reborn</li>\n    <li>Fixed: Waypoint Icon issues when removing an icon resource pack.</li>\n    <li>Fixed: Cave automapping not displaying lights.</li>\n    <li>Fixed: Fullscreen Map text bars not always in the correct position</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2025-05-04T14:41:46.306795Z",
+    "downloads": 1805,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "sJ0bkGLy",
+        "hashes": {
+          "sha1": "9e42f113c094291de7a1b937be3eec287dd77d20",
+          "sha512": "84a3e97c608d88e5be35d02378addec0ec5065bdf6314c6f3896a1f8efa4fb1452c940b0ddaff2b51d32aae3761eefbc4ebf13a562a048d175b83e4140efdf94"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/3ZAmRYtn/journeymap-neoforge-1.21.1-6.0.0-beta.45.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.45.jar",
+        "primary": true,
+        "size": 3471711,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "P4wOwxaT",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.44+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.44+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.44 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>neoforge 21.1.55</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2025-04-04-12:39:07):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.44</p>\n<ul>\n    <li>Added: New Minimap orientation, Vertical Rectangle. Old Rectangle is now named Horizontal Rectangle</li>\n    <li>Added: Waypoints Option to open waypoint manager in your current dimension.</li>\n    <li>Added: Addon Option when Pixelmon or Cobblemon are installed to hide or display Pokemon independent of hide animals option.</li>\n    <li>Added: Waypoint group tags to prefix on waypoint names for the group, only works on custom groups.</li>\n    <li>Added: Warning text to automap when c2me is installed.</li>\n    <li>Changed: Waypoints can be added/removed from the temp group, via dragging in the manager or editing/creation screen.</li>\n    <li>Fixed: Errors from journeymap if the server crashes, giving a false negative when JM tries to access the crashed server.</li>\n    <li>Fixed: Memory leak when previewing minimap.</li>\n    <li>Fixed: Minimap incorrectly shifting position when moving infoslots.</li>\n    <li>Fixed: Beacon Rendering when shaders are used.</li>\n    <li>Fixed: Marker and Image overlays uses MapImage blur incorrectly.</li>\n    <li>Fixed: Overlay texts with opacity 0 are displayed anyway.</li>\n    <li>Fixed: [Fabric]: Some mods that modify chat break waypoint chat sharing.</li>\n    <li>Fixed: Semi-rare crash when deleting the map in game.</li>\n    <li>Fixed: ModCompat issues with ImmediatelyFast for waypoints and minimap.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2025-04-04T12:50:27.436676Z",
+    "downloads": 27802,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "nvGKvGmG",
+        "hashes": {
+          "sha512": "2f188f7beaeec2a885afe1e09de3474e45734b50fce8f55bbea7aab773642a03db70aead617ac47b7fe2a99363e5d83c08aea2b41b2e780beba9faaa2dbc4f6d",
+          "sha1": "6745be407b757705c9776658f31a645257956389"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/P4wOwxaT/journeymap-neoforge-1.21.1-6.0.0-beta.44.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.44.jar",
+        "primary": true,
+        "size": 3400050,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "EydYCX2q",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.43+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.43+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.43 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>neoforge 21.1.55</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2025-03-27-13:07:10):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.43</p>\n<ul>\n    <li>Added: Stroke position to ShapeProperties.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2025-03-27T13:18:12.693198Z",
+    "downloads": 3612,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "BF78JsH3",
+        "hashes": {
+          "sha512": "d11eb4419093d4c6ce9d4638e19e8ba891446d8139c0c0b97d1353bb9d380beec92b5376785ab0860f5d84f34babee9d5ed62c06095bac120c31f37ffb811343",
+          "sha1": "b736a8cd35680335af0e0dfb82c35a9ea4ee453b"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/EydYCX2q/journeymap-neoforge-1.21.1-6.0.0-beta.43.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.43.jar",
+        "primary": true,
+        "size": 3388647,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "Y7fx24BE",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.42+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.42+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.42 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>neoforge 21.1.55</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2025-03-26-13:02:56):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.42</p>\n<ul>\n    <li>Fixed: Overlay labels vibrate when the player moves.</li>\n    <li>Fixed: Ice and Fire icons displaying as full texture. Resource packs are needed for icons.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2025-03-26T13:15:17.369002Z",
+    "downloads": 603,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "3dnOY0KV",
+        "hashes": {
+          "sha1": "01dca9ff85e1566912708e3c42a2148d08a1a1ef",
+          "sha512": "5b19ccdefeacb7bf8f0e3c0dd5bdd4060dc24edcb387694b258b61c1a64ba4616b1389a89be2daf89335d1940c5d4d70f4bf2fc4b90d6de7136306695e32b47f"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/Y7fx24BE/journeymap-neoforge-1.21.1-6.0.0-beta.42.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.42.jar",
+        "primary": true,
+        "size": 3386683,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "iKv46Bze",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.41+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.41+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.41 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>neoforge 21.1.55</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2025-03-18-20:50:55):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.41</p>\n<ul>\n    <li>Changed: Waypoint saving, should no longer corrupt waypoint files.</li>\n    <li>Fixed: Rare crash if attempting to save an image file with no data.</li>\n    <li>Fixed: Essential ptp server integration.</li>\n    <li>Fixed: Waypoint teleport for OPs only works for perm level 2 and larger.</li>\n    <li>Fixed: MapImage uses textureWidth/Height incorrectly swapped with displayWidth/Height.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2025-03-18T21:01:27.446879Z",
+    "downloads": 2766,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "fltDNkbM",
+        "hashes": {
+          "sha512": "ea71ec3b3590a6baa4e6abb63a554e1f1acf25cea42ae58935c065617173fbed4b43a6ddfdff452127d4de307e9fc4d2132d9615ca09b5e5e1673ba6b8a29d83",
+          "sha1": "49b3a8708856b94080ee9ee2c903fc4e8750fd0a"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/iKv46Bze/journeymap-neoforge-1.21.1-6.0.0-beta.41.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.41.jar",
+        "primary": true,
+        "size": 3386214,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "Qu7X4Z4b",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.40+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.40+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.40 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>neoforge 21.1.55</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2025-03-11-20:54:24):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.40</p>\n<ul>\n    <li>Added: Client teleport event in the API.</li>\n    <li>Added: Advanced Option to disable rendering of the minimap behind screens.</li>\n    <li>Fixed: Map not clearing old dimension map tiles for some custom servers that do not update the player's dimension.</li>\n    <li>Fixed: Issue with mipmaps not getting uploaded to gpu for some users</li>\n    <li>Fixed: Issues with water when automapping topography maps.</li>\n    <li>Change: Disable mipmapping for arc gpus due poor opengl support.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2025-03-11T21:05:59.430952Z",
+    "downloads": 3319,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "p6wSZ0QK",
+        "hashes": {
+          "sha1": "376405516182c1b3086190732897114e7c2c5af1",
+          "sha512": "1f5126fa1827f1489fd35e15bec76cfab5241eea829617313d30fd8ed003b9c60517e96d2b6208d2df9674719a3522c9ab519ac54a51998d61a67698f9ec727e"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/Qu7X4Z4b/journeymap-neoforge-1.21.1-6.0.0-beta.40.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.40.jar",
+        "primary": true,
+        "size": 3386011,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "l4QWQftp",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.39+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.39+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.39 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>neoforge 21.1.55</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2025-02-20-13:39:13):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.39</p>\n<ul>\n    <li>Fixed: Waypoints not saving.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2025-02-20T13:50:07.223646Z",
+    "downloads": 15778,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "nzgTUy0b",
+        "hashes": {
+          "sha1": "69073aa39229cdfa0fff3fd8daa18b08e7b487d1",
+          "sha512": "79d14b51ee9a53b2494656645ea0fdd6b0016ed4370673514409df19b8f575cc4f7b4f68d76077a242ba92d51fe3067da78bbd9f6ae9be725537a1df9c011a5e"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/l4QWQftp/journeymap-neoforge-1.21.1-6.0.0-beta.39.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.39.jar",
+        "primary": true,
+        "size": 3382048,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "n6o0R1gO",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.38+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.38+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.38 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>neoforge 21.1.55</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2025-02-19-23:36:08):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.38</p>\n<ul>\n    <li>Added: Internal screen blacklist for hiding minimap behind screens ( will be configurable at a later date).</li>\n    <li>Added: Temporarily hard coded to hide minimap in cobblemon battles. (will not hide if leaving an incomplete battle)</li>\n    <li>Fixed: Several crashes and errors related to waypoints.</li>\n    <li>Fixed: Teleporting when mounted.</li>\n    <li>Fixed: Mob icons fail to draw correctly when there is a mob for which an icon could not be generated.</li>\n    <li>Fixed: Polygon stroke lines being drawn between holes and border.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2025-02-19T23:48:16.429056Z",
+    "downloads": 176,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "Qi0QsnBL",
+        "hashes": {
+          "sha1": "1b6aa99be898733d2debb53eadb68b80e28e9278",
+          "sha512": "a9ba0d9f429389cf608999a30e6e1813faf1a5dec127f23ad375b3a883aaab57b3b3f823cbdb8062a4583ef159114772454b2e6e41a70748df5adb44d7cb7a55"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/n6o0R1gO/journeymap-neoforge-1.21.1-6.0.0-beta.38.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.38.jar",
+        "primary": true,
+        "size": 3382051,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "R3KrS9Wx",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.37+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.37+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.37 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>neoforge 21.1.55</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2025-01-25-21:37:32):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.37</p>\n<ul>\n    <li>Fixed: Mouse not freeing when creating a new waypoint via hotkey in world.</li>\n    <li>Fixed: Attempt to fix rare nvidia gpu crashes.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2025-01-25T21:39:33.305512Z",
+    "downloads": 3592,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "wqFdmTDV",
+        "hashes": {
+          "sha512": "1477973875b7b7925f30643ead43f4b9e6f584e78fb8e80d3ac3bc777d530ceebdf6c6e8929e0679e0a31e497e1e61b1de426ee2e1fe7264f7c734458478efec",
+          "sha1": "7f593504c1de5ddb746d4298058a9fe09c9abb86"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/R3KrS9Wx/journeymap-neoforge-1.21.1-6.0.0-beta.37.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.37.jar",
+        "primary": true,
+        "size": 3381261,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "w5eQ3DFV",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.36+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.36+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.36 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>neoforge 21.1.55</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2025-01-22-20:33:30):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.36</p>\n<ul>\n    <li>Fixed: Mouse not freeing when creating a new waypoint via hotkey in world.</li>\n    <li>Fixed: Crash when saving waypoints with custom icons from addons.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2025-01-22T20:35:25.452321Z",
+    "downloads": 470,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "Sf3g1vjO",
+        "hashes": {
+          "sha1": "0e33487d40e08e98f1fad53383bfeef9f767fecc",
+          "sha512": "3b06e31354c810e01b943371e84aa93747088455447ff6a7f95ad9c72576844986a26991533e5eccc2f4653965afd9b81b92cfc7515da79cbe9a07c6b820eee7"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/w5eQ3DFV/journeymap-neoforge-1.21.1-6.0.0-beta.36.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.36.jar",
+        "primary": true,
+        "size": 3380817,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "p0eSd6sb",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.35+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.35+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.35 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>neoforge 21.1.55</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2025-01-21-22:59:29):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.35</p>\n<ul>\n    <li>Added: Icon support for GeckoLib mobs.</li>\n    <li>Fixed: Render issue with TES mod.</li>\n    <li>Fixed: Possible crash with scaled textures.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2025-01-22T05:33:54.774139Z",
+    "downloads": 188,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "6GxLVsL1",
+        "hashes": {
+          "sha512": "b9645debf19ea13ab537b912cf0006694133d010384e40bdb9b63dfe1f19f0aeea60084d8a2a107fefc387802f470ef4dbf26f622d4dd4bda1e5847e03836ed9",
+          "sha1": "f0c2bad01884520269c0dbdcbd05507e3225cdc5"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/p0eSd6sb/journeymap-neoforge-1.21.1-6.0.0-beta.35.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.35.jar",
+        "primary": true,
+        "size": 3380753,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "zuCkQO5t",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.34+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.34+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.34 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>neoforge 21.1.55</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2025-01-14-02:05:08):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.34</p>\n<ul>\n    <li>Fixed: Render issue with TES mod.</li>\n    <li>Fixed: Possible crash with scaled textures.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2025-01-14T02:16:28.166454Z",
+    "downloads": 1365,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "VwiKMMjj",
+        "hashes": {
+          "sha512": "c3aebdbf06cd40ae2c30183c1fc6f07a33dbcdabf3eafa2e25fb2ad499b8ebf5adbfb91f06f7696453a547f988db38a7dfe4e528ad046bd3b2da03df932f7c6f",
+          "sha1": "d71f34b4c29cacf63338e064136967a212ca1b1a"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/zuCkQO5t/journeymap-neoforge-1.21.1-6.0.0-beta.34.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.34.jar",
+        "primary": true,
+        "size": 3374855,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "wyNoUFgY",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.33+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.33+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.33 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>neoforge 21.1.55</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2025-01-12-15:11:43):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.33</p>\n<ul>\n    <li>Added: Force purge all images from memory before exiting game.</li>\n    <li>Changed: Adjusted how modded flowerblock colors are calculated. Please report any issues.</li>\n    <li>Fixed: Enabling rendering of an Overworld waypoint in the nether changes waypoint position.</li>\n    <li>Fixed: Issues when using the mousebutton to open/close the fullscreen map.</li>\n    <li>Fixed: More fixes in place to prevent CCMs when getting waypoints to render and added better logging.</li>\n    <li>Fixed: Cobblemon NPC Icons</li>\n    <li>Fixed: Region tiles not getting cleaned properly when switching dimensions.</li>\n    <li>Fixed: Display Update not getting called when closing the fullscreen map.</li>\n    <li>Fixed: Waypoint command crashing servers sometimes.</li>\n    <li>Fixed: Regions of the map appear brighter when teleporting.</li>\n    <li>Fixed: Errors when resources packs use invalid namespace names.</li>\n    <li>Fixed: Weird issues with very old data.</li>\n    <li>Fixed: Mod Compat, immersive portals</li>\n    <li>Fixed: Modded leaves colors using or not using the biome color incorrectly.</li>\n    <li>Fixed: Another Waypoint crash... </li>\n    <li>Fixed: Icons and grid vibrate when the player moves.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2025-01-12T15:23:45.551389Z",
+    "downloads": 332,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "mfk39QGQ",
+        "hashes": {
+          "sha1": "780c219c970bd85512c54afedf6d953202b99a50",
+          "sha512": "9dfdf55724ef3d9842e6de09a260b97a5877d1ea83a94f84d6fa213eb8fa720be44e1fda21120f1ba63bbb919fe506efffa24af922e5604226365ae176727b2d"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/wyNoUFgY/journeymap-neoforge-1.21.1-6.0.0-beta.33.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.33.jar",
+        "primary": true,
+        "size": 3374663,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "IDctQZb0",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.32+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.32+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC <techbrew.net>.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.32 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>neoforge 21.1.55</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info/</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info/Support</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2024-12-08-00:08:38):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.32</p>\n<ul>\n    <li>Fixed: Log spam caused by biome color blending.</li>\n    <li>Fixed: Selected palette items appearing black.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2024-12-08T00:19:25.45016Z",
+    "downloads": 4282,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "R2ExgmNn",
+        "hashes": {
+          "sha512": "5a7a23bdf300f7332d83d61dcd0673ecb18c9621be17b200faf4e2d48fb517115051aabd6361c8e84664c82a7992b308923bd937173a6904fe412670a8eac68d",
+          "sha1": "aff42ab4ad20317deaf334ff246e97aebd9f923e"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/IDctQZb0/journeymap-neoforge-1.21.1-6.0.0-beta.32.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.32.jar",
+        "primary": true,
+        "size": 3369986,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "H5Y4KoD8",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.31+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.31+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC <techbrew.net>.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.31 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>neoforge 21.1.55</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info/</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info/Support</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2024-11-30-14:16:45):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.31</p>\n<ul>\n    <li>Fixed: Performance issue with map rendering.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2024-11-30T14:27:19.485389Z",
+    "downloads": 737,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "SdNRYd2r",
+        "hashes": {
+          "sha1": "5cbb7064607ea24ec3ec0500720617ee01c4617e",
+          "sha512": "2eb0cdbe462b42f629808cd59d80b8a20df6b433b86ae4736ac3b4f8a64321e5fa3984970ae31cbb846f5d960d3e09a76ed7a26b4e13c0cefba73c060a3af5e8"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/H5Y4KoD8/journeymap-neoforge-1.21.1-6.0.0-beta.31.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.31.jar",
+        "primary": true,
+        "size": 3370602,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "DM7I13sW",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.30+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.30+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC <techbrew.net>.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.30 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>neoforge 21.1.55</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info/</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info/Support</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2024-11-29-15:53:27):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.30</p>\n<ul>\n    <li>Fixed: Fullscreen waypoint teleporting when waypoint is below blocks.</li>\n    <li>Fixed: Waypoint teleporting nether calculations when JM is not on the server.</li>\n    <li>Fixed: Automapping does not apply biome colors.</li>\n    <li>Fixed: Weird biome color blending on chunks borders.</li>\n    <li>Fixed: Better cleaning up of region images once expired.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2024-11-29T16:04:49.260455Z",
+    "downloads": 240,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "Ef9bj1XW",
+        "hashes": {
+          "sha1": "efb044509bef78cf7096d093c4e40a966ee71d91",
+          "sha512": "1866068ffb98ef0cd627eed65f17d5bc7f09c148d83044431ccf95b942d3cce7945152e8902ad0dbac361a56f75d4f5e481a773845df6e0be0814742090bbb08"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/DM7I13sW/journeymap-neoforge-1.21.1-6.0.0-beta.30.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.30.jar",
+        "primary": true,
+        "size": 3370604,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "SICTh4y0",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.29+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.29+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC <techbrew.net>.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.29 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>neoforge 21.1.55</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info/</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info/Support</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2024-11-01-21:45:30):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.29</p>\n<ul>\n    <li>Fixed: Some weirdness when enabling and disabling all waypoints in a group.</li>\n    <li>Fixed: Crash with auto remove deathpoints enabled.</li>\n    <li>Updated: Major Optimization of map tile loading, very noticeable for very large maps.</li>\n</ul>\n<p>Known Issues</p>\n<ul>\n    <li>Auto-Map: When blending is turned on, biome colors are not respected.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2024-11-01T21:57:13.234235Z",
+    "downloads": 5207,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "ByB8Vq0U",
+        "hashes": {
+          "sha512": "a1d7efeecc5c9f6c25798ac9f818ffd96d617df6cfa4dc9beae7da84747ab70fe62a1dd65040d2b217575b05104ec7c01380f027504bec57bd316101718d9f72",
+          "sha1": "87397f30ee001eaefacbab23fc718fe0158d2fa9"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/SICTh4y0/journeymap-neoforge-1.21.1-6.0.0-beta.29.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.29.jar",
+        "primary": true,
+        "size": 3370603,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "wRBvrJPG",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21.1-6.0.0-beta.28+neoforge",
+    "version_number": "1.21.1-6.0.0-beta.28+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC <techbrew.net>.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21.1-6.0.0-beta.28 for Minecraft 1.21.1</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21.1</li>\n    <li>neoforge 21.1.55</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info/</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info/Support</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2024-10-17-22:06:26):</strong></p>\n\n<p>New in 1.21.1-6.0.0-beta.28</p>\n<ul>\n    <li>Added: Option to disable waypoint delete confirmation.</li>\n    <li>Added: Delete re-added to journeymap's native groups. This deletes the waypoints in the group, not the group itself.</li>\n    <li>Fixed: Broken Legacy mob icon resource packs.</li>\n    <li>Fixed: Setting max render distance on the server</li>\n    <li>Fixed: Some resource pack issues for mob icons.</li>\n    <li>Fixed: Broken fish icons from Aquaculture fish and possibly other mods.</li>\n    <li>Fixed: Biome color lookup. This significantly improves automapping.</li>\n    <li>Updated: Rewrote the player head fetching code.</li>\n    <li>Updated: Player Locations packet more optimized, use fewer packets and less data.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2024-10-17T22:17:27.699223Z",
+    "downloads": 2085,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "laLcfohL",
+        "hashes": {
+          "sha512": "bd0d11339ee430fbfc329b88c47149acc68ef9d9f2fddcd882369729730287e0e816c17b8024ede4d921299660b537b78bca1b1b250fe58e4c2e7698c22bf48b",
+          "sha1": "cd0e56665fa872a80cd31ff173ee7ee8e0f7e957"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/wRBvrJPG/journeymap-neoforge-1.21.1-6.0.0-beta.28.jar",
+        "filename": "journeymap-neoforge-1.21.1-6.0.0-beta.28.jar",
+        "primary": true,
+        "size": 3369867,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "CZ1JwxMf",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21-6.0.0-beta.27+neoforge",
+    "version_number": "1.21-6.0.0-beta.27+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC <techbrew.net>.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21-6.0.0-beta.27 for Minecraft 1.21</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21</li>\n    <li>neoforge 21.0.143</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info/</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info/Support</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2024-10-02-19:20:32):</strong></p>\n\n<p>New in 1.21-6.0.0-beta.27</p>\n<ul>\n    <li>Fixed: A collection crash.</li>\n    <li>Fixed: Minimap behind screens not respecting the visibility toggle.</li>\n    <li>Fixed: Waypoint rendering race condition causing a null group crash.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2024-10-02T19:31:33.526686Z",
+    "downloads": 10552,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "TLRrUi1A",
+        "hashes": {
+          "sha1": "73020606324e56e690d2f15b972a1aeeb00af941",
+          "sha512": "da06ad9e86c2f01c9f5fd1b34ec5fd3a5a47c78cdbc5c64fae3d0bc00f08a23cdac7b71105c893b6b87d577efcae0eb6692a93ad8a8efe3a4779ebade81bad0d"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/CZ1JwxMf/journeymap-neoforge-1.21-6.0.0-beta.27.jar",
+        "filename": "journeymap-neoforge-1.21-6.0.0-beta.27.jar",
+        "primary": true,
+        "size": 3366887,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "3DZHPwan",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21-6.0.0-beta.26+neoforge",
+    "version_number": "1.21-6.0.0-beta.26+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC <techbrew.net>.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21-6.0.0-beta.26 for Minecraft 1.21</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21</li>\n    <li>neoforge 21.0.82-beta</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info/</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info/Support</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2024-09-30-23:15:52):</strong></p>\n\n<p>New in 1.21-6.0.0-beta.26</p>\n<ul>\n    <li>Added: New Fullscreen Option: Minimal UI which hides most of the buttons on the fullscreen map.</li>\n    <li>Changed: Color cache is no longer generated on load but rather as needed or when the color palette screen is opened.</li>\n    <li>Fixed: Crash if for some reason a waypoint does not have a group.</li>\n    <li>Fixed: Import Xaeros importing waypoints on multiplayer servers.</li>\n    <li>Fixed: Compatibility issue with Moonrise.</li>\n    <li>Fixed: A collection crash.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2024-09-30T23:26:51.368241Z",
+    "downloads": 552,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "hCiJDvUo",
+        "hashes": {
+          "sha512": "1eb53c5bf82778596db08f7ade4114da929d790c2983c2123b6544990d074ad22eb7c2e9adea1ca8a4df5ffd52b07043f4ff0f63420e0bd51e5378cafdbea73f",
+          "sha1": "e901e9728de1e05db7664b0ccc5bdd096db0cbad"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/3DZHPwan/journeymap-neoforge-1.21-6.0.0-beta.26.jar",
+        "filename": "journeymap-neoforge-1.21-6.0.0-beta.26.jar",
+        "primary": true,
+        "size": 3366859,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "NRoZU38G",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21-6.0.0-beta.25+neoforge",
+    "version_number": "1.21-6.0.0-beta.25+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC <techbrew.net>.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21-6.0.0-beta.25 for Minecraft 1.21</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21</li>\n    <li>neoforge 21.0.82-beta</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info/</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info/Support</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2024-09-09-22:03:28):</strong></p>\n\n<p>New in 1.21-6.0.0-beta.25</p>\n<ul>\n    <li>Added: Addons can now add extra infoslots</li>\n    <li>Changed: Client will send packets to server if the server has initiated the connection, even if it is not in the registered channels list.</li>\n    <li>Fixed: Polygons drawing outside the minimap.</li>\n    <li>Fixed: State reset loop when mapping is disabled.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2024-09-09T22:14:29.697641Z",
+    "downloads": 2183,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "tqBjgYS8",
+        "hashes": {
+          "sha512": "cc238f000519271575227c965e60c83a528e158bb27e8e0c2f9e086bf28d68e0541e0d26d0eda0356e26556bfc3f34b15596b79689c93fd6a203e4090598b833",
+          "sha1": "c59bbdb99f7da62f766b40a024931a000eeabee8"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/NRoZU38G/journeymap-neoforge-1.21-6.0.0-beta.25.jar",
+        "filename": "journeymap-neoforge-1.21-6.0.0-beta.25.jar",
+        "primary": true,
+        "size": 3354898,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "kOPZxRz6",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21-6.0.0-beta.24+neoforge",
+    "version_number": "1.21-6.0.0-beta.24+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC <techbrew.net>.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21-6.0.0-beta.24 for Minecraft 1.21</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21</li>\n    <li>neoforge 21.0.82-beta</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info/</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info/Support</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2024-09-06-17:12:57):</strong></p>\n\n<p>New in 1.21-6.0.0-beta.24</p>\n<ul>\n    <li>Updated: InfoSlot registration to take components.</li>\n    <li>Fixed: Exceptions caused when looking for external waypoints causing a crash when opening waypoint manager.</li>\n    <li>Fixed: DynamicTextures crash when loading off the main thread.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2024-09-06T17:23:53.2056Z",
+    "downloads": 550,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "fiI2YFcY",
+        "hashes": {
+          "sha1": "59761690c874df0c20bdd0d281de0b359d199a3b",
+          "sha512": "8d393fa545331d8c21752bd12d3d6ca7b38b254578913d7d3a717c689ad045d745b28bc6c377c0f3a70223d3aba9e416124a229f73b47cc0c57812c56123e90e"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/kOPZxRz6/journeymap-neoforge-1.21-6.0.0-beta.24.jar",
+        "filename": "journeymap-neoforge-1.21-6.0.0-beta.24.jar",
+        "primary": true,
+        "size": 3352498,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "ELLkZlE6",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21-6.0.0-beta.23+neoforge",
+    "version_number": "1.21-6.0.0-beta.23+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC <techbrew.net>.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21-6.0.0-beta.23 for Minecraft 1.21</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21</li>\n    <li>neoforge 21.0.43-beta</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info/</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info/Support</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2024-09-04-20:20:39):</strong></p>\n\n<p>New in 1.21-6.0.0-beta.23</p>\n<ul>\n    <li>Added: Map Option to show offscreen players.</li>\n    <li>Added: New InfoSlot: Minecraft Day, know how many minecraft days you have played!</li>\n    <li>Added: Advanced Option: Disable mob icon fade based on vertical distance from player.</li>\n    <li>Added: Fullscreen Option to hide the theme button on the fullscreen map.</li>\n    <li>Added: Waypoint Option to enable/disable rendering of waypoints (key bind for this exists already).</li>\n    <li>Added: Waypoint Option to enable/disable rendering of waypoints in world and key bind.</li>\n    <li>Added: Waypoint Option to enable/disable rendering of waypoints on map and key bind.</li>\n    <li>Added: Waypoint Option Auto-Hide Icon range</li>\n    <li>Added: Waypoint Option Auto-Hide Label range</li>\n    <li>Added: Waypoint Option Auto-Hide Icon range</li>\n    <li>Added: Waypoint Option to remove decimals from /tp command.</li>\n    <li>Added: Waypoint Option to disable share waypoint, also removes the chat position from right click menu in fullscreen map.</li>\n    <li>Added: Minimap Options to move infoslots to the top or bottom of the minimap.</li>\n    <li>Added: Cartography Option to ignore snow, this may have weird effects.(experimental and may be removed in the future)</li>\n    <li>Added: Two house looking waypoint icons.</li>\n    <li>Added: Group button to enable/disable group.</li>\n    <li>Added: MapImage disable or enable blur on images.</li>\n    <li>Added: Server Option to disable/enable right click teleporting on full map when waypoint teleport is enabled.</li>\n    <li>Added: Server Options to adjust radar ranges and entity counts.</li>\n    <li>Added: Server Option to adjust max cave render distance.</li>\n    <li>Added: Server Option to disable player names with player radar.</li>\n    <li>Added: Waypoint Manager button to import external waypoints from Xaeros. Button only exists if xaero's waypoints are detected.</li>\n    <li>Changed: Server Option max render distance changed to Max Surface render distance.</li>\n    <li>Changed: Game Time Real Info slot time format option to Info Slot Game Time Format. This also effects the Game Time infoslot.</li>\n    <li>Changed: InfoSlot Game Time Real name to \"Game Time with Offset\". To reflect the real world time offset.</li>\n    <li>Changed: Waypoint Option \"Show Icon\" to \"Auto-Hide Icon\"</li>\n    <li>Changed: Webmap port increased to allow up to 65535.</li>\n    <li>Changed: Default Player display to Outlined Icons.</li>\n    <li>Fixed: Offscreen waypoints not showing on the top or left side of fullscreen map.</li>\n    <li>Fixed: Crash when opening waypoint manager if a group is saved with a color override but no color set.</li>\n    <li>Fixed: Unable to update group color unless user disables and enables color override value.</li>\n    <li>Fixed: Edit waypoint button partially offscreen in gui scale 4.</li>\n    <li>Fixed: Exception being thrown from a null server if the server crashes by another mod.</li>\n    <li>Fixed: Unable to update waypoints, broke this in beta.22.</li>\n    <li>Fixed: AutoHide waypoint label option.</li>\n    <li>Fixed: Leaves colors do not use the biome tint.</li>\n    <li>Fixed: Effects do not respect minimap when changing gui-scale or minecraft window size.</li>\n    <li>Fixed: Possible naming issue when joining a realms server from the launcher.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2024-09-04T20:32:23.384918Z",
+    "downloads": 409,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "p1gPOKZN",
+        "hashes": {
+          "sha1": "eb159ba263ec6a18cb88b2ae8fe5aec4fc64d7b2",
+          "sha512": "3d25b04415b1d069d23038a93447731b7ac070ce8b8f316823bda10f3ce594a9d2f64c97f0874207e61417b9dc39fe61a652f5efee198f0364d299dc5966fb5b"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/ELLkZlE6/journeymap-neoforge-1.21-6.0.0-beta.23.jar",
+        "filename": "journeymap-neoforge-1.21-6.0.0-beta.23.jar",
+        "primary": true,
+        "size": 3350670,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "lw5mFT1q",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21-6.0.0-beta.22+neoforge",
+    "version_number": "1.21-6.0.0-beta.22+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC <techbrew.net>.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21-6.0.0-beta.22 for Minecraft 1.21</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21</li>\n    <li>neoforge 21.0.43-beta</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info/</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info/Support</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2024-08-28-20:34:24):</strong></p>\n\n<p>New in 1.21-6.0.0-beta.22</p>\n<ul>\n    <li>Added: New Cartography option to ignore heightmaps.</li>\n    <li>Fixed: Forge crash</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2024-08-28T20:45:15.933028Z",
+    "downloads": 806,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "W5vBzKZ0",
+        "hashes": {
+          "sha1": "d39d088e9f0afc48b1f408844eedcbbbd2e171ca",
+          "sha512": "181456f98838059d6e59b478cd1db1e7deb70db18700c4d7de31e5e5a2e069b646caa8e3002efc3c49b009ca30ed2a64a2a00287a81bb25f82d12e37c6cdb91e"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/lw5mFT1q/journeymap-neoforge-1.21-6.0.0-beta.22.jar",
+        "filename": "journeymap-neoforge-1.21-6.0.0-beta.22.jar",
+        "primary": true,
+        "size": 3272197,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "KX1qvq4a",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21-6.0.0-beta.21+neoforge",
+    "version_number": "1.21-6.0.0-beta.21+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC <techbrew.net>.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21-6.0.0-beta.21 for Minecraft 1.21</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21</li>\n    <li>neoforge 21.0.43-beta</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info/</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info/Support</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2024-08-28-17:17:09):</strong></p>\n\n<p>New in 1.21-6.0.0-beta.21</p>\n<ul>\n    <li>Added: Tooltip to dimensions panel in waypoint editor.</li>\n    <li>Added: Add waypoints that were shared from Xaeros via chat.</li>\n    <li>Added: New Multiplayer Debug options for Server Admins, with JourneyMap loaded chunks can be viewed on the map.</li>\n    <li>Added: Cartography options to adjust the max height for topography calculations. This will ensure old worlds loaded with the new build heights won't break topo maps.</li>\n    <li>Added: Hotkey to enable/disable waypoints.</li>\n    <li>Added: Button to waypoint panel to enable / disable visible waypoints.</li>\n    <li>Added: Group CRUD operations to ClientAPI.</li>\n    <li>Added: Support for AMECS fork too many shortcuts</li>\n    <li>Added: Button to fill a palette with default colors</li>\n    <li>Fixed: Some dimension issues with waypoint chat sharing</li>\n    <li>Fixed: API setting waypoint icon will now have a default of 16x16 texture size.</li>\n    <li>Fixed: Sometimes players remain on map after disconnect on velocity servers.</li>\n    <li>Fixed: Wierd border issues on dropdown/popup menus.</li>\n    <li>Fixed: Cache not saving Biome Key correctly when automapping.</li>\n    <li>Fixed: Log spam if server disables deathpoints and user has never had a deathpoint.</li>\n    <li>Fixed: Fullscreen slice slider when nether heights are not default.</li>\n    <li>Fixed: Crash with Flachback mod replays.</li>\n    <li>Fixed: Waypoints occupying the same X Z coordinates.</li>\n    <li>Updated: Spanish translations and added more spanish variants.</li>\n    <li>Changed: Improved waypoint text when shared via chat.</li>\n    <li>Changed: The existing hotkey for toggle waypoints changed to toggle rendering, this only disables rendering.</li>\n    <li>Changed: Clearing some state on server when exiting game.</li>\n    <li>Removed: Old waypoint manager code and options associated with it.</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2024-08-28T17:28:24.005794Z",
+    "downloads": 114,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "DXw0IWEi",
+        "hashes": {
+          "sha1": "36dd95ba0de3791561aa3e1bfdccdf45554cf9c9",
+          "sha512": "4ea5d062ff1f3a223a97c4defb94e34e624658a8014f85d77543c7204e1671fe15d92a6c3d2fafb6eb0d328f05a1496b887ee994c2f924a45a9fda10874cb9ce"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/KX1qvq4a/journeymap-neoforge-1.21-6.0.0-beta.21.jar",
+        "filename": "journeymap-neoforge-1.21-6.0.0-beta.21.jar",
+        "primary": true,
+        "size": 3271936,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "IUfAT2nr",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21-6.0.0-beta.20+neoforge",
+    "version_number": "1.21-6.0.0-beta.20+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC <techbrew.net>.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21-6.0.0-beta.20 for Minecraft 1.21</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21</li>\n    <li>neoforge 21.0.43-beta</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info/</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info/Support</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2024-08-10-21:42:47):</strong></p>\n\n<p>New in 1.21-6.0.0-beta.20</p>\n<ul>\n    <li>Fixed: Potential Crash when saving waypoint with no group selected.</li>\n    <li>Updated: User submitted translations</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2024-08-10T21:53:54.474381Z",
+    "downloads": 3400,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "QG0zm8x9",
+        "hashes": {
+          "sha512": "1a05ed1cbd3564384785e49e28535dc0e9a472226fa9906aa155028dc585de14ca42f6ca745e5dbdf0a55e8bc8a07c6bff27e6abc43acc2ea40a345ab7cfcfd6",
+          "sha1": "94b5795bbd3cf2fd4240dc98c878a299338ee748"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/IUfAT2nr/journeymap-neoforge-1.21-6.0.0-beta.20.jar",
+        "filename": "journeymap-neoforge-1.21-6.0.0-beta.20.jar",
+        "primary": true,
+        "size": 3185360,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "6VqqKRy6",
+    "project_id": "lfHFW1mp",
+    "author_id": "kYOHYSUU",
+    "featured": false,
+    "name": "journeymap-1.21-6.0.0-beta.19+neoforge",
+    "version_number": "1.21-6.0.0-beta.19+neoforge",
+    "changelog": "<!--\n  ~ JourneyMap Mod <journeymap.info> for Minecraft\n  ~ Copyright (c) 2011-2018  Techbrew Interactive, LLC <techbrew.net>.  All Rights Reserved.\n  -->\n\n<h1>JourneyMap 1.21-6.0.0-beta.19 for Minecraft 1.21</h1>\n<p><strong>Requirements:</strong></p>\n<ul>\n    <li>Java 21</li>\n    <li>Minecraft 1.21</li>\n    <li>neoforge 21.0.43-beta</li>\n</ul>\n<p><strong>General Information:</strong></p>\n<ul>\n    <li>See <a href=\"http://journeymap.info/\">http://journeymap.info/</a> for information about how to install and use\n        this mod, rules about inclusion in modpacks, translation, etc.\n    </li>\n    <li>See <a href=\"http://journeymap.info/Support\">http://journeymap.info/Support</a>&nbsp;for information on getting\n        technical support.\n    </li>\n    <li>Implements <a href=\"https://github.com/TeamJM/journeymap-api\">JourneyMap API v2.0.0</a></li>\n</ul>\n<p><strong>CHANGELOG (2024-08-09-21:45:45):</strong></p>\n\n<p>New in 1.21-6.0.0-beta.19</p>\n<ul>\n    <li>IMPORTANT: New Waypoint Manager is no on by default!</li>\n    <li>Updated: Marked as compatible with 1.21.1 with cf/mr.</li>\n    <li>Updated: New Icon for death points (cleaner x)</li>\n    <li>Updated: Dropdowns arrows switched to an image instead of a pixilated glyph</li>\n    <li>Added: Biome color editing to the color palette.</li>\n    <li>Fixed: Data caches not resetting properly if mapping is disabled.</li>\n    <li>Fixed: Mapping disabled still allows waypoints to work and display.</li>\n    <li>Fixed: Cache flushing on slower hard drives causing a lag spike.</li>\n    <li>Fixed: Disabling deathpoints by the server causing odd issues.</li>\n    <li>Fixed: Custom waypoint command {name} for waypoint name switched to {wpname}</li>\n    <li>Fixed: Waypoint icons rendering ontop of crosshair</li>\n    <li>Fixed: Waypoint icons and labels will render when chat screen is open.</li>\n    <li>Fixed: Compatability issue with ImmediatelyFast Mod</li>\n    <li>Fixed: Waypoint icons will now always show. (This will be added as a config option at a later date.)</li>\n</ul>\n",
+    "changelog_url": null,
+    "date_published": "2024-08-09T21:56:58.075438Z",
+    "downloads": 500,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "RnxYb1O1",
+        "hashes": {
+          "sha1": "7fd4d5e92547c28478fdf1f5e4b5b501cd0e3128",
+          "sha512": "55eb7c898b287792100c15f9e1f6932942e5a994e64fef25bc9cca621551637923c491a6c60bcb55d71fff71451fd784786a902bc5a5a452244a515a3d1f1ed2"
+        },
+        "url": "https://cdn.modrinth.com/data/lfHFW1mp/versions/6VqqKRy6/journeymap-neoforge-1.21-6.0.0-beta.19.jar",
+        "filename": "journeymap-neoforge-1.21-6.0.0-beta.19.jar",
+        "primary": true,
+        "size": 3136670,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  }
+]

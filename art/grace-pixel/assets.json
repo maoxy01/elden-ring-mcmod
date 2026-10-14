@@ -1,0 +1,836 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-13",
+  "namespace": "eldencombat",
+  "runtimeIntegrated": false,
+  "inGameAccepted": false,
+  "provenance": {
+    "author": "Codex art department",
+    "method": "Original authored pixel grids; no third-party texture extraction",
+    "license": "CC0-1.0",
+    "source": "art/tooling/build-grace-pixel-art.mjs"
+  },
+  "palette": {
+    ".": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "d": [
+      72,
+      63,
+      38,
+      255
+    ],
+    "g": [
+      175,
+      138,
+      51,
+      255
+    ],
+    "y": [
+      226,
+      190,
+      79,
+      255
+    ],
+    "l": [
+      252,
+      231,
+      153,
+      255
+    ],
+    "k": [
+      48,
+      49,
+      48,
+      255
+    ],
+    "s": [
+      100,
+      105,
+      103,
+      255
+    ],
+    "w": [
+      208,
+      212,
+      204,
+      255
+    ],
+    "r": [
+      175,
+      89,
+      79,
+      255
+    ],
+    "a": [
+      226,
+      190,
+      79,
+      96
+    ],
+    "b": [
+      252,
+      231,
+      153,
+      192
+    ]
+  },
+  "assets": [
+    {
+      "id": "eldencombat:grace_ancient_undiscovered",
+      "kind": "map",
+      "file": "textures/map/grace_ancient_undiscovered.png",
+      "width": 16,
+      "height": 16,
+      "frameSize": [
+        16,
+        16
+      ],
+      "anchorPixels": [
+        8,
+        8
+      ],
+      "frames": [
+        [
+          "................",
+          "................",
+          "........s.......",
+          ".......ksw......",
+          ".....s.ksw......",
+          "......sssw.s....",
+          ".......ksss.....",
+          ".......ksw......",
+          ".......ksw......",
+          ".......ks.......",
+          ".......ks.......",
+          "......sssss.....",
+          "....ss.....s....",
+          ".....kkkkkk.....",
+          "................",
+          "................"
+        ]
+      ],
+      "origin": "ancient",
+      "state": "undiscovered",
+      "visibleOnWorldMap": false
+    },
+    {
+      "id": "eldencombat:grace_ancient_discovered",
+      "kind": "map",
+      "file": "textures/map/grace_ancient_discovered.png",
+      "width": 16,
+      "height": 16,
+      "frameSize": [
+        16,
+        16
+      ],
+      "anchorPixels": [
+        8,
+        8
+      ],
+      "frames": [
+        [
+          "................",
+          "................",
+          "........y.......",
+          ".......dyl......",
+          ".....y.dyl......",
+          "......yyyl.y....",
+          ".......dyyy.....",
+          ".......dyl......",
+          ".......dyl......",
+          ".......dy.......",
+          ".......dy.......",
+          "......yyyyy.....",
+          "....yy.....y....",
+          ".....dddddd.....",
+          "................",
+          "................"
+        ]
+      ],
+      "origin": "ancient",
+      "state": "discovered",
+      "visibleOnWorldMap": true
+    },
+    {
+      "id": "eldencombat:grace_ancient_public",
+      "kind": "map",
+      "file": "textures/map/grace_ancient_public.png",
+      "width": 16,
+      "height": 16,
+      "frameSize": [
+        16,
+        16
+      ],
+      "anchorPixels": [
+        8,
+        8
+      ],
+      "frames": [
+        [
+          "................",
+          "................",
+          "........y.......",
+          ".......dyl......",
+          ".....y.dyl......",
+          "......yyyl.y....",
+          ".......dyyy.....",
+          ".......dyl......",
+          ".......dyl......",
+          ".......dy.......",
+          ".......dy.kkskk.",
+          "......yyyykkwkk.",
+          "....yy....kwwws.",
+          ".....dddddkkwkk.",
+          "..........kkkkk.",
+          "................"
+        ]
+      ],
+      "origin": "ancient",
+      "state": "public",
+      "visibleOnWorldMap": true
+    },
+    {
+      "id": "eldencombat:grace_ancient_private",
+      "kind": "map",
+      "file": "textures/map/grace_ancient_private.png",
+      "width": 16,
+      "height": 16,
+      "frameSize": [
+        16,
+        16
+      ],
+      "anchorPixels": [
+        8,
+        8
+      ],
+      "frames": [
+        [
+          "................",
+          "................",
+          "........y.......",
+          ".......dyl......",
+          ".....y.dyl......",
+          "......yyyl.y....",
+          ".......dyyy.....",
+          ".......dyl......",
+          ".......dyl......",
+          ".......dy.kkkkkk",
+          ".......dy.kkwwkk",
+          "......yyyykwkkwk",
+          "....yy....kwkkwk",
+          ".....dddddkwwkwk",
+          "..........kwwwwk",
+          "..........kkkkkk"
+        ]
+      ],
+      "origin": "ancient",
+      "state": "private",
+      "visibleOnWorldMap": true
+    },
+    {
+      "id": "eldencombat:grace_ancient_invalid",
+      "kind": "map",
+      "file": "textures/map/grace_ancient_invalid.png",
+      "width": 16,
+      "height": 16,
+      "frameSize": [
+        16,
+        16
+      ],
+      "anchorPixels": [
+        8,
+        8
+      ],
+      "frames": [
+        [
+          "................",
+          "................",
+          "........s.......",
+          ".......ksw......",
+          ".....s.ksw......",
+          "......sssw.s....",
+          ".......ksss.....",
+          ".......ksw......",
+          ".......ksw......",
+          ".......ks.......",
+          ".......ks.kkkkk.",
+          "......sssskrkrk.",
+          "....ss....kkrkk.",
+          ".....kkkkkkrkrk.",
+          "..........kkkkk.",
+          "................"
+        ]
+      ],
+      "origin": "ancient",
+      "state": "invalid",
+      "visibleOnWorldMap": true
+    },
+    {
+      "id": "eldencombat:grace_player_undiscovered",
+      "kind": "map",
+      "file": "textures/map/grace_player_undiscovered.png",
+      "width": 16,
+      "height": 16,
+      "frameSize": [
+        16,
+        16
+      ],
+      "anchorPixels": [
+        8,
+        8
+      ],
+      "frames": [
+        [
+          "................",
+          "................",
+          "........s.......",
+          ".......ksw......",
+          ".....s.ksw......",
+          "......sssw.s....",
+          ".......ksss.....",
+          ".......ksw......",
+          ".......wss......",
+          "......skkks.....",
+          "......ksksk.....",
+          "......sssss.....",
+          "....ss.....s....",
+          ".....kkkkkk.....",
+          "................",
+          "................"
+        ]
+      ],
+      "origin": "player",
+      "state": "undiscovered",
+      "visibleOnWorldMap": false
+    },
+    {
+      "id": "eldencombat:grace_player_discovered",
+      "kind": "map",
+      "file": "textures/map/grace_player_discovered.png",
+      "width": 16,
+      "height": 16,
+      "frameSize": [
+        16,
+        16
+      ],
+      "anchorPixels": [
+        8,
+        8
+      ],
+      "frames": [
+        [
+          "................",
+          "................",
+          "........y.......",
+          ".......dyl......",
+          ".....y.dyl......",
+          "......yyyl.y....",
+          ".......dyyy.....",
+          ".......dyl......",
+          ".......lyy......",
+          "......ydddy.....",
+          "......dydyd.....",
+          "......yyyyy.....",
+          "....yy.....y....",
+          ".....dddddd.....",
+          "................",
+          "................"
+        ]
+      ],
+      "origin": "player",
+      "state": "discovered",
+      "visibleOnWorldMap": true
+    },
+    {
+      "id": "eldencombat:grace_player_public",
+      "kind": "map",
+      "file": "textures/map/grace_player_public.png",
+      "width": 16,
+      "height": 16,
+      "frameSize": [
+        16,
+        16
+      ],
+      "anchorPixels": [
+        8,
+        8
+      ],
+      "frames": [
+        [
+          "................",
+          "................",
+          "........y.......",
+          ".......dyl......",
+          ".....y.dyl......",
+          "......yyyl.y....",
+          ".......dyyy.....",
+          ".......dyl......",
+          ".......lyy......",
+          "......ydddy.....",
+          "......dydykkskk.",
+          "......yyyykkwkk.",
+          "....yy....kwwws.",
+          ".....dddddkkwkk.",
+          "..........kkkkk.",
+          "................"
+        ]
+      ],
+      "origin": "player",
+      "state": "public",
+      "visibleOnWorldMap": true
+    },
+    {
+      "id": "eldencombat:grace_player_private",
+      "kind": "map",
+      "file": "textures/map/grace_player_private.png",
+      "width": 16,
+      "height": 16,
+      "frameSize": [
+        16,
+        16
+      ],
+      "anchorPixels": [
+        8,
+        8
+      ],
+      "frames": [
+        [
+          "................",
+          "................",
+          "........y.......",
+          ".......dyl......",
+          ".....y.dyl......",
+          "......yyyl.y....",
+          ".......dyyy.....",
+          ".......dyl......",
+          ".......lyy......",
+          "......ydddkkkkkk",
+          "......dydykkwwkk",
+          "......yyyykwkkwk",
+          "....yy....kwkkwk",
+          ".....dddddkwwkwk",
+          "..........kwwwwk",
+          "..........kkkkkk"
+        ]
+      ],
+      "origin": "player",
+      "state": "private",
+      "visibleOnWorldMap": true
+    },
+    {
+      "id": "eldencombat:grace_player_invalid",
+      "kind": "map",
+      "file": "textures/map/grace_player_invalid.png",
+      "width": 16,
+      "height": 16,
+      "frameSize": [
+        16,
+        16
+      ],
+      "anchorPixels": [
+        8,
+        8
+      ],
+      "frames": [
+        [
+          "................",
+          "................",
+          "........s.......",
+          ".......ksw......",
+          ".....s.ksw......",
+          "......sssw.s....",
+          ".......ksss.....",
+          ".......ksw......",
+          ".......wss......",
+          "......skkks.....",
+          "......kskskkkkk.",
+          "......sssskrkrk.",
+          "....ss....kkrkk.",
+          ".....kkkkkkrkrk.",
+          "..........kkkkk.",
+          "................"
+        ]
+      ],
+      "origin": "player",
+      "state": "invalid",
+      "visibleOnWorldMap": true
+    },
+    {
+      "id": "eldencombat:grace_rest",
+      "kind": "ui",
+      "file": "textures/ui/grace_rest.png",
+      "width": 16,
+      "height": 16,
+      "frameSize": [
+        16,
+        16
+      ],
+      "anchorPixels": [
+        0,
+        0
+      ],
+      "frames": [
+        [
+          "................",
+          "................",
+          "................",
+          "................",
+          "................",
+          "................",
+          "..k.............",
+          "..k.www.........",
+          "..kswwwwwwwwsk..",
+          "..kssssssssssk..",
+          "..kssssssssssk..",
+          "..k..........k..",
+          "..k..........k..",
+          "................",
+          "................",
+          "................"
+        ]
+      ]
+    },
+    {
+      "id": "eldencombat:grace_travel",
+      "kind": "ui",
+      "file": "textures/ui/grace_travel.png",
+      "width": 16,
+      "height": 16,
+      "frameSize": [
+        16,
+        16
+      ],
+      "anchorPixels": [
+        0,
+        0
+      ],
+      "frames": [
+        [
+          "................",
+          "................",
+          "................",
+          "................",
+          ".........w......",
+          "...s......w.....",
+          "...s.......w....",
+          "...swwwwwwwww...",
+          "...swwwwwwwww...",
+          "...s.......w....",
+          "...s......w.....",
+          ".........w......",
+          "................",
+          "................",
+          "................",
+          "................"
+        ]
+      ]
+    },
+    {
+      "id": "eldencombat:grace_ashes",
+      "kind": "ui",
+      "file": "textures/ui/grace_ashes.png",
+      "width": 16,
+      "height": 16,
+      "frameSize": [
+        16,
+        16
+      ],
+      "anchorPixels": [
+        0,
+        0
+      ],
+      "frames": [
+        [
+          "................",
+          "................",
+          "................",
+          "......w.........",
+          "....s.......w...",
+          "...........w....",
+          "...s......w.....",
+          ".........w......",
+          "........w.......",
+          "....y..w........",
+          ".....yw.........",
+          ".....sy.........",
+          "...k...y........",
+          "....k...........",
+          "................",
+          "................"
+        ]
+      ],
+      "semantic": "skill-management-entry",
+      "notRewardItem": true
+    },
+    {
+      "id": "eldencombat:grace_flame",
+      "kind": "fx",
+      "file": "textures/fx/grace_flame.png",
+      "width": 16,
+      "height": 64,
+      "frameSize": [
+        16,
+        16
+      ],
+      "anchorPixels": [
+        8,
+        14
+      ],
+      "frames": [
+        [
+          "................",
+          "................",
+          "..........l.....",
+          ".........b......",
+          ".........b......",
+          "......a..b......",
+          "......a..b.a....",
+          ".......abb......",
+          "....a..abb......",
+          "........ab......",
+          ".......yay......",
+          ".......yly......",
+          ".......yly......",
+          ".....aaaaaa.....",
+          "................",
+          "................"
+        ],
+        [
+          "................",
+          "................",
+          "................",
+          ".........l......",
+          "..........b.....",
+          "..........b.....",
+          ".......a.b......",
+          ".....a.abb.a....",
+          ".......abb......",
+          "........ab......",
+          ".......yay......",
+          ".......yly......",
+          ".......yly......",
+          ".....aaaaaa.....",
+          "................",
+          "................"
+        ],
+        [
+          "................",
+          "................",
+          "..........l.....",
+          ".........b......",
+          ".........b......",
+          "......a..b......",
+          "......a..b.a....",
+          ".......abb......",
+          "....a..abb......",
+          "........ab......",
+          ".......yay......",
+          ".......yly......",
+          ".......yly......",
+          ".....aaaaaa.....",
+          "................",
+          "................"
+        ],
+        [
+          "................",
+          "................",
+          "................",
+          ".........l......",
+          "..........b.....",
+          "..........b.....",
+          ".......a.b......",
+          ".....a.abb.a....",
+          ".......abb......",
+          "........ab......",
+          ".......yay......",
+          ".......yly......",
+          ".......yly......",
+          ".....aaaaaa.....",
+          "................",
+          "................"
+        ]
+      ],
+      "frameTicks": 4,
+      "loop": true,
+      "worldSizeBlocks": [
+        0.375,
+        0.375
+      ],
+      "blend": "alpha",
+      "lighting": "optional-emissive",
+      "maxPlanesPerVisibleNode": 2
+    },
+    {
+      "id": "eldencombat:grace_ground",
+      "kind": "fx",
+      "file": "textures/fx/grace_ground.png",
+      "width": 16,
+      "height": 16,
+      "frameSize": [
+        16,
+        16
+      ],
+      "anchorPixels": [
+        8,
+        8
+      ],
+      "frames": [
+        [
+          "................",
+          "................",
+          "................",
+          "................",
+          ".......aaaa.....",
+          "....aaa....a....",
+          "........y..a....",
+          "...a..bbbb.a....",
+          "...a..bbbb..a...",
+          "...a........a...",
+          "....a.......a...",
+          "....a....aaa....",
+          "......aaa.......",
+          "................",
+          "................",
+          "................"
+        ]
+      ],
+      "worldSizeBlocks": [
+        0.5,
+        0.5
+      ],
+      "surfaceOffsetBlocks": 0.003,
+      "blend": "alpha",
+      "lighting": "optional-emissive"
+    }
+  ],
+  "reuse": [
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/smithing_stone_1.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "027851e1479747d92b014a61c1552a4fb53f0ee24bfb94504e22b577bd3f422b",
+      "action": "reuse-existing-no-copy",
+      "notAshOfWar": false
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/somber_smithing_stone_1.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "a314210f134374ae3cd14ab8bc96aa3142e378f914ae511e2d5ba4155497f401",
+      "action": "reuse-existing-no-copy",
+      "notAshOfWar": false
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/affinity_template_sacred.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "954d217764195590c0a8d046db1ef2592d9c640a0e739d5899d0a79b1fbadf5f",
+      "action": "reuse-existing-no-copy",
+      "notAshOfWar": true
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/starlight_shard.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "cf4efeb717581a81be101f4080316eea74c8f1bc9272170f5a8372462b7ae604",
+      "action": "reuse-existing-no-copy",
+      "notAshOfWar": false
+    }
+  ],
+  "selection": {
+    "priority": [
+      "invalid",
+      "undiscovered",
+      "private-or-public",
+      "discovered"
+    ],
+    "originValues": [
+      "ancient",
+      "player"
+    ],
+    "undiscoveredMapVisible": false,
+    "permissionAuthority": "server",
+    "fallback": "hide unknown nodes; do not infer access from icon"
+  },
+  "hashes": [
+    {
+      "file": "textures/map/grace_ancient_undiscovered.png",
+      "sha256": "18bc98427b6770182158658e7511c8d80b7c23493b7476c44ea38ed7506fdbcd",
+      "bytes": 195
+    },
+    {
+      "file": "textures/map/grace_ancient_discovered.png",
+      "sha256": "12fa4ee0ff991985e0f0815893a0aef7344d4ccdb765d39eda1ad223451d14c2",
+      "bytes": 206
+    },
+    {
+      "file": "textures/map/grace_ancient_public.png",
+      "sha256": "746ea2e2f4fe7b3cb8d6ffbfe7c961c9796bbe73d4e3d8cce070e8db332dd620",
+      "bytes": 277
+    },
+    {
+      "file": "textures/map/grace_ancient_private.png",
+      "sha256": "209dc5e34f98c4c0ec519fd8410f04128cac5a6ea2ae568f5727f46acfb9eb92",
+      "bytes": 274
+    },
+    {
+      "file": "textures/map/grace_ancient_invalid.png",
+      "sha256": "26713d0b89a3b92436fd411f539dcd2b0d4aea6745de0fd81590414f14b3dfc5",
+      "bytes": 249
+    },
+    {
+      "file": "textures/map/grace_player_undiscovered.png",
+      "sha256": "6f983d4248008d450ccf7b6bb3cdfc321e69cd091c9544e24f35dcaa8f19cad7",
+      "bytes": 226
+    },
+    {
+      "file": "textures/map/grace_player_discovered.png",
+      "sha256": "e4142a0c354bba59d4b37c759226b933240c1093126ac3be215f8a2ba90d468d",
+      "bytes": 238
+    },
+    {
+      "file": "textures/map/grace_player_public.png",
+      "sha256": "bccd8e96dbf2fb88e411d5f68c968b3b86164498676d0e6ec58fa08dea2b583d",
+      "bytes": 316
+    },
+    {
+      "file": "textures/map/grace_player_private.png",
+      "sha256": "33891ee87bf2eb14132408edd0e86a78cde13add05bbc373385790d6c2dbbc0b",
+      "bytes": 296
+    },
+    {
+      "file": "textures/map/grace_player_invalid.png",
+      "sha256": "63b9272162da86293f6e37ad4411e9fd4fff03bf2500833b55073e579c2f975c",
+      "bytes": 278
+    },
+    {
+      "file": "textures/ui/grace_rest.png",
+      "sha256": "cefdc9c7776c037b8e1a65cddca10083107d4dba021d0c59f344d6e7b67cdbef",
+      "bytes": 150
+    },
+    {
+      "file": "textures/ui/grace_travel.png",
+      "sha256": "a3b6fbdcb955ff7f44c09846047ef9737dc26cdf03bc7066a3ceae2bc2cdc945",
+      "bytes": 146
+    },
+    {
+      "file": "textures/ui/grace_ashes.png",
+      "sha256": "c0b9e9a60a5d8b417a492be89d8388daadb9b4bca961fba6905058b3ffe3b671",
+      "bytes": 168
+    },
+    {
+      "file": "textures/fx/grace_flame.png",
+      "sha256": "814c9aedb2a0fe5929df176b1ae760907bf88cc6112a2a2764adda3d47041cf7",
+      "bytes": 477
+    },
+    {
+      "file": "textures/fx/grace_ground.png",
+      "sha256": "58d035762996dc3cd3fec3d8625f5e06716d49a7a0654534cdb606acfbe75c1c",
+      "bytes": 194
+    }
+  ]
+}

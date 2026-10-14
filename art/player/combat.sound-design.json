@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "status": "design_only_no_audio_files",
+  "outputFormat": {
+    "container": "ogg",
+    "codec": "vorbis",
+    "channels": 1,
+    "sampleRate": 44100
+  },
+  "sourcePolicy": "Create original sound recordings/synthesis; do not extract Elden Ring audio.",
+  "specs": [
+    {
+      "id": "eldencombat:sword_swing",
+      "durationSeconds": 0.18,
+      "volume": 0.45,
+      "pitch": 1.15,
+      "direction": "short dry air swish, light metal tail",
+      "variants": 2
+    },
+    {
+      "id": "eldencombat:great_sword_swing",
+      "durationSeconds": 0.32,
+      "volume": 0.65,
+      "pitch": 0.85,
+      "direction": "heavier low air swish, no explosion",
+      "variants": 2
+    },
+    {
+      "id": "eldencombat:blade_hit",
+      "durationSeconds": 0.16,
+      "volume": 0.6,
+      "pitch": 1,
+      "direction": "brief blunt contact plus metal click",
+      "variants": 2
+    },
+    {
+      "id": "eldencombat:shield_block",
+      "durationSeconds": 0.22,
+      "volume": 0.65,
+      "pitch": 1,
+      "direction": "steel knock with short wooden body",
+      "variants": 2
+    },
+    {
+      "id": "eldencombat:guard_break",
+      "durationSeconds": 0.35,
+      "volume": 0.8,
+      "pitch": 0.9,
+      "direction": "low metal rattle and sharp release",
+      "variants": 2
+    },
+    {
+      "id": "eldencombat:parry_swing",
+      "durationSeconds": 0.14,
+      "volume": 0.4,
+      "pitch": 1.2,
+      "direction": "short shield air movement",
+      "variants": 2
+    },
+    {
+      "id": "eldencombat:parry_success",
+      "durationSeconds": 0.4,
+      "volume": 0.85,
+      "pitch": 1,
+      "direction": "clear two-tone steel ring; no execution cue",
+      "variants": 2
+    },
+    {
+      "id": "eldencombat:roll",
+      "durationSeconds": 0.3,
+      "volume": 0.4,
+      "pitch": 1,
+      "direction": "cloth brush and ground scrape",
+      "variants": 2
+    },
+    {
+      "id": "eldencombat:flask_drink",
+      "durationSeconds": 0.45,
+      "volume": 0.45,
+      "pitch": 1,
+      "direction": "small bottle gulp and glass tap",
+      "variants": 2
+    },
+    {
+      "id": "eldencombat:player_hurt",
+      "durationSeconds": 0.15,
+      "volume": 0.45,
+      "pitch": 1,
+      "direction": "brief impact; no voiced imitation",
+      "variants": 2
+    },
+    {
+      "id": "eldencombat:staff_impact",
+      "durationSeconds": 0.5,
+      "volume": 0.85,
+      "pitch": 0.9,
+      "direction": "wood crack and earth thud",
+      "variants": 2
+    },
+    {
+      "id": "eldencombat:hammer_impact",
+      "durationSeconds": 0.7,
+      "volume": 1,
+      "pitch": 0.85,
+      "direction": "heavy metal thud with short bright decay",
+      "variants": 2
+    },
+    {
+      "id": "eldencombat:spectral_form",
+      "durationSeconds": 0.35,
+      "volume": 0.5,
+      "pitch": 1.05,
+      "direction": "soft rising metallic shimmer",
+      "variants": 2
+    },
+    {
+      "id": "eldencombat:boss_death",
+      "durationSeconds": 1.5,
+      "volume": 0.85,
+      "pitch": 0.85,
+      "direction": "low cloth collapse and fading granular dust",
+      "variants": 2
+    }
+  ],
+  "playback": {
+    "maxDistanceBlocks": 24,
+    "footstepsDistanceBlocks": 12,
+    "variancePitch": 0.04,
+    "deduplicationKey": "entityId/actionSequence/eventType/eventTick",
+    "confirmationAuthority": "server",
+    "noDoublePlaybackWithVanilla": true
+  }
+}

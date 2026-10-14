@@ -1,0 +1,15 @@
+Source: build/moddev/artifacts/neoforge-21.1.219-sources.jar!net/minecraft/client/renderer/ItemInHandRenderer.java
+400:             if (p_109377_.isEmpty()) {
+401:                 if (flag && !p_109372_.isInvisible()) {
+402:                     this.renderPlayerArm(p_109379_, p_109380_, p_109381_, p_109378_, p_109376_, humanoidarm);
+403:                 }
+404:             } else if (p_109377_.getItem() instanceof MapItem) {
+405:                 if (flag && this.offHandItem.isEmpty()) {
+406:                     this.renderTwoHandedMap(p_109379_, p_109380_, p_109381_, p_109374_, p_109378_, p_109376_);
+407:                 } else {
+408:                     this.renderOneHandedMap(p_109379_, p_109380_, p_109381_, p_109378_, humanoidarm, p_109376_, p_109377_);
+409:                 }
+410:             } else if (p_109377_.getItem() instanceof CrossbowItem) {
+411:                 boolean flag1 = CrossbowItem.isCharged(p_109377_);
+412:                 boolean flag2 = humanoidarm == HumanoidArm.RIGHT;
+413:                 int i = flag2 ? 1 : -1;

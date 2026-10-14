@@ -1,0 +1,355 @@
+plugins {
+    id 'java'
+    id 'net.neoforged.moddev' version '2.0.148'
+}
+
+group = 'com.dsh.eldencombat'
+version = '0.2.0'
+description = 'Elden Combat - 纯原版战斗扩展 (Minecraft 1.21.1 / NeoForge)'
+apply from: 'gradle/equipment-2d.gradle'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        name = 'NeoForged'
+        url = 'https://maven.neoforged.net/releases'
+    }
+    exclusiveContent {
+        forRepository { maven { url = 'https://www.cursemaven.com' } }
+        filter { includeGroup 'curse.maven' }
+    }
+}
+
+neoForge {
+    // 锁定 NeoForge 版本（MC 1.21.1 -> 21.1.x）
+    version = '21.1.219'
+
+    runs {
+        client {
+            client()
+            if (project.hasProperty('vfxSmoke')) {
+                gameDirectory = layout.buildDirectory.dir('vfxSmoke')
+                systemProperty 'eldencombat.vfxSmoke', 'true'
+                programArgument '--quickPlaySingleplayer'
+                programArgument 'vfx-integration'
+            }
+            if (project.hasProperty('gracePrototype')) {
+                gameDirectory = layout.buildDirectory.dir('gracePrototypeClient')
+                systemProperty 'eldencombat.gracePrototype', 'true'
+                if (project.hasProperty('graceManual')) systemProperty 'eldencombat.graceManual', 'true'
+                if (project.hasProperty('graceReload')) systemProperty 'eldencombat.graceReload', 'true'
+                if (project.hasProperty('graceMenu')) systemProperty 'eldencombat.graceMenu', 'true'
+                programArgument '--quickPlaySingleplayer'
+                programArgument 'grace-prototype'
+            }
+            if (project.hasProperty('clientSmoke')) {
+                gameDirectory = layout.buildDirectory.dir('clientSmoke')
+                systemProperty 'eldencombat.clientSmoke', 'true'
+                if (project.hasProperty('clientSmokeReload')) systemProperty 'eldencombat.persistenceReload', 'true'
+                if (project.hasProperty('functionalSmoke')) systemProperty 'eldencombat.functionalSmoke', 'true'
+                if (project.hasProperty('gripSmoke')) {
+                    systemProperty 'eldencombat.gripSmoke', 'true'
+                    systemProperty 'eldencombat.smokeSlim', project.hasProperty('slimSmoke').toString()
+                    programArgument '--uuid'
+                    programArgument project.hasProperty('slimSmoke') ? '00000000-0000-0000-0000-000000000000' : '00000000-0000-0000-0000-000000000009'
+                }
+                programArgument '--quickPlaySingleplayer'
+                programArgument 'codex-player-smoke'
+            }
+            // dsh：战技的游戏内验收场景（权限隔离，仅此开关启用）
+            if (project.hasProperty('skillSmoke')) {
+                gameDirectory = layout.buildDirectory.dir('skillSmoke')
+                systemProperty 'eldencombat.skillSmoke', 'true'
+                programArgument '--quickPlaySingleplayer'
+                programArgument 'codex-skill-smoke'
+            }
+            // 普通战灰（§2.2）的引擎夹具：目录/绑定校验/单段运行时/扣费/卸除
+            if (project.hasProperty('ashSmoke')) {
+                gameDirectory = layout.buildDirectory.dir('ashSmoke')
+                systemProperty 'eldencombat.ashSmoke', 'true'
+                programArgument '--quickPlaySingleplayer'
+                programArgument 'ash-smoke'
+            }
+            if (project.hasProperty('manualSkills')) {
+                gameDirectory = layout.buildDirectory.dir('manualSkills')
+                systemProperty 'eldencombat.manualSkills', 'true'
+                if (layout.buildDirectory.file('manualSkills/saves/codex-skill-smoke/level.dat').get().asFile.isFile()) {
+                    programArgument '--quickPlaySingleplayer'
+                    programArgument 'codex-skill-smoke'
+                }
+            }
+            if (project.hasProperty('sourceMotion')) {
+                if (!project.hasProperty('manualSkills')) {
+                    throw new GradleException('sourceMotion requires manualSkills; source assets are local-test-only.')
+                }
+                systemProperty 'eldencombat.sourceMotionProfile',
+                        layout.buildDirectory.file('elden-source/retargeted/profile.json').get().asFile.absolutePath
+            }
+        }
+        server {
+            server()
+            if (project.hasProperty('gracePrototype')) {
+                gameDirectory = layout.buildDirectory.dir('gracePrototypeServer')
+                systemProperty 'eldencombat.gracePrototype', 'true'
+            }
+            programArgument '--nogui'
+            if (project.hasProperty('weaponServerSmoke')) {
+                gameDirectory = layout.buildDirectory.dir('weaponServerSmoke')
+                systemProperty 'eldencombat.weaponServerSmoke', 'true'
+                programArgument '--port'
+                programArgument '25567'
+            }
+            if (project.hasProperty('serverSmoke')) {
+                gameDirectory = layout.buildDirectory.dir('serverSmoke')
+                systemProperty 'eldencombat.serverSmoke', 'true'
+                programArgument '--port'
+                programArgument '25566'
+            }
+        }
+    }
+
+    mods {
+        eldencombat {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+// ---------------------------------------------------------------------------
+// 美术资产同步：Codex 维护 art/margit/，构建时复制进生成资源目录，
+// 不污染 src/main/resources（源码树只保留手写内容）。
+// ---------------------------------------------------------------------------
+def artDir = layout.projectDirectory.dir('art/margit')
+def generatedArt = layout.buildDirectory.dir('generated/artResources')
+
+tasks.register('syncArt', Sync) {
+    from('art/vfx-2d/textures/particle') {
+        include '**/frame_*.png'
+        into 'assets/eldencombat/textures/particle'
+    }
+    // 4: thin equipment meshes also ship for the ordinary weapon collection.
+    inputs.property('assetLayoutVersion', 4)
+    from(artDir) {
+        include 'margit.png'
+        include '*.model.json'
+        include '*.animations.json'
+    }
+    into(generatedArt)
+    from('art/grace-pixel') {
+        include 'textures/**/*.png'
+        eachFile { details -> details.path = 'assets/eldencombat/' + details.sourcePath }
+    }
+    from('art/weapon-proportions') {
+        include 'profiles.json', 'sword-grip-regions.json', 'utility-grip-regions.json'
+        eachFile { details -> details.path = 'assets/eldencombat/weapons/' + (details.name == 'profiles.json' ? 'proportions.json' : details.name.replace('-', '_')) }
+    }
+    from('art/player') {
+        include '*.json', 'equipment.png', 'fx/*.png'
+        eachFile { details ->
+            def name = details.name
+            if (name.endsWith('.model.json') || name.endsWith('.skin.json') || name == 'equipment.hit-shapes.json' || name == 'player.presentation.json') {
+                details.path = 'assets/eldencombat/skeletons/player/' + name
+            } else if (name.endsWith('.animations.json') || name == 'player.visual-offsets.json') {
+                details.path = 'assets/eldencombat/animations/player/' + name
+            } else if (name == 'equipment.png') {
+                details.path = 'assets/eldencombat/textures/item/equipment.png'
+            } else if (details.sourcePath.startsWith('fx/')) {
+                details.path = 'assets/eldencombat/textures/particle/' + name
+            } else if (name.startsWith('combat.')) {
+                details.path = 'assets/eldencombat/effects/' + name
+            } else {
+                details.exclude()
+            }
+        }
+    }
+    // 追忆武器（游戏减面版）：只接 art/remembrance-game，不接 art/remembrance 的高细节编辑源。
+    // 同步模型、预烘焙网格、图集与索引；.bbmodel / 预览 / qa / 备份不进产物 JAR。
+    from('art/remembrance-game') {
+        include '*.model.json'
+        include '*.mesh.json'
+        include 'weapons.png'
+        include 'catalog.json'
+        eachFile { details ->
+            def name = details.name
+            if (name == 'weapons.png') {
+                details.path = 'assets/eldencombat/textures/item/remembrance.png'
+            } else if (name == 'catalog.json') {
+                details.path = 'assets/eldencombat/weapons/remembrance.catalog.json'
+            } else if (name.endsWith('.model.json') || name.endsWith('.mesh.json')) {
+                details.path = 'assets/eldencombat/skeletons/items/remembrance/' + name
+            } else {
+                details.exclude()
+            }
+        }
+    }
+    // 武器：同步模型、网格、机械动画和图集。
+    // .bbmodel / preview.html / catalog.json 不进产物 JAR。
+    from('art/weapons') {
+        include '*.model.json'
+        include '*.mesh.json'
+        include '*.animations.json'
+        include 'weapons.png'
+        eachFile { details ->
+            def name = details.name
+            if (name.endsWith('.model.json') || name.endsWith('.mesh.json')) {
+                details.path = 'assets/eldencombat/skeletons/items/' + name
+            } else if (name.endsWith('.animations.json')) {
+                details.path = 'assets/eldencombat/animations/items/' + name
+            } else if (name == 'weapons.png') {
+                details.path = 'assets/eldencombat/textures/item/weapons.png'
+            } else {
+                details.exclude()
+            }
+        }
+    }
+    eachFile { details ->
+        switch (details.sourcePath) {
+            case 'margit.png':
+                details.path = 'assets/eldencombat/textures/entity/margit.png'
+                break
+            case 'margit.animations.json':
+                details.path = 'assets/eldencombat/animations/margit.animations.json'
+                break
+            default:
+                if (details.sourcePath.endsWith('.model.json') && !details.path.startsWith('assets/')) {
+                    details.path = 'assets/eldencombat/skeletons/entity/' + details.sourcePath
+                }
+        }
+    }
+    includeEmptyDirs = false
+}
+
+sourceSets.main.resources.srcDir(generatedArt)
+tasks.named('processResources') { dependsOn 'syncArt' }
+
+tasks.register('compileSkillFxExporter', JavaCompile) {
+    dependsOn 'classes'
+    source = files('tools/skill-fx/EffectPreviewExporter.java')
+    classpath = sourceSets.main.runtimeClasspath
+    destinationDirectory = layout.buildDirectory.dir('skill-fx-exporter/classes')
+    options.release = 21
+    options.encoding = 'UTF-8'
+}
+tasks.register('exportSkillFx', JavaExec) {
+    dependsOn 'compileSkillFxExporter'
+    classpath = sourceSets.main.runtimeClasspath + files(layout.buildDirectory.dir('skill-fx-exporter/classes'))
+    mainClass = 'EffectPreviewExporter'
+    javaLauncher = javaToolchains.launcherFor { languageVersion = JavaLanguageVersion.of(21) }
+    args file('art/skill-fx/meshes.js').absolutePath,
+            file('build/moddev/artifacts/neoforge-21.1.219-client-extra-aka-minecraft-resources.jar').absolutePath
+}
+tasks.named('check') { dependsOn 'exportSkillFx' }
+
+// ---------------------------------------------------------------------------
+// 隔离测试存档的准备（踩过的坑：`clean` 会删掉 build/，而 `--quickPlaySingleplayer`
+// 找不到存档时客户端会**静默退出**——日志里连一行 smoke 都没有，看起来像"构建失败"。
+// 所以把"从 run/world 复制存档"变成任务，跑 -PclientSmoke 时自动执行。
+// ---------------------------------------------------------------------------
+tasks.register('prepareClientSmokeWorld', Sync) {
+    description = '把 run/world 复制成隔离的客户端 smoke 存档 codex-player-smoke'
+    group = 'verification'
+    onlyIf { file('run/world/level.dat').isFile() }
+    onlyIf { !project.hasProperty('clientSmokeReload') }
+    from('run/world') { exclude 'session.lock' }
+    into layout.buildDirectory.dir('clientSmoke/saves/codex-player-smoke')
+    doLast { logger.lifecycle('[smoke] 已准备客户端测试存档 build/clientSmoke/saves/codex-player-smoke') }
+}
+
+tasks.matching { it.name == 'runClient' }.configureEach {
+    if (project.hasProperty('clientSmoke')) {
+        dependsOn 'prepareClientSmokeWorld'
+    }
+    if (project.hasProperty('ashSmoke')) {
+        dependsOn 'prepareAshSmokeWorld'
+    }
+}
+
+tasks.register('prepareAshSmokeWorld', Sync) {
+    description = '把 run/world 复制成隔离的普通战灰测试存档 ash-smoke'
+    group = 'verification'
+    onlyIf { file('run/world/level.dat').isFile() }
+    from('run/world') { exclude 'session.lock' }
+    into layout.buildDirectory.dir('ashSmoke/saves/ash-smoke')
+}
+
+tasks.register('prepareServerSmokeDir', Copy) {
+    description = '把 run/ 的 eula.txt 与 server.properties 复制到隔离的服务端 smoke 目录'
+    group = 'verification'
+    onlyIf { file('run/eula.txt').isFile() }
+    from('run/eula.txt')
+    from('run/server.properties')
+    into layout.buildDirectory.dir('serverSmoke')
+}
+
+tasks.matching { it.name == 'runServer' }.configureEach {
+    if (project.hasProperty('gracePrototype')) {
+        doLast {
+            def log=layout.buildDirectory.file('gracePrototypeServer/logs/latest.log').get().asFile
+            if (!log.isFile() || log.text.contains('GRACE_PROTO_FAIL') || !log.text.contains('GRACE_PROTO_SERVER_COMPLETE'))
+                throw new GradleException('Grace prototype server did not complete; inspect isolated log')
+        }
+    }
+    if (project.hasProperty('serverSmoke')) {
+        dependsOn 'prepareServerSmokeDir'
+        doLast {
+            def log = layout.buildDirectory.file('serverSmoke/logs/latest.log').get().asFile
+            if (!log.isFile() || log.text.contains('SERVER_SMOKE_FAIL') || !log.text.contains('SERVER_SMOKE_COMPLETE')) {
+                throw new GradleException('Dedicated smoke did not complete successfully; inspect serverSmoke/logs/latest.log')
+            }
+        }
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release = 21
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+    systemProperty 'file.encoding', 'UTF-8'
+}
+
+tasks.named('jar') {
+    preserveFileTimestamps = false
+    reproducibleFileOrder = true
+    exclude 'com/dsh/eldencombat/testing/ClientSmokeHarness*'
+    exclude 'com/dsh/eldencombat/testing/ServerSmokeHarness*'
+    exclude 'com/dsh/eldencombat/testing/SkillSmokeHarness*'
+    exclude 'com/dsh/eldencombat/testing/GracePrototypeHarness*'
+    exclude 'com/dsh/eldencombat/testing/GraceClientPrototypeHarness*'
+    exclude 'com/dsh/eldencombat/testing/AshSmokeHarness*'
+}
+
+dependencies {
+    compileOnly files('build/gracePrototype-dependencies/waystones-neoforge-1.21.1-21.1.46.jar',
+            'build/gracePrototype-dependencies/balm-neoforge-1.21.1-21.0.66.jar',
+            'build/gracePrototype-dependencies/journeymap-api-compile-only.jar')
+    if (project.hasProperty('gracePrototype')) {
+        runtimeOnly files('build/gracePrototype-dependencies/waystones-neoforge-1.21.1-21.1.46.jar',
+                'build/gracePrototype-dependencies/balm-neoforge-1.21.1-21.0.66.jar',
+                'build/gracePrototype-dependencies/journeymap-neoforge-1.21.1-6.0.9.jar')
+    }
+    // 用户要求去掉 Epic Fight：本模组不再依赖任何战斗模组，只用 NeoForge + 原版。
+    if (project.hasProperty('packSmoke')) {
+        def lock = new groovy.json.JsonSlurper().parse(file('modpack/mods.lock.json'))
+        runtimeOnly files(lock.mods.findAll { it.env[project.hasProperty('serverSmoke') ? 'server' : 'client'] != 'unsupported' }.collect { file('build/modpack-dependencies/' + it.path.substring(5)) })
+    }
+    testImplementation platform('org.junit:junit-bom:5.11.4')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    // core / skeleton 只依赖这三个库，单测里显式提供（游戏内由 NeoForge 提供）
+    testImplementation 'org.joml:joml:1.10.5'
+    testImplementation 'com.google.code.gson:gson:2.11.0'
+    testImplementation 'org.slf4j:slf4j-api:2.0.16'
+    testRuntimeOnly 'org.slf4j:slf4j-simple:2.0.16'
+}
+
+
+apply from: 'gradle/minimap-defaults.gradle'

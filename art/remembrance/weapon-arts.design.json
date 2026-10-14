@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "status": "design only; no game code or player animation included",
+  "executions": false,
+  "specialJumpAttacks": true,
+  "skillJumpAttacksAllowed": true,
+  "arts": [
+    {
+      "id": "wave_of_gold",
+      "name": "黄金波动",
+      "description": "黄金波动的扇形波，使用沿地面传播的独立命中体，检测遮挡。",
+      "status": "design only; not implemented",
+      "replaceable": false,
+      "allowsSkillJump": false,
+      "source": "named weapon skill reference; self-authored motion design; skill jump attacks allowed, executions disabled"
+    },
+    {
+      "id": "gold_breaker",
+      "name": "黄金碎击",
+      "description": "允许技能跃起与落槌爆发；腾空轨迹、落地点与黄金冲击的伤害在服务器分阶段校验。",
+      "status": "design only; not implemented",
+      "replaceable": false,
+      "allowsSkillJump": true,
+      "source": "named weapon skill reference; self-authored motion design; skill jump attacks allowed, executions disabled"
+    },
+    {
+      "id": "destined_death",
+      "name": "命定之死",
+      "description": "允许跃起回旋、下砸与短时命定之死效果；斩击和残留效果独立结算，不做处决。",
+      "status": "design only; not implemented",
+      "replaceable": false,
+      "allowsSkillJump": true,
+      "source": "named weapon skill reference; self-authored motion design; skill jump attacks allowed, executions disabled"
+    },
+    {
+      "id": "takers_flames",
+      "name": "掠夺火焰",
+      "description": "沿地面推进的火焰；确认命中后吸血，不能从重复判定无限回复。",
+      "status": "design only; not implemented",
+      "replaceable": false,
+      "allowsSkillJump": false,
+      "source": "named weapon skill reference; self-authored motion design; skill jump attacks allowed, executions disabled"
+    },
+    {
+      "id": "waterfowl_dance",
+      "name": "水鸟乱舞",
+      "description": "允许跃起蓄势与空中多段斩击，分段突进和转向限幅；每段有独立命中集合，结束或取消恢复正常重力。",
+      "status": "design only; not implemented",
+      "replaceable": false,
+      "allowsSkillJump": true,
+      "source": "named weapon skill reference; self-authored motion design; skill jump attacks allowed, executions disabled"
+    },
+    {
+      "id": "starcaller_cry",
+      "name": "唤星",
+      "description": "重力牵引与双剑跃起砸击，服务端约束位移、落地点和遮挡。",
+      "status": "design only; not implemented",
+      "replaceable": false,
+      "allowsSkillJump": true,
+      "source": "named weapon skill reference; self-authored motion design; skill jump attacks allowed, executions disabled"
+    },
+    {
+      "id": "bloodboon_ritual",
+      "name": "授血仪式",
+      "description": "最多三次仪式输入，各段有独立消耗与命中，检测墙体。",
+      "status": "design only; not implemented",
+      "replaceable": false,
+      "allowsSkillJump": false,
+      "source": "named weapon skill reference; self-authored motion design; skill jump attacks allowed, executions disabled"
+    },
+    {
+      "id": "cursed_blood_slice",
+      "name": "咒血斩击",
+      "description": "短距离前进斩击与后续血焰，可接第二段；允许技能专用跃进，不等同于普通空中攻击。",
+      "status": "design only; not implemented",
+      "replaceable": false,
+      "allowsSkillJump": true,
+      "source": "named weapon skill reference; self-authored motion design; skill jump attacks allowed, executions disabled"
+    }
+  ]
+}

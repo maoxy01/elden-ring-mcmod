@@ -1,0 +1,28 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.12/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :generateEquipment2d UP-TO-DATE
+> Task :syncArt UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+> Task :test
+
+BUILD SUCCESSFUL in 8s
+7 actionable tasks: 2 executed, 5 up-to-date
+
+=== archived summary (2026-10-13, aggregated from build/test-results/test/*.xml) ===
+suites=27  tests=186  failures=0  errors=0  skipped=1 (LocalSourceMotionTest, pre-existing skip)
+FxSlashRouteTest: tests=8 failures=0 errors=0
+  cases: onlyTheSelectedSamplesAreRoutedAndTheyStartPending / semanticFramesResampleOntoAnyDeclaredFrameCount /
+         manifestOverridesReplaceDefaultsAndRejectBadFields / outlinesAreBoundedGridAlignedAndDeterministic /
+         waveOutlineHonoursBlockedLanesAndKeepsAdvancing / waveStripsCoverOpenLanesOnlyAndCarryTheirRoute /
+         shippedManifestDeclaresTheFourSampleRoutesAndOnlyReadyOnesNeedArt /
+         routedStripsKeepTheLegacyShapeAndThePaletteGateStaysAvailable
+test xml: build/test-results/test/*.xml
+note: the first run failed on GoldenWaveRenderer.java:26 (stale call signature; that file's edit had not been
+      persisted and was re-applied as a full rewrite). The failure log was overwritten by the later run, so it
+      is recorded here in text instead.

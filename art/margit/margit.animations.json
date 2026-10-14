@@ -1,0 +1,1305 @@
+{
+  "schemaVersion": 1,
+  "ticksPerSecond": 20,
+  "rotationOrder": "XYZ",
+  "rotationMode": "additive_degrees",
+  "clips": [
+    {
+      "id": "idle",
+      "lengthTicks": 60,
+      "loop": true,
+      "tracks": {
+        "torso": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 30,
+            "value": [
+              2,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 60,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "head": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 30,
+            "value": [
+              -2,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 60,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "tail_01": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              -4,
+              0
+            ]
+          },
+          {
+            "tick": 30,
+            "value": [
+              0,
+              4,
+              0
+            ]
+          },
+          {
+            "tick": 60,
+            "value": [
+              0,
+              -4,
+              0
+            ]
+          }
+        ],
+        "tail_02": [
+          {
+            "tick": 0,
+            "value": [
+              -3,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 30,
+            "value": [
+              3,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 60,
+            "value": [
+              -3,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "events": []
+    },
+    {
+      "id": "walk",
+      "lengthTicks": 26,
+      "loop": true,
+      "tracks": {
+        "thigh_r": [
+          {
+            "tick": 0,
+            "value": [
+              20,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 13,
+            "value": [
+              -20,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 26,
+            "value": [
+              20,
+              0,
+              0
+            ]
+          }
+        ],
+        "thigh_l": [
+          {
+            "tick": 0,
+            "value": [
+              -20,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 13,
+            "value": [
+              20,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 26,
+            "value": [
+              -20,
+              0,
+              0
+            ]
+          }
+        ],
+        "shin_r": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 7,
+            "value": [
+              25,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 13,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 26,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "shin_l": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 13,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 20,
+            "value": [
+              25,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 26,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "upper_arm_l": [
+          {
+            "tick": 0,
+            "value": [
+              12,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 13,
+            "value": [
+              -12,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 26,
+            "value": [
+              12,
+              0,
+              0
+            ]
+          }
+        ],
+        "upper_arm_r": [
+          {
+            "tick": 0,
+            "value": [
+              -8,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 13,
+            "value": [
+              8,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 26,
+            "value": [
+              -8,
+              0,
+              0
+            ]
+          }
+        ],
+        "tail_01": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              -6,
+              0
+            ]
+          },
+          {
+            "tick": 13,
+            "value": [
+              0,
+              6,
+              0
+            ]
+          },
+          {
+            "tick": 26,
+            "value": [
+              0,
+              -6,
+              0
+            ]
+          }
+        ]
+      },
+      "events": [
+        {
+          "tick": 0,
+          "type": "footstep",
+          "side": "right"
+        },
+        {
+          "tick": 13,
+          "type": "footstep",
+          "side": "left"
+        }
+      ]
+    },
+    {
+      "id": "staff_sweep",
+      "lengthTicks": 34,
+      "loop": false,
+      "tracks": {
+        "torso": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 12,
+            "value": [
+              25,
+              -50,
+              0
+            ]
+          },
+          {
+            "tick": 15,
+            "value": [
+              25,
+              -50,
+              0
+            ]
+          },
+          {
+            "tick": 20,
+            "value": [
+              25,
+              40,
+              0
+            ]
+          },
+          {
+            "tick": 34,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "upper_arm_r": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 12,
+            "value": [
+              45,
+              0,
+              25
+            ]
+          },
+          {
+            "tick": 15,
+            "value": [
+              45,
+              0,
+              25
+            ]
+          },
+          {
+            "tick": 20,
+            "value": [
+              45,
+              0,
+              25
+            ]
+          },
+          {
+            "tick": 34,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "forearm_r": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 12,
+            "value": [
+              10,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 20,
+            "value": [
+              10,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 34,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "staff_socket": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 12,
+            "value": [
+              180,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 20,
+            "value": [
+              180,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 34,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "tail_01": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 12,
+            "value": [
+              0,
+              10,
+              0
+            ]
+          },
+          {
+            "tick": 20,
+            "value": [
+              0,
+              -10,
+              0
+            ]
+          },
+          {
+            "tick": 34,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "events": [
+        {
+          "tick": 15,
+          "type": "hit_start",
+          "attack": "staff_sweep"
+        },
+        {
+          "tick": 21,
+          "type": "hit_end",
+          "attack": "staff_sweep"
+        }
+      ]
+    },
+    {
+      "id": "staff_slam",
+      "lengthTicks": 42,
+      "loop": false,
+      "tracks": {
+        "torso": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 16,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 22,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 26,
+            "value": [
+              25,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 42,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "upper_arm_r": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 16,
+            "value": [
+              155,
+              0,
+              25
+            ]
+          },
+          {
+            "tick": 22,
+            "value": [
+              155,
+              0,
+              25
+            ]
+          },
+          {
+            "tick": 26,
+            "value": [
+              60,
+              0,
+              25
+            ]
+          },
+          {
+            "tick": 42,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "forearm_r": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 16,
+            "value": [
+              10,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 22,
+            "value": [
+              10,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 26,
+            "value": [
+              10,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 42,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "staff_socket": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 16,
+            "value": [
+              180,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 28,
+            "value": [
+              180,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 42,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "events": [
+        {
+          "tick": 23,
+          "type": "hit_start",
+          "attack": "staff_slam"
+        },
+        {
+          "tick": 27,
+          "type": "hit_end",
+          "attack": "staff_slam"
+        },
+        {
+          "tick": 26,
+          "type": "impact"
+        }
+      ]
+    },
+    {
+      "id": "dagger_slash",
+      "lengthTicks": 22,
+      "loop": false,
+      "tracks": {
+        "torso": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 6,
+            "value": [
+              20,
+              25,
+              0
+            ]
+          },
+          {
+            "tick": 11,
+            "value": [
+              20,
+              -25,
+              0
+            ]
+          },
+          {
+            "tick": 22,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "upper_arm_l": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 6,
+            "value": [
+              55,
+              0,
+              -35
+            ]
+          },
+          {
+            "tick": 11,
+            "value": [
+              55,
+              0,
+              -35
+            ]
+          },
+          {
+            "tick": 22,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "forearm_l": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 6,
+            "value": [
+              8,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 11,
+            "value": [
+              8,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 22,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "spectral_socket": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 2,
+            "value": [
+              180,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 19,
+            "value": [
+              180,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 22,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "events": [
+        {
+          "tick": 2,
+          "type": "equip",
+          "item": "spectral_dagger",
+          "socket": "spectral_socket"
+        },
+        {
+          "tick": 8,
+          "type": "hit_start",
+          "attack": "dagger_slash"
+        },
+        {
+          "tick": 12,
+          "type": "hit_end",
+          "attack": "dagger_slash"
+        },
+        {
+          "tick": 19,
+          "type": "unequip",
+          "socket": "spectral_socket"
+        }
+      ]
+    },
+    {
+      "id": "hammer_slam",
+      "lengthTicks": 50,
+      "loop": false,
+      "tracks": {
+        "torso": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 16,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 28,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 33,
+            "value": [
+              25,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 50,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "upper_arm_l": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 16,
+            "value": [
+              155,
+              0,
+              -35
+            ]
+          },
+          {
+            "tick": 28,
+            "value": [
+              155,
+              0,
+              -35
+            ]
+          },
+          {
+            "tick": 33,
+            "value": [
+              65,
+              0,
+              -35
+            ]
+          },
+          {
+            "tick": 50,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "forearm_l": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 16,
+            "value": [
+              8,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 28,
+            "value": [
+              8,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 33,
+            "value": [
+              8,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 50,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "spectral_socket": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 16,
+            "value": [
+              180,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 47,
+            "value": [
+              180,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 50,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "tail_01": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 28,
+            "value": [
+              -8,
+              5,
+              0
+            ]
+          },
+          {
+            "tick": 33,
+            "value": [
+              8,
+              -5,
+              0
+            ]
+          },
+          {
+            "tick": 50,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "events": [
+        {
+          "tick": 3,
+          "type": "equip",
+          "item": "spectral_hammer",
+          "socket": "spectral_socket"
+        },
+        {
+          "tick": 30,
+          "type": "hit_start",
+          "attack": "hammer_slam"
+        },
+        {
+          "tick": 35,
+          "type": "hit_end",
+          "attack": "hammer_slam"
+        },
+        {
+          "tick": 33,
+          "type": "impact"
+        },
+        {
+          "tick": 47,
+          "type": "unequip",
+          "socket": "spectral_socket"
+        }
+      ]
+    },
+    {
+      "id": "stagger",
+      "lengthTicks": 70,
+      "loop": false,
+      "tracks": {
+        "torso": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 8,
+            "value": [
+              -32,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 54,
+            "value": [
+              -32,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 70,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "head": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 8,
+            "value": [
+              18,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 54,
+            "value": [
+              18,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 70,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "upper_arm_l": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 8,
+            "value": [
+              0,
+              0,
+              18
+            ]
+          },
+          {
+            "tick": 54,
+            "value": [
+              0,
+              0,
+              18
+            ]
+          },
+          {
+            "tick": 70,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "events": []
+    },
+    {
+      "id": "death",
+      "lengthTicks": 50,
+      "loop": false,
+      "tracks": {
+        "root": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 18,
+            "value": [
+              0,
+              0,
+              20
+            ]
+          },
+          {
+            "tick": 34,
+            "value": [
+              0,
+              0,
+              90
+            ]
+          },
+          {
+            "tick": 50,
+            "value": [
+              0,
+              0,
+              90
+            ]
+          }
+        ],
+        "torso": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 18,
+            "value": [
+              -15,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 34,
+            "value": [
+              -15,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 50,
+            "value": [
+              -15,
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "events": []
+    }
+  ]
+}

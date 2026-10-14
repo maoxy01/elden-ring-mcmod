@@ -1,0 +1,55 @@
+Compiled from "WaystonesAPI.java"
+public class net.blay09.mods.waystones.api.WaystonesAPI {
+  public static net.blay09.mods.waystones.api.InternalMethods __internalMethods;
+  public net.blay09.mods.waystones.api.WaystonesAPI();
+  public static com.mojang.datafixers.util.Either<net.blay09.mods.waystones.api.WaystoneTeleportContext, net.blay09.mods.waystones.api.error.WaystoneTeleportError> createDefaultTeleportContext(net.minecraft.world.entity.Entity, net.blay09.mods.waystones.api.Waystone, java.util.function.Consumer<net.blay09.mods.waystones.api.WaystoneTeleportContext>);
+  public static com.mojang.datafixers.util.Either<net.blay09.mods.waystones.api.WaystoneTeleportContext, net.blay09.mods.waystones.api.error.WaystoneTeleportError> createCustomTeleportContext(net.minecraft.world.entity.Entity, net.blay09.mods.waystones.api.Waystone);
+  public static com.mojang.datafixers.util.Either<net.blay09.mods.waystones.api.WaystoneTeleportContext, net.blay09.mods.waystones.api.error.WaystoneTeleportError> createUncheckedDefaultTeleportContext(net.minecraft.world.entity.Entity, net.blay09.mods.waystones.api.Waystone, java.util.function.Consumer<net.blay09.mods.waystones.api.WaystoneTeleportContext>);
+  public static com.mojang.datafixers.util.Either<net.blay09.mods.waystones.api.WaystoneTeleportContext, net.blay09.mods.waystones.api.error.WaystoneTeleportError> createUncheckedCustomTeleportContext(net.minecraft.world.entity.Entity, net.blay09.mods.waystones.api.Waystone);
+  public static net.blay09.mods.waystones.api.WaystoneTeleportContext createUnboundTeleportContext(net.minecraft.world.entity.Entity, net.blay09.mods.waystones.api.Waystone);
+  public static net.blay09.mods.waystones.api.WaystoneTeleportContext createUnboundTeleportContext(net.minecraft.world.entity.Entity);
+  public static com.mojang.datafixers.util.Either<java.util.List<net.minecraft.world.entity.Entity>, net.blay09.mods.waystones.api.error.WaystoneTeleportError> tryTeleport(net.blay09.mods.waystones.api.WaystoneTeleportContext);
+  public static com.mojang.datafixers.util.Either<java.util.List<net.minecraft.world.entity.Entity>, net.blay09.mods.waystones.api.error.WaystoneTeleportError> forceTeleport(net.blay09.mods.waystones.api.WaystoneTeleportContext);
+  public static java.util.concurrent.CompletableFuture<com.mojang.datafixers.util.Either<java.util.List<net.minecraft.world.entity.Entity>, net.blay09.mods.waystones.api.error.WaystoneTeleportError>> tryTeleportAsync(net.blay09.mods.waystones.api.WaystoneTeleportContext);
+  public static java.util.concurrent.CompletableFuture<com.mojang.datafixers.util.Either<java.util.List<net.minecraft.world.entity.Entity>, net.blay09.mods.waystones.api.error.WaystoneTeleportError>> forceTeleportAsync(net.blay09.mods.waystones.api.WaystoneTeleportContext);
+  public static java.util.Optional<net.blay09.mods.waystones.api.Waystone> getWaystoneAt(net.minecraft.server.level.ServerLevel, net.minecraft.core.BlockPos);
+  public static java.util.Optional<net.blay09.mods.waystones.api.Waystone> getWaystoneAt(net.minecraft.server.MinecraftServer, net.minecraft.world.level.BlockGetter, net.minecraft.core.BlockPos);
+  public static java.util.Optional<net.blay09.mods.waystones.api.Waystone> getWaystone(net.minecraft.world.level.Level, java.util.UUID);
+  public static java.util.Optional<net.blay09.mods.waystones.api.Waystone> getWaystone(net.minecraft.server.MinecraftServer, java.util.UUID);
+  public static boolean isWaystoneActivated(net.minecraft.world.entity.player.Player, net.blay09.mods.waystones.api.Waystone);
+  public static java.util.stream.Stream<net.blay09.mods.waystones.api.Waystone> getAllWaystones(net.minecraft.server.MinecraftServer);
+  public static java.util.stream.Stream<net.blay09.mods.waystones.api.Waystone> getWaystonesByType(net.minecraft.server.MinecraftServer, net.minecraft.resources.ResourceLocation);
+  public static void removeWaystoneFromDatabase(net.minecraft.server.MinecraftServer, net.blay09.mods.waystones.api.Waystone);
+  public static java.util.Collection<net.blay09.mods.waystones.api.Waystone> getActivatedWaystones(net.minecraft.world.entity.player.Player);
+  public static java.util.Optional<net.blay09.mods.waystones.api.Waystone> getNearestWaystone(net.minecraft.world.entity.player.Player);
+  public static java.util.Optional<net.blay09.mods.waystones.api.Waystone> placeWaystone(net.minecraft.world.level.Level, net.minecraft.core.BlockPos, net.blay09.mods.waystones.api.WaystoneStyle);
+  public static java.util.Optional<net.blay09.mods.waystones.api.Waystone> placeSharestone(net.minecraft.world.level.Level, net.minecraft.core.BlockPos, net.minecraft.world.item.DyeColor);
+  public static java.util.Optional<net.blay09.mods.waystones.api.Waystone> placeWarpPlate(net.minecraft.world.level.Level, net.minecraft.core.BlockPos);
+  public static java.util.Optional<net.blay09.mods.waystones.api.Waystone> getBoundWaystone(net.minecraft.world.entity.player.Player, net.minecraft.world.item.ItemStack);
+  public static void setBoundWaystone(net.minecraft.world.item.ItemStack, net.blay09.mods.waystones.api.Waystone);
+  public static net.minecraft.world.item.ItemStack createAttunedShard(net.blay09.mods.waystones.api.Waystone);
+  public static net.minecraft.world.item.ItemStack createBoundScroll(net.blay09.mods.waystones.api.Waystone);
+  public static net.blay09.mods.waystones.api.requirement.WarpRequirement resolveRequirements(net.blay09.mods.waystones.api.WaystoneTeleportContext);
+  public static void registerRequirementType(net.blay09.mods.waystones.api.requirement.RequirementType<?>);
+  public static void registerRequirementModifier(net.blay09.mods.waystones.api.requirement.RequirementFunction<?, ?>);
+  public static void registerVariableResolver(net.blay09.mods.waystones.api.requirement.VariableResolver);
+  public static void registerConditionPredicate(net.blay09.mods.waystones.api.requirement.ConditionResolver<?>);
+  public static void registerParameterSerializer(net.blay09.mods.waystones.api.requirement.ParameterSerializer<?>);
+  public static void activateWaystone(net.minecraft.server.level.ServerPlayer, net.blay09.mods.waystones.api.Waystone);
+  public static void deactivateWaystone(net.minecraft.server.level.ServerPlayer, net.blay09.mods.waystones.api.Waystone);
+  public static java.util.Set<net.minecraft.resources.ResourceLocation> getDynamicWaystoneGroups(net.blay09.mods.waystones.api.Waystone);
+  public static java.util.Optional<net.blay09.mods.waystones.api.TeleportDestination> resolveDefaultDestination(net.minecraft.server.level.ServerLevel, net.blay09.mods.waystones.api.Waystone);
+}
+Compiled from "WaystoneManager.java"
+public interface net.blay09.mods.waystones.api.WaystoneManager {
+  public abstract java.util.Optional<net.blay09.mods.waystones.api.Waystone> getWaystoneAt(net.minecraft.world.level.BlockGetter, net.minecraft.core.BlockPos);
+  public abstract java.util.Optional<net.blay09.mods.waystones.api.Waystone> getWaystoneById(java.util.UUID);
+  public abstract java.util.Optional<net.blay09.mods.waystones.api.Waystone> findWaystoneByName(java.lang.String);
+  public abstract java.util.stream.Stream<net.blay09.mods.waystones.api.Waystone> getWaystones();
+  public abstract java.util.stream.Stream<net.blay09.mods.waystones.api.Waystone> getWaystonesByType(net.minecraft.resources.ResourceLocation);
+  public abstract java.util.List<net.blay09.mods.waystones.api.Waystone> getGlobalWaystones();
+}
+Compiled from "WaystoneTeleportEvent.java"
+public abstract class net.blay09.mods.waystones.api.event.WaystoneTeleportEvent extends net.blay09.mods.balm.api.event.BalmEvent {
+  public net.blay09.mods.waystones.api.event.WaystoneTeleportEvent();
+}

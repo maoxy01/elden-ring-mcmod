@@ -1,0 +1,971 @@
+[1210月2026 22:32:42.418] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientdev, --version, 21.1.219, --assetIndex, 17, --assetsDir, C:\\Users\\30869\\.gradle\\caches\\neoformruntime\\assets, --gameDir, ., --fml.fmlVersion, 4.0.42, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.219, --fml.neoFormVersion, 20240808.144430, --quickPlaySingleplayer, codex-player-smoke]
+[1210月2026 22:32:42.424] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.12.1+1-LTS
+[1210月2026 22:32:42.426] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.12.1 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[1210月2026 22:32:42.550] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[1210月2026 22:32:42.656] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[1210月2026 22:32:42.847] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[1210月2026 22:32:42.919] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/30869/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23138!/ Service=ModLauncher Env=CLIENT
+[1210月2026 22:32:43.046] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 5060 Laptop GPU/PCIe/SSE2 GL version 4.6.0 NVIDIA 616.64, NVIDIA Corporation
+[1210月2026 22:32:43.648] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 11 dependencies adding them to mods collection
+[1210月2026 22:32:43.651] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		Cloth Config v15 API 15.0.140 (cloth_config)
+		Elden Combat 0.2.0 (eldencombat)
+		EntityCulling 1.11.3 (entityculling)
+		Ferrite Core 7.0.3 (ferritecore)
+		Forgified Fabric API Base 0.4.42+d1308ded19 (fabric_api_base)
+		Forgified Fabric BlockView API (v2) 1.0.10+9afaaf8c19 (fabric_block_view_api_v2)
+		Forgified Fabric Renderer API (v1) 3.4.0+acb05a3919 (fabric_renderer_api_v1)
+		Forgified Fabric Rendering Data Attachment (v1) 0.3.48+73761d2e19 (fabric_rendering_data_attachment_v1)
+		Iris 1.8.12-snapshot+mc1.21.1-local (iris)
+		Just Enough Items 19.27.0.340 (jei)
+		Lithium 0.15.4+mc1.21.1 (lithium)
+		Minecraft 1.21.1 (minecraft)
+		NeoForge 21.1.219 (neoforge)
+		Sodium 0.6.13+mc1.21.1 (sodium)
+		TRansition 1.0.26 (transition)
+		TRender 1.0.17 (trender)
+[1210月2026 22:32:44.678] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
+[1210月2026 22:32:44.705] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientdev' with arguments [--version, 21.1.219, --gameDir, ., --assetsDir, C:\Users\30869\.gradle\caches\neoformruntime\assets, --assetIndex, 17, --quickPlaySingleplayer, codex-player-smoke]
+[1210月2026 22:32:44.808] [main/WARN] [mixin/]: Reference map 'entityculling.refmap.mixins.json' for entityculling.mixins.json could not be read. If this is a development environment you can ignore this message
+[1210月2026 22:32:44.816] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for mixins.iris.json could not be read. If this is a development environment you can ignore this message
+[1210月2026 22:32:44.817] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for mixins.iris.fantastic.json could not be read. If this is a development environment you can ignore this message
+[1210月2026 22:32:44.818] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for mixins.iris.vertexformat.json could not be read. If this is a development environment you can ignore this message
+[1210月2026 22:32:44.818] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for iris-batched-entity-rendering.mixins.json could not be read. If this is a development environment you can ignore this message
+[1210月2026 22:32:44.819] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for mixins.iris.compat.sodium.json could not be read. If this is a development environment you can ignore this message
+[1210月2026 22:32:44.850] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.predicates.mixin.json could not be read. If this is a development environment you can ignore this message
+[1210月2026 22:32:44.852] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.fastmap.mixin.json could not be read. If this is a development environment you can ignore this message
+[1210月2026 22:32:44.853] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.mrl.mixin.json could not be read. If this is a development environment you can ignore this message
+[1210月2026 22:32:44.854] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.dedupmultipart.mixin.json could not be read. If this is a development environment you can ignore this message
+[1210月2026 22:32:44.855] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.blockstatecache.mixin.json could not be read. If this is a development environment you can ignore this message
+[1210月2026 22:32:44.857] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.dedupbakedquad.mixin.json could not be read. If this is a development environment you can ignore this message
+[1210月2026 22:32:44.858] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.threaddetec.mixin.json could not be read. If this is a development environment you can ignore this message
+[1210月2026 22:32:44.860] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.modelsides.mixin.json could not be read. If this is a development environment you can ignore this message
+[1210月2026 22:32:44.860] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.datacomponents.mixin.json could not be read. If this is a development environment you can ignore this message
+[1210月2026 22:32:44.861] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.accessors.mixin.json could not be read. If this is a development environment you can ignore this message
+[1210月2026 22:32:44.930] [main/INFO] [LithiumConfig/]: Option 'mixin.experimental.entity.block_caching.suffocation' requires 'mixin.util.block_tracking=true' but found 'false'. Setting 'mixin.experimental.entity.block_caching.suffocation=false'.
+[1210月2026 22:32:44.930] [main/INFO] [LithiumConfig/]: Option 'mixin.experimental.entity.block_caching.block_support' requires 'mixin.util.block_tracking=true' but found 'false'. Setting 'mixin.experimental.entity.block_caching.block_support=false'.
+[1210月2026 22:32:44.930] [main/INFO] [LithiumConfig/]: Option 'mixin.experimental.entity.block_caching.block_touching' requires 'mixin.util.block_tracking=true' but found 'false'. Setting 'mixin.experimental.entity.block_caching.block_touching=false'.
+[1210月2026 22:32:44.930] [main/INFO] [LithiumConfig/]: Option 'mixin.experimental.entity.block_caching' requires 'mixin.util.block_tracking=true' but found 'false'. Setting 'mixin.experimental.entity.block_caching=false'.
+[1210月2026 22:32:44.931] [main/INFO] [Lithium/]: Loaded configuration file for Lithium: 148 options available, 0 override(s) found
+[1210月2026 22:32:44.956] [main/INFO] [Sodium/]: Loaded configuration file for Sodium: 43 options available, 1 override(s) found
+[1210月2026 22:32:45.409] [main/WARN] [mixin/]: Error loading class: com/portingdeadmods/cable_facades/events/GameClientEvents$2 (java.lang.ClassNotFoundException: com.portingdeadmods.cable_facades.events.GameClientEvents$2)
+[1210月2026 22:32:45.410] [main/WARN] [mixin/]: Error loading class: com/direwolf20/justdirethings/client/renderers/OurRenderTypes (java.lang.ClassNotFoundException: com.direwolf20.justdirethings.client.renderers.OurRenderTypes)
+[1210月2026 22:32:45.411] [main/WARN] [mixin/]: Error loading class: mekanism/client/render/entity/RenderFlame (java.lang.ClassNotFoundException: mekanism.client.render.entity.RenderFlame)
+[1210月2026 22:32:45.412] [main/WARN] [mixin/]: Error loading class: mekanism/client/render/armor/MekaSuitArmor (java.lang.ClassNotFoundException: mekanism.client.render.armor.MekaSuitArmor)
+[1210月2026 22:32:45.413] [main/WARN] [mixin/]: Error loading class: mekanism/client/render/lib/effect/BillboardingEffectRenderer (java.lang.ClassNotFoundException: mekanism.client.render.lib.effect.BillboardingEffectRenderer)
+[1210月2026 22:32:45.415] [main/WARN] [mixin/]: Error loading class: blusunrize/immersiveengineering/client/utils/IEGLShaders (java.lang.ClassNotFoundException: blusunrize.immersiveengineering.client.utils.IEGLShaders)
+[1210月2026 22:32:45.571] [main/WARN] [Sodium/]: Force-disabling mixin 'features.render.world.sky.FogRendererMixin' as rule 'mixin.features.render.world.sky' (added by mods [iris]) disables it and children
+[1210月2026 22:32:45.571] [main/WARN] [Sodium/]: Force-disabling mixin 'features.render.world.sky.ClientLevelMixin' as rule 'mixin.features.render.world.sky' (added by mods [iris]) disables it and children
+[1210月2026 22:32:45.572] [main/WARN] [Sodium/]: Force-disabling mixin 'features.render.world.sky.LevelRendererMixin' as rule 'mixin.features.render.world.sky' (added by mods [iris]) disables it and children
+[1210月2026 22:32:45.682] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[1210月2026 22:32:47.754] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 229 Datafixer optimizations took 347 milliseconds
+[1210月2026 22:32:52.307] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[1210月2026 22:32:52.308] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[1210月2026 22:32:52.309] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[1210月2026 22:32:52.310] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[1210月2026 22:32:52.311] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[1210月2026 22:32:52.434] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/D:/codexout/mcmod/build/moddev/artifacts/neoforge-21.1.219.jar%23189!/assets/.mcassetsroot' uses unexpected schema
+[1210月2026 22:32:52.435] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/D:/codexout/mcmod/build/moddev/artifacts/neoforge-21.1.219.jar%23189!/data/.mcassetsroot' uses unexpected schema
+[1210月2026 22:32:52.462] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[1210月2026 22:32:52.470] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[1210月2026 22:32:52.557] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
+[1210月2026 22:32:52.605] [Render thread/INFO] [com.mojang.blaze3d.platform.Window/]: OpenGL Vendor: NVIDIA Corporation
+[1210月2026 22:32:52.605] [Render thread/INFO] [com.mojang.blaze3d.platform.Window/]: OpenGL Renderer: NVIDIA GeForce RTX 5060 Laptop GPU/PCIe/SSE2
+[1210月2026 22:32:52.605] [Render thread/INFO] [com.mojang.blaze3d.platform.Window/]: OpenGL Version: 4.6.0 NVIDIA 616.64
+[1210月2026 22:32:52.608] [Render thread/INFO] [Sodium-NvidiaWorkarounds/]: Modifying OpenGL context to apply workarounds for the NVIDIA graphics driver...
+[1210月2026 22:32:52.728] [Render thread/INFO] [Iris/]: Debug functionality is disabled.
+[1210月2026 22:32:52.737] [Render thread/INFO] [Iris/]: OpenGL 4.5 detected, enabling DSA.
+[1210月2026 22:32:52.777] [Render thread/INFO] [Iris/]: Shaders are disabled because no valid shaderpack is selected
+[1210月2026 22:32:52.971] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.219, for MC 1.21.1
+[1210月2026 22:32:53.037] [modloading-worker-0/INFO] [EldenCombat/]: [EldenCombat] ServerCombat 已注册到游戏事件总线（单例，一次）
+[1210月2026 22:32:53.037] [modloading-worker-0/INFO] [EldenCombat/]: [EldenCombat] 纯原版战斗扩展 loaded (MC 1.21.1 / NeoForge 21.1.219)
+[1210月2026 22:32:53.218] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[1210月2026 22:32:53.222] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 2.184 milliseconds
+[1210月2026 22:32:53.723] [Render thread/INFO] [Iris/]: Hardware information:
+[1210月2026 22:32:53.723] [Render thread/INFO] [Iris/]: CPU: 24x Intel(R) Core(TM) i7-14650HX
+[1210月2026 22:32:53.724] [Render thread/INFO] [Iris/]: GPU: NVIDIA GeForce RTX 5060 Laptop GPU/PCIe/SSE2 (Supports OpenGL 4.6.0 NVIDIA 616.64)
+[1210月2026 22:32:53.724] [Render thread/INFO] [Iris/]: OS: Windows 11 (10.0)
+[1210月2026 22:32:53.845] [Render thread/INFO] [net.neoforged.neoforge.gametest.GameTestHooks/]: Enabled Gametest Namespaces: []
+[1210月2026 22:32:54.098] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/sodium, mod/entityculling, mod/iris, mod/fabric_renderer_api_v1, mod/fabric_api_base, mod/ferritecore, mod/eldencombat, mod/transition, mod/jei, mod/fabric_rendering_data_attachment_v1, mod/lithium, mod/trender, mod/cloth_config, mod/neoforge, mod/fabric_block_view_api_v2
+[1210月2026 22:32:54.312] [Worker-Main-21/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-15.1.05.hex, loading
+[1210月2026 22:32:54.312] [Worker-Main-4/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.05.hex, loading
+[1210月2026 22:32:54.399] [Render thread/INFO] [EldenCombat/]: [EldenCombat] 战斗配置已载入: D:\codexout\mcmod\build\clientSmoke\config\eldencombat-combat.json
+[1210月2026 22:32:54.871] [Worker-Main-10/WARN] [net.minecraft.client.renderer.texture.SpriteLoader/]: Texture eldencombat:item/blank with size 1x1 limits mip level from 4 to 0
+[1210月2026 22:32:55.893] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[1210月2026 22:32:55.893] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[1210月2026 22:32:56.286] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on 扬声器 (Realtek(R) Audio)
+[1210月2026 22:32:56.286] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[1210月2026 22:32:56.378] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[1210月2026 22:32:56.394] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[1210月2026 22:32:56.395] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[1210月2026 22:32:56.395] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[1210月2026 22:32:56.396] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[1210月2026 22:32:56.399] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[1210月2026 22:32:56.401] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[1210月2026 22:32:56.401] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[1210月2026 22:32:56.401] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[1210月2026 22:32:56.476] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[1210月2026 22:32:56.478] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[1210月2026 22:32:56.478] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[1210月2026 22:32:56.478] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[1210月2026 22:32:56.479] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[1210月2026 22:32:56.499] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[1210月2026 22:32:56.556] [Render thread/INFO] [EldenCombat/]: [EldenCombat] Weapon resource cache ready: 41 entries
+[1210月2026 22:32:56.558] [Render thread/INFO] [EldenCombat/]: [skills] 战技姿态就绪：8 个
+[1210月2026 22:32:56.558] [Render thread/INFO] [EldenCombat/]: [EldenCombat] 武器姿态校正就绪：0 条
+[1210月2026 22:32:56.558] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 jei:textures/atlas/gui.png-atlas
+[1210月2026 22:32:56.564] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
+[1210月2026 22:32:58.058] [Render thread/WARN] [net.neoforged.neoforge.common.CommonHooks/WP]: The following mods have version differences that were not resolved:
+eldencombat (version 0.1.0 -> 0.2.0)
+neoforge (version 21.1.209 -> 21.1.219)
+Things may not work well.
+[1210月2026 22:32:58.886] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1314 recipes
+[1210月2026 22:32:59.046] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1399 advancements
+[1210月2026 22:32:59.050] [Render thread/INFO] [EldenCombat/]: [talismans] 护符数据载入 4 件
+[1210月2026 22:32:59.052] [Render thread/INFO] [EldenCombat/]: [consumables] 药物数据载入 3 种
+[1210月2026 22:32:59.359] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.1
+[1210月2026 22:32:59.359] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[1210月2026 22:32:59.825] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[1210月2026 22:32:59.871] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
+[1210月2026 22:33:00.341] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 51%
+[1210月2026 22:33:00.396] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 561 ms
+[1210月2026 22:33:00.397] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[1210月2026 22:33:00.411] [Server thread/INFO] [EldenCombat/]: [skills] 追忆战技参数载入 8 项
+[1210月2026 22:33:00.416] [Server thread/INFO] [EldenCombat/]: [weapons] 武器数值档载入 41 件
+[1210月2026 22:33:00.463] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] [Server] [etest] load start
+[1210月2026 22:33:00.476] [Server thread/INFO] [EldenCombat/]: [EldenCombat] 已载入骨骼资产: 19 骨骼 / 38 方块 / 8 个动作
+[1210月2026 22:33:00.589] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 直剑轻击总长 (期望 22，实际 22)
+[1210月2026 22:33:00.590] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 直剑轻击消耗 (期望 15.0，实际 15.0)
+[1210月2026 22:33:00.590] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 直剑轻击窗口 (期望 8-12，实际 8-12)
+[1210月2026 22:33:00.590] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 直剑轻击伤害 (期望 5.0，实际 5.0)
+[1210月2026 22:33:00.590] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 大剑轻击总长 (期望 30，实际 30)
+[1210月2026 22:33:00.590] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 大剑轻击消耗 (期望 20.0，实际 20.0)
+[1210月2026 22:33:00.590] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 大剑轻击窗口 (期望 12-17，实际 12-17)
+[1210月2026 22:33:00.590] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 大剑轻击伤害 (期望 7.0，实际 7.0)
+[1210月2026 22:33:00.590] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 重击窗口 (期望 15-20，实际 15-20)
+[1210月2026 22:33:00.590] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 重击消耗 (期望 25.0，实际 25.0)
+[1210月2026 22:33:00.590] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 重击直剑伤害 (期望 8.0，实际 8.0)
+[1210月2026 22:33:00.590] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 重击大剑伤害 (期望 11.0，实际 11.0)
+[1210月2026 22:33:00.590] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 满蓄力重击窗口 (期望 16-22，实际 16-22)
+[1210月2026 22:33:00.590] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 满蓄力消耗 (期望 35.0，实际 35.0)
+[1210月2026 22:33:00.590] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 满蓄力大剑伤害 (期望 15.0，实际 15.0)
+[1210月2026 22:33:00.590] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 满蓄力直剑伤害 (期望 11.0，实际 11.0)
+[1210月2026 22:33:00.590] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 蓄力达满 tick (期望 20，实际 20)
+[1210月2026 22:33:00.590] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 蓄力自动释放上限 (期望 30，实际 30)
+[1210月2026 22:33:00.590] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 翻滚消耗 (期望 22.0，实际 22.0)
+[1210月2026 22:33:00.590] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 翻滚总长 (期望 20，实际 20)
+[1210月2026 22:33:00.590] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 翻滚无敌窗口 (期望 4-11，实际 4-11)
+[1210月2026 22:33:00.590] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 弹反消耗 (期望 15.0，实际 15.0)
+[1210月2026 22:33:00.591] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 弹反总长 (期望 18，实际 18)
+[1210月2026 22:33:00.591] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 弹反成功窗口 (期望 3-7，实际 3-7)
+[1210月2026 22:33:00.591] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 喝药总长 (期望 28，实际 28)
+[1210月2026 22:33:00.591] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 喝药生效 tick (期望 18，实际 18)
+[1210月2026 22:33:00.591] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 喝药回复 (期望 8.0，实际 8.0)
+[1210月2026 22:33:00.591] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 初始药瓶次数 (期望 4，实际 4)
+[1210月2026 22:33:00.591] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 精力上限 (期望 100.0，实际 100.0)
+[1210月2026 22:33:00.591] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 精力恢复延迟 (期望 12，实际 12)
+[1210月2026 22:33:00.591] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Boss 生命 (期望 200.0，实际 200.0)
+[1210月2026 22:33:00.591] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Boss 二阶段阈值 (期望 0.6，实际 0.6)
+[1210月2026 22:33:00.591] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Boss 失衡上限 (期望 100.0，实际 100.0)
+[1210月2026 22:33:00.591] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 失衡恢复延迟 (期望 80，实际 80)
+[1210月2026 22:33:00.592] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 崩解窗口下限 (期望 40，实际 40)
+[1210月2026 22:33:00.592] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 崩解易伤倍率 (期望 1.5，实际 1.5)
+[1210月2026 22:33:00.592] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 崩解窗口取动作与下限的较大者 (期望 70，实际 70)
+[1210月2026 22:33:00.592] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 崩解窗口不足动作时长时用配置下限 (期望 40，实际 40)
+[1210月2026 22:33:00.592] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 未崩解无额外易伤 (期望 1.0，实际 1.0)
+[1210月2026 22:33:00.592] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 崩解期易伤生效 (期望 1.5，实际 1.5)
+[1210月2026 22:33:00.592] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 单人失衡上限不缩放 (期望 100.0，实际 100.0)
+[1210月2026 22:33:00.592] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 两人失衡上限 ×1.5 (期望 150.0，实际 150.0)
+[1210月2026 22:33:00.592] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 盾防锥角 (期望 120.0，实际 120.0)
+[1210月2026 22:33:00.592] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 破防硬直 (期望 24，实际 24)
+[1210月2026 22:33:00.592] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 锁定范围 (期望 24.0，实际 24.0)
+[1210月2026 22:33:00.592] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 解除锁定范围 (期望 32.0，实际 32.0)
+[1210月2026 22:33:00.592] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 轻击前摇不产生判定
+[1210月2026 22:33:00.592] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 轻击窗口起点生效
+[1210月2026 22:33:00.593] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 轻击窗口终点不含
+[1210月2026 22:33:00.593] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 弹反窗口边界 2 不生效
+[1210月2026 22:33:00.593] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 弹反窗口边界 3 生效
+[1210月2026 22:33:00.593] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 弹反窗口边界 6 生效
+[1210月2026 22:33:00.593] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 弹反窗口边界 7 不生效
+[1210月2026 22:33:00.593] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 同一序号首次命中
+[1210月2026 22:33:00.593] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 同一序号重复命中被拒绝
+[1210月2026 22:33:00.593] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 新序号重新可命中
+[1210月2026 22:33:00.593] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 翻滚窗口前非无敌
+[1210月2026 22:33:00.593] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 翻滚窗口内无敌
+[1210月2026 22:33:00.593] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 翻滚窗口后非无敌
+[1210月2026 22:33:00.593] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 正面 0 度在盾防锥内
+[1210月2026 22:33:00.593] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 侧面 59 度在盾防锥内
+[1210月2026 22:33:00.593] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 背后 180 度不在盾防锥内
+[1210月2026 22:33:00.593] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 精力不足以继续挡（应破防）
+[1210月2026 22:33:00.593] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 精力足够可挡
+[1210月2026 22:33:00.594] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 破防期间盾防失效
+[1210月2026 22:33:00.594] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 破防结束后恢复
+[1210月2026 22:33:00.594] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 木杖横扫可弹反
+[1210月2026 22:33:00.594] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 匕首可弹反
+[1210月2026 22:33:00.594] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 木杖下砸不可弹反
+[1210月2026 22:33:00.594] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 黄金锤不可弹反
+[1210月2026 22:33:00.595] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 连续两次弹反可触发失衡
+[1210月2026 22:33:00.595] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 首版不存在处决动作
+[1210月2026 22:33:00.595] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 重置后无残留无敌
+[1210月2026 22:33:00.595] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 喝药中断未到生效时刻不消耗
+[1210月2026 22:33:00.595] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 喝药生效时刻 (期望 18，实际 18)
+[1210月2026 22:33:00.595] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 喝药消耗一次 (期望 3，实际 3)
+[1210月2026 22:33:00.595] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 线段穿过包围盒命中
+[1210月2026 22:33:00.595] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 线段偏离包围盒不命中
+[1210月2026 22:33:00.595] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 上一 tick 判定体补漏
+[1210月2026 22:33:00.595] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 盒体距离计算
+[1210月2026 22:33:00.595] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 骨骼数量 (期望 19，实际 19)
+[1210月2026 22:33:00.595] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 方块数量 (期望 38，实际 38)
+[1210月2026 22:33:00.595] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 尾巴骨骼数量 (期望 3，实际 3)
+[1210月2026 22:33:00.595] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 尾巴方块数量 (期望 3，实际 3)
+[1210月2026 22:33:00.595] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 尾巴骨骼链 tail_01 -> tail_02 -> tail_03
+[1210月2026 22:33:00.595] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 存在 staff_socket 与 spectral_socket
+[1210月2026 22:33:00.595] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作数量 (期望 8，实际 8)
+[1210月2026 22:33:00.596] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 idle
+[1210月2026 22:33:00.596] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 walk
+[1210月2026 22:33:00.596] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 staff_sweep
+[1210月2026 22:33:00.596] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 staff_slam
+[1210月2026 22:33:00.596] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 dagger_slash
+[1210月2026 22:33:00.596] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 hammer_slam
+[1210月2026 22:33:00.596] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 stagger
+[1210月2026 22:33:00.596] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 death
+[1210月2026 22:33:00.596] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 匕首动作有 equip 事件
+[1210月2026 22:33:00.596] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 黄金锤动作有 equip 事件
+[1210月2026 22:33:00.596] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 死亡动作取消武器显示
+[1210月2026 22:33:00.596] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 骨盆原点 y = 1.5 方块
+[1210月2026 22:33:00.596] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 头部原点高于骨盆
+[1210月2026 22:33:00.596] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 躯干包围盒在合理范围
+[1210月2026 22:33:00.597] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 木杖判定体长度大于 1.5 方块
+[1210月2026 22:33:00.597] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 黄金锤锤头盒在握持点附近
+[1210月2026 22:33:00.597] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player bone/cube count false
+[1210月2026 22:33:00.597] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Skin and overlay UV bounds false
+[1210月2026 22:33:00.597] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Native skin face orientation false
+[1210月2026 22:33:00.597] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Native overlay orientation false
+[1210月2026 22:33:00.597] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD idle
+[1210月2026 22:33:00.597] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD light_1
+[1210月2026 22:33:00.597] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD heavy_windup
+[1210月2026 22:33:00.597] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD heavy_release
+[1210月2026 22:33:00.597] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD charged_release
+[1210月2026 22:33:00.597] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD roll
+[1210月2026 22:33:00.597] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD parry
+[1210月2026 22:33:00.597] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD drink
+[1210月2026 22:33:00.597] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD guard_idle
+[1210月2026 22:33:00.597] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD guard_break
+[1210月2026 22:33:00.597] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD hit_stagger
+[1210月2026 22:33:00.597] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD death
+[1210月2026 22:33:00.597] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD idle
+[1210月2026 22:33:00.598] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD idle
+[1210月2026 22:33:00.598] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD idle
+[1210月2026 22:33:00.598] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD idle
+[1210月2026 22:33:00.598] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD walk
+[1210月2026 22:33:00.598] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD walk
+[1210月2026 22:33:00.598] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD walk
+[1210月2026 22:33:00.598] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD walk
+[1210月2026 22:33:00.598] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD run
+[1210月2026 22:33:00.598] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD run
+[1210月2026 22:33:00.598] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD run
+[1210月2026 22:33:00.598] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD run
+[1210月2026 22:33:00.598] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD guard_idle
+[1210月2026 22:33:00.598] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD guard_idle
+[1210月2026 22:33:00.598] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD guard_idle
+[1210月2026 22:33:00.598] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD guard_idle
+[1210月2026 22:33:00.598] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD light_1
+[1210月2026 22:33:00.599] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD light_1
+[1210月2026 22:33:00.599] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD light_1
+[1210月2026 22:33:00.599] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD light_1
+[1210月2026 22:33:00.599] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD light_2
+[1210月2026 22:33:00.599] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD light_2
+[1210月2026 22:33:00.599] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD light_2
+[1210月2026 22:33:00.599] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD light_2
+[1210月2026 22:33:00.599] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD heavy_windup
+[1210月2026 22:33:00.599] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD heavy_windup
+[1210月2026 22:33:00.599] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD heavy_windup
+[1210月2026 22:33:00.599] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD heavy_windup
+[1210月2026 22:33:00.599] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD heavy_release
+[1210月2026 22:33:00.599] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD heavy_release
+[1210月2026 22:33:00.599] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD heavy_release
+[1210月2026 22:33:00.599] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD heavy_release
+[1210月2026 22:33:00.599] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD charged_release
+[1210月2026 22:33:00.599] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD charged_release
+[1210月2026 22:33:00.599] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD charged_release
+[1210月2026 22:33:00.600] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD charged_release
+[1210月2026 22:33:00.600] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD roll
+[1210月2026 22:33:00.600] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD roll
+[1210月2026 22:33:00.600] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD roll
+[1210月2026 22:33:00.600] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD roll
+[1210月2026 22:33:00.600] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD parry
+[1210月2026 22:33:00.600] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD parry
+[1210月2026 22:33:00.600] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD parry
+[1210月2026 22:33:00.600] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD parry
+[1210月2026 22:33:00.600] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD guard_hit
+[1210月2026 22:33:00.600] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD guard_hit
+[1210月2026 22:33:00.600] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD guard_hit
+[1210月2026 22:33:00.600] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD guard_hit
+[1210月2026 22:33:00.600] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD guard_break
+[1210月2026 22:33:00.600] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD guard_break
+[1210月2026 22:33:00.600] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD guard_break
+[1210月2026 22:33:00.600] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD guard_break
+[1210月2026 22:33:00.600] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD drink
+[1210月2026 22:33:00.600] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD drink
+[1210月2026 22:33:00.600] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD drink
+[1210月2026 22:33:00.601] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD drink
+[1210月2026 22:33:00.601] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD hit_stagger
+[1210月2026 22:33:00.601] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD hit_stagger
+[1210月2026 22:33:00.601] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD hit_stagger
+[1210月2026 22:33:00.601] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD hit_stagger
+[1210月2026 22:33:00.601] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD death
+[1210月2026 22:33:00.601] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD death
+[1210月2026 22:33:00.601] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD death
+[1210月2026 22:33:00.601] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD death
+[1210月2026 22:33:00.601] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD idle
+[1210月2026 22:33:00.601] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD light_1
+[1210月2026 22:33:00.601] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD heavy_windup
+[1210月2026 22:33:00.601] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD heavy_release
+[1210月2026 22:33:00.602] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD charged_release
+[1210月2026 22:33:00.602] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD roll
+[1210月2026 22:33:00.602] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD parry
+[1210月2026 22:33:00.602] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD drink
+[1210月2026 22:33:00.602] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD guard_idle
+[1210月2026 22:33:00.602] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD guard_break
+[1210月2026 22:33:00.602] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD hit_stagger
+[1210月2026 22:33:00.602] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD death
+[1210月2026 22:33:00.602] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD idle
+[1210月2026 22:33:00.602] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD idle
+[1210月2026 22:33:00.602] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD idle
+[1210月2026 22:33:00.602] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD idle
+[1210月2026 22:33:00.602] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD walk
+[1210月2026 22:33:00.602] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD walk
+[1210月2026 22:33:00.602] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD walk
+[1210月2026 22:33:00.602] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD walk
+[1210月2026 22:33:00.602] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD run
+[1210月2026 22:33:00.602] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD run
+[1210月2026 22:33:00.602] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD run
+[1210月2026 22:33:00.602] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD run
+[1210月2026 22:33:00.603] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD guard_idle
+[1210月2026 22:33:00.603] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD guard_idle
+[1210月2026 22:33:00.603] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD guard_idle
+[1210月2026 22:33:00.603] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD guard_idle
+[1210月2026 22:33:00.603] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD light_1
+[1210月2026 22:33:00.603] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD light_1
+[1210月2026 22:33:00.603] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD light_1
+[1210月2026 22:33:00.603] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD light_1
+[1210月2026 22:33:00.603] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD light_2
+[1210月2026 22:33:00.603] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD light_2
+[1210月2026 22:33:00.603] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD light_2
+[1210月2026 22:33:00.603] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD light_2
+[1210月2026 22:33:00.603] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD heavy_windup
+[1210月2026 22:33:00.603] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD heavy_windup
+[1210月2026 22:33:00.603] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD heavy_windup
+[1210月2026 22:33:00.603] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD heavy_windup
+[1210月2026 22:33:00.603] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD heavy_release
+[1210月2026 22:33:00.603] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD heavy_release
+[1210月2026 22:33:00.604] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD heavy_release
+[1210月2026 22:33:00.604] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD heavy_release
+[1210月2026 22:33:00.604] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD charged_release
+[1210月2026 22:33:00.604] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD charged_release
+[1210月2026 22:33:00.604] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD charged_release
+[1210月2026 22:33:00.604] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD charged_release
+[1210月2026 22:33:00.604] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD roll
+[1210月2026 22:33:00.604] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD roll
+[1210月2026 22:33:00.604] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD roll
+[1210月2026 22:33:00.604] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD roll
+[1210月2026 22:33:00.604] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD parry
+[1210月2026 22:33:00.604] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD parry
+[1210月2026 22:33:00.604] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD parry
+[1210月2026 22:33:00.604] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD parry
+[1210月2026 22:33:00.604] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD guard_hit
+[1210月2026 22:33:00.604] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD guard_hit
+[1210月2026 22:33:00.604] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD guard_hit
+[1210月2026 22:33:00.605] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD guard_hit
+[1210月2026 22:33:00.605] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD guard_break
+[1210月2026 22:33:00.605] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD guard_break
+[1210月2026 22:33:00.605] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD guard_break
+[1210月2026 22:33:00.605] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD guard_break
+[1210月2026 22:33:00.605] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD drink
+[1210月2026 22:33:00.605] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD drink
+[1210月2026 22:33:00.605] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD drink
+[1210月2026 22:33:00.605] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD drink
+[1210月2026 22:33:00.605] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD hit_stagger
+[1210月2026 22:33:00.605] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD hit_stagger
+[1210月2026 22:33:00.605] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD hit_stagger
+[1210月2026 22:33:00.606] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD hit_stagger
+[1210月2026 22:33:00.606] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD death
+[1210月2026 22:33:00.606] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD death
+[1210月2026 22:33:00.606] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD death
+[1210月2026 22:33:00.606] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD death
+[1210月2026 22:33:00.606] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player bone/cube count true
+[1210月2026 22:33:00.606] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Skin and overlay UV bounds true
+[1210月2026 22:33:00.606] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Native skin face orientation true
+[1210月2026 22:33:00.606] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Native overlay orientation true
+[1210月2026 22:33:00.606] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD idle
+[1210月2026 22:33:00.606] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD light_1
+[1210月2026 22:33:00.607] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD heavy_windup
+[1210月2026 22:33:00.607] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD heavy_release
+[1210月2026 22:33:00.607] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD charged_release
+[1210月2026 22:33:00.607] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD roll
+[1210月2026 22:33:00.607] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD parry
+[1210月2026 22:33:00.607] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD drink
+[1210月2026 22:33:00.607] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD guard_idle
+[1210月2026 22:33:00.607] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD guard_break
+[1210月2026 22:33:00.607] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD hit_stagger
+[1210月2026 22:33:00.607] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD death
+[1210月2026 22:33:00.607] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD idle
+[1210月2026 22:33:00.607] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD idle
+[1210月2026 22:33:00.607] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD idle
+[1210月2026 22:33:00.607] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD idle
+[1210月2026 22:33:00.607] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD walk
+[1210月2026 22:33:00.607] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD walk
+[1210月2026 22:33:00.607] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD walk
+[1210月2026 22:33:00.608] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD walk
+[1210月2026 22:33:00.608] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD run
+[1210月2026 22:33:00.608] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD run
+[1210月2026 22:33:00.608] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD run
+[1210月2026 22:33:00.608] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD run
+[1210月2026 22:33:00.608] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD guard_idle
+[1210月2026 22:33:00.608] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD guard_idle
+[1210月2026 22:33:00.608] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD guard_idle
+[1210月2026 22:33:00.608] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD guard_idle
+[1210月2026 22:33:00.608] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD light_1
+[1210月2026 22:33:00.608] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD light_1
+[1210月2026 22:33:00.608] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD light_1
+[1210月2026 22:33:00.608] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD light_1
+[1210月2026 22:33:00.608] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD light_2
+[1210月2026 22:33:00.608] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD light_2
+[1210月2026 22:33:00.608] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD light_2
+[1210月2026 22:33:00.608] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD light_2
+[1210月2026 22:33:00.608] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD heavy_windup
+[1210月2026 22:33:00.608] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD heavy_windup
+[1210月2026 22:33:00.608] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD heavy_windup
+[1210月2026 22:33:00.608] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD heavy_windup
+[1210月2026 22:33:00.608] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD heavy_release
+[1210月2026 22:33:00.608] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD heavy_release
+[1210月2026 22:33:00.608] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD heavy_release
+[1210月2026 22:33:00.608] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD heavy_release
+[1210月2026 22:33:00.608] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD charged_release
+[1210月2026 22:33:00.608] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD charged_release
+[1210月2026 22:33:00.610] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD charged_release
+[1210月2026 22:33:00.610] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD charged_release
+[1210月2026 22:33:00.610] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD roll
+[1210月2026 22:33:00.610] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD roll
+[1210月2026 22:33:00.610] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD roll
+[1210月2026 22:33:00.610] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD roll
+[1210月2026 22:33:00.610] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD parry
+[1210月2026 22:33:00.610] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD parry
+[1210月2026 22:33:00.610] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD parry
+[1210月2026 22:33:00.610] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD parry
+[1210月2026 22:33:00.610] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD guard_hit
+[1210月2026 22:33:00.610] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD guard_hit
+[1210月2026 22:33:00.610] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD guard_hit
+[1210月2026 22:33:00.610] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD guard_hit
+[1210月2026 22:33:00.610] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD guard_break
+[1210月2026 22:33:00.610] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD guard_break
+[1210月2026 22:33:00.610] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD guard_break
+[1210月2026 22:33:00.610] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD guard_break
+[1210月2026 22:33:00.610] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD drink
+[1210月2026 22:33:00.611] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD drink
+[1210月2026 22:33:00.611] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD drink
+[1210月2026 22:33:00.611] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD drink
+[1210月2026 22:33:00.611] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD hit_stagger
+[1210月2026 22:33:00.611] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD hit_stagger
+[1210月2026 22:33:00.611] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD hit_stagger
+[1210月2026 22:33:00.611] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD hit_stagger
+[1210月2026 22:33:00.611] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD death
+[1210月2026 22:33:00.611] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD death
+[1210月2026 22:33:00.611] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD death
+[1210月2026 22:33:00.611] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD death
+[1210月2026 22:33:00.611] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD idle
+[1210月2026 22:33:00.611] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD light_1
+[1210月2026 22:33:00.611] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD heavy_windup
+[1210月2026 22:33:00.611] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD heavy_release
+[1210月2026 22:33:00.611] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD charged_release
+[1210月2026 22:33:00.612] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD roll
+[1210月2026 22:33:00.612] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD parry
+[1210月2026 22:33:00.612] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD drink
+[1210月2026 22:33:00.612] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD guard_idle
+[1210月2026 22:33:00.612] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD guard_break
+[1210月2026 22:33:00.612] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD hit_stagger
+[1210月2026 22:33:00.612] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD death
+[1210月2026 22:33:00.612] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD idle
+[1210月2026 22:33:00.612] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD idle
+[1210月2026 22:33:00.612] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD idle
+[1210月2026 22:33:00.612] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD idle
+[1210月2026 22:33:00.612] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD walk
+[1210月2026 22:33:00.612] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD walk
+[1210月2026 22:33:00.612] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD walk
+[1210月2026 22:33:00.612] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD walk
+[1210月2026 22:33:00.612] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD run
+[1210月2026 22:33:00.613] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD run
+[1210月2026 22:33:00.613] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD run
+[1210月2026 22:33:00.613] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD run
+[1210月2026 22:33:00.613] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD guard_idle
+[1210月2026 22:33:00.613] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD guard_idle
+[1210月2026 22:33:00.613] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD guard_idle
+[1210月2026 22:33:00.613] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD guard_idle
+[1210月2026 22:33:00.613] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD light_1
+[1210月2026 22:33:00.613] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD light_1
+[1210月2026 22:33:00.613] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD light_1
+[1210月2026 22:33:00.613] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD light_1
+[1210月2026 22:33:00.613] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD light_2
+[1210月2026 22:33:00.613] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD light_2
+[1210月2026 22:33:00.613] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD light_2
+[1210月2026 22:33:00.613] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD light_2
+[1210月2026 22:33:00.614] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD heavy_windup
+[1210月2026 22:33:00.614] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD heavy_windup
+[1210月2026 22:33:00.614] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD heavy_windup
+[1210月2026 22:33:00.614] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD heavy_windup
+[1210月2026 22:33:00.614] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD heavy_release
+[1210月2026 22:33:00.614] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD heavy_release
+[1210月2026 22:33:00.614] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD heavy_release
+[1210月2026 22:33:00.614] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD heavy_release
+[1210月2026 22:33:00.614] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD charged_release
+[1210月2026 22:33:00.614] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD charged_release
+[1210月2026 22:33:00.614] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD charged_release
+[1210月2026 22:33:00.614] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD charged_release
+[1210月2026 22:33:00.614] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD roll
+[1210月2026 22:33:00.614] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD roll
+[1210月2026 22:33:00.615] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD roll
+[1210月2026 22:33:00.615] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD roll
+[1210月2026 22:33:00.615] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD parry
+[1210月2026 22:33:00.615] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD parry
+[1210月2026 22:33:00.615] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD parry
+[1210月2026 22:33:00.615] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD parry
+[1210月2026 22:33:00.615] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD guard_hit
+[1210月2026 22:33:00.615] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD guard_hit
+[1210月2026 22:33:00.615] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD guard_hit
+[1210月2026 22:33:00.615] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD guard_hit
+[1210月2026 22:33:00.615] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD guard_break
+[1210月2026 22:33:00.615] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD guard_break
+[1210月2026 22:33:00.615] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD guard_break
+[1210月2026 22:33:00.616] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD guard_break
+[1210月2026 22:33:00.616] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD drink
+[1210月2026 22:33:00.616] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD drink
+[1210月2026 22:33:00.616] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD drink
+[1210月2026 22:33:00.616] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD drink
+[1210月2026 22:33:00.616] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD hit_stagger
+[1210月2026 22:33:00.616] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD hit_stagger
+[1210月2026 22:33:00.616] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD hit_stagger
+[1210月2026 22:33:00.616] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD hit_stagger
+[1210月2026 22:33:00.616] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD death
+[1210月2026 22:33:00.616] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD death
+[1210月2026 22:33:00.616] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD death
+[1210月2026 22:33:00.616] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD death
+[1210月2026 22:33:00.616] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Native armor orientation
+[1210月2026 22:33:00.616] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Configured hit-start retiming
+[1210月2026 22:33:00.616] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Configured hit-end retiming
+[1210月2026 22:33:00.616] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Configured recovery retiming
+[1210月2026 22:33:00.616] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Full charge retiming
+[1210月2026 22:33:00.616] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Unsorted equip events
+[1210月2026 22:33:00.616] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Event zero fires once
+[1210月2026 22:33:00.616] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Loop boundary event
+[1210月2026 22:33:00.617] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Skipped frame events
+[1210月2026 22:33:00.617] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Fast blade crosses between endpoints
+[1210月2026 22:33:00.617] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Sweep outside target misses
+[1210月2026 22:33:00.617] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No execution/jump attack IDs
+[1210月2026 22:33:00.617] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Non-finite direction rejected
+[1210月2026 22:33:00.729] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] [Server] [etest] MARGIT_SUMMONED
+[1210月2026 22:33:00.781] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
+[1210月2026 22:33:00.781] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[1210月2026 22:33:01.343] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:e3f00d22] logged in with entity id 2 at (-2.5, -60.0, 6.5)
+[1210月2026 22:33:01.370] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[1210月2026 22:33:01.398] [Render thread/INFO] [Iris/]: Reloading pipeline on dimension change: null => minecraft:overworld
+[1210月2026 22:33:01.399] [Render thread/INFO] [Iris/]: Creating pipeline for dimension minecraft:overworld
+[1210月2026 22:33:01.631] [Render thread/INFO] [ChunkBuilder/]: Started 10 worker threads
+[1210月2026 22:33:01.815] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI...
+[1210月2026 22:33:01.828] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes...
+[1210月2026 22:33:01.844] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering item subtypes: jei:minecraft took 15.29 milliseconds
+[1210月2026 22:33:01.844] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes took 16.34 milliseconds
+[1210月2026 22:33:01.845] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes...
+[1210月2026 22:33:01.849] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes took 3.630 milliseconds
+[1210月2026 22:33:01.853] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients...
+[1210月2026 22:33:02.005] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering ingredients: jei:minecraft took 150.1 milliseconds
+[1210月2026 22:33:02.005] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients took 151.5 milliseconds
+[1210月2026 22:33:02.006] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients...
+[1210月2026 22:33:02.006] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients took 424.5 microseconds
+[1210月2026 22:33:02.007] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases...
+[1210月2026 22:33:02.008] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases took 612.9 microseconds
+[1210月2026 22:33:02.042] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Mod Info...
+[1210月2026 22:33:02.042] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Mod Info took 307.1 microseconds
+[1210月2026 22:33:02.071] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories...
+[1210月2026 22:33:02.103] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: jei:minecraft took 31.04 milliseconds
+[1210月2026 22:33:02.107] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories took 35.75 milliseconds
+[1210月2026 22:33:02.108] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions...
+[1210月2026 22:33:02.110] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions took 2.739 milliseconds
+[1210月2026 22:33:02.112] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts...
+[1210月2026 22:33:02.113] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts took 512.8 microseconds
+[1210月2026 22:33:02.114] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry...
+[1210月2026 22:33:02.144] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry took 30.09 milliseconds
+[1210月2026 22:33:02.148] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins...
+[1210月2026 22:33:02.149] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins took 353.9 microseconds
+[1210月2026 22:33:02.151] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes...
+[1210月2026 22:33:02.348] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:minecraft took 196.2 milliseconds
+[1210月2026 22:33:02.371] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:internal took 23.39 milliseconds
+[1210月2026 22:33:02.372] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes took 220.5 milliseconds
+[1210月2026 22:33:02.385] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers...
+[1210月2026 22:33:02.403] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes transfer handlers: jei:minecraft took 17.10 milliseconds
+[1210月2026 22:33:02.404] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers took 18.58 milliseconds
+[1210月2026 22:33:02.409] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime...
+[1210月2026 22:33:02.422] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers...
+[1210月2026 22:33:02.445] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering gui handlers: jei:gui took 14.31 milliseconds
+[1210月2026 22:33:02.445] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers took 22.91 milliseconds
+[1210月2026 22:33:02.466] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime...
+[1210月2026 22:33:02.469] [Render thread/INFO] [mezz.jei.gui.startup.JeiGuiStarter/]: Starting JEI GUI
+[1210月2026 22:33:02.470] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list...
+[1210月2026 22:33:02.497] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list took 27.19 milliseconds
+[1210月2026 22:33:02.497] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter...
+[1210月2026 22:33:02.575] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Adding 1788 ingredients
+[1210月2026 22:33:02.731] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Added 1788 ingredients
+[1210月2026 22:33:02.733] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter took 235.1 milliseconds
+[1210月2026 22:33:02.939] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering Runtime: jei:neoforge_gui took 472.3 milliseconds
+[1210月2026 22:33:02.940] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime took 473.4 milliseconds
+[1210月2026 22:33:02.943] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime took 533.6 milliseconds
+[1210月2026 22:33:02.944] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime...
+[1210月2026 22:33:02.945] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime took 670.2 microseconds
+[1210月2026 22:33:02.946] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI took 1.131 seconds
+[1210月2026 22:33:02.966] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 2 advancements
+[1210月2026 22:33:03.596] [Server thread/INFO] [EldenCombat/]: CLIENT_SMOKE: 428 shared checks passed
+[1210月2026 22:33:04.621] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: idle
+[1210月2026 22:33:04.690] [IO-Worker-4/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 00-idle.png Saved screenshot as 00-idle.png
+[1210月2026 22:33:05.369] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] [Server] [etest] verify start
+[1210月2026 22:33:05.371] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] [Server] [etest] MARGIT_ALIVE_AFTER_100_TICKS
+[1210月2026 22:33:05.377] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] [Server] [etest] DAMAGE_PIPELINE_OBSERVED
+[1210月2026 22:33:05.403] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [Server] [etest] verify start
+[1210月2026 22:33:05.409] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [Server] [etest] MARGIT_ALIVE_AFTER_100_TICKS
+[1210月2026 22:33:05.410] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [Server] [etest] DAMAGE_PIPELINE_OBSERVED
+[1210月2026 22:33:05.671] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev has made the advancement [Suit Up]
+[1210月2026 22:33:05.707] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev has made the advancement [Suit Up]
+[1210月2026 22:33:05.711] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 10 advancements
+[1210月2026 22:33:06.623] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: armor-guard
+[1210月2026 22:33:06.662] [IO-Worker-2/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 01-armor-guard.png Saved screenshot as 01-armor-guard.png
+[1210月2026 22:33:08.368] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] [Server] [etest] MARGIT_REMOVED_AFTER_DEATH
+[1210月2026 22:33:08.368] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] [Server] [etest] DONE
+[1210月2026 22:33:08.376] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [Server] [etest] MARGIT_REMOVED_AFTER_DEATH
+[1210月2026 22:33:08.376] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [Server] [etest] DONE
+[1210月2026 22:33:08.625] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: light
+[1210月2026 22:33:08.652] [IO-Worker-2/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 02-light.png Saved screenshot as 02-light.png
+[1210月2026 22:33:10.616] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: charged
+[1210月2026 22:33:10.645] [IO-Worker-2/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 03-charged.png Saved screenshot as 03-charged.png
+[1210月2026 22:33:12.624] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: roll
+[1210月2026 22:33:12.651] [IO-Worker-1/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 04-roll.png Saved screenshot as 04-roll.png
+[1210月2026 22:33:14.621] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: parry
+[1210月2026 22:33:14.644] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 05-parry.png Saved screenshot as 05-parry.png
+[1210月2026 22:33:16.623] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: drink
+[1210月2026 22:33:16.647] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 06-drink.png Saved screenshot as 06-drink.png
+[1210月2026 22:33:18.619] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: great-sword
+[1210月2026 22:33:18.642] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 07-great-sword.png Saved screenshot as 07-great-sword.png
+[1210月2026 22:33:20.617] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: great-left
+[1210月2026 22:33:20.640] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 08-great-left.png Saved screenshot as 08-great-left.png
+[1210月2026 22:33:22.624] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: first-sword
+[1210月2026 22:33:22.645] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 09-first-sword.png Saved screenshot as 09-first-sword.png
+[1210月2026 22:33:24.622] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: first-great
+[1210月2026 22:33:24.644] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 10-first-great.png Saved screenshot as 10-first-great.png
+[1210月2026 22:33:26.617] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: first-drink
+[1210月2026 22:33:26.638] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 11-first-drink.png Saved screenshot as 11-first-drink.png
+[1210月2026 22:33:28.618] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: vanilla-fallback
+[1210月2026 22:33:28.640] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 12-vanilla-fallback.png Saved screenshot as 12-vanilla-fallback.png
+[1210月2026 22:33:30.622] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-vanilla-sword
+[1210月2026 22:33:30.644] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 13-ref-vanilla-sword.png Saved screenshot as 13-ref-vanilla-sword.png
+[1210月2026 22:33:32.619] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-our-sword
+[1210月2026 22:33:32.638] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 14-ref-our-sword.png Saved screenshot as 14-ref-our-sword.png
+[1210月2026 22:33:34.622] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-vanilla-sword-first
+[1210月2026 22:33:34.643] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 15-ref-vanilla-sword-first.png Saved screenshot as 15-ref-vanilla-sword-first.png
+[1210月2026 22:33:35.737] [ForkJoinPool.commonPool-worker-6/WARN] [Iris/]: [Iris Update Check] Failed to get update info!
+java.net.ConnectException: Connection timed out: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:601) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:590) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:181) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:539) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:644) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:790) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1730) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1632) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223) ~[?:?]
+	at java.base/java.net.URL.openStream(URL.java:1325) ~[?:?]
+	at TRANSFORMER/iris@1.8.12-snapshot+mc1.21.1-local/net.irisshaders.iris.UpdateChecker.lambda$checkForUpdates$0(UpdateChecker.java:89) ~[iris-neoforge-1.8.12+mc1.21.1.jar:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) [?:?]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) [?:?]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) [?:?]
+[1210月2026 22:33:36.625] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-our-sword-first
+[1210月2026 22:33:36.645] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 16-ref-our-sword-first.png Saved screenshot as 16-ref-our-sword-first.png
+[1210月2026 22:33:38.624] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-remembrance-sword
+[1210月2026 22:33:38.645] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 17-ref-remembrance-sword.png Saved screenshot as 17-ref-remembrance-sword.png
+[1210月2026 22:33:40.623] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-great-sword
+[1210月2026 22:33:40.644] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 18-ref-great-sword.png Saved screenshot as 18-ref-great-sword.png
+[1210月2026 22:33:41.621] [Render thread/INFO] [EldenCombat/]: [EldenCombat] 武器姿态校正就绪：0 条
+[1210月2026 22:33:42.619] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-remembrance-noyaw
+[1210月2026 22:33:42.640] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 19-ref-remembrance-noyaw.png Saved screenshot as 19-ref-remembrance-noyaw.png
+[1210月2026 22:33:43.617] [Render thread/INFO] [EldenCombat/]: [EldenCombat] 武器姿态校正就绪：0 条
+[1210月2026 22:33:44.619] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-scale-dagger
+[1210月2026 22:33:44.640] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 20-ref-scale-dagger.png Saved screenshot as 20-ref-scale-dagger.png
+[1210月2026 22:33:46.618] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-scale-dagger-left
+[1210月2026 22:33:46.640] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 21-ref-scale-dagger-left.png Saved screenshot as 21-ref-scale-dagger-left.png
+[1210月2026 22:33:48.625] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-scale-colossal
+[1210月2026 22:33:48.647] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 22-ref-scale-colossal.png Saved screenshot as 22-ref-scale-colossal.png
+[1210月2026 22:33:50.618] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-scale-spear
+[1210月2026 22:33:50.639] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 23-ref-scale-spear.png Saved screenshot as 23-ref-scale-spear.png
+[1210月2026 22:33:52.620] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-scale-shield
+[1210月2026 22:33:52.643] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 24-ref-scale-shield.png Saved screenshot as 24-ref-scale-shield.png
+[1210月2026 22:33:54.621] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-scale-bow
+[1210月2026 22:33:54.642] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 25-ref-scale-bow.png Saved screenshot as 25-ref-scale-bow.png
+[1210月2026 22:33:56.624] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-scale-crossbow-left
+[1210月2026 22:33:56.647] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 26-ref-scale-crossbow-left.png Saved screenshot as 26-ref-scale-crossbow-left.png
+[1210月2026 22:33:58.619] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-scale-dagger-first
+[1210月2026 22:33:58.640] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 27-ref-scale-dagger-first.png Saved screenshot as 27-ref-scale-dagger-first.png
+[1210月2026 22:34:00.622] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-scale-colossal-first-left
+[1210月2026 22:34:00.644] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 28-ref-scale-colossal-first-left.png Saved screenshot as 28-ref-scale-colossal-first-left.png
+[1210月2026 22:34:02.617] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-scale-spear-first
+[1210月2026 22:34:02.641] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 29-ref-scale-spear-first.png Saved screenshot as 29-ref-scale-spear-first.png
+[1210月2026 22:34:04.618] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-scale-shield-first
+[1210月2026 22:34:04.640] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 30-ref-scale-shield-first.png Saved screenshot as 30-ref-scale-shield-first.png
+[1210月2026 22:34:06.625] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-scale-bow-first
+[1210月2026 22:34:06.648] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 31-ref-scale-bow-first.png Saved screenshot as 31-ref-scale-bow-first.png
+[1210月2026 22:34:08.625] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-scale-crossbow-first-left
+[1210月2026 22:34:08.646] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 32-ref-scale-crossbow-first-left.png Saved screenshot as 32-ref-scale-crossbow-first-left.png
+[1210月2026 22:34:09.623] [Render thread/INFO] [EldenCombat/]: CLIENT_SMOKE_PASS: all 33 visual fixtures rendered
+[1210月2026 22:34:10.073] [Render thread/INFO] [Iris/]: Destroying pipeline minecraft:overworld
+[1210月2026 22:34:10.073] [Render thread/INFO] [Iris/]: Shaders are disabled because no valid shaderpack is selected
+[1210月2026 22:34:10.073] [Render thread/INFO] [Iris/]: Creating pipeline for dimension minecraft:overworld
+[1210月2026 22:34:10.073] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Shaders Reloaded!
+[1210月2026 22:34:10.173] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: combat toggle snapshot via real key press
+[1210月2026 22:34:10.525] [Server thread/ERROR] [net.minecraft.util.thread.BlockableEventLoop/FATAL]: Error executing task on Server
+java.lang.IllegalStateException: CLIENT_NETWORK_FAIL: bound light attack
+	at TRANSFORMER/eldencombat@0.2.0/com.dsh.eldencombat.testing.ClientSmokeHarness.require(ClientSmokeHarness.java:222) ~[%23191!/:?]
+	at TRANSFORMER/eldencombat@0.2.0/com.dsh.eldencombat.testing.ClientSmokeHarness.lambda$networkChecks$22(ClientSmokeHarness.java:330) ~[%23191!/:?]
+	at TRANSFORMER/eldencombat@0.2.0/com.dsh.eldencombat.testing.ClientSmokeHarness.lambda$onServer$20(ClientSmokeHarness.java:219) ~[%23191!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.TickTask.run(TickTask.java:18) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:148) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:872) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:170) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:122) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:855) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:849) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:132) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.managedBlock(MinecraftServer.java:821) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:826) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:712) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:267) ~[neoforge-21.1.219.jar%23189!/:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[1210月2026 22:34:10.722] [Server thread/ERROR] [net.minecraft.util.thread.BlockableEventLoop/FATAL]: Error executing task on Server
+java.lang.IllegalStateException: CLIENT_NETWORK_FAIL: stale cancel rejected
+	at TRANSFORMER/eldencombat@0.2.0/com.dsh.eldencombat.testing.ClientSmokeHarness.require(ClientSmokeHarness.java:222) ~[%23191!/:?]
+	at TRANSFORMER/eldencombat@0.2.0/com.dsh.eldencombat.testing.ClientSmokeHarness.lambda$networkChecks$23(ClientSmokeHarness.java:341) ~[%23191!/:?]
+	at TRANSFORMER/eldencombat@0.2.0/com.dsh.eldencombat.testing.ClientSmokeHarness.lambda$onServer$20(ClientSmokeHarness.java:219) ~[%23191!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.TickTask.run(TickTask.java:18) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:148) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:872) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:170) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:122) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:855) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:849) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:132) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.managedBlock(MinecraftServer.java:821) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:826) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:712) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:267) ~[neoforge-21.1.219.jar%23189!/:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[1210月2026 22:34:10.925] [Server thread/ERROR] [net.minecraft.util.thread.BlockableEventLoop/FATAL]: Error executing task on Server
+java.lang.IllegalStateException: CLIENT_NETWORK_FAIL: real blade hits target once
+	at TRANSFORMER/eldencombat@0.2.0/com.dsh.eldencombat.testing.ClientSmokeHarness.require(ClientSmokeHarness.java:222) ~[%23191!/:?]
+	at TRANSFORMER/eldencombat@0.2.0/com.dsh.eldencombat.testing.ClientSmokeHarness.lambda$networkChecks$24(ClientSmokeHarness.java:344) ~[%23191!/:?]
+	at TRANSFORMER/eldencombat@0.2.0/com.dsh.eldencombat.testing.ClientSmokeHarness.lambda$onServer$20(ClientSmokeHarness.java:219) ~[%23191!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.TickTask.run(TickTask.java:18) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:148) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:872) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:170) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:122) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:855) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:849) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:132) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.managedBlock(MinecraftServer.java:821) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:826) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:712) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:267) ~[neoforge-21.1.219.jar%23189!/:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[1210月2026 22:34:11.119] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fresh cancel accepted
+[1210月2026 22:34:11.321] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: guard accepted
+[1210月2026 22:34:11.525] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: guard released
+[1210月2026 22:34:11.973] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: drink before consume tick
+[1210月2026 22:34:12.620] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: drink heals once after consume tick
+[1210月2026 22:34:14.426] [Server thread/ERROR] [net.minecraft.util.thread.BlockableEventLoop/FATAL]: Error executing task on Server
+java.lang.IllegalStateException: CLIENT_NETWORK_FAIL: full charge release
+	at TRANSFORMER/eldencombat@0.2.0/com.dsh.eldencombat.testing.ClientSmokeHarness.require(ClientSmokeHarness.java:222) ~[%23191!/:?]
+	at TRANSFORMER/eldencombat@0.2.0/com.dsh.eldencombat.testing.ClientSmokeHarness.lambda$networkChecks$30(ClientSmokeHarness.java:363) ~[%23191!/:?]
+	at TRANSFORMER/eldencombat@0.2.0/com.dsh.eldencombat.testing.ClientSmokeHarness.lambda$onServer$20(ClientSmokeHarness.java:219) ~[%23191!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.TickTask.run(TickTask.java:18) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:148) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:872) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:170) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:122) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:855) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:849) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:132) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.managedBlock(MinecraftServer.java:821) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:826) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:712) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:267) ~[neoforge-21.1.219.jar%23189!/:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[1210月2026 22:34:15.374] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: roll moves through server physics and preserves height
+[1210月2026 22:34:16.123] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: client roll height retained
+[1210月2026 22:34:16.124] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: roll clears invulnerability and retains height
+[1210月2026 22:34:16.726] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: changing weapon cancels charge
+[1210月2026 22:34:18.619] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: roll stops at wall without tunneling
+[1210月2026 22:34:19.768] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: air roll preserves client falling
+[1210月2026 22:34:19.769] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: air roll preserves server falling
+[1210月2026 22:34:20.767] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: skill cast accepted from real key press (client mirror follows server cast)
+[1210月2026 22:34:21.020] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: client mirror sees the cast (skill cast payload arrived)
+[1210月2026 22:34:21.020] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: skill cast accepted from real key press: cast#1 wave_of_gold WINDUP 段0 已结算0 命中0 追击至-9223372036854775808
+[1210月2026 22:34:21.369] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: real key spawned exactly one non-flame travelling golden wave
+[1210月2026 22:34:22.069] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: skill timeline finished and returned to idle
+[1210月2026 22:34:22.069] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: golden wave dealt exactly one 14 damage hit, health=6.0
+[1210月2026 22:34:22.418] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fresh boss is not broken
+[1210月2026 22:34:22.418] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: server entered break state with outline
+[1210月2026 22:34:22.720] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: break boss is tracked by the client
+[1210月2026 22:34:22.720] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: client mirror sees break state (DATA_BROKEN synced)
+[1210月2026 22:34:22.720] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: client mirror sees break outline (shared flag 6 synced)
+[1210月2026 22:34:23.368] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: jump skill cast accepted while airborne (client mirror follows server cast)
+[1210月2026 22:34:23.620] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: jump skill server-side cast is gold_breaker: cast#2 gold_breaker WINDUP 段0 已结算0 命中0 追击至-9223372036854775808
+[1210月2026 22:34:26.420] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: landing safety net observed the landing after the cast ended (LANDED)
+[1210月2026 22:34:26.420] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: player is back on solid ground, not stuck in the air or in the void
+[1210月2026 22:34:27.523] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: insufficient FP request rejected without charge
+[1210月2026 22:34:27.523] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: rejected request spawned no wave
+[1210月2026 22:34:27.870] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: wall test real key accepted
+[1210月2026 22:34:29.924] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: golden wave did not damage target behind wall
+[1210月2026 22:34:30.570] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: starcaller initial key accepted
+[1210月2026 22:34:31.373] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: starcaller first stage dealt 10 damage
+[1210月2026 22:34:31.819] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: starcaller followup key reached second ACTIVE
+[1210月2026 22:34:33.419] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: starcaller followup landing dealt 25 damage
+[1210月2026 22:34:33.419] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: starcaller charged two inputs once
+[1210月2026 22:34:34.024] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: cleanup test key accepted
+[1210月2026 22:34:34.371] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: manual cancel rejected during windup
+[1210月2026 22:34:34.624] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: cleanup fixture emitted wave
+[1210月2026 22:34:34.871] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: weapon switch forced cancellation
+[1210月2026 22:34:34.871] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: weapon cancellation removed emitted wave
+[1210月2026 22:34:34.871] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: cancellation retained one FP charge
+[1210月2026 22:34:35.169] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: hard recovery rejected roll
+[1210月2026 22:34:35.368] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: recovery tail connected to roll through network
+[1210月2026 22:34:35.370] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: cancel restored ordinary gravity
+[1210月2026 22:34:37.020] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: gold_breaker real key accepted
+[1210月2026 22:34:41.673] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: gold_breaker caused actual target damage, health=74.0
+[1210月2026 22:34:41.673] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: gold_breaker returned to idle
+[1210月2026 22:34:41.673] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: gold_breaker charged initial input once
+[1210月2026 22:34:42.619] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: destined_death real key accepted
+[1210月2026 22:34:42.978] [Render thread/INFO] [EldenCombat/]: [skill-fx] Particle atlas sprite ready: minecraft:explosion_0
+[1210月2026 22:34:47.271] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: destined_death caused actual target damage, health=61.0
+[1210月2026 22:34:47.271] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: destined_death returned to idle
+[1210月2026 22:34:47.271] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: destined_death charged initial input once
+[1210月2026 22:34:48.219] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: takers_flames real key accepted
+[1210月2026 22:34:52.871] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: takers_flames caused actual target damage, health=87.0
+[1210月2026 22:34:52.871] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: takers_flames returned to idle
+[1210月2026 22:34:52.871] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: takers_flames charged initial input once
+[1210月2026 22:34:53.820] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: waterfowl_dance real key accepted
+[1210月2026 22:34:58.474] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: waterfowl_dance caused actual target damage, health=82.0
+[1210月2026 22:34:58.474] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: waterfowl_dance returned to idle
+[1210月2026 22:34:58.474] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: waterfowl_dance charged initial input once
+[1210月2026 22:34:59.423] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: bloodboon_ritual real key accepted
+[1210月2026 22:35:04.073] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: bloodboon_ritual caused actual target damage, health=89.0
+[1210月2026 22:35:04.073] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: bloodboon_ritual returned to idle
+[1210月2026 22:35:04.073] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: bloodboon_ritual charged initial input once
+[1210月2026 22:35:05.024] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: cursed_blood_slice real key accepted
+[1210月2026 22:35:09.667] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: cursed_blood_slice caused actual target damage, health=80.5
+[1210月2026 22:35:09.667] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: cursed_blood_slice returned to idle
+[1210月2026 22:35:09.667] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: cursed_blood_slice charged initial input once
+[1210月2026 22:35:10.168] [Render thread/ERROR] [net.neoforged.bus.EventBus/EVENTBUS]: Exception caught during firing event: CLIENT_NETWORK_FAIL: all network checks completed
+	Index: 1
+	Listeners:
+		0: net.neoforged.bus.EventListenerFactory$onClientTick/0x00000213a9f26800@7306164b
+		1: net.neoforged.bus.EventListenerFactory$tick/0x00000213a9f74400@31c519de
+java.lang.IllegalStateException: CLIENT_NETWORK_FAIL: all network checks completed
+	at TRANSFORMER/eldencombat@0.2.0/com.dsh.eldencombat.testing.ClientSmokeHarness.require(ClientSmokeHarness.java:222)
+	at TRANSFORMER/eldencombat@0.2.0/com.dsh.eldencombat.testing.ClientSmokeHarness.remainingSkillChecks(ClientSmokeHarness.java:555)
+	at TRANSFORMER/eldencombat@0.2.0/com.dsh.eldencombat.testing.ClientSmokeHarness.networkChecks(ClientSmokeHarness.java:545)
+	at TRANSFORMER/eldencombat@0.2.0/com.dsh.eldencombat.testing.ClientSmokeHarness.tick(ClientSmokeHarness.java:192)
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:360)
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:328)
+	at TRANSFORMER/neoforge@21.1.219/net.neoforged.neoforge.client.ClientHooks.fireClientTickPost(ClientHooks.java:1077)
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.tick(Minecraft.java:1915)
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.runTick(Minecraft.java:1161)
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.run(Minecraft.java:807)
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.main.Main.main(Main.java:230)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136)
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124)
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.NeoForgeClientDevLaunchHandler.runService(NeoForgeClientDevLaunchHandler.java:23)
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.run(Launcher.java:103)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.main(Launcher.java:74)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23)
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210)
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at net.neoforged.devlaunch.Main.main(Main.java:57)
+
+[1210月2026 22:35:10.169] [Render thread/ERROR] [net.minecraft.client.Minecraft/FATAL]: Unreported exception thrown!
+java.lang.IllegalStateException: CLIENT_NETWORK_FAIL: all network checks completed
+	at TRANSFORMER/eldencombat@0.2.0/com.dsh.eldencombat.testing.ClientSmokeHarness.require(ClientSmokeHarness.java:222) ~[%23191!/:?]
+	at TRANSFORMER/eldencombat@0.2.0/com.dsh.eldencombat.testing.ClientSmokeHarness.remainingSkillChecks(ClientSmokeHarness.java:555) ~[%23191!/:?]
+	at TRANSFORMER/eldencombat@0.2.0/com.dsh.eldencombat.testing.ClientSmokeHarness.networkChecks(ClientSmokeHarness.java:545) ~[%23191!/:?]
+	at TRANSFORMER/eldencombat@0.2.0/com.dsh.eldencombat.testing.ClientSmokeHarness.tick(ClientSmokeHarness.java:192) ~[%23191!/:?]
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:360) ~[bus-8.0.5.jar%23150!/:?]
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:328) ~[bus-8.0.5.jar%23150!/:?]
+	at TRANSFORMER/neoforge@21.1.219/net.neoforged.neoforge.client.ClientHooks.fireClientTickPost(ClientHooks.java:1077) ~[neoforge-21.1.219.jar%23190!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.tick(Minecraft.java:1915) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.runTick(Minecraft.java:1161) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.run(Minecraft.java:807) ~[neoforge-21.1.219.jar%23189!/:?]
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.main.Main.main(Main.java:230) ~[neoforge-21.1.219.jar%23189!/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-4.0.42.jar%23146!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-4.0.42.jar%23146!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.NeoForgeClientDevLaunchHandler.runService(NeoForgeClientDevLaunchHandler.java:23) ~[loader-4.0.42.jar%23146!/:4.0]
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-4.0.42.jar%23146!/:4.0]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-11.0.5.jar%23128!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-11.0.5.jar%23128!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-11.0.5.jar%23128!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.run(Launcher.java:103) [modlauncher-11.0.5.jar%23128!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.main(Launcher.java:74) [modlauncher-11.0.5.jar%23128!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-11.0.5.jar%23128!/:?]
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-11.0.5.jar%23128!/:?]
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210) [bootstraplauncher-2.0.2.jar:?]
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69) [bootstraplauncher-2.0.2.jar:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?]
+[1210月2026 22:35:10.368] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[1210月2026 22:35:10.369] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[1210月2026 22:35:10.385] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[1210月2026 22:35:11.307] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[1210月2026 22:35:11.330] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[1210月2026 22:35:11.336] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[1210月2026 22:35:11.357] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (codex-player-smoke): All chunks are saved
+[1210月2026 22:35:11.357] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[1210月2026 22:35:11.357] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[1210月2026 22:35:11.357] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[1210月2026 22:35:11.371] [Render thread/INFO] [mezz.jei.library.startup.JeiStarter/]: Stopping JEI
+[1210月2026 22:35:11.372] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable...
+[1210月2026 22:35:11.372] [Render thread/INFO] [mezz.jei.neoforge.plugins.neoforge.NeoForgeGuiPlugin/]: Stopping JEI GUI
+[1210月2026 22:35:11.374] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable took 2.051 milliseconds
+[1210月2026 22:35:11.379] [Render thread/INFO] [ChunkBuilder/]: Stopping worker threads
+[1210月2026 22:35:11.470] [Render thread/FATAL] [net.neoforged.neoforge.common.NeoForgeMod/]: Preparing crash report with UUID a9eef0aa-c4e3-40d0-bf61-9924ccb0d542
+[1210月2026 22:35:11.508] [Render thread/FATAL] [net.neoforged.neoforge.common.NeoForgeMod/]: Preparing crash report with UUID b10d9222-715d-4d24-adab-e8cd8c87aa3c

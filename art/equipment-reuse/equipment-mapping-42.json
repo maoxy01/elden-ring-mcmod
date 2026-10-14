@@ -1,0 +1,2074 @@
+{
+  "date": "2026-10-14",
+  "source": "src/main/resources/assets/eldencombat/routes/2d.json",
+  "sourceHash": "08e4cdb213148118d62680b4addc012c8b5156a6796278d7fe1b60792e8c7af3",
+  "counts": {
+    "ordinary": 33,
+    "remembrance": 8,
+    "flask": 1,
+    "total": 42,
+    "representativeDeliveries": 6,
+    "remaining": 36
+  },
+  "note": "Candidate IDs are release/source evidence, never proof of installation; pending runtime routes stay pending. Selected old great/colossal sword models untouched.",
+  "mappings": [
+    {
+      "id": "eldencombat:axe",
+      "name": "斧",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/axe.model.json",
+        "sha256": "e425c632df549f5a426ec717c6ba98f40c7406ae648f180cc384b63c5f3d22fc",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": "minecraft:iron_axe",
+        "precision": "Known Minecraft built-in ID; installed engine resource definition, not recipe/registry inspection",
+        "match": "category_candidate",
+        "version": "Minecraft 1.21.1 / NeoForge resources 21.1.219",
+        "sha256": "8e9cf6f4b6eafb1c6bf745a67a61dd1736f31865cad409e5b2bec918667dab5e",
+        "evidence": "art/equipment-reuse/definition-evidence.json",
+        "strict2d": true,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": null,
+        "licenseEvidence": "Minecraft engine resources; reference original resource locations, local PNG excluded from own distribution",
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "complete_provider_dependency_candidate",
+        "representative": false,
+        "artStatus": "candidate_only_not_asset_delivery",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "reference engine resources; no redistributed Mojang PNG",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 0.864,
+        "ratioToPlayer": 0.48,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [],
+      "interfaces": [
+        "external_model admission adapter / actual item registry",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "verify complete dependency and state art, then adapt"
+    },
+    {
+      "id": "eldencombat:blasphemous_blade",
+      "name": "亵渎圣剑",
+      "category": "remembrance",
+      "existingAsset": {
+        "file": "art/remembrance-game/blasphemous_blade.model.json",
+        "sha256": "5ba45a03eeacbf04e0234f97e8fbc564518854456b311b260ff7ec0a664bf1c5",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": null,
+        "precision": "no exact provider confirmed",
+        "match": "none",
+        "version": null,
+        "sha256": null,
+        "evidence": null,
+        "strict2d": null,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": null,
+        "licenseEvidence": null,
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "own_design_pixel_conversion_pending",
+        "representative": false,
+        "artStatus": "not_started",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "project-owned source available; sprite not authored",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 1.728,
+        "ratioToPlayer": 0.96,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [
+        "independent 2D silhouette"
+      ],
+      "interfaces": [
+        "sprite admission / per-item display",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "convert existing project-owned design to sprite after representative review"
+    },
+    {
+      "id": "eldencombat:claw",
+      "name": "钩爪",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/claw.model.json",
+        "sha256": "0f35e68d8b987b5769c27c74cd88b0e7aecba18b2a87030a4bd93e2339f0aa11",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": "vanilla_claws:iron_claws",
+        "precision": "pinned source registration/recipe only, not release/installed ID",
+        "match": "category_candidate",
+        "version": "source commit bcad24f8166c0106fdd294bdb833f29fdc5757a0 / declares 1.2",
+        "sha256": null,
+        "evidence": "art/equipment-reuse/candidate-source-evidence.json",
+        "strict2d": null,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": "https://github.com/DakotaPride/vanilla-claws-forge/tree/bcad24f8166c0106fdd294bdb833f29fdc5757a0",
+        "licenseEvidence": "pinned source only; release and asset-license binding pending",
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "own_design_pixel_conversion_pending",
+        "representative": false,
+        "artStatus": "candidate_only_not_asset_delivery",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 0.558,
+        "ratioToPlayer": 0.31,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [
+        "exact release JAR, all parent/state PNGs, version/license binding"
+      ],
+      "interfaces": [
+        "external_model admission adapter / actual item registry",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "verify complete dependency and state art, then adapt"
+    },
+    {
+      "id": "eldencombat:colossal_sword",
+      "name": "特大剑",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/colossal_sword.model.json",
+        "sha256": "38c4243b23f4ffe633728e874254950ea2d334bf5e2ac9d50428839b6edd088e",
+        "selectedLegacy": true
+      },
+      "candidate": {
+        "itemId": "spartan_weaponry_unofficial:iron_greatsword",
+        "precision": "Exact release recipe result.id",
+        "match": "approximate_category_not_equivalent",
+        "version": "spartan_weaponry_unofficial-1.2.3-1.21.1.jar",
+        "sha256": "84d3ddafb519e2f5e03f2681ff52c30c92c9512181f61a7a7487399a0179888f",
+        "evidence": "art/equipment-reuse/definition-evidence.json",
+        "strict2d": true,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": "https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry-unofficial/files/8717810",
+        "licenseEvidence": "Apache-2.0 declaration, exact release metadata; per-asset exceptions not cleared, use full dependency",
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "complete_provider_dependency_candidate",
+        "representative": false,
+        "artStatus": "candidate_only_not_asset_delivery",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
+        "protectedOldModel": true,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 2.484,
+        "ratioToPlayer": 1.38,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [],
+      "interfaces": [
+        "external_model admission adapter / actual item registry",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "confirm category/shape before adopting approximate provider"
+    },
+    {
+      "id": "eldencombat:colossal_weapon",
+      "name": "特大武器",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/colossal_weapon.model.json",
+        "sha256": "6ee5266f05a7221c362987c1c102d694582ba138337ed87a6f0d5a4b17c582d1",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": "spartan_weaponry_unofficial:iron_battle_hammer",
+        "precision": "Exact release recipe result.id",
+        "match": "approximate_category_not_equivalent",
+        "version": "spartan_weaponry_unofficial-1.2.3-1.21.1.jar",
+        "sha256": "84d3ddafb519e2f5e03f2681ff52c30c92c9512181f61a7a7487399a0179888f",
+        "evidence": "art/equipment-reuse/definition-evidence.json",
+        "strict2d": true,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": "https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry-unofficial/files/8717810",
+        "licenseEvidence": "Apache-2.0 declaration, exact release metadata; per-asset exceptions not cleared, use full dependency",
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "complete_provider_dependency_candidate",
+        "representative": false,
+        "artStatus": "candidate_only_not_asset_delivery",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 2.16,
+        "ratioToPlayer": 1.2,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [],
+      "interfaces": [
+        "external_model admission adapter / actual item registry",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "confirm category/shape before adopting approximate provider"
+    },
+    {
+      "id": "eldencombat:curved_greatsword",
+      "name": "大曲剑",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/curved_greatsword.model.json",
+        "sha256": "86c48bf0b05ded13d82fd42ca33673285a9786ca41d99f6605f143ce9b701f5c",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": null,
+        "precision": "no exact provider confirmed",
+        "match": "none",
+        "version": null,
+        "sha256": null,
+        "evidence": null,
+        "strict2d": null,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": null,
+        "licenseEvidence": null,
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "own_design_pixel_conversion_pending",
+        "representative": false,
+        "artStatus": "not_started",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "project-owned source available; sprite not authored",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 1.746,
+        "ratioToPlayer": 0.97,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [
+        "independent 2D silhouette"
+      ],
+      "interfaces": [
+        "sprite admission / per-item display",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "convert existing project-owned design to sprite after representative review"
+    },
+    {
+      "id": "eldencombat:curved_sword",
+      "name": "曲剑",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/curved_sword.model.json",
+        "sha256": "46e7af26e6425250d8ec983da86e69c9ccc1b1ad669d33aa1b6a0fe7a69c56c3",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": "spartan_weaponry_unofficial:iron_saber",
+        "precision": "Exact release recipe result.id",
+        "match": "approximate_category_not_equivalent",
+        "version": "spartan_weaponry_unofficial-1.2.3-1.21.1.jar",
+        "sha256": "84d3ddafb519e2f5e03f2681ff52c30c92c9512181f61a7a7487399a0179888f",
+        "evidence": "art/equipment-reuse/definition-evidence.json",
+        "strict2d": true,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": "https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry-unofficial/files/8717810",
+        "licenseEvidence": "Apache-2.0 declaration, exact release metadata; per-asset exceptions not cleared, use full dependency",
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "complete_provider_dependency_candidate",
+        "representative": false,
+        "artStatus": "candidate_only_not_asset_delivery",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 1.098,
+        "ratioToPlayer": 0.61,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [],
+      "interfaces": [
+        "external_model admission adapter / actual item registry",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "confirm category/shape before adopting approximate provider"
+    },
+    {
+      "id": "eldencombat:dagger",
+      "name": "匕首",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/dagger.model.json",
+        "sha256": "8b10b1afa7bb8afcc27e2e4297167497db1f9fc5788c3ac28fc204a1bd7e5edd",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": "spartan_weaponry_unofficial:iron_dagger",
+        "precision": "Exact release recipe result.id",
+        "match": "category_candidate",
+        "version": "spartan_weaponry_unofficial-1.2.3-1.21.1.jar",
+        "sha256": "84d3ddafb519e2f5e03f2681ff52c30c92c9512181f61a7a7487399a0179888f",
+        "evidence": "art/equipment-reuse/definition-evidence.json",
+        "strict2d": true,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": "https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry-unofficial/files/8717810",
+        "licenseEvidence": "Apache-2.0 declaration, exact release metadata; per-asset exceptions not cleared, use full dependency",
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "complete_provider_dependency_candidate",
+        "representative": false,
+        "artStatus": "candidate_only_not_asset_delivery",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 0.5040000000000001,
+        "ratioToPlayer": 0.28,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [],
+      "interfaces": [
+        "external_model admission adapter / actual item registry",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "verify complete dependency and state art, then adapt"
+    },
+    {
+      "id": "eldencombat:fist",
+      "name": "拳套",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/fist.model.json",
+        "sha256": "038e65edeb3b16bff3cb4967aad66b2f50736b0c2c55c5485ceebbb777b6ace8",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": "spartan_weaponry_unofficial:cestus",
+        "precision": "Exact release recipe result.id",
+        "match": "category_candidate",
+        "version": "spartan_weaponry_unofficial-1.2.3-1.21.1.jar",
+        "sha256": "84d3ddafb519e2f5e03f2681ff52c30c92c9512181f61a7a7487399a0179888f",
+        "evidence": "art/equipment-reuse/definition-evidence.json",
+        "strict2d": false,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": "https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry-unofficial/files/8717810",
+        "licenseEvidence": "Apache-2.0 declaration, exact release metadata; per-asset exceptions not cleared, use full dependency",
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "own_design_pixel_conversion_pending",
+        "representative": false,
+        "artStatus": "candidate_only_not_asset_delivery",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 0.30600000000000005,
+        "ratioToPlayer": 0.17,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [
+        "cestus candidate contains six 3D elements; strict 2D still missing"
+      ],
+      "interfaces": [
+        "external_model admission adapter / actual item registry",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "verify complete dependency and state art, then adapt"
+    },
+    {
+      "id": "eldencombat:flail",
+      "name": "连枷",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/flail.model.json",
+        "sha256": "e1aaea3ec5d481dee9a6debd2540792ca7581109e1dffbaab87d8cf24ae646d9",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": null,
+        "precision": "no exact provider confirmed",
+        "match": "none",
+        "version": null,
+        "sha256": null,
+        "evidence": null,
+        "strict2d": null,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": null,
+        "licenseEvidence": null,
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "own_design_pixel_conversion_pending",
+        "representative": false,
+        "artStatus": "not_started",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "project-owned source available; sprite not authored",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 1.2240000000000002,
+        "ratioToPlayer": 0.68,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [
+        "independent 2D silhouette"
+      ],
+      "interfaces": [
+        "sprite admission / per-item display",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "convert existing project-owned design to sprite after representative review"
+    },
+    {
+      "id": "eldencombat:glintstone_staff",
+      "name": "辉石杖",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/glintstone_staff.model.json",
+        "sha256": "9fd708984fa7edc3ddd786445b17eece3c033d326416c676aa5ead016a99ca12",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": null,
+        "precision": "no exact provider confirmed",
+        "match": "none",
+        "version": null,
+        "sha256": null,
+        "evidence": null,
+        "strict2d": null,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": null,
+        "licenseEvidence": null,
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "own_design_pixel_conversion_pending",
+        "representative": false,
+        "artStatus": "not_started",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "project-owned source available; sprite not authored",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 1.9800000000000002,
+        "ratioToPlayer": 1.1,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [
+        "independent 2D silhouette"
+      ],
+      "interfaces": [
+        "sprite admission / per-item display",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "convert existing project-owned design to sprite after representative review"
+    },
+    {
+      "id": "eldencombat:great_hammer",
+      "name": "大槌",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/great_hammer.model.json",
+        "sha256": "c75bc9343b75f96b46a39f542baa270ab5b5d9c768008b2c30fbfb460545ee04",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": "spartan_weaponry_unofficial:iron_battle_hammer",
+        "precision": "Exact release recipe result.id",
+        "match": "category_candidate",
+        "version": "spartan_weaponry_unofficial-1.2.3-1.21.1.jar",
+        "sha256": "84d3ddafb519e2f5e03f2681ff52c30c92c9512181f61a7a7487399a0179888f",
+        "evidence": "art/equipment-reuse/definition-evidence.json",
+        "strict2d": true,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": "https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry-unofficial/files/8717810",
+        "licenseEvidence": "Apache-2.0 declaration, exact release metadata; per-asset exceptions not cleared, use full dependency",
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "complete_provider_dependency_candidate",
+        "representative": false,
+        "artStatus": "candidate_only_not_asset_delivery",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 1.548,
+        "ratioToPlayer": 0.86,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [],
+      "interfaces": [
+        "external_model admission adapter / actual item registry",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "verify complete dependency and state art, then adapt"
+    },
+    {
+      "id": "eldencombat:great_shield",
+      "name": "大盾",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/great_shield.model.json",
+        "sha256": "e86b985ac5d746dadaf943858aaf3dd05617daff3c77e69871ebbfb29255f7c6",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": "spartan_shields_unofficial:iron_tower_shield",
+        "precision": "pinned source registration/recipe only, not release/installed ID",
+        "match": "category_candidate",
+        "version": "source commit a2a0eb62a98a2fa22d23e624948b1fa541048ce1",
+        "sha256": null,
+        "evidence": "art/equipment-reuse/candidate-source-evidence.json",
+        "strict2d": null,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": "https://github.com/Mai-xiyu/SpartanShields-NeoForge/tree/a2a0eb62a98a2fa22d23e624948b1fa541048ce1",
+        "licenseEvidence": "pinned source only; release and asset-license binding pending",
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "own_design_pixel_conversion_pending",
+        "representative": false,
+        "artStatus": "candidate_only_not_asset_delivery",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 1.314,
+        "ratioToPlayer": 0.73,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [
+        "front/back/hand anchor",
+        "blocking pose",
+        "exact release JAR, all parent/state PNGs, version/license binding"
+      ],
+      "interfaces": [
+        "external_model admission adapter / actual item registry",
+        "front/back and blocking transform",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "verify complete dependency and state art, then adapt"
+    },
+    {
+      "id": "eldencombat:great_spear",
+      "name": "大矛",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/great_spear.model.json",
+        "sha256": "bbf446c6a7347da02e007dc0b856430d4017d53c22bff0e1c6e4c4154e045816",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": "spartan_weaponry_unofficial:iron_lance",
+        "precision": "Exact release recipe result.id",
+        "match": "approximate_category_not_equivalent",
+        "version": "spartan_weaponry_unofficial-1.2.3-1.21.1.jar",
+        "sha256": "84d3ddafb519e2f5e03f2681ff52c30c92c9512181f61a7a7487399a0179888f",
+        "evidence": "art/equipment-reuse/definition-evidence.json",
+        "strict2d": true,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": "https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry-unofficial/files/8717810",
+        "licenseEvidence": "Apache-2.0 declaration, exact release metadata; per-asset exceptions not cleared, use full dependency",
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "complete_provider_dependency_candidate",
+        "representative": false,
+        "artStatus": "candidate_only_not_asset_delivery",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 3.06,
+        "ratioToPlayer": 1.7,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [],
+      "interfaces": [
+        "external_model admission adapter / actual item registry",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "confirm category/shape before adopting approximate provider"
+    },
+    {
+      "id": "eldencombat:great_sword",
+      "name": "大剑",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/great_sword.model.json",
+        "sha256": "1998e1196d6512539b9bd444ffb45d7cc2c01ba93c9a491396e49e218cd5cb89",
+        "selectedLegacy": true
+      },
+      "candidate": {
+        "itemId": "simplyswords:iron_claymore",
+        "precision": "Exact release recipe result.id",
+        "match": "approximate_category_not_equivalent",
+        "version": "simplyswords-neoforge-1.70.2-1.21.1.jar",
+        "sha256": "5e75bd66ea489079d60c9c1ed98762550fbc0bee88cd7af399f17bbeb56608c3",
+        "evidence": "art/equipment-reuse/definition-evidence.json",
+        "strict2d": true,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": "https://www.curseforge.com/minecraft/mc-mods/simply-swords/files/8746001",
+        "licenseEvidence": "Timefall Development License 1.2 per existing audit; complete authorized modpack dependency only, no extracted artwork",
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "own_sprite_draft",
+        "representative": true,
+        "artStatus": "representative_delivered",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "project-owned derivative",
+        "protectedOldModel": true,
+        "deliveredStrict2d": true
+      },
+      "size": {
+        "targetLengthBlocks": 1.584,
+        "ratioToPlayer": 0.88,
+        "evidence": "provisional_art_estimate",
+        "grip": [
+          7.5,
+          24.5
+        ],
+        "suggestion": "See six-representatives.json; webpage anchor is not in-game proof"
+      },
+      "missingStates": [],
+      "interfaces": [
+        "sprite admission / per-item display",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "Review representative, then code owner admits assets/reference"
+    },
+    {
+      "id": "eldencombat:greataxe",
+      "name": "大斧",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/greataxe.model.json",
+        "sha256": "66b68204103cf12f18c14f55eb5bea78af209b8d5ad17cf814d09a722440f1b0",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": "spartan_weaponry_unofficial:iron_battleaxe",
+        "precision": "Exact release recipe result.id",
+        "match": "category_candidate",
+        "version": "spartan_weaponry_unofficial-1.2.3-1.21.1.jar",
+        "sha256": "84d3ddafb519e2f5e03f2681ff52c30c92c9512181f61a7a7487399a0179888f",
+        "evidence": "art/equipment-reuse/definition-evidence.json",
+        "strict2d": true,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": "https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry-unofficial/files/8717810",
+        "licenseEvidence": "Apache-2.0 declaration, exact release metadata; per-asset exceptions not cleared, use full dependency",
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "complete_provider_dependency_candidate",
+        "representative": false,
+        "artStatus": "candidate_only_not_asset_delivery",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 1.494,
+        "ratioToPlayer": 0.83,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [],
+      "interfaces": [
+        "external_model admission adapter / actual item registry",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "verify complete dependency and state art, then adapt"
+    },
+    {
+      "id": "eldencombat:halberd",
+      "name": "戟",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/halberd.model.json",
+        "sha256": "f4633fcabf603f01ec171a37e57c01b66a1970e64c1837dc85f9294859eb5b88",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": "spartan_weaponry_unofficial:iron_halberd",
+        "precision": "Exact release recipe result.id",
+        "match": "category_candidate",
+        "version": "spartan_weaponry_unofficial-1.2.3-1.21.1.jar",
+        "sha256": "84d3ddafb519e2f5e03f2681ff52c30c92c9512181f61a7a7487399a0179888f",
+        "evidence": "art/equipment-reuse/definition-evidence.json",
+        "strict2d": true,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": "https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry-unofficial/files/8717810",
+        "licenseEvidence": "Apache-2.0 declaration, exact release metadata; per-asset exceptions not cleared, use full dependency",
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "complete_provider_dependency_candidate",
+        "representative": false,
+        "artStatus": "candidate_only_not_asset_delivery",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 2.754,
+        "ratioToPlayer": 1.53,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [],
+      "interfaces": [
+        "external_model admission adapter / actual item registry",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "verify complete dependency and state art, then adapt"
+    },
+    {
+      "id": "eldencombat:hammer",
+      "name": "槌",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/hammer.model.json",
+        "sha256": "74aa03c44d679031676a98820a86b82c0a7c07528c1c46744578647f748b87b1",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": "spartan_weaponry_unofficial:iron_flanged_mace",
+        "precision": "Exact release recipe result.id",
+        "match": "approximate_category_not_equivalent",
+        "version": "spartan_weaponry_unofficial-1.2.3-1.21.1.jar",
+        "sha256": "84d3ddafb519e2f5e03f2681ff52c30c92c9512181f61a7a7487399a0179888f",
+        "evidence": "art/equipment-reuse/definition-evidence.json",
+        "strict2d": true,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": "https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry-unofficial/files/8717810",
+        "licenseEvidence": "Apache-2.0 declaration, exact release metadata; per-asset exceptions not cleared, use full dependency",
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "complete_provider_dependency_candidate",
+        "representative": false,
+        "artStatus": "candidate_only_not_asset_delivery",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 0.8280000000000001,
+        "ratioToPlayer": 0.46,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [],
+      "interfaces": [
+        "external_model admission adapter / actual item registry",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "confirm category/shape before adopting approximate provider"
+    },
+    {
+      "id": "eldencombat:hand_of_malenia",
+      "name": "玛莲妮亚的义手刀",
+      "category": "remembrance",
+      "existingAsset": {
+        "file": "art/remembrance-game/hand_of_malenia.model.json",
+        "sha256": "d10c3c5c152ec92f99ac0bb020e98ef7eb86aa1628fd36223c0f7525cc9da6a3",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": null,
+        "precision": "no exact provider confirmed",
+        "match": "none",
+        "version": null,
+        "sha256": null,
+        "evidence": null,
+        "strict2d": null,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": null,
+        "licenseEvidence": null,
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "own_design_pixel_conversion_pending",
+        "representative": false,
+        "artStatus": "not_started",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "project-owned source available; sprite not authored",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 1.9440000000000002,
+        "ratioToPlayer": 1.08,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [
+        "independent 2D silhouette"
+      ],
+      "interfaces": [
+        "sprite admission / per-item display",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "convert existing project-owned design to sprite after representative review"
+    },
+    {
+      "id": "eldencombat:heavy_thrusting_sword",
+      "name": "重刺剑",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/heavy_thrusting_sword.model.json",
+        "sha256": "7ce8cc9252d215210c0699745b1b24b29229f30ee77f28477c72115a7659cc46",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": null,
+        "precision": "no exact provider confirmed",
+        "match": "none",
+        "version": null,
+        "sha256": null,
+        "evidence": null,
+        "strict2d": null,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": null,
+        "licenseEvidence": null,
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "own_design_pixel_conversion_pending",
+        "representative": false,
+        "artStatus": "not_started",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "project-owned source available; sprite not authored",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 1.512,
+        "ratioToPlayer": 0.84,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [
+        "independent 2D silhouette"
+      ],
+      "interfaces": [
+        "sprite admission / per-item display",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "convert existing project-owned design to sprite after representative review"
+    },
+    {
+      "id": "eldencombat:katana",
+      "name": "刀",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/katana.model.json",
+        "sha256": "c4da9703fcb73c7f5191f29c20ad5af82ce2dbd5414417320d1561838e1f1d3c",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": "spartan_weaponry_unofficial:iron_katana",
+        "precision": "Exact release recipe result.id",
+        "match": "category_candidate",
+        "version": "spartan_weaponry_unofficial-1.2.3-1.21.1.jar",
+        "sha256": "84d3ddafb519e2f5e03f2681ff52c30c92c9512181f61a7a7487399a0179888f",
+        "evidence": "art/equipment-reuse/definition-evidence.json",
+        "strict2d": true,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": "https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry-unofficial/files/8717810",
+        "licenseEvidence": "Apache-2.0 declaration, exact release metadata; per-asset exceptions not cleared, use full dependency",
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "complete_provider_dependency_candidate",
+        "representative": false,
+        "artStatus": "candidate_only_not_asset_delivery",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 1.6380000000000001,
+        "ratioToPlayer": 0.91,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [],
+      "interfaces": [
+        "external_model admission adapter / actual item registry",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "verify complete dependency and state art, then adapt"
+    },
+    {
+      "id": "eldencombat:malikeths_black_blade",
+      "name": "玛利喀斯的黑剑",
+      "category": "remembrance",
+      "existingAsset": {
+        "file": "art/remembrance-game/malikeths_black_blade.model.json",
+        "sha256": "02d461612502c1b25c41cc15a59bfae2a33630bb8f7cc5f45da633d1098718b6",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": null,
+        "precision": "no exact provider confirmed",
+        "match": "none",
+        "version": null,
+        "sha256": null,
+        "evidence": null,
+        "strict2d": null,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": null,
+        "licenseEvidence": null,
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "own_design_pixel_conversion_pending",
+        "representative": false,
+        "artStatus": "not_started",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "project-owned source available; sprite not authored",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 2.3040000000000003,
+        "ratioToPlayer": 1.28,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [
+        "independent 2D silhouette"
+      ],
+      "interfaces": [
+        "sprite admission / per-item display",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "convert existing project-owned design to sprite after representative review"
+    },
+    {
+      "id": "eldencombat:marikas_hammer",
+      "name": "玛莉卡的石槌",
+      "category": "remembrance",
+      "existingAsset": {
+        "file": "art/remembrance-game/marikas_hammer.model.json",
+        "sha256": "730207b81371082cc98b00e9d58c41c1c91133be44ab8ae55ce2f4db06308069",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": null,
+        "precision": "no exact provider confirmed",
+        "match": "none",
+        "version": null,
+        "sha256": null,
+        "evidence": null,
+        "strict2d": null,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": null,
+        "licenseEvidence": null,
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "own_design_pixel_conversion_pending",
+        "representative": false,
+        "artStatus": "not_started",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "project-owned source available; sprite not authored",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 1.044,
+        "ratioToPlayer": 0.58,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [
+        "independent 2D silhouette"
+      ],
+      "interfaces": [
+        "sprite admission / per-item display",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "convert existing project-owned design to sprite after representative review"
+    },
+    {
+      "id": "eldencombat:mohgwyns_sacred_spear",
+      "name": "蒙格温圣矛",
+      "category": "remembrance",
+      "existingAsset": {
+        "file": "art/remembrance-game/mohgwyns_sacred_spear.model.json",
+        "sha256": "86e3731c60583823e79083beeb96392408e9f1321b0ba4e8eef26a590f2b590c",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": null,
+        "precision": "no exact provider confirmed",
+        "match": "none",
+        "version": null,
+        "sha256": null,
+        "evidence": null,
+        "strict2d": null,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": null,
+        "licenseEvidence": null,
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "own_design_pixel_conversion_pending",
+        "representative": false,
+        "artStatus": "not_started",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "project-owned source available; sprite not authored",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 3.15,
+        "ratioToPlayer": 1.75,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [
+        "independent 2D silhouette"
+      ],
+      "interfaces": [
+        "sprite admission / per-item display",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "convert existing project-owned design to sprite after representative review"
+    },
+    {
+      "id": "eldencombat:morgotts_cursed_sword",
+      "name": "蒙葛特咒剑",
+      "category": "remembrance",
+      "existingAsset": {
+        "file": "art/remembrance-game/morgotts_cursed_sword.model.json",
+        "sha256": "48c54c1fd42b55774c572562a95cfcc7561ec28f81a7d44d34f38e93b27be398",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": null,
+        "precision": "no exact provider confirmed",
+        "match": "none",
+        "version": null,
+        "sha256": null,
+        "evidence": null,
+        "strict2d": null,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": null,
+        "licenseEvidence": null,
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "own_design_pixel_conversion_pending",
+        "representative": false,
+        "artStatus": "not_started",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "project-owned source available; sprite not authored",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 2.088,
+        "ratioToPlayer": 1.16,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [
+        "independent 2D silhouette"
+      ],
+      "interfaces": [
+        "sprite admission / per-item display",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "convert existing project-owned design to sprite after representative review"
+    },
+    {
+      "id": "eldencombat:sacred_relic_sword",
+      "name": "神躯化剑",
+      "category": "remembrance",
+      "existingAsset": {
+        "file": "art/remembrance-game/sacred_relic_sword.model.json",
+        "sha256": "08b87d3c10ec94f62b4e8bdd205108a396d16ed381f477e919aba71cf62176cb",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": null,
+        "precision": "no exact provider confirmed",
+        "match": "none",
+        "version": null,
+        "sha256": null,
+        "evidence": null,
+        "strict2d": null,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": null,
+        "licenseEvidence": null,
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "own_sprite_draft",
+        "representative": true,
+        "artStatus": "representative_delivered",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "project-owned derivative",
+        "protectedOldModel": false,
+        "deliveredStrict2d": true
+      },
+      "size": {
+        "targetLengthBlocks": 1.71,
+        "ratioToPlayer": 0.95,
+        "evidence": "low_equipped_image_estimate",
+        "grip": [
+          11.5,
+          52.5
+        ],
+        "suggestion": "See six-representatives.json; webpage anchor is not in-game proof"
+      },
+      "missingStates": [],
+      "interfaces": [
+        "sprite admission / per-item display",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "Review representative, then code owner admits assets/reference"
+    },
+    {
+      "id": "eldencombat:sacred_seal",
+      "name": "圣印记",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/sacred_seal.model.json",
+        "sha256": "aaf245db11fc2afd2053c780b927195cf4ad5246ee58b3da09c8b829c0f32bf4",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": null,
+        "precision": "no exact provider confirmed",
+        "match": "none",
+        "version": null,
+        "sha256": null,
+        "evidence": null,
+        "strict2d": null,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": null,
+        "licenseEvidence": null,
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "own_design_pixel_conversion_pending",
+        "representative": false,
+        "artStatus": "not_started",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "project-owned source available; sprite not authored",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 0.216,
+        "ratioToPlayer": 0.12,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [
+        "independent 2D silhouette"
+      ],
+      "interfaces": [
+        "sprite admission / per-item display",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "convert existing project-owned design to sprite after representative review"
+    },
+    {
+      "id": "eldencombat:scythe",
+      "name": "镰刀",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/scythe.model.json",
+        "sha256": "b333b6b92f20e3e891ef191d8c448c44a02614029dd007d2affe38befe4689e0",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": "spartan_weaponry_unofficial:iron_scythe",
+        "precision": "Exact release recipe result.id",
+        "match": "category_candidate",
+        "version": "spartan_weaponry_unofficial-1.2.3-1.21.1.jar",
+        "sha256": "84d3ddafb519e2f5e03f2681ff52c30c92c9512181f61a7a7487399a0179888f",
+        "evidence": "art/equipment-reuse/definition-evidence.json",
+        "strict2d": true,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": "https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry-unofficial/files/8717810",
+        "licenseEvidence": "Apache-2.0 declaration, exact release metadata; per-asset exceptions not cleared, use full dependency",
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "complete_provider_dependency_candidate",
+        "representative": false,
+        "artStatus": "candidate_only_not_asset_delivery",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 2.52,
+        "ratioToPlayer": 1.4,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [],
+      "interfaces": [
+        "external_model admission adapter / actual item registry",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "verify complete dependency and state art, then adapt"
+    },
+    {
+      "id": "eldencombat:shield",
+      "name": "中盾",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/shield.model.json",
+        "sha256": "1a5dd65c0b17b784c5bdf7d8c7106de58bf719aa6034e167c2ddd6f90f8a03e5",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": "spartan_shields_unofficial:iron_basic_shield",
+        "precision": "pinned source registration/recipe only, not release/installed ID",
+        "match": "category_candidate",
+        "version": "source commit a2a0eb62a98a2fa22d23e624948b1fa541048ce1",
+        "sha256": null,
+        "evidence": "art/equipment-reuse/candidate-source-evidence.json",
+        "strict2d": null,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": "https://github.com/Mai-xiyu/SpartanShields-NeoForge/tree/a2a0eb62a98a2fa22d23e624948b1fa541048ce1",
+        "licenseEvidence": "pinned source only; release and asset-license binding pending",
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "own_sprite_draft",
+        "representative": true,
+        "artStatus": "representative_delivered",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "project-owned derivative",
+        "protectedOldModel": false,
+        "deliveredStrict2d": true
+      },
+      "size": {
+        "targetLengthBlocks": 0.9,
+        "ratioToPlayer": 0.5,
+        "evidence": "provisional_art_estimate",
+        "grip": [
+          16.5,
+          16.5
+        ],
+        "suggestion": "See six-representatives.json; webpage anchor is not in-game proof"
+      },
+      "missingStates": [
+        "runtime two-sided front/back material",
+        "blocking property and pose"
+      ],
+      "interfaces": [
+        "sprite admission / per-item display",
+        "front/back and blocking transform",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "Review representative, then code owner admits assets/reference"
+    },
+    {
+      "id": "eldencombat:small_shield",
+      "name": "小盾",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/small_shield.model.json",
+        "sha256": "ee23f737a616ad1eb69c2e59da3b915b5cd642dfc31fbd1e5398a56db88db097",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": null,
+        "precision": "no exact provider confirmed",
+        "match": "none",
+        "version": null,
+        "sha256": null,
+        "evidence": null,
+        "strict2d": null,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": null,
+        "licenseEvidence": null,
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "own_design_pixel_conversion_pending",
+        "representative": false,
+        "artStatus": "not_started",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "project-owned source available; sprite not authored",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 0.5040000000000001,
+        "ratioToPlayer": 0.28,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [
+        "front/back/hand anchor",
+        "blocking pose",
+        "independent 2D silhouette"
+      ],
+      "interfaces": [
+        "sprite admission / per-item display",
+        "front/back and blocking transform",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "convert existing project-owned design to sprite after representative review"
+    },
+    {
+      "id": "eldencombat:spear",
+      "name": "矛",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/spear.model.json",
+        "sha256": "3e1fec3e0b1f72f1bb1111611b5df5ae08cae1ad3679a95c0ba3cd57538c7977",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": "spartan_weaponry_unofficial:iron_spear",
+        "precision": "Exact release recipe result.id",
+        "match": "category_candidate",
+        "version": "spartan_weaponry_unofficial-1.2.3-1.21.1.jar",
+        "sha256": "84d3ddafb519e2f5e03f2681ff52c30c92c9512181f61a7a7487399a0179888f",
+        "evidence": "art/equipment-reuse/definition-evidence.json",
+        "strict2d": true,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": "https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry-unofficial/files/8717810",
+        "licenseEvidence": "Apache-2.0 declaration, exact release metadata; per-asset exceptions not cleared, use full dependency",
+        "stateVerification": "representative PNG states and source predicates inspected"
+      },
+      "delivery": {
+        "method": "provider_reference_only",
+        "representative": true,
+        "artStatus": "representative_delivered",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
+        "protectedOldModel": false,
+        "deliveredStrict2d": true
+      },
+      "size": {
+        "targetLengthBlocks": 2.664,
+        "ratioToPlayer": 1.48,
+        "evidence": "provisional_art_estimate",
+        "grip": [
+          12.5,
+          19.5
+        ],
+        "suggestion": "See six-representatives.json; webpage anchor is not in-game proof"
+      },
+      "missingStates": [],
+      "interfaces": [
+        "external_model admission adapter / actual item registry",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "Review representative, then code owner admits assets/reference"
+    },
+    {
+      "id": "eldencombat:starscourge_greatsword",
+      "name": "碎星大剑",
+      "category": "remembrance",
+      "existingAsset": {
+        "file": "art/remembrance-game/starscourge_greatsword.model.json",
+        "sha256": "b04cc0500f5a7ca5d0aff0da7972b8e4ff5237434336c64cbfba446ad79af345",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": null,
+        "precision": "no exact provider confirmed",
+        "match": "none",
+        "version": null,
+        "sha256": null,
+        "evidence": null,
+        "strict2d": null,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": null,
+        "licenseEvidence": null,
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "own_design_pixel_conversion_pending",
+        "representative": false,
+        "artStatus": "not_started",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "project-owned source available; sprite not authored",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 1.9800000000000002,
+        "ratioToPlayer": 1.1,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [
+        "independent 2D silhouette"
+      ],
+      "interfaces": [
+        "sprite admission / per-item display",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "convert existing project-owned design to sprite after representative review"
+    },
+    {
+      "id": "eldencombat:straight_sword",
+      "name": "直剑",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/straight_sword.model.json",
+        "sha256": "ac78be9be3f49f103c71ffbef69490e2bda9771d07c928d5e1fe10dc9e09bdcb",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": "minecraft:iron_sword",
+        "precision": "Known Minecraft built-in ID; installed engine resource definition, not recipe/registry inspection",
+        "match": "category_candidate",
+        "version": "Minecraft 1.21.1 / NeoForge resources 21.1.219",
+        "sha256": "8e9cf6f4b6eafb1c6bf745a67a61dd1736f31865cad409e5b2bec918667dab5e",
+        "evidence": "art/equipment-reuse/definition-evidence.json",
+        "strict2d": true,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": null,
+        "licenseEvidence": "Minecraft engine resources; reference original resource locations, local PNG excluded from own distribution",
+        "stateVerification": "representative PNG states and source predicates inspected"
+      },
+      "delivery": {
+        "method": "provider_reference_only",
+        "representative": true,
+        "artStatus": "representative_delivered",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "reference engine resources; no redistributed Mojang PNG",
+        "protectedOldModel": false,
+        "deliveredStrict2d": true
+      },
+      "size": {
+        "targetLengthBlocks": 1.08,
+        "ratioToPlayer": 0.6,
+        "evidence": "provisional_art_estimate",
+        "grip": [
+          3.5,
+          12.5
+        ],
+        "suggestion": "See six-representatives.json; webpage anchor is not in-game proof"
+      },
+      "missingStates": [],
+      "interfaces": [
+        "external_model admission adapter / actual item registry",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "Review representative, then code owner admits assets/reference"
+    },
+    {
+      "id": "eldencombat:thrusting_sword",
+      "name": "刺剑",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/thrusting_sword.model.json",
+        "sha256": "6b80285c21590b0a98e5c3bc3967be20b9b470389e00457d1c1a179afb716a2d",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": "spartan_weaponry_unofficial:iron_rapier",
+        "precision": "Exact release recipe result.id",
+        "match": "category_candidate",
+        "version": "spartan_weaponry_unofficial-1.2.3-1.21.1.jar",
+        "sha256": "84d3ddafb519e2f5e03f2681ff52c30c92c9512181f61a7a7487399a0179888f",
+        "evidence": "art/equipment-reuse/definition-evidence.json",
+        "strict2d": true,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": "https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry-unofficial/files/8717810",
+        "licenseEvidence": "Apache-2.0 declaration, exact release metadata; per-asset exceptions not cleared, use full dependency",
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "complete_provider_dependency_candidate",
+        "representative": false,
+        "artStatus": "candidate_only_not_asset_delivery",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 1.2060000000000002,
+        "ratioToPlayer": 0.67,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [],
+      "interfaces": [
+        "external_model admission adapter / actual item registry",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "verify complete dependency and state art, then adapt"
+    },
+    {
+      "id": "eldencombat:twinblade",
+      "name": "双头剑",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/twinblade.model.json",
+        "sha256": "19522aded3f81b912f3e887d3dcaa028ef3e8168f71fafabcf49d2f30b32f9d2",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": "simplyswords:iron_twinblade",
+        "precision": "Exact release recipe result.id",
+        "match": "category_candidate",
+        "version": "simplyswords-neoforge-1.70.2-1.21.1.jar",
+        "sha256": "5e75bd66ea489079d60c9c1ed98762550fbc0bee88cd7af399f17bbeb56608c3",
+        "evidence": "art/equipment-reuse/definition-evidence.json",
+        "strict2d": true,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": "https://www.curseforge.com/minecraft/mc-mods/simply-swords/files/8746001",
+        "licenseEvidence": "Timefall Development License 1.2 per existing audit; complete authorized modpack dependency only, no extracted artwork",
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "complete_provider_dependency_candidate",
+        "representative": false,
+        "artStatus": "candidate_only_not_asset_delivery",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 2.16,
+        "ratioToPlayer": 1.2,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [],
+      "interfaces": [
+        "external_model admission adapter / actual item registry",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "verify complete dependency and state art, then adapt"
+    },
+    {
+      "id": "eldencombat:whip",
+      "name": "软鞭",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/whip.model.json",
+        "sha256": "a93f0a45aafccda6e225c59c7562e0eb530ef164f710da7638892aabc167b590",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": null,
+        "precision": "no exact provider confirmed",
+        "match": "none",
+        "version": null,
+        "sha256": null,
+        "evidence": null,
+        "strict2d": null,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": null,
+        "licenseEvidence": null,
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "own_design_pixel_conversion_pending",
+        "representative": false,
+        "artStatus": "not_started",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "project-owned source available; sprite not authored",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 2.736,
+        "ratioToPlayer": 1.52,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [
+        "independent 2D silhouette"
+      ],
+      "interfaces": [
+        "sprite admission / per-item display",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "convert existing project-owned design to sprite after representative review"
+    },
+    {
+      "id": "eldencombat:short_bow",
+      "name": "短弓",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/short_bow.model.json",
+        "sha256": "2aa0aadff937ab25f80227d8c8ea1c00efb0393c989d0349af375fcd3c145f7b",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": "minecraft:bow",
+        "precision": "Known Minecraft built-in ID; installed engine resource definition, not recipe/registry inspection",
+        "match": "approximate_category_not_equivalent",
+        "version": "Minecraft 1.21.1 / NeoForge resources 21.1.219",
+        "sha256": "8e9cf6f4b6eafb1c6bf745a67a61dd1736f31865cad409e5b2bec918667dab5e",
+        "evidence": "art/equipment-reuse/definition-evidence.json",
+        "strict2d": true,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": null,
+        "licenseEvidence": "Minecraft engine resources; reference original resource locations, local PNG excluded from own distribution",
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "complete_provider_dependency_candidate",
+        "representative": false,
+        "artStatus": "candidate_only_not_asset_delivery",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "reference engine resources; no redistributed Mojang PNG",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 1.1880000000000002,
+        "ratioToPlayer": 0.66,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [
+        "independent state textures or complete provider overrides",
+        "held alignment for loading/pulling/charged"
+      ],
+      "interfaces": [
+        "external_model admission adapter / actual item registry",
+        "state predicates",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "confirm category/shape before adopting approximate provider"
+    },
+    {
+      "id": "eldencombat:long_bow",
+      "name": "长弓",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/long_bow.model.json",
+        "sha256": "7479803311ea2c7597ca5ce308c8a166c0d9363bc58a74b634727b460fad4e76",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": "spartan_weaponry_unofficial:longbow_iron_strengthened",
+        "precision": "Exact release recipe result.id",
+        "match": "category_candidate",
+        "version": "spartan_weaponry_unofficial-1.2.3-1.21.1.jar",
+        "sha256": "84d3ddafb519e2f5e03f2681ff52c30c92c9512181f61a7a7487399a0179888f",
+        "evidence": "art/equipment-reuse/definition-evidence.json",
+        "strict2d": true,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": "https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry-unofficial/files/8717810",
+        "licenseEvidence": "Apache-2.0 declaration, exact release metadata; per-asset exceptions not cleared, use full dependency",
+        "stateVerification": "representative PNG states and source predicates inspected"
+      },
+      "delivery": {
+        "method": "provider_reference_only",
+        "representative": true,
+        "artStatus": "representative_delivered",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
+        "protectedOldModel": false,
+        "deliveredStrict2d": true
+      },
+      "size": {
+        "targetLengthBlocks": 1.836,
+        "ratioToPlayer": 1.02,
+        "evidence": "provisional_art_estimate",
+        "grip": [
+          3.5,
+          7.5
+        ],
+        "suggestion": "See six-representatives.json; webpage anchor is not in-game proof"
+      },
+      "missingStates": [
+        "runtime provider pulling predicates and input adapter"
+      ],
+      "interfaces": [
+        "external_model admission adapter / actual item registry",
+        "state predicates",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "Review representative, then code owner admits assets/reference"
+    },
+    {
+      "id": "eldencombat:great_bow",
+      "name": "大弓",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/great_bow.model.json",
+        "sha256": "c0e2cc633ad91cf0eedab750f429822e164352dc00f8b2797a768d8132f03fc4",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": null,
+        "precision": "no exact provider confirmed",
+        "match": "none",
+        "version": null,
+        "sha256": null,
+        "evidence": null,
+        "strict2d": null,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": null,
+        "licenseEvidence": null,
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "own_design_pixel_conversion_pending",
+        "representative": false,
+        "artStatus": "not_started",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "project-owned source available; sprite not authored",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 2.3400000000000003,
+        "ratioToPlayer": 1.3,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [
+        "independent state textures or complete provider overrides",
+        "held alignment for loading/pulling/charged",
+        "independent 2D silhouette"
+      ],
+      "interfaces": [
+        "sprite admission / per-item display",
+        "state predicates",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "convert existing project-owned design to sprite after representative review"
+    },
+    {
+      "id": "eldencombat:crossbow",
+      "name": "弩",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/crossbow.model.json",
+        "sha256": "ab45d506ac21521dc906581a039c8553e8f7316705ed45d14e0af37defd5b138",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": "minecraft:crossbow",
+        "precision": "Known Minecraft built-in ID; installed engine resource definition, not recipe/registry inspection",
+        "match": "category_candidate",
+        "version": "Minecraft 1.21.1 / NeoForge resources 21.1.219",
+        "sha256": "8e9cf6f4b6eafb1c6bf745a67a61dd1736f31865cad409e5b2bec918667dab5e",
+        "evidence": "art/equipment-reuse/definition-evidence.json",
+        "strict2d": true,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": null,
+        "licenseEvidence": "Minecraft engine resources; reference original resource locations, local PNG excluded from own distribution",
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "complete_provider_dependency_candidate",
+        "representative": false,
+        "artStatus": "candidate_only_not_asset_delivery",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "reference engine resources; no redistributed Mojang PNG",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 0.756,
+        "ratioToPlayer": 0.42,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [
+        "independent state textures or complete provider overrides",
+        "held alignment for loading/pulling/charged"
+      ],
+      "interfaces": [
+        "external_model admission adapter / actual item registry",
+        "state predicates",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "verify complete dependency and state art, then adapt"
+    },
+    {
+      "id": "eldencombat:ballista",
+      "name": "弩炮",
+      "category": "ordinary",
+      "existingAsset": {
+        "file": "art/weapons/ballista.model.json",
+        "sha256": "acca9bf66bcfe9299959ce9951ca67703bc313cdde52164c31bb2b0f2290aa36",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": "spartan_weaponry_unofficial:heavy_crossbow_iron_strengthened",
+        "precision": "Exact release recipe result.id",
+        "match": "approximate_category_not_equivalent",
+        "version": "spartan_weaponry_unofficial-1.2.3-1.21.1.jar",
+        "sha256": "84d3ddafb519e2f5e03f2681ff52c30c92c9512181f61a7a7487399a0179888f",
+        "evidence": "art/equipment-reuse/definition-evidence.json",
+        "strict2d": true,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": "https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry-unofficial/files/8717810",
+        "licenseEvidence": "Apache-2.0 declaration, exact release metadata; per-asset exceptions not cleared, use full dependency",
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "complete_provider_dependency_candidate",
+        "representative": false,
+        "artStatus": "candidate_only_not_asset_delivery",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": 1.4400000000000002,
+        "ratioToPlayer": 0.8,
+        "evidence": "provisional_art_estimate",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [
+        "independent state textures or complete provider overrides",
+        "held alignment for loading/pulling/charged"
+      ],
+      "interfaces": [
+        "external_model admission adapter / actual item registry",
+        "state predicates",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "confirm category/shape before adopting approximate provider"
+    },
+    {
+      "id": "eldencombat:test_flask",
+      "name": "药瓶",
+      "category": "flask",
+      "existingAsset": {
+        "file": "art/player/healing_flask.model.json",
+        "sha256": "95dd0ed4cdc865d4e33da20e49ae46df7823b081572f8b247331d72b363c17c0",
+        "selectedLegacy": false
+      },
+      "candidate": {
+        "itemId": null,
+        "precision": "no exact provider confirmed",
+        "match": "none",
+        "version": null,
+        "sha256": null,
+        "evidence": null,
+        "strict2d": null,
+        "installed": null,
+        "runtimeRegistryVerified": false,
+        "sourceUrl": null,
+        "licenseEvidence": null,
+        "stateVerification": "base definition/candidate only; state texture completeness not verified"
+      },
+      "delivery": {
+        "method": "own_design_pixel_conversion_pending",
+        "representative": false,
+        "artStatus": "not_started",
+        "runtimeRouteStatus": "pending",
+        "inGameAccepted": false,
+        "copyPermission": "project-owned source available; sprite not authored",
+        "protectedOldModel": false,
+        "deliveredStrict2d": null
+      },
+      "size": {
+        "targetLengthBlocks": null,
+        "ratioToPlayer": null,
+        "evidence": "not_calibrated",
+        "grip": null,
+        "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
+      },
+      "missingStates": [
+        "independent 2D silhouette"
+      ],
+      "interfaces": [
+        "sprite admission / per-item display",
+        "first/third-person, both hands, classic/slim validation"
+      ],
+      "nextAction": "convert existing project-owned design to sprite after representative review"
+    }
+  ]
+}

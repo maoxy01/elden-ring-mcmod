@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "status": "design_and_particle_textures_only",
+  "worldUnits": "blocks",
+  "budget": {
+    "maxAlivePerEncounter": 160,
+    "reducedParticlesScale": 0.35,
+    "trailsMaxPoints": 12,
+    "trailLifetimeTicks": 3
+  },
+  "events": {
+    "sword_whoosh": {
+      "source": "clip_event",
+      "particle": "none",
+      "sound": "sword_swing"
+    },
+    "charged_whoosh": {
+      "source": "clip_event",
+      "particle": "none",
+      "sound": "great_sword_swing"
+    },
+    "roll_whoosh": {
+      "source": "clip_event",
+      "sound": "roll",
+      "particle": "dust",
+      "count": 6,
+      "color": "#9ca7a2",
+      "size": 0.06,
+      "lifeTicks": [
+        6,
+        10
+      ],
+      "anchor": "feet"
+    },
+    "parry_whoosh": {
+      "source": "clip_event",
+      "particle": "none",
+      "sound": "parry_swing"
+    },
+    "hit_confirmed": {
+      "source": "server_result",
+      "sound": "blade_hit",
+      "particle": "spark",
+      "count": 5,
+      "color": "#d6dddc",
+      "size": 0.035,
+      "lifeTicks": [
+        3,
+        6
+      ],
+      "anchor": "contact_point"
+    },
+    "guard_impact": {
+      "source": "server_result",
+      "sound": "shield_block",
+      "particle": "spark",
+      "count": 7,
+      "color": "#ead4a0",
+      "size": 0.035,
+      "lifeTicks": [
+        4,
+        7
+      ],
+      "anchor": "shield_contact"
+    },
+    "guard_break": {
+      "source": "server_result",
+      "sound": "guard_break",
+      "particle": "dust",
+      "count": 10,
+      "color": "#b7c2c1",
+      "size": 0.055,
+      "lifeTicks": [
+        5,
+        9
+      ],
+      "anchor": "shield_contact"
+    },
+    "parry_success": {
+      "source": "server_result",
+      "sound": "parry_success",
+      "particle": "spark",
+      "count": 12,
+      "color": "#f7e9a1",
+      "size": 0.045,
+      "lifeTicks": [
+        4,
+        8
+      ],
+      "anchor": "contact_point"
+    },
+    "drink_visual": {
+      "source": "clip_event_after_server_consumption",
+      "sound": "flask_drink",
+      "particle": "heal",
+      "count": 8,
+      "color": "#b8d9a5",
+      "size": 0.04,
+      "lifeTicks": [
+        10,
+        16
+      ],
+      "anchor": "torso",
+      "verticalSpeed": 0.025
+    },
+    "hurt_visual": {
+      "source": "server_result",
+      "particle": "none",
+      "sound": "player_hurt"
+    },
+    "footstep": {
+      "source": "clip_event_when_grounded_and_moving",
+      "particle": "none",
+      "sound": "ground_material_step"
+    },
+    "staff_slam": {
+      "source": "margit.staff_slam.impact@33",
+      "sound": "staff_impact",
+      "particle": "dust",
+      "count": 18,
+      "color": "sample_ground",
+      "size": 0.09,
+      "lifeTicks": [
+        7,
+        13
+      ],
+      "anchor": "staff_contact_raycast",
+      "radius": 0.8
+    },
+    "hammer_slam": {
+      "source": "margit.hammer_slam.impact@42",
+      "sound": "hammer_impact",
+      "particle": "spark_and_dust",
+      "count": 30,
+      "color": "#edc666",
+      "size": 0.06,
+      "lifeTicks": [
+        6,
+        12
+      ],
+      "anchor": "hammer_contact_raycast",
+      "radius": 1.2
+    },
+    "spectral_equip": {
+      "source": "margit.equip",
+      "sound": "spectral_form",
+      "particle": "spark",
+      "count": 8,
+      "color": "#e9bb43",
+      "size": 0.035,
+      "lifeTicks": [
+        5,
+        8
+      ],
+      "anchor": "spectral_socket"
+    },
+    "spectral_trail": {
+      "source": "margit_active_hit_window",
+      "particle": "spark",
+      "color": "#e9bb43",
+      "size": 0.025,
+      "lifeTicks": [
+        2,
+        3
+      ],
+      "anchor": "sample_weapon_axis",
+      "maxPoints": 12
+    },
+    "boss_death": {
+      "source": "margit.death",
+      "sound": "boss_death",
+      "particle": "dust",
+      "color": "#a9b9b3",
+      "size": 0.065,
+      "lifeTicks": [
+        10,
+        16
+      ],
+      "bursts": [
+        {
+          "tick": 40,
+          "count": 12
+        },
+        {
+          "tick": 44,
+          "count": 12
+        },
+        {
+          "tick": 48,
+          "count": 12
+        }
+      ],
+      "opacity": {
+        "fromTick": 40,
+        "toTick": 50
+      },
+      "cleanupTick": 52
+    }
+  },
+  "restrictions": {
+    "damageFromParticles": false,
+    "dynamicLights": false,
+    "blood": false,
+    "fullscreenFlash": false,
+    "cameraShakeDefault": false,
+    "keepSpectralWeaponFullBright": true,
+    "goldWeaponOpacity": 1
+  },
+  "cancellation": [
+    "clear trails and pending events on sequence change, death, unload, world exit"
+  ],
+  "audioDelivery": "No OGG files or sounds.json included. Use verified existing game sounds temporarily."
+}

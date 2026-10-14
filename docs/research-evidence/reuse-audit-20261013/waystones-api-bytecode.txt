@@ -1,0 +1,293 @@
+Compiled from "WaystonesAPI.java"
+public class net.blay09.mods.waystones.api.WaystonesAPI {
+  public static net.blay09.mods.waystones.api.InternalMethods __internalMethods;
+
+  public net.blay09.mods.waystones.api.WaystonesAPI();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static com.mojang.datafixers.util.Either<net.blay09.mods.waystones.api.WaystoneTeleportContext, net.blay09.mods.waystones.api.error.WaystoneTeleportError> createDefaultTeleportContext(net.minecraft.world.entity.Entity, net.blay09.mods.waystones.api.Waystone, java.util.function.Consumer<net.blay09.mods.waystones.api.WaystoneTeleportContext>);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: aload_1
+       5: aload_2
+       6: invokeinterface #13,  4           // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.createDefaultTeleportContext:(Lnet/minecraft/world/entity/Entity;Lnet/blay09/mods/waystones/api/Waystone;Ljava/util/function/Consumer;)Lcom/mojang/datafixers/util/Either;
+      11: areturn
+
+  public static com.mojang.datafixers.util.Either<net.blay09.mods.waystones.api.WaystoneTeleportContext, net.blay09.mods.waystones.api.error.WaystoneTeleportError> createCustomTeleportContext(net.minecraft.world.entity.Entity, net.blay09.mods.waystones.api.Waystone);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: aload_1
+       5: invokeinterface #19,  3           // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.createCustomTeleportContext:(Lnet/minecraft/world/entity/Entity;Lnet/blay09/mods/waystones/api/Waystone;)Lcom/mojang/datafixers/util/Either;
+      10: areturn
+
+  public static com.mojang.datafixers.util.Either<net.blay09.mods.waystones.api.WaystoneTeleportContext, net.blay09.mods.waystones.api.error.WaystoneTeleportError> createUncheckedDefaultTeleportContext(net.minecraft.world.entity.Entity, net.blay09.mods.waystones.api.Waystone, java.util.function.Consumer<net.blay09.mods.waystones.api.WaystoneTeleportContext>);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: aload_1
+       5: aload_2
+       6: invokeinterface #23,  4           // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.createUncheckedDefaultTeleportContext:(Lnet/minecraft/world/entity/Entity;Lnet/blay09/mods/waystones/api/Waystone;Ljava/util/function/Consumer;)Lcom/mojang/datafixers/util/Either;
+      11: areturn
+
+  public static com.mojang.datafixers.util.Either<net.blay09.mods.waystones.api.WaystoneTeleportContext, net.blay09.mods.waystones.api.error.WaystoneTeleportError> createUncheckedCustomTeleportContext(net.minecraft.world.entity.Entity, net.blay09.mods.waystones.api.Waystone);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: aload_1
+       5: invokeinterface #26,  3           // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.createUncheckedCustomTeleportContext:(Lnet/minecraft/world/entity/Entity;Lnet/blay09/mods/waystones/api/Waystone;)Lcom/mojang/datafixers/util/Either;
+      10: areturn
+
+  public static net.blay09.mods.waystones.api.WaystoneTeleportContext createUnboundTeleportContext(net.minecraft.world.entity.Entity, net.blay09.mods.waystones.api.Waystone);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: aload_1
+       5: invokeinterface #29,  3           // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.createUnboundTeleportContext:(Lnet/minecraft/world/entity/Entity;Lnet/blay09/mods/waystones/api/Waystone;)Lnet/blay09/mods/waystones/api/WaystoneTeleportContext;
+      10: areturn
+
+  public static net.blay09.mods.waystones.api.WaystoneTeleportContext createUnboundTeleportContext(net.minecraft.world.entity.Entity);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: invokeinterface #33,  2           // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.createUnboundTeleportContext:(Lnet/minecraft/world/entity/Entity;)Lnet/blay09/mods/waystones/api/WaystoneTeleportContext;
+       9: areturn
+
+  public static com.mojang.datafixers.util.Either<java.util.List<net.minecraft.world.entity.Entity>, net.blay09.mods.waystones.api.error.WaystoneTeleportError> tryTeleport(net.blay09.mods.waystones.api.WaystoneTeleportContext);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: invokeinterface #36,  2           // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.tryTeleport:(Lnet/blay09/mods/waystones/api/WaystoneTeleportContext;)Lcom/mojang/datafixers/util/Either;
+       9: areturn
+
+  public static com.mojang.datafixers.util.Either<java.util.List<net.minecraft.world.entity.Entity>, net.blay09.mods.waystones.api.error.WaystoneTeleportError> forceTeleport(net.blay09.mods.waystones.api.WaystoneTeleportContext);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: invokeinterface #40,  2           // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.forceTeleport:(Lnet/blay09/mods/waystones/api/WaystoneTeleportContext;)Lcom/mojang/datafixers/util/Either;
+       9: areturn
+
+  public static java.util.concurrent.CompletableFuture<com.mojang.datafixers.util.Either<java.util.List<net.minecraft.world.entity.Entity>, net.blay09.mods.waystones.api.error.WaystoneTeleportError>> tryTeleportAsync(net.blay09.mods.waystones.api.WaystoneTeleportContext);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: invokeinterface #43,  2           // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.tryTeleportAsync:(Lnet/blay09/mods/waystones/api/WaystoneTeleportContext;)Ljava/util/concurrent/CompletableFuture;
+       9: areturn
+
+  public static java.util.concurrent.CompletableFuture<com.mojang.datafixers.util.Either<java.util.List<net.minecraft.world.entity.Entity>, net.blay09.mods.waystones.api.error.WaystoneTeleportError>> forceTeleportAsync(net.blay09.mods.waystones.api.WaystoneTeleportContext);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: invokeinterface #47,  2           // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.forceTeleportAsync:(Lnet/blay09/mods/waystones/api/WaystoneTeleportContext;)Ljava/util/concurrent/CompletableFuture;
+       9: areturn
+
+  public static java.util.Optional<net.blay09.mods.waystones.api.Waystone> getWaystoneAt(net.minecraft.server.level.ServerLevel, net.minecraft.core.BlockPos);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: aload_1
+       5: invokeinterface #50,  3           // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.getWaystoneAt:(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)Ljava/util/Optional;
+      10: areturn
+
+  public static java.util.Optional<net.blay09.mods.waystones.api.Waystone> getWaystoneAt(net.minecraft.server.MinecraftServer, net.minecraft.world.level.BlockGetter, net.minecraft.core.BlockPos);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: aload_1
+       5: aload_2
+       6: invokeinterface #54,  4           // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.getWaystoneAt:(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;)Ljava/util/Optional;
+      11: areturn
+
+  public static java.util.Optional<net.blay09.mods.waystones.api.Waystone> getWaystone(net.minecraft.world.level.Level, java.util.UUID);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: aload_1
+       5: invokeinterface #57,  3           // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.getWaystone:(Lnet/minecraft/world/level/Level;Ljava/util/UUID;)Ljava/util/Optional;
+      10: areturn
+
+  public static java.util.Optional<net.blay09.mods.waystones.api.Waystone> getWaystone(net.minecraft.server.MinecraftServer, java.util.UUID);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: aload_1
+       5: invokeinterface #61,  3           // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.getWaystone:(Lnet/minecraft/server/MinecraftServer;Ljava/util/UUID;)Ljava/util/Optional;
+      10: areturn
+
+  public static boolean isWaystoneActivated(net.minecraft.world.entity.player.Player, net.blay09.mods.waystones.api.Waystone);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: aload_1
+       5: invokeinterface #64,  3           // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.isWaystoneActivated:(Lnet/minecraft/world/entity/player/Player;Lnet/blay09/mods/waystones/api/Waystone;)Z
+      10: ireturn
+
+  public static java.util.stream.Stream<net.blay09.mods.waystones.api.Waystone> getAllWaystones(net.minecraft.server.MinecraftServer);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: invokeinterface #68,  2           // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.getAllWaystones:(Lnet/minecraft/server/MinecraftServer;)Ljava/util/stream/Stream;
+       9: areturn
+
+  public static java.util.stream.Stream<net.blay09.mods.waystones.api.Waystone> getWaystonesByType(net.minecraft.server.MinecraftServer, net.minecraft.resources.ResourceLocation);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: aload_1
+       5: invokeinterface #72,  3           // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.getWaystonesByType:(Lnet/minecraft/server/MinecraftServer;Lnet/minecraft/resources/ResourceLocation;)Ljava/util/stream/Stream;
+      10: areturn
+
+  public static void removeWaystoneFromDatabase(net.minecraft.server.MinecraftServer, net.blay09.mods.waystones.api.Waystone);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: aload_1
+       5: invokeinterface #76,  3           // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.removeWaystoneFromDatabase:(Lnet/minecraft/server/MinecraftServer;Lnet/blay09/mods/waystones/api/Waystone;)V
+      10: return
+
+  public static java.util.Collection<net.blay09.mods.waystones.api.Waystone> getActivatedWaystones(net.minecraft.world.entity.player.Player);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: invokeinterface #80,  2           // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.getActivatedWaystones:(Lnet/minecraft/world/entity/player/Player;)Ljava/util/Collection;
+       9: areturn
+
+  public static java.util.Optional<net.blay09.mods.waystones.api.Waystone> getNearestWaystone(net.minecraft.world.entity.player.Player);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: invokeinterface #84,  2           // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.getNearestWaystone:(Lnet/minecraft/world/entity/player/Player;)Ljava/util/Optional;
+       9: areturn
+
+  public static java.util.Optional<net.blay09.mods.waystones.api.Waystone> placeWaystone(net.minecraft.world.level.Level, net.minecraft.core.BlockPos, net.blay09.mods.waystones.api.WaystoneStyle);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: aload_1
+       5: aload_2
+       6: invokeinterface #88,  4           // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.placeWaystone:(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/blay09/mods/waystones/api/WaystoneStyle;)Ljava/util/Optional;
+      11: areturn
+
+  public static java.util.Optional<net.blay09.mods.waystones.api.Waystone> placeSharestone(net.minecraft.world.level.Level, net.minecraft.core.BlockPos, net.minecraft.world.item.DyeColor);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: aload_1
+       5: aload_2
+       6: invokeinterface #92,  4           // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.placeSharestone:(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/item/DyeColor;)Ljava/util/Optional;
+      11: areturn
+
+  public static java.util.Optional<net.blay09.mods.waystones.api.Waystone> placeWarpPlate(net.minecraft.world.level.Level, net.minecraft.core.BlockPos);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: aload_1
+       5: invokeinterface #96,  3           // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.placeWarpPlate:(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)Ljava/util/Optional;
+      10: areturn
+
+  public static java.util.Optional<net.blay09.mods.waystones.api.Waystone> getBoundWaystone(net.minecraft.world.entity.player.Player, net.minecraft.world.item.ItemStack);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: aload_1
+       5: invokeinterface #99,  3           // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.getBoundWaystone:(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/item/ItemStack;)Ljava/util/Optional;
+      10: areturn
+
+  public static void setBoundWaystone(net.minecraft.world.item.ItemStack, net.blay09.mods.waystones.api.Waystone);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: aload_1
+       5: invokeinterface #103,  3          // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.setBoundWaystone:(Lnet/minecraft/world/item/ItemStack;Lnet/blay09/mods/waystones/api/Waystone;)V
+      10: return
+
+  public static net.minecraft.world.item.ItemStack createAttunedShard(net.blay09.mods.waystones.api.Waystone);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: invokeinterface #107,  2          // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.createAttunedShard:(Lnet/blay09/mods/waystones/api/Waystone;)Lnet/minecraft/world/item/ItemStack;
+       9: areturn
+
+  public static net.minecraft.world.item.ItemStack createBoundScroll(net.blay09.mods.waystones.api.Waystone);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: invokeinterface #111,  2          // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.createBoundScroll:(Lnet/blay09/mods/waystones/api/Waystone;)Lnet/minecraft/world/item/ItemStack;
+       9: areturn
+
+  public static net.blay09.mods.waystones.api.requirement.WarpRequirement resolveRequirements(net.blay09.mods.waystones.api.WaystoneTeleportContext);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: invokeinterface #114,  2          // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.resolveRequirements:(Lnet/blay09/mods/waystones/api/WaystoneTeleportContext;)Lnet/blay09/mods/waystones/api/requirement/WarpRequirement;
+       9: areturn
+
+  public static void registerRequirementType(net.blay09.mods.waystones.api.requirement.RequirementType<?>);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: invokeinterface #118,  2          // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.registerRequirementType:(Lnet/blay09/mods/waystones/api/requirement/RequirementType;)V
+       9: return
+
+  public static void registerRequirementModifier(net.blay09.mods.waystones.api.requirement.RequirementFunction<?, ?>);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: invokeinterface #122,  2          // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.registerRequirementModifier:(Lnet/blay09/mods/waystones/api/requirement/RequirementFunction;)V
+       9: return
+
+  public static void registerVariableResolver(net.blay09.mods.waystones.api.requirement.VariableResolver);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: invokeinterface #126,  2          // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.registerVariableResolver:(Lnet/blay09/mods/waystones/api/requirement/VariableResolver;)V
+       9: return
+
+  public static void registerConditionPredicate(net.blay09.mods.waystones.api.requirement.ConditionResolver<?>);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: invokeinterface #130,  2          // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.registerConditionResolver:(Lnet/blay09/mods/waystones/api/requirement/ConditionResolver;)V
+       9: return
+
+  public static void registerParameterSerializer(net.blay09.mods.waystones.api.requirement.ParameterSerializer<?>);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: invokeinterface #134,  2          // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.registerParameterSerializer:(Lnet/blay09/mods/waystones/api/requirement/ParameterSerializer;)V
+       9: return
+
+  public static void activateWaystone(net.minecraft.server.level.ServerPlayer, net.blay09.mods.waystones.api.Waystone);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: aload_1
+       5: invokeinterface #138,  3          // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.activateWaystone:(Lnet/minecraft/server/level/ServerPlayer;Lnet/blay09/mods/waystones/api/Waystone;)V
+      10: return
+
+  public static void deactivateWaystone(net.minecraft.server.level.ServerPlayer, net.blay09.mods.waystones.api.Waystone);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: aload_1
+       5: invokeinterface #142,  3          // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.deactivateWaystone:(Lnet/minecraft/server/level/ServerPlayer;Lnet/blay09/mods/waystones/api/Waystone;)V
+      10: return
+
+  public static java.util.Set<net.minecraft.resources.ResourceLocation> getDynamicWaystoneGroups(net.blay09.mods.waystones.api.Waystone);
+    Code:
+       0: aload_0
+       1: invokestatic  #145                // Method net/blay09/mods/waystones/api/WaystoneGroups.getDynamicGroups:(Lnet/blay09/mods/waystones/api/Waystone;)Ljava/util/Set;
+       4: areturn
+
+  public static java.util.Optional<net.blay09.mods.waystones.api.TeleportDestination> resolveDefaultDestination(net.minecraft.server.level.ServerLevel, net.blay09.mods.waystones.api.Waystone);
+    Code:
+       0: getstatic     #7                  // Field __internalMethods:Lnet/blay09/mods/waystones/api/InternalMethods;
+       3: aload_0
+       4: aload_1
+       5: invokeinterface #151,  3          // InterfaceMethod net/blay09/mods/waystones/api/InternalMethods.resolveDefaultDestination:(Lnet/minecraft/server/level/ServerLevel;Lnet/blay09/mods/waystones/api/Waystone;)Ljava/util/Optional;
+      10: areturn
+}

@@ -1,0 +1,32 @@
+// Focused art checks against the current compiled classes and bundled resources.
+allprojects {
+    afterEvaluate {
+        tasks.register('validateSlashFx', JavaCompile) {
+            dependsOn 'classes'
+            source = project.files('src/main/java/com/dsh/eldencombat/effects/SkillSlashSprites.java',
+                    'src/main/java/com/dsh/eldencombat/effects/SkillEffectMesh.java',
+                    'src/main/java/com/dsh/eldencombat/effects/WaveFront.java',
+                    'src/main/java/com/dsh/eldencombat/client/effects/SkillSlashSpriteRenderer.java',
+                    'src/main/java/com/dsh/eldencombat/client/effects/SkillEffectRenderTypes.java',
+                    'src/main/java/com/dsh/eldencombat/client/effects/SkillEffectRenderer.java')
+            classpath = sourceSets.main.compileClasspath + sourceSets.main.output
+            destinationDirectory = layout.buildDirectory.dir('slash-fx-validation/classes')
+            options.release = 21
+            options.encoding = 'UTF-8'
+        }
+        tasks.register('testSlashFxCompile', JavaCompile) {
+            dependsOn 'validateSlashFx'
+            source = project.files('src/test/java/com/dsh/eldencombat/SkillSlashSpritesTest.java')
+            classpath = configurations.testCompileClasspath + project.files('build/slash-fx-validation/classes')
+            destinationDirectory = layout.buildDirectory.dir('slash-fx-validation/tests')
+            options.release = 21
+        }
+        tasks.register('testSlashFx', Test) {
+            dependsOn 'testSlashFxCompile'
+            testClassesDirs = project.files('build/slash-fx-validation/tests')
+            classpath = project.files('build/slash-fx-validation/classes', 'build/slash-fx-validation/tests') + sourceSets.main.output + configurations.testRuntimeClasspath
+            useJUnitPlatform()
+            reports.junitXml.outputLocation = layout.buildDirectory.dir('slash-fx-validation/results')
+        }
+    }
+}

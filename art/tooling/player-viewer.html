@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Player Equipment / Asset Review</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; font: 13px Arial, sans-serif; color: #283637; }
+    canvas { display: block; width: 100%; height: 100%; }
+    header { position: absolute; inset: 0 0 auto; padding: 10px 14px; display: flex; align-items: center; flex-wrap: wrap; gap: 10px; background: #ffffffee; border-bottom: 1px solid #cad3d3; z-index: 2; }
+    strong { font-size: 14px; white-space: nowrap; }
+    select, input[type=file] { max-width: 156px; min-height: 30px; padding: 4px 6px; border: 1px solid #b3c1c1; border-radius: 3px; font: inherit; color: inherit; background: white; }
+    label { display: flex; align-items: center; gap: 5px; white-space: nowrap; }
+    #timeline { width: 126px; accent-color: #24756f; }
+    #status { position: absolute; bottom: 12px; left: 14px; font-size: 12px; }
+    #views { position: absolute; inset: auto 0 14px; display: flex; justify-content: space-around; pointer-events: none; }
+    @media(max-width: 600px) { header { padding: 8px 10px; gap: 7px; } strong { width: 100%; } select { max-width: 118px; } #skin { max-width: 150px; } #status { bottom: 38px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>Player / Equipment</strong>
+    <select id="profile" aria-label="Weapon"><option value="light_sword">Straight sword</option><option value="great_sword">Great sword</option></select>
+    <select id="variant" aria-label="Skin variant"><option value="classic">Classic</option><option value="slim">Slim</option></select>
+    <select id="view" aria-label="View"><option value="orbit">Perspective</option><option value="sheet">Three views</option><option value="equipment">Equipment</option></select>
+    <select id="animation" aria-label="Animation"></select>
+    <label><input id="play" type="checkbox" checked>Play</label>
+    <label><input id="bones" type="checkbox">Bones</label>
+    <input id="timeline" type="range" min="0" max="40" step="0.1" value="0" aria-label="Animation tick">
+    <input id="skin" type="file" accept="image/png" aria-label="Skin PNG">
+  </header>
+  <div id="views"><span>FRONT</span><span>SIDE</span><span>BACK</span></div>
+  <output id="status"></output>
+  <script>/* SCENE_DATA */</script>
+  <script>/* VIEWER_BUNDLE */</script>
+</body>
+</html>

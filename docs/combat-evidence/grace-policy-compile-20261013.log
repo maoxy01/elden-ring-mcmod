@@ -1,0 +1,30 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.12/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+
+> Task :compileJava
+D:\codexout\mcmod\src\main\java\com\dsh\eldencombat\client\EldenCombatClient.java:30: ����: [removal] EventBusSubscriber �е� bus() �ѹ�ʱ, �ұ��Ϊ��ɾ��
+@EventBusSubscriber(modid = EldenCombat.MODID, value = Dist.CLIENT, bus = EventBusSubscriber.Bus.MOD)
+                                                                    ^
+D:\codexout\mcmod\src\main\java\com\dsh\eldencombat\client\EldenCombatClient.java:30: ����: [removal] EventBusSubscriber �е� Bus �ѹ�ʱ, �ұ��Ϊ��ɾ��
+@EventBusSubscriber(modid = EldenCombat.MODID, value = Dist.CLIENT, bus = EventBusSubscriber.Bus.MOD)
+                                                                                            ^
+D:\codexout\mcmod\src\main\java\com\dsh\eldencombat\registry\ModDataComponents.java:21: ����: [removal] DeferredRegister �е� createDataComponents(String) �ѹ�ʱ, �ұ��Ϊ��ɾ��
+            DeferredRegister.createDataComponents(EldenCombat.MODID);
+                            ^
+ע: ĳЩ�����ļ�ʹ�û򸲸����ѹ�ʱ�� API��
+ע: �й���ϸ��Ϣ, ��ʹ�� -Xlint:deprecation ���±��롣
+3 ������
+
+> Task :syncArt UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+> Task :test
+
+[Incubating] Problems report is available at: file:///D:/codexout/mcmod/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 11s
+6 actionable tasks: 3 executed, 3 up-to-date

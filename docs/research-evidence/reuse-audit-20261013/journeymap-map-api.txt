@@ -1,0 +1,15 @@
+Compiled from "IOverlayListener.java"
+public interface journeymap.api.v2.client.display.IOverlayListener {
+  public default void onActivate(journeymap.api.v2.client.util.UIState);
+  public default void onDeactivate(journeymap.api.v2.client.util.UIState);
+  public default void onMouseMove(journeymap.api.v2.client.util.UIState, java.awt.geom.Point2D$Double, net.minecraft.core.BlockPos);
+  public default void onMouseOut(journeymap.api.v2.client.util.UIState, java.awt.geom.Point2D$Double, net.minecraft.core.BlockPos);
+  public default boolean onMouseClick(journeymap.api.v2.client.util.UIState, java.awt.geom.Point2D$Double, net.minecraft.core.BlockPos, int, boolean);
+  public default void onOverlayMenuPopup(journeymap.api.v2.client.util.UIState, java.awt.geom.Point2D$Double, net.minecraft.core.BlockPos, journeymap.api.v2.client.fullscreen.ModPopupMenu);
+}
+Compiled from "ModPopupMenu.java"
+public interface journeymap.api.v2.client.fullscreen.ModPopupMenu {
+  public abstract journeymap.api.v2.client.fullscreen.ModPopupMenu addMenuItem(java.lang.String, journeymap.api.v2.client.fullscreen.ModPopupMenu$Action);
+  public abstract journeymap.api.v2.client.fullscreen.ModPopupMenu addMenuItemScreen(java.lang.String, net.minecraft.client.gui.screens.Screen);
+  public abstract journeymap.api.v2.client.fullscreen.ModPopupMenu createSubItemList(java.lang.String);
+}

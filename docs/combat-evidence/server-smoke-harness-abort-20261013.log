@@ -1,0 +1,251 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.12/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :generateEquipment2d UP-TO-DATE
+> Task :syncArt UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :downloadAssets UP-TO-DATE
+> Task :writeServerLegacyClasspath UP-TO-DATE
+> Task :prepareServerRun
+> Task :prepareServerSmokeDir
+
+> Task :runServer
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+[18:16:36] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserverdev, --gameDir, ., --fml.fmlVersion, 4.0.42, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.219, --fml.neoFormVersion, 20240808.144430, --nogui, --port, 25566]
+[18:16:36] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.12.1+1-LTS
+[18:16:36] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.12.1 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[18:16:36] [main/INFO] [ne.ne.fm.lo.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserverdev
+[18:16:36] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/30869/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%2394!/ Service=ModLauncher Env=SERVER
+[18:16:36] [main/INFO] [ne.ne.fm.lo.mo.lo.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[18:16:36] [main/INFO] [ne.ne.fm.lo.mo.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		Elden Combat 0.2.0 (eldencombat)
+		Minecraft 1.21.1 (minecraft)
+		NeoForge 21.1.219 (neoforge)
+[18:16:37] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
+[18:16:37] [main/INFO] [cp.mo.mo.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserverdev' with arguments [--gameDir, ., --nogui, --port, 25566]
+[18:16:39] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[18:16:43] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[18:16:43] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[18:16:43] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[18:16:43] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[18:16:43] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[18:16:44] [modloading-worker-0/INFO] [ne.ne.ne.co.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.219, for MC 1.21.1
+[18:16:44] [modloading-worker-0/INFO] [EldenCombat/]: [EldenCombat] ServerCombat 已注册到游戏事件总线（单例，一次）
+[18:16:44] [modloading-worker-0/INFO] [EldenCombat/]: [EldenCombat] 纯原版战斗扩展 loaded (MC 1.21.1 / NeoForge 21.1.219)
+[18:16:44] [modloading-worker-0/ERROR] [ne.ne.fm.ja.FMLModContainer/LOADING]: Failed to register automatic subscribers. ModID: eldencombat
+java.lang.NoClassDefFoundError: net/blay09/mods/waystones/api/Waystone
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[?:?] {}
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3580) ~[?:?] {}
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2678) ~[?:?] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.javafmlmod.AutomaticEventSubscriber.lambda$inject$4(AutomaticEventSubscriber.java:60) ~[loader-4.0.42.jar%23102!/:4.0] {}
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[?:?] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.javafmlmod.AutomaticEventSubscriber.inject(AutomaticEventSubscriber.java:49) ~[loader-4.0.42.jar%23102!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:126) ~[loader-4.0.42.jar%23102!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.ModLoader.lambda$constructMods$3(ModLoader.java:153) ~[loader-4.0.42.jar%23102!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.ModLoader.lambda$dispatchParallelTask$7(ModLoader.java:231) ~[loader-4.0.42.jar%23102!/:4.0] {}
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) [?:?] {}
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) [?:?] {}
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483) [?:?] {}
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) [?:?] {}
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) [?:?] {}
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) [?:?] {}
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) [?:?] {}
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) [?:?] {}
+Caused by: java.lang.ClassNotFoundException: net.blay09.mods.waystones.api.Waystone
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[?:?] {}
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?] {}
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:216) ~[securejarhandler-3.0.8.jar:?] {}
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?] {}
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:216) ~[securejarhandler-3.0.8.jar:?] {}
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?] {}
+	... 17 more
+[18:16:44] [main/FATAL] [ne.ne.fm.ModLoader/LOADING]: Failed to wait for future Mod Construction, 1 errors found
+[18:16:44] [main/ERROR] [minecraft/CrashReport]: Negative index in crash report handler (0/21)
+[18:16:44] [main/FATAL] [ne.ne.ne.co.NeoForgeMod/]: Preparing crash report with UUID 8ca3751c-945f-4dda-85c0-eaca4832a7c4
+[18:16:44] [main/FATAL] [ne.ne.ne.se.lo.ServerModLoader/]: Crash report saved to .\crash-reports\crash-2026-10-13_18.16.44-fml.txt
+[18:16:44] [main/FATAL] [ne.ne.ne.co.NeoForgeMod/]: Preparing crash report with UUID 965e9eb4-f92b-4726-a238-da2b5d69ec45
+---- Minecraft Crash Report ----
+// This doesn't make any sense!
+
+Time: 2026-10-13 18:16:44
+Description: Mod loading failures have occurred; consult the issue messages for more details
+
+net.neoforged.neoforge.logging.CrashReportExtender$ModLoadingCrashException: Mod loading has failed
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: main
+Stacktrace:
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[?:?] {}
+-- Mod loading issue for: eldencombat --
+Details:
+	Caused by 0: java.lang.NoClassDefFoundError: net/blay09/mods/waystones/api/Waystone
+		at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[?:?] {}
+		at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3580) ~[?:?] {}
+		at java.base/java.lang.Class.getDeclaredMethods(Class.java:2678) ~[?:?] {}
+		at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.javafmlmod.AutomaticEventSubscriber.lambda$inject$4(AutomaticEventSubscriber.java:60) ~[loader-4.0.42.jar%23102!/:4.0] {}
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[?:?] {}
+		at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.javafmlmod.AutomaticEventSubscriber.inject(AutomaticEventSubscriber.java:49) ~[loader-4.0.42.jar%23102!/:4.0] {}
+		at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:126) ~[loader-4.0.42.jar%23102!/:4.0] {}
+		at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.ModLoader.lambda$constructMods$3(ModLoader.java:153) ~[loader-4.0.42.jar%23102!/:4.0] {}
+		at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.ModLoader.lambda$dispatchParallelTask$7(ModLoader.java:231) ~[loader-4.0.42.jar%23102!/:4.0] {}
+		at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[?:?] {}
+		at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[?:?] {}
+		at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483) ~[?:?] {}
+		at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) ~[?:?] {}
+		at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) ~[?:?] {}
+		at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) ~[?:?] {}
+		at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) ~[?:?] {}
+		at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) ~[?:?] {}
+
+	Mod file: /D:/codexout/mcmod/build/classes/java/main/
+	Failure message: Elden Combat (eldencombat) has failed to load correctly
+		java.lang.NoClassDefFoundError: net/blay09/mods/waystones/api/Waystone
+	Mod version: 0.2.0
+	Mod issues URL: https://example.invalid/eldencombat/issues
+	Exception message: java.lang.ClassNotFoundException: net.blay09.mods.waystones.api.Waystone
+Stacktrace:
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[?:?] {}
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?] {}
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:216) ~[securejarhandler-3.0.8.jar:?] {}
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?] {}
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:216) ~[securejarhandler-3.0.8.jar:?] {}
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?] {}
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[?:?] {}
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3580) ~[?:?] {}
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2678) ~[?:?] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.javafmlmod.AutomaticEventSubscriber.lambda$inject$4(AutomaticEventSubscriber.java:60) ~[loader-4.0.42.jar%23102!/:4.0] {}
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[?:?] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.javafmlmod.AutomaticEventSubscriber.inject(AutomaticEventSubscriber.java:49) ~[loader-4.0.42.jar%23102!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:126) ~[loader-4.0.42.jar%23102!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.ModLoader.lambda$constructMods$3(ModLoader.java:153) ~[loader-4.0.42.jar%23102!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.ModLoader.lambda$dispatchParallelTask$7(ModLoader.java:231) ~[loader-4.0.42.jar%23102!/:4.0] {}
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[?:?] {}
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[?:?] {}
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483) ~[?:?] {}
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) ~[?:?] {}
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) ~[?:?] {}
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) ~[?:?] {}
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) ~[?:?] {}
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) ~[?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.12.1, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 86365016 bytes (82 MiB) / 381681664 bytes (364 MiB) up to 4223664128 bytes (4028 MiB)
+	CPUs: 24
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i7-14650HX
+	Identifier: Intel64 Family 6 Model 183 Stepping 1
+	Microarchitecture: Raptor Lake
+	Frequency (GHz): 2.42
+	Number of physical packages: 1
+	Number of physical CPUs: 16
+	Number of logical CPUs: 24
+	Graphics card #0 name: NVIDIA GeForce RTX 5060 Laptop GPU
+	Graphics card #0 vendor: NVIDIA
+	Graphics card #0 VRAM (MiB): 8151.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.16.1664
+	Graphics card #1 name: Intel(R) UHD Graphics
+	Graphics card #1 vendor: Intel Corporation
+	Graphics card #1 VRAM (MiB): 2048.00
+	Graphics card #1 deviceId: VideoController2
+	Graphics card #1 versionInfo: 32.0.101.7076
+	Memory slot #0 capacity (MiB): 16384.00
+	Memory slot #0 clockSpeed (GHz): 5.60
+	Memory slot #0 type: Unknown
+	Virtual memory max (MiB): 29419.87
+	Virtual memory used (MiB): 22024.71
+	Swap memory total (MiB): 13312.00
+	Swap memory used (MiB): 1104.77
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 35217.52, total: 153601.00
+	Space in storage for workdir (MiB): available: 62874.76, total: 153599.00
+	JVM Flags: 0 total; 
+	ModLauncher: 11.0.5+main.901c6ea8
+	ModLauncher launch target: forgeserverdev
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-4.0.42.jar slf4jfixer PLUGINSERVICE 
+		loader-4.0.42.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-4.0.42.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-11.0.5.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-11.0.5.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@4.0
+		lowcodefml@4.0
+		minecraft@4.0
+	Mod List: 
+		main                                              |Elden Combat                  |eldencombat                   |0.2.0               |Manifest: NOSIGNATURE
+		neoforge-21.1.219.jar                             |Minecraft                     |minecraft                     |1.21.1              |Manifest: NOSIGNATURE
+		neoforge-21.1.219.jar                             |NeoForge                      |neoforge                      |21.1.219            |Manifest: NOSIGNATURE
+	Crash Report UUID: 965e9eb4-f92b-4726-a238-da2b5d69ec45
+	FML: 4.0.42
+	NeoForge: 21.1.219
+[18:16:44] [main/ERROR] [minecraft/Main]: Failed to start the minecraft server
+net.neoforged.fml.ModLoadingException: Loading errors encountered:
+	- Elden Combat (eldencombat) has failed to load correctly
+	  java.lang.NoClassDefFoundError: net/blay09/mods/waystones/api/Waystone
+
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.ModLoader.waitForFuture(ModLoader.java:281) ~[loader-4.0.42.jar%23102!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.ModLoader.dispatchParallelTask(ModLoader.java:244) ~[loader-4.0.42.jar%23102!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.ModLoader.constructMods(ModLoader.java:152) ~[loader-4.0.42.jar%23102!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:142) ~[loader-4.0.42.jar%23102!/:4.0] {}
+	at TRANSFORMER/neoforge@21.1.219/net.neoforged.neoforge.internal.CommonModLoader.begin(CommonModLoader.java:49) ~[neoforge-21.1.219.jar%23126!/:?] {re:classloading}
+	at TRANSFORMER/neoforge@21.1.219/net.neoforged.neoforge.server.loading.ServerModLoader.load(ServerModLoader.java:34) ~[neoforge-21.1.219.jar%23126!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.Main.main(Main.java:124) ~[neoforge-21.1.219.jar%23125!/:?] {re:classloading}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-4.0.42.jar%23102!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.serverService(CommonLaunchHandler.java:128) ~[loader-4.0.42.jar%23102!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.NeoForgeServerDevLaunchHandler.runService(NeoForgeServerDevLaunchHandler.java:23) ~[loader-4.0.42.jar%23102!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-4.0.42.jar%23102!/:4.0] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-11.0.5.jar%2382!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-11.0.5.jar%2382!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-11.0.5.jar%2382!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.run(Launcher.java:103) [modlauncher-11.0.5.jar%2382!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.main(Launcher.java:74) [modlauncher-11.0.5.jar%2382!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-11.0.5.jar%2382!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-11.0.5.jar%2382!/:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210) [bootstraplauncher-2.0.2.jar:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69) [bootstraplauncher-2.0.2.jar:?] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?] {}
+
+> Task :runServer FAILED
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file 'D:\codexout\mcmod\build.gradle' line: 274
+
+* What went wrong:
+Execution failed for task ':runServer'.
+> Dedicated smoke did not complete successfully; inspect serverSmoke/logs/latest.log
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 17s
+10 actionable tasks: 3 executed, 7 up-to-date

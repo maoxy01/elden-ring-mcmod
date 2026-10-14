@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "kind": "project-native Minecraft art candidate; not a canonical GLB package",
+  "profile": "game",
+  "date": "2026-10-11",
+  "provenance": {
+    "authoring": "Self-authored MC-style fan art; no extracted game meshes or textures",
+    "method": "cuboid hard faces, tile-local 2x2 macro pixels without blur, broad attached Sacred Relic root repair",
+    "sourceBackup": "art/backups/remembrance-highdetail-20261011-001/backup-manifest.json",
+    "gameBeforeSmoothingBackup": "art/backups/remembrance-game-before-smoothing-20261011-001/backup-manifest.json",
+    "smoothBackup": "art/backups/remembrance-smooth-before-pixel-20261011-001/backup-manifest.json",
+    "licenseStatus": "No new redistribution license granted by this manifest",
+    "generators": [
+      {
+        "path": "art/tooling/remembrance.mjs",
+        "sha256": "2c8254b79ea20cb4e953ba3e01143be38e231e5eca66599f533d3bc69101072c"
+      },
+      {
+        "path": "art/tooling/remembrance-game.mjs",
+        "sha256": "e93dde9867e567a2171cda3db33128800a57f58b25e1279b8f9841f505acab52"
+      },
+      {
+        "path": "art/tooling/build-weapons.mjs",
+        "sha256": "4e22603fb52b6ee4f22f5bea3c09543df4e5bbad7802d6abbb095d03b26e0c2f"
+      },
+      {
+        "path": "art/tooling/game-weapon-bake.mjs",
+        "sha256": "7c9831778317391578bdd5d852d73843f4bbf78585cccb9a4a2794a58250b4b5"
+      },
+      {
+        "path": "art/tooling/weapon-smooth-surfaces.mjs",
+        "sha256": "9a34c0c2084726c3e3027e2c7b079037d25897946c73d431cd8a9674ba604e78"
+      },
+      {
+        "path": "art/tooling/verify-smooth-weapons.mjs",
+        "sha256": "eb2eec62dd0d4d56db5d3215aeadd704081c1841eb67d5f416613195d13b0b92"
+      },
+      {
+        "path": "art/tooling/player-scene.mjs",
+        "sha256": "69543de9c56c265769fe3723a1a3e10def681bc82e3d255c4c14536efddf1de1"
+      },
+      {
+        "path": "art/tooling/weapon-connectivity.mjs",
+        "sha256": "968f757df1a0457ebba2cb5c84eba46b6ce2aeed1da8b8c053768f9a708b400e"
+      },
+      {
+        "path": "art/tooling/weapon-structure.mjs",
+        "sha256": "2075886769f74690d2643c80f94b85c9e30d4be77e3f0f4391d21116d7fcc0c8"
+      },
+      {
+        "path": "art/tooling/weapon-mesh-validation.mjs",
+        "sha256": "c8a5c7ccb0a6dc18ff249121919479cfcbcacd9f3e485d19d49fe96ac5445adf"
+      },
+      {
+        "path": "art/tooling/verify-weapons.cjs",
+        "sha256": "975b1c3d3516ddb64f37eacdbef45b0fbd0bc7c7cc3e29baed7313179465c5ee"
+      },
+      {
+        "path": "art/tooling/verify-pixel-weapons.mjs",
+        "sha256": "4c93e4f4c1ce91e04375c5549f51b826d753a7b67a9e1e1c4d4625d53a8632a7"
+      },
+      {
+        "path": "art/tooling/verify-game-comparison.mjs",
+        "sha256": "60ba3d039e63b3e19fc3e97bd076dd29c25bf88b62877bf318c1730ed61e3e59"
+      },
+      {
+        "path": "art/tooling/weapon-render-probe.mjs",
+        "sha256": "3a85e3a7a834f539daa5015b45be9a46c46b2e13ff6597e3081a88cd69bce281"
+      },
+      {
+        "path": "art/tooling/weapons-viewer.mjs",
+        "sha256": "833076036f9d36e99826140cae211bb86ce0ef46fff4528457a4149187b475ad"
+      },
+      {
+        "path": "art/tooling/weapons-viewer.html",
+        "sha256": "0fb5aaf5f2caff24c7c2af25d3f9a1a9ffeba58d3d25fac051058dc3d80140d4"
+      }
+    ]
+  },
+  "models": 8,
+  "gameplayVerified": false,
+  "performanceMeasured": false,
+  "excludedFromEngineResources": [
+    "Blockbench editing files",
+    "preview.html",
+    "qa",
+    "backups",
+    "validation reports"
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 5513,
+      "sha256": "e8d1243cfe2d6bcc2ef3fea6b116443dc71ad157e5f88199b6326117f17d6162"
+    },
+    {
+      "path": "THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "path": "blasphemous_blade.bbmodel",
+      "bytes": 2352589,
+      "sha256": "a23860d58ed359aa3bc28d5e26f47ad971ca2fba01a8ad935d47c9fb0454f142"
+    },
+    {
+      "path": "blasphemous_blade.mesh.json",
+      "bytes": 3244354,
+      "sha256": "086ab2d206dcfbe4e48d495e59c210df085ac43a8c1aa04c7737388f7b855945"
+    },
+    {
+      "path": "blasphemous_blade.model.json",
+      "bytes": 1296165,
+      "sha256": "752f3e377e753a10c56aaedb2d480fbb5db913a480a7e1341d6b7942f8b11927"
+    },
+    {
+      "path": "catalog.json",
+      "bytes": 80780,
+      "sha256": "7b6d7ad29afec156f5373201e30aefa0a1b65834f495e412bb51138e719221de"
+    },
+    {
+      "path": "comparison-validation.json",
+      "bytes": 8596,
+      "sha256": "df0fa78344630567900d2b4c19e195f9b096e2f60575136c026c32152ff00c4f"
+    },
+    {
+      "path": "hand_of_malenia.bbmodel",
+      "bytes": 1321365,
+      "sha256": "4fef9efe07c83103609d6ce46d380a4d92292751e964e5b9f4e43e77532bd057"
+    },
+    {
+      "path": "hand_of_malenia.mesh.json",
+      "bytes": 1580338,
+      "sha256": "3c5751af117deafd90840e753b9d80a6d8f6591b21d1da7e271806b519c3bba3"
+    },
+    {
+      "path": "hand_of_malenia.model.json",
+      "bytes": 652020,
+      "sha256": "10db9b75c20af40f57b4277888dc50c248e9c4ca4ee1213c1f49d5ebb28ea0d4"
+    },
+    {
+      "path": "malikeths_black_blade.bbmodel",
+      "bytes": 1433347,
+      "sha256": "6572189b29e68d985e3a3476ad459763839a1f456cd376fd3e75ed4e43f65732"
+    },
+    {
+      "path": "malikeths_black_blade.mesh.json",
+      "bytes": 1704722,
+      "sha256": "bb6d516cb0fb776ea3169225d6416600ea70076d596107b5edbc7b2a478a0d91"
+    },
+    {
+      "path": "malikeths_black_blade.model.json",
+      "bytes": 732472,
+      "sha256": "cdc5018b422c7a80719da95634bfbd96b700cb34e7b0c7bdb66c424c3051e4df"
+    },
+    {
+      "path": "marikas_hammer.bbmodel",
+      "bytes": 710766,
+      "sha256": "99e6102405cf5f5f68281e61ad630b7c293e4a1d8060eaa7f85bb9f87e5444f5"
+    },
+    {
+      "path": "marikas_hammer.mesh.json",
+      "bytes": 717632,
+      "sha256": "3d56c01dacfb1b3c941fa2ddcba3811040810a2dff057c46a86f50268c8bd679"
+    },
+    {
+      "path": "marikas_hammer.model.json",
+      "bytes": 278436,
+      "sha256": "eeb1c1946b4208bddbfb469deec784ff5f6541793676cbbc9318b37fff6e21ee"
+    },
+    {
+      "path": "mohgwyns_sacred_spear.bbmodel",
+      "bytes": 1256345,
+      "sha256": "e79212a82d6014a0dad6a2b7eaf589b2ccb99f92d1c5b05f7c6892f8a685bff7"
+    },
+    {
+      "path": "mohgwyns_sacred_spear.mesh.json",
+      "bytes": 1528367,
+      "sha256": "0262b72190df907ac60eb4cc9ef3f3c9ae689a623fa42db00f813dc3864c5345"
+    },
+    {
+      "path": "mohgwyns_sacred_spear.model.json",
+      "bytes": 616014,
+      "sha256": "00c782ebcd9df7bff37a66f04c36358f9e7f7ead85155ed6a8b1bcb7daef9f58"
+    },
+    {
+      "path": "morgotts_cursed_sword.bbmodel",
+      "bytes": 1456993,
+      "sha256": "5904227c16ccd7f041621d17103588011b6277b683664e8442be3296c3822884"
+    },
+    {
+      "path": "morgotts_cursed_sword.mesh.json",
+      "bytes": 1726880,
+      "sha256": "6c50d3644b13b079ef05e48560cc980f7f0bd463aed7d3802652bceae0e02e3c"
+    },
+    {
+      "path": "morgotts_cursed_sword.model.json",
+      "bytes": 747832,
+      "sha256": "8d00b6b67dc9aba1b4214735c055da3bf301a6047516cf35a340296419df2828"
+    },
+    {
+      "path": "pixel-validation.json",
+      "bytes": 2170,
+      "sha256": "cd56c92b42a30146a45ec96f58bbcc38652afbabd8a71a2ff94f60685cbbf3ee"
+    },
+    {
+      "path": "preview-validation.json",
+      "bytes": 3392,
+      "sha256": "f7c75df1b27d4ce5cae9d3aa2bac1b0ce01541aaa87d88ffb9b0a63e446291fa"
+    },
+    {
+      "path": "references.json",
+      "bytes": 803,
+      "sha256": "b472945b11dfd4d982cec5dff91f01e50996be4b0690240477331a6ffe960758"
+    },
+    {
+      "path": "sacred_relic_sword.bbmodel",
+      "bytes": 2307106,
+      "sha256": "fb03824fe49ccf8781f7ccbb1335b47b7c702fab32e79a7edf05c90605e4d694"
+    },
+    {
+      "path": "sacred_relic_sword.mesh.json",
+      "bytes": 2853022,
+      "sha256": "408aca619c9315273b0f42e8fe80961253ca808deb61706799a67fc4225178e6"
+    },
+    {
+      "path": "sacred_relic_sword.model.json",
+      "bytes": 1281117,
+      "sha256": "8d975b8d7ac9b67a9a8ef91fbf73c17c7484da16b8e27f548f3a7c096ce646f9"
+    },
+    {
+      "path": "starscourge_greatsword.bbmodel",
+      "bytes": 1294345,
+      "sha256": "7bee1f15bb5bc9a0b61289bbefc19a1a984f92cd67b0839318b3822e271d49a0"
+    },
+    {
+      "path": "starscourge_greatsword.mesh.json",
+      "bytes": 1504048,
+      "sha256": "2fb014051e52da6c94d6cbbdd1e6f9da38b4512c12d33317d232f4f0da625611"
+    },
+    {
+      "path": "starscourge_greatsword.model.json",
+      "bytes": 648024,
+      "sha256": "aa7f89ddf0c9136ab540939f6c91f78a44f88e19fc7168488ffde63e9dccd116"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 4270,
+      "sha256": "97ba8fe1897b55069f26b8abc1600dfad05d64c25ad65cbb2f01fe5bac99ac54"
+    },
+    {
+      "path": "weapon-arts.design.json",
+      "bytes": 3642,
+      "sha256": "ab5fe0394cffc3d3fb78160278b7c48be7c837ab8685e807e6cf39d97383d560"
+    },
+    {
+      "path": "weapons.png",
+      "bytes": 198838,
+      "sha256": "4e5e525c5884cf145b80529202edff2abfce4165f3162f0da3090eb21af5d489"
+    }
+  ]
+}

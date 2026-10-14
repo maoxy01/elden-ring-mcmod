@@ -1,0 +1,2152 @@
+{
+  "schemaVersion": 1,
+  "ticksPerSecond": 20,
+  "rotationOrder": "XYZ",
+  "rotationMode": "additive_degrees",
+  "clips": [
+    {
+      "id": "idle",
+      "lengthTicks": 40,
+      "loop": true,
+      "events": [],
+      "tracks": {
+        "upper_arm_r": [
+          {
+            "tick": 0,
+            "value": [
+              30,
+              0,
+              45
+            ]
+          }
+        ],
+        "forearm_r": [
+          {
+            "tick": 0,
+            "value": [
+              55,
+              0,
+              0
+            ]
+          }
+        ],
+        "upper_arm_l": [
+          {
+            "tick": 0,
+            "value": [
+              22,
+              0,
+              8
+            ]
+          }
+        ],
+        "forearm_l": [
+          {
+            "tick": 0,
+            "value": [
+              30,
+              0,
+              0
+            ]
+          }
+        ],
+        "shield_socket": [
+          {
+            "tick": 0,
+            "value": [
+              -52,
+              0,
+              0
+            ]
+          }
+        ],
+        "torso": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 20,
+            "value": [
+              1.5,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 40,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "walk",
+      "lengthTicks": 24,
+      "loop": true,
+      "events": [
+        {
+          "tick": 0,
+          "type": "footstep"
+        },
+        {
+          "tick": 12,
+          "type": "footstep"
+        }
+      ],
+      "tracks": {
+        "upper_arm_r": [
+          {
+            "tick": 0,
+            "value": [
+              30,
+              0,
+              45
+            ]
+          }
+        ],
+        "forearm_r": [
+          {
+            "tick": 0,
+            "value": [
+              55,
+              0,
+              0
+            ]
+          }
+        ],
+        "upper_arm_l": [
+          {
+            "tick": 0,
+            "value": [
+              22,
+              0,
+              8
+            ]
+          }
+        ],
+        "forearm_l": [
+          {
+            "tick": 0,
+            "value": [
+              30,
+              0,
+              0
+            ]
+          }
+        ],
+        "shield_socket": [
+          {
+            "tick": 0,
+            "value": [
+              -52,
+              0,
+              0
+            ]
+          }
+        ],
+        "thigh_r": [
+          {
+            "tick": 0,
+            "value": [
+              24,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 12,
+            "value": [
+              -24,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 24,
+            "value": [
+              24,
+              0,
+              0
+            ]
+          }
+        ],
+        "thigh_l": [
+          {
+            "tick": 0,
+            "value": [
+              -24,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 12,
+            "value": [
+              24,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 24,
+            "value": [
+              -24,
+              0,
+              0
+            ]
+          }
+        ],
+        "shin_r": [
+          {
+            "tick": 0,
+            "value": [
+              -8,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 12,
+            "value": [
+              -25,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 24,
+            "value": [
+              -8,
+              0,
+              0
+            ]
+          }
+        ],
+        "shin_l": [
+          {
+            "tick": 0,
+            "value": [
+              -25,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 12,
+            "value": [
+              -8,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 24,
+            "value": [
+              -25,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "run",
+      "lengthTicks": 16,
+      "loop": true,
+      "events": [
+        {
+          "tick": 0,
+          "type": "footstep"
+        },
+        {
+          "tick": 8,
+          "type": "footstep"
+        }
+      ],
+      "tracks": {
+        "upper_arm_r": [
+          {
+            "tick": 0,
+            "value": [
+              30,
+              0,
+              45
+            ]
+          }
+        ],
+        "forearm_r": [
+          {
+            "tick": 0,
+            "value": [
+              55,
+              0,
+              0
+            ]
+          }
+        ],
+        "upper_arm_l": [
+          {
+            "tick": 0,
+            "value": [
+              22,
+              0,
+              8
+            ]
+          }
+        ],
+        "forearm_l": [
+          {
+            "tick": 0,
+            "value": [
+              30,
+              0,
+              0
+            ]
+          }
+        ],
+        "shield_socket": [
+          {
+            "tick": 0,
+            "value": [
+              -52,
+              0,
+              0
+            ]
+          }
+        ],
+        "thigh_r": [
+          {
+            "tick": 0,
+            "value": [
+              38,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 8,
+            "value": [
+              -38,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 16,
+            "value": [
+              38,
+              0,
+              0
+            ]
+          }
+        ],
+        "thigh_l": [
+          {
+            "tick": 0,
+            "value": [
+              -38,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 8,
+            "value": [
+              38,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 16,
+            "value": [
+              -38,
+              0,
+              0
+            ]
+          }
+        ],
+        "shin_r": [
+          {
+            "tick": 0,
+            "value": [
+              -8,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 8,
+            "value": [
+              -25,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 16,
+            "value": [
+              -8,
+              0,
+              0
+            ]
+          }
+        ],
+        "shin_l": [
+          {
+            "tick": 0,
+            "value": [
+              -25,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 8,
+            "value": [
+              -8,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 16,
+            "value": [
+              -25,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "roll",
+      "lengthTicks": 20,
+      "loop": false,
+      "events": [
+        {
+          "tick": 2,
+          "type": "roll_whoosh"
+        }
+      ],
+      "tracks": {
+        "pelvis": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 3,
+            "value": [
+              25,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 8,
+            "value": [
+              140,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 13,
+            "value": [
+              270,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 18,
+            "value": [
+              360,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 20,
+            "value": [
+              360,
+              0,
+              0
+            ]
+          }
+        ],
+        "torso": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 3,
+            "value": [
+              25,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 15,
+            "value": [
+              25,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 20,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "thigh_r": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 3,
+            "value": [
+              75,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 15,
+            "value": [
+              75,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 20,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "thigh_l": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 3,
+            "value": [
+              75,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 15,
+            "value": [
+              75,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 20,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "shin_r": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 3,
+            "value": [
+              -115,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 15,
+            "value": [
+              -115,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 20,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "shin_l": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 3,
+            "value": [
+              -115,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 15,
+            "value": [
+              -115,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 20,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "upper_arm_r": [
+          {
+            "tick": 0,
+            "value": [
+              30,
+              0,
+              -10
+            ]
+          },
+          {
+            "tick": 3,
+            "value": [
+              65,
+              0,
+              -12
+            ]
+          },
+          {
+            "tick": 15,
+            "value": [
+              65,
+              0,
+              -12
+            ]
+          },
+          {
+            "tick": 20,
+            "value": [
+              30,
+              0,
+              -10
+            ]
+          }
+        ],
+        "forearm_r": [
+          {
+            "tick": 0,
+            "value": [
+              55,
+              0,
+              0
+            ]
+          }
+        ],
+        "upper_arm_l": [
+          {
+            "tick": 0,
+            "value": [
+              60,
+              0,
+              12
+            ]
+          }
+        ],
+        "forearm_l": [
+          {
+            "tick": 0,
+            "value": [
+              65,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "guard_idle",
+      "lengthTicks": 40,
+      "loop": true,
+      "events": [],
+      "tracks": {
+        "upper_arm_r": [
+          {
+            "tick": 0,
+            "value": [
+              30,
+              0,
+              45
+            ]
+          }
+        ],
+        "forearm_r": [
+          {
+            "tick": 0,
+            "value": [
+              55,
+              0,
+              0
+            ]
+          }
+        ],
+        "upper_arm_l": [
+          {
+            "tick": 0,
+            "value": [
+              52,
+              0,
+              24
+            ]
+          }
+        ],
+        "forearm_l": [
+          {
+            "tick": 0,
+            "value": [
+              48,
+              0,
+              0
+            ]
+          }
+        ],
+        "shield_socket": [
+          {
+            "tick": 0,
+            "value": [
+              -100,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "guard_hit",
+      "lengthTicks": 12,
+      "loop": false,
+      "events": [
+        {
+          "tick": 0,
+          "type": "guard_impact"
+        }
+      ],
+      "tracks": {
+        "upper_arm_r": [
+          {
+            "tick": 0,
+            "value": [
+              30,
+              0,
+              45
+            ]
+          }
+        ],
+        "forearm_r": [
+          {
+            "tick": 0,
+            "value": [
+              55,
+              0,
+              0
+            ]
+          }
+        ],
+        "upper_arm_l": [
+          {
+            "tick": 0,
+            "value": [
+              52,
+              0,
+              24
+            ]
+          },
+          {
+            "tick": 2,
+            "value": [
+              30,
+              0,
+              28
+            ]
+          },
+          {
+            "tick": 12,
+            "value": [
+              52,
+              0,
+              24
+            ]
+          }
+        ],
+        "forearm_l": [
+          {
+            "tick": 0,
+            "value": [
+              48,
+              0,
+              0
+            ]
+          }
+        ],
+        "shield_socket": [
+          {
+            "tick": 0,
+            "value": [
+              -100,
+              0,
+              0
+            ]
+          }
+        ],
+        "torso": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 2,
+            "value": [
+              -12,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 12,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "guard_break",
+      "lengthTicks": 24,
+      "loop": false,
+      "events": [
+        {
+          "tick": 0,
+          "type": "guard_break"
+        }
+      ],
+      "tracks": {
+        "upper_arm_r": [
+          {
+            "tick": 0,
+            "value": [
+              30,
+              0,
+              45
+            ]
+          }
+        ],
+        "forearm_r": [
+          {
+            "tick": 0,
+            "value": [
+              55,
+              0,
+              0
+            ]
+          }
+        ],
+        "upper_arm_l": [
+          {
+            "tick": 0,
+            "value": [
+              52,
+              0,
+              24
+            ]
+          },
+          {
+            "tick": 4,
+            "value": [
+              -30,
+              0,
+              45
+            ]
+          },
+          {
+            "tick": 17,
+            "value": [
+              -15,
+              0,
+              35
+            ]
+          },
+          {
+            "tick": 24,
+            "value": [
+              22,
+              0,
+              8
+            ]
+          }
+        ],
+        "forearm_l": [
+          {
+            "tick": 0,
+            "value": [
+              30,
+              0,
+              0
+            ]
+          }
+        ],
+        "shield_socket": [
+          {
+            "tick": 0,
+            "value": [
+              -52,
+              0,
+              0
+            ]
+          }
+        ],
+        "torso": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 4,
+            "value": [
+              -24,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 17,
+            "value": [
+              -18,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 24,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "parry",
+      "lengthTicks": 18,
+      "loop": false,
+      "events": [
+        {
+          "tick": 3,
+          "type": "parry_whoosh"
+        }
+      ],
+      "tracks": {
+        "upper_arm_r": [
+          {
+            "tick": 0,
+            "value": [
+              30,
+              0,
+              45
+            ]
+          }
+        ],
+        "forearm_r": [
+          {
+            "tick": 0,
+            "value": [
+              55,
+              0,
+              0
+            ]
+          }
+        ],
+        "upper_arm_l": [
+          {
+            "tick": 0,
+            "value": [
+              30,
+              0,
+              8
+            ]
+          },
+          {
+            "tick": 3,
+            "value": [
+              70,
+              -25,
+              32
+            ]
+          },
+          {
+            "tick": 7,
+            "value": [
+              60,
+              35,
+              48
+            ]
+          },
+          {
+            "tick": 18,
+            "value": [
+              22,
+              0,
+              8
+            ]
+          }
+        ],
+        "forearm_l": [
+          {
+            "tick": 0,
+            "value": [
+              30,
+              0,
+              0
+            ]
+          }
+        ],
+        "shield_socket": [
+          {
+            "tick": 0,
+            "value": [
+              -90,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "drink",
+      "lengthTicks": 28,
+      "loop": false,
+      "events": [
+        {
+          "tick": 18,
+          "type": "drink_visual"
+        }
+      ],
+      "tracks": {
+        "upper_arm_r": [
+          {
+            "tick": 0,
+            "value": [
+              30,
+              0,
+              -10
+            ]
+          },
+          {
+            "tick": 8,
+            "value": [
+              65,
+              -12,
+              0
+            ]
+          },
+          {
+            "tick": 18,
+            "value": [
+              65,
+              -12,
+              0
+            ]
+          },
+          {
+            "tick": 28,
+            "value": [
+              30,
+              0,
+              -10
+            ]
+          }
+        ],
+        "forearm_r": [
+          {
+            "tick": 0,
+            "value": [
+              55,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 8,
+            "value": [
+              100,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 18,
+            "value": [
+              100,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 28,
+            "value": [
+              55,
+              0,
+              0
+            ]
+          }
+        ],
+        "upper_arm_l": [
+          {
+            "tick": 0,
+            "value": [
+              22,
+              0,
+              8
+            ]
+          }
+        ],
+        "forearm_l": [
+          {
+            "tick": 0,
+            "value": [
+              30,
+              0,
+              0
+            ]
+          }
+        ],
+        "shield_socket": [
+          {
+            "tick": 0,
+            "value": [
+              -52,
+              0,
+              0
+            ]
+          }
+        ],
+        "drink_socket": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 8,
+            "value": [
+              80,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 18,
+            "value": [
+              80,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 28,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "head": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 8,
+            "value": [
+              -10,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 18,
+            "value": [
+              -10,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 28,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hit_stagger",
+      "lengthTicks": 16,
+      "loop": false,
+      "events": [
+        {
+          "tick": 0,
+          "type": "hurt_visual"
+        }
+      ],
+      "tracks": {
+        "upper_arm_r": [
+          {
+            "tick": 0,
+            "value": [
+              30,
+              0,
+              45
+            ]
+          }
+        ],
+        "forearm_r": [
+          {
+            "tick": 0,
+            "value": [
+              55,
+              0,
+              0
+            ]
+          }
+        ],
+        "upper_arm_l": [
+          {
+            "tick": 0,
+            "value": [
+              22,
+              0,
+              8
+            ]
+          }
+        ],
+        "forearm_l": [
+          {
+            "tick": 0,
+            "value": [
+              30,
+              0,
+              0
+            ]
+          }
+        ],
+        "shield_socket": [
+          {
+            "tick": 0,
+            "value": [
+              -52,
+              0,
+              0
+            ]
+          }
+        ],
+        "torso": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 3,
+            "value": [
+              -20,
+              0,
+              8
+            ]
+          },
+          {
+            "tick": 11,
+            "value": [
+              -12,
+              0,
+              4
+            ]
+          },
+          {
+            "tick": 16,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "death",
+      "lengthTicks": 40,
+      "loop": false,
+      "events": [],
+      "tracks": {
+        "pelvis": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 12,
+            "value": [
+              -40,
+              0,
+              8
+            ]
+          },
+          {
+            "tick": 24,
+            "value": [
+              -90,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 40,
+            "value": [
+              -90,
+              0,
+              0
+            ]
+          }
+        ],
+        "upper_arm_r": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              -16
+            ]
+          }
+        ],
+        "upper_arm_l": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              16
+            ]
+          }
+        ],
+        "head": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 24,
+            "value": [
+              15,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 40,
+            "value": [
+              15,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "light_1",
+      "lengthTicks": 30,
+      "loop": false,
+      "events": [
+        {
+          "tick": 12,
+          "type": "hit_start"
+        },
+        {
+          "tick": 12,
+          "type": "sword_whoosh"
+        },
+        {
+          "tick": 17,
+          "type": "hit_end"
+        }
+      ],
+      "tracks": {
+        "upper_arm_r": [
+          {
+            "tick": 0,
+            "value": [
+              155,
+              0,
+              45
+            ]
+          },
+          {
+            "tick": 10,
+            "value": [
+              155,
+              0,
+              45
+            ]
+          },
+          {
+            "tick": 16,
+            "value": [
+              25,
+              0,
+              45
+            ]
+          },
+          {
+            "tick": 30,
+            "value": [
+              30,
+              0,
+              45
+            ]
+          }
+        ],
+        "forearm_r": [
+          {
+            "tick": 0,
+            "value": [
+              -60,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 16,
+            "value": [
+              18,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 30,
+            "value": [
+              55,
+              0,
+              0
+            ]
+          }
+        ],
+        "upper_arm_l": [
+          {
+            "tick": 0,
+            "value": [
+              120,
+              5,
+              25
+            ]
+          },
+          {
+            "tick": 16,
+            "value": [
+              60,
+              5,
+              25
+            ]
+          },
+          {
+            "tick": 30,
+            "value": [
+              30,
+              0,
+              8
+            ]
+          }
+        ],
+        "forearm_l": [
+          {
+            "tick": 0,
+            "value": [
+              80,
+              0,
+              0
+            ]
+          }
+        ],
+        "shield_socket": [
+          {
+            "tick": 0,
+            "value": [
+              -52,
+              0,
+              0
+            ]
+          }
+        ],
+        "torso": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              -12,
+              0
+            ]
+          },
+          {
+            "tick": 12,
+            "value": [
+              18,
+              12,
+              0
+            ]
+          },
+          {
+            "tick": 30,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "light_2",
+      "lengthTicks": 30,
+      "loop": false,
+      "events": [
+        {
+          "tick": 12,
+          "type": "hit_start"
+        },
+        {
+          "tick": 12,
+          "type": "sword_whoosh"
+        },
+        {
+          "tick": 17,
+          "type": "hit_end"
+        }
+      ],
+      "tracks": {
+        "upper_arm_r": [
+          {
+            "tick": 0,
+            "value": [
+              155,
+              0,
+              45
+            ]
+          },
+          {
+            "tick": 10,
+            "value": [
+              155,
+              0,
+              45
+            ]
+          },
+          {
+            "tick": 16,
+            "value": [
+              25,
+              15,
+              45
+            ]
+          },
+          {
+            "tick": 30,
+            "value": [
+              30,
+              0,
+              45
+            ]
+          }
+        ],
+        "forearm_r": [
+          {
+            "tick": 0,
+            "value": [
+              -60,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 16,
+            "value": [
+              18,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 30,
+            "value": [
+              55,
+              0,
+              0
+            ]
+          }
+        ],
+        "upper_arm_l": [
+          {
+            "tick": 0,
+            "value": [
+              120,
+              5,
+              25
+            ]
+          },
+          {
+            "tick": 16,
+            "value": [
+              60,
+              5,
+              25
+            ]
+          },
+          {
+            "tick": 30,
+            "value": [
+              30,
+              0,
+              8
+            ]
+          }
+        ],
+        "forearm_l": [
+          {
+            "tick": 0,
+            "value": [
+              80,
+              0,
+              0
+            ]
+          }
+        ],
+        "shield_socket": [
+          {
+            "tick": 0,
+            "value": [
+              -52,
+              0,
+              0
+            ]
+          }
+        ],
+        "torso": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              -12,
+              0
+            ]
+          },
+          {
+            "tick": 12,
+            "value": [
+              18,
+              12,
+              0
+            ]
+          },
+          {
+            "tick": 30,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "heavy_windup",
+      "lengthTicks": 30,
+      "loop": false,
+      "events": [],
+      "tracks": {
+        "upper_arm_r": [
+          {
+            "tick": 0,
+            "value": [
+              30,
+              0,
+              45
+            ]
+          },
+          {
+            "tick": 20,
+            "value": [
+              155,
+              0,
+              45
+            ]
+          },
+          {
+            "tick": 30,
+            "value": [
+              155,
+              0,
+              45
+            ]
+          }
+        ],
+        "forearm_r": [
+          {
+            "tick": 0,
+            "value": [
+              55,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 20,
+            "value": [
+              -60,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 30,
+            "value": [
+              -60,
+              0,
+              0
+            ]
+          }
+        ],
+        "upper_arm_l": [
+          {
+            "tick": 0,
+            "value": [
+              22,
+              0,
+              8
+            ]
+          }
+        ],
+        "forearm_l": [
+          {
+            "tick": 0,
+            "value": [
+              30,
+              0,
+              0
+            ]
+          }
+        ],
+        "shield_socket": [
+          {
+            "tick": 0,
+            "value": [
+              -52,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "heavy_release",
+      "lengthTicks": 34,
+      "loop": false,
+      "events": [
+        {
+          "tick": 15,
+          "type": "hit_start"
+        },
+        {
+          "tick": 15,
+          "type": "sword_whoosh"
+        },
+        {
+          "tick": 20,
+          "type": "hit_end"
+        }
+      ],
+      "tracks": {
+        "upper_arm_r": [
+          {
+            "tick": 0,
+            "value": [
+              155,
+              0,
+              45
+            ]
+          },
+          {
+            "tick": 19,
+            "value": [
+              25,
+              0,
+              45
+            ]
+          },
+          {
+            "tick": 34,
+            "value": [
+              30,
+              0,
+              45
+            ]
+          }
+        ],
+        "forearm_r": [
+          {
+            "tick": 0,
+            "value": [
+              -60,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 19,
+            "value": [
+              18,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 34,
+            "value": [
+              55,
+              0,
+              0
+            ]
+          }
+        ],
+        "upper_arm_l": [
+          {
+            "tick": 0,
+            "value": [
+              120,
+              5,
+              25
+            ]
+          },
+          {
+            "tick": 19,
+            "value": [
+              60,
+              5,
+              25
+            ]
+          },
+          {
+            "tick": 34,
+            "value": [
+              30,
+              0,
+              8
+            ]
+          }
+        ],
+        "forearm_l": [
+          {
+            "tick": 0,
+            "value": [
+              80,
+              0,
+              0
+            ]
+          }
+        ],
+        "shield_socket": [
+          {
+            "tick": 0,
+            "value": [
+              -52,
+              0,
+              0
+            ]
+          }
+        ],
+        "torso": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              -12,
+              0
+            ]
+          },
+          {
+            "tick": 15,
+            "value": [
+              18,
+              12,
+              0
+            ]
+          },
+          {
+            "tick": 34,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "charged_release",
+      "lengthTicks": 36,
+      "loop": false,
+      "events": [
+        {
+          "tick": 16,
+          "type": "hit_start"
+        },
+        {
+          "tick": 16,
+          "type": "charged_whoosh"
+        },
+        {
+          "tick": 22,
+          "type": "hit_end"
+        }
+      ],
+      "tracks": {
+        "upper_arm_r": [
+          {
+            "tick": 0,
+            "value": [
+              155,
+              0,
+              45
+            ]
+          },
+          {
+            "tick": 21,
+            "value": [
+              25,
+              0,
+              45
+            ]
+          },
+          {
+            "tick": 36,
+            "value": [
+              30,
+              0,
+              45
+            ]
+          }
+        ],
+        "forearm_r": [
+          {
+            "tick": 0,
+            "value": [
+              -60,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 21,
+            "value": [
+              18,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 36,
+            "value": [
+              55,
+              0,
+              0
+            ]
+          }
+        ],
+        "upper_arm_l": [
+          {
+            "tick": 0,
+            "value": [
+              120,
+              5,
+              25
+            ]
+          },
+          {
+            "tick": 21,
+            "value": [
+              60,
+              5,
+              25
+            ]
+          },
+          {
+            "tick": 36,
+            "value": [
+              30,
+              0,
+              8
+            ]
+          }
+        ],
+        "forearm_l": [
+          {
+            "tick": 0,
+            "value": [
+              80,
+              0,
+              0
+            ]
+          }
+        ],
+        "shield_socket": [
+          {
+            "tick": 0,
+            "value": [
+              -52,
+              0,
+              0
+            ]
+          }
+        ],
+        "torso": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              -12,
+              0
+            ]
+          },
+          {
+            "tick": 16,
+            "value": [
+              18,
+              12,
+              0
+            ]
+          },
+          {
+            "tick": 36,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,547 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.12/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :generateEquipment2d UP-TO-DATE
+> Task :syncArt UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :downloadAssets UP-TO-DATE
+> Task :writeClientLegacyClasspath UP-TO-DATE
+> Task :prepareClientRun
+> Task :prepareClientSmokeWorld SKIPPED
+
+> Task :runClient
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+[18:16:07] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientdev, --version, 21.1.219, --assetIndex, 17, --assetsDir, C:\\Users\\30869\\.gradle\\caches\\neoformruntime\\assets, --gameDir, ., --fml.fmlVersion, 4.0.42, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.219, --fml.neoFormVersion, 20240808.144430, --quickPlaySingleplayer, codex-player-smoke]
+[18:16:07] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.12.1+1-LTS
+[18:16:07] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.12.1 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[18:16:07] [main/INFO] [ne.ne.fm.lo.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[18:16:07] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[18:16:07] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[18:16:07] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/30869/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23138!/ Service=ModLauncher Env=CLIENT
+[18:16:07] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 5060 Laptop GPU/PCIe/SSE2 GL version 4.6.0 NVIDIA 616.64, NVIDIA Corporation
+[18:16:07] [main/INFO] [ne.ne.fm.lo.mo.lo.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[18:16:07] [main/INFO] [ne.ne.fm.lo.mo.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		Elden Combat 0.2.0 (eldencombat)
+		Minecraft 1.21.1 (minecraft)
+		NeoForge 21.1.219 (neoforge)
+[18:16:08] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
+[18:16:08] [main/INFO] [cp.mo.mo.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientdev' with arguments [--version, 21.1.219, --gameDir, ., --assetsDir, C:\Users\30869\.gradle\caches\neoformruntime\assets, --assetIndex, 17, --quickPlaySingleplayer, codex-player-smoke]
+[18:16:10] [Datafixer Bootstrap/INFO] [mojang/DataFixerBuilder]: 229 Datafixer optimizations took 254 milliseconds
+[18:16:10] [pool-7-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[18:16:14] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[18:16:14] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[18:16:14] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[18:16:14] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[18:16:14] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[18:16:14] [Render thread/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/D:/codexout/mcmod/build/moddev/artifacts/neoforge-21.1.219.jar%23189!/assets/.mcassetsroot' uses unexpected schema
+[18:16:14] [Render thread/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/D:/codexout/mcmod/build/moddev/artifacts/neoforge-21.1.219.jar%23189!/data/.mcassetsroot' uses unexpected schema
+[18:16:14] [Render thread/INFO] [mojang/YggdrasilAuthenticationService]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[18:16:14] [Render thread/INFO] [minecraft/Minecraft]: Setting user: Dev
+[18:16:14] [Render thread/INFO] [minecraft/Minecraft]: Backend library: LWJGL version 3.3.3+5
+[18:16:14] [modloading-worker-0/INFO] [ne.ne.ne.co.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.219, for MC 1.21.1
+[18:16:14] [modloading-worker-0/INFO] [EldenCombat/]: [EldenCombat] ServerCombat 已注册到游戏事件总线（单例，一次）
+[18:16:14] [modloading-worker-0/INFO] [EldenCombat/]: [EldenCombat] 纯原版战斗扩展 loaded (MC 1.21.1 / NeoForge 21.1.219)
+[18:16:15] [Render thread/INFO] [ne.ne.ne.ga.GameTestHooks/]: Enabled Gametest Namespaces: []
+[18:16:15] [Render thread/INFO] [minecraft/ReloadableResourceManager]: Reloading ResourceManager: vanilla, mod_resources, mod/neoforge, mod/eldencombat
+[18:16:15] [Worker-Main-12/INFO] [minecraft/UnihexProvider]: Found unifont_all_no_pua-15.1.05.hex, loading
+[18:16:15] [Render thread/INFO] [EldenCombat/]: [EldenCombat] 战斗配置已载入: D:\codexout\mcmod\build\clientSmoke\config\eldencombat-combat.json
+[18:16:15] [Worker-Main-8/INFO] [minecraft/UnihexProvider]: Found unifont_jp_patch-15.1.05.hex, loading
+[18:16:15] [Worker-Main-5/WARN] [minecraft/SpriteLoader]: Texture eldencombat:item/blank with size 1x1 limits mip level from 4 to 0
+[18:16:16] [Render thread/WARN] [minecraft/SoundEngine]: Missing sound for event: minecraft:item.goat_horn.play
+[18:16:16] [Render thread/WARN] [minecraft/SoundEngine]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[18:16:17] [Render thread/INFO] [mojang/Library]: OpenAL initialized on device OpenAL Soft on 扬声器 (Realtek(R) Audio)
+[18:16:17] [Render thread/INFO] [minecraft/SoundEngine]: Sound engine started
+[18:16:17] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[18:16:17] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[18:16:17] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[18:16:17] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[18:16:17] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[18:16:17] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[18:16:17] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[18:16:17] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[18:16:17] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[18:16:17] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[18:16:17] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[18:16:17] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[18:16:17] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[18:16:17] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[18:16:17] [Render thread/WARN] [minecraft/ShaderInstance]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[18:16:17] [Render thread/INFO] [ne.ne.ne.cl.en.an.js.AnimationLoader/]: Loaded 0 entity animations
+[18:16:17] [Render thread/INFO] [EldenCombat/]: [EldenCombat] Weapon resource cache ready: 41 entries
+[18:16:17] [Render thread/INFO] [EldenCombat/]: [skills] 战技姿态就绪：8 个
+[18:16:17] [Render thread/INFO] [EldenCombat/]: [EldenCombat] 武器姿态校正就绪：0 条
+[18:16:18] [Render thread/INFO] [minecraft/RecipeManager]: Loaded 1314 recipes
+[18:16:18] [Render thread/INFO] [minecraft/AdvancementTree]: Loaded 1399 advancements
+[18:16:18] [Render thread/INFO] [EldenCombat/]: [talismans] 护符数据载入 4 件
+[18:16:18] [Render thread/INFO] [EldenCombat/]: [consumables] 药物数据载入 3 种
+[18:16:18] [Server thread/INFO] [minecraft/IntegratedServer]: Starting integrated minecraft server version 1.21.1
+[18:16:18] [Server thread/INFO] [minecraft/MinecraftServer]: Generating keypair
+[18:16:19] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing start region for dimension minecraft:overworld
+[18:16:19] [progressListener/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 0%
+[18:16:19] [Server thread/INFO] [ne.ne.ne.se.pe.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[18:16:19] [progressListener/INFO] [minecraft/LoggerChunkProgressListener]: Time elapsed: 212 ms
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [skills] 追忆战技参数载入 8 项
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [weapons] 武器数值档载入 41 件
+[18:16:19] [Server thread/INFO] [minecraft/MinecraftServer]: [Not Secure] [Server] [etest] load start
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [EldenCombat] 已载入骨骼资产: 19 骨骼 / 38 方块 / 8 个动作
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 直剑轻击总长 (期望 22，实际 22)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 直剑轻击消耗 (期望 15.0，实际 15.0)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 直剑轻击窗口 (期望 8-12，实际 8-12)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 直剑轻击伤害 (期望 5.0，实际 5.0)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 大剑轻击总长 (期望 30，实际 30)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 大剑轻击消耗 (期望 20.0，实际 20.0)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 大剑轻击窗口 (期望 12-17，实际 12-17)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 大剑轻击伤害 (期望 7.0，实际 7.0)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 重击窗口 (期望 15-20，实际 15-20)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 重击消耗 (期望 25.0，实际 25.0)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 重击直剑伤害 (期望 8.0，实际 8.0)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 重击大剑伤害 (期望 11.0，实际 11.0)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 满蓄力重击窗口 (期望 16-22，实际 16-22)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 满蓄力消耗 (期望 35.0，实际 35.0)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 满蓄力大剑伤害 (期望 15.0，实际 15.0)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 满蓄力直剑伤害 (期望 11.0，实际 11.0)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 蓄力达满 tick (期望 20，实际 20)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 蓄力自动释放上限 (期望 30，实际 30)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 翻滚消耗 (期望 22.0，实际 22.0)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 翻滚总长 (期望 20，实际 20)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 翻滚无敌窗口 (期望 4-11，实际 4-11)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 弹反消耗 (期望 15.0，实际 15.0)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 弹反总长 (期望 18，实际 18)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 弹反成功窗口 (期望 3-7，实际 3-7)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 喝药总长 (期望 28，实际 28)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 喝药生效 tick (期望 18，实际 18)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 喝药回复 (期望 8.0，实际 8.0)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 初始药瓶次数 (期望 4，实际 4)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 精力上限 (期望 100.0，实际 100.0)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 精力恢复延迟 (期望 12，实际 12)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Boss 生命 (期望 200.0，实际 200.0)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Boss 二阶段阈值 (期望 0.6，实际 0.6)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Boss 失衡上限 (期望 100.0，实际 100.0)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 失衡恢复延迟 (期望 80，实际 80)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 崩解窗口下限 (期望 40，实际 40)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 崩解易伤倍率 (期望 1.5，实际 1.5)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 崩解窗口取动作与下限的较大者 (期望 70，实际 70)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 崩解窗口不足动作时长时用配置下限 (期望 40，实际 40)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 未崩解无额外易伤 (期望 1.0，实际 1.0)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 崩解期易伤生效 (期望 1.5，实际 1.5)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 单人失衡上限不缩放 (期望 100.0，实际 100.0)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 两人失衡上限 ×1.5 (期望 150.0，实际 150.0)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 盾防锥角 (期望 120.0，实际 120.0)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 破防硬直 (期望 24，实际 24)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 锁定范围 (期望 24.0，实际 24.0)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 解除锁定范围 (期望 32.0，实际 32.0)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 轻击前摇不产生判定
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 轻击窗口起点生效
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 轻击窗口终点不含
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 弹反窗口边界 2 不生效
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 弹反窗口边界 3 生效
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 弹反窗口边界 6 生效
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 弹反窗口边界 7 不生效
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 同一序号首次命中
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 同一序号重复命中被拒绝
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 新序号重新可命中
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 翻滚窗口前非无敌
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 翻滚窗口内无敌
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 翻滚窗口后非无敌
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 正面 0 度在盾防锥内
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 侧面 59 度在盾防锥内
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 背后 180 度不在盾防锥内
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 精力不足以继续挡（应破防）
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 精力足够可挡
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 破防期间盾防失效
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 破防结束后恢复
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 木杖横扫可弹反
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 匕首可弹反
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 木杖下砸不可弹反
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 黄金锤不可弹反
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 连续两次弹反可触发失衡
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 首版不存在处决动作
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 重置后无残留无敌
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 喝药中断未到生效时刻不消耗
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 喝药生效时刻 (期望 18，实际 18)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 喝药消耗一次 (期望 3，实际 3)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 线段穿过包围盒命中
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 线段偏离包围盒不命中
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 上一 tick 判定体补漏
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 盒体距离计算
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 骨骼数量 (期望 19，实际 19)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 方块数量 (期望 38，实际 38)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 尾巴骨骼数量 (期望 3，实际 3)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 尾巴方块数量 (期望 3，实际 3)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 尾巴骨骼链 tail_01 -> tail_02 -> tail_03
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 存在 staff_socket 与 spectral_socket
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作数量 (期望 8，实际 8)
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 walk
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 staff_sweep
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 staff_slam
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 dagger_slash
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 hammer_slam
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 stagger
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 death
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 匕首动作有 equip 事件
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 黄金锤动作有 equip 事件
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 死亡动作取消武器显示
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 骨盆原点 y = 1.5 方块
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 头部原点高于骨盆
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 躯干包围盒在合理范围
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 木杖判定体长度大于 1.5 方块
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 黄金锤锤头盒在握持点附近
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player bone/cube count false
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Skin and overlay UV bounds false
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Native skin face orientation false
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Native overlay orientation false
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD light_1
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD heavy_windup
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD heavy_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD charged_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD roll
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD parry
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD drink
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD guard_idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD guard_break
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD hit_stagger
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD death
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD walk
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD walk
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD walk
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD walk
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD run
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD run
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD run
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD run
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD guard_idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD guard_idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD guard_idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD guard_idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD light_1
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD light_1
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD light_1
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD light_1
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD light_2
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD light_2
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD light_2
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD light_2
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD heavy_windup
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD heavy_windup
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD heavy_windup
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD heavy_windup
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD heavy_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD heavy_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD heavy_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD heavy_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD charged_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD charged_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD charged_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD charged_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD roll
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD roll
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD roll
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD roll
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD parry
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD parry
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD parry
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD parry
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD guard_hit
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD guard_hit
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD guard_hit
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD guard_hit
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD guard_break
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD guard_break
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD guard_break
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD guard_break
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD drink
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD drink
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD drink
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD drink
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD hit_stagger
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD hit_stagger
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD hit_stagger
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD hit_stagger
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD death
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD death
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD death
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD death
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD light_1
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD heavy_windup
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD heavy_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD charged_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD roll
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD parry
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD drink
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD guard_idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD guard_break
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD hit_stagger
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD death
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD walk
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD walk
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD walk
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD walk
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD run
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD run
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD run
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD run
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD guard_idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD guard_idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD guard_idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD guard_idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD light_1
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD light_1
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD light_1
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD light_1
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD light_2
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD light_2
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD light_2
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD light_2
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD heavy_windup
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD heavy_windup
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD heavy_windup
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD heavy_windup
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD heavy_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD heavy_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD heavy_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD heavy_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD charged_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD charged_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD charged_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD charged_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD roll
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD roll
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD roll
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD roll
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD parry
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD parry
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD parry
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD parry
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD guard_hit
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD guard_hit
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD guard_hit
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD guard_hit
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD guard_break
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD guard_break
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD guard_break
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD guard_break
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD drink
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD drink
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD drink
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD drink
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD hit_stagger
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD hit_stagger
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD hit_stagger
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD hit_stagger
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD death
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD death
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD death
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD death
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player bone/cube count true
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Skin and overlay UV bounds true
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Native skin face orientation true
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Native overlay orientation true
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD light_1
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD heavy_windup
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD heavy_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD charged_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD roll
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD parry
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD drink
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD guard_idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD guard_break
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD hit_stagger
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD death
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD walk
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD walk
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD walk
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD walk
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD run
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD run
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD run
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD run
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD guard_idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD guard_idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD guard_idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD guard_idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD light_1
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD light_1
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD light_1
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD light_1
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD light_2
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD light_2
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD light_2
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD light_2
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD heavy_windup
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD heavy_windup
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD heavy_windup
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD heavy_windup
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD heavy_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD heavy_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD heavy_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD heavy_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD charged_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD charged_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD charged_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD charged_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD roll
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD roll
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD roll
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD roll
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD parry
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD parry
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD parry
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD parry
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD guard_hit
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD guard_hit
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD guard_hit
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD guard_hit
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD guard_break
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD guard_break
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD guard_break
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD guard_break
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD drink
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD drink
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD drink
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD drink
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD hit_stagger
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD hit_stagger
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD hit_stagger
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD hit_stagger
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD death
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD death
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD death
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD death
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD light_1
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD heavy_windup
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD heavy_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD charged_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD roll
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD parry
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD drink
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD guard_idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD guard_break
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD hit_stagger
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD death
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD walk
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD walk
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD walk
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD walk
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD run
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD run
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD run
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD run
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD guard_idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD guard_idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD guard_idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD guard_idle
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD light_1
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD light_1
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD light_1
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD light_1
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD light_2
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD light_2
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD light_2
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD light_2
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD heavy_windup
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD heavy_windup
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD heavy_windup
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD heavy_windup
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD heavy_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD heavy_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD heavy_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD heavy_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD charged_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD charged_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD charged_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD charged_release
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD roll
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD roll
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD roll
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD roll
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD parry
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD parry
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD parry
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD parry
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD guard_hit
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD guard_hit
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD guard_hit
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD guard_hit
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD guard_break
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD guard_break
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD guard_break
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD guard_break
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD drink
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD drink
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD drink
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD drink
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD hit_stagger
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD hit_stagger
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD hit_stagger
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD hit_stagger
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD death
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD death
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD death
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD death
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Native armor orientation
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Configured hit-start retiming
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Configured hit-end retiming
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Configured recovery retiming
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Full charge retiming
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Unsorted equip events
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Event zero fires once
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Loop boundary event
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Skipped frame events
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Fast blade crosses between endpoints
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Sweep outside target misses
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No execution/jump attack IDs
+[18:16:19] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Non-finite direction rejected
+[18:16:19] [Server thread/INFO] [minecraft/MinecraftServer]: [Not Secure] [Server] [etest] MARGIT_SUMMONED
+[18:16:19] [Server thread/INFO] [minecraft/IntegratedServer]: Changing view distance to 12, from 10
+[18:16:19] [Server thread/INFO] [minecraft/IntegratedServer]: Changing simulation distance to 12, from 0
+[18:16:20] [Server thread/INFO] [minecraft/PlayerList]: Dev[local:E:ba8121f4] logged in with entity id 3 at (0.0, 81.0, 0.0)
+[18:16:20] [Server thread/INFO] [minecraft/MinecraftServer]: Dev joined the game
+[18:16:20] [Render thread/INFO] [minecraft/AdvancementTree]: Loaded 43 advancements
+[18:16:20] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: attributes survived actual world restart
+[18:16:20] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: weapon upgrade and affinity survived actual world restart
+[18:16:20] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: FP survived actual world restart without login refill
+[18:16:20] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: reload has no transient cast
+[18:16:20] [Server thread/INFO] [EldenCombat/]: CLIENT_PERSISTENCE_COMPLETE: actual save/shutdown/restart passed
+[18:16:20] [Render thread/INFO] [minecraft/Minecraft]: Stopping!
+[18:16:21] [Server thread/INFO] [minecraft/ServerGamePacketListenerImpl]: Dev lost connection: Disconnected
+[18:16:21] [Server thread/INFO] [minecraft/MinecraftServer]: Dev left the game
+[18:16:21] [Server thread/INFO] [minecraft/ServerCommonPacketListenerImpl]: Stopping singleplayer server as player logged out
+[18:16:21] [Server thread/INFO] [minecraft/MinecraftServer]: Stopping server
+[18:16:21] [Server thread/INFO] [minecraft/MinecraftServer]: Saving players
+[18:16:21] [Server thread/INFO] [minecraft/MinecraftServer]: Saving worlds
+[18:16:21] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[18:16:21] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[18:16:21] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[18:16:21] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (codex-player-smoke): All chunks are saved
+[18:16:21] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[18:16:21] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[18:16:21] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage: All dimensions are saved
+
+BUILD SUCCESSFUL in 23s
+9 actionable tasks: 2 executed, 7 up-to-date

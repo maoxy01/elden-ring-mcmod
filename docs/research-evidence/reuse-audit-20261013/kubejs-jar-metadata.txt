@@ -1,0 +1,104 @@
+ENTRY META-INF/neoforge.mods.toml
+modLoader = "javafml"
+loaderVersion = "[2,)"
+issueTrackerURL = "https://kubejs.com/support?source=kubejs&mc=2101&loader=neoforge"
+license = "GNU LGPLv3"
+
+[[mods]]
+modId = "kubejs"
+version = "2101.7.2-build.377"
+displayName = "KubeJS"
+authors = "latvian.dev"
+description = '''
+Customize your modpack or server with JavaScript!
+'''
+logoFile = "kubejs_logo.png"
+modUrl = "https://kubejs.com"
+displayURL = "https://kubejs.com"
+
+[[dependencies.kubejs]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.199,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.kubejs]]
+modId = "rhino"
+type = "required"
+versionRange = "[2101.2.7-build.81,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.kubejs]]
+modId = "jei"
+type = "optional"
+versionRange = "[19.25.0.322,)"
+ordering = "AFTER"
+side = "CLIENT"
+
+[[dependencies.kubejs]]
+modId = "roughlyenoughitems"
+type = "optional"
+versionRange = "[16.0.799,)"
+ordering = "AFTER"
+side = "CLIENT"
+
+[[dependencies.kubejs]]
+modId = "emi"
+type = "optional"
+versionRange = "[1.1.22,)"
+ordering = "AFTER"
+side = "CLIENT"
+
+[[dependencies.kubejs]]
+modId = "betteradvancedtooltips"
+type = "optional"
+versionRange = "[2101.1.0-build.1,)"
+ordering = "BEFORE"
+side = "CLIENT"
+
+[[mixins]]
+config = "kubejs.mixins.json"
+ENTRY META-INF/jarjar/metadata.json
+{
+  "jars": [
+    {
+      "identifier": {
+        "group": "com.github.rtyley",
+        "artifact": "animated-gif-lib-for-java"
+      },
+      "version": {
+        "range": "[animated-gif-lib-1.7,)",
+        "artifactVersion": "animated-gif-lib-1.7"
+      },
+      "path": "META-INF/jarjar/animated-gif-lib-for-java-animated-gif-lib-1.7.jar",
+      "isObfuscated": false
+    },
+    {
+      "identifier": {
+        "group": "dev.latvian.apps",
+        "artifact": "tiny-java-server"
+      },
+      "version": {
+        "range": "[1.0.0-build.33,)",
+        "artifactVersion": "1.0.0-build.33"
+      },
+      "path": "META-INF/jarjar/tiny-java-server-1.0.0-build.33.jar",
+      "isObfuscated": false
+    },
+    {
+      "identifier": {
+        "group": "dev.latvian.mods",
+        "artifact": "better-advanced-tooltips"
+      },
+      "version": {
+        "range": "[2101.1.0-build.1,)",
+        "artifactVersion": "2101.1.0-build.1"
+      },
+      "path": "META-INF/jarjar/better-advanced-tooltips-2101.1.0-build.1.jar",
+      "isObfuscated": false
+    }
+  ]
+}
+

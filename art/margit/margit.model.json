@@ -1,0 +1,1389 @@
+{
+  "schemaVersion": 1,
+  "id": "eldencombat:margit",
+  "unitsPerBlock": 16,
+  "forward": "-Z",
+  "texture": "margit.png",
+  "textureSize": [
+    128,
+    128
+  ],
+  "bones": [
+    {
+      "name": "root",
+      "parent": null,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pelvis",
+      "parent": "root",
+      "pivot": [
+        0,
+        24,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "torso",
+      "parent": "pelvis",
+      "pivot": [
+        0,
+        26,
+        0
+      ],
+      "rotation": [
+        -8,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "head",
+      "parent": "torso",
+      "pivot": [
+        0,
+        40,
+        -1
+      ],
+      "rotation": [
+        8,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "upper_arm_r",
+      "parent": "torso",
+      "pivot": [
+        -13,
+        37,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -5
+      ]
+    },
+    {
+      "name": "forearm_r",
+      "parent": "upper_arm_r",
+      "pivot": [
+        -13,
+        27,
+        0
+      ],
+      "rotation": [
+        -10,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "hand_r",
+      "parent": "forearm_r",
+      "pivot": [
+        -13,
+        19,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "staff_socket",
+      "parent": "hand_r",
+      "pivot": [
+        -13,
+        20,
+        -2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "upper_arm_l",
+      "parent": "torso",
+      "pivot": [
+        13,
+        37,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "name": "forearm_l",
+      "parent": "upper_arm_l",
+      "pivot": [
+        13,
+        27,
+        0
+      ],
+      "rotation": [
+        -8,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "hand_l",
+      "parent": "forearm_l",
+      "pivot": [
+        13,
+        19,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "spectral_socket",
+      "parent": "hand_l",
+      "pivot": [
+        13,
+        20,
+        -2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "thigh_r",
+      "parent": "pelvis",
+      "pivot": [
+        -6,
+        24,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "shin_r",
+      "parent": "thigh_r",
+      "pivot": [
+        -6,
+        12,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "thigh_l",
+      "parent": "pelvis",
+      "pivot": [
+        6,
+        24,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "shin_l",
+      "parent": "thigh_l",
+      "pivot": [
+        6,
+        12,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "tail_01",
+      "parent": "pelvis",
+      "pivot": [
+        0,
+        23,
+        6
+      ],
+      "rotation": [
+        -8,
+        35,
+        0
+      ]
+    },
+    {
+      "name": "tail_02",
+      "parent": "tail_01",
+      "pivot": [
+        0,
+        23,
+        15
+      ],
+      "rotation": [
+        -30,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "tail_03",
+      "parent": "tail_02",
+      "pivot": [
+        0,
+        23,
+        23
+      ],
+      "rotation": [
+        -30,
+        0,
+        0
+      ]
+    }
+  ],
+  "cubes": [
+    {
+      "name": "body",
+      "bone": "torso",
+      "from": [
+        -10,
+        24,
+        -6
+      ],
+      "to": [
+        10,
+        39,
+        7
+      ],
+      "material": "cloth_dark",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        -10,
+        24,
+        -6
+      ]
+    },
+    {
+      "name": "head",
+      "bone": "head",
+      "from": [
+        -5,
+        39,
+        -7
+      ],
+      "to": [
+        5,
+        48,
+        3
+      ],
+      "material": "skin",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        -5,
+        39,
+        -7
+      ]
+    },
+    {
+      "name": "beard",
+      "bone": "head",
+      "from": [
+        -3,
+        35.5,
+        -7.8
+      ],
+      "to": [
+        3,
+        41,
+        -6.7
+      ],
+      "material": "beard",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        -3,
+        35.5,
+        -7.8
+      ]
+    },
+    {
+      "name": "nose",
+      "bone": "head",
+      "from": [
+        -1,
+        41.5,
+        -8
+      ],
+      "to": [
+        1,
+        44,
+        -7
+      ],
+      "material": "skin",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        -1,
+        41.5,
+        -8
+      ]
+    },
+    {
+      "name": "arm_r",
+      "bone": "upper_arm_r",
+      "from": [
+        -16.8,
+        27,
+        -3.8
+      ],
+      "to": [
+        -9.2,
+        38,
+        3.8
+      ],
+      "material": "cloth",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        -16.8,
+        27,
+        -3.8
+      ]
+    },
+    {
+      "name": "forearm_r",
+      "bone": "forearm_r",
+      "from": [
+        -16.2,
+        19,
+        -3.2
+      ],
+      "to": [
+        -9.8,
+        27,
+        3.2
+      ],
+      "material": "skin",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        -16.2,
+        19,
+        -3.2
+      ]
+    },
+    {
+      "name": "hand_r",
+      "bone": "hand_r",
+      "from": [
+        -16.3,
+        16,
+        -3.4
+      ],
+      "to": [
+        -9.7,
+        20,
+        2.4
+      ],
+      "material": "skin",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        -16.3,
+        16,
+        -3.4
+      ]
+    },
+    {
+      "name": "thigh_r",
+      "bone": "thigh_r",
+      "from": [
+        -10,
+        12,
+        -4
+      ],
+      "to": [
+        -2,
+        24,
+        4
+      ],
+      "material": "skin",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        -10,
+        12,
+        -4
+      ]
+    },
+    {
+      "name": "shin_r",
+      "bone": "shin_r",
+      "from": [
+        -9.5,
+        3,
+        -3.4
+      ],
+      "to": [
+        -2.5,
+        12,
+        3.4
+      ],
+      "material": "skin",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        -9.5,
+        3,
+        -3.4
+      ]
+    },
+    {
+      "name": "foot_r",
+      "bone": "shin_r",
+      "from": [
+        -10,
+        0,
+        -7
+      ],
+      "to": [
+        -2,
+        3,
+        4
+      ],
+      "material": "skin",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        -10,
+        0,
+        -7
+      ]
+    },
+    {
+      "name": "arm_l",
+      "bone": "upper_arm_l",
+      "from": [
+        9.2,
+        27,
+        -3.8
+      ],
+      "to": [
+        16.8,
+        38,
+        3.8
+      ],
+      "material": "cloth",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        9.2,
+        27,
+        -3.8
+      ]
+    },
+    {
+      "name": "forearm_l",
+      "bone": "forearm_l",
+      "from": [
+        9.8,
+        19,
+        -3.2
+      ],
+      "to": [
+        16.2,
+        27,
+        3.2
+      ],
+      "material": "skin",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        9.8,
+        19,
+        -3.2
+      ]
+    },
+    {
+      "name": "hand_l",
+      "bone": "hand_l",
+      "from": [
+        9.7,
+        16,
+        -3.4
+      ],
+      "to": [
+        16.3,
+        20,
+        2.4
+      ],
+      "material": "skin",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        9.7,
+        16,
+        -3.4
+      ]
+    },
+    {
+      "name": "thigh_l",
+      "bone": "thigh_l",
+      "from": [
+        2,
+        12,
+        -4
+      ],
+      "to": [
+        10,
+        24,
+        4
+      ],
+      "material": "skin",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        2,
+        12,
+        -4
+      ]
+    },
+    {
+      "name": "shin_l",
+      "bone": "shin_l",
+      "from": [
+        2.5,
+        3,
+        -3.4
+      ],
+      "to": [
+        9.5,
+        12,
+        3.4
+      ],
+      "material": "skin",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        2.5,
+        3,
+        -3.4
+      ]
+    },
+    {
+      "name": "foot_l",
+      "bone": "shin_l",
+      "from": [
+        2,
+        0,
+        -7
+      ],
+      "to": [
+        10,
+        3,
+        4
+      ],
+      "material": "skin",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        2,
+        0,
+        -7
+      ]
+    },
+    {
+      "name": "cloak_front_r",
+      "bone": "torso",
+      "from": [
+        -11,
+        17,
+        -7.8
+      ],
+      "to": [
+        -0.7,
+        36,
+        -6.4
+      ],
+      "material": "cloth",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        -11,
+        17,
+        -7.8
+      ]
+    },
+    {
+      "name": "cloak_front_l",
+      "bone": "torso",
+      "from": [
+        0.7,
+        19,
+        -7.8
+      ],
+      "to": [
+        11,
+        36,
+        -6.4
+      ],
+      "material": "cloth",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0.7,
+        19,
+        -7.8
+      ]
+    },
+    {
+      "name": "cloak_back",
+      "bone": "torso",
+      "from": [
+        -12,
+        15,
+        7.2
+      ],
+      "to": [
+        12,
+        39,
+        9
+      ],
+      "material": "cloth",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        -12,
+        15,
+        7.2
+      ]
+    },
+    {
+      "name": "cloak_side_r",
+      "bone": "torso",
+      "from": [
+        -12,
+        20,
+        -6
+      ],
+      "to": [
+        -10.5,
+        36,
+        7
+      ],
+      "material": "cloth_dark",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        -12,
+        20,
+        -6
+      ]
+    },
+    {
+      "name": "cloak_side_l",
+      "bone": "torso",
+      "from": [
+        10.5,
+        18,
+        -6
+      ],
+      "to": [
+        12,
+        36,
+        7
+      ],
+      "material": "cloth_dark",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        10.5,
+        18,
+        -6
+      ]
+    },
+    {
+      "name": "cloak_front_hem",
+      "bone": "torso",
+      "from": [
+        -4,
+        21,
+        -7.4
+      ],
+      "to": [
+        4,
+        30,
+        -6.2
+      ],
+      "material": "cloth_dark",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        -4,
+        21,
+        -7.4
+      ]
+    },
+    {
+      "name": "collar_front",
+      "bone": "torso",
+      "from": [
+        -13,
+        36,
+        -8.5
+      ],
+      "to": [
+        13,
+        41,
+        -6.2
+      ],
+      "material": "cloth",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        -13,
+        36,
+        -8.5
+      ]
+    },
+    {
+      "name": "collar_back",
+      "bone": "torso",
+      "from": [
+        -13,
+        36,
+        6.5
+      ],
+      "to": [
+        13,
+        42,
+        9.5
+      ],
+      "material": "cloth",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        -13,
+        36,
+        6.5
+      ]
+    },
+    {
+      "name": "horn_top_r_base",
+      "bone": "head",
+      "from": [
+        -4.25,
+        47,
+        -2
+      ],
+      "to": [
+        -1.75,
+        51,
+        0.5
+      ],
+      "material": "horn_dark",
+      "rotation": [
+        0,
+        0,
+        18
+      ],
+      "pivot": [
+        -3,
+        47,
+        -0.75
+      ]
+    },
+    {
+      "name": "horn_top_r_tip",
+      "bone": "head",
+      "from": [
+        -5.3,
+        50,
+        -1.8
+      ],
+      "to": [
+        -3.3,
+        53,
+        0.2
+      ],
+      "material": "horn",
+      "rotation": [
+        0,
+        0,
+        -28
+      ],
+      "pivot": [
+        -4.3,
+        50,
+        -0.8
+      ]
+    },
+    {
+      "name": "horn_side_r_base",
+      "bone": "head",
+      "from": [
+        -7,
+        44.5,
+        -3
+      ],
+      "to": [
+        -3.4000000000000004,
+        47,
+        -0.5
+      ],
+      "material": "horn_dark",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        -7,
+        44.5,
+        -3
+      ]
+    },
+    {
+      "name": "horn_side_r_tip",
+      "bone": "head",
+      "from": [
+        -8.1,
+        46,
+        -2.8
+      ],
+      "to": [
+        -5.9,
+        49,
+        -0.8
+      ],
+      "material": "horn",
+      "rotation": [
+        0,
+        0,
+        20
+      ],
+      "pivot": [
+        -7,
+        46,
+        -1.8
+      ]
+    },
+    {
+      "name": "horn_top_l_base",
+      "bone": "head",
+      "from": [
+        1.75,
+        47,
+        -2
+      ],
+      "to": [
+        4.25,
+        51,
+        0.5
+      ],
+      "material": "horn_dark",
+      "rotation": [
+        0,
+        0,
+        -18
+      ],
+      "pivot": [
+        3,
+        47,
+        -0.75
+      ]
+    },
+    {
+      "name": "horn_top_l_tip",
+      "bone": "head",
+      "from": [
+        3.3,
+        50,
+        -1.8
+      ],
+      "to": [
+        5.3,
+        53,
+        0.2
+      ],
+      "material": "horn",
+      "rotation": [
+        0,
+        0,
+        28
+      ],
+      "pivot": [
+        4.3,
+        50,
+        -0.8
+      ]
+    },
+    {
+      "name": "horn_side_l_base",
+      "bone": "head",
+      "from": [
+        3.4000000000000004,
+        44.5,
+        -3
+      ],
+      "to": [
+        7,
+        47,
+        -0.5
+      ],
+      "material": "horn_dark",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        3.4000000000000004,
+        44.5,
+        -3
+      ]
+    },
+    {
+      "name": "horn_side_l_tip",
+      "bone": "head",
+      "from": [
+        5.9,
+        46,
+        -2.8
+      ],
+      "to": [
+        8.1,
+        49,
+        -0.8
+      ],
+      "material": "horn",
+      "rotation": [
+        0,
+        0,
+        -20
+      ],
+      "pivot": [
+        7,
+        46,
+        -1.8
+      ]
+    },
+    {
+      "name": "tail_root",
+      "bone": "tail_01",
+      "from": [
+        -3,
+        20,
+        6
+      ],
+      "to": [
+        3,
+        26,
+        15
+      ],
+      "material": "tail",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        -3,
+        20,
+        6
+      ]
+    },
+    {
+      "name": "tail_middle",
+      "bone": "tail_02",
+      "from": [
+        -2.5,
+        20.5,
+        15
+      ],
+      "to": [
+        2.5,
+        25.5,
+        23
+      ],
+      "material": "tail",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        -2.5,
+        20.5,
+        15
+      ]
+    },
+    {
+      "name": "tail_tip",
+      "bone": "tail_03",
+      "from": [
+        -1.8,
+        21.2,
+        23
+      ],
+      "to": [
+        1.8,
+        24.8,
+        30
+      ],
+      "material": "tail_tip",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        -1.8,
+        21.2,
+        23
+      ]
+    },
+    {
+      "name": "staff_shaft",
+      "bone": "staff_socket",
+      "from": [
+        -13.85,
+        1,
+        -2.85
+      ],
+      "to": [
+        -12.15,
+        46,
+        -1.15
+      ],
+      "material": "wood",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        -13.85,
+        1,
+        -2.85
+      ]
+    },
+    {
+      "name": "staff_top",
+      "bone": "staff_socket",
+      "from": [
+        -13.85,
+        45,
+        -2.85
+      ],
+      "to": [
+        -12.15,
+        51,
+        -1.15
+      ],
+      "material": "wood",
+      "rotation": [
+        0,
+        0,
+        -12
+      ],
+      "pivot": [
+        -13,
+        45,
+        -2
+      ]
+    },
+    {
+      "name": "staff_branch",
+      "bone": "staff_socket",
+      "from": [
+        -17.5,
+        43,
+        -2.75
+      ],
+      "to": [
+        -13,
+        45,
+        -1.25
+      ],
+      "material": "wood",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        -17.5,
+        43,
+        -2.75
+      ]
+    }
+  ],
+  "materials": {
+    "skin": {
+      "uv": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "color": [
+        161,
+        154,
+        142
+      ],
+      "emissive": false
+    },
+    "cloth": {
+      "uv": [
+        32,
+        0,
+        64,
+        32
+      ],
+      "color": [
+        103,
+        107,
+        69
+      ],
+      "emissive": false
+    },
+    "cloth_dark": {
+      "uv": [
+        64,
+        0,
+        96,
+        32
+      ],
+      "color": [
+        58,
+        62,
+        45
+      ],
+      "emissive": false
+    },
+    "horn": {
+      "uv": [
+        96,
+        0,
+        128,
+        32
+      ],
+      "color": [
+        197,
+        177,
+        143
+      ],
+      "emissive": false
+    },
+    "horn_dark": {
+      "uv": [
+        0,
+        32,
+        32,
+        64
+      ],
+      "color": [
+        98,
+        90,
+        73
+      ],
+      "emissive": false
+    },
+    "beard": {
+      "uv": [
+        32,
+        32,
+        64,
+        64
+      ],
+      "color": [
+        178,
+        176,
+        164
+      ],
+      "emissive": false
+    },
+    "tail": {
+      "uv": [
+        64,
+        32,
+        96,
+        64
+      ],
+      "color": [
+        105,
+        96,
+        81
+      ],
+      "emissive": false
+    },
+    "tail_tip": {
+      "uv": [
+        96,
+        32,
+        128,
+        64
+      ],
+      "color": [
+        139,
+        91,
+        70
+      ],
+      "emissive": false
+    },
+    "wood": {
+      "uv": [
+        0,
+        64,
+        32,
+        96
+      ],
+      "color": [
+        101,
+        72,
+        46
+      ],
+      "emissive": false
+    },
+    "gold": {
+      "uv": [
+        32,
+        64,
+        64,
+        96
+      ],
+      "color": [
+        233,
+        187,
+        67
+      ],
+      "emissive": true
+    },
+    "face": {
+      "uv": [
+        64,
+        64,
+        96,
+        96
+      ],
+      "color": [
+        161,
+        154,
+        142
+      ],
+      "emissive": false
+    }
+  },
+  "rotationOrder": "XYZ",
+  "animationRotation": "additive_degrees"
+}

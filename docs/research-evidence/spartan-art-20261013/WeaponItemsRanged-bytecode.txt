@@ -1,0 +1,1634 @@
+Classfile jar:file:///D:/codexout/mcmod/docs/research-evidence/reuse-audit-20261013/spartan_weaponry_unofficial-1.2.3-1.21.1.jar!/org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.class
+  Last modified 2026��8��23��; size 13000 bytes
+  SHA-256 checksum fee77881b06392db2c0a09d89a5be408e522d1c0c56ea092877a594b8bff4514
+  Compiled from "ModItems.java"
+public class org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemsRanged extends java.lang.Object implements org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemGroup<net.minecraft.world.item.Item>
+  minor version: 0
+  major version: 65
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #8                          // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged
+  super_class: #2                         // java/lang/Object
+  interfaces: 1, fields: 22, methods: 24, attributes: 5
+Constant pool:
+    #1 = Methodref          #2.#3         // java/lang/Object."<init>":()V
+    #2 = Class              #4            // java/lang/Object
+    #3 = NameAndType        #5:#6         // "<init>":()V
+    #4 = Utf8               java/lang/Object
+    #5 = Utf8               <init>
+    #6 = Utf8               ()V
+    #7 = Fieldref           #8.#9         // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.weaponType:Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+    #8 = Class              #10           // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged
+    #9 = NameAndType        #11:#12       // weaponType:Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+   #10 = Utf8               org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged
+   #11 = Utf8               weaponType
+   #12 = Utf8               Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+   #13 = Class              #14           // net/minecraft/world/item/Item$Properties
+   #14 = Utf8               net/minecraft/world/item/Item$Properties
+   #15 = Methodref          #13.#3        // net/minecraft/world/item/Item$Properties."<init>":()V
+   #16 = String             #17           // longbow
+   #17 = Utf8               longbow
+   #18 = Methodref          #19.#20       // java/lang/String.equals:(Ljava/lang/Object;)Z
+   #19 = Class              #21           // java/lang/String
+   #20 = NameAndType        #22:#23       // equals:(Ljava/lang/Object;)Z
+   #21 = Utf8               java/lang/String
+   #22 = Utf8               equals
+   #23 = Utf8               (Ljava/lang/Object;)Z
+   #24 = String             #25           // heavy_crossbow
+   #25 = Utf8               heavy_crossbow
+   #26 = String             #27           // _strengthened
+   #27 = Utf8               _strengthened
+   #28 = String             #29           //
+   #29 = Utf8
+   #30 = InvokeDynamic      #0:#31        // #0:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+   #31 = NameAndType        #32:#33       // makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+   #32 = Utf8               makeConcatWithConstants
+   #33 = Utf8               (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+   #34 = InvokeDynamic      #1:#35        // #1:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+   #35 = NameAndType        #36:#37       // get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+   #36 = Utf8               get
+   #37 = Utf8               (Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+   #38 = Methodref          #39.#40       // net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+   #39 = Class              #41           // net/neoforged/neoforge/registries/DeferredRegister
+   #40 = NameAndType        #42:#43       // register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+   #41 = Utf8               net/neoforged/neoforge/registries/DeferredRegister
+   #42 = Utf8               register
+   #43 = Utf8               (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+   #44 = Fieldref           #8.#45        // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.wood:Lnet/neoforged/neoforge/registries/DeferredHolder;
+   #45 = NameAndType        #46:#47       // wood:Lnet/neoforged/neoforge/registries/DeferredHolder;
+   #46 = Utf8               wood
+   #47 = Utf8               Lnet/neoforged/neoforge/registries/DeferredHolder;
+   #48 = InvokeDynamic      #2:#31        // #2:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+   #49 = InvokeDynamic      #3:#35        // #3:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+   #50 = Fieldref           #8.#51        // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.leather:Lnet/neoforged/neoforge/registries/DeferredHolder;
+   #51 = NameAndType        #52:#47       // leather:Lnet/neoforged/neoforge/registries/DeferredHolder;
+   #52 = Utf8               leather
+   #53 = InvokeDynamic      #4:#31        // #4:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+   #54 = InvokeDynamic      #5:#35        // #5:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+   #55 = Fieldref           #8.#56        // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.copper:Lnet/neoforged/neoforge/registries/DeferredHolder;
+   #56 = NameAndType        #57:#47       // copper:Lnet/neoforged/neoforge/registries/DeferredHolder;
+   #57 = Utf8               copper
+   #58 = InvokeDynamic      #6:#31        // #6:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+   #59 = InvokeDynamic      #7:#35        // #7:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+   #60 = Fieldref           #8.#61        // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.iron:Lnet/neoforged/neoforge/registries/DeferredHolder;
+   #61 = NameAndType        #62:#47       // iron:Lnet/neoforged/neoforge/registries/DeferredHolder;
+   #62 = Utf8               iron
+   #63 = InvokeDynamic      #8:#31        // #8:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+   #64 = InvokeDynamic      #9:#35        // #9:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+   #65 = Fieldref           #8.#66        // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.gold:Lnet/neoforged/neoforge/registries/DeferredHolder;
+   #66 = NameAndType        #67:#47       // gold:Lnet/neoforged/neoforge/registries/DeferredHolder;
+   #67 = Utf8               gold
+   #68 = InvokeDynamic      #10:#31       // #10:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+   #69 = InvokeDynamic      #11:#35       // #11:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+   #70 = Fieldref           #8.#71        // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.diamond:Lnet/neoforged/neoforge/registries/DeferredHolder;
+   #71 = NameAndType        #72:#47       // diamond:Lnet/neoforged/neoforge/registries/DeferredHolder;
+   #72 = Utf8               diamond
+   #73 = InvokeDynamic      #12:#31       // #12:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+   #74 = InvokeDynamic      #13:#75       // #13:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+   #75 = NameAndType        #36:#76       // get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+   #76 = Utf8               (Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+   #77 = Fieldref           #8.#78        // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.netherite:Lnet/neoforged/neoforge/registries/DeferredHolder;
+   #78 = NameAndType        #79:#47       // netherite:Lnet/neoforged/neoforge/registries/DeferredHolder;
+   #79 = Utf8               netherite
+   #80 = InvokeDynamic      #14:#31       // #14:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+   #81 = InvokeDynamic      #15:#35       // #15:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+   #82 = Fieldref           #8.#83        // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.tin:Lnet/neoforged/neoforge/registries/DeferredHolder;
+   #83 = NameAndType        #84:#47       // tin:Lnet/neoforged/neoforge/registries/DeferredHolder;
+   #84 = Utf8               tin
+   #85 = InvokeDynamic      #16:#31       // #16:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+   #86 = InvokeDynamic      #17:#35       // #17:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+   #87 = Fieldref           #8.#88        // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.bronze:Lnet/neoforged/neoforge/registries/DeferredHolder;
+   #88 = NameAndType        #89:#47       // bronze:Lnet/neoforged/neoforge/registries/DeferredHolder;
+   #89 = Utf8               bronze
+   #90 = InvokeDynamic      #18:#31       // #18:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+   #91 = InvokeDynamic      #19:#35       // #19:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+   #92 = Fieldref           #8.#93        // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.steel:Lnet/neoforged/neoforge/registries/DeferredHolder;
+   #93 = NameAndType        #94:#47       // steel:Lnet/neoforged/neoforge/registries/DeferredHolder;
+   #94 = Utf8               steel
+   #95 = InvokeDynamic      #20:#31       // #20:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+   #96 = InvokeDynamic      #21:#35       // #21:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+   #97 = Fieldref           #8.#98        // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.silver:Lnet/neoforged/neoforge/registries/DeferredHolder;
+   #98 = NameAndType        #99:#47       // silver:Lnet/neoforged/neoforge/registries/DeferredHolder;
+   #99 = Utf8               silver
+  #100 = InvokeDynamic      #22:#31       // #22:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #101 = InvokeDynamic      #23:#35       // #23:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+  #102 = Fieldref           #8.#103       // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.electrum:Lnet/neoforged/neoforge/registries/DeferredHolder;
+  #103 = NameAndType        #104:#47      // electrum:Lnet/neoforged/neoforge/registries/DeferredHolder;
+  #104 = Utf8               electrum
+  #105 = InvokeDynamic      #24:#31       // #24:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #106 = InvokeDynamic      #25:#35       // #25:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+  #107 = Fieldref           #8.#108       // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lead:Lnet/neoforged/neoforge/registries/DeferredHolder;
+  #108 = NameAndType        #109:#47      // lead:Lnet/neoforged/neoforge/registries/DeferredHolder;
+  #109 = Utf8               lead
+  #110 = InvokeDynamic      #26:#31       // #26:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #111 = InvokeDynamic      #27:#35       // #27:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+  #112 = Fieldref           #8.#113       // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.nickel:Lnet/neoforged/neoforge/registries/DeferredHolder;
+  #113 = NameAndType        #114:#47      // nickel:Lnet/neoforged/neoforge/registries/DeferredHolder;
+  #114 = Utf8               nickel
+  #115 = InvokeDynamic      #28:#31       // #28:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #116 = InvokeDynamic      #29:#35       // #29:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+  #117 = Fieldref           #8.#118       // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.invar:Lnet/neoforged/neoforge/registries/DeferredHolder;
+  #118 = NameAndType        #119:#47      // invar:Lnet/neoforged/neoforge/registries/DeferredHolder;
+  #119 = Utf8               invar
+  #120 = InvokeDynamic      #30:#31       // #30:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #121 = InvokeDynamic      #31:#35       // #31:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+  #122 = Fieldref           #8.#123       // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.constantan:Lnet/neoforged/neoforge/registries/DeferredHolder;
+  #123 = NameAndType        #124:#47      // constantan:Lnet/neoforged/neoforge/registries/DeferredHolder;
+  #124 = Utf8               constantan
+  #125 = InvokeDynamic      #32:#31       // #32:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #126 = InvokeDynamic      #33:#35       // #33:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+  #127 = Fieldref           #8.#128       // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.platinum:Lnet/neoforged/neoforge/registries/DeferredHolder;
+  #128 = NameAndType        #129:#47      // platinum:Lnet/neoforged/neoforge/registries/DeferredHolder;
+  #129 = Utf8               platinum
+  #130 = InvokeDynamic      #34:#31       // #34:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #131 = InvokeDynamic      #35:#35       // #35:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+  #132 = Fieldref           #8.#133       // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.aluminum:Lnet/neoforged/neoforge/registries/DeferredHolder;
+  #133 = NameAndType        #134:#47      // aluminum:Lnet/neoforged/neoforge/registries/DeferredHolder;
+  #134 = Utf8               aluminum
+  #135 = Fieldref           #136.#137     // org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.WOOD:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #136 = Class              #138          // org/xiyu/spartanweaponryunofficial/api/WeaponMaterial
+  #137 = NameAndType        #139:#140     // WOOD:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #138 = Utf8               org/xiyu/spartanweaponryunofficial/api/WeaponMaterial
+  #139 = Utf8               WOOD
+  #140 = Utf8               Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #141 = Methodref          #142.#143     // org/xiyu/spartanweaponryunofficial/init/ModItems.entry:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry;
+  #142 = Class              #144          // org/xiyu/spartanweaponryunofficial/init/ModItems
+  #143 = NameAndType        #145:#146     // entry:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry;
+  #144 = Utf8               org/xiyu/spartanweaponryunofficial/init/ModItems
+  #145 = Utf8               entry
+  #146 = Utf8               (Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry;
+  #147 = Fieldref           #136.#148     // org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.LEATHER:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #148 = NameAndType        #149:#140     // LEATHER:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #149 = Utf8               LEATHER
+  #150 = Fieldref           #136.#151     // org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.COPPER:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #151 = NameAndType        #152:#140     // COPPER:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #152 = Utf8               COPPER
+  #153 = Fieldref           #136.#154     // org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.IRON:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #154 = NameAndType        #155:#140     // IRON:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #155 = Utf8               IRON
+  #156 = Fieldref           #136.#157     // org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.GOLD:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #157 = NameAndType        #158:#140     // GOLD:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #158 = Utf8               GOLD
+  #159 = Fieldref           #136.#160     // org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.DIAMOND:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #160 = NameAndType        #161:#140     // DIAMOND:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #161 = Utf8               DIAMOND
+  #162 = Fieldref           #136.#163     // org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.NETHERITE:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #163 = NameAndType        #164:#140     // NETHERITE:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #164 = Utf8               NETHERITE
+  #165 = Methodref          #166.#167     // com/google/common/collect/ImmutableList.of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
+  #166 = Class              #168          // com/google/common/collect/ImmutableList
+  #167 = NameAndType        #169:#170     // of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
+  #168 = Utf8               com/google/common/collect/ImmutableList
+  #169 = Utf8               of
+  #170 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
+  #171 = Fieldref           #8.#172       // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.vanillaItems:Lcom/google/common/collect/ImmutableList;
+  #172 = NameAndType        #173:#174     // vanillaItems:Lcom/google/common/collect/ImmutableList;
+  #173 = Utf8               vanillaItems
+  #174 = Utf8               Lcom/google/common/collect/ImmutableList;
+  #175 = Fieldref           #136.#176     // org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.TIN:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #176 = NameAndType        #177:#140     // TIN:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #177 = Utf8               TIN
+  #178 = Fieldref           #136.#179     // org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.BRONZE:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #179 = NameAndType        #180:#140     // BRONZE:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #180 = Utf8               BRONZE
+  #181 = Fieldref           #136.#182     // org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.STEEL:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #182 = NameAndType        #183:#140     // STEEL:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #183 = Utf8               STEEL
+  #184 = Fieldref           #136.#185     // org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.SILVER:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #185 = NameAndType        #186:#140     // SILVER:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #186 = Utf8               SILVER
+  #187 = Fieldref           #136.#188     // org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.ELECTRUM:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #188 = NameAndType        #189:#140     // ELECTRUM:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #189 = Utf8               ELECTRUM
+  #190 = Fieldref           #136.#191     // org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.LEAD:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #191 = NameAndType        #192:#140     // LEAD:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #192 = Utf8               LEAD
+  #193 = Fieldref           #136.#194     // org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.NICKEL:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #194 = NameAndType        #195:#140     // NICKEL:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #195 = Utf8               NICKEL
+  #196 = Fieldref           #136.#197     // org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.INVAR:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #197 = NameAndType        #198:#140     // INVAR:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #198 = Utf8               INVAR
+  #199 = Fieldref           #136.#200     // org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.CONSTANTAN:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #200 = NameAndType        #201:#140     // CONSTANTAN:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #201 = Utf8               CONSTANTAN
+  #202 = Fieldref           #136.#203     // org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.PLATINUM:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #203 = NameAndType        #204:#140     // PLATINUM:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #204 = Utf8               PLATINUM
+  #205 = Fieldref           #136.#206     // org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.ALUMINUM:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #206 = NameAndType        #207:#140     // ALUMINUM:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+  #207 = Utf8               ALUMINUM
+  #208 = Methodref          #166.#209     // com/google/common/collect/ImmutableList.of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
+  #209 = NameAndType        #169:#210     // of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
+  #210 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
+  #211 = Fieldref           #8.#212       // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.moddedItems:Lcom/google/common/collect/ImmutableList;
+  #212 = NameAndType        #213:#174     // moddedItems:Lcom/google/common/collect/ImmutableList;
+  #213 = Utf8               moddedItems
+  #214 = Methodref          #142.#215     // org/xiyu/spartanweaponryunofficial/init/ModItems.indexByMaterial:(Lcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableList;)Lcom/google/common/collect/ImmutableMap;
+  #215 = NameAndType        #216:#217     // indexByMaterial:(Lcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableList;)Lcom/google/common/collect/ImmutableMap;
+  #216 = Utf8               indexByMaterial
+  #217 = Utf8               (Lcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableList;)Lcom/google/common/collect/ImmutableMap;
+  #218 = Fieldref           #8.#219       // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.itemsByMaterialName:Lcom/google/common/collect/ImmutableMap;
+  #219 = NameAndType        #220:#221     // itemsByMaterialName:Lcom/google/common/collect/ImmutableMap;
+  #220 = Utf8               itemsByMaterialName
+  #221 = Utf8               Lcom/google/common/collect/ImmutableMap;
+  #222 = Methodref          #142.#223     // org/xiyu/spartanweaponryunofficial/init/ModItems.itemStacks:(Lcom/google/common/collect/ImmutableList;)Lcom/google/common/collect/ImmutableList;
+  #223 = NameAndType        #224:#225     // itemStacks:(Lcom/google/common/collect/ImmutableList;)Lcom/google/common/collect/ImmutableList;
+  #224 = Utf8               itemStacks
+  #225 = Utf8               (Lcom/google/common/collect/ImmutableList;)Lcom/google/common/collect/ImmutableList;
+  #226 = Methodref          #142.#227     // org/xiyu/spartanweaponryunofficial/init/ModItems.resolveItems:(Lcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableList;)Lcom/google/common/collect/ImmutableList;
+  #227 = NameAndType        #228:#229     // resolveItems:(Lcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableList;)Lcom/google/common/collect/ImmutableList;
+  #228 = Utf8               resolveItems
+  #229 = Utf8               (Lcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableList;)Lcom/google/common/collect/ImmutableList;
+  #230 = Methodref          #142.#231     // org/xiyu/spartanweaponryunofficial/init/ModItems.getItemForMaterial:(Lcom/google/common/collect/ImmutableMap;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Ljava/util/Optional;
+  #231 = NameAndType        #232:#233     // getItemForMaterial:(Lcom/google/common/collect/ImmutableMap;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Ljava/util/Optional;
+  #232 = Utf8               getItemForMaterial
+  #233 = Utf8               (Lcom/google/common/collect/ImmutableMap;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Ljava/util/Optional;
+  #234 = InterfaceMethodref #235.#236     // org/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction.create:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;
+  #235 = Class              #237          // org/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction
+  #236 = NameAndType        #238:#239     // create:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;
+  #237 = Utf8               org/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction
+  #238 = Utf8               create
+  #239 = Utf8               (Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;
+  #240 = Methodref          #241.#242     // org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI.classifyWeapon:(Lnet/minecraft/world/item/Item;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Lnet/minecraft/world/item/Item;
+  #241 = Class              #243          // org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI
+  #242 = NameAndType        #244:#245     // classifyWeapon:(Lnet/minecraft/world/item/Item;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Lnet/minecraft/world/item/Item;
+  #243 = Utf8               org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI
+  #244 = Utf8               classifyWeapon
+  #245 = Utf8               (Lnet/minecraft/world/item/Item;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Lnet/minecraft/world/item/Item;
+  #246 = Methodref          #13.#247      // net/minecraft/world/item/Item$Properties.fireResistant:()Lnet/minecraft/world/item/Item$Properties;
+  #247 = NameAndType        #248:#249     // fireResistant:()Lnet/minecraft/world/item/Item$Properties;
+  #248 = Utf8               fireResistant
+  #249 = Utf8               ()Lnet/minecraft/world/item/Item$Properties;
+  #250 = Class              #251          // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemGroup
+  #251 = Utf8               org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemGroup
+  #252 = Utf8               Signature
+  #253 = Utf8               Lcom/google/common/collect/ImmutableList<Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry<Lnet/minecraft/world/item/Item;>;>;
+  #254 = Utf8               Lcom/google/common/collect/ImmutableMap<Ljava/lang/String;Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/item/Item;+Lnet/minecraft/world/item/Item;>;>;
+  #255 = Utf8               Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/Item;>;
+  #256 = Utf8               (Lnet/neoforged/neoforge/registries/DeferredRegister;Ljava/lang/String;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;)V
+  #257 = Utf8               Code
+  #258 = Utf8               LineNumberTable
+  #259 = Utf8               LocalVariableTable
+  #260 = Utf8               this
+  #261 = Utf8               Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged;
+  #262 = Utf8               Lnet/neoforged/neoforge/registries/DeferredRegister;
+  #263 = Utf8               weaponName
+  #264 = Utf8               Ljava/lang/String;
+  #265 = Utf8               factory
+  #266 = Utf8               Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+  #267 = Utf8               propVanilla
+  #268 = Utf8               Lnet/minecraft/world/item/Item$Properties;
+  #269 = Utf8               propModded
+  #270 = Utf8               isStrengthenedWeapon
+  #271 = Utf8               Z
+  #272 = Utf8               strengthenedSuffix
+  #273 = Utf8               LocalVariableTypeTable
+  #274 = Utf8               Lnet/neoforged/neoforge/registries/DeferredRegister<Lnet/minecraft/world/item/Item;>;
+  #275 = Utf8               Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction<+Lnet/minecraft/world/item/Item;>;
+  #276 = Utf8               StackMapTable
+  #277 = Class              #278          // org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType
+  #278 = Utf8               org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType
+  #279 = Utf8               (Lnet/neoforged/neoforge/registries/DeferredRegister<Lnet/minecraft/world/item/Item;>;Ljava/lang/String;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction<+Lnet/minecraft/world/item/Item;>;)V
+  #280 = Utf8               getWeaponType
+  #281 = Utf8               ()Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+  #282 = Utf8               getVanillaItemStacks
+  #283 = Utf8               ()Lcom/google/common/collect/ImmutableList;
+  #284 = Utf8               ()Lcom/google/common/collect/ImmutableList<Lnet/minecraft/world/item/ItemStack;>;
+  #285 = Utf8               getModdedItemStacks
+  #286 = Utf8               getAsList
+  #287 = Utf8               ()Lcom/google/common/collect/ImmutableList<Lnet/minecraft/world/item/Item;>;
+  #288 = Utf8               (Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Ljava/util/Optional;
+  #289 = Utf8               material
+  #290 = Utf8               (Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Ljava/util/Optional<Lnet/minecraft/world/item/Item;>;
+  #291 = Utf8               lambda$new$17
+  #292 = Utf8               (Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #293 = Utf8               lambda$new$16
+  #294 = Utf8               lambda$new$15
+  #295 = Utf8               lambda$new$14
+  #296 = Utf8               lambda$new$13
+  #297 = Utf8               lambda$new$12
+  #298 = Utf8               lambda$new$11
+  #299 = Utf8               lambda$new$10
+  #300 = Utf8               lambda$new$9
+  #301 = Utf8               lambda$new$8
+  #302 = Utf8               lambda$new$7
+  #303 = Utf8               lambda$new$6
+  #304 = Utf8               (Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #305 = Utf8               lambda$new$5
+  #306 = Utf8               lambda$new$4
+  #307 = Utf8               lambda$new$3
+  #308 = Utf8               lambda$new$2
+  #309 = Utf8               lambda$new$1
+  #310 = Utf8               lambda$new$0
+  #311 = Utf8               Ljava/lang/Object;Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemGroup<Lnet/minecraft/world/item/Item;>;
+  #312 = Utf8               SourceFile
+  #313 = Utf8               ModItems.java
+  #314 = Utf8               NestHost
+  #315 = Utf8               BootstrapMethods
+  #316 = String             #317          // \u0001_wooden\u0001
+  #317 = Utf8               \u0001_wooden\u0001
+  #318 = MethodType         #319          //  ()Ljava/lang/Object;
+  #319 = Utf8               ()Ljava/lang/Object;
+  #320 = MethodHandle       6:#321        // REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$0:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #321 = Methodref          #8.#322       // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$0:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #322 = NameAndType        #310:#292     // lambda$new$0:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #323 = MethodType         #324          //  ()Lnet/minecraft/world/item/Item;
+  #324 = Utf8               ()Lnet/minecraft/world/item/Item;
+  #325 = String             #326          // \u0001_leather\u0001
+  #326 = Utf8               \u0001_leather\u0001
+  #327 = MethodHandle       6:#328        // REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$1:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #328 = Methodref          #8.#329       // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$1:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #329 = NameAndType        #309:#292     // lambda$new$1:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #330 = String             #331          // \u0001_copper\u0001
+  #331 = Utf8               \u0001_copper\u0001
+  #332 = MethodHandle       6:#333        // REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$2:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #333 = Methodref          #8.#334       // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$2:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #334 = NameAndType        #308:#292     // lambda$new$2:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #335 = String             #336          // \u0001_iron\u0001
+  #336 = Utf8               \u0001_iron\u0001
+  #337 = MethodHandle       6:#338        // REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$3:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #338 = Methodref          #8.#339       // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$3:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #339 = NameAndType        #307:#292     // lambda$new$3:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #340 = String             #341          // \u0001_golden\u0001
+  #341 = Utf8               \u0001_golden\u0001
+  #342 = MethodHandle       6:#343        // REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$4:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #343 = Methodref          #8.#344       // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$4:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #344 = NameAndType        #306:#292     // lambda$new$4:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #345 = String             #346          // \u0001_diamond\u0001
+  #346 = Utf8               \u0001_diamond\u0001
+  #347 = MethodHandle       6:#348        // REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$5:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #348 = Methodref          #8.#349       // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$5:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #349 = NameAndType        #305:#292     // lambda$new$5:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #350 = String             #351          // \u0001_netherite\u0001
+  #351 = Utf8               \u0001_netherite\u0001
+  #352 = MethodHandle       6:#353        // REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$6:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #353 = Methodref          #8.#354       // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$6:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #354 = NameAndType        #303:#304     // lambda$new$6:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #355 = String             #356          // \u0001_tin\u0001
+  #356 = Utf8               \u0001_tin\u0001
+  #357 = MethodHandle       6:#358        // REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$7:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #358 = Methodref          #8.#359       // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$7:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #359 = NameAndType        #302:#292     // lambda$new$7:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #360 = String             #361          // \u0001_bronze\u0001
+  #361 = Utf8               \u0001_bronze\u0001
+  #362 = MethodHandle       6:#363        // REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$8:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #363 = Methodref          #8.#364       // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$8:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #364 = NameAndType        #301:#292     // lambda$new$8:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #365 = String             #366          // \u0001_steel\u0001
+  #366 = Utf8               \u0001_steel\u0001
+  #367 = MethodHandle       6:#368        // REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$9:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #368 = Methodref          #8.#369       // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$9:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #369 = NameAndType        #300:#292     // lambda$new$9:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #370 = String             #371          // \u0001_silver\u0001
+  #371 = Utf8               \u0001_silver\u0001
+  #372 = MethodHandle       6:#373        // REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$10:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #373 = Methodref          #8.#374       // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$10:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #374 = NameAndType        #299:#292     // lambda$new$10:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #375 = String             #376          // \u0001_electrum\u0001
+  #376 = Utf8               \u0001_electrum\u0001
+  #377 = MethodHandle       6:#378        // REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$11:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #378 = Methodref          #8.#379       // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$11:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #379 = NameAndType        #298:#292     // lambda$new$11:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #380 = String             #381          // \u0001_lead\u0001
+  #381 = Utf8               \u0001_lead\u0001
+  #382 = MethodHandle       6:#383        // REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$12:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #383 = Methodref          #8.#384       // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$12:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #384 = NameAndType        #297:#292     // lambda$new$12:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #385 = String             #386          // \u0001_nickel\u0001
+  #386 = Utf8               \u0001_nickel\u0001
+  #387 = MethodHandle       6:#388        // REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$13:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #388 = Methodref          #8.#389       // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$13:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #389 = NameAndType        #296:#292     // lambda$new$13:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #390 = String             #391          // \u0001_invar\u0001
+  #391 = Utf8               \u0001_invar\u0001
+  #392 = MethodHandle       6:#393        // REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$14:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #393 = Methodref          #8.#394       // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$14:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #394 = NameAndType        #295:#292     // lambda$new$14:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #395 = String             #396          // \u0001_constantan\u0001
+  #396 = Utf8               \u0001_constantan\u0001
+  #397 = MethodHandle       6:#398        // REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$15:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #398 = Methodref          #8.#399       // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$15:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #399 = NameAndType        #294:#292     // lambda$new$15:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #400 = String             #401          // \u0001_platinum\u0001
+  #401 = Utf8               \u0001_platinum\u0001
+  #402 = MethodHandle       6:#403        // REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$16:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #403 = Methodref          #8.#404       // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$16:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #404 = NameAndType        #293:#292     // lambda$new$16:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #405 = String             #406          // \u0001_aluminum\u0001
+  #406 = Utf8               \u0001_aluminum\u0001
+  #407 = MethodHandle       6:#408        // REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$17:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #408 = Methodref          #8.#409       // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$17:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #409 = NameAndType        #291:#292     // lambda$new$17:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+  #410 = MethodHandle       6:#411        // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #411 = Methodref          #412.#413     // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #412 = Class              #414          // java/lang/invoke/StringConcatFactory
+  #413 = NameAndType        #32:#415      // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #414 = Utf8               java/lang/invoke/StringConcatFactory
+  #415 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #416 = MethodHandle       6:#417        // REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #417 = Methodref          #418.#419     // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #418 = Class              #420          // java/lang/invoke/LambdaMetafactory
+  #419 = NameAndType        #421:#422     // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #420 = Utf8               java/lang/invoke/LambdaMetafactory
+  #421 = Utf8               metafactory
+  #422 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #423 = Utf8               InnerClasses
+  #424 = Utf8               WeaponItemsRanged
+  #425 = Utf8               WeaponItemType
+  #426 = Class              #427          // net/minecraft/world/item/Item
+  #427 = Utf8               net/minecraft/world/item/Item
+  #428 = Utf8               Properties
+  #429 = Class              #430          // org/xiyu/spartanweaponryunofficial/util/WeaponFactory
+  #430 = Utf8               org/xiyu/spartanweaponryunofficial/util/WeaponFactory
+  #431 = Utf8               WeaponFunction
+  #432 = Class              #433          // org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry
+  #433 = Utf8               org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry
+  #434 = Utf8               WeaponMaterialEntry
+  #435 = Utf8               WeaponItemGroup
+  #436 = Class              #437          // java/lang/invoke/MethodHandles$Lookup
+  #437 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #438 = Class              #439          // java/lang/invoke/MethodHandles
+  #439 = Utf8               java/lang/invoke/MethodHandles
+  #440 = Utf8               Lookup
+{
+  private final org.xiyu.spartanweaponryunofficial.api.SpartanWeaponryAPI$WeaponItemType weaponType;
+    descriptor: Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+
+  private final com.google.common.collect.ImmutableList<org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponMaterialEntry<net.minecraft.world.item.Item>> vanillaItems;
+    descriptor: Lcom/google/common/collect/ImmutableList;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+    Signature: #253                         // Lcom/google/common/collect/ImmutableList<Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry<Lnet/minecraft/world/item/Item;>;>;
+
+  private final com.google.common.collect.ImmutableList<org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponMaterialEntry<net.minecraft.world.item.Item>> moddedItems;
+    descriptor: Lcom/google/common/collect/ImmutableList;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+    Signature: #253                         // Lcom/google/common/collect/ImmutableList<Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry<Lnet/minecraft/world/item/Item;>;>;
+
+  private final com.google.common.collect.ImmutableMap<java.lang.String, net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, ? extends net.minecraft.world.item.Item>> itemsByMaterialName;
+    descriptor: Lcom/google/common/collect/ImmutableMap;
+    flags: (0x0012) ACC_PRIVATE, ACC_FINAL
+    Signature: #254                         // Lcom/google/common/collect/ImmutableMap<Ljava/lang/String;Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/item/Item;+Lnet/minecraft/world/item/Item;>;>;
+
+  public final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> wood;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Signature: #255                         // Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/Item;>;
+
+  public final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> leather;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Signature: #255                         // Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/Item;>;
+
+  public final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> copper;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Signature: #255                         // Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/Item;>;
+
+  public final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> iron;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Signature: #255                         // Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/Item;>;
+
+  public final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> gold;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Signature: #255                         // Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/Item;>;
+
+  public final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> diamond;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Signature: #255                         // Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/Item;>;
+
+  public final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> netherite;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Signature: #255                         // Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/Item;>;
+
+  public final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> tin;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Signature: #255                         // Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/Item;>;
+
+  public final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> bronze;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Signature: #255                         // Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/Item;>;
+
+  public final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> steel;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Signature: #255                         // Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/Item;>;
+
+  public final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> silver;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Signature: #255                         // Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/Item;>;
+
+  public final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> electrum;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Signature: #255                         // Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/Item;>;
+
+  public final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> lead;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Signature: #255                         // Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/Item;>;
+
+  public final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> nickel;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Signature: #255                         // Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/Item;>;
+
+  public final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> invar;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Signature: #255                         // Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/Item;>;
+
+  public final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> constantan;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Signature: #255                         // Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/Item;>;
+
+  public final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> platinum;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Signature: #255                         // Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/Item;>;
+
+  public final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> aluminum;
+    descriptor: Lnet/neoforged/neoforge/registries/DeferredHolder;
+    flags: (0x0011) ACC_PUBLIC, ACC_FINAL
+    Signature: #255                         // Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/Item;>;
+
+  public org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemsRanged(net.neoforged.neoforge.registries.DeferredRegister<net.minecraft.world.item.Item>, java.lang.String, org.xiyu.spartanweaponryunofficial.api.SpartanWeaponryAPI$WeaponItemType, org.xiyu.spartanweaponryunofficial.util.WeaponFactory$WeaponFunction<? extends net.minecraft.world.item.Item>);
+    descriptor: (Lnet/neoforged/neoforge/registries/DeferredRegister;Ljava/lang/String;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=13, locals=9, args_size=5
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: aload_3
+         6: putfield      #7                  // Field weaponType:Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+         9: new           #13                 // class net/minecraft/world/item/Item$Properties
+        12: dup
+        13: invokespecial #15                 // Method net/minecraft/world/item/Item$Properties."<init>":()V
+        16: astore        5
+        18: new           #13                 // class net/minecraft/world/item/Item$Properties
+        21: dup
+        22: invokespecial #15                 // Method net/minecraft/world/item/Item$Properties."<init>":()V
+        25: astore        6
+        27: aload_2
+        28: ldc           #16                 // String longbow
+        30: invokevirtual #18                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+        33: ifne          45
+        36: aload_2
+        37: ldc           #24                 // String heavy_crossbow
+        39: invokevirtual #18                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+        42: ifeq          49
+        45: iconst_1
+        46: goto          50
+        49: iconst_0
+        50: istore        7
+        52: iload         7
+        54: ifeq          62
+        57: ldc           #26                 // String _strengthened
+        59: goto          64
+        62: ldc           #28                 // String
+        64: astore        8
+        66: aload_0
+        67: aload_1
+        68: aload_2
+        69: aload         8
+        71: invokedynamic #30,  0             // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+        76: aload         4
+        78: aload         5
+        80: aload_3
+        81: invokedynamic #34,  0             // InvokeDynamic #1:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+        86: invokevirtual #38                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+        89: putfield      #44                 // Field wood:Lnet/neoforged/neoforge/registries/DeferredHolder;
+        92: aload_0
+        93: aload_1
+        94: aload_2
+        95: aload         8
+        97: invokedynamic #48,  0             // InvokeDynamic #2:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       102: aload         4
+       104: aload         5
+       106: aload_3
+       107: invokedynamic #49,  0             // InvokeDynamic #3:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+       112: invokevirtual #38                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+       115: putfield      #50                 // Field leather:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       118: aload_0
+       119: aload_1
+       120: aload_2
+       121: aload         8
+       123: invokedynamic #53,  0             // InvokeDynamic #4:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       128: aload         4
+       130: aload         5
+       132: aload_3
+       133: invokedynamic #54,  0             // InvokeDynamic #5:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+       138: invokevirtual #38                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+       141: putfield      #55                 // Field copper:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       144: aload_0
+       145: aload_1
+       146: aload_2
+       147: aload         8
+       149: invokedynamic #58,  0             // InvokeDynamic #6:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       154: aload         4
+       156: aload         5
+       158: aload_3
+       159: invokedynamic #59,  0             // InvokeDynamic #7:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+       164: invokevirtual #38                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+       167: putfield      #60                 // Field iron:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       170: aload_0
+       171: aload_1
+       172: aload_2
+       173: aload         8
+       175: invokedynamic #63,  0             // InvokeDynamic #8:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       180: aload         4
+       182: aload         5
+       184: aload_3
+       185: invokedynamic #64,  0             // InvokeDynamic #9:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+       190: invokevirtual #38                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+       193: putfield      #65                 // Field gold:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       196: aload_0
+       197: aload_1
+       198: aload_2
+       199: aload         8
+       201: invokedynamic #68,  0             // InvokeDynamic #10:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       206: aload         4
+       208: aload         5
+       210: aload_3
+       211: invokedynamic #69,  0             // InvokeDynamic #11:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+       216: invokevirtual #38                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+       219: putfield      #70                 // Field diamond:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       222: aload_0
+       223: aload_1
+       224: aload_2
+       225: aload         8
+       227: invokedynamic #73,  0             // InvokeDynamic #12:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       232: aload         4
+       234: aload_3
+       235: invokedynamic #74,  0             // InvokeDynamic #13:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+       240: invokevirtual #38                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+       243: putfield      #77                 // Field netherite:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       246: aload_0
+       247: aload_1
+       248: aload_2
+       249: aload         8
+       251: invokedynamic #80,  0             // InvokeDynamic #14:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       256: aload         4
+       258: aload         6
+       260: aload_3
+       261: invokedynamic #81,  0             // InvokeDynamic #15:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+       266: invokevirtual #38                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+       269: putfield      #82                 // Field tin:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       272: aload_0
+       273: aload_1
+       274: aload_2
+       275: aload         8
+       277: invokedynamic #85,  0             // InvokeDynamic #16:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       282: aload         4
+       284: aload         6
+       286: aload_3
+       287: invokedynamic #86,  0             // InvokeDynamic #17:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+       292: invokevirtual #38                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+       295: putfield      #87                 // Field bronze:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       298: aload_0
+       299: aload_1
+       300: aload_2
+       301: aload         8
+       303: invokedynamic #90,  0             // InvokeDynamic #18:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       308: aload         4
+       310: aload         6
+       312: aload_3
+       313: invokedynamic #91,  0             // InvokeDynamic #19:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+       318: invokevirtual #38                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+       321: putfield      #92                 // Field steel:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       324: aload_0
+       325: aload_1
+       326: aload_2
+       327: aload         8
+       329: invokedynamic #95,  0             // InvokeDynamic #20:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       334: aload         4
+       336: aload         6
+       338: aload_3
+       339: invokedynamic #96,  0             // InvokeDynamic #21:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+       344: invokevirtual #38                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+       347: putfield      #97                 // Field silver:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       350: aload_0
+       351: aload_1
+       352: aload_2
+       353: aload         8
+       355: invokedynamic #100,  0            // InvokeDynamic #22:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       360: aload         4
+       362: aload         6
+       364: aload_3
+       365: invokedynamic #101,  0            // InvokeDynamic #23:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+       370: invokevirtual #38                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+       373: putfield      #102                // Field electrum:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       376: aload_0
+       377: aload_1
+       378: aload_2
+       379: aload         8
+       381: invokedynamic #105,  0            // InvokeDynamic #24:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       386: aload         4
+       388: aload         6
+       390: aload_3
+       391: invokedynamic #106,  0            // InvokeDynamic #25:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+       396: invokevirtual #38                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+       399: putfield      #107                // Field lead:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       402: aload_0
+       403: aload_1
+       404: aload_2
+       405: aload         8
+       407: invokedynamic #110,  0            // InvokeDynamic #26:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       412: aload         4
+       414: aload         6
+       416: aload_3
+       417: invokedynamic #111,  0            // InvokeDynamic #27:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+       422: invokevirtual #38                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+       425: putfield      #112                // Field nickel:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       428: aload_0
+       429: aload_1
+       430: aload_2
+       431: aload         8
+       433: invokedynamic #115,  0            // InvokeDynamic #28:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       438: aload         4
+       440: aload         6
+       442: aload_3
+       443: invokedynamic #116,  0            // InvokeDynamic #29:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+       448: invokevirtual #38                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+       451: putfield      #117                // Field invar:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       454: aload_0
+       455: aload_1
+       456: aload_2
+       457: aload         8
+       459: invokedynamic #120,  0            // InvokeDynamic #30:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       464: aload         4
+       466: aload         6
+       468: aload_3
+       469: invokedynamic #121,  0            // InvokeDynamic #31:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+       474: invokevirtual #38                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+       477: putfield      #122                // Field constantan:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       480: aload_0
+       481: aload_1
+       482: aload_2
+       483: aload         8
+       485: invokedynamic #125,  0            // InvokeDynamic #32:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       490: aload         4
+       492: aload         6
+       494: aload_3
+       495: invokedynamic #126,  0            // InvokeDynamic #33:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+       500: invokevirtual #38                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+       503: putfield      #127                // Field platinum:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       506: aload_0
+       507: aload_1
+       508: aload_2
+       509: aload         8
+       511: invokedynamic #130,  0            // InvokeDynamic #34:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+       516: aload         4
+       518: aload         6
+       520: aload_3
+       521: invokedynamic #131,  0            // InvokeDynamic #35:get:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Ljava/util/function/Supplier;
+       526: invokevirtual #38                 // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+       529: putfield      #132                // Field aluminum:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       532: aload_0
+       533: getstatic     #135                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.WOOD:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+       536: aload_0
+       537: getfield      #44                 // Field wood:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       540: invokestatic  #141                // Method org/xiyu/spartanweaponryunofficial/init/ModItems.entry:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry;
+       543: getstatic     #147                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.LEATHER:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+       546: aload_0
+       547: getfield      #50                 // Field leather:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       550: invokestatic  #141                // Method org/xiyu/spartanweaponryunofficial/init/ModItems.entry:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry;
+       553: getstatic     #150                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.COPPER:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+       556: aload_0
+       557: getfield      #55                 // Field copper:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       560: invokestatic  #141                // Method org/xiyu/spartanweaponryunofficial/init/ModItems.entry:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry;
+       563: getstatic     #153                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.IRON:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+       566: aload_0
+       567: getfield      #60                 // Field iron:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       570: invokestatic  #141                // Method org/xiyu/spartanweaponryunofficial/init/ModItems.entry:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry;
+       573: getstatic     #156                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.GOLD:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+       576: aload_0
+       577: getfield      #65                 // Field gold:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       580: invokestatic  #141                // Method org/xiyu/spartanweaponryunofficial/init/ModItems.entry:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry;
+       583: getstatic     #159                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.DIAMOND:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+       586: aload_0
+       587: getfield      #70                 // Field diamond:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       590: invokestatic  #141                // Method org/xiyu/spartanweaponryunofficial/init/ModItems.entry:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry;
+       593: getstatic     #162                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.NETHERITE:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+       596: aload_0
+       597: getfield      #77                 // Field netherite:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       600: invokestatic  #141                // Method org/xiyu/spartanweaponryunofficial/init/ModItems.entry:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry;
+       603: invokestatic  #165                // Method com/google/common/collect/ImmutableList.of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
+       606: putfield      #171                // Field vanillaItems:Lcom/google/common/collect/ImmutableList;
+       609: aload_0
+       610: getstatic     #175                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.TIN:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+       613: aload_0
+       614: getfield      #82                 // Field tin:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       617: invokestatic  #141                // Method org/xiyu/spartanweaponryunofficial/init/ModItems.entry:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry;
+       620: getstatic     #178                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.BRONZE:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+       623: aload_0
+       624: getfield      #87                 // Field bronze:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       627: invokestatic  #141                // Method org/xiyu/spartanweaponryunofficial/init/ModItems.entry:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry;
+       630: getstatic     #181                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.STEEL:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+       633: aload_0
+       634: getfield      #92                 // Field steel:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       637: invokestatic  #141                // Method org/xiyu/spartanweaponryunofficial/init/ModItems.entry:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry;
+       640: getstatic     #184                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.SILVER:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+       643: aload_0
+       644: getfield      #97                 // Field silver:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       647: invokestatic  #141                // Method org/xiyu/spartanweaponryunofficial/init/ModItems.entry:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry;
+       650: getstatic     #187                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.ELECTRUM:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+       653: aload_0
+       654: getfield      #102                // Field electrum:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       657: invokestatic  #141                // Method org/xiyu/spartanweaponryunofficial/init/ModItems.entry:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry;
+       660: getstatic     #190                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.LEAD:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+       663: aload_0
+       664: getfield      #107                // Field lead:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       667: invokestatic  #141                // Method org/xiyu/spartanweaponryunofficial/init/ModItems.entry:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry;
+       670: getstatic     #193                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.NICKEL:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+       673: aload_0
+       674: getfield      #112                // Field nickel:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       677: invokestatic  #141                // Method org/xiyu/spartanweaponryunofficial/init/ModItems.entry:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry;
+       680: getstatic     #196                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.INVAR:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+       683: aload_0
+       684: getfield      #117                // Field invar:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       687: invokestatic  #141                // Method org/xiyu/spartanweaponryunofficial/init/ModItems.entry:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry;
+       690: getstatic     #199                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.CONSTANTAN:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+       693: aload_0
+       694: getfield      #122                // Field constantan:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       697: invokestatic  #141                // Method org/xiyu/spartanweaponryunofficial/init/ModItems.entry:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry;
+       700: getstatic     #202                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.PLATINUM:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+       703: aload_0
+       704: getfield      #127                // Field platinum:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       707: invokestatic  #141                // Method org/xiyu/spartanweaponryunofficial/init/ModItems.entry:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry;
+       710: getstatic     #205                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.ALUMINUM:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+       713: aload_0
+       714: getfield      #132                // Field aluminum:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       717: invokestatic  #141                // Method org/xiyu/spartanweaponryunofficial/init/ModItems.entry:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/neoforged/neoforge/registries/DeferredHolder;)Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry;
+       720: invokestatic  #208                // Method com/google/common/collect/ImmutableList.of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
+       723: putfield      #211                // Field moddedItems:Lcom/google/common/collect/ImmutableList;
+       726: aload_0
+       727: aload_0
+       728: getfield      #171                // Field vanillaItems:Lcom/google/common/collect/ImmutableList;
+       731: aload_0
+       732: getfield      #211                // Field moddedItems:Lcom/google/common/collect/ImmutableList;
+       735: invokestatic  #214                // Method org/xiyu/spartanweaponryunofficial/init/ModItems.indexByMaterial:(Lcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableList;)Lcom/google/common/collect/ImmutableMap;
+       738: putfield      #218                // Field itemsByMaterialName:Lcom/google/common/collect/ImmutableMap;
+       741: return
+      LineNumberTable:
+        line 370: 0
+        line 371: 4
+        line 372: 9
+        line 373: 18
+        line 376: 27
+        line 377: 30
+        line 378: 52
+        line 380: 66
+        line 381: 86
+        line 388: 92
+        line 389: 112
+        line 396: 118
+        line 397: 138
+        line 404: 144
+        line 405: 164
+        line 412: 170
+        line 413: 190
+        line 420: 196
+        line 421: 216
+        line 428: 222
+        line 429: 240
+        line 439: 246
+        line 440: 266
+        line 447: 272
+        line 448: 292
+        line 455: 298
+        line 456: 318
+        line 463: 324
+        line 464: 344
+        line 471: 350
+        line 472: 370
+        line 479: 376
+        line 480: 396
+        line 487: 402
+        line 488: 422
+        line 495: 428
+        line 496: 448
+        line 503: 454
+        line 504: 474
+        line 511: 480
+        line 512: 500
+        line 519: 506
+        line 520: 526
+        line 528: 532
+        line 530: 540
+        line 531: 550
+        line 532: 560
+        line 533: 570
+        line 534: 580
+        line 535: 590
+        line 536: 600
+        line 529: 603
+        line 537: 609
+        line 539: 617
+        line 540: 627
+        line 541: 637
+        line 542: 647
+        line 543: 657
+        line 544: 667
+        line 545: 677
+        line 546: 687
+        line 547: 697
+        line 548: 707
+        line 549: 717
+        line 538: 720
+        line 550: 726
+        line 551: 741
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0     742     0  this   Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged;
+            0     742     1 register   Lnet/neoforged/neoforge/registries/DeferredRegister;
+            0     742     2 weaponName   Ljava/lang/String;
+            0     742     3 weaponType   Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+            0     742     4 factory   Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+           18     724     5 propVanilla   Lnet/minecraft/world/item/Item$Properties;
+           27     715     6 propModded   Lnet/minecraft/world/item/Item$Properties;
+           52     690     7 isStrengthenedWeapon   Z
+           66     676     8 strengthenedSuffix   Ljava/lang/String;
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+            0     742     1 register   Lnet/neoforged/neoforge/registries/DeferredRegister<Lnet/minecraft/world/item/Item;>;
+            0     742     4 factory   Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction<+Lnet/minecraft/world/item/Item;>;
+      StackMapTable: number_of_entries = 5
+        frame_type = 255 /* full_frame */
+          offset_delta = 45
+          locals = [ class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged, class net/neoforged/neoforge/registries/DeferredRegister, class java/lang/String, class org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType, class org/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction, class net/minecraft/world/item/Item$Properties, class net/minecraft/world/item/Item$Properties ]
+          stack = []
+        frame_type = 3 /* same */
+        frame_type = 64 /* same_locals_1_stack_item */
+          stack = [ int ]
+        frame_type = 252 /* append */
+          offset_delta = 11
+          locals = [ int ]
+        frame_type = 65 /* same_locals_1_stack_item */
+          stack = [ class java/lang/String ]
+    Signature: #279                         // (Lnet/neoforged/neoforge/registries/DeferredRegister<Lnet/minecraft/world/item/Item;>;Ljava/lang/String;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction<+Lnet/minecraft/world/item/Item;>;)V
+
+  public org.xiyu.spartanweaponryunofficial.api.SpartanWeaponryAPI$WeaponItemType getWeaponType();
+    descriptor: ()Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #7                  // Field weaponType:Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+         4: areturn
+      LineNumberTable:
+        line 555: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged;
+
+  public com.google.common.collect.ImmutableList<net.minecraft.world.item.ItemStack> getVanillaItemStacks();
+    descriptor: ()Lcom/google/common/collect/ImmutableList;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #171                // Field vanillaItems:Lcom/google/common/collect/ImmutableList;
+         4: invokestatic  #222                // Method org/xiyu/spartanweaponryunofficial/init/ModItems.itemStacks:(Lcom/google/common/collect/ImmutableList;)Lcom/google/common/collect/ImmutableList;
+         7: areturn
+      LineNumberTable:
+        line 560: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       8     0  this   Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged;
+    Signature: #284                         // ()Lcom/google/common/collect/ImmutableList<Lnet/minecraft/world/item/ItemStack;>;
+
+  public com.google.common.collect.ImmutableList<net.minecraft.world.item.ItemStack> getModdedItemStacks();
+    descriptor: ()Lcom/google/common/collect/ImmutableList;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #211                // Field moddedItems:Lcom/google/common/collect/ImmutableList;
+         4: invokestatic  #222                // Method org/xiyu/spartanweaponryunofficial/init/ModItems.itemStacks:(Lcom/google/common/collect/ImmutableList;)Lcom/google/common/collect/ImmutableList;
+         7: areturn
+      LineNumberTable:
+        line 565: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       8     0  this   Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged;
+    Signature: #284                         // ()Lcom/google/common/collect/ImmutableList<Lnet/minecraft/world/item/ItemStack;>;
+
+  public com.google.common.collect.ImmutableList<net.minecraft.world.item.Item> getAsList();
+    descriptor: ()Lcom/google/common/collect/ImmutableList;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #171                // Field vanillaItems:Lcom/google/common/collect/ImmutableList;
+         4: aload_0
+         5: getfield      #211                // Field moddedItems:Lcom/google/common/collect/ImmutableList;
+         8: invokestatic  #226                // Method org/xiyu/spartanweaponryunofficial/init/ModItems.resolveItems:(Lcom/google/common/collect/ImmutableList;Lcom/google/common/collect/ImmutableList;)Lcom/google/common/collect/ImmutableList;
+        11: areturn
+      LineNumberTable:
+        line 570: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      12     0  this   Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged;
+    Signature: #287                         // ()Lcom/google/common/collect/ImmutableList<Lnet/minecraft/world/item/Item;>;
+
+  public java.util.Optional<net.minecraft.world.item.Item> getItemForMaterial(org.xiyu.spartanweaponryunofficial.api.WeaponMaterial);
+    descriptor: (Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Ljava/util/Optional;
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: getfield      #218                // Field itemsByMaterialName:Lcom/google/common/collect/ImmutableMap;
+         4: aload_1
+         5: invokestatic  #230                // Method org/xiyu/spartanweaponryunofficial/init/ModItems.getItemForMaterial:(Lcom/google/common/collect/ImmutableMap;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Ljava/util/Optional;
+         8: areturn
+      LineNumberTable:
+        line 575: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       9     0  this   Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged;
+            0       9     1 material   Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+    Signature: #290                         // (Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Ljava/util/Optional<Lnet/minecraft/world/item/Item;>;
+
+  private static net.minecraft.world.item.Item lambda$new$17(org.xiyu.spartanweaponryunofficial.util.WeaponFactory$WeaponFunction, net.minecraft.world.item.Item$Properties, org.xiyu.spartanweaponryunofficial.api.SpartanWeaponryAPI$WeaponItemType);
+    descriptor: (Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_0
+         1: getstatic     #205                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.ALUMINUM:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+         4: aload_1
+         5: invokeinterface #234,  3          // InterfaceMethod org/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction.create:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;
+        10: aload_2
+        11: getstatic     #205                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.ALUMINUM:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+        14: invokestatic  #240                // Method org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI.classifyWeapon:(Lnet/minecraft/world/item/Item;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Lnet/minecraft/world/item/Item;
+        17: areturn
+      LineNumberTable:
+        line 523: 0
+        line 524: 5
+        line 523: 14
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      18     0 factory   Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+            0      18     1 propModded   Lnet/minecraft/world/item/Item$Properties;
+            0      18     2 weaponType   Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+
+  private static net.minecraft.world.item.Item lambda$new$16(org.xiyu.spartanweaponryunofficial.util.WeaponFactory$WeaponFunction, net.minecraft.world.item.Item$Properties, org.xiyu.spartanweaponryunofficial.api.SpartanWeaponryAPI$WeaponItemType);
+    descriptor: (Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_0
+         1: getstatic     #202                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.PLATINUM:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+         4: aload_1
+         5: invokeinterface #234,  3          // InterfaceMethod org/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction.create:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;
+        10: aload_2
+        11: getstatic     #202                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.PLATINUM:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+        14: invokestatic  #240                // Method org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI.classifyWeapon:(Lnet/minecraft/world/item/Item;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Lnet/minecraft/world/item/Item;
+        17: areturn
+      LineNumberTable:
+        line 515: 0
+        line 516: 5
+        line 515: 14
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      18     0 factory   Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+            0      18     1 propModded   Lnet/minecraft/world/item/Item$Properties;
+            0      18     2 weaponType   Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+
+  private static net.minecraft.world.item.Item lambda$new$15(org.xiyu.spartanweaponryunofficial.util.WeaponFactory$WeaponFunction, net.minecraft.world.item.Item$Properties, org.xiyu.spartanweaponryunofficial.api.SpartanWeaponryAPI$WeaponItemType);
+    descriptor: (Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_0
+         1: getstatic     #199                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.CONSTANTAN:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+         4: aload_1
+         5: invokeinterface #234,  3          // InterfaceMethod org/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction.create:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;
+        10: aload_2
+        11: getstatic     #199                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.CONSTANTAN:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+        14: invokestatic  #240                // Method org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI.classifyWeapon:(Lnet/minecraft/world/item/Item;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Lnet/minecraft/world/item/Item;
+        17: areturn
+      LineNumberTable:
+        line 507: 0
+        line 508: 5
+        line 507: 14
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      18     0 factory   Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+            0      18     1 propModded   Lnet/minecraft/world/item/Item$Properties;
+            0      18     2 weaponType   Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+
+  private static net.minecraft.world.item.Item lambda$new$14(org.xiyu.spartanweaponryunofficial.util.WeaponFactory$WeaponFunction, net.minecraft.world.item.Item$Properties, org.xiyu.spartanweaponryunofficial.api.SpartanWeaponryAPI$WeaponItemType);
+    descriptor: (Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_0
+         1: getstatic     #196                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.INVAR:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+         4: aload_1
+         5: invokeinterface #234,  3          // InterfaceMethod org/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction.create:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;
+        10: aload_2
+        11: getstatic     #196                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.INVAR:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+        14: invokestatic  #240                // Method org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI.classifyWeapon:(Lnet/minecraft/world/item/Item;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Lnet/minecraft/world/item/Item;
+        17: areturn
+      LineNumberTable:
+        line 499: 0
+        line 500: 5
+        line 499: 14
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      18     0 factory   Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+            0      18     1 propModded   Lnet/minecraft/world/item/Item$Properties;
+            0      18     2 weaponType   Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+
+  private static net.minecraft.world.item.Item lambda$new$13(org.xiyu.spartanweaponryunofficial.util.WeaponFactory$WeaponFunction, net.minecraft.world.item.Item$Properties, org.xiyu.spartanweaponryunofficial.api.SpartanWeaponryAPI$WeaponItemType);
+    descriptor: (Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_0
+         1: getstatic     #193                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.NICKEL:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+         4: aload_1
+         5: invokeinterface #234,  3          // InterfaceMethod org/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction.create:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;
+        10: aload_2
+        11: getstatic     #193                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.NICKEL:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+        14: invokestatic  #240                // Method org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI.classifyWeapon:(Lnet/minecraft/world/item/Item;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Lnet/minecraft/world/item/Item;
+        17: areturn
+      LineNumberTable:
+        line 491: 0
+        line 492: 5
+        line 491: 14
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      18     0 factory   Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+            0      18     1 propModded   Lnet/minecraft/world/item/Item$Properties;
+            0      18     2 weaponType   Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+
+  private static net.minecraft.world.item.Item lambda$new$12(org.xiyu.spartanweaponryunofficial.util.WeaponFactory$WeaponFunction, net.minecraft.world.item.Item$Properties, org.xiyu.spartanweaponryunofficial.api.SpartanWeaponryAPI$WeaponItemType);
+    descriptor: (Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_0
+         1: getstatic     #190                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.LEAD:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+         4: aload_1
+         5: invokeinterface #234,  3          // InterfaceMethod org/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction.create:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;
+        10: aload_2
+        11: getstatic     #190                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.LEAD:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+        14: invokestatic  #240                // Method org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI.classifyWeapon:(Lnet/minecraft/world/item/Item;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Lnet/minecraft/world/item/Item;
+        17: areturn
+      LineNumberTable:
+        line 483: 0
+        line 484: 5
+        line 483: 14
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      18     0 factory   Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+            0      18     1 propModded   Lnet/minecraft/world/item/Item$Properties;
+            0      18     2 weaponType   Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+
+  private static net.minecraft.world.item.Item lambda$new$11(org.xiyu.spartanweaponryunofficial.util.WeaponFactory$WeaponFunction, net.minecraft.world.item.Item$Properties, org.xiyu.spartanweaponryunofficial.api.SpartanWeaponryAPI$WeaponItemType);
+    descriptor: (Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_0
+         1: getstatic     #187                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.ELECTRUM:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+         4: aload_1
+         5: invokeinterface #234,  3          // InterfaceMethod org/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction.create:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;
+        10: aload_2
+        11: getstatic     #187                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.ELECTRUM:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+        14: invokestatic  #240                // Method org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI.classifyWeapon:(Lnet/minecraft/world/item/Item;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Lnet/minecraft/world/item/Item;
+        17: areturn
+      LineNumberTable:
+        line 475: 0
+        line 476: 5
+        line 475: 14
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      18     0 factory   Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+            0      18     1 propModded   Lnet/minecraft/world/item/Item$Properties;
+            0      18     2 weaponType   Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+
+  private static net.minecraft.world.item.Item lambda$new$10(org.xiyu.spartanweaponryunofficial.util.WeaponFactory$WeaponFunction, net.minecraft.world.item.Item$Properties, org.xiyu.spartanweaponryunofficial.api.SpartanWeaponryAPI$WeaponItemType);
+    descriptor: (Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_0
+         1: getstatic     #184                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.SILVER:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+         4: aload_1
+         5: invokeinterface #234,  3          // InterfaceMethod org/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction.create:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;
+        10: aload_2
+        11: getstatic     #184                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.SILVER:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+        14: invokestatic  #240                // Method org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI.classifyWeapon:(Lnet/minecraft/world/item/Item;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Lnet/minecraft/world/item/Item;
+        17: areturn
+      LineNumberTable:
+        line 467: 0
+        line 468: 5
+        line 467: 14
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      18     0 factory   Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+            0      18     1 propModded   Lnet/minecraft/world/item/Item$Properties;
+            0      18     2 weaponType   Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+
+  private static net.minecraft.world.item.Item lambda$new$9(org.xiyu.spartanweaponryunofficial.util.WeaponFactory$WeaponFunction, net.minecraft.world.item.Item$Properties, org.xiyu.spartanweaponryunofficial.api.SpartanWeaponryAPI$WeaponItemType);
+    descriptor: (Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_0
+         1: getstatic     #181                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.STEEL:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+         4: aload_1
+         5: invokeinterface #234,  3          // InterfaceMethod org/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction.create:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;
+        10: aload_2
+        11: getstatic     #181                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.STEEL:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+        14: invokestatic  #240                // Method org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI.classifyWeapon:(Lnet/minecraft/world/item/Item;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Lnet/minecraft/world/item/Item;
+        17: areturn
+      LineNumberTable:
+        line 459: 0
+        line 460: 5
+        line 459: 14
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      18     0 factory   Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+            0      18     1 propModded   Lnet/minecraft/world/item/Item$Properties;
+            0      18     2 weaponType   Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+
+  private static net.minecraft.world.item.Item lambda$new$8(org.xiyu.spartanweaponryunofficial.util.WeaponFactory$WeaponFunction, net.minecraft.world.item.Item$Properties, org.xiyu.spartanweaponryunofficial.api.SpartanWeaponryAPI$WeaponItemType);
+    descriptor: (Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_0
+         1: getstatic     #178                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.BRONZE:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+         4: aload_1
+         5: invokeinterface #234,  3          // InterfaceMethod org/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction.create:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;
+        10: aload_2
+        11: getstatic     #178                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.BRONZE:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+        14: invokestatic  #240                // Method org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI.classifyWeapon:(Lnet/minecraft/world/item/Item;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Lnet/minecraft/world/item/Item;
+        17: areturn
+      LineNumberTable:
+        line 451: 0
+        line 452: 5
+        line 451: 14
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      18     0 factory   Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+            0      18     1 propModded   Lnet/minecraft/world/item/Item$Properties;
+            0      18     2 weaponType   Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+
+  private static net.minecraft.world.item.Item lambda$new$7(org.xiyu.spartanweaponryunofficial.util.WeaponFactory$WeaponFunction, net.minecraft.world.item.Item$Properties, org.xiyu.spartanweaponryunofficial.api.SpartanWeaponryAPI$WeaponItemType);
+    descriptor: (Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_0
+         1: getstatic     #175                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.TIN:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+         4: aload_1
+         5: invokeinterface #234,  3          // InterfaceMethod org/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction.create:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;
+        10: aload_2
+        11: getstatic     #175                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.TIN:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+        14: invokestatic  #240                // Method org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI.classifyWeapon:(Lnet/minecraft/world/item/Item;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Lnet/minecraft/world/item/Item;
+        17: areturn
+      LineNumberTable:
+        line 443: 0
+        line 444: 5
+        line 443: 14
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      18     0 factory   Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+            0      18     1 propModded   Lnet/minecraft/world/item/Item$Properties;
+            0      18     2 weaponType   Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+
+  private static net.minecraft.world.item.Item lambda$new$6(org.xiyu.spartanweaponryunofficial.util.WeaponFactory$WeaponFunction, org.xiyu.spartanweaponryunofficial.api.SpartanWeaponryAPI$WeaponItemType);
+    descriptor: (Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=4, locals=2, args_size=2
+         0: aload_0
+         1: getstatic     #162                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.NETHERITE:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+         4: new           #13                 // class net/minecraft/world/item/Item$Properties
+         7: dup
+         8: invokespecial #15                 // Method net/minecraft/world/item/Item$Properties."<init>":()V
+        11: invokevirtual #246                // Method net/minecraft/world/item/Item$Properties.fireResistant:()Lnet/minecraft/world/item/Item$Properties;
+        14: invokeinterface #234,  3          // InterfaceMethod org/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction.create:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;
+        19: aload_1
+        20: getstatic     #162                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.NETHERITE:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+        23: invokestatic  #240                // Method org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI.classifyWeapon:(Lnet/minecraft/world/item/Item;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Lnet/minecraft/world/item/Item;
+        26: areturn
+      LineNumberTable:
+        line 432: 0
+        line 435: 11
+        line 433: 14
+        line 432: 23
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      27     0 factory   Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+            0      27     1 weaponType   Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+
+  private static net.minecraft.world.item.Item lambda$new$5(org.xiyu.spartanweaponryunofficial.util.WeaponFactory$WeaponFunction, net.minecraft.world.item.Item$Properties, org.xiyu.spartanweaponryunofficial.api.SpartanWeaponryAPI$WeaponItemType);
+    descriptor: (Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_0
+         1: getstatic     #159                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.DIAMOND:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+         4: aload_1
+         5: invokeinterface #234,  3          // InterfaceMethod org/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction.create:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;
+        10: aload_2
+        11: getstatic     #159                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.DIAMOND:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+        14: invokestatic  #240                // Method org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI.classifyWeapon:(Lnet/minecraft/world/item/Item;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Lnet/minecraft/world/item/Item;
+        17: areturn
+      LineNumberTable:
+        line 424: 0
+        line 425: 5
+        line 424: 14
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      18     0 factory   Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+            0      18     1 propVanilla   Lnet/minecraft/world/item/Item$Properties;
+            0      18     2 weaponType   Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+
+  private static net.minecraft.world.item.Item lambda$new$4(org.xiyu.spartanweaponryunofficial.util.WeaponFactory$WeaponFunction, net.minecraft.world.item.Item$Properties, org.xiyu.spartanweaponryunofficial.api.SpartanWeaponryAPI$WeaponItemType);
+    descriptor: (Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_0
+         1: getstatic     #156                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.GOLD:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+         4: aload_1
+         5: invokeinterface #234,  3          // InterfaceMethod org/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction.create:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;
+        10: aload_2
+        11: getstatic     #156                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.GOLD:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+        14: invokestatic  #240                // Method org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI.classifyWeapon:(Lnet/minecraft/world/item/Item;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Lnet/minecraft/world/item/Item;
+        17: areturn
+      LineNumberTable:
+        line 416: 0
+        line 417: 5
+        line 416: 14
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      18     0 factory   Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+            0      18     1 propVanilla   Lnet/minecraft/world/item/Item$Properties;
+            0      18     2 weaponType   Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+
+  private static net.minecraft.world.item.Item lambda$new$3(org.xiyu.spartanweaponryunofficial.util.WeaponFactory$WeaponFunction, net.minecraft.world.item.Item$Properties, org.xiyu.spartanweaponryunofficial.api.SpartanWeaponryAPI$WeaponItemType);
+    descriptor: (Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_0
+         1: getstatic     #153                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.IRON:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+         4: aload_1
+         5: invokeinterface #234,  3          // InterfaceMethod org/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction.create:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;
+        10: aload_2
+        11: getstatic     #153                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.IRON:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+        14: invokestatic  #240                // Method org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI.classifyWeapon:(Lnet/minecraft/world/item/Item;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Lnet/minecraft/world/item/Item;
+        17: areturn
+      LineNumberTable:
+        line 408: 0
+        line 409: 5
+        line 408: 14
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      18     0 factory   Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+            0      18     1 propVanilla   Lnet/minecraft/world/item/Item$Properties;
+            0      18     2 weaponType   Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+
+  private static net.minecraft.world.item.Item lambda$new$2(org.xiyu.spartanweaponryunofficial.util.WeaponFactory$WeaponFunction, net.minecraft.world.item.Item$Properties, org.xiyu.spartanweaponryunofficial.api.SpartanWeaponryAPI$WeaponItemType);
+    descriptor: (Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_0
+         1: getstatic     #150                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.COPPER:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+         4: aload_1
+         5: invokeinterface #234,  3          // InterfaceMethod org/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction.create:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;
+        10: aload_2
+        11: getstatic     #150                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.COPPER:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+        14: invokestatic  #240                // Method org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI.classifyWeapon:(Lnet/minecraft/world/item/Item;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Lnet/minecraft/world/item/Item;
+        17: areturn
+      LineNumberTable:
+        line 400: 0
+        line 401: 5
+        line 400: 14
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      18     0 factory   Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+            0      18     1 propVanilla   Lnet/minecraft/world/item/Item$Properties;
+            0      18     2 weaponType   Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+
+  private static net.minecraft.world.item.Item lambda$new$1(org.xiyu.spartanweaponryunofficial.util.WeaponFactory$WeaponFunction, net.minecraft.world.item.Item$Properties, org.xiyu.spartanweaponryunofficial.api.SpartanWeaponryAPI$WeaponItemType);
+    descriptor: (Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_0
+         1: getstatic     #147                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.LEATHER:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+         4: aload_1
+         5: invokeinterface #234,  3          // InterfaceMethod org/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction.create:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;
+        10: aload_2
+        11: getstatic     #147                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.LEATHER:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+        14: invokestatic  #240                // Method org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI.classifyWeapon:(Lnet/minecraft/world/item/Item;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Lnet/minecraft/world/item/Item;
+        17: areturn
+      LineNumberTable:
+        line 392: 0
+        line 393: 5
+        line 392: 14
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      18     0 factory   Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+            0      18     1 propVanilla   Lnet/minecraft/world/item/Item$Properties;
+            0      18     2 weaponType   Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+
+  private static net.minecraft.world.item.Item lambda$new$0(org.xiyu.spartanweaponryunofficial.util.WeaponFactory$WeaponFunction, net.minecraft.world.item.Item$Properties, org.xiyu.spartanweaponryunofficial.api.SpartanWeaponryAPI$WeaponItemType);
+    descriptor: (Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=3, locals=3, args_size=3
+         0: aload_0
+         1: getstatic     #135                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.WOOD:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+         4: aload_1
+         5: invokeinterface #234,  3          // InterfaceMethod org/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction.create:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;
+        10: aload_2
+        11: getstatic     #135                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.WOOD:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+        14: invokestatic  #240                // Method org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI.classifyWeapon:(Lnet/minecraft/world/item/Item;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Lnet/minecraft/world/item/Item;
+        17: areturn
+      LineNumberTable:
+        line 384: 0
+        line 385: 5
+        line 384: 14
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      18     0 factory   Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+            0      18     1 propVanilla   Lnet/minecraft/world/item/Item$Properties;
+            0      18     2 weaponType   Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+}
+Signature: #311                         // Ljava/lang/Object;Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemGroup<Lnet/minecraft/world/item/Item;>;
+SourceFile: "ModItems.java"
+NestHost: class org/xiyu/spartanweaponryunofficial/init/ModItems
+BootstrapMethods:
+  0: #410 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #316 \u0001_wooden\u0001
+  1: #416 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #318 ()Ljava/lang/Object;
+      #320 REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$0:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+      #323 ()Lnet/minecraft/world/item/Item;
+  2: #410 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #325 \u0001_leather\u0001
+  3: #416 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #318 ()Ljava/lang/Object;
+      #327 REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$1:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+      #323 ()Lnet/minecraft/world/item/Item;
+  4: #410 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #330 \u0001_copper\u0001
+  5: #416 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #318 ()Ljava/lang/Object;
+      #332 REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$2:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+      #323 ()Lnet/minecraft/world/item/Item;
+  6: #410 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #335 \u0001_iron\u0001
+  7: #416 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #318 ()Ljava/lang/Object;
+      #337 REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$3:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+      #323 ()Lnet/minecraft/world/item/Item;
+  8: #410 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #340 \u0001_golden\u0001
+  9: #416 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #318 ()Ljava/lang/Object;
+      #342 REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$4:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+      #323 ()Lnet/minecraft/world/item/Item;
+  10: #410 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #345 \u0001_diamond\u0001
+  11: #416 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #318 ()Ljava/lang/Object;
+      #347 REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$5:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+      #323 ()Lnet/minecraft/world/item/Item;
+  12: #410 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #350 \u0001_netherite\u0001
+  13: #416 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #318 ()Ljava/lang/Object;
+      #352 REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$6:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+      #323 ()Lnet/minecraft/world/item/Item;
+  14: #410 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #355 \u0001_tin\u0001
+  15: #416 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #318 ()Ljava/lang/Object;
+      #357 REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$7:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+      #323 ()Lnet/minecraft/world/item/Item;
+  16: #410 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #360 \u0001_bronze\u0001
+  17: #416 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #318 ()Ljava/lang/Object;
+      #362 REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$8:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+      #323 ()Lnet/minecraft/world/item/Item;
+  18: #410 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #365 \u0001_steel\u0001
+  19: #416 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #318 ()Ljava/lang/Object;
+      #367 REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$9:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+      #323 ()Lnet/minecraft/world/item/Item;
+  20: #410 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #370 \u0001_silver\u0001
+  21: #416 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #318 ()Ljava/lang/Object;
+      #372 REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$10:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+      #323 ()Lnet/minecraft/world/item/Item;
+  22: #410 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #375 \u0001_electrum\u0001
+  23: #416 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #318 ()Ljava/lang/Object;
+      #377 REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$11:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+      #323 ()Lnet/minecraft/world/item/Item;
+  24: #410 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #380 \u0001_lead\u0001
+  25: #416 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #318 ()Ljava/lang/Object;
+      #382 REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$12:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+      #323 ()Lnet/minecraft/world/item/Item;
+  26: #410 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #385 \u0001_nickel\u0001
+  27: #416 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #318 ()Ljava/lang/Object;
+      #387 REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$13:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+      #323 ()Lnet/minecraft/world/item/Item;
+  28: #410 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #390 \u0001_invar\u0001
+  29: #416 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #318 ()Ljava/lang/Object;
+      #392 REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$14:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+      #323 ()Lnet/minecraft/world/item/Item;
+  30: #410 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #395 \u0001_constantan\u0001
+  31: #416 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #318 ()Ljava/lang/Object;
+      #397 REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$15:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+      #323 ()Lnet/minecraft/world/item/Item;
+  32: #410 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #400 \u0001_platinum\u0001
+  33: #416 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #318 ()Ljava/lang/Object;
+      #402 REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$16:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+      #323 ()Lnet/minecraft/world/item/Item;
+  34: #410 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #405 \u0001_aluminum\u0001
+  35: #416 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #318 ()Ljava/lang/Object;
+      #407 REF_invokeStatic org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged.lambda$new$17:(Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;)Lnet/minecraft/world/item/Item;
+      #323 ()Lnet/minecraft/world/item/Item;
+InnerClasses:
+  public static #424= #8 of #142;         // WeaponItemsRanged=class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged of class org/xiyu/spartanweaponryunofficial/init/ModItems
+  public static final #425= #277 of #241; // WeaponItemType=class org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType of class org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI
+  public static #428= #13 of #426;        // Properties=class net/minecraft/world/item/Item$Properties of class net/minecraft/world/item/Item
+  public static #431= #235 of #429;       // WeaponFunction=class org/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction of class org/xiyu/spartanweaponryunofficial/util/WeaponFactory
+  private static final #434= #432 of #142; // WeaponMaterialEntry=class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry of class org/xiyu/spartanweaponryunofficial/init/ModItems
+  public static #435= #250 of #142;       // WeaponItemGroup=class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemGroup of class org/xiyu/spartanweaponryunofficial/init/ModItems
+  public static final #440= #436 of #438; // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles

@@ -1,0 +1,31 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "All Rights Reserved"
+issueTrackerURL = "https://example.invalid/eldencombat/issues"
+
+[[mixins]]
+config = "eldencombat.mixins.json"
+
+[[mods]]
+modId = "eldencombat"
+version = "0.2.0"
+displayName = "Elden Combat"
+authors = "dsh, Codex"
+description = '''
+法环风格的原版战斗扩展：自制装备、战技、护符、药物与玛尔基特 Boss。
+不依赖任何战斗模组；玩家使用原版模型与原版普攻动作，战技只驱动原版关节。
+'''
+
+[[dependencies.eldencombat]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.219,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.eldencombat]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.21.2)"
+ordering = "NONE"
+side = "BOTH"

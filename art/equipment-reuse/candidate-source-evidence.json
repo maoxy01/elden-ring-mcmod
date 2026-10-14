@@ -1,0 +1,511 @@
+{
+  "date": "2026-10-13",
+  "scope": "Source-only candidate evidence; release JAR not checked or installed",
+  "shieldCommit": "a2a0eb62a98a2fa22d23e624948b1fa541048ce1",
+  "clawCommit": "bcad24f8166c0106fdd294bdb833f29fdc5757a0",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/Mai-xiyu/SpartanShields-NeoForge/a2a0eb62a98a2fa22d23e624948b1fa541048ce1/src/main/resources/assets/spartan_shields_unofficial/models/item/basic_shield_base.json",
+      "sha256": "e8fe60c6108c23ce0e260e46ab4d06942ab8649c6efaa3297095463fb9e7c41b",
+      "kind": "source-model-or-recipe",
+      "definition": {
+        "parent": "minecraft:item/generated",
+        "display": {
+          "thirdperson_righthand": {
+            "rotation": [
+              60,
+              320,
+              0
+            ],
+            "translation": [
+              0.5,
+              1.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "thirdperson_lefthand": {
+            "rotation": [
+              60,
+              320,
+              0
+            ],
+            "translation": [
+              0.5,
+              1.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "firstperson_righthand": {
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "translation": [
+              1.0,
+              -2.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "firstperson_lefthand": {
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "translation": [
+              1.0,
+              -2.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "gui": {
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "translation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "head": {
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "translation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "fixed": {
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "translation": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          "ground": {
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "translation": [
+              0.0,
+              3.0,
+              0.0
+            ],
+            "scale": [
+              0.75,
+              0.75,
+              0.75
+            ]
+          }
+        }
+      }
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Mai-xiyu/SpartanShields-NeoForge/a2a0eb62a98a2fa22d23e624948b1fa541048ce1/src/main/resources/assets/spartan_shields_unofficial/models/item/tower_shield_base.json",
+      "sha256": "0469fcfe54ef59c9edbb210e9bd3235ff2b43b6e4d773f25c95ab8802fdd9f5e",
+      "kind": "source-model-or-recipe",
+      "definition": {
+        "parent": "builtin/entity",
+        "gui_light": "front",
+        "display": {
+          "thirdperson_righthand": {
+            "rotation": [
+              0,
+              90,
+              0
+            ],
+            "translation": [
+              10,
+              6,
+              -4
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "thirdperson_lefthand": {
+            "rotation": [
+              0,
+              90,
+              0
+            ],
+            "translation": [
+              10,
+              6,
+              12
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          "firstperson_righthand": {
+            "rotation": [
+              0,
+              180,
+              5
+            ],
+            "translation": [
+              -10,
+              0,
+              -10
+            ],
+            "scale": [
+              1.25,
+              1.25,
+              1.25
+            ]
+          },
+          "firstperson_lefthand": {
+            "rotation": [
+              0,
+              180,
+              5
+            ],
+            "translation": [
+              10,
+              -2,
+              -10
+            ],
+            "scale": [
+              1.25,
+              1.25,
+              1.25
+            ]
+          },
+          "gui": {
+            "rotation": [
+              15,
+              -25,
+              -5
+            ],
+            "translation": [
+              2,
+              3,
+              0
+            ],
+            "scale": [
+              0.65,
+              0.65,
+              0.65
+            ]
+          },
+          "fixed": {
+            "rotation": [
+              0,
+              180,
+              0
+            ],
+            "translation": [
+              -2,
+              4,
+              -5
+            ],
+            "scale": [
+              0.5,
+              0.5,
+              0.5
+            ]
+          },
+          "ground": {
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "translation": [
+              4,
+              10,
+              4
+            ],
+            "scale": [
+              0.6,
+              0.6,
+              0.6
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "predicate": {
+              "blocking": 1
+            },
+            "model": "spartan_shields_unofficial:item/tower_shield_base_blocking"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Mai-xiyu/SpartanShields-NeoForge/a2a0eb62a98a2fa22d23e624948b1fa541048ce1/src/generated/resources/data/spartan_shields_unofficial/recipe/iron_basic_shield.json",
+      "sha256": "dbee9bbb25f640b3b8b7215d88e17ced7bf6de1de48498802126c1f1b0e483c4",
+      "kind": "source-model-or-recipe",
+      "definition": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "group": "spartan_shields_unofficial:iron_shields",
+        "key": {
+          "#": {
+            "tag": "c:ingots/iron"
+          },
+          "O": {
+            "item": "spartan_shields_unofficial:wooden_basic_shield"
+          }
+        },
+        "pattern": [
+          " # ",
+          "#O#",
+          " # "
+        ],
+        "result": {
+          "count": 1,
+          "id": "spartan_shields_unofficial:iron_basic_shield"
+        }
+      }
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Mai-xiyu/SpartanShields-NeoForge/a2a0eb62a98a2fa22d23e624948b1fa541048ce1/src/generated/resources/data/spartan_shields_unofficial/recipe/iron_tower_shield.json",
+      "sha256": "63e608419f61dc8c5463aa21906bfb7cdc2875bea42235046918bac4ce5e7469",
+      "kind": "source-model-or-recipe",
+      "definition": {
+        "type": "minecraft:crafting_shaped",
+        "category": "equipment",
+        "group": "spartan_shields_unofficial:iron_shields",
+        "key": {
+          "#": {
+            "tag": "c:ingots/iron"
+          },
+          "O": {
+            "item": "spartan_shields_unofficial:wooden_tower_shield"
+          }
+        },
+        "pattern": [
+          "###",
+          "#O#",
+          " # "
+        ],
+        "result": {
+          "count": 1,
+          "id": "spartan_shields_unofficial:iron_tower_shield"
+        }
+      }
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Mai-xiyu/SpartanShields-NeoForge/a2a0eb62a98a2fa22d23e624948b1fa541048ce1/src/main/java/org/xiyu/spartanshieldsunofficial/init/ModItems.java",
+      "sha256": "ee7a56ade4d870a8519c82e79b8ecacec0a08d2b9e2e70b5b6383840dbb85f9d",
+      "kind": "source-registration-excerpt",
+      "lines": [
+        "import net.neoforged.neoforge.registries.DeferredRegister;",
+        "    public static final DeferredRegister<Item> REGISTER = DeferredRegister.createItems(ModSpartanShields.ID);",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> WOODEN_BASIC_SHIELD = REGISTER.register(\"wooden_basic_shield\", () -> new BasicShieldItem(TierSS.WOOD, Defaults.DefaultDurabilityWoodShield, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> WOODEN_TOWER_SHIELD = REGISTER.register(\"wooden_tower_shield\", () -> new BasicShieldItem(TierSS.WOOD, Defaults.DefaultDurabilityWoodShield, true, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> STONE_BASIC_SHIELD = REGISTER.register(\"stone_basic_shield\", () -> new BasicShieldItem(TierSS.STONE, Defaults.DefaultDurabilityStoneShield, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> STONE_TOWER_SHIELD = REGISTER.register(\"stone_tower_shield\", () -> new BasicShieldItem(TierSS.STONE, Defaults.DefaultDurabilityStoneShield, true, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> COPPER_BASIC_SHIELD = REGISTER.register(\"copper_basic_shield\", () -> new BasicShieldItem(TierSS.COPPER, Defaults.DefaultDurabilityCopperShield, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> COPPER_TOWER_SHIELD = REGISTER.register(\"copper_tower_shield\", () -> new BasicShieldItem(TierSS.COPPER, Defaults.DefaultDurabilityCopperShield, true, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> IRON_BASIC_SHIELD = REGISTER.register(\"iron_basic_shield\", () -> new BasicShieldItem(TierSS.IRON, Defaults.DefaultDurabilityIronShield, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> IRON_TOWER_SHIELD = REGISTER.register(\"iron_tower_shield\", () -> new BasicShieldItem(TierSS.IRON, Defaults.DefaultDurabilityIronShield, true, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> GOLDEN_BASIC_SHIELD = REGISTER.register(\"golden_basic_shield\", () -> new BasicShieldItem(TierSS.GOLD, Defaults.DefaultDurabilityGoldShield, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> GOLDEN_TOWER_SHIELD = REGISTER.register(\"golden_tower_shield\", () -> new BasicShieldItem(TierSS.GOLD, Defaults.DefaultDurabilityGoldShield, true, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> DIAMOND_BASIC_SHIELD = REGISTER.register(\"diamond_basic_shield\", () -> new BasicShieldItem(TierSS.DIAMOND, Defaults.DefaultDurabilityDiamondShield, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> DIAMOND_TOWER_SHIELD = REGISTER.register(\"diamond_tower_shield\", () -> new BasicShieldItem(TierSS.DIAMOND, Defaults.DefaultDurabilityDiamondShield, true, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> NETHERITE_BASIC_SHIELD = REGISTER.register(\"netherite_basic_shield\", () -> new BasicShieldItem(TierSS.NETHERITE, Defaults.DefaultDurabilityNetheriteShield, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> NETHERITE_TOWER_SHIELD = REGISTER.register(\"netherite_tower_shield\", () -> new BasicShieldItem(TierSS.NETHERITE, Defaults.DefaultDurabilityNetheriteShield, true, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> TIN_BASIC_SHIELD = REGISTER.register(\"tin_basic_shield\", () -> new BasicShieldItem(TierSS.TIN, Defaults.DefaultDurabilityTinShield, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> TIN_TOWER_SHIELD = REGISTER.register(\"tin_tower_shield\", () -> new BasicShieldItem(TierSS.TIN, Defaults.DefaultDurabilityTinShield, true, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> BRONZE_BASIC_SHIELD = REGISTER.register(\"bronze_basic_shield\", () -> new BasicShieldItem(TierSS.BRONZE, Defaults.DefaultDurabilityBronzeShield, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> BRONZE_TOWER_SHIELD = REGISTER.register(\"bronze_tower_shield\", () -> new BasicShieldItem(TierSS.BRONZE, Defaults.DefaultDurabilityBronzeShield, true, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> STEEL_BASIC_SHIELD = REGISTER.register(\"steel_basic_shield\", () -> new BasicShieldItem(TierSS.STEEL, Defaults.DefaultDurabilitySteelShield, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> STEEL_TOWER_SHIELD = REGISTER.register(\"steel_tower_shield\", () -> new BasicShieldItem(TierSS.STEEL, Defaults.DefaultDurabilitySteelShield, true, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> ELECTRUM_BASIC_SHIELD = REGISTER.register(\"electrum_basic_shield\", () -> new BasicShieldItem(TierSS.ELECTRUM, Defaults.DefaultDurabilityElectrumShield, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> ELECTRUM_TOWER_SHIELD = REGISTER.register(\"electrum_tower_shield\", () -> new BasicShieldItem(TierSS.ELECTRUM, Defaults.DefaultDurabilityElectrumShield, true, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> LEAD_BASIC_SHIELD = REGISTER.register(\"lead_basic_shield\", () -> new BasicShieldItem(TierSS.LEAD, Defaults.DefaultDurabilityLeadShield, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> LEAD_TOWER_SHIELD = REGISTER.register(\"lead_tower_shield\", () -> new BasicShieldItem(TierSS.LEAD, Defaults.DefaultDurabilityLeadShield, true, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> NICKEL_BASIC_SHIELD = REGISTER.register(\"nickel_basic_shield\", () -> new BasicShieldItem(TierSS.NICKEL, Defaults.DefaultDurabilityNickelShield, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> NICKEL_TOWER_SHIELD = REGISTER.register(\"nickel_tower_shield\", () -> new BasicShieldItem(TierSS.NICKEL, Defaults.DefaultDurabilityNickelShield, true, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> INVAR_BASIC_SHIELD = REGISTER.register(\"invar_basic_shield\", () -> new BasicShieldItem(TierSS.INVAR, Defaults.DefaultDurabilityInvarShield, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> INVAR_TOWER_SHIELD = REGISTER.register(\"invar_tower_shield\", () -> new BasicShieldItem(TierSS.INVAR, Defaults.DefaultDurabilityInvarShield, true, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> CONSTANTAN_BASIC_SHIELD = REGISTER.register(\"constantan_basic_shield\", () -> new BasicShieldItem(TierSS.CONSTANTAN, Defaults.DefaultDurabilityConstantanShield, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> CONSTANTAN_TOWER_SHIELD = REGISTER.register(\"constantan_tower_shield\", () -> new BasicShieldItem(TierSS.CONSTANTAN, Defaults.DefaultDurabilityConstantanShield, true, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> PLATINUM_BASIC_SHIELD = REGISTER.register(\"platinum_basic_shield\", () -> new BasicShieldItem(TierSS.PLATINUM, Defaults.DefaultDurabilityPlatinumShield, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> PLATINUM_TOWER_SHIELD = REGISTER.register(\"platinum_tower_shield\", () -> new BasicShieldItem(TierSS.PLATINUM, Defaults.DefaultDurabilityPlatinumShield, true, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> ALUMINUM_BASIC_SHIELD = REGISTER.register(\"aluminum_basic_shield\", () -> new BasicShieldItem(TierSS.ALUMINUM, Defaults.DefaultDurabilityAluminumShield, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> ALUMINUM_TOWER_SHIELD = REGISTER.register(\"aluminum_tower_shield\", () -> new BasicShieldItem(TierSS.ALUMINUM, Defaults.DefaultDurabilityAluminumShield, true, new Item.Properties()));",
+        "    public static final Supplier<ShieldBaseItem> CREATE_BASIC_MANASTEEL_SHIELD_NO_BOTANIA = () -> new ExternalModShieldItem(TierSS.MANASTEEL, Defaults.DefaultDurabilityManasteelShield, false, Constants.Botania_ModID, new Item.Properties());",
+        "    public static final Supplier<ShieldBaseItem> CREATE_TOWER_MANASTEEL_SHIELD_NO_BOTANIA = () -> new ExternalModShieldItem(TierSS.MANASTEEL, Defaults.DefaultDurabilityManasteelShield, true, Constants.Botania_ModID, new Item.Properties());",
+        "    public static final Supplier<ShieldBaseItem> CREATE_BASIC_TERRASTEEL_SHIELD_NO_BOTANIA = () -> new ExternalModShieldItem(TierSS.TERRASTEEL, Defaults.DefaultDurabilityTerrasteelShield, false, Constants.Botania_ModID, new Item.Properties());",
+        "    public static final Supplier<ShieldBaseItem> CREATE_TOWER_TERRASTEEL_SHIELD_NO_BOTANIA = () -> new ExternalModShieldItem(TierSS.TERRASTEEL, Defaults.DefaultDurabilityTerrasteelShield, true, Constants.Botania_ModID, new Item.Properties());",
+        "    public static final Supplier<ShieldBaseItem> CREATE_BASIC_ELEMENTIUM_SHIELD_NO_BOTANIA = () -> new ExternalModShieldItem(TierSS.ELEMENTIUM, Defaults.DefaultDurabilityElementiumShield, false, Constants.Botania_ModID, new Item.Properties());",
+        "    public static final Supplier<ShieldBaseItem> CREATE_TOWER_ELEMENTIUM_SHIELD_NO_BOTANIA = () -> new ExternalModShieldItem(TierSS.ELEMENTIUM, Defaults.DefaultDurabilityElementiumShield, true, Constants.Botania_ModID, new Item.Properties());",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> MANASTEEL_BASIC_SHIELD = REGISTER.register(\"manasteel_basic_shield\", ModList.get().isLoaded(Constants.Botania_ModID) ? BotaniaItems.createManasteelBasicShield() : CREATE_BASIC_MANASTEEL_SHIELD_NO_BOTANIA);",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> MANASTEEL_TOWER_SHIELD = REGISTER.register(\"manasteel_tower_shield\", ModList.get().isLoaded(Constants.Botania_ModID) ? BotaniaItems.createManasteelTowerShield() : CREATE_TOWER_MANASTEEL_SHIELD_NO_BOTANIA);",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> TERRASTEEL_BASIC_SHIELD = REGISTER.register(\"terrasteel_basic_shield\", ModList.get().isLoaded(Constants.Botania_ModID) ? BotaniaItems.createTerrasteelBasicShield() : CREATE_BASIC_TERRASTEEL_SHIELD_NO_BOTANIA);",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> TERRASTEEL_TOWER_SHIELD = REGISTER.register(\"terrasteel_tower_shield\", ModList.get().isLoaded(Constants.Botania_ModID) ? BotaniaItems.createTerrasteelTowerShield() : CREATE_TOWER_TERRASTEEL_SHIELD_NO_BOTANIA);",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> ELEMENTIUM_BASIC_SHIELD = REGISTER.register(\"elementium_basic_shield\", ModList.get().isLoaded(Constants.Botania_ModID) ? BotaniaItems.createElementiumBasicShield() : CREATE_BASIC_ELEMENTIUM_SHIELD_NO_BOTANIA);",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> ELEMENTIUM_TOWER_SHIELD = REGISTER.register(\"elementium_tower_shield\", ModList.get().isLoaded(Constants.Botania_ModID) ? BotaniaItems.createElementiumTowerShield() : CREATE_TOWER_ELEMENTIUM_SHIELD_NO_BOTANIA);",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> OSMIUM_BASIC_SHIELD = REGISTER.register(\"osmium_basic_shield\", () -> new BasicShieldItem(TierSS.OSMIUM, Defaults.DefaultDurabilityOsmiumShield, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> LAPIS_BASIC_SHIELD = REGISTER.register(\"lapis_lazuli_basic_shield\", () -> new BasicShieldItem(TierSS.LAPIS_LAZULI, Defaults.DefaultDurabilityLapisLazuliShield, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> REFINED_GLOWSTONE_BASIC_SHIELD = REGISTER.register(\"refined_glowstone_basic_shield\", () -> new BasicShieldItem(TierSS.REFINED_GLOWSTONE, Defaults.DefaultDurabilityRefinedGlowstoneShield, new Item.Properties()));",
+        "    public static final DeferredHolder<Item, ShieldBaseItem> REFINED_OBSIDIAN_BASIC_SHIELD = REGISTER.register(\"refined_obsidian_basic_shield\", () -> new BasicShieldItem(TierSS.REFINED_OBSIDIAN, Defaults.DefaultDurabilityRefinedObsidianShield, new Item.Properties()));"
+      ]
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Mai-xiyu/SpartanShields-NeoForge/a2a0eb62a98a2fa22d23e624948b1fa541048ce1/src/main/java/org/xiyu/spartanshieldsunofficial/ModSpartanShields.java",
+      "sha256": "9415dce4b2e056e67a9f5ed1bca2b5f4d890d573f9aae6825bbb6ef50eb192e8",
+      "kind": "source-registration-excerpt",
+      "lines": [
+        "    public static final String ID = \"spartan_shields_unofficial\";"
+      ]
+    },
+    {
+      "url": "https://raw.githubusercontent.com/DakotaPride/vanilla-claws-forge/bcad24f8166c0106fdd294bdb833f29fdc5757a0/src/main/java/net/dakotapride/vanilla_claws/registry/ItemsInit.java",
+      "sha256": "d4fbe9eb553116e66ac64abb47bedf4d9eadc69bee3a7d12ea0680204e8774d4",
+      "kind": "source-registration-excerpt",
+      "lines": [
+        "import net.neoforged.neoforge.registries.DeferredRegister;",
+        "    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MOD_ID);",
+        "    public static final DeferredItem<ClawsItem> NETHERITE_CLAWS = ITEMS.register(\"netherite_claws\",",
+        "    public static final DeferredItem<ClawsItem> DIAMOND_CLAWS = ITEMS.register(\"diamond_claws\",",
+        "    public static final DeferredItem<ClawsItem> GOLD_CLAWS = ITEMS.register(\"gold_claws\",",
+        "    public static final DeferredItem<ClawsItem> COPPER_CLAWS = ITEMS.register(\"copper_claws\",",
+        "    public static final DeferredItem<ClawsItem> IRON_CLAWS = ITEMS.register(\"iron_claws\",",
+        "            () -> new ClawsItem(VanillaClawsMaterials.IRON, 3, 2, new Item.Properties()));",
+        "    public static final DeferredItem<ClawsItem> STONE_CLAWS = ITEMS.register(\"stone_claws\",",
+        "    public static final DeferredItem<ClawsItem> WOODEN_CLAWS = ITEMS.register(\"wooden_claws\",",
+        "    public static final DeferredItem<GobberClawsItem> GOBBER2_CLAWS = ITEMS.register(\"gobber2_claws\",",
+        "    public static final DeferredItem<GobberClawsItem> GOBBER2_NETHER_CLAWS = ITEMS.register(\"gobber2_nether_claws\",",
+        "    public static final DeferredItem<EndGobberClawsItem> GOBBER2_END_CLAWS = ITEMS.register(\"gobber2_end_claws\",",
+        "    public static final DeferredItem<ResourceSlimesIntegratedClawsItem> SOAPY_CLAWS = ITEMS.register(\"soapy_claws\",",
+        "    public static final DeferredItem<ResourceSlimesIntegratedClawsItem> BLACK_OPAL_CLAWS = ITEMS.register(\"black_opal_claws\",",
+        "    public static final DeferredItem<ResourceSlimesIntegratedClawsItem> CITRINE_CLAWS = ITEMS.register(\"citrine_claws\",",
+        "    public static final DeferredItem<ResourceSlimesIntegratedClawsItem> EMERALD_CLAWS = ITEMS.register(\"emerald_claws\",",
+        "    public static final DeferredItem<ResourceSlimesIntegratedClawsItem> TANZANITE_CLAWS = ITEMS.register(\"tanzanite_claws\",",
+        "    public static final DeferredItem<ResourceSlimesIntegratedClawsItem> ZIRCON_CLAWS = ITEMS.register(\"zircon_claws\",",
+        "    public static void register(IEventBus eventBus) {",
+        "        ITEMS.register(eventBus);"
+      ]
+    },
+    {
+      "url": "https://raw.githubusercontent.com/DakotaPride/vanilla-claws-forge/bcad24f8166c0106fdd294bdb833f29fdc5757a0/src/main/java/net/dakotapride/vanilla_claws/VanillaClawsMain.java",
+      "sha256": "21b81adbd0a09fda6b01c8151d74aa7bef04475f73c6d28bd14e33557c4348f8",
+      "kind": "source-registration-excerpt",
+      "lines": [
+        "package net.dakotapride.vanilla_claws;",
+        "import net.dakotapride.vanilla_claws.integration.IntegratedMaterials;",
+        "import net.dakotapride.vanilla_claws.registry.ItemsInit;",
+        "@Mod(VanillaClawsMain.MOD_ID)",
+        "    public static final String MOD_ID = \"vanilla_claws\";"
+      ]
+    },
+    {
+      "url": "https://raw.githubusercontent.com/DakotaPride/vanilla-claws-forge/bcad24f8166c0106fdd294bdb833f29fdc5757a0/gradle.properties",
+      "sha256": "c95d973ceb6201c7bdc5115e295f1b6e78ce2ea4a45a2925b340fb21aba5527b",
+      "kind": "source-registration-excerpt",
+      "lines": [
+        "mod_version=1.2",
+        "minecraft_version=1.21",
+        "minecraft_version_range=[1.21,1.22]",
+        "neo_version_range=[47.1,)"
+      ]
+    },
+    {
+      "url": "https://raw.githubusercontent.com/DakotaPride/vanilla-claws-forge/bcad24f8166c0106fdd294bdb833f29fdc5757a0/src/main/resources/assets/vanilla_claws/models/item/iron_claws.json",
+      "sha256": "1652cc79c455d142430b7f304ca9e0ce120a361d5ab6a516d86d6c6bf54b9402",
+      "kind": "source-model-or-recipe",
+      "definition": {
+        "parent": "minecraft:item/handheld",
+        "loader": "neoforge:separate_transforms",
+        "base": {
+          "parent": "vanilla_claws:item/hand/iron_claws"
+        },
+        "perspectives": {
+          "gui": {
+            "parent": "vanilla_claws:item/inventory/iron_claws"
+          },
+          "ground": {
+            "parent": "vanilla_claws:item/inventory/iron_claws"
+          },
+          "fixed": {
+            "parent": "vanilla_claws:item/inventory/iron_claws"
+          }
+        }
+      }
+    },
+    {
+      "url": "https://raw.githubusercontent.com/DakotaPride/vanilla-claws-forge/bcad24f8166c0106fdd294bdb833f29fdc5757a0/src/main/resources/data/vanilla_claws/recipe/iron_claws.json",
+      "sha256": "813873c9109cf06e21607ff66eaa0d8042ab8d24db5655d1be6e0cb66b670a0f",
+      "kind": "source-model-or-recipe",
+      "definition": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "iii",
+          "LLL",
+          " L "
+        ],
+        "key": {
+          "i": {
+            "item": "minecraft:iron_ingot"
+          },
+          "L": {
+            "item": "minecraft:leather"
+          }
+        },
+        "result": {
+          "id": "vanilla_claws:iron_claws"
+        }
+      }
+    }
+  ]
+}

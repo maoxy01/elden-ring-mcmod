@@ -1,0 +1,107 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.12/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+> Task :compileJava
+> Task :syncArt UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes
+> Task :downloadAssets UP-TO-DATE
+> Task :writeServerLegacyClasspath UP-TO-DATE
+> Task :prepareServerRun UP-TO-DATE
+> Task :prepareServerSmokeDir
+
+> Task :runServer
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+[22:21:20] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserverdev, --gameDir, ., --fml.fmlVersion, 4.0.42, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.219, --fml.neoFormVersion, 20240808.144430, --nogui, --port, 25566]
+[22:21:20] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.12.1+1-LTS
+[22:21:20] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.12.1 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[22:21:20] [main/INFO] [ne.ne.fm.lo.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserverdev
+[22:21:20] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/30869/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%2394!/ Service=ModLauncher Env=SERVER
+[22:21:21] [main/INFO] [ne.ne.fm.lo.mo.lo.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[22:21:21] [main/INFO] [ne.ne.fm.lo.mo.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		Cloth Config v15 API 15.0.140 (cloth_config)
+		Elden Combat 0.2.0 (eldencombat)
+		Ferrite Core 7.0.3 (ferritecore)
+		Just Enough Items 19.27.0.340 (jei)
+		Lithium 0.15.4+mc1.21.1 (lithium)
+		Minecraft 1.21.1 (minecraft)
+		NeoForge 21.1.219 (neoforge)
+[22:21:21] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
+[22:21:22] [main/INFO] [cp.mo.mo.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserverdev' with arguments [--gameDir, ., --nogui, --port, 25566]
+[22:21:22] [main/INFO] [LithiumConfig/]: Option 'mixin.experimental.entity.block_caching.suffocation' requires 'mixin.util.block_tracking=true' but found 'false'. Setting 'mixin.experimental.entity.block_caching.suffocation=false'.
+[22:21:22] [main/INFO] [LithiumConfig/]: Option 'mixin.experimental.entity.block_caching.block_support' requires 'mixin.util.block_tracking=true' but found 'false'. Setting 'mixin.experimental.entity.block_caching.block_support=false'.
+[22:21:22] [main/INFO] [LithiumConfig/]: Option 'mixin.experimental.entity.block_caching.block_touching' requires 'mixin.util.block_tracking=true' but found 'false'. Setting 'mixin.experimental.entity.block_caching.block_touching=false'.
+[22:21:22] [main/INFO] [LithiumConfig/]: Option 'mixin.experimental.entity.block_caching' requires 'mixin.util.block_tracking=true' but found 'false'. Setting 'mixin.experimental.entity.block_caching=false'.
+[22:21:22] [main/INFO] [Lithium/]: Loaded configuration file for Lithium: 148 options available, 0 override(s) found
+[22:21:22] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.predicates.mixin.json could not be read. If this is a development environment you can ignore this message
+[22:21:22] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.fastmap.mixin.json could not be read. If this is a development environment you can ignore this message
+[22:21:22] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.mrl.mixin.json could not be read. If this is a development environment you can ignore this message
+[22:21:22] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.dedupmultipart.mixin.json could not be read. If this is a development environment you can ignore this message
+[22:21:22] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.blockstatecache.mixin.json could not be read. If this is a development environment you can ignore this message
+[22:21:22] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.dedupbakedquad.mixin.json could not be read. If this is a development environment you can ignore this message
+[22:21:22] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.threaddetec.mixin.json could not be read. If this is a development environment you can ignore this message
+[22:21:22] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.modelsides.mixin.json could not be read. If this is a development environment you can ignore this message
+[22:21:22] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.datacomponents.mixin.json could not be read. If this is a development environment you can ignore this message
+[22:21:22] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.accessors.mixin.json could not be read. If this is a development environment you can ignore this message
+[22:21:22] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[22:21:27] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[22:21:27] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[22:21:27] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[22:21:27] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[22:21:27] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[22:21:27] [modloading-worker-0/INFO] [ne.ne.ne.co.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.219, for MC 1.21.1
+[22:21:27] [modloading-worker-0/INFO] [EldenCombat/]: [EldenCombat] ServerCombat ��ע�ᵽ��Ϸ�¼����ߣ�������һ�Σ�
+[22:21:27] [modloading-worker-0/INFO] [EldenCombat/]: [EldenCombat] ��ԭ��ս����չ loaded (MC 1.21.1 / NeoForge 21.1.219)
+[22:21:27] [modloading-sync-worker/INFO] [EldenCombat/]: [EldenCombat] ս������������: D:\codexout\mcmod\build\serverSmoke\config\eldencombat-combat.json
+[22:21:28] [main/INFO] [mojang/YggdrasilAuthenticationService]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[22:21:28] [main/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/D:/codexout/mcmod/build/moddev/artifacts/neoforge-21.1.219.jar%23125!/assets/.mcassetsroot' uses unexpected schema
+[22:21:28] [main/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/D:/codexout/mcmod/build/moddev/artifacts/neoforge-21.1.219.jar%23125!/data/.mcassetsroot' uses unexpected schema
+[22:21:28] [main/INFO] [minecraft/RecipeManager]: Loaded 1314 recipes
+[22:21:29] [main/INFO] [minecraft/AdvancementTree]: Loaded 1399 advancements
+[22:21:29] [main/INFO] [EldenCombat/]: [talismans] ������������ 4 ��
+[22:21:29] [main/INFO] [EldenCombat/]: [consumables] ҩ���������� 3 ��
+[22:21:29] [Server thread/INFO] [minecraft/DedicatedServer]: Starting minecraft server version 1.21.1
+[22:21:29] [Server thread/INFO] [minecraft/DedicatedServer]: Loading properties
+[22:21:29] [Server thread/INFO] [minecraft/DedicatedServer]: Default game type: SURVIVAL
+[22:21:29] [Server thread/INFO] [minecraft/MinecraftServer]: Generating keypair
+[22:21:29] [Server thread/INFO] [minecraft/DedicatedServer]: Starting Minecraft server on *:25566
+[22:21:29] [Server thread/INFO] [minecraft/ServerConnectionListener]: Using default channel type
+[22:21:29] [Server thread/WARN] [minecraft/DedicatedServer]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[22:21:29] [Server thread/WARN] [minecraft/DedicatedServer]: The server will make no attempt to authenticate usernames. Beware.
+[22:21:29] [Server thread/WARN] [minecraft/DedicatedServer]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[22:21:29] [Server thread/WARN] [minecraft/DedicatedServer]: To change this, set "online-mode" to "true" in the server.properties file.
+[22:21:29] [Server thread/INFO] [minecraft/DedicatedServer]: Preparing level "world"
+[22:21:29] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing start region for dimension minecraft:overworld
+[22:21:29] [worldgen/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 0%
+[22:21:29] [Server thread/INFO] [minecraft/LoggerChunkProgressListener]: Time elapsed: 197 ms
+[22:21:29] [Server thread/INFO] [minecraft/DedicatedServer]: Done (0.382s)! For help, type "help"
+[22:21:29] [Server thread/INFO] [ne.ne.ne.ga.GameTestHooks/]: Enabled Gametest Namespaces: []
+[22:21:29] [Server thread/INFO] [ne.ne.ne.se.pe.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[22:21:29] [Server thread/INFO] [EldenCombat/]: [skills] ׷��ս���������� 8 ��
+[22:21:29] [Server thread/INFO] [EldenCombat/]: [weapons] ������ֵ������ 41 ��
+[22:21:29] [Server thread/INFO] [EldenCombat/]: [EldenCombat] ����������ʲ�: 19 ���� / 38 ���� / 8 ������
+[22:21:29] [Server thread/INFO] [EldenCombat/]: SERVER_SMOKE_PASS: 428 shared checks, no client-class dependencies
+[22:21:29] [Server thread/INFO] [EldenCombat/]: SERVER_BUS_PASS: ServerCombat ������ SkillServerEvents �Զ����Ķ�����Ϸ�����ϣ��ϳ�Ͷ�� 1 �� �� ��ִ�� 1 �Σ�
+[22:21:30] [Server thread/INFO] [EldenCombat/]: SERVER_BREAK_PASS: ���� payoff ������ȷ��ͬ�����˺� 10.0������ǰ��Ѫ 10.0 / �����ڵ�Ѫ 15.0������ 1.5�����=true��
+[22:21:30] [Server thread/INFO] [EldenCombat/]: SERVER_LANDING_PASS: ���ɨ����ã����Է��鶥�� Y=121 ���У�����ײ�֮�·��� NaN��
+Lithium Cached BlockState Flags are disabled!
+[22:21:30] [Server thread/INFO] [EldenCombat/]: SERVER_WEAPON_PASS: 41 ������������ֵ����reach ����䵽�����ϣ�ì 3.9 / ذ�� 2.7 / ���� 3.0������ս����ȫ�����չ����ᵵ 12 �� / �ص� 21 ����
+[22:21:30] [Server thread/INFO] [EldenCombat/]: SERVER_FORGING_PASS: ǿ��/�ʱ�/����ȫ�����ã���λ�����޲�����׷������������Ч��+10 �˺����� ��2.00
+[22:21:30] [Server thread/INFO] [EldenCombat/]: SERVER_BUS_PASS: ÿ tick ֻ�ƽ�һ�Σ�5 tick �� ������ 5 �Σ�
+[22:21:45] [Server thread/INFO] [EldenCombat/]: SERVER_SMOKE_COMPLETE: test datapack had 300 ticks to validate Boss damage/death
+[22:21:45] [Server thread/INFO] [minecraft/MinecraftServer]: Stopping server
+[22:21:45] [Server thread/INFO] [minecraft/MinecraftServer]: Saving players
+[22:21:45] [Server thread/INFO] [minecraft/MinecraftServer]: Saving worlds
+[22:21:45] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[22:21:45] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[22:21:45] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[22:21:45] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[22:21:45] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[22:21:45] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[22:21:45] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage: All dimensions are saved
+
+BUILD SUCCESSFUL in 34s
+9 actionable tasks: 3 executed, 6 up-to-date

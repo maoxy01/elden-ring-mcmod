@@ -1,0 +1,120 @@
+{
+  "status": "passed",
+  "models": 8,
+  "blockbench": "visible cuboids and face UVs match runtime mesh; all references verified",
+  "png": "2048x2048 RGBA decoded",
+  "desktop": "1440x900, all 8 initial views framed",
+  "mobile": "390x844, all 8 framed, no horizontal overflow",
+  "samples": {
+    "sacred_relic_sword": 8154,
+    "marikas_hammer": 34154,
+    "malikeths_black_blade": 22295,
+    "blasphemous_blade": 19769,
+    "hand_of_malenia": 9037,
+    "starscourge_greatsword": 54675,
+    "mohgwyns_sacred_spear": 9203,
+    "morgotts_cursed_sword": 18591
+  },
+  "movingPixels": null,
+  "rotatedPixels": 9967,
+  "errors": [],
+  "gameplayVerified": false,
+  "executionsAllowed": false,
+  "skillJumpAttacksAllowed": true,
+  "structuralChecks": {
+    "eldencombat:sacred_relic_sword": [
+      {
+        "id": "grip_to_blade_or_shaft",
+        "samples": 725,
+        "status": "solid along five axial probe lines"
+      },
+      {
+        "id": "twist_to_tip",
+        "samples": 2805,
+        "status": "solid along five axial probe lines"
+      },
+      {
+        "id": "blade_root_-1_3.5",
+        "samples": 165,
+        "status": "solid along five axial probe lines"
+      },
+      {
+        "id": "blade_root_-1_4.05",
+        "samples": 170,
+        "status": "solid along five axial probe lines"
+      },
+      {
+        "id": "blade_root_1_3.5",
+        "samples": 165,
+        "status": "solid along five axial probe lines"
+      },
+      {
+        "id": "blade_root_1_4.05",
+        "samples": 170,
+        "status": "solid along five axial probe lines"
+      },
+      {
+        "id": "twist_tip_envelope",
+        "samples": 121,
+        "maxWidthDelta": 0.07017536959334014,
+        "maxDepthDelta": 0.06856563164457208,
+        "status": "section envelope continuous within tolerance"
+      }
+    ],
+    "eldencombat:marikas_hammer": [
+      {
+        "id": "grip_to_blade_or_shaft",
+        "samples": 725,
+        "status": "solid along five axial probe lines"
+      }
+    ],
+    "eldencombat:malikeths_black_blade": [
+      {
+        "id": "grip_to_blade_or_shaft",
+        "samples": 725,
+        "status": "solid along five axial probe lines"
+      }
+    ],
+    "eldencombat:blasphemous_blade": [
+      {
+        "id": "grip_to_blade_or_shaft",
+        "samples": 725,
+        "status": "solid along five axial probe lines"
+      }
+    ],
+    "eldencombat:hand_of_malenia": [
+      {
+        "id": "grip_to_blade_or_shaft",
+        "samples": 725,
+        "status": "solid along five axial probe lines"
+      }
+    ],
+    "eldencombat:starscourge_greatsword": [
+      {
+        "id": "grip_to_blade_or_shaft",
+        "samples": 725,
+        "status": "solid along five axial probe lines"
+      }
+    ],
+    "eldencombat:mohgwyns_sacred_spear": [
+      {
+        "id": "grip_to_blade_or_shaft",
+        "samples": 725,
+        "status": "solid along five axial probe lines"
+      }
+    ],
+    "eldencombat:morgotts_cursed_sword": [
+      {
+        "id": "grip_to_blade_or_shaft",
+        "samples": 725,
+        "status": "solid along five axial probe lines"
+      }
+    ]
+  },
+  "profile": "game",
+  "minimumGeometryReduction": 0.8829884011826246,
+  "maximumCubes": 1029,
+  "connectedComponentsPerModel": 1,
+  "bakedMeshValidation": "indices, normals, UVs and nondegenerate triangles passed",
+  "closeupViews": "grip and blade rendered; captions do not cover geometry"
+}

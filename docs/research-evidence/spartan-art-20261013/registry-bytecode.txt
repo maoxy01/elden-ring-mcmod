@@ -1,0 +1,1467 @@
+Compiled from "ModItems.java"
+public class org.xiyu.spartanweaponryunofficial.init.ModItems {
+  public static final net.neoforged.neoforge.registries.DeferredRegister<net.minecraft.world.item.Item> REGISTRY;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> SIMPLE_HANDLE;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> HANDLE;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> SIMPLE_POLE;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> POLE;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> EXPLOSIVE_CHARGE;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> GREASE_BALL;
+
+  public static final org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemsMelee DAGGERS;
+
+  public static final org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemsMelee PARRYING_DAGGERS;
+
+  public static final org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemsMelee LONGSWORDS;
+
+  public static final org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemsMelee KATANAS;
+
+  public static final org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemsMelee SABERS;
+
+  public static final org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemsMelee RAPIERS;
+
+  public static final org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemsMelee GREATSWORDS;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, org.xiyu.spartanweaponryunofficial.item.SwordBaseItem> WOODEN_CLUB;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, org.xiyu.spartanweaponryunofficial.item.SwordBaseItem> STUDDED_CLUB;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, org.xiyu.spartanweaponryunofficial.item.SwordBaseItem> CESTUS;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, org.xiyu.spartanweaponryunofficial.item.SwordBaseItem> STUDDED_CESTUS;
+
+  public static final org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemsMelee BATTLE_HAMMERS;
+
+  public static final org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemsMelee WARHAMMERS;
+
+  public static final org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemsMelee SPEARS;
+
+  public static final org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemsMelee HALBERDS;
+
+  public static final org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemsMelee PIKES;
+
+  public static final org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemsMelee LANCES;
+
+  public static final org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemsRanged LONGBOWS;
+
+  public static final org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemsRanged HEAVY_CROSSBOWS;
+
+  public static final org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemsThrowing THROWING_KNIVES;
+
+  public static final org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemsThrowing TOMAHAWKS;
+
+  public static final org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemsThrowing JAVELINS;
+
+  public static final org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemsThrowing BOOMERANGS;
+
+  public static final org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemsMelee BATTLEAXES;
+
+  public static final org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemsMelee FLANGED_MACES;
+
+  public static final org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemsMelee GLAIVES;
+
+  public static final org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemsMelee QUARTERSTAVES;
+
+  public static final org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemsMelee SCYTHES;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, org.xiyu.spartanweaponryunofficial.item.ArrowBaseItem> WOODEN_ARROW;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, org.xiyu.spartanweaponryunofficial.item.ArrowBaseItem> TIPPED_WOODEN_ARROW;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, org.xiyu.spartanweaponryunofficial.item.ArrowBaseItem> COPPER_ARROW;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, org.xiyu.spartanweaponryunofficial.item.ArrowBaseItem> TIPPED_COPPER_ARROW;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, org.xiyu.spartanweaponryunofficial.item.ArrowBaseItem> IRON_ARROW;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, org.xiyu.spartanweaponryunofficial.item.ArrowBaseItem> TIPPED_IRON_ARROW;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, org.xiyu.spartanweaponryunofficial.item.ArrowBaseItem> DIAMOND_ARROW;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, org.xiyu.spartanweaponryunofficial.item.ArrowBaseItem> TIPPED_DIAMOND_ARROW;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, org.xiyu.spartanweaponryunofficial.item.ArrowBaseItem> NETHERITE_ARROW;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, org.xiyu.spartanweaponryunofficial.item.ArrowBaseItem> TIPPED_NETHERITE_ARROW;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> EXPLOSIVE_ARROW;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, org.xiyu.spartanweaponryunofficial.item.BoltItem> BOLT;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, org.xiyu.spartanweaponryunofficial.item.BoltItem> TIPPED_BOLT;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, org.xiyu.spartanweaponryunofficial.item.BoltItem> SPECTRAL_BOLT;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, org.xiyu.spartanweaponryunofficial.item.BoltItem> COPPER_BOLT;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, org.xiyu.spartanweaponryunofficial.item.BoltItem> TIPPED_COPPER_BOLT;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, org.xiyu.spartanweaponryunofficial.item.BoltItem> DIAMOND_BOLT;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, org.xiyu.spartanweaponryunofficial.item.BoltItem> TIPPED_DIAMOND_BOLT;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, org.xiyu.spartanweaponryunofficial.item.BoltItem> NETHERITE_BOLT;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, org.xiyu.spartanweaponryunofficial.item.BoltItem> TIPPED_NETHERITE_BOLT;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> SMALL_ARROW_QUIVER;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> MEDIUM_ARROW_QUIVER;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> LARGE_ARROW_QUIVER;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> HUGE_ARROW_QUIVER;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> SMALL_BOLT_QUIVER;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> MEDIUM_BOLT_QUIVER;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> LARGE_BOLT_QUIVER;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> HUGE_BOLT_QUIVER;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> QUIVER_COMPARTMENT;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> MEDIUM_QUIVER_BRACE;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> LARGE_QUIVER_BRACE;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> HUGE_QUIVER_BRACE;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> DYNAMITE;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, org.xiyu.spartanweaponryunofficial.item.WeaponOilItem> WEAPON_OIL;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> BLAZE_HEAD;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> ENDERMAN_HEAD;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> SPIDER_HEAD;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> CAVE_SPIDER_HEAD;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> ZOMBIFIED_PIGLIN_HEAD;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> HUSK_HEAD;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> STRAY_SKULL;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> DROWNED_HEAD;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> ILLAGER_HEAD;
+
+  public static final net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, net.minecraft.world.item.Item> WITCH_HEAD;
+
+  public org.xiyu.spartanweaponryunofficial.init.ModItems();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  private static <T extends net.minecraft.world.item.Item> T createClassified(org.xiyu.spartanweaponryunofficial.util.WeaponFactory$WeaponFunction<T>, org.xiyu.spartanweaponryunofficial.api.WeaponMaterial, net.minecraft.world.item.Item$Properties, org.xiyu.spartanweaponryunofficial.api.SpartanWeaponryAPI$WeaponItemType);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokeinterface #7,  3            // InterfaceMethod org/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction.create:(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/minecraft/world/item/Item$Properties;)Lnet/minecraft/world/item/Item;
+       8: aload_3
+       9: aload_1
+      10: invokestatic  #13                 // Method org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI.classifyWeapon:(Lnet/minecraft/world/item/Item;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;)Lnet/minecraft/world/item/Item;
+      13: areturn
+
+  private static <T extends net.minecraft.world.item.Item> org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponMaterialEntry<T> entry(org.xiyu.spartanweaponryunofficial.api.WeaponMaterial, net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, ? extends T>);
+    Code:
+       0: new           #19                 // class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry
+       3: dup
+       4: aload_0
+       5: aload_1
+       6: invokespecial #21                 // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry."<init>":(Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lnet/neoforged/neoforge/registries/DeferredHolder;)V
+       9: areturn
+
+  private static <T extends net.minecraft.world.item.Item> com.google.common.collect.ImmutableMap<java.lang.String, net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, ? extends T>> indexByMaterial(com.google.common.collect.ImmutableList<org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponMaterialEntry<T>>, com.google.common.collect.ImmutableList<org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponMaterialEntry<T>>);
+    Code:
+       0: invokestatic  #24                 // Method com/google/common/collect/ImmutableMap.builder:()Lcom/google/common/collect/ImmutableMap$Builder;
+       3: astore_2
+       4: aload_0
+       5: aload_2
+       6: invokedynamic #30,  0             // InvokeDynamic #0:accept:(Lcom/google/common/collect/ImmutableMap$Builder;)Ljava/util/function/Consumer;
+      11: invokevirtual #34                 // Method com/google/common/collect/ImmutableList.forEach:(Ljava/util/function/Consumer;)V
+      14: aload_1
+      15: aload_2
+      16: invokedynamic #40,  0             // InvokeDynamic #1:accept:(Lcom/google/common/collect/ImmutableMap$Builder;)Ljava/util/function/Consumer;
+      21: invokevirtual #34                 // Method com/google/common/collect/ImmutableList.forEach:(Ljava/util/function/Consumer;)V
+      24: aload_2
+      25: invokevirtual #41                 // Method com/google/common/collect/ImmutableMap$Builder.build:()Lcom/google/common/collect/ImmutableMap;
+      28: areturn
+
+  private static <T extends net.minecraft.world.item.Item> java.util.Optional<net.minecraft.world.item.Item> getItemForMaterial(com.google.common.collect.ImmutableMap<java.lang.String, net.neoforged.neoforge.registries.DeferredHolder<net.minecraft.world.item.Item, ? extends T>>, org.xiyu.spartanweaponryunofficial.api.WeaponMaterial);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #47                 // Method org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.getMaterialName:()Ljava/lang/String;
+       5: invokevirtual #53                 // Method com/google/common/collect/ImmutableMap.get:(Ljava/lang/Object;)Ljava/lang/Object;
+       8: checkcast     #57                 // class net/neoforged/neoforge/registries/DeferredHolder
+      11: astore_2
+      12: aload_2
+      13: ifnonnull     22
+      16: invokestatic  #59                 // Method java/util/Optional.empty:()Ljava/util/Optional;
+      19: goto          32
+      22: aload_2
+      23: invokevirtual #65                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      26: checkcast     #68                 // class net/minecraft/world/item/Item
+      29: invokestatic  #70                 // Method java/util/Optional.of:(Ljava/lang/Object;)Ljava/util/Optional;
+      32: areturn
+
+  private static <T extends net.minecraft.world.item.Item> com.google.common.collect.ImmutableList<T> resolveItems(com.google.common.collect.ImmutableList<org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponMaterialEntry<T>>, com.google.common.collect.ImmutableList<org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponMaterialEntry<T>>);
+    Code:
+       0: invokestatic  #74                 // Method com/google/common/collect/ImmutableList.builder:()Lcom/google/common/collect/ImmutableList$Builder;
+       3: astore_2
+       4: aload_0
+       5: aload_2
+       6: invokedynamic #77,  0             // InvokeDynamic #2:accept:(Lcom/google/common/collect/ImmutableList$Builder;)Ljava/util/function/Consumer;
+      11: invokevirtual #34                 // Method com/google/common/collect/ImmutableList.forEach:(Ljava/util/function/Consumer;)V
+      14: aload_1
+      15: aload_2
+      16: invokedynamic #80,  0             // InvokeDynamic #3:accept:(Lcom/google/common/collect/ImmutableList$Builder;)Ljava/util/function/Consumer;
+      21: invokevirtual #34                 // Method com/google/common/collect/ImmutableList.forEach:(Ljava/util/function/Consumer;)V
+      24: aload_2
+      25: invokevirtual #81                 // Method com/google/common/collect/ImmutableList$Builder.build:()Lcom/google/common/collect/ImmutableList;
+      28: areturn
+
+  private static <T extends net.minecraft.world.item.Item> com.google.common.collect.ImmutableList<net.minecraft.world.item.ItemStack> itemStacks(com.google.common.collect.ImmutableList<org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponMaterialEntry<T>>);
+    Code:
+       0: aload_0
+       1: invokevirtual #86                 // Method com/google/common/collect/ImmutableList.stream:()Ljava/util/stream/Stream;
+       4: invokedynamic #90,  0             // InvokeDynamic #4:apply:()Ljava/util/function/Function;
+       9: invokeinterface #94,  2           // InterfaceMethod java/util/stream/Stream.map:(Ljava/util/function/Function;)Ljava/util/stream/Stream;
+      14: invokestatic  #100                // Method com/google/common/collect/ImmutableList.toImmutableList:()Ljava/util/stream/Collector;
+      17: invokeinterface #104,  2          // InterfaceMethod java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+      22: checkcast     #35                 // class com/google/common/collect/ImmutableList
+      25: areturn
+
+  private static com.google.common.collect.ImmutableList<net.minecraft.world.item.ItemStack> throwingItemStacks(com.google.common.collect.ImmutableList<org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponMaterialEntry<org.xiyu.spartanweaponryunofficial.item.ThrowingWeaponItem>>);
+    Code:
+       0: aload_0
+       1: invokevirtual #86                 // Method com/google/common/collect/ImmutableList.stream:()Ljava/util/stream/Stream;
+       4: invokedynamic #108,  0            // InvokeDynamic #5:apply:()Ljava/util/function/Function;
+       9: invokeinterface #94,  2           // InterfaceMethod java/util/stream/Stream.map:(Ljava/util/function/Function;)Ljava/util/stream/Stream;
+      14: invokestatic  #100                // Method com/google/common/collect/ImmutableList.toImmutableList:()Ljava/util/stream/Collector;
+      17: invokeinterface #104,  2          // InterfaceMethod java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+      22: checkcast     #35                 // class com/google/common/collect/ImmutableList
+      25: areturn
+
+  public static com.google.common.collect.ImmutableList<org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemsMelee> getMeleeWeaponGroups();
+    Code:
+       0: getstatic     #109                // Field DAGGERS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+       3: getstatic     #115                // Field PARRYING_DAGGERS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+       6: getstatic     #118                // Field LONGSWORDS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+       9: getstatic     #121                // Field KATANAS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+      12: getstatic     #124                // Field SABERS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+      15: getstatic     #127                // Field RAPIERS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+      18: getstatic     #130                // Field GREATSWORDS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+      21: getstatic     #133                // Field BATTLE_HAMMERS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+      24: getstatic     #136                // Field WARHAMMERS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+      27: getstatic     #139                // Field SPEARS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+      30: getstatic     #142                // Field HALBERDS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+      33: getstatic     #145                // Field PIKES:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+      36: bipush        6
+      38: anewarray     #148                // class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee
+      41: dup
+      42: iconst_0
+      43: getstatic     #150                // Field LANCES:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+      46: aastore
+      47: dup
+      48: iconst_1
+      49: getstatic     #153                // Field BATTLEAXES:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+      52: aastore
+      53: dup
+      54: iconst_2
+      55: getstatic     #156                // Field FLANGED_MACES:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+      58: aastore
+      59: dup
+      60: iconst_3
+      61: getstatic     #159                // Field GLAIVES:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+      64: aastore
+      65: dup
+      66: iconst_4
+      67: getstatic     #162                // Field QUARTERSTAVES:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+      70: aastore
+      71: dup
+      72: iconst_5
+      73: getstatic     #165                // Field SCYTHES:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+      76: aastore
+      77: invokestatic  #168                // Method com/google/common/collect/ImmutableList.of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
+      80: areturn
+
+  public static com.google.common.collect.ImmutableList<org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemsRanged> getRangedWeaponGroups();
+    Code:
+       0: getstatic     #171                // Field LONGBOWS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged;
+       3: getstatic     #175                // Field HEAVY_CROSSBOWS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged;
+       6: invokestatic  #178                // Method com/google/common/collect/ImmutableList.of:(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
+       9: areturn
+
+  public static com.google.common.collect.ImmutableList<org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemsThrowing> getThrowingWeaponGroups();
+    Code:
+       0: getstatic     #181                // Field THROWING_KNIVES:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsThrowing;
+       3: getstatic     #185                // Field TOMAHAWKS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsThrowing;
+       6: getstatic     #188                // Field JAVELINS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsThrowing;
+       9: getstatic     #191                // Field BOOMERANGS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsThrowing;
+      12: invokestatic  #194                // Method com/google/common/collect/ImmutableList.of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
+      15: areturn
+
+  public static com.google.common.collect.ImmutableList<org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponItemGroup<? extends net.minecraft.world.item.Item>> getWeaponGroups();
+    Code:
+       0: invokestatic  #74                 // Method com/google/common/collect/ImmutableList.builder:()Lcom/google/common/collect/ImmutableList$Builder;
+       3: invokestatic  #197                // Method getMeleeWeaponGroups:()Lcom/google/common/collect/ImmutableList;
+       6: invokevirtual #200                // Method com/google/common/collect/ImmutableList$Builder.addAll:(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableList$Builder;
+       9: invokestatic  #204                // Method getRangedWeaponGroups:()Lcom/google/common/collect/ImmutableList;
+      12: invokevirtual #200                // Method com/google/common/collect/ImmutableList$Builder.addAll:(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableList$Builder;
+      15: invokestatic  #207                // Method getThrowingWeaponGroups:()Lcom/google/common/collect/ImmutableList;
+      18: invokevirtual #200                // Method com/google/common/collect/ImmutableList$Builder.addAll:(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableList$Builder;
+      21: invokevirtual #81                 // Method com/google/common/collect/ImmutableList$Builder.build:()Lcom/google/common/collect/ImmutableList;
+      24: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$57();
+    Code:
+       0: new           #210                // class org/xiyu/spartanweaponryunofficial/item/ExtendedSkullItem
+       3: dup
+       4: getstatic     #212                // Field org/xiyu/spartanweaponryunofficial/init/ModBlocks.WITCH_HEAD:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       7: invokevirtual #65                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      10: checkcast     #218                // class net/minecraft/world/level/block/Block
+      13: getstatic     #220                // Field org/xiyu/spartanweaponryunofficial/init/ModBlocks.WITCH_WALL_HEAD:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      16: invokevirtual #65                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      19: checkcast     #218                // class net/minecraft/world/level/block/Block
+      22: new           #223                // class net/minecraft/world/item/Item$Properties
+      25: dup
+      26: invokespecial #225                // Method net/minecraft/world/item/Item$Properties."<init>":()V
+      29: getstatic     #226                // Field net/minecraft/world/item/Rarity.UNCOMMON:Lnet/minecraft/world/item/Rarity;
+      32: invokevirtual #232                // Method net/minecraft/world/item/Item$Properties.rarity:(Lnet/minecraft/world/item/Rarity;)Lnet/minecraft/world/item/Item$Properties;
+      35: getstatic     #236                // Field net/minecraft/core/Direction.DOWN:Lnet/minecraft/core/Direction;
+      38: invokespecial #242                // Method org/xiyu/spartanweaponryunofficial/item/ExtendedSkullItem."<init>":(Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/item/Item$Properties;Lnet/minecraft/core/Direction;)V
+      41: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$56();
+    Code:
+       0: new           #210                // class org/xiyu/spartanweaponryunofficial/item/ExtendedSkullItem
+       3: dup
+       4: getstatic     #245                // Field org/xiyu/spartanweaponryunofficial/init/ModBlocks.ILLAGER_HEAD:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       7: invokevirtual #65                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      10: checkcast     #218                // class net/minecraft/world/level/block/Block
+      13: getstatic     #248                // Field org/xiyu/spartanweaponryunofficial/init/ModBlocks.ILLAGER_WALL_HEAD:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      16: invokevirtual #65                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      19: checkcast     #218                // class net/minecraft/world/level/block/Block
+      22: new           #223                // class net/minecraft/world/item/Item$Properties
+      25: dup
+      26: invokespecial #225                // Method net/minecraft/world/item/Item$Properties."<init>":()V
+      29: getstatic     #226                // Field net/minecraft/world/item/Rarity.UNCOMMON:Lnet/minecraft/world/item/Rarity;
+      32: invokevirtual #232                // Method net/minecraft/world/item/Item$Properties.rarity:(Lnet/minecraft/world/item/Rarity;)Lnet/minecraft/world/item/Item$Properties;
+      35: getstatic     #236                // Field net/minecraft/core/Direction.DOWN:Lnet/minecraft/core/Direction;
+      38: invokespecial #242                // Method org/xiyu/spartanweaponryunofficial/item/ExtendedSkullItem."<init>":(Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/item/Item$Properties;Lnet/minecraft/core/Direction;)V
+      41: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$55();
+    Code:
+       0: new           #210                // class org/xiyu/spartanweaponryunofficial/item/ExtendedSkullItem
+       3: dup
+       4: getstatic     #251                // Field org/xiyu/spartanweaponryunofficial/init/ModBlocks.DROWNED_HEAD:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       7: invokevirtual #65                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      10: checkcast     #218                // class net/minecraft/world/level/block/Block
+      13: getstatic     #254                // Field org/xiyu/spartanweaponryunofficial/init/ModBlocks.DROWNED_WALL_HEAD:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      16: invokevirtual #65                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      19: checkcast     #218                // class net/minecraft/world/level/block/Block
+      22: new           #223                // class net/minecraft/world/item/Item$Properties
+      25: dup
+      26: invokespecial #225                // Method net/minecraft/world/item/Item$Properties."<init>":()V
+      29: getstatic     #226                // Field net/minecraft/world/item/Rarity.UNCOMMON:Lnet/minecraft/world/item/Rarity;
+      32: invokevirtual #232                // Method net/minecraft/world/item/Item$Properties.rarity:(Lnet/minecraft/world/item/Rarity;)Lnet/minecraft/world/item/Item$Properties;
+      35: getstatic     #236                // Field net/minecraft/core/Direction.DOWN:Lnet/minecraft/core/Direction;
+      38: invokespecial #242                // Method org/xiyu/spartanweaponryunofficial/item/ExtendedSkullItem."<init>":(Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/item/Item$Properties;Lnet/minecraft/core/Direction;)V
+      41: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$54();
+    Code:
+       0: new           #210                // class org/xiyu/spartanweaponryunofficial/item/ExtendedSkullItem
+       3: dup
+       4: getstatic     #257                // Field org/xiyu/spartanweaponryunofficial/init/ModBlocks.STRAY_SKULL:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       7: invokevirtual #65                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      10: checkcast     #218                // class net/minecraft/world/level/block/Block
+      13: getstatic     #260                // Field org/xiyu/spartanweaponryunofficial/init/ModBlocks.STRAY_WALL_SKULL:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      16: invokevirtual #65                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      19: checkcast     #218                // class net/minecraft/world/level/block/Block
+      22: new           #223                // class net/minecraft/world/item/Item$Properties
+      25: dup
+      26: invokespecial #225                // Method net/minecraft/world/item/Item$Properties."<init>":()V
+      29: getstatic     #226                // Field net/minecraft/world/item/Rarity.UNCOMMON:Lnet/minecraft/world/item/Rarity;
+      32: invokevirtual #232                // Method net/minecraft/world/item/Item$Properties.rarity:(Lnet/minecraft/world/item/Rarity;)Lnet/minecraft/world/item/Item$Properties;
+      35: getstatic     #236                // Field net/minecraft/core/Direction.DOWN:Lnet/minecraft/core/Direction;
+      38: invokespecial #242                // Method org/xiyu/spartanweaponryunofficial/item/ExtendedSkullItem."<init>":(Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/item/Item$Properties;Lnet/minecraft/core/Direction;)V
+      41: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$53();
+    Code:
+       0: new           #210                // class org/xiyu/spartanweaponryunofficial/item/ExtendedSkullItem
+       3: dup
+       4: getstatic     #263                // Field org/xiyu/spartanweaponryunofficial/init/ModBlocks.HUSK_HEAD:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       7: invokevirtual #65                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      10: checkcast     #218                // class net/minecraft/world/level/block/Block
+      13: getstatic     #266                // Field org/xiyu/spartanweaponryunofficial/init/ModBlocks.HUSK_WALL_HEAD:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      16: invokevirtual #65                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      19: checkcast     #218                // class net/minecraft/world/level/block/Block
+      22: new           #223                // class net/minecraft/world/item/Item$Properties
+      25: dup
+      26: invokespecial #225                // Method net/minecraft/world/item/Item$Properties."<init>":()V
+      29: getstatic     #226                // Field net/minecraft/world/item/Rarity.UNCOMMON:Lnet/minecraft/world/item/Rarity;
+      32: invokevirtual #232                // Method net/minecraft/world/item/Item$Properties.rarity:(Lnet/minecraft/world/item/Rarity;)Lnet/minecraft/world/item/Item$Properties;
+      35: getstatic     #236                // Field net/minecraft/core/Direction.DOWN:Lnet/minecraft/core/Direction;
+      38: invokespecial #242                // Method org/xiyu/spartanweaponryunofficial/item/ExtendedSkullItem."<init>":(Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/item/Item$Properties;Lnet/minecraft/core/Direction;)V
+      41: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$52();
+    Code:
+       0: new           #210                // class org/xiyu/spartanweaponryunofficial/item/ExtendedSkullItem
+       3: dup
+       4: getstatic     #269                // Field org/xiyu/spartanweaponryunofficial/init/ModBlocks.ZOMBIFIED_PIGLIN_HEAD:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       7: invokevirtual #65                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      10: checkcast     #218                // class net/minecraft/world/level/block/Block
+      13: getstatic     #272                // Field org/xiyu/spartanweaponryunofficial/init/ModBlocks.ZOMBIFIED_PIGLIN_WALL_HEAD:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      16: invokevirtual #65                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      19: checkcast     #218                // class net/minecraft/world/level/block/Block
+      22: new           #223                // class net/minecraft/world/item/Item$Properties
+      25: dup
+      26: invokespecial #225                // Method net/minecraft/world/item/Item$Properties."<init>":()V
+      29: getstatic     #226                // Field net/minecraft/world/item/Rarity.UNCOMMON:Lnet/minecraft/world/item/Rarity;
+      32: invokevirtual #232                // Method net/minecraft/world/item/Item$Properties.rarity:(Lnet/minecraft/world/item/Rarity;)Lnet/minecraft/world/item/Item$Properties;
+      35: getstatic     #236                // Field net/minecraft/core/Direction.DOWN:Lnet/minecraft/core/Direction;
+      38: invokespecial #242                // Method org/xiyu/spartanweaponryunofficial/item/ExtendedSkullItem."<init>":(Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/item/Item$Properties;Lnet/minecraft/core/Direction;)V
+      41: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$51();
+    Code:
+       0: new           #210                // class org/xiyu/spartanweaponryunofficial/item/ExtendedSkullItem
+       3: dup
+       4: getstatic     #275                // Field org/xiyu/spartanweaponryunofficial/init/ModBlocks.CAVE_SPIDER_HEAD:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       7: invokevirtual #65                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      10: checkcast     #218                // class net/minecraft/world/level/block/Block
+      13: getstatic     #278                // Field org/xiyu/spartanweaponryunofficial/init/ModBlocks.CAVE_SPIDER_WALL_HEAD:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      16: invokevirtual #65                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      19: checkcast     #218                // class net/minecraft/world/level/block/Block
+      22: new           #223                // class net/minecraft/world/item/Item$Properties
+      25: dup
+      26: invokespecial #225                // Method net/minecraft/world/item/Item$Properties."<init>":()V
+      29: getstatic     #226                // Field net/minecraft/world/item/Rarity.UNCOMMON:Lnet/minecraft/world/item/Rarity;
+      32: invokevirtual #232                // Method net/minecraft/world/item/Item$Properties.rarity:(Lnet/minecraft/world/item/Rarity;)Lnet/minecraft/world/item/Item$Properties;
+      35: getstatic     #236                // Field net/minecraft/core/Direction.DOWN:Lnet/minecraft/core/Direction;
+      38: invokespecial #242                // Method org/xiyu/spartanweaponryunofficial/item/ExtendedSkullItem."<init>":(Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/item/Item$Properties;Lnet/minecraft/core/Direction;)V
+      41: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$50();
+    Code:
+       0: new           #210                // class org/xiyu/spartanweaponryunofficial/item/ExtendedSkullItem
+       3: dup
+       4: getstatic     #281                // Field org/xiyu/spartanweaponryunofficial/init/ModBlocks.SPIDER_HEAD:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       7: invokevirtual #65                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      10: checkcast     #218                // class net/minecraft/world/level/block/Block
+      13: getstatic     #284                // Field org/xiyu/spartanweaponryunofficial/init/ModBlocks.SPIDER_WALL_HEAD:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      16: invokevirtual #65                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      19: checkcast     #218                // class net/minecraft/world/level/block/Block
+      22: new           #223                // class net/minecraft/world/item/Item$Properties
+      25: dup
+      26: invokespecial #225                // Method net/minecraft/world/item/Item$Properties."<init>":()V
+      29: getstatic     #226                // Field net/minecraft/world/item/Rarity.UNCOMMON:Lnet/minecraft/world/item/Rarity;
+      32: invokevirtual #232                // Method net/minecraft/world/item/Item$Properties.rarity:(Lnet/minecraft/world/item/Rarity;)Lnet/minecraft/world/item/Item$Properties;
+      35: getstatic     #236                // Field net/minecraft/core/Direction.DOWN:Lnet/minecraft/core/Direction;
+      38: invokespecial #242                // Method org/xiyu/spartanweaponryunofficial/item/ExtendedSkullItem."<init>":(Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/item/Item$Properties;Lnet/minecraft/core/Direction;)V
+      41: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$49();
+    Code:
+       0: new           #210                // class org/xiyu/spartanweaponryunofficial/item/ExtendedSkullItem
+       3: dup
+       4: getstatic     #287                // Field org/xiyu/spartanweaponryunofficial/init/ModBlocks.ENDERMAN_HEAD:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       7: invokevirtual #65                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      10: checkcast     #218                // class net/minecraft/world/level/block/Block
+      13: getstatic     #290                // Field org/xiyu/spartanweaponryunofficial/init/ModBlocks.ENDERMAN_WALL_HEAD:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      16: invokevirtual #65                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      19: checkcast     #218                // class net/minecraft/world/level/block/Block
+      22: new           #223                // class net/minecraft/world/item/Item$Properties
+      25: dup
+      26: invokespecial #225                // Method net/minecraft/world/item/Item$Properties."<init>":()V
+      29: getstatic     #226                // Field net/minecraft/world/item/Rarity.UNCOMMON:Lnet/minecraft/world/item/Rarity;
+      32: invokevirtual #232                // Method net/minecraft/world/item/Item$Properties.rarity:(Lnet/minecraft/world/item/Rarity;)Lnet/minecraft/world/item/Item$Properties;
+      35: getstatic     #236                // Field net/minecraft/core/Direction.DOWN:Lnet/minecraft/core/Direction;
+      38: invokespecial #242                // Method org/xiyu/spartanweaponryunofficial/item/ExtendedSkullItem."<init>":(Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/item/Item$Properties;Lnet/minecraft/core/Direction;)V
+      41: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$48();
+    Code:
+       0: new           #210                // class org/xiyu/spartanweaponryunofficial/item/ExtendedSkullItem
+       3: dup
+       4: getstatic     #293                // Field org/xiyu/spartanweaponryunofficial/init/ModBlocks.BLAZE_HEAD:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       7: invokevirtual #65                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      10: checkcast     #218                // class net/minecraft/world/level/block/Block
+      13: getstatic     #296                // Field org/xiyu/spartanweaponryunofficial/init/ModBlocks.BLAZE_WALL_HEAD:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      16: invokevirtual #65                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      19: checkcast     #218                // class net/minecraft/world/level/block/Block
+      22: new           #223                // class net/minecraft/world/item/Item$Properties
+      25: dup
+      26: invokespecial #225                // Method net/minecraft/world/item/Item$Properties."<init>":()V
+      29: getstatic     #226                // Field net/minecraft/world/item/Rarity.UNCOMMON:Lnet/minecraft/world/item/Rarity;
+      32: invokevirtual #232                // Method net/minecraft/world/item/Item$Properties.rarity:(Lnet/minecraft/world/item/Rarity;)Lnet/minecraft/world/item/Item$Properties;
+      35: getstatic     #236                // Field net/minecraft/core/Direction.DOWN:Lnet/minecraft/core/Direction;
+      38: invokespecial #242                // Method org/xiyu/spartanweaponryunofficial/item/ExtendedSkullItem."<init>":(Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/level/block/Block;Lnet/minecraft/world/item/Item$Properties;Lnet/minecraft/core/Direction;)V
+      41: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$47();
+    Code:
+       0: new           #299                // class org/xiyu/spartanweaponryunofficial/item/DynamiteItem
+       3: dup
+       4: new           #223                // class net/minecraft/world/item/Item$Properties
+       7: dup
+       8: invokespecial #225                // Method net/minecraft/world/item/Item$Properties."<init>":()V
+      11: invokespecial #301                // Method org/xiyu/spartanweaponryunofficial/item/DynamiteItem."<init>":(Lnet/minecraft/world/item/Item$Properties;)V
+      14: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$46();
+    Code:
+       0: new           #304                // class org/xiyu/spartanweaponryunofficial/item/BasicItem
+       3: dup
+       4: new           #223                // class net/minecraft/world/item/Item$Properties
+       7: dup
+       8: invokespecial #225                // Method net/minecraft/world/item/Item$Properties."<init>":()V
+      11: invokespecial #306                // Method org/xiyu/spartanweaponryunofficial/item/BasicItem."<init>":(Lnet/minecraft/world/item/Item$Properties;)V
+      14: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$45();
+    Code:
+       0: new           #304                // class org/xiyu/spartanweaponryunofficial/item/BasicItem
+       3: dup
+       4: new           #223                // class net/minecraft/world/item/Item$Properties
+       7: dup
+       8: invokespecial #225                // Method net/minecraft/world/item/Item$Properties."<init>":()V
+      11: invokespecial #306                // Method org/xiyu/spartanweaponryunofficial/item/BasicItem."<init>":(Lnet/minecraft/world/item/Item$Properties;)V
+      14: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$44();
+    Code:
+       0: new           #304                // class org/xiyu/spartanweaponryunofficial/item/BasicItem
+       3: dup
+       4: new           #223                // class net/minecraft/world/item/Item$Properties
+       7: dup
+       8: invokespecial #225                // Method net/minecraft/world/item/Item$Properties."<init>":()V
+      11: invokespecial #306                // Method org/xiyu/spartanweaponryunofficial/item/BasicItem."<init>":(Lnet/minecraft/world/item/Item$Properties;)V
+      14: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$43();
+    Code:
+       0: new           #307                // class org/xiyu/spartanweaponryunofficial/item/QuiverBoltItem
+       3: dup
+       4: bipush        12
+       6: invokespecial #311                // Method org/xiyu/spartanweaponryunofficial/item/QuiverBoltItem."<init>":(I)V
+       9: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$42();
+    Code:
+       0: new           #307                // class org/xiyu/spartanweaponryunofficial/item/QuiverBoltItem
+       3: dup
+       4: bipush        9
+       6: invokespecial #311                // Method org/xiyu/spartanweaponryunofficial/item/QuiverBoltItem."<init>":(I)V
+       9: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$41();
+    Code:
+       0: new           #307                // class org/xiyu/spartanweaponryunofficial/item/QuiverBoltItem
+       3: dup
+       4: bipush        6
+       6: invokespecial #311                // Method org/xiyu/spartanweaponryunofficial/item/QuiverBoltItem."<init>":(I)V
+       9: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$40();
+    Code:
+       0: new           #307                // class org/xiyu/spartanweaponryunofficial/item/QuiverBoltItem
+       3: dup
+       4: iconst_4
+       5: invokespecial #311                // Method org/xiyu/spartanweaponryunofficial/item/QuiverBoltItem."<init>":(I)V
+       8: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$39();
+    Code:
+       0: new           #314                // class org/xiyu/spartanweaponryunofficial/item/QuiverArrowItem
+       3: dup
+       4: bipush        12
+       6: invokespecial #316                // Method org/xiyu/spartanweaponryunofficial/item/QuiverArrowItem."<init>":(I)V
+       9: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$38();
+    Code:
+       0: new           #314                // class org/xiyu/spartanweaponryunofficial/item/QuiverArrowItem
+       3: dup
+       4: bipush        9
+       6: invokespecial #316                // Method org/xiyu/spartanweaponryunofficial/item/QuiverArrowItem."<init>":(I)V
+       9: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$37();
+    Code:
+       0: new           #314                // class org/xiyu/spartanweaponryunofficial/item/QuiverArrowItem
+       3: dup
+       4: bipush        6
+       6: invokespecial #316                // Method org/xiyu/spartanweaponryunofficial/item/QuiverArrowItem."<init>":(I)V
+       9: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$36();
+    Code:
+       0: new           #314                // class org/xiyu/spartanweaponryunofficial/item/QuiverArrowItem
+       3: dup
+       4: iconst_4
+       5: invokespecial #316                // Method org/xiyu/spartanweaponryunofficial/item/QuiverArrowItem."<init>":(I)V
+       8: areturn
+
+  private static org.xiyu.spartanweaponryunofficial.item.BoltItem lambda$static$35();
+    Code:
+       0: new           #317                // class org/xiyu/spartanweaponryunofficial/item/BoltTippedItem
+       3: dup
+       4: ldc_w         #319                // String netherite_bolt
+       7: ldc_w         #321                // float 5.5f
+      10: fconst_1
+      11: ldc_w         #322                // float 0.5f
+      14: invokespecial #323                // Method org/xiyu/spartanweaponryunofficial/item/BoltTippedItem."<init>":(Ljava/lang/String;FFF)V
+      17: areturn
+
+  private static org.xiyu.spartanweaponryunofficial.item.BoltItem lambda$static$34();
+    Code:
+       0: new           #326                // class org/xiyu/spartanweaponryunofficial/item/BoltItem
+       3: dup
+       4: ldc_w         #321                // float 5.5f
+       7: fconst_1
+       8: ldc_w         #322                // float 0.5f
+      11: invokespecial #328                // Method org/xiyu/spartanweaponryunofficial/item/BoltItem."<init>":(FFF)V
+      14: areturn
+
+  private static org.xiyu.spartanweaponryunofficial.item.BoltItem lambda$static$33();
+    Code:
+       0: new           #317                // class org/xiyu/spartanweaponryunofficial/item/BoltTippedItem
+       3: dup
+       4: ldc_w         #331                // String diamond_bolt
+       7: ldc_w         #333                // float 5.0f
+      10: fconst_1
+      11: ldc_w         #322                // float 0.5f
+      14: invokespecial #323                // Method org/xiyu/spartanweaponryunofficial/item/BoltTippedItem."<init>":(Ljava/lang/String;FFF)V
+      17: areturn
+
+  private static org.xiyu.spartanweaponryunofficial.item.BoltItem lambda$static$32();
+    Code:
+       0: new           #326                // class org/xiyu/spartanweaponryunofficial/item/BoltItem
+       3: dup
+       4: ldc_w         #333                // float 5.0f
+       7: fconst_1
+       8: ldc_w         #322                // float 0.5f
+      11: invokespecial #328                // Method org/xiyu/spartanweaponryunofficial/item/BoltItem."<init>":(FFF)V
+      14: areturn
+
+  private static org.xiyu.spartanweaponryunofficial.item.BoltItem lambda$static$31();
+    Code:
+       0: new           #317                // class org/xiyu/spartanweaponryunofficial/item/BoltTippedItem
+       3: dup
+       4: ldc_w         #334                // String copper_bolt
+       7: ldc_w         #336                // float 3.5f
+      10: fconst_1
+      11: ldc_w         #337                // float 0.125f
+      14: invokespecial #323                // Method org/xiyu/spartanweaponryunofficial/item/BoltTippedItem."<init>":(Ljava/lang/String;FFF)V
+      17: areturn
+
+  private static org.xiyu.spartanweaponryunofficial.item.BoltItem lambda$static$30();
+    Code:
+       0: new           #326                // class org/xiyu/spartanweaponryunofficial/item/BoltItem
+       3: dup
+       4: ldc_w         #336                // float 3.5f
+       7: fconst_1
+       8: ldc_w         #337                // float 0.125f
+      11: invokespecial #328                // Method org/xiyu/spartanweaponryunofficial/item/BoltItem."<init>":(FFF)V
+      14: areturn
+
+  private static org.xiyu.spartanweaponryunofficial.item.BoltItem lambda$static$29();
+    Code:
+       0: new           #338                // class org/xiyu/spartanweaponryunofficial/item/BoltSpectralItem
+       3: dup
+       4: ldc_w         #340                // float 4.0f
+       7: fconst_1
+       8: ldc_w         #341                // float 0.25f
+      11: invokespecial #342                // Method org/xiyu/spartanweaponryunofficial/item/BoltSpectralItem."<init>":(FFF)V
+      14: areturn
+
+  private static org.xiyu.spartanweaponryunofficial.item.BoltItem lambda$static$28();
+    Code:
+       0: new           #317                // class org/xiyu/spartanweaponryunofficial/item/BoltTippedItem
+       3: dup
+       4: ldc_w         #343                // String bolt
+       7: ldc_w         #340                // float 4.0f
+      10: fconst_1
+      11: ldc_w         #341                // float 0.25f
+      14: invokespecial #323                // Method org/xiyu/spartanweaponryunofficial/item/BoltTippedItem."<init>":(Ljava/lang/String;FFF)V
+      17: areturn
+
+  private static org.xiyu.spartanweaponryunofficial.item.BoltItem lambda$static$27();
+    Code:
+       0: new           #326                // class org/xiyu/spartanweaponryunofficial/item/BoltItem
+       3: dup
+       4: ldc_w         #340                // float 4.0f
+       7: fconst_1
+       8: ldc_w         #341                // float 0.25f
+      11: invokespecial #328                // Method org/xiyu/spartanweaponryunofficial/item/BoltItem."<init>":(FFF)V
+      14: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$26();
+    Code:
+       0: new           #345                // class org/xiyu/spartanweaponryunofficial/item/ArrowExplosiveItem
+       3: dup
+       4: fconst_1
+       5: invokespecial #347                // Method org/xiyu/spartanweaponryunofficial/item/ArrowExplosiveItem."<init>":(F)V
+       8: areturn
+
+  private static org.xiyu.spartanweaponryunofficial.item.ArrowBaseItem lambda$static$25();
+    Code:
+       0: new           #350                // class org/xiyu/spartanweaponryunofficial/item/ArrowBaseTippedItem
+       3: dup
+       4: ldc_w         #352                // String netherite_arrow
+       7: ldc_w         #340                // float 4.0f
+      10: ldc_w         #354                // float 1.25f
+      13: invokespecial #355                // Method org/xiyu/spartanweaponryunofficial/item/ArrowBaseTippedItem."<init>":(Ljava/lang/String;FF)V
+      16: areturn
+
+  private static org.xiyu.spartanweaponryunofficial.item.ArrowBaseItem lambda$static$24();
+    Code:
+       0: new           #358                // class org/xiyu/spartanweaponryunofficial/item/ArrowBaseItem
+       3: dup
+       4: ldc_w         #340                // float 4.0f
+       7: ldc_w         #354                // float 1.25f
+      10: invokespecial #360                // Method org/xiyu/spartanweaponryunofficial/item/ArrowBaseItem."<init>":(FF)V
+      13: areturn
+
+  private static org.xiyu.spartanweaponryunofficial.item.ArrowBaseItem lambda$static$23();
+    Code:
+       0: new           #350                // class org/xiyu/spartanweaponryunofficial/item/ArrowBaseTippedItem
+       3: dup
+       4: ldc_w         #363                // String diamond_arrow
+       7: ldc_w         #336                // float 3.5f
+      10: ldc_w         #354                // float 1.25f
+      13: invokespecial #355                // Method org/xiyu/spartanweaponryunofficial/item/ArrowBaseTippedItem."<init>":(Ljava/lang/String;FF)V
+      16: areturn
+
+  private static org.xiyu.spartanweaponryunofficial.item.ArrowBaseItem lambda$static$22();
+    Code:
+       0: new           #358                // class org/xiyu/spartanweaponryunofficial/item/ArrowBaseItem
+       3: dup
+       4: ldc_w         #336                // float 3.5f
+       7: ldc_w         #354                // float 1.25f
+      10: invokespecial #360                // Method org/xiyu/spartanweaponryunofficial/item/ArrowBaseItem."<init>":(FF)V
+      13: areturn
+
+  private static org.xiyu.spartanweaponryunofficial.item.ArrowBaseItem lambda$static$21();
+    Code:
+       0: new           #350                // class org/xiyu/spartanweaponryunofficial/item/ArrowBaseTippedItem
+       3: dup
+       4: ldc_w         #365                // String iron_arrow
+       7: ldc_w         #367                // float 3.0f
+      10: ldc_w         #368                // float 0.75f
+      13: invokespecial #355                // Method org/xiyu/spartanweaponryunofficial/item/ArrowBaseTippedItem."<init>":(Ljava/lang/String;FF)V
+      16: areturn
+
+  private static org.xiyu.spartanweaponryunofficial.item.ArrowBaseItem lambda$static$20();
+    Code:
+       0: new           #358                // class org/xiyu/spartanweaponryunofficial/item/ArrowBaseItem
+       3: dup
+       4: ldc_w         #367                // float 3.0f
+       7: ldc_w         #368                // float 0.75f
+      10: invokespecial #360                // Method org/xiyu/spartanweaponryunofficial/item/ArrowBaseItem."<init>":(FF)V
+      13: areturn
+
+  private static org.xiyu.spartanweaponryunofficial.item.ArrowBaseItem lambda$static$19();
+    Code:
+       0: new           #350                // class org/xiyu/spartanweaponryunofficial/item/ArrowBaseTippedItem
+       3: dup
+       4: ldc_w         #369                // String copper_arrow
+       7: ldc_w         #371                // float 2.5f
+      10: ldc_w         #372                // float 0.85f
+      13: invokespecial #355                // Method org/xiyu/spartanweaponryunofficial/item/ArrowBaseTippedItem."<init>":(Ljava/lang/String;FF)V
+      16: areturn
+
+  private static org.xiyu.spartanweaponryunofficial.item.ArrowBaseItem lambda$static$18();
+    Code:
+       0: new           #358                // class org/xiyu/spartanweaponryunofficial/item/ArrowBaseItem
+       3: dup
+       4: ldc_w         #371                // float 2.5f
+       7: ldc_w         #372                // float 0.85f
+      10: invokespecial #360                // Method org/xiyu/spartanweaponryunofficial/item/ArrowBaseItem."<init>":(FF)V
+      13: areturn
+
+  private static org.xiyu.spartanweaponryunofficial.item.ArrowBaseItem lambda$static$17();
+    Code:
+       0: new           #350                // class org/xiyu/spartanweaponryunofficial/item/ArrowBaseTippedItem
+       3: dup
+       4: ldc_w         #373                // String wooden_arrow
+       7: ldc_w         #375                // float 0.2f
+      10: ldc_w         #376                // float 1.5f
+      13: invokespecial #355                // Method org/xiyu/spartanweaponryunofficial/item/ArrowBaseTippedItem."<init>":(Ljava/lang/String;FF)V
+      16: areturn
+
+  private static org.xiyu.spartanweaponryunofficial.item.ArrowBaseItem lambda$static$16();
+    Code:
+       0: new           #358                // class org/xiyu/spartanweaponryunofficial/item/ArrowBaseItem
+       3: dup
+       4: ldc_w         #375                // float 0.2f
+       7: ldc_w         #376                // float 1.5f
+      10: invokespecial #360                // Method org/xiyu/spartanweaponryunofficial/item/ArrowBaseItem."<init>":(FF)V
+      13: areturn
+
+  private static org.xiyu.spartanweaponryunofficial.item.SwordBaseItem lambda$static$15();
+    Code:
+       0: new           #377                // class org/xiyu/spartanweaponryunofficial/item/SwordBaseItem
+       3: dup
+       4: new           #223                // class net/minecraft/world/item/Item$Properties
+       7: dup
+       8: invokespecial #225                // Method net/minecraft/world/item/Item$Properties."<init>":()V
+      11: getstatic     #379                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.IRON:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+      14: getstatic     #383                // Field org/xiyu/spartanweaponryunofficial/util/WeaponArchetype.CESTUS:Lorg/xiyu/spartanweaponryunofficial/util/WeaponArchetype;
+      17: fconst_2
+      18: ldc_w         #322                // float 0.5f
+      21: ldc2_w        #389                // double 3.5d
+      24: invokespecial #391                // Method org/xiyu/spartanweaponryunofficial/item/SwordBaseItem."<init>":(Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lorg/xiyu/spartanweaponryunofficial/util/WeaponArchetype;FFD)V
+      27: areturn
+
+  private static org.xiyu.spartanweaponryunofficial.item.SwordBaseItem lambda$static$14();
+    Code:
+       0: new           #377                // class org/xiyu/spartanweaponryunofficial/item/SwordBaseItem
+       3: dup
+       4: new           #223                // class net/minecraft/world/item/Item$Properties
+       7: dup
+       8: invokespecial #225                // Method net/minecraft/world/item/Item$Properties."<init>":()V
+      11: getstatic     #394                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.LEATHER:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+      14: getstatic     #383                // Field org/xiyu/spartanweaponryunofficial/util/WeaponArchetype.CESTUS:Lorg/xiyu/spartanweaponryunofficial/util/WeaponArchetype;
+      17: fconst_2
+      18: ldc_w         #322                // float 0.5f
+      21: ldc2_w        #389                // double 3.5d
+      24: invokespecial #391                // Method org/xiyu/spartanweaponryunofficial/item/SwordBaseItem."<init>":(Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lorg/xiyu/spartanweaponryunofficial/util/WeaponArchetype;FFD)V
+      27: areturn
+
+  private static org.xiyu.spartanweaponryunofficial.item.SwordBaseItem lambda$static$13();
+    Code:
+       0: new           #377                // class org/xiyu/spartanweaponryunofficial/item/SwordBaseItem
+       3: dup
+       4: new           #223                // class net/minecraft/world/item/Item$Properties
+       7: dup
+       8: invokespecial #225                // Method net/minecraft/world/item/Item$Properties."<init>":()V
+      11: getstatic     #379                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.IRON:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+      14: getstatic     #397                // Field org/xiyu/spartanweaponryunofficial/util/WeaponArchetype.CLUB:Lorg/xiyu/spartanweaponryunofficial/util/WeaponArchetype;
+      17: ldc_w         #340                // float 4.0f
+      20: fconst_1
+      21: ldc2_w        #400                // double 1.2999999523162842d
+      24: invokespecial #391                // Method org/xiyu/spartanweaponryunofficial/item/SwordBaseItem."<init>":(Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lorg/xiyu/spartanweaponryunofficial/util/WeaponArchetype;FFD)V
+      27: areturn
+
+  private static org.xiyu.spartanweaponryunofficial.item.SwordBaseItem lambda$static$12();
+    Code:
+       0: new           #377                // class org/xiyu/spartanweaponryunofficial/item/SwordBaseItem
+       3: dup
+       4: new           #223                // class net/minecraft/world/item/Item$Properties
+       7: dup
+       8: invokespecial #225                // Method net/minecraft/world/item/Item$Properties."<init>":()V
+      11: getstatic     #402                // Field org/xiyu/spartanweaponryunofficial/api/WeaponMaterial.WOOD:Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;
+      14: getstatic     #397                // Field org/xiyu/spartanweaponryunofficial/util/WeaponArchetype.CLUB:Lorg/xiyu/spartanweaponryunofficial/util/WeaponArchetype;
+      17: ldc_w         #340                // float 4.0f
+      20: fconst_1
+      21: ldc2_w        #400                // double 1.2999999523162842d
+      24: invokespecial #391                // Method org/xiyu/spartanweaponryunofficial/item/SwordBaseItem."<init>":(Lnet/minecraft/world/item/Item$Properties;Lorg/xiyu/spartanweaponryunofficial/api/WeaponMaterial;Lorg/xiyu/spartanweaponryunofficial/util/WeaponArchetype;FFD)V
+      27: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$11();
+    Code:
+       0: new           #304                // class org/xiyu/spartanweaponryunofficial/item/BasicItem
+       3: dup
+       4: new           #223                // class net/minecraft/world/item/Item$Properties
+       7: dup
+       8: invokespecial #225                // Method net/minecraft/world/item/Item$Properties."<init>":()V
+      11: invokespecial #306                // Method org/xiyu/spartanweaponryunofficial/item/BasicItem."<init>":(Lnet/minecraft/world/item/Item$Properties;)V
+      14: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$10();
+    Code:
+       0: new           #304                // class org/xiyu/spartanweaponryunofficial/item/BasicItem
+       3: dup
+       4: new           #223                // class net/minecraft/world/item/Item$Properties
+       7: dup
+       8: invokespecial #225                // Method net/minecraft/world/item/Item$Properties."<init>":()V
+      11: invokespecial #306                // Method org/xiyu/spartanweaponryunofficial/item/BasicItem."<init>":(Lnet/minecraft/world/item/Item$Properties;)V
+      14: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$9();
+    Code:
+       0: new           #304                // class org/xiyu/spartanweaponryunofficial/item/BasicItem
+       3: dup
+       4: new           #223                // class net/minecraft/world/item/Item$Properties
+       7: dup
+       8: invokespecial #225                // Method net/minecraft/world/item/Item$Properties."<init>":()V
+      11: invokespecial #306                // Method org/xiyu/spartanweaponryunofficial/item/BasicItem."<init>":(Lnet/minecraft/world/item/Item$Properties;)V
+      14: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$8();
+    Code:
+       0: new           #304                // class org/xiyu/spartanweaponryunofficial/item/BasicItem
+       3: dup
+       4: new           #223                // class net/minecraft/world/item/Item$Properties
+       7: dup
+       8: invokespecial #225                // Method net/minecraft/world/item/Item$Properties."<init>":()V
+      11: invokespecial #306                // Method org/xiyu/spartanweaponryunofficial/item/BasicItem."<init>":(Lnet/minecraft/world/item/Item$Properties;)V
+      14: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$7();
+    Code:
+       0: new           #304                // class org/xiyu/spartanweaponryunofficial/item/BasicItem
+       3: dup
+       4: new           #223                // class net/minecraft/world/item/Item$Properties
+       7: dup
+       8: invokespecial #225                // Method net/minecraft/world/item/Item$Properties."<init>":()V
+      11: invokespecial #306                // Method org/xiyu/spartanweaponryunofficial/item/BasicItem."<init>":(Lnet/minecraft/world/item/Item$Properties;)V
+      14: areturn
+
+  private static net.minecraft.world.item.Item lambda$static$6();
+    Code:
+       0: new           #304                // class org/xiyu/spartanweaponryunofficial/item/BasicItem
+       3: dup
+       4: new           #223                // class net/minecraft/world/item/Item$Properties
+       7: dup
+       8: invokespecial #225                // Method net/minecraft/world/item/Item$Properties."<init>":()V
+      11: invokespecial #306                // Method org/xiyu/spartanweaponryunofficial/item/BasicItem."<init>":(Lnet/minecraft/world/item/Item$Properties;)V
+      14: areturn
+
+  private static net.minecraft.world.item.ItemStack lambda$throwingItemStacks$5(org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponMaterialEntry);
+    Code:
+       0: aload_0
+       1: invokevirtual #405                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry.get:()Lnet/minecraft/world/item/Item;
+       4: checkcast     #408                // class org/xiyu/spartanweaponryunofficial/item/ThrowingWeaponItem
+       7: invokevirtual #410                // Method org/xiyu/spartanweaponryunofficial/item/ThrowingWeaponItem.makeTabStack:()Lnet/minecraft/world/item/ItemStack;
+      10: areturn
+
+  private static net.minecraft.world.item.ItemStack lambda$itemStacks$4(org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponMaterialEntry);
+    Code:
+       0: new           #414                // class net/minecraft/world/item/ItemStack
+       3: dup
+       4: aload_0
+       5: invokevirtual #405                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry.get:()Lnet/minecraft/world/item/Item;
+       8: invokespecial #416                // Method net/minecraft/world/item/ItemStack."<init>":(Lnet/minecraft/world/level/ItemLike;)V
+      11: areturn
+
+  private static void lambda$resolveItems$3(com.google.common.collect.ImmutableList$Builder, org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponMaterialEntry);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #405                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry.get:()Lnet/minecraft/world/item/Item;
+       5: invokevirtual #419                // Method com/google/common/collect/ImmutableList$Builder.add:(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList$Builder;
+       8: pop
+       9: return
+
+  private static void lambda$resolveItems$2(com.google.common.collect.ImmutableList$Builder, org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponMaterialEntry);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #405                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry.get:()Lnet/minecraft/world/item/Item;
+       5: invokevirtual #419                // Method com/google/common/collect/ImmutableList$Builder.add:(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList$Builder;
+       8: pop
+       9: return
+
+  private static void lambda$indexByMaterial$1(com.google.common.collect.ImmutableMap$Builder, org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponMaterialEntry);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #423                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry.materialName:()Ljava/lang/String;
+       5: aload_1
+       6: invokevirtual #426                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry.holder:()Lnet/neoforged/neoforge/registries/DeferredHolder;
+       9: invokevirtual #430                // Method com/google/common/collect/ImmutableMap$Builder.put:(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap$Builder;
+      12: pop
+      13: return
+
+  private static void lambda$indexByMaterial$0(com.google.common.collect.ImmutableMap$Builder, org.xiyu.spartanweaponryunofficial.init.ModItems$WeaponMaterialEntry);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #423                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry.materialName:()Ljava/lang/String;
+       5: aload_1
+       6: invokevirtual #426                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponMaterialEntry.holder:()Lnet/neoforged/neoforge/registries/DeferredHolder;
+       9: invokevirtual #430                // Method com/google/common/collect/ImmutableMap$Builder.put:(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap$Builder;
+      12: pop
+      13: return
+
+  static {};
+    Code:
+       0: getstatic     #434                // Field net/minecraft/core/registries/Registries.ITEM:Lnet/minecraft/resources/ResourceKey;
+       3: ldc_w         #442                // String spartan_weaponry_unofficial
+       6: invokestatic  #444                // Method net/neoforged/neoforge/registries/DeferredRegister.create:(Lnet/minecraft/resources/ResourceKey;Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredRegister;
+       9: putstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      12: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      15: ldc_w         #453                // String simple_handle
+      18: invokedynamic #455,  0            // InvokeDynamic #6:get:()Ljava/util/function/Supplier;
+      23: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+      26: putstatic     #462                // Field SIMPLE_HANDLE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      29: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      32: ldc_w         #465                // String handle
+      35: invokedynamic #467,  0            // InvokeDynamic #7:get:()Ljava/util/function/Supplier;
+      40: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+      43: putstatic     #468                // Field HANDLE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      46: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      49: ldc_w         #471                // String simple_pole
+      52: invokedynamic #473,  0            // InvokeDynamic #8:get:()Ljava/util/function/Supplier;
+      57: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+      60: putstatic     #474                // Field SIMPLE_POLE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      63: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      66: ldc_w         #477                // String pole
+      69: invokedynamic #479,  0            // InvokeDynamic #9:get:()Ljava/util/function/Supplier;
+      74: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+      77: putstatic     #480                // Field POLE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      80: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+      83: ldc_w         #483                // String explosive_charge
+      86: invokedynamic #485,  0            // InvokeDynamic #10:get:()Ljava/util/function/Supplier;
+      91: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+      94: putstatic     #486                // Field EXPLOSIVE_CHARGE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      97: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     100: ldc_w         #489                // String grease_ball
+     103: invokedynamic #491,  0            // InvokeDynamic #11:get:()Ljava/util/function/Supplier;
+     108: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     111: putstatic     #492                // Field GREASE_BALL:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     114: new           #148                // class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee
+     117: dup
+     118: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     121: ldc_w         #495                // String dagger
+     124: getstatic     #497                // Field org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType.DAGGER:Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+     127: getstatic     #503                // Field org/xiyu/spartanweaponryunofficial/util/WeaponFactory.DAGGER:Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+     130: invokespecial #508                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee."<init>":(Lnet/neoforged/neoforge/registries/DeferredRegister;Ljava/lang/String;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;)V
+     133: putstatic     #109                // Field DAGGERS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+     136: new           #148                // class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee
+     139: dup
+     140: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     143: ldc_w         #511                // String parrying_dagger
+     146: getstatic     #513                // Field org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType.PARRYING_DAGGER:Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+     149: getstatic     #516                // Field org/xiyu/spartanweaponryunofficial/util/WeaponFactory.PARRYING_DAGGER:Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+     152: invokespecial #508                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee."<init>":(Lnet/neoforged/neoforge/registries/DeferredRegister;Ljava/lang/String;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;)V
+     155: putstatic     #115                // Field PARRYING_DAGGERS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+     158: new           #148                // class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee
+     161: dup
+     162: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     165: ldc_w         #518                // String longsword
+     168: getstatic     #520                // Field org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType.LONGSWORD:Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+     171: getstatic     #523                // Field org/xiyu/spartanweaponryunofficial/util/WeaponFactory.LONGSWORD:Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+     174: invokespecial #508                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee."<init>":(Lnet/neoforged/neoforge/registries/DeferredRegister;Ljava/lang/String;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;)V
+     177: putstatic     #118                // Field LONGSWORDS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+     180: new           #148                // class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee
+     183: dup
+     184: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     187: ldc_w         #525                // String katana
+     190: getstatic     #527                // Field org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType.KATANA:Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+     193: getstatic     #530                // Field org/xiyu/spartanweaponryunofficial/util/WeaponFactory.KATANA:Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+     196: invokespecial #508                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee."<init>":(Lnet/neoforged/neoforge/registries/DeferredRegister;Ljava/lang/String;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;)V
+     199: putstatic     #121                // Field KATANAS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+     202: new           #148                // class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee
+     205: dup
+     206: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     209: ldc_w         #532                // String saber
+     212: getstatic     #534                // Field org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType.SABER:Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+     215: getstatic     #537                // Field org/xiyu/spartanweaponryunofficial/util/WeaponFactory.SABER:Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+     218: invokespecial #508                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee."<init>":(Lnet/neoforged/neoforge/registries/DeferredRegister;Ljava/lang/String;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;)V
+     221: putstatic     #124                // Field SABERS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+     224: new           #148                // class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee
+     227: dup
+     228: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     231: ldc_w         #539                // String rapier
+     234: getstatic     #541                // Field org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType.RAPIER:Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+     237: getstatic     #544                // Field org/xiyu/spartanweaponryunofficial/util/WeaponFactory.RAPIER:Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+     240: invokespecial #508                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee."<init>":(Lnet/neoforged/neoforge/registries/DeferredRegister;Ljava/lang/String;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;)V
+     243: putstatic     #127                // Field RAPIERS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+     246: new           #148                // class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee
+     249: dup
+     250: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     253: ldc_w         #546                // String greatsword
+     256: getstatic     #548                // Field org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType.GREATSWORD:Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+     259: getstatic     #551                // Field org/xiyu/spartanweaponryunofficial/util/WeaponFactory.GREATSWORD:Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+     262: invokespecial #508                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee."<init>":(Lnet/neoforged/neoforge/registries/DeferredRegister;Ljava/lang/String;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;)V
+     265: putstatic     #130                // Field GREATSWORDS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+     268: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     271: ldc_w         #553                // String wooden_club
+     274: invokedynamic #555,  0            // InvokeDynamic #12:get:()Ljava/util/function/Supplier;
+     279: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     282: putstatic     #556                // Field WOODEN_CLUB:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     285: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     288: ldc_w         #559                // String studded_club
+     291: invokedynamic #561,  0            // InvokeDynamic #13:get:()Ljava/util/function/Supplier;
+     296: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     299: putstatic     #562                // Field STUDDED_CLUB:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     302: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     305: ldc_w         #565                // String cestus
+     308: invokedynamic #567,  0            // InvokeDynamic #14:get:()Ljava/util/function/Supplier;
+     313: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     316: putstatic     #568                // Field CESTUS:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     319: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     322: ldc_w         #570                // String studded_cestus
+     325: invokedynamic #572,  0            // InvokeDynamic #15:get:()Ljava/util/function/Supplier;
+     330: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     333: putstatic     #573                // Field STUDDED_CESTUS:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     336: new           #148                // class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee
+     339: dup
+     340: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     343: ldc_w         #576                // String battle_hammer
+     346: getstatic     #578                // Field org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType.BATTLE_HAMMER:Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+     349: getstatic     #581                // Field org/xiyu/spartanweaponryunofficial/util/WeaponFactory.BATTLE_HAMMER:Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+     352: invokespecial #508                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee."<init>":(Lnet/neoforged/neoforge/registries/DeferredRegister;Ljava/lang/String;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;)V
+     355: putstatic     #133                // Field BATTLE_HAMMERS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+     358: new           #148                // class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee
+     361: dup
+     362: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     365: ldc_w         #583                // String warhammer
+     368: getstatic     #585                // Field org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType.WARHAMMER:Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+     371: getstatic     #588                // Field org/xiyu/spartanweaponryunofficial/util/WeaponFactory.WARHAMMER:Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+     374: invokespecial #508                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee."<init>":(Lnet/neoforged/neoforge/registries/DeferredRegister;Ljava/lang/String;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;)V
+     377: putstatic     #136                // Field WARHAMMERS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+     380: new           #148                // class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee
+     383: dup
+     384: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     387: ldc_w         #590                // String spear
+     390: getstatic     #592                // Field org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType.SPEAR:Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+     393: getstatic     #595                // Field org/xiyu/spartanweaponryunofficial/util/WeaponFactory.SPEAR:Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+     396: invokespecial #508                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee."<init>":(Lnet/neoforged/neoforge/registries/DeferredRegister;Ljava/lang/String;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;)V
+     399: putstatic     #139                // Field SPEARS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+     402: new           #148                // class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee
+     405: dup
+     406: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     409: ldc_w         #597                // String halberd
+     412: getstatic     #599                // Field org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType.HALBERD:Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+     415: getstatic     #602                // Field org/xiyu/spartanweaponryunofficial/util/WeaponFactory.HALBERD:Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+     418: invokespecial #508                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee."<init>":(Lnet/neoforged/neoforge/registries/DeferredRegister;Ljava/lang/String;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;)V
+     421: putstatic     #142                // Field HALBERDS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+     424: new           #148                // class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee
+     427: dup
+     428: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     431: ldc_w         #604                // String pike
+     434: getstatic     #606                // Field org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType.PIKE:Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+     437: getstatic     #609                // Field org/xiyu/spartanweaponryunofficial/util/WeaponFactory.PIKE:Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+     440: invokespecial #508                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee."<init>":(Lnet/neoforged/neoforge/registries/DeferredRegister;Ljava/lang/String;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;)V
+     443: putstatic     #145                // Field PIKES:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+     446: new           #148                // class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee
+     449: dup
+     450: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     453: ldc_w         #611                // String lance
+     456: getstatic     #613                // Field org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType.LANCE:Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+     459: getstatic     #616                // Field org/xiyu/spartanweaponryunofficial/util/WeaponFactory.LANCE:Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+     462: invokespecial #508                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee."<init>":(Lnet/neoforged/neoforge/registries/DeferredRegister;Ljava/lang/String;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;)V
+     465: putstatic     #150                // Field LANCES:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+     468: new           #618                // class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged
+     471: dup
+     472: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     475: ldc_w         #620                // String longbow
+     478: getstatic     #622                // Field org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType.LONGBOW:Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+     481: getstatic     #625                // Field org/xiyu/spartanweaponryunofficial/util/WeaponFactory.LONGBOW:Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+     484: invokespecial #627                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged."<init>":(Lnet/neoforged/neoforge/registries/DeferredRegister;Ljava/lang/String;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;)V
+     487: putstatic     #171                // Field LONGBOWS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged;
+     490: new           #618                // class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged
+     493: dup
+     494: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     497: ldc_w         #628                // String heavy_crossbow
+     500: getstatic     #630                // Field org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType.HEAVY_CROSSBOW:Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+     503: getstatic     #633                // Field org/xiyu/spartanweaponryunofficial/util/WeaponFactory.HEAVY_CROSSBOW:Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+     506: invokespecial #627                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged."<init>":(Lnet/neoforged/neoforge/registries/DeferredRegister;Ljava/lang/String;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;)V
+     509: putstatic     #175                // Field HEAVY_CROSSBOWS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsRanged;
+     512: new           #635                // class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsThrowing
+     515: dup
+     516: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     519: ldc_w         #637                // String throwing_knife
+     522: getstatic     #639                // Field org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType.THROWING_KNIFE:Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+     525: getstatic     #642                // Field org/xiyu/spartanweaponryunofficial/util/WeaponFactory.THROWING_KNIFE:Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+     528: invokespecial #644                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsThrowing."<init>":(Lnet/neoforged/neoforge/registries/DeferredRegister;Ljava/lang/String;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;)V
+     531: putstatic     #181                // Field THROWING_KNIVES:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsThrowing;
+     534: new           #635                // class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsThrowing
+     537: dup
+     538: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     541: ldc_w         #645                // String tomahawk
+     544: getstatic     #647                // Field org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType.TOMAHAWK:Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+     547: getstatic     #650                // Field org/xiyu/spartanweaponryunofficial/util/WeaponFactory.TOMAHAWK:Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+     550: invokespecial #644                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsThrowing."<init>":(Lnet/neoforged/neoforge/registries/DeferredRegister;Ljava/lang/String;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;)V
+     553: putstatic     #185                // Field TOMAHAWKS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsThrowing;
+     556: new           #635                // class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsThrowing
+     559: dup
+     560: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     563: ldc_w         #652                // String javelin
+     566: getstatic     #654                // Field org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType.JAVELIN:Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+     569: getstatic     #657                // Field org/xiyu/spartanweaponryunofficial/util/WeaponFactory.JAVELIN:Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+     572: invokespecial #644                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsThrowing."<init>":(Lnet/neoforged/neoforge/registries/DeferredRegister;Ljava/lang/String;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;)V
+     575: putstatic     #188                // Field JAVELINS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsThrowing;
+     578: new           #635                // class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsThrowing
+     581: dup
+     582: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     585: ldc_w         #659                // String boomerang
+     588: getstatic     #661                // Field org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType.BOOMERANG:Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+     591: getstatic     #664                // Field org/xiyu/spartanweaponryunofficial/util/WeaponFactory.BOOMERANG:Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+     594: invokespecial #644                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsThrowing."<init>":(Lnet/neoforged/neoforge/registries/DeferredRegister;Ljava/lang/String;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;)V
+     597: putstatic     #191                // Field BOOMERANGS:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsThrowing;
+     600: new           #148                // class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee
+     603: dup
+     604: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     607: ldc_w         #666                // String battleaxe
+     610: getstatic     #668                // Field org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType.BATTLEAXE:Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+     613: getstatic     #671                // Field org/xiyu/spartanweaponryunofficial/util/WeaponFactory.BATTLEAXE:Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+     616: invokespecial #508                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee."<init>":(Lnet/neoforged/neoforge/registries/DeferredRegister;Ljava/lang/String;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;)V
+     619: putstatic     #153                // Field BATTLEAXES:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+     622: new           #148                // class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee
+     625: dup
+     626: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     629: ldc_w         #673                // String flanged_mace
+     632: getstatic     #675                // Field org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType.FLANGED_MACE:Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+     635: getstatic     #678                // Field org/xiyu/spartanweaponryunofficial/util/WeaponFactory.FLANGED_MACE:Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+     638: invokespecial #508                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee."<init>":(Lnet/neoforged/neoforge/registries/DeferredRegister;Ljava/lang/String;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;)V
+     641: putstatic     #156                // Field FLANGED_MACES:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+     644: new           #148                // class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee
+     647: dup
+     648: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     651: ldc_w         #680                // String glaive
+     654: getstatic     #682                // Field org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType.GLAIVE:Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+     657: getstatic     #685                // Field org/xiyu/spartanweaponryunofficial/util/WeaponFactory.GLAIVE:Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+     660: invokespecial #508                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee."<init>":(Lnet/neoforged/neoforge/registries/DeferredRegister;Ljava/lang/String;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;)V
+     663: putstatic     #159                // Field GLAIVES:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+     666: new           #148                // class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee
+     669: dup
+     670: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     673: ldc_w         #687                // String quarterstaff
+     676: getstatic     #689                // Field org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType.QUARTERSTAFF:Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+     679: getstatic     #692                // Field org/xiyu/spartanweaponryunofficial/util/WeaponFactory.QUARTERSTAFF:Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+     682: invokespecial #508                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee."<init>":(Lnet/neoforged/neoforge/registries/DeferredRegister;Ljava/lang/String;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;)V
+     685: putstatic     #162                // Field QUARTERSTAVES:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+     688: new           #148                // class org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee
+     691: dup
+     692: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     695: ldc_w         #694                // String scythe
+     698: getstatic     #696                // Field org/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType.SCYTHE:Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;
+     701: getstatic     #699                // Field org/xiyu/spartanweaponryunofficial/util/WeaponFactory.SCYTHE:Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;
+     704: invokespecial #508                // Method org/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee."<init>":(Lnet/neoforged/neoforge/registries/DeferredRegister;Ljava/lang/String;Lorg/xiyu/spartanweaponryunofficial/api/SpartanWeaponryAPI$WeaponItemType;Lorg/xiyu/spartanweaponryunofficial/util/WeaponFactory$WeaponFunction;)V
+     707: putstatic     #165                // Field SCYTHES:Lorg/xiyu/spartanweaponryunofficial/init/ModItems$WeaponItemsMelee;
+     710: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     713: ldc_w         #373                // String wooden_arrow
+     716: invokedynamic #701,  0            // InvokeDynamic #16:get:()Ljava/util/function/Supplier;
+     721: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     724: putstatic     #702                // Field WOODEN_ARROW:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     727: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     730: ldc_w         #705                // String tipped_wooden_arrow
+     733: invokedynamic #707,  0            // InvokeDynamic #17:get:()Ljava/util/function/Supplier;
+     738: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     741: putstatic     #708                // Field TIPPED_WOODEN_ARROW:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     744: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     747: ldc_w         #369                // String copper_arrow
+     750: invokedynamic #711,  0            // InvokeDynamic #18:get:()Ljava/util/function/Supplier;
+     755: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     758: putstatic     #712                // Field COPPER_ARROW:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     761: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     764: ldc_w         #715                // String tipped_copper_arrow
+     767: invokedynamic #717,  0            // InvokeDynamic #19:get:()Ljava/util/function/Supplier;
+     772: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     775: putstatic     #718                // Field TIPPED_COPPER_ARROW:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     778: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     781: ldc_w         #365                // String iron_arrow
+     784: invokedynamic #721,  0            // InvokeDynamic #20:get:()Ljava/util/function/Supplier;
+     789: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     792: putstatic     #722                // Field IRON_ARROW:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     795: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     798: ldc_w         #725                // String tipped_iron_arrow
+     801: invokedynamic #727,  0            // InvokeDynamic #21:get:()Ljava/util/function/Supplier;
+     806: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     809: putstatic     #728                // Field TIPPED_IRON_ARROW:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     812: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     815: ldc_w         #363                // String diamond_arrow
+     818: invokedynamic #731,  0            // InvokeDynamic #22:get:()Ljava/util/function/Supplier;
+     823: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     826: putstatic     #732                // Field DIAMOND_ARROW:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     829: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     832: ldc_w         #735                // String tipped_diamond_arrow
+     835: invokedynamic #737,  0            // InvokeDynamic #23:get:()Ljava/util/function/Supplier;
+     840: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     843: putstatic     #738                // Field TIPPED_DIAMOND_ARROW:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     846: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     849: ldc_w         #352                // String netherite_arrow
+     852: invokedynamic #741,  0            // InvokeDynamic #24:get:()Ljava/util/function/Supplier;
+     857: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     860: putstatic     #742                // Field NETHERITE_ARROW:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     863: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     866: ldc_w         #745                // String tipped_netherite_arrow
+     869: invokedynamic #747,  0            // InvokeDynamic #25:get:()Ljava/util/function/Supplier;
+     874: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     877: putstatic     #748                // Field TIPPED_NETHERITE_ARROW:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     880: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     883: ldc_w         #751                // String explosive_arrow
+     886: invokedynamic #753,  0            // InvokeDynamic #26:get:()Ljava/util/function/Supplier;
+     891: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     894: putstatic     #754                // Field EXPLOSIVE_ARROW:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     897: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     900: ldc_w         #343                // String bolt
+     903: invokedynamic #757,  0            // InvokeDynamic #27:get:()Ljava/util/function/Supplier;
+     908: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     911: putstatic     #758                // Field BOLT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     914: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     917: ldc_w         #761                // String tipped_bolt
+     920: invokedynamic #763,  0            // InvokeDynamic #28:get:()Ljava/util/function/Supplier;
+     925: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     928: putstatic     #764                // Field TIPPED_BOLT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     931: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     934: ldc_w         #767                // String spectral_bolt
+     937: invokedynamic #769,  0            // InvokeDynamic #29:get:()Ljava/util/function/Supplier;
+     942: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     945: putstatic     #770                // Field SPECTRAL_BOLT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     948: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     951: ldc_w         #334                // String copper_bolt
+     954: invokedynamic #773,  0            // InvokeDynamic #30:get:()Ljava/util/function/Supplier;
+     959: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     962: putstatic     #774                // Field COPPER_BOLT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     965: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     968: ldc_w         #777                // String tipped_copper_bolt
+     971: invokedynamic #779,  0            // InvokeDynamic #31:get:()Ljava/util/function/Supplier;
+     976: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     979: putstatic     #780                // Field TIPPED_COPPER_BOLT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     982: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+     985: ldc_w         #331                // String diamond_bolt
+     988: invokedynamic #783,  0            // InvokeDynamic #32:get:()Ljava/util/function/Supplier;
+     993: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+     996: putstatic     #784                // Field DIAMOND_BOLT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     999: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+    1002: ldc_w         #787                // String tipped_diamond_bolt
+    1005: invokedynamic #789,  0            // InvokeDynamic #33:get:()Ljava/util/function/Supplier;
+    1010: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1013: putstatic     #790                // Field TIPPED_DIAMOND_BOLT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1016: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+    1019: ldc_w         #319                // String netherite_bolt
+    1022: invokedynamic #793,  0            // InvokeDynamic #34:get:()Ljava/util/function/Supplier;
+    1027: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1030: putstatic     #794                // Field NETHERITE_BOLT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1033: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+    1036: ldc_w         #797                // String tipped_netherite_bolt
+    1039: invokedynamic #799,  0            // InvokeDynamic #35:get:()Ljava/util/function/Supplier;
+    1044: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1047: putstatic     #800                // Field TIPPED_NETHERITE_BOLT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1050: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+    1053: ldc_w         #803                // String small_arrow_quiver
+    1056: invokedynamic #805,  0            // InvokeDynamic #36:get:()Ljava/util/function/Supplier;
+    1061: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1064: putstatic     #806                // Field SMALL_ARROW_QUIVER:Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1067: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+    1070: ldc_w         #809                // String medium_arrow_quiver
+    1073: invokedynamic #811,  0            // InvokeDynamic #37:get:()Ljava/util/function/Supplier;
+    1078: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1081: putstatic     #812                // Field MEDIUM_ARROW_QUIVER:Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1084: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+    1087: ldc_w         #815                // String large_arrow_quiver
+    1090: invokedynamic #817,  0            // InvokeDynamic #38:get:()Ljava/util/function/Supplier;
+    1095: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1098: putstatic     #818                // Field LARGE_ARROW_QUIVER:Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1101: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+    1104: ldc_w         #821                // String huge_arrow_quiver
+    1107: invokedynamic #823,  0            // InvokeDynamic #39:get:()Ljava/util/function/Supplier;
+    1112: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1115: putstatic     #824                // Field HUGE_ARROW_QUIVER:Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1118: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+    1121: ldc_w         #827                // String small_bolt_quiver
+    1124: invokedynamic #829,  0            // InvokeDynamic #40:get:()Ljava/util/function/Supplier;
+    1129: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1132: putstatic     #830                // Field SMALL_BOLT_QUIVER:Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1135: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+    1138: ldc_w         #833                // String medium_bolt_quiver
+    1141: invokedynamic #835,  0            // InvokeDynamic #41:get:()Ljava/util/function/Supplier;
+    1146: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1149: putstatic     #836                // Field MEDIUM_BOLT_QUIVER:Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1152: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+    1155: ldc_w         #839                // String large_bolt_quiver
+    1158: invokedynamic #841,  0            // InvokeDynamic #42:get:()Ljava/util/function/Supplier;
+    1163: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1166: putstatic     #842                // Field LARGE_BOLT_QUIVER:Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1169: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+    1172: ldc_w         #845                // String huge_bolt_quiver
+    1175: invokedynamic #847,  0            // InvokeDynamic #43:get:()Ljava/util/function/Supplier;
+    1180: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1183: putstatic     #848                // Field HUGE_BOLT_QUIVER:Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1186: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+    1189: ldc_w         #851                // String quiver_compartment
+    1192: invokedynamic #853,  0            // InvokeDynamic #44:get:()Ljava/util/function/Supplier;
+    1197: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1200: putstatic     #854                // Field QUIVER_COMPARTMENT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1203: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+    1206: ldc_w         #857                // String medium_quiver_brace
+    1209: invokedynamic #859,  0            // InvokeDynamic #45:get:()Ljava/util/function/Supplier;
+    1214: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1217: putstatic     #860                // Field MEDIUM_QUIVER_BRACE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1220: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+    1223: ldc_w         #863                // String large_quiver_brace
+    1226: invokedynamic #865,  0            // InvokeDynamic #46:get:()Ljava/util/function/Supplier;
+    1231: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1234: putstatic     #866                // Field LARGE_QUIVER_BRACE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1237: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+    1240: ldc_w         #869                // String huge_quiver_brace
+    1243: invokedynamic #871,  0            // InvokeDynamic #47:get:()Ljava/util/function/Supplier;
+    1248: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1251: putstatic     #872                // Field HUGE_QUIVER_BRACE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1254: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+    1257: ldc_w         #875                // String dynamite
+    1260: invokedynamic #877,  0            // InvokeDynamic #48:get:()Ljava/util/function/Supplier;
+    1265: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1268: putstatic     #878                // Field DYNAMITE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1271: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+    1274: ldc_w         #881                // String weapon_oil
+    1277: invokedynamic #883,  0            // InvokeDynamic #49:get:()Ljava/util/function/Supplier;
+    1282: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1285: putstatic     #884                // Field WEAPON_OIL:Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1288: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+    1291: ldc_w         #887                // String blaze_head
+    1294: invokedynamic #889,  0            // InvokeDynamic #50:get:()Ljava/util/function/Supplier;
+    1299: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1302: putstatic     #890                // Field BLAZE_HEAD:Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1305: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+    1308: ldc_w         #891                // String enderman_head
+    1311: invokedynamic #893,  0            // InvokeDynamic #51:get:()Ljava/util/function/Supplier;
+    1316: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1319: putstatic     #894                // Field ENDERMAN_HEAD:Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1322: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+    1325: ldc_w         #895                // String spider_head
+    1328: invokedynamic #897,  0            // InvokeDynamic #52:get:()Ljava/util/function/Supplier;
+    1333: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1336: putstatic     #898                // Field SPIDER_HEAD:Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1339: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+    1342: ldc_w         #899                // String cave_spider_head
+    1345: invokedynamic #901,  0            // InvokeDynamic #53:get:()Ljava/util/function/Supplier;
+    1350: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1353: putstatic     #902                // Field CAVE_SPIDER_HEAD:Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1356: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+    1359: ldc_w         #903                // String zombified_piglin_head
+    1362: invokedynamic #905,  0            // InvokeDynamic #54:get:()Ljava/util/function/Supplier;
+    1367: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1370: putstatic     #906                // Field ZOMBIFIED_PIGLIN_HEAD:Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1373: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+    1376: ldc_w         #907                // String husk_head
+    1379: invokedynamic #909,  0            // InvokeDynamic #55:get:()Ljava/util/function/Supplier;
+    1384: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1387: putstatic     #910                // Field HUSK_HEAD:Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1390: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+    1393: ldc_w         #911                // String stray_skull
+    1396: invokedynamic #913,  0            // InvokeDynamic #56:get:()Ljava/util/function/Supplier;
+    1401: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1404: putstatic     #914                // Field STRAY_SKULL:Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1407: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+    1410: ldc_w         #915                // String drowned_head
+    1413: invokedynamic #917,  0            // InvokeDynamic #57:get:()Ljava/util/function/Supplier;
+    1418: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1421: putstatic     #918                // Field DROWNED_HEAD:Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1424: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+    1427: ldc_w         #919                // String illager_head
+    1430: invokedynamic #921,  0            // InvokeDynamic #58:get:()Ljava/util/function/Supplier;
+    1435: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1438: putstatic     #922                // Field ILLAGER_HEAD:Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1441: getstatic     #449                // Field REGISTRY:Lnet/neoforged/neoforge/registries/DeferredRegister;
+    1444: ldc_w         #923                // String witch_head
+    1447: invokedynamic #925,  0            // InvokeDynamic #59:get:()Ljava/util/function/Supplier;
+    1452: invokevirtual #458                // Method net/neoforged/neoforge/registries/DeferredRegister.register:(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1455: putstatic     #926                // Field WITCH_HEAD:Lnet/neoforged/neoforge/registries/DeferredHolder;
+    1458: return
+}

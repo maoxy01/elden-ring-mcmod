@@ -1,0 +1,37 @@
+ENTRY META-INF/neoforge.mods.toml
+modLoader="javafml"
+loaderVersion="[1,)"
+license="All Rights Reserved"
+issueTrackerURL="https://github.com/TwelveIterations/Waystones/issues"
+[[mods]]
+modId="waystones"
+version="21.1.46"
+displayName="Waystones"
+displayURL="https://mods.twelveiterations.com/minecraft/waystones"
+logoFile="waystones.png"
+credits="BlayTheNinth"
+authors="BlayTheNinth"
+description='''Teleport back to activated waystones. For Survival, Adventure or Servers.'''
+[[mixins]]
+config = "waystones.mixins.json"
+[[mixins]]
+config = "waystones.neoforge.mixins.json"
+[[dependencies.waystones]]
+modId="neoforge"
+type="required"
+versionRange="[21-beta,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.waystones]]
+modId="minecraft"
+type="required"
+versionRange="[1.21,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.waystones]]
+modId="balm"
+type="required"
+versionRange="[21.0.39,)"
+ordering="NONE"
+side="BOTH"
+

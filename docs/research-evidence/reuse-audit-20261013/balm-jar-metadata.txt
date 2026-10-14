@@ -1,0 +1,49 @@
+ENTRY META-INF/neoforge.mods.toml
+modLoader="javafml"
+loaderVersion="[1,)"
+license="All Rights Reserved"
+issueTrackerURL="https://github.com/TwelveIterations/Balm/issues"
+[[mods]]
+modId="balm"
+version="21.0.66"
+displayName="Balm"
+displayURL="https://mods.twelveiterations.com/"
+logoFile="balm.png"
+credits="BlayTheNinth"
+authors="BlayTheNinth"
+description='''Abstraction Layer (but not really) for Blay's multiplatform mods'''
+[[mixins]]
+config = "balm.mixins.json"
+[[mixins]]
+config = "balm.neoforge.mixins.json"
+[[dependencies.balm]]
+modId="neoforge"
+type="required"
+versionRange="[21.0.82-beta,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.balm]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,)"
+ordering="NONE"
+side="BOTH"
+
+ENTRY META-INF/jarjar/metadata.json
+{
+  "jars": [
+    {
+      "identifier": {
+        "group": "net.blay09.mods",
+        "artifact": "kuma-api-neoforge"
+      },
+      "version": {
+        "range": "[21.0,21.2)",
+        "artifactVersion": "21.0.8+1.21"
+      },
+      "path": "META-INF/jarjar/kuma-api-neoforge-21.0.8+1.21.jar",
+      "isObfuscated": false
+    }
+  ]
+}
+

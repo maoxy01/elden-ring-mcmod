@@ -1,0 +1,433 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.12/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+
+> Task :compileJava
+D:\codexout\mcmod\src\main\java\com\dsh\eldencombat\client\grace\GraceMapPlugin.java:23: 警告: [removal] journeymap.api.v2.client 中的 JourneyMapPlugin 已过时, 且标记为待删除
+@JourneyMapPlugin(apiVersion="2.0.0")
+ ^
+D:\codexout\mcmod\src\main\java\com\dsh\eldencombat\registry\ModDataComponents.java:21: 警告: [removal] DeferredRegister 中的 createDataComponents(String) 已过时, 且标记为待删除
+            DeferredRegister.createDataComponents(EldenCombat.MODID);
+                            ^
+注: 某些输入文件使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+2 个警告
+
+> Task :syncArt UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes
+> Task :downloadAssets UP-TO-DATE
+> Task :writeClientLegacyClasspath UP-TO-DATE
+> Task :prepareClientRun UP-TO-DATE
+
+> Task :runClient
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+[13:33:41] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientdev, --version, 21.1.219, --assetIndex, 17, --assetsDir, C:\\Users\\30869\\.gradle\\caches\\neoformruntime\\assets, --gameDir, ., --fml.fmlVersion, 4.0.42, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.219, --fml.neoFormVersion, 20240808.144430, --quickPlaySingleplayer, grace-prototype]
+[13:33:41] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.12.1+1-LTS
+[13:33:41] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.12.1 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[13:33:41] [main/INFO] [ne.ne.fm.lo.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[13:33:41] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[13:33:41] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[13:33:41] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/30869/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23138!/ Service=ModLauncher Env=CLIENT
+[13:33:41] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 5060 Laptop GPU/PCIe/SSE2 GL version 4.6.0 NVIDIA 616.64, NVIDIA Corporation
+[13:33:42] [main/INFO] [ne.ne.fm.lo.mo.lo.JarInJarDependencyLocator/]: Found 6 dependencies adding them to mods collection
+[13:33:42] [main/INFO] [ne.ne.fm.lo.mo.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		Balm 21.0.66 (balm)
+		Common Networking 1.0.21-1.21.1 (commonnetworking)
+		Elden Combat 0.2.0 (eldencombat)
+		Journeymap 1.21.1-6.0.9 (journeymap)
+		JourneyMap API 2.0.0-1.21.1 (journeymap_api)
+		KumaAPI 21.0.8 (kuma_api)
+		Minecraft 1.21.1 (minecraft)
+		NeoForge 21.1.219 (neoforge)
+		Waystones 21.1.46 (waystones)
+[13:33:43] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[13:33:43] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
+[13:33:43] [main/INFO] [cp.mo.mo.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientdev' with arguments [--version, 21.1.219, --gameDir, ., --assetsDir, C:\Users\30869\.gradle\caches\neoformruntime\assets, --assetIndex, 17, --quickPlaySingleplayer, grace-prototype]
+[13:33:43] [main/WARN] [mixin/]: Reference map 'kuma_api.refmap.json' for kuma_api.mixins.json could not be read. If this is a development environment you can ignore this message
+[13:33:43] [main/WARN] [mixin/]: Reference map 'waystones.refmap.json' for waystones.mixins.json could not be read. If this is a development environment you can ignore this message
+[13:33:43] [main/WARN] [mixin/]: Reference map 'balm.refmap.json' for balm.mixins.json could not be read. If this is a development environment you can ignore this message
+[13:33:43] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[13:33:44] [Datafixer Bootstrap/INFO] [mojang/DataFixerBuilder]: 229 Datafixer optimizations took 170 milliseconds
+[13:33:49] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[13:33:49] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[13:33:49] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[13:33:49] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[13:33:49] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[13:33:49] [Render thread/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/D:/codexout/mcmod/build/moddev/artifacts/neoforge-21.1.219.jar%23189!/assets/.mcassetsroot' uses unexpected schema
+[13:33:49] [Render thread/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/D:/codexout/mcmod/build/moddev/artifacts/neoforge-21.1.219.jar%23189!/data/.mcassetsroot' uses unexpected schema
+[13:33:49] [Render thread/INFO] [mojang/YggdrasilAuthenticationService]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[13:33:49] [Render thread/INFO] [minecraft/Minecraft]: Setting user: Dev
+[13:33:49] [Render thread/INFO] [minecraft/Minecraft]: Backend library: LWJGL version 3.3.3+5
+[13:33:49] [modloading-worker-0/INFO] [ne.ne.ne.co.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.219, for MC 1.21.1
+[13:33:49] [modloading-worker-0/INFO] [EldenCombat/]: [EldenCombat] ServerCombat 已注册到游戏事件总线（单例，一次）
+[13:33:49] [modloading-worker-0/INFO] [EldenCombat/]: [EldenCombat] 纯原版战斗扩展 loaded (MC 1.21.1 / NeoForge 21.1.219)
+[13:33:49] [modloading-worker-0/INFO] [ne.bl.mo.ba.ne.co.NeoForgeBalmConfig/]: Registering config for waystones:common (COMMON) with 38 properties.
+[13:33:50] [Render thread/INFO] [ne.ne.ne.ga.GameTestHooks/]: Enabled Gametest Namespaces: []
+[13:33:50] [Render thread/INFO] [minecraft/ReloadableResourceManager]: Reloading ResourceManager: vanilla, mod_resources, mod/commonnetworking, mod/kuma_api, mod/journeymap_api, mod/waystones, mod/journeymap, mod/neoforge, mod/balm, mod/eldencombat
+[13:33:50] [Worker-Main-1/INFO] [journeymap/]: Loaded null for service interface journeymap.api.services.WebMapService
+[13:33:50] [Worker-Main-1/INFO] [journeymap/]: Loaded journeymap.common.helpers.NeoForgeClientHooks@4c140c82 for service interface journeymap.api.services.ClientPlatformService
+[13:33:50] [Worker-Main-1/INFO] [journeymap/]: Loaded journeymap.common.helpers.NeoForgeHooks@596cd4d6 for service interface journeymap.api.services.CommonPlatformService
+[13:33:50] [Worker-Main-1/INFO] [journeymap/]: Found @JourneyMapPlugin: net.blay09.mods.waystones.compat.JourneyMapIntegration
+[13:33:50] [Worker-Main-1/WARN] [journeymap/]: The mod waystones for plugin net.blay09.mods.waystones.compat.JourneyMapIntegration is using a deprecated annotation, please inform the plugin mod dev they need to update.
+[13:33:50] [Worker-Main-1/INFO] [journeymap/]: Skipping dev-only plugin (set -Djourneymap.dev_plugins=true to enable): journeymap.api.plugins.OverlayLifecycleProfilingPlugin
+[13:33:50] [Worker-Main-1/INFO] [journeymap/]: Skipping dev-only plugin (set -Djourneymap.dev_plugins=true to enable): journeymap.api.plugins.DebugVerificationPlugin
+[13:33:50] [Worker-Main-1/INFO] [journeymap/]: Found @JourneyMapPlugin: com.dsh.eldencombat.client.grace.GraceMapPlugin
+[13:33:50] [Worker-Main-1/WARN] [journeymap/]: The mod eldencombat for plugin com.dsh.eldencombat.client.grace.GraceMapPlugin is using a deprecated annotation, please inform the plugin mod dev they need to update.
+[13:33:50] [NeoForge Version Check/INFO] [ne.ne.fm.VersionChecker/]: [journeymap] Starting version check at https://neoforge.curseupdate.com/32274/journeymap
+[13:33:50] [Worker-Main-9/INFO] [minecraft/UnihexProvider]: Found unifont_all_no_pua-15.1.05.hex, loading
+[13:33:50] [Worker-Main-20/INFO] [minecraft/UnihexProvider]: Found unifont_jp_patch-15.1.05.hex, loading
+[13:33:50] [Render thread/INFO] [EldenCombat/]: [EldenCombat] 战斗配置已载入: D:\codexout\mcmod\build\gracePrototypeClient\config\eldencombat-combat.json
+[13:33:50] [Render thread/INFO] [EldenCombat/]: GRACE_POLICY_REGISTERED: wilderness default; native Pre and requirements gate
+[13:33:50] [Worker-Main-6/WARN] [minecraft/SpriteLoader]: Texture eldencombat:item/blank with size 1x1 limits mip level from 4 to 0
+[13:33:50] [Render thread/INFO] [journeymap/]: Journeymap Initializing
+[13:33:51] [Render thread/INFO] [EldenCombat/]: GRACE_MAP_PLUGIN_READY: public API 2.0.0
+[13:33:51] [NeoForge Version Check/INFO] [ne.ne.fm.VersionChecker/]: [journeymap] Found status: BETA Current: 1.21.1-6.0.9 Target: 1.21.1-6.0.0-beta.52
+[13:33:53] [Render thread/WARN] [ne.ne.fm.DeferredWorkQueue/LOADING]: Mod 'journeymap' took 1.248 s to run a deferred task.
+[13:33:53] [Render thread/WARN] [minecraft/SoundEngine]: Missing sound for event: minecraft:item.goat_horn.play
+[13:33:53] [Render thread/WARN] [minecraft/SoundEngine]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[13:33:53] [Render thread/INFO] [mojang/Library]: OpenAL initialized on device OpenAL Soft on 耳机 (OPPO Enco Air4)
+[13:33:53] [Render thread/INFO] [minecraft/SoundEngine]: Sound engine started
+[13:33:53] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[13:33:53] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[13:33:53] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[13:33:53] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[13:33:53] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[13:33:53] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[13:33:53] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[13:33:53] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[13:33:53] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[13:33:53] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[13:33:53] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[13:33:53] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[13:33:53] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[13:33:53] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[13:33:53] [Render thread/WARN] [minecraft/ShaderInstance]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[13:33:53] [Render thread/WARN] [minecraft/ShaderInstance]: Shader journeymap:sepia_3 could not find uniform named ColorModulator in the specified shader program.
+[13:33:53] [Render thread/WARN] [minecraft/ShaderInstance]: Shader journeymap:sepia_2 could not find uniform named ColorModulator in the specified shader program.
+[13:33:53] [Render thread/WARN] [minecraft/ShaderInstance]: Shader journeymap:sepia_1 could not find uniform named ColorModulator in the specified shader program.
+[13:33:53] [Render thread/INFO] [ne.ne.ne.cl.en.an.js.AnimationLoader/]: Loaded 0 entity animations
+[13:33:53] [Render thread/INFO] [EldenCombat/]: [EldenCombat] Weapon resource cache ready: 41 entries
+[13:33:53] [Render thread/INFO] [EldenCombat/]: [skills] 战技姿态就绪：8 个
+[13:33:53] [Render thread/INFO] [EldenCombat/]: [EldenCombat] 武器姿态校正就绪：0 条
+[13:33:54] [Render thread/INFO] [minecraft/RecipeManager]: Loaded 1368 recipes
+[13:33:54] [Render thread/INFO] [minecraft/AdvancementTree]: Loaded 1453 advancements
+[13:33:54] [Render thread/INFO] [EldenCombat/]: [talismans] 护符数据载入 4 件
+[13:33:54] [Render thread/INFO] [EldenCombat/]: [consumables] 药物数据载入 3 种
+[13:33:55] [Server thread/INFO] [minecraft/IntegratedServer]: Starting integrated minecraft server version 1.21.1
+[13:33:55] [Server thread/INFO] [minecraft/MinecraftServer]: Generating keypair
+[13:33:55] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing start region for dimension minecraft:overworld
+[13:33:55] [progressListener/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 0%
+[ALSOFT] (EE) Failed to get padding: 0x88890004
+[13:33:55] [Server thread/INFO] [ne.ne.ne.se.pe.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[13:33:55] [Server thread/INFO] [EldenCombat/]: [skills] 追忆战技参数载入 8 项
+[13:33:55] [progressListener/INFO] [minecraft/LoggerChunkProgressListener]: Time elapsed: 273 ms
+[13:33:55] [Server thread/INFO] [EldenCombat/]: [weapons] 武器数值档载入 41 件
+[13:33:55] [Server thread/INFO] [minecraft/IntegratedServer]: Changing view distance to 12, from 10
+[13:33:55] [Server thread/INFO] [minecraft/IntegratedServer]: Changing simulation distance to 12, from 0
+[13:33:56] [Render thread/INFO] [minecraft/SoundEngine]: Audio device was lost!
+[13:33:56] [Render thread/WARN] [minecraft/SoundEngine]: Missing sound for event: minecraft:item.goat_horn.play
+[13:33:56] [Render thread/WARN] [minecraft/SoundEngine]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[13:33:56] [Render thread/INFO] [mojang/Library]: OpenAL initialized on device OpenAL Soft on 扬声器 (Realtek(R) Audio)
+[13:33:56] [Render thread/INFO] [minecraft/SoundEngine]: Sound engine started
+[13:33:56] [IO-Worker-4/INFO] [minecraft/SoundEngine]: System default audio device has changed!
+[13:33:56] [Render thread/WARN] [minecraft/SoundEngine]: Missing sound for event: minecraft:item.goat_horn.play
+[13:33:56] [Render thread/WARN] [minecraft/SoundEngine]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[13:33:56] [Render thread/INFO] [mojang/Library]: OpenAL initialized on device OpenAL Soft on 扬声器 (Realtek(R) Audio)
+[13:33:56] [Render thread/INFO] [minecraft/SoundEngine]: Sound engine started
+[13:33:57] [Server thread/INFO] [minecraft/PlayerList]: Dev[local:E:20d01c90] logged in with entity id 4 at (10.0, 81.0, 3.0)
+[13:33:57] [Server thread/INFO] [minecraft/MinecraftServer]: Dev joined the game
+[13:33:57] [Render thread/INFO] [minecraft/AdvancementTree]: Loaded 2 advancements
+[13:33:57] [Server thread/INFO] [EldenCombat/]: GRACE_CLIENT_NODE_PASS: mode=restart discovery check player=380df991-f603-344c-a090-369bad2a924a op=false uid=39101552-592d-49e8-9f03-69d0c2015cd6 name=Grace prototype 1
+[13:33:57] [Server thread/INFO] [EldenCombat/]: GRACE_CLIENT_NODE_PASS: mode=restart discovery check player=380df991-f603-344c-a090-369bad2a924a op=false uid=230f7a67-ddcd-4499-af5e-49dcf002af1a name=Grace prototype 2
+[13:33:57] [Server thread/INFO] [EldenCombat/]: GRACE_WILDERNESS_READY: fixture pos=(10.0, 81.0, 3.0) op=false fp=17 xp=300; actual mouse menu required
+[13:33:57] [Render thread/INFO] [EldenCombat/]: GRACE_MAP_SNAPSHOT: 2 authorized nodes
+[13:33:58] [Render thread/INFO] [minecraft/ChatComponent]: [System] [CHAT] JourneyMap: Press [J]
+[13:34:01] [Render thread/INFO] [EldenCombat/]: GRACE_MAP_KEY: registered map_toggle_alt click helper
+[13:34:03] [Render thread/INFO] [EldenCombat/]: GRACE_MAP_OPEN_PASS: journeymap.client.ui.fullscreen.Fullscreen via KeyMapping helper; not an actual mouse travel
+[13:34:03] [IO-Worker-3/INFO] [EldenCombat/]: GRACE_MAP_CAPTURE: Saved screenshot as grace-map.png
+[13:43:57] [Render thread/ERROR] [ne.ne.bu.EventBus/EVENTBUS]: Exception caught during firing event: GRACE_PROTO_CLIENT_FAIL: manual travel/rest timed out
+	Index: 3
+	Listeners:
+		0: net.blay09.mods.kuma.neoforge.NeoForgeKumaAPI$$Lambda/0x000002b301e00430@bc561ac
+		1: net.neoforged.bus.EventListenerFactory$onClientTick/0x000002b301e80000@778f0f8a
+		2: net.neoforged.bus.EventListenerFactory$tick/0x000002b301eb0400@3b5a33d1
+		3: net.neoforged.bus.EventListenerFactory$tick/0x000002b301eb1000@6f7d8338
+		4: net.neoforged.bus.EventListenerFactory$onClientTick/0x000002b3021f0800@323a198f
+java.lang.IllegalStateException: GRACE_PROTO_CLIENT_FAIL: manual travel/rest timed out
+	at TRANSFORMER/eldencombat@0.2.0/com.dsh.eldencombat.testing.GraceClientPrototypeHarness.tick(GraceClientPrototypeHarness.java:94)
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:360)
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:328)
+	at TRANSFORMER/neoforge@21.1.219/net.neoforged.neoforge.client.ClientHooks.fireClientTickPost(ClientHooks.java:1077)
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.tick(Minecraft.java:1915)
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.runTick(Minecraft.java:1161)
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.run(Minecraft.java:807)
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.main.Main.main(Main.java:230)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136)
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124)
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.NeoForgeClientDevLaunchHandler.runService(NeoForgeClientDevLaunchHandler.java:23)
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.run(Launcher.java:103)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.main(Launcher.java:74)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23)
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210)
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at net.neoforged.devlaunch.Main.main(Main.java:57)
+
+[13:43:57] [Render thread/ERROR] [minecraft/Minecraft]: Unreported exception thrown!
+java.lang.IllegalStateException: GRACE_PROTO_CLIENT_FAIL: manual travel/rest timed out
+	at TRANSFORMER/eldencombat@0.2.0/com.dsh.eldencombat.testing.GraceClientPrototypeHarness.tick(GraceClientPrototypeHarness.java:94) ~[%23191!/:?] {re:classloading}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:360) ~[bus-8.0.5.jar%23150!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:328) ~[bus-8.0.5.jar%23150!/:?] {}
+	at TRANSFORMER/neoforge@21.1.219/net.neoforged.neoforge.client.ClientHooks.fireClientTickPost(ClientHooks.java:1077) ~[neoforge-21.1.219.jar%23190!/:?] {re:mixin,re:classloading,pl:mixin:APP:journeymap.neoforge.mixins.json:client.ClientHooksMixin from mod journeymap,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.tick(Minecraft.java:1915) ~[neoforge-21.1.219.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.runTick(Minecraft.java:1161) ~[neoforge-21.1.219.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.run(Minecraft.java:807) ~[neoforge-21.1.219.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.main.Main.main(Main.java:230) ~[neoforge-21.1.219.jar%23189!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-4.0.42.jar%23146!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-4.0.42.jar%23146!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.NeoForgeClientDevLaunchHandler.runService(NeoForgeClientDevLaunchHandler.java:23) ~[loader-4.0.42.jar%23146!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-4.0.42.jar%23146!/:4.0] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-11.0.5.jar%23128!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-11.0.5.jar%23128!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-11.0.5.jar%23128!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.run(Launcher.java:103) [modlauncher-11.0.5.jar%23128!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.main(Launcher.java:74) [modlauncher-11.0.5.jar%23128!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-11.0.5.jar%23128!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-11.0.5.jar%23128!/:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210) [bootstraplauncher-2.0.2.jar:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69) [bootstraplauncher-2.0.2.jar:?] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?] {}
+[13:43:57] [Server thread/INFO] [minecraft/MinecraftServer]: Stopping server
+[13:43:57] [Server thread/INFO] [minecraft/MinecraftServer]: Saving players
+[13:43:57] [Server thread/INFO] [minecraft/MinecraftServer]: Saving worlds
+[13:43:57] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[grace_world]'/minecraft:overworld
+[13:43:57] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[grace_world]'/minecraft:the_nether
+[13:43:57] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[grace_world]'/minecraft:the_end
+[13:43:57] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (grace-prototype): All chunks are saved
+[13:43:57] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[13:43:57] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[13:43:57] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage: All dimensions are saved
+[13:43:57] [Render thread/FATAL] [ne.ne.ne.co.NeoForgeMod/]: Preparing crash report with UUID 8395128b-34ce-4cee-98f3-6614188deefc
+---- Minecraft Crash Report ----
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 2026-10-13 13:43:57
+Description: Unexpected error
+
+java.lang.IllegalStateException: GRACE_PROTO_CLIENT_FAIL: manual travel/rest timed out
+	at TRANSFORMER/eldencombat@0.2.0/com.dsh.eldencombat.testing.GraceClientPrototypeHarness.tick(GraceClientPrototypeHarness.java:94) ~[%23191!/:?] {re:classloading}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:360) ~[bus-8.0.5.jar%23150!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:328) ~[bus-8.0.5.jar%23150!/:?] {}
+	at TRANSFORMER/neoforge@21.1.219/net.neoforged.neoforge.client.ClientHooks.fireClientTickPost(ClientHooks.java:1077) ~[neoforge-21.1.219.jar%23190!/:?] {re:mixin,re:classloading,pl:mixin:APP:journeymap.neoforge.mixins.json:client.ClientHooksMixin from mod journeymap,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.tick(Minecraft.java:1915) ~[neoforge-21.1.219.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.runTick(Minecraft.java:1161) ~[neoforge-21.1.219.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.run(Minecraft.java:807) ~[neoforge-21.1.219.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.main.Main.main(Main.java:230) ~[neoforge-21.1.219.jar%23189!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-4.0.42.jar%23146!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-4.0.42.jar%23146!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.NeoForgeClientDevLaunchHandler.runService(NeoForgeClientDevLaunchHandler.java:23) ~[loader-4.0.42.jar%23146!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-4.0.42.jar%23146!/:4.0] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-11.0.5.jar%23128!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-11.0.5.jar%23128!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-11.0.5.jar%23128!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.run(Launcher.java:103) [modlauncher-11.0.5.jar%23128!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.main(Launcher.java:74) [modlauncher-11.0.5.jar%23128!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-11.0.5.jar%23128!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-11.0.5.jar%23128!/:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210) [bootstraplauncher-2.0.2.jar:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69) [bootstraplauncher-2.0.2.jar:?] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at TRANSFORMER/eldencombat@0.2.0/com.dsh.eldencombat.testing.GraceClientPrototypeHarness.tick(GraceClientPrototypeHarness.java:94) ~[%23191!/:?] {re:classloading}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:360) ~[bus-8.0.5.jar%23150!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:328) ~[bus-8.0.5.jar%23150!/:?] {}
+	at TRANSFORMER/neoforge@21.1.219/net.neoforged.neoforge.client.ClientHooks.fireClientTickPost(ClientHooks.java:1077) ~[neoforge-21.1.219.jar%23190!/:?] {re:mixin,re:classloading,pl:mixin:APP:journeymap.neoforge.mixins.json:client.ClientHooksMixin from mod journeymap,pl:mixin:A}
+-- Uptime --
+Details:
+	JVM uptime: 618.211s
+	Wall uptime: 608.137s
+	High-res time: 615.805s
+	Client ticks: 12068 ticks / 603.400s
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.fillReport(Minecraft.java:2394) ~[neoforge-21.1.219.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.emergencySaveAndCrash(Minecraft.java:868) ~[neoforge-21.1.219.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.run(Minecraft.java:828) ~[neoforge-21.1.219.jar%23189!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.main.Main.main(Main.java:230) ~[neoforge-21.1.219.jar%23189!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-4.0.42.jar%23146!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-4.0.42.jar%23146!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.NeoForgeClientDevLaunchHandler.runService(NeoForgeClientDevLaunchHandler.java:23) ~[loader-4.0.42.jar%23146!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-4.0.42.jar%23146!/:4.0] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-11.0.5.jar%23128!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-11.0.5.jar%23128!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-11.0.5.jar%23128!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.run(Launcher.java:103) [modlauncher-11.0.5.jar%23128!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.main(Launcher.java:74) [modlauncher-11.0.5.jar%23128!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-11.0.5.jar%23128!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-11.0.5.jar%23128!/:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210) [bootstraplauncher-2.0.2.jar:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69) [bootstraplauncher-2.0.2.jar:?] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at net.neoforged.devlaunch.Main.main(Main.java:57) [DevLaunch-1.0.2.jar:?] {}
+
+
+-- Affected level --
+Details:
+	All players: 1 total; [LocalPlayer['Dev'/4, l='ClientLevel', x=10.00, y=81.00, z=3.00]]
+	Chunk stats: 961, 609
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (0,-60,0), Section: (at 0,4,0 in 0,-4,0; chunk contains blocks 0,-64,0 to 15,319,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
+	Level time: 17060 game time, 17060 day time
+	Server brand: neoforge
+	Server type: Integrated singleplayer server
+	Tracked entity count: 15
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: Yes
+	Packs: vanilla, mod_resources, mod/commonnetworking, mod/kuma_api, mod/journeymap_api, mod/waystones, mod/journeymap, mod/neoforge, mod/balm, mod/eldencombat
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.12.1, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 97825016 bytes (93 MiB) / 717225984 bytes (684 MiB) up to 4223664128 bytes (4028 MiB)
+	CPUs: 24
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i7-14650HX
+	Identifier: Intel64 Family 6 Model 183 Stepping 1
+	Microarchitecture: Raptor Lake
+	Frequency (GHz): 2.42
+	Number of physical packages: 1
+	Number of physical CPUs: 16
+	Number of logical CPUs: 24
+	Graphics card #0 name: NVIDIA GeForce RTX 5060 Laptop GPU
+	Graphics card #0 vendor: NVIDIA
+	Graphics card #0 VRAM (MiB): 8151.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.16.1664
+	Graphics card #1 name: Intel(R) UHD Graphics
+	Graphics card #1 vendor: Intel Corporation
+	Graphics card #1 VRAM (MiB): 2048.00
+	Graphics card #1 deviceId: VideoController2
+	Graphics card #1 versionInfo: 32.0.101.7076
+	Memory slot #0 capacity (MiB): 16384.00
+	Memory slot #0 clockSpeed (GHz): 5.60
+	Memory slot #0 type: Unknown
+	Virtual memory max (MiB): 29419.87
+	Virtual memory used (MiB): 20126.72
+	Swap memory total (MiB): 13312.00
+	Swap memory used (MiB): 474.77
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 35168.90, total: 153601.00
+	Space in storage for workdir (MiB): available: 62090.52, total: 153599.00
+	JVM Flags: 0 total; 
+	Launched Version: 21.1.219
+	Backend library: LWJGL version 3.3.3+5
+	Backend API: NVIDIA GeForce RTX 5060 Laptop GPU/PCIe/SSE2 GL version 4.6.0 NVIDIA 616.64, NVIDIA Corporation
+	Window size: 854x480
+	GFLW Platform: win32
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Is Modded: Definitely; Client brand changed to 'neoforge'; Server brand changed to 'neoforge'
+	Universe: 400921fb54442d18
+	Type: Integrated Server (map_client.txt)
+	Graphics mode: fancy
+	Render Distance: 12/12 chunks
+	Resource Packs: vanilla, mod_resources, mod/commonnetworking (incompatible), mod/kuma_api (incompatible), mod/journeymap_api (incompatible), mod/waystones (incompatible), mod/journeymap (incompatible), mod/neoforge, mod/balm (incompatible), mod/eldencombat
+	Current Language: en_us
+	Locale: zh_CN
+	System encoding: GBK
+	File encoding: UTF-8
+	CPU: 24x Intel(R) Core(TM) i7-14650HX
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/4, l='ServerLevel[grace_world]', x=10.00, y=81.00, z=3.00]]
+	Active Data Packs: vanilla, mod_data, mod/commonnetworking (incompatible), mod/kuma_api (incompatible), mod/journeymap_api (incompatible), mod/waystones (incompatible), mod/journeymap (incompatible), mod/neoforge, mod/balm (incompatible), mod/eldencombat (incompatible)
+	Available Data Packs: bundle, trade_rebalance, vanilla, mod/balm (incompatible), mod/commonnetworking (incompatible), mod/eldencombat (incompatible), mod/journeymap (incompatible), mod/journeymap_api (incompatible), mod/kuma_api (incompatible), mod/neoforge, mod/waystones (incompatible), mod_data
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	World Seed: 20261013
+	ModLauncher: 11.0.5+main.901c6ea8
+	ModLauncher launch target: forgeclientdev
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-4.0.42.jar slf4jfixer PLUGINSERVICE 
+		loader-4.0.42.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-4.0.42.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-11.0.5.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-11.0.5.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@4.0
+		lowcodefml@4.0
+		minecraft@4.0
+	Mod List: 
+		balm-neoforge-1.21.1-21.0.66.jar                  |Balm                          |balm                          |21.0.66             |Manifest: NOSIGNATURE
+		common-networking-neoforge-1.0.21-1.21.1.jar      |Common Networking             |commonnetworking              |1.0.21-1.21.1       |Manifest: NOSIGNATURE
+		main                                              |Elden Combat                  |eldencombat                   |0.2.0               |Manifest: NOSIGNATURE
+		journeymap-neoforge-1.21.1-6.0.9.jar              |Journeymap                    |journeymap                    |1.21.1-6.0.9        |Manifest: NOSIGNATURE
+		journeymap-api-neoforge-2.0.0-1.21.1.jar          |JourneyMap API                |journeymap_api                |2.0.0-1.21.1        |Manifest: NOSIGNATURE
+		kuma-api-neoforge-21.0.8+1.21.jar                 |KumaAPI                       |kuma_api                      |21.0.8              |Manifest: NOSIGNATURE
+		neoforge-21.1.219.jar                             |Minecraft                     |minecraft                     |1.21.1              |Manifest: NOSIGNATURE
+		neoforge-21.1.219.jar                             |NeoForge                      |neoforge                      |21.1.219            |Manifest: NOSIGNATURE
+		waystones-neoforge-1.21.1-21.1.46.jar             |Waystones                     |waystones                     |21.1.46             |Manifest: NOSIGNATURE
+	Crash Report UUID: 8395128b-34ce-4cee-98f3-6614188deefc
+	FML: 4.0.42
+	NeoForge: 21.1.219
+[13:43:57] [Render thread/FATAL] [ne.ne.ne.co.NeoForgeMod/]: Preparing crash report with UUID 33b04cf8-fb50-4af9-8ead-19dda39222b3
+#@!@# Game crashed! Crash report saved to: #@!@# D:\codexout\mcmod\build\gracePrototypeClient\.\crash-reports\crash-2026-10-13_13.43.57-client.txt
+
+> Task :runClient FAILED
+
+[Incubating] Problems report is available at: file:///D:/codexout/mcmod/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':runClient'.
+> Process 'command 'D:\JDK21\bin\java.exe'' finished with non-zero exit value -1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 10m 28s
+8 actionable tasks: 2 executed, 6 up-to-date

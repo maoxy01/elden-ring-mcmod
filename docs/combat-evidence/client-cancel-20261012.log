@@ -1,0 +1,808 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.12/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :syncArt UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :downloadAssets UP-TO-DATE
+> Task :writeClientLegacyClasspath UP-TO-DATE
+> Task :prepareClientRun UP-TO-DATE
+
+> Task :prepareClientSmokeWorld
+[smoke] ��׼���ͻ��˲��Դ浵 build/clientSmoke/saves/codex-player-smoke
+
+> Task :runClient
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+[22:22:21] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientdev, --version, 21.1.219, --assetIndex, 17, --assetsDir, C:\\Users\\30869\\.gradle\\caches\\neoformruntime\\assets, --gameDir, ., --fml.fmlVersion, 4.0.42, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.219, --fml.neoFormVersion, 20240808.144430, --quickPlaySingleplayer, codex-player-smoke]
+[22:22:21] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.12.1+1-LTS
+[22:22:21] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.12.1 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[22:22:21] [main/INFO] [ne.ne.fm.lo.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[22:22:21] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[22:22:21] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[22:22:21] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/30869/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23138!/ Service=ModLauncher Env=CLIENT
+[22:22:21] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 5060 Laptop GPU/PCIe/SSE2 GL version 4.6.0 NVIDIA 616.64, NVIDIA Corporation
+[22:22:22] [main/INFO] [ne.ne.fm.lo.mo.lo.JarInJarDependencyLocator/]: Found 11 dependencies adding them to mods collection
+[22:22:22] [main/INFO] [ne.ne.fm.lo.mo.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		Cloth Config v15 API 15.0.140 (cloth_config)
+		Elden Combat 0.2.0 (eldencombat)
+		EntityCulling 1.11.3 (entityculling)
+		Ferrite Core 7.0.3 (ferritecore)
+		Forgified Fabric API Base 0.4.42+d1308ded19 (fabric_api_base)
+		Forgified Fabric BlockView API (v2) 1.0.10+9afaaf8c19 (fabric_block_view_api_v2)
+		Forgified Fabric Renderer API (v1) 3.4.0+acb05a3919 (fabric_renderer_api_v1)
+		Forgified Fabric Rendering Data Attachment (v1) 0.3.48+73761d2e19 (fabric_rendering_data_attachment_v1)
+		Iris 1.8.12-snapshot+mc1.21.1-local (iris)
+		Just Enough Items 19.27.0.340 (jei)
+		Lithium 0.15.4+mc1.21.1 (lithium)
+		Minecraft 1.21.1 (minecraft)
+		NeoForge 21.1.219 (neoforge)
+		Sodium 0.6.13+mc1.21.1 (sodium)
+		TRansition 1.0.26 (transition)
+		TRender 1.0.17 (trender)
+[22:22:23] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
+[22:22:23] [main/INFO] [cp.mo.mo.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientdev' with arguments [--version, 21.1.219, --gameDir, ., --assetsDir, C:\Users\30869\.gradle\caches\neoformruntime\assets, --assetIndex, 17, --quickPlaySingleplayer, codex-player-smoke]
+[22:22:23] [main/WARN] [mixin/]: Reference map 'entityculling.refmap.mixins.json' for entityculling.mixins.json could not be read. If this is a development environment you can ignore this message
+[22:22:23] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for mixins.iris.json could not be read. If this is a development environment you can ignore this message
+[22:22:23] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for mixins.iris.fantastic.json could not be read. If this is a development environment you can ignore this message
+[22:22:23] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for mixins.iris.vertexformat.json could not be read. If this is a development environment you can ignore this message
+[22:22:23] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for iris-batched-entity-rendering.mixins.json could not be read. If this is a development environment you can ignore this message
+[22:22:23] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for mixins.iris.compat.sodium.json could not be read. If this is a development environment you can ignore this message
+[22:22:23] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.predicates.mixin.json could not be read. If this is a development environment you can ignore this message
+[22:22:23] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.fastmap.mixin.json could not be read. If this is a development environment you can ignore this message
+[22:22:23] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.mrl.mixin.json could not be read. If this is a development environment you can ignore this message
+[22:22:23] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.dedupmultipart.mixin.json could not be read. If this is a development environment you can ignore this message
+[22:22:23] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.blockstatecache.mixin.json could not be read. If this is a development environment you can ignore this message
+[22:22:23] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.dedupbakedquad.mixin.json could not be read. If this is a development environment you can ignore this message
+[22:22:23] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.threaddetec.mixin.json could not be read. If this is a development environment you can ignore this message
+[22:22:23] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.modelsides.mixin.json could not be read. If this is a development environment you can ignore this message
+[22:22:23] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.datacomponents.mixin.json could not be read. If this is a development environment you can ignore this message
+[22:22:23] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.accessors.mixin.json could not be read. If this is a development environment you can ignore this message
+[22:22:23] [main/INFO] [LithiumConfig/]: Option 'mixin.experimental.entity.block_caching.suffocation' requires 'mixin.util.block_tracking=true' but found 'false'. Setting 'mixin.experimental.entity.block_caching.suffocation=false'.
+[22:22:23] [main/INFO] [LithiumConfig/]: Option 'mixin.experimental.entity.block_caching.block_support' requires 'mixin.util.block_tracking=true' but found 'false'. Setting 'mixin.experimental.entity.block_caching.block_support=false'.
+[22:22:23] [main/INFO] [LithiumConfig/]: Option 'mixin.experimental.entity.block_caching.block_touching' requires 'mixin.util.block_tracking=true' but found 'false'. Setting 'mixin.experimental.entity.block_caching.block_touching=false'.
+[22:22:23] [main/INFO] [LithiumConfig/]: Option 'mixin.experimental.entity.block_caching' requires 'mixin.util.block_tracking=true' but found 'false'. Setting 'mixin.experimental.entity.block_caching=false'.
+[22:22:23] [main/INFO] [Lithium/]: Loaded configuration file for Lithium: 148 options available, 0 override(s) found
+[22:22:23] [main/INFO] [Sodium/]: Loaded configuration file for Sodium: 43 options available, 1 override(s) found
+[22:22:23] [main/WARN] [mixin/]: Error loading class: com/portingdeadmods/cable_facades/events/GameClientEvents$2 (java.lang.ClassNotFoundException: com.portingdeadmods.cable_facades.events.GameClientEvents$2)
+[22:22:23] [main/WARN] [mixin/]: Error loading class: com/direwolf20/justdirethings/client/renderers/OurRenderTypes (java.lang.ClassNotFoundException: com.direwolf20.justdirethings.client.renderers.OurRenderTypes)
+[22:22:23] [main/WARN] [mixin/]: Error loading class: mekanism/client/render/entity/RenderFlame (java.lang.ClassNotFoundException: mekanism.client.render.entity.RenderFlame)
+[22:22:23] [main/WARN] [mixin/]: Error loading class: mekanism/client/render/armor/MekaSuitArmor (java.lang.ClassNotFoundException: mekanism.client.render.armor.MekaSuitArmor)
+[22:22:23] [main/WARN] [mixin/]: Error loading class: mekanism/client/render/lib/effect/BillboardingEffectRenderer (java.lang.ClassNotFoundException: mekanism.client.render.lib.effect.BillboardingEffectRenderer)
+[22:22:23] [main/WARN] [mixin/]: Error loading class: blusunrize/immersiveengineering/client/utils/IEGLShaders (java.lang.ClassNotFoundException: blusunrize.immersiveengineering.client.utils.IEGLShaders)
+[22:22:23] [main/WARN] [Sodium/]: Force-disabling mixin 'features.render.world.sky.FogRendererMixin' as rule 'mixin.features.render.world.sky' (added by mods [iris]) disables it and children
+[22:22:23] [main/WARN] [Sodium/]: Force-disabling mixin 'features.render.world.sky.ClientLevelMixin' as rule 'mixin.features.render.world.sky' (added by mods [iris]) disables it and children
+[22:22:23] [main/WARN] [Sodium/]: Force-disabling mixin 'features.render.world.sky.LevelRendererMixin' as rule 'mixin.features.render.world.sky' (added by mods [iris]) disables it and children
+[22:22:23] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[22:22:25] [Datafixer Bootstrap/INFO] [mojang/DataFixerBuilder]: 229 Datafixer optimizations took 174 milliseconds
+[22:22:28] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[22:22:28] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[22:22:28] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[22:22:28] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[22:22:28] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[22:22:28] [Render thread/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/D:/codexout/mcmod/build/moddev/artifacts/neoforge-21.1.219.jar%23189!/assets/.mcassetsroot' uses unexpected schema
+[22:22:28] [Render thread/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/D:/codexout/mcmod/build/moddev/artifacts/neoforge-21.1.219.jar%23189!/data/.mcassetsroot' uses unexpected schema
+[22:22:28] [Render thread/INFO] [mojang/YggdrasilAuthenticationService]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[22:22:28] [Render thread/INFO] [minecraft/Minecraft]: Setting user: Dev
+[22:22:29] [Render thread/INFO] [minecraft/Minecraft]: Backend library: LWJGL version 3.3.3+5
+[22:22:29] [Render thread/INFO] [mojang/Window]: OpenGL Vendor: NVIDIA Corporation
+[22:22:29] [Render thread/INFO] [mojang/Window]: OpenGL Renderer: NVIDIA GeForce RTX 5060 Laptop GPU/PCIe/SSE2
+[22:22:29] [Render thread/INFO] [mojang/Window]: OpenGL Version: 4.6.0 NVIDIA 616.64
+[22:22:29] [Render thread/INFO] [Sodium-NvidiaWorkarounds/]: Modifying OpenGL context to apply workarounds for the NVIDIA graphics driver...
+[22:22:29] [Render thread/INFO] [Iris/]: Debug functionality is disabled.
+[22:22:29] [Render thread/INFO] [Iris/]: OpenGL 4.5 detected, enabling DSA.
+[22:22:29] [Render thread/INFO] [Iris/]: Shaders are disabled because no valid shaderpack is selected
+[TRender] Initializing Client...
+[22:22:29] [modloading-worker-0/INFO] [ne.ne.ne.co.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.219, for MC 1.21.1
+[22:22:29] [modloading-worker-0/INFO] [EldenCombat/]: [EldenCombat] ServerCombat ��ע�ᵽ��Ϸ�¼����ߣ�������һ�Σ�
+[22:22:29] [modloading-worker-0/INFO] [EldenCombat/]: [EldenCombat] ��ԭ��ս����չ loaded (MC 1.21.1 / NeoForge 21.1.219)
+[22:22:29] [modloading-worker-0/INFO] [me.je.li.lo.PluginCaller/]: Sending ConfigManager...
+[22:22:29] [modloading-worker-0/INFO] [me.je.li.lo.PluginCaller/]: Sending ConfigManager took 3.188 milliseconds
+[22:22:30] [Render thread/INFO] [Iris/]: Hardware information:
+[22:22:30] [Render thread/INFO] [Iris/]: CPU: 24x Intel(R) Core(TM) i7-14650HX
+[22:22:30] [Render thread/INFO] [Iris/]: GPU: NVIDIA GeForce RTX 5060 Laptop GPU/PCIe/SSE2 (Supports OpenGL 4.6.0 NVIDIA 616.64)
+[22:22:30] [Render thread/INFO] [Iris/]: OS: Windows 11 (10.0)
+[22:22:30] [Render thread/INFO] [ne.ne.ne.ga.GameTestHooks/]: Enabled Gametest Namespaces: []
+[22:22:30] [Render thread/INFO] [minecraft/ReloadableResourceManager]: Reloading ResourceManager: vanilla, mod_resources, mod/sodium, mod/entityculling, mod/iris, mod/fabric_renderer_api_v1, mod/fabric_api_base, mod/ferritecore, mod/eldencombat, mod/transition, mod/jei, mod/fabric_rendering_data_attachment_v1, mod/lithium, mod/trender, mod/cloth_config, mod/neoforge, mod/fabric_block_view_api_v2
+[22:22:30] [Worker-Main-10/INFO] [minecraft/UnihexProvider]: Found unifont_jp_patch-15.1.05.hex, loading
+[22:22:30] [Worker-Main-5/INFO] [minecraft/UnihexProvider]: Found unifont_all_no_pua-15.1.05.hex, loading
+[22:22:30] [Render thread/INFO] [EldenCombat/]: [EldenCombat] ս������������: D:\codexout\mcmod\build\clientSmoke\config\eldencombat-combat.json
+[22:22:30] [Worker-Main-11/WARN] [minecraft/SpriteLoader]: Texture eldencombat:item/blank with size 1x1 limits mip level from 4 to 0
+[22:22:31] [Render thread/WARN] [minecraft/SoundEngine]: Missing sound for event: minecraft:item.goat_horn.play
+[22:22:31] [Render thread/WARN] [minecraft/SoundEngine]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[22:22:32] [Render thread/INFO] [mojang/Library]: OpenAL initialized on device OpenAL Soft on ������ (Realtek(R) Audio)
+[22:22:32] [Render thread/INFO] [minecraft/SoundEngine]: Sound engine started
+[22:22:32] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[22:22:32] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[22:22:32] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[22:22:32] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[22:22:32] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[22:22:32] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[22:22:32] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[22:22:32] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[22:22:32] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[22:22:32] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[22:22:32] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[22:22:32] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[22:22:32] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[22:22:32] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[22:22:32] [Render thread/WARN] [minecraft/ShaderInstance]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[22:22:32] [Render thread/INFO] [EldenCombat/]: [EldenCombat] Weapon resource cache ready: 41 entries
+[22:22:32] [Render thread/INFO] [EldenCombat/]: [skills] ս����̬������8 ��
+[22:22:32] [Render thread/INFO] [EldenCombat/]: [EldenCombat] ������̬У��������0 ��
+[22:22:32] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x0 jei:textures/atlas/gui.png-atlas
+[22:22:32] [Render thread/INFO] [ne.ne.ne.cl.en.an.js.AnimationLoader/]: Loaded 0 entity animations
+[22:22:32] [Render thread/WARN] [ne.ne.ne.co.CommonHooks/WP]: The following mods have version differences that were not resolved:
+eldencombat (version 0.1.0 -> 0.2.0)
+neoforge (version 21.1.209 -> 21.1.219)
+Things may not work well.
+[22:22:33] [Render thread/INFO] [minecraft/RecipeManager]: Loaded 1314 recipes
+[22:22:33] [Render thread/INFO] [minecraft/AdvancementTree]: Loaded 1399 advancements
+[22:22:33] [Render thread/INFO] [EldenCombat/]: [talismans] ������������ 4 ��
+[22:22:33] [Render thread/INFO] [EldenCombat/]: [consumables] ҩ���������� 3 ��
+[22:22:33] [Server thread/INFO] [minecraft/IntegratedServer]: Starting integrated minecraft server version 1.21.1
+[22:22:33] [Server thread/INFO] [minecraft/MinecraftServer]: Generating keypair
+[22:22:34] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing start region for dimension minecraft:overworld
+[22:22:34] [progressListener/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 2%
+[22:22:34] [Server thread/INFO] [ne.ne.ne.se.pe.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[22:22:34] [progressListener/INFO] [minecraft/LoggerChunkProgressListener]: Time elapsed: 468 ms
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [skills] ׷��ս���������� 8 ��
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [weapons] ������ֵ������ 41 ��
+[22:22:34] [Server thread/INFO] [minecraft/MinecraftServer]: [Not Secure] [Server] [etest] load start
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [EldenCombat] ����������ʲ�: 19 ���� / 38 ���� / 8 ������
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ֱ������ܳ� (���� 22��ʵ�� 22)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ֱ��������� (���� 15.0��ʵ�� 15.0)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ֱ��������� (���� 8-12��ʵ�� 8-12)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ֱ������˺� (���� 5.0��ʵ�� 5.0)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ������ܳ� (���� 30��ʵ�� 30)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ��������� (���� 20.0��ʵ�� 20.0)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ��������� (���� 12-17��ʵ�� 12-17)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ������˺� (���� 7.0��ʵ�� 7.0)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �ػ����� (���� 15-20��ʵ�� 15-20)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �ػ����� (���� 25.0��ʵ�� 25.0)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �ػ�ֱ���˺� (���� 8.0��ʵ�� 8.0)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �ػ����˺� (���� 11.0��ʵ�� 11.0)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �������ػ����� (���� 16-22��ʵ�� 16-22)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ���������� (���� 35.0��ʵ�� 35.0)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ���������˺� (���� 15.0��ʵ�� 15.0)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ������ֱ���˺� (���� 11.0��ʵ�� 11.0)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �������� tick (���� 20��ʵ�� 20)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �����Զ��ͷ����� (���� 30��ʵ�� 30)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �������� (���� 22.0��ʵ�� 22.0)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �����ܳ� (���� 20��ʵ�� 20)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �����޵д��� (���� 4-11��ʵ�� 4-11)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �������� (���� 15.0��ʵ�� 15.0)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �����ܳ� (���� 18��ʵ�� 18)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �����ɹ����� (���� 3-7��ʵ�� 3-7)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ��ҩ�ܳ� (���� 28��ʵ�� 28)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ��ҩ��Ч tick (���� 18��ʵ�� 18)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ��ҩ�ظ� (���� 8.0��ʵ�� 8.0)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ��ʼҩƿ���� (���� 4��ʵ�� 4)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �������� (���� 100.0��ʵ�� 100.0)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �����ָ��ӳ� (���� 12��ʵ�� 12)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Boss ���� (���� 200.0��ʵ�� 200.0)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Boss ���׶���ֵ (���� 0.6��ʵ�� 0.6)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Boss ʧ������ (���� 100.0��ʵ�� 100.0)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ʧ��ָ��ӳ� (���� 80��ʵ�� 80)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ���ⴰ������ (���� 40��ʵ�� 40)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �������˱��� (���� 1.5��ʵ�� 1.5)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ���ⴰ��ȡ���������޵Ľϴ��� (���� 70��ʵ�� 70)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ���ⴰ�ڲ��㶯��ʱ��ʱ���������� (���� 40��ʵ�� 40)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS δ�����޶������� (���� 1.0��ʵ�� 1.0)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ������������Ч (���� 1.5��ʵ�� 1.5)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ����ʧ�����޲����� (���� 100.0��ʵ�� 100.0)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ����ʧ������ ��1.5 (���� 150.0��ʵ�� 150.0)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �ܷ�׶�� (���� 120.0��ʵ�� 120.0)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �Ʒ�Ӳֱ (���� 24��ʵ�� 24)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ������Χ (���� 24.0��ʵ�� 24.0)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ���������Χ (���� 32.0��ʵ�� 32.0)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ���ǰҡ�������ж�
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ������������Ч
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ��������յ㲻��
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �������ڱ߽� 2 ����Ч
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �������ڱ߽� 3 ��Ч
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �������ڱ߽� 6 ��Ч
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �������ڱ߽� 7 ����Ч
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ͬһ����״�����
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ͬһ����ظ����б��ܾ�
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ��������¿�����
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ��������ǰ���޵�
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �����������޵�
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �������ں���޵�
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ���� 0 ���ڶܷ�׶��
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ���� 59 ���ڶܷ�׶��
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ���� 180 �Ȳ��ڶܷ�׶��
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ���������Լ�������Ӧ�Ʒ���
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �����㹻�ɵ�
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �Ʒ��ڼ�ܷ�ʧЧ
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �Ʒ�������ָ�
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ľ�Ⱥ�ɨ�ɵ���
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ذ�׿ɵ���
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ľ�����Ҳ��ɵ���
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �ƽ𴸲��ɵ���
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �������ε����ɴ���ʧ��
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �װ治���ڴ�������
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ���ú��޲����޵�
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ��ҩ�ж�δ����Чʱ�̲�����
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ��ҩ��Чʱ�� (���� 18��ʵ�� 18)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ��ҩ����һ�� (���� 3��ʵ�� 3)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �߶δ�����Χ������
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �߶�ƫ���Χ�в�����
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ��һ tick �ж��岹©
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ����������
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �������� (���� 19��ʵ�� 19)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �������� (���� 38��ʵ�� 38)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS β�͹������� (���� 3��ʵ�� 3)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS β�ͷ������� (���� 3��ʵ�� 3)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS β�͹����� tail_01 -> tail_02 -> tail_03
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ���� staff_socket �� spectral_socket
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �������� (���� 8��ʵ�� 8)
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �������� idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �������� walk
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �������� staff_sweep
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �������� staff_slam
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �������� dagger_slash
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �������� hammer_slam
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �������� stagger
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �������� death
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ذ�׶����� equip �¼�
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �ƽ𴸶����� equip �¼�
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ��������ȡ��������ʾ
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ����ԭ�� y = 1.5 ����
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ͷ��ԭ����ڹ���
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ���ɰ�Χ���ں�����Χ
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS ľ���ж��峤�ȴ��� 1.5 ����
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS �ƽ𴸴�ͷ�����ճֵ㸽��
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player bone/cube count false
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Skin and overlay UV bounds false
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Native skin face orientation false
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Native overlay orientation false
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD light_1
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD heavy_windup
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD heavy_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD charged_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD roll
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD parry
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD drink
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD guard_idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD guard_break
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD hit_stagger
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD death
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD walk
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD walk
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD walk
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD walk
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD run
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD run
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD run
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD run
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD guard_idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD guard_idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD guard_idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD guard_idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD light_1
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD light_1
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD light_1
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD light_1
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD light_2
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD light_2
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD light_2
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD light_2
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD heavy_windup
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD heavy_windup
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD heavy_windup
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD heavy_windup
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD heavy_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD heavy_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD heavy_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD heavy_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD charged_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD charged_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD charged_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD charged_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD roll
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD roll
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD roll
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD roll
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD parry
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD parry
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD parry
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD parry
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD guard_hit
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD guard_hit
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD guard_hit
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD guard_hit
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD guard_break
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD guard_break
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD guard_break
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD guard_break
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD drink
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD drink
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD drink
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD drink
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD hit_stagger
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD hit_stagger
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD hit_stagger
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD hit_stagger
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD death
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD death
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD death
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD death
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD light_1
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD heavy_windup
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD heavy_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD charged_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD roll
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD parry
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD drink
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD guard_idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD guard_break
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD hit_stagger
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD death
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD walk
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD walk
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD walk
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD walk
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD run
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD run
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD run
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD run
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD guard_idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD guard_idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD guard_idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD guard_idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD light_1
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD light_1
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD light_1
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD light_1
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD light_2
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD light_2
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD light_2
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD light_2
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD heavy_windup
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD heavy_windup
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD heavy_windup
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD heavy_windup
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD heavy_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD heavy_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD heavy_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD heavy_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD charged_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD charged_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD charged_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD charged_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD roll
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD roll
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD roll
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD roll
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD parry
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD parry
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD parry
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD parry
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD guard_hit
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD guard_hit
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD guard_hit
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD guard_hit
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD guard_break
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD guard_break
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD guard_break
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD guard_break
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD drink
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD drink
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD drink
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD drink
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD hit_stagger
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD hit_stagger
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD hit_stagger
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD hit_stagger
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD death
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD death
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD death
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD death
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player bone/cube count true
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Skin and overlay UV bounds true
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Native skin face orientation true
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Native overlay orientation true
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD light_1
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD heavy_windup
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD heavy_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD charged_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD roll
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD parry
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD drink
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD guard_idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD guard_break
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD hit_stagger
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD death
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD walk
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD walk
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD walk
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD walk
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD run
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD run
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD run
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD run
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD guard_idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD guard_idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD guard_idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD guard_idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD light_1
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD light_1
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD light_1
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD light_1
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD light_2
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD light_2
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD light_2
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD light_2
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD heavy_windup
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD heavy_windup
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD heavy_windup
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD heavy_windup
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD heavy_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD heavy_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD heavy_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD heavy_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD charged_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD charged_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD charged_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD charged_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD roll
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD roll
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD roll
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD roll
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD parry
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD parry
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD parry
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD parry
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD guard_hit
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD guard_hit
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD guard_hit
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD guard_hit
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD guard_break
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD guard_break
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD guard_break
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD guard_break
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD drink
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD drink
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD drink
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD drink
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD hit_stagger
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD hit_stagger
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD hit_stagger
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD hit_stagger
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD death
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD death
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD death
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD death
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD light_1
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD heavy_windup
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD heavy_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD charged_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD roll
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD parry
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD drink
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD guard_idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD guard_break
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD hit_stagger
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD death
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD walk
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD walk
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD walk
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD walk
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD run
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD run
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD run
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD run
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD guard_idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD guard_idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD guard_idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD guard_idle
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD light_1
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD light_1
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD light_1
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD light_1
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD light_2
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD light_2
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD light_2
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD light_2
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD heavy_windup
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD heavy_windup
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD heavy_windup
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD heavy_windup
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD heavy_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD heavy_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD heavy_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD heavy_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD charged_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD charged_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD charged_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD charged_release
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD roll
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD roll
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD roll
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD roll
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD parry
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD parry
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD parry
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD parry
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD guard_hit
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD guard_hit
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD guard_hit
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD guard_hit
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD guard_break
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD guard_break
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD guard_break
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD guard_break
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD drink
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD drink
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD drink
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD drink
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD hit_stagger
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD hit_stagger
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD hit_stagger
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD hit_stagger
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD death
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD death
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD death
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD death
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Native armor orientation
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Configured hit-start retiming
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Configured hit-end retiming
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Configured recovery retiming
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Full charge retiming
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Unsorted equip events
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Event zero fires once
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Loop boundary event
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Skipped frame events
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Fast blade crosses between endpoints
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Sweep outside target misses
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No execution/jump attack IDs
+[22:22:34] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Non-finite direction rejected
+[22:22:34] [Server thread/INFO] [minecraft/MinecraftServer]: [Not Secure] [Server] [etest] MARGIT_SUMMONED
+[22:22:34] [Server thread/INFO] [minecraft/IntegratedServer]: Changing view distance to 12, from 10
+[22:22:34] [Server thread/INFO] [minecraft/IntegratedServer]: Changing simulation distance to 12, from 0
+Lithium Cached BlockState Flags are disabled!
+[22:22:35] [Server thread/INFO] [minecraft/PlayerList]: Dev[local:E:24906218] logged in with entity id 2 at (2.5, -60.0, 7.5)
+[22:22:35] [Server thread/INFO] [minecraft/MinecraftServer]: Dev joined the game
+[22:22:35] [Render thread/INFO] [Iris/]: Reloading pipeline on dimension change: null => minecraft:overworld
+[22:22:35] [Render thread/INFO] [Iris/]: Creating pipeline for dimension minecraft:overworld
+[22:22:35] [Render thread/INFO] [ChunkBuilder/]: Started 10 worker threads
+[22:22:35] [Render thread/INFO] [me.je.co.ut.LoggedTimer/]: Starting JEI...
+[22:22:35] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Registering item subtypes...
+[22:22:35] [Render thread/INFO] [me.je.li.lo.PluginCallerTimerRunnable/]: Registering item subtypes: jei:minecraft took 11.61 milliseconds
+[22:22:35] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Registering item subtypes took 12.22 milliseconds
+[22:22:35] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Registering fluid subtypes...
+[22:22:35] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Registering fluid subtypes took 2.694 milliseconds
+[22:22:35] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Registering ingredients...
+[22:22:35] [Render thread/INFO] [me.je.li.lo.PluginCallerTimerRunnable/]: Registering ingredients: jei:minecraft took 134.8 milliseconds
+[22:22:35] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Registering ingredients took 135.3 milliseconds
+[22:22:35] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Registering extra ingredients...
+[22:22:35] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Registering extra ingredients took 250.6 microseconds
+[22:22:35] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Registering search ingredient aliases...
+[22:22:35] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Registering search ingredient aliases took 416.5 microseconds
+[22:22:36] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Registering Mod Info...
+[22:22:36] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Registering Mod Info took 313.8 microseconds
+[22:22:36] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Registering categories...
+[22:22:36] [Render thread/INFO] [me.je.li.lo.PluginCallerTimerRunnable/]: Registering categories: jei:minecraft took 42.30 milliseconds
+[22:22:36] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Registering categories took 51.49 milliseconds
+[22:22:36] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Registering vanilla category extensions...
+[22:22:36] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Registering vanilla category extensions took 5.320 milliseconds
+[22:22:36] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Registering recipe catalysts...
+[22:22:36] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Registering recipe catalysts took 511.5 microseconds
+[22:22:36] [Render thread/INFO] [me.je.co.ut.LoggedTimer/]: Building recipe registry...
+[22:22:36] [Render thread/INFO] [me.je.co.ut.LoggedTimer/]: Building recipe registry took 24.88 milliseconds
+[22:22:36] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Registering advanced plugins...
+[22:22:36] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Registering advanced plugins took 314.3 microseconds
+[22:22:36] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Registering recipes...
+[22:22:36] [Render thread/INFO] [me.je.li.lo.PluginCallerTimerRunnable/]: Registering recipes: jei:minecraft took 162.2 milliseconds
+[22:22:36] [Render thread/INFO] [me.je.li.lo.PluginCallerTimerRunnable/]: Registering recipes: jei:internal took 20.43 milliseconds
+[22:22:36] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Registering recipes took 183.4 milliseconds
+[22:22:36] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Registering recipes transfer handlers...
+[22:22:36] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Registering recipes transfer handlers took 4.093 milliseconds
+[22:22:36] [Render thread/INFO] [me.je.co.ut.LoggedTimer/]: Building runtime...
+[22:22:36] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Registering gui handlers...
+[22:22:36] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Registering gui handlers took 13.39 milliseconds
+[22:22:36] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Registering Runtime...
+[22:22:36] [Render thread/INFO] [me.je.gu.st.JeiGuiStarter/]: Starting JEI GUI
+[22:22:36] [Render thread/INFO] [me.je.co.ut.LoggedTimer/]: Building ingredient list...
+[22:22:36] [Render thread/INFO] [me.je.co.ut.LoggedTimer/]: Building ingredient list took 21.46 milliseconds
+[22:22:36] [Render thread/INFO] [me.je.co.ut.LoggedTimer/]: Building ingredient filter...
+[22:22:36] [Render thread/INFO] [me.je.gu.in.IngredientFilter/]: Adding 1788 ingredients
+[22:22:36] [Render thread/INFO] [me.je.gu.in.IngredientFilter/]: Added 1788 ingredients
+[22:22:36] [Render thread/INFO] [me.je.co.ut.LoggedTimer/]: Building ingredient filter took 223.3 milliseconds
+[22:22:36] [Render thread/INFO] [me.je.li.lo.PluginCallerTimerRunnable/]: Registering Runtime: jei:neoforge_gui took 451.9 milliseconds
+[22:22:36] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Registering Runtime took 452.8 milliseconds
+[22:22:36] [Render thread/INFO] [me.je.co.ut.LoggedTimer/]: Building runtime took 485.0 milliseconds
+[22:22:36] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Sending Runtime...
+[22:22:36] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Sending Runtime took 374.0 microseconds
+[22:22:36] [Render thread/INFO] [me.je.co.ut.LoggedTimer/]: Starting JEI took 1.007 seconds
+[22:22:36] [Render thread/INFO] [minecraft/AdvancementTree]: Loaded 2 advancements
+[22:22:37] [Server thread/INFO] [EldenCombat/]: CLIENT_SMOKE: 428 shared checks passed
+[22:22:38] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: idle
+[22:22:38] [IO-Worker-2/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 00-idle.png Saved screenshot as 00-idle.png
+[22:22:39] [Server thread/INFO] [minecraft/MinecraftServer]: Dev has made the advancement [Suit Up]
+[22:22:39] [Render thread/INFO] [minecraft/ChatComponent]: [System] [CHAT] Dev has made the advancement [Suit Up]
+[22:22:39] [Render thread/INFO] [minecraft/AdvancementTree]: Loaded 10 advancements
+[22:22:39] [Server thread/INFO] [minecraft/MinecraftServer]: [Not Secure] [Server] [etest] verify start
+[22:22:39] [Server thread/INFO] [minecraft/MinecraftServer]: [Not Secure] [Server] [etest] MARGIT_ALIVE_AFTER_100_TICKS
+[22:22:39] [Server thread/INFO] [minecraft/MinecraftServer]: [Not Secure] [Server] [etest] DAMAGE_PIPELINE_OBSERVED
+[22:22:39] [Render thread/INFO] [minecraft/ChatComponent]: [System] [CHAT] [Server] [etest] verify start
+[22:22:39] [Render thread/INFO] [minecraft/ChatComponent]: [System] [CHAT] [Server] [etest] MARGIT_ALIVE_AFTER_100_TICKS
+[22:22:39] [Render thread/INFO] [minecraft/ChatComponent]: [System] [CHAT] [Server] [etest] DAMAGE_PIPELINE_OBSERVED
+[22:22:40] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: armor-guard
+[22:22:40] [IO-Worker-2/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 01-armor-guard.png Saved screenshot as 01-armor-guard.png
+[22:22:42] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: light
+[22:22:42] [IO-Worker-2/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 02-light.png Saved screenshot as 02-light.png
+[22:22:42] [Server thread/INFO] [minecraft/MinecraftServer]: [Not Secure] [Server] [etest] MARGIT_REMOVED_AFTER_DEATH
+[22:22:42] [Server thread/INFO] [minecraft/MinecraftServer]: [Not Secure] [Server] [etest] DONE
+[22:22:42] [Render thread/INFO] [minecraft/ChatComponent]: [System] [CHAT] [Server] [etest] MARGIT_REMOVED_AFTER_DEATH
+[22:22:42] [Render thread/INFO] [minecraft/ChatComponent]: [System] [CHAT] [Server] [etest] DONE
+[22:22:44] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: charged
+[22:22:44] [IO-Worker-2/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 03-charged.png Saved screenshot as 03-charged.png
+[22:22:46] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: roll
+[22:22:46] [IO-Worker-1/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 04-roll.png Saved screenshot as 04-roll.png
+[22:22:48] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: parry
+[22:22:48] [IO-Worker-1/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 05-parry.png Saved screenshot as 05-parry.png
+[22:22:50] [ForkJoinPool.commonPool-worker-8/WARN] [Iris/]: [Iris Update Check] Failed to get update info!
+java.net.ConnectException: Connection timed out: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method) ~[?:?] {}
+	at java.base/sun.nio.ch.Net.connect(Net.java:601) ~[?:?] {}
+	at java.base/sun.nio.ch.Net.connect(Net.java:590) ~[?:?] {}
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583) ~[?:?] {}
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?] {}
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[?:?] {}
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?] {}
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:181) ~[?:?] {}
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183) ~[?:?] {}
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:539) ~[?:?] {}
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:644) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:265) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:378) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:196) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1260) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1146) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1075) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:181) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1707) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1632) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223) ~[?:?] {}
+	at java.base/java.net.URL.openStream(URL.java:1325) ~[?:?] {}
+	at TRANSFORMER/iris@1.8.12-snapshot+mc1.21.1-local/net.irisshaders.iris.UpdateChecker.lambda$checkForUpdates$0(UpdateChecker.java:89) ~[iris-neoforge-1.8.12+mc1.21.1.jar:?] {re:classloading,re:mixin}
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) [?:?] {}
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760) [?:?] {}
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) [?:?] {}
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) [?:?] {}
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) [?:?] {}
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) [?:?] {}
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) [?:?] {}
+[22:22:50] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: drink
+[22:22:50] [IO-Worker-1/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 06-drink.png Saved screenshot as 06-drink.png
+[22:22:52] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: great-sword
+[22:22:52] [IO-Worker-1/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 07-great-sword.png Saved screenshot as 07-great-sword.png
+[22:22:54] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: great-left
+[22:22:54] [IO-Worker-1/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 08-great-left.png Saved screenshot as 08-great-left.png
+[22:22:56] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: first-sword
+[22:22:56] [IO-Worker-1/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 09-first-sword.png Saved screenshot as 09-first-sword.png
+[22:22:58] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: first-great
+[22:22:58] [IO-Worker-1/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 10-first-great.png Saved screenshot as 10-first-great.png
+[22:23:00] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: first-drink
+[22:23:00] [IO-Worker-1/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 11-first-drink.png Saved screenshot as 11-first-drink.png
+[22:23:02] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: vanilla-fallback
+[22:23:02] [IO-Worker-1/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 12-vanilla-fallback.png Saved screenshot as 12-vanilla-fallback.png
+[22:23:04] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-vanilla-sword
+[22:23:04] [IO-Worker-1/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 13-ref-vanilla-sword.png Saved screenshot as 13-ref-vanilla-sword.png
+[22:23:06] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-our-sword
+[22:23:06] [IO-Worker-1/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 14-ref-our-sword.png Saved screenshot as 14-ref-our-sword.png
+[22:23:08] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-vanilla-sword-first
+[22:23:08] [IO-Worker-1/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 15-ref-vanilla-sword-first.png Saved screenshot as 15-ref-vanilla-sword-first.png
+[22:23:10] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-our-sword-first
+[22:23:10] [IO-Worker-1/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 16-ref-our-sword-first.png Saved screenshot as 16-ref-our-sword-first.png
+[22:23:12] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-remembrance-sword
+[22:23:12] [IO-Worker-1/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 17-ref-remembrance-sword.png Saved screenshot as 17-ref-remembrance-sword.png
+[22:23:14] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-great-sword
+[22:23:14] [IO-Worker-1/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 18-ref-great-sword.png Saved screenshot as 18-ref-great-sword.png
+[22:23:15] [Render thread/INFO] [EldenCombat/]: [EldenCombat] ������̬У��������0 ��
+[22:23:16] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-remembrance-noyaw
+[22:23:16] [IO-Worker-1/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 19-ref-remembrance-noyaw.png Saved screenshot as 19-ref-remembrance-noyaw.png
+[22:23:17] [Render thread/INFO] [EldenCombat/]: CLIENT_SMOKE_PASS: all 20 visual fixtures rendered
+[22:23:17] [Render thread/INFO] [Iris/]: Destroying pipeline minecraft:overworld
+[22:23:17] [Render thread/INFO] [Iris/]: Shaders are disabled because no valid shaderpack is selected
+[22:23:17] [Render thread/INFO] [Iris/]: Creating pipeline for dimension minecraft:overworld
+[22:23:17] [Render thread/INFO] [minecraft/ChatComponent]: [System] [CHAT] Shaders Reloaded!
+[22:23:17] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: combat toggle snapshot via real key press
+[22:23:18] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: bound light attack
+[22:23:18] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: stale cancel rejected
+[22:23:18] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: real blade hits target once
+[22:23:18] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fresh cancel accepted
+[22:23:19] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: guard accepted
+[22:23:19] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: guard released
+[22:23:19] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: drink before consume tick
+[22:23:20] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: drink heals once after consume tick
+[22:23:22] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: full charge release
+[22:23:23] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: roll moves through server physics and preserves height
+[22:23:23] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: client roll height retained
+[22:23:23] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: roll clears invulnerability and retains height
+[22:23:24] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: changing weapon cancels charge
+[22:23:26] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: roll stops at wall without tunneling
+[22:23:27] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: air roll preserves client falling
+[22:23:27] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: air roll preserves server falling
+[22:23:28] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: skill cast accepted from real key press (client mirror follows server cast)
+[22:23:28] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: client mirror sees the cast (skill cast payload arrived)
+[22:23:28] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: skill cast accepted from real key press: cast#1 wave_of_gold WINDUP ��0 �ѽ���0 ����0 ׷����-9223372036854775808
+[22:23:29] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: real key spawned exactly one non-flame travelling golden wave
+[22:23:29] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: skill timeline finished and returned to idle
+[22:23:29] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: golden wave dealt exactly one 14 damage hit, health=6.0
+[22:23:30] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fresh boss is not broken
+[22:23:30] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: server entered break state with outline
+[22:23:30] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: break boss is tracked by the client
+[22:23:30] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: client mirror sees break state (DATA_BROKEN synced)
+[22:23:30] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: client mirror sees break outline (shared flag 6 synced)
+[22:23:31] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: jump skill cast accepted while airborne (client mirror follows server cast)
+[22:23:31] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: jump skill server-side cast is gold_breaker: cast#2 gold_breaker WINDUP ��0 �ѽ���0 ����0 ׷����-9223372036854775808
+[22:23:34] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: landing safety net observed the landing after the cast ended (LANDED)
+[22:23:34] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: player is back on solid ground, not stuck in the air or in the void
+[22:23:35] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: insufficient FP request rejected without charge
+[22:23:35] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: rejected request spawned no wave
+[22:23:35] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: wall test real key accepted
+[22:23:37] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: golden wave did not damage target behind wall
+[22:23:38] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: starcaller initial key accepted
+[22:23:39] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: starcaller first stage dealt 10 damage
+[22:23:39] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: starcaller followup key reached second ACTIVE
+[22:23:41] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: starcaller followup landing dealt 25 damage
+[22:23:41] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: starcaller charged two inputs once
+[22:23:41] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: cleanup test key accepted
+[22:23:42] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: manual cancel rejected during windup
+[22:23:42] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: cleanup fixture emitted wave
+[22:23:42] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: weapon switch forced cancellation
+[22:23:42] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: weapon cancellation removed emitted wave
+[22:23:42] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: cancellation retained one FP charge
+[22:23:42] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: hard recovery rejected roll
+[22:23:43] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: recovery tail connected to roll through network
+[22:23:43] [Server thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: cancel restored ordinary gravity
+[22:23:44] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: all network checks completed
+Shutting down culling task!
+[22:23:44] [Render thread/INFO] [minecraft/Minecraft]: Stopping!
+[22:23:44] [Render thread/INFO] [me.je.li.st.JeiStarter/]: Stopping JEI
+[22:23:44] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Sending Runtime Unavailable...
+[22:23:44] [Render thread/INFO] [me.je.ne.pl.ne.NeoForgeGuiPlugin/]: Stopping JEI GUI
+[22:23:44] [Render thread/INFO] [me.je.li.lo.PluginCaller/]: Sending Runtime Unavailable took 1.712 milliseconds
+[22:23:44] [Server thread/INFO] [minecraft/ServerGamePacketListenerImpl]: Dev lost connection: Disconnected
+[22:23:44] [Server thread/INFO] [minecraft/MinecraftServer]: Dev left the game
+[22:23:44] [Server thread/INFO] [minecraft/ServerCommonPacketListenerImpl]: Stopping singleplayer server as player logged out
+[22:23:44] [Server thread/INFO] [minecraft/MinecraftServer]: Stopping server
+[22:23:44] [Server thread/INFO] [minecraft/MinecraftServer]: Saving players
+[22:23:44] [Server thread/INFO] [minecraft/MinecraftServer]: Saving worlds
+[22:23:45] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[22:23:45] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[22:23:45] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[22:23:45] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (codex-player-smoke): All chunks are saved
+[22:23:45] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[22:23:45] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[22:23:45] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage: All dimensions are saved
+[22:23:45] [Render thread/INFO] [ChunkBuilder/]: Stopping worker threads
+
+BUILD SUCCESSFUL in 1m 33s
+9 actionable tasks: 2 executed, 7 up-to-date

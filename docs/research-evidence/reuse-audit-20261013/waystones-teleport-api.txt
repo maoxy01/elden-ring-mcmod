@@ -1,0 +1,59 @@
+Compiled from "WaystoneTeleportEvent.java"
+public class net.blay09.mods.waystones.api.event.WaystoneTeleportEvent$Pre extends net.blay09.mods.waystones.api.event.WaystoneTeleportEvent {
+  public net.blay09.mods.waystones.api.event.WaystoneTeleportEvent$Pre(net.blay09.mods.waystones.api.WaystoneTeleportContext);
+  public net.blay09.mods.waystones.api.WaystoneTeleportContext getContext();
+  public net.blay09.mods.waystones.api.requirement.WarpRequirement getRequirements();
+  public void setRequirements(net.blay09.mods.waystones.api.requirement.WarpRequirement);
+  public void addAdditionalEntity(net.minecraft.world.entity.Entity);
+}
+Compiled from "Waystone.java"
+public interface net.blay09.mods.waystones.api.Waystone {
+  public abstract java.util.UUID getWaystoneUid();
+  public abstract net.minecraft.network.chat.Component getName();
+  public default net.minecraft.network.chat.Component getEffectiveName();
+  public abstract net.minecraft.resources.ResourceKey<net.minecraft.world.level.Level> getDimension();
+  public default boolean wasGenerated();
+  public abstract net.blay09.mods.waystones.api.WaystoneOrigin getOrigin();
+  public abstract boolean isOwner(net.minecraft.world.entity.player.Player);
+  public abstract net.minecraft.core.BlockPos getPos();
+  public abstract boolean isValid();
+  public abstract java.util.UUID getOwnerUid();
+  public default java.lang.String getOwnerUsername();
+  public abstract net.minecraft.resources.ResourceLocation getWaystoneType();
+  public default boolean hasName();
+  public default boolean hasOwner();
+  public default boolean isValidInLevel(net.minecraft.server.level.ServerLevel);
+  public default java.util.Optional<net.blay09.mods.waystones.api.TeleportDestination> resolveDestination(net.minecraft.server.level.ServerLevel);
+  public abstract boolean isTransient();
+  public abstract net.blay09.mods.waystones.api.WaystoneVisibility getVisibility();
+  public default java.util.Set<net.minecraft.resources.ResourceLocation> getWaystoneGroups();
+}
+Compiled from "WaystoneTeleportContext.java"
+public interface net.blay09.mods.waystones.api.WaystoneTeleportContext {
+  public abstract net.minecraft.world.entity.Entity getEntity();
+  public abstract net.blay09.mods.waystones.api.Waystone getTargetWaystone();
+  public abstract net.blay09.mods.waystones.api.WaystoneTeleportContext setTargetWaystone(net.blay09.mods.waystones.api.Waystone);
+  public abstract java.util.List<net.minecraft.world.entity.Mob> getLeashedEntities();
+  public abstract java.util.List<net.minecraft.world.entity.Entity> getAdditionalEntities();
+  public abstract net.blay09.mods.waystones.api.WaystoneTeleportContext addAdditionalEntity(net.minecraft.world.entity.Entity);
+  public abstract java.util.Optional<net.blay09.mods.waystones.api.Waystone> getFromWaystone();
+  public abstract net.blay09.mods.waystones.api.WaystoneTeleportContext setFromWaystone(net.blay09.mods.waystones.api.Waystone);
+  public abstract net.minecraft.world.item.ItemStack getWarpItem();
+  public abstract net.blay09.mods.waystones.api.WaystoneTeleportContext setWarpItem(net.minecraft.world.item.ItemStack);
+  public abstract net.minecraft.world.InteractionHand getWarpHand();
+  public abstract net.blay09.mods.waystones.api.WaystoneTeleportContext setWarpHand(net.minecraft.world.InteractionHand);
+  public abstract boolean isDimensionalTeleport();
+  public abstract net.blay09.mods.waystones.api.requirement.WarpRequirement getRequirements();
+  public abstract net.blay09.mods.waystones.api.WaystoneTeleportContext setRequirements(net.blay09.mods.waystones.api.requirement.WarpRequirement);
+  public abstract boolean playsSound();
+  public abstract net.blay09.mods.waystones.api.WaystoneTeleportContext setPlaysSound(boolean);
+  public abstract boolean playsEffect();
+  public abstract net.blay09.mods.waystones.api.WaystoneTeleportContext setPlaysEffect(boolean);
+  public abstract boolean appliesModifiers();
+  public abstract net.blay09.mods.waystones.api.WaystoneTeleportContext setAppliesModifiers(boolean);
+  public abstract java.util.Set<net.minecraft.resources.ResourceLocation> getFlags();
+  public abstract net.blay09.mods.waystones.api.WaystoneTeleportContext addFlag(net.minecraft.resources.ResourceLocation);
+  public abstract net.blay09.mods.waystones.api.WaystoneTeleportContext removeFlag(net.minecraft.resources.ResourceLocation);
+  public default net.blay09.mods.waystones.api.WaystoneTeleportContext addFlags(java.util.Set<net.minecraft.resources.ResourceLocation>);
+  public default boolean hasFlag(net.minecraft.resources.ResourceLocation);
+}

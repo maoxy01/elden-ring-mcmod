@@ -1,0 +1,119 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.12/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+> Task :compileJava
+> Task :syncArt UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes
+> Task :downloadAssets UP-TO-DATE
+> Task :writeServerLegacyClasspath UP-TO-DATE
+> Task :prepareServerRun
+
+> Task :runServer
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+[13:00:42] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserverdev, --gameDir, ., --fml.fmlVersion, 4.0.42, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.219, --fml.neoFormVersion, 20240808.144430, --nogui]
+[13:00:42] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.12.1+1-LTS
+[13:00:42] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.12.1 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[13:00:42] [main/INFO] [ne.ne.fm.lo.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserverdev
+[13:00:42] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/30869/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%2394!/ Service=ModLauncher Env=SERVER
+[13:00:43] [main/INFO] [ne.ne.fm.lo.mo.lo.JarInJarDependencyLocator/]: Found 6 dependencies adding them to mods collection
+[13:00:43] [main/INFO] [ne.ne.fm.lo.mo.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		Balm 21.0.66 (balm)
+		Common Networking 1.0.21-1.21.1 (commonnetworking)
+		Elden Combat 0.2.0 (eldencombat)
+		Journeymap 1.21.1-6.0.9 (journeymap)
+		JourneyMap API 2.0.0-1.21.1 (journeymap_api)
+		KumaAPI 21.0.8 (kuma_api)
+		Minecraft 1.21.1 (minecraft)
+		NeoForge 21.1.219 (neoforge)
+		Waystones 21.1.46 (waystones)
+[13:00:44] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[13:00:44] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
+[13:00:44] [main/INFO] [cp.mo.mo.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserverdev' with arguments [--gameDir, ., --nogui]
+[13:00:44] [main/WARN] [mixin/]: Reference map 'kuma_api.refmap.json' for kuma_api.mixins.json could not be read. If this is a development environment you can ignore this message
+[13:00:44] [main/WARN] [mixin/]: Reference map 'waystones.refmap.json' for waystones.mixins.json could not be read. If this is a development environment you can ignore this message
+[13:00:44] [main/WARN] [mixin/]: Reference map 'balm.refmap.json' for balm.mixins.json could not be read. If this is a development environment you can ignore this message
+[13:00:45] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[13:00:50] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[13:00:50] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[13:00:50] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[13:00:50] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[13:00:50] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[13:00:50] [modloading-worker-0/INFO] [ne.ne.ne.co.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.219, for MC 1.21.1
+[13:00:50] [modloading-worker-0/INFO] [EldenCombat/]: [EldenCombat] ServerCombat ��ע�ᵽ��Ϸ�¼����ߣ�������һ�Σ�
+[13:00:50] [modloading-worker-0/INFO] [EldenCombat/]: [EldenCombat] ��ԭ��ս����չ loaded (MC 1.21.1 / NeoForge 21.1.219)
+[13:00:50] [modloading-worker-0/INFO] [ne.bl.mo.ba.ne.co.NeoForgeBalmConfig/]: Registering config for waystones:common (COMMON) with 38 properties.
+[13:00:50] [modloading-sync-worker/INFO] [EldenCombat/]: [EldenCombat] ս������������: D:\codexout\mcmod\build\gracePrototypeServer\config\eldencombat-combat.json
+[13:00:51] [main/INFO] [mojang/YggdrasilAuthenticationService]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[13:00:51] [main/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/D:/codexout/mcmod/build/moddev/artifacts/neoforge-21.1.219.jar%23125!/assets/.mcassetsroot' uses unexpected schema
+[13:00:51] [main/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/D:/codexout/mcmod/build/moddev/artifacts/neoforge-21.1.219.jar%23125!/data/.mcassetsroot' uses unexpected schema
+[13:00:51] [NeoForge Version Check/INFO] [ne.ne.fm.VersionChecker/]: [journeymap] Starting version check at https://neoforge.curseupdate.com/32274/journeymap
+[13:00:51] [main/INFO] [minecraft/Main]: No existing world data, creating new world
+[13:00:51] [main/ERROR] [minecraft/DedicatedServerProperties]: No key layers in MapLike[{}]
+[13:00:51] [main/INFO] [minecraft/RecipeManager]: Loaded 1368 recipes
+[13:00:52] [main/INFO] [minecraft/AdvancementTree]: Loaded 1453 advancements
+[13:00:52] [main/INFO] [EldenCombat/]: [talismans] ������������ 4 ��
+[13:00:52] [main/INFO] [EldenCombat/]: [consumables] ҩ���������� 3 ��
+[13:00:52] [NeoForge Version Check/INFO] [ne.ne.fm.VersionChecker/]: [journeymap] Found status: BETA Current: 1.21.1-6.0.9 Target: 1.21.1-6.0.0-beta.52
+[13:00:52] [Server thread/INFO] [minecraft/DedicatedServer]: Starting minecraft server version 1.21.1
+[13:00:52] [Server thread/INFO] [minecraft/DedicatedServer]: Loading properties
+[13:00:52] [Server thread/INFO] [minecraft/DedicatedServer]: Default game type: SURVIVAL
+[13:00:52] [Server thread/INFO] [minecraft/MinecraftServer]: Generating keypair
+[13:00:52] [Server thread/INFO] [minecraft/DedicatedServer]: Starting Minecraft server on *:25569
+[13:00:52] [Server thread/INFO] [minecraft/ServerConnectionListener]: Using default channel type
+[13:00:52] [Server thread/WARN] [minecraft/DedicatedServer]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[13:00:52] [Server thread/WARN] [minecraft/DedicatedServer]: The server will make no attempt to authenticate usernames. Beware.
+[13:00:52] [Server thread/WARN] [minecraft/DedicatedServer]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[13:00:52] [Server thread/WARN] [minecraft/DedicatedServer]: To change this, set "online-mode" to "true" in the server.properties file.
+[13:00:52] [Server thread/INFO] [journeymap/]: Loading JourneyMap Forge Configs
+[13:00:52] [Server thread/INFO] [minecraft/DedicatedServer]: Preparing level "grace_world"
+[13:00:53] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing start region for dimension minecraft:overworld
+[13:00:53] [worldgen/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 2%
+[13:00:53] [Server thread/INFO] [minecraft/LoggerChunkProgressListener]: Time elapsed: 116 ms
+[13:00:53] [Server thread/INFO] [minecraft/DedicatedServer]: Done (0.568s)! For help, type "help"
+[13:00:53] [Server thread/INFO] [ne.ne.ne.ga.GameTestHooks/]: Enabled Gametest Namespaces: []
+[13:00:53] [Server thread/INFO] [ne.ne.ne.se.pe.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[13:00:53] [Server thread/INFO] [journeymap/]: Loaded null for service interface journeymap.api.services.WebMapService
+[13:00:53] [Server thread/INFO] [journeymap/]: Loaded journeymap.common.helpers.NeoForgeClientHooks@3b5f8ef8 for service interface journeymap.api.services.ClientPlatformService
+[13:00:53] [Server thread/INFO] [journeymap/]: Loaded journeymap.common.helpers.NeoForgeHooks@7149ade1 for service interface journeymap.api.services.CommonPlatformService
+[13:00:53] [Server thread/INFO] [journeymap/]: Found @JourneyMapPlugin: journeymap.api.plugins.LoadedChunkOverlayPlugin
+[13:00:53] [Server thread/INFO] [journeymap/]: Initialized IJourneyMapPlugin as:journeymap.api.plugins.LoadedChunkOverlayPlugin: for:journeymap_chunk_overlay
+[13:00:53] [Server thread/INFO] [journeymap/]: global (FirstLoaded) Setting config file to version "6.0.9": journeymap.server.global.config
+[13:00:53] [Server thread/INFO] [journeymap/]: global (Valid) Creating config file: journeymap\server\6.0\journeymap.server.global.config
+[13:00:53] [Server thread/INFO] [journeymap/]: default (FirstLoaded) Setting config file to version "6.0.9": journeymap.server.default.config
+[13:00:53] [Server thread/INFO] [journeymap/]: default (Valid) Creating config file: journeymap\server\6.0\journeymap.server.default.config
+[13:00:53] [Server thread/INFO] [journeymap/]: minecraft~overworld (Valid) Creating config file: journeymap\server\6.0\journeymap.server.minecraft~overworld.config
+[13:00:53] [Server thread/INFO] [journeymap/]: minecraft~the_nether (Valid) Creating config file: journeymap\server\6.0\journeymap.server.minecraft~the_nether.config
+[13:00:53] [Server thread/INFO] [journeymap/]: minecraft~the_end (Valid) Creating config file: journeymap\server\6.0\journeymap.server.minecraft~the_end.config
+[13:00:53] [Server thread/INFO] [EldenCombat/]: [skills] ׷��ս���������� 8 ��
+[13:00:53] [Server thread/INFO] [EldenCombat/]: [weapons] ������ֵ������ 41 ��
+[13:00:53] [Server thread/INFO] [EldenCombat/]: GRACE_DEPENDENCY_PASS: waystones 21.1.46
+[13:00:53] [Server thread/INFO] [EldenCombat/]: GRACE_DEPENDENCY_PASS: balm 21.0.66
+[13:00:53] [Server thread/INFO] [EldenCombat/]: GRACE_DEPENDENCY_PASS: journeymap 1.21.1-6.0.9
+[13:00:53] [Server thread/INFO] [EldenCombat/]: GRACE_DEPENDENCY_PASS: commonnetworking 1.0.21-1.21.1
+[13:00:53] [Server thread/INFO] [EldenCombat/]: GRACE_NODE_PASS: uid=39101552-592d-49e8-9f03-69d0c2015cd6 name=Grace prototype 1 pos=BlockPos{x=0, y=81, z=0} valid=true
+[13:00:53] [Server thread/INFO] [EldenCombat/]: GRACE_NODE_PASS: uid=230f7a67-ddcd-4499-af5e-49dcf002af1a name=Grace prototype 2 pos=BlockPos{x=20, y=81, z=0} valid=true
+[13:00:53] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[grace_world]'/minecraft:overworld
+[13:00:53] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[grace_world]'/minecraft:the_nether
+[13:00:53] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[grace_world]'/minecraft:the_end
+[13:00:53] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (grace_world): All chunks are saved
+[13:00:53] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[13:00:53] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[13:00:53] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage: All dimensions are saved
+[13:00:55] [Server thread/INFO] [EldenCombat/]: GRACE_PROTO_SERVER_COMPLETE: two real nodes saved; no player/map interaction asserted
+[13:00:55] [Server thread/INFO] [minecraft/MinecraftServer]: Stopping server
+[13:00:55] [Server thread/INFO] [minecraft/MinecraftServer]: Saving players
+[13:00:55] [Server thread/INFO] [minecraft/MinecraftServer]: Saving worlds
+[13:00:56] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[grace_world]'/minecraft:overworld
+[13:00:56] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[grace_world]'/minecraft:the_nether
+[13:00:56] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[grace_world]'/minecraft:the_end
+[13:00:56] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (grace_world): All chunks are saved
+[13:00:56] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[13:00:56] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[13:00:56] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage: All dimensions are saved
+
+BUILD SUCCESSFUL in 26s
+8 actionable tasks: 3 executed, 5 up-to-date

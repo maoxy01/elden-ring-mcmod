@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "id": "eldencombat:spectral_dagger",
+  "unitsPerBlock": 16,
+  "forward": "-Z",
+  "texture": "margit.png",
+  "textureSize": [
+    128,
+    128
+  ],
+  "bones": [
+    {
+      "name": "root",
+      "parent": null,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "cubes": [
+    {
+      "name": "handle",
+      "bone": "root",
+      "from": [
+        -0.8,
+        -3,
+        -0.8
+      ],
+      "to": [
+        0.8,
+        4,
+        0.8
+      ],
+      "material": "wood"
+    },
+    {
+      "name": "guard",
+      "bone": "root",
+      "from": [
+        -3,
+        3,
+        -1
+      ],
+      "to": [
+        3,
+        4.5,
+        1
+      ],
+      "material": "gold"
+    },
+    {
+      "name": "blade",
+      "bone": "root",
+      "from": [
+        -1.3,
+        4.5,
+        -0.5
+      ],
+      "to": [
+        1.3,
+        15,
+        0.5
+      ],
+      "material": "gold"
+    },
+    {
+      "name": "tip",
+      "bone": "root",
+      "from": [
+        -0.65,
+        15,
+        -0.5
+      ],
+      "to": [
+        0.65,
+        18,
+        0.5
+      ],
+      "material": "gold"
+    }
+  ],
+  "materials": {
+    "skin": {
+      "uv": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "color": [
+        161,
+        154,
+        142
+      ],
+      "emissive": false
+    },
+    "cloth": {
+      "uv": [
+        32,
+        0,
+        64,
+        32
+      ],
+      "color": [
+        103,
+        107,
+        69
+      ],
+      "emissive": false
+    },
+    "cloth_dark": {
+      "uv": [
+        64,
+        0,
+        96,
+        32
+      ],
+      "color": [
+        58,
+        62,
+        45
+      ],
+      "emissive": false
+    },
+    "horn": {
+      "uv": [
+        96,
+        0,
+        128,
+        32
+      ],
+      "color": [
+        197,
+        177,
+        143
+      ],
+      "emissive": false
+    },
+    "horn_dark": {
+      "uv": [
+        0,
+        32,
+        32,
+        64
+      ],
+      "color": [
+        98,
+        90,
+        73
+      ],
+      "emissive": false
+    },
+    "beard": {
+      "uv": [
+        32,
+        32,
+        64,
+        64
+      ],
+      "color": [
+        178,
+        176,
+        164
+      ],
+      "emissive": false
+    },
+    "tail": {
+      "uv": [
+        64,
+        32,
+        96,
+        64
+      ],
+      "color": [
+        105,
+        96,
+        81
+      ],
+      "emissive": false
+    },
+    "tail_tip": {
+      "uv": [
+        96,
+        32,
+        128,
+        64
+      ],
+      "color": [
+        139,
+        91,
+        70
+      ],
+      "emissive": false
+    },
+    "wood": {
+      "uv": [
+        0,
+        64,
+        32,
+        96
+      ],
+      "color": [
+        101,
+        72,
+        46
+      ],
+      "emissive": false
+    },
+    "gold": {
+      "uv": [
+        32,
+        64,
+        64,
+        96
+      ],
+      "color": [
+        233,
+        187,
+        67
+      ],
+      "emissive": true
+    },
+    "face": {
+      "uv": [
+        64,
+        64,
+        96,
+        96
+      ],
+      "color": [
+        161,
+        154,
+        142
+      ],
+      "emissive": false
+    }
+  },
+  "rotationOrder": "XYZ",
+  "animationRotation": "additive_degrees"
+}

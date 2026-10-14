@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>八种追忆战技特效</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#eceeea;color:#292d29;font:14px system-ui;letter-spacing:0}header{padding:16px 20px;border-bottom:1px solid #a1a69d;display:flex;align-items:center;gap:16px;flex-wrap:wrap}h1{font-size:20px;margin:0}h2{font-size:18px;margin:0}button,select{font:inherit;background:#dce0d7;color:#252a25;border:1px solid #919b8c;height:32px;padding:4px 10px;cursor:pointer}button[aria-pressed=true]{background:#505b4c;color:#fff}.icon{width:34px;padding:0;font-size:18px}.controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.segmented{display:flex;gap:0}.segmented button+button{border-left:0}input[type=range]{width:150px;accent-color:#64725b}input[type=checkbox]{accent-color:#64725b}label{display:flex;gap:6px;align-items:center}.timeline{display:flex;align-items:center;gap:8px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));padding:20px;gap:24px}section{min-width:0}.title{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:32px}.stage{font-size:12px;color:#62705b}.scene{display:block;width:100%;aspect-ratio:6/5;border:1px solid #959f90;background:#b7c4ad;image-rendering:pixelated}.time{font-variant-numeric:tabular-nums;min-height:28px;padding:6px 0}.native{display:flex;gap:12px;align-items:center;min-height:82px;border-bottom:1px solid #aab1a5;margin-bottom:16px}.raw{width:64px;height:64px;object-fit:contain;image-rendering:pixelated}.atlas{max-width:100%;width:272px;image-rendering:pixelated;display:block;background:#bac3b4}.frames{display:grid;grid-template-columns:repeat(auto-fill,64px);gap:6px;margin-top:16px}.frames div{height:84px;display:flex;flex-direction:column;align-items:center;justify-content:start}.frames img{width:64px;height:64px;object-fit:contain;image-rendering:pixelated}.frames span{font-size:11px;color:#5a6753}footer{padding:16px 20px;border-top:1px solid #a1a69d;font-size:12px;color:#65705e}.dark{background:#292d28;color:#e3e7de}.dark .scene{background:#303c30}.dark .stage,.dark .frames span,.dark footer{color:#b8c2af}.dark .atlas,.dark .native{background:#303c30}.error{padding:24px;color:#a62536}@media(max-width:1000px){.grid{grid-template-columns:1fr 1fr}}@media(max-width:660px){.grid{grid-template-columns:1fr;padding:16px}.controls{gap:8px}header{padding:14px 16px}.timeline input{width:110px}}
+</style>
+<header><h1>八种追忆战技</h1><div class="controls">
+<button id="play" class="icon" title="暂停" aria-label="暂停">Ⅱ</button><button id="reset" class="icon" title="重新播放" aria-label="重新播放">↺</button>
+<div class="segmented"><button id="full" aria-pressed="true">阶段串演</button><button id="clip" aria-pressed="false">单次特效</button></div>
+<select id="rate" aria-label="播放速度"><option value="1">1×</option><option value=".5">0.5×</option><option value=".25">0.25×</option></select>
+<div class="segmented"><button id="light" aria-pressed="true">亮处</button><button id="dark" aria-pressed="false">暗处</button></div>
+<label>视角<select id="view" aria-label="视角"><option value="0">正面</option><option value="60">侧面 60°</option><option value="80">侧面 80°</option></select></label>
+<label><input type="checkbox" id="blocked">波前遮挡</label>
+<label class="timeline">时间<input id="time" type="range" min="0" max="1000" value="0" aria-label="播放时间"></label>
+</div></header>
+<main class="grid" id="effects"></main>
+<footer>离线美术预览 · 8 战技 / 10 序列 / 160 帧 · 人物高 1.8 格 · 落地与追击为演示时序 · 未接入运行资源</footer>
+<script src="preview-data.js"></script>
+<script src="preview-eight.js"></script>
+</html>

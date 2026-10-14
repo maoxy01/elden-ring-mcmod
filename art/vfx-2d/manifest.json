@@ -1,0 +1,4583 @@
+{
+  "schemaVersion": 2,
+  "date": "2026-10-13",
+  "status": "eight_skill_art_delivery_pending_runtime_integration",
+  "runtimeIntegrated": false,
+  "inGameAccepted": false,
+  "frameRateContract": "16 unique frames per 8-tick slash requires partial-tick sampling; tick-only progress cannot expose every frame",
+  "assets": [
+    {
+      "id": "waterfowl",
+      "skillId": "eldencombat:waterfowl_dance",
+      "kind": "WATERFOWL",
+      "name": "水鸟乱舞",
+      "frameSize": [
+        64,
+        64
+      ],
+      "anchorPixels": [
+        32,
+        36
+      ],
+      "worldSizeBlocks": [
+        6,
+        4.5
+      ],
+      "phaseRollDegrees": [
+        -18,
+        22,
+        -8
+      ],
+      "sourceDefaults": {
+        "windupTicks": 10,
+        "activeTicks": 36,
+        "recoveryTicks": 5,
+        "burstStartsActiveTicks": [
+          0,
+          12,
+          24
+        ],
+        "visualEntityTicks": 8,
+        "effectRadiusBlocks": 3
+      },
+      "plane": {
+        "basisU": [
+          1,
+          0,
+          0
+        ],
+        "basisV": [
+          0,
+          1,
+          0
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "cameraFacing": false,
+        "space": "caster-local; follow owner position; server-synced yaw; phase roll applied within plane",
+        "attachOffsetBlocks": [
+          0,
+          1.05,
+          0.35
+        ]
+      },
+      "assetId": "eldencombat:vfx2d/waterfowl",
+      "frameCount": 16,
+      "frames": [
+        {
+          "index": 0,
+          "file": "textures/particle/waterfowl/frame_00.png",
+          "spriteId": "eldencombat:waterfowl/frame_00",
+          "atlasRectPixels": [
+            2,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.03125
+        },
+        {
+          "index": 1,
+          "file": "textures/particle/waterfowl/frame_01.png",
+          "spriteId": "eldencombat:waterfowl/frame_01",
+          "atlasRectPixels": [
+            70,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.09375
+        },
+        {
+          "index": 2,
+          "file": "textures/particle/waterfowl/frame_02.png",
+          "spriteId": "eldencombat:waterfowl/frame_02",
+          "atlasRectPixels": [
+            138,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.15625
+        },
+        {
+          "index": 3,
+          "file": "textures/particle/waterfowl/frame_03.png",
+          "spriteId": "eldencombat:waterfowl/frame_03",
+          "atlasRectPixels": [
+            206,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.21875
+        },
+        {
+          "index": 4,
+          "file": "textures/particle/waterfowl/frame_04.png",
+          "spriteId": "eldencombat:waterfowl/frame_04",
+          "atlasRectPixels": [
+            2,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.28125
+        },
+        {
+          "index": 5,
+          "file": "textures/particle/waterfowl/frame_05.png",
+          "spriteId": "eldencombat:waterfowl/frame_05",
+          "atlasRectPixels": [
+            70,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.34375
+        },
+        {
+          "index": 6,
+          "file": "textures/particle/waterfowl/frame_06.png",
+          "spriteId": "eldencombat:waterfowl/frame_06",
+          "atlasRectPixels": [
+            138,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.40625
+        },
+        {
+          "index": 7,
+          "file": "textures/particle/waterfowl/frame_07.png",
+          "spriteId": "eldencombat:waterfowl/frame_07",
+          "atlasRectPixels": [
+            206,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.46875
+        },
+        {
+          "index": 8,
+          "file": "textures/particle/waterfowl/frame_08.png",
+          "spriteId": "eldencombat:waterfowl/frame_08",
+          "atlasRectPixels": [
+            2,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.53125
+        },
+        {
+          "index": 9,
+          "file": "textures/particle/waterfowl/frame_09.png",
+          "spriteId": "eldencombat:waterfowl/frame_09",
+          "atlasRectPixels": [
+            70,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.59375
+        },
+        {
+          "index": 10,
+          "file": "textures/particle/waterfowl/frame_10.png",
+          "spriteId": "eldencombat:waterfowl/frame_10",
+          "atlasRectPixels": [
+            138,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.65625
+        },
+        {
+          "index": 11,
+          "file": "textures/particle/waterfowl/frame_11.png",
+          "spriteId": "eldencombat:waterfowl/frame_11",
+          "atlasRectPixels": [
+            206,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.71875
+        },
+        {
+          "index": 12,
+          "file": "textures/particle/waterfowl/frame_12.png",
+          "spriteId": "eldencombat:waterfowl/frame_12",
+          "atlasRectPixels": [
+            2,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.78125
+        },
+        {
+          "index": 13,
+          "file": "textures/particle/waterfowl/frame_13.png",
+          "spriteId": "eldencombat:waterfowl/frame_13",
+          "atlasRectPixels": [
+            70,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.84375
+        },
+        {
+          "index": 14,
+          "file": "textures/particle/waterfowl/frame_14.png",
+          "spriteId": "eldencombat:waterfowl/frame_14",
+          "atlasRectPixels": [
+            138,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.90625
+        },
+        {
+          "index": 15,
+          "file": "textures/particle/waterfowl/frame_15.png",
+          "spriteId": "eldencombat:waterfowl/frame_15",
+          "atlasRectPixels": [
+            206,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.96875
+        }
+      ],
+      "anchorNormalized": [
+        0.5,
+        0.5625
+      ],
+      "atlas": {
+        "file": "atlases/waterfowl.png",
+        "width": 272,
+        "height": 272,
+        "columns": 4,
+        "rows": 4,
+        "paddingPixels": 2,
+        "notRuntimeAtlas": true
+      },
+      "sampling": {
+        "filter": "nearest",
+        "pixelBlockSize": 2,
+        "logicalFrameSize": [
+          32,
+          32
+        ],
+        "frameIndex": "min(15, floor(clamp(progress,0,1) * 16))",
+        "partialTickRecommended": true,
+        "normalLifetimeExit": "draw nothing when progress >= 1; obey entity discard earlier"
+      },
+      "palette": [
+        [
+          90,
+          112,
+          119
+        ],
+        [
+          149,
+          176,
+          181
+        ],
+        [
+          213,
+          231,
+          232
+        ],
+        [
+          248,
+          252,
+          243
+        ]
+      ],
+      "vertexTint": [
+        255,
+        255,
+        255
+      ],
+      "tintChannels": {
+        "bakedRgb": true,
+        "alpha": "opacity only",
+        "separateRecolorMask": null,
+        "warning": "Do not multiply colored RGB by bone/death/obsidian palette again"
+      },
+      "timeline": {
+        "normalizedStages": [
+          {
+            "stage": "appear",
+            "from": 0,
+            "to": 0.18,
+            "frames": [
+              0,
+              2
+            ]
+          },
+          {
+            "stage": "main",
+            "from": 0.18,
+            "to": 0.65,
+            "frames": [
+              3,
+              10
+            ]
+          },
+          {
+            "stage": "dissolve",
+            "from": 0.65,
+            "to": 1,
+            "frames": [
+              11,
+              15
+            ]
+          }
+        ],
+        "damageTriggers": false,
+        "hitFeedbackIncluded": false,
+        "opacity": "authored quantized alpha; no extra per-tick multiplier required",
+        "burstPlayback": "restart per confirmed event; normalize over visual entity lifetime (8 ticks); no synthetic followup input"
+      },
+      "lod": {
+        "normalMainPlanes": 1,
+        "core": "same frame and plane; omit secondary decorations, never explosion or boxes",
+        "hidden": "draw nothing"
+      },
+      "provenance": {
+        "method": "original parameterized pixel raster source, no provider pixels copied",
+        "license": "CC0-1.0",
+        "source": "art/tooling/build-vfx-2d.mjs",
+        "influences": "Minecraft hard-edge finite palette and existing server event/profile contracts, not copied game textures"
+      }
+    },
+    {
+      "id": "death_slash",
+      "skillId": "eldencombat:destined_death",
+      "kind": "DEATH_SLASH",
+      "name": "命定之死",
+      "frameSize": [
+        64,
+        64
+      ],
+      "anchorPixels": [
+        32,
+        36
+      ],
+      "worldSizeBlocks": [
+        7,
+        5
+      ],
+      "phaseRollDegrees": [
+        -28,
+        20,
+        -12
+      ],
+      "sourceDefaults": {
+        "windupTicks": 8,
+        "activeTicks": 24,
+        "recoveryTicks": 5,
+        "burstStartsActiveTicks": [
+          0,
+          8,
+          16
+        ],
+        "visualEntityTicks": 8,
+        "effectRadiusBlocks": 3.5
+      },
+      "plane": {
+        "basisU": [
+          1,
+          0,
+          0
+        ],
+        "basisV": [
+          0,
+          1,
+          0
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "cameraFacing": false,
+        "space": "caster-local; follow owner position; server-synced yaw; phase roll applied within plane",
+        "attachOffsetBlocks": [
+          0,
+          1.1,
+          0.35
+        ]
+      },
+      "assetId": "eldencombat:vfx2d/death_slash",
+      "frameCount": 16,
+      "frames": [
+        {
+          "index": 0,
+          "file": "textures/particle/death_slash/frame_00.png",
+          "spriteId": "eldencombat:death_slash/frame_00",
+          "atlasRectPixels": [
+            2,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.03125
+        },
+        {
+          "index": 1,
+          "file": "textures/particle/death_slash/frame_01.png",
+          "spriteId": "eldencombat:death_slash/frame_01",
+          "atlasRectPixels": [
+            70,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.09375
+        },
+        {
+          "index": 2,
+          "file": "textures/particle/death_slash/frame_02.png",
+          "spriteId": "eldencombat:death_slash/frame_02",
+          "atlasRectPixels": [
+            138,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.15625
+        },
+        {
+          "index": 3,
+          "file": "textures/particle/death_slash/frame_03.png",
+          "spriteId": "eldencombat:death_slash/frame_03",
+          "atlasRectPixels": [
+            206,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.21875
+        },
+        {
+          "index": 4,
+          "file": "textures/particle/death_slash/frame_04.png",
+          "spriteId": "eldencombat:death_slash/frame_04",
+          "atlasRectPixels": [
+            2,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.28125
+        },
+        {
+          "index": 5,
+          "file": "textures/particle/death_slash/frame_05.png",
+          "spriteId": "eldencombat:death_slash/frame_05",
+          "atlasRectPixels": [
+            70,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.34375
+        },
+        {
+          "index": 6,
+          "file": "textures/particle/death_slash/frame_06.png",
+          "spriteId": "eldencombat:death_slash/frame_06",
+          "atlasRectPixels": [
+            138,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.40625
+        },
+        {
+          "index": 7,
+          "file": "textures/particle/death_slash/frame_07.png",
+          "spriteId": "eldencombat:death_slash/frame_07",
+          "atlasRectPixels": [
+            206,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.46875
+        },
+        {
+          "index": 8,
+          "file": "textures/particle/death_slash/frame_08.png",
+          "spriteId": "eldencombat:death_slash/frame_08",
+          "atlasRectPixels": [
+            2,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.53125
+        },
+        {
+          "index": 9,
+          "file": "textures/particle/death_slash/frame_09.png",
+          "spriteId": "eldencombat:death_slash/frame_09",
+          "atlasRectPixels": [
+            70,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.59375
+        },
+        {
+          "index": 10,
+          "file": "textures/particle/death_slash/frame_10.png",
+          "spriteId": "eldencombat:death_slash/frame_10",
+          "atlasRectPixels": [
+            138,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.65625
+        },
+        {
+          "index": 11,
+          "file": "textures/particle/death_slash/frame_11.png",
+          "spriteId": "eldencombat:death_slash/frame_11",
+          "atlasRectPixels": [
+            206,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.71875
+        },
+        {
+          "index": 12,
+          "file": "textures/particle/death_slash/frame_12.png",
+          "spriteId": "eldencombat:death_slash/frame_12",
+          "atlasRectPixels": [
+            2,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.78125
+        },
+        {
+          "index": 13,
+          "file": "textures/particle/death_slash/frame_13.png",
+          "spriteId": "eldencombat:death_slash/frame_13",
+          "atlasRectPixels": [
+            70,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.84375
+        },
+        {
+          "index": 14,
+          "file": "textures/particle/death_slash/frame_14.png",
+          "spriteId": "eldencombat:death_slash/frame_14",
+          "atlasRectPixels": [
+            138,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.90625
+        },
+        {
+          "index": 15,
+          "file": "textures/particle/death_slash/frame_15.png",
+          "spriteId": "eldencombat:death_slash/frame_15",
+          "atlasRectPixels": [
+            206,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.96875
+        }
+      ],
+      "anchorNormalized": [
+        0.5,
+        0.5625
+      ],
+      "atlas": {
+        "file": "atlases/death_slash.png",
+        "width": 272,
+        "height": 272,
+        "columns": 4,
+        "rows": 4,
+        "paddingPixels": 2,
+        "notRuntimeAtlas": true
+      },
+      "sampling": {
+        "filter": "nearest",
+        "pixelBlockSize": 2,
+        "logicalFrameSize": [
+          32,
+          32
+        ],
+        "frameIndex": "min(15, floor(clamp(progress,0,1) * 16))",
+        "partialTickRecommended": true,
+        "normalLifetimeExit": "draw nothing when progress >= 1; obey entity discard earlier"
+      },
+      "palette": [
+        [
+          24,
+          19,
+          26
+        ],
+        [
+          100,
+          20,
+          37
+        ],
+        [
+          193,
+          33,
+          58
+        ],
+        [
+          247,
+          71,
+          82
+        ],
+        [
+          255,
+          159,
+          141
+        ]
+      ],
+      "vertexTint": [
+        255,
+        255,
+        255
+      ],
+      "tintChannels": {
+        "bakedRgb": true,
+        "alpha": "opacity only",
+        "separateRecolorMask": null,
+        "warning": "Do not multiply colored RGB by bone/death/obsidian palette again"
+      },
+      "timeline": {
+        "normalizedStages": [
+          {
+            "stage": "appear",
+            "from": 0,
+            "to": 0.18,
+            "frames": [
+              0,
+              2
+            ]
+          },
+          {
+            "stage": "main",
+            "from": 0.18,
+            "to": 0.65,
+            "frames": [
+              3,
+              10
+            ]
+          },
+          {
+            "stage": "dissolve",
+            "from": 0.65,
+            "to": 1,
+            "frames": [
+              11,
+              15
+            ]
+          }
+        ],
+        "damageTriggers": false,
+        "hitFeedbackIncluded": false,
+        "opacity": "authored quantized alpha; no extra per-tick multiplier required",
+        "burstPlayback": "restart per confirmed event; normalize over visual entity lifetime (8 ticks); no synthetic followup input"
+      },
+      "lod": {
+        "normalMainPlanes": 1,
+        "core": "same frame and plane; omit secondary decorations, never explosion or boxes",
+        "hidden": "draw nothing"
+      },
+      "provenance": {
+        "method": "original parameterized pixel raster source, no provider pixels copied",
+        "license": "CC0-1.0",
+        "source": "art/tooling/build-vfx-2d.mjs",
+        "influences": "Minecraft hard-edge finite palette and existing server event/profile contracts, not copied game textures"
+      }
+    },
+    {
+      "id": "gold_wave",
+      "skillId": "eldencombat:wave_of_gold",
+      "kind": "GOLD_WAVE",
+      "name": "黄金波动",
+      "frameSize": [
+        64,
+        32
+      ],
+      "anchorPixels": [
+        32,
+        8
+      ],
+      "worldSizeBlocks": [
+        6,
+        2.8
+      ],
+      "sourceDefaults": {
+        "windupTicks": 10,
+        "activeTicks": 4,
+        "recoveryTicks": 5,
+        "waveSpeedBlocksPerTick": 0.9,
+        "effectRangeBlocks": 16,
+        "effectLifespanUpperBoundTicks": 30,
+        "baseRadiusBlocks": 3,
+        "maxRadiusBlocks": 4.2
+      },
+      "plane": {
+        "basisU": [
+          1,
+          0,
+          0
+        ],
+        "basisV": [
+          0,
+          0,
+          1
+        ],
+        "normal": [
+          0,
+          1,
+          0
+        ],
+        "cameraFacing": false,
+        "space": "wave entity-local; +X lateral, +Z forward; PNG +Y maps to -Z",
+        "heightAboveGroundBlocks": 0.02
+      },
+      "laneContract": {
+        "lanes": 16,
+        "sourcePixelsPerLane": 4,
+        "formationDistanceBlocks": 4,
+        "edgeSpeedFactor": 0.55,
+        "lagGridBlocks": 0.125,
+        "worldWidth": "2 * visualRadius(partialTick)",
+        "worldDepthBlocks": 2.8,
+        "uvRangeForLane": "[lane/16, (lane+1)/16]",
+        "blockedMask": "omit lane if ((blockedLanes >>> lane) & 1) != 0",
+        "lag": "floor(min(max(visualTravel,0),4) * .45 * abs(u)^2 / .125) * .125",
+        "stableGeometryAfterFormation": true,
+        "animationClock": "visualProgress(partialTick), never clamped profileTravel alone",
+        "doNotDrawAsSingleQuad": true
+      },
+      "assetId": "eldencombat:vfx2d/gold_wave",
+      "frameCount": 16,
+      "frames": [
+        {
+          "index": 0,
+          "file": "textures/particle/gold_wave/frame_00.png",
+          "spriteId": "eldencombat:gold_wave/frame_00",
+          "atlasRectPixels": [
+            2,
+            2,
+            64,
+            32
+          ],
+          "sampleProgress": 0.03125
+        },
+        {
+          "index": 1,
+          "file": "textures/particle/gold_wave/frame_01.png",
+          "spriteId": "eldencombat:gold_wave/frame_01",
+          "atlasRectPixels": [
+            70,
+            2,
+            64,
+            32
+          ],
+          "sampleProgress": 0.09375
+        },
+        {
+          "index": 2,
+          "file": "textures/particle/gold_wave/frame_02.png",
+          "spriteId": "eldencombat:gold_wave/frame_02",
+          "atlasRectPixels": [
+            138,
+            2,
+            64,
+            32
+          ],
+          "sampleProgress": 0.15625
+        },
+        {
+          "index": 3,
+          "file": "textures/particle/gold_wave/frame_03.png",
+          "spriteId": "eldencombat:gold_wave/frame_03",
+          "atlasRectPixels": [
+            206,
+            2,
+            64,
+            32
+          ],
+          "sampleProgress": 0.21875
+        },
+        {
+          "index": 4,
+          "file": "textures/particle/gold_wave/frame_04.png",
+          "spriteId": "eldencombat:gold_wave/frame_04",
+          "atlasRectPixels": [
+            2,
+            38,
+            64,
+            32
+          ],
+          "sampleProgress": 0.28125
+        },
+        {
+          "index": 5,
+          "file": "textures/particle/gold_wave/frame_05.png",
+          "spriteId": "eldencombat:gold_wave/frame_05",
+          "atlasRectPixels": [
+            70,
+            38,
+            64,
+            32
+          ],
+          "sampleProgress": 0.34375
+        },
+        {
+          "index": 6,
+          "file": "textures/particle/gold_wave/frame_06.png",
+          "spriteId": "eldencombat:gold_wave/frame_06",
+          "atlasRectPixels": [
+            138,
+            38,
+            64,
+            32
+          ],
+          "sampleProgress": 0.40625
+        },
+        {
+          "index": 7,
+          "file": "textures/particle/gold_wave/frame_07.png",
+          "spriteId": "eldencombat:gold_wave/frame_07",
+          "atlasRectPixels": [
+            206,
+            38,
+            64,
+            32
+          ],
+          "sampleProgress": 0.46875
+        },
+        {
+          "index": 8,
+          "file": "textures/particle/gold_wave/frame_08.png",
+          "spriteId": "eldencombat:gold_wave/frame_08",
+          "atlasRectPixels": [
+            2,
+            74,
+            64,
+            32
+          ],
+          "sampleProgress": 0.53125
+        },
+        {
+          "index": 9,
+          "file": "textures/particle/gold_wave/frame_09.png",
+          "spriteId": "eldencombat:gold_wave/frame_09",
+          "atlasRectPixels": [
+            70,
+            74,
+            64,
+            32
+          ],
+          "sampleProgress": 0.59375
+        },
+        {
+          "index": 10,
+          "file": "textures/particle/gold_wave/frame_10.png",
+          "spriteId": "eldencombat:gold_wave/frame_10",
+          "atlasRectPixels": [
+            138,
+            74,
+            64,
+            32
+          ],
+          "sampleProgress": 0.65625
+        },
+        {
+          "index": 11,
+          "file": "textures/particle/gold_wave/frame_11.png",
+          "spriteId": "eldencombat:gold_wave/frame_11",
+          "atlasRectPixels": [
+            206,
+            74,
+            64,
+            32
+          ],
+          "sampleProgress": 0.71875
+        },
+        {
+          "index": 12,
+          "file": "textures/particle/gold_wave/frame_12.png",
+          "spriteId": "eldencombat:gold_wave/frame_12",
+          "atlasRectPixels": [
+            2,
+            110,
+            64,
+            32
+          ],
+          "sampleProgress": 0.78125
+        },
+        {
+          "index": 13,
+          "file": "textures/particle/gold_wave/frame_13.png",
+          "spriteId": "eldencombat:gold_wave/frame_13",
+          "atlasRectPixels": [
+            70,
+            110,
+            64,
+            32
+          ],
+          "sampleProgress": 0.84375
+        },
+        {
+          "index": 14,
+          "file": "textures/particle/gold_wave/frame_14.png",
+          "spriteId": "eldencombat:gold_wave/frame_14",
+          "atlasRectPixels": [
+            138,
+            110,
+            64,
+            32
+          ],
+          "sampleProgress": 0.90625
+        },
+        {
+          "index": 15,
+          "file": "textures/particle/gold_wave/frame_15.png",
+          "spriteId": "eldencombat:gold_wave/frame_15",
+          "atlasRectPixels": [
+            206,
+            110,
+            64,
+            32
+          ],
+          "sampleProgress": 0.96875
+        }
+      ],
+      "anchorNormalized": [
+        0.5,
+        0.25
+      ],
+      "atlas": {
+        "file": "atlases/gold_wave.png",
+        "width": 272,
+        "height": 144,
+        "columns": 4,
+        "rows": 4,
+        "paddingPixels": 2,
+        "notRuntimeAtlas": true
+      },
+      "sampling": {
+        "filter": "nearest",
+        "pixelBlockSize": 2,
+        "logicalFrameSize": [
+          32,
+          16
+        ],
+        "frameIndex": "min(15, floor(clamp(progress,0,1) * 16))",
+        "partialTickRecommended": true,
+        "normalLifetimeExit": "draw nothing when progress >= 1; obey entity discard earlier"
+      },
+      "palette": [
+        [
+          91,
+          65,
+          24
+        ],
+        [
+          159,
+          107,
+          27
+        ],
+        [
+          218,
+          163,
+          41
+        ],
+        [
+          249,
+          207,
+          79
+        ],
+        [
+          255,
+          239,
+          166
+        ]
+      ],
+      "vertexTint": [
+        255,
+        255,
+        255
+      ],
+      "tintChannels": {
+        "bakedRgb": true,
+        "alpha": "opacity only",
+        "separateRecolorMask": null,
+        "warning": "Do not multiply colored RGB by bone/death/obsidian palette again"
+      },
+      "timeline": {
+        "normalizedStages": [
+          {
+            "stage": "appear",
+            "from": 0,
+            "to": 0.18,
+            "frames": [
+              0,
+              2
+            ]
+          },
+          {
+            "stage": "main",
+            "from": 0.18,
+            "to": 0.65,
+            "frames": [
+              3,
+              10
+            ]
+          },
+          {
+            "stage": "dissolve",
+            "from": 0.65,
+            "to": 1,
+            "frames": [
+              11,
+              15
+            ]
+          }
+        ],
+        "damageTriggers": false,
+        "hitFeedbackIncluded": false,
+        "opacity": "authored quantized alpha; no extra per-tick multiplier required",
+        "burstPlayback": "sample wave entity progress; independent of cast recovery"
+      },
+      "lod": {
+        "normalMainPlanes": 16,
+        "core": "same frame and plane; omit secondary decorations, never explosion or boxes",
+        "hidden": "draw nothing"
+      },
+      "provenance": {
+        "method": "original parameterized pixel raster source, no provider pixels copied",
+        "license": "CC0-1.0",
+        "source": "art/tooling/build-vfx-2d.mjs",
+        "influences": "Minecraft hard-edge finite palette and existing server event/profile contracts, not copied game textures"
+      }
+    },
+    {
+      "id": "gold_impact",
+      "skillId": "eldencombat:gold_breaker",
+      "kind": "GOLD_IMPACT",
+      "name": "黄金碎击",
+      "frameSize": [
+        64,
+        64
+      ],
+      "anchorPixels": [
+        32,
+        32
+      ],
+      "worldSizeBlocks": [
+        7,
+        7
+      ],
+      "sourceDefaults": {
+        "windupTicks": 8,
+        "activeTicks": 16,
+        "recoveryTicks": 5,
+        "visualEntityTicks": 12
+      },
+      "plane": {
+        "basisU": [
+          1,
+          0,
+          0
+        ],
+        "basisV": [
+          0,
+          0,
+          1
+        ],
+        "normal": [
+          0,
+          1,
+          0
+        ],
+        "cameraFacing": false,
+        "space": "entity-local horizontal; PNG +Y maps to -Z",
+        "heightAboveGroundBlocks": 0.04
+      },
+      "event": "landingImpact, once after supported landing; never guessed from windup",
+      "debris": {
+        "existingGroundState": true,
+        "maxPieces": 12,
+        "style": "radial lift and fall; use sampled block material",
+        "changesBlocks": false
+      },
+      "assetId": "eldencombat:vfx2d/gold_impact",
+      "frameCount": 16,
+      "frames": [
+        {
+          "index": 0,
+          "file": "textures/particle/gold_impact/frame_00.png",
+          "spriteId": "eldencombat:gold_impact/frame_00",
+          "atlasRectPixels": [
+            2,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.03125
+        },
+        {
+          "index": 1,
+          "file": "textures/particle/gold_impact/frame_01.png",
+          "spriteId": "eldencombat:gold_impact/frame_01",
+          "atlasRectPixels": [
+            70,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.09375
+        },
+        {
+          "index": 2,
+          "file": "textures/particle/gold_impact/frame_02.png",
+          "spriteId": "eldencombat:gold_impact/frame_02",
+          "atlasRectPixels": [
+            138,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.15625
+        },
+        {
+          "index": 3,
+          "file": "textures/particle/gold_impact/frame_03.png",
+          "spriteId": "eldencombat:gold_impact/frame_03",
+          "atlasRectPixels": [
+            206,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.21875
+        },
+        {
+          "index": 4,
+          "file": "textures/particle/gold_impact/frame_04.png",
+          "spriteId": "eldencombat:gold_impact/frame_04",
+          "atlasRectPixels": [
+            2,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.28125
+        },
+        {
+          "index": 5,
+          "file": "textures/particle/gold_impact/frame_05.png",
+          "spriteId": "eldencombat:gold_impact/frame_05",
+          "atlasRectPixels": [
+            70,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.34375
+        },
+        {
+          "index": 6,
+          "file": "textures/particle/gold_impact/frame_06.png",
+          "spriteId": "eldencombat:gold_impact/frame_06",
+          "atlasRectPixels": [
+            138,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.40625
+        },
+        {
+          "index": 7,
+          "file": "textures/particle/gold_impact/frame_07.png",
+          "spriteId": "eldencombat:gold_impact/frame_07",
+          "atlasRectPixels": [
+            206,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.46875
+        },
+        {
+          "index": 8,
+          "file": "textures/particle/gold_impact/frame_08.png",
+          "spriteId": "eldencombat:gold_impact/frame_08",
+          "atlasRectPixels": [
+            2,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.53125
+        },
+        {
+          "index": 9,
+          "file": "textures/particle/gold_impact/frame_09.png",
+          "spriteId": "eldencombat:gold_impact/frame_09",
+          "atlasRectPixels": [
+            70,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.59375
+        },
+        {
+          "index": 10,
+          "file": "textures/particle/gold_impact/frame_10.png",
+          "spriteId": "eldencombat:gold_impact/frame_10",
+          "atlasRectPixels": [
+            138,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.65625
+        },
+        {
+          "index": 11,
+          "file": "textures/particle/gold_impact/frame_11.png",
+          "spriteId": "eldencombat:gold_impact/frame_11",
+          "atlasRectPixels": [
+            206,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.71875
+        },
+        {
+          "index": 12,
+          "file": "textures/particle/gold_impact/frame_12.png",
+          "spriteId": "eldencombat:gold_impact/frame_12",
+          "atlasRectPixels": [
+            2,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.78125
+        },
+        {
+          "index": 13,
+          "file": "textures/particle/gold_impact/frame_13.png",
+          "spriteId": "eldencombat:gold_impact/frame_13",
+          "atlasRectPixels": [
+            70,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.84375
+        },
+        {
+          "index": 14,
+          "file": "textures/particle/gold_impact/frame_14.png",
+          "spriteId": "eldencombat:gold_impact/frame_14",
+          "atlasRectPixels": [
+            138,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.90625
+        },
+        {
+          "index": 15,
+          "file": "textures/particle/gold_impact/frame_15.png",
+          "spriteId": "eldencombat:gold_impact/frame_15",
+          "atlasRectPixels": [
+            206,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.96875
+        }
+      ],
+      "anchorNormalized": [
+        0.5,
+        0.5
+      ],
+      "atlas": {
+        "file": "atlases/gold_impact.png",
+        "width": 272,
+        "height": 272,
+        "columns": 4,
+        "rows": 4,
+        "paddingPixels": 2,
+        "notRuntimeAtlas": true
+      },
+      "sampling": {
+        "filter": "nearest",
+        "pixelBlockSize": 2,
+        "logicalFrameSize": [
+          32,
+          32
+        ],
+        "frameIndex": "min(15, floor(clamp(progress,0,1) * 16))",
+        "partialTickRecommended": true,
+        "normalLifetimeExit": "draw nothing when progress >= 1; obey entity discard earlier"
+      },
+      "palette": [
+        [
+          79,
+          63,
+          34
+        ],
+        [
+          162,
+          113,
+          31
+        ],
+        [
+          226,
+          168,
+          43
+        ],
+        [
+          255,
+          211,
+          90
+        ],
+        [
+          255,
+          246,
+          185
+        ]
+      ],
+      "vertexTint": [
+        255,
+        255,
+        255
+      ],
+      "tintChannels": {
+        "bakedRgb": true,
+        "alpha": "opacity only",
+        "separateRecolorMask": null,
+        "warning": "Do not multiply colored RGB by bone/death/obsidian palette again"
+      },
+      "timeline": {
+        "normalizedStages": [
+          {
+            "stage": "appear",
+            "from": 0,
+            "to": 0.18,
+            "frames": [
+              0,
+              2
+            ]
+          },
+          {
+            "stage": "main",
+            "from": 0.18,
+            "to": 0.65,
+            "frames": [
+              3,
+              10
+            ]
+          },
+          {
+            "stage": "dissolve",
+            "from": 0.65,
+            "to": 1,
+            "frames": [
+              11,
+              15
+            ]
+          }
+        ],
+        "damageTriggers": false,
+        "hitFeedbackIncluded": false,
+        "opacity": "authored quantized alpha; no extra per-tick multiplier required",
+        "burstPlayback": "restart per confirmed event; normalize over visual entity lifetime (12 ticks); no synthetic followup input"
+      },
+      "lod": {
+        "normalMainPlanes": 1,
+        "core": "same frame and plane; omit secondary decorations, never explosion or boxes",
+        "hidden": "draw nothing"
+      },
+      "provenance": {
+        "method": "original parameterized pixel raster source, no provider pixels copied",
+        "license": "CC0-1.0",
+        "source": "art/tooling/vfx-eight-clips.mjs",
+        "influences": "Minecraft hard-edge finite palette and existing server event/profile contracts, not copied game textures"
+      }
+    },
+    {
+      "id": "flame_front",
+      "skillId": "eldencombat:takers_flames",
+      "kind": "FLAME_FRONT",
+      "name": "掠夺火焰",
+      "frameSize": [
+        64,
+        64
+      ],
+      "anchorPixels": [
+        32,
+        58
+      ],
+      "worldSizeBlocks": [
+        5,
+        3.5
+      ],
+      "sourceDefaults": {
+        "windupTicks": 9,
+        "activeTicks": 4,
+        "recoveryTicks": 5,
+        "visualEntityTicks": 40,
+        "waveSpeedBlocksPerTick": 0.65,
+        "effectRangeBlocks": 12,
+        "effectLifespanUpperBoundTicks": 40,
+        "baseRadiusBlocks": 2.5,
+        "maxRadiusBlocks": 2.5
+      },
+      "plane": {
+        "basisU": [
+          1,
+          0,
+          0
+        ],
+        "basisV": [
+          0,
+          1,
+          0
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "cameraFacing": false,
+        "space": "wave-local upright across travel; bottom attached to lane terrain",
+        "attachOffsetBlocks": [
+          0,
+          0,
+          0
+        ]
+      },
+      "laneContract": {
+        "lanes": 16,
+        "sourcePixelsPerLane": 4,
+        "worldWidth": "2 * visualRadius(partialTick)",
+        "worldHeightBlocks": 3.5,
+        "uvRangeForLane": "[lane/16, (lane+1)/16]",
+        "blockedMask": "omit lane if ((blockedLanes >>> lane) & 1) != 0",
+        "formationDistanceBlocks": 4,
+        "edgeSpeedFactor": 0.55,
+        "lagGridBlocks": 0.125,
+        "lag": "same WaveFront local offsets as current server",
+        "doNotDrawAsSingleQuad": true,
+        "animationClock": "visualProgress(partialTick)"
+      },
+      "event": "wave entity spawn on ACTIVE; terrain and wall discard authoritative",
+      "assetId": "eldencombat:vfx2d/flame_front",
+      "frameCount": 16,
+      "frames": [
+        {
+          "index": 0,
+          "file": "textures/particle/flame_front/frame_00.png",
+          "spriteId": "eldencombat:flame_front/frame_00",
+          "atlasRectPixels": [
+            2,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.03125
+        },
+        {
+          "index": 1,
+          "file": "textures/particle/flame_front/frame_01.png",
+          "spriteId": "eldencombat:flame_front/frame_01",
+          "atlasRectPixels": [
+            70,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.09375
+        },
+        {
+          "index": 2,
+          "file": "textures/particle/flame_front/frame_02.png",
+          "spriteId": "eldencombat:flame_front/frame_02",
+          "atlasRectPixels": [
+            138,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.15625
+        },
+        {
+          "index": 3,
+          "file": "textures/particle/flame_front/frame_03.png",
+          "spriteId": "eldencombat:flame_front/frame_03",
+          "atlasRectPixels": [
+            206,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.21875
+        },
+        {
+          "index": 4,
+          "file": "textures/particle/flame_front/frame_04.png",
+          "spriteId": "eldencombat:flame_front/frame_04",
+          "atlasRectPixels": [
+            2,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.28125
+        },
+        {
+          "index": 5,
+          "file": "textures/particle/flame_front/frame_05.png",
+          "spriteId": "eldencombat:flame_front/frame_05",
+          "atlasRectPixels": [
+            70,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.34375
+        },
+        {
+          "index": 6,
+          "file": "textures/particle/flame_front/frame_06.png",
+          "spriteId": "eldencombat:flame_front/frame_06",
+          "atlasRectPixels": [
+            138,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.40625
+        },
+        {
+          "index": 7,
+          "file": "textures/particle/flame_front/frame_07.png",
+          "spriteId": "eldencombat:flame_front/frame_07",
+          "atlasRectPixels": [
+            206,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.46875
+        },
+        {
+          "index": 8,
+          "file": "textures/particle/flame_front/frame_08.png",
+          "spriteId": "eldencombat:flame_front/frame_08",
+          "atlasRectPixels": [
+            2,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.53125
+        },
+        {
+          "index": 9,
+          "file": "textures/particle/flame_front/frame_09.png",
+          "spriteId": "eldencombat:flame_front/frame_09",
+          "atlasRectPixels": [
+            70,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.59375
+        },
+        {
+          "index": 10,
+          "file": "textures/particle/flame_front/frame_10.png",
+          "spriteId": "eldencombat:flame_front/frame_10",
+          "atlasRectPixels": [
+            138,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.65625
+        },
+        {
+          "index": 11,
+          "file": "textures/particle/flame_front/frame_11.png",
+          "spriteId": "eldencombat:flame_front/frame_11",
+          "atlasRectPixels": [
+            206,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.71875
+        },
+        {
+          "index": 12,
+          "file": "textures/particle/flame_front/frame_12.png",
+          "spriteId": "eldencombat:flame_front/frame_12",
+          "atlasRectPixels": [
+            2,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.78125
+        },
+        {
+          "index": 13,
+          "file": "textures/particle/flame_front/frame_13.png",
+          "spriteId": "eldencombat:flame_front/frame_13",
+          "atlasRectPixels": [
+            70,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.84375
+        },
+        {
+          "index": 14,
+          "file": "textures/particle/flame_front/frame_14.png",
+          "spriteId": "eldencombat:flame_front/frame_14",
+          "atlasRectPixels": [
+            138,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.90625
+        },
+        {
+          "index": 15,
+          "file": "textures/particle/flame_front/frame_15.png",
+          "spriteId": "eldencombat:flame_front/frame_15",
+          "atlasRectPixels": [
+            206,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.96875
+        }
+      ],
+      "anchorNormalized": [
+        0.5,
+        0.90625
+      ],
+      "atlas": {
+        "file": "atlases/flame_front.png",
+        "width": 272,
+        "height": 272,
+        "columns": 4,
+        "rows": 4,
+        "paddingPixels": 2,
+        "notRuntimeAtlas": true
+      },
+      "sampling": {
+        "filter": "nearest",
+        "pixelBlockSize": 2,
+        "logicalFrameSize": [
+          32,
+          32
+        ],
+        "frameIndex": "min(15, floor(clamp(progress,0,1) * 16))",
+        "partialTickRecommended": true,
+        "normalLifetimeExit": "draw nothing when progress >= 1; obey entity discard earlier"
+      },
+      "palette": [
+        [
+          65,
+          20,
+          25
+        ],
+        [
+          133,
+          29,
+          23
+        ],
+        [
+          215,
+          56,
+          22
+        ],
+        [
+          250,
+          125,
+          35
+        ],
+        [
+          255,
+          210,
+          96
+        ]
+      ],
+      "vertexTint": [
+        255,
+        255,
+        255
+      ],
+      "tintChannels": {
+        "bakedRgb": true,
+        "alpha": "opacity only",
+        "separateRecolorMask": null,
+        "warning": "Do not multiply colored RGB by bone/death/obsidian palette again"
+      },
+      "timeline": {
+        "normalizedStages": [
+          {
+            "stage": "appear",
+            "from": 0,
+            "to": 0.18,
+            "frames": [
+              0,
+              2
+            ]
+          },
+          {
+            "stage": "main",
+            "from": 0.18,
+            "to": 0.65,
+            "frames": [
+              3,
+              10
+            ]
+          },
+          {
+            "stage": "dissolve",
+            "from": 0.65,
+            "to": 1,
+            "frames": [
+              11,
+              15
+            ]
+          }
+        ],
+        "damageTriggers": false,
+        "hitFeedbackIncluded": false,
+        "opacity": "authored quantized alpha; no extra per-tick multiplier required",
+        "burstPlayback": "sample wave entity progress; independent of cast recovery"
+      },
+      "lod": {
+        "normalMainPlanes": 16,
+        "core": "same frame and plane; omit secondary decorations, never explosion or boxes",
+        "hidden": "draw nothing"
+      },
+      "provenance": {
+        "method": "original parameterized pixel raster source, no provider pixels copied",
+        "license": "CC0-1.0",
+        "source": "art/tooling/vfx-eight-clips.mjs",
+        "influences": "Minecraft hard-edge finite palette and existing server event/profile contracts, not copied game textures"
+      }
+    },
+    {
+      "id": "gravity_pull",
+      "skillId": "eldencombat:starcaller_cry",
+      "kind": "GRAVITY_PULL",
+      "name": "唤星 · 聚引",
+      "frameSize": [
+        64,
+        64
+      ],
+      "anchorPixels": [
+        32,
+        32
+      ],
+      "worldSizeBlocks": [
+        10,
+        10
+      ],
+      "sourceDefaults": {
+        "windupTicks": 8,
+        "activeTicks": 6,
+        "recoveryTicks": 5,
+        "visualEntityTicks": 12
+      },
+      "plane": {
+        "basisU": [
+          1,
+          0,
+          0
+        ],
+        "basisV": [
+          0,
+          0,
+          1
+        ],
+        "normal": [
+          0,
+          1,
+          0
+        ],
+        "cameraFacing": false,
+        "space": "entity-local horizontal; PNG +Y maps to -Z",
+        "heightAboveGroundBlocks": 0.04
+      },
+      "event": "stageIndex == 1 onActive",
+      "debris": {
+        "existingGroundState": true,
+        "maxPieces": 10,
+        "style": "hover then draw inward",
+        "changesBlocks": false
+      },
+      "assetId": "eldencombat:vfx2d/gravity_pull",
+      "frameCount": 16,
+      "frames": [
+        {
+          "index": 0,
+          "file": "textures/particle/gravity_pull/frame_00.png",
+          "spriteId": "eldencombat:gravity_pull/frame_00",
+          "atlasRectPixels": [
+            2,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.03125
+        },
+        {
+          "index": 1,
+          "file": "textures/particle/gravity_pull/frame_01.png",
+          "spriteId": "eldencombat:gravity_pull/frame_01",
+          "atlasRectPixels": [
+            70,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.09375
+        },
+        {
+          "index": 2,
+          "file": "textures/particle/gravity_pull/frame_02.png",
+          "spriteId": "eldencombat:gravity_pull/frame_02",
+          "atlasRectPixels": [
+            138,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.15625
+        },
+        {
+          "index": 3,
+          "file": "textures/particle/gravity_pull/frame_03.png",
+          "spriteId": "eldencombat:gravity_pull/frame_03",
+          "atlasRectPixels": [
+            206,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.21875
+        },
+        {
+          "index": 4,
+          "file": "textures/particle/gravity_pull/frame_04.png",
+          "spriteId": "eldencombat:gravity_pull/frame_04",
+          "atlasRectPixels": [
+            2,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.28125
+        },
+        {
+          "index": 5,
+          "file": "textures/particle/gravity_pull/frame_05.png",
+          "spriteId": "eldencombat:gravity_pull/frame_05",
+          "atlasRectPixels": [
+            70,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.34375
+        },
+        {
+          "index": 6,
+          "file": "textures/particle/gravity_pull/frame_06.png",
+          "spriteId": "eldencombat:gravity_pull/frame_06",
+          "atlasRectPixels": [
+            138,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.40625
+        },
+        {
+          "index": 7,
+          "file": "textures/particle/gravity_pull/frame_07.png",
+          "spriteId": "eldencombat:gravity_pull/frame_07",
+          "atlasRectPixels": [
+            206,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.46875
+        },
+        {
+          "index": 8,
+          "file": "textures/particle/gravity_pull/frame_08.png",
+          "spriteId": "eldencombat:gravity_pull/frame_08",
+          "atlasRectPixels": [
+            2,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.53125
+        },
+        {
+          "index": 9,
+          "file": "textures/particle/gravity_pull/frame_09.png",
+          "spriteId": "eldencombat:gravity_pull/frame_09",
+          "atlasRectPixels": [
+            70,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.59375
+        },
+        {
+          "index": 10,
+          "file": "textures/particle/gravity_pull/frame_10.png",
+          "spriteId": "eldencombat:gravity_pull/frame_10",
+          "atlasRectPixels": [
+            138,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.65625
+        },
+        {
+          "index": 11,
+          "file": "textures/particle/gravity_pull/frame_11.png",
+          "spriteId": "eldencombat:gravity_pull/frame_11",
+          "atlasRectPixels": [
+            206,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.71875
+        },
+        {
+          "index": 12,
+          "file": "textures/particle/gravity_pull/frame_12.png",
+          "spriteId": "eldencombat:gravity_pull/frame_12",
+          "atlasRectPixels": [
+            2,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.78125
+        },
+        {
+          "index": 13,
+          "file": "textures/particle/gravity_pull/frame_13.png",
+          "spriteId": "eldencombat:gravity_pull/frame_13",
+          "atlasRectPixels": [
+            70,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.84375
+        },
+        {
+          "index": 14,
+          "file": "textures/particle/gravity_pull/frame_14.png",
+          "spriteId": "eldencombat:gravity_pull/frame_14",
+          "atlasRectPixels": [
+            138,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.90625
+        },
+        {
+          "index": 15,
+          "file": "textures/particle/gravity_pull/frame_15.png",
+          "spriteId": "eldencombat:gravity_pull/frame_15",
+          "atlasRectPixels": [
+            206,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.96875
+        }
+      ],
+      "anchorNormalized": [
+        0.5,
+        0.5
+      ],
+      "atlas": {
+        "file": "atlases/gravity_pull.png",
+        "width": 272,
+        "height": 272,
+        "columns": 4,
+        "rows": 4,
+        "paddingPixels": 2,
+        "notRuntimeAtlas": true
+      },
+      "sampling": {
+        "filter": "nearest",
+        "pixelBlockSize": 2,
+        "logicalFrameSize": [
+          32,
+          32
+        ],
+        "frameIndex": "min(15, floor(clamp(progress,0,1) * 16))",
+        "partialTickRecommended": true,
+        "normalLifetimeExit": "draw nothing when progress >= 1; obey entity discard earlier"
+      },
+      "palette": [
+        [
+          30,
+          26,
+          43
+        ],
+        [
+          78,
+          53,
+          109
+        ],
+        [
+          137,
+          93,
+          177
+        ],
+        [
+          189,
+          153,
+          215
+        ],
+        [
+          236,
+          215,
+          246
+        ]
+      ],
+      "vertexTint": [
+        255,
+        255,
+        255
+      ],
+      "tintChannels": {
+        "bakedRgb": true,
+        "alpha": "opacity only",
+        "separateRecolorMask": null,
+        "warning": "Do not multiply colored RGB by bone/death/obsidian palette again"
+      },
+      "timeline": {
+        "normalizedStages": [
+          {
+            "stage": "appear",
+            "from": 0,
+            "to": 0.18,
+            "frames": [
+              0,
+              2
+            ]
+          },
+          {
+            "stage": "main",
+            "from": 0.18,
+            "to": 0.65,
+            "frames": [
+              3,
+              10
+            ]
+          },
+          {
+            "stage": "dissolve",
+            "from": 0.65,
+            "to": 1,
+            "frames": [
+              11,
+              15
+            ]
+          }
+        ],
+        "damageTriggers": false,
+        "hitFeedbackIncluded": false,
+        "opacity": "authored quantized alpha; no extra per-tick multiplier required",
+        "burstPlayback": "restart per confirmed event; normalize over visual entity lifetime (12 ticks); no synthetic followup input"
+      },
+      "lod": {
+        "normalMainPlanes": 1,
+        "core": "same frame and plane; omit secondary decorations, never explosion or boxes",
+        "hidden": "draw nothing"
+      },
+      "provenance": {
+        "method": "original parameterized pixel raster source, no provider pixels copied",
+        "license": "CC0-1.0",
+        "source": "art/tooling/vfx-eight-clips.mjs",
+        "influences": "Minecraft hard-edge finite palette and existing server event/profile contracts, not copied game textures"
+      }
+    },
+    {
+      "id": "gravity_impact",
+      "skillId": "eldencombat:starcaller_cry",
+      "kind": "GRAVITY_IMPACT",
+      "name": "唤星 · 坠击",
+      "frameSize": [
+        64,
+        64
+      ],
+      "anchorPixels": [
+        32,
+        32
+      ],
+      "worldSizeBlocks": [
+        8,
+        8
+      ],
+      "sourceDefaults": {
+        "windupTicks": 6,
+        "activeTicks": 8,
+        "recoveryTicks": 5,
+        "visualEntityTicks": 12
+      },
+      "plane": {
+        "basisU": [
+          1,
+          0,
+          0
+        ],
+        "basisV": [
+          0,
+          0,
+          1
+        ],
+        "normal": [
+          0,
+          1,
+          0
+        ],
+        "cameraFacing": false,
+        "space": "entity-local horizontal; PNG +Y maps to -Z",
+        "heightAboveGroundBlocks": 0.04
+      },
+      "event": "stageIndex > 1 landingImpact, once; requires real followup input",
+      "debris": {
+        "existingGroundState": true,
+        "maxPieces": 12,
+        "style": "outward ground fracture with lift and fall",
+        "changesBlocks": false
+      },
+      "assetId": "eldencombat:vfx2d/gravity_impact",
+      "frameCount": 16,
+      "frames": [
+        {
+          "index": 0,
+          "file": "textures/particle/gravity_impact/frame_00.png",
+          "spriteId": "eldencombat:gravity_impact/frame_00",
+          "atlasRectPixels": [
+            2,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.03125
+        },
+        {
+          "index": 1,
+          "file": "textures/particle/gravity_impact/frame_01.png",
+          "spriteId": "eldencombat:gravity_impact/frame_01",
+          "atlasRectPixels": [
+            70,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.09375
+        },
+        {
+          "index": 2,
+          "file": "textures/particle/gravity_impact/frame_02.png",
+          "spriteId": "eldencombat:gravity_impact/frame_02",
+          "atlasRectPixels": [
+            138,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.15625
+        },
+        {
+          "index": 3,
+          "file": "textures/particle/gravity_impact/frame_03.png",
+          "spriteId": "eldencombat:gravity_impact/frame_03",
+          "atlasRectPixels": [
+            206,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.21875
+        },
+        {
+          "index": 4,
+          "file": "textures/particle/gravity_impact/frame_04.png",
+          "spriteId": "eldencombat:gravity_impact/frame_04",
+          "atlasRectPixels": [
+            2,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.28125
+        },
+        {
+          "index": 5,
+          "file": "textures/particle/gravity_impact/frame_05.png",
+          "spriteId": "eldencombat:gravity_impact/frame_05",
+          "atlasRectPixels": [
+            70,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.34375
+        },
+        {
+          "index": 6,
+          "file": "textures/particle/gravity_impact/frame_06.png",
+          "spriteId": "eldencombat:gravity_impact/frame_06",
+          "atlasRectPixels": [
+            138,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.40625
+        },
+        {
+          "index": 7,
+          "file": "textures/particle/gravity_impact/frame_07.png",
+          "spriteId": "eldencombat:gravity_impact/frame_07",
+          "atlasRectPixels": [
+            206,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.46875
+        },
+        {
+          "index": 8,
+          "file": "textures/particle/gravity_impact/frame_08.png",
+          "spriteId": "eldencombat:gravity_impact/frame_08",
+          "atlasRectPixels": [
+            2,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.53125
+        },
+        {
+          "index": 9,
+          "file": "textures/particle/gravity_impact/frame_09.png",
+          "spriteId": "eldencombat:gravity_impact/frame_09",
+          "atlasRectPixels": [
+            70,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.59375
+        },
+        {
+          "index": 10,
+          "file": "textures/particle/gravity_impact/frame_10.png",
+          "spriteId": "eldencombat:gravity_impact/frame_10",
+          "atlasRectPixels": [
+            138,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.65625
+        },
+        {
+          "index": 11,
+          "file": "textures/particle/gravity_impact/frame_11.png",
+          "spriteId": "eldencombat:gravity_impact/frame_11",
+          "atlasRectPixels": [
+            206,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.71875
+        },
+        {
+          "index": 12,
+          "file": "textures/particle/gravity_impact/frame_12.png",
+          "spriteId": "eldencombat:gravity_impact/frame_12",
+          "atlasRectPixels": [
+            2,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.78125
+        },
+        {
+          "index": 13,
+          "file": "textures/particle/gravity_impact/frame_13.png",
+          "spriteId": "eldencombat:gravity_impact/frame_13",
+          "atlasRectPixels": [
+            70,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.84375
+        },
+        {
+          "index": 14,
+          "file": "textures/particle/gravity_impact/frame_14.png",
+          "spriteId": "eldencombat:gravity_impact/frame_14",
+          "atlasRectPixels": [
+            138,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.90625
+        },
+        {
+          "index": 15,
+          "file": "textures/particle/gravity_impact/frame_15.png",
+          "spriteId": "eldencombat:gravity_impact/frame_15",
+          "atlasRectPixels": [
+            206,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.96875
+        }
+      ],
+      "anchorNormalized": [
+        0.5,
+        0.5
+      ],
+      "atlas": {
+        "file": "atlases/gravity_impact.png",
+        "width": 272,
+        "height": 272,
+        "columns": 4,
+        "rows": 4,
+        "paddingPixels": 2,
+        "notRuntimeAtlas": true
+      },
+      "sampling": {
+        "filter": "nearest",
+        "pixelBlockSize": 2,
+        "logicalFrameSize": [
+          32,
+          32
+        ],
+        "frameIndex": "min(15, floor(clamp(progress,0,1) * 16))",
+        "partialTickRecommended": true,
+        "normalLifetimeExit": "draw nothing when progress >= 1; obey entity discard earlier"
+      },
+      "palette": [
+        [
+          30,
+          26,
+          43
+        ],
+        [
+          78,
+          53,
+          109
+        ],
+        [
+          137,
+          93,
+          177
+        ],
+        [
+          189,
+          153,
+          215
+        ],
+        [
+          236,
+          215,
+          246
+        ]
+      ],
+      "vertexTint": [
+        255,
+        255,
+        255
+      ],
+      "tintChannels": {
+        "bakedRgb": true,
+        "alpha": "opacity only",
+        "separateRecolorMask": null,
+        "warning": "Do not multiply colored RGB by bone/death/obsidian palette again"
+      },
+      "timeline": {
+        "normalizedStages": [
+          {
+            "stage": "appear",
+            "from": 0,
+            "to": 0.18,
+            "frames": [
+              0,
+              2
+            ]
+          },
+          {
+            "stage": "main",
+            "from": 0.18,
+            "to": 0.65,
+            "frames": [
+              3,
+              10
+            ]
+          },
+          {
+            "stage": "dissolve",
+            "from": 0.65,
+            "to": 1,
+            "frames": [
+              11,
+              15
+            ]
+          }
+        ],
+        "damageTriggers": false,
+        "hitFeedbackIncluded": false,
+        "opacity": "authored quantized alpha; no extra per-tick multiplier required",
+        "burstPlayback": "restart per confirmed event; normalize over visual entity lifetime (12 ticks); no synthetic followup input"
+      },
+      "lod": {
+        "normalMainPlanes": 1,
+        "core": "same frame and plane; omit secondary decorations, never explosion or boxes",
+        "hidden": "draw nothing"
+      },
+      "provenance": {
+        "method": "original parameterized pixel raster source, no provider pixels copied",
+        "license": "CC0-1.0",
+        "source": "art/tooling/vfx-eight-clips.mjs",
+        "influences": "Minecraft hard-edge finite palette and existing server event/profile contracts, not copied game textures"
+      }
+    },
+    {
+      "id": "blood_ritual",
+      "skillId": "eldencombat:bloodboon_ritual",
+      "kind": "BLOOD_RITUAL",
+      "name": "授血仪式",
+      "frameSize": [
+        64,
+        64
+      ],
+      "anchorPixels": [
+        32,
+        32
+      ],
+      "worldSizeBlocks": [
+        8,
+        8
+      ],
+      "sourceDefaults": {
+        "windupTicks": 6,
+        "activeTicks": 4,
+        "recoveryTicks": 2,
+        "visualEntityTicks": 16
+      },
+      "plane": {
+        "basisU": [
+          1,
+          0,
+          0
+        ],
+        "basisV": [
+          0,
+          0,
+          1
+        ],
+        "normal": [
+          0,
+          1,
+          0
+        ],
+        "cameraFacing": false,
+        "space": "entity-local horizontal; PNG +Y maps to -Z",
+        "heightAboveGroundBlocks": 2.4
+      },
+      "event": "onActive for each confirmed input stage; phase=stageIndex-1",
+      "phaseVariants": [
+        {
+          "phase": 0,
+          "scale": 1
+        },
+        {
+          "phase": 1,
+          "scale": 1.04
+        },
+        {
+          "phase": 2,
+          "scale": 1.08
+        }
+      ],
+      "shape": "square blood sigil; broken second square, corner notches, falling flecks; no circular ring",
+      "assetId": "eldencombat:vfx2d/blood_ritual",
+      "frameCount": 16,
+      "frames": [
+        {
+          "index": 0,
+          "file": "textures/particle/blood_ritual/frame_00.png",
+          "spriteId": "eldencombat:blood_ritual/frame_00",
+          "atlasRectPixels": [
+            2,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.03125
+        },
+        {
+          "index": 1,
+          "file": "textures/particle/blood_ritual/frame_01.png",
+          "spriteId": "eldencombat:blood_ritual/frame_01",
+          "atlasRectPixels": [
+            70,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.09375
+        },
+        {
+          "index": 2,
+          "file": "textures/particle/blood_ritual/frame_02.png",
+          "spriteId": "eldencombat:blood_ritual/frame_02",
+          "atlasRectPixels": [
+            138,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.15625
+        },
+        {
+          "index": 3,
+          "file": "textures/particle/blood_ritual/frame_03.png",
+          "spriteId": "eldencombat:blood_ritual/frame_03",
+          "atlasRectPixels": [
+            206,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.21875
+        },
+        {
+          "index": 4,
+          "file": "textures/particle/blood_ritual/frame_04.png",
+          "spriteId": "eldencombat:blood_ritual/frame_04",
+          "atlasRectPixels": [
+            2,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.28125
+        },
+        {
+          "index": 5,
+          "file": "textures/particle/blood_ritual/frame_05.png",
+          "spriteId": "eldencombat:blood_ritual/frame_05",
+          "atlasRectPixels": [
+            70,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.34375
+        },
+        {
+          "index": 6,
+          "file": "textures/particle/blood_ritual/frame_06.png",
+          "spriteId": "eldencombat:blood_ritual/frame_06",
+          "atlasRectPixels": [
+            138,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.40625
+        },
+        {
+          "index": 7,
+          "file": "textures/particle/blood_ritual/frame_07.png",
+          "spriteId": "eldencombat:blood_ritual/frame_07",
+          "atlasRectPixels": [
+            206,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.46875
+        },
+        {
+          "index": 8,
+          "file": "textures/particle/blood_ritual/frame_08.png",
+          "spriteId": "eldencombat:blood_ritual/frame_08",
+          "atlasRectPixels": [
+            2,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.53125
+        },
+        {
+          "index": 9,
+          "file": "textures/particle/blood_ritual/frame_09.png",
+          "spriteId": "eldencombat:blood_ritual/frame_09",
+          "atlasRectPixels": [
+            70,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.59375
+        },
+        {
+          "index": 10,
+          "file": "textures/particle/blood_ritual/frame_10.png",
+          "spriteId": "eldencombat:blood_ritual/frame_10",
+          "atlasRectPixels": [
+            138,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.65625
+        },
+        {
+          "index": 11,
+          "file": "textures/particle/blood_ritual/frame_11.png",
+          "spriteId": "eldencombat:blood_ritual/frame_11",
+          "atlasRectPixels": [
+            206,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.71875
+        },
+        {
+          "index": 12,
+          "file": "textures/particle/blood_ritual/frame_12.png",
+          "spriteId": "eldencombat:blood_ritual/frame_12",
+          "atlasRectPixels": [
+            2,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.78125
+        },
+        {
+          "index": 13,
+          "file": "textures/particle/blood_ritual/frame_13.png",
+          "spriteId": "eldencombat:blood_ritual/frame_13",
+          "atlasRectPixels": [
+            70,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.84375
+        },
+        {
+          "index": 14,
+          "file": "textures/particle/blood_ritual/frame_14.png",
+          "spriteId": "eldencombat:blood_ritual/frame_14",
+          "atlasRectPixels": [
+            138,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.90625
+        },
+        {
+          "index": 15,
+          "file": "textures/particle/blood_ritual/frame_15.png",
+          "spriteId": "eldencombat:blood_ritual/frame_15",
+          "atlasRectPixels": [
+            206,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.96875
+        }
+      ],
+      "anchorNormalized": [
+        0.5,
+        0.5
+      ],
+      "atlas": {
+        "file": "atlases/blood_ritual.png",
+        "width": 272,
+        "height": 272,
+        "columns": 4,
+        "rows": 4,
+        "paddingPixels": 2,
+        "notRuntimeAtlas": true
+      },
+      "sampling": {
+        "filter": "nearest",
+        "pixelBlockSize": 2,
+        "logicalFrameSize": [
+          32,
+          32
+        ],
+        "frameIndex": "min(15, floor(clamp(progress,0,1) * 16))",
+        "partialTickRecommended": true,
+        "normalLifetimeExit": "draw nothing when progress >= 1; obey entity discard earlier"
+      },
+      "palette": [
+        [
+          56,
+          16,
+          29
+        ],
+        [
+          118,
+          22,
+          43
+        ],
+        [
+          186,
+          37,
+          53
+        ],
+        [
+          235,
+          79,
+          69
+        ],
+        [
+          255,
+          166,
+          115
+        ]
+      ],
+      "vertexTint": [
+        255,
+        255,
+        255
+      ],
+      "tintChannels": {
+        "bakedRgb": true,
+        "alpha": "opacity only",
+        "separateRecolorMask": null,
+        "warning": "Do not multiply colored RGB by bone/death/obsidian palette again"
+      },
+      "timeline": {
+        "normalizedStages": [
+          {
+            "stage": "appear",
+            "from": 0,
+            "to": 0.18,
+            "frames": [
+              0,
+              2
+            ]
+          },
+          {
+            "stage": "main",
+            "from": 0.18,
+            "to": 0.65,
+            "frames": [
+              3,
+              10
+            ]
+          },
+          {
+            "stage": "dissolve",
+            "from": 0.65,
+            "to": 1,
+            "frames": [
+              11,
+              15
+            ]
+          }
+        ],
+        "damageTriggers": false,
+        "hitFeedbackIncluded": false,
+        "opacity": "authored quantized alpha; no extra per-tick multiplier required",
+        "burstPlayback": "restart per confirmed event; normalize over visual entity lifetime (16 ticks); no synthetic followup input"
+      },
+      "lod": {
+        "normalMainPlanes": 1,
+        "core": "same frame and plane; omit secondary decorations, never explosion or boxes",
+        "hidden": "draw nothing"
+      },
+      "provenance": {
+        "method": "original parameterized pixel raster source, no provider pixels copied",
+        "license": "CC0-1.0",
+        "source": "art/tooling/vfx-eight-clips.mjs",
+        "influences": "Minecraft hard-edge finite palette and existing server event/profile contracts, not copied game textures"
+      }
+    },
+    {
+      "id": "cursed_slash",
+      "skillId": "eldencombat:cursed_blood_slice",
+      "kind": "CURSED_SLASH",
+      "name": "咒血斩击 · 刀痕",
+      "frameSize": [
+        64,
+        64
+      ],
+      "anchorPixels": [
+        32,
+        36
+      ],
+      "worldSizeBlocks": [
+        6,
+        4.5
+      ],
+      "phaseRollDegrees": [
+        -26,
+        28,
+        -26
+      ],
+      "sourceDefaults": {
+        "windupTicks": 8,
+        "activeTicks": 6,
+        "recoveryTicks": 5,
+        "visualEntityTicks": 8
+      },
+      "plane": {
+        "basisU": [
+          1,
+          0,
+          0
+        ],
+        "basisV": [
+          0,
+          1,
+          0
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "cameraFacing": false,
+        "space": "caster-local vertical; PNG +Y maps downward",
+        "attachOffsetBlocks": [
+          0,
+          1.05,
+          0.35
+        ]
+      },
+      "event": "onActive for each input stage; phase follows cast.stageIndex modulo 3",
+      "assetId": "eldencombat:vfx2d/cursed_slash",
+      "frameCount": 16,
+      "frames": [
+        {
+          "index": 0,
+          "file": "textures/particle/cursed_slash/frame_00.png",
+          "spriteId": "eldencombat:cursed_slash/frame_00",
+          "atlasRectPixels": [
+            2,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.03125
+        },
+        {
+          "index": 1,
+          "file": "textures/particle/cursed_slash/frame_01.png",
+          "spriteId": "eldencombat:cursed_slash/frame_01",
+          "atlasRectPixels": [
+            70,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.09375
+        },
+        {
+          "index": 2,
+          "file": "textures/particle/cursed_slash/frame_02.png",
+          "spriteId": "eldencombat:cursed_slash/frame_02",
+          "atlasRectPixels": [
+            138,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.15625
+        },
+        {
+          "index": 3,
+          "file": "textures/particle/cursed_slash/frame_03.png",
+          "spriteId": "eldencombat:cursed_slash/frame_03",
+          "atlasRectPixels": [
+            206,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.21875
+        },
+        {
+          "index": 4,
+          "file": "textures/particle/cursed_slash/frame_04.png",
+          "spriteId": "eldencombat:cursed_slash/frame_04",
+          "atlasRectPixels": [
+            2,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.28125
+        },
+        {
+          "index": 5,
+          "file": "textures/particle/cursed_slash/frame_05.png",
+          "spriteId": "eldencombat:cursed_slash/frame_05",
+          "atlasRectPixels": [
+            70,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.34375
+        },
+        {
+          "index": 6,
+          "file": "textures/particle/cursed_slash/frame_06.png",
+          "spriteId": "eldencombat:cursed_slash/frame_06",
+          "atlasRectPixels": [
+            138,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.40625
+        },
+        {
+          "index": 7,
+          "file": "textures/particle/cursed_slash/frame_07.png",
+          "spriteId": "eldencombat:cursed_slash/frame_07",
+          "atlasRectPixels": [
+            206,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.46875
+        },
+        {
+          "index": 8,
+          "file": "textures/particle/cursed_slash/frame_08.png",
+          "spriteId": "eldencombat:cursed_slash/frame_08",
+          "atlasRectPixels": [
+            2,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.53125
+        },
+        {
+          "index": 9,
+          "file": "textures/particle/cursed_slash/frame_09.png",
+          "spriteId": "eldencombat:cursed_slash/frame_09",
+          "atlasRectPixels": [
+            70,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.59375
+        },
+        {
+          "index": 10,
+          "file": "textures/particle/cursed_slash/frame_10.png",
+          "spriteId": "eldencombat:cursed_slash/frame_10",
+          "atlasRectPixels": [
+            138,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.65625
+        },
+        {
+          "index": 11,
+          "file": "textures/particle/cursed_slash/frame_11.png",
+          "spriteId": "eldencombat:cursed_slash/frame_11",
+          "atlasRectPixels": [
+            206,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.71875
+        },
+        {
+          "index": 12,
+          "file": "textures/particle/cursed_slash/frame_12.png",
+          "spriteId": "eldencombat:cursed_slash/frame_12",
+          "atlasRectPixels": [
+            2,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.78125
+        },
+        {
+          "index": 13,
+          "file": "textures/particle/cursed_slash/frame_13.png",
+          "spriteId": "eldencombat:cursed_slash/frame_13",
+          "atlasRectPixels": [
+            70,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.84375
+        },
+        {
+          "index": 14,
+          "file": "textures/particle/cursed_slash/frame_14.png",
+          "spriteId": "eldencombat:cursed_slash/frame_14",
+          "atlasRectPixels": [
+            138,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.90625
+        },
+        {
+          "index": 15,
+          "file": "textures/particle/cursed_slash/frame_15.png",
+          "spriteId": "eldencombat:cursed_slash/frame_15",
+          "atlasRectPixels": [
+            206,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.96875
+        }
+      ],
+      "anchorNormalized": [
+        0.5,
+        0.5625
+      ],
+      "atlas": {
+        "file": "atlases/cursed_slash.png",
+        "width": 272,
+        "height": 272,
+        "columns": 4,
+        "rows": 4,
+        "paddingPixels": 2,
+        "notRuntimeAtlas": true
+      },
+      "sampling": {
+        "filter": "nearest",
+        "pixelBlockSize": 2,
+        "logicalFrameSize": [
+          32,
+          32
+        ],
+        "frameIndex": "min(15, floor(clamp(progress,0,1) * 16))",
+        "partialTickRecommended": true,
+        "normalLifetimeExit": "draw nothing when progress >= 1; obey entity discard earlier"
+      },
+      "palette": [
+        [
+          71,
+          28,
+          43
+        ],
+        [
+          141,
+          39,
+          66
+        ],
+        [
+          205,
+          68,
+          97
+        ],
+        [
+          245,
+          124,
+          121
+        ],
+        [
+          255,
+          206,
+          171
+        ]
+      ],
+      "vertexTint": [
+        255,
+        255,
+        255
+      ],
+      "tintChannels": {
+        "bakedRgb": true,
+        "alpha": "opacity only",
+        "separateRecolorMask": null,
+        "warning": "Do not multiply colored RGB by bone/death/obsidian palette again"
+      },
+      "timeline": {
+        "normalizedStages": [
+          {
+            "stage": "appear",
+            "from": 0,
+            "to": 0.18,
+            "frames": [
+              0,
+              2
+            ]
+          },
+          {
+            "stage": "main",
+            "from": 0.18,
+            "to": 0.65,
+            "frames": [
+              3,
+              10
+            ]
+          },
+          {
+            "stage": "dissolve",
+            "from": 0.65,
+            "to": 1,
+            "frames": [
+              11,
+              15
+            ]
+          }
+        ],
+        "damageTriggers": false,
+        "hitFeedbackIncluded": false,
+        "opacity": "authored quantized alpha; no extra per-tick multiplier required",
+        "burstPlayback": "restart per confirmed event; normalize over visual entity lifetime (8 ticks); no synthetic followup input"
+      },
+      "lod": {
+        "normalMainPlanes": 1,
+        "core": "same frame and plane; omit secondary decorations, never explosion or boxes",
+        "hidden": "draw nothing"
+      },
+      "provenance": {
+        "method": "original parameterized pixel raster source, no provider pixels copied",
+        "license": "CC0-1.0",
+        "source": "art/tooling/vfx-eight-clips.mjs",
+        "influences": "Minecraft hard-edge finite palette and existing server event/profile contracts, not copied game textures"
+      }
+    },
+    {
+      "id": "blood_flame",
+      "skillId": "eldencombat:cursed_blood_slice",
+      "kind": "BLOOD_FLAME",
+      "name": "咒血斩击 · 延烧",
+      "frameSize": [
+        64,
+        64
+      ],
+      "anchorPixels": [
+        32,
+        56
+      ],
+      "worldSizeBlocks": [
+        4,
+        3
+      ],
+      "sourceDefaults": {
+        "windupTicks": 8,
+        "activeTicks": 6,
+        "recoveryTicks": 5,
+        "visualEntityTicks": 12
+      },
+      "plane": {
+        "basisU": [
+          1,
+          0,
+          0
+        ],
+        "basisV": [
+          0,
+          1,
+          0
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "cameraFacing": false,
+        "space": "fixed entity-local at delayed origin; never follows owner",
+        "attachOffsetBlocks": [
+          0,
+          0,
+          0
+        ]
+      },
+      "event": "activeTick elapsed == 4 if reached; current followup active=4 may never enter this branch; combat owner must decide event semantics",
+      "assetId": "eldencombat:vfx2d/blood_flame",
+      "frameCount": 16,
+      "frames": [
+        {
+          "index": 0,
+          "file": "textures/particle/blood_flame/frame_00.png",
+          "spriteId": "eldencombat:blood_flame/frame_00",
+          "atlasRectPixels": [
+            2,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.03125
+        },
+        {
+          "index": 1,
+          "file": "textures/particle/blood_flame/frame_01.png",
+          "spriteId": "eldencombat:blood_flame/frame_01",
+          "atlasRectPixels": [
+            70,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.09375
+        },
+        {
+          "index": 2,
+          "file": "textures/particle/blood_flame/frame_02.png",
+          "spriteId": "eldencombat:blood_flame/frame_02",
+          "atlasRectPixels": [
+            138,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.15625
+        },
+        {
+          "index": 3,
+          "file": "textures/particle/blood_flame/frame_03.png",
+          "spriteId": "eldencombat:blood_flame/frame_03",
+          "atlasRectPixels": [
+            206,
+            2,
+            64,
+            64
+          ],
+          "sampleProgress": 0.21875
+        },
+        {
+          "index": 4,
+          "file": "textures/particle/blood_flame/frame_04.png",
+          "spriteId": "eldencombat:blood_flame/frame_04",
+          "atlasRectPixels": [
+            2,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.28125
+        },
+        {
+          "index": 5,
+          "file": "textures/particle/blood_flame/frame_05.png",
+          "spriteId": "eldencombat:blood_flame/frame_05",
+          "atlasRectPixels": [
+            70,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.34375
+        },
+        {
+          "index": 6,
+          "file": "textures/particle/blood_flame/frame_06.png",
+          "spriteId": "eldencombat:blood_flame/frame_06",
+          "atlasRectPixels": [
+            138,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.40625
+        },
+        {
+          "index": 7,
+          "file": "textures/particle/blood_flame/frame_07.png",
+          "spriteId": "eldencombat:blood_flame/frame_07",
+          "atlasRectPixels": [
+            206,
+            70,
+            64,
+            64
+          ],
+          "sampleProgress": 0.46875
+        },
+        {
+          "index": 8,
+          "file": "textures/particle/blood_flame/frame_08.png",
+          "spriteId": "eldencombat:blood_flame/frame_08",
+          "atlasRectPixels": [
+            2,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.53125
+        },
+        {
+          "index": 9,
+          "file": "textures/particle/blood_flame/frame_09.png",
+          "spriteId": "eldencombat:blood_flame/frame_09",
+          "atlasRectPixels": [
+            70,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.59375
+        },
+        {
+          "index": 10,
+          "file": "textures/particle/blood_flame/frame_10.png",
+          "spriteId": "eldencombat:blood_flame/frame_10",
+          "atlasRectPixels": [
+            138,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.65625
+        },
+        {
+          "index": 11,
+          "file": "textures/particle/blood_flame/frame_11.png",
+          "spriteId": "eldencombat:blood_flame/frame_11",
+          "atlasRectPixels": [
+            206,
+            138,
+            64,
+            64
+          ],
+          "sampleProgress": 0.71875
+        },
+        {
+          "index": 12,
+          "file": "textures/particle/blood_flame/frame_12.png",
+          "spriteId": "eldencombat:blood_flame/frame_12",
+          "atlasRectPixels": [
+            2,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.78125
+        },
+        {
+          "index": 13,
+          "file": "textures/particle/blood_flame/frame_13.png",
+          "spriteId": "eldencombat:blood_flame/frame_13",
+          "atlasRectPixels": [
+            70,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.84375
+        },
+        {
+          "index": 14,
+          "file": "textures/particle/blood_flame/frame_14.png",
+          "spriteId": "eldencombat:blood_flame/frame_14",
+          "atlasRectPixels": [
+            138,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.90625
+        },
+        {
+          "index": 15,
+          "file": "textures/particle/blood_flame/frame_15.png",
+          "spriteId": "eldencombat:blood_flame/frame_15",
+          "atlasRectPixels": [
+            206,
+            206,
+            64,
+            64
+          ],
+          "sampleProgress": 0.96875
+        }
+      ],
+      "anchorNormalized": [
+        0.5,
+        0.875
+      ],
+      "atlas": {
+        "file": "atlases/blood_flame.png",
+        "width": 272,
+        "height": 272,
+        "columns": 4,
+        "rows": 4,
+        "paddingPixels": 2,
+        "notRuntimeAtlas": true
+      },
+      "sampling": {
+        "filter": "nearest",
+        "pixelBlockSize": 2,
+        "logicalFrameSize": [
+          32,
+          32
+        ],
+        "frameIndex": "min(15, floor(clamp(progress,0,1) * 16))",
+        "partialTickRecommended": true,
+        "normalLifetimeExit": "draw nothing when progress >= 1; obey entity discard earlier"
+      },
+      "palette": [
+        [
+          59,
+          17,
+          28
+        ],
+        [
+          136,
+          25,
+          48
+        ],
+        [
+          202,
+          48,
+          61
+        ],
+        [
+          245,
+          96,
+          69
+        ],
+        [
+          255,
+          181,
+          120
+        ]
+      ],
+      "vertexTint": [
+        255,
+        255,
+        255
+      ],
+      "tintChannels": {
+        "bakedRgb": true,
+        "alpha": "opacity only",
+        "separateRecolorMask": null,
+        "warning": "Do not multiply colored RGB by bone/death/obsidian palette again"
+      },
+      "timeline": {
+        "normalizedStages": [
+          {
+            "stage": "appear",
+            "from": 0,
+            "to": 0.18,
+            "frames": [
+              0,
+              2
+            ]
+          },
+          {
+            "stage": "main",
+            "from": 0.18,
+            "to": 0.65,
+            "frames": [
+              3,
+              10
+            ]
+          },
+          {
+            "stage": "dissolve",
+            "from": 0.65,
+            "to": 1,
+            "frames": [
+              11,
+              15
+            ]
+          }
+        ],
+        "damageTriggers": false,
+        "hitFeedbackIncluded": false,
+        "opacity": "authored quantized alpha; no extra per-tick multiplier required",
+        "burstPlayback": "restart per confirmed event; normalize over visual entity lifetime (12 ticks); no synthetic followup input"
+      },
+      "lod": {
+        "normalMainPlanes": 1,
+        "core": "same frame and plane; omit secondary decorations, never explosion or boxes",
+        "hidden": "draw nothing"
+      },
+      "provenance": {
+        "method": "original parameterized pixel raster source, no provider pixels copied",
+        "license": "CC0-1.0",
+        "source": "art/tooling/vfx-eight-clips.mjs",
+        "influences": "Minecraft hard-edge finite palette and existing server event/profile contracts, not copied game textures"
+      }
+    }
+  ],
+  "hashes": [
+    {
+      "file": "textures/particle/waterfowl/frame_00.png",
+      "sha256": "03defc06cc3fd341c5750166718b9c83fb18277a4f6ac4617cf45a2e061a8844",
+      "bytes": 202
+    },
+    {
+      "file": "textures/particle/waterfowl/frame_01.png",
+      "sha256": "d51550c56a93465cb1da75d9230cb6c9fa764207c6b4b4c0a33d6d3b2c35dd8a",
+      "bytes": 235
+    },
+    {
+      "file": "textures/particle/waterfowl/frame_02.png",
+      "sha256": "de6c7f46134c73f44ad0bb3df983bd4866d9ded13428888fec078a96473ba6ec",
+      "bytes": 316
+    },
+    {
+      "file": "textures/particle/waterfowl/frame_03.png",
+      "sha256": "0be2dc8c6f8a580fbc6c64d674d305c4ad075d91c8d7e9fc77c40711546ef709",
+      "bytes": 368
+    },
+    {
+      "file": "textures/particle/waterfowl/frame_04.png",
+      "sha256": "9fc2ce0610e34fb728a49f79925a5d5bb9f3ba6b2162bb84d544762f5eaf0078",
+      "bytes": 347
+    },
+    {
+      "file": "textures/particle/waterfowl/frame_05.png",
+      "sha256": "64c2a3b493d04c8cb7eb1cdcd3e2f62dd745d2c1db2104211d5021aca2fa949f",
+      "bytes": 308
+    },
+    {
+      "file": "textures/particle/waterfowl/frame_06.png",
+      "sha256": "ed8bdea0bbf438677cfd4b92f3d728992aac4938d27f0cce59ef2cf13042a187",
+      "bytes": 313
+    },
+    {
+      "file": "textures/particle/waterfowl/frame_07.png",
+      "sha256": "763437c9c6cef95eed821e09f6daa0cb3b2c8bd828a803ede5fce2128739273c",
+      "bytes": 365
+    },
+    {
+      "file": "textures/particle/waterfowl/frame_08.png",
+      "sha256": "1ad99dbde308d33c1ac993f173b29325bdf3e111222fff9a6b0e04b38d7222c3",
+      "bytes": 355
+    },
+    {
+      "file": "textures/particle/waterfowl/frame_09.png",
+      "sha256": "78504f9e38a1cacb0bb43329045442289b20ea9c41df47f8d1f106f12b953fcd",
+      "bytes": 361
+    },
+    {
+      "file": "textures/particle/waterfowl/frame_10.png",
+      "sha256": "c1152ec8b3c6f9c704e1493dd08d96df04cd5b592dfa138f6cf93a4ed55dfa39",
+      "bytes": 379
+    },
+    {
+      "file": "textures/particle/waterfowl/frame_11.png",
+      "sha256": "96bc7e17ff9da9b8e156bd72a57b1cb06b14ff39568ecfd0bb63f9b88b0c628f",
+      "bytes": 346
+    },
+    {
+      "file": "textures/particle/waterfowl/frame_12.png",
+      "sha256": "6c8620c17edae09b8e55d87684d75b9ce9b0989fb424a88472c26a5a642d95fc",
+      "bytes": 342
+    },
+    {
+      "file": "textures/particle/waterfowl/frame_13.png",
+      "sha256": "18b55b652956b1a7701bcad3b088e0b9b8446384a3bf259063721a7fe88d8e44",
+      "bytes": 273
+    },
+    {
+      "file": "textures/particle/waterfowl/frame_14.png",
+      "sha256": "ba65718dda6e5002cce1e3eef540fdb80b419b8a09731ecb9e4c8172cd825bc8",
+      "bytes": 272
+    },
+    {
+      "file": "textures/particle/waterfowl/frame_15.png",
+      "sha256": "7599d4f055035487289cbdd41c164ca3c48bc380a9ba5976a5828438491c32e6",
+      "bytes": 208
+    },
+    {
+      "file": "atlases/waterfowl.png",
+      "sha256": "552f4e257220bb26b0bf201f2e25f1d850d2b59aba3c39e4ee4d03a5756564d8",
+      "bytes": 3006
+    },
+    {
+      "file": "textures/particle/death_slash/frame_00.png",
+      "sha256": "b598d38c93da9c1e2c4d4cb36390bb00914d74a4a509db05c2d8c55477fd9ea2",
+      "bytes": 268
+    },
+    {
+      "file": "textures/particle/death_slash/frame_01.png",
+      "sha256": "2e93f3f1ce5cca458aa7ffdbc043eb769ce13ac9f0634a3cfb000853030b9281",
+      "bytes": 401
+    },
+    {
+      "file": "textures/particle/death_slash/frame_02.png",
+      "sha256": "ea79db27957606b45a506fa484509bbda07ef3d800cbf19a188cc8803fbb185f",
+      "bytes": 467
+    },
+    {
+      "file": "textures/particle/death_slash/frame_03.png",
+      "sha256": "e8b3e98343fce7f98a31fbd860478fd4df454756be28275e1e20e9c23a91faf1",
+      "bytes": 491
+    },
+    {
+      "file": "textures/particle/death_slash/frame_04.png",
+      "sha256": "b24a97daa31b7ff9ad8b2bb893d2df5d4036ffc74f7227d14ef0a509737960a0",
+      "bytes": 510
+    },
+    {
+      "file": "textures/particle/death_slash/frame_05.png",
+      "sha256": "aed808380d4d7178b551c9cb972ccad53db30ffd3794a936d7d64d24dfae2f99",
+      "bytes": 512
+    },
+    {
+      "file": "textures/particle/death_slash/frame_06.png",
+      "sha256": "a5339c6e479093308f43bc45a212694de670f5daedcc36cdf5dc3a9fffeb898f",
+      "bytes": 502
+    },
+    {
+      "file": "textures/particle/death_slash/frame_07.png",
+      "sha256": "ada8f76be2376c3474a00c1bb12022d3edf4f0220e729296ae7ec78a9c9a896c",
+      "bytes": 498
+    },
+    {
+      "file": "textures/particle/death_slash/frame_08.png",
+      "sha256": "37cf25ee416a20a6ad0c0b7978618c521115fc516caa9d154505168586c74e5f",
+      "bytes": 500
+    },
+    {
+      "file": "textures/particle/death_slash/frame_09.png",
+      "sha256": "d0ebdb9cca7f2f217e202740b577c215a4d1864f7215590ad67e09b8731e6550",
+      "bytes": 495
+    },
+    {
+      "file": "textures/particle/death_slash/frame_10.png",
+      "sha256": "647e53354057369a9a63cf69120122796e9e7e1324877c3cd790f3cd8a6f1f17",
+      "bytes": 482
+    },
+    {
+      "file": "textures/particle/death_slash/frame_11.png",
+      "sha256": "f1619f0aba6a7ceff3e6597bb01709b12e15351c80d34a4add96c05b2b94c56a",
+      "bytes": 462
+    },
+    {
+      "file": "textures/particle/death_slash/frame_12.png",
+      "sha256": "35a8a1d78936f34d7f99acac55b79a3710ff0243b88a9e3c67f73ac769839c24",
+      "bytes": 558
+    },
+    {
+      "file": "textures/particle/death_slash/frame_13.png",
+      "sha256": "ffdc29665aafdf48eefbc4eea191d41e55154b9312dbed0cd99dbbcbf477b65f",
+      "bytes": 521
+    },
+    {
+      "file": "textures/particle/death_slash/frame_14.png",
+      "sha256": "a14ffc97fe569b8dc462cb65d40e3ea898b75f7e62eaae000b09e66f9785d78f",
+      "bytes": 487
+    },
+    {
+      "file": "textures/particle/death_slash/frame_15.png",
+      "sha256": "7abc57e56e6049bc7df7a102413215958f2da7a224a6f19e98098755ba0cd33d",
+      "bytes": 335
+    },
+    {
+      "file": "atlases/death_slash.png",
+      "sha256": "39a1f72180b10017d4d506051b87a7d0a083cf07ea0eca26ff3b8288f7ba20aa",
+      "bytes": 5272
+    },
+    {
+      "file": "textures/particle/gold_wave/frame_00.png",
+      "sha256": "69fe767dba48134f3c3d96c1bb626bde8293c2246a54e3da94ab9e2bd126fc61",
+      "bytes": 821
+    },
+    {
+      "file": "textures/particle/gold_wave/frame_01.png",
+      "sha256": "b29d8f4e1234eae9b0f28b3ab053535937bcdcd6943f1b895b69ae2fccbbfa5a",
+      "bytes": 825
+    },
+    {
+      "file": "textures/particle/gold_wave/frame_02.png",
+      "sha256": "01fb4568f00a6760eb9c2ecbe2490f6ad16c3349722406ee94741808f8dd5971",
+      "bytes": 825
+    },
+    {
+      "file": "textures/particle/gold_wave/frame_03.png",
+      "sha256": "a3644a5f256301a1863fda823f00a4ff4d6864f1e3b99c7802ec8529ed1a56a3",
+      "bytes": 816
+    },
+    {
+      "file": "textures/particle/gold_wave/frame_04.png",
+      "sha256": "9ad210de19e665f01c1e6ca0cba8769f785d294c5208363a9b9b6892bea8300b",
+      "bytes": 824
+    },
+    {
+      "file": "textures/particle/gold_wave/frame_05.png",
+      "sha256": "a5f6573dd8f8feb07914dcfcfd46f4adf5f7883342693c05a5b689b64d4210cd",
+      "bytes": 817
+    },
+    {
+      "file": "textures/particle/gold_wave/frame_06.png",
+      "sha256": "74d707fa0868887471f7b1811b62d43cae31b30bd939df25e74e908e2eb576f7",
+      "bytes": 825
+    },
+    {
+      "file": "textures/particle/gold_wave/frame_07.png",
+      "sha256": "767ba66b5d8fd6e648624cf4f77cb8b295509675925db728821d05d05ee6a86c",
+      "bytes": 850
+    },
+    {
+      "file": "textures/particle/gold_wave/frame_08.png",
+      "sha256": "dcf6cd27352a927ee0696093f0ce9560e998fc9e44f5a51cee460962851f1ac1",
+      "bytes": 844
+    },
+    {
+      "file": "textures/particle/gold_wave/frame_09.png",
+      "sha256": "aaf607d3abd7e8609552a654cdad01814cb68f985783d9638b1409b718fe4f3f",
+      "bytes": 813
+    },
+    {
+      "file": "textures/particle/gold_wave/frame_10.png",
+      "sha256": "ca917a3f6e395189d0a36e8b4121b822bbbe5f36316d3ca4c994e5eae5b40bce",
+      "bytes": 822
+    },
+    {
+      "file": "textures/particle/gold_wave/frame_11.png",
+      "sha256": "a8164f8a094a2a18f8cce3cec69dfbbbe48df9b2cb4090a497b658615429bec2",
+      "bytes": 835
+    },
+    {
+      "file": "textures/particle/gold_wave/frame_12.png",
+      "sha256": "f4412112e30bb9460f9accd95becde49da88d8de10867340a7ba73dac5c7112d",
+      "bytes": 842
+    },
+    {
+      "file": "textures/particle/gold_wave/frame_13.png",
+      "sha256": "1b7914f89f35d4b4adab21433653e1391542535c702cdadced8a25f84c6ac1f3",
+      "bytes": 816
+    },
+    {
+      "file": "textures/particle/gold_wave/frame_14.png",
+      "sha256": "a37435881e5bdcdbb273a34386e84466d5904e6408ff1c9e007e4a03d293445d",
+      "bytes": 796
+    },
+    {
+      "file": "textures/particle/gold_wave/frame_15.png",
+      "sha256": "2d433276606970ecbcfba686e4ca608a573a76fd57abc471caec3f34b9c4b622",
+      "bytes": 724
+    },
+    {
+      "file": "atlases/gold_wave.png",
+      "sha256": "1703e4c5562767070f14a76e1e40ab2b6b9b0f7f5496bc7bc1a0b503a19d2c06",
+      "bytes": 11505
+    },
+    {
+      "file": "textures/particle/gold_impact/frame_00.png",
+      "sha256": "a3bfae654ef9b536790493583297efeab6455f35d3026dbeb0f2f1b973814e1f",
+      "bytes": 418
+    },
+    {
+      "file": "textures/particle/gold_impact/frame_01.png",
+      "sha256": "bd0187f88497f2044afd5dfb33b24e1d9c017cd2fe5aa84e140b9ce5bd4f9391",
+      "bytes": 519
+    },
+    {
+      "file": "textures/particle/gold_impact/frame_02.png",
+      "sha256": "5d781d1007e8a609bacb3689d945bae5421ba4def31a72bfa5ce6b72b9a1bc01",
+      "bytes": 614
+    },
+    {
+      "file": "textures/particle/gold_impact/frame_03.png",
+      "sha256": "4da07b13b6d7fcf2c4f7305a8407949a7abffc7c3c78b20b74863b3374f5ee19",
+      "bytes": 650
+    },
+    {
+      "file": "textures/particle/gold_impact/frame_04.png",
+      "sha256": "0f8f70ba3f7371bcc2f061071f4ea93d02b6ab4ba96abdb5862603a030480816",
+      "bytes": 696
+    },
+    {
+      "file": "textures/particle/gold_impact/frame_05.png",
+      "sha256": "b96842b1885281bd4384ca5b82f25220f1a0627434665e0a659fdb2057ebd1c9",
+      "bytes": 764
+    },
+    {
+      "file": "textures/particle/gold_impact/frame_06.png",
+      "sha256": "961870d0d44926db4e22be57a0e605ed03a05003102cfc620ae56743fa5d06b3",
+      "bytes": 867
+    },
+    {
+      "file": "textures/particle/gold_impact/frame_07.png",
+      "sha256": "b22901b3673ebdd36ae31bf0ab80eb591b3486677c5fea142b2487c80c9472e4",
+      "bytes": 936
+    },
+    {
+      "file": "textures/particle/gold_impact/frame_08.png",
+      "sha256": "fd1a0201c99ee682295d2584033ff9f8a4529b59a02c5b30d912d8dde4d9e646",
+      "bytes": 1025
+    },
+    {
+      "file": "textures/particle/gold_impact/frame_09.png",
+      "sha256": "1408abe6c2b6cd7d9383b35de9c6c8d9cfbd671f5c9d943931fab084e4c4913f",
+      "bytes": 1104
+    },
+    {
+      "file": "textures/particle/gold_impact/frame_10.png",
+      "sha256": "2d6f4ae896f4ec5d7edb93cb88caecafb24fe66acfba167f3a04cab8202053ff",
+      "bytes": 1103
+    },
+    {
+      "file": "textures/particle/gold_impact/frame_11.png",
+      "sha256": "ea6cd6b5950d3049fbb93893c1eda7a9ee34713fcd4f181daebadb0d68d694aa",
+      "bytes": 1071
+    },
+    {
+      "file": "textures/particle/gold_impact/frame_12.png",
+      "sha256": "4d3cc1d1886fa8f462d2c945b3ea4743d1143b46f207e5c2d57f1b75400bc1c8",
+      "bytes": 1049
+    },
+    {
+      "file": "textures/particle/gold_impact/frame_13.png",
+      "sha256": "c4a1c620bf13a5c054971af08498830184dcbcbc42aff7f806e82b8700d7d523",
+      "bytes": 922
+    },
+    {
+      "file": "textures/particle/gold_impact/frame_14.png",
+      "sha256": "5fa2e29a9c368f64b7214cf109edf53de42f9d5d3a61b078d9283e3c5fb8aaae",
+      "bytes": 1056
+    },
+    {
+      "file": "textures/particle/gold_impact/frame_15.png",
+      "sha256": "ac4ba23de1d6a46637fd72762c89ba1831f05ae598372b9ea2d0a34882e5b0a6",
+      "bytes": 927
+    },
+    {
+      "file": "atlases/gold_impact.png",
+      "sha256": "81ab78f664a28f9e5962e3da5807834c986012625876bb5e9f32975ba8bfc83e",
+      "bytes": 11505
+    },
+    {
+      "file": "textures/particle/flame_front/frame_00.png",
+      "sha256": "1668e84fb47621ec5c58da40c587e7fc0cf968b165d6b16d837b83e65098fa04",
+      "bytes": 461
+    },
+    {
+      "file": "textures/particle/flame_front/frame_01.png",
+      "sha256": "efe233ea60a4c56ce9e091b3b5c7938b6131225f248985e4ce7c84485f0439bf",
+      "bytes": 630
+    },
+    {
+      "file": "textures/particle/flame_front/frame_02.png",
+      "sha256": "e1c97e94d0740fc504449eaf6fad00cc97adb90c72eb13a561b6634bdaf722e0",
+      "bytes": 727
+    },
+    {
+      "file": "textures/particle/flame_front/frame_03.png",
+      "sha256": "483bda9c6222f520b8eb315c41eaabdcda710daae41e8dafcb3ad915b27b2a0f",
+      "bytes": 658
+    },
+    {
+      "file": "textures/particle/flame_front/frame_04.png",
+      "sha256": "bb796c56937e6debb20b9edeb158cbef46e4fbd8210ced97477c1a39efa07c4c",
+      "bytes": 719
+    },
+    {
+      "file": "textures/particle/flame_front/frame_05.png",
+      "sha256": "a7e1fcbcb116014facb67161f19e3d8891f42631ae6767b7f1c27a0947befc9b",
+      "bytes": 673
+    },
+    {
+      "file": "textures/particle/flame_front/frame_06.png",
+      "sha256": "60949efebfd42c66aa2c2ad3c60f7d04fe59c7d4fec0a89e8665ddd81b424736",
+      "bytes": 675
+    },
+    {
+      "file": "textures/particle/flame_front/frame_07.png",
+      "sha256": "32218772f41ed8dd2da7cd6babac6042b78870b32516e680b973a1a8da5b556b",
+      "bytes": 643
+    },
+    {
+      "file": "textures/particle/flame_front/frame_08.png",
+      "sha256": "945e18b658684ea050bdbee868048fc4b3b4d7a2a2f75dfdd50a1f7888ea3a2b",
+      "bytes": 685
+    },
+    {
+      "file": "textures/particle/flame_front/frame_09.png",
+      "sha256": "d558658b8aad048115657e4c8a0b1d0220d6eb275dde7002deb3883aafe6524d",
+      "bytes": 734
+    },
+    {
+      "file": "textures/particle/flame_front/frame_10.png",
+      "sha256": "483f66bf6dc7843bc6c1e04e9f7bb3c29d2d794a751cab38ed2c049def2d5518",
+      "bytes": 675
+    },
+    {
+      "file": "textures/particle/flame_front/frame_11.png",
+      "sha256": "a9cc4e1c1bea4f290485606ff1cfbf15bae17b60abb5dfbf2138dc53108a1372",
+      "bytes": 726
+    },
+    {
+      "file": "textures/particle/flame_front/frame_12.png",
+      "sha256": "f92f619a7b58ee29a49f8b37c05bc94b773ea900901294dee9f8154f3858349f",
+      "bytes": 839
+    },
+    {
+      "file": "textures/particle/flame_front/frame_13.png",
+      "sha256": "0c2ab246ad3a9e3d1706dd777363e9145bbdbe41ba5bb5c1969363002f1cbc6d",
+      "bytes": 949
+    },
+    {
+      "file": "textures/particle/flame_front/frame_14.png",
+      "sha256": "ea7774d3ce1e06ada6cceed9c77c9bfc4cf873949f3f340b3272fad6b3c47ab3",
+      "bytes": 753
+    },
+    {
+      "file": "textures/particle/flame_front/frame_15.png",
+      "sha256": "6cbfd6e5ed415b63e88601ce64191116e2e8bcb3a398808f8c460407a564d218",
+      "bytes": 882
+    },
+    {
+      "file": "atlases/flame_front.png",
+      "sha256": "c773bf2a1fd0a430081bfa96df816b479bd8dfbbd7739d2d7a5b71f538da8424",
+      "bytes": 9733
+    },
+    {
+      "file": "textures/particle/gravity_pull/frame_00.png",
+      "sha256": "90cea972b670d18b787e0881914a21ae13e91004dd0d69cef2caead8772c2390",
+      "bytes": 1029
+    },
+    {
+      "file": "textures/particle/gravity_pull/frame_01.png",
+      "sha256": "0e4d53082b079f576ffde54e86646ecf4420633805c8d9dd75c83557c3f04043",
+      "bytes": 980
+    },
+    {
+      "file": "textures/particle/gravity_pull/frame_02.png",
+      "sha256": "27a90d89cccde3c7c8c9170fbf803511a9ad61f7bba9e0545184952795141ede",
+      "bytes": 967
+    },
+    {
+      "file": "textures/particle/gravity_pull/frame_03.png",
+      "sha256": "91c5347cc6f26bf55fad7262a49c0c31419e0203ada74b375769a5fc1959338f",
+      "bytes": 1001
+    },
+    {
+      "file": "textures/particle/gravity_pull/frame_04.png",
+      "sha256": "7ea6845138fb7d8959837efef03a357c7b88f83828f944161b1fc683b1a62033",
+      "bytes": 952
+    },
+    {
+      "file": "textures/particle/gravity_pull/frame_05.png",
+      "sha256": "b28b7cc5ff015312715be48a1d451326ab277634d059bedbc20bf58c86ca02f3",
+      "bytes": 877
+    },
+    {
+      "file": "textures/particle/gravity_pull/frame_06.png",
+      "sha256": "b927cad7fd157f9dcf2aa512c90aac9202e634d8a9c0d2f44c9cd693a1037d1a",
+      "bytes": 938
+    },
+    {
+      "file": "textures/particle/gravity_pull/frame_07.png",
+      "sha256": "bff09248a20a3e3aaf30df329b7c7fc3f199828b24beda19e939f8f36ea671ad",
+      "bytes": 853
+    },
+    {
+      "file": "textures/particle/gravity_pull/frame_08.png",
+      "sha256": "924d13f97ade15dda9d5776f96480f6ba4920ce19a7f51f53a960931c0ae88a5",
+      "bytes": 899
+    },
+    {
+      "file": "textures/particle/gravity_pull/frame_09.png",
+      "sha256": "5e75b99449ac7f1d1165376161ef97bbbf3fae56a2e38bb3798aabc0cbddf5ab",
+      "bytes": 830
+    },
+    {
+      "file": "textures/particle/gravity_pull/frame_10.png",
+      "sha256": "ce85403dd8111f4080cfc7db14d5137a37f94b5f8174e62c340fe07a812b34b3",
+      "bytes": 806
+    },
+    {
+      "file": "textures/particle/gravity_pull/frame_11.png",
+      "sha256": "b53c2795962b85157970d72d9d7770ace93e046db8319276de0a7512379047b6",
+      "bytes": 793
+    },
+    {
+      "file": "textures/particle/gravity_pull/frame_12.png",
+      "sha256": "d0f9586e8f52c772a9912ace331a2190046e759db53e84afbf766ad54a870fa7",
+      "bytes": 734
+    },
+    {
+      "file": "textures/particle/gravity_pull/frame_13.png",
+      "sha256": "50204249c96ee7e6f17e8ac751a2d2043681d717adcd818ce971d88aaa1a01c3",
+      "bytes": 702
+    },
+    {
+      "file": "textures/particle/gravity_pull/frame_14.png",
+      "sha256": "eb009dba26b98210ec0f12864359275b03946f49487ba1c6c36164b6fc4db32d",
+      "bytes": 646
+    },
+    {
+      "file": "textures/particle/gravity_pull/frame_15.png",
+      "sha256": "abdd730dacc433be2aa32a0ddd3ef2298d33252351835a6795358b8a0d298940",
+      "bytes": 580
+    },
+    {
+      "file": "atlases/gravity_pull.png",
+      "sha256": "54e96dd02cb61a770add98f68cbd5df504b6c790b9384a1acd27652baa348a4d",
+      "bytes": 11234
+    },
+    {
+      "file": "textures/particle/gravity_impact/frame_00.png",
+      "sha256": "cfcede4ffbb99f77321e00a8f112be3d2649d6d77782affbceb7693dc1ac891c",
+      "bytes": 423
+    },
+    {
+      "file": "textures/particle/gravity_impact/frame_01.png",
+      "sha256": "27f05af476598d8f53d7cdd67032f9d52b89b923a67f7ca6a333313a1ce514e7",
+      "bytes": 526
+    },
+    {
+      "file": "textures/particle/gravity_impact/frame_02.png",
+      "sha256": "0a0ea4da4e93334f60336a4874b333e519254bb82b7fc194c4e2399936c0be26",
+      "bytes": 623
+    },
+    {
+      "file": "textures/particle/gravity_impact/frame_03.png",
+      "sha256": "c8e00686536a7c0e0e8470021fd35f31fbdcb0b90018271afc36397c441359d1",
+      "bytes": 666
+    },
+    {
+      "file": "textures/particle/gravity_impact/frame_04.png",
+      "sha256": "dce722a5b784160204591d5c9175289872026ecd72f7f38a591f3367f5a62887",
+      "bytes": 708
+    },
+    {
+      "file": "textures/particle/gravity_impact/frame_05.png",
+      "sha256": "e7adef295b3723766cc4a12e040f5fe37d0c1ab1acf9aaec2f8171c572975571",
+      "bytes": 776
+    },
+    {
+      "file": "textures/particle/gravity_impact/frame_06.png",
+      "sha256": "d216184a48deeae277082a0a7c0342d28cc0e93da83ffacf0d8ada2cbbef0380",
+      "bytes": 873
+    },
+    {
+      "file": "textures/particle/gravity_impact/frame_07.png",
+      "sha256": "72f70cf3d0b1ed9b38937aa9ae2c9fab415ee468931383f735d83325d2484477",
+      "bytes": 966
+    },
+    {
+      "file": "textures/particle/gravity_impact/frame_08.png",
+      "sha256": "f12c6e73acbf1c0bcce9474ca893523119ec23ef0d4d4430a894d6c3fe866107",
+      "bytes": 1032
+    },
+    {
+      "file": "textures/particle/gravity_impact/frame_09.png",
+      "sha256": "924069e33d052ac850de89768c0474adcf907885d21a657b496770cc7c01ec99",
+      "bytes": 1124
+    },
+    {
+      "file": "textures/particle/gravity_impact/frame_10.png",
+      "sha256": "2072c02a5e842ef6ced79efe48ec59e96281db5158ec28ad0fb76cfd8d7fb8ce",
+      "bytes": 1123
+    },
+    {
+      "file": "textures/particle/gravity_impact/frame_11.png",
+      "sha256": "47d44f1bbbeec68226858df83f0281ad68545ca1bfd8e4a1de8050d6e5655690",
+      "bytes": 1141
+    },
+    {
+      "file": "textures/particle/gravity_impact/frame_12.png",
+      "sha256": "63297f7cd488a4d2877de29de0d2eb4108d3071a6f0d5aa6dcec4b7dc49c33e6",
+      "bytes": 1055
+    },
+    {
+      "file": "textures/particle/gravity_impact/frame_13.png",
+      "sha256": "acaaba6c208471160848f4658cbd66237b707fbab1ced4eae7785b4864f9b85c",
+      "bytes": 970
+    },
+    {
+      "file": "textures/particle/gravity_impact/frame_14.png",
+      "sha256": "86f9103e61ff33b8348a7f6e435ece7483461ff59131e98f7e11c0dfac1c22da",
+      "bytes": 1064
+    },
+    {
+      "file": "textures/particle/gravity_impact/frame_15.png",
+      "sha256": "b8fb6b217fa0428043bf1a3ea829202216db603f5812c089c750e2c145b6bd3c",
+      "bytes": 931
+    },
+    {
+      "file": "atlases/gravity_impact.png",
+      "sha256": "371194592cb1b4432cac0612a4222af1cc02b6169af3a8f7c6889c3dca3595a5",
+      "bytes": 11675
+    },
+    {
+      "file": "textures/particle/blood_ritual/frame_00.png",
+      "sha256": "c6c8fcf7821a6f1b3d69543f31d321f62728669153fab5da0bccf8d895928c79",
+      "bytes": 654
+    },
+    {
+      "file": "textures/particle/blood_ritual/frame_01.png",
+      "sha256": "fd0b85bacbaaf83df19cd1f4afca7b475ebd3f3b8c9e40b938b47d2d24f9492f",
+      "bytes": 656
+    },
+    {
+      "file": "textures/particle/blood_ritual/frame_02.png",
+      "sha256": "fa1be90af16e033c9cf83792d7c259acddb0a3f44ef132516135b8ce347c8b66",
+      "bytes": 677
+    },
+    {
+      "file": "textures/particle/blood_ritual/frame_03.png",
+      "sha256": "1d89187e00e198e4ffe8b719deb7a401d92c428f6d4717df43555de2f79d2978",
+      "bytes": 707
+    },
+    {
+      "file": "textures/particle/blood_ritual/frame_04.png",
+      "sha256": "2f06e61924c8ab01ac33ecdd93bc75bb390474b9b40fa6a61b8fce0148739f7b",
+      "bytes": 706
+    },
+    {
+      "file": "textures/particle/blood_ritual/frame_05.png",
+      "sha256": "7dfa1ec6fa27114dbf8491ed32d1928d9855820f86ea5ccbfabf37babcf0cbea",
+      "bytes": 796
+    },
+    {
+      "file": "textures/particle/blood_ritual/frame_06.png",
+      "sha256": "4cdd5a59dff1343064d3912049f3d1ba18aed6a36ab9e512302fa1ac2b04f716",
+      "bytes": 807
+    },
+    {
+      "file": "textures/particle/blood_ritual/frame_07.png",
+      "sha256": "9d70019315511b1ed49f0116051e70e6198a8bd2192edeabcc0b0bedf5a8126f",
+      "bytes": 791
+    },
+    {
+      "file": "textures/particle/blood_ritual/frame_08.png",
+      "sha256": "20e138427b556173e1e449fa8f8ac77a9c42aa95da1d9775e8c6f876eef18d92",
+      "bytes": 760
+    },
+    {
+      "file": "textures/particle/blood_ritual/frame_09.png",
+      "sha256": "5ffd1ba513cbcb701184ddaf10dcc5df379bd9259801a34ddcd63db5a421b580",
+      "bytes": 759
+    },
+    {
+      "file": "textures/particle/blood_ritual/frame_10.png",
+      "sha256": "0900f79ebef84d2015e3ebf48f7fec0c5b42f96ae0549927e001cae818519c30",
+      "bytes": 766
+    },
+    {
+      "file": "textures/particle/blood_ritual/frame_11.png",
+      "sha256": "108efd730d69ba22a8938827c668fea24cdd418356e483ba638708285e116230",
+      "bytes": 782
+    },
+    {
+      "file": "textures/particle/blood_ritual/frame_12.png",
+      "sha256": "f682f21cbc992bed579fdeb8388e27a7a6cbde590b5a851e46473d1905a07bb8",
+      "bytes": 1085
+    },
+    {
+      "file": "textures/particle/blood_ritual/frame_13.png",
+      "sha256": "3da0c3fae0ec6011e5440bcde66e903f1bd3d547a1c076ab162ad0c3c62046c2",
+      "bytes": 1096
+    },
+    {
+      "file": "textures/particle/blood_ritual/frame_14.png",
+      "sha256": "340080090f5d1ac46f92eb4686248a0cf82bf4c7dd105b2533a0577887fbe13d",
+      "bytes": 1018
+    },
+    {
+      "file": "textures/particle/blood_ritual/frame_15.png",
+      "sha256": "6d9087da3deee67151ac9d96e56553fdcf964c5f1665c648b0eb143011e34137",
+      "bytes": 1041
+    },
+    {
+      "file": "atlases/blood_ritual.png",
+      "sha256": "9fff6700e1bb22b6bed6df78bdac3e109ae732ededb290b6942218ae380ba8d4",
+      "bytes": 10789
+    },
+    {
+      "file": "textures/particle/cursed_slash/frame_00.png",
+      "sha256": "891b4cbddd589312081121ef27defe3c33d72fc9d02c28db73cfa8cc771edc4c",
+      "bytes": 367
+    },
+    {
+      "file": "textures/particle/cursed_slash/frame_01.png",
+      "sha256": "2e78dc043c2576d53f9490241b6a7ba18084a05380be6979cb1c378bfdd9ab6e",
+      "bytes": 347
+    },
+    {
+      "file": "textures/particle/cursed_slash/frame_02.png",
+      "sha256": "4ad2f8be7e4819e69ee0aef9f1e581f0ab73d7746236e04896383808b0e135a8",
+      "bytes": 408
+    },
+    {
+      "file": "textures/particle/cursed_slash/frame_03.png",
+      "sha256": "043fae4653b39fa92511095d72dd5a5f763baa2b210d997159459a32f9a8cabd",
+      "bytes": 386
+    },
+    {
+      "file": "textures/particle/cursed_slash/frame_04.png",
+      "sha256": "e578c87d4c2a4415709a54a84dc65705e7af33fee20003c26217ff4a9c8a5f1d",
+      "bytes": 397
+    },
+    {
+      "file": "textures/particle/cursed_slash/frame_05.png",
+      "sha256": "5555e45f9e5ccd39a74154f3ec3149d50a913b1c8ba630e0ca0ed82467e96a74",
+      "bytes": 350
+    },
+    {
+      "file": "textures/particle/cursed_slash/frame_06.png",
+      "sha256": "a061dd4ee2d98d5ce0bfac9dfaf1007cf19350e6dde66efd33e58c85a71271fe",
+      "bytes": 376
+    },
+    {
+      "file": "textures/particle/cursed_slash/frame_07.png",
+      "sha256": "9150ff0da8c9127bd540b8069b06caa25d875eaf30b5d44268b51173f0d0b139",
+      "bytes": 342
+    },
+    {
+      "file": "textures/particle/cursed_slash/frame_08.png",
+      "sha256": "5efee97be774d34774774052b38eb0fbeec8385463456d9ae13c6c8c4c1d4230",
+      "bytes": 362
+    },
+    {
+      "file": "textures/particle/cursed_slash/frame_09.png",
+      "sha256": "caee4219a27971f244658c57dbe5b896c3f3d6bc7f62706cacc65a1ab9c0f270",
+      "bytes": 418
+    },
+    {
+      "file": "textures/particle/cursed_slash/frame_10.png",
+      "sha256": "b8b9765eea5e968d34083d601f97e8e8de25332cf7a6408255d6c725ca1a2fef",
+      "bytes": 384
+    },
+    {
+      "file": "textures/particle/cursed_slash/frame_11.png",
+      "sha256": "13e8ccfc000d9c2cb4dc5be70e1a7e89aaf329843196f333c6b98c22c67b507b",
+      "bytes": 380
+    },
+    {
+      "file": "textures/particle/cursed_slash/frame_12.png",
+      "sha256": "a56bb7bdb897a11d57e82f61e2ff55704b2f299e4f57c2b0974347184a5d933a",
+      "bytes": 349
+    },
+    {
+      "file": "textures/particle/cursed_slash/frame_13.png",
+      "sha256": "b140ddc0b669ba21b1c869773ead48f9f0cc1bc864f05407cea560eb2b4c7cd4",
+      "bytes": 386
+    },
+    {
+      "file": "textures/particle/cursed_slash/frame_14.png",
+      "sha256": "c365a1ded522a7f174b034638646a73de6c79097e2cdfd258328ea6502a6a519",
+      "bytes": 338
+    },
+    {
+      "file": "textures/particle/cursed_slash/frame_15.png",
+      "sha256": "ba7cb110e92ee018d4ee441a73afc881eec0de914c21963701b31c2e54c2e7e4",
+      "bytes": 315
+    },
+    {
+      "file": "atlases/cursed_slash.png",
+      "sha256": "08ec08bdc1d4bb44b4d2879df05532240391206dbc6d2cf8b1ac058bebdbaffb",
+      "bytes": 3746
+    },
+    {
+      "file": "textures/particle/blood_flame/frame_00.png",
+      "sha256": "a554ae6bbc1931e810e8e77ec31dc132cd5d86fa932db3a3b3ebd01f2de9cf0e",
+      "bytes": 654
+    },
+    {
+      "file": "textures/particle/blood_flame/frame_01.png",
+      "sha256": "a048d64a3a73334abe62d03fac053ae039cf3a2de9efe1da64c93784dfd9a225",
+      "bytes": 808
+    },
+    {
+      "file": "textures/particle/blood_flame/frame_02.png",
+      "sha256": "28098084b1923f8aab1367c5c5f5fb43140637749d5aa1ce1151979ee955b082",
+      "bytes": 886
+    },
+    {
+      "file": "textures/particle/blood_flame/frame_03.png",
+      "sha256": "782ff609e75a5e5c91c0753c094675841d16a5cf341441f27dfc724f43584861",
+      "bytes": 930
+    },
+    {
+      "file": "textures/particle/blood_flame/frame_04.png",
+      "sha256": "c8e8f3b8104c02d9b9dff7095dd17be5842c6a12bf8784368d21591841730faf",
+      "bytes": 935
+    },
+    {
+      "file": "textures/particle/blood_flame/frame_05.png",
+      "sha256": "ce89fa46728d070622f4bab4785e3a66a212a6b4cd910d77e6018d4a6199bfda",
+      "bytes": 832
+    },
+    {
+      "file": "textures/particle/blood_flame/frame_06.png",
+      "sha256": "629637fa12d4dec576a29e5feab2f94cf0017df5363a20c69331633a7395c72e",
+      "bytes": 874
+    },
+    {
+      "file": "textures/particle/blood_flame/frame_07.png",
+      "sha256": "eef3d8fa8893502b1cf93bc665f6501dafd157285479a1a6df3a9ca27b2e51f9",
+      "bytes": 888
+    },
+    {
+      "file": "textures/particle/blood_flame/frame_08.png",
+      "sha256": "40fcfda1bbfa0559552fd48b68851fff4d8f11cda45433a9382332e1a1412c39",
+      "bytes": 936
+    },
+    {
+      "file": "textures/particle/blood_flame/frame_09.png",
+      "sha256": "9970402236a76b86c6b7a7a7e52178de32afc60da173d071893bf061a79699fe",
+      "bytes": 915
+    },
+    {
+      "file": "textures/particle/blood_flame/frame_10.png",
+      "sha256": "320d6287c84bb4dd70a84ab02c3c350d0e359fa988714cc4db79aaf719a1e847",
+      "bytes": 819
+    },
+    {
+      "file": "textures/particle/blood_flame/frame_11.png",
+      "sha256": "d2d3e9dd4294aff088fb724ecb5e9670fb39b30a3eafb186110bbba5f7d555dc",
+      "bytes": 889
+    },
+    {
+      "file": "textures/particle/blood_flame/frame_12.png",
+      "sha256": "52308c3fe76d73d100ffa199597cf54276fe689bb88b1ad344e25adf5adce3f1",
+      "bytes": 959
+    },
+    {
+      "file": "textures/particle/blood_flame/frame_13.png",
+      "sha256": "d3203288df4a35d8a472f4d2b8d799404a9770e456a453420a82dcf2235193a7",
+      "bytes": 962
+    },
+    {
+      "file": "textures/particle/blood_flame/frame_14.png",
+      "sha256": "a1c07a7d0f0194d99975a9ddd4aa3e7b98f1c0a7ec5f01b59f7b1e6fece4132b",
+      "bytes": 939
+    },
+    {
+      "file": "textures/particle/blood_flame/frame_15.png",
+      "sha256": "fb2aa0e45c4e98583c81cd30b1d6d25d185b1cc44c987c0381ff5b6018b0181a",
+      "bytes": 891
+    },
+    {
+      "file": "atlases/blood_flame.png",
+      "sha256": "69c3c47d94ba4bc023786b68f8f49eee69193e15c897947d4bc5051f46f2a4f3",
+      "bytes": 11832
+    },
+    {
+      "file": "art/tooling/build-vfx-2d.mjs",
+      "scope": "workspace",
+      "sha256": "82cdd2350e30413fd230d3e45e2199654322d2ecee58837a5abb1ae8b9d61281",
+      "bytes": 15266
+    },
+    {
+      "file": "art/tooling/vfx-eight-clips.mjs",
+      "scope": "workspace",
+      "sha256": "d34a35b5a509aa2e2581540e65b27a46e8f3d7a5298d5f7afa235fd37a4c34d9",
+      "bytes": 7767
+    },
+    {
+      "file": "art/vfx-2d/preview.html",
+      "scope": "workspace",
+      "sha256": "2e773e87fb85006d0eda758579f1aca4f10e157a96f69c6ebc94d014e5334ca8",
+      "bytes": 3855
+    },
+    {
+      "file": "art/vfx-2d/preview-eight.js",
+      "scope": "workspace",
+      "sha256": "194dc31733ededd023e1144e92d03f43bc4e23b0ed52a1bbf82c74391481a339",
+      "bytes": 9547
+    }
+  ],
+  "sourceContracts": [
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/RemembranceSkillSpec.java",
+      "sha256": "b066e7cf3ae596451b84a2b8ae465081c45fe20a6504b691b6bb685b956b2c72"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/RemembranceRuntime.java",
+      "sha256": "bb53404ec03c901b425f0c439045474b6b5cac4265e0ce299648bf0d87a73d74"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/effects/WaveFront.java",
+      "sha256": "4e2f9d6f9c1d46d7cb61f97ab9520eaa98e22e92d3116c53c4475b4dd604f724"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/effects/SkillSlashSpriteRenderer.java",
+      "sha256": "c8b2b6ae5bfd456a8900d9d0a8e03612c7ceb83345913b389c38250c204d218c"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/effects/GoldenWaveRenderer.java",
+      "sha256": "aa91dd5bcad443ede3201b01987660fb28f560fb94a7c1f7fe2adf1b532c712a"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/routes/2d.json",
+      "sha256": "422739f019f77446434d75aa30a0c220bb629d203ca5a006cf02388a42aaffd9"
+    }
+  ],
+  "sourceAudit": {
+    "existingFormalFrames": "Shared minecraft:explosion_0..15, rejected as main slash; old files left unchanged",
+    "existingArt": "art/skill-fx contains rendered previews, not replacement frame sequences",
+    "candidates": [
+      {
+        "url": "https://foozlecc.itch.io/lucifer-effects",
+        "license": "CC0-1.0 declared by author page",
+        "version": "Lucifer Effects 1.0",
+        "status": "page reviewed; browser access/download not completed; package contents/license/hashes not verified; no pixels reused"
+      },
+      {
+        "url": "https://kenney.nl/assets/particle-pack",
+        "license": "CC0-1.0 declared by author page",
+        "version": "1.0",
+        "status": "80 512px particles; not admitted or downloaded; no main slash selected"
+      },
+      {
+        "url": "https://henrysoftware.itch.io/pixel-effects",
+        "license": "CC0-1.0 declared for assets",
+        "status": "paid download, not purchased or used"
+      }
+    ],
+    "paidGeneration": false,
+    "thirdPartyPixelsIncluded": false
+  },
+  "scope": {
+    "only": [
+      "WATERFOWL",
+      "DEATH_SLASH",
+      "GOLD_WAVE",
+      "GOLD_IMPACT",
+      "FLAME_FRONT",
+      "GRAVITY_PULL",
+      "GRAVITY_IMPACT",
+      "BLOOD_RITUAL",
+      "CURSED_SLASH",
+      "BLOOD_FLAME"
+    ],
+    "notChanged": [
+      "damage",
+      "FP",
+      "hit_windows",
+      "burst_count",
+      "skill_duration",
+      "Java",
+      "src/main/resources",
+      "Gradle",
+      "build",
+      "equipment",
+      "grace",
+      "map",
+      "UI"
+    ],
+    "authorization": "User requested all eight remembrance skill effects on 2026-10-13; supersedes three-sample limit."
+  },
+  "skillCount": 8,
+  "clipCount": 10,
+  "reviewScreenshots": {
+    "status": "eight-* screenshots verify this delivery; preview-1440-* belongs to the backed-up three-sample batch",
+    "currentBrowserVerification": true,
+    "files": [
+      "eight-1440-light.png",
+      "eight-1440-dark.png",
+      "eight-1440-blocked.png",
+      "eight-1440-secondary.png",
+      "eight-390-light.png",
+      "eight-390-dark.png",
+      "eight-390-blocked.png",
+      "eight-390-secondary.png"
+    ]
+  }
+}

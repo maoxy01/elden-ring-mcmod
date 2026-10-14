@@ -1,0 +1,17 @@
+{
+  "name": "elden-combat-art",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node tooling/build-assets.mjs",
+    "build:player": "node tooling/build-player-assets.mjs",
+    "build:weapons": "node tooling/build-weapons.mjs",
+    "build:remembrance": "node tooling/build-weapons.mjs --remembrance",
+    "build:remembrance-game": "node tooling/build-weapons.mjs --game-remembrance",
+    "preview": "node tooling/serve.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.10",
+    "three": "0.180.0"
+  }
+}

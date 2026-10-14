@@ -1,0 +1,5540 @@
+{
+  "schemaVersion": 1,
+  "id": "eldencombat:sacred_relic_sword",
+  "unitsPerBlock": 16,
+  "textureSize": [
+    128,
+    128
+  ],
+  "texture": "weapons.png",
+  "rotationOrder": "XYZ",
+  "animationRotation": "additive_degrees",
+  "batchPreview": true,
+  "geometryStyle": "one-unit pixel slabs",
+  "bones": [
+    {
+      "name": "root",
+      "parent": null,
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "cubes": [
+    {
+      "name": "flat_root_0",
+      "bone": "root",
+      "from": [
+        -1,
+        -7,
+        -0.5
+      ],
+      "to": [
+        0,
+        -6,
+        0.5
+      ],
+      "material": "relic_metal__shadow",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_1",
+      "bone": "root",
+      "from": [
+        0,
+        -7,
+        -0.5
+      ],
+      "to": [
+        1,
+        -6,
+        0.5
+      ],
+      "material": "relic_metal",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_2",
+      "bone": "root",
+      "from": [
+        -1,
+        -6,
+        -0.5
+      ],
+      "to": [
+        0,
+        -4,
+        0.5
+      ],
+      "material": "gold__shadow",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_3",
+      "bone": "root",
+      "from": [
+        0,
+        -6,
+        -0.5
+      ],
+      "to": [
+        1,
+        -4,
+        0.5
+      ],
+      "material": "gold",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_4",
+      "bone": "root",
+      "from": [
+        -1,
+        -4,
+        -0.5
+      ],
+      "to": [
+        0,
+        0,
+        0.5
+      ],
+      "material": "bronze__shadow",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_5",
+      "bone": "root",
+      "from": [
+        0,
+        -4,
+        -0.5
+      ],
+      "to": [
+        1,
+        0,
+        0.5
+      ],
+      "material": "bronze",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_6",
+      "bone": "root",
+      "from": [
+        -1,
+        0,
+        -0.5
+      ],
+      "to": [
+        0,
+        1,
+        0.5
+      ],
+      "material": "gold__shadow",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_7",
+      "bone": "root",
+      "from": [
+        0,
+        0,
+        -0.5
+      ],
+      "to": [
+        1,
+        1,
+        0.5
+      ],
+      "material": "gold",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_8",
+      "bone": "root",
+      "from": [
+        -1,
+        1,
+        -0.5
+      ],
+      "to": [
+        0,
+        2,
+        0.5
+      ],
+      "material": "relic_metal__shadow",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_9",
+      "bone": "root",
+      "from": [
+        0,
+        1,
+        -0.5
+      ],
+      "to": [
+        1,
+        2,
+        0.5
+      ],
+      "material": "relic_metal",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_10",
+      "bone": "root",
+      "from": [
+        -2,
+        2,
+        -0.5
+      ],
+      "to": [
+        -1,
+        3,
+        0.5
+      ],
+      "material": "relic_metal__shadow",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_11",
+      "bone": "root",
+      "from": [
+        -1,
+        2,
+        -0.5
+      ],
+      "to": [
+        1,
+        4,
+        0.5
+      ],
+      "material": "relic_metal",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_12",
+      "bone": "root",
+      "from": [
+        1,
+        2,
+        -0.5
+      ],
+      "to": [
+        2,
+        3,
+        0.5
+      ],
+      "material": "relic_metal__edge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_13",
+      "bone": "root",
+      "from": [
+        -3,
+        3,
+        -0.5
+      ],
+      "to": [
+        -2,
+        4,
+        0.5
+      ],
+      "material": "relic_edge__shadow",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_14",
+      "bone": "root",
+      "from": [
+        -2,
+        3,
+        -0.5
+      ],
+      "to": [
+        -1,
+        4,
+        0.5
+      ],
+      "material": "relic_edge__shadow",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_15",
+      "bone": "root",
+      "from": [
+        1,
+        3,
+        -0.5
+      ],
+      "to": [
+        2,
+        4,
+        0.5
+      ],
+      "material": "relic_edge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_16",
+      "bone": "root",
+      "from": [
+        2,
+        3,
+        -0.5
+      ],
+      "to": [
+        3,
+        4,
+        0.5
+      ],
+      "material": "relic_edge__edge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_17",
+      "bone": "root",
+      "from": [
+        -4,
+        4,
+        -0.5
+      ],
+      "to": [
+        -3,
+        5,
+        0.5
+      ],
+      "material": "relic_edge__shadow",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_18",
+      "bone": "root",
+      "from": [
+        -3,
+        4,
+        -0.5
+      ],
+      "to": [
+        -2,
+        5,
+        0.5
+      ],
+      "material": "relic_edge__shadow",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_19",
+      "bone": "root",
+      "from": [
+        -2,
+        4,
+        -0.5
+      ],
+      "to": [
+        -1,
+        7,
+        0.5
+      ],
+      "material": "relic_edge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_20",
+      "bone": "root",
+      "from": [
+        -1,
+        4,
+        -0.5
+      ],
+      "to": [
+        0,
+        5,
+        0.5
+      ],
+      "material": "relic_edge__edge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_21",
+      "bone": "root",
+      "from": [
+        0,
+        4,
+        -0.5
+      ],
+      "to": [
+        1,
+        6,
+        0.5
+      ],
+      "material": "relic_metal__edge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_22",
+      "bone": "root",
+      "from": [
+        1,
+        4,
+        -0.5
+      ],
+      "to": [
+        2,
+        7,
+        0.5
+      ],
+      "material": "relic_metal",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_23",
+      "bone": "root",
+      "from": [
+        2,
+        4,
+        -0.5
+      ],
+      "to": [
+        3,
+        5,
+        0.5
+      ],
+      "material": "relic_edge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_24",
+      "bone": "root",
+      "from": [
+        3,
+        4,
+        -0.5
+      ],
+      "to": [
+        4,
+        5,
+        0.5
+      ],
+      "material": "relic_edge__edge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_25",
+      "bone": "root",
+      "from": [
+        -5,
+        5,
+        -0.5
+      ],
+      "to": [
+        -4,
+        6,
+        0.5
+      ],
+      "material": "relic_edge__shadow",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_26",
+      "bone": "root",
+      "from": [
+        -4,
+        5,
+        -0.5
+      ],
+      "to": [
+        -3,
+        7,
+        0.5
+      ],
+      "material": "relic_edge__shadow",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_27",
+      "bone": "root",
+      "from": [
+        -1,
+        5,
+        -0.5
+      ],
+      "to": [
+        0,
+        6,
+        0.5
+      ],
+      "material": "relic_edge__edge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_28",
+      "bone": "root",
+      "from": [
+        3,
+        5,
+        -0.5
+      ],
+      "to": [
+        4,
+        7,
+        0.5
+      ],
+      "material": "relic_edge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_29",
+      "bone": "root",
+      "from": [
+        4,
+        5,
+        -0.5
+      ],
+      "to": [
+        5,
+        6,
+        0.5
+      ],
+      "material": "relic_edge__edge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_30",
+      "bone": "root",
+      "from": [
+        -5,
+        6,
+        -0.5
+      ],
+      "to": [
+        -4,
+        7,
+        0.5
+      ],
+      "material": "relic_edge__shadow",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_31",
+      "bone": "root",
+      "from": [
+        -1,
+        6,
+        -0.5
+      ],
+      "to": [
+        1,
+        8,
+        0.5
+      ],
+      "material": "relic_edge__edge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_32",
+      "bone": "root",
+      "from": [
+        4,
+        6,
+        -0.5
+      ],
+      "to": [
+        5,
+        7,
+        0.5
+      ],
+      "material": "relic_edge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_33",
+      "bone": "root",
+      "from": [
+        -5,
+        7,
+        -0.5
+      ],
+      "to": [
+        -4,
+        8,
+        0.5
+      ],
+      "material": "relic_edge__shadow",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_34",
+      "bone": "root",
+      "from": [
+        4,
+        7,
+        -0.5
+      ],
+      "to": [
+        5,
+        8,
+        0.5
+      ],
+      "material": "relic_edge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_35",
+      "bone": "root",
+      "from": [
+        -2,
+        8,
+        -0.5
+      ],
+      "to": [
+        -1,
+        12,
+        0.5
+      ],
+      "material": "relic_metal__shadow",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_36",
+      "bone": "root",
+      "from": [
+        -1,
+        8,
+        -0.5
+      ],
+      "to": [
+        0,
+        11,
+        0.5
+      ],
+      "material": "relic_metal",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_37",
+      "bone": "root",
+      "from": [
+        0,
+        8,
+        -0.5
+      ],
+      "to": [
+        1,
+        9,
+        0.5
+      ],
+      "material": "relic_edge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_38",
+      "bone": "root",
+      "from": [
+        1,
+        8,
+        -0.5
+      ],
+      "to": [
+        2,
+        12,
+        0.5
+      ],
+      "material": "relic_edge__edge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_39",
+      "bone": "root",
+      "from": [
+        0,
+        9,
+        -0.5
+      ],
+      "to": [
+        1,
+        11,
+        0.5
+      ],
+      "material": "relic_edge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_40",
+      "bone": "root",
+      "from": [
+        -1,
+        11,
+        -0.5
+      ],
+      "to": [
+        1,
+        12,
+        0.5
+      ],
+      "material": "relic_metal",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_41",
+      "bone": "root",
+      "from": [
+        -1,
+        12,
+        -0.5
+      ],
+      "to": [
+        0,
+        13,
+        0.5
+      ],
+      "material": "relic_metal__shadow",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_42",
+      "bone": "root",
+      "from": [
+        0,
+        12,
+        -0.5
+      ],
+      "to": [
+        1,
+        13,
+        0.5
+      ],
+      "material": "relic_metal",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_43",
+      "bone": "root",
+      "from": [
+        -2,
+        13,
+        -0.5
+      ],
+      "to": [
+        -1,
+        17,
+        0.5
+      ],
+      "material": "relic_edge__shadow",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_44",
+      "bone": "root",
+      "from": [
+        -1,
+        13,
+        -0.5
+      ],
+      "to": [
+        1,
+        14,
+        0.5
+      ],
+      "material": "relic_metal",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_45",
+      "bone": "root",
+      "from": [
+        1,
+        13,
+        -0.5
+      ],
+      "to": [
+        2,
+        17,
+        0.5
+      ],
+      "material": "relic_metal__edge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_46",
+      "bone": "root",
+      "from": [
+        -1,
+        14,
+        -0.5
+      ],
+      "to": [
+        0,
+        16,
+        0.5
+      ],
+      "material": "relic_edge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_47",
+      "bone": "root",
+      "from": [
+        0,
+        14,
+        -0.5
+      ],
+      "to": [
+        1,
+        17,
+        0.5
+      ],
+      "material": "relic_metal",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_48",
+      "bone": "root",
+      "from": [
+        -1,
+        16,
+        -0.5
+      ],
+      "to": [
+        0,
+        17,
+        0.5
+      ],
+      "material": "relic_edge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_49",
+      "bone": "root",
+      "from": [
+        -1,
+        17,
+        -0.5
+      ],
+      "to": [
+        0,
+        19,
+        0.5
+      ],
+      "material": "relic_edge__shadow",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_50",
+      "bone": "root",
+      "from": [
+        0,
+        17,
+        -0.5
+      ],
+      "to": [
+        1,
+        19,
+        0.5
+      ],
+      "material": "relic_edge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_51",
+      "bone": "root",
+      "from": [
+        -2,
+        19,
+        -0.5
+      ],
+      "to": [
+        -1,
+        21,
+        0.5
+      ],
+      "material": "relic_metal__shadow",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_52",
+      "bone": "root",
+      "from": [
+        -1,
+        19,
+        -0.5
+      ],
+      "to": [
+        0,
+        22,
+        0.5
+      ],
+      "material": "relic_metal",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_53",
+      "bone": "root",
+      "from": [
+        0,
+        19,
+        -0.5
+      ],
+      "to": [
+        1,
+        22,
+        0.5
+      ],
+      "material": "relic_edge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_54",
+      "bone": "root",
+      "from": [
+        1,
+        19,
+        -0.5
+      ],
+      "to": [
+        2,
+        21,
+        0.5
+      ],
+      "material": "relic_edge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_55",
+      "bone": "root",
+      "from": [
+        -2,
+        21,
+        -0.5
+      ],
+      "to": [
+        -1,
+        22,
+        0.5
+      ],
+      "material": "relic_metal__shadow",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_56",
+      "bone": "root",
+      "from": [
+        1,
+        21,
+        -0.5
+      ],
+      "to": [
+        2,
+        22,
+        0.5
+      ],
+      "material": "relic_edge__edge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_57",
+      "bone": "root",
+      "from": [
+        -1,
+        22,
+        -0.5
+      ],
+      "to": [
+        0,
+        24,
+        0.5
+      ],
+      "material": "relic_metal__shadow",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_58",
+      "bone": "root",
+      "from": [
+        0,
+        22,
+        -0.5
+      ],
+      "to": [
+        1,
+        24,
+        0.5
+      ],
+      "material": "relic_metal",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_59",
+      "bone": "root",
+      "from": [
+        -1,
+        24,
+        -0.5
+      ],
+      "to": [
+        0,
+        27,
+        0.5
+      ],
+      "material": "relic_edge__shadow",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_60",
+      "bone": "root",
+      "from": [
+        0,
+        24,
+        -0.5
+      ],
+      "to": [
+        1,
+        27,
+        0.5
+      ],
+      "material": "relic_metal",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_61",
+      "bone": "root",
+      "from": [
+        -1,
+        27,
+        -0.5
+      ],
+      "to": [
+        0,
+        44,
+        0.5
+      ],
+      "material": "relic_edge__shadow",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "flat_root_62",
+      "bone": "root",
+      "from": [
+        0,
+        27,
+        -0.5
+      ],
+      "to": [
+        1,
+        44,
+        0.5
+      ],
+      "material": "relic_edge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "materials": {
+    "relic_metal": {
+      "color": [
+        129,
+        116,
+        80
+      ],
+      "uv": [
+        0,
+        0,
+        8,
+        8
+      ]
+    },
+    "relic_metal__shadow": {
+      "color": [
+        95,
+        86,
+        59
+      ],
+      "uv": [
+        8,
+        0,
+        16,
+        8
+      ]
+    },
+    "relic_metal__edge": {
+      "color": [
+        157,
+        142,
+        98
+      ],
+      "uv": [
+        16,
+        0,
+        24,
+        8
+      ]
+    },
+    "relic_edge": {
+      "color": [
+        164,
+        151,
+        109
+      ],
+      "uv": [
+        24,
+        0,
+        32,
+        8
+      ]
+    },
+    "relic_edge__shadow": {
+      "color": [
+        121,
+        112,
+        81
+      ],
+      "uv": [
+        32,
+        0,
+        40,
+        8
+      ]
+    },
+    "relic_edge__edge": {
+      "color": [
+        200,
+        184,
+        133
+      ],
+      "uv": [
+        40,
+        0,
+        48,
+        8
+      ]
+    },
+    "gold": {
+      "color": [
+        141,
+        123,
+        82
+      ],
+      "uv": [
+        48,
+        0,
+        56,
+        8
+      ]
+    },
+    "gold__shadow": {
+      "color": [
+        104,
+        91,
+        61
+      ],
+      "uv": [
+        56,
+        0,
+        64,
+        8
+      ]
+    },
+    "gold__edge": {
+      "color": [
+        172,
+        150,
+        100
+      ],
+      "uv": [
+        64,
+        0,
+        72,
+        8
+      ]
+    },
+    "gold_light": {
+      "color": [
+        175,
+        157,
+        111
+      ],
+      "uv": [
+        72,
+        0,
+        80,
+        8
+      ]
+    },
+    "gold_light__shadow": {
+      "color": [
+        130,
+        116,
+        82
+      ],
+      "uv": [
+        80,
+        0,
+        88,
+        8
+      ]
+    },
+    "gold_light__edge": {
+      "color": [
+        205,
+        192,
+        135
+      ],
+      "uv": [
+        88,
+        0,
+        96,
+        8
+      ]
+    },
+    "black_steel": {
+      "color": [
+        39,
+        39,
+        38
+      ],
+      "uv": [
+        96,
+        0,
+        104,
+        8
+      ]
+    },
+    "black_steel__shadow": {
+      "color": [
+        29,
+        29,
+        28
+      ],
+      "uv": [
+        104,
+        0,
+        112,
+        8
+      ]
+    },
+    "black_steel__edge": {
+      "color": [
+        48,
+        48,
+        46
+      ],
+      "uv": [
+        112,
+        0,
+        120,
+        8
+      ]
+    },
+    "black_edge": {
+      "color": [
+        70,
+        71,
+        67
+      ],
+      "uv": [
+        120,
+        0,
+        128,
+        8
+      ]
+    },
+    "black_edge__shadow": {
+      "color": [
+        52,
+        53,
+        50
+      ],
+      "uv": [
+        0,
+        8,
+        8,
+        16
+      ]
+    },
+    "black_edge__edge": {
+      "color": [
+        85,
+        87,
+        82
+      ],
+      "uv": [
+        8,
+        8,
+        16,
+        16
+      ]
+    },
+    "blood": {
+      "color": [
+        72,
+        27,
+        29
+      ],
+      "uv": [
+        16,
+        8,
+        24,
+        16
+      ]
+    },
+    "blood__shadow": {
+      "color": [
+        53,
+        20,
+        21
+      ],
+      "uv": [
+        24,
+        8,
+        32,
+        16
+      ]
+    },
+    "blood__edge": {
+      "color": [
+        88,
+        33,
+        35
+      ],
+      "uv": [
+        32,
+        8,
+        40,
+        16
+      ]
+    },
+    "flesh": {
+      "color": [
+        106,
+        61,
+        50
+      ],
+      "uv": [
+        40,
+        8,
+        48,
+        16
+      ]
+    },
+    "flesh__shadow": {
+      "color": [
+        78,
+        45,
+        37
+      ],
+      "uv": [
+        48,
+        8,
+        56,
+        16
+      ]
+    },
+    "flesh__edge": {
+      "color": [
+        129,
+        74,
+        61
+      ],
+      "uv": [
+        56,
+        8,
+        64,
+        16
+      ]
+    },
+    "scarlet": {
+      "color": [
+        119,
+        43,
+        43
+      ],
+      "uv": [
+        64,
+        8,
+        72,
+        16
+      ]
+    },
+    "scarlet__shadow": {
+      "color": [
+        88,
+        32,
+        32
+      ],
+      "uv": [
+        72,
+        8,
+        80,
+        16
+      ]
+    },
+    "scarlet__edge": {
+      "color": [
+        145,
+        52,
+        52
+      ],
+      "uv": [
+        80,
+        8,
+        88,
+        16
+      ]
+    },
+    "bronze": {
+      "color": [
+        91,
+        77,
+        55
+      ],
+      "uv": [
+        88,
+        8,
+        96,
+        16
+      ]
+    },
+    "bronze__shadow": {
+      "color": [
+        67,
+        57,
+        41
+      ],
+      "uv": [
+        96,
+        8,
+        104,
+        16
+      ]
+    },
+    "bronze__edge": {
+      "color": [
+        111,
+        94,
+        67
+      ],
+      "uv": [
+        104,
+        8,
+        112,
+        16
+      ]
+    },
+    "silver": {
+      "color": [
+        150,
+        153,
+        147
+      ],
+      "uv": [
+        112,
+        8,
+        120,
+        16
+      ]
+    },
+    "silver__shadow": {
+      "color": [
+        111,
+        113,
+        109
+      ],
+      "uv": [
+        120,
+        8,
+        128,
+        16
+      ]
+    },
+    "silver__edge": {
+      "color": [
+        183,
+        187,
+        179
+      ],
+      "uv": [
+        0,
+        16,
+        8,
+        24
+      ]
+    },
+    "leather": {
+      "color": [
+        57,
+        43,
+        37
+      ],
+      "uv": [
+        8,
+        16,
+        16,
+        24
+      ]
+    },
+    "leather__shadow": {
+      "color": [
+        42,
+        32,
+        27
+      ],
+      "uv": [
+        16,
+        16,
+        24,
+        24
+      ]
+    },
+    "leather__edge": {
+      "color": [
+        70,
+        52,
+        45
+      ],
+      "uv": [
+        24,
+        16,
+        32,
+        24
+      ]
+    },
+    "stone": {
+      "color": [
+        98,
+        96,
+        88
+      ],
+      "uv": [
+        32,
+        16,
+        40,
+        24
+      ]
+    },
+    "stone__shadow": {
+      "color": [
+        73,
+        71,
+        65
+      ],
+      "uv": [
+        40,
+        16,
+        48,
+        24
+      ]
+    },
+    "stone__edge": {
+      "color": [
+        120,
+        117,
+        107
+      ],
+      "uv": [
+        48,
+        16,
+        56,
+        24
+      ]
+    },
+    "gold_rune": {
+      "color": [
+        157,
+        135,
+        88
+      ],
+      "uv": [
+        56,
+        16,
+        64,
+        24
+      ]
+    },
+    "gold_rune__shadow": {
+      "color": [
+        116,
+        100,
+        65
+      ],
+      "uv": [
+        64,
+        16,
+        72,
+        24
+      ]
+    },
+    "gold_rune__edge": {
+      "color": [
+        192,
+        165,
+        107
+      ],
+      "uv": [
+        72,
+        16,
+        80,
+        24
+      ]
+    },
+    "curse": {
+      "color": [
+        105,
+        81,
+        110
+      ],
+      "uv": [
+        80,
+        16,
+        88,
+        24
+      ]
+    },
+    "curse__shadow": {
+      "color": [
+        78,
+        60,
+        81
+      ],
+      "uv": [
+        88,
+        16,
+        96,
+        24
+      ]
+    },
+    "curse__edge": {
+      "color": [
+        128,
+        99,
+        134
+      ],
+      "uv": [
+        96,
+        16,
+        104,
+        24
+      ]
+    },
+    "iridescent": {
+      "color": [
+        101,
+        114,
+        112
+      ],
+      "uv": [
+        104,
+        16,
+        112,
+        24
+      ]
+    },
+    "iridescent__shadow": {
+      "color": [
+        75,
+        84,
+        83
+      ],
+      "uv": [
+        112,
+        16,
+        120,
+        24
+      ]
+    },
+    "iridescent__edge": {
+      "color": [
+        123,
+        139,
+        137
+      ],
+      "uv": [
+        120,
+        16,
+        128,
+        24
+      ]
+    },
+    "albedo_16": {
+      "color": [
+        161,
+        141,
+        94
+      ],
+      "uv": [
+        0,
+        24,
+        8,
+        32
+      ]
+    },
+    "albedo_16__shadow": {
+      "color": [
+        119,
+        104,
+        70
+      ],
+      "uv": [
+        8,
+        24,
+        16,
+        32
+      ]
+    },
+    "albedo_16__edge": {
+      "color": [
+        196,
+        172,
+        115
+      ],
+      "uv": [
+        16,
+        24,
+        24,
+        32
+      ]
+    },
+    "albedo_17": {
+      "color": [
+        117,
+        90,
+        122
+      ],
+      "uv": [
+        24,
+        24,
+        32,
+        32
+      ]
+    },
+    "albedo_17__shadow": {
+      "color": [
+        87,
+        67,
+        90
+      ],
+      "uv": [
+        32,
+        24,
+        40,
+        32
+      ]
+    },
+    "albedo_17__edge": {
+      "color": [
+        143,
+        110,
+        149
+      ],
+      "uv": [
+        40,
+        24,
+        48,
+        32
+      ]
+    },
+    "albedo_18": {
+      "color": [
+        100,
+        113,
+        111
+      ],
+      "uv": [
+        48,
+        24,
+        56,
+        32
+      ]
+    },
+    "albedo_18__shadow": {
+      "color": [
+        74,
+        84,
+        82
+      ],
+      "uv": [
+        56,
+        24,
+        64,
+        32
+      ]
+    },
+    "albedo_18__edge": {
+      "color": [
+        122,
+        138,
+        135
+      ],
+      "uv": [
+        64,
+        24,
+        72,
+        32
+      ]
+    },
+    "albedo_19": {
+      "color": [
+        164,
+        168,
+        161
+      ],
+      "uv": [
+        72,
+        24,
+        80,
+        32
+      ]
+    },
+    "albedo_19__shadow": {
+      "color": [
+        121,
+        124,
+        119
+      ],
+      "uv": [
+        80,
+        24,
+        88,
+        32
+      ]
+    },
+    "albedo_19__edge": {
+      "color": [
+        200,
+        205,
+        196
+      ],
+      "uv": [
+        88,
+        24,
+        96,
+        32
+      ]
+    },
+    "albedo_20": {
+      "color": [
+        90,
+        69,
+        94
+      ],
+      "uv": [
+        96,
+        24,
+        104,
+        32
+      ]
+    },
+    "albedo_20__shadow": {
+      "color": [
+        67,
+        51,
+        70
+      ],
+      "uv": [
+        104,
+        24,
+        112,
+        32
+      ]
+    },
+    "albedo_20__edge": {
+      "color": [
+        110,
+        84,
+        115
+      ],
+      "uv": [
+        112,
+        24,
+        120,
+        32
+      ]
+    },
+    "albedo_21": {
+      "color": [
+        58,
+        22,
+        23
+      ],
+      "uv": [
+        120,
+        24,
+        128,
+        32
+      ]
+    },
+    "albedo_21__shadow": {
+      "color": [
+        43,
+        16,
+        17
+      ],
+      "uv": [
+        0,
+        32,
+        8,
+        40
+      ]
+    },
+    "albedo_21__edge": {
+      "color": [
+        71,
+        27,
+        28
+      ],
+      "uv": [
+        8,
+        32,
+        16,
+        40
+      ]
+    },
+    "albedo_22": {
+      "color": [
+        140,
+        125,
+        87
+      ],
+      "uv": [
+        16,
+        32,
+        24,
+        40
+      ]
+    },
+    "albedo_22__shadow": {
+      "color": [
+        104,
+        93,
+        64
+      ],
+      "uv": [
+        24,
+        32,
+        32,
+        40
+      ]
+    },
+    "albedo_22__edge": {
+      "color": [
+        171,
+        153,
+        106
+      ],
+      "uv": [
+        32,
+        32,
+        40,
+        40
+      ]
+    },
+    "albedo_23": {
+      "color": [
+        63,
+        64,
+        61
+      ],
+      "uv": [
+        40,
+        32,
+        48,
+        40
+      ]
+    },
+    "albedo_23__shadow": {
+      "color": [
+        47,
+        47,
+        45
+      ],
+      "uv": [
+        48,
+        32,
+        56,
+        40
+      ]
+    },
+    "albedo_23__edge": {
+      "color": [
+        77,
+        78,
+        74
+      ],
+      "uv": [
+        56,
+        32,
+        64,
+        40
+      ]
+    },
+    "albedo_24": {
+      "color": [
+        113,
+        110,
+        101
+      ],
+      "uv": [
+        64,
+        32,
+        72,
+        40
+      ]
+    },
+    "albedo_24__shadow": {
+      "color": [
+        84,
+        81,
+        75
+      ],
+      "uv": [
+        72,
+        32,
+        80,
+        40
+      ]
+    },
+    "albedo_24__edge": {
+      "color": [
+        138,
+        134,
+        123
+      ],
+      "uv": [
+        80,
+        32,
+        88,
+        40
+      ]
+    },
+    "albedo_25": {
+      "color": [
+        74,
+        75,
+        70
+      ],
+      "uv": [
+        88,
+        32,
+        96,
+        40
+      ]
+    },
+    "albedo_25__shadow": {
+      "color": [
+        55,
+        56,
+        52
+      ],
+      "uv": [
+        96,
+        32,
+        104,
+        40
+      ]
+    },
+    "albedo_25__edge": {
+      "color": [
+        90,
+        92,
+        85
+      ],
+      "uv": [
+        104,
+        32,
+        112,
+        40
+      ]
+    },
+    "albedo_26": {
+      "color": [
+        45,
+        45,
+        44
+      ],
+      "uv": [
+        112,
+        32,
+        120,
+        40
+      ]
+    },
+    "albedo_26__shadow": {
+      "color": [
+        33,
+        33,
+        33
+      ],
+      "uv": [
+        120,
+        32,
+        128,
+        40
+      ]
+    },
+    "albedo_26__edge": {
+      "color": [
+        55,
+        55,
+        54
+      ],
+      "uv": [
+        0,
+        40,
+        8,
+        48
+      ]
+    },
+    "albedo_27": {
+      "color": [
+        85,
+        49,
+        40
+      ],
+      "uv": [
+        8,
+        40,
+        16,
+        48
+      ]
+    },
+    "albedo_27__shadow": {
+      "color": [
+        63,
+        36,
+        30
+      ],
+      "uv": [
+        16,
+        40,
+        24,
+        48
+      ]
+    },
+    "albedo_27__edge": {
+      "color": [
+        104,
+        60,
+        49
+      ],
+      "uv": [
+        24,
+        40,
+        32,
+        48
+      ]
+    },
+    "albedo_28": {
+      "color": [
+        154,
+        142,
+        102
+      ],
+      "uv": [
+        32,
+        40,
+        40,
+        48
+      ]
+    },
+    "albedo_28__shadow": {
+      "color": [
+        114,
+        105,
+        75
+      ],
+      "uv": [
+        40,
+        40,
+        48,
+        48
+      ]
+    },
+    "albedo_28__edge": {
+      "color": [
+        188,
+        173,
+        124
+      ],
+      "uv": [
+        48,
+        40,
+        56,
+        48
+      ]
+    },
+    "albedo_29": {
+      "color": [
+        78,
+        66,
+        47
+      ],
+      "uv": [
+        56,
+        40,
+        64,
+        48
+      ]
+    },
+    "albedo_29__shadow": {
+      "color": [
+        58,
+        49,
+        35
+      ],
+      "uv": [
+        64,
+        40,
+        72,
+        48
+      ]
+    },
+    "albedo_29__edge": {
+      "color": [
+        95,
+        81,
+        57
+      ],
+      "uv": [
+        72,
+        40,
+        80,
+        48
+      ]
+    },
+    "albedo_30": {
+      "color": [
+        110,
+        99,
+        68
+      ],
+      "uv": [
+        80,
+        40,
+        88,
+        48
+      ]
+    },
+    "albedo_30__shadow": {
+      "color": [
+        81,
+        73,
+        50
+      ],
+      "uv": [
+        88,
+        40,
+        96,
+        48
+      ]
+    },
+    "albedo_30__edge": {
+      "color": [
+        134,
+        121,
+        83
+      ],
+      "uv": [
+        96,
+        40,
+        104,
+        48
+      ]
+    },
+    "albedo_31": {
+      "color": [
+        83,
+        94,
+        92
+      ],
+      "uv": [
+        104,
+        40,
+        112,
+        48
+      ]
+    },
+    "albedo_31__shadow": {
+      "color": [
+        61,
+        70,
+        68
+      ],
+      "uv": [
+        112,
+        40,
+        120,
+        48
+      ]
+    },
+    "albedo_31__edge": {
+      "color": [
+        101,
+        115,
+        112
+      ],
+      "uv": [
+        120,
+        40,
+        128,
+        48
+      ]
+    },
+    "albedo_32": {
+      "color": [
+        58,
+        22,
+        23
+      ],
+      "uv": [
+        0,
+        48,
+        8,
+        56
+      ]
+    },
+    "albedo_32__shadow": {
+      "color": [
+        43,
+        16,
+        17
+      ],
+      "uv": [
+        8,
+        48,
+        16,
+        56
+      ]
+    },
+    "albedo_32__edge": {
+      "color": [
+        71,
+        27,
+        28
+      ],
+      "uv": [
+        16,
+        48,
+        24,
+        56
+      ]
+    },
+    "albedo_33": {
+      "color": [
+        87,
+        67,
+        91
+      ],
+      "uv": [
+        24,
+        48,
+        32,
+        56
+      ]
+    },
+    "albedo_33__shadow": {
+      "color": [
+        64,
+        50,
+        67
+      ],
+      "uv": [
+        32,
+        48,
+        40,
+        56
+      ]
+    },
+    "albedo_33__edge": {
+      "color": [
+        106,
+        82,
+        111
+      ],
+      "uv": [
+        40,
+        48,
+        48,
+        56
+      ]
+    },
+    "albedo_34": {
+      "color": [
+        95,
+        73,
+        100
+      ],
+      "uv": [
+        48,
+        48,
+        56,
+        56
+      ]
+    },
+    "albedo_34__shadow": {
+      "color": [
+        70,
+        54,
+        74
+      ],
+      "uv": [
+        56,
+        48,
+        64,
+        56
+      ]
+    },
+    "albedo_34__edge": {
+      "color": [
+        116,
+        89,
+        122
+      ],
+      "uv": [
+        64,
+        48,
+        72,
+        56
+      ]
+    },
+    "ash_guard": {
+      "color": [
+        128,
+        123,
+        108
+      ],
+      "uv": [
+        72,
+        48,
+        80,
+        56
+      ]
+    },
+    "ash_guard__shadow": {
+      "color": [
+        95,
+        91,
+        80
+      ],
+      "uv": [
+        80,
+        48,
+        88,
+        56
+      ]
+    },
+    "ash_guard__edge": {
+      "color": [
+        156,
+        150,
+        132
+      ],
+      "uv": [
+        88,
+        48,
+        96,
+        56
+      ]
+    },
+    "oil_violet": {
+      "color": [
+        103,
+        83,
+        111
+      ],
+      "uv": [
+        96,
+        48,
+        104,
+        56
+      ]
+    },
+    "oil_violet__shadow": {
+      "color": [
+        76,
+        61,
+        82
+      ],
+      "uv": [
+        104,
+        48,
+        112,
+        56
+      ]
+    },
+    "oil_violet__edge": {
+      "color": [
+        126,
+        101,
+        135
+      ],
+      "uv": [
+        112,
+        48,
+        120,
+        56
+      ]
+    },
+    "oil_green": {
+      "color": [
+        96,
+        110,
+        98
+      ],
+      "uv": [
+        120,
+        48,
+        128,
+        56
+      ]
+    },
+    "oil_green__shadow": {
+      "color": [
+        71,
+        81,
+        73
+      ],
+      "uv": [
+        0,
+        56,
+        8,
+        64
+      ]
+    },
+    "oil_green__edge": {
+      "color": [
+        117,
+        134,
+        120
+      ],
+      "uv": [
+        8,
+        56,
+        16,
+        64
+      ]
+    },
+    "oil_steel": {
+      "color": [
+        105,
+        113,
+        116
+      ],
+      "uv": [
+        16,
+        56,
+        24,
+        64
+      ]
+    },
+    "oil_steel__shadow": {
+      "color": [
+        78,
+        84,
+        86
+      ],
+      "uv": [
+        24,
+        56,
+        32,
+        64
+      ]
+    },
+    "oil_steel__edge": {
+      "color": [
+        128,
+        138,
+        142
+      ],
+      "uv": [
+        32,
+        56,
+        40,
+        64
+      ]
+    }
+  },
+  "detailLevel": "thin two-sided pixel equipment",
+  "flatProfile": {
+    "revision": 3,
+    "pixelStep": 1,
+    "thicknessUnits": 1,
+    "sourceCubes": 997,
+    "sourceSha256": "739adb60256c33bb88c61377db12bd6d13d4cbf22a49bb2e69d04ad111868c80",
+    "pixelCount": 150,
+    "method": "conservative XY silhouette; two-sided material pixels merged into rectangles",
+    "origin": "main grip preserved",
+    "geometryUnitsUnchanged": true,
+    "style": "one-unit pixel slab; catalogue-informed aged material ramps"
+  },
+  "faceUVs": {
+    "flat_root_0": {
+      "north": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "south": [
+        0.5,
+        0.5,
+        7.5,
+        7.5
+      ],
+      "east": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "west": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "up": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "down": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ]
+    },
+    "flat_root_1": {
+      "north": [
+        0.5,
+        0.5,
+        7.5,
+        7.5
+      ],
+      "south": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "east": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "west": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "up": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "down": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ]
+    },
+    "flat_root_2": {
+      "north": [
+        56.5,
+        0.5,
+        63.5,
+        7.5
+      ],
+      "south": [
+        48.5,
+        0.5,
+        55.5,
+        7.5
+      ],
+      "east": [
+        56.5,
+        0.5,
+        63.5,
+        7.5
+      ],
+      "west": [
+        56.5,
+        0.5,
+        63.5,
+        7.5
+      ],
+      "up": [
+        56.5,
+        0.5,
+        63.5,
+        7.5
+      ],
+      "down": [
+        56.5,
+        0.5,
+        63.5,
+        7.5
+      ]
+    },
+    "flat_root_3": {
+      "north": [
+        48.5,
+        0.5,
+        55.5,
+        7.5
+      ],
+      "south": [
+        56.5,
+        0.5,
+        63.5,
+        7.5
+      ],
+      "east": [
+        56.5,
+        0.5,
+        63.5,
+        7.5
+      ],
+      "west": [
+        56.5,
+        0.5,
+        63.5,
+        7.5
+      ],
+      "up": [
+        56.5,
+        0.5,
+        63.5,
+        7.5
+      ],
+      "down": [
+        56.5,
+        0.5,
+        63.5,
+        7.5
+      ]
+    },
+    "flat_root_4": {
+      "north": [
+        96.5,
+        8.5,
+        103.5,
+        15.5
+      ],
+      "south": [
+        88.5,
+        8.5,
+        95.5,
+        15.5
+      ],
+      "east": [
+        96.5,
+        8.5,
+        103.5,
+        15.5
+      ],
+      "west": [
+        96.5,
+        8.5,
+        103.5,
+        15.5
+      ],
+      "up": [
+        96.5,
+        8.5,
+        103.5,
+        15.5
+      ],
+      "down": [
+        96.5,
+        8.5,
+        103.5,
+        15.5
+      ]
+    },
+    "flat_root_5": {
+      "north": [
+        88.5,
+        8.5,
+        95.5,
+        15.5
+      ],
+      "south": [
+        96.5,
+        8.5,
+        103.5,
+        15.5
+      ],
+      "east": [
+        96.5,
+        8.5,
+        103.5,
+        15.5
+      ],
+      "west": [
+        96.5,
+        8.5,
+        103.5,
+        15.5
+      ],
+      "up": [
+        96.5,
+        8.5,
+        103.5,
+        15.5
+      ],
+      "down": [
+        96.5,
+        8.5,
+        103.5,
+        15.5
+      ]
+    },
+    "flat_root_6": {
+      "north": [
+        56.5,
+        0.5,
+        63.5,
+        7.5
+      ],
+      "south": [
+        48.5,
+        0.5,
+        55.5,
+        7.5
+      ],
+      "east": [
+        56.5,
+        0.5,
+        63.5,
+        7.5
+      ],
+      "west": [
+        56.5,
+        0.5,
+        63.5,
+        7.5
+      ],
+      "up": [
+        56.5,
+        0.5,
+        63.5,
+        7.5
+      ],
+      "down": [
+        56.5,
+        0.5,
+        63.5,
+        7.5
+      ]
+    },
+    "flat_root_7": {
+      "north": [
+        48.5,
+        0.5,
+        55.5,
+        7.5
+      ],
+      "south": [
+        56.5,
+        0.5,
+        63.5,
+        7.5
+      ],
+      "east": [
+        56.5,
+        0.5,
+        63.5,
+        7.5
+      ],
+      "west": [
+        56.5,
+        0.5,
+        63.5,
+        7.5
+      ],
+      "up": [
+        56.5,
+        0.5,
+        63.5,
+        7.5
+      ],
+      "down": [
+        56.5,
+        0.5,
+        63.5,
+        7.5
+      ]
+    },
+    "flat_root_8": {
+      "north": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "south": [
+        0.5,
+        0.5,
+        7.5,
+        7.5
+      ],
+      "east": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "west": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "up": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "down": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ]
+    },
+    "flat_root_9": {
+      "north": [
+        0.5,
+        0.5,
+        7.5,
+        7.5
+      ],
+      "south": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "east": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "west": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "up": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "down": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ]
+    },
+    "flat_root_10": {
+      "north": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "south": [
+        16.5,
+        0.5,
+        23.5,
+        7.5
+      ],
+      "east": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "west": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "up": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "down": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ]
+    },
+    "flat_root_11": {
+      "north": [
+        0.5,
+        0.5,
+        7.5,
+        7.5
+      ],
+      "south": [
+        0.5,
+        0.5,
+        7.5,
+        7.5
+      ],
+      "east": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "west": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "up": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "down": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ]
+    },
+    "flat_root_12": {
+      "north": [
+        16.5,
+        0.5,
+        23.5,
+        7.5
+      ],
+      "south": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "east": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "west": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "up": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "down": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ]
+    },
+    "flat_root_13": {
+      "north": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "south": [
+        16.5,
+        0.5,
+        23.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_14": {
+      "north": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "south": [
+        0.5,
+        0.5,
+        7.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_15": {
+      "north": [
+        24.5,
+        0.5,
+        31.5,
+        7.5
+      ],
+      "south": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_16": {
+      "north": [
+        40.5,
+        0.5,
+        47.5,
+        7.5
+      ],
+      "south": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_17": {
+      "north": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "south": [
+        16.5,
+        0.5,
+        23.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_18": {
+      "north": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "south": [
+        0.5,
+        0.5,
+        7.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_19": {
+      "north": [
+        24.5,
+        0.5,
+        31.5,
+        7.5
+      ],
+      "south": [
+        24.5,
+        0.5,
+        31.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_20": {
+      "north": [
+        40.5,
+        0.5,
+        47.5,
+        7.5
+      ],
+      "south": [
+        16.5,
+        0.5,
+        23.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_21": {
+      "north": [
+        16.5,
+        0.5,
+        23.5,
+        7.5
+      ],
+      "south": [
+        16.5,
+        0.5,
+        23.5,
+        7.5
+      ],
+      "east": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "west": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "up": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "down": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ]
+    },
+    "flat_root_22": {
+      "north": [
+        0.5,
+        0.5,
+        7.5,
+        7.5
+      ],
+      "south": [
+        0.5,
+        0.5,
+        7.5,
+        7.5
+      ],
+      "east": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "west": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "up": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "down": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ]
+    },
+    "flat_root_23": {
+      "north": [
+        24.5,
+        0.5,
+        31.5,
+        7.5
+      ],
+      "south": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_24": {
+      "north": [
+        40.5,
+        0.5,
+        47.5,
+        7.5
+      ],
+      "south": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_25": {
+      "north": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "south": [
+        16.5,
+        0.5,
+        23.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_26": {
+      "north": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "south": [
+        0.5,
+        0.5,
+        7.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_27": {
+      "north": [
+        40.5,
+        0.5,
+        47.5,
+        7.5
+      ],
+      "south": [
+        40.5,
+        0.5,
+        47.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_28": {
+      "north": [
+        24.5,
+        0.5,
+        31.5,
+        7.5
+      ],
+      "south": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_29": {
+      "north": [
+        40.5,
+        0.5,
+        47.5,
+        7.5
+      ],
+      "south": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_30": {
+      "north": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "south": [
+        0.5,
+        0.5,
+        7.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_31": {
+      "north": [
+        40.5,
+        0.5,
+        47.5,
+        7.5
+      ],
+      "south": [
+        16.5,
+        0.5,
+        23.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_32": {
+      "north": [
+        24.5,
+        0.5,
+        31.5,
+        7.5
+      ],
+      "south": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_33": {
+      "north": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "south": [
+        24.5,
+        0.5,
+        31.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_34": {
+      "north": [
+        24.5,
+        0.5,
+        31.5,
+        7.5
+      ],
+      "south": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_35": {
+      "north": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "south": [
+        16.5,
+        0.5,
+        23.5,
+        7.5
+      ],
+      "east": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "west": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "up": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "down": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ]
+    },
+    "flat_root_36": {
+      "north": [
+        0.5,
+        0.5,
+        7.5,
+        7.5
+      ],
+      "south": [
+        0.5,
+        0.5,
+        7.5,
+        7.5
+      ],
+      "east": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "west": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "up": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "down": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ]
+    },
+    "flat_root_37": {
+      "north": [
+        24.5,
+        0.5,
+        31.5,
+        7.5
+      ],
+      "south": [
+        0.5,
+        0.5,
+        7.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_38": {
+      "north": [
+        40.5,
+        0.5,
+        47.5,
+        7.5
+      ],
+      "south": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_39": {
+      "north": [
+        24.5,
+        0.5,
+        31.5,
+        7.5
+      ],
+      "south": [
+        24.5,
+        0.5,
+        31.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_40": {
+      "north": [
+        0.5,
+        0.5,
+        7.5,
+        7.5
+      ],
+      "south": [
+        24.5,
+        0.5,
+        31.5,
+        7.5
+      ],
+      "east": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "west": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "up": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "down": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ]
+    },
+    "flat_root_41": {
+      "north": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "south": [
+        24.5,
+        0.5,
+        31.5,
+        7.5
+      ],
+      "east": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "west": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "up": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "down": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ]
+    },
+    "flat_root_42": {
+      "north": [
+        0.5,
+        0.5,
+        7.5,
+        7.5
+      ],
+      "south": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "east": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "west": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "up": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "down": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ]
+    },
+    "flat_root_43": {
+      "north": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "south": [
+        40.5,
+        0.5,
+        47.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_44": {
+      "north": [
+        0.5,
+        0.5,
+        7.5,
+        7.5
+      ],
+      "south": [
+        24.5,
+        0.5,
+        31.5,
+        7.5
+      ],
+      "east": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "west": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "up": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "down": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ]
+    },
+    "flat_root_45": {
+      "north": [
+        16.5,
+        0.5,
+        23.5,
+        7.5
+      ],
+      "south": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "east": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "west": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "up": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "down": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ]
+    },
+    "flat_root_46": {
+      "north": [
+        24.5,
+        0.5,
+        31.5,
+        7.5
+      ],
+      "south": [
+        24.5,
+        0.5,
+        31.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_47": {
+      "north": [
+        0.5,
+        0.5,
+        7.5,
+        7.5
+      ],
+      "south": [
+        0.5,
+        0.5,
+        7.5,
+        7.5
+      ],
+      "east": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "west": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "up": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "down": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ]
+    },
+    "flat_root_48": {
+      "north": [
+        24.5,
+        0.5,
+        31.5,
+        7.5
+      ],
+      "south": [
+        0.5,
+        0.5,
+        7.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_49": {
+      "north": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "south": [
+        0.5,
+        0.5,
+        7.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_50": {
+      "north": [
+        24.5,
+        0.5,
+        31.5,
+        7.5
+      ],
+      "south": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_51": {
+      "north": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "south": [
+        0.5,
+        0.5,
+        7.5,
+        7.5
+      ],
+      "east": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "west": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "up": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "down": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ]
+    },
+    "flat_root_52": {
+      "north": [
+        0.5,
+        0.5,
+        7.5,
+        7.5
+      ],
+      "south": [
+        0.5,
+        0.5,
+        7.5,
+        7.5
+      ],
+      "east": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "west": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "up": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "down": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ]
+    },
+    "flat_root_53": {
+      "north": [
+        24.5,
+        0.5,
+        31.5,
+        7.5
+      ],
+      "south": [
+        24.5,
+        0.5,
+        31.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_54": {
+      "north": [
+        24.5,
+        0.5,
+        31.5,
+        7.5
+      ],
+      "south": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_55": {
+      "north": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "south": [
+        16.5,
+        0.5,
+        23.5,
+        7.5
+      ],
+      "east": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "west": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "up": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "down": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ]
+    },
+    "flat_root_56": {
+      "north": [
+        40.5,
+        0.5,
+        47.5,
+        7.5
+      ],
+      "south": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_57": {
+      "north": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "south": [
+        24.5,
+        0.5,
+        31.5,
+        7.5
+      ],
+      "east": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "west": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "up": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "down": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ]
+    },
+    "flat_root_58": {
+      "north": [
+        0.5,
+        0.5,
+        7.5,
+        7.5
+      ],
+      "south": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "east": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "west": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "up": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "down": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ]
+    },
+    "flat_root_59": {
+      "north": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "south": [
+        24.5,
+        0.5,
+        31.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_60": {
+      "north": [
+        0.5,
+        0.5,
+        7.5,
+        7.5
+      ],
+      "south": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "east": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "west": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "up": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "down": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ]
+    },
+    "flat_root_61": {
+      "north": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "south": [
+        0.5,
+        0.5,
+        7.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    },
+    "flat_root_62": {
+      "north": [
+        24.5,
+        0.5,
+        31.5,
+        7.5
+      ],
+      "south": [
+        8.5,
+        0.5,
+        15.5,
+        7.5
+      ],
+      "east": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "west": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "up": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ],
+      "down": [
+        32.5,
+        0.5,
+        39.5,
+        7.5
+      ]
+    }
+  },
+  "bakedMeshPath": "sacred_relic_sword.mesh.json"
+}

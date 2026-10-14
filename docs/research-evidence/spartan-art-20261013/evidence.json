@@ -1,0 +1,1241 @@
+{
+  "date": "2026-10-13",
+  "jarFile": "D:\\codexout\\mcmod\\docs\\research-evidence\\reuse-audit-20261013\\spartan_weaponry_unofficial-1.2.3-1.21.1.jar",
+  "jarSha256": "84d3ddafb519e2f5e03f2681ff52c30c92c9512181f61a7a7487399a0179888f",
+  "purpose": "Read-only art research; unmodified PNG samples outside runtime; not an admitted asset package",
+  "officialFile": "https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry-unofficial/files/8717810",
+  "attribution": "ObliviousSpartan (original author); xwerffx (weapon ideas and most art); Mai_xiyu (port), per bundled metadata",
+  "licenseDeclaration": "Apache License v2.0 in bundled metadata; per-asset exceptions not cleared for extraction/republication",
+  "metadata": "modLoader=\"javafml\" #mandatory\nloaderVersion=\"[4,)\" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.\nlicense=\"Apache License v2.0\"\nissueTrackerURL=\"https://github.com/ObliviousSpartan/SpartanWeaponry/issues\"\n# A list of mods - how many allowed here is determined by the individual mod loader\n[[mods]] #mandatory\nmodId=\"spartan_weaponry_unofficial\"\nversion=\"1.2.3\"\ndisplayName=\"Spartan Weaponry Unofficial\"\n# A URL to query for updates for this mod. See the JSON update specification https://docs.minecraftforge.net/en/latest/misc/updatechecker/\n#updateJSONURL=\"https://change.me.example.invalid/updates.json\" #optional\ndisplayURL=\"https://www.curseforge.com/minecraft/mc-mods/spartan-weaponry\"\nlogoFile=\"logo.png\"\ncredits=\"xwerffx for the weapon ideas and most of the art. Translators: alexvirgo13 (Spanish), Samlegamer (French), MrMikeForDev (Chinese) and SplashedTomato (Russian)ï¼koooy for testing and feedback ,Golder114514 for testing and feedback , ImNotGayForFood for testing and feedback , Everyone who supported me on Patreon!\" #optional\nauthors=\"ObliviousSpartan(Original Author), xwerffx(Weapon Ideas and Art), Mai_xiyu(1.21.1 Port)\" #optional\n# Display Test controls the display for your mod in the server connection screen\n# MATCH_VERSION means that your mod will cause a red X if the versions on client and server differ. This is the default behaviour and should be what you choose if you have server and client elements to your mod.\n# IGNORE_SERVER_VERSION means that your mod will not cause a red X if it's present on the server but not on the client. This is what you should use if you're a server only mod.\n# IGNORE_ALL_VERSION means that your mod will not cause a red X if it's present on the client or the server. This is a special case and should only be used if your mod has no server component.\n# NONE means that no display test is set on your mod. You need to do this yourself, see IExtensionPoint.DisplayTest for more information. You can define any scheme you wish with this value.\n# IMPORTANT NOTE: this is NOT an instruction as to which environments (CLIENT or DEDICATED SERVER) your mod loads on. Your mod should load (and maybe do nothing!) whereever it finds itself.\n#displayTest=\"MATCH_VERSION\" # MATCH_VERSION is the default if nothing is specified (#optional)\n\ndescription='''Weapons Galore! A whole new arsenal of weaponry made for Minecraft. Inspired by Balkon's WeaponMod, it adds new versions of weapons from that mod, as well expanding the arsenal with a bunch of original weapons.'''\n[[mixins]]\nconfig=\"spartanweaponry.mixins.json\"\n[[dependencies.spartan_weaponry_unofficial]]\nmodId=\"neoforge\"\nmandatory=true\nversionRange=\"[21,)\"\nordering=\"NONE\"\nside=\"BOTH\"\n[[dependencies.spartan_weaponry_unofficial]]\nmodId=\"minecraft\"\nmandatory=true\nversionRange=\"[1.21.1,1.21.4)\"\nordering=\"NONE\"\nside=\"BOTH\"\n[[dependencies.spartan_weaponry_unofficial]]\nmodId=\"spartanshieldsunofficial\"\ntype=\"optional\"\nversionRange=\"[1.0.0,)\"\nordering=\"NONE\"\nside=\"BOTH\"",
+  "samples": [
+    {
+      "resourceBasename": "iron_dagger",
+      "modelChain": [
+        {
+          "entry": "assets/spartan_weaponry_unofficial/models/item/iron_dagger.json",
+          "definition": {
+            "parent": "spartan_weaponry_unofficial:item/base/dagger",
+            "loader": "spartan_weaponry_unofficial:oil_coated_item",
+            "overrides": [
+              {
+                "model": "spartan_weaponry_unofficial:item/iron_dagger_blocking",
+                "predicate": {
+                  "spartan_weaponry_unofficial:blocking": 1.0
+                }
+              },
+              {
+                "model": "spartan_weaponry_unofficial:item/iron_dagger_throwing",
+                "predicate": {
+                  "spartan_weaponry_unofficial:throwing": 1.0
+                }
+              }
+            ],
+            "textures": {
+              "coating": "spartan_weaponry_unofficial:item/coating/dagger",
+              "layer0": "spartan_weaponry_unofficial:item/iron_dagger"
+            }
+          }
+        },
+        {
+          "entry": "assets/spartan_weaponry_unofficial/models/item/base/dagger.json",
+          "definition": {
+            "parent": "item/handheld",
+            "display": {
+              "thirdperson_righthand": {
+                "rotation": [
+                  0,
+                  -90,
+                  55
+                ],
+                "translation": [
+                  0,
+                  3.0,
+                  1.0
+                ],
+                "scale": [
+                  0.85,
+                  0.85,
+                  0.85
+                ]
+              },
+              "thirdperson_lefthand": {
+                "rotation": [
+                  0,
+                  90,
+                  -55
+                ],
+                "translation": [
+                  0,
+                  3.0,
+                  1.0
+                ],
+                "scale": [
+                  0.85,
+                  0.85,
+                  0.85
+                ]
+              },
+              "firstperson_righthand": {
+                "rotation": [
+                  0,
+                  -90,
+                  25
+                ],
+                "translation": [
+                  1.13,
+                  3.2,
+                  1.13
+                ],
+                "scale": [
+                  0.68,
+                  0.68,
+                  0.68
+                ]
+              },
+              "firstperson_lefthand": {
+                "rotation": [
+                  0,
+                  90,
+                  -25
+                ],
+                "translation": [
+                  1.13,
+                  3.2,
+                  1.13
+                ],
+                "scale": [
+                  0.68,
+                  0.68,
+                  0.68
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "textureEntry": "assets/spartan_weaponry_unofficial/textures/item/iron_dagger.png",
+      "researchPng": "iron_dagger.png",
+      "textureSha256": "9b6bfb4c9e24cd51e214f7ef42f0dea4aa40b4b3ecf6ae03b2dd36cb5c269889",
+      "recipeResult": {
+        "count": 1,
+        "id": "spartan_weaponry_unofficial:iron_dagger"
+      },
+      "recipeEntry": "data/spartan_weaponry_unofficial/recipe/iron_dagger.json",
+      "runtimeRegistryVerified": false
+    },
+    {
+      "resourceBasename": "iron_greatsword",
+      "modelChain": [
+        {
+          "entry": "assets/spartan_weaponry_unofficial/models/item/iron_greatsword.json",
+          "definition": {
+            "parent": "spartan_weaponry_unofficial:item/base/greatsword",
+            "loader": "spartan_weaponry_unofficial:oil_coated_item",
+            "overrides": [
+              {
+                "model": "spartan_weaponry_unofficial:item/iron_greatsword_blocking",
+                "predicate": {
+                  "spartan_weaponry_unofficial:blocking": 1.0
+                }
+              },
+              {
+                "model": "spartan_weaponry_unofficial:item/iron_greatsword_throwing",
+                "predicate": {
+                  "spartan_weaponry_unofficial:throwing": 1.0
+                }
+              }
+            ],
+            "textures": {
+              "coating": "spartan_weaponry_unofficial:item/coating/greatsword",
+              "layer0": "spartan_weaponry_unofficial:item/iron_greatsword"
+            }
+          }
+        },
+        {
+          "entry": "assets/spartan_weaponry_unofficial/models/item/base/greatsword.json",
+          "definition": {
+            "parent": "item/handheld",
+            "display": {
+              "thirdperson_righthand": {
+                "rotation": [
+                  0,
+                  -90,
+                  55
+                ],
+                "translation": [
+                  0,
+                  8.5,
+                  0.5
+                ],
+                "scale": [
+                  1.7,
+                  1.7,
+                  0.85
+                ]
+              },
+              "thirdperson_lefthand": {
+                "rotation": [
+                  0,
+                  90,
+                  -55
+                ],
+                "translation": [
+                  0,
+                  8.5,
+                  0.5
+                ],
+                "scale": [
+                  1.7,
+                  1.7,
+                  0.85
+                ]
+              },
+              "firstperson_righthand": {
+                "rotation": [
+                  0,
+                  -90,
+                  30
+                ],
+                "translation": [
+                  1.0,
+                  4.0,
+                  1.25
+                ],
+                "scale": [
+                  0.95,
+                  0.95,
+                  0.425
+                ]
+              },
+              "firstperson_lefthand": {
+                "rotation": [
+                  0,
+                  90,
+                  -30
+                ],
+                "translation": [
+                  1.0,
+                  4.0,
+                  1.25
+                ],
+                "scale": [
+                  0.95,
+                  0.95,
+                  0.425
+                ]
+              },
+              "ground": {
+                "rotation": [
+                  0,
+                  0,
+                  0
+                ],
+                "translation": [
+                  0.0,
+                  4.25,
+                  0.0
+                ],
+                "scale": [
+                  0.9375,
+                  0.9375,
+                  0.46875
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "textureEntry": "assets/spartan_weaponry_unofficial/textures/item/iron_greatsword.png",
+      "researchPng": "iron_greatsword.png",
+      "textureSha256": "0bb1866a10819ce7c583a7825fad9c03370e3165a9b8671c32ffbfaa22be573c",
+      "recipeResult": {
+        "count": 1,
+        "id": "spartan_weaponry_unofficial:iron_greatsword"
+      },
+      "recipeEntry": "data/spartan_weaponry_unofficial/recipe/iron_greatsword.json",
+      "runtimeRegistryVerified": false
+    },
+    {
+      "resourceBasename": "iron_spear",
+      "modelChain": [
+        {
+          "entry": "assets/spartan_weaponry_unofficial/models/item/iron_spear.json",
+          "definition": {
+            "parent": "spartan_weaponry_unofficial:item/base/spear",
+            "loader": "spartan_weaponry_unofficial:oil_coated_item",
+            "overrides": [
+              {
+                "model": "spartan_weaponry_unofficial:item/iron_spear_blocking",
+                "predicate": {
+                  "spartan_weaponry_unofficial:blocking": 1.0
+                }
+              },
+              {
+                "model": "spartan_weaponry_unofficial:item/iron_spear_throwing",
+                "predicate": {
+                  "spartan_weaponry_unofficial:throwing": 1.0
+                }
+              }
+            ],
+            "textures": {
+              "coating": "spartan_weaponry_unofficial:item/coating/spear",
+              "layer0": "spartan_weaponry_unofficial:item/iron_spear"
+            }
+          }
+        },
+        {
+          "entry": "assets/spartan_weaponry_unofficial/models/item/base/spear.json",
+          "definition": {
+            "parent": "item/handheld",
+            "display": {
+              "thirdperson_righthand": {
+                "rotation": [
+                  -55,
+                  -90,
+                  0
+                ],
+                "translation": [
+                  0.0,
+                  0.5,
+                  2.0
+                ],
+                "scale": [
+                  2.125,
+                  2.125,
+                  1.0
+                ]
+              },
+              "thirdperson_lefthand": {
+                "rotation": [
+                  -55,
+                  90,
+                  0
+                ],
+                "translation": [
+                  0.0,
+                  0.5,
+                  2.0
+                ],
+                "scale": [
+                  2.125,
+                  2.125,
+                  1.0
+                ]
+              },
+              "firstperson_righthand": {
+                "rotation": [
+                  0,
+                  -90,
+                  30
+                ],
+                "translation": [
+                  1.13,
+                  5.0,
+                  1.13
+                ],
+                "scale": [
+                  0.85,
+                  0.85,
+                  0.425
+                ]
+              },
+              "firstperson_lefthand": {
+                "rotation": [
+                  0,
+                  90,
+                  -30
+                ],
+                "translation": [
+                  1.13,
+                  5.0,
+                  1.13
+                ],
+                "scale": [
+                  0.85,
+                  0.85,
+                  0.425
+                ]
+              },
+              "ground": {
+                "rotation": [
+                  0,
+                  0,
+                  0
+                ],
+                "translation": [
+                  0.0,
+                  4.25,
+                  0.0
+                ],
+                "scale": [
+                  0.9375,
+                  0.9375,
+                  0.46875
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "textureEntry": "assets/spartan_weaponry_unofficial/textures/item/iron_spear.png",
+      "researchPng": "iron_spear.png",
+      "textureSha256": "7ccb62abfa5b7e6c3c3459eea4f0d010c5baffc5ce0239997317eade7110f611",
+      "recipeResult": {
+        "count": 1,
+        "id": "spartan_weaponry_unofficial:iron_spear"
+      },
+      "recipeEntry": "data/spartan_weaponry_unofficial/recipe/iron_spear.json",
+      "runtimeRegistryVerified": false
+    },
+    {
+      "resourceBasename": "longbow_iron_strengthened",
+      "modelChain": [
+        {
+          "entry": "assets/spartan_weaponry_unofficial/models/item/longbow_iron_strengthened.json",
+          "definition": {
+            "parent": "spartan_weaponry_unofficial:item/base/longbow",
+            "overrides": [
+              {
+                "model": "spartan_weaponry_unofficial:item/longbow_iron_strengthened_pulling_0",
+                "predicate": {
+                  "spartan_weaponry_unofficial:pulling": 1.0
+                }
+              },
+              {
+                "model": "spartan_weaponry_unofficial:item/longbow_iron_strengthened_pulling_1",
+                "predicate": {
+                  "spartan_weaponry_unofficial:pull": 0.65,
+                  "spartan_weaponry_unofficial:pulling": 1.0
+                }
+              },
+              {
+                "model": "spartan_weaponry_unofficial:item/longbow_iron_strengthened_pulling_2",
+                "predicate": {
+                  "spartan_weaponry_unofficial:pull": 0.9,
+                  "spartan_weaponry_unofficial:pulling": 1.0
+                }
+              }
+            ],
+            "textures": {
+              "layer0": "spartan_weaponry_unofficial:item/iron_longbow_standby"
+            }
+          }
+        },
+        {
+          "entry": "assets/spartan_weaponry_unofficial/models/item/base/longbow.json",
+          "definition": {
+            "parent": "item/generated",
+            "display": {
+              "thirdperson_righthand": {
+                "rotation": [
+                  -80,
+                  260,
+                  -40
+                ],
+                "translation": [
+                  -1,
+                  -2,
+                  5.25
+                ],
+                "scale": [
+                  1.2,
+                  1.2,
+                  1.2
+                ]
+              },
+              "thirdperson_lefthand": {
+                "rotation": [
+                  -80,
+                  -280,
+                  40
+                ],
+                "translation": [
+                  -1,
+                  -2,
+                  5.25
+                ],
+                "scale": [
+                  1.2,
+                  1.2,
+                  1.2
+                ]
+              },
+              "firstperson_righthand": {
+                "rotation": [
+                  0,
+                  -90,
+                  25
+                ],
+                "translation": [
+                  1.13,
+                  3.2,
+                  1.13
+                ],
+                "scale": [
+                  0.9,
+                  0.9,
+                  0.9
+                ]
+              },
+              "firstperson_lefthand": {
+                "rotation": [
+                  0,
+                  90,
+                  -25
+                ],
+                "translation": [
+                  1.13,
+                  3.2,
+                  1.13
+                ],
+                "scale": [
+                  0.9,
+                  0.9,
+                  0.9
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "textureEntry": "assets/spartan_weaponry_unofficial/textures/item/iron_longbow_standby.png",
+      "researchPng": "longbow_iron_strengthened.png",
+      "textureSha256": "f38bef997a78b428afc372d276af06019d813730dde0f754a9f7ae21ddbd2fd3",
+      "recipeResult": {
+        "count": 1,
+        "id": "spartan_weaponry_unofficial:longbow_iron_strengthened"
+      },
+      "recipeEntry": "data/spartan_weaponry_unofficial/recipe/longbow_iron_strengthened.json",
+      "runtimeRegistryVerified": false
+    },
+    {
+      "resourceBasename": "heavy_crossbow_iron_strengthened",
+      "modelChain": [
+        {
+          "entry": "assets/spartan_weaponry_unofficial/models/item/heavy_crossbow_iron_strengthened.json",
+          "definition": {
+            "parent": "spartan_weaponry_unofficial:item/base/heavy_crossbow",
+            "overrides": [
+              {
+                "model": "spartan_weaponry_unofficial:item/heavy_crossbow_iron_strengthened_pulling_0",
+                "predicate": {
+                  "spartan_weaponry_unofficial:pulling": 1.0
+                }
+              },
+              {
+                "model": "spartan_weaponry_unofficial:item/heavy_crossbow_iron_strengthened_pulling_1",
+                "predicate": {
+                  "spartan_weaponry_unofficial:pull": 0.65,
+                  "spartan_weaponry_unofficial:pulling": 1.0
+                }
+              },
+              {
+                "model": "spartan_weaponry_unofficial:item/heavy_crossbow_iron_strengthened_pulling_2",
+                "predicate": {
+                  "spartan_weaponry_unofficial:pull": 1.0,
+                  "spartan_weaponry_unofficial:pulling": 1.0
+                }
+              },
+              {
+                "model": "spartan_weaponry_unofficial:item/heavy_crossbow_iron_strengthened_loaded",
+                "predicate": {
+                  "spartan_weaponry_unofficial:charged": 1.0
+                }
+              },
+              {
+                "model": "spartan_weaponry_unofficial:item/heavy_crossbow_iron_strengthened_firing",
+                "predicate": {
+                  "spartan_weaponry_unofficial:charged": 1.0,
+                  "spartan_weaponry_unofficial:pulling": 1.0
+                }
+              }
+            ],
+            "textures": {
+              "layer0": "spartan_weaponry_unofficial:item/iron_heavy_crossbow_standby"
+            }
+          }
+        },
+        {
+          "entry": "assets/spartan_weaponry_unofficial/models/item/base/heavy_crossbow.json",
+          "definition": {
+            "parent": "item/generated",
+            "display": {
+              "thirdperson_righthand": {
+                "rotation": [
+                  -90,
+                  0,
+                  -60
+                ],
+                "translation": [
+                  2,
+                  0.1,
+                  -3
+                ],
+                "scale": [
+                  0.9,
+                  0.9,
+                  0.9
+                ]
+              },
+              "thirdperson_lefthand": {
+                "rotation": [
+                  -90,
+                  0,
+                  30
+                ],
+                "translation": [
+                  2,
+                  0.1,
+                  -3
+                ],
+                "scale": [
+                  0.9,
+                  0.9,
+                  0.9
+                ]
+              },
+              "firstperson_righthand": {
+                "rotation": [
+                  -90,
+                  0,
+                  -55
+                ],
+                "translation": [
+                  1.13,
+                  3.2,
+                  1.13
+                ],
+                "scale": [
+                  0.68,
+                  0.68,
+                  0.68
+                ]
+              },
+              "firstperson_lefthand": {
+                "rotation": [
+                  -90,
+                  0,
+                  35
+                ],
+                "translation": [
+                  1.13,
+                  3.2,
+                  1.13
+                ],
+                "scale": [
+                  0.68,
+                  0.68,
+                  0.68
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "textureEntry": "assets/spartan_weaponry_unofficial/textures/item/iron_heavy_crossbow_standby.png",
+      "researchPng": "heavy_crossbow_iron_strengthened.png",
+      "textureSha256": "7faf21196c0b6d81890c7bb5da457bef9ca751e30ccd1e0fe037a2bae0d9e4f7",
+      "recipeResult": {
+        "count": 1,
+        "id": "spartan_weaponry_unofficial:heavy_crossbow_iron_strengthened"
+      },
+      "recipeEntry": "data/spartan_weaponry_unofficial/recipe/heavy_crossbow_iron_strengthened.json",
+      "runtimeRegistryVerified": false
+    },
+    {
+      "resourceBasename": "cestus",
+      "modelChain": [
+        {
+          "entry": "assets/spartan_weaponry_unofficial/models/item/cestus.json",
+          "definition": {
+            "parent": "spartan_weaponry_unofficial:item/base/cestus",
+            "overrides": [
+              {
+                "model": "spartan_weaponry_unofficial:item/cestus_blocking",
+                "predicate": {
+                  "spartan_weaponry_unofficial:blocking": 1.0
+                }
+              },
+              {
+                "model": "spartan_weaponry_unofficial:item/cestus_throwing",
+                "predicate": {
+                  "spartan_weaponry_unofficial:throwing": 1.0
+                }
+              }
+            ],
+            "textures": {
+              "layer0": "spartan_weaponry_unofficial:item/cestus",
+              "particle": "spartan_weaponry_unofficial:item/cestus"
+            }
+          }
+        },
+        {
+          "entry": "assets/spartan_weaponry_unofficial/models/item/base/cestus.json",
+          "definition": {
+            "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+            "textures": {
+              "layer0": "spartan_weaponry_unofficial:items/cestus_model"
+            },
+            "elements": [
+              {
+                "name": "Cestus",
+                "from": [
+                  6.0,
+                  6.0,
+                  4.0
+                ],
+                "to": [
+                  10.0,
+                  10.0,
+                  9.0
+                ],
+                "faces": {
+                  "north": {
+                    "texture": "#layer0",
+                    "uv": [
+                      0.0,
+                      0.0,
+                      4.0,
+                      4.0
+                    ]
+                  },
+                  "east": {
+                    "texture": "#layer0",
+                    "uv": [
+                      4.0,
+                      4.0,
+                      8.0,
+                      9.0
+                    ],
+                    "rotation": 90
+                  },
+                  "south": {
+                    "texture": "#layer0",
+                    "uv": [
+                      4.0,
+                      0.0,
+                      8.0,
+                      4.0
+                    ]
+                  },
+                  "west": {
+                    "texture": "#layer0",
+                    "uv": [
+                      12.0,
+                      4.0,
+                      16.0,
+                      9.0
+                    ],
+                    "rotation": 270
+                  },
+                  "up": {
+                    "texture": "#layer0",
+                    "uv": [
+                      0.0,
+                      4.0,
+                      4.0,
+                      9.0
+                    ]
+                  },
+                  "down": {
+                    "texture": "#layer0",
+                    "uv": [
+                      8.0,
+                      4.0,
+                      12.0,
+                      9.0
+                    ]
+                  }
+                }
+              },
+              {
+                "name": "Knux",
+                "from": [
+                  5.499999992549419,
+                  9.49999999254942,
+                  3.4999999925494194
+                ],
+                "to": [
+                  10.49999999254942,
+                  10.49999999254942,
+                  7.499999992549419
+                ],
+                "faces": {
+                  "north": {
+                    "texture": "#layer0",
+                    "uv": [
+                      0.0,
+                      10.0,
+                      5.0,
+                      11.0
+                    ]
+                  },
+                  "east": {
+                    "texture": "#layer0",
+                    "uv": [
+                      5.0,
+                      9.0,
+                      6.0,
+                      13.0
+                    ],
+                    "rotation": 90
+                  },
+                  "south": {
+                    "texture": "#layer0",
+                    "uv": [
+                      0.0,
+                      15.0,
+                      5.0,
+                      16.0
+                    ]
+                  },
+                  "west": {
+                    "texture": "#layer0",
+                    "uv": [
+                      11.0,
+                      9.0,
+                      12.0,
+                      13.0
+                    ],
+                    "rotation": 270
+                  },
+                  "up": {
+                    "texture": "#layer0",
+                    "uv": [
+                      0.0,
+                      11.0,
+                      5.0,
+                      15.0
+                    ]
+                  },
+                  "down": {
+                    "texture": "#layer0",
+                    "uv": [
+                      7.0,
+                      11.0,
+                      12.0,
+                      15.0
+                    ]
+                  }
+                }
+              },
+              {
+                "name": "Strap1",
+                "from": [
+                  6.0,
+                  6.0,
+                  9.699999995529652
+                ],
+                "to": [
+                  10.0,
+                  10.0,
+                  10.199999988079071
+                ],
+                "rotation": {
+                  "origin": [
+                    8.0,
+                    8.0,
+                    9.999999997019767
+                  ],
+                  "axis": "x",
+                  "angle": 22.5
+                },
+                "faces": {
+                  "north": {
+                    "texture": "#layer0",
+                    "uv": [
+                      8.0,
+                      0.0,
+                      12.0,
+                      4.0
+                    ]
+                  },
+                  "east": {
+                    "texture": "#layer0",
+                    "uv": [
+                      8.0,
+                      3.0,
+                      11.999999992549421,
+                      4.0
+                    ],
+                    "rotation": 90
+                  },
+                  "south": {
+                    "texture": "#layer0",
+                    "uv": [
+                      12.0,
+                      0.0,
+                      16.0,
+                      4.0
+                    ]
+                  },
+                  "west": {
+                    "texture": "#layer0",
+                    "uv": [
+                      12.0,
+                      3.0,
+                      15.999999992549418,
+                      4.0
+                    ],
+                    "rotation": 270
+                  },
+                  "up": {
+                    "texture": "#layer0",
+                    "uv": [
+                      12.0,
+                      0.0,
+                      16.0,
+                      0.9999999925494176
+                    ]
+                  },
+                  "down": {
+                    "texture": "#layer0",
+                    "uv": [
+                      8.0,
+                      3.0,
+                      12.0,
+                      3.999999992549421
+                    ]
+                  }
+                }
+              },
+              {
+                "name": "Strap2",
+                "from": [
+                  6.0,
+                  6.0,
+                  12.0
+                ],
+                "to": [
+                  10.0,
+                  10.0,
+                  12.49999999254942
+                ],
+                "faces": {
+                  "north": {
+                    "texture": "#layer0",
+                    "uv": [
+                      8.0,
+                      0.0,
+                      12.0,
+                      4.0
+                    ]
+                  },
+                  "east": {
+                    "texture": "#layer0",
+                    "uv": [
+                      8.0,
+                      0.0,
+                      11.999999992549418,
+                      1.0
+                    ],
+                    "rotation": 90
+                  },
+                  "south": {
+                    "texture": "#layer0",
+                    "uv": [
+                      12.0,
+                      0.0,
+                      16.0,
+                      4.0
+                    ]
+                  },
+                  "west": {
+                    "texture": "#layer0",
+                    "uv": [
+                      12.0,
+                      3.0,
+                      15.99999999254942,
+                      4.0
+                    ],
+                    "rotation": 270
+                  },
+                  "up": {
+                    "texture": "#layer0",
+                    "uv": [
+                      12.0,
+                      0.0,
+                      16.0,
+                      0.9999999925494194
+                    ]
+                  },
+                  "down": {
+                    "texture": "#layer0",
+                    "uv": [
+                      8.0,
+                      3.0,
+                      12.0,
+                      3.9999999925494194
+                    ]
+                  }
+                }
+              },
+              {
+                "name": "Strap3",
+                "from": [
+                  6.100000001490116,
+                  6.0,
+                  11.200000002980232
+                ],
+                "to": [
+                  9.899999998509884,
+                  10.0,
+                  11.699999995529652
+                ],
+                "rotation": {
+                  "origin": [
+                    8.0,
+                    8.0,
+                    11.500000004470348
+                  ],
+                  "axis": "x",
+                  "angle": -22.5
+                },
+                "faces": {
+                  "north": {
+                    "texture": "#layer0",
+                    "uv": [
+                      8.0,
+                      0.0,
+                      11.799999997019768,
+                      4.0
+                    ]
+                  },
+                  "east": {
+                    "texture": "#layer0",
+                    "uv": [
+                      8.0,
+                      0.0,
+                      11.99999999254942,
+                      1.0
+                    ],
+                    "rotation": 90
+                  },
+                  "south": {
+                    "texture": "#layer0",
+                    "uv": [
+                      12.0,
+                      0.0,
+                      15.799999997019768,
+                      4.0
+                    ]
+                  },
+                  "west": {
+                    "texture": "#layer0",
+                    "uv": [
+                      12.0,
+                      0.0,
+                      15.99999999254942,
+                      1.0
+                    ],
+                    "rotation": 270
+                  },
+                  "up": {
+                    "texture": "#layer0",
+                    "uv": [
+                      8.0,
+                      3.0,
+                      11.999999997019767,
+                      3.9999999925494176
+                    ]
+                  },
+                  "down": {
+                    "texture": "#layer0",
+                    "uv": [
+                      12.0,
+                      3.0,
+                      15.999999997019767,
+                      3.9999999925494194
+                    ]
+                  }
+                }
+              },
+              {
+                "name": "Knux2",
+                "from": [
+                  5.499999992549419,
+                  6.499999992549419,
+                  3.4999999925494194
+                ],
+                "to": [
+                  10.49999999254942,
+                  9.49999999254942,
+                  4.499999992549419
+                ],
+                "faces": {
+                  "north": {
+                    "texture": "#layer0",
+                    "uv": [
+                      6.0,
+                      13.0,
+                      11.0,
+                      16.0
+                    ]
+                  },
+                  "east": {
+                    "texture": "#layer0",
+                    "uv": [
+                      14.0,
+                      10.0,
+                      15.0,
+                      13.0
+                    ]
+                  },
+                  "south": {
+                    "texture": "#layer0",
+                    "uv": [
+                      11.0,
+                      13.0,
+                      16.0,
+                      16.0
+                    ]
+                  },
+                  "west": {
+                    "texture": "#layer0",
+                    "uv": [
+                      15.0,
+                      10.0,
+                      16.0,
+                      13.0
+                    ]
+                  },
+                  "up": {
+                    "texture": "#layer0",
+                    "uv": [
+                      6.0,
+                      13.0,
+                      11.0,
+                      14.0
+                    ]
+                  },
+                  "down": {
+                    "texture": "#layer0",
+                    "uv": [
+                      11.0,
+                      15.0,
+                      16.0,
+                      16.0
+                    ]
+                  }
+                }
+              }
+            ],
+            "display": {
+              "thirdperson_righthand": {
+                "rotation": [
+                  0,
+                  0,
+                  270
+                ],
+                "translation": [
+                  0.0,
+                  -2.0,
+                  2.75
+                ],
+                "scale": [
+                  1.2,
+                  1.2,
+                  1.2
+                ]
+              },
+              "thirdperson_lefthand": {
+                "rotation": [
+                  0,
+                  0,
+                  270
+                ],
+                "translation": [
+                  0.0,
+                  -2.0,
+                  2.75
+                ],
+                "scale": [
+                  1.2,
+                  1.2,
+                  1.2
+                ]
+              },
+              "firstperson_righthand": {
+                "rotation": [
+                  30,
+                  330,
+                  330
+                ],
+                "translation": [
+                  0.0,
+                  -1.0,
+                  -2.5
+                ],
+                "scale": [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              },
+              "firstperson_lefthand": {
+                "rotation": [
+                  30,
+                  330,
+                  330
+                ],
+                "translation": [
+                  0.0,
+                  -1.0,
+                  -2.5
+                ],
+                "scale": [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              },
+              "gui": {
+                "rotation": [
+                  30,
+                  316,
+                  0
+                ],
+                "translation": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "scale": [
+                  1.5,
+                  1.5,
+                  1.5
+                ]
+              },
+              "ground": {
+                "rotation": [
+                  0,
+                  0,
+                  0
+                ],
+                "translation": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "scale": [
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "textureEntry": "assets/spartan_weaponry_unofficial/textures/item/cestus.png",
+      "researchPng": "cestus.png",
+      "textureSha256": "f31d252b33a39bd946bcb9621cf7b7f9d60bb75110ae492a107328eb1d82bd8b",
+      "recipeResult": {
+        "count": 1,
+        "id": "spartan_weaponry_unofficial:cestus"
+      },
+      "recipeEntry": "data/spartan_weaponry_unofficial/recipe/cestus.json",
+      "runtimeRegistryVerified": false
+    }
+  ]
+}

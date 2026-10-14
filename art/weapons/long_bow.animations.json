@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "ticksPerSecond": 20,
+  "rotationOrder": "XYZ",
+  "rotationMode": "additive_degrees",
+  "clips": [
+    {
+      "id": "bow_draw",
+      "lengthTicks": 20,
+      "loop": false,
+      "tracks": {
+        "bow_upper": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 10,
+            "value": [
+              0,
+              0,
+              -3
+            ]
+          },
+          {
+            "tick": 20,
+            "value": [
+              0,
+              0,
+              -6
+            ]
+          }
+        ],
+        "bow_lower": [
+          {
+            "tick": 0,
+            "value": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "tick": 10,
+            "value": [
+              0,
+              0,
+              3
+            ]
+          },
+          {
+            "tick": 20,
+            "value": [
+              0,
+              0,
+              6
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

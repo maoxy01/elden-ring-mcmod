@@ -1,0 +1,11 @@
+Compiled from "BalmEvent.java"
+public abstract class net.blay09.mods.balm.api.event.BalmEvent extends net.neoforged.bus.api.Event implements net.neoforged.bus.api.ICancellableEvent {
+  public net.blay09.mods.balm.api.event.BalmEvent();
+}
+Compiled from "BalmEvents.java"
+public interface net.blay09.mods.balm.api.event.BalmEvents {
+  public default <T> void onEvent(java.lang.Class<T>, java.util.function.Consumer<T>);
+  public abstract <T> void onEvent(java.lang.Class<T>, java.util.function.Consumer<T>, net.blay09.mods.balm.api.event.EventPriority);
+  public abstract <T> void fireEvent(T);
+  public abstract <T> void onTickEvent(net.blay09.mods.balm.api.event.TickType<T>, net.blay09.mods.balm.api.event.TickPhase, T);
+}

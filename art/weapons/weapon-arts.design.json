@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "status": "design only; no game code or player animation included",
+  "executions": false,
+  "specialJumpAttacks": true,
+  "skillJumpAttacksAllowed": true,
+  "arts": [
+    {
+      "id": "square_off",
+      "name": "准备架式",
+      "kind": "stance",
+      "fp": 14,
+      "totalTicks": 22,
+      "damageMultiplier": 1.5,
+      "description": "直剑：架式后衔接横斩，不位移。",
+      "status": "design-only; not implemented",
+      "source": "fan prototype; not an exact Elden Ring timing table"
+    },
+    {
+      "id": "heavy_slash",
+      "name": "重斩",
+      "kind": "melee",
+      "fp": 18,
+      "totalTicks": 28,
+      "damageMultiplier": 1.8,
+      "description": "大剑 / 大斧：地面重击，增加削韧。",
+      "status": "design-only; not implemented",
+      "source": "fan prototype; not an exact Elden Ring timing table"
+    },
+    {
+      "id": "grounded_slam",
+      "name": "踏步砸击",
+      "kind": "melee",
+      "fp": 24,
+      "totalTicks": 36,
+      "damageMultiplier": 2.1,
+      "description": "重武器：短步落槌，不跳跃，命中后产生近距离震波。",
+      "status": "design-only; not implemented",
+      "source": "fan prototype; not an exact Elden Ring timing table"
+    },
+    {
+      "id": "quickstep",
+      "name": "迅步",
+      "kind": "movement",
+      "fp": 10,
+      "totalTicks": 12,
+      "damageMultiplier": 0,
+      "description": "匕首 / 钩爪：按输入方向短闪，检测地形，不造成伤害。",
+      "status": "design-only; not implemented",
+      "source": "fan prototype; not an exact Elden Ring timing table"
+    },
+    {
+      "id": "impaling_thrust",
+      "name": "贯穿",
+      "kind": "melee",
+      "fp": 14,
+      "totalTicks": 20,
+      "damageMultiplier": 1.6,
+      "description": "刺剑 / 矛：前方直刺，附带部分防御穿透。",
+      "status": "design-only; not implemented",
+      "source": "fan prototype; not an exact Elden Ring timing table"
+    },
+    {
+      "id": "piercing_lunge",
+      "name": "突刺",
+      "kind": "melee",
+      "fp": 18,
+      "totalTicks": 26,
+      "damageMultiplier": 1.8,
+      "description": "重刺剑 / 大矛：受地形限制的短距离冲刺后刺击。",
+      "status": "design-only; not implemented",
+      "source": "fan prototype; not an exact Elden Ring timing table"
+    },
+    {
+      "id": "spinning_slash",
+      "name": "回旋斩",
+      "kind": "melee",
+      "fp": 18,
+      "totalTicks": 24,
+      "damageMultiplier": 1.25,
+      "description": "曲剑 / 镰刀：地面两段横扫，可选择第二段。",
+      "status": "design-only; not implemented",
+      "source": "fan prototype; not an exact Elden Ring timing table"
+    },
+    {
+      "id": "wide_sweep",
+      "name": "横扫",
+      "kind": "melee",
+      "fp": 20,
+      "totalTicks": 28,
+      "damageMultiplier": 1.5,
+      "description": "大曲剑 / 戟：宽角地面横扫，不用圆形全向伤害。",
+      "status": "design-only; not implemented",
+      "source": "fan prototype; not an exact Elden Ring timing table"
+    },
+    {
+      "id": "unsheathe",
+      "name": "居合",
+      "kind": "stance",
+      "fp": 16,
+      "totalTicks": 20,
+      "damageMultiplier": 1.7,
+      "description": "刀：纳刀架式到拔刀斩，无处决和空中下砸分支。",
+      "status": "design-only; not implemented",
+      "source": "fan prototype; not an exact Elden Ring timing table"
+    },
+    {
+      "id": "double_slash",
+      "name": "连续斩",
+      "kind": "melee",
+      "fp": 20,
+      "totalTicks": 26,
+      "damageMultiplier": 1,
+      "description": "双头剑：三段连斩，各段各自记录命中。",
+      "status": "design-only; not implemented",
+      "source": "fan prototype; not an exact Elden Ring timing table"
+    },
+    {
+      "id": "war_cry",
+      "name": "战吼",
+      "kind": "buff",
+      "fp": 16,
+      "totalTicks": 22,
+      "damageMultiplier": 0,
+      "description": "斧：短暂增强攻击，不能重复叠加。",
+      "status": "design-only; not implemented",
+      "source": "fan prototype; not an exact Elden Ring timing table"
+    },
+    {
+      "id": "endure",
+      "name": "忍耐",
+      "kind": "buff",
+      "fp": 18,
+      "totalTicks": 14,
+      "damageMultiplier": 0,
+      "description": "槌：短时间减伤与抗打断，不是无敌。",
+      "status": "design-only; not implemented",
+      "source": "fan prototype; not an exact Elden Ring timing table"
+    },
+    {
+      "id": "spinning_chain",
+      "name": "旋转连枷",
+      "kind": "melee",
+      "fp": 20,
+      "totalTicks": 30,
+      "damageMultiplier": 1.3,
+      "description": "连枷：三段链节驱动球头扫掠，最多一次主击结算。",
+      "status": "design-only; not implemented",
+      "source": "fan prototype; not an exact Elden Ring timing table"
+    },
+    {
+      "id": "whip_crack",
+      "name": "鞭打",
+      "kind": "melee",
+      "fp": 16,
+      "totalTicks": 22,
+      "damageMultiplier": 1.5,
+      "description": "软鞭：三段鞭体展开，使用多段胶囊，不隔墙命中。",
+      "status": "design-only; not implemented",
+      "source": "fan prototype; not an exact Elden Ring timing table"
+    },
+    {
+      "id": "rapid_fists",
+      "name": "连续拳",
+      "kind": "melee",
+      "fp": 18,
+      "totalTicks": 20,
+      "damageMultiplier": 0.65,
+      "description": "拳套：连续短距离打击。",
+      "status": "design-only; not implemented",
+      "source": "fan prototype; not an exact Elden Ring timing table"
+    },
+    {
+      "id": "barrage",
+      "name": "连续射击",
+      "kind": "projectile",
+      "fp": 18,
+      "totalTicks": 30,
+      "damageMultiplier": 1,
+      "description": "短弓：三箭，逐箭扣弹药，不能空发。",
+      "status": "design-only; not implemented",
+      "source": "fan prototype; not an exact Elden Ring timing table"
+    },
+    {
+      "id": "mighty_shot",
+      "name": "强力射击",
+      "kind": "projectile",
+      "fp": 22,
+      "totalTicks": 30,
+      "damageMultiplier": 1.8,
+      "description": "长弓 / 大弓：蓄力箭，消耗一支箭。",
+      "status": "design-only; not implemented",
+      "source": "fan prototype; not an exact Elden Ring timing table"
+    },
+    {
+      "id": "power_bolt",
+      "name": "重弩射击",
+      "kind": "projectile",
+      "fp": 22,
+      "totalTicks": 32,
+      "damageMultiplier": 1.8,
+      "description": "弩 / 弩炮：增强下一次已装填射击，不能凭空装填。",
+      "status": "design-only; not implemented",
+      "source": "fan prototype; not an exact Elden Ring timing table"
+    },
+    {
+      "id": "glintstone_bolt",
+      "name": "辉石弹",
+      "kind": "projectile",
+      "fp": 14,
+      "totalTicks": 20,
+      "damageMultiplier": 1,
+      "description": "辉石杖：定向魔法弹，需要真实投射物与施法资源。",
+      "status": "design-only; not implemented",
+      "source": "fan prototype; not an exact Elden Ring timing table"
+    },
+    {
+      "id": "healing_prayer",
+      "name": "恢复祷告",
+      "kind": "support",
+      "fp": 24,
+      "totalTicks": 36,
+      "damageMultiplier": 0,
+      "description": "圣印记：引导后治疗，受击打断，范围限定自身 / 同队。",
+      "status": "design-only; not implemented",
+      "source": "fan prototype; not an exact Elden Ring timing table"
+    },
+    {
+      "id": "parry",
+      "name": "弹反",
+      "kind": "guard",
+      "fp": 0,
+      "totalTicks": 16,
+      "damageMultiplier": 0,
+      "description": "小盾 / 中盾：精确前方时窗，不触发处决。",
+      "status": "design-only; not implemented",
+      "source": "fan prototype; not an exact Elden Ring timing table"
+    },
+    {
+      "id": "shield_bash",
+      "name": "盾击",
+      "kind": "melee",
+      "fp": 16,
+      "totalTicks": 24,
+      "damageMultiplier": 1.2,
+      "description": "大盾：地面盾击，消耗精力，没有跳跃分支。",
+      "status": "design-only; not implemented",
+      "source": "fan prototype; not an exact Elden Ring timing table"
+    }
+  ]
+}

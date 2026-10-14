@@ -1,0 +1,1282 @@
+Compiled from "DisplayVars.java"
+public class journeymap.client.ui.minimap.DisplayVars {
+  final journeymap.client.ui.minimap.Position position;
+
+  final journeymap.client.ui.minimap.Shape shape;
+
+  final journeymap.client.ui.minimap.Orientation orientation;
+
+  final double fontScale;
+
+  final double infoSlotFontScale;
+
+  final int displayWidth;
+
+  final int displayHeight;
+
+  final float terrainAlpha;
+
+  final com.mojang.blaze3d.platform.Window mainWindow;
+
+  public final int minimapWidth;
+
+  public final int minimapHeight;
+
+  public final int textureX;
+
+  public final int textureY;
+
+  final int translateX;
+
+  final int translateY;
+
+  final double reticleSegmentLength;
+
+  public final java.awt.geom.Point2D$Double centerPoint;
+
+  final boolean showCompass;
+
+  final boolean showReticle;
+
+  final java.util.List<journeymap.api.v2.common.tuple.Tuple2<journeymap.client.ui.minimap.LabelVars, journeymap.client.ui.theme.ThemeLabelSource$InfoSlot>> labels;
+
+  final journeymap.client.ui.theme.Theme theme;
+
+  final journeymap.client.ui.theme.ThemeMinimapFrame minimapFrame;
+
+  final journeymap.client.ui.theme.ThemeCompassPoints minimapCompassPoints;
+
+  final journeymap.client.ui.theme.Theme$Minimap$MinimapSpec minimapSpec;
+
+  final journeymap.client.ui.option.LocationFormat$LocationFormatKeys locationFormatKeys;
+
+  final boolean locationFormatVerbose;
+
+  final boolean frameRotates;
+
+  public int marginX;
+
+  public int marginY;
+
+  journeymap.client.ui.minimap.DisplayVars$MapTypeStatus mapTypeStatus;
+
+  journeymap.client.ui.minimap.DisplayVars$MapPresetStatus mapPresetStatus;
+
+  float positionY;
+
+  float positionX;
+
+  journeymap.client.ui.minimap.DisplayVars(net.minecraft.client.Minecraft, journeymap.client.properties.MiniMapProperties, journeymap.client.ui.theme.ThemeMinimapFrame);
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: new           #7                  // class java/util/ArrayList
+       8: dup
+       9: iconst_4
+      10: invokespecial #9                  // Method java/util/ArrayList."<init>":(I)V
+      13: putfield      #12                 // Field labels:Ljava/util/List;
+      16: aload_0
+      17: aload_1
+      18: invokevirtual #18                 // Method net/minecraft/client/Minecraft.getWindow:()Lcom/mojang/blaze3d/platform/Window;
+      21: putfield      #24                 // Field mainWindow:Lcom/mojang/blaze3d/platform/Window;
+      24: aload_0
+      25: aload_2
+      26: getfield      #28                 // Field journeymap/client/properties/MiniMapProperties.showCompass:Ljourneymap/common/properties/config/BooleanField;
+      29: invokevirtual #34                 // Method journeymap/common/properties/config/BooleanField.get:()Ljava/lang/Boolean;
+      32: invokevirtual #40                 // Method java/lang/Boolean.booleanValue:()Z
+      35: putfield      #46                 // Field showCompass:Z
+      38: aload_0
+      39: aload_2
+      40: getfield      #49                 // Field journeymap/client/properties/MiniMapProperties.showReticle:Ljourneymap/common/properties/config/BooleanField;
+      43: invokevirtual #34                 // Method journeymap/common/properties/config/BooleanField.get:()Ljava/lang/Boolean;
+      46: invokevirtual #40                 // Method java/lang/Boolean.booleanValue:()Z
+      49: putfield      #52                 // Field showReticle:Z
+      52: aload_0
+      53: aload_2
+      54: getfield      #54                 // Field journeymap/client/properties/MiniMapProperties.position:Ljourneymap/common/properties/config/EnumField;
+      57: invokevirtual #58                 // Method journeymap/common/properties/config/EnumField.get:()Ljava/lang/Enum;
+      60: checkcast     #63                 // class journeymap/client/ui/minimap/Position
+      63: putfield      #65                 // Field position:Ljourneymap/client/ui/minimap/Position;
+      66: aload_0
+      67: aload_2
+      68: getfield      #68                 // Field journeymap/client/properties/MiniMapProperties.orientation:Ljourneymap/common/properties/config/EnumField;
+      71: invokevirtual #58                 // Method journeymap/common/properties/config/EnumField.get:()Ljava/lang/Enum;
+      74: checkcast     #71                 // class journeymap/client/ui/minimap/Orientation
+      77: putfield      #73                 // Field orientation:Ljourneymap/client/ui/minimap/Orientation;
+      80: aload_0
+      81: aload_1
+      82: invokevirtual #18                 // Method net/minecraft/client/Minecraft.getWindow:()Lcom/mojang/blaze3d/platform/Window;
+      85: invokevirtual #76                 // Method com/mojang/blaze3d/platform/Window.getScreenWidth:()I
+      88: putfield      #82                 // Field displayWidth:I
+      91: aload_0
+      92: aload_1
+      93: invokevirtual #18                 // Method net/minecraft/client/Minecraft.getWindow:()Lcom/mojang/blaze3d/platform/Window;
+      96: invokevirtual #86                 // Method com/mojang/blaze3d/platform/Window.getScreenHeight:()I
+      99: putfield      #89                 // Field displayHeight:I
+     102: aload_0
+     103: fconst_0
+     104: fconst_1
+     105: aload_2
+     106: getfield      #92                 // Field journeymap/client/properties/MiniMapProperties.terrainAlpha:Ljourneymap/common/properties/config/IntegerField;
+     109: invokevirtual #96                 // Method journeymap/common/properties/config/IntegerField.get:()Ljava/lang/Integer;
+     112: invokevirtual #101                // Method java/lang/Integer.intValue:()I
+     115: i2f
+     116: ldc           #106                // float 100.0f
+     118: fdiv
+     119: invokestatic  #107                // Method java/lang/Math.min:(FF)F
+     122: invokestatic  #113                // Method java/lang/Math.max:(FF)F
+     125: putfield      #116                // Field terrainAlpha:F
+     128: aload_0
+     129: new           #119                // class journeymap/client/ui/option/LocationFormat
+     132: dup
+     133: invokespecial #121                // Method journeymap/client/ui/option/LocationFormat."<init>":()V
+     136: aload_2
+     137: getfield      #122                // Field journeymap/client/properties/MiniMapProperties.locationFormat:Ljourneymap/common/properties/config/StringField;
+     140: invokevirtual #126                // Method journeymap/common/properties/config/StringField.get:()Ljava/lang/String;
+     143: invokevirtual #131                // Method journeymap/client/ui/option/LocationFormat.getFormatKeys:(Ljava/lang/String;)Ljourneymap/client/ui/option/LocationFormat$LocationFormatKeys;
+     146: putfield      #135                // Field locationFormatKeys:Ljourneymap/client/ui/option/LocationFormat$LocationFormatKeys;
+     149: aload_0
+     150: aload_2
+     151: getfield      #139                // Field journeymap/client/properties/MiniMapProperties.locationFormatVerbose:Ljourneymap/common/properties/config/BooleanField;
+     154: invokevirtual #34                 // Method journeymap/common/properties/config/BooleanField.get:()Ljava/lang/Boolean;
+     157: invokevirtual #40                 // Method java/lang/Boolean.booleanValue:()Z
+     160: putfield      #142                // Field locationFormatVerbose:Z
+     163: aload_0
+     164: invokestatic  #144                // Method journeymap/client/io/ThemeLoader.getCurrentTheme:()Ljourneymap/client/ui/theme/Theme;
+     167: putfield      #150                // Field theme:Ljourneymap/client/ui/theme/Theme;
+     170: aload_0
+     171: aload_2
+     172: getfield      #154                // Field journeymap/client/properties/MiniMapProperties.positionY:Ljourneymap/common/properties/config/FloatField;
+     175: invokevirtual #158                // Method journeymap/common/properties/config/FloatField.get:()Ljava/lang/Float;
+     178: invokevirtual #163                // Method java/lang/Float.floatValue:()F
+     181: putfield      #169                // Field positionY:F
+     184: aload_0
+     185: aload_2
+     186: getfield      #171                // Field journeymap/client/properties/MiniMapProperties.positionX:Ljourneymap/common/properties/config/FloatField;
+     189: invokevirtual #158                // Method journeymap/common/properties/config/FloatField.get:()Ljava/lang/Float;
+     192: invokevirtual #163                // Method java/lang/Float.floatValue:()F
+     195: putfield      #174                // Field positionX:F
+     198: getstatic     #176                // Field journeymap/client/ui/minimap/DisplayVars$1.$SwitchMap$journeymap$client$ui$minimap$Shape:[I
+     201: aload_2
+     202: getfield      #182                // Field journeymap/client/properties/MiniMapProperties.shape:Ljourneymap/common/properties/config/EnumField;
+     205: invokevirtual #58                 // Method journeymap/common/properties/config/EnumField.get:()Ljava/lang/Enum;
+     208: checkcast     #185                // class journeymap/client/ui/minimap/Shape
+     211: invokevirtual #187                // Method journeymap/client/ui/minimap/Shape.ordinal:()I
+     214: iaload
+     215: tableswitch   { // 1 to 4
+                     1: 244
+                     2: 336
+                     3: 428
+                     4: 492
+               default: 492
+          }
+     244: aload_0
+     245: getfield      #150                // Field theme:Ljourneymap/client/ui/theme/Theme;
+     248: getfield      #190                // Field journeymap/client/ui/theme/Theme.minimap:Ljourneymap/client/ui/theme/Theme$Minimap;
+     251: getfield      #196                // Field journeymap/client/ui/theme/Theme$Minimap.square:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSquare;
+     254: ifnull        336
+     257: aload_0
+     258: getstatic     #202                // Field journeymap/client/ui/minimap/Shape.Rectangle_Horizontal:Ljourneymap/client/ui/minimap/Shape;
+     261: putfield      #206                // Field shape:Ljourneymap/client/ui/minimap/Shape;
+     264: aload_0
+     265: aload_0
+     266: getfield      #150                // Field theme:Ljourneymap/client/ui/theme/Theme;
+     269: getfield      #190                // Field journeymap/client/ui/theme/Theme.minimap:Ljourneymap/client/ui/theme/Theme$Minimap;
+     272: getfield      #196                // Field journeymap/client/ui/theme/Theme$Minimap.square:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSquare;
+     275: putfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+     278: aload_1
+     279: invokevirtual #18                 // Method net/minecraft/client/Minecraft.getWindow:()Lcom/mojang/blaze3d/platform/Window;
+     282: invokevirtual #76                 // Method com/mojang/blaze3d/platform/Window.getScreenWidth:()I
+     285: i2d
+     286: dconst_1
+     287: dmul
+     288: aload_1
+     289: invokevirtual #18                 // Method net/minecraft/client/Minecraft.getWindow:()Lcom/mojang/blaze3d/platform/Window;
+     292: invokevirtual #86                 // Method com/mojang/blaze3d/platform/Window.getScreenHeight:()I
+     295: i2d
+     296: ddiv
+     297: dstore        4
+     299: aload_0
+     300: aload_2
+     301: invokevirtual #212                // Method journeymap/client/properties/MiniMapProperties.getSize:()I
+     304: putfield      #215                // Field minimapHeight:I
+     307: aload_0
+     308: aload_0
+     309: getfield      #215                // Field minimapHeight:I
+     312: i2d
+     313: dload         4
+     315: dmul
+     316: d2i
+     317: putfield      #218                // Field minimapWidth:I
+     320: aload_0
+     321: aload_0
+     322: getfield      #218                // Field minimapWidth:I
+     325: i2d
+     326: ldc2_w        #221                // double 1.5d
+     329: ddiv
+     330: putfield      #223                // Field reticleSegmentLength:D
+     333: goto          560
+     336: aload_0
+     337: getfield      #150                // Field theme:Ljourneymap/client/ui/theme/Theme;
+     340: getfield      #190                // Field journeymap/client/ui/theme/Theme.minimap:Ljourneymap/client/ui/theme/Theme$Minimap;
+     343: getfield      #196                // Field journeymap/client/ui/theme/Theme$Minimap.square:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSquare;
+     346: ifnull        428
+     349: aload_0
+     350: getstatic     #227                // Field journeymap/client/ui/minimap/Shape.Rectangle_Vertical:Ljourneymap/client/ui/minimap/Shape;
+     353: putfield      #206                // Field shape:Ljourneymap/client/ui/minimap/Shape;
+     356: aload_0
+     357: aload_0
+     358: getfield      #150                // Field theme:Ljourneymap/client/ui/theme/Theme;
+     361: getfield      #190                // Field journeymap/client/ui/theme/Theme.minimap:Ljourneymap/client/ui/theme/Theme$Minimap;
+     364: getfield      #196                // Field journeymap/client/ui/theme/Theme$Minimap.square:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSquare;
+     367: putfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+     370: aload_1
+     371: invokevirtual #18                 // Method net/minecraft/client/Minecraft.getWindow:()Lcom/mojang/blaze3d/platform/Window;
+     374: invokevirtual #76                 // Method com/mojang/blaze3d/platform/Window.getScreenWidth:()I
+     377: i2d
+     378: dconst_1
+     379: dmul
+     380: aload_1
+     381: invokevirtual #18                 // Method net/minecraft/client/Minecraft.getWindow:()Lcom/mojang/blaze3d/platform/Window;
+     384: invokevirtual #86                 // Method com/mojang/blaze3d/platform/Window.getScreenHeight:()I
+     387: i2d
+     388: ddiv
+     389: dstore        4
+     391: aload_0
+     392: aload_2
+     393: invokevirtual #212                // Method journeymap/client/properties/MiniMapProperties.getSize:()I
+     396: i2d
+     397: dload         4
+     399: dmul
+     400: d2i
+     401: putfield      #215                // Field minimapHeight:I
+     404: aload_0
+     405: aload_2
+     406: invokevirtual #212                // Method journeymap/client/properties/MiniMapProperties.getSize:()I
+     409: putfield      #218                // Field minimapWidth:I
+     412: aload_0
+     413: aload_0
+     414: getfield      #215                // Field minimapHeight:I
+     417: i2d
+     418: ldc2_w        #221                // double 1.5d
+     421: ddiv
+     422: putfield      #223                // Field reticleSegmentLength:D
+     425: goto          560
+     428: aload_0
+     429: getfield      #150                // Field theme:Ljourneymap/client/ui/theme/Theme;
+     432: getfield      #190                // Field journeymap/client/ui/theme/Theme.minimap:Ljourneymap/client/ui/theme/Theme$Minimap;
+     435: getfield      #230                // Field journeymap/client/ui/theme/Theme$Minimap.circle:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapCircle;
+     438: ifnull        492
+     441: aload_0
+     442: getstatic     #234                // Field journeymap/client/ui/minimap/Shape.Circle:Ljourneymap/client/ui/minimap/Shape;
+     445: putfield      #206                // Field shape:Ljourneymap/client/ui/minimap/Shape;
+     448: aload_0
+     449: aload_0
+     450: getfield      #150                // Field theme:Ljourneymap/client/ui/theme/Theme;
+     453: getfield      #190                // Field journeymap/client/ui/theme/Theme.minimap:Ljourneymap/client/ui/theme/Theme$Minimap;
+     456: getfield      #230                // Field journeymap/client/ui/theme/Theme$Minimap.circle:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapCircle;
+     459: putfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+     462: aload_0
+     463: aload_2
+     464: invokevirtual #212                // Method journeymap/client/properties/MiniMapProperties.getSize:()I
+     467: putfield      #218                // Field minimapWidth:I
+     470: aload_0
+     471: aload_2
+     472: invokevirtual #212                // Method journeymap/client/properties/MiniMapProperties.getSize:()I
+     475: putfield      #215                // Field minimapHeight:I
+     478: aload_0
+     479: aload_0
+     480: getfield      #215                // Field minimapHeight:I
+     483: iconst_2
+     484: idiv
+     485: i2d
+     486: putfield      #223                // Field reticleSegmentLength:D
+     489: goto          560
+     492: aload_0
+     493: getstatic     #237                // Field journeymap/client/ui/minimap/Shape.Square:Ljourneymap/client/ui/minimap/Shape;
+     496: putfield      #206                // Field shape:Ljourneymap/client/ui/minimap/Shape;
+     499: aload_0
+     500: aload_0
+     501: getfield      #150                // Field theme:Ljourneymap/client/ui/theme/Theme;
+     504: getfield      #190                // Field journeymap/client/ui/theme/Theme.minimap:Ljourneymap/client/ui/theme/Theme$Minimap;
+     507: getfield      #196                // Field journeymap/client/ui/theme/Theme$Minimap.square:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSquare;
+     510: putfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+     513: aload_0
+     514: aload_2
+     515: invokevirtual #212                // Method journeymap/client/properties/MiniMapProperties.getSize:()I
+     518: putfield      #218                // Field minimapWidth:I
+     521: aload_0
+     522: aload_2
+     523: invokevirtual #212                // Method journeymap/client/properties/MiniMapProperties.getSize:()I
+     526: putfield      #215                // Field minimapHeight:I
+     529: aload_0
+     530: aload_0
+     531: getfield      #215                // Field minimapHeight:I
+     534: aload_0
+     535: getfield      #215                // Field minimapHeight:I
+     538: imul
+     539: aload_0
+     540: getfield      #218                // Field minimapWidth:I
+     543: aload_0
+     544: getfield      #218                // Field minimapWidth:I
+     547: imul
+     548: iadd
+     549: i2d
+     550: invokestatic  #240                // Method java/lang/Math.sqrt:(D)D
+     553: ldc2_w        #244                // double 2.0d
+     556: ddiv
+     557: putfield      #223                // Field reticleSegmentLength:D
+     560: aload_0
+     561: aload_2
+     562: getfield      #246                // Field journeymap/client/properties/MiniMapProperties.fontScale:Ljourneymap/common/properties/config/FloatField;
+     565: invokevirtual #158                // Method journeymap/common/properties/config/FloatField.get:()Ljava/lang/Float;
+     568: invokevirtual #163                // Method java/lang/Float.floatValue:()F
+     571: f2d
+     572: putfield      #249                // Field fontScale:D
+     575: aload_0
+     576: aload_2
+     577: getfield      #251                // Field journeymap/client/properties/MiniMapProperties.infoSlotFontScale:Ljourneymap/common/properties/config/FloatField;
+     580: invokevirtual #158                // Method journeymap/common/properties/config/FloatField.get:()Ljava/lang/Float;
+     583: invokevirtual #163                // Method java/lang/Float.floatValue:()F
+     586: f2d
+     587: putfield      #254                // Field infoSlotFontScale:D
+     590: aload_1
+     591: getfield      #256                // Field net/minecraft/client/Minecraft.font:Lnet/minecraft/client/gui/Font;
+     594: astore        4
+     596: aload_0
+     597: aload_2
+     598: invokevirtual #260                // Method getInfoSlotLabels:(Ljourneymap/client/properties/MiniMapProperties;)Ljourneymap/api/v2/common/tuple/Tuple2;
+     601: astore        5
+     603: aload         5
+     605: invokevirtual #264                // Method journeymap/api/v2/common/tuple/Tuple2.a:()Ljava/lang/Object;
+     608: checkcast     #270                // class java/util/List
+     611: astore        6
+     613: aload         5
+     615: invokevirtual #272                // Method journeymap/api/v2/common/tuple/Tuple2.b:()Ljava/lang/Object;
+     618: checkcast     #270                // class java/util/List
+     621: astore        7
+     623: aload_0
+     624: aload         4
+     626: aload_0
+     627: getfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+     630: getfield      #275                // Field journeymap/client/ui/theme/Theme$Minimap$MinimapSpec.labelTop:Ljourneymap/client/ui/theme/Theme$LabelSpec;
+     633: aload         6
+     635: invokevirtual #281                // Method getInfoLabelAreaHeight:(Lnet/minecraft/client/gui/Font;Ljourneymap/client/ui/theme/Theme$LabelSpec;Ljava/util/List;)I
+     638: istore        8
+     640: aload_0
+     641: aload         4
+     643: aload_0
+     644: getfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+     647: getfield      #285                // Field journeymap/client/ui/theme/Theme$Minimap$MinimapSpec.labelBottom:Ljourneymap/client/ui/theme/Theme$LabelSpec;
+     650: aload         7
+     652: invokevirtual #281                // Method getInfoLabelAreaHeight:(Lnet/minecraft/client/gui/Font;Ljourneymap/client/ui/theme/Theme$LabelSpec;Ljava/util/List;)I
+     655: istore        9
+     657: aload_2
+     658: getfield      #288                // Field journeymap/client/properties/MiniMapProperties.compassFontScale:Ljourneymap/common/properties/config/FloatField;
+     661: invokevirtual #158                // Method journeymap/common/properties/config/FloatField.get:()Ljava/lang/Float;
+     664: invokevirtual #163                // Method java/lang/Float.floatValue:()F
+     667: fstore        10
+     669: fconst_0
+     670: fstore        11
+     672: aload_0
+     673: getfield      #46                 // Field showCompass:Z
+     676: ifeq          700
+     679: aload         4
+     681: aload_0
+     682: getfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+     685: getfield      #291                // Field journeymap/client/ui/theme/Theme$Minimap$MinimapSpec.compassLabel:Ljourneymap/client/ui/theme/Theme$LabelSpec;
+     688: getfield      #294                // Field journeymap/client/ui/theme/Theme$LabelSpec.shadow:Z
+     691: invokestatic  #299                // Method journeymap/client/render/draw/DrawUtil.getLabelHeight:(Lnet/minecraft/client/gui/Font;Z)I
+     694: i2f
+     695: fload         10
+     697: fmul
+     698: fstore        11
+     700: aload_3
+     701: ifnull        759
+     704: aload_0
+     705: getfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+     708: aload_3
+     709: getfield      #305                // Field journeymap/client/ui/theme/ThemeMinimapFrame.minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+     712: if_acmpne     759
+     715: aload_3
+     716: getfield      #308                // Field journeymap/client/ui/theme/ThemeMinimapFrame.theme:Ljourneymap/client/ui/theme/Theme;
+     719: aload_0
+     720: getfield      #150                // Field theme:Ljourneymap/client/ui/theme/Theme;
+     723: if_acmpne     759
+     726: aload_3
+     727: invokevirtual #309                // Method journeymap/client/ui/theme/ThemeMinimapFrame.getWidth:()D
+     730: aload_0
+     731: getfield      #218                // Field minimapWidth:I
+     734: i2d
+     735: dcmpl
+     736: ifne          759
+     739: aload_3
+     740: invokevirtual #313                // Method journeymap/client/ui/theme/ThemeMinimapFrame.getHeight:()D
+     743: aload_0
+     744: getfield      #215                // Field minimapHeight:I
+     747: i2d
+     748: dcmpl
+     749: ifne          759
+     752: aload_3
+     753: getfield      #316                // Field journeymap/client/ui/theme/ThemeMinimapFrame.clear:Z
+     756: ifeq          798
+     759: aload_3
+     760: ifnull        767
+     763: aload_3
+     764: invokevirtual #319                // Method journeymap/client/ui/theme/ThemeMinimapFrame.clear:()V
+     767: aload_0
+     768: new           #306                // class journeymap/client/ui/theme/ThemeMinimapFrame
+     771: dup
+     772: aload_0
+     773: getfield      #150                // Field theme:Ljourneymap/client/ui/theme/Theme;
+     776: aload_0
+     777: getfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+     780: aload_2
+     781: aload_0
+     782: getfield      #218                // Field minimapWidth:I
+     785: aload_0
+     786: getfield      #215                // Field minimapHeight:I
+     789: invokespecial #321                // Method journeymap/client/ui/theme/ThemeMinimapFrame."<init>":(Ljourneymap/client/ui/theme/Theme;Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;Ljourneymap/client/properties/MiniMapProperties;II)V
+     792: putfield      #324                // Field minimapFrame:Ljourneymap/client/ui/theme/ThemeMinimapFrame;
+     795: goto          803
+     798: aload_0
+     799: aload_3
+     800: putfield      #324                // Field minimapFrame:Ljourneymap/client/ui/theme/ThemeMinimapFrame;
+     803: aload_0
+     804: aload_0
+     805: aload_0
+     806: getfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+     809: getfield      #328                // Field journeymap/client/ui/theme/Theme$Minimap$MinimapSpec.margin:I
+     812: dup_x1
+     813: putfield      #331                // Field marginY:I
+     816: putfield      #334                // Field marginX:I
+     819: aload_0
+     820: getfield      #46                 // Field showCompass:Z
+     823: ifeq          952
+     826: aload_0
+     827: getfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+     830: getfield      #337                // Field journeymap/client/ui/theme/Theme$Minimap$MinimapSpec.compassPoint:Ljourneymap/client/ui/theme/Theme$ImageSpec;
+     833: ifnull        853
+     836: aload_0
+     837: getfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+     840: getfield      #337                // Field journeymap/client/ui/theme/Theme$Minimap$MinimapSpec.compassPoint:Ljourneymap/client/ui/theme/Theme$ImageSpec;
+     843: getfield      #341                // Field journeymap/client/ui/theme/Theme$ImageSpec.width:I
+     846: ifle          853
+     849: iconst_1
+     850: goto          854
+     853: iconst_0
+     854: istore        14
+     856: iload         14
+     858: ifeq          905
+     861: aload_0
+     862: getfield      #324                // Field minimapFrame:Ljourneymap/client/ui/theme/ThemeMinimapFrame;
+     865: invokevirtual #346                // Method journeymap/client/ui/theme/ThemeMinimapFrame.getCompassPoint:()Lnet/minecraft/client/renderer/texture/DynamicTexture;
+     868: astore        15
+     870: fload         11
+     872: aload_0
+     873: getfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+     876: aload         15
+     878: invokestatic  #350                // Method journeymap/client/ui/theme/ThemeCompassPoints.getCompassPointScale:(FLjourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;Lnet/minecraft/client/renderer/texture/DynamicTexture;)F
+     881: fstore        16
+     883: aload         15
+     885: checkcast     #356                // class journeymap/client/texture/TextureAccess
+     888: invokeinterface #358,  1          // InterfaceMethod journeymap/client/texture/TextureAccess.journeymap$getWidth:()I
+     893: iconst_1
+     894: ishr
+     895: i2f
+     896: fload         16
+     898: fmul
+     899: f2d
+     900: dstore        12
+     902: goto          910
+     905: fload         11
+     907: f2d
+     908: dstore        12
+     910: aload_0
+     911: aload_0
+     912: getfield      #334                // Field marginX:I
+     915: i2d
+     916: dload         12
+     918: invokestatic  #361                // Method java/lang/Math.ceil:(D)D
+     921: invokestatic  #364                // Method java/lang/Math.max:(DD)D
+     924: d2i
+     925: putfield      #334                // Field marginX:I
+     928: aload_0
+     929: aload_0
+     930: getfield      #331                // Field marginY:I
+     933: i2d
+     934: dload         12
+     936: invokestatic  #361                // Method java/lang/Math.ceil:(D)D
+     939: fload         11
+     941: fconst_2
+     942: fdiv
+     943: f2d
+     944: dadd
+     945: invokestatic  #364                // Method java/lang/Math.max:(DD)D
+     948: d2i
+     949: putfield      #331                // Field marginY:I
+     952: aload_0
+     953: getfield      #218                // Field minimapWidth:I
+     956: iconst_2
+     957: idiv
+     958: istore        12
+     960: aload_0
+     961: getfield      #215                // Field minimapHeight:I
+     964: iconst_2
+     965: idiv
+     966: istore        13
+     968: aload_1
+     969: invokevirtual #18                 // Method net/minecraft/client/Minecraft.getWindow:()Lcom/mojang/blaze3d/platform/Window;
+     972: invokevirtual #86                 // Method com/mojang/blaze3d/platform/Window.getScreenHeight:()I
+     975: istore        14
+     977: aload_1
+     978: invokevirtual #18                 // Method net/minecraft/client/Minecraft.getWindow:()Lcom/mojang/blaze3d/platform/Window;
+     981: invokevirtual #76                 // Method com/mojang/blaze3d/platform/Window.getScreenWidth:()I
+     984: istore        15
+     986: aload_1
+     987: invokevirtual #18                 // Method net/minecraft/client/Minecraft.getWindow:()Lcom/mojang/blaze3d/platform/Window;
+     990: invokevirtual #367                // Method com/mojang/blaze3d/platform/Window.getGuiScale:()D
+     993: dstore        16
+     995: getstatic     #370                // Field journeymap/client/ui/minimap/DisplayVars$1.$SwitchMap$journeymap$client$ui$minimap$Position:[I
+     998: aload_0
+     999: getfield      #65                 // Field position:Ljourneymap/client/ui/minimap/Position;
+    1002: invokevirtual #373                // Method journeymap/client/ui/minimap/Position.ordinal:()I
+    1005: iaload
+    1006: tableswitch   { // 1 to 7
+                     1: 1048
+                     2: 1136
+                     3: 1233
+                     4: 1314
+                     5: 1404
+                     6: 1443
+                     7: 1504
+               default: 1504
+          }
+    1048: aload_0
+    1049: getfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+    1052: getfield      #374                // Field journeymap/client/ui/theme/Theme$Minimap$MinimapSpec.labelBottomInside:Z
+    1055: ifne          1069
+    1058: aload_0
+    1059: dup
+    1060: getfield      #331                // Field marginY:I
+    1063: iload         9
+    1065: iadd
+    1066: putfield      #331                // Field marginY:I
+    1069: aload_0
+    1070: iload         15
+    1072: aload_0
+    1073: getfield      #218                // Field minimapWidth:I
+    1076: isub
+    1077: aload_0
+    1078: getfield      #334                // Field marginX:I
+    1081: isub
+    1082: putfield      #377                // Field textureX:I
+    1085: aload_0
+    1086: iload         14
+    1088: aload_0
+    1089: getfield      #215                // Field minimapHeight:I
+    1092: isub
+    1093: aload_0
+    1094: getfield      #331                // Field marginY:I
+    1097: isub
+    1098: putfield      #380                // Field textureY:I
+    1101: aload_0
+    1102: iload         15
+    1104: iconst_2
+    1105: idiv
+    1106: iload         12
+    1108: isub
+    1109: aload_0
+    1110: getfield      #334                // Field marginX:I
+    1113: isub
+    1114: putfield      #383                // Field translateX:I
+    1117: aload_0
+    1118: iload         14
+    1120: iconst_2
+    1121: idiv
+    1122: iload         13
+    1124: isub
+    1125: aload_0
+    1126: getfield      #331                // Field marginY:I
+    1129: isub
+    1130: putfield      #386                // Field translateY:I
+    1133: goto          1605
+    1136: aload_0
+    1137: getfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+    1140: getfield      #389                // Field journeymap/client/ui/theme/Theme$Minimap$MinimapSpec.labelTopInside:Z
+    1143: ifne          1180
+    1146: aload_0
+    1147: dup
+    1148: getfield      #331                // Field marginY:I
+    1151: iload         8
+    1153: iadd
+    1154: putfield      #331                // Field marginY:I
+    1157: aload_0
+    1158: aload_0
+    1159: getfield      #331                // Field marginY:I
+    1162: iload         8
+    1164: iconst_2
+    1165: aload_0
+    1166: getfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+    1169: getfield      #328                // Field journeymap/client/ui/theme/Theme$Minimap$MinimapSpec.margin:I
+    1172: imul
+    1173: iadd
+    1174: invokestatic  #392                // Method java/lang/Math.max:(II)I
+    1177: putfield      #331                // Field marginY:I
+    1180: aload_0
+    1181: aload_0
+    1182: getfield      #334                // Field marginX:I
+    1185: putfield      #377                // Field textureX:I
+    1188: aload_0
+    1189: aload_0
+    1190: getfield      #331                // Field marginY:I
+    1193: putfield      #380                // Field textureY:I
+    1196: aload_0
+    1197: iload         15
+    1199: iconst_2
+    1200: idiv
+    1201: ineg
+    1202: iload         12
+    1204: iadd
+    1205: aload_0
+    1206: getfield      #334                // Field marginX:I
+    1209: iadd
+    1210: putfield      #383                // Field translateX:I
+    1213: aload_0
+    1214: iload         14
+    1216: iconst_2
+    1217: idiv
+    1218: ineg
+    1219: iload         13
+    1221: iadd
+    1222: aload_0
+    1223: getfield      #331                // Field marginY:I
+    1226: iadd
+    1227: putfield      #386                // Field translateY:I
+    1230: goto          1605
+    1233: aload_0
+    1234: getfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+    1237: getfield      #374                // Field journeymap/client/ui/theme/Theme$Minimap$MinimapSpec.labelBottomInside:Z
+    1240: ifne          1254
+    1243: aload_0
+    1244: dup
+    1245: getfield      #331                // Field marginY:I
+    1248: iload         9
+    1250: iadd
+    1251: putfield      #331                // Field marginY:I
+    1254: aload_0
+    1255: aload_0
+    1256: getfield      #334                // Field marginX:I
+    1259: putfield      #377                // Field textureX:I
+    1262: aload_0
+    1263: iload         14
+    1265: aload_0
+    1266: getfield      #215                // Field minimapHeight:I
+    1269: isub
+    1270: aload_0
+    1271: getfield      #331                // Field marginY:I
+    1274: isub
+    1275: putfield      #380                // Field textureY:I
+    1278: aload_0
+    1279: iload         15
+    1281: iconst_2
+    1282: idiv
+    1283: ineg
+    1284: iload         12
+    1286: iadd
+    1287: aload_0
+    1288: getfield      #334                // Field marginX:I
+    1291: iadd
+    1292: putfield      #383                // Field translateX:I
+    1295: aload_0
+    1296: iload         14
+    1298: iconst_2
+    1299: idiv
+    1300: iload         13
+    1302: isub
+    1303: aload_0
+    1304: getfield      #331                // Field marginY:I
+    1307: isub
+    1308: putfield      #386                // Field translateY:I
+    1311: goto          1605
+    1314: aload_0
+    1315: getfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+    1318: getfield      #389                // Field journeymap/client/ui/theme/Theme$Minimap$MinimapSpec.labelTopInside:Z
+    1321: ifne          1358
+    1324: aload_0
+    1325: dup
+    1326: getfield      #331                // Field marginY:I
+    1329: iload         8
+    1331: iadd
+    1332: putfield      #331                // Field marginY:I
+    1335: aload_0
+    1336: aload_0
+    1337: getfield      #331                // Field marginY:I
+    1340: iload         8
+    1342: iconst_2
+    1343: aload_0
+    1344: getfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+    1347: getfield      #328                // Field journeymap/client/ui/theme/Theme$Minimap$MinimapSpec.margin:I
+    1350: imul
+    1351: iadd
+    1352: invokestatic  #392                // Method java/lang/Math.max:(II)I
+    1355: putfield      #331                // Field marginY:I
+    1358: aload_0
+    1359: iload         15
+    1361: aload_0
+    1362: getfield      #218                // Field minimapWidth:I
+    1365: isub
+    1366: iconst_2
+    1367: idiv
+    1368: putfield      #377                // Field textureX:I
+    1371: aload_0
+    1372: aload_0
+    1373: getfield      #331                // Field marginY:I
+    1376: putfield      #380                // Field textureY:I
+    1379: aload_0
+    1380: iconst_0
+    1381: putfield      #383                // Field translateX:I
+    1384: aload_0
+    1385: iload         14
+    1387: iconst_2
+    1388: idiv
+    1389: ineg
+    1390: iload         13
+    1392: iadd
+    1393: aload_0
+    1394: getfield      #331                // Field marginY:I
+    1397: iadd
+    1398: putfield      #386                // Field translateY:I
+    1401: goto          1605
+    1404: aload_0
+    1405: iload         15
+    1407: aload_0
+    1408: getfield      #218                // Field minimapWidth:I
+    1411: isub
+    1412: iconst_2
+    1413: idiv
+    1414: putfield      #377                // Field textureX:I
+    1417: aload_0
+    1418: iload         14
+    1420: aload_0
+    1421: getfield      #215                // Field minimapHeight:I
+    1424: isub
+    1425: iconst_2
+    1426: idiv
+    1427: putfield      #380                // Field textureY:I
+    1430: aload_0
+    1431: iconst_0
+    1432: putfield      #383                // Field translateX:I
+    1435: aload_0
+    1436: iconst_0
+    1437: putfield      #386                // Field translateY:I
+    1440: goto          1605
+    1443: aload_0
+    1444: iload         15
+    1446: i2f
+    1447: aload_0
+    1448: getfield      #174                // Field positionX:F
+    1451: fmul
+    1452: f2i
+    1453: putfield      #377                // Field textureX:I
+    1456: aload_0
+    1457: iload         14
+    1459: i2f
+    1460: aload_0
+    1461: getfield      #169                // Field positionY:F
+    1464: fmul
+    1465: f2i
+    1466: putfield      #380                // Field textureY:I
+    1469: aload_0
+    1470: aload_0
+    1471: getfield      #377                // Field textureX:I
+    1474: iload         15
+    1476: iconst_2
+    1477: idiv
+    1478: isub
+    1479: iload         12
+    1481: iadd
+    1482: putfield      #383                // Field translateX:I
+    1485: aload_0
+    1486: aload_0
+    1487: getfield      #380                // Field textureY:I
+    1490: iload         14
+    1492: iconst_2
+    1493: idiv
+    1494: isub
+    1495: iload         13
+    1497: iadd
+    1498: putfield      #386                // Field translateY:I
+    1501: goto          1605
+    1504: aload_0
+    1505: getfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+    1508: getfield      #389                // Field journeymap/client/ui/theme/Theme$Minimap$MinimapSpec.labelTopInside:Z
+    1511: ifne          1548
+    1514: aload_0
+    1515: dup
+    1516: getfield      #331                // Field marginY:I
+    1519: iload         8
+    1521: iadd
+    1522: putfield      #331                // Field marginY:I
+    1525: aload_0
+    1526: aload_0
+    1527: getfield      #331                // Field marginY:I
+    1530: iload         8
+    1532: iconst_2
+    1533: aload_0
+    1534: getfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+    1537: getfield      #328                // Field journeymap/client/ui/theme/Theme$Minimap$MinimapSpec.margin:I
+    1540: imul
+    1541: iadd
+    1542: invokestatic  #392                // Method java/lang/Math.max:(II)I
+    1545: putfield      #331                // Field marginY:I
+    1548: aload_0
+    1549: iload         15
+    1551: aload_0
+    1552: getfield      #218                // Field minimapWidth:I
+    1555: isub
+    1556: aload_0
+    1557: getfield      #334                // Field marginX:I
+    1560: isub
+    1561: putfield      #377                // Field textureX:I
+    1564: aload_0
+    1565: aload_0
+    1566: getfield      #331                // Field marginY:I
+    1569: putfield      #380                // Field textureY:I
+    1572: aload_0
+    1573: iload         15
+    1575: iconst_2
+    1576: idiv
+    1577: iload         12
+    1579: isub
+    1580: aload_0
+    1581: getfield      #334                // Field marginX:I
+    1584: isub
+    1585: putfield      #383                // Field translateX:I
+    1588: aload_0
+    1589: iload         14
+    1591: iconst_2
+    1592: idiv
+    1593: ineg
+    1594: iload         13
+    1596: iadd
+    1597: aload_0
+    1598: getfield      #331                // Field marginY:I
+    1601: iadd
+    1602: putfield      #386                // Field translateY:I
+    1605: aload_0
+    1606: getfield      #324                // Field minimapFrame:Ljourneymap/client/ui/theme/ThemeMinimapFrame;
+    1609: aload_0
+    1610: getfield      #377                // Field textureX:I
+    1613: i2d
+    1614: aload_0
+    1615: getfield      #380                // Field textureY:I
+    1618: i2d
+    1619: invokevirtual #395                // Method journeymap/client/ui/theme/ThemeMinimapFrame.setPosition:(DD)V
+    1622: aload_0
+    1623: new           #399                // class java/awt/geom/Point2D$Double
+    1626: dup
+    1627: aload_0
+    1628: getfield      #377                // Field textureX:I
+    1631: iload         12
+    1633: iadd
+    1634: i2d
+    1635: aload_0
+    1636: getfield      #380                // Field textureY:I
+    1639: iload         13
+    1641: iadd
+    1642: i2d
+    1643: invokespecial #401                // Method java/awt/geom/Point2D$Double."<init>":(DD)V
+    1646: putfield      #403                // Field centerPoint:Ljava/awt/geom/Point2D$Double;
+    1649: aload_0
+    1650: new           #351                // class journeymap/client/ui/theme/ThemeCompassPoints
+    1653: dup
+    1654: aload_0
+    1655: getfield      #377                // Field textureX:I
+    1658: aload_0
+    1659: getfield      #380                // Field textureY:I
+    1662: iload         12
+    1664: iload         13
+    1666: aload_0
+    1667: getfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+    1670: aload_2
+    1671: aload_0
+    1672: getfield      #324                // Field minimapFrame:Ljourneymap/client/ui/theme/ThemeMinimapFrame;
+    1675: invokevirtual #346                // Method journeymap/client/ui/theme/ThemeMinimapFrame.getCompassPoint:()Lnet/minecraft/client/renderer/texture/DynamicTexture;
+    1678: fload         11
+    1680: invokespecial #407                // Method journeymap/client/ui/theme/ThemeCompassPoints."<init>":(IIIILjourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;Ljourneymap/client/properties/MiniMapProperties;Lnet/minecraft/client/renderer/texture/DynamicTexture;F)V
+    1683: putfield      #410                // Field minimapCompassPoints:Ljourneymap/client/ui/theme/ThemeCompassPoints;
+    1686: aload_0
+    1687: getfield      #206                // Field shape:Ljourneymap/client/ui/minimap/Shape;
+    1690: getstatic     #234                // Field journeymap/client/ui/minimap/Shape.Circle:Ljourneymap/client/ui/minimap/Shape;
+    1693: if_acmpne     1713
+    1696: aload_0
+    1697: aload_0
+    1698: getfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+    1701: checkcast     #414                // class journeymap/client/ui/theme/Theme$Minimap$MinimapCircle
+    1704: getfield      #416                // Field journeymap/client/ui/theme/Theme$Minimap$MinimapCircle.rotates:Z
+    1707: putfield      #419                // Field frameRotates:Z
+    1710: goto          1718
+    1713: aload_0
+    1714: iconst_0
+    1715: putfield      #419                // Field frameRotates:Z
+    1718: aload_0
+    1719: getfield      #377                // Field textureX:I
+    1722: aload_0
+    1723: getfield      #218                // Field minimapWidth:I
+    1726: iconst_1
+    1727: ishr
+    1728: iadd
+    1729: i2d
+    1730: d2i
+    1731: istore        18
+    1733: iload         8
+    1735: ifle          1799
+    1738: aload_0
+    1739: getfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+    1742: getfield      #389                // Field journeymap/client/ui/theme/Theme$Minimap$MinimapSpec.labelTopInside:Z
+    1745: ifeq          1763
+    1748: aload_0
+    1749: getfield      #380                // Field textureY:I
+    1752: aload_0
+    1753: getfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+    1756: getfield      #328                // Field journeymap/client/ui/theme/Theme$Minimap$MinimapSpec.margin:I
+    1759: iadd
+    1760: goto          1778
+    1763: aload_0
+    1764: getfield      #380                // Field textureY:I
+    1767: aload_0
+    1768: getfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+    1771: getfield      #328                // Field journeymap/client/ui/theme/Theme$Minimap$MinimapSpec.margin:I
+    1774: isub
+    1775: iload         8
+    1777: isub
+    1778: istore        19
+    1780: aload_0
+    1781: aload         4
+    1783: iload         18
+    1785: iload         19
+    1787: aload_0
+    1788: getfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+    1791: getfield      #275                // Field journeymap/client/ui/theme/Theme$Minimap$MinimapSpec.labelTop:Ljourneymap/client/ui/theme/Theme$LabelSpec;
+    1794: aload         6
+    1796: invokevirtual #422                // Method positionLabels:(Lnet/minecraft/client/gui/Font;IILjourneymap/client/ui/theme/Theme$LabelSpec;Ljava/util/List;)V
+    1799: iload         9
+    1801: ifle          1870
+    1804: aload_0
+    1805: getfield      #380                // Field textureY:I
+    1808: aload_0
+    1809: getfield      #215                // Field minimapHeight:I
+    1812: iadd
+    1813: istore        19
+    1815: iload         19
+    1817: aload_0
+    1818: getfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+    1821: getfield      #374                // Field journeymap/client/ui/theme/Theme$Minimap$MinimapSpec.labelBottomInside:Z
+    1824: ifeq          1841
+    1827: aload_0
+    1828: getfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+    1831: getfield      #328                // Field journeymap/client/ui/theme/Theme$Minimap$MinimapSpec.margin:I
+    1834: ineg
+    1835: iload         9
+    1837: isub
+    1838: goto          1848
+    1841: aload_0
+    1842: getfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+    1845: getfield      #328                // Field journeymap/client/ui/theme/Theme$Minimap$MinimapSpec.margin:I
+    1848: iadd
+    1849: istore        19
+    1851: aload_0
+    1852: aload         4
+    1854: iload         18
+    1856: iload         19
+    1858: aload_0
+    1859: getfield      #208                // Field minimapSpec:Ljourneymap/client/ui/theme/Theme$Minimap$MinimapSpec;
+    1862: getfield      #285                // Field journeymap/client/ui/theme/Theme$Minimap$MinimapSpec.labelBottom:Ljourneymap/client/ui/theme/Theme$LabelSpec;
+    1865: aload         7
+    1867: invokevirtual #422                // Method positionLabels:(Lnet/minecraft/client/gui/Font;IILjourneymap/client/ui/theme/Theme$LabelSpec;Ljava/util/List;)V
+    1870: invokestatic  #426                // Method journeymap/client/ui/theme/ThemeLabelSource.resetCaches:()V
+    1873: return
+
+  public journeymap.client.ui.minimap.Shape getShape();
+    Code:
+       0: aload_0
+       1: getfield      #206                // Field shape:Ljourneymap/client/ui/minimap/Shape;
+       4: areturn
+
+  public journeymap.api.v2.common.tuple.Tuple2<java.util.List<journeymap.client.ui.theme.ThemeLabelSource$InfoSlot>, java.util.List<journeymap.client.ui.theme.ThemeLabelSource$InfoSlot>> getInfoSlotLabels(journeymap.client.properties.MiniMapProperties);
+    Code:
+       0: new           #7                  // class java/util/ArrayList
+       3: dup
+       4: invokespecial #431                // Method java/util/ArrayList."<init>":()V
+       7: astore_2
+       8: new           #7                  // class java/util/ArrayList
+      11: dup
+      12: invokespecial #431                // Method java/util/ArrayList."<init>":()V
+      15: astore_3
+      16: new           #432                // class java/util/LinkedHashMap
+      19: dup
+      20: invokespecial #434                // Method java/util/LinkedHashMap."<init>":()V
+      23: astore        4
+      25: aload         4
+      27: aload_1
+      28: getfield      #435                // Field journeymap/client/properties/MiniMapProperties.info1Label:Ljourneymap/common/properties/config/StringField;
+      31: invokevirtual #126                // Method journeymap/common/properties/config/StringField.get:()Ljava/lang/String;
+      34: aload_1
+      35: getfield      #438                // Field journeymap/client/properties/MiniMapProperties.info1LabelPosition:Ljourneymap/common/properties/config/EnumField;
+      38: invokevirtual #58                 // Method journeymap/common/properties/config/EnumField.get:()Ljava/lang/Enum;
+      41: checkcast     #441                // class journeymap/api/v2/client/event/InfoSlotDisplayEvent$Position
+      44: invokevirtual #443                // Method java/util/LinkedHashMap.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      47: pop
+      48: aload         4
+      50: aload_1
+      51: getfield      #447                // Field journeymap/client/properties/MiniMapProperties.info2Label:Ljourneymap/common/properties/config/StringField;
+      54: invokevirtual #126                // Method journeymap/common/properties/config/StringField.get:()Ljava/lang/String;
+      57: aload_1
+      58: getfield      #450                // Field journeymap/client/properties/MiniMapProperties.info2LabelPosition:Ljourneymap/common/properties/config/EnumField;
+      61: invokevirtual #58                 // Method journeymap/common/properties/config/EnumField.get:()Ljava/lang/Enum;
+      64: checkcast     #441                // class journeymap/api/v2/client/event/InfoSlotDisplayEvent$Position
+      67: invokevirtual #443                // Method java/util/LinkedHashMap.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      70: pop
+      71: aload         4
+      73: aload_1
+      74: getfield      #453                // Field journeymap/client/properties/MiniMapProperties.info3Label:Ljourneymap/common/properties/config/StringField;
+      77: invokevirtual #126                // Method journeymap/common/properties/config/StringField.get:()Ljava/lang/String;
+      80: aload_1
+      81: getfield      #456                // Field journeymap/client/properties/MiniMapProperties.info3LabelPosition:Ljourneymap/common/properties/config/EnumField;
+      84: invokevirtual #58                 // Method journeymap/common/properties/config/EnumField.get:()Ljava/lang/Enum;
+      87: checkcast     #441                // class journeymap/api/v2/client/event/InfoSlotDisplayEvent$Position
+      90: invokevirtual #443                // Method java/util/LinkedHashMap.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      93: pop
+      94: aload         4
+      96: aload_1
+      97: getfield      #459                // Field journeymap/client/properties/MiniMapProperties.info4Label:Ljourneymap/common/properties/config/StringField;
+     100: invokevirtual #126                // Method journeymap/common/properties/config/StringField.get:()Ljava/lang/String;
+     103: aload_1
+     104: getfield      #462                // Field journeymap/client/properties/MiniMapProperties.info4LabelPosition:Ljourneymap/common/properties/config/EnumField;
+     107: invokevirtual #58                 // Method journeymap/common/properties/config/EnumField.get:()Ljava/lang/Enum;
+     110: checkcast     #441                // class journeymap/api/v2/client/event/InfoSlotDisplayEvent$Position
+     113: invokevirtual #443                // Method java/util/LinkedHashMap.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     116: pop
+     117: new           #465                // class journeymap/api/v2/client/event/InfoSlotDisplayEvent
+     120: dup
+     121: aload         4
+     123: invokespecial #467                // Method journeymap/api/v2/client/event/InfoSlotDisplayEvent."<init>":(Ljava/util/LinkedHashMap;)V
+     126: invokestatic  #470                // Method journeymap/api/services/EventBus.post:(Ljourneymap/api/v2/common/event/impl/JourneyMapEvent;)Ljourneymap/api/v2/common/event/impl/JourneyMapEvent;
+     129: pop
+     130: aload         4
+     132: aload_2
+     133: aload_3
+     134: invokedynamic #476,  0            // InvokeDynamic #0:accept:(Ljava/util/ArrayList;Ljava/util/ArrayList;)Ljava/util/function/BiConsumer;
+     139: invokevirtual #480                // Method java/util/LinkedHashMap.forEach:(Ljava/util/function/BiConsumer;)V
+     142: new           #265                // class journeymap/api/v2/common/tuple/Tuple2
+     145: dup
+     146: aload_2
+     147: aload_3
+     148: invokespecial #484                // Method journeymap/api/v2/common/tuple/Tuple2."<init>":(Ljava/lang/Object;Ljava/lang/Object;)V
+     151: areturn
+
+  public int getInfoLabelAreaHeight(net.minecraft.client.gui.Font, journeymap.client.ui.theme.Theme$LabelSpec, java.util.List<journeymap.client.ui.theme.ThemeLabelSource$InfoSlot>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokevirtual #487                // Method getInfoLabelHeight:(Lnet/minecraft/client/gui/Font;Ljourneymap/client/ui/theme/Theme$LabelSpec;)I
+       6: istore        4
+       8: iconst_0
+       9: istore        5
+      11: aload_3
+      12: invokeinterface #491,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      17: astore        6
+      19: aload         6
+      21: invokeinterface #495,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      26: ifeq          63
+      29: aload         6
+      31: invokeinterface #500,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      36: checkcast     #503                // class journeymap/client/ui/theme/ThemeLabelSource$InfoSlot
+      39: astore        7
+      41: iload         5
+      43: aload         7
+      45: invokevirtual #505                // Method journeymap/client/ui/theme/ThemeLabelSource$InfoSlot.isShown:()Z
+      48: ifeq          56
+      51: iload         4
+      53: goto          57
+      56: iconst_0
+      57: iadd
+      58: istore        5
+      60: goto          19
+      63: iload         5
+      65: ireturn
+
+  private int getInfoLabelHeight(net.minecraft.client.gui.Font, journeymap.client.ui.theme.Theme$LabelSpec);
+    Code:
+       0: aload_1
+       1: aload_2
+       2: getfield      #294                // Field journeymap/client/ui/theme/Theme$LabelSpec.shadow:Z
+       5: invokestatic  #299                // Method journeymap/client/render/draw/DrawUtil.getLabelHeight:(Lnet/minecraft/client/gui/Font;Z)I
+       8: aload_2
+       9: getfield      #508                // Field journeymap/client/ui/theme/Theme$LabelSpec.margin:I
+      12: iadd
+      13: i2d
+      14: aload_0
+      15: getfield      #254                // Field infoSlotFontScale:D
+      18: dmul
+      19: d2i
+      20: ireturn
+
+  private void positionLabels(net.minecraft.client.gui.Font, int, int, journeymap.client.ui.theme.Theme$LabelSpec, java.util.List<journeymap.client.ui.theme.ThemeLabelSource$InfoSlot>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload         4
+       4: invokevirtual #487                // Method getInfoLabelHeight:(Lnet/minecraft/client/gui/Font;Ljourneymap/client/ui/theme/Theme$LabelSpec;)I
+       7: istore        6
+       9: iload_3
+      10: istore        7
+      12: aload         5
+      14: invokeinterface #491,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      19: astore        8
+      21: aload         8
+      23: invokeinterface #495,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      28: ifeq          113
+      31: aload         8
+      33: invokeinterface #500,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      38: checkcast     #503                // class journeymap/client/ui/theme/ThemeLabelSource$InfoSlot
+      41: astore        9
+      43: aload         9
+      45: invokevirtual #505                // Method journeymap/client/ui/theme/ThemeLabelSource$InfoSlot.isShown:()Z
+      48: ifeq          110
+      51: new           #509                // class journeymap/client/ui/minimap/LabelVars
+      54: dup
+      55: aload_0
+      56: iload_2
+      57: i2d
+      58: iload         7
+      60: i2d
+      61: getstatic     #511                // Field journeymap/client/render/draw/DrawUtil$HAlign.Center:Ljourneymap/client/render/draw/DrawUtil$HAlign;
+      64: getstatic     #517                // Field journeymap/client/render/draw/DrawUtil$VAlign.Below:Ljourneymap/client/render/draw/DrawUtil$VAlign;
+      67: aload_0
+      68: getfield      #254                // Field infoSlotFontScale:D
+      71: aload         4
+      73: invokespecial #523                // Method journeymap/client/ui/minimap/LabelVars."<init>":(Ljourneymap/client/ui/minimap/DisplayVars;DDLjourneymap/client/render/draw/DrawUtil$HAlign;Ljourneymap/client/render/draw/DrawUtil$VAlign;DLjourneymap/client/ui/theme/Theme$LabelSpec;)V
+      76: astore        10
+      78: new           #265                // class journeymap/api/v2/common/tuple/Tuple2
+      81: dup
+      82: aload         10
+      84: aload         9
+      86: invokespecial #484                // Method journeymap/api/v2/common/tuple/Tuple2."<init>":(Ljava/lang/Object;Ljava/lang/Object;)V
+      89: astore        11
+      91: aload_0
+      92: getfield      #12                 // Field labels:Ljava/util/List;
+      95: aload         11
+      97: invokeinterface #526,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+     102: pop
+     103: iload         7
+     105: iload         6
+     107: iadd
+     108: istore        7
+     110: goto          21
+     113: return
+
+  public void drawInfoLabels(net.minecraft.client.gui.GuiGraphics, net.minecraft.client.renderer.MultiBufferSource, long);
+    Code:
+       0: aload_0
+       1: getfield      #12                 // Field labels:Ljava/util/List;
+       4: invokeinterface #491,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+       9: astore        5
+      11: aload         5
+      13: invokeinterface #495,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      18: ifeq          61
+      21: aload         5
+      23: invokeinterface #500,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      28: checkcast     #265                // class journeymap/api/v2/common/tuple/Tuple2
+      31: astore        6
+      33: aload         6
+      35: invokevirtual #264                // Method journeymap/api/v2/common/tuple/Tuple2.a:()Ljava/lang/Object;
+      38: checkcast     #509                // class journeymap/client/ui/minimap/LabelVars
+      41: aload_1
+      42: aload_2
+      43: aload         6
+      45: invokevirtual #272                // Method journeymap/api/v2/common/tuple/Tuple2.b:()Ljava/lang/Object;
+      48: checkcast     #503                // class journeymap/client/ui/theme/ThemeLabelSource$InfoSlot
+      51: lload_3
+      52: invokevirtual #530                // Method journeymap/client/ui/theme/ThemeLabelSource$InfoSlot.getLabelText:(J)Lnet/minecraft/network/chat/Component;
+      55: invokevirtual #534                // Method journeymap/client/ui/minimap/LabelVars.draw:(Lnet/minecraft/client/gui/GuiGraphics;Lnet/minecraft/client/renderer/MultiBufferSource;Lnet/minecraft/network/chat/Component;)V
+      58: goto          11
+      61: return
+
+  journeymap.client.ui.minimap.DisplayVars$MapPresetStatus getMapPresetStatus(journeymap.client.model.map.MapType, int);
+    Code:
+       0: aload_0
+       1: getfield      #538                // Field mapPresetStatus:Ljourneymap/client/ui/minimap/DisplayVars$MapPresetStatus;
+       4: ifnull        32
+       7: aload_1
+       8: aload_0
+       9: getfield      #538                // Field mapPresetStatus:Ljourneymap/client/ui/minimap/DisplayVars$MapPresetStatus;
+      12: getfield      #542                // Field journeymap/client/ui/minimap/DisplayVars$MapPresetStatus.mapType:Ljourneymap/client/model/map/MapType;
+      15: invokevirtual #548                // Method journeymap/client/model/map/MapType.equals:(Ljava/lang/Object;)Z
+      18: ifeq          32
+      21: iload_2
+      22: aload_0
+      23: getfield      #538                // Field mapPresetStatus:Ljourneymap/client/ui/minimap/DisplayVars$MapPresetStatus;
+      26: getfield      #553                // Field journeymap/client/ui/minimap/DisplayVars$MapPresetStatus.miniMapId:I
+      29: if_icmpeq     46
+      32: aload_0
+      33: new           #543                // class journeymap/client/ui/minimap/DisplayVars$MapPresetStatus
+      36: dup
+      37: aload_0
+      38: aload_1
+      39: iload_2
+      40: invokespecial #556                // Method journeymap/client/ui/minimap/DisplayVars$MapPresetStatus."<init>":(Ljourneymap/client/ui/minimap/DisplayVars;Ljourneymap/client/model/map/MapType;I)V
+      43: putfield      #538                // Field mapPresetStatus:Ljourneymap/client/ui/minimap/DisplayVars$MapPresetStatus;
+      46: aload_0
+      47: getfield      #538                // Field mapPresetStatus:Ljourneymap/client/ui/minimap/DisplayVars$MapPresetStatus;
+      50: areturn
+
+  journeymap.client.ui.minimap.DisplayVars$MapTypeStatus getMapTypeStatus(journeymap.client.model.map.MapType);
+    Code:
+       0: aload_0
+       1: getfield      #559                // Field mapTypeStatus:Ljourneymap/client/ui/minimap/DisplayVars$MapTypeStatus;
+       4: ifnull        21
+       7: aload_1
+       8: aload_0
+       9: getfield      #559                // Field mapTypeStatus:Ljourneymap/client/ui/minimap/DisplayVars$MapTypeStatus;
+      12: getfield      #563                // Field journeymap/client/ui/minimap/DisplayVars$MapTypeStatus.mapType:Ljourneymap/client/model/map/MapType;
+      15: invokevirtual #548                // Method journeymap/client/model/map/MapType.equals:(Ljava/lang/Object;)Z
+      18: ifne          34
+      21: aload_0
+      22: new           #564                // class journeymap/client/ui/minimap/DisplayVars$MapTypeStatus
+      25: dup
+      26: aload_0
+      27: aload_1
+      28: invokespecial #566                // Method journeymap/client/ui/minimap/DisplayVars$MapTypeStatus."<init>":(Ljourneymap/client/ui/minimap/DisplayVars;Ljourneymap/client/model/map/MapType;)V
+      31: putfield      #559                // Field mapTypeStatus:Ljourneymap/client/ui/minimap/DisplayVars$MapTypeStatus;
+      34: aload_0
+      35: getfield      #559                // Field mapTypeStatus:Ljourneymap/client/ui/minimap/DisplayVars$MapTypeStatus;
+      38: areturn
+
+  private static void lambda$getInfoSlotLabels$0(java.util.ArrayList, java.util.ArrayList, java.lang.String, journeymap.api.v2.client.event.InfoSlotDisplayEvent$Position);
+    Code:
+       0: getstatic     #569                // Field journeymap/api/v2/client/event/InfoSlotDisplayEvent$Position.Top:Ljourneymap/api/v2/client/event/InfoSlotDisplayEvent$Position;
+       3: aload_3
+       4: if_acmpne     24
+       7: aload_0
+       8: getstatic     #573                // Field journeymap/client/ui/theme/ThemeLabelSource.values:Ljava/util/Map;
+      11: aload_2
+      12: invokeinterface #577,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      17: checkcast     #503                // class journeymap/client/ui/theme/ThemeLabelSource$InfoSlot
+      20: invokevirtual #582                // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+      23: pop
+      24: getstatic     #583                // Field journeymap/api/v2/client/event/InfoSlotDisplayEvent$Position.Bottom:Ljourneymap/api/v2/client/event/InfoSlotDisplayEvent$Position;
+      27: aload_3
+      28: if_acmpne     48
+      31: aload_1
+      32: getstatic     #573                // Field journeymap/client/ui/theme/ThemeLabelSource.values:Ljava/util/Map;
+      35: aload_2
+      36: invokeinterface #577,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      41: checkcast     #503                // class journeymap/client/ui/theme/ThemeLabelSource$InfoSlot
+      44: invokevirtual #582                // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+      47: pop
+      48: return
+}

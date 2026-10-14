@@ -1,0 +1,292 @@
+{
+  "status": "passed",
+  "backupFilesVerified": 75,
+  "sourceAssetsUnchanged": false,
+  "sourceChangedFiles": [
+    "art/remembrance/catalog.json",
+    "art/remembrance/preview-validation.json",
+    "art/remembrance/preview.html",
+    "art/remembrance/previews/blasphemous_blade-blade-closeup.png",
+    "art/remembrance/previews/blasphemous_blade-grip-closeup.png",
+    "art/remembrance/previews/blasphemous_blade.png",
+    "art/remembrance/previews/detail-sheet.png",
+    "art/remembrance/previews/hand_of_malenia-grip-closeup.png",
+    "art/remembrance/previews/hand_of_malenia.png",
+    "art/remembrance/previews/malikeths_black_blade-grip-closeup.png",
+    "art/remembrance/previews/malikeths_black_blade.png",
+    "art/remembrance/previews/marikas_hammer.png",
+    "art/remembrance/previews/mobile-sacred-relic.png",
+    "art/remembrance/previews/mobile-sheet.png",
+    "art/remembrance/previews/mohgwyns_sacred_spear.png",
+    "art/remembrance/previews/morgotts_cursed_sword-grip-closeup.png",
+    "art/remembrance/previews/morgotts_cursed_sword.png",
+    "art/remembrance/previews/sacred-relic-bounds.png",
+    "art/remembrance/previews/sacred_relic_sword-blade-closeup.png",
+    "art/remembrance/previews/sacred_relic_sword-grip-closeup.png",
+    "art/remembrance/previews/sacred_relic_sword.png",
+    "art/remembrance/previews/starscourge_greatsword-blade-closeup.png",
+    "art/remembrance/previews/starscourge_greatsword-grip-closeup.png",
+    "art/remembrance/previews/starscourge_greatsword.png",
+    "art/remembrance/previews/weapon-sheet.png",
+    "art/remembrance/sacred_relic_sword.bbmodel",
+    "art/remembrance/sacred_relic_sword.model.json",
+    "art/remembrance/validation.json"
+  ],
+  "sourceRepair": {
+    "model": "sacred_relic_sword.model.json",
+    "beforeSha256": "70bd4a326ab51d099bace93d1ccf5ddd029b6b807266731e7c031ae8c285e230",
+    "afterSha256": "6705720d64eb094c9bb3b1ad51ca08c58f1dcf8ea61697ceae499c10782144ba",
+    "changes": "only broad blade-root shoulders and their structural checks",
+    "otherSevenModelsUnchanged": true,
+    "sourceAtlasUnchanged": true
+  },
+  "beforeSmoothingFilesVerified": 154,
+  "views": [
+    "front",
+    "oblique",
+    "side",
+    "back"
+  ],
+  "resolution": [
+    512,
+    768
+  ],
+  "thresholds": {
+    "front": 0.9,
+    "oblique": 0.85,
+    "side": 0.75,
+    "back": 0.9,
+    "beforeSmoothing": "same four thresholds as source"
+  },
+  "compatibilityNote": "R3 restores cuboids: baked mesh must match cuboid silhouette >= .995; source root correction is explicitly hashed and other source models are unchanged.",
+  "metric": "aligned opaque silhouette intersection over union, no paired-preview offsets",
+  "results": [
+    {
+      "id": "eldencombat:sacred_relic_sword",
+      "view": "front",
+      "silhouetteIoU": 0.9836952199156923,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 0.9887622411301975
+    },
+    {
+      "id": "eldencombat:sacred_relic_sword",
+      "view": "oblique",
+      "silhouetteIoU": 0.888357619914997,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 0.9932205971968312
+    },
+    {
+      "id": "eldencombat:sacred_relic_sword",
+      "view": "side",
+      "silhouetteIoU": 0.9509724473257699,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 1
+    },
+    {
+      "id": "eldencombat:sacred_relic_sword",
+      "view": "back",
+      "silhouetteIoU": 0.983615684403086,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 0.9887613390061812
+    },
+    {
+      "id": "eldencombat:marikas_hammer",
+      "view": "front",
+      "silhouetteIoU": 0.9066213042276872,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 1
+    },
+    {
+      "id": "eldencombat:marikas_hammer",
+      "view": "oblique",
+      "silhouetteIoU": 0.8673558095057455,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 1
+    },
+    {
+      "id": "eldencombat:marikas_hammer",
+      "view": "side",
+      "silhouetteIoU": 0.9606980783237156,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 1
+    },
+    {
+      "id": "eldencombat:marikas_hammer",
+      "view": "back",
+      "silhouetteIoU": 0.9065144554592242,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 1
+    },
+    {
+      "id": "eldencombat:malikeths_black_blade",
+      "view": "front",
+      "silhouetteIoU": 0.9656032986111112,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 1
+    },
+    {
+      "id": "eldencombat:malikeths_black_blade",
+      "view": "oblique",
+      "silhouetteIoU": 0.9274448882970854,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 1
+    },
+    {
+      "id": "eldencombat:malikeths_black_blade",
+      "view": "side",
+      "silhouetteIoU": 0.9838538693631248,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 1
+    },
+    {
+      "id": "eldencombat:malikeths_black_blade",
+      "view": "back",
+      "silhouetteIoU": 0.9658680847600184,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 1
+    },
+    {
+      "id": "eldencombat:blasphemous_blade",
+      "view": "front",
+      "silhouetteIoU": 0.9853126179393634,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 1
+    },
+    {
+      "id": "eldencombat:blasphemous_blade",
+      "view": "oblique",
+      "silhouetteIoU": 0.945822129269993,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 1
+    },
+    {
+      "id": "eldencombat:blasphemous_blade",
+      "view": "side",
+      "silhouetteIoU": 0.8723210458636949,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 1
+    },
+    {
+      "id": "eldencombat:blasphemous_blade",
+      "view": "back",
+      "silhouetteIoU": 0.9855314062844023,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 1
+    },
+    {
+      "id": "eldencombat:hand_of_malenia",
+      "view": "front",
+      "silhouetteIoU": 0.9803348392240234,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 1
+    },
+    {
+      "id": "eldencombat:hand_of_malenia",
+      "view": "oblique",
+      "silhouetteIoU": 0.9813515001376273,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 1
+    },
+    {
+      "id": "eldencombat:hand_of_malenia",
+      "view": "side",
+      "silhouetteIoU": 0.871900826446281,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 1
+    },
+    {
+      "id": "eldencombat:hand_of_malenia",
+      "view": "back",
+      "silhouetteIoU": 0.9809726565098796,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 1
+    },
+    {
+      "id": "eldencombat:starscourge_greatsword",
+      "view": "front",
+      "silhouetteIoU": 0.9855378377813538,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 1
+    },
+    {
+      "id": "eldencombat:starscourge_greatsword",
+      "view": "oblique",
+      "silhouetteIoU": 0.9623461259956553,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 1
+    },
+    {
+      "id": "eldencombat:starscourge_greatsword",
+      "view": "side",
+      "silhouetteIoU": 0.9405818540433925,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 1
+    },
+    {
+      "id": "eldencombat:starscourge_greatsword",
+      "view": "back",
+      "silhouetteIoU": 0.9852744590191328,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 1
+    },
+    {
+      "id": "eldencombat:mohgwyns_sacred_spear",
+      "view": "front",
+      "silhouetteIoU": 0.9897397397397397,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 1
+    },
+    {
+      "id": "eldencombat:mohgwyns_sacred_spear",
+      "view": "oblique",
+      "silhouetteIoU": 0.9172757475083056,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 1
+    },
+    {
+      "id": "eldencombat:mohgwyns_sacred_spear",
+      "view": "side",
+      "silhouetteIoU": 0.9514489619377162,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 1
+    },
+    {
+      "id": "eldencombat:mohgwyns_sacred_spear",
+      "view": "back",
+      "silhouetteIoU": 0.9897405955459171,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 1
+    },
+    {
+      "id": "eldencombat:morgotts_cursed_sword",
+      "view": "front",
+      "silhouetteIoU": 0.977339088485464,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 1
+    },
+    {
+      "id": "eldencombat:morgotts_cursed_sword",
+      "view": "oblique",
+      "silhouetteIoU": 0.948842788597234,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 1
+    },
+    {
+      "id": "eldencombat:morgotts_cursed_sword",
+      "view": "side",
+      "silhouetteIoU": 0.9131102967253812,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 1
+    },
+    {
+      "id": "eldencombat:morgotts_cursed_sword",
+      "view": "back",
+      "silhouetteIoU": 0.9776811226109594,
+      "bakedMeshIoU": 1,
+      "beforeSmoothingIoU": 1
+    }
+  ],
+  "errors": [],
+  "gameplayVerified": false,
+  "performanceMeasured": false
+}
