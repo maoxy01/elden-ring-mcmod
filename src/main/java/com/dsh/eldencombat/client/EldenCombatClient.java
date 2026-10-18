@@ -61,6 +61,10 @@ public final class EldenCombatClient {
                             (stack,level,entity,seed)->nativeProperty.call(stack,level,entity,seed));
                 }
             }
+            // Provider-namespace visual properties, registered on our own items only for the states the
+            // route contract marks as actually reachable. blocking/throwing stay evidence-only.
+            com.dsh.eldencombat.client.equipment2d.EquipmentRouteSnapshot
+                    .installAliasRegistrar(com.dsh.eldencombat.client.equipment2d.EquipmentPredicates::register);
         });
     }
 
@@ -92,7 +96,7 @@ public final class EldenCombatClient {
         // consumeClick()/isDown() 永远为假（这里曾经只注册了 DRINK，导致重击/翻滚/弹反/锁定全部失效）。
         event.register(TOGGLE_COMBAT);
         event.register(HEAVY);
-        event.register(ROLL);
+        if (!com.dsh.eldencombat.compat.CombatRollCompat.present()) event.register(ROLL);
         event.register(LOCK_ON);
         event.register(PARRY);
         event.register(DRINK);
@@ -121,6 +125,7 @@ public final class EldenCombatClient {
     @SubscribeEvent
     public static void onRegisterReloadListeners(RegisterClientReloadListenersEvent event) {
         event.registerReloadListener(new PresentationRoutes());
+        event.registerReloadListener(com.dsh.eldencombat.client.equipment2d.EquipmentRouteSnapshot.create());
         event.registerReloadListener(new net.minecraft.server.packs.resources.SimplePreparableReloadListener<com.dsh.eldencombat.effects.FxPalette.Data>() {
             @Override protected com.dsh.eldencombat.effects.FxPalette.Data prepare(net.minecraft.server.packs.resources.ResourceManager manager,
                     net.minecraft.util.profiling.ProfilerFiller profiler) {
@@ -191,6 +196,37 @@ public final class EldenCombatClient {
         // 物品模型 parent 是 builtin/entity，原版 ItemRenderer 对 GUI/地面/展示框/手持
         // 一律调用 renderByItem，所以这一条路径同时覆盖第一人称与第三人称。
         event.registerItem(extensions, items);
+    }
+
+    /**
+     * Register the equipment 2D state models as additional item models.
+     *
+     * <p>Provider states are registered only when their required resources exist. This registers
+     * runtime standalone baked keys, not shipped wrappers with unconditional external parents.
+     */
+    @SubscribeEvent
+    public static void onRegisterAdditionalModels(
+            net.neoforged.neoforge.client.event.ModelEvent.RegisterAdditional event) {
+        // The IDs are read straight from routes/2d.json through the resource manager, so this cannot
+        // depend on whether the reload listener has already populated its table.
+        java.util.Set<String> ids = new java.util.LinkedHashSet<>();
+        ids.addAll(com.dsh.eldencombat.client.equipment2d.EquipmentRouteSnapshot.ownModelIds());
+        net.minecraft.client.Minecraft minecraft = net.minecraft.client.Minecraft.getInstance();
+        if (minecraft != null && minecraft.getResourceManager() != null) {
+            ids.addAll(com.dsh.eldencombat.client.equipment2d.EquipmentRouteSnapshot
+                    .additionalModelIds(minecraft.getResourceManager()));
+        }
+        for (String id : ids) {
+            event.register(com.dsh.eldencombat.client.equipment2d.EquipmentRouteSnapshot
+                    .standaloneModel(net.minecraft.resources.ResourceLocation.parse(id)));
+        }
+    }
+
+    /** Hand the fully baked table to the route renderer once baking is complete. */
+    @SubscribeEvent
+    public static void onBakingCompleted(net.neoforged.neoforge.client.event.ModelEvent.BakingCompleted event) {
+        com.dsh.eldencombat.client.equipment2d.EquipmentRouteRenderer.installBakedModels(event.getModels());
+        com.dsh.eldencombat.client.equipment2d.EquipmentRouteSnapshot.reportCapabilities();
     }
 
     @SubscribeEvent

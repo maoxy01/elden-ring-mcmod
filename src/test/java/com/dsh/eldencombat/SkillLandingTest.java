@@ -19,6 +19,7 @@ class SkillLandingTest {
     private static final class FakeProbe implements SkillLanding.Probe {
         double y = 100;
         boolean onGround;
+        boolean groundContact = true;
         boolean inLiquid;
         double deltaY = 0.5;
         double worldBottom = -64;
@@ -26,6 +27,7 @@ class SkillLandingTest {
 
         @Override public double y() { return y; }
         @Override public boolean onGround() { return onGround; }
+        @Override public boolean groundContact() { return groundContact; }
         @Override public boolean inLiquid() { return inLiquid; }
         @Override public double deltaY() { return deltaY; }
         @Override public double worldBottom() { return worldBottom; }
@@ -137,5 +139,77 @@ class SkillLandingTest {
         FakeProbe probe = new FakeProbe();
         assertEquals(1, landing.timeoutTicks());
         assertEquals(SkillLanding.Outcome.TIMEOUT, landing.advance(probe));
+    }
+
+    /**
+     * 回归：**起跳冲量发出后服务端还会"报地上"几个 tick**（玩家位置与 onGround 都来自客户端上报）。
+     * 这时若接受 onGround 为落地，落地伤害与落地特效（黄金碎击的地面碎裂）就会在起跳点、人还在上升前
+     * 触发——玩家在空中看到脚下已经裂开。所以"离地"必须先被观察到。
+     */
+    @Test void staleOnGroundRightAfterTakeoffIsNotALanding() {
+        SkillLanding landing = new SkillLanding(100);
+        FakeProbe probe = new FakeProbe();
+        probe.onGround = true;   // 服务端仍在用客户端上一帧的报值
+        probe.y = 100;           // 位置也还没更新
+        assertEquals(SkillLanding.Outcome.AIRBORNE, landing.advance(probe),
+                "冲量已发出但还没离地：这不能算落地");
+        assertFalse(landing.departed());
+        // 同一个移动包里"位置上去了"与"onGround=false"是一起来的（服务端不会只更新其中一个）
+        probe.onGround = false;
+        probe.y = 101.5;         // 真的开始上升
+        assertEquals(SkillLanding.Outcome.AIRBORNE, landing.advance(probe));
+        assertTrue(landing.departed());
+        probe.onGround = true;   // 真的落地
+        probe.y = 100;
+        assertEquals(SkillLanding.Outcome.LANDED, landing.advance(probe));
+    }
+
+    /** 冲量被顶住时有界收束，但不能白得一次落地伤害或地裂。 */
+    @Test void stalledTakeoffCancelsImpactInsteadOfLanding() {
+        SkillLanding landing = new SkillLanding(100, 60);
+        FakeProbe probe = new FakeProbe();
+        probe.onGround = true;
+        probe.y = 100;
+        for (int i = 0; i < SkillLanding.NO_TAKEOFF_TICKS - 1; i++) {
+            assertEquals(SkillLanding.Outcome.AIRBORNE, landing.advance(probe), "第 " + (i + 1) + " tick");
+        }
+        assertEquals(SkillLanding.Outcome.TAKEOFF_FAILED, landing.advance(probe));
+        assertFalse(landing.departed(), "从没真的离地：这是冲量失败，不是飞行");
+        assertTrue(landing.resolved());
+        assertTrue(SkillLanding.cancelsImpact(landing.outcome()));
+        probe.onGround = false;
+        probe.y = 102;
+        assertEquals(SkillLanding.Outcome.TAKEOFF_FAILED, landing.advance(probe), "迟到的移动包不能补发冲击");
+    }
+
+    @Test void groundFlagWithoutPhysicalSupportDoesNotTriggerImpact() {
+        SkillLanding landing = new SkillLanding(100);
+        FakeProbe probe = new FakeProbe();
+        probe.onGround = false;
+        probe.groundContact = false;
+        probe.y = 101;
+        landing.advance(probe);
+        probe.onGround = true;
+        probe.y = 100.5;
+        assertEquals(SkillLanding.Outcome.AIRBORNE, landing.advance(probe));
+        assertFalse(landing.resolved(), "空中的旧落地标志不能触发地裂");
+        probe.y = 100;
+        probe.groundContact = true;
+        assertEquals(SkillLanding.Outcome.LANDED, landing.advance(probe));
+    }
+
+    @Test void genuineTakeoffBeforeDeadlineCanStillLandAfterDeadline() {
+        SkillLanding landing = new SkillLanding(100);
+        FakeProbe probe = new FakeProbe();
+        probe.onGround = true;
+        for (int i = 1; i < SkillLanding.NO_TAKEOFF_TICKS; i++) landing.advance(probe);
+        probe.onGround = false;
+        probe.groundContact = false;
+        probe.y = 100.5;
+        assertEquals(SkillLanding.Outcome.AIRBORNE, landing.advance(probe));
+        probe.onGround = true;
+        probe.groundContact = true;
+        probe.y = 100;
+        assertEquals(SkillLanding.Outcome.LANDED, landing.advance(probe));
     }
 }

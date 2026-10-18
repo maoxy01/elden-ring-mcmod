@@ -64,6 +64,7 @@ $env:GRADLE_OPTS='-Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=7890 -Dhttp.prox
 | --- | --- | --- |
 | `prepareClientSmokeWorld` | `run/world` → `build/clientSmoke/saves/codex-player-smoke` | `-PclientSmoke` 的 `runClient` |
 | `prepareServerSmokeDir` | `run/eula.txt` + `run/server.properties` → `build/serverSmoke` | `-PserverSmoke` 的 `runServer` |
+| `prepareEquipmentViewWorld` | `build/clientSmoke/saves/codex-player-smoke` → `build/equipmentView/saves/equipment-view`（创造模式；只有目标不存在时才复制） | `-PequipmentView` 的 `runClient` |
 
 需要手工准备时（服务端换目录、要带测试数据包）就照上表复制一次即可。
 
@@ -71,6 +72,11 @@ $env:GRADLE_OPTS='-Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=7890 -Dhttp.prox
 .\gradlew.bat runClient -PclientSmoke --offline --no-daemon
 .\gradlew.bat runServer -PserverSmoke --offline --no-daemon
 ```
+
+装备 2D 的**人工观感**走 `-PequipmentView`（`tools\Run-EquipmentView.ps1`）：隔离目录 `build/equipmentView`，
+自动快进到一个**创造模式**存档，且**没有夹具接管操作**——进游戏按 E 在"战斗"创造页取武器、F5 切一/三人称、F 换手。
+日志 `build/equipmentView/logs/latest.log`，路由准入看行首 `Equipment 2D routes admitted:`。
+（那份存档里带着 `eldencombat_test` 数据包，每次进世界会自己跑一遍 `[etest]` 自检，属正常现象。）
 
 客户端测试自动展示 13 个渲染场景并保存截图，然后通过**真实按键**（`KeyMapping.click`）检查战斗动作、
 战技端到端与削韧崩解同步；最后自动退出。服务端测试在端口 25566 启动，跑共享自检 + 真实事件总线投递检查

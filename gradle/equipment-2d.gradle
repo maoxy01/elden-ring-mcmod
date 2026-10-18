@@ -1,54 +1,356 @@
-// Only manifest-ready models override the old model resources. No textures are generated.
+// Equipment 2D: route-classified generation + asset admission.
+//
+// The old task only understood one shape ("every route has a local texture"), could not see
+// anything outside src/main/resources, and threw on any external provider. This version:
+//   * classifies own_sprite / vanilla_model / provider_model and validates each shape on its own terms;
+//   * admits own PNGs only through the publishable whitelist (path + SHA-256 + root confinement),
+//     so research-only provider textures can never be copied into the mod;
+//   * generates independent GUI models, per-state sprite models and both shield faces;
+//   * refuses to generate/enable a "ready" entry that still has an open blocker, and reports the
+//     equipment id plus the reason instead of silently skipping it.
+//
+// Generated output lives under build/ only. Nothing here deletes a formal source model.
 def routeFile = file('src/main/resources/assets/eldencombat/routes/2d.json')
 def output2d = layout.buildDirectory.dir('generated/equipment2d')
+def targetListFile = layout.buildDirectory.file('generated/equipment2d-targets.txt')
+
+def sha256 = { File target ->
+    def digest = java.security.MessageDigest.getInstance('SHA-256')
+    target.withInputStream { stream ->
+        def buffer = new byte[65536]
+        int read
+        while ((read = stream.read(buffer)) > 0) digest.update(buffer, 0, read)
+    }
+    return digest.digest().encodeHex().toString()
+}
+
+/** Canonical containment: a resolved asset must stay inside the admitted root. */
+def confinedTo = { File candidate, File root ->
+    def canonical = candidate.canonicalPath
+    def base = root.canonicalPath
+    return canonical == base || canonical.startsWith(base + File.separator)
+}
+
+def VALID_ROUTES = ['own_sprite', 'vanilla_model', 'provider_model'] as Set
+def VALID_STATUSES = ['pending', 'ready'] as Set
+def REQUIRED_CONTEXTS = ['firstperson_righthand', 'firstperson_lefthand', 'thirdperson_righthand',
+                         'thirdperson_lefthand', 'gui', 'ground', 'fixed'] as List
+// `blockers` is the technical-failure channel and is the only thing that refuses a ready entry.
+// Receipts, unreachable provider states, unverified aliases and preserved legacy sources live in
+// `notes`/`acceptance` and must never block a structurally complete candidate (contract §2, §4, §11).
+def DISPLAY_STATUSES = ['candidate_not_game_verified', 'calibrated_not_game_verified', 'verified_in_game',
+                        'missing', 'not_required_inherit_provider'] as List
+
+def validId = { Object value ->
+    value instanceof String && value ==~ /[a-z0-9_.-]+:[a-z0-9_\/.\-]+/ && !value.contains('..')
+}
+
+def validModelId = { Object value ->
+    value instanceof String && value ==~ /[a-z0-9_.-]+:item\/[a-z0-9_\/.\-]+/ && !value.contains('..')
+}
+
 tasks.register('generateEquipment2d') {
     inputs.file(routeFile)
-    inputs.dir('src/main/resources')
+    inputs.file('art/equipment-2d/full/equipment-42.json')
+    inputs.file('art/equipment-2d/full/publishable-assets.json')
+    inputs.file('art/equipment-2d/full/display-overrides.json')
+    inputs.file('art/equipment-reuse/research-only-full/evidence.json')
+    inputs.dir('art/equipment-2d/full/sprites')
+    inputs.file('art/item-thickness/manifest.json')
+    inputs.dir('art/item-thickness/models')
+    inputs.file('src/main/java/com/dsh/eldencombat/registry/ModItems.java')
     outputs.dir(output2d)
+    outputs.file(targetListFile)
+
     doLast {
         def manifest = new groovy.json.JsonSlurper().parse(routeFile)
+        def admission = manifest.equipmentAdmission
+        if (admission == null) throw new GradleException('routes/2d.json is missing equipmentAdmission')
+        if (manifest.equipmentSchemaVersion != 2)
+            throw new GradleException('equipmentSchemaVersion must be 2, found ' + manifest.equipmentSchemaVersion)
+
+        def artRoot = file(admission.ownSourceRoot)
+        def deniedRoots = admission.deniedRoots.collect { file(it).canonicalFile }
+        def whitelistEntries = new groovy.json.JsonSlurper().parse(file(admission.publishableManifest)).include
+        def whitelist = whitelistEntries.collectEntries { [(it.file): it.sha256] }
+        def providerJars = admission.providerJarSha256
+        def thickness = new groovy.json.JsonSlurper().parse(file('art/item-thickness/manifest.json'))
+        def thicknessModels = thickness.models.collectEntries { [(it.id + '|' + it.state): it] }
+
+        // ---- ID coverage: exactly the 41 registered equipment IDs plus the flask ----
         def ids = manifest.equipment.collect { it.id }
-        if (ids.size()!=ids.toSet().size()) throw new GradleException('Duplicate equipment route')
+        if (ids.size() != ids.toSet().size()) throw new GradleException('Duplicate equipment route')
         def source = file('src/main/java/com/dsh/eldencombat/registry/ModItems.java').text
-        def expected = (source =~ /(?:weapon|bow|crossbow|shield)\("([a-z_]+)"/).collect { 'eldencombat:'+it[1] }.toSet()
-        if(expected.size()!=41 || !ids.containsAll(expected) || !ids.contains('eldencombat:test_flask'))
+        def expected = (source =~ /(?:weapon|bow|crossbow|shield)\("([a-z_]+)"/)
+                .collect { 'eldencombat:' + it[1] }.toSet()
+        if (expected.size() != 41 || !ids.containsAll(expected) || !ids.contains('eldencombat:test_flask'))
             throw new GradleException('2D routes must cover all 41 equipment IDs and test_flask')
-        def root=output2d.get().asFile
-        if(!root.canonicalPath.startsWith(layout.buildDirectory.get().asFile.canonicalPath+File.separator))
+        if (ids.size() != 42)
+            throw new GradleException('2D routes must not carry extra IDs beyond the 42')
+
+        def root = output2d.get().asFile
+        if (!root.canonicalPath.startsWith(layout.buildDirectory.get().asFile.canonicalPath + File.separator))
             throw new GradleException('Generated model output escaped build directory')
-        // Generated output only, under build; Sync-style replacement prevents stale ready models.
+
+        def report = new LinkedHashMap<String, List<String>>()
+        def note = { String id, String reason ->
+            report.computeIfAbsent(id) { new ArrayList<String>() }.add(reason)
+        }
+        // A "ready" entry that fails admission is a hard build failure, not a soft note: silently
+        // demoting it to pending-equivalent output would ship an unverified route while the table
+        // claims readiness. Pending entries are reported but never fail the build.
+        def refusals = [] as List<String>
+        def refuse = { String id, String reason ->
+            note(id, 'ready refused: ' + reason)
+            refusals.add(id + ' -> ' + reason)
+        }
+        def generated = [] as List<String>
+
+        // Sync-style replacement: a ready -> pending flip must not leave a stale generated model.
         delete(root)
         root.mkdirs()
-        def validId = { value -> value instanceof String && value ==~ /[a-z0-9_.-]+:[a-z0-9_\/.\-]+/ && !value.contains('..') }
-        def resourceFile = { id, prefix, suffix ->
-            if(!validId(id)) throw new GradleException('Invalid resource ID: '+id)
-            def parts=id.split(':',2)
-            file('src/main/resources/assets/'+parts[0]+'/'+prefix+parts[1]+suffix)
-        }
+
         manifest.equipment.each { entry ->
-            if(!validId(entry.id)||!validId(entry.texture)||!validId(entry.parent))throw new GradleException('Invalid route: '+entry.id)
-            if(!(entry.status in ['pending','ready']))throw new GradleException('Unknown status: '+entry.id)
-            if(entry.status!='ready')return
-            if(entry.kind in ['ranged','shield'] && !entry.statesReady)throw new GradleException('State models pending: '+entry.id)
-            def model
-            if(entry.route=='external_model') {
-                throw new GradleException('External provider adapter pending; keep model route pending: '+entry.id)
-            } else if(entry.route=='sprite') {
-                if(!resourceFile(entry.texture,'textures/','.png').isFile())throw new GradleException('Missing independent sprite: '+entry.id)
-                if(!(entry.parent in ['minecraft:item/handheld','minecraft:item/generated']))throw new GradleException('Unsupported sprite parent')
-                entry.overrides.each { override ->
-                    if(!resourceFile(override.model,'models/','.json').isFile())throw new GradleException('Missing state model: '+override.model)
+            if (!validId(entry.id)) throw new GradleException('Invalid equipment id: ' + entry.id)
+            if (!(entry.status in VALID_STATUSES)) throw new GradleException('Unknown status: ' + entry.id)
+            if (!(entry.route in VALID_ROUTES)) throw new GradleException('Unknown route: ' + entry.route)
+            if (!('legacy_builtin_entity' == entry.fallback))
+                throw new GradleException('Missing legacy fallback: ' + entry.id)
+
+            if (entry.route == 'own_sprite') {
+                // Geometry / grip are validated even while pending, so calibration mistakes surface early.
+                def geometry = entry.geometry
+                if (geometry == null) throw new GradleException('Missing geometry: ' + entry.id)
+                def canvas = geometry.canvas
+                if (!(canvas instanceof List) || canvas.size() != 2
+                        || canvas.any { !(it instanceof Number) || ((Number) it).doubleValue() <= 0 })
+                    throw new GradleException('Canvas must be two positive numbers: ' + entry.id)
+                def anchor = geometry.anchorPixels
+                if (!(anchor instanceof List) || anchor.size() != 2
+                        || ((Number) anchor[0]).doubleValue() < 0 || ((Number) anchor[0]).doubleValue() > ((Number) canvas[0]).doubleValue()
+                        || ((Number) anchor[1]).doubleValue() < 0 || ((Number) anchor[1]).doubleValue() > ((Number) canvas[1]).doubleValue())
+                    throw new GradleException('Anchor outside canvas: ' + entry.id)
+                if (!(geometry.worldLengthBlocks instanceof Number) || ((Number) geometry.worldLengthBlocks).doubleValue() <= 0
+                        || !(geometry.sourceSpanPixels instanceof Number) || ((Number) geometry.sourceSpanPixels).doubleValue() <= 0)
+                    throw new GradleException('Length and source span must be finite and positive: ' + entry.id)
+            } else {
+                if (!validModelId(entry.model)) throw new GradleException('Invalid model id: ' + entry.id)
+                if (!validId(entry.providerItem)) throw new GradleException('Invalid providerItem: ' + entry.id)
+                def namespace = (entry.model as String).split(':', 2)[0]
+                if (namespace != 'minecraft' && !providerJars.containsKey(namespace))
+                    throw new GradleException('Provider namespace not admitted: ' + namespace)
+                (entry.predicateBindings ?: []).each { binding ->
+                    if (binding.support == 'blocked')
+                        note(entry.id, 'blocked predicate: ' + binding.predicate)
                 }
-                model=[parent:entry.parent,textures:[layer0:entry.texture],overrides:entry.overrides]
-            } else throw new GradleException('Unknown route: '+entry.route)
-            def target=new File(root,'assets/eldencombat/models/item/'+entry.id.split(':',2)[1]+'.json')
-            target.parentFile.mkdirs();target.text=groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(model))
+            }
+
+            // ---- ready gate: technical failures only ----
+            if (entry.status != 'ready') return
+            def hard = (entry.blockers ?: []) as List
+            if (!hard.isEmpty()) {
+                hard.each { text -> refuse(entry.id, text) }
+                return
+            }
+            if (!(entry.acceptance instanceof Map)) {
+                refuse(entry.id, 'acceptance receipt missing; readiness must not imply human acceptance')
+                return
+            }
+            if (!(entry.displayStatus in DISPLAY_STATUSES)) {
+                refuse(entry.id, 'unknown displayStatus: ' + entry.displayStatus)
+                return
+            }
+            if (entry.route == 'own_sprite') {
+                // The own_sprite route is the only owner of its transform, so an explicit display is a
+                // technical input rather than a calibration nicety.
+                if (entry.display == null) {
+                    refuse(entry.id, 'display is null (palm target p and rotation R undecided)')
+                    return
+                }
+                def missingContexts = REQUIRED_CONTEXTS.findAll { entry.display[it] == null }
+                if (!missingContexts.isEmpty()) {
+                    refuse(entry.id, 'display missing ' + missingContexts.join(', '))
+                    return
+                }
+                if (entry.display.inheritance == null) {
+                    refuse(entry.id, 'display must state how unspecified contexts inherit')
+                    return
+                }
+                def malformed = entry.display.findAll { String context, Object frame ->
+                    context != 'inheritance' && (!(frame instanceof Map)
+                            || !(frame.rotation instanceof List) || ((List) frame.rotation).size() != 3
+                            || !(frame.translation instanceof List) || ((List) frame.translation).size() != 3
+                            || !(frame.scale instanceof List) || ((List) frame.scale).size() != 3
+                            || ((List) frame.scale).any { !(it instanceof Number) || ((Number) it).doubleValue() == 0 })
+                }
+                if (!malformed.isEmpty()) {
+                    refuse(entry.id, 'display malformed for ' + malformed.keySet().join(', '))
+                    return
+                }
+                if (entry.displayBlocking != null) {
+                    def blockingMissing = REQUIRED_CONTEXTS.findAll { entry.displayBlocking[it] == null }
+                    if (!blockingMissing.isEmpty()) {
+                        refuse(entry.id, 'displayBlocking missing ' + blockingMissing.join(', '))
+                        return
+                    }
+                }
+                if (entry.displayStatus == 'candidate_not_game_verified') {
+                    note(entry.id, 'ready on a derived display candidate; visual acceptance still pending '
+                            + '(humanAccepted=' + entry.acceptance.humanAccepted + ')')
+                }
+            }
+
+            if (entry.route != 'own_sprite') {
+                // Nothing is generated: the runtime reuses the provider's own baked model, so a missing
+                // dependency can never leave a dangling parent inside a shipped JSON file.
+                note(entry.id, 'ready: runtime references ' + entry.model + ' (no generated wrapper)')
+                return
+            }
+
+            def assetId = entry.assetId
+            def held = entry.held ?: [:]
+            def gui = entry.gui ?: [:]
+            if (held.isEmpty()) {
+                refuse(entry.id, 'no held sprite declared')
+                return
+            }
+            def admitted = new LinkedHashMap<String, File>()
+            def admit = { String state, String relative ->
+                if (!(relative instanceof String) || relative.contains('..')) {
+                    refuse(entry.id, 'illegal asset path ' + relative)
+                    return false
+                }
+                if (!whitelist.containsKey(relative)) {
+                    refuse(entry.id, 'not on the publishable whitelist: ' + relative)
+                    return false
+                }
+                def resolved = new File(artRoot, relative)
+                if (!confinedTo(resolved, artRoot)) {
+                    refuse(entry.id, 'asset escaped the admitted root: ' + relative)
+                    return false
+                }
+                if (deniedRoots.any { File denied -> confinedTo(resolved, denied) }) {
+                    refuse(entry.id, 'research-only asset: ' + relative)
+                    return false
+                }
+                if (!resolved.isFile()) {
+                    refuse(entry.id, 'missing asset file: ' + relative)
+                    return false
+                }
+                if (sha256(resolved) != whitelist[relative]) {
+                    refuse(entry.id, 'whitelist hash mismatch: ' + relative)
+                    return false
+                }
+                admitted.put(state, resolved)
+                return true
+            }
+
+            def ok = true
+            held.each { state, relative -> if (!admit(state as String, relative as String)) ok = false }
+            gui.each { size, relative -> if (!admit('gui' + (size as String), relative as String)) ok = false }
+            if (!ok) return
+
+            // ---- admitted textures ----
+            def textureNamespace = 'assets/eldencombat/textures/item/2d/'
+            admitted.each { state, File sourcePng ->
+                def target = new File(root, textureNamespace + assetId + '_' + state + '.png')
+                target.parentFile.mkdirs()
+                target.bytes = sourcePng.bytes
+                generated.add(textureNamespace + assetId + '_' + state + '.png')
+            }
+            def textureId = { String state -> 'eldencombat:item/2d/' + assetId + '_' + state }
+
+            // Consume the delivered native extrusion, including solid two-material shield walls.
+            admitted.each { state, File ignored ->
+                def artState = state.startsWith('gui') ? 'gui_' + state.substring(3) : state
+                def candidate = thicknessModels[entry.id + '|' + artState]
+                if (candidate == null) throw new GradleException('Missing thickness model: ' + entry.id + '/' + state)
+                def sourceModel = file('art/item-thickness/' + candidate.file)
+                if (!confinedTo(sourceModel, file('art/item-thickness/models')) || sha256(sourceModel) != candidate.sha256)
+                    throw new GradleException('Thickness model admission failed: ' + sourceModel)
+                def aliases = [:]
+                candidate.textures.each { texture ->
+                    def sourceTexture = file(texture.source).canonicalFile
+                    def admittedState = admitted.find { key, value -> value.canonicalFile == sourceTexture }?.key
+                    if (admittedState == null || sha256(sourceTexture) != texture.sha256)
+                        throw new GradleException('Thickness texture not admitted: ' + texture.source)
+                    aliases[texture.resource] = textureId(admittedState as String)
+                }
+                def model = new groovy.json.JsonSlurper().parse(sourceModel)
+                model.textures = model.textures.collectEntries { key, value ->
+                    if (!aliases.containsKey(value) && !value.startsWith('#'))
+                        throw new GradleException('Unmapped thickness texture: ' + value)
+                    [(key): aliases[value] ?: value]
+                }
+                if (model.elements != null && model.elements.any { it.from[2] != 7.5 || it.to[2] != 8.5 })
+                    throw new GradleException('Thickness must be one model unit: ' + sourceModel)
+                def target = new File(root, "assets/eldencombat/models/item/2d/${assetId}_${state}.json")
+                target.parentFile.mkdirs()
+                target.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(model)) + '\n'
+                generated.add("assets/eldencombat/models/item/2d/${assetId}_${state}.json")
+            }
+
+            // ---- held root model: one display block, applied once, and nothing else ----
+            def baseState = held.containsKey('standby') ? 'standby' : held.keySet().iterator().next()
+            def heldModel = new LinkedHashMap()
+            heldModel.parent = 'minecraft:builtin/entity'
+            heldModel.display = entry.display
+            def baseTarget = new File(root, "assets/eldencombat/models/item/2d/${assetId}.json")
+            baseTarget.parentFile.mkdirs()
+            baseTarget.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(heldModel)) + '\n'
+            generated.add("assets/eldencombat/models/item/2d/${assetId}.json")
+            note(entry.id, 'ready: generated ' + admitted.size() + ' admitted assets, base state ' + baseState)
         }
-        logger.lifecycle('2D route coverage: 41 equipment + flask; ready={}, pending={}',manifest.equipment.count{it.status=='ready'},manifest.equipment.count{it.status=='pending'})
+
+        // ---- report: one line per equipment per reason, never per frame ----
+        if (!report.isEmpty()) {
+            logger.lifecycle('Equipment 2D status report ({} entr{}):', report.size(),
+                    report.size() == 1 ? 'y' : 'ies')
+            report.each { id, reasons ->
+                reasons.toSet().each { reason -> logger.lifecycle('  {} -> {}', id, reason) }
+            }
+        }
+        def ready = manifest.equipment.count { it.status == 'ready' }
+        def pending = manifest.equipment.count { it.status == 'pending' }
+        def own = manifest.equipment.count { it.route == 'own_sprite' }
+        def vanilla = manifest.equipment.count { it.route == 'vanilla_model' }
+        def provider = manifest.equipment.count { it.route == 'provider_model' }
+        logger.lifecycle('2D route coverage: 42 entries; own_sprite={}, vanilla_model={}, provider_model={}; ready={}, pending={}; generated files={}',
+                own, vanilla, provider, ready, pending, generated.size())
+
+        def listFile = targetListFile.get().asFile
+        listFile.parentFile.mkdirs()
+        listFile.text = generated.isEmpty() ? '' : generated.join('\n') + '\n'
+
+        // Fail closed: an inadmissible "ready" entry must stop the build. This runs after the report and
+        // after the target list is written so the operator sees every reason, not just the first one.
+        if (!refusals.isEmpty()) {
+            throw new GradleException('Equipment 2D: ' + refusals.size()
+                    + ' ready entry/entries failed admission and were not generated:\n  '
+                    + refusals.join('\n  '))
+        }
     }
 }
+
 tasks.named('processResources') {
     dependsOn 'generateEquipment2d'
     inputs.dir(output2d)
-    doLast { copy { from output2d; into destinationDir } }
+    inputs.file(targetListFile)
+    doLast {
+        def allowed = (targetListFile.get().asFile.isFile()
+                ? targetListFile.get().asFile.readLines().findAll { it } : []).toSet()
+        // The only stale-copy risk is inside the two generated 2D namespaces: a ready -> pending flip
+        // (or an asset removed from the whitelist) must not leave last run's file in the jar.
+        ['assets/eldencombat/models/item/2d', 'assets/eldencombat/textures/item/2d'].each { String dir ->
+            def folder = new File(destinationDir, dir)
+            if (!folder.isDirectory()) return
+            folder.eachFileRecurse { File candidate ->
+                if (!candidate.isFile()) return
+                def relative = dir + '/' + (candidate.canonicalPath.substring(folder.canonicalPath.length() + 1))
+                        .replace('\\', '/')
+                if (!allowed.contains(relative)) delete(candidate)
+            }
+        }
+        copy { from output2d; into destinationDir }
+    }
 }

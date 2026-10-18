@@ -34,7 +34,9 @@ public final class SkillLanding {
         /** 掉出世界 */
         VOID,
         /** 超时未落地 */
-        TIMEOUT
+        TIMEOUT,
+        /** 未观察到起跳：取消冲击，不把等待超时当成落地。 */
+        TAKEOFF_FAILED
     }
 
     /** 世界查询接口：把 MC 类型挡在外面，让六个分支都能单测。 */
@@ -42,6 +44,9 @@ public final class SkillLanding {
         double y();
 
         boolean onGround();
+
+        /** 服务端碰撞查询确认脚下确有支撑，不能只采信移动包的 onGround。 */
+        boolean groundContact();
 
         boolean inLiquid();
 
@@ -58,11 +63,24 @@ public final class SkillLanding {
     public static final int DEFAULT_TIMEOUT_TICKS = 60;
     /** 距世界底部多少格内算"掉出世界"（留一点落地余量） */
     public static final double VOID_MARGIN = 8.0;
+    /**
+     * 判定"真的离开地面"的高度阈值（格）。
+     *
+     * <p>为什么需要它：起跳冲量是在蓄势末尾写进 {@code deltaMovement} 的，而**服务端玩家的位置与
+     * onGround 来自客户端上报**——冲量发出后的 1..3 tick 里，服务端读到的仍是"站在地上"。
+     * 若此时接受 {@code onGround()} 为落地，落地伤害与落地特效（如黄金碎击的地面碎裂）就会在
+     * **起跳点、人还在上升之前**触发：玩家在空中看到脚下已经裂开。所以"离地"必须先被观察到。
+     */
+    public static final double DEPART_EPSILON = 0.05;
+    /** 冲量始终没把玩家抬起来时，等待多少 tick 后取消冲击。 */
+    public static final int NO_TAKEOFF_TICKS = 8;
 
     private final int timeoutTicks;
     private final double startY;
     private int ticks;
     private double highestY;
+    /** 已经观察到"真的离开地面"（见 {@link #DEPART_EPSILON} 的说明） */
+    private boolean departed;
     private Outcome outcome = Outcome.AIRBORNE;
 
     public SkillLanding(double startY) {
@@ -94,8 +112,15 @@ public final class SkillLanding {
         if (probe.y() < probe.worldBottom() + VOID_MARGIN) {
             return settle(Outcome.VOID);
         }
-        if (probe.onGround()) {
+        // 离地锁：在"真的离开地面"被观察到之前，onGround 不足以判定落地（原因见 DEPART_EPSILON）。
+        if (!departed && (!probe.onGround() || probe.y() > startY + DEPART_EPSILON)) {
+            departed = true;
+        }
+        if (departed && probe.onGround() && probe.groundContact()) {
             return settle(Outcome.LANDED);
+        }
+        if (!departed && ticks >= NO_TAKEOFF_TICKS) {
+            return settle(Outcome.TAKEOFF_FAILED);
         }
         if (probe.ceilingBlocked()) {
             return Outcome.LOW_CEILING;
@@ -113,12 +138,12 @@ public final class SkillLanding {
 
     public static boolean isTerminal(Outcome outcome) {
         return outcome == Outcome.LANDED || outcome == Outcome.LIQUID
-                || outcome == Outcome.VOID || outcome == Outcome.TIMEOUT;
+                || outcome == Outcome.VOID || outcome == Outcome.TIMEOUT || outcome == Outcome.TAKEOFF_FAILED;
     }
 
     /** 这一分支必须**取消**落地伤害（掉水里 / 掉出世界不该白拿一次范围伤害）。 */
     public static boolean cancelsImpact(Outcome outcome) {
-        return outcome == Outcome.LIQUID || outcome == Outcome.VOID;
+        return outcome == Outcome.LIQUID || outcome == Outcome.VOID || outcome == Outcome.TAKEOFF_FAILED;
     }
 
     /** 这一分支需要把玩家救回起跳点。 */
@@ -131,6 +156,11 @@ public final class SkillLanding {
 
     public boolean resolved() {
         return isTerminal(outcome);
+    }
+
+    /** 是否已经观察到玩家真的离开地面（诊断 / 夹具断言用）。 */
+    public boolean departed() {
+        return departed;
     }
 
     public Outcome outcome() {
@@ -154,6 +184,7 @@ public final class SkillLanding {
     }
 
     public String describe() {
-        return String.format("落地判定=%s 已用%d tick 起跳Y=%.2f 最高Y=%.2f", outcome, ticks, startY, highestY);
+        return String.format("落地判定=%s 已用%d tick 起跳Y=%.2f 最高Y=%.2f 离地=%s",
+                outcome, ticks, startY, highestY, departed);
     }
 }

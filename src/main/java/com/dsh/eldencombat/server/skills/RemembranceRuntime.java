@@ -31,9 +31,49 @@ public final class RemembranceRuntime implements SkillDriver.Runtime {
     private static volatile int safetyResolutions;
     private static volatile String lastSafetyOutcome = "";
 
+    /** 夹具运行时才为真：本类的诊断日志只在这些运行里出现。 */
+    private static boolean smoke() {
+        return Boolean.getBoolean("eldencombat.vfxSmoke");
+    }
+
+    /**
+     * **负例开关**（只在 {@code vfxSmoke} 下可用）：恢复"原地蹦"的旧起跳参数。
+     *
+     * <p>用途单一：证明语义门禁（水平突进 / 三段全中）真的抓得住这个缺陷，
+     * 而不是"改完之后什么都能过"。生产环境永远为 false。
+     */
+    private static boolean legacyHop() {
+        return smoke() && Boolean.getBoolean("eldencombat.vfxLegacyHop");
+    }
+
     public static int safetyResolutions() { return safetyResolutions; }
 
     public static String lastSafetyOutcome() { return lastSafetyOutcome; }
+
+    /**
+     * 最近一次跃起的**行为时间线**（只记录，不参与任何判定）。
+     *
+     * <p>为什么要有它：既有的夹具只验"作者美术有没有画上屏 / 像素归谁"，对"人是不是真的往前突进"
+     * "落地特效是不是在落地之后"这类**动作语义**完全没有覆盖。有了这条记录，夹具才能把
+     * "起跳→最高点→落地"的时序与水平位移当成硬断言，而不是靠肉眼看截图。
+     */
+    public record JumpTrace(String skill, int stageIndex, String outcome,
+                            double startX, double startY, double startZ,
+                            double apexY, double landedX, double landedY, double landedZ,
+                            int airborneTicks, long launchTick, long settleTick, boolean departed,
+                            boolean launchOnGround, double launchUp) {
+        /** 起跳到落地的水平位移（格）：判断"是突进还是原地蹦"的硬指标。 */
+        public double horizontal() { return Math.hypot(landedX - startX, landedZ - startZ); }
+        /** 起跳到落地经过了多少 tick。 */
+        public long durationTicks() { return settleTick - launchTick; }
+    }
+
+    private static volatile JumpTrace lastJump;
+    private static volatile int jumpCount;
+
+    public static JumpTrace lastJump() { return lastJump; }
+
+    public static int jumpCount() { return jumpCount; }
 
     private static final class State {
         final SkillMotion motion;
@@ -44,6 +84,11 @@ public final class RemembranceRuntime implements SkillDriver.Runtime {
         final java.util.List<net.minecraft.world.entity.Entity> effects = new java.util.ArrayList<>();
         /** §4 统一落地处理器：本次跃起从起跳到结算（含异常分支）都由它判定 */
         SkillLanding landing;
+        /** 起跳 tick 与"这条时间线已经记过"（见 {@link JumpTrace}） */
+        long launchTick = -1;
+        boolean traceRecorded;
+        boolean launchOnGround;
+        double launchUp;
         State(ServerPlayer player, RemembranceSkillSpec spec) { motion = new SkillMotion(player, spec); }
     }
 
@@ -105,14 +150,18 @@ public final class RemembranceRuntime implements SkillDriver.Runtime {
         if (!state.motion.tick(player)) { SkillDriver.cancel(player, tick, "技能位移超出预算"); return; }
         // §4：跃起技能的落地统一在这里收口（正常落地 / 低天花板 / 落水 / 虚空 / 超时）
         landingTick(player, cast, spec, state, tick);
+        if (!cast.isCasting()) return;
         int elapsed = cast.stageTicks(tick);
         if (cast.stage() == SkillCastState.Stage.WINDUP) {
             int launchTick = Math.max(0, spec.windupForStage(cast.stageIndex()) - 3);
             if (elapsed == launchTick) {
                 switch (spec.id()) {
-                    case "gold_breaker" -> state.motion.launch(player, .32, .5, false);
-                    case "destined_death" -> state.motion.launch(player, .2, .52, false);
-                    case "waterfowl_dance" -> state.motion.launch(player, 0, .52, false);
+                    case "gold_breaker" -> state.motion.launch(player, .32, .5, true);
+                    // 突进型多段斩击：往视线方向**低空前冲**（垂直冲量只够离地），不是原地起跳。
+                    // 原来的 (0/.2, .52) 是"几乎垂直的跳跃"——观感就是原地蹦，且三段的挥击全在空中捞空。
+                    // 水平速度刻意留在"自然滑行距离 < maxHorizontal"以内，避免位移预算把施放直接取消。
+                    case "destined_death" -> state.motion.launch(player, legacyHop() ? .2 : .24, legacyHop() ? .52 : .34, true);
+                    case "waterfowl_dance" -> state.motion.launch(player, legacyHop() ? 0 : .42, legacyHop() ? .52 : .34, true);
                     case "cursed_blood_slice" -> state.motion.launch(player, .3, .25, true);
                     case "starcaller_cry" -> { if (cast.stageIndex() == 1) state.motion.launch(player, 0, .42, false); }
                     default -> {}
@@ -120,6 +169,15 @@ public final class RemembranceRuntime implements SkillDriver.Runtime {
                 if (spec.allowsSkillJump() && state.motion.launched) {
                     // 每次起跳都重新武装落地判定：多段技能（水鸟/命定）每段独立兜底
                     state.landing = new SkillLanding(player.getY());
+                    state.launchTick = tick;
+                    state.launchOnGround = player.onGround();
+                    state.launchUp = player.getDeltaMovement().y;
+                    if (smoke()) {
+                        EldenCombat.LOGGER.info("[skills] VFX_JUMP_START {} tick={} y={} onGround={} issuedUp={} note={}",
+                                spec.id(), tick, String.format(java.util.Locale.ROOT, "%.3f", player.getY()),
+                                state.launchOnGround, String.format(java.util.Locale.ROOT, "%.3f", state.launchUp),
+                                state.launchOnGround ? "冲量已发出" : "服务端认为不在草地上（垂直冲量会退化为当前速度）");
+                    }
                 }
             }
         } else if (cast.stage() == SkillCastState.Stage.ACTIVE) activeTick(player, cast, spec, state, elapsed, tick);
@@ -145,6 +203,13 @@ public final class RemembranceRuntime implements SkillDriver.Runtime {
         switch (outcome) {
             case LOW_CEILING -> state.motion.cutRise(player);
             case LANDED -> landingImpact(player, cast, spec, state, tick);
+            case TAKEOFF_FAILED -> {
+                state.impacted = true;
+                recordJump(player, cast, spec, state, outcome, tick);
+                SkillDriver.cancel(player, tick, "起跳失败：取消落地冲击");
+                player.displayClientMessage(Component.literal("§e[战技] 起跳受阻，已取消冲击"), true);
+                return;
+            }
             case LIQUID -> {
                 state.impacted = true;
                 state.motion.stop(player);
@@ -156,12 +221,46 @@ public final class RemembranceRuntime implements SkillDriver.Runtime {
             case TIMEOUT -> snapToGround(player, cast, spec, state, tick);
             default -> { }
         }
+        if (SkillLanding.isTerminal(outcome)) recordJump(player, cast, spec, state, outcome, tick);
+    }
+
+    /**
+     * 记一条跃起时间线（只记录，不参与判定）。
+     *
+     * <p>夹具据此断言"真的离开地面 / 真的往前突进 / 落地特效确实在落地之后"，而不是只看像素。
+     */
+    private static void recordJump(ServerPlayer player, SkillCastState cast, RemembranceSkillSpec spec,
+                                   State state, SkillLanding.Outcome outcome, long tick) {
+        if (state.traceRecorded || state.landing == null) return;
+        state.traceRecorded = true;
+        SkillLanding landing = state.landing;
+        jumpCount++;
+        lastJump = new JumpTrace(spec.id(), cast.stageIndex(), outcome.name(),
+                state.motion.launchX, landing.startY(), state.motion.launchZ,
+                landing.highestY(), player.getX(), player.getY(), player.getZ(),
+                landing.ticks(), state.launchTick, tick, landing.departed(),
+                state.launchOnGround, state.launchUp);
+        if (smoke()) {
+            JumpTrace trace = lastJump;
+            EldenCombat.LOGGER.info("[skills] VFX_JUMP_SETTLE " + trace.skill() + " outcome=" + trace.outcome()
+                    + " start=(" + f(trace.startX()) + "," + f(trace.startY()) + "," + f(trace.startZ()) + ")"
+                    + " apex=" + f(trace.apexY())
+                    + " landed=(" + f(trace.landedX()) + "," + f(trace.landedY()) + "," + f(trace.landedZ()) + ")"
+                    + " horizontal=" + f(trace.horizontal()) + " ticks=" + trace.durationTicks()
+                    + " departed=" + trace.departed() + " launchOnGround=" + trace.launchOnGround()
+                    + " launchUp=" + f(trace.launchUp()));
+        }
+    }
+
+    private static String f(double value) {
+        return String.format(java.util.Locale.ROOT, "%.3f", value);
     }
 
     private SkillLanding.Probe probe(ServerPlayer player, State state) {
         return new SkillLanding.Probe() {
             @Override public double y() { return player.getY(); }
             @Override public boolean onGround() { return player.onGround(); }
+            @Override public boolean groundContact() { return LandingSupport.groundContact(player); }
             @Override public boolean inLiquid() { return LandingSupport.inLiquid(player); }
             @Override public double deltaY() { return player.getDeltaMovement().y; }
             @Override public double worldBottom() { return player.level().getMinBuildHeight(); }
@@ -177,6 +276,8 @@ public final class RemembranceRuntime implements SkillDriver.Runtime {
                 || (spec.id().equals("starcaller_cry") && cast.stageIndex() > 1);
         if (!landingSkill || state.impacted) return;
         state.impacted = true;
+        // 落地这一下必须"看得见"：锤子砸下去的挥击动画与地面碎裂特效同帧。
+        swing(player);
         if (spec.id().equals("gold_breaker")) {
             area(player, cast, spec, player.position(), spec.effectRadius(), 1, 0, false, tick);
             visual(player, player.position(), Kind.GOLD_IMPACT, spec.effectRadius(), 12, 0, false);
@@ -233,7 +334,15 @@ public final class RemembranceRuntime implements SkillDriver.Runtime {
                 int start = burst * duration / 3;
                 if (state.lastBurst != burst) {
                     state.lastBurst = burst;
-                    if (spec.id().equals("waterfowl_dance")) state.motion.launch(player, .28, .32, true);
+                    // 每一挥都要有"看得见的挥击"：服务端广播原版挥臂动画（含施法者自己，
+                    // 否则第一人称下手臂完全不动——就是"跟个僵尸一样"的直接原因）。
+                    swing(player);
+                    // 连段之间只往前推，不再给垂直冲量（否则每段都变成一次新的原地起跳）。
+                    if (legacyHop()) {
+                        if (spec.id().equals("waterfowl_dance")) state.motion.launch(player, .28, .32, true);
+                    } else {
+                        state.motion.dash(player, spec.id().equals("waterfowl_dance") ? .22 : .15, true);
+                    }
                     visual(player, player.position(), spec.id().equals("destined_death") ? Kind.DEATH_SLASH : Kind.WATERFOWL,
                             spec.effectRadius(), 8, burst, true);
                     sound(player, SoundEvents.PLAYER_ATTACK_SWEEP, spec.id().equals("destined_death") ? .65f : 1.35f);
@@ -243,6 +352,7 @@ public final class RemembranceRuntime implements SkillDriver.Runtime {
             case "cursed_blood_slice" -> {
                 if (elapsed < Math.min(4, duration)) melee(player, cast, spec, 0, tick);
                 if (elapsed == 4) {
+                    swing(player);
                     Vec3 origin = state.effectOrigin.add(state.motion.direction().scale(1.5));
                     area(player, cast, spec, origin, Math.min(2, spec.effectRadius()), .5f, 1, false, tick);
                     visual(player, origin, Kind.BLOOD_FLAME, Math.min(2, spec.effectRadius()), 12, cast.stageIndex(), false);
@@ -330,6 +440,18 @@ public final class RemembranceRuntime implements SkillDriver.Runtime {
         player.serverLevel().playSound(null, player.getX(), player.getY(), player.getZ(), event, SoundSource.PLAYERS, .7f, pitch);
     }
 
+    /**
+     * 原版挥臂动画：**每一下有效挥击都要播**，而且施法者自己也要看得到。
+     *
+     * <p>NeoForge 1.21.1 的 {@code swing(hand, true)} 已使用 broadcastAndSend，
+     * 同时通知追踪者和施法者；不能再给自己补发一条动画包。
+     *
+     * <p>只影响表现：不产生伤害、不改判定、不改阶段推进。
+     */
+    private static void swing(ServerPlayer player) {
+        player.swing(net.minecraft.world.InteractionHand.MAIN_HAND, true);
+    }
+
     @Override
     public void onRecovery(ServerPlayer player, SkillCastState cast, RemembranceSkillSpec spec, long tick) {
         State state = states.get(player.getUUID());
@@ -389,13 +511,14 @@ public final class RemembranceRuntime implements SkillDriver.Runtime {
         UUID id = player.getUUID();
         SkillLanding landing = orphanLandings.get(id);
         if (landing == null) return;
-        if (!player.isAlive() || player.onGround()) {
+        if (!player.isAlive() || (player.onGround() && LandingSupport.groundContact(player))) {
             settleOrphan(id, "LANDED");
             return;
         }
         SkillLanding.Outcome outcome = landing.advance(new SkillLanding.Probe() {
             @Override public double y() { return player.getY(); }
             @Override public boolean onGround() { return player.onGround(); }
+            @Override public boolean groundContact() { return LandingSupport.groundContact(player); }
             @Override public boolean inLiquid() { return LandingSupport.inLiquid(player); }
             @Override public double deltaY() { return player.getDeltaMovement().y; }
             @Override public double worldBottom() { return player.level().getMinBuildHeight(); }

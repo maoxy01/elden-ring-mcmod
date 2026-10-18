@@ -4,7 +4,10 @@ import com.dsh.eldencombat.network.GraceMenuActionPayload;
 import com.dsh.eldencombat.network.GraceMenuStatePayload;
 import com.dsh.eldencombat.server.grace.GraceMenu;
 import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.gui.components.Tooltip;
+import com.dsh.eldencombat.client.PresentationRoutes;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.player.Inventory;
@@ -80,8 +83,9 @@ public final class GraceScreen extends AbstractContainerScreen<GraceMenu> {
         addRenderableWidget(Button.builder(Component.literal("休息（恢复 FP）"), pressed -> rest())
                 .bounds(leftPos + LEFT_X, topPos + BUTTON_Y, COL_W, 20).build());
         if (!state.boundAsh().isEmpty()) {
-            addRenderableWidget(Button.builder(Component.literal("卸除战灰"), pressed -> removeAsh())
+            var remove = addRenderableWidget(Button.builder(Component.literal("卸除战灰"), pressed -> removeAsh())
                     .bounds(leftPos + RIGHT_X, topPos + BUTTON_Y, COL_W, 20).build());
+            remove.active = fromServer && state.heldRejection().isEmpty();
         }
     }
 
@@ -110,10 +114,12 @@ public final class GraceScreen extends AbstractContainerScreen<GraceMenu> {
             int index = ashPage * ROWS + row;
             if (index >= ashes.size()) break;
             var ash = ashes.get(index);
-            int action = ash.bound() ? GraceMenuActionPayload.REPLACE : GraceMenuActionPayload.BIND;
-            addRenderableWidget(Button.builder(Component.literal(ashLabel(ash)),
-                            pressed -> GraceClientActions.send(menu.containerId, action, null, ash.id(), state.heldToken()))
-                    .bounds(leftPos + RIGHT_X, topPos + ROWS_Y + row * ROW_H, COL_W, ROW_H - 2).build());
+            var button = addRenderableWidget(new AshButton(leftPos + RIGHT_X, topPos + ROWS_Y + row * ROW_H,
+                    ash, pressed -> GraceClientActions.send(menu.containerId, AshUi.action(state.boundAsh()),
+                            null, ash.id(), state.heldToken())));
+            button.active = fromServer && AshUi.canApply(ash, state.heldRejection());
+            button.setTooltip(Tooltip.create(AshUi.label(ash).copy().append("\n" + ash.id())
+                    .append(state.heldRejection().isEmpty() ? "" : "\n" + state.heldRejection())));
         }
         int pageCount = pages(ashes.size());
         if (pageCount > 1) {
@@ -170,19 +176,37 @@ public final class GraceScreen extends AbstractContainerScreen<GraceMenu> {
             graphics.drawString(font, "普通战灰目录尚未注册", RIGHT_X, ROWS_Y + 4, GRAY, false);
             graphics.drawString(font, "（未实现项不可选不可绑定）", RIGHT_X, ROWS_Y + 14, GRAY, false);
         }
-        graphics.drawString(font, "手持：" + state.heldItem(), LEFT_X, 164, GRAY, false);
+        graphics.drawString(font, fit(font, "手持：" + state.heldItem(), COL_W), LEFT_X, 164, GRAY, false);
+        graphics.drawString(font, "FP " + state.fp() + "/" + state.maxFp(), RIGHT_X, 164, 0xFF9FC3F0, false);
         if (!state.heldRejection().isEmpty()) {
-            graphics.drawString(font, state.heldRejection(), LEFT_X, 174, RED, false);
+            graphics.drawString(font, fit(font, state.heldRejection(), imageWidth - 16), LEFT_X, 174, RED, false);
         }
     }
 
-    private static String ashLabel(GraceMenuStatePayload.Ash ash) {
-        String base = shorten(ash.id(), 12);
-        if (!ash.implemented()) return base + " · 未实现";
-        if (!ash.owned()) return base + " · 未获得";
-        if (ash.bound()) return base + " · 已绑定";
-        if (!ash.compatible()) return base + " · 武器不匹配";
-        return base + " · 可装配";
+    private static String fit(Font font, String text, int width) {
+        return font.width(text) <= width ? text : font.plainSubstrByWidth(text, width - font.width("…")) + "…";
+    }
+
+    /** Keep vanilla focus/hover/disabled backgrounds and narration; only lay out icon + text. */
+    private static final class AshButton extends Button {
+        private final String icon;
+
+        private AshButton(int x, int y, GraceMenuStatePayload.Ash ash, OnPress onPress) {
+            super(x, y, COL_W, ROW_H - 2, AshUi.label(ash), onPress, DEFAULT_NARRATION);
+            icon = ash.id();
+        }
+
+        @Override public void renderString(GuiGraphics graphics, Font font, int color) {
+            float tint = active ? 1f : .45f;
+            graphics.setColor(tint, tint, tint, alpha);
+            try {
+                PresentationRoutes.drawIcon(graphics, icon, getX() + 2, getY());
+            } finally {
+                graphics.setColor(1, 1, 1, 1);
+            }
+            graphics.drawString(font, fit(font, getMessage().getString(), getWidth() - 24),
+                    getX() + 20, getY() + (getHeight() - font.lineHeight) / 2, color, false);
+        }
     }
 
     private static int pages(int count) {

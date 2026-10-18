@@ -185,4 +185,16 @@ public final class SkillPoseAnimator {
         var player = Minecraft.getInstance().player;
         return player != null && CASTING.containsKey(player.getId());
     }
+
+    public static boolean rollCancelable() {
+        var player = Minecraft.getInstance().player;
+        Active active = player == null ? null : CASTING.get(player.getId());
+        if (active == null) return true;
+        var spec = com.dsh.eldencombat.server.skills.SkillDriver.spec(active.skillId());
+        if (active.stage() != 4 || spec == null) return false;
+        int recovery = spec.recoveryTicks();
+        int tail = Math.min(2, Math.max(0, recovery - 1));
+        double elapsed = player.tickCount - active.startTick();
+        return tail > 0 && elapsed >= recovery - tail && elapsed < recovery;
+    }
 }

@@ -18,6 +18,14 @@ public final class LandingSupport {
     private LandingSupport() {
     }
 
+    /** 仅检查脚底薄层的方块碰撞；上升中的旧 onGround 标志不能触发地裂。 */
+    public static boolean groundContact(net.minecraft.world.entity.Entity entity) {
+        var box = entity.getBoundingBox();
+        var feet = new net.minecraft.world.phys.AABB(box.minX + 0.001, box.minY - 0.02, box.minZ + 0.001,
+                box.maxX - 0.001, box.minY, box.maxZ - 0.001);
+        return entity.level().getBlockCollisions(entity, feet).iterator().hasNext();
+    }
+
     /**
      * 从 {@code (x, y, z)} 向下找第一个有碰撞形状的方块，返回其**顶面** Y 坐标。
      * 扫描范围内没有实心方块时返回 {@link Double#NaN}（调用方不得据此传送玩家）。

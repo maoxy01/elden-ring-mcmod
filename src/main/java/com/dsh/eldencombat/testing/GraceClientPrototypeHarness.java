@@ -93,6 +93,10 @@ public final class GraceClientPrototypeHarness {
             } catch(RuntimeException failure) {failed=true;throw failure;}
         });
         if(MENU){
+            if(Boolean.getBoolean("eldencombat.artAcceptance")) {
+                if(ready) GraceArtAcceptanceHarness.tick(mc);
+                return;
+            }
             // 夹具内的断言失败必须让客户端停下来（否则集成服务器崩了会挂住 gradle 不退出），
             // 同时把原因写进日志，靠 GRACE_MENU_FAIL / GRACE_MENU_COMPLETE 判定结果。
             if(ready) try { menuPhase(mc); } catch(RuntimeException failure) {

@@ -31,6 +31,7 @@ public final class PresentationRoutes extends SimplePreparableReloadListener<Pre
     }
     private static volatile Data current = new Data(Map.of(), Map.of(), List.of());
     private static volatile long revision;
+    private static final Set<String> tracedIcons = new HashSet<>();
     private static ResourceLocation id(String value){
         if(!value.contains(":"))throw new IllegalArgumentException("Resource namespace missing: "+value);
         return ResourceLocation.parse(value);
@@ -51,8 +52,9 @@ public final class PresentationRoutes extends SimplePreparableReloadListener<Pre
                 var entry=value.getValue().getAsJsonObject();var state=status(entry);
                 var texture=id(entry.get("texture").getAsString());
                 if(!state.equals("pending")){
-                    if(manager.getResource(texture).isEmpty())throw new IllegalArgumentException("Missing UI texture: "+texture);
-                    icons.put(value.getKey(),texture);
+                    if(manager.getResource(texture).isEmpty())
+                        com.dsh.eldencombat.EldenCombat.LOGGER.warn("Missing UI texture {}; text fallback retained",texture);
+                    else icons.put(value.getKey(),texture);
                 }
             }
             var fx=data.getAsJsonObject("fx");
@@ -114,8 +116,20 @@ public final class PresentationRoutes extends SimplePreparableReloadListener<Pre
         var texture=Minecraft.getInstance().getTextureManager().getTexture(TextureAtlas.LOCATION_PARTICLES);
         return texture instanceof TextureAtlas atlas&&atlas.getSprite(candidate).contents().name().equals(candidate)?candidate:fallback;
     }
+    /** 显式诊断收集到的图标轨迹（{@code key|texture}）；仅用于验收核对实际 16/32 源选择。 */
+    public static Set<String> tracedIcons(){return Set.copyOf(tracedIcons);}
     public static boolean drawIcon(GuiGraphics graphics,String key,int x,int y){
-        var texture=current.icons().get(key);if(texture==null)return false;
-        graphics.blit(texture,x,y,0,0,16,16,16,16);return true;
+        var texture=current.icons().get(key);
+        int pixels=16;
+        if(texture==null||Minecraft.getInstance().getWindow().getGuiScale()>=2){
+            var larger=current.icons().get(key+"_32");
+            if(larger!=null){texture=larger;pixels=32;}
+        }
+        if(texture==null)return false;
+        graphics.blit(texture,x,y,16,16,0,0,pixels,pixels,pixels,pixels);
+        if(Boolean.getBoolean("eldencombat.artAcceptance")&&tracedIcons.add(key+"|"+texture))
+            com.dsh.eldencombat.EldenCombat.LOGGER.info("ART_UI_ICON: key={} texture={} source={} target=16 x={} y={} guiScale={}",
+                    key,texture,pixels,x,y,Minecraft.getInstance().getWindow().getGuiScale());
+        return true;
     }
 }

@@ -45,7 +45,7 @@ public final class CombatHud {
         int centerX = graphics.guiWidth() / 2;
         int x = centerX - BAR_WIDTH / 2;
         int y = graphics.guiHeight() - 110;
-        PresentationRoutes.drawIcon(graphics,"fp",x-18,y+2*(BAR_HEIGHT+3));
+        PresentationRoutes.drawIcon(graphics,"fp",x-18,y+2*(BAR_HEIGHT+3)-5);
 
         float health = minecraft.player.getHealth() / Math.max(1.0f, minecraft.player.getMaxHealth());
         drawBar(graphics, x, y, health, 0xFFC0392B);

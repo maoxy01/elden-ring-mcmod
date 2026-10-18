@@ -71,6 +71,22 @@ final class SkillMotion {
         send(player, new Vec3(forward.x, v, forward.z));
     }
 
+    /**
+     * 连段中的**前冲**：只改写水平速度，绝不重新给垂直冲量。
+     *
+     * <p>为什么必须与 {@link #launch} 分开：{@code launch} 在"服务端认为玩家在地上"时会再加一次
+     * 垂直冲量。多段斩击（水鸟乱舞 / 命定之死）每段之间恰好落回地面，于是每段都变成一次新的起跳——
+     * 观感就是"原地蹦三下"。前冲只负责把人往视线方向推，竖直方向交给重力。
+     */
+    void dash(ServerPlayer player, double horizontal, boolean turn) {
+        if (turn) heading = SkillMovementBudget.turn(heading, Math.toRadians(player.getYRot()), Math.toRadians(30));
+        double h = budget.speed(horizontal);
+        if (h <= 0) return;
+        launched = true;
+        Vec3 forward = direction().scale(h);
+        send(player, new Vec3(forward.x, player.getDeltaMovement().y, forward.z));
+    }
+
     void stop(ServerPlayer player) {
         Vec3 velocity = player.getDeltaMovement();
         // Preserve a foreign knockback rather than wiping it on TAKE_DAMAGE_POST.

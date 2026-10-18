@@ -19,13 +19,19 @@ public record FxArtwork(float width, float height, float anchorU, float anchorV,
     }
     public float roll(int phase) { return rolls.get(Math.floorMod(phase, rolls.size())); }
     public float scale(int phase) { return scales.get(Math.floorMod(phase, scales.size())); }
-    public record Lane(float center, float width, float forward, float u0, float u1) {}
+    /**
+     * 一条 lane 的平面几何。
+     *
+     * <p>{@code id} 是**原始** lane 编号（0..15）。列表本身已按 blocked 过滤，所以下标不能当 lane ID 用：
+     * 客户端遮挡求解、共享 mask 与诊断都要靠这个字段把"过滤后的序号"还原成原始编号。
+     */
+    public record Lane(int id, float center, float width, float forward, float u0, float u1) {}
     public static List<Lane> lanes(float radius,float travel,int blocked,boolean flame) {
         if(!Float.isFinite(radius)||radius<=0||!Float.isFinite(travel))return List.of();
         var lanes=new java.util.ArrayList<Lane>(WaveFront.LANES);
         for(int i=0;i<WaveFront.LANES;i++) {
             if((blocked&(1<<i))!=0)continue;
-            lanes.add(new Lane((float)WaveFront.laneCenter(i)*radius,2*radius/WaveFront.LANES,
+            lanes.add(new Lane(i,(float)WaveFront.laneCenter(i)*radius,2*radius/WaveFront.LANES,
                     flame?0:-(float)WaveFront.laneLag(i,travel),i/(float)WaveFront.LANES,(i+1f)/WaveFront.LANES));
         }
         return List.copyOf(lanes);

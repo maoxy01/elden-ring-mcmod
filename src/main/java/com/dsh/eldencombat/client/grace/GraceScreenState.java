@@ -12,6 +12,9 @@ import net.minecraft.client.Minecraft;
 public final class GraceScreenState {
 
     private static volatile GraceMenuStatePayload latest = GraceMenuStatePayload.empty();
+    /** 本客户端实际收到的快照序号（纯客户端计数，不上协议）。诊断夹具用它证明"这是本次请求的应答"，
+     *  而不是菜单周期刷新里沿用下来的旧 notice。 */
+    private static volatile long revision;
 
     private GraceScreenState() {}
 
@@ -19,9 +22,14 @@ public final class GraceScreenState {
         return latest;
     }
 
+    public static long revision() {
+        return revision;
+    }
+
     public static void accept(GraceMenuStatePayload payload) {
         if (payload == null) return;
         latest = payload;
+        revision++;
         if (Minecraft.getInstance().screen instanceof GraceScreen screen) screen.apply(payload);
     }
 }

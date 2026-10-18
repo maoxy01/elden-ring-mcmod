@@ -25,6 +25,9 @@ public final class GraceMenu extends AbstractContainerMenu {
     private final String graceName;
     /** 最近一次结果提示：周期刷新时沿用，免得刷新把玩家刚看到的失败原因冲掉。 */
     private String notice = "";
+    private ItemStack shownHeld;
+    private int shownSlot = -1;
+    private String heldToken = "";
 
     public GraceMenu(int windowId, Inventory inventory, UUID graceId, String graceName) {
         super(ModMenus.GRACE.get(), windowId);
@@ -47,6 +50,18 @@ public final class GraceMenu extends AbstractContainerMenu {
 
     public String graceName() {
         return graceName;
+    }
+
+    /** A menu-scoped identity; swapping identical items in the same slot must invalidate old input. */
+    String heldToken(ServerPlayer player) {
+        ItemStack current = player.getMainHandItem();
+        int slot = player.getInventory().selected;
+        if (current != shownHeld || slot != shownSlot) {
+            shownHeld = current;
+            shownSlot = slot;
+            heldToken = UUID.randomUUID().toString();
+        }
+        return heldToken;
     }
 
     @Override public boolean stillValid(Player player) {

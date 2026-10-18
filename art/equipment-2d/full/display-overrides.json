@@ -1,0 +1,1115 @@
+{
+  "version": 1,
+  "note": "人工/实机校准覆盖。生成器只读本文件，绝不回写：display-candidates.json 是可重建的派生基线，这里是用户看过游戏后调过的值，重跑任何生成脚本都不会抹掉。每个上下文整条替换（rotation+translation+scale 一起），未列出的上下文保持候选值；translation 单位与模型 JSON 一致（1/16 格）。accepted=true 表示用户已确认观感，由用户自己写入，生成器不代填。",
+  "schema": {
+    "overrides": {
+      "<assetId>": {
+        "contexts": {
+          "<context>": {
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "blocking": {
+          "<context>": {
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "accepted": false,
+        "note": "为什么这么调"
+      }
+    }
+  },
+  "overrides": {
+    "ballista": {
+      "contexts": {
+        "thirdperson_righthand": {
+          "rotation": [
+            -90.0,
+            0.0,
+            -60.0
+          ],
+          "translation": [
+            4.38062,
+            0.1,
+            0.932114
+          ],
+          "scale": [
+            1.85464,
+            1.85464,
+            1.85464
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            -90.0,
+            0.0,
+            30.0
+          ],
+          "translation": [
+            -2.027734,
+            0.1,
+            -0.784999
+          ],
+          "scale": [
+            1.85464,
+            1.85464,
+            1.85464
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            -35.0,
+            0.0,
+            -55.0
+          ],
+          "translation": [
+            2.559512,
+            7.032986,
+            -6.746956
+          ],
+          "scale": [
+            0.75679,
+            0.75679,
+            0.75679
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            -35.0,
+            0.0,
+            35.0
+          ],
+          "translation": [
+            -5.517855,
+            8.199669,
+            -7.563876
+          ],
+          "scale": [
+            0.607839,
+            0.607839,
+            0.607839
+          ]
+        },
+        "ground": {
+          "rotation": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "translation": [
+            3.99562,
+            3.49562,
+            0.0
+          ],
+          "scale": [
+            1.85464,
+            1.85464,
+            1.85464
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0.0,
+            180.0,
+            0.0
+          ],
+          "translation": [
+            -4.74562,
+            -0.25438,
+            -0.0
+          ],
+          "scale": [
+            1.85464,
+            1.85464,
+            1.85464
+          ]
+        },
+        "head": {
+          "rotation": [
+            0.0,
+            180.0,
+            0.0
+          ],
+          "translation": [
+            -4.74562,
+            12.74562,
+            7.0
+          ],
+          "scale": [
+            1.85464,
+            1.85464,
+            1.85464
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "blocking": {},
+      "accepted": false,
+      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+    },
+    "blasphemous_blade": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            12.418746,
+            -21.871501,
+            55.814134
+          ],
+          "translation": [
+            -2.97944,
+            8.488148,
+            -6.330048
+          ],
+          "scale": [
+            0.93026,
+            0.93026,
+            0.93026
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            3.795677,
+            24.728505,
+            -34.237881
+          ],
+          "translation": [
+            -2.951585,
+            8.490617,
+            -6.330396
+          ],
+          "scale": [
+            0.929888,
+            0.929888,
+            0.929888
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+    },
+    "claw": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            10.009744,
+            -23.027581,
+            49.28545
+          ],
+          "translation": [
+            -2.127221,
+            5.534348,
+            -6.76446
+          ],
+          "scale": [
+            0.568175,
+            0.568175,
+            0.568175
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            1.044823,
+            24.97956,
+            -27.472892
+          ],
+          "translation": [
+            -2.742563,
+            5.425846,
+            -6.76446
+          ],
+          "scale": [
+            0.568175,
+            0.568175,
+            0.568175
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+    },
+    "colossal_sword": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            12.277485,
+            -21.948388,
+            55.209571
+          ],
+          "translation": [
+            -2.98581,
+            8.885698,
+            -6.26293
+          ],
+          "scale": [
+            0.96508,
+            0.96508,
+            0.96508
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            3.63035,
+            24.751788,
+            -33.616839
+          ],
+          "translation": [
+            -3.089157,
+            8.907692,
+            -6.257145
+          ],
+          "scale": [
+            0.971039,
+            0.971039,
+            0.971039
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+    },
+    "colossal_weapon": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            9.35948,
+            -23.287034,
+            47.632015
+          ],
+          "translation": [
+            -2.141324,
+            7.747277,
+            -6.441563
+          ],
+          "scale": [
+            0.989403,
+            0.989403,
+            0.989403
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0.32606,
+            24.99801,
+            -25.771543
+          ],
+          "translation": [
+            -3.375402,
+            7.160023,
+            -6.495207
+          ],
+          "scale": [
+            0.919423,
+            0.919423,
+            0.919423
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+    },
+    "curved_greatsword": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            16.826206,
+            -18.765192,
+            63.193163
+          ],
+          "translation": [
+            -3.381416,
+            8.368651,
+            -5.96209
+          ],
+          "scale": [
+            1.079106,
+            1.079106,
+            1.079106
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            9.245527,
+            23.330357,
+            -42.306027
+          ],
+          "translation": [
+            -2.52939,
+            8.479294,
+            -5.970169
+          ],
+          "scale": [
+            1.072063,
+            1.072063,
+            1.072063
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+    },
+    "curved_sword": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            17.096341,
+            -18.520986,
+            65.952185
+          ],
+          "translation": [
+            -3.311337,
+            8.222456,
+            -5.946047
+          ],
+          "scale": [
+            0.985514,
+            0.985514,
+            0.985514
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            9.600527,
+            23.193303,
+            -45.118896
+          ],
+          "translation": [
+            -2.549245,
+            8.356833,
+            -5.946047
+          ],
+          "scale": [
+            0.985514,
+            0.985514,
+            0.985514
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+    },
+    "fist": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            5.763313,
+            -24.368276,
+            38.265652
+          ],
+          "translation": [
+            -1.817495,
+            3.503517,
+            -7.058105
+          ],
+          "scale": [
+            0.387744,
+            0.387744,
+            0.387744
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            -3.482917,
+            24.771655,
+            -16.255158
+          ],
+          "translation": [
+            -2.339025,
+            3.411557,
+            -7.058105
+          ],
+          "scale": [
+            0.387744,
+            0.387744,
+            0.387744
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+    },
+    "flail": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            10.794756,
+            -22.685703,
+            51.306265
+          ],
+          "translation": [
+            -2.605076,
+            9.213684,
+            -6.222905
+          ],
+          "scale": [
+            1.006302,
+            1.006302,
+            1.006302
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            1.925642,
+            24.930482,
+            -29.560412
+          ],
+          "translation": [
+            -3.598102,
+            9.230246,
+            -6.195261
+          ],
+          "scale": [
+            1.034772,
+            1.034772,
+            1.034772
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+    },
+    "glintstone_staff": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            12.74536,
+            -21.689056,
+            56.468366
+          ],
+          "translation": [
+            -2.914264,
+            7.791496,
+            -6.422114
+          ],
+          "scale": [
+            1.014775,
+            1.014775,
+            1.014775
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            4.179951,
+            24.67026,
+            -34.931495
+          ],
+          "translation": [
+            -2.756352,
+            7.701569,
+            -6.439058
+          ],
+          "scale": [
+            0.992671,
+            0.992671,
+            0.992671
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+    },
+    "great_bow": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            -0.0,
+            -25.0,
+            -155.0
+          ],
+          "translation": [
+            0.466219,
+            6.721702,
+            -6.087288
+          ],
+          "scale": [
+            0.880544,
+            0.880544,
+            0.880544
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            -0.0,
+            25.0,
+            155.0
+          ],
+          "translation": [
+            -4.306219,
+            6.721702,
+            -6.087288
+          ],
+          "scale": [
+            0.880544,
+            0.880544,
+            0.880544
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+    },
+    "great_spear": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            12.732294,
+            -21.696482,
+            56.433018
+          ],
+          "translation": [
+            -3.023482,
+            8.384829,
+            -6.333986
+          ],
+          "scale": [
+            0.996829,
+            0.996829,
+            0.996829
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            4.164525,
+            24.67271,
+            -34.894537
+          ],
+          "translation": [
+            -2.868751,
+            8.371005,
+            -6.3399
+          ],
+          "scale": [
+            0.990022,
+            0.990022,
+            0.990022
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+    },
+    "great_sword": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            12.732294,
+            -21.696482,
+            56.433018
+          ],
+          "translation": [
+            -3.023482,
+            8.384829,
+            -6.333986
+          ],
+          "scale": [
+            0.996829,
+            0.996829,
+            0.996829
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            4.164525,
+            24.67271,
+            -34.894537
+          ],
+          "translation": [
+            -2.868751,
+            8.371005,
+            -6.3399
+          ],
+          "scale": [
+            0.990022,
+            0.990022,
+            0.990022
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+    },
+    "hand_of_malenia": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            16.117813,
+            -19.371164,
+            61.928049
+          ],
+          "translation": [
+            -2.763079,
+            8.344606,
+            -5.836957
+          ],
+          "scale": [
+            0.988062,
+            0.988062,
+            0.988062
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            8.327469,
+            23.656814,
+            -40.906358
+          ],
+          "translation": [
+            -3.098719,
+            8.247923,
+            -5.845572
+          ],
+          "scale": [
+            0.981817,
+            0.981817,
+            0.981817
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+    },
+    "heavy_thrusting_sword": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            12.705079,
+            -21.711914,
+            56.435426
+          ],
+          "translation": [
+            -3.023844,
+            8.386597,
+            -6.336948
+          ],
+          "scale": [
+            0.997055,
+            0.997055,
+            0.997055
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            4.132406,
+            24.67778,
+            -34.893601
+          ],
+          "translation": [
+            -2.869011,
+            8.372755,
+            -6.342845
+          ],
+          "scale": [
+            0.990242,
+            0.990242,
+            0.990242
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+    },
+    "malikeths_black_blade": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            6.066525,
+            24.29881,
+            55.096491
+          ],
+          "translation": [
+            -2.868036,
+            8.323685,
+            -6.157004
+          ],
+          "scale": [
+            0.907164,
+            0.907164,
+            0.907164
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            14.314053,
+            -20.715969,
+            -33.774175
+          ],
+          "translation": [
+            -3.007288,
+            8.336759,
+            -6.150386
+          ],
+          "scale": [
+            0.912919,
+            0.912919,
+            0.912919
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+    },
+    "marikas_hammer": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            9.756523,
+            -23.131116,
+            48.919493
+          ],
+          "translation": [
+            -2.288451,
+            8.349875,
+            -6.364143
+          ],
+          "scale": [
+            0.896151,
+            0.896151,
+            0.896151
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0.763776,
+            24.98908,
+            -27.087494
+          ],
+          "translation": [
+            -3.446156,
+            7.759241,
+            -6.419321
+          ],
+          "scale": [
+            0.836993,
+            0.836993,
+            0.836993
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+    },
+    "mohgwyns_sacred_spear": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            12.741982,
+            -21.690977,
+            56.459226
+          ],
+          "translation": [
+            -2.804439,
+            7.217491,
+            -6.507485
+          ],
+          "scale": [
+            0.874264,
+            0.874264,
+            0.874264
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            4.175962,
+            24.670894,
+            -34.921938
+          ],
+          "translation": [
+            -2.677528,
+            7.212529,
+            -6.511418
+          ],
+          "scale": [
+            0.869299,
+            0.869299,
+            0.869299
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+    },
+    "morgotts_cursed_sword": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            18.658418,
+            -16.945346,
+            65.406151
+          ],
+          "translation": [
+            -2.68596,
+            8.373009,
+            -5.483431
+          ],
+          "scale": [
+            0.962598,
+            0.962598,
+            0.962598
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            11.712539,
+            22.244048,
+            -44.912786
+          ],
+          "translation": [
+            -3.181186,
+            8.251864,
+            -5.493192
+          ],
+          "scale": [
+            0.957124,
+            0.957124,
+            0.957124
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+    },
+    "sacred_relic_sword": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            12.498222,
+            -21.82771,
+            55.801681
+          ],
+          "translation": [
+            -3.045469,
+            8.861525,
+            -6.264919
+          ],
+          "scale": [
+            0.892566,
+            0.892566,
+            0.892566
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            3.888924,
+            24.714903,
+            -34.234846
+          ],
+          "translation": [
+            -3.01712,
+            8.863362,
+            -6.265374
+          ],
+          "scale": [
+            0.892132,
+            0.892132,
+            0.892132
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+    },
+    "sacred_seal": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            8.188385,
+            -23.702843,
+            44.695056
+          ],
+          "translation": [
+            -1.984478,
+            3.783456,
+            -7.05255
+          ],
+          "scale": [
+            0.217717,
+            0.217717,
+            0.217717
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            -0.944484,
+            24.983299,
+            -22.764694
+          ],
+          "translation": [
+            -2.277857,
+            3.731726,
+            -7.05255
+          ],
+          "scale": [
+            0.217717,
+            0.217717,
+            0.217717
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+    },
+    "starscourge_greatsword": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            15.722491,
+            -19.68906,
+            60.808562
+          ],
+          "translation": [
+            -2.789374,
+            8.321858,
+            -5.90116
+          ],
+          "scale": [
+            1.015953,
+            1.015953,
+            1.015953
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            7.822858,
+            23.819614,
+            -39.715893
+          ],
+          "translation": [
+            -3.066232,
+            8.234615,
+            -5.909597
+          ],
+          "scale": [
+            1.009353,
+            1.009353,
+            1.009353
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+    },
+    "twinblade": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            -12.732102,
+            21.696591,
+            -123.567502
+          ],
+          "translation": [
+            -1.636506,
+            7.715324,
+            -7.323621
+          ],
+          "scale": [
+            0.880448,
+            0.880448,
+            0.880448
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            -4.164298,
+            -24.672746,
+            145.106006
+          ],
+          "translation": [
+            -2.192917,
+            7.617507,
+            -7.321153
+          ],
+          "scale": [
+            0.862866,
+            0.862866,
+            0.862866
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+    },
+    "whip": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            -4.747744,
+            -24.573541,
+            34.142729
+          ],
+          "translation": [
+            -3.658819,
+            10.899914,
+            -8.690523
+          ],
+          "scale": [
+            1.400696,
+            1.400696,
+            1.400696
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            -13.223558,
+            21.409841,
+            -12.666774
+          ],
+          "translation": [
+            -3.128163,
+            10.92039,
+            -8.677923
+          ],
+          "scale": [
+            1.388855,
+            1.388855,
+            1.388855
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+    }
+  }
+}

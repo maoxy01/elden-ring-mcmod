@@ -15,6 +15,9 @@ public final class VfxBudget {
         if (distanceSquared > 16 * 16) return Lod.REDUCED;
         return Lod.FULL;
     }
+    /** 一次波更新的纯几何快照：每个 lane 的支撑/未知状态与地面高度，供客户端表现逐片绘制。 */
+    public record LaneSupport(float groundY, boolean supported, boolean unknown) {}
+
     public static Counts validate(SkillEffectMesh.Kind kind, List<SkillEffectMesh.Box> boxes,
                                   List<SkillSlashSprites.Strip> sprites, List<SkillEffectMesh.Box> debris) {
         if (boxes.size() > MAX_BOXES || debris.size() > MAX_DEBRIS

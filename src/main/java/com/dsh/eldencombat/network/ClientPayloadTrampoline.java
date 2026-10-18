@@ -24,6 +24,11 @@ public final class ClientPayloadTrampoline {
     private ClientPayloadTrampoline() {
     }
 
+    public static void handleRollRejected(RollRejectedPayload payload, IPayloadContext context) {
+        if (FMLEnvironment.dist == Dist.CLIENT)
+            context.enqueueWork(() -> com.dsh.eldencombat.client.RollClient.rejected(payload));
+    }
+
     public static void handleGraceMenuState(GraceMenuStatePayload payload, IPayloadContext context) {
         if(FMLEnvironment.dist==Dist.CLIENT)
             context.enqueueWork(()->com.dsh.eldencombat.client.grace.GraceScreenState.accept(payload));

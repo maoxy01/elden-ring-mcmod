@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-14",
+  "date": "2026-10-15",
   "source": "src/main/resources/assets/eldencombat/routes/2d.json",
   "sourceHash": "08e4cdb213148118d62680b4addc012c8b5156a6796278d7fe1b60792e8c7af3",
   "counts": {
@@ -7,10 +7,11 @@
     "remembrance": 8,
     "flask": 1,
     "total": 42,
-    "representativeDeliveries": 6,
-    "remaining": 36
+    "ownSpriteDeliveries": 28,
+    "completeProviderMappings": 14,
+    "remainingArtEntries": 0
   },
-  "note": "Candidate IDs are release/source evidence, never proof of installation; pending runtime routes stay pending. Selected old great/colossal sword models untouched.",
+  "note": "Art files/provider definitions delivered. Dependency installation, runtime integration and game acceptance remain separate and unverified.",
   "mappings": [
     {
       "id": "eldencombat:axe",
@@ -36,9 +37,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "complete_provider_dependency_candidate",
+        "method": "provider_reference_only",
         "representative": false,
-        "artStatus": "candidate_only_not_asset_delivery",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "reference engine resources; no redistributed Mojang PNG",
@@ -49,15 +50,23 @@
         "targetLengthBlocks": 0.864,
         "ratioToPlayer": 0.48,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          3.5,
+          12.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
-      "missingStates": [],
+      "missingStates": [
+        "Resolve original model, custom loader, all textures, overrides and predicates; installation and registry unverified",
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
+      ],
       "interfaces": [
         "external_model admission adapter / actual item registry",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "verify complete dependency and state art, then adapt"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": "minecraft:iron_axe",
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#axe"
     },
     {
       "id": "eldencombat:blasphemous_blade",
@@ -83,9 +92,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "own_design_pixel_conversion_pending",
+        "method": "own_sprite",
         "representative": false,
-        "artStatus": "not_started",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "project-owned source available; sprite not authored",
@@ -96,17 +105,22 @@
         "targetLengthBlocks": 1.728,
         "ratioToPlayer": 0.96,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          13.5,
+          50.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
       "missingStates": [
-        "independent 2D silhouette"
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
       ],
       "interfaces": [
         "sprite admission / per-item display",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "convert existing project-owned design to sprite after representative review"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": null,
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#blasphemous_blade"
     },
     {
       "id": "eldencombat:claw",
@@ -132,9 +146,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "own_design_pixel_conversion_pending",
+        "method": "own_sprite",
         "representative": false,
-        "artStatus": "candidate_only_not_asset_delivery",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
@@ -145,17 +159,22 @@
         "targetLengthBlocks": 0.558,
         "ratioToPlayer": 0.31,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          8.5,
+          23.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
       "missingStates": [
-        "exact release JAR, all parent/state PNGs, version/license binding"
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
       ],
       "interfaces": [
         "external_model admission adapter / actual item registry",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "verify complete dependency and state art, then adapt"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": null,
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#claw"
     },
     {
       "id": "eldencombat:colossal_sword",
@@ -181,9 +200,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "complete_provider_dependency_candidate",
+        "method": "own_sprite",
         "representative": false,
-        "artStatus": "candidate_only_not_asset_delivery",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
@@ -194,15 +213,22 @@
         "targetLengthBlocks": 2.484,
         "ratioToPlayer": 1.38,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          6.5,
+          25.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
-      "missingStates": [],
+      "missingStates": [
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
+      ],
       "interfaces": [
         "external_model admission adapter / actual item registry",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "confirm category/shape before adopting approximate provider"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": null,
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#colossal_sword"
     },
     {
       "id": "eldencombat:colossal_weapon",
@@ -228,9 +254,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "complete_provider_dependency_candidate",
+        "method": "own_sprite",
         "representative": false,
-        "artStatus": "candidate_only_not_asset_delivery",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
@@ -241,15 +267,22 @@
         "targetLengthBlocks": 2.16,
         "ratioToPlayer": 1.2,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          8.5,
+          23.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
-      "missingStates": [],
+      "missingStates": [
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
+      ],
       "interfaces": [
         "external_model admission adapter / actual item registry",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "confirm category/shape before adopting approximate provider"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": null,
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#colossal_weapon"
     },
     {
       "id": "eldencombat:curved_greatsword",
@@ -275,9 +308,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "own_design_pixel_conversion_pending",
+        "method": "own_sprite",
         "representative": false,
-        "artStatus": "not_started",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "project-owned source available; sprite not authored",
@@ -288,17 +321,22 @@
         "targetLengthBlocks": 1.746,
         "ratioToPlayer": 0.97,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          7.5,
+          23.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
       "missingStates": [
-        "independent 2D silhouette"
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
       ],
       "interfaces": [
         "sprite admission / per-item display",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "convert existing project-owned design to sprite after representative review"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": null,
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#curved_greatsword"
     },
     {
       "id": "eldencombat:curved_sword",
@@ -324,9 +362,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "complete_provider_dependency_candidate",
+        "method": "own_sprite",
         "representative": false,
-        "artStatus": "candidate_only_not_asset_delivery",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
@@ -337,15 +375,22 @@
         "targetLengthBlocks": 1.098,
         "ratioToPlayer": 0.61,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          6.5,
+          23.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
-      "missingStates": [],
+      "missingStates": [
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
+      ],
       "interfaces": [
         "external_model admission adapter / actual item registry",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "confirm category/shape before adopting approximate provider"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": null,
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#curved_sword"
     },
     {
       "id": "eldencombat:dagger",
@@ -371,9 +416,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "complete_provider_dependency_candidate",
+        "method": "provider_reference_only",
         "representative": false,
-        "artStatus": "candidate_only_not_asset_delivery",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
@@ -384,15 +429,23 @@
         "targetLengthBlocks": 0.5040000000000001,
         "ratioToPlayer": 0.28,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          3.5,
+          12.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
-      "missingStates": [],
+      "missingStates": [
+        "Resolve original model, custom loader, all textures, overrides and predicates; installation and registry unverified",
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
+      ],
       "interfaces": [
         "external_model admission adapter / actual item registry",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "verify complete dependency and state art, then adapt"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": "spartan_weaponry_unofficial:iron_dagger",
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#dagger"
     },
     {
       "id": "eldencombat:fist",
@@ -418,9 +471,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "own_design_pixel_conversion_pending",
+        "method": "own_sprite",
         "representative": false,
-        "artStatus": "candidate_only_not_asset_delivery",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
@@ -431,17 +484,22 @@
         "targetLengthBlocks": 0.30600000000000005,
         "ratioToPlayer": 0.17,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          12.5,
+          19.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
       "missingStates": [
-        "cestus candidate contains six 3D elements; strict 2D still missing"
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
       ],
       "interfaces": [
         "external_model admission adapter / actual item registry",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "verify complete dependency and state art, then adapt"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": null,
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#fist"
     },
     {
       "id": "eldencombat:flail",
@@ -467,9 +525,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "own_design_pixel_conversion_pending",
+        "method": "own_sprite",
         "representative": false,
-        "artStatus": "not_started",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "project-owned source available; sprite not authored",
@@ -480,17 +538,23 @@
         "targetLengthBlocks": 1.2240000000000002,
         "ratioToPlayer": 0.68,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          6.5,
+          25.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
       "missingStates": [
-        "independent 2D silhouette"
+        "Rest-pose sprite only; articulated attack motion is outside the sprite asset",
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
       ],
       "interfaces": [
         "sprite admission / per-item display",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "convert existing project-owned design to sprite after representative review"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": null,
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#flail"
     },
     {
       "id": "eldencombat:glintstone_staff",
@@ -516,9 +580,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "own_design_pixel_conversion_pending",
+        "method": "own_sprite",
         "representative": false,
-        "artStatus": "not_started",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "project-owned source available; sprite not authored",
@@ -529,17 +593,22 @@
         "targetLengthBlocks": 1.9800000000000002,
         "ratioToPlayer": 1.1,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          8.5,
+          23.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
       "missingStates": [
-        "independent 2D silhouette"
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
       ],
       "interfaces": [
         "sprite admission / per-item display",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "convert existing project-owned design to sprite after representative review"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": null,
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#glintstone_staff"
     },
     {
       "id": "eldencombat:great_hammer",
@@ -565,9 +634,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "complete_provider_dependency_candidate",
+        "method": "provider_reference_only",
         "representative": false,
-        "artStatus": "candidate_only_not_asset_delivery",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
@@ -578,15 +647,23 @@
         "targetLengthBlocks": 1.548,
         "ratioToPlayer": 0.86,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          4.5,
+          11.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
-      "missingStates": [],
+      "missingStates": [
+        "Resolve original model, custom loader, all textures, overrides and predicates; installation and registry unverified",
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
+      ],
       "interfaces": [
         "external_model admission adapter / actual item registry",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "verify complete dependency and state art, then adapt"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": "spartan_weaponry_unofficial:iron_battle_hammer",
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#great_hammer"
     },
     {
       "id": "eldencombat:great_shield",
@@ -612,9 +689,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "own_design_pixel_conversion_pending",
+        "method": "own_sprite",
         "representative": false,
-        "artStatus": "candidate_only_not_asset_delivery",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
@@ -625,20 +702,24 @@
         "targetLengthBlocks": 1.314,
         "ratioToPlayer": 0.73,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          16.5,
+          16.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
       "missingStates": [
-        "front/back/hand anchor",
-        "blocking pose",
-        "exact release JAR, all parent/state PNGs, version/license binding"
+        "Two-sided front/back material and blocking pose; blocking is a pose, not a duplicate PNG",
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
       ],
       "interfaces": [
         "external_model admission adapter / actual item registry",
         "front/back and blocking transform",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "verify complete dependency and state art, then adapt"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": null,
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#great_shield"
     },
     {
       "id": "eldencombat:great_spear",
@@ -664,9 +745,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "complete_provider_dependency_candidate",
+        "method": "own_sprite",
         "representative": false,
-        "artStatus": "candidate_only_not_asset_delivery",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
@@ -677,15 +758,22 @@
         "targetLengthBlocks": 3.06,
         "ratioToPlayer": 1.7,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          7.5,
+          24.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
-      "missingStates": [],
+      "missingStates": [
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
+      ],
       "interfaces": [
         "external_model admission adapter / actual item registry",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "confirm category/shape before adopting approximate provider"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": null,
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#great_spear"
     },
     {
       "id": "eldencombat:great_sword",
@@ -711,9 +799,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "own_sprite_draft",
+        "method": "own_sprite",
         "representative": true,
-        "artStatus": "representative_delivered",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "project-owned derivative",
@@ -730,12 +818,16 @@
         ],
         "suggestion": "See six-representatives.json; webpage anchor is not in-game proof"
       },
-      "missingStates": [],
+      "missingStates": [
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
+      ],
       "interfaces": [
         "sprite admission / per-item display",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "Review representative, then code owner admits assets/reference"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": null,
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#great_sword"
     },
     {
       "id": "eldencombat:greataxe",
@@ -761,9 +853,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "complete_provider_dependency_candidate",
+        "method": "provider_reference_only",
         "representative": false,
-        "artStatus": "candidate_only_not_asset_delivery",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
@@ -774,15 +866,23 @@
         "targetLengthBlocks": 1.494,
         "ratioToPlayer": 0.83,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          4.5,
+          11.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
-      "missingStates": [],
+      "missingStates": [
+        "Resolve original model, custom loader, all textures, overrides and predicates; installation and registry unverified",
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
+      ],
       "interfaces": [
         "external_model admission adapter / actual item registry",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "verify complete dependency and state art, then adapt"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": "spartan_weaponry_unofficial:iron_battleaxe",
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#greataxe"
     },
     {
       "id": "eldencombat:halberd",
@@ -808,9 +908,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "complete_provider_dependency_candidate",
+        "method": "provider_reference_only",
         "representative": false,
-        "artStatus": "candidate_only_not_asset_delivery",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
@@ -821,15 +921,23 @@
         "targetLengthBlocks": 2.754,
         "ratioToPlayer": 1.53,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          12.5,
+          19.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
-      "missingStates": [],
+      "missingStates": [
+        "Resolve original model, custom loader, all textures, overrides and predicates; installation and registry unverified",
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
+      ],
       "interfaces": [
         "external_model admission adapter / actual item registry",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "verify complete dependency and state art, then adapt"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": "spartan_weaponry_unofficial:iron_halberd",
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#halberd"
     },
     {
       "id": "eldencombat:hammer",
@@ -855,9 +963,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "complete_provider_dependency_candidate",
+        "method": "provider_reference_only",
         "representative": false,
-        "artStatus": "candidate_only_not_asset_delivery",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
@@ -868,15 +976,23 @@
         "targetLengthBlocks": 0.8280000000000001,
         "ratioToPlayer": 0.46,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          4.5,
+          11.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
-      "missingStates": [],
+      "missingStates": [
+        "Resolve original model, custom loader, all textures, overrides and predicates; installation and registry unverified",
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
+      ],
       "interfaces": [
         "external_model admission adapter / actual item registry",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "confirm category/shape before adopting approximate provider"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": "spartan_weaponry_unofficial:iron_flanged_mace",
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#hammer"
     },
     {
       "id": "eldencombat:hand_of_malenia",
@@ -902,9 +1018,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "own_design_pixel_conversion_pending",
+        "method": "own_sprite",
         "representative": false,
-        "artStatus": "not_started",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "project-owned source available; sprite not authored",
@@ -915,17 +1031,22 @@
         "targetLengthBlocks": 1.9440000000000002,
         "ratioToPlayer": 1.08,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          12.5,
+          46.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
       "missingStates": [
-        "independent 2D silhouette"
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
       ],
       "interfaces": [
         "sprite admission / per-item display",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "convert existing project-owned design to sprite after representative review"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": null,
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#hand_of_malenia"
     },
     {
       "id": "eldencombat:heavy_thrusting_sword",
@@ -951,9 +1072,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "own_design_pixel_conversion_pending",
+        "method": "own_sprite",
         "representative": false,
-        "artStatus": "not_started",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "project-owned source available; sprite not authored",
@@ -964,17 +1085,22 @@
         "targetLengthBlocks": 1.512,
         "ratioToPlayer": 0.84,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          7.5,
+          24.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
       "missingStates": [
-        "independent 2D silhouette"
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
       ],
       "interfaces": [
         "sprite admission / per-item display",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "convert existing project-owned design to sprite after representative review"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": null,
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#heavy_thrusting_sword"
     },
     {
       "id": "eldencombat:katana",
@@ -1000,9 +1126,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "complete_provider_dependency_candidate",
+        "method": "provider_reference_only",
         "representative": false,
-        "artStatus": "candidate_only_not_asset_delivery",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
@@ -1013,15 +1139,23 @@
         "targetLengthBlocks": 1.6380000000000001,
         "ratioToPlayer": 0.91,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          3.5,
+          12.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
-      "missingStates": [],
+      "missingStates": [
+        "Resolve original model, custom loader, all textures, overrides and predicates; installation and registry unverified",
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
+      ],
       "interfaces": [
         "external_model admission adapter / actual item registry",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "verify complete dependency and state art, then adapt"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": "spartan_weaponry_unofficial:iron_katana",
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#katana"
     },
     {
       "id": "eldencombat:malikeths_black_blade",
@@ -1047,9 +1181,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "own_design_pixel_conversion_pending",
+        "method": "own_sprite",
         "representative": false,
-        "artStatus": "not_started",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "project-owned source available; sprite not authored",
@@ -1060,17 +1194,22 @@
         "targetLengthBlocks": 2.3040000000000003,
         "ratioToPlayer": 1.28,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          13.5,
+          50.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
       "missingStates": [
-        "independent 2D silhouette"
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
       ],
       "interfaces": [
         "sprite admission / per-item display",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "convert existing project-owned design to sprite after representative review"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": null,
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#malikeths_black_blade"
     },
     {
       "id": "eldencombat:marikas_hammer",
@@ -1096,9 +1235,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "own_design_pixel_conversion_pending",
+        "method": "own_sprite",
         "representative": false,
-        "artStatus": "not_started",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "project-owned source available; sprite not authored",
@@ -1109,17 +1248,22 @@
         "targetLengthBlocks": 1.044,
         "ratioToPlayer": 0.58,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          13.5,
+          50.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
       "missingStates": [
-        "independent 2D silhouette"
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
       ],
       "interfaces": [
         "sprite admission / per-item display",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "convert existing project-owned design to sprite after representative review"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": null,
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#marikas_hammer"
     },
     {
       "id": "eldencombat:mohgwyns_sacred_spear",
@@ -1145,9 +1289,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "own_design_pixel_conversion_pending",
+        "method": "own_sprite",
         "representative": false,
-        "artStatus": "not_started",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "project-owned source available; sprite not authored",
@@ -1158,17 +1302,22 @@
         "targetLengthBlocks": 3.15,
         "ratioToPlayer": 1.75,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          16.5,
+          47.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
       "missingStates": [
-        "independent 2D silhouette"
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
       ],
       "interfaces": [
         "sprite admission / per-item display",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "convert existing project-owned design to sprite after representative review"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": null,
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#mohgwyns_sacred_spear"
     },
     {
       "id": "eldencombat:morgotts_cursed_sword",
@@ -1194,9 +1343,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "own_design_pixel_conversion_pending",
+        "method": "own_sprite",
         "representative": false,
-        "artStatus": "not_started",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "project-owned source available; sprite not authored",
@@ -1207,17 +1356,22 @@
         "targetLengthBlocks": 2.088,
         "ratioToPlayer": 1.16,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          10.5,
+          45.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
       "missingStates": [
-        "independent 2D silhouette"
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
       ],
       "interfaces": [
         "sprite admission / per-item display",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "convert existing project-owned design to sprite after representative review"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": null,
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#morgotts_cursed_sword"
     },
     {
       "id": "eldencombat:sacred_relic_sword",
@@ -1243,9 +1397,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "own_sprite_draft",
+        "method": "own_sprite",
         "representative": true,
-        "artStatus": "representative_delivered",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "project-owned derivative",
@@ -1262,12 +1416,16 @@
         ],
         "suggestion": "See six-representatives.json; webpage anchor is not in-game proof"
       },
-      "missingStates": [],
+      "missingStates": [
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
+      ],
       "interfaces": [
         "sprite admission / per-item display",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "Review representative, then code owner admits assets/reference"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": null,
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#sacred_relic_sword"
     },
     {
       "id": "eldencombat:sacred_seal",
@@ -1293,9 +1451,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "own_design_pixel_conversion_pending",
+        "method": "own_sprite",
         "representative": false,
-        "artStatus": "not_started",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "project-owned source available; sprite not authored",
@@ -1306,17 +1464,22 @@
         "targetLengthBlocks": 0.216,
         "ratioToPlayer": 0.12,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          8.5,
+          24.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
       "missingStates": [
-        "independent 2D silhouette"
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
       ],
       "interfaces": [
         "sprite admission / per-item display",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "convert existing project-owned design to sprite after representative review"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": null,
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#sacred_seal"
     },
     {
       "id": "eldencombat:scythe",
@@ -1342,9 +1505,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "complete_provider_dependency_candidate",
+        "method": "provider_reference_only",
         "representative": false,
-        "artStatus": "candidate_only_not_asset_delivery",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
@@ -1355,15 +1518,23 @@
         "targetLengthBlocks": 2.52,
         "ratioToPlayer": 1.4,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          12.5,
+          19.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
-      "missingStates": [],
+      "missingStates": [
+        "Resolve original model, custom loader, all textures, overrides and predicates; installation and registry unverified",
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
+      ],
       "interfaces": [
         "external_model admission adapter / actual item registry",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "verify complete dependency and state art, then adapt"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": "spartan_weaponry_unofficial:iron_scythe",
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#scythe"
     },
     {
       "id": "eldencombat:shield",
@@ -1389,9 +1560,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "own_sprite_draft",
+        "method": "own_sprite",
         "representative": true,
-        "artStatus": "representative_delivered",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "project-owned derivative",
@@ -1409,15 +1580,17 @@
         "suggestion": "See six-representatives.json; webpage anchor is not in-game proof"
       },
       "missingStates": [
-        "runtime two-sided front/back material",
-        "blocking property and pose"
+        "Two-sided front/back material and blocking pose; blocking is a pose, not a duplicate PNG",
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
       ],
       "interfaces": [
         "sprite admission / per-item display",
         "front/back and blocking transform",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "Review representative, then code owner admits assets/reference"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": null,
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#shield"
     },
     {
       "id": "eldencombat:small_shield",
@@ -1443,9 +1616,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "own_design_pixel_conversion_pending",
+        "method": "own_sprite",
         "representative": false,
-        "artStatus": "not_started",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "project-owned source available; sprite not authored",
@@ -1456,20 +1629,24 @@
         "targetLengthBlocks": 0.5040000000000001,
         "ratioToPlayer": 0.28,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          16.5,
+          16.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
       "missingStates": [
-        "front/back/hand anchor",
-        "blocking pose",
-        "independent 2D silhouette"
+        "Two-sided front/back material and blocking pose; blocking is a pose, not a duplicate PNG",
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
       ],
       "interfaces": [
         "sprite admission / per-item display",
         "front/back and blocking transform",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "convert existing project-owned design to sprite after representative review"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": null,
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#small_shield"
     },
     {
       "id": "eldencombat:spear",
@@ -1497,7 +1674,7 @@
       "delivery": {
         "method": "provider_reference_only",
         "representative": true,
-        "artStatus": "representative_delivered",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
@@ -1514,12 +1691,17 @@
         ],
         "suggestion": "See six-representatives.json; webpage anchor is not in-game proof"
       },
-      "missingStates": [],
+      "missingStates": [
+        "Resolve original model, custom loader, all textures, overrides and predicates; installation and registry unverified",
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
+      ],
       "interfaces": [
         "external_model admission adapter / actual item registry",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "Review representative, then code owner admits assets/reference"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": "spartan_weaponry_unofficial:iron_spear",
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#spear"
     },
     {
       "id": "eldencombat:starscourge_greatsword",
@@ -1545,9 +1727,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "own_design_pixel_conversion_pending",
+        "method": "own_sprite",
         "representative": false,
-        "artStatus": "not_started",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "project-owned source available; sprite not authored",
@@ -1558,17 +1740,23 @@
         "targetLengthBlocks": 1.9800000000000002,
         "ratioToPlayer": 1.1,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          13.5,
+          46.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
       "missingStates": [
-        "independent 2D silhouette"
+        "Single-blade sprite; paired placement belongs to the runtime, not a two-blades-in-one icon",
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
       ],
       "interfaces": [
         "sprite admission / per-item display",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "convert existing project-owned design to sprite after representative review"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": null,
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#starscourge_greatsword"
     },
     {
       "id": "eldencombat:straight_sword",
@@ -1596,7 +1784,7 @@
       "delivery": {
         "method": "provider_reference_only",
         "representative": true,
-        "artStatus": "representative_delivered",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "reference engine resources; no redistributed Mojang PNG",
@@ -1613,12 +1801,17 @@
         ],
         "suggestion": "See six-representatives.json; webpage anchor is not in-game proof"
       },
-      "missingStates": [],
+      "missingStates": [
+        "Resolve original model, custom loader, all textures, overrides and predicates; installation and registry unverified",
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
+      ],
       "interfaces": [
         "external_model admission adapter / actual item registry",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "Review representative, then code owner admits assets/reference"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": "minecraft:iron_sword",
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#straight_sword"
     },
     {
       "id": "eldencombat:thrusting_sword",
@@ -1644,9 +1837,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "complete_provider_dependency_candidate",
+        "method": "provider_reference_only",
         "representative": false,
-        "artStatus": "candidate_only_not_asset_delivery",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
@@ -1657,15 +1850,23 @@
         "targetLengthBlocks": 1.2060000000000002,
         "ratioToPlayer": 0.67,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          4.5,
+          11.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
-      "missingStates": [],
+      "missingStates": [
+        "Resolve original model, custom loader, all textures, overrides and predicates; installation and registry unverified",
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
+      ],
       "interfaces": [
         "external_model admission adapter / actual item registry",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "verify complete dependency and state art, then adapt"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": "spartan_weaponry_unofficial:iron_rapier",
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#thrusting_sword"
     },
     {
       "id": "eldencombat:twinblade",
@@ -1691,9 +1892,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "complete_provider_dependency_candidate",
+        "method": "own_sprite",
         "representative": false,
-        "artStatus": "candidate_only_not_asset_delivery",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
@@ -1704,15 +1905,22 @@
         "targetLengthBlocks": 2.16,
         "ratioToPlayer": 1.2,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          16.5,
+          16.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
-      "missingStates": [],
+      "missingStates": [
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
+      ],
       "interfaces": [
         "external_model admission adapter / actual item registry",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "verify complete dependency and state art, then adapt"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": null,
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#twinblade"
     },
     {
       "id": "eldencombat:whip",
@@ -1738,9 +1946,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "own_design_pixel_conversion_pending",
+        "method": "own_sprite",
         "representative": false,
-        "artStatus": "not_started",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "project-owned source available; sprite not authored",
@@ -1751,17 +1959,23 @@
         "targetLengthBlocks": 2.736,
         "ratioToPlayer": 1.52,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          11.5,
+          27.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
       "missingStates": [
-        "independent 2D silhouette"
+        "Rest-pose sprite only; articulated attack motion is outside the sprite asset",
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
       ],
       "interfaces": [
         "sprite admission / per-item display",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "convert existing project-owned design to sprite after representative review"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": null,
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#whip"
     },
     {
       "id": "eldencombat:short_bow",
@@ -1787,9 +2001,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "complete_provider_dependency_candidate",
+        "method": "provider_reference_only",
         "representative": false,
-        "artStatus": "candidate_only_not_asset_delivery",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "reference engine resources; no redistributed Mojang PNG",
@@ -1800,19 +2014,24 @@
         "targetLengthBlocks": 1.1880000000000002,
         "ratioToPlayer": 0.66,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          5.5,
+          7.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
       "missingStates": [
-        "independent state textures or complete provider overrides",
-        "held alignment for loading/pulling/charged"
+        "Resolve original model, custom loader, all textures, overrides and predicates; installation and registry unverified",
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
       ],
       "interfaces": [
         "external_model admission adapter / actual item registry",
         "state predicates",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "confirm category/shape before adopting approximate provider"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": "minecraft:bow",
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#short_bow"
     },
     {
       "id": "eldencombat:long_bow",
@@ -1840,7 +2059,7 @@
       "delivery": {
         "method": "provider_reference_only",
         "representative": true,
-        "artStatus": "representative_delivered",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
@@ -1858,14 +2077,17 @@
         "suggestion": "See six-representatives.json; webpage anchor is not in-game proof"
       },
       "missingStates": [
-        "runtime provider pulling predicates and input adapter"
+        "Resolve original model, custom loader, all textures, overrides and predicates; installation and registry unverified",
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
       ],
       "interfaces": [
         "external_model admission adapter / actual item registry",
         "state predicates",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "Review representative, then code owner admits assets/reference"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": "spartan_weaponry_unofficial:longbow_iron_strengthened",
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#long_bow"
     },
     {
       "id": "eldencombat:great_bow",
@@ -1891,9 +2113,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "own_design_pixel_conversion_pending",
+        "method": "own_sprite",
         "representative": false,
-        "artStatus": "not_started",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "project-owned source available; sprite not authored",
@@ -1904,20 +2126,24 @@
         "targetLengthBlocks": 2.3400000000000003,
         "ratioToPlayer": 1.3,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          20.5,
+          20.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
       "missingStates": [
-        "independent state textures or complete provider overrides",
-        "held alignment for loading/pulling/charged",
-        "independent 2D silhouette"
+        "Bind named authored art states to agreed gameplay predicates; art fractions are not charge times",
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
       ],
       "interfaces": [
         "sprite admission / per-item display",
         "state predicates",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "convert existing project-owned design to sprite after representative review"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": null,
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#great_bow"
     },
     {
       "id": "eldencombat:crossbow",
@@ -1943,9 +2169,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "complete_provider_dependency_candidate",
+        "method": "provider_reference_only",
         "representative": false,
-        "artStatus": "candidate_only_not_asset_delivery",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "reference engine resources; no redistributed Mojang PNG",
@@ -1956,19 +2182,24 @@
         "targetLengthBlocks": 0.756,
         "ratioToPlayer": 0.42,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          9.5,
+          11.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
       "missingStates": [
-        "independent state textures or complete provider overrides",
-        "held alignment for loading/pulling/charged"
+        "Resolve original model, custom loader, all textures, overrides and predicates; installation and registry unverified",
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
       ],
       "interfaces": [
         "external_model admission adapter / actual item registry",
         "state predicates",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "verify complete dependency and state art, then adapt"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": "minecraft:crossbow",
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#crossbow"
     },
     {
       "id": "eldencombat:ballista",
@@ -1994,9 +2225,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "complete_provider_dependency_candidate",
+        "method": "own_sprite",
         "representative": false,
-        "artStatus": "candidate_only_not_asset_delivery",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "whole-provider dependency only; per-asset redistribution not admitted",
@@ -2007,19 +2238,25 @@
         "targetLengthBlocks": 1.4400000000000002,
         "ratioToPlayer": 0.8,
         "evidence": "provisional_art_estimate",
-        "grip": null,
+        "grip": [
+          7.5,
+          24.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
       "missingStates": [
-        "independent state textures or complete provider overrides",
-        "held alignment for loading/pulling/charged"
+        "Bind named authored art states to agreed gameplay predicates; art fractions are not charge times",
+        "Loaded bolt is visual only; supported ammunition and firework state undecided",
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
       ],
       "interfaces": [
         "external_model admission adapter / actual item registry",
         "state predicates",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "confirm category/shape before adopting approximate provider"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": null,
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#ballista"
     },
     {
       "id": "eldencombat:test_flask",
@@ -2045,9 +2282,9 @@
         "stateVerification": "base definition/candidate only; state texture completeness not verified"
       },
       "delivery": {
-        "method": "own_design_pixel_conversion_pending",
+        "method": "own_sprite",
         "representative": false,
-        "artStatus": "not_started",
+        "artStatus": "full_art_delivery_pending_human_review",
         "runtimeRouteStatus": "pending",
         "inGameAccepted": false,
         "copyPermission": "project-owned source available; sprite not authored",
@@ -2055,20 +2292,27 @@
         "deliveredStrict2d": null
       },
       "size": {
-        "targetLengthBlocks": null,
+        "targetLengthBlocks": 0.375,
         "ratioToPlayer": null,
         "evidence": "not_calibrated",
-        "grip": null,
+        "grip": [
+          16.5,
+          14.5
+        ],
         "suggestion": "retain per-item profile; grip must be measured on chosen 2D PNG, do not reuse 3D compensation"
       },
       "missingStates": [
-        "independent 2D silhouette"
+        "Full bottle only; empty/consumption/refill behavior undecided",
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
       ],
       "interfaces": [
         "sprite admission / per-item display",
         "first/third-person, both hands, classic/slim validation"
       ],
-      "nextAction": "convert existing project-owned design to sprite after representative review"
+      "nextAction": "Runtime owner reviews full asset manifest and completes interfaces; do not mark routes ready automatically",
+      "selectedProvider": null,
+      "fullAssetManifest": "art/equipment-2d/full/equipment-42.json#test_flask"
     }
-  ]
+  ],
+  "fullDelivery": "art/equipment-2d/full/equipment-42.json"
 }

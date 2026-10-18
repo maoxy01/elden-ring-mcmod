@@ -3,6 +3,7 @@
   "minVersion": "0.8",
   "package": "com.dsh.eldencombat.mixin",
   "compatibilityLevel": "JAVA_21",
-  "client": ["PlayerModelPoseMixin", "JourneyMapSizeMixin"],
+  "mixins": ["CombatRollServerMixin"],
+  "client": ["PlayerModelPoseMixin", "JourneyMapSizeMixin", "ItemRendererEquipment2dMixin", "CombatRollManagerMixin"],
   "injectors": {"defaultRequire": 1}
 }

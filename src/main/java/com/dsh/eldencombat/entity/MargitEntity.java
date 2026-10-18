@@ -382,10 +382,15 @@ public class MargitEntity extends Monster {
             current = null;
         }
         if (current == null) {
-            Player nearest = level.getNearestPlayer(this, config.lockOn.range);
-            if (nearest instanceof LivingEntity living && living.isAlive() && !living.isSpectator()) {
-                setTarget(living);
-                current = living;
+            Player nearest = level.getNearestPlayer(getX(), getY(), getZ(), config.lockOn.range,
+                    candidate -> candidate instanceof Player player && player.isAlive()
+                            && !player.isSpectator() && !player.isCreative());
+            // 创造/旁观玩家永远不是战斗目标。上面那段"脱战"分支会把创造目标丢掉，这一行以前只看
+            // isAlive/!isSpectator，于是紧接着又把它抓回来：创造模式下玛尔基特因此每 tick 都在
+            // "丢目标→重新锁定"，表现就是 BUG 反馈里的"仍有攻击欲望"。
+            if (nearest != null && nearest.isAlive() && !nearest.isSpectator() && !nearest.isCreative()) {
+                setTarget(nearest);
+                current = nearest;
             }
         }
         return current;

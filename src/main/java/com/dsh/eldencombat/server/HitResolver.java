@@ -167,7 +167,7 @@ public final class HitResolver {
         state.ensureInit(config);
 
         // 翻滚无敌只过滤本系统战斗伤害，环境伤害不经过这里
-        if (state.isRollInvulnerable(tick)) {
+        if (!com.dsh.eldencombat.compat.CombatRollCompat.present() && state.isRollInvulnerable(tick)) {
             return;
         }
 

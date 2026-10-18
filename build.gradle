@@ -36,6 +36,32 @@ neoForge {
             if (project.hasProperty('vfxSmoke')) {
                 gameDirectory = layout.buildDirectory.dir('vfxSmoke')
                 systemProperty 'eldencombat.vfxSmoke', 'true'
+                // 快速回归：-PvfxSegments=2 只跑前两段（默认 18 段全跑）。
+                if (project.hasProperty('vfxSegments')) systemProperty 'eldencombat.vfxSegments', project.property('vfxSegments').toString()
+                // 单段诊断：-PvfxFlame 只跑火墙（带墙场景），-PvfxMissing 只跑强制缺图段。
+                if (project.hasProperty('vfxFlame')) systemProperty 'eldencombat.vfxFlame', 'true'
+                if (project.hasProperty('vfxMissing')) systemProperty 'eldencombat.vfxMissing', 'true'
+                // 定高俯瞰机位：判断"美术没画出来"还是"第一人称相机没对到"。
+                if (project.hasProperty('vfxVantage')) systemProperty 'eldencombat.vfxVantage', 'true'
+                // V1 受控取证（固定观察机位 + 分层取样 + 严格配对 + 两个负例）；V2/V3 诊断开关同目录串行运行。
+                if (project.hasProperty('vfxFixed')) systemProperty 'eldencombat.vfxFixed', 'true'
+                if (project.hasProperty('vfxFixedSegments')) systemProperty 'eldencombat.vfxFixedSegments', project.property('vfxFixedSegments').toString()
+                if (project.hasProperty('vfxForceCore')) systemProperty 'eldencombat.vfxForceCore', 'true'
+                if (project.hasProperty('vfxBudgetZero')) systemProperty 'eldencombat.vfxBudgetZero', 'true'
+                if (project.hasProperty('vfxLatch')) systemProperty 'eldencombat.vfxLatch', 'true'
+                // 动作语义夹具：逐次挥击是否真出图 + 施法者挥击次数 + 起跳/落地时序（不拍差分图）。
+                if (project.hasProperty('vfxSemantics')) systemProperty 'eldencombat.vfxSemantics', 'true'
+                if (project.hasProperty('vfxSemanticsCases')) systemProperty 'eldencombat.vfxSemanticsCases', project.property('vfxSemanticsCases').toString()
+                // 负例：恢复"原地蹦"的旧起跳参数，用来证明语义门禁真的抓得住它。
+                if (project.hasProperty('vfxLegacyHop')) systemProperty 'eldencombat.vfxLegacyHop', 'true'
+                programArgument '--quickPlaySingleplayer'
+                programArgument 'vfx-integration'
+            }
+            if (project.hasProperty('vfxReload')) {
+                // 真降级/恢复场景（框架 §7 第 2/3 行、§9"真降级/恢复"）：隔离资源包，独立目录，独立世界。
+                gameDirectory = layout.buildDirectory.dir('vfxReload')
+                systemProperty 'eldencombat.vfxSmoke', 'true'
+                systemProperty 'eldencombat.vfxReload', 'true'
                 programArgument '--quickPlaySingleplayer'
                 programArgument 'vfx-integration'
             }
@@ -51,10 +77,13 @@ neoForge {
             if (project.hasProperty('clientSmoke')) {
                 gameDirectory = layout.buildDirectory.dir('clientSmoke')
                 systemProperty 'eldencombat.clientSmoke', 'true'
+                if (project.hasProperty('artAcceptance')) systemProperty 'eldencombat.artAcceptance', 'true'
+                if (project.hasProperty('providerAcceptance')) systemProperty 'eldencombat.providerAcceptance', 'true'
                 if (project.hasProperty('clientSmokeReload')) systemProperty 'eldencombat.persistenceReload', 'true'
                 if (project.hasProperty('functionalSmoke')) systemProperty 'eldencombat.functionalSmoke', 'true'
                 if (project.hasProperty('gripSmoke')) {
                     systemProperty 'eldencombat.gripSmoke', 'true'
+                    if (project.hasProperty('gripItem')) systemProperty 'eldencombat.gripItem', project.property('gripItem').toString()
                     systemProperty 'eldencombat.smokeSlim', project.hasProperty('slimSmoke').toString()
                     programArgument '--uuid'
                     programArgument project.hasProperty('slimSmoke') ? '00000000-0000-0000-0000-000000000000' : '00000000-0000-0000-0000-000000000009'
@@ -62,6 +91,7 @@ neoForge {
                 programArgument '--quickPlaySingleplayer'
                 programArgument 'codex-player-smoke'
             }
+            if (project.hasProperty('artAcceptance')) systemProperty 'eldencombat.artAcceptance', 'true'
             // dsh：战技的游戏内验收场景（权限隔离，仅此开关启用）
             if (project.hasProperty('skillSmoke')) {
                 gameDirectory = layout.buildDirectory.dir('skillSmoke')
@@ -84,12 +114,40 @@ neoForge {
                     programArgument 'codex-skill-smoke'
                 }
             }
+            // dsh：装备 2D 的实机人工观感场景。隔离目录 + 已备好的创造模式存档，**没有夹具接管操作**，
+            // 玩家自己按 E 找物品、F5 切视角、F 换手，用来核对握持/朝向/遮挡的观感。
+            // 存档只在第一次运行复制（见 prepareEquipmentViewWorld），之后由玩家自己改，工具不再覆盖。
+            if (project.hasProperty('equipmentView')) {
+                gameDirectory = layout.buildDirectory.dir('equipmentView')
+                if (layout.buildDirectory.file('equipmentView/saves/equipment-view/level.dat').get().asFile.isFile()) {
+                    programArgument '--quickPlaySingleplayer'
+                    programArgument 'equipment-view'
+                }
+            }
             if (project.hasProperty('sourceMotion')) {
                 if (!project.hasProperty('manualSkills')) {
                     throw new GradleException('sourceMotion requires manualSkills; source assets are local-test-only.')
                 }
                 systemProperty 'eldencombat.sourceMotionProfile',
                         layout.buildDirectory.file('elden-source/retargeted/profile.json').get().asFile.absolutePath
+            }
+            if (project.hasProperty('packGameDir')) gameDirectory = file(project.property('packGameDir'))
+            if (project.hasProperty('packIntegration')) {
+                jvmArgument '-Xms256m'
+                jvmArgument '-Xmx2560m'
+                jvmArgument '-XX:ActiveProcessorCount=4'
+                systemProperty 'eldencombat.packIntegration', 'true'
+                if (project.hasProperty('packRestart')) systemProperty 'eldencombat.packRestart', 'true'
+                if (project.hasProperty('packSingle')) {
+                    systemProperty 'eldencombat.packSingle', 'true'
+                    programArgument '--quickPlaySingleplayer'
+                    programArgument 'pack-integrated'
+                } else {
+                    programArgument '--quickPlayMultiplayer'
+                    programArgument '127.0.0.1:25568'
+                }
+                programArgument '--username'
+                programArgument 'PackTester'
             }
         }
         server {
@@ -111,6 +169,14 @@ neoForge {
                 programArgument '--port'
                 programArgument '25566'
             }
+            if (project.hasProperty('packGameDir')) gameDirectory = file(project.property('packGameDir'))
+            if (project.hasProperty('packIntegration')) {
+                systemProperty 'eldencombat.packIntegration', 'true'
+                if (project.hasProperty('packRestart')) systemProperty 'eldencombat.packRestart', 'true'
+                jvmArgument '-Xms256m'
+                jvmArgument '-Xmx1536m'
+                jvmArgument '-XX:ActiveProcessorCount=4'
+            }
         }
     }
 
@@ -129,6 +195,26 @@ def artDir = layout.projectDirectory.dir('art/margit')
 def generatedArt = layout.buildDirectory.dir('generated/artResources')
 
 tasks.register('syncArt', Sync) {
+    inputs.file('art/ui-pixel/assets.json')
+    from('art/ui-pixel/textures') {
+        include '*.png'
+        eachFile { details -> details.path = 'assets/eldencombat/textures/ui/' + details.name.replace('_16.png', '.png') }
+    }
+    doFirst {
+        def ui = new groovy.json.JsonSlurper().parse(file('art/ui-pixel/assets.json'))
+        if (ui.assets.size() != 8) throw new GradleException('UI admission requires the eight delivered PNGs')
+        ui.assets.each { asset ->
+            def png = file('art/ui-pixel/' + asset.file)
+            if (png.canonicalFile.parentFile != file('art/ui-pixel/textures').canonicalFile)
+                throw new GradleException('UI asset escaped source root')
+            def digest = java.security.MessageDigest.getInstance('SHA-256').digest(png.bytes).encodeHex().toString()
+            def image = javax.imageio.ImageIO.read(png)
+            if (digest != asset.sha256 || image == null || image.width != asset.size[0] || image.height != asset.size[1])
+                throw new GradleException('UI asset hash/dimension mismatch: ' + png)
+        }
+        if (fileTree('art/ui-pixel/textures').matching { include '*.png' }.files.size() != 8)
+            throw new GradleException('Unadmitted UI PNG in source directory')
+    }
     from('art/vfx-2d/textures/particle') {
         include '**/frame_*.png'
         into 'assets/eldencombat/textures/particle'
@@ -262,11 +348,47 @@ tasks.register('prepareClientSmokeWorld', Sync) {
 }
 
 tasks.matching { it.name == 'runClient' }.configureEach {
+    if (project.hasProperty('artAcceptance')) {
+        doLast {
+            def grace = project.hasProperty('gracePrototype')
+            def log = layout.buildDirectory.file((grace ? 'gracePrototypeClient' : 'clientSmoke') + '/logs/latest.log').get().asFile
+            def marker = grace ? 'GRACE_ART_COMPLETE:' : project.hasProperty('providerAcceptance') ? 'ART_PROVIDER_COMPLETE:' : 'ART_FLAIL_COMPLETE:'
+            if (!log.isFile() || !log.text.contains(marker) || log.text.contains('ART_ACCEPTANCE_FAIL') || log.text.contains('GRACE_ART_FAIL'))
+                throw new GradleException('Art acceptance fixture failed or incomplete; inspect isolated log')
+        }
+    }
+    if (project.hasProperty('vfxSmoke')) {
+        // VFX 运行收口门禁：缺完成标记、或出现任何 VFX_SMOKE_FAIL/INCOMPLETE 即失败退出非 0。
+        // 各模式还要各自的完成标记（受控 V1 / 锁存 V3 / CORE / 预算0 诊断），避免拿别的模式的日志顶替。
+        doLast {
+            def log = layout.buildDirectory.file('vfxSmoke/logs/latest.log').get().asFile
+            def mode = project.hasProperty('vfxLatch') ? 'VFX_LATCH_COMPLETE:'
+                    : project.hasProperty('vfxForceCore') ? 'VFX_CORE_COMPLETE:'
+                    : project.hasProperty('vfxBudgetZero') ? 'VFX_BUDGET0_COMPLETE:'
+                    : project.hasProperty('vfxSemantics') ? 'VFX_SEMANTICS_COMPLETE:'
+                    : project.hasProperty('vfxFixed') ? 'VFX_FIXED_COMPLETE:' : 'VFX_SMOKE_COMPLETE:'
+            if (!log.isFile() || !log.text.contains('VFX_SMOKE_COMPLETE:') || !log.text.contains(mode)
+                    || log.text.contains('VFX_SMOKE_FAIL') || log.text.contains('VFX_SMOKE_INCOMPLETE'))
+                throw new GradleException('VFX fixture failed or incomplete (' + mode + '); inspect isolated log')
+        }
+    }
+    if (project.hasProperty('vfxReload')) {
+        // 资源包降级/恢复场景门禁：缺完成标记、或出现任何 VFX_SMOKE_FAIL/INCOMPLETE 即失败退出非 0。
+        doLast {
+            def log = layout.buildDirectory.file('vfxReload/logs/latest.log').get().asFile
+            if (!log.isFile() || !log.text.contains('VFX_SMOKE_COMPLETE:')
+                    || log.text.contains('VFX_SMOKE_FAIL') || log.text.contains('VFX_SMOKE_INCOMPLETE'))
+                throw new GradleException('VFX reload fixture failed or incomplete; inspect isolated log')
+        }
+    }
     if (project.hasProperty('clientSmoke')) {
         dependsOn 'prepareClientSmokeWorld'
     }
     if (project.hasProperty('ashSmoke')) {
         dependsOn 'prepareAshSmokeWorld'
+    }
+    if (project.hasProperty('equipmentView')) {
+        dependsOn 'prepareEquipmentViewWorld'
     }
 }
 
@@ -276,6 +398,29 @@ tasks.register('prepareAshSmokeWorld', Sync) {
     onlyIf { file('run/world/level.dat').isFile() }
     from('run/world') { exclude 'session.lock' }
     into layout.buildDirectory.dir('ashSmoke/saves/ash-smoke')
+}
+
+// dsh：装备 2D 人工观感（-PequipmentView）的隔离存档。直接复用跑过夹具、玩家已经是创造模式
+// 的世界（saveEverything 存过 playerGameType=1），省得每次手工建世界/刷物品。
+// 只在目标不存在时复制：一旦玩家进去改过东西，工具不再覆盖；想重来就自己删掉
+// build/equipmentView/saves/equipment-view 再跑一次。
+tasks.register('prepareEquipmentViewWorld', Sync) {
+    description = '把创造模式测试存档复制成 build/equipmentView/saves/equipment-view'
+    group = 'verification'
+    def smoke = file('build/clientSmoke/saves/codex-player-smoke')
+    def fallback = file('run/world')
+    def source = new File(smoke, 'level.dat').isFile() ? smoke : fallback
+    onlyIf { new File(source, 'level.dat').isFile() }
+    onlyIf { !layout.buildDirectory.file('equipmentView/saves/equipment-view/level.dat').get().asFile.isFile() }
+    from(source) { exclude 'session.lock' }
+    into layout.buildDirectory.dir('equipmentView/saves/equipment-view')
+    doLast {
+        logger.lifecycle('[equipmentView] 已准备存档 build/equipmentView/saves/equipment-view（来源 {}）', source)
+        if (source == fallback) {
+            logger.lifecycle('[equipmentView] 注意：smoke 存档不存在，回退用 run/world —— 那份是服务端世界，' +
+                    '开局可能是生存模式，进游戏后按 Esc→对局域网开放→允许作弊 再 /gamemode creative')
+        }
+    }
 }
 
 tasks.register('prepareServerSmokeDir', Copy) {
@@ -319,15 +464,52 @@ tasks.named('test') {
 tasks.named('jar') {
     preserveFileTimestamps = false
     reproducibleFileOrder = true
+    // 夹具一律不进发布产物：用具名清单会漏（VfxFixedHarness/VfxSemanticsHarness 就是这样漏进去的），
+    // 所以按"testing 包里所有 *Harness*（含 $ 内部类）"整类排除，再加一条自检任务核对。
+    exclude 'com/dsh/eldencombat/testing/*Harness*'
     exclude 'com/dsh/eldencombat/testing/ClientSmokeHarness*'
     exclude 'com/dsh/eldencombat/testing/ServerSmokeHarness*'
     exclude 'com/dsh/eldencombat/testing/SkillSmokeHarness*'
     exclude 'com/dsh/eldencombat/testing/GracePrototypeHarness*'
     exclude 'com/dsh/eldencombat/testing/GraceClientPrototypeHarness*'
     exclude 'com/dsh/eldencombat/testing/AshSmokeHarness*'
+    exclude 'com/dsh/eldencombat/testing/SelectedArtAcceptanceHarness*'
+    exclude 'com/dsh/eldencombat/testing/GraceArtAcceptanceHarness*'
+    exclude 'com/dsh/eldencombat/testing/VfxIntegrationHarness*'
+}
+
+/**
+ * 发布产物自检：JAR 里不得出现任何夹具类（{@code *Harness*}）。
+ * 之前只按具名清单排除，新增夹具会被静默带进发布包——这条门禁就是补那个洞。
+ */
+tasks.register('verifyJarHasNoHarness') {
+    dependsOn 'jar'
+    doLast {
+        def jarFile = layout.buildDirectory.file('libs/eldencombat-0.2.0.jar').get().asFile
+        if (!jarFile.isFile()) throw new GradleException('jar not built: ' + jarFile)
+        def leaked = new java.util.zip.ZipFile(jarFile).withCloseable { zip ->
+            zip.entries().findAll { it.name.contains('Harness') }.collect { it.name }
+        }
+        if (!leaked.isEmpty())
+            throw new GradleException('release jar contains fixture classes: ' + leaked)
+        logger.lifecycle('verifyJarHasNoHarness: OK (no *Harness* entry)')
+    }
 }
 
 dependencies {
+    compileOnly files('docs/research-evidence/modpack-additions-20261016/jars/combat_roll-neoforge-2.0.6+1.21.1.jar',
+            'docs/research-evidence/modpack-additions-20261016/jars/player-animation-lib-forge-2.0.4+1.21.1.jar',
+            'docs/research-evidence/modpack-additions-20261016/jars/sophisticatedbackpacks-1.21.1-3.25.21.1475.jar',
+            'docs/research-evidence/modpack-additions-20261016/jars/sophisticatedcore-1.21.1-1.3.100.1348.jar',
+            'docs/research-evidence/modpack-additions-20261016/jars/alexsmobs-1.22.17.jar',
+            'docs/research-evidence/modpack-additions-20261016/jars/citadel-1.21.1-2.7.6.jar')
+    if (project.hasProperty('providerAcceptance')) {
+        def providerJar = file('docs/research-evidence/reuse-audit-20261013/spartan_weaponry_unofficial-1.2.3-1.21.1.jar')
+        def sha = java.security.MessageDigest.getInstance('SHA-256').digest(providerJar.bytes).encodeHex().toString()
+        if (sha != '84d3ddafb519e2f5e03f2681ff52c30c92c9512181f61a7a7487399a0179888f')
+            throw new GradleException('Spartan acceptance JAR hash mismatch')
+        runtimeOnly files(providerJar)
+    }
     compileOnly files('build/gracePrototype-dependencies/waystones-neoforge-1.21.1-21.1.46.jar',
             'build/gracePrototype-dependencies/balm-neoforge-1.21.1-21.0.66.jar',
             'build/gracePrototype-dependencies/journeymap-api-compile-only.jar')
@@ -338,8 +520,15 @@ dependencies {
     }
     // 用户要求去掉 Epic Fight：本模组不再依赖任何战斗模组，只用 NeoForge + 原版。
     if (project.hasProperty('packSmoke')) {
-        def lock = new groovy.json.JsonSlurper().parse(file('modpack/mods.lock.json'))
-        runtimeOnly files(lock.mods.findAll { it.env[project.hasProperty('serverSmoke') ? 'server' : 'client'] != 'unsupported' }.collect { file('build/modpack-dependencies/' + it.path.substring(5)) })
+        def lock = new groovy.json.JsonSlurper().parse(file(findProperty('packLock') ?: 'modpack/mods.lock.json'))
+        def side = project.hasProperty('packServer') || project.hasProperty('serverSmoke') ? 'server' : 'client'
+        def cache = findProperty('packDependencies') ?: 'build/modpack-dependencies'
+        runtimeOnly files(lock.mods.findAll { it.env[side] == 'required' }.collect {
+            def jar = file(cache + '/' + it.path.substring(5))
+            if (!jar.isFile() || java.security.MessageDigest.getInstance('SHA-512').digest(jar.bytes).encodeHex().toString() != it.hashes.sha512)
+                throw new GradleException('Unverified pack dependency: ' + it.path)
+            jar
+        })
     }
     testImplementation platform('org.junit:junit-bom:5.11.4')
     testImplementation 'org.junit.jupiter:junit-jupiter'
@@ -351,5 +540,25 @@ dependencies {
     testRuntimeOnly 'org.slf4j:slf4j-simple:2.0.16'
 }
 
+// 2D 装备路径的验收测试要把正式 routes/2d.json 喂给真实的 EquipmentRouteSnapshot 解析器和真实的
+// display 矩阵数学，所以测试源集需要拿到与主源码相同的 Minecraft/NeoForge 类。这里只增加类路径，
+// 不启动客户端：被覆盖到的都是纯解析与矩阵运算（无 GL、无注册表自举、无资源加载）。
+sourceSets.test.compileClasspath += configurations.compileClasspath
+sourceSets.test.runtimeClasspath += configurations.compileClasspath
+
 
 apply from: 'gradle/minimap-defaults.gradle'
+
+['runClient': 'CLIENT', 'runServer': 'SERVER'].each { taskName, side ->
+    tasks.named(taskName) {
+        doLast {
+            if (project.hasProperty('packIntegration')) {
+                def log = file(project.property('packGameDir').toString() + '/logs/latest.log').getText('UTF-8')
+                if (!log.contains('PACK_INTEGRATION_' + side + '_COMPLETE') ||
+                        (project.hasProperty('packSingle') && !log.contains('PACK_INTEGRATION_SERVER_COMPLETE')) ||
+                        log.contains('PACK_INTEGRATION_FAIL') || log.contains('PACK_CLIENT_FAIL'))
+                    throw new GradleException('Pack integration failed; inspect the isolated latest.log')
+            }
+        }
+    }
+}

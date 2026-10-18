@@ -1,0 +1,7794 @@
+{
+  "version": 1,
+  "date": "2026-10-15",
+  "status": "proposal_not_game_verified",
+  "humanAccepted": false,
+  "note": "Derived per-context display candidates for the own_sprite route. p comes from the vanilla reference pose applied to the reference item's own grip pixel; the item's own grip pixel is mapped onto that same point with one shared origin and unit, t = p - R.S.a. Nothing here is user-supplied and nothing here is in-game verified.",
+  "unit": "translation in 1/16 block, rotation in degrees, scale unitless; stored values are pre-mirror for the left hand, matching ItemTransform.apply",
+  "references": {
+    "melee": {
+      "image": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
+      "anchorPixels": [
+        3.5,
+        12.5
+      ],
+      "source": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55
+          ],
+          "translation": [
+            0,
+            4,
+            0.5
+          ],
+          "scale": [
+            0.85,
+            0.85,
+            0.85
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            25
+          ],
+          "translation": [
+            1.13,
+            3.2,
+            1.13
+          ],
+          "scale": [
+            0.68,
+            0.68,
+            0.68
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            2,
+            0
+          ],
+          "scale": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            0,
+            13,
+            7
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55
+          ],
+          "translation": [
+            0,
+            4,
+            0.5
+          ],
+          "scale": [
+            0.85,
+            0.85,
+            0.85
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -25
+          ],
+          "translation": [
+            1.13,
+            3.2,
+            1.13
+          ],
+          "scale": [
+            0.68,
+            0.68,
+            0.68
+          ]
+        }
+      },
+      "blocking": null,
+      "gripOffsetBlocks": [
+        0,
+        0,
+        0
+      ]
+    },
+    "bow": {
+      "image": "art/equipment-reuse/research-only-full/minecraft_item_bow.png",
+      "anchorPixels": [
+        5.5,
+        7.5
+      ],
+      "source": "minecraft:item/bow",
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            -80,
+            260,
+            -40
+          ],
+          "translation": [
+            -1,
+            -2,
+            2.5
+          ],
+          "scale": [
+            0.9,
+            0.9,
+            0.9
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            25
+          ],
+          "translation": [
+            1.13,
+            3.2,
+            1.13
+          ],
+          "scale": [
+            0.68,
+            0.68,
+            0.68
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            2,
+            0
+          ],
+          "scale": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            0,
+            13,
+            7
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            -80,
+            -280,
+            40
+          ],
+          "translation": [
+            -1,
+            -2,
+            2.5
+          ],
+          "scale": [
+            0.9,
+            0.9,
+            0.9
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -25
+          ],
+          "translation": [
+            1.13,
+            3.2,
+            1.13
+          ],
+          "scale": [
+            0.68,
+            0.68,
+            0.68
+          ]
+        }
+      },
+      "blocking": null,
+      "gripOffsetBlocks": [
+        0,
+        0,
+        0
+      ]
+    },
+    "crossbow": {
+      "image": "art/equipment-reuse/research-only-full/minecraft_item_crossbow_standby.png",
+      "anchorPixels": [
+        9.5,
+        11.5
+      ],
+      "source": "minecraft:item/crossbow",
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            -90,
+            0,
+            -60
+          ],
+          "translation": [
+            2,
+            0.1,
+            -3
+          ],
+          "scale": [
+            0.9,
+            0.9,
+            0.9
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            -90,
+            0,
+            -55
+          ],
+          "translation": [
+            1.13,
+            3.2,
+            1.13
+          ],
+          "scale": [
+            0.68,
+            0.68,
+            0.68
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            2,
+            0
+          ],
+          "scale": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            0,
+            13,
+            7
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            -90,
+            0,
+            30
+          ],
+          "translation": [
+            2,
+            0.1,
+            -3
+          ],
+          "scale": [
+            0.9,
+            0.9,
+            0.9
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            -90,
+            0,
+            35
+          ],
+          "translation": [
+            1.13,
+            3.2,
+            1.13
+          ],
+          "scale": [
+            0.68,
+            0.68,
+            0.68
+          ]
+        }
+      },
+      "blocking": null,
+      "gripOffsetBlocks": [
+        0,
+        0,
+        0
+      ]
+    },
+    "shield": {
+      "image": null,
+      "anchorPixels": [
+        8,
+        8
+      ],
+      "gripOffsetBlocks": [
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "source": "minecraft:item/shield (builtin/entity: handle at the model origin, geometry around the origin); blocking pose from minecraft:item/shield_blocking",
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            10,
+            6,
+            -4
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            180,
+            5
+          ],
+          "translation": [
+            -10,
+            2,
+            -10
+          ],
+          "scale": [
+            1.25,
+            1.25,
+            1.25
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            2,
+            4,
+            2
+          ],
+          "scale": [
+            0.25,
+            0.25,
+            0.25
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            0,
+            13,
+            7
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            -4.5,
+            4.5,
+            -5
+          ],
+          "scale": [
+            0.55,
+            0.55,
+            0.55
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            10,
+            6,
+            12
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            180,
+            5
+          ],
+          "translation": [
+            10,
+            0,
+            -10
+          ],
+          "scale": [
+            1.25,
+            1.25,
+            1.25
+          ]
+        },
+        "gui": {
+          "rotation": [
+            15,
+            -25,
+            -5
+          ],
+          "translation": [
+            2,
+            3,
+            0
+          ],
+          "scale": [
+            0.65,
+            0.65,
+            0.65
+          ]
+        }
+      },
+      "blocking": {
+        "thirdperson_righthand": {
+          "rotation": [
+            45,
+            155,
+            0
+          ],
+          "translation": [
+            -3.49,
+            11,
+            -2
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            45,
+            155,
+            0
+          ],
+          "translation": [
+            11.51,
+            7,
+            2.5
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            180,
+            -5
+          ],
+          "translation": [
+            -15,
+            5,
+            -11
+          ],
+          "scale": [
+            1.25,
+            1.25,
+            1.25
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            180,
+            -5
+          ],
+          "translation": [
+            5,
+            5,
+            -11
+          ],
+          "scale": [
+            1.25,
+            1.25,
+            1.25
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            2,
+            4,
+            2
+          ],
+          "scale": [
+            0.25,
+            0.25,
+            0.25
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            -4.5,
+            4.5,
+            -5
+          ],
+          "scale": [
+            0.55,
+            0.55,
+            0.55
+          ]
+        }
+      }
+    },
+    "flask": {
+      "image": null,
+      "anchorPixels": [
+        8,
+        8
+      ],
+      "gripOffsetBlocks": [
+        0,
+        0,
+        0
+      ],
+      "source": "minecraft:item/generated (icon centre is the grip)",
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            3,
+            1
+          ],
+          "scale": [
+            0.55,
+            0.55,
+            0.55
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            25
+          ],
+          "translation": [
+            1.13,
+            3.2,
+            1.13
+          ],
+          "scale": [
+            0.68,
+            0.68,
+            0.68
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            2,
+            0
+          ],
+          "scale": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            0,
+            13,
+            7
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "blocking": null
+    }
+  },
+  "items": {
+    "blasphemous_blade": {
+      "route": "own_sprite",
+      "family": "melee",
+      "reference": {
+        "key": "melee",
+        "source": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
+        "image": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
+        "anchorPixels": [
+          3.5,
+          12.5
+        ],
+        "measuredAxisDegrees": 45,
+        "perpendicularSkew": 0,
+        "gripOffsetBlocks": [
+          0,
+          0,
+          0
+        ]
+      },
+      "geometry": {
+        "canvas": [
+          64,
+          64
+        ],
+        "anchorPixels": [
+          13.5,
+          50.5
+        ],
+        "anchorBlock": [
+          -0.2890625,
+          -0.2890625,
+          0
+        ],
+        "worldLengthBlocks": 1.728,
+        "sourceSpanPixels": 81.31727983645297,
+        "uniformXYScale": 1.360006141652
+      },
+      "axis": {
+        "measuredSpriteAxisDegrees": 44.774,
+        "spriteAnisotropy": 33.458,
+        "appliedAxisDegrees": 0.226,
+        "flip180Degrees": 0,
+        "spritePerpendicularSkew": 1.502565,
+        "sprite": "art/equipment-2d/full/sprites/blasphemous_blade_front.png",
+        "notes": []
+      },
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55.226
+          ],
+          "translation": [
+            0,
+            7.426954,
+            -0.139893
+          ],
+          "scale": [
+            1.360006,
+            1.360006,
+            1.360006
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55.226
+          ],
+          "translation": [
+            0,
+            7.426954,
+            -0.139893
+          ],
+          "scale": [
+            1.360006,
+            1.360006,
+            1.360006
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            25.226
+          ],
+          "translation": [
+            1.13,
+            7.504404,
+            2.659336
+          ],
+          "scale": [
+            1.360006,
+            1.360006,
+            1.360006
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -25.226
+          ],
+          "translation": [
+            1.13,
+            7.504404,
+            2.659336
+          ],
+          "scale": [
+            1.360006,
+            1.360006,
+            1.360006
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            0.226
+          ],
+          "translation": [
+            4.015169,
+            6.06479,
+            0
+          ],
+          "scale": [
+            1.360006,
+            1.360006,
+            1.360006
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            0.226
+          ],
+          "translation": [
+            -1.765169,
+            1.81479,
+            0
+          ],
+          "scale": [
+            1.360006,
+            1.360006,
+            1.360006
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0.226
+          ],
+          "translation": [
+            -1.765169,
+            14.81479,
+            7
+          ],
+          "scale": [
+            1.360006,
+            1.360006,
+            1.360006
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "displayBlocking": null,
+      "verification": [
+        {
+          "context": "thirdperson_righthand",
+          "roundTripMaxError": 1.42e-7,
+          "gripLandsOnPalmErrorBlocks": 4.2e-8,
+          "worldLengthErrorBlocks": 1.8e-7
+        },
+        {
+          "context": "thirdperson_lefthand",
+          "roundTripMaxError": 1.42e-7,
+          "gripLandsOnPalmErrorBlocks": 4.2e-8,
+          "worldLengthErrorBlocks": 1.8e-7
+        },
+        {
+          "context": "firstperson_righthand",
+          "roundTripMaxError": 1.42e-7,
+          "gripLandsOnPalmErrorBlocks": 3.3e-8,
+          "worldLengthErrorBlocks": 1.8e-7
+        },
+        {
+          "context": "firstperson_lefthand",
+          "roundTripMaxError": 1.42e-7,
+          "gripLandsOnPalmErrorBlocks": 3.3e-8,
+          "worldLengthErrorBlocks": 1.8e-7
+        },
+        {
+          "context": "ground",
+          "roundTripMaxError": 1.42e-7,
+          "gripLandsOnPalmErrorBlocks": 4.9e-8,
+          "worldLengthErrorBlocks": 1.8e-7
+        },
+        {
+          "context": "fixed",
+          "roundTripMaxError": 1.42e-7,
+          "gripLandsOnPalmErrorBlocks": 4.9e-8,
+          "worldLengthErrorBlocks": 1.8e-7
+        },
+        {
+          "context": "head",
+          "roundTripMaxError": 1.42e-7,
+          "gripLandsOnPalmErrorBlocks": 4.9e-8,
+          "worldLengthErrorBlocks": 1.8e-7
+        }
+      ],
+      "status": "proposal_not_game_verified",
+      "humanAccepted": false
+    },
+    "claw": {
+      "route": "own_sprite",
+      "family": "melee",
+      "reference": {
+        "key": "melee",
+        "source": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
+        "image": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
+        "anchorPixels": [
+          3.5,
+          12.5
+        ],
+        "measuredAxisDegrees": 45,
+        "perpendicularSkew": 0,
+        "gripOffsetBlocks": [
+          0,
+          0,
+          0
+        ]
+      },
+      "geometry": {
+        "canvas": [
+          32,
+          32
+        ],
+        "anchorPixels": [
+          8.5,
+          23.5
+        ],
+        "anchorBlock": [
+          -0.234375,
+          -0.234375,
+          0
+        ],
+        "worldLengthBlocks": 0.558,
+        "sourceSpanPixels": 30.798428691680733,
+        "uniformXYScale": 0.57976983757
+      },
+      "axis": {
+        "measuredSpriteAxisDegrees": 45,
+        "spriteAnisotropy": 7.336,
+        "appliedAxisDegrees": 0,
+        "flip180Degrees": 0,
+        "spritePerpendicularSkew": 0,
+        "sprite": "art/equipment-2d/full/sprites/claw_front.png",
+        "notes": []
+      },
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55
+          ],
+          "translation": [
+            0,
+            1.700796,
+            0.905412
+          ],
+          "scale": [
+            0.57977,
+            0.57977,
+            0.57977
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55
+          ],
+          "translation": [
+            0,
+            1.700796,
+            0.905412
+          ],
+          "scale": [
+            0.57977,
+            0.57977,
+            0.57977
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            25
+          ],
+          "translation": [
+            1.13,
+            2.022753,
+            0.701517
+          ],
+          "scale": [
+            0.57977,
+            0.57977,
+            0.57977
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -25
+          ],
+          "translation": [
+            1.13,
+            2.022753,
+            0.701517
+          ],
+          "scale": [
+            0.57977,
+            0.57977,
+            0.57977
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            -0.075863,
+            1.924137,
+            0
+          ],
+          "scale": [
+            0.57977,
+            0.57977,
+            0.57977
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            2.325863,
+            -2.325863,
+            0
+          ],
+          "scale": [
+            0.57977,
+            0.57977,
+            0.57977
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            2.325863,
+            10.674137,
+            7
+          ],
+          "scale": [
+            0.57977,
+            0.57977,
+            0.57977
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "displayBlocking": null,
+      "verification": [
+        {
+          "context": "thirdperson_righthand",
+          "roundTripMaxError": 1.62e-7,
+          "gripLandsOnPalmErrorBlocks": 4.9e-8,
+          "worldLengthErrorBlocks": 1.56e-7
+        },
+        {
+          "context": "thirdperson_lefthand",
+          "roundTripMaxError": 1.62e-7,
+          "gripLandsOnPalmErrorBlocks": 4.9e-8,
+          "worldLengthErrorBlocks": 1.56e-7
+        },
+        {
+          "context": "firstperson_righthand",
+          "roundTripMaxError": 1.62e-7,
+          "gripLandsOnPalmErrorBlocks": 7.8e-8,
+          "worldLengthErrorBlocks": 1.56e-7
+        },
+        {
+          "context": "firstperson_lefthand",
+          "roundTripMaxError": 1.62e-7,
+          "gripLandsOnPalmErrorBlocks": 7.8e-8,
+          "worldLengthErrorBlocks": 1.56e-7
+        },
+        {
+          "context": "ground",
+          "roundTripMaxError": 1.62e-7,
+          "gripLandsOnPalmErrorBlocks": 3.1e-8,
+          "worldLengthErrorBlocks": 1.56e-7
+        },
+        {
+          "context": "fixed",
+          "roundTripMaxError": 1.62e-7,
+          "gripLandsOnPalmErrorBlocks": 3.1e-8,
+          "worldLengthErrorBlocks": 1.56e-7
+        },
+        {
+          "context": "head",
+          "roundTripMaxError": 1.62e-7,
+          "gripLandsOnPalmErrorBlocks": 3.1e-8,
+          "worldLengthErrorBlocks": 1.56e-7
+        }
+      ],
+      "status": "proposal_not_game_verified",
+      "humanAccepted": false
+    },
+    "colossal_sword": {
+      "route": "own_sprite",
+      "family": "melee",
+      "reference": {
+        "key": "melee",
+        "source": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
+        "image": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
+        "anchorPixels": [
+          3.5,
+          12.5
+        ],
+        "measuredAxisDegrees": 45,
+        "perpendicularSkew": 0,
+        "gripOffsetBlocks": [
+          0,
+          0,
+          0
+        ]
+      },
+      "geometry": {
+        "canvas": [
+          32,
+          32
+        ],
+        "anchorPixels": [
+          6.5,
+          25.5
+        ],
+        "anchorBlock": [
+          -0.296875,
+          -0.296875,
+          0
+        ],
+        "worldLengthBlocks": 2.484,
+        "sourceSpanPixels": 37.356584666459106,
+        "uniformXYScale": 2.127817644726
+      },
+      "axis": {
+        "measuredSpriteAxisDegrees": 45,
+        "spriteAnisotropy": 30.491,
+        "appliedAxisDegrees": 0,
+        "flip180Degrees": 0,
+        "spritePerpendicularSkew": 0,
+        "sprite": "art/equipment-2d/full/sprites/colossal_sword_front.png",
+        "notes": []
+      },
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55
+          ],
+          "translation": [
+            0,
+            12.749307,
+            -1.042739
+          ],
+          "scale": [
+            2.127818,
+            2.127818,
+            2.127818
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55
+          ],
+          "translation": [
+            0,
+            12.749307,
+            -1.042739
+          ],
+          "scale": [
+            2.127818,
+            2.127818,
+            2.127818
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            25
+          ],
+          "translation": [
+            1.13,
+            12.56512,
+            4.538625
+          ],
+          "scale": [
+            2.127818,
+            2.127818,
+            2.127818
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -25
+          ],
+          "translation": [
+            1.13,
+            12.56512,
+            4.538625
+          ],
+          "scale": [
+            2.127818,
+            2.127818,
+            2.127818
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            7.857134,
+            9.857134,
+            0
+          ],
+          "scale": [
+            2.127818,
+            2.127818,
+            2.127818
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            -5.607134,
+            5.607134,
+            0
+          ],
+          "scale": [
+            2.127818,
+            2.127818,
+            2.127818
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            -5.607134,
+            18.607134,
+            7
+          ],
+          "scale": [
+            2.127818,
+            2.127818,
+            2.127818
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "displayBlocking": null,
+      "verification": [
+        {
+          "context": "thirdperson_righthand",
+          "roundTripMaxError": 3.55e-7,
+          "gripLandsOnPalmErrorBlocks": 1.27e-7,
+          "worldLengthErrorBlocks": 4.15e-7
+        },
+        {
+          "context": "thirdperson_lefthand",
+          "roundTripMaxError": 3.55e-7,
+          "gripLandsOnPalmErrorBlocks": 1.27e-7,
+          "worldLengthErrorBlocks": 4.15e-7
+        },
+        {
+          "context": "firstperson_righthand",
+          "roundTripMaxError": 3.55e-7,
+          "gripLandsOnPalmErrorBlocks": 1.21e-7,
+          "worldLengthErrorBlocks": 4.15e-7
+        },
+        {
+          "context": "firstperson_lefthand",
+          "roundTripMaxError": 3.55e-7,
+          "gripLandsOnPalmErrorBlocks": 1.21e-7,
+          "worldLengthErrorBlocks": 4.15e-7
+        },
+        {
+          "context": "ground",
+          "roundTripMaxError": 3.55e-7,
+          "gripLandsOnPalmErrorBlocks": 9.4e-8,
+          "worldLengthErrorBlocks": 4.15e-7
+        },
+        {
+          "context": "fixed",
+          "roundTripMaxError": 3.55e-7,
+          "gripLandsOnPalmErrorBlocks": 9.4e-8,
+          "worldLengthErrorBlocks": 4.15e-7
+        },
+        {
+          "context": "head",
+          "roundTripMaxError": 3.55e-7,
+          "gripLandsOnPalmErrorBlocks": 9.4e-8,
+          "worldLengthErrorBlocks": 4.15e-7
+        }
+      ],
+      "status": "proposal_not_game_verified",
+      "humanAccepted": false
+    },
+    "colossal_weapon": {
+      "route": "own_sprite",
+      "family": "melee",
+      "reference": {
+        "key": "melee",
+        "source": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
+        "image": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
+        "anchorPixels": [
+          3.5,
+          12.5
+        ],
+        "measuredAxisDegrees": 45,
+        "perpendicularSkew": 0,
+        "gripOffsetBlocks": [
+          0,
+          0,
+          0
+        ]
+      },
+      "geometry": {
+        "canvas": [
+          32,
+          32
+        ],
+        "anchorPixels": [
+          8.5,
+          23.5
+        ],
+        "anchorBlock": [
+          -0.234375,
+          -0.234375,
+          0
+        ],
+        "worldLengthBlocks": 2.16,
+        "sourceSpanPixels": 32.770741859128265,
+        "uniformXYScale": 2.109198513025
+      },
+      "axis": {
+        "measuredSpriteAxisDegrees": 45,
+        "spriteAnisotropy": 8.992,
+        "appliedAxisDegrees": 0,
+        "flip180Degrees": 0,
+        "spritePerpendicularSkew": 0,
+        "sprite": "art/equipment-2d/full/sprites/colossal_weapon_front.png",
+        "notes": []
+      },
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55
+          ],
+          "translation": [
+            0,
+            9.688592,
+            -0.503052
+          ],
+          "scale": [
+            2.109199,
+            2.109199,
+            2.109199
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55
+          ],
+          "translation": [
+            0,
+            9.688592,
+            -0.503052
+          ],
+          "scale": [
+            2.109199,
+            2.109199,
+            2.109199
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            25
+          ],
+          "translation": [
+            1.13,
+            9.644619,
+            3.47565
+          ],
+          "scale": [
+            2.109199,
+            2.109199,
+            2.109199
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -25
+          ],
+          "translation": [
+            1.13,
+            9.644619,
+            3.47565
+          ],
+          "scale": [
+            2.109199,
+            2.109199,
+            2.109199
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            5.659494,
+            7.659494,
+            0
+          ],
+          "scale": [
+            2.109199,
+            2.109199,
+            2.109199
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            -3.409494,
+            3.409494,
+            0
+          ],
+          "scale": [
+            2.109199,
+            2.109199,
+            2.109199
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            -3.409494,
+            16.409494,
+            7
+          ],
+          "scale": [
+            2.109199,
+            2.109199,
+            2.109199
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "displayBlocking": null,
+      "verification": [
+        {
+          "context": "thirdperson_righthand",
+          "roundTripMaxError": 4.87e-7,
+          "gripLandsOnPalmErrorBlocks": 1.41e-7,
+          "worldLengthErrorBlocks": 4.99e-7
+        },
+        {
+          "context": "thirdperson_lefthand",
+          "roundTripMaxError": 4.87e-7,
+          "gripLandsOnPalmErrorBlocks": 1.41e-7,
+          "worldLengthErrorBlocks": 4.99e-7
+        },
+        {
+          "context": "firstperson_righthand",
+          "roundTripMaxError": 4.87e-7,
+          "gripLandsOnPalmErrorBlocks": 1.81e-7,
+          "worldLengthErrorBlocks": 4.99e-7
+        },
+        {
+          "context": "firstperson_lefthand",
+          "roundTripMaxError": 4.87e-7,
+          "gripLandsOnPalmErrorBlocks": 1.81e-7,
+          "worldLengthErrorBlocks": 4.99e-7
+        },
+        {
+          "context": "ground",
+          "roundTripMaxError": 4.87e-7,
+          "gripLandsOnPalmErrorBlocks": 1.41e-7,
+          "worldLengthErrorBlocks": 4.99e-7
+        },
+        {
+          "context": "fixed",
+          "roundTripMaxError": 4.87e-7,
+          "gripLandsOnPalmErrorBlocks": 1.41e-7,
+          "worldLengthErrorBlocks": 4.99e-7
+        },
+        {
+          "context": "head",
+          "roundTripMaxError": 4.87e-7,
+          "gripLandsOnPalmErrorBlocks": 1.41e-7,
+          "worldLengthErrorBlocks": 4.99e-7
+        }
+      ],
+      "status": "proposal_not_game_verified",
+      "humanAccepted": false
+    },
+    "curved_greatsword": {
+      "route": "own_sprite",
+      "family": "melee",
+      "reference": {
+        "key": "melee",
+        "source": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
+        "image": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
+        "anchorPixels": [
+          3.5,
+          12.5
+        ],
+        "measuredAxisDegrees": 45,
+        "perpendicularSkew": 0,
+        "gripOffsetBlocks": [
+          0,
+          0,
+          0
+        ]
+      },
+      "geometry": {
+        "canvas": [
+          32,
+          32
+        ],
+        "anchorPixels": [
+          7.5,
+          23.5
+        ],
+        "anchorBlock": [
+          -0.265625,
+          -0.234375,
+          0
+        ],
+        "worldLengthBlocks": 1.746,
+        "sourceSpanPixels": 35.55736956823782,
+        "uniformXYScale": 1.571319832666
+      },
+      "axis": {
+        "measuredSpriteAxisDegrees": 50.038,
+        "spriteAnisotropy": 29.175,
+        "appliedAxisDegrees": -5.038,
+        "flip180Degrees": 0,
+        "spritePerpendicularSkew": 0.092823,
+        "sprite": "art/equipment-2d/full/sprites/curved_greatsword_front.png",
+        "notes": []
+      },
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            49.962
+          ],
+          "translation": [
+            0,
+            7.57628,
+            1.223959
+          ],
+          "scale": [
+            1.57132,
+            1.57132,
+            1.57132
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -49.962
+          ],
+          "translation": [
+            0,
+            7.57628,
+            1.223959
+          ],
+          "scale": [
+            1.57132,
+            1.57132,
+            1.57132
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            19.962
+          ],
+          "translation": [
+            1.13,
+            6.951798,
+            3.91513
+          ],
+          "scale": [
+            1.57132,
+            1.57132,
+            1.57132
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -19.962
+          ],
+          "translation": [
+            1.13,
+            6.951798,
+            3.91513
+          ],
+          "scale": [
+            1.57132,
+            1.57132,
+            1.57132
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            -5.038
+          ],
+          "translation": [
+            4.919763,
+            5.033237,
+            0
+          ],
+          "scale": [
+            1.57132,
+            1.57132,
+            1.57132
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            -5.038
+          ],
+          "translation": [
+            -2.669763,
+            0.783237,
+            0
+          ],
+          "scale": [
+            1.57132,
+            1.57132,
+            1.57132
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            -5.038
+          ],
+          "translation": [
+            -2.669763,
+            13.783237,
+            7
+          ],
+          "scale": [
+            1.57132,
+            1.57132,
+            1.57132
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "displayBlocking": null,
+      "verification": [
+        {
+          "context": "thirdperson_righthand",
+          "roundTripMaxError": 1.67e-7,
+          "gripLandsOnPalmErrorBlocks": 7.9e-8,
+          "worldLengthErrorBlocks": 1.86e-7
+        },
+        {
+          "context": "thirdperson_lefthand",
+          "roundTripMaxError": 1.67e-7,
+          "gripLandsOnPalmErrorBlocks": 7.9e-8,
+          "worldLengthErrorBlocks": 1.86e-7
+        },
+        {
+          "context": "firstperson_righthand",
+          "roundTripMaxError": 1.67e-7,
+          "gripLandsOnPalmErrorBlocks": 7.1e-8,
+          "worldLengthErrorBlocks": 1.86e-7
+        },
+        {
+          "context": "firstperson_lefthand",
+          "roundTripMaxError": 1.67e-7,
+          "gripLandsOnPalmErrorBlocks": 7.1e-8,
+          "worldLengthErrorBlocks": 1.86e-7
+        },
+        {
+          "context": "ground",
+          "roundTripMaxError": 1.67e-7,
+          "gripLandsOnPalmErrorBlocks": 7.4e-8,
+          "worldLengthErrorBlocks": 1.86e-7
+        },
+        {
+          "context": "fixed",
+          "roundTripMaxError": 1.67e-7,
+          "gripLandsOnPalmErrorBlocks": 7.4e-8,
+          "worldLengthErrorBlocks": 1.86e-7
+        },
+        {
+          "context": "head",
+          "roundTripMaxError": 1.67e-7,
+          "gripLandsOnPalmErrorBlocks": 7.4e-8,
+          "worldLengthErrorBlocks": 1.86e-7
+        }
+      ],
+      "status": "superseded_by_selected_art_requires_recalibration",
+      "humanAccepted": false,
+      "supersededBy": "art/equipment-2d/taste-weapons-20261018/manifest.json",
+      "verificationHistorical": true
+    },
+    "curved_sword": {
+      "route": "own_sprite",
+      "family": "melee",
+      "reference": {
+        "key": "melee",
+        "source": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
+        "image": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
+        "anchorPixels": [
+          3.5,
+          12.5
+        ],
+        "measuredAxisDegrees": 45,
+        "perpendicularSkew": 0,
+        "gripOffsetBlocks": [
+          0,
+          0,
+          0
+        ]
+      },
+      "geometry": {
+        "canvas": [
+          32,
+          32
+        ],
+        "anchorPixels": [
+          6.5,
+          23.5
+        ],
+        "anchorBlock": [
+          -0.296875,
+          -0.234375,
+          0
+        ],
+        "worldLengthBlocks": 1.098,
+        "sourceSpanPixels": 34.93939389392354,
+        "uniformXYScale": 1.005627061153
+      },
+      "axis": {
+        "measuredSpriteAxisDegrees": 48.124,
+        "spriteAnisotropy": 17.143,
+        "appliedAxisDegrees": -3.124,
+        "flip180Degrees": 0,
+        "spritePerpendicularSkew": -0.792165,
+        "sprite": "art/equipment-2d/full/sprites/curved_sword_front.png",
+        "notes": []
+      },
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            51.876
+          ],
+          "translation": [
+            0,
+            4.758701,
+            1.421677
+          ],
+          "scale": [
+            1.005627,
+            1.005627,
+            1.005627
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -51.876
+          ],
+          "translation": [
+            0,
+            4.758701,
+            1.421677
+          ],
+          "scale": [
+            1.005627,
+            1.005627,
+            1.005627
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            21.876
+          ],
+          "translation": [
+            1.13,
+            4.412845,
+            2.677569
+          ],
+          "scale": [
+            1.005627,
+            1.005627,
+            1.005627
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -21.876
+          ],
+          "translation": [
+            1.13,
+            4.412845,
+            2.677569
+          ],
+          "scale": [
+            1.005627,
+            1.005627,
+            1.005627
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            -3.124
+          ],
+          "translation": [
+            2.725144,
+            3.25518,
+            0
+          ],
+          "scale": [
+            1.005627,
+            1.005627,
+            1.005627
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            -3.124
+          ],
+          "translation": [
+            -0.475144,
+            -0.99482,
+            0
+          ],
+          "scale": [
+            1.005627,
+            1.005627,
+            1.005627
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            -3.124
+          ],
+          "translation": [
+            -0.475144,
+            12.00518,
+            7
+          ],
+          "scale": [
+            1.005627,
+            1.005627,
+            1.005627
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "displayBlocking": null,
+      "verification": [
+        {
+          "context": "thirdperson_righthand",
+          "roundTripMaxError": 6.1e-8,
+          "gripLandsOnPalmErrorBlocks": 0,
+          "worldLengthErrorBlocks": 6.7e-8
+        },
+        {
+          "context": "thirdperson_lefthand",
+          "roundTripMaxError": 6.1e-8,
+          "gripLandsOnPalmErrorBlocks": 0,
+          "worldLengthErrorBlocks": 6.7e-8
+        },
+        {
+          "context": "firstperson_righthand",
+          "roundTripMaxError": 6.1e-8,
+          "gripLandsOnPalmErrorBlocks": 4.6e-8,
+          "worldLengthErrorBlocks": 6.7e-8
+        },
+        {
+          "context": "firstperson_lefthand",
+          "roundTripMaxError": 6.1e-8,
+          "gripLandsOnPalmErrorBlocks": 4.6e-8,
+          "worldLengthErrorBlocks": 6.7e-8
+        },
+        {
+          "context": "ground",
+          "roundTripMaxError": 6.1e-8,
+          "gripLandsOnPalmErrorBlocks": 3.6e-8,
+          "worldLengthErrorBlocks": 6.7e-8
+        },
+        {
+          "context": "fixed",
+          "roundTripMaxError": 6.1e-8,
+          "gripLandsOnPalmErrorBlocks": 3.6e-8,
+          "worldLengthErrorBlocks": 6.7e-8
+        },
+        {
+          "context": "head",
+          "roundTripMaxError": 6.1e-8,
+          "gripLandsOnPalmErrorBlocks": 3.6e-8,
+          "worldLengthErrorBlocks": 6.7e-8
+        }
+      ],
+      "status": "superseded_by_selected_art_requires_recalibration",
+      "humanAccepted": false,
+      "supersededBy": "art/equipment-2d/taste-weapons-20261018/manifest.json",
+      "verificationHistorical": true
+    },
+    "fist": {
+      "route": "own_sprite",
+      "family": "melee",
+      "reference": {
+        "key": "melee",
+        "source": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
+        "image": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
+        "anchorPixels": [
+          3.5,
+          12.5
+        ],
+        "measuredAxisDegrees": 45,
+        "perpendicularSkew": 0,
+        "gripOffsetBlocks": [
+          0,
+          0,
+          0
+        ]
+      },
+      "geometry": {
+        "canvas": [
+          32,
+          32
+        ],
+        "anchorPixels": [
+          12.5,
+          19.5
+        ],
+        "anchorBlock": [
+          -0.109375,
+          -0.109375,
+          0
+        ],
+        "worldLengthBlocks": 0.30600000000000005,
+        "sourceSpanPixels": 24.748737341529164,
+        "uniformXYScale": 0.39565654865
+      },
+      "axis": {
+        "measuredSpriteAxisDegrees": 45.48,
+        "spriteAnisotropy": 1.655,
+        "appliedAxisDegrees": -0.48,
+        "flip180Degrees": 0,
+        "spritePerpendicularSkew": -0.998622,
+        "sprite": "art/equipment-2d/full/sprites/fist_front.png",
+        "notes": []
+      },
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            54.52
+          ],
+          "translation": [
+            0,
+            -0.361472,
+            1.277375
+          ],
+          "scale": [
+            0.395657,
+            0.395657,
+            0.395657
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -54.52
+          ],
+          "translation": [
+            0,
+            -0.361472,
+            1.277375
+          ],
+          "scale": [
+            0.395657,
+            0.395657,
+            0.395657
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            24.52
+          ],
+          "translation": [
+            1.13,
+            0.050795,
+            -0.007487
+          ],
+          "scale": [
+            0.395657,
+            0.395657,
+            0.395657
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -24.52
+          ],
+          "translation": [
+            1.13,
+            0.050795,
+            -0.007487
+          ],
+          "scale": [
+            0.395657,
+            0.395657,
+            0.395657
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            -0.48
+          ],
+          "translation": [
+            -1.551825,
+            0.436574,
+            0
+          ],
+          "scale": [
+            0.395657,
+            0.395657,
+            0.395657
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            -0.48
+          ],
+          "translation": [
+            3.801825,
+            -3.813426,
+            0
+          ],
+          "scale": [
+            0.395657,
+            0.395657,
+            0.395657
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            -0.48
+          ],
+          "translation": [
+            3.801825,
+            9.186574,
+            7
+          ],
+          "scale": [
+            0.395657,
+            0.395657,
+            0.395657
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "displayBlocking": null,
+      "verification": [
+        {
+          "context": "thirdperson_righthand",
+          "roundTripMaxError": 4.51e-7,
+          "gripLandsOnPalmErrorBlocks": 6.6e-8,
+          "worldLengthErrorBlocks": 3.49e-7
+        },
+        {
+          "context": "thirdperson_lefthand",
+          "roundTripMaxError": 4.51e-7,
+          "gripLandsOnPalmErrorBlocks": 6.6e-8,
+          "worldLengthErrorBlocks": 3.49e-7
+        },
+        {
+          "context": "firstperson_righthand",
+          "roundTripMaxError": 4.51e-7,
+          "gripLandsOnPalmErrorBlocks": 8.7e-8,
+          "worldLengthErrorBlocks": 3.49e-7
+        },
+        {
+          "context": "firstperson_lefthand",
+          "roundTripMaxError": 4.51e-7,
+          "gripLandsOnPalmErrorBlocks": 8.7e-8,
+          "worldLengthErrorBlocks": 3.49e-7
+        },
+        {
+          "context": "ground",
+          "roundTripMaxError": 4.51e-7,
+          "gripLandsOnPalmErrorBlocks": 6.4e-8,
+          "worldLengthErrorBlocks": 3.49e-7
+        },
+        {
+          "context": "fixed",
+          "roundTripMaxError": 4.51e-7,
+          "gripLandsOnPalmErrorBlocks": 6.4e-8,
+          "worldLengthErrorBlocks": 3.49e-7
+        },
+        {
+          "context": "head",
+          "roundTripMaxError": 4.51e-7,
+          "gripLandsOnPalmErrorBlocks": 6.4e-8,
+          "worldLengthErrorBlocks": 3.49e-7
+        }
+      ],
+      "status": "proposal_not_game_verified",
+      "humanAccepted": false
+    },
+    "flail": {
+      "route": "own_sprite",
+      "family": "melee",
+      "reference": {
+        "key": "melee",
+        "source": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
+        "image": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
+        "anchorPixels": [
+          3.5,
+          12.5
+        ],
+        "measuredAxisDegrees": 45,
+        "perpendicularSkew": 0,
+        "gripOffsetBlocks": [
+          0,
+          0,
+          0
+        ]
+      },
+      "geometry": {
+        "canvas": [
+          32,
+          32
+        ],
+        "anchorPixels": [
+          6.5,
+          25.5
+        ],
+        "anchorBlock": [
+          -0.296875,
+          -0.296875,
+          0
+        ],
+        "worldLengthBlocks": 1.2240000000000002,
+        "sourceSpanPixels": 34.93939389392352,
+        "uniformXYScale": 1.121026887842
+      },
+      "axis": {
+        "measuredSpriteAxisDegrees": 45,
+        "spriteAnisotropy": 34.15,
+        "appliedAxisDegrees": 0,
+        "flip180Degrees": 0,
+        "spritePerpendicularSkew": 0,
+        "sprite": "art/equipment-2d/full/sprites/flail_front.png",
+        "notes": []
+      },
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55
+          ],
+          "translation": [
+            0,
+            6.088922,
+            0.131667
+          ],
+          "scale": [
+            1.121027,
+            1.121027,
+            1.121027
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55
+          ],
+          "translation": [
+            0,
+            6.088922,
+            0.131667
+          ],
+          "scale": [
+            1.121027,
+            1.121027,
+            1.121027
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            25
+          ],
+          "translation": [
+            1.13,
+            6.209855,
+            2.225498
+          ],
+          "scale": [
+            1.121027,
+            1.121027,
+            1.121027
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -25
+          ],
+          "translation": [
+            1.13,
+            6.209855,
+            2.225498
+          ],
+          "scale": [
+            1.121027,
+            1.121027,
+            1.121027
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            3.074878,
+            5.074878,
+            0
+          ],
+          "scale": [
+            1.121027,
+            1.121027,
+            1.121027
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            -0.824878,
+            0.824878,
+            0
+          ],
+          "scale": [
+            1.121027,
+            1.121027,
+            1.121027
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            -0.824878,
+            13.824878,
+            7
+          ],
+          "scale": [
+            1.121027,
+            1.121027,
+            1.121027
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "displayBlocking": null,
+      "verification": [
+        {
+          "context": "thirdperson_righthand",
+          "roundTripMaxError": 1.12e-7,
+          "gripLandsOnPalmErrorBlocks": 7.2e-8,
+          "worldLengthErrorBlocks": 1.22e-7
+        },
+        {
+          "context": "thirdperson_lefthand",
+          "roundTripMaxError": 1.12e-7,
+          "gripLandsOnPalmErrorBlocks": 7.2e-8,
+          "worldLengthErrorBlocks": 1.22e-7
+        },
+        {
+          "context": "firstperson_righthand",
+          "roundTripMaxError": 1.12e-7,
+          "gripLandsOnPalmErrorBlocks": 4.4e-8,
+          "worldLengthErrorBlocks": 1.22e-7
+        },
+        {
+          "context": "firstperson_lefthand",
+          "roundTripMaxError": 1.12e-7,
+          "gripLandsOnPalmErrorBlocks": 4.4e-8,
+          "worldLengthErrorBlocks": 1.22e-7
+        },
+        {
+          "context": "ground",
+          "roundTripMaxError": 1.12e-7,
+          "gripLandsOnPalmErrorBlocks": 1.6e-8,
+          "worldLengthErrorBlocks": 1.22e-7
+        },
+        {
+          "context": "fixed",
+          "roundTripMaxError": 1.12e-7,
+          "gripLandsOnPalmErrorBlocks": 1.6e-8,
+          "worldLengthErrorBlocks": 1.22e-7
+        },
+        {
+          "context": "head",
+          "roundTripMaxError": 1.12e-7,
+          "gripLandsOnPalmErrorBlocks": 1.6e-8,
+          "worldLengthErrorBlocks": 1.22e-7
+        }
+      ],
+      "status": "proposal_not_game_verified",
+      "humanAccepted": false
+    },
+    "glintstone_staff": {
+      "route": "own_sprite",
+      "family": "melee",
+      "reference": {
+        "key": "melee",
+        "source": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
+        "image": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
+        "anchorPixels": [
+          3.5,
+          12.5
+        ],
+        "measuredAxisDegrees": 45,
+        "perpendicularSkew": 0,
+        "gripOffsetBlocks": [
+          0,
+          0,
+          0
+        ]
+      },
+      "geometry": {
+        "canvas": [
+          32,
+          32
+        ],
+        "anchorPixels": [
+          8.5,
+          23.5
+        ],
+        "anchorBlock": [
+          -0.234375,
+          -0.234375,
+          0
+        ],
+        "worldLengthBlocks": 1.9800000000000002,
+        "sourceSpanPixels": 37.51387554926526,
+        "uniformXYScale": 1.688975054491
+      },
+      "axis": {
+        "measuredSpriteAxisDegrees": 45,
+        "spriteAnisotropy": 109.073,
+        "appliedAxisDegrees": 0,
+        "flip180Degrees": 0,
+        "spritePerpendicularSkew": 0,
+        "sprite": "art/equipment-2d/full/sprites/glintstone_staff_front.png",
+        "notes": []
+      },
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55
+          ],
+          "translation": [
+            0,
+            7.493877,
+            -0.116065
+          ],
+          "scale": [
+            1.688975,
+            1.688975,
+            1.688975
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55
+          ],
+          "translation": [
+            0,
+            7.493877,
+            -0.116065
+          ],
+          "scale": [
+            1.688975,
+            1.688975,
+            1.688975
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            25
+          ],
+          "translation": [
+            1.13,
+            7.550447,
+            2.713433
+          ],
+          "scale": [
+            1.688975,
+            1.688975,
+            1.688975
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -25
+          ],
+          "translation": [
+            1.13,
+            7.550447,
+            2.713433
+          ],
+          "scale": [
+            1.688975,
+            1.688975,
+            1.688975
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            4.083656,
+            6.083656,
+            0
+          ],
+          "scale": [
+            1.688975,
+            1.688975,
+            1.688975
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            -1.833656,
+            1.833656,
+            0
+          ],
+          "scale": [
+            1.688975,
+            1.688975,
+            1.688975
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            -1.833656,
+            14.833656,
+            7
+          ],
+          "scale": [
+            1.688975,
+            1.688975,
+            1.688975
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "displayBlocking": null,
+      "verification": [
+        {
+          "context": "thirdperson_righthand",
+          "roundTripMaxError": 5.4e-8,
+          "gripLandsOnPalmErrorBlocks": 1.4e-8,
+          "worldLengthErrorBlocks": 6.4e-8
+        },
+        {
+          "context": "thirdperson_lefthand",
+          "roundTripMaxError": 5.4e-8,
+          "gripLandsOnPalmErrorBlocks": 1.4e-8,
+          "worldLengthErrorBlocks": 6.4e-8
+        },
+        {
+          "context": "firstperson_righthand",
+          "roundTripMaxError": 5.4e-8,
+          "gripLandsOnPalmErrorBlocks": 1.5e-8,
+          "worldLengthErrorBlocks": 6.4e-8
+        },
+        {
+          "context": "firstperson_lefthand",
+          "roundTripMaxError": 5.4e-8,
+          "gripLandsOnPalmErrorBlocks": 1.5e-8,
+          "worldLengthErrorBlocks": 6.4e-8
+        },
+        {
+          "context": "ground",
+          "roundTripMaxError": 5.4e-8,
+          "gripLandsOnPalmErrorBlocks": 1.6e-8,
+          "worldLengthErrorBlocks": 6.4e-8
+        },
+        {
+          "context": "fixed",
+          "roundTripMaxError": 5.4e-8,
+          "gripLandsOnPalmErrorBlocks": 1.6e-8,
+          "worldLengthErrorBlocks": 6.4e-8
+        },
+        {
+          "context": "head",
+          "roundTripMaxError": 5.4e-8,
+          "gripLandsOnPalmErrorBlocks": 1.6e-8,
+          "worldLengthErrorBlocks": 6.4e-8
+        }
+      ],
+      "status": "proposal_not_game_verified",
+      "humanAccepted": false
+    },
+    "great_shield": {
+      "route": "own_sprite",
+      "family": "shield",
+      "reference": {
+        "key": "shield",
+        "source": "minecraft:item/shield (builtin/entity: handle at the model origin, geometry around the origin); blocking pose from minecraft:item/shield_blocking",
+        "image": null,
+        "anchorPixels": [
+          8,
+          8
+        ],
+        "measuredAxisDegrees": null,
+        "perpendicularSkew": null,
+        "gripOffsetBlocks": [
+          -0.5,
+          -0.5,
+          -0.5
+        ]
+      },
+      "geometry": {
+        "canvas": [
+          32,
+          32
+        ],
+        "anchorPixels": [
+          16.5,
+          16.5
+        ],
+        "anchorBlock": [
+          0.015625,
+          -0.015625,
+          0
+        ],
+        "worldLengthBlocks": 1.314,
+        "sourceSpanPixels": 28,
+        "uniformXYScale": 1.501714285714
+      },
+      "axis": {
+        "measuredSpriteAxisDegrees": 0,
+        "spriteAnisotropy": 1.362,
+        "appliedAxisDegrees": 0,
+        "flip180Degrees": 0,
+        "spritePerpendicularSkew": null,
+        "sprite": "art/equipment-2d/full/sprites/great_shield_front.png",
+        "notes": [
+          "grip at the declared reference point; the sprite is near-isotropic so no in-plane rotation is implied by the art"
+        ]
+      },
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            2,
+            -1.624571,
+            4.375429
+          ],
+          "scale": [
+            1.501714,
+            1.501714,
+            1.501714
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            2,
+            -1.624571,
+            3.624571
+          ],
+          "scale": [
+            1.501714,
+            1.501714,
+            1.501714
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            180,
+            5
+          ],
+          "translation": [
+            -0.50289,
+            -8.492225,
+            0
+          ],
+          "scale": [
+            1.501714,
+            1.501714,
+            1.501714
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            180,
+            5
+          ],
+          "translation": [
+            -1.174784,
+            -8.683669,
+            0
+          ],
+          "scale": [
+            1.501714,
+            1.501714,
+            1.501714
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            -0.375429,
+            2.375429,
+            0
+          ],
+          "scale": [
+            1.501714,
+            1.501714,
+            1.501714
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            0.275429,
+            0.475429,
+            -0.6
+          ],
+          "scale": [
+            1.501714,
+            1.501714,
+            1.501714
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            8.375429,
+            5.375429,
+            15
+          ],
+          "scale": [
+            1.501714,
+            1.501714,
+            1.501714
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "displayBlocking": {
+        "thirdperson_righthand": {
+          "rotation": [
+            45,
+            155,
+            0
+          ],
+          "translation": [
+            0.71977,
+            -2.021119,
+            0.238346
+          ],
+          "scale": [
+            1.501714,
+            1.501714,
+            1.501714
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            45,
+            155,
+            0
+          ],
+          "translation": [
+            0.538338,
+            -1.015356,
+            -0.267417
+          ],
+          "scale": [
+            1.501714,
+            1.501714,
+            1.501714
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            180,
+            -5
+          ],
+          "translation": [
+            -3.825216,
+            -3.683669,
+            -1
+          ],
+          "scale": [
+            1.501714,
+            1.501714,
+            1.501714
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            180,
+            -5
+          ],
+          "translation": [
+            -4.49711,
+            -5.492225,
+            -1
+          ],
+          "scale": [
+            1.501714,
+            1.501714,
+            1.501714
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            -0.375429,
+            2.375429,
+            0
+          ],
+          "scale": [
+            1.501714,
+            1.501714,
+            1.501714
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            0.275429,
+            0.475429,
+            -0.6
+          ],
+          "scale": [
+            1.501714,
+            1.501714,
+            1.501714
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "verification": [
+        {
+          "context": "thirdperson_righthand",
+          "roundTripMaxError": 2.86e-7,
+          "gripLandsOnPalmErrorBlocks": 3.1e-8,
+          "worldLengthErrorBlocks": 2.5e-7
+        },
+        {
+          "context": "thirdperson_lefthand",
+          "roundTripMaxError": 2.86e-7,
+          "gripLandsOnPalmErrorBlocks": 3.1e-8,
+          "worldLengthErrorBlocks": 2.5e-7
+        },
+        {
+          "context": "firstperson_righthand",
+          "roundTripMaxError": 2.86e-7,
+          "gripLandsOnPalmErrorBlocks": 1.7e-8,
+          "worldLengthErrorBlocks": 2.5e-7
+        },
+        {
+          "context": "firstperson_lefthand",
+          "roundTripMaxError": 2.86e-7,
+          "gripLandsOnPalmErrorBlocks": 2.9e-8,
+          "worldLengthErrorBlocks": 2.5e-7
+        },
+        {
+          "context": "ground",
+          "roundTripMaxError": 2.86e-7,
+          "gripLandsOnPalmErrorBlocks": 3.1e-8,
+          "worldLengthErrorBlocks": 2.5e-7
+        },
+        {
+          "context": "fixed",
+          "roundTripMaxError": 2.86e-7,
+          "gripLandsOnPalmErrorBlocks": 3.1e-8,
+          "worldLengthErrorBlocks": 2.5e-7
+        },
+        {
+          "context": "head",
+          "roundTripMaxError": 2.86e-7,
+          "gripLandsOnPalmErrorBlocks": 3.1e-8,
+          "worldLengthErrorBlocks": 2.5e-7
+        },
+        {
+          "context": "blocking:thirdperson_righthand",
+          "roundTripMaxError": 2.59e-7,
+          "gripLandsOnPalmErrorBlocks": 2.5e-8,
+          "worldLengthErrorBlocks": 2.5e-7
+        },
+        {
+          "context": "blocking:thirdperson_lefthand",
+          "roundTripMaxError": 2.59e-7,
+          "gripLandsOnPalmErrorBlocks": 1.8e-8,
+          "worldLengthErrorBlocks": 2.5e-7
+        },
+        {
+          "context": "blocking:firstperson_righthand",
+          "roundTripMaxError": 2.86e-7,
+          "gripLandsOnPalmErrorBlocks": 2.9e-8,
+          "worldLengthErrorBlocks": 2.5e-7
+        },
+        {
+          "context": "blocking:firstperson_lefthand",
+          "roundTripMaxError": 2.86e-7,
+          "gripLandsOnPalmErrorBlocks": 1.7e-8,
+          "worldLengthErrorBlocks": 2.5e-7
+        },
+        {
+          "context": "blocking:ground",
+          "roundTripMaxError": 2.86e-7,
+          "gripLandsOnPalmErrorBlocks": 3.1e-8,
+          "worldLengthErrorBlocks": 2.5e-7
+        },
+        {
+          "context": "blocking:fixed",
+          "roundTripMaxError": 2.86e-7,
+          "gripLandsOnPalmErrorBlocks": 3.1e-8,
+          "worldLengthErrorBlocks": 2.5e-7
+        }
+      ],
+      "status": "proposal_not_game_verified",
+      "humanAccepted": false
+    },
+    "great_spear": {
+      "route": "own_sprite",
+      "family": "melee",
+      "reference": {
+        "key": "melee",
+        "source": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
+        "image": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
+        "anchorPixels": [
+          3.5,
+          12.5
+        ],
+        "measuredAxisDegrees": 45,
+        "perpendicularSkew": 0,
+        "gripOffsetBlocks": [
+          0,
+          0,
+          0
+        ]
+      },
+      "geometry": {
+        "canvas": [
+          32,
+          32
+        ],
+        "anchorPixels": [
+          7.5,
+          24.5
+        ],
+        "anchorBlock": [
+          -0.265625,
+          -0.265625,
+          0
+        ],
+        "worldLengthBlocks": 3.06,
+        "sourceSpanPixels": 37.924825672653135,
+        "uniformXYScale": 2.581949903875
+      },
+      "axis": {
+        "measuredSpriteAxisDegrees": 45,
+        "spriteAnisotropy": 263.516,
+        "appliedAxisDegrees": 0,
+        "flip180Degrees": 0,
+        "spritePerpendicularSkew": 0,
+        "sprite": "art/equipment-2d/full/sprites/great_spear_front.png",
+        "notes": []
+      },
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55
+          ],
+          "translation": [
+            0,
+            13.955623,
+            -1.255445
+          ],
+          "scale": [
+            2.58195,
+            2.58195,
+            2.58195
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55
+          ],
+          "translation": [
+            0,
+            13.955623,
+            -1.255445
+          ],
+          "scale": [
+            2.58195,
+            2.58195,
+            2.58195
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            25
+          ],
+          "translation": [
+            1.13,
+            13.716173,
+            4.957574
+          ],
+          "scale": [
+            2.58195,
+            2.58195,
+            2.58195
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -25
+          ],
+          "translation": [
+            1.13,
+            13.716173,
+            4.957574
+          ],
+          "scale": [
+            2.58195,
+            2.58195,
+            2.58195
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            8.723287,
+            10.723287,
+            0
+          ],
+          "scale": [
+            2.58195,
+            2.58195,
+            2.58195
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            -6.473287,
+            6.473287,
+            0
+          ],
+          "scale": [
+            2.58195,
+            2.58195,
+            2.58195
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            -6.473287,
+            19.473287,
+            7
+          ],
+          "scale": [
+            2.58195,
+            2.58195,
+            2.58195
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "displayBlocking": null,
+      "verification": [
+        {
+          "context": "thirdperson_righthand",
+          "roundTripMaxError": 9.6e-8,
+          "gripLandsOnPalmErrorBlocks": 3.7e-8,
+          "worldLengthErrorBlocks": 1.14e-7
+        },
+        {
+          "context": "thirdperson_lefthand",
+          "roundTripMaxError": 9.6e-8,
+          "gripLandsOnPalmErrorBlocks": 3.7e-8,
+          "worldLengthErrorBlocks": 1.14e-7
+        },
+        {
+          "context": "firstperson_righthand",
+          "roundTripMaxError": 9.6e-8,
+          "gripLandsOnPalmErrorBlocks": 5.6e-8,
+          "worldLengthErrorBlocks": 1.14e-7
+        },
+        {
+          "context": "firstperson_lefthand",
+          "roundTripMaxError": 9.6e-8,
+          "gripLandsOnPalmErrorBlocks": 5.6e-8,
+          "worldLengthErrorBlocks": 1.14e-7
+        },
+        {
+          "context": "ground",
+          "roundTripMaxError": 9.6e-8,
+          "gripLandsOnPalmErrorBlocks": 3.1e-8,
+          "worldLengthErrorBlocks": 1.14e-7
+        },
+        {
+          "context": "fixed",
+          "roundTripMaxError": 9.6e-8,
+          "gripLandsOnPalmErrorBlocks": 3.1e-8,
+          "worldLengthErrorBlocks": 1.14e-7
+        },
+        {
+          "context": "head",
+          "roundTripMaxError": 9.6e-8,
+          "gripLandsOnPalmErrorBlocks": 3.1e-8,
+          "worldLengthErrorBlocks": 1.14e-7
+        }
+      ],
+      "status": "proposal_not_game_verified",
+      "humanAccepted": false
+    },
+    "great_sword": {
+      "route": "own_sprite",
+      "family": "melee",
+      "reference": {
+        "key": "melee",
+        "source": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
+        "image": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
+        "anchorPixels": [
+          3.5,
+          12.5
+        ],
+        "measuredAxisDegrees": 45,
+        "perpendicularSkew": 0,
+        "gripOffsetBlocks": [
+          0,
+          0,
+          0
+        ]
+      },
+      "geometry": {
+        "canvas": [
+          32,
+          32
+        ],
+        "anchorPixels": [
+          7.5,
+          24.5
+        ],
+        "anchorBlock": [
+          -0.265625,
+          -0.265625,
+          0
+        ],
+        "worldLengthBlocks": 1.584,
+        "sourceSpanPixels": 37.618080759124325,
+        "uniformXYScale": 1.347437162586
+      },
+      "axis": {
+        "measuredSpriteAxisDegrees": 45,
+        "spriteAnisotropy": 19.704,
+        "appliedAxisDegrees": 0,
+        "flip180Degrees": 0,
+        "spritePerpendicularSkew": 0,
+        "sprite": "art/equipment-2d/full/sprites/great_sword_front.png",
+        "notes": []
+      },
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55
+          ],
+          "translation": [
+            0,
+            6.648424,
+            0.033011
+          ],
+          "scale": [
+            1.347437,
+            1.347437,
+            1.347437
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55
+          ],
+          "translation": [
+            0,
+            6.648424,
+            0.033011
+          ],
+          "scale": [
+            1.347437,
+            1.347437,
+            1.347437
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            25
+          ],
+          "translation": [
+            1.13,
+            6.743725,
+            2.41981
+          ],
+          "scale": [
+            1.347437,
+            1.347437,
+            1.347437
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -25
+          ],
+          "translation": [
+            1.13,
+            6.743725,
+            2.41981
+          ],
+          "scale": [
+            1.347437,
+            1.347437,
+            1.347437
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            3.476608,
+            5.476608,
+            0
+          ],
+          "scale": [
+            1.347437,
+            1.347437,
+            1.347437
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            -1.226608,
+            1.226608,
+            0
+          ],
+          "scale": [
+            1.347437,
+            1.347437,
+            1.347437
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            -1.226608,
+            14.226608,
+            7
+          ],
+          "scale": [
+            1.347437,
+            1.347437,
+            1.347437
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "displayBlocking": null,
+      "verification": [
+        {
+          "context": "thirdperson_righthand",
+          "roundTripMaxError": 1.63e-7,
+          "gripLandsOnPalmErrorBlocks": 8.9e-8,
+          "worldLengthErrorBlocks": 1.91e-7
+        },
+        {
+          "context": "thirdperson_lefthand",
+          "roundTripMaxError": 1.63e-7,
+          "gripLandsOnPalmErrorBlocks": 8.9e-8,
+          "worldLengthErrorBlocks": 1.91e-7
+        },
+        {
+          "context": "firstperson_righthand",
+          "roundTripMaxError": 1.63e-7,
+          "gripLandsOnPalmErrorBlocks": 7.3e-8,
+          "worldLengthErrorBlocks": 1.91e-7
+        },
+        {
+          "context": "firstperson_lefthand",
+          "roundTripMaxError": 1.63e-7,
+          "gripLandsOnPalmErrorBlocks": 7.3e-8,
+          "worldLengthErrorBlocks": 1.91e-7
+        },
+        {
+          "context": "ground",
+          "roundTripMaxError": 1.63e-7,
+          "gripLandsOnPalmErrorBlocks": 4.7e-8,
+          "worldLengthErrorBlocks": 1.91e-7
+        },
+        {
+          "context": "fixed",
+          "roundTripMaxError": 1.63e-7,
+          "gripLandsOnPalmErrorBlocks": 4.7e-8,
+          "worldLengthErrorBlocks": 1.91e-7
+        },
+        {
+          "context": "head",
+          "roundTripMaxError": 1.63e-7,
+          "gripLandsOnPalmErrorBlocks": 4.7e-8,
+          "worldLengthErrorBlocks": 1.91e-7
+        }
+      ],
+      "status": "proposal_not_game_verified",
+      "humanAccepted": false
+    },
+    "hand_of_malenia": {
+      "route": "own_sprite",
+      "family": "melee",
+      "reference": {
+        "key": "melee",
+        "source": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
+        "image": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
+        "anchorPixels": [
+          3.5,
+          12.5
+        ],
+        "measuredAxisDegrees": 45,
+        "perpendicularSkew": 0,
+        "gripOffsetBlocks": [
+          0,
+          0,
+          0
+        ]
+      },
+      "geometry": {
+        "canvas": [
+          64,
+          64
+        ],
+        "anchorPixels": [
+          12.5,
+          46.5
+        ],
+        "anchorBlock": [
+          -0.3046875,
+          -0.2265625,
+          0
+        ],
+        "worldLengthBlocks": 1.9440000000000002,
+        "sourceSpanPixels": 75.11560560801357,
+        "uniformXYScale": 1.656326924251
+      },
+      "axis": {
+        "measuredSpriteAxisDegrees": 49.135,
+        "spriteAnisotropy": 175.12,
+        "appliedAxisDegrees": -4.135,
+        "flip180Degrees": 0,
+        "spritePerpendicularSkew": -0.016088,
+        "sprite": "art/equipment-2d/full/sprites/hand_of_malenia_front.png",
+        "notes": []
+      },
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            50.865
+          ],
+          "translation": [
+            0,
+            8.725501,
+            1.878392
+          ],
+          "scale": [
+            1.656327,
+            1.656327,
+            1.656327
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -50.865
+          ],
+          "translation": [
+            0,
+            8.725501,
+            1.878392
+          ],
+          "scale": [
+            1.656327,
+            1.656327,
+            1.656327
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            20.865
+          ],
+          "translation": [
+            1.13,
+            7.619836,
+            5.056496
+          ],
+          "scale": [
+            1.656327,
+            1.656327,
+            1.656327
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -20.865
+          ],
+          "translation": [
+            1.13,
+            7.619836,
+            5.056496
+          ],
+          "scale": [
+            1.656327,
+            1.656327,
+            1.656327
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            -4.135
+          ],
+          "translation": [
+            6.236517,
+            5.156323,
+            0
+          ],
+          "scale": [
+            1.656327,
+            1.656327,
+            1.656327
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            -4.135
+          ],
+          "translation": [
+            -3.986517,
+            0.906323,
+            0
+          ],
+          "scale": [
+            1.656327,
+            1.656327,
+            1.656327
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            -4.135
+          ],
+          "translation": [
+            -3.986517,
+            13.906323,
+            7
+          ],
+          "scale": [
+            1.656327,
+            1.656327,
+            1.656327
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "displayBlocking": null,
+      "verification": [
+        {
+          "context": "thirdperson_righthand",
+          "roundTripMaxError": 7.6e-8,
+          "gripLandsOnPalmErrorBlocks": 2.8e-8,
+          "worldLengthErrorBlocks": 8.9e-8
+        },
+        {
+          "context": "thirdperson_lefthand",
+          "roundTripMaxError": 7.6e-8,
+          "gripLandsOnPalmErrorBlocks": 2.8e-8,
+          "worldLengthErrorBlocks": 8.9e-8
+        },
+        {
+          "context": "firstperson_righthand",
+          "roundTripMaxError": 7.6e-8,
+          "gripLandsOnPalmErrorBlocks": 3.6e-8,
+          "worldLengthErrorBlocks": 8.9e-8
+        },
+        {
+          "context": "firstperson_lefthand",
+          "roundTripMaxError": 7.6e-8,
+          "gripLandsOnPalmErrorBlocks": 3.6e-8,
+          "worldLengthErrorBlocks": 8.9e-8
+        },
+        {
+          "context": "ground",
+          "roundTripMaxError": 7.6e-8,
+          "gripLandsOnPalmErrorBlocks": 3.2e-8,
+          "worldLengthErrorBlocks": 8.9e-8
+        },
+        {
+          "context": "fixed",
+          "roundTripMaxError": 7.6e-8,
+          "gripLandsOnPalmErrorBlocks": 3.2e-8,
+          "worldLengthErrorBlocks": 8.9e-8
+        },
+        {
+          "context": "head",
+          "roundTripMaxError": 7.6e-8,
+          "gripLandsOnPalmErrorBlocks": 3.2e-8,
+          "worldLengthErrorBlocks": 8.9e-8
+        }
+      ],
+      "status": "proposal_not_game_verified",
+      "humanAccepted": false
+    },
+    "heavy_thrusting_sword": {
+      "route": "own_sprite",
+      "family": "melee",
+      "reference": {
+        "key": "melee",
+        "source": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
+        "image": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
+        "anchorPixels": [
+          3.5,
+          12.5
+        ],
+        "measuredAxisDegrees": 45,
+        "perpendicularSkew": 0,
+        "gripOffsetBlocks": [
+          0,
+          0,
+          0
+        ]
+      },
+      "geometry": {
+        "canvas": [
+          32,
+          32
+        ],
+        "anchorPixels": [
+          7.5,
+          24.5
+        ],
+        "anchorBlock": [
+          -0.265625,
+          -0.265625,
+          0
+        ],
+        "worldLengthBlocks": 1.512,
+        "sourceSpanPixels": 37.83806953549348,
+        "uniformXYScale": 1.278712169885
+      },
+      "axis": {
+        "measuredSpriteAxisDegrees": 44.924,
+        "spriteAnisotropy": 39.26,
+        "appliedAxisDegrees": 0.076,
+        "flip180Degrees": 0,
+        "spritePerpendicularSkew": -0.397036,
+        "sprite": "art/equipment-2d/full/sprites/heavy_thrusting_sword_front.png",
+        "notes": []
+      },
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55.076
+          ],
+          "translation": [
+            0,
+            6.239857,
+            0.094701
+          ],
+          "scale": [
+            1.278712,
+            1.278712,
+            1.278712
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55.076
+          ],
+          "translation": [
+            0,
+            6.239857,
+            0.094701
+          ],
+          "scale": [
+            1.278712,
+            1.278712,
+            1.278712
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            25.076
+          ],
+          "translation": [
+            1.13,
+            6.359051,
+            2.268952
+          ],
+          "scale": [
+            1.278712,
+            1.278712,
+            1.278712
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -25.076
+          ],
+          "translation": [
+            1.13,
+            6.359051,
+            2.268952
+          ],
+          "scale": [
+            1.278712,
+            1.278712,
+            1.278712
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            0.076
+          ],
+          "translation": [
+            3.177313,
+            5.191731,
+            0
+          ],
+          "scale": [
+            1.278712,
+            1.278712,
+            1.278712
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            0.076
+          ],
+          "translation": [
+            -0.927313,
+            0.941731,
+            0
+          ],
+          "scale": [
+            1.278712,
+            1.278712,
+            1.278712
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0.076
+          ],
+          "translation": [
+            -0.927313,
+            13.941731,
+            7
+          ],
+          "scale": [
+            1.278712,
+            1.278712,
+            1.278712
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "displayBlocking": null,
+      "verification": [
+        {
+          "context": "thirdperson_righthand",
+          "roundTripMaxError": 1.7e-7,
+          "gripLandsOnPalmErrorBlocks": 7.6e-8,
+          "worldLengthErrorBlocks": 2.01e-7
+        },
+        {
+          "context": "thirdperson_lefthand",
+          "roundTripMaxError": 1.7e-7,
+          "gripLandsOnPalmErrorBlocks": 7.6e-8,
+          "worldLengthErrorBlocks": 2.01e-7
+        },
+        {
+          "context": "firstperson_righthand",
+          "roundTripMaxError": 1.7e-7,
+          "gripLandsOnPalmErrorBlocks": 7.3e-8,
+          "worldLengthErrorBlocks": 2.01e-7
+        },
+        {
+          "context": "firstperson_lefthand",
+          "roundTripMaxError": 1.7e-7,
+          "gripLandsOnPalmErrorBlocks": 7.3e-8,
+          "worldLengthErrorBlocks": 2.01e-7
+        },
+        {
+          "context": "ground",
+          "roundTripMaxError": 1.7e-7,
+          "gripLandsOnPalmErrorBlocks": 7.2e-8,
+          "worldLengthErrorBlocks": 2.01e-7
+        },
+        {
+          "context": "fixed",
+          "roundTripMaxError": 1.7e-7,
+          "gripLandsOnPalmErrorBlocks": 7.2e-8,
+          "worldLengthErrorBlocks": 2.01e-7
+        },
+        {
+          "context": "head",
+          "roundTripMaxError": 1.7e-7,
+          "gripLandsOnPalmErrorBlocks": 7.2e-8,
+          "worldLengthErrorBlocks": 2.01e-7
+        }
+      ],
+      "status": "proposal_not_game_verified",
+      "humanAccepted": false
+    },
+    "malikeths_black_blade": {
+      "route": "own_sprite",
+      "family": "melee",
+      "reference": {
+        "key": "melee",
+        "source": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
+        "image": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
+        "anchorPixels": [
+          3.5,
+          12.5
+        ],
+        "measuredAxisDegrees": 45,
+        "perpendicularSkew": 0,
+        "gripOffsetBlocks": [
+          0,
+          0,
+          0
+        ]
+      },
+      "geometry": {
+        "canvas": [
+          64,
+          64
+        ],
+        "anchorPixels": [
+          13.5,
+          50.5
+        ],
+        "anchorBlock": [
+          -0.2890625,
+          -0.2890625,
+          0
+        ],
+        "worldLengthBlocks": 2.3040000000000003,
+        "sourceSpanPixels": 82.02438661763952,
+        "uniformXYScale": 1.797709267701
+      },
+      "axis": {
+        "measuredSpriteAxisDegrees": 46.526,
+        "spriteAnisotropy": 30.914,
+        "appliedAxisDegrees": -1.526,
+        "flip180Degrees": 0,
+        "spritePerpendicularSkew": -2.583486,
+        "sprite": "art/equipment-2d/full/sprites/malikeths_black_blade_front.png",
+        "notes": [
+          "held edge correction: roll 180 degrees around the blade's longitudinal axis; translation is re-derived from the unchanged grip, with GUI/world display unchanged"
+        ],
+        "heldBladeRollDegrees": 180,
+        "heldBladeAxisFromXDegrees": 43.474
+      },
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            90,
+            39.578
+          ],
+          "translation": [
+            0,
+            10.378549,
+            0.328274
+          ],
+          "scale": [
+            1.797709,
+            1.797709,
+            1.797709
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            -90,
+            -39.578
+          ],
+          "translation": [
+            0,
+            10.378549,
+            0.328274
+          ],
+          "scale": [
+            1.797709,
+            1.797709,
+            1.797709
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            90,
+            69.578
+          ],
+          "translation": [
+            1.13,
+            9.826477,
+            4.540578
+          ],
+          "scale": [
+            1.797709,
+            1.797709,
+            1.797709
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            -90,
+            -69.578
+          ],
+          "translation": [
+            1.13,
+            9.826477,
+            4.540578
+          ],
+          "scale": [
+            1.797709,
+            1.797709,
+            1.797709
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            -1.526
+          ],
+          "translation": [
+            6.282874,
+            7.840039,
+            0
+          ],
+          "scale": [
+            1.797709,
+            1.797709,
+            1.797709
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            -1.526
+          ],
+          "translation": [
+            -4.032874,
+            3.590039,
+            0
+          ],
+          "scale": [
+            1.797709,
+            1.797709,
+            1.797709
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            -1.526
+          ],
+          "translation": [
+            -4.032874,
+            16.590039,
+            7
+          ],
+          "scale": [
+            1.797709,
+            1.797709,
+            1.797709
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "displayBlocking": null,
+      "verification": [
+        {
+          "context": "thirdperson_righthand",
+          "roundTripMaxError": 2.68e-7,
+          "gripLandsOnPalmErrorBlocks": 1.28e-7,
+          "worldLengthErrorBlocks": 3.43e-7
+        },
+        {
+          "context": "thirdperson_lefthand",
+          "roundTripMaxError": 2.68e-7,
+          "gripLandsOnPalmErrorBlocks": 1.28e-7,
+          "worldLengthErrorBlocks": 3.43e-7
+        },
+        {
+          "context": "firstperson_righthand",
+          "roundTripMaxError": 2.68e-7,
+          "gripLandsOnPalmErrorBlocks": 1.21e-7,
+          "worldLengthErrorBlocks": 3.43e-7
+        },
+        {
+          "context": "firstperson_lefthand",
+          "roundTripMaxError": 2.68e-7,
+          "gripLandsOnPalmErrorBlocks": 1.21e-7,
+          "worldLengthErrorBlocks": 3.43e-7
+        },
+        {
+          "context": "ground",
+          "roundTripMaxError": 2.68e-7,
+          "gripLandsOnPalmErrorBlocks": 7.9e-8,
+          "worldLengthErrorBlocks": 3.43e-7
+        },
+        {
+          "context": "fixed",
+          "roundTripMaxError": 2.68e-7,
+          "gripLandsOnPalmErrorBlocks": 7.9e-8,
+          "worldLengthErrorBlocks": 3.43e-7
+        },
+        {
+          "context": "head",
+          "roundTripMaxError": 2.68e-7,
+          "gripLandsOnPalmErrorBlocks": 7.9e-8,
+          "worldLengthErrorBlocks": 3.43e-7
+        }
+      ],
+      "status": "proposal_not_game_verified",
+      "humanAccepted": false
+    },
+    "marikas_hammer": {
+      "route": "own_sprite",
+      "family": "melee",
+      "reference": {
+        "key": "melee",
+        "source": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
+        "image": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
+        "anchorPixels": [
+          3.5,
+          12.5
+        ],
+        "measuredAxisDegrees": 45,
+        "perpendicularSkew": 0,
+        "gripOffsetBlocks": [
+          0,
+          0,
+          0
+        ]
+      },
+      "geometry": {
+        "canvas": [
+          64,
+          64
+        ],
+        "anchorPixels": [
+          13.5,
+          50.5
+        ],
+        "anchorBlock": [
+          -0.2890625,
+          -0.2890625,
+          0
+        ],
+        "worldLengthBlocks": 1.044,
+        "sourceSpanPixels": 73.0677007226099,
+        "uniformXYScale": 0.914439613389
+      },
+      "axis": {
+        "measuredSpriteAxisDegrees": 44.72,
+        "spriteAnisotropy": 7.088,
+        "appliedAxisDegrees": 0.28,
+        "flip180Degrees": 0,
+        "spritePerpendicularSkew": -8.976622,
+        "sprite": "art/equipment-2d/full/sprites/marikas_hammer_front.png",
+        "notes": []
+      },
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55.28
+          ],
+          "translation": [
+            0,
+            4.557911,
+            0.371945
+          ],
+          "scale": [
+            0.91444,
+            0.91444,
+            0.91444
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55.28
+          ],
+          "translation": [
+            0,
+            4.557911,
+            0.371945
+          ],
+          "scale": [
+            0.91444,
+            0.91444,
+            0.91444
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            25.28
+          ],
+          "translation": [
+            1.13,
+            4.763821,
+            1.668079
+          ],
+          "scale": [
+            0.91444,
+            0.91444,
+            0.91444
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -25.28
+          ],
+          "translation": [
+            1.13,
+            4.763821,
+            1.668079
+          ],
+          "scale": [
+            0.91444,
+            0.91444,
+            0.91444
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            0.28
+          ],
+          "translation": [
+            1.958565,
+            3.999901,
+            0
+          ],
+          "scale": [
+            0.91444,
+            0.91444,
+            0.91444
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            0.28
+          ],
+          "translation": [
+            0.291435,
+            -0.250099,
+            0
+          ],
+          "scale": [
+            0.91444,
+            0.91444,
+            0.91444
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0.28
+          ],
+          "translation": [
+            0.291435,
+            12.749901,
+            7
+          ],
+          "scale": [
+            0.91444,
+            0.91444,
+            0.91444
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "displayBlocking": null,
+      "verification": [
+        {
+          "context": "thirdperson_righthand",
+          "roundTripMaxError": 3.87e-7,
+          "gripLandsOnPalmErrorBlocks": 1.45e-7,
+          "worldLengthErrorBlocks": 4.41e-7
+        },
+        {
+          "context": "thirdperson_lefthand",
+          "roundTripMaxError": 3.87e-7,
+          "gripLandsOnPalmErrorBlocks": 1.45e-7,
+          "worldLengthErrorBlocks": 4.41e-7
+        },
+        {
+          "context": "firstperson_righthand",
+          "roundTripMaxError": 3.87e-7,
+          "gripLandsOnPalmErrorBlocks": 1.33e-7,
+          "worldLengthErrorBlocks": 4.41e-7
+        },
+        {
+          "context": "firstperson_lefthand",
+          "roundTripMaxError": 3.87e-7,
+          "gripLandsOnPalmErrorBlocks": 1.33e-7,
+          "worldLengthErrorBlocks": 4.41e-7
+        },
+        {
+          "context": "ground",
+          "roundTripMaxError": 3.87e-7,
+          "gripLandsOnPalmErrorBlocks": 1e-7,
+          "worldLengthErrorBlocks": 4.41e-7
+        },
+        {
+          "context": "fixed",
+          "roundTripMaxError": 3.87e-7,
+          "gripLandsOnPalmErrorBlocks": 1e-7,
+          "worldLengthErrorBlocks": 4.41e-7
+        },
+        {
+          "context": "head",
+          "roundTripMaxError": 3.87e-7,
+          "gripLandsOnPalmErrorBlocks": 1e-7,
+          "worldLengthErrorBlocks": 4.41e-7
+        }
+      ],
+      "status": "superseded_by_selected_art_requires_recalibration",
+      "humanAccepted": false,
+      "supersededBy": "art/equipment-2d/taste-weapons-20261018/manifest.json",
+      "verificationHistorical": true
+    },
+    "mohgwyns_sacred_spear": {
+      "route": "own_sprite",
+      "family": "melee",
+      "reference": {
+        "key": "melee",
+        "source": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
+        "image": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
+        "anchorPixels": [
+          3.5,
+          12.5
+        ],
+        "measuredAxisDegrees": 45,
+        "perpendicularSkew": 0,
+        "gripOffsetBlocks": [
+          0,
+          0,
+          0
+        ]
+      },
+      "geometry": {
+        "canvas": [
+          64,
+          64
+        ],
+        "anchorPixels": [
+          16.5,
+          47.5
+        ],
+        "anchorBlock": [
+          -0.2421875,
+          -0.2421875,
+          0
+        ],
+        "worldLengthBlocks": 3.15,
+        "sourceSpanPixels": 82.11562620230875,
+        "uniformXYScale": 2.45507474428
+      },
+      "axis": {
+        "measuredSpriteAxisDegrees": 45,
+        "spriteAnisotropy": 45.4,
+        "appliedAxisDegrees": 0,
+        "flip180Degrees": 0,
+        "spritePerpendicularSkew": 0,
+        "sprite": "art/equipment-2d/full/sprites/mohgwyns_sacred_spear_front.png",
+        "notes": []
+      },
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55
+          ],
+          "translation": [
+            0,
+            11.922417,
+            -0.896936
+          ],
+          "scale": [
+            2.455075,
+            2.455075,
+            2.455075
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55
+          ],
+          "translation": [
+            0,
+            11.922417,
+            -0.896936
+          ],
+          "scale": [
+            2.455075,
+            2.455075,
+            2.455075
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            25
+          ],
+          "translation": [
+            1.13,
+            11.776111,
+            4.251449
+          ],
+          "scale": [
+            2.455075,
+            2.455075,
+            2.455075
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -25
+          ],
+          "translation": [
+            1.13,
+            11.776111,
+            4.251449
+          ],
+          "scale": [
+            2.455075,
+            2.455075,
+            2.455075
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            7.263415,
+            9.263415,
+            0
+          ],
+          "scale": [
+            2.455075,
+            2.455075,
+            2.455075
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            -5.013415,
+            5.013415,
+            0
+          ],
+          "scale": [
+            2.455075,
+            2.455075,
+            2.455075
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            -5.013415,
+            18.013415,
+            7
+          ],
+          "scale": [
+            2.455075,
+            2.455075,
+            2.455075
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "displayBlocking": null,
+      "verification": [
+        {
+          "context": "thirdperson_righthand",
+          "roundTripMaxError": 2.56e-7,
+          "gripLandsOnPalmErrorBlocks": 9.1e-8,
+          "worldLengthErrorBlocks": 3.28e-7
+        },
+        {
+          "context": "thirdperson_lefthand",
+          "roundTripMaxError": 2.56e-7,
+          "gripLandsOnPalmErrorBlocks": 9.1e-8,
+          "worldLengthErrorBlocks": 3.28e-7
+        },
+        {
+          "context": "firstperson_righthand",
+          "roundTripMaxError": 2.56e-7,
+          "gripLandsOnPalmErrorBlocks": 7e-8,
+          "worldLengthErrorBlocks": 3.28e-7
+        },
+        {
+          "context": "firstperson_lefthand",
+          "roundTripMaxError": 2.56e-7,
+          "gripLandsOnPalmErrorBlocks": 7e-8,
+          "worldLengthErrorBlocks": 3.28e-7
+        },
+        {
+          "context": "ground",
+          "roundTripMaxError": 2.56e-7,
+          "gripLandsOnPalmErrorBlocks": 3.9e-8,
+          "worldLengthErrorBlocks": 3.28e-7
+        },
+        {
+          "context": "fixed",
+          "roundTripMaxError": 2.56e-7,
+          "gripLandsOnPalmErrorBlocks": 3.9e-8,
+          "worldLengthErrorBlocks": 3.28e-7
+        },
+        {
+          "context": "head",
+          "roundTripMaxError": 2.56e-7,
+          "gripLandsOnPalmErrorBlocks": 3.9e-8,
+          "worldLengthErrorBlocks": 3.28e-7
+        }
+      ],
+      "status": "superseded_by_selected_art_requires_recalibration",
+      "humanAccepted": false,
+      "supersededBy": "art/equipment-2d/taste-weapons-20261018/manifest.json",
+      "verificationHistorical": true
+    },
+    "morgotts_cursed_sword": {
+      "route": "own_sprite",
+      "family": "melee",
+      "reference": {
+        "key": "melee",
+        "source": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
+        "image": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
+        "anchorPixels": [
+          3.5,
+          12.5
+        ],
+        "measuredAxisDegrees": 45,
+        "perpendicularSkew": 0,
+        "gripOffsetBlocks": [
+          0,
+          0,
+          0
+        ]
+      },
+      "geometry": {
+        "canvas": [
+          64,
+          64
+        ],
+        "anchorPixels": [
+          10.5,
+          45.5
+        ],
+        "anchorBlock": [
+          -0.3359375,
+          -0.2109375,
+          0
+        ],
+        "worldLengthBlocks": 2.088,
+        "sourceSpanPixels": 73.53910524340094,
+        "uniformXYScale": 1.817155641991
+      },
+      "axis": {
+        "measuredSpriteAxisDegrees": 53.795,
+        "spriteAnisotropy": 66.661,
+        "appliedAxisDegrees": -8.795,
+        "flip180Degrees": 0,
+        "spritePerpendicularSkew": -3.269132,
+        "sprite": "art/equipment-2d/full/sprites/morgotts_cursed_sword_front.png",
+        "notes": []
+      },
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            46.205
+          ],
+          "translation": [
+            0,
+            9.967447,
+            3.772166
+          ],
+          "scale": [
+            1.817156,
+            1.817156,
+            1.817156
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -46.205
+          ],
+          "translation": [
+            0,
+            9.967447,
+            3.772166
+          ],
+          "scale": [
+            1.817156,
+            1.817156,
+            1.817156
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            16.205
+          ],
+          "translation": [
+            1.13,
+            7.748506,
+            7.317525
+          ],
+          "scale": [
+            1.817156,
+            1.817156,
+            1.817156
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -16.205
+          ],
+          "translation": [
+            1.13,
+            7.748506,
+            7.317525
+          ],
+          "scale": [
+            1.817156,
+            1.817156,
+            1.817156
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            -8.795
+          ],
+          "translation": [
+            8.340084,
+            4.317385,
+            0
+          ],
+          "scale": [
+            1.817156,
+            1.817156,
+            1.817156
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            -8.795
+          ],
+          "translation": [
+            -6.090084,
+            0.067385,
+            0
+          ],
+          "scale": [
+            1.817156,
+            1.817156,
+            1.817156
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            -8.795
+          ],
+          "translation": [
+            -6.090084,
+            13.067385,
+            7
+          ],
+          "scale": [
+            1.817156,
+            1.817156,
+            1.817156
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "displayBlocking": null,
+      "verification": [
+        {
+          "context": "thirdperson_righthand",
+          "roundTripMaxError": 3.58e-7,
+          "gripLandsOnPalmErrorBlocks": 1.46e-7,
+          "worldLengthErrorBlocks": 4.11e-7
+        },
+        {
+          "context": "thirdperson_lefthand",
+          "roundTripMaxError": 3.58e-7,
+          "gripLandsOnPalmErrorBlocks": 1.46e-7,
+          "worldLengthErrorBlocks": 4.11e-7
+        },
+        {
+          "context": "firstperson_righthand",
+          "roundTripMaxError": 3.58e-7,
+          "gripLandsOnPalmErrorBlocks": 1.1e-7,
+          "worldLengthErrorBlocks": 4.11e-7
+        },
+        {
+          "context": "firstperson_lefthand",
+          "roundTripMaxError": 3.58e-7,
+          "gripLandsOnPalmErrorBlocks": 1.1e-7,
+          "worldLengthErrorBlocks": 4.11e-7
+        },
+        {
+          "context": "ground",
+          "roundTripMaxError": 3.58e-7,
+          "gripLandsOnPalmErrorBlocks": 1.32e-7,
+          "worldLengthErrorBlocks": 4.11e-7
+        },
+        {
+          "context": "fixed",
+          "roundTripMaxError": 3.58e-7,
+          "gripLandsOnPalmErrorBlocks": 1.32e-7,
+          "worldLengthErrorBlocks": 4.11e-7
+        },
+        {
+          "context": "head",
+          "roundTripMaxError": 3.58e-7,
+          "gripLandsOnPalmErrorBlocks": 1.32e-7,
+          "worldLengthErrorBlocks": 4.11e-7
+        }
+      ],
+      "status": "proposal_not_game_verified",
+      "humanAccepted": false
+    },
+    "sacred_relic_sword": {
+      "route": "own_sprite",
+      "family": "melee",
+      "reference": {
+        "key": "melee",
+        "source": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
+        "image": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
+        "anchorPixels": [
+          3.5,
+          12.5
+        ],
+        "measuredAxisDegrees": 45,
+        "perpendicularSkew": 0,
+        "gripOffsetBlocks": [
+          0,
+          0,
+          0
+        ]
+      },
+      "geometry": {
+        "canvas": [
+          64,
+          64
+        ],
+        "anchorPixels": [
+          11.5,
+          52.5
+        ],
+        "anchorBlock": [
+          -0.3203125,
+          -0.3203125,
+          0
+        ],
+        "worldLengthBlocks": 1.71,
+        "sourceSpanPixels": 81.65082077097492,
+        "uniformXYScale": 1.340341700997
+      },
+      "axis": {
+        "measuredSpriteAxisDegrees": 45,
+        "spriteAnisotropy": 65.678,
+        "appliedAxisDegrees": 0,
+        "flip180Degrees": 0,
+        "spritePerpendicularSkew": 0,
+        "sprite": "art/equipment-2d/full/sprites/sacred_relic_sword_front.png",
+        "notes": []
+      },
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55
+          ],
+          "translation": [
+            0,
+            8.239815,
+            -0.247594
+          ],
+          "scale": [
+            1.340342,
+            1.340342,
+            1.340342
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55
+          ],
+          "translation": [
+            0,
+            8.239815,
+            -0.247594
+          ],
+          "scale": [
+            1.340342,
+            1.340342,
+            1.340342
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            25
+          ],
+          "translation": [
+            1.13,
+            8.262213,
+            2.972495
+          ],
+          "scale": [
+            1.340342,
+            1.340342,
+            1.340342
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -25
+          ],
+          "translation": [
+            1.13,
+            8.262213,
+            2.972495
+          ],
+          "scale": [
+            1.340342,
+            1.340342,
+            1.340342
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            4.619251,
+            6.619251,
+            0
+          ],
+          "scale": [
+            1.340342,
+            1.340342,
+            1.340342
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            -2.369251,
+            2.369251,
+            0
+          ],
+          "scale": [
+            1.340342,
+            1.340342,
+            1.340342
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            -2.369251,
+            15.369251,
+            7
+          ],
+          "scale": [
+            1.340342,
+            1.340342,
+            1.340342
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "displayBlocking": null,
+      "verification": [
+        {
+          "context": "thirdperson_righthand",
+          "roundTripMaxError": 2.99e-7,
+          "gripLandsOnPalmErrorBlocks": 1.57e-7,
+          "worldLengthErrorBlocks": 3.81e-7
+        },
+        {
+          "context": "thirdperson_lefthand",
+          "roundTripMaxError": 2.99e-7,
+          "gripLandsOnPalmErrorBlocks": 1.57e-7,
+          "worldLengthErrorBlocks": 3.81e-7
+        },
+        {
+          "context": "firstperson_righthand",
+          "roundTripMaxError": 2.99e-7,
+          "gripLandsOnPalmErrorBlocks": 1.38e-7,
+          "worldLengthErrorBlocks": 3.81e-7
+        },
+        {
+          "context": "firstperson_lefthand",
+          "roundTripMaxError": 2.99e-7,
+          "gripLandsOnPalmErrorBlocks": 1.38e-7,
+          "worldLengthErrorBlocks": 3.81e-7
+        },
+        {
+          "context": "ground",
+          "roundTripMaxError": 2.99e-7,
+          "gripLandsOnPalmErrorBlocks": 1.09e-7,
+          "worldLengthErrorBlocks": 3.81e-7
+        },
+        {
+          "context": "fixed",
+          "roundTripMaxError": 2.99e-7,
+          "gripLandsOnPalmErrorBlocks": 1.09e-7,
+          "worldLengthErrorBlocks": 3.81e-7
+        },
+        {
+          "context": "head",
+          "roundTripMaxError": 2.99e-7,
+          "gripLandsOnPalmErrorBlocks": 1.09e-7,
+          "worldLengthErrorBlocks": 3.81e-7
+        }
+      ],
+      "status": "proposal_not_game_verified",
+      "humanAccepted": false
+    },
+    "sacred_seal": {
+      "route": "own_sprite",
+      "family": "melee",
+      "reference": {
+        "key": "melee",
+        "source": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
+        "image": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
+        "anchorPixels": [
+          3.5,
+          12.5
+        ],
+        "measuredAxisDegrees": 45,
+        "perpendicularSkew": 0,
+        "gripOffsetBlocks": [
+          0,
+          0,
+          0
+        ]
+      },
+      "geometry": {
+        "canvas": [
+          32,
+          32
+        ],
+        "anchorPixels": [
+          8.5,
+          24.5
+        ],
+        "anchorBlock": [
+          -0.234375,
+          -0.265625,
+          0
+        ],
+        "worldLengthBlocks": 0.216,
+        "sourceSpanPixels": 31.112698372208083,
+        "uniformXYScale": 0.222160094162
+      },
+      "axis": {
+        "measuredSpriteAxisDegrees": 45,
+        "spriteAnisotropy": 1.756,
+        "appliedAxisDegrees": 0,
+        "flip180Degrees": 0,
+        "spritePerpendicularSkew": 0,
+        "sprite": "art/equipment-2d/full/sprites/sacred_seal_front.png",
+        "notes": []
+      },
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55
+          ],
+          "translation": [
+            0,
+            -0.103191,
+            1.143746
+          ],
+          "scale": [
+            0.22216,
+            0.22216,
+            0.22216
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55
+          ],
+          "translation": [
+            0,
+            -0.103191,
+            1.143746
+          ],
+          "scale": [
+            0.22216,
+            0.22216,
+            0.22216
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            25
+          ],
+          "translation": [
+            1.13,
+            0.341288,
+            0.005928
+          ],
+          "scale": [
+            0.22216,
+            0.22216,
+            0.22216
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -25
+          ],
+          "translation": [
+            1.13,
+            0.341288,
+            0.005928
+          ],
+          "scale": [
+            0.22216,
+            0.22216,
+            0.22216
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            -1.4169,
+            0.69418,
+            0
+          ],
+          "scale": [
+            0.22216,
+            0.22216,
+            0.22216
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            3.6669,
+            -3.55582,
+            0
+          ],
+          "scale": [
+            0.22216,
+            0.22216,
+            0.22216
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            3.6669,
+            9.44418,
+            7
+          ],
+          "scale": [
+            0.22216,
+            0.22216,
+            0.22216
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "displayBlocking": null,
+      "verification": [
+        {
+          "context": "thirdperson_righthand",
+          "roundTripMaxError": 9.4e-8,
+          "gripLandsOnPalmErrorBlocks": 2.9e-8,
+          "worldLengthErrorBlocks": 9.2e-8
+        },
+        {
+          "context": "thirdperson_lefthand",
+          "roundTripMaxError": 9.4e-8,
+          "gripLandsOnPalmErrorBlocks": 2.9e-8,
+          "worldLengthErrorBlocks": 9.2e-8
+        },
+        {
+          "context": "firstperson_righthand",
+          "roundTripMaxError": 9.4e-8,
+          "gripLandsOnPalmErrorBlocks": 4.7e-8,
+          "worldLengthErrorBlocks": 9.2e-8
+        },
+        {
+          "context": "firstperson_lefthand",
+          "roundTripMaxError": 9.4e-8,
+          "gripLandsOnPalmErrorBlocks": 4.7e-8,
+          "worldLengthErrorBlocks": 9.2e-8
+        },
+        {
+          "context": "ground",
+          "roundTripMaxError": 9.4e-8,
+          "gripLandsOnPalmErrorBlocks": 0,
+          "worldLengthErrorBlocks": 9.2e-8
+        },
+        {
+          "context": "fixed",
+          "roundTripMaxError": 9.4e-8,
+          "gripLandsOnPalmErrorBlocks": 0,
+          "worldLengthErrorBlocks": 9.2e-8
+        },
+        {
+          "context": "head",
+          "roundTripMaxError": 9.4e-8,
+          "gripLandsOnPalmErrorBlocks": 0,
+          "worldLengthErrorBlocks": 9.2e-8
+        }
+      ],
+      "status": "proposal_not_game_verified",
+      "humanAccepted": false
+    },
+    "shield": {
+      "route": "own_sprite",
+      "family": "shield",
+      "reference": {
+        "key": "shield",
+        "source": "minecraft:item/shield (builtin/entity: handle at the model origin, geometry around the origin); blocking pose from minecraft:item/shield_blocking",
+        "image": null,
+        "anchorPixels": [
+          8,
+          8
+        ],
+        "measuredAxisDegrees": null,
+        "perpendicularSkew": null,
+        "gripOffsetBlocks": [
+          -0.5,
+          -0.5,
+          -0.5
+        ]
+      },
+      "geometry": {
+        "canvas": [
+          32,
+          32
+        ],
+        "anchorPixels": [
+          16.5,
+          16.5
+        ],
+        "anchorBlock": [
+          0.015625,
+          -0.015625,
+          0
+        ],
+        "worldLengthBlocks": 0.9,
+        "sourceSpanPixels": 28,
+        "uniformXYScale": 1.028571428571
+      },
+      "axis": {
+        "measuredSpriteAxisDegrees": 0,
+        "spriteAnisotropy": 1.352,
+        "appliedAxisDegrees": 0,
+        "flip180Degrees": 0,
+        "spritePerpendicularSkew": null,
+        "sprite": "art/equipment-2d/full/sprites/shield_front.png",
+        "notes": [
+          "grip at the declared reference point; the sprite is near-isotropic so no in-plane rotation is implied by the art"
+        ]
+      },
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            2,
+            -1.742857,
+            4.257143
+          ],
+          "scale": [
+            1.028571,
+            1.028571,
+            1.028571
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            2,
+            -1.742857,
+            3.742857
+          ],
+          "scale": [
+            1.028571,
+            1.028571,
+            1.028571
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            180,
+            5
+          ],
+          "translation": [
+            -0.631035,
+            -8.599752,
+            0
+          ],
+          "scale": [
+            1.028571,
+            1.028571,
+            1.028571
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            180,
+            5
+          ],
+          "translation": [
+            -1.067257,
+            -8.811814,
+            0
+          ],
+          "scale": [
+            1.028571,
+            1.028571,
+            1.028571
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            -0.257143,
+            2.257143,
+            0
+          ],
+          "scale": [
+            1.028571,
+            1.028571,
+            1.028571
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            0.157143,
+            0.357143,
+            -0.6
+          ],
+          "scale": [
+            1.028571,
+            1.028571,
+            1.028571
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            8.257143,
+            5.257143,
+            15
+          ],
+          "scale": [
+            1.028571,
+            1.028571,
+            1.028571
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "displayBlocking": {
+        "thirdperson_righthand": {
+          "rotation": [
+            45,
+            155,
+            0
+          ],
+          "translation": [
+            0.612567,
+            -2.069411,
+            0.119358
+          ],
+          "scale": [
+            1.028571,
+            1.028571,
+            1.028571
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            45,
+            155,
+            0
+          ],
+          "translation": [
+            0.645541,
+            -1.134344,
+            -0.315709
+          ],
+          "scale": [
+            1.028571,
+            1.028571,
+            1.028571
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            180,
+            -5
+          ],
+          "translation": [
+            -3.932743,
+            -3.811814,
+            -1
+          ],
+          "scale": [
+            1.028571,
+            1.028571,
+            1.028571
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            180,
+            -5
+          ],
+          "translation": [
+            -4.368965,
+            -5.599752,
+            -1
+          ],
+          "scale": [
+            1.028571,
+            1.028571,
+            1.028571
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            -0.257143,
+            2.257143,
+            0
+          ],
+          "scale": [
+            1.028571,
+            1.028571,
+            1.028571
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            0.157143,
+            0.357143,
+            -0.6
+          ],
+          "scale": [
+            1.028571,
+            1.028571,
+            1.028571
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "verification": [
+        {
+          "context": "thirdperson_righthand",
+          "roundTripMaxError": 4.29e-7,
+          "gripLandsOnPalmErrorBlocks": 1.6e-8,
+          "worldLengthErrorBlocks": 3.75e-7
+        },
+        {
+          "context": "thirdperson_lefthand",
+          "roundTripMaxError": 4.29e-7,
+          "gripLandsOnPalmErrorBlocks": 1.6e-8,
+          "worldLengthErrorBlocks": 3.75e-7
+        },
+        {
+          "context": "firstperson_righthand",
+          "roundTripMaxError": 4.29e-7,
+          "gripLandsOnPalmErrorBlocks": 2.3e-8,
+          "worldLengthErrorBlocks": 3.75e-7
+        },
+        {
+          "context": "firstperson_lefthand",
+          "roundTripMaxError": 4.29e-7,
+          "gripLandsOnPalmErrorBlocks": 1.2e-8,
+          "worldLengthErrorBlocks": 3.75e-7
+        },
+        {
+          "context": "ground",
+          "roundTripMaxError": 4.29e-7,
+          "gripLandsOnPalmErrorBlocks": 1.6e-8,
+          "worldLengthErrorBlocks": 3.75e-7
+        },
+        {
+          "context": "fixed",
+          "roundTripMaxError": 4.29e-7,
+          "gripLandsOnPalmErrorBlocks": 1.6e-8,
+          "worldLengthErrorBlocks": 3.75e-7
+        },
+        {
+          "context": "head",
+          "roundTripMaxError": 4.29e-7,
+          "gripLandsOnPalmErrorBlocks": 1.6e-8,
+          "worldLengthErrorBlocks": 3.75e-7
+        },
+        {
+          "context": "blocking:thirdperson_righthand",
+          "roundTripMaxError": 3.88e-7,
+          "gripLandsOnPalmErrorBlocks": 2.5e-8,
+          "worldLengthErrorBlocks": 3.75e-7
+        },
+        {
+          "context": "blocking:thirdperson_lefthand",
+          "roundTripMaxError": 3.88e-7,
+          "gripLandsOnPalmErrorBlocks": 2.8e-8,
+          "worldLengthErrorBlocks": 3.75e-7
+        },
+        {
+          "context": "blocking:firstperson_righthand",
+          "roundTripMaxError": 4.29e-7,
+          "gripLandsOnPalmErrorBlocks": 1.2e-8,
+          "worldLengthErrorBlocks": 3.75e-7
+        },
+        {
+          "context": "blocking:firstperson_lefthand",
+          "roundTripMaxError": 4.29e-7,
+          "gripLandsOnPalmErrorBlocks": 2.3e-8,
+          "worldLengthErrorBlocks": 3.75e-7
+        },
+        {
+          "context": "blocking:ground",
+          "roundTripMaxError": 4.29e-7,
+          "gripLandsOnPalmErrorBlocks": 1.6e-8,
+          "worldLengthErrorBlocks": 3.75e-7
+        },
+        {
+          "context": "blocking:fixed",
+          "roundTripMaxError": 4.29e-7,
+          "gripLandsOnPalmErrorBlocks": 1.6e-8,
+          "worldLengthErrorBlocks": 3.75e-7
+        }
+      ],
+      "status": "proposal_not_game_verified",
+      "humanAccepted": false
+    },
+    "small_shield": {
+      "route": "own_sprite",
+      "family": "shield",
+      "reference": {
+        "key": "shield",
+        "source": "minecraft:item/shield (builtin/entity: handle at the model origin, geometry around the origin); blocking pose from minecraft:item/shield_blocking",
+        "image": null,
+        "anchorPixels": [
+          8,
+          8
+        ],
+        "measuredAxisDegrees": null,
+        "perpendicularSkew": null,
+        "gripOffsetBlocks": [
+          -0.5,
+          -0.5,
+          -0.5
+        ]
+      },
+      "geometry": {
+        "canvas": [
+          32,
+          32
+        ],
+        "anchorPixels": [
+          16.5,
+          16.5
+        ],
+        "anchorBlock": [
+          0.015625,
+          -0.015625,
+          0
+        ],
+        "worldLengthBlocks": 0.5040000000000001,
+        "sourceSpanPixels": 28,
+        "uniformXYScale": 0.576
+      },
+      "axis": {
+        "measuredSpriteAxisDegrees": 0,
+        "spriteAnisotropy": 1,
+        "appliedAxisDegrees": 0,
+        "flip180Degrees": 0,
+        "spritePerpendicularSkew": null,
+        "sprite": "art/equipment-2d/full/sprites/small_shield_front.png",
+        "notes": [
+          "grip at the declared reference point; the sprite is near-isotropic so no in-plane rotation is implied by the art"
+        ]
+      },
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            2,
+            -1.856,
+            4.144
+          ],
+          "scale": [
+            0.576,
+            0.576,
+            0.576
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            2,
+            -1.856,
+            3.856
+          ],
+          "scale": [
+            0.576,
+            0.576,
+            0.576
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            180,
+            5
+          ],
+          "translation": [
+            -0.753608,
+            -8.702603,
+            0
+          ],
+          "scale": [
+            0.576,
+            0.576,
+            0.576
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            180,
+            5
+          ],
+          "translation": [
+            -0.964406,
+            -8.934387,
+            0
+          ],
+          "scale": [
+            0.576,
+            0.576,
+            0.576
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            -0.144,
+            2.144,
+            0
+          ],
+          "scale": [
+            0.576,
+            0.576,
+            0.576
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            0.044,
+            0.244,
+            -0.6
+          ],
+          "scale": [
+            0.576,
+            0.576,
+            0.576
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            8.144,
+            5.144,
+            15
+          ],
+          "scale": [
+            0.576,
+            0.576,
+            0.576
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "displayBlocking": {
+        "thirdperson_righthand": {
+          "rotation": [
+            45,
+            155,
+            0
+          ],
+          "translation": [
+            0.510025,
+            -2.115604,
+            0.005543
+          ],
+          "scale": [
+            0.576,
+            0.576,
+            0.576
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            45,
+            155,
+            0
+          ],
+          "translation": [
+            0.748083,
+            -1.24816,
+            -0.361902
+          ],
+          "scale": [
+            0.576,
+            0.576,
+            0.576
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            180,
+            -5
+          ],
+          "translation": [
+            -4.035594,
+            -3.934387,
+            -1
+          ],
+          "scale": [
+            0.576,
+            0.576,
+            0.576
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            180,
+            -5
+          ],
+          "translation": [
+            -4.246392,
+            -5.702603,
+            -1
+          ],
+          "scale": [
+            0.576,
+            0.576,
+            0.576
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            -0.144,
+            2.144,
+            0
+          ],
+          "scale": [
+            0.576,
+            0.576,
+            0.576
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            0.044,
+            0.244,
+            -0.6
+          ],
+          "scale": [
+            0.576,
+            0.576,
+            0.576
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "verification": [
+        {
+          "context": "thirdperson_righthand",
+          "roundTripMaxError": 0,
+          "gripLandsOnPalmErrorBlocks": 0,
+          "worldLengthErrorBlocks": 0
+        },
+        {
+          "context": "thirdperson_lefthand",
+          "roundTripMaxError": 0,
+          "gripLandsOnPalmErrorBlocks": 0,
+          "worldLengthErrorBlocks": 0
+        },
+        {
+          "context": "firstperson_righthand",
+          "roundTripMaxError": 1.3e-8,
+          "gripLandsOnPalmErrorBlocks": 1.3e-8,
+          "worldLengthErrorBlocks": 0
+        },
+        {
+          "context": "firstperson_lefthand",
+          "roundTripMaxError": 6e-9,
+          "gripLandsOnPalmErrorBlocks": 6e-9,
+          "worldLengthErrorBlocks": 0
+        },
+        {
+          "context": "ground",
+          "roundTripMaxError": 0,
+          "gripLandsOnPalmErrorBlocks": 0,
+          "worldLengthErrorBlocks": 0
+        },
+        {
+          "context": "fixed",
+          "roundTripMaxError": 0,
+          "gripLandsOnPalmErrorBlocks": 0,
+          "worldLengthErrorBlocks": 0
+        },
+        {
+          "context": "head",
+          "roundTripMaxError": 0,
+          "gripLandsOnPalmErrorBlocks": 0,
+          "worldLengthErrorBlocks": 0
+        },
+        {
+          "context": "blocking:thirdperson_righthand",
+          "roundTripMaxError": 3.1e-8,
+          "gripLandsOnPalmErrorBlocks": 3.1e-8,
+          "worldLengthErrorBlocks": 0
+        },
+        {
+          "context": "blocking:thirdperson_lefthand",
+          "roundTripMaxError": 2.5e-8,
+          "gripLandsOnPalmErrorBlocks": 2.5e-8,
+          "worldLengthErrorBlocks": 0
+        },
+        {
+          "context": "blocking:firstperson_righthand",
+          "roundTripMaxError": 6e-9,
+          "gripLandsOnPalmErrorBlocks": 6e-9,
+          "worldLengthErrorBlocks": 0
+        },
+        {
+          "context": "blocking:firstperson_lefthand",
+          "roundTripMaxError": 1.3e-8,
+          "gripLandsOnPalmErrorBlocks": 1.3e-8,
+          "worldLengthErrorBlocks": 0
+        },
+        {
+          "context": "blocking:ground",
+          "roundTripMaxError": 0,
+          "gripLandsOnPalmErrorBlocks": 0,
+          "worldLengthErrorBlocks": 0
+        },
+        {
+          "context": "blocking:fixed",
+          "roundTripMaxError": 0,
+          "gripLandsOnPalmErrorBlocks": 0,
+          "worldLengthErrorBlocks": 0
+        }
+      ],
+      "status": "proposal_not_game_verified",
+      "humanAccepted": false
+    },
+    "starscourge_greatsword": {
+      "route": "own_sprite",
+      "family": "melee",
+      "reference": {
+        "key": "melee",
+        "source": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
+        "image": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
+        "anchorPixels": [
+          3.5,
+          12.5
+        ],
+        "measuredAxisDegrees": 45,
+        "perpendicularSkew": 0,
+        "gripOffsetBlocks": [
+          0,
+          0,
+          0
+        ]
+      },
+      "geometry": {
+        "canvas": [
+          64,
+          64
+        ],
+        "anchorPixels": [
+          13.5,
+          46.5
+        ],
+        "anchorBlock": [
+          -0.2890625,
+          -0.2265625,
+          0
+        ],
+        "worldLengthBlocks": 1.9800000000000002,
+        "sourceSpanPixels": 77.138921583987,
+        "uniformXYScale": 1.642750474053
+      },
+      "axis": {
+        "measuredSpriteAxisDegrees": 49.072,
+        "spriteAnisotropy": 26.806,
+        "appliedAxisDegrees": -4.072,
+        "flip180Degrees": 0,
+        "spritePerpendicularSkew": -4.586252,
+        "sprite": "art/equipment-2d/full/sprites/starscourge_greatsword_front.png",
+        "notes": []
+      },
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            50.928
+          ],
+          "translation": [
+            0,
+            8.324736,
+            1.604975
+          ],
+          "scale": [
+            1.64275,
+            1.64275,
+            1.64275
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -50.928
+          ],
+          "translation": [
+            0,
+            8.324736,
+            1.604975
+          ],
+          "scale": [
+            1.64275,
+            1.64275,
+            1.64275
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            20.928
+          ],
+          "translation": [
+            1.13,
+            7.409472,
+            4.619327
+          ],
+          "scale": [
+            1.64275,
+            1.64275,
+            1.64275
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -20.928
+          ],
+          "translation": [
+            1.13,
+            7.409472,
+            4.619327
+          ],
+          "scale": [
+            1.64275,
+            1.64275,
+            1.64275
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            -4.072
+          ],
+          "translation": [
+            5.751404,
+            5.150424,
+            0
+          ],
+          "scale": [
+            1.64275,
+            1.64275,
+            1.64275
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            -4.072
+          ],
+          "translation": [
+            -3.501404,
+            0.900424,
+            0
+          ],
+          "scale": [
+            1.64275,
+            1.64275,
+            1.64275
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            -4.072
+          ],
+          "translation": [
+            -3.501404,
+            13.900424,
+            7
+          ],
+          "scale": [
+            1.64275,
+            1.64275,
+            1.64275
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "displayBlocking": null,
+      "verification": [
+        {
+          "context": "thirdperson_righthand",
+          "roundTripMaxError": 4.74e-7,
+          "gripLandsOnPalmErrorBlocks": 2.05e-7,
+          "worldLengthErrorBlocks": 5.71e-7
+        },
+        {
+          "context": "thirdperson_lefthand",
+          "roundTripMaxError": 4.74e-7,
+          "gripLandsOnPalmErrorBlocks": 2.05e-7,
+          "worldLengthErrorBlocks": 5.71e-7
+        },
+        {
+          "context": "firstperson_righthand",
+          "roundTripMaxError": 4.74e-7,
+          "gripLandsOnPalmErrorBlocks": 1.73e-7,
+          "worldLengthErrorBlocks": 5.71e-7
+        },
+        {
+          "context": "firstperson_lefthand",
+          "roundTripMaxError": 4.74e-7,
+          "gripLandsOnPalmErrorBlocks": 1.73e-7,
+          "worldLengthErrorBlocks": 5.71e-7
+        },
+        {
+          "context": "ground",
+          "roundTripMaxError": 4.74e-7,
+          "gripLandsOnPalmErrorBlocks": 1.63e-7,
+          "worldLengthErrorBlocks": 5.71e-7
+        },
+        {
+          "context": "fixed",
+          "roundTripMaxError": 4.74e-7,
+          "gripLandsOnPalmErrorBlocks": 1.63e-7,
+          "worldLengthErrorBlocks": 5.71e-7
+        },
+        {
+          "context": "head",
+          "roundTripMaxError": 4.74e-7,
+          "gripLandsOnPalmErrorBlocks": 1.63e-7,
+          "worldLengthErrorBlocks": 5.71e-7
+        }
+      ],
+      "status": "proposal_not_game_verified",
+      "humanAccepted": false
+    },
+    "twinblade": {
+      "route": "own_sprite",
+      "family": "melee",
+      "reference": {
+        "key": "melee",
+        "source": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
+        "image": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
+        "anchorPixels": [
+          3.5,
+          12.5
+        ],
+        "measuredAxisDegrees": 45,
+        "perpendicularSkew": 0,
+        "gripOffsetBlocks": [
+          0,
+          0,
+          0
+        ]
+      },
+      "geometry": {
+        "canvas": [
+          32,
+          32
+        ],
+        "anchorPixels": [
+          16.5,
+          16.5
+        ],
+        "anchorBlock": [
+          0.015625,
+          -0.015625,
+          0
+        ],
+        "worldLengthBlocks": 2.16,
+        "sourceSpanPixels": 38.131387903985676,
+        "uniformXYScale": 1.812679889178
+      },
+      "axis": {
+        "measuredSpriteAxisDegrees": 45,
+        "spriteAnisotropy": 70,
+        "appliedAxisDegrees": 0,
+        "flip180Degrees": 0,
+        "spritePerpendicularSkew": 0,
+        "sprite": "art/equipment-2d/full/sprites/twinblade_front.png",
+        "notes": []
+      },
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55
+          ],
+          "translation": [
+            0,
+            -1.438474,
+            0.808184
+          ],
+          "scale": [
+            1.81268,
+            1.81268,
+            1.81268
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55
+          ],
+          "translation": [
+            0,
+            -1.438474,
+            0.808184
+          ],
+          "scale": [
+            1.81268,
+            1.81268,
+            1.81268
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            25
+          ],
+          "translation": [
+            1.13,
+            -0.64732,
+            -0.952319
+          ],
+          "scale": [
+            1.81268,
+            1.81268,
+            1.81268
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -25
+          ],
+          "translation": [
+            1.13,
+            -0.64732,
+            -0.952319
+          ],
+          "scale": [
+            1.81268,
+            1.81268,
+            1.81268
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            -2.70317,
+            0.20317,
+            0
+          ],
+          "scale": [
+            1.81268,
+            1.81268,
+            1.81268
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            4.95317,
+            -4.04683,
+            0
+          ],
+          "scale": [
+            1.81268,
+            1.81268,
+            1.81268
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            4.95317,
+            8.95317,
+            7
+          ],
+          "scale": [
+            1.81268,
+            1.81268,
+            1.81268
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "displayBlocking": null,
+      "verification": [
+        {
+          "context": "thirdperson_righthand",
+          "roundTripMaxError": 1.11e-7,
+          "gripLandsOnPalmErrorBlocks": 4e-9,
+          "worldLengthErrorBlocks": 1.32e-7
+        },
+        {
+          "context": "thirdperson_lefthand",
+          "roundTripMaxError": 1.11e-7,
+          "gripLandsOnPalmErrorBlocks": 4e-9,
+          "worldLengthErrorBlocks": 1.32e-7
+        },
+        {
+          "context": "firstperson_righthand",
+          "roundTripMaxError": 1.11e-7,
+          "gripLandsOnPalmErrorBlocks": 2.3e-8,
+          "worldLengthErrorBlocks": 1.32e-7
+        },
+        {
+          "context": "firstperson_lefthand",
+          "roundTripMaxError": 1.11e-7,
+          "gripLandsOnPalmErrorBlocks": 2.3e-8,
+          "worldLengthErrorBlocks": 1.32e-7
+        },
+        {
+          "context": "ground",
+          "roundTripMaxError": 1.11e-7,
+          "gripLandsOnPalmErrorBlocks": 0,
+          "worldLengthErrorBlocks": 1.32e-7
+        },
+        {
+          "context": "fixed",
+          "roundTripMaxError": 1.11e-7,
+          "gripLandsOnPalmErrorBlocks": 0,
+          "worldLengthErrorBlocks": 1.32e-7
+        },
+        {
+          "context": "head",
+          "roundTripMaxError": 1.11e-7,
+          "gripLandsOnPalmErrorBlocks": 0,
+          "worldLengthErrorBlocks": 1.32e-7
+        }
+      ],
+      "status": "superseded_by_selected_art_requires_recalibration",
+      "humanAccepted": false,
+      "supersededBy": "art/equipment-2d/taste-weapons-20261018/manifest.json",
+      "verificationHistorical": true
+    },
+    "whip": {
+      "route": "own_sprite",
+      "family": "melee",
+      "reference": {
+        "key": "melee",
+        "source": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
+        "image": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
+        "anchorPixels": [
+          3.5,
+          12.5
+        ],
+        "measuredAxisDegrees": 45,
+        "perpendicularSkew": 0,
+        "gripOffsetBlocks": [
+          0,
+          0,
+          0
+        ]
+      },
+      "geometry": {
+        "canvas": [
+          32,
+          32
+        ],
+        "anchorPixels": [
+          11.5,
+          27.5
+        ],
+        "anchorBlock": [
+          -0.140625,
+          -0.359375,
+          0
+        ],
+        "worldLengthBlocks": 2.736,
+        "sourceSpanPixels": 27.782901486849084,
+        "uniformXYScale": 3.151290733311
+      },
+      "axis": {
+        "measuredSpriteAxisDegrees": 24.563,
+        "spriteAnisotropy": 19.378,
+        "appliedAxisDegrees": 20.437,
+        "flip180Degrees": 0,
+        "spritePerpendicularSkew": -2.596289,
+        "sprite": "art/equipment-2d/full/sprites/whip_front.png",
+        "notes": []
+      },
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            75.437
+          ],
+          "translation": [
+            0,
+            10.091568,
+            -14.315591
+          ],
+          "scale": [
+            3.151291,
+            3.151291,
+            3.151291
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -75.437
+          ],
+          "translation": [
+            0,
+            10.091568,
+            -14.315591
+          ],
+          "scale": [
+            3.151291,
+            3.151291,
+            3.151291
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            45.437
+          ],
+          "translation": [
+            1.13,
+            16.899877,
+            -8.284872
+          ],
+          "scale": [
+            3.151291,
+            3.151291,
+            3.151291
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -45.437
+          ],
+          "translation": [
+            1.13,
+            16.899877,
+            -8.284872
+          ],
+          "scale": [
+            3.151291,
+            3.151291,
+            3.151291
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            20.437
+          ],
+          "translation": [
+            -1.932954,
+            19.205202,
+            0
+          ],
+          "scale": [
+            3.151291,
+            3.151291,
+            3.151291
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            20.437
+          ],
+          "translation": [
+            4.182954,
+            14.955202,
+            0
+          ],
+          "scale": [
+            3.151291,
+            3.151291,
+            3.151291
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            20.437
+          ],
+          "translation": [
+            4.182954,
+            27.955202,
+            7
+          ],
+          "scale": [
+            3.151291,
+            3.151291,
+            3.151291
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "displayBlocking": null,
+      "verification": [
+        {
+          "context": "thirdperson_righthand",
+          "roundTripMaxError": 2.67e-7,
+          "gripLandsOnPalmErrorBlocks": 1.01e-7,
+          "worldLengthErrorBlocks": 2.32e-7
+        },
+        {
+          "context": "thirdperson_lefthand",
+          "roundTripMaxError": 2.67e-7,
+          "gripLandsOnPalmErrorBlocks": 1.01e-7,
+          "worldLengthErrorBlocks": 2.32e-7
+        },
+        {
+          "context": "firstperson_righthand",
+          "roundTripMaxError": 2.67e-7,
+          "gripLandsOnPalmErrorBlocks": 7.7e-8,
+          "worldLengthErrorBlocks": 2.32e-7
+        },
+        {
+          "context": "firstperson_lefthand",
+          "roundTripMaxError": 2.67e-7,
+          "gripLandsOnPalmErrorBlocks": 7.7e-8,
+          "worldLengthErrorBlocks": 2.32e-7
+        },
+        {
+          "context": "ground",
+          "roundTripMaxError": 2.67e-7,
+          "gripLandsOnPalmErrorBlocks": 8.8e-8,
+          "worldLengthErrorBlocks": 2.32e-7
+        },
+        {
+          "context": "fixed",
+          "roundTripMaxError": 2.67e-7,
+          "gripLandsOnPalmErrorBlocks": 8.8e-8,
+          "worldLengthErrorBlocks": 2.32e-7
+        },
+        {
+          "context": "head",
+          "roundTripMaxError": 2.67e-7,
+          "gripLandsOnPalmErrorBlocks": 8.8e-8,
+          "worldLengthErrorBlocks": 2.32e-7
+        }
+      ],
+      "status": "proposal_not_game_verified",
+      "humanAccepted": false
+    },
+    "great_bow": {
+      "route": "own_sprite",
+      "family": "bow",
+      "reference": {
+        "key": "bow",
+        "source": "minecraft:item/bow",
+        "image": "art/equipment-reuse/research-only-full/minecraft_item_bow.png",
+        "anchorPixels": [
+          5.5,
+          7.5
+        ],
+        "measuredAxisDegrees": 45,
+        "perpendicularSkew": 0.355788,
+        "gripOffsetBlocks": [
+          0,
+          0,
+          0
+        ]
+      },
+      "geometry": {
+        "canvas": [
+          32,
+          32
+        ],
+        "anchorPixels": [
+          20.5,
+          20.5
+        ],
+        "anchorBlock": [
+          0.140625,
+          -0.140625,
+          0
+        ],
+        "worldLengthBlocks": 2.3400000000000003,
+        "sourceSpanPixels": 36.089297996761516,
+        "uniformXYScale": 2.07485332651
+      },
+      "axis": {
+        "measuredSpriteAxisDegrees": 45,
+        "spriteAnisotropy": 16.917,
+        "appliedAxisDegrees": 180,
+        "flip180Degrees": 180,
+        "spritePerpendicularSkew": -0.165054,
+        "sprite": "art/equipment-2d/full/sprites/great_bow_standby.png",
+        "notes": [
+          "art_orientation_180: the sprite's mass lies on the opposite side of its principal axis from the reference icon's (perpendicular third moment -0.1651 vs 0.3558), so the canvas is drawn 180 degrees round from the vanilla art and the rotation carries the compensating half-turn"
+        ]
+      },
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            -80,
+            -100,
+            140
+          ],
+          "translation": [
+            -0.850848,
+            -3.664116,
+            7.066431
+          ],
+          "scale": [
+            2.074853,
+            2.074853,
+            2.074853
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            -80,
+            80,
+            -140
+          ],
+          "translation": [
+            -0.850848,
+            -3.664116,
+            7.066431
+          ],
+          "scale": [
+            2.074853,
+            2.074853,
+            2.074853
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            -155
+          ],
+          "translation": [
+            1.13,
+            0.531628,
+            5.649571
+          ],
+          "scale": [
+            2.074853,
+            2.074853,
+            2.074853
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            155
+          ],
+          "translation": [
+            1.13,
+            0.531628,
+            5.649571
+          ],
+          "scale": [
+            2.074853,
+            2.074853,
+            2.074853
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            180
+          ],
+          "translation": [
+            3.41842,
+            -2.41842,
+            0
+          ],
+          "scale": [
+            2.074853,
+            2.074853,
+            2.074853
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            180
+          ],
+          "translation": [
+            -2.16842,
+            -4.16842,
+            0
+          ],
+          "scale": [
+            2.074853,
+            2.074853,
+            2.074853
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            180
+          ],
+          "translation": [
+            -2.16842,
+            8.83158,
+            7
+          ],
+          "scale": [
+            2.074853,
+            2.074853,
+            2.074853
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "displayBlocking": null,
+      "verification": [
+        {
+          "context": "thirdperson_righthand",
+          "roundTripMaxError": 3.22e-7,
+          "gripLandsOnPalmErrorBlocks": 5e-8,
+          "worldLengthErrorBlocks": 3.68e-7
+        },
+        {
+          "context": "thirdperson_lefthand",
+          "roundTripMaxError": 3.22e-7,
+          "gripLandsOnPalmErrorBlocks": 5e-8,
+          "worldLengthErrorBlocks": 3.68e-7
+        },
+        {
+          "context": "firstperson_righthand",
+          "roundTripMaxError": 3.27e-7,
+          "gripLandsOnPalmErrorBlocks": 3.1e-8,
+          "worldLengthErrorBlocks": 3.68e-7
+        },
+        {
+          "context": "firstperson_lefthand",
+          "roundTripMaxError": 3.27e-7,
+          "gripLandsOnPalmErrorBlocks": 3.1e-8,
+          "worldLengthErrorBlocks": 3.68e-7
+        },
+        {
+          "context": "ground",
+          "roundTripMaxError": 3.27e-7,
+          "gripLandsOnPalmErrorBlocks": 4.7e-8,
+          "worldLengthErrorBlocks": 3.68e-7
+        },
+        {
+          "context": "fixed",
+          "roundTripMaxError": 3.27e-7,
+          "gripLandsOnPalmErrorBlocks": 4.7e-8,
+          "worldLengthErrorBlocks": 3.68e-7
+        },
+        {
+          "context": "head",
+          "roundTripMaxError": 3.27e-7,
+          "gripLandsOnPalmErrorBlocks": 4.7e-8,
+          "worldLengthErrorBlocks": 3.68e-7
+        }
+      ],
+      "status": "proposal_not_game_verified",
+      "humanAccepted": false
+    },
+    "ballista": {
+      "route": "own_sprite",
+      "family": "crossbow",
+      "reference": {
+        "key": "crossbow",
+        "source": "minecraft:item/crossbow",
+        "image": "art/equipment-reuse/research-only-full/minecraft_item_crossbow_standby.png",
+        "anchorPixels": [
+          9.5,
+          11.5
+        ],
+        "measuredAxisDegrees": 136,
+        "perpendicularSkew": -1.844612,
+        "gripOffsetBlocks": [
+          0,
+          0,
+          0
+        ]
+      },
+      "geometry": {
+        "canvas": [
+          32,
+          32
+        ],
+        "anchorPixels": [
+          7.5,
+          24.5
+        ],
+        "anchorBlock": [
+          -0.265625,
+          -0.265625,
+          0
+        ],
+        "worldLengthBlocks": 1.4400000000000002,
+        "sourceSpanPixels": 24.845791213456728,
+        "uniformXYScale": 1.854640071798
+      },
+      "axis": {
+        "measuredSpriteAxisDegrees": 135,
+        "spriteAnisotropy": 2.085,
+        "appliedAxisDegrees": 0,
+        "flip180Degrees": 0,
+        "spritePerpendicularSkew": -227.337358,
+        "sprite": "art/equipment-2d/full/sprites/ballista_standby.png",
+        "notes": [
+          "principal axis is weak (anisotropy 2.08/1.28); in-plane rotation pinned to 0"
+        ]
+      },
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            -90,
+            0,
+            -60
+          ],
+          "translation": [
+            10.714333,
+            0.1,
+            2.629227
+          ],
+          "scale": [
+            1.85464,
+            1.85464,
+            1.85464
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            -90,
+            0,
+            30
+          ],
+          "translation": [
+            -8.361447,
+            0.1,
+            -2.482113
+          ],
+          "scale": [
+            1.85464,
+            1.85464,
+            1.85464
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            -90,
+            0,
+            -55
+          ],
+          "translation": [
+            10.743259,
+            3.2,
+            5.266328
+          ],
+          "scale": [
+            1.85464,
+            1.85464,
+            1.85464
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            -90,
+            0,
+            35
+          ],
+          "translation": [
+            -9.318216,
+            3.2,
+            1.728949
+          ],
+          "scale": [
+            1.85464,
+            1.85464,
+            1.85464
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            8.63222,
+            8.13222,
+            0
+          ],
+          "scale": [
+            1.85464,
+            1.85464,
+            1.85464
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            -9.38222,
+            4.38222,
+            0
+          ],
+          "scale": [
+            1.85464,
+            1.85464,
+            1.85464
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            -9.38222,
+            17.38222,
+            7
+          ],
+          "scale": [
+            1.85464,
+            1.85464,
+            1.85464
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "displayBlocking": null,
+      "verification": [
+        {
+          "context": "thirdperson_righthand",
+          "roundTripMaxError": 7.2e-8,
+          "gripLandsOnPalmErrorBlocks": 1.6e-8,
+          "worldLengthErrorBlocks": 5.6e-8
+        },
+        {
+          "context": "thirdperson_lefthand",
+          "roundTripMaxError": 7.2e-8,
+          "gripLandsOnPalmErrorBlocks": 1.6e-8,
+          "worldLengthErrorBlocks": 5.6e-8
+        },
+        {
+          "context": "firstperson_righthand",
+          "roundTripMaxError": 7.2e-8,
+          "gripLandsOnPalmErrorBlocks": 3.8e-8,
+          "worldLengthErrorBlocks": 5.6e-8
+        },
+        {
+          "context": "firstperson_lefthand",
+          "roundTripMaxError": 7.2e-8,
+          "gripLandsOnPalmErrorBlocks": 3.4e-8,
+          "worldLengthErrorBlocks": 5.6e-8
+        },
+        {
+          "context": "ground",
+          "roundTripMaxError": 7.2e-8,
+          "gripLandsOnPalmErrorBlocks": 0,
+          "worldLengthErrorBlocks": 5.6e-8
+        },
+        {
+          "context": "fixed",
+          "roundTripMaxError": 7.2e-8,
+          "gripLandsOnPalmErrorBlocks": 0,
+          "worldLengthErrorBlocks": 5.6e-8
+        },
+        {
+          "context": "head",
+          "roundTripMaxError": 7.2e-8,
+          "gripLandsOnPalmErrorBlocks": 0,
+          "worldLengthErrorBlocks": 5.6e-8
+        }
+      ],
+      "status": "proposal_not_game_verified",
+      "humanAccepted": false
+    },
+    "test_flask": {
+      "route": "own_sprite",
+      "family": "flask",
+      "reference": {
+        "key": "flask",
+        "source": "minecraft:item/generated (icon centre is the grip)",
+        "image": null,
+        "anchorPixels": [
+          8,
+          8
+        ],
+        "measuredAxisDegrees": null,
+        "perpendicularSkew": null,
+        "gripOffsetBlocks": [
+          0,
+          0,
+          0
+        ]
+      },
+      "geometry": {
+        "canvas": [
+          32,
+          32
+        ],
+        "anchorPixels": [
+          16.5,
+          14.5
+        ],
+        "anchorBlock": [
+          0.015625,
+          0.046875,
+          0
+        ],
+        "worldLengthBlocks": 0.375,
+        "sourceSpanPixels": 28,
+        "uniformXYScale": 0.428571428571
+      },
+      "axis": {
+        "measuredSpriteAxisDegrees": 0,
+        "spriteAnisotropy": 2.636,
+        "appliedAxisDegrees": 0,
+        "flip180Degrees": 0,
+        "spritePerpendicularSkew": null,
+        "sprite": "art/equipment-2d/full/sprites/test_flask_full.png",
+        "notes": [
+          "grip at the declared reference point; the sprite is near-isotropic so no in-plane rotation is implied by the art"
+        ]
+      },
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            -0.107143,
+            2.678571,
+            1
+          ],
+          "scale": [
+            0.428571,
+            0.428571,
+            0.428571
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0.107143,
+            2.678571,
+            1
+          ],
+          "scale": [
+            0.428571,
+            0.428571,
+            0.428571
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            25
+          ],
+          "translation": [
+            1.13,
+            2.863406,
+            1.168737
+          ],
+          "scale": [
+            0.428571,
+            0.428571,
+            0.428571
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            -90,
+            25
+          ],
+          "translation": [
+            1.13,
+            2.953967,
+            1.362946
+          ],
+          "scale": [
+            0.428571,
+            0.428571,
+            0.428571
+          ]
+        },
+        "ground": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            -0.107143,
+            1.678571,
+            0
+          ],
+          "scale": [
+            0.428571,
+            0.428571,
+            0.428571
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            0.107143,
+            -0.321429,
+            0
+          ],
+          "scale": [
+            0.428571,
+            0.428571,
+            0.428571
+          ]
+        },
+        "head": {
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "translation": [
+            0.107143,
+            12.678571,
+            7
+          ],
+          "scale": [
+            0.428571,
+            0.428571,
+            0.428571
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        },
+        "inheritance": "fixed"
+      },
+      "displayBlocking": null,
+      "verification": [
+        {
+          "context": "thirdperson_righthand",
+          "roundTripMaxError": 4.29e-7,
+          "gripLandsOnPalmErrorBlocks": 4.7e-8,
+          "worldLengthErrorBlocks": 3.75e-7
+        },
+        {
+          "context": "thirdperson_lefthand",
+          "roundTripMaxError": 4.29e-7,
+          "gripLandsOnPalmErrorBlocks": 4.7e-8,
+          "worldLengthErrorBlocks": 3.75e-7
+        },
+        {
+          "context": "firstperson_righthand",
+          "roundTripMaxError": 4.29e-7,
+          "gripLandsOnPalmErrorBlocks": 3.7e-8,
+          "worldLengthErrorBlocks": 3.75e-7
+        },
+        {
+          "context": "firstperson_lefthand",
+          "roundTripMaxError": 4.29e-7,
+          "gripLandsOnPalmErrorBlocks": 3.5e-8,
+          "worldLengthErrorBlocks": 3.75e-7
+        },
+        {
+          "context": "ground",
+          "roundTripMaxError": 4.29e-7,
+          "gripLandsOnPalmErrorBlocks": 4.7e-8,
+          "worldLengthErrorBlocks": 3.75e-7
+        },
+        {
+          "context": "fixed",
+          "roundTripMaxError": 4.29e-7,
+          "gripLandsOnPalmErrorBlocks": 4.7e-8,
+          "worldLengthErrorBlocks": 3.75e-7
+        },
+        {
+          "context": "head",
+          "roundTripMaxError": 4.29e-7,
+          "gripLandsOnPalmErrorBlocks": 4.7e-8,
+          "worldLengthErrorBlocks": 3.75e-7
+        }
+      ],
+      "status": "proposal_not_game_verified",
+      "humanAccepted": false
+    }
+  }
+}

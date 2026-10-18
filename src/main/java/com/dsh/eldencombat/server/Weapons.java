@@ -57,6 +57,12 @@ public final class Weapons {
         return WeaponClass.NONE;
     }
 
+    /** Shared input ownership; foreign weapons keep their native attacks. */
+    public static boolean controlsMelee(ItemStack stack) {
+        WeaponProfile profile = profileOf(stack);
+        return profile != null ? profile.isMeleeProfile() : stack.is(LIGHT_SWORDS) || stack.is(GREAT_SWORDS);
+    }
+
     /** 该物品栈的数值档（不是本模组武器则 null） */
     public static WeaponProfile profileOf(ItemStack stack) {
         if (stack == null || stack.isEmpty()) {
@@ -68,5 +74,10 @@ public final class Weapons {
 
     public static boolean hasShield(LivingEntity entity) {
         return entity.getMainHandItem().is(SHIELDS) || entity.getOffhandItem().is(SHIELDS);
+    }
+
+    public static boolean controlsGuard(LivingEntity entity) {
+        var main = entity.getMainHandItem();
+        return hasShield(entity) && (main.isEmpty() || main.is(SHIELDS) || controlsMelee(main));
     }
 }

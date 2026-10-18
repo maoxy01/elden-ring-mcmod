@@ -107,6 +107,12 @@ public final class EquipmentRenderer extends BlockEntityWithoutLevelRenderer {
         }
         WeaponAssets.Entry entry = WeaponAssets.entryFor(item);
         var bounds = entry != null ? entry.bounds() : HitVolumes.modelAabb(SkeletonPose.rest(model));
+        var baked = Minecraft.getInstance().getItemRenderer().getModel(item, Minecraft.getInstance().level, null, 0);
+        float upstreamZ = Math.abs(baked.getTransforms().getTransform(context).scale.z);
+        float thickness = com.dsh.eldencombat.client.equipment2d.ItemThickness.target(pose, context)
+                / Math.max(1e-6f, upstreamZ);
+        var depth = new com.dsh.eldencombat.client.equipment2d.ItemThickness.Depth(
+                (float) bounds.minZ(), (float) bounds.maxZ());
         if (entry != null) {
             var view = switch (context) {
                 case GUI -> WeaponDisplayTransforms.View.GUI;
@@ -120,7 +126,29 @@ public final class EquipmentRenderer extends BlockEntityWithoutLevelRenderer {
             boolean held = view == WeaponDisplayTransforms.View.FIRST_PERSON || view == WeaponDisplayTransforms.View.THIRD_PERSON;
             boolean left = context == ItemDisplayContext.FIRST_PERSON_LEFT_HAND || context == ItemDisplayContext.THIRD_PERSON_LEFT_HAND;
             pose.pushPose();
-            if (held) {
+            if (view == WeaponDisplayTransforms.View.FIRST_PERSON
+                    && !(item.getItem() instanceof net.minecraft.world.item.ShieldItem)
+                    && !BuiltInRegistries.ITEM.getKey(item.getItem()).getPath().equals("test_flask")) {
+                // The missing-provider fallback needs the same first-person presentation policy.
+                // Undo only this item's display (not the caller's equip/swing/bob animation), then
+                // fit around the real grip. World size and every third-person pose stay unchanged.
+                var display = new PoseStack();
+                baked.getTransforms().getTransform(context).apply(left, display);
+                display.translate(-.5f, -.5f, -.5f);
+                pose.mulPose(new Matrix4f(display.last().pose()).invert());
+                boolean bow = item.getItem() instanceof net.minecraft.world.item.BowItem;
+                pose.translate(left ? .12f : -.12f, bow ? .48f : .24f, -.45f);
+                pose.mulPose(com.mojang.math.Axis.YP.rotationDegrees(left ? 25f : -25f));
+                pose.mulPose(com.mojang.math.Axis.ZP.rotationDegrees(left ? 35f : 55f));
+                WeaponCorrections.get(BuiltInRegistries.ITEM.getKey(item.getItem()).getPath()).apply(pose);
+                var profile = entry.proportion();
+                float length = profile == null ? 1.10f
+                        : Math.min(1.10f, profile.ratioToPlayer() * profile.referencePlayerHeight());
+                float scale = length / Math.max(.001f, (float)(bounds.maxY() - bounds.minY()));
+                pose.mulPose(WeaponDisplayTransforms.matrix(bounds, view, left, scale,
+                        profile == null ? 0 : profile.gripX(), profile == null ? 0 : profile.gripY(),
+                        profile == null ? 0 : profile.gripZ(), 0, 0, 0));
+            } else if (held) {
                 // 手持：**原版已经替我们摆好了**——物品模型的 display 块（weapon_placeholder.json =
                 // 原版 item/handheld，也就是钻石剑的握法）由 ItemRenderer 在调用 BEWLR 之前施加，
                 // 并且随后还做了 translate(-0.5,-0.5,-0.5)，所以这里拿到的坐标空间就是"图标格 [0,1]³"。
@@ -134,7 +162,6 @@ public final class EquipmentRenderer extends BlockEntityWithoutLevelRenderer {
                 pose.translate(-anchor.x,-anchor.y,-anchor.z);
                 float scale = 1f;
                 if (entry.proportion() != null) {
-                    var baked = Minecraft.getInstance().getItemRenderer().getModel(item, Minecraft.getInstance().level, null, 0);
                     float upstream = baked.getTransforms().getTransform(context).scale.y;
                     scale = entry.proportion().heldScale((float)(bounds.maxY()-bounds.minY()),
                             view == WeaponDisplayTransforms.View.FIRST_PERSON, upstream);
@@ -146,7 +173,9 @@ public final class EquipmentRenderer extends BlockEntityWithoutLevelRenderer {
                 pose.translate(.5, .5, .5);
                 pose.mulPose(WeaponDisplayTransforms.matrix(bounds, view, left));
             }
+            com.dsh.eldencombat.client.equipment2d.ItemThickness.normalize(pose, depth, thickness);
             render(item, new Matrix4f(), pose, buffers, light);
+            com.dsh.eldencombat.client.equipment2d.EquipmentRouteRenderer.traceLegacy(item, context);
             pose.popPose();
             return;
         }
@@ -164,7 +193,9 @@ public final class EquipmentRenderer extends BlockEntityWithoutLevelRenderer {
         pose.translate(0.5, 0.5, 0.5);
         pose.scale(scale, scale, scale);
         pose.translate(-centerX, -centerY, -centerZ);
+        com.dsh.eldencombat.client.equipment2d.ItemThickness.normalize(pose, depth, thickness);
         render(item, new Matrix4f(), pose, buffers, light);
+        com.dsh.eldencombat.client.equipment2d.EquipmentRouteRenderer.traceLegacy(item, context);
         pose.popPose();
     }
 }

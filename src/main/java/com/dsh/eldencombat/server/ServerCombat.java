@@ -115,6 +115,8 @@ public final class ServerCombat {
         CombatState state = player.getData(ModAttachments.COMBAT_STATE);
         state.ensureInit(config);
 
+        com.dsh.eldencombat.compat.CombatRollCompat.tick(player);
+
         // §5：主手武器的 reach / 重量攻速在任何模式下都生效（退出战斗模式不等于武器变短）
         WeaponAttributes.tick(player);
 
@@ -136,7 +138,7 @@ public final class ServerCombat {
             state.clearAction();
             state.guarding = false;
         }
-        if (state.guarding && !Weapons.hasShield(player)) state.guarding = false;
+        if (state.guarding && !Weapons.controlsGuard(player)) state.guarding = false;
         player.setYBodyRot(player.getYRot());
 
         // 蓄力：最多 30 tick 自动释放
@@ -160,7 +162,7 @@ public final class ServerCombat {
         }
 
         // 翻滚位移：走原版地形碰撞，不瞬移穿墙
-        if (state.action == ActionId.ROLL) {
+        if (state.action == ActionId.ROLL && !com.dsh.eldencombat.compat.CombatRollCompat.present()) {
             int inAction = state.tickInAction(tick);
             if (inAction >= config.roll.moveStart && inAction < config.roll.moveEnd) {
                 double previousY = player.getY();
@@ -270,6 +272,12 @@ public final class ServerCombat {
         }
 
         IntentType intent = payload.intentType();
+        // Reject the legacy packet before it can cancel a cast or spend resources.
+        if (intent == IntentType.ROLL && com.dsh.eldencombat.compat.CombatRollCompat.present()) return;
+        if ((intent == IntentType.LIGHT || intent == IntentType.HEAVY_START || intent == IntentType.HEAVY_RELEASE)
+                && !Weapons.controlsMelee(player.getMainHandItem())) return;
+        if (com.dsh.eldencombat.compat.CombatRollCompat.rolling(player)
+                && intent != IntentType.COMBAT_TOGGLE && intent != IntentType.CANCEL && intent != IntentType.LOCK_ON) return;
         if (intent == IntentType.COMBAT_TOGGLE) {
             state.combatMode = !state.combatMode;
             state.clearAction();
@@ -326,7 +334,7 @@ public final class ServerCombat {
 
         switch (intent) {
             case GUARD_START -> {
-                if (Weapons.hasShield(player) && CombatRules.canAccept(state, ActionId.NONE, tick)) {
+                if (Weapons.controlsGuard(player) && CombatRules.canAccept(state, ActionId.NONE, tick)) {
                     state.guarding = true;
                 }
             }
@@ -476,6 +484,7 @@ public final class ServerCombat {
 
     @SubscribeEvent
     public void onLoggedOut(PlayerEvent.PlayerLoggedOutEvent event) {
+        if (event.getEntity() instanceof ServerPlayer player) com.dsh.eldencombat.compat.CombatRollCompat.clear(player);
         lastSequence.remove(event.getEntity().getUUID());
         // 武器属性修饰符是瞬时的：退出时清掉记录，避免下次登录"以为已经应用过"而漏掉
         WeaponAttributes.forget(event.getEntity().getUUID());
@@ -485,6 +494,7 @@ public final class ServerCombat {
 
     @SubscribeEvent
     public void onClone(PlayerEvent.Clone event) {
+        if (event.getEntity() instanceof ServerPlayer player) com.dsh.eldencombat.compat.CombatRollCompat.clear(player);
         // 死亡或切换维度后重建状态：不残留无敌、武器显示与命中窗口
         CombatState state = event.getEntity().getData(ModAttachments.COMBAT_STATE);
         state.reset(EldenCombat.config());
@@ -495,7 +505,13 @@ public final class ServerCombat {
     @SubscribeEvent
     public void onServerStopped(ServerStoppedEvent event) {
         lastSequence.clear();
+        com.dsh.eldencombat.compat.CombatRollCompat.clearAll();
         WeaponAttributes.forgetAll();
+    }
+
+    @SubscribeEvent
+    public void onDimensionChange(PlayerEvent.PlayerChangedDimensionEvent event) {
+        if (event.getEntity() instanceof ServerPlayer player) com.dsh.eldencombat.compat.CombatRollCompat.clear(player);
     }
 
     /** 受击打断当前动作（环境伤害不打断，翻滚无敌只过滤本系统战斗伤害）。 */

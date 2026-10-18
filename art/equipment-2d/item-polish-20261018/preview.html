@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>装备美术总览</title>
+<link rel="stylesheet" href="preview.css">
+<header><h1>装备美术总览</h1><nav><a href="../../../../docs/ART-ITEM-POLISH-20261018.md">修订记录</a><a href="manifest.json">清单</a><a href="../full/preview.html">已采用版本</a></nav></header>
+<main>
+<div class="toolbar" data-ui>
+ <label class="item-label">物品 <select id="item"></select></label>
+ <label>状态 <select id="state"></select></label>
+ <label><input id="dark" type="checkbox">深底</label><label><input id="left" type="checkbox">左手</label>
+ <a id="model" hidden>Blockbench</a>
+</div>
+<section class="detail" aria-labelledby="name">
+ <div class="heading"><h2 id="name"></h2><span id="selection"></span></div>
+ <div class="comparison" id="comparison"></div>
+ <p id="facts"></p><p id="changes"></p>
+</section>
+<section aria-labelledby="collection-title">
+ <div class="collection-heading"><h2 id="collection-title">自制装备</h2><label>筛选 <select id="filter"><option value="all">全部 28 件</option><option value="new">新候选 12 件</option><option value="preserved">保留定版 16 件</option></select></label></div>
+ <div class="collection" id="collection"></div>
+</section>
+<section class="provider-section" aria-labelledby="provider-title"><h2 id="provider-title">提供方装备</h2><p>14 件完整素材路线保持不变。</p><div class="providers" id="providers"></div></section>
+</main>
+<footer><span>12 件新候选 · 16 件保留定版 · 尚未更新游戏安装包</span><a href="validation.json">检查记录</a></footer>
+<script src="preview-data.js"></script><script src="preview.js"></script>
+</html>

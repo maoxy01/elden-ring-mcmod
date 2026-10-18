@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-16",
+  "scope": {
+    "selectedIds": [
+      "flail",
+      "heavy_thrusting_sword",
+      "malikeths_black_blade",
+      "hand_of_malenia"
+    ],
+    "pngs": 12,
+    "modelTextureReferences": 12,
+    "unchangedSnapshotFiles": 235,
+    "sourceAuditEntries": 0,
+    "note": "No fresh all-42 source/metadata audit; unrelated snapshots and metadata preserved, including known Starscourge block."
+  },
+  "staticPass": true,
+  "guards": [
+    {
+      "entry": "build-equipment-full.mjs",
+      "refusedBeforeWrites": true
+    },
+    {
+      "entry": "build-equipment-batch-two.mjs",
+      "refusedBeforeWrites": true
+    },
+    {
+      "entry": "refine-malenia-curve.mjs",
+      "refusedBeforeWrites": true
+    }
+  ],
+  "browser": [
+    {
+      "width": 1280,
+      "noOverflow": true,
+      "selectedPixelComparisons": 12,
+      "leftSlimDarkCaptured": true,
+      "maleniaSelectedComparisonLink": true
+    },
+    {
+      "width": 390,
+      "noOverflow": true,
+      "selectedPixelComparisons": 12,
+      "leftSlimDarkCaptured": true,
+      "maleniaSelectedComparisonLink": true
+    }
+  ],
+  "authorVisualReview": true,
+  "authorVisualReviewRecord": "See manifest.validation.authorVisualReviewEvidence for the exact inspected captures; review covers selected art only, not all42 or game acceptance.",
+  "runtimeIntegrated": false,
+  "inGameAccepted": false,
+  "captureDirectory": "art/equipment-2d/identity-batch-two/selection-qa-1792135066326"
+}

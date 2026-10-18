@@ -337,3 +337,11 @@ $env:JAVA_HOME='D:\JDK21'
 ## 最新分工与接续入口（2026-10-14）
 
 用户最新要求：Codex继续框架设计，具体代码编写交给DSH。新的执行合同为 [DSH-VFX-IMPLEMENTATION-CONTRACT-20261014.md](DSH-VFX-IMPLEMENTATION-CONTRACT-20261014.md)，覆盖旧“三样板/pending/只改ready”的实施描述。美术已交付八战技十组素材；工作区已有部分真实接入实现和28项定向测试通过，但环绕相机夹具、辅助地块恢复、火墙障碍语义、缺图重载等仍待DSH收口。10组atlas加载日志不等于全部画面验收。Codex本轮只更新设计交接，不再续写实现或启动构建。
+
+## 装备 2D 最新设计入口（2026-10-15）
+
+装备视觉接入按 [DSH-EQUIPMENT-2D-IMPLEMENTATION-CONTRACT-20261015.md](DSH-EQUIPMENT-2D-IMPLEMENTATION-CONTRACT-20261015.md) 的审查修订版实施：最终42项，六类代表首批。DSH已新增schema v2、三路线生成器、客户端路由和Spartan别名，旧“生成器仅拒绝external_model”的状态作废。当前正式清单仍全部pending；已有代码存在TAIL双绘、提供方particle代替完整模型及null geometry、顶点单位混用、充能分母错误、display未消费和实际持有人/盾双面路径缺陷。本轮额外核实EquipmentRouteSnapshot的displayOf未调用，ready条目会先被null display拒绝，不能把未进分支当通过。
+
+接口采用修订A：旧display/首次顶点之前窄接管，完整准备后单次绘制，失败完整回退。详细修复及成功路径验收见合同§10–12和 [统筹审查](CODEX-EQUIPMENT-2D-REVIEW-20261015.md)。由DSH提出可恢复的首批display候选，在隔离配置进入真实路径，再提交用户观感确认；不要求用户计算42套矩阵，acceptance_pending不封锁候选验证，不可达predicate不永久阻断合法standby。后续具体修复由用户安排DSH，Codex不另开实现线。
+
+本轮Codex仅补设计文档及源码/发布包取证，未改实现、美术或正式资源，未运行构建、测试或游戏。41个旧装备注册ID、药瓶及成长/战灰组件继续保留。装备验收、既有VFX未完成项、三系统玩法与多人待验项分别记录；本节不把其他工单标为完成。

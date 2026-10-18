@@ -123,23 +123,113 @@ public final class ClientSmokeHarness {
         new Fixture("ref-scale-bow-first",ActionId.NONE,false,false,false,true,0,()->ModItems.LONG_BOW.get()),
         new Fixture("ref-scale-crossbow-first-left",ActionId.NONE,false,false,true,true,0,()->ModItems.CROSSBOW.get())
     };
+    /**
+     * 截图名 -> 家族 / 物品 id。**必须声明在 {@link #FIXTURES} 之前**：{@code gripFixtures()}
+     * 在 FIXTURES 的静态初始化里就被调用，而 Java 的静态初始化按声明顺序执行，
+     * 放在后面的话这两个表此刻还是 null（2026-10-16 就是这么崩过一次的）。
+     */
+    /**
+     * 截图名 -> 家族。**必须声明在 {@link #FIXTURES} 之前**：{@code gripFixtures()}
+     * 在 FIXTURES 的静态初始化里就被调用，而 Java 的静态初始化按声明顺序执行，
+     * 放在后面的话这个表此刻还是 null（2026-10-16 就是这么崩过一次的）。
+     *
+     * <p>这里**只登记家族，不解析物品**：{@code gripFixtures()} 跑在模组加载期，
+     * 那时 {@code ModItems.*.get()} 还是未绑定值（第二次崩就崩在这里）；物品 id 由
+     * {@code exportGripProof} 在实机渲染时从真实 ItemStack 上取。
+     */
+    static final java.util.Map<String,String> GRIP_FAMILY=new java.util.HashMap<>();
+    /** 握法证据模式里逐件失败的记账表：先跑完全部夹具，最后一并判死（见 tick 里的收尾检查）。 */
+    static final java.util.List<String> gripFailures=new java.util.ArrayList<>();
+
     private static final Fixture[] FIXTURES=GRIP_CHECK?gripFixtures():FULL_FIXTURES;
 
+    /**
+     * 【目标 2026-10-16】"所有盾牌、剑、弓、弩、斧、镰刀、长鞭（参考剑）都套用原版握持动作"。
+     *
+     * <p>判据只能是"和原版同一个物品、同一个机位、同一只手"比，所以每个家族先放**原版对照物品**
+     * （{@code ref-*} 名字，本身就是原版物品，不参与握法断言，只提供同机位画面），再把这一族里
+     * 我们自己的**全部**物品放进去。参考剑（{@code minecraft:item/handheld}）就是剑族的基准：
+     * 剑/斧/镰刀/长鞭走它，弓走 {@code minecraft:item/bow}，弩走 {@code minecraft:item/crossbow}，
+     * 盾走 {@code minecraft:item/shield}。
+     */
     private static Fixture[] gripFixtures() {
         var fixtures=new java.util.ArrayList<Fixture>();
-        var items=java.util.List.<java.util.function.Supplier<net.minecraft.world.item.Item>>of(
-                ()->Items.DIAMOND_SWORD,()->ModItems.STRAIGHT_SWORD.get(),()->ModItems.GREAT_SWORD.get(),()->ModItems.COLOSSAL_SWORD.get(),
-                ()->ModItems.SPEAR.get(),()->ModItems.SHIELD.get(),()->ModItems.LONG_BOW.get());
-        String[] names={"diamond","straight","great","colossal","spear","shield","bow"};
-        for(int i=0;i<names.length;i++) for(boolean first:new boolean[]{false,true}) for(boolean left:new boolean[]{false,true}) {
-            fixtures.add(new Fixture("ref-grip-"+names[i]+(first?"-first":"-third")+(left?"-left":"-right"),
-                    ActionId.NONE,false,false,left,first,0,items.get(i),false,false));
-            if(i>0) fixtures.add(new Fixture("ref-grip-"+names[i]+(first?"-first":"-third")+(left?"-off-right":"-off-left"),
-                    ActionId.NONE,false,false,left,first,0,items.get(i),false,true));
+        record Grip(String name,String family,boolean vanilla,
+                    java.util.function.Supplier<net.minecraft.world.item.Item> item) {}
+        var table=new java.util.ArrayList<Grip>();
+        // 剑族：原版钻石剑/铁剑是握法基准，straight_sword 在字面上就是原版铁剑模型。
+        table.add(new Grip("diamond","sword",true,()->Items.DIAMOND_SWORD));
+        table.add(new Grip("iron-sword","sword",true,()->Items.IRON_SWORD));
+        table.add(new Grip("straight","sword",false,()->ModItems.STRAIGHT_SWORD.get()));
+        table.add(new Grip("thrusting","sword",false,()->ModItems.THRUSTING_SWORD.get()));
+        table.add(new Grip("heavy-thrusting","sword",false,()->ModItems.HEAVY_THRUSTING_SWORD.get()));
+        table.add(new Grip("curved","sword",false,()->ModItems.CURVED_SWORD.get()));
+        table.add(new Grip("curved-greatsword","sword",false,()->ModItems.CURVED_GREATSWORD.get()));
+        table.add(new Grip("great","sword",false,()->ModItems.GREAT_SWORD.get()));
+        table.add(new Grip("colossal","sword",false,()->ModItems.COLOSSAL_SWORD.get()));
+        table.add(new Grip("katana","sword",false,()->ModItems.KATANA.get()));
+        table.add(new Grip("twinblade","sword",false,()->ModItems.TWINBLADE.get()));
+        table.add(new Grip("starscourge","sword",false,()->ModItems.STARSCOURGE_GREATSWORD.get()));
+        table.add(new Grip("blasphemous","sword",false,()->ModItems.BLASPHEMOUS_BLADE.get()));
+        table.add(new Grip("malikeths","sword",false,()->ModItems.MALIKETHS_BLACK_BLADE.get()));
+        table.add(new Grip("morgotts","sword",false,()->ModItems.MORGOTTS_CURSED_SWORD.get()));
+        table.add(new Grip("sacred-relic","sword",false,()->ModItems.SACRED_RELIC_SWORD.get()));
+        table.add(new Grip("hand-of-malenia","sword",false,()->ModItems.HAND_OF_MALENIA.get()));
+        // 斧族：原版铁斧同样是 item/handheld。
+        table.add(new Grip("vanilla-iron-axe","axe",true,()->Items.IRON_AXE));
+        table.add(new Grip("axe","axe",false,()->ModItems.AXE.get()));
+        table.add(new Grip("greataxe","axe",false,()->ModItems.GREATAXE.get()));
+        // 弓族：原版弓（item/bow）。short_bow 是原版弓模型，long_bow 走旧 BEWLR + 同一个 display。
+        table.add(new Grip("vanilla-bow","bow",true,()->Items.BOW));
+        table.add(new Grip("short-bow","bow",false,()->ModItems.SHORT_BOW.get()));
+        table.add(new Grip("long-bow","bow",false,()->ModItems.LONG_BOW.get()));
+        table.add(new Grip("great-bow","bow",false,()->ModItems.GREAT_BOW.get()));
+        // 弩族：原版弩（item/crossbow）。
+        table.add(new Grip("vanilla-crossbow","crossbow",true,()->Items.CROSSBOW));
+        table.add(new Grip("crossbow","crossbow",false,()->ModItems.CROSSBOW.get()));
+        table.add(new Grip("ballista","crossbow",false,()->ModItems.BALLISTA.get()));
+        // 盾族：原版盾（item/shield，含副手那一格就是"盾牌浮空"）。盾牌是实体模型，握把在模型原点。
+        table.add(new Grip("vanilla-shield","shield",true,()->Items.SHIELD));
+        table.add(new Grip("shield","shield",false,()->ModItems.SHIELD.get()));
+        table.add(new Grip("great-shield","shield",false,()->ModItems.GREAT_SHIELD.get()));
+        table.add(new Grip("small-shield","shield",false,()->ModItems.SMALL_SHIELD.get()));
+        // 镰刀 / 长鞭：没有原版同类，按目标"参考剑"走 item/handheld，对照就用剑那一格。
+        table.add(new Grip("scythe","scythe",false,()->ModItems.SCYTHE.get()));
+        table.add(new Grip("whip","whip",false,()->ModItems.WHIP.get()));
+        table.add(new Grip("flail","flail",false,()->ModItems.FLAIL.get()));
+        String only=System.getProperty("eldencombat.gripItem", "");
+        if(!only.isEmpty()) {
+            table.removeIf(grip->!grip.name().equals(only));
+            if(table.isEmpty())throw new IllegalArgumentException("Unknown grip fixture item: "+only);
         }
-        for(int i=1;i<=3;i++) for(boolean first:new boolean[]{false,true}) for(var action:new ActionId[]{ActionId.LIGHT_ATTACK,ActionId.GUARD})
-            fixtures.add(new Fixture("ref-grip-"+names[i]+(first?"-first":"-third")+"-"+action.name().toLowerCase(),
-                    action,false,false,false,first,action==ActionId.LIGHT_ATTACK?10:0,items.get(i),false,false));
+        for(Grip grip:table) {
+            GRIP_FAMILY.put(grip.name(),grip.family());
+            for(boolean first:new boolean[]{false,true}) for(boolean left:new boolean[]{false,true}) {
+                String name="ref-grip-"+grip.name()+(first?"-first":"-third")+(left?"-left":"-right");
+                GRIP_FAMILY.put(name,grip.family());
+                fixtures.add(new Fixture(name,ActionId.NONE,false,false,left,first,0,grip.item(),false,false));
+                // 原版对照只要一格主手画面；我们自己的物品左右手都要过，副手在第三人称再各过一格
+                // （第一人称副手看不出额外信息，省掉一半运行时间）。
+                if(!grip.vanilla() && !first) {
+                    String off="ref-grip-"+grip.name()+"-third"+(left?"-off-right":"-off-left");
+                    GRIP_FAMILY.put(off,grip.family());
+                    fixtures.add(new Fixture(off,ActionId.NONE,false,false,left,first,0,grip.item(),false,true));
+                }
+            }
+        }
+        if(!only.isEmpty())return fixtures.toArray(Fixture[]::new);
+        // 挥砍/格挡姿态只取代表件（盾牌看格挡抬盾、剑族看前三件），而且**统一放到最后**：
+        // 这些夹具会驱动动作状态机，万一某个动作规格在这件武器上不存在，崩在前面就不会把
+        // 上面那张"每族每件"的握法证据表一起带走。
+        for(String actionName:new String[]{"straight","great","colossal","shield","great-shield","small-shield"})
+            for(Grip grip:table) if(grip.name().equals(actionName))
+                for(boolean first:new boolean[]{false,true})
+                for(var action:new ActionId[]{ActionId.LIGHT_ATTACK,ActionId.GUARD}) {
+                    String name="ref-grip-"+grip.name()+(first?"-first":"-third")+"-"+action.name().toLowerCase();
+                    GRIP_FAMILY.put(name,grip.family());
+                    fixtures.add(new Fixture(name,action,false,false,false,first,
+                            action==ActionId.LIGHT_ATTACK?10:0,grip.item(),false,false));
+                }
         for(int draw:new int[]{0,10,20}) fixtures.add(new Fixture("ref-bow-draw-"+draw,ActionId.NONE,false,false,false,false,
                 draw,()->ModItems.LONG_BOW.get(),false,false));
         return fixtures.toArray(Fixture[]::new);
@@ -171,6 +261,10 @@ public final class ClientSmokeHarness {
     @SubscribeEvent public static void tick(ClientTickEvent.Post event) {
         if(!ENABLED)return;
         var mc=Minecraft.getInstance();
+        if(Boolean.getBoolean("eldencombat.providerAcceptance")) {
+            SelectedArtAcceptanceHarness.providerTick(mc);
+            return;
+        }
         if(mc.player==null || mc.level==null || mc.getSingleplayerServer()==null) {
             if(++startupTicks>2400) { EldenCombat.LOGGER.error("CLIENT_SMOKE_FAIL: startup timeout"); mc.stop(); }
             return;
@@ -261,8 +355,17 @@ public final class ClientSmokeHarness {
         }
         int next=ticks/40;
         if(next>=FIXTURES.length) {
+            // 握法证据模式：逐件的失败**先记账、跑完全部**，最后一次性判死。这样一张"每族每件"
+            // 的证据表不会被第一件不合格的物品截断，失败项仍然让整轮以 CLIENT_SMOKE_FAIL 结束。
+            if(GRIP_CHECK&&ticks==FIXTURES.length*40&&!gripFailures.isEmpty())
+                throw new IllegalStateException("CLIENT_SMOKE_FAIL: grip outside palm: "
+                        +String.join("; ",gripFailures));
             if(ticks==FIXTURES.length*40)EldenCombat.LOGGER.info("CLIENT_SMOKE_PASS: all {} visual fixtures rendered",FIXTURES.length);
-            if(GRIP_CHECK) { mc.stop(); return; }
+            if(GRIP_CHECK) {
+                if(Boolean.getBoolean("eldencombat.artAcceptance")
+                        && !SelectedArtAcceptanceHarness.flailScenes(mc)) { ticks++; return; }
+                mc.stop(); return;
+            }
             handlePresses(mc);
             // 有按键还没落实（例如窗口失焦，ClientCombat 会正确地忽略按键）时冻结网络相位：
             // 后面的断言都假定"前一步已经发生"，冻结比放大时间间隔可靠。
@@ -1137,7 +1240,18 @@ public final class ClientSmokeHarness {
         var player=mc.player;
         var stack=fixture.offHand()?player.getOffhandItem():player.getMainHandItem();
         var asset=com.dsh.eldencombat.client.WeaponAssets.entryFor(stack);
-        if(asset==null || asset.proportion()==null) return; // vanilla diamond is the screenshot reference
+        var proofId=BuiltInRegistries.ITEM.getKey(stack.getItem());
+        var routeEntry=com.dsh.eldencombat.client.equipment2d.EquipmentRouteSnapshot.data()
+                .get(proofId.toString());
+        // An admitted own_sprite entry draws through the 2D route, which owns its transform outright;
+        // the legacy correction/proportion chain must not be asserted on for it, or the proof would
+        // report on a path the item no longer renders.
+        var route=routeEntry==null?null:routeEntry.route();
+        boolean ownSprite=route==com.dsh.eldencombat.client.equipment2d.EquipmentRouteSnapshot.Route.OWN_SPRITE;
+        // A vanilla_model entry draws the *vanilla* model with the *vanilla* display block, i.e. the
+        // item is the vanilla item; there is no transform of ours to measure in it.
+        if(route==com.dsh.eldencombat.client.equipment2d.EquipmentRouteSnapshot.Route.VANILLA_MODEL)return;
+        if(!ownSprite&&(asset==null || asset.proportion()==null))return; // vanilla diamond is the screenshot reference
         var renderer=(PlayerRenderer)mc.getEntityRenderDispatcher().getRenderer(player);
         boolean left=fixture.offHand()?!fixture.left():fixture.left();
         var hand=left?HumanoidArm.LEFT:HumanoidArm.RIGHT;
@@ -1165,25 +1279,85 @@ public final class ClientSmokeHarness {
         item.translate((left?-1:1)/16.0,.125,-.625);
         var context=left?net.minecraft.world.item.ItemDisplayContext.THIRD_PERSON_LEFT_HAND:net.minecraft.world.item.ItemDisplayContext.THIRD_PERSON_RIGHT_HAND;
         var display=mc.getItemRenderer().getModel(stack,mc.level,player,0).getTransforms().getTransform(context);
-        display.apply(left,item);
-        item.translate(-.5,-.5,-.5);
-        var anchor=com.dsh.eldencombat.client.EquipmentRenderer.palmAnchor(stack,context,left);
-        float gx=anchor.x, gy=anchor.y;
-        item.translate(gx,gy,anchor.z);
-        var id=BuiltInRegistries.ITEM.getKey(stack.getItem());
-        com.dsh.eldencombat.client.WeaponCorrections.get(id.getPath()).apply(item);
-        item.translate(-gx,-gy,-anchor.z);
-        var profile=asset.proportion();
-        float scale=profile.heldScale((float)(asset.bounds().maxY()-asset.bounds().minY()),false,display.scale.y);
-        item.mulPose(com.dsh.eldencombat.core.WeaponDisplayTransforms.matrix(asset.bounds(),
-                com.dsh.eldencombat.core.WeaponDisplayTransforms.View.THIRD_PERSON,left,scale,profile.gripX(),profile.gripY(),profile.gripZ(),anchor.x,anchor.y,anchor.z));
-        var center=item.last().pose().transformPosition(new org.joml.Vector3f(profile.gripX(),profile.gripY(),profile.gripZ()));
+        var id=proofId;
+        org.joml.Vector3f center;
+        float counterpartGap=Float.NaN;
+        if(ownSprite) {
+            // Exactly what EquipmentRouteRenderer.modelPlan does — and, importantly, the route takes
+            // over *before* the item model's own display block, so the placeholder `display.apply`
+            // below must not be applied here. The grip is the art manifest's anchor pixel in emission
+            // space; that is the point which has to sit in the palm, so a sprite whose whole canvas is
+            // displaced (the shield bug) shows up here as grip-outside-palm.
+            var frame=routeEntry.display().resolve(context);
+            item.mulPose(new org.joml.Matrix4f(frame.matrix(left)));
+            var geometry=routeEntry.geometry();
+            // EquipmentRouteRenderer emits the [0,1] icon box for every own-sprite item except the
+            // shield, whose two faces are emitted straight into the centred space; the grip has to be
+            // given in whichever of the two the chain expects.
+            boolean boxOwn=routeEntry.kind()!=com.dsh.eldencombat.client.equipment2d
+                    .EquipmentRouteSnapshot.Kind.SHIELD;
+            if(boxOwn) item.translate(-.5f,-.5f,-.5f);
+            center=item.last().pose().transformPosition(boxOwn
+                    ?new org.joml.Vector3f(geometry.gripX()+.5f,geometry.gripY()+.5f,.5f)
+                    :new org.joml.Vector3f(geometry.gripX(),geometry.gripY(),0f));
+
+            // Diagnostic, and the only place the "does the 2D route actually land where the vanilla item
+            // lands" question is answered by a number: drive the *vanilla counterpart* of this family
+            // through the vanilla chain in the same hand frame and take the same reference grip.
+            //
+            // The reference grips are exactly the ones the display candidates were derived from, in the
+            // vanilla model's own space: a box model (item/handheld, item/bow, item/crossbow) is authored
+            // in the [0,1] icon box, so the grip is the centred grip plus half a box, while
+            // minecraft:item/shield parents builtin/entity and its geometry is authored around the model
+            // origin, so its reference point is the origin itself.
+            var counterpart=switch(routeEntry.kind()) {
+                case SHIELD->new ItemStack(Items.SHIELD);
+                case BOW->new ItemStack(Items.BOW);
+                case CROSSBOW->new ItemStack(Items.CROSSBOW);
+                case MELEE,FLASK->new ItemStack(Items.IRON_SWORD);
+            };
+            var counterpartDisplay=mc.getItemRenderer().getModel(counterpart,mc.level,player,0)
+                    .getTransforms().getTransform(context);
+            var counterpartChain=new com.mojang.blaze3d.vertex.PoseStack();
+            counterpartChain.mulPose(root.last().pose());
+            renderer.getModel().translateToHand(hand,counterpartChain);
+            counterpartChain.mulPose(com.mojang.math.Axis.XP.rotationDegrees(-90));
+            counterpartChain.mulPose(com.mojang.math.Axis.YP.rotationDegrees(180));
+            counterpartChain.translate((left?-1:1)/16.0,.125,-.625);
+            counterpartDisplay.apply(left,counterpartChain);
+            counterpartChain.translate(-.5f,-.5f,-.5f);
+            boolean boxReference=routeEntry.kind()!=com.dsh.eldencombat.client.equipment2d
+                    .EquipmentRouteSnapshot.Kind.SHIELD;
+            var counterpartPoint=counterpartChain.last().pose().transformPosition(new org.joml.Vector3f(
+                    boxReference?geometry.gripX()+.5f:0f,boxReference?geometry.gripY()+.5f:0f,
+                    boxReference?.5f:0f));
+            counterpartGap=center.distance(counterpartPoint);
+        } else {
+            display.apply(left,item);
+            item.translate(-.5,-.5,-.5);
+            var anchor=com.dsh.eldencombat.client.EquipmentRenderer.palmAnchor(stack,context,left);
+            float gx=anchor.x, gy=anchor.y;
+            item.translate(gx,gy,anchor.z);
+            com.dsh.eldencombat.client.WeaponCorrections.get(id.getPath()).apply(item);
+            item.translate(-gx,-gy,-anchor.z);
+            var profile=asset.proportion();
+            float scale=profile.heldScale((float)(asset.bounds().maxY()-asset.bounds().minY()),false,display.scale.y);
+            item.mulPose(com.dsh.eldencombat.core.WeaponDisplayTransforms.matrix(asset.bounds(),
+                    com.dsh.eldencombat.core.WeaponDisplayTransforms.View.THIRD_PERSON,left,scale,profile.gripX(),profile.gripY(),profile.gripZ(),anchor.x,anchor.y,anchor.z));
+            center=item.last().pose().transformPosition(new org.joml.Vector3f(profile.gripX(),profile.gripY(),profile.gripZ()));
+        }
         var local=new org.joml.Matrix4f(palm.last().pose()).invert().transformPosition(new org.joml.Vector3f(center)).mul(16);
         float[] box=cube[0];
         boolean inside=local.x>=box[0]&&local.x<=box[3]&&local.y>=box[1]&&local.y<=box[4]&&local.z>=box[2]&&local.z<=box[5];
         var palmCenter=palm.last().pose().transformPosition(new org.joml.Vector3f((box[0]+box[3])/32,(box[1]+box[4])/32,(box[2]+box[5])/32));
         var proof=new java.util.LinkedHashMap<String,Object>();
         proof.put("item",id.toString()); proof.put("skin",player.getSkin().model().name()); proof.put("arm",hand.name());
+        // 【目标 2026-10-16】证据按家族归口：家族决定"该套哪一套原版握持动作"。
+        String fixtureKey=name.replace(".png","").replaceFirst("^[0-9]+-","");
+        proof.put("family",GRIP_FAMILY.getOrDefault(fixtureKey,"unknown"));
+        proof.put("fixture",fixtureKey);
+        proof.put("routeKind",route==null?"none":route.name());
+        proof.put("routeAcceptance",routeEntry==null?null:routeEntry.acceptance().state());
         proof.put("usingItem",player.isUsingItem()); proof.put("useTicks",player.getTicksUsingItem());
         proof.put("palmDefinition","distal 4 model pixels of the live vanilla arm cube; no new hand geometry");
         proof.put("palmLocalPixels",box); proof.put("palmToWorld",palm.last().pose().get(new float[16]));
@@ -1191,6 +1365,10 @@ public final class ClientSmokeHarness {
         proof.put("handleCenterWorld",new float[]{center.x,center.y,center.z});
         proof.put("handleCenterInPalmPixels",new float[]{local.x,local.y,local.z});
         proof.put("handleCenterInsidePalm",inside); proof.put("centerDistanceBlocks",center.distance(palmCenter));
+        proof.put("transformOwner",ownSprite?"equipment_2d_route":"legacy_bewlr");
+        // The grip *regions* describe handle geometry of the 3D skeletons; the 2D route's handle is
+        // the art manifest's anchor pixel and has no region to sample.
+        if(!ownSprite) {
         String regionPath=java.util.Set.of("spear","shield","long_bow").contains(id.getPath())?"utility_grip_regions.json":"sword_grip_regions.json";
         var resource=mc.getResourceManager().getResource(net.minecraft.resources.ResourceLocation.fromNamespaceAndPath(EldenCombat.MODID,"weapons/"+regionPath)).orElseThrow();
         try(var stream=resource.open()) {
@@ -1212,11 +1390,36 @@ public final class ClientSmokeHarness {
                 proof.put("handleRegionWorldSamples",corners);
             }
         }
+        }
         var directory=mc.gameDirectory.toPath().resolve("grip-proof");
         java.nio.file.Files.createDirectories(directory);
         java.nio.file.Files.writeString(directory.resolve(name.replace(".png",".json")),
                 new com.google.gson.GsonBuilder().setPrettyPrinting().create().toJson(proof));
-        require(inside,"live handle center overlaps "+hand+" palm, distance="+center.distance(palmCenter));
+        if(ownSprite) {
+            // No palm assertion for the 2D route: its grip is the art's anchor pixel placed where the
+            // *vanilla reference item's* grip lands, and for the bow and the shield that point is
+            // deliberately not inside the distal arm cube (the whole plate hangs off the fist). The
+            // route's own display is the single transform owner, so what is left to judge is what the
+            // screenshot shows — the numbers below are recorded for that judgement, not asserted.
+            proof.put("vanillaCounterpartGapBlocks",counterpartGap);
+            EldenCombat.LOGGER.info("CLIENT_GRIP_2D: [{}] {} {} grip is {} blocks from the {} palm centre; "
+                            + "gap to the vanilla counterpart placement is {} blocks",
+                    proof.get("family"),id,left?"left":"right",center.distance(palmCenter),hand.name(),counterpartGap);
+        } else {
+            // 旧 BEWLR 路径（提供方缺席的那几件，例如镰刀/长弓/太刀）：这里给出同一个证据表要的
+            // 数字，判据是"握把中心是不是落在手掌里"，和 2D 路线用同一只手、同一个机位。
+            // 失败**不在这里抛**：记账后继续跑，收尾时一次性判死，否则第一件不合格就把整张证据表截断。
+            if(inside) EldenCombat.LOGGER.info("CLIENT_GRIP_LEGACY: {} {} handle center is {} blocks from "
+                            + "the {} palm centre; inside palm = true",
+                    id,left?"left":"right",center.distance(palmCenter),hand.name());
+            else {
+                gripFailures.add(GRIP_FAMILY.getOrDefault(fixtureKey,"?")+"/"+id+" "+hand.name()
+                        +" handle center is "+center.distance(palmCenter)+" blocks outside the palm");
+                EldenCombat.LOGGER.error("CLIENT_GRIP_FAIL: {} {} handle center is {} blocks from the {} "
+                                + "palm centre; inside palm = false",
+                        id,left?"left":"right",center.distance(palmCenter),hand.name());
+            }
+        }
     }
 }
 

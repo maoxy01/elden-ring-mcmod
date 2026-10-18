@@ -26,7 +26,9 @@ public final class ModPayloads {
     }
 
     public static void register(RegisterPayloadHandlersEvent event) {
-        PayloadRegistrar registrar = event.registrar("6");
+        PayloadRegistrar registrar = event.registrar("7");
+        registrar.playToClient(com.dsh.eldencombat.network.RollRejectedPayload.TYPE,
+                com.dsh.eldencombat.network.RollRejectedPayload.STREAM_CODEC, ClientPayloadTrampoline::handleRollRejected);
         registrar.playToServer(CombatIntentPayload.TYPE, CombatIntentPayload.STREAM_CODEC, ServerCombat::handleIntent);
         registrar.playToClient(CombatStatePayload.TYPE, CombatStatePayload.STREAM_CODEC,
                 ClientPayloadTrampoline::handleCombatState);

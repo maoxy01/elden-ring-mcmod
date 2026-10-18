@@ -160,6 +160,7 @@ public final class ClientCombat {
             toggleLockOn(minecraft);
         }
         while (EldenCombatClient.ROLL.consumeClick()) {
+            if (com.dsh.eldencombat.compat.CombatRollCompat.present()) continue;
             double[] direction = movementDirection(minecraft, player);
             send(IntentType.ROLL, lockedId, direction[0], direction[1]);
         }
@@ -175,7 +176,8 @@ public final class ClientCombat {
         }
 
         // 蓄力：按住 / 松开
-        boolean heavyDown = EldenCombatClient.HEAVY.isDown();
+        boolean heavyDown = combatMode && com.dsh.eldencombat.server.Weapons.controlsMelee(player.getMainHandItem())
+                && !RollClient.rolling() && EldenCombatClient.HEAVY.isDown();
         if (heavyDown && !heavyHeld) {
             heavyHeld = true;
             send(IntentType.HEAVY_START, -1, 0, 0);
@@ -185,7 +187,8 @@ public final class ClientCombat {
         }
 
         // 盾防：按住右键
-        boolean guardDown = minecraft.options.keyUse.isDown() && combatMode;
+        boolean guardDown = minecraft.options.keyUse.isDown() && combatMode && !RollClient.rolling()
+                && com.dsh.eldencombat.server.Weapons.controlsGuard(player);
         if (guardDown && !guardHeld) {
             guardHeld = true;
             send(IntentType.GUARD_START, -1, 0, 0);
@@ -205,14 +208,17 @@ public final class ClientCombat {
         if (player == null || !combatMode) {
             return;
         }
-        if (event.isAttack()) {
+        if (RollClient.rolling()) {
+            event.setCanceled(true);
+            return;
+        }
+        if (event.isAttack() && com.dsh.eldencombat.server.Weapons.controlsMelee(player.getMainHandItem())) {
             event.setCanceled(true);
             event.setSwingHand(true);
             send(IntentType.LIGHT, lockedId, 0, 0);
         } else if (event.isUseItem() && minecraft.options.keyUse.isDown()) {
             // 持盾时右键用于防御，不触发物品使用
-            if (player.getMainHandItem().is(com.dsh.eldencombat.server.Weapons.SHIELDS)
-                    || player.getOffhandItem().is(com.dsh.eldencombat.server.Weapons.SHIELDS)) {
+            if (com.dsh.eldencombat.server.Weapons.controlsGuard(player)) {
                 event.setCanceled(true);
             }
         }

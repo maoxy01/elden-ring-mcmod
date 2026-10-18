@@ -89,13 +89,14 @@ public final class GraceMenuActions {
     }
 
     /**
-     * 界面展示的武器身份标记：槽位 + 物品 id。
+     * 菜单内武器身份标记；同槽换入同类武器也生成新标记。
      *
      * <p>刻意**不含**已绑战灰与强化等级：{@code heldToken} 只回答"是不是同一把武器"，
      * 不含"它现在绑了什么"。否则一次成功绑定就会让界面上的标记过期，
      * 玩家连点第二下反而被自己的上一次操作挡住。
      */
     public static String heldToken(ServerPlayer player) {
+        if (player.containerMenu instanceof GraceMenu menu) return menu.heldToken(player);
         int slot = player.getInventory().selected;
         var stack = player.getMainHandItem();
         if (stack.isEmpty()) return slot + ":none";

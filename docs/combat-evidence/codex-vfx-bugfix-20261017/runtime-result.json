@@ -1,0 +1,130 @@
+{
+  "semanticsExit": 0,
+  "semanticsCases": 3,
+  "semanticsStages": [
+    "[10:20:47] [Render thread/INFO] [EldenCombat/]: VFX_SEMANTICS_STAGE stage=0 skill=gold_breaker instances=1 covered=1 missing=[] swings=1 channels=1/1 hits=1 jumped=true jump=[skill=gold_breaker outcome=LANDED start=(0.00,81.00,0.00) apex=82.75 landed=(0.00,81.00,2.83) horizontal=2.83 ticks=14 departed=true launchOnGround=true launchUp=0.500] coverage=[effect/5/0 submitted=70/70]",
+    "[10:20:57] [Render thread/INFO] [EldenCombat/]: VFX_SEMANTICS_STAGE stage=1 skill=destined_death instances=3 covered=3 missing=[] swings=3 channels=3/3 hits=1 jumped=true jump=[skill=destined_death outcome=LANDED start=(0.00,81.00,0.00) apex=82.51 landed=(0.00,81.00,1.95) horizontal=1.95 ticks=13 departed=true launchOnGround=true launchUp=0.340] coverage=[effect/9/0 submitted=48/48 | effect/11/1 submitted=47/47 | effect/13/2 submitted=47/47]",
+    "[10:21:07] [Render thread/INFO] [EldenCombat/]: VFX_SEMANTICS_STAGE stage=2 skill=waterfowl_dance instances=3 covered=3 missing=[] swings=3 channels=3/3 hits=1 jumped=true jump=[skill=waterfowl_dance outcome=LANDED start=(0.00,81.00,0.00) apex=82.51 landed=(-0.16,81.00,2.84) horizontal=2.84 ticks=13 departed=true launchOnGround=true launchUp=0.340] coverage=[effect/17/0 submitted=48/48 | effect/19/1 submitted=47/47 | effect/21/2 submitted=47/47]"
+  ],
+  "fixedExit": 0,
+  "fixedComplete": true,
+  "fixedFailures": 0,
+  "normalSegments": [
+    {
+      "segment": 0,
+      "skill": "wave_of_gold",
+      "pairs": 5,
+      "comparable": 5,
+      "notComparable": 0,
+      "primaryInRoi": 3349,
+      "debrisInRoi": 0,
+      "outsideWorst": 0
+    },
+    {
+      "segment": 1,
+      "skill": "gold_breaker",
+      "pairs": 6,
+      "comparable": 6,
+      "notComparable": 0,
+      "primaryInRoi": 7650,
+      "debrisInRoi": 792,
+      "outsideWorst": 0
+    },
+    {
+      "segment": 2,
+      "skill": "destined_death",
+      "pairs": 5,
+      "comparable": 5,
+      "notComparable": 0,
+      "primaryInRoi": 3063,
+      "debrisInRoi": 0,
+      "outsideWorst": 0
+    },
+    {
+      "segment": 3,
+      "skill": "takers_flames",
+      "pairs": 5,
+      "comparable": 5,
+      "notComparable": 0,
+      "primaryInRoi": 9236,
+      "debrisInRoi": 0,
+      "outsideWorst": 0
+    },
+    {
+      "segment": 4,
+      "skill": "waterfowl_dance",
+      "pairs": 5,
+      "comparable": 5,
+      "notComparable": 0,
+      "primaryInRoi": 1159,
+      "debrisInRoi": 0,
+      "outsideWorst": 0
+    },
+    {
+      "segment": 5,
+      "skill": "starcaller_cry",
+      "pairs": 6,
+      "comparable": 6,
+      "notComparable": 0,
+      "primaryInRoi": 31204,
+      "debrisInRoi": 1107,
+      "outsideWorst": 0
+    },
+    {
+      "segment": 6,
+      "skill": "bloodboon_ritual",
+      "pairs": 5,
+      "comparable": 5,
+      "notComparable": 0,
+      "primaryInRoi": 10296,
+      "debrisInRoi": 0,
+      "outsideWorst": 0
+    },
+    {
+      "segment": 7,
+      "skill": "cursed_blood_slice",
+      "pairs": 5,
+      "comparable": 5,
+      "notComparable": 0,
+      "primaryInRoi": 707,
+      "debrisInRoi": 0,
+      "outsideWorst": 0
+    },
+    {
+      "segment": 8,
+      "skill": "destined_death",
+      "pairs": 5,
+      "comparable": 5,
+      "notComparable": 0,
+      "primaryInRoi": 1595,
+      "debrisInRoi": 0,
+      "outsideWorst": 0
+    },
+    {
+      "segment": 9,
+      "skill": "waterfowl_dance",
+      "pairs": 5,
+      "comparable": 5,
+      "notComparable": 0,
+      "primaryInRoi": 893,
+      "debrisInRoi": 0,
+      "outsideWorst": 0
+    },
+    {
+      "segment": 10,
+      "skill": "bloodboon_ritual",
+      "pairs": 5,
+      "comparable": 5,
+      "notComparable": 0,
+      "primaryInRoi": 6965,
+      "debrisInRoi": 0,
+      "outsideWorst": 0
+    }
+  ],
+  "negativeModes": "camera-only and primary-suppressed: completed",
+  "minimumNormalPrimary": 707.0,
+  "freshScreenshots": 160,
+  "jarSha256": "9698C73D011545CD3843F18E2B57CB07E3F73875E751A41E6C47F1CC601E22E2",
+  "activeJavaGradle": 0,
+  "visualAcceptance": "pending: gold-breaker observer shot shows floating actor; observer timeline has no real player travel; normal-player semantics passed; no human acceptance"
+}

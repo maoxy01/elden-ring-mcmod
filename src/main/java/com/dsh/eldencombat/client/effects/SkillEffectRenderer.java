@@ -24,8 +24,15 @@ public final class SkillEffectRenderer extends EntityRenderer<SkillEffectEntity>
     @Override public void render(SkillEffectEntity effect, float yaw, float partialTick,
                                  PoseStack pose, MultiBufferSource buffers, int light) {
         var lod = VfxBudget.lod(effect.position().distanceToSqr(Minecraft.getInstance().gameRenderer.getMainCamera().getPosition()));
-        if (lod == VfxBudget.Lod.HIDDEN) return;
-        if (FxRenderBudget.pressure) lod = VfxBudget.Lod.CORE;
+        String identity = "effect/" + effect.getId() + "/" + effect.phase();
+        // 取证诊断层：非目标实例在 PRIMARY_ONLY/DEBRIS_ONLY 下整段不画，CLEAN 只压目标自身。
+        if (!VfxDiagnosticLayers.allowEntity(effect.kind(), identity, effect.phase())) {
+            VfxDiagnosticLayers.noteSkipped(identity);
+            return;
+        }
+        if (lod == VfxBudget.Lod.HIDDEN) { ArtworkRenderer.recordHidden(identity, effect.phase()); return; }   // 超出 128 格：不查地形、不提交顶点
+        if (FxRenderBudget.pressure || FxRenderBudget.forcedCore()) lod = VfxBudget.Lod.CORE;
+        float progress = effect.progress(partialTick);
         pose.pushPose();
         var owner = effect.level().getEntity(effect.ownerEntityId());
         if (owner != null) {
@@ -36,11 +43,20 @@ public final class SkillEffectRenderer extends EntityRenderer<SkillEffectEntity>
             yaw = Mth.rotLerp(partialTick, owner.yRotO, owner.getYRot());
         }
         pose.mulPose(Axis.YP.rotationDegrees(-yaw));
-        float progress = effect.progress(partialTick);
-        if (ArtworkRenderer.draw(effect.kind(), progress, effect.phase(), null, partialTick, pose, buffers)) {
-            pose.popPose();
-            return;
-        }
+        // 主路径只选一次：作者美术接管后不再叠旧程序化主盒体；只有"没接管"才走既有 legacy 轮廓。
+        var artwork = ArtworkRenderer.draw(effect.kind(), progress, effect.phase(), null, partialTick, pose, buffers,
+                lod, identity);
+        if (artwork.legacyEligible()) { VfxDiagnosticLayers.countLegacy(); drawLegacy(effect, lod, progress, yaw, pose, buffers); }
+        drawSecondaryDebris(effect, progress, lod, pose, buffers, identity);
+        pose.popPose();
+    }
+
+    /**
+     * 未接管时的既有主视觉：ready 路由按 LOD 画贴片或轮廓，否则沿用旧盒体。
+     * 这条路径只在 {@code ArtworkRenderer} 明确"没接管"时进入，绝不与作者美术叠画。
+     */
+    private static void drawLegacy(SkillEffectEntity effect, VfxBudget.Lod lod, float progress, float yaw,
+                                   PoseStack pose, MultiBufferSource buffers) {
         var route = SkillSlashSpriteRenderer.route(effect.kind());
         var geometry = FxGeometryCache.get(effect, effect.kind(), effect.radius(), progress, effect.phase(),
                 progress * 16, 0, false, route == null ? null : route.spec());
@@ -59,8 +75,29 @@ public final class SkillEffectRenderer extends EntityRenderer<SkillEffectEntity>
                         geometry.strips.subList(0, count), yaw, null);
             }
         }
+    }
+
+    /**
+     * 必要碎块：只有 GOLD_IMPACT/GRAVITY_IMPACT/GRAVITY_PULL 定义了碎块几何（见
+     * {@link SkillEffectMesh#debris}），每效果 FULL≤12 / REDUCED≤6，且全帧共享 32 次块渲染准入；
+     * CORE/HIDDEN 为 0，不因主贴片成功而被旁路或额外叠加。
+     *
+     * <p>另外两处硬约束：① 生命周期外的 progress（非有限、&lt;0、≥1）主/副效果都是 0 提交，不能因为
+     * {@code SkillEffectMesh.debris} 把 progress 夹到 0 就画出早期碎块；② 取证诊断层在
+     * PRIMARY_ONLY/CLEAN 下禁止碎块，碎块不得替主贴片"代签"。
+     */
+    private static void drawSecondaryDebris(SkillEffectEntity effect, float progress, VfxBudget.Lod lod,
+                                            PoseStack pose, MultiBufferSource buffers, String identity) {
+        if (lod == VfxBudget.Lod.CORE || lod == VfxBudget.Lod.HIDDEN) return;
+        if (!(progress >= 0f) || progress >= 1f) return;   // NaN 也在此拦下
+        if (!VfxDiagnosticLayers.debrisAllowed(effect.kind(), identity, effect.phase())) return;
+        var route = SkillSlashSpriteRenderer.route(effect.kind());
+        var geometry = FxGeometryCache.get(effect, effect.kind(), effect.radius(), progress, effect.phase(),
+                progress * 16, 0, false, route == null ? null : route.spec());
+        if (geometry.debris.isEmpty()) return;
+        if (FxRenderBudget.budgetZero()) return;
         int piece = 0;
-        int pieces = FxRenderBudget.debris(lod == VfxBudget.Lod.CORE ? 0 : Math.min(geometry.debris.size(), lod == VfxBudget.Lod.FULL ? 12 : 6));
+        int pieces = FxRenderBudget.debris(Math.min(geometry.debris.size(), lod == VfxBudget.Lod.FULL ? 12 : 6));
         for (var debris : geometry.debris.subList(0, pieces)) {
             pose.pushPose();
             pose.translate((debris.x0() + debris.x1()) / 2, (debris.y0() + debris.y1()) / 2, (debris.z0() + debris.z1()) / 2);
@@ -73,7 +110,7 @@ public final class SkillEffectRenderer extends EntityRenderer<SkillEffectEntity>
                     LightTexture.FULL_BRIGHT, OverlayTexture.NO_OVERLAY);
             pose.popPose();
         }
-        pose.popPose();
+        VfxDiagnosticLayers.countDebris(pieces);
     }
 
     /**

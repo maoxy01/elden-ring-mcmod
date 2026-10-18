@@ -23,6 +23,7 @@ public final class SkillCasting {
 
     /** 战技键：未施放时起手；追击窗口内推进一段。被拒绝时给玩家一句可读的原因。 */
     public static SkillTransactions.Result request(ServerPlayer player, long tick) {
+        if (com.dsh.eldencombat.compat.CombatRollCompat.rolling(player)) return SkillTransactions.Result.REJECTED;
         SkillCastState cast = SkillDriver.cast(player);
         RemembranceSkillSpec spec;
         if (cast.isCasting()) {
