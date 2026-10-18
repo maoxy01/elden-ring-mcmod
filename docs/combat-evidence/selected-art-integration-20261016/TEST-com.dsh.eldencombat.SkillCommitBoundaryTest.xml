@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.dsh.eldencombat.SkillCommitBoundaryTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-10-16T07:43:20" hostname="M" time="0.008">
+  <properties/>
+  <testcase name="refundingReportedChargeRestoresNonFullBalance()" classname="com.dsh.eldencombat.SkillCommitBoundaryTest" time="0.0"/>
+  <testcase name="firstFollowupChargesTheFollowupPriceNotTheFirstStagePrice()" classname="com.dsh.eldencombat.SkillCommitBoundaryTest" time="0.0"/>
+  <testcase name="reportedChargeAlwaysEqualsTheActualDeduction()" classname="com.dsh.eldencombat.SkillCommitBoundaryTest" time="0.001"/>
+  <testcase name="priceTableHasExactlyTwoTiersSoLaterStagesCannotBePricedSeparately()" classname="com.dsh.eldencombat.SkillCommitBoundaryTest" time="0.001"/>
+  <testcase name="insufficientFpRejectsFollowupWithoutConsumingItsWindow()" classname="com.dsh.eldencombat.SkillCommitBoundaryTest" time="0.0"/>
+  <testcase name="unlimitedFpReportsZeroSoRollbackNeverMintsFp()" classname="com.dsh.eldencombat.SkillCommitBoundaryTest" time="0.0"/>
+  <testcase name="stagesWithAFollowupWindowChargeTheirConfiguredPrice()" classname="com.dsh.eldencombat.SkillCommitBoundaryTest" time="0.001"/>
+  <testcase name="abortClosesTheFollowupWindowAndRetiresTheOldCastId()" classname="com.dsh.eldencombat.SkillCommitBoundaryTest" time="0.0"/>
+  <testcase name="clearCooldownOnlyTouchesTheNamedSkill()" classname="com.dsh.eldencombat.SkillCommitBoundaryTest" time="0.001"/>
+  <testcase name="multiStageConfigIsInertWithoutAFollowupWindow()" classname="com.dsh.eldencombat.SkillCommitBoundaryTest" time="0.001"/>
+  <testcase name="followupChargeIsReportedExactly()" classname="com.dsh.eldencombat.SkillCommitBoundaryTest" time="0.0"/>
+  <testcase name="rejectedCommitChargesNothing()" classname="com.dsh.eldencombat.SkillCommitBoundaryTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

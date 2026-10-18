@@ -1,0 +1,89 @@
+Compiled from "VersionSupportMatrix.java"
+public class net.neoforged.fml.loading.VersionSupportMatrix {
+  private static final java.util.HashMap<java.lang.String, java.util.List<org.apache.maven.artifact.versioning.ArtifactVersion>> overrideVersions;
+
+  public net.neoforged.fml.loading.VersionSupportMatrix();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  private static void add(java.lang.String, java.lang.String);
+    Code:
+       0: getstatic     #7                  // Field overrideVersions:Ljava/util/HashMap;
+       3: aload_0
+       4: invokedynamic #13,  0             // InvokeDynamic #0:apply:()Ljava/util/function/Function;
+       9: invokevirtual #17                 // Method java/util/HashMap.computeIfAbsent:(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;
+      12: checkcast     #23                 // class java/util/List
+      15: new           #25                 // class org/apache/maven/artifact/versioning/DefaultArtifactVersion
+      18: dup
+      19: aload_1
+      20: invokespecial #27                 // Method org/apache/maven/artifact/versioning/DefaultArtifactVersion."<init>":(Ljava/lang/String;)V
+      23: invokeinterface #30,  2           // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      28: pop
+      29: return
+
+  public static boolean testVersionSupportMatrix(org.apache.maven.artifact.versioning.VersionRange, java.lang.String, java.lang.String, java.util.function.BiPredicate<java.lang.String, org.apache.maven.artifact.versioning.VersionRange>);
+    Code:
+       0: aload_3
+       1: aload_1
+       2: aload_0
+       3: invokeinterface #34,  3           // InterfaceMethod java/util/function/BiPredicate.test:(Ljava/lang/Object;Ljava/lang/Object;)Z
+       8: ifeq          13
+      11: iconst_1
+      12: ireturn
+      13: getstatic     #7                  // Field overrideVersions:Ljava/util/HashMap;
+      16: aload_2
+      17: aload_1
+      18: invokedynamic #40,  0             // InvokeDynamic #1:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      23: invokevirtual #44                 // Method java/util/HashMap.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      26: checkcast     #23                 // class java/util/List
+      29: astore        4
+      31: aload         4
+      33: ifnull        66
+      36: aload         4
+      38: invokeinterface #48,  1           // InterfaceMethod java/util/List.stream:()Ljava/util/stream/Stream;
+      43: aload_0
+      44: dup
+      45: invokestatic  #52                 // Method java/util/Objects.requireNonNull:(Ljava/lang/Object;)Ljava/lang/Object;
+      48: pop
+      49: invokedynamic #57,  0             // InvokeDynamic #2:test:(Lorg/apache/maven/artifact/versioning/VersionRange;)Ljava/util/function/Predicate;
+      54: invokeinterface #60,  2           // InterfaceMethod java/util/stream/Stream.anyMatch:(Ljava/util/function/Predicate;)Z
+      59: ifeq          66
+      62: iconst_1
+      63: goto          67
+      66: iconst_0
+      67: ireturn
+
+  private static java.util.List lambda$add$0(java.lang.String);
+    Code:
+       0: new           #66                 // class java/util/ArrayList
+       3: dup
+       4: invokespecial #68                 // Method java/util/ArrayList."<init>":()V
+       7: areturn
+
+  static {};
+    Code:
+       0: new           #18                 // class java/util/HashMap
+       3: dup
+       4: invokespecial #69                 // Method java/util/HashMap."<init>":()V
+       7: putstatic     #7                  // Field overrideVersions:Ljava/util/HashMap;
+      10: new           #25                 // class org/apache/maven/artifact/versioning/DefaultArtifactVersion
+      13: dup
+      14: invokestatic  #70                 // Method net/neoforged/fml/loading/FMLLoader.versionInfo:()Lnet/neoforged/fml/loading/VersionInfo;
+      17: invokevirtual #76                 // Method net/neoforged/fml/loading/VersionInfo.mcVersion:()Ljava/lang/String;
+      20: invokespecial #27                 // Method org/apache/maven/artifact/versioning/DefaultArtifactVersion."<init>":(Ljava/lang/String;)V
+      23: astore_0
+      24: ldc           #82                 // String [1.21.1]
+      26: invokestatic  #84                 // Method net/neoforged/neoforgespi/language/MavenVersionAdapter.createFromVersionSpec:(Ljava/lang/String;)Lorg/apache/maven/artifact/versioning/VersionRange;
+      29: aload_0
+      30: invokevirtual #90                 // Method org/apache/maven/artifact/versioning/VersionRange.containsVersion:(Lorg/apache/maven/artifact/versioning/ArtifactVersion;)Z
+      33: ifeq          50
+      36: ldc           #96                 // String mod.minecraft
+      38: ldc           #98                 // String 1.21
+      40: invokestatic  #100                // Method add:(Ljava/lang/String;Ljava/lang/String;)V
+      43: ldc           #103                // String mod.neoforge
+      45: ldc           #105                // String 21.0.166
+      47: invokestatic  #100                // Method add:(Ljava/lang/String;Ljava/lang/String;)V
+      50: return
+}

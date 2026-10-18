@@ -1,0 +1,577 @@
+{
+  "project": {
+    "client_side": "required",
+    "server_side": "required",
+    "game_versions": [
+      "1.18.2",
+      "1.19",
+      "1.19.1",
+      "1.19.2",
+      "1.19.3",
+      "1.19.4",
+      "1.20",
+      "1.20.1",
+      "1.20.2",
+      "1.20.4",
+      "1.21",
+      "1.21.1",
+      "1.21.4",
+      "1.21.6",
+      "1.21.7",
+      "1.21.8",
+      "1.21.10",
+      "1.21.11",
+      "26.1",
+      "26.1.1",
+      "26.1.2",
+      "26.2",
+      "26.3"
+    ],
+    "environment": [
+      "client_and_server"
+    ],
+    "id": "wGKYL7st",
+    "slug": "combat-roll",
+    "project_type": "mod",
+    "team": "oKdlkn0S",
+    "organization": null,
+    "title": "Combat Roll",
+    "description": "🧶 Adds combat roll ability, with related attributes and enchantments.",
+    "body": "![Combat Roll](https://cdn.modrinth.com/data/wGKYL7st/images/a76b8371abdb17c1f502b293eb1fc9f6a259fb9d.png)\n\nEver wanted to roll/dodge/dash in Minecraft? Here is your chance!\n------------------\n[![Modloader](https://img.shields.io/badge/Loader-Fabric%20|%20Forge-ecebe6?labelColor=263768&style=for-the-badge)](https://fabricmc.net)\n[![Discord](https://img.shields.io/discord/973561601519149057.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2&style=for-the-badge)](https://discord.gg/KN9b3pjFTM)\n\n\n&zwnj;\n\n# 🧶️ Features\n\n&zwnj;\n\n## Adds Combat Roll ability\nPress `R` to roll (by default). You can roll into any direction you are heading (forwards, backwards, sideways, etc...)\n\nThe combat roll ability has 4 seconds cooldown by default.  (Server side configurable)\n\nCooldown of your combat roll ability can be seen on the main UI (aka HUD). (Client side configurable)\n\nExhaust (aka hunger) is added to the player upon rolling (Server side configurable)\n\nRoll ability can only be used when player is: not using item, not jumping, not swimming.\n\n**New!** Now with invulnerability frames! (Disabled by default, can be turned on at `config/combatroll/server.json5`)\n\n&zwnj;\n\n## Attributes\n\nThese new entity attributes determine the properties of the combat roll ability.\n\n`combatroll:distance` determines how far the player rolls (the default distance is 3 blocks, server configurable). For example:\n\n`/give @s leather_boots{AttributeModifiers:[{AttributeName:\"combatroll:distance\", Name:\"testing\", Amount:3.0, Operation:0,Slot:\"feet\",UUID:[I; 66453, 79497593, -201178, -16957605]}]} 1`\n\n`combatroll:recharge` determines how quickly the cooldown of the roll ability recovers. For example: \n\n`/give @s leather_leggings{AttributeModifiers:[{AttributeName:\"combatroll:recharge\", Name:\"testing\", Amount:0.5, Operation:1,Slot:\"legs\",UUID:[I; 66453, 79497593, -201177, -16957605]}]} 1`\n\n`combatroll:count` determines how many times a player can roll before having to wait for recharging (by default a player has 1 roll). For example: \n\n`/give @s leather_helmet{AttributeModifiers:[{AttributeName:\"combatroll:count\", Name:\"testing\", Amount:2, Operation:0,Slot:\"head\",UUID:[I; 66453, 79497594, -201177, -16957605]}]} 1`\n\n&zwnj;\n\n## Enchantments\nImprove various aspects of your combat roll ability with these enchantments.\n\n### Mulit-Roll\nCan be enchanted on helmets - Grants extra rolls (+1 roll / level)\n\n### Acrobat\nCan be enchanted on chests and legs - Increases the recharge speed of the roll cooldown (by +10% / level)\n\n### Longfooted\nCan be enchanted on boots - Increases the distance of your rolls (by 1 block / level).\n\n&zwnj;\n\n# 🔧 Configuration\n\n&zwnj;\n\n### Fabric\n\nClient side settings can be accessed via the [Mod Menu](https://github.com/TerraformersMC/ModMenu).\n\n### Forge\n\nClient side settings can be accessed in Main Menu &gt; Mods &gt; Combat Roll &gt; Config.\n\n### Server\n\n**Server side** configuration can be found in the `config` directory, after running the game with the mod installed.",
+    "body_url": null,
+    "published": "2022-09-19T17:04:44.140047Z",
+    "updated": "2026-09-17T20:19:26.55682Z",
+    "approved": "2022-09-20T23:03:23.345563Z",
+    "queued": null,
+    "status": "approved",
+    "requested_status": null,
+    "moderator_message": null,
+    "license": {
+      "id": "GPL-3.0-only",
+      "name": "GNU General Public License v3.0 only",
+      "url": null
+    },
+    "downloads": 6739754,
+    "followers": 1117,
+    "categories": [
+      "adventure",
+      "game-mechanics",
+      "library"
+    ],
+    "additional_categories": [],
+    "loaders": [
+      "fabric",
+      "forge",
+      "neoforge"
+    ],
+    "versions": [
+      "qjPNxjeI",
+      "QY3g1MPa",
+      "6Y4CdZNa",
+      "ruVouh8N",
+      "fwWMS64D",
+      "Ef4UURAJ",
+      "cNuQKeYa",
+      "bEkfuXFS",
+      "azj5HSxy",
+      "pGWBRn1i",
+      "g54fQTVc",
+      "oDqrlOkT",
+      "NjDgCyxY",
+      "VXixoSQM",
+      "UF8erTuU",
+      "Ucep0Cu5",
+      "VFPcEpGA",
+      "KYboqMGf",
+      "X1F0kcns",
+      "QCPx2IS2",
+      "LvVX8D1q",
+      "7xq1zpn0",
+      "DkP5RdK3",
+      "2YI9I4TO",
+      "EDsEsJtK",
+      "aJk5QhXt",
+      "u2ibYGVH",
+      "2Ae8EJZw",
+      "WOCP3kLf",
+      "oSQPSvZH",
+      "pzCkMdkj",
+      "h13cp5Hk",
+      "SzaC8Y3W",
+      "JrSJCgLX",
+      "qiJtKPOI",
+      "kJTOmZiq",
+      "4Kt64z82",
+      "RkJWufMO",
+      "Osxa4mmc",
+      "URzpc7Lq",
+      "ouVfwhi4",
+      "JkgJLz6x",
+      "b64nmuue",
+      "jsIwSe6h",
+      "B7ZtSwe2",
+      "iG0xPWUm",
+      "vOu5WIvs",
+      "bOQ2Cikd",
+      "mSQJJvNy",
+      "91FfnPM8",
+      "UQb9qD3J",
+      "XTopJ0Id",
+      "deyBZlUs",
+      "vaBqHK19",
+      "ljjcUkWs",
+      "81E06FMa",
+      "1QeyH5IG",
+      "8Q03X6HA",
+      "Aj08MYtw",
+      "PSEQMV1l",
+      "DYKVvo9P",
+      "js1pLjSF",
+      "slz81V0J",
+      "MzRHyyTC",
+      "gLzlXMlf",
+      "NP7Nwrwq",
+      "vdae5kTA",
+      "QiWlD1U9",
+      "hJQhKVxj",
+      "RBDMFemm",
+      "EXGDg1mc",
+      "ZFOUucav",
+      "tOGQOc87",
+      "GKj5mumX",
+      "KnHNGyLj",
+      "buCwQh9G",
+      "LNxSmECr",
+      "GmitzqXs",
+      "NhqiKzjd",
+      "Iu7dNK5J",
+      "S9W5W5gZ",
+      "n5c0ilso",
+      "yr87igvi",
+      "soyzSn1W",
+      "eVyBNuwl",
+      "cIHoyOhg",
+      "Btqy2YLV",
+      "FwTldg5l",
+      "8Zv39qno",
+      "jHvKJkv8",
+      "rwRYD8bX",
+      "ofN9RHSY",
+      "532t65Zz",
+      "FyOp03FS",
+      "sMyWCvwn",
+      "j2OvzNhM",
+      "9kp2Pvcp",
+      "ZLQTnvZK",
+      "wHUV3Aci",
+      "264e2l8J",
+      "4c12AaMS",
+      "IGf35iiG",
+      "NNRViwFU",
+      "SV2jaBXq",
+      "EBH9UlQk",
+      "R7D0sles",
+      "rtkzGVC5",
+      "XEM0T44p",
+      "dO3XGXuP",
+      "6PelITey",
+      "WABpH0nv",
+      "UkTSsgGt",
+      "FT7t1n1a",
+      "aIYU6I6t",
+      "ke3chKqw",
+      "Vo8V99Xs",
+      "TboS98D6",
+      "T7sepZSq",
+      "kR6alo7V",
+      "znWrqNKk",
+      "st64SArf",
+      "FLQRcSui",
+      "wsu6nIrp",
+      "ICGdrcOg",
+      "kI7j1OlP",
+      "oWAfRuBp",
+      "OuZGcMyV"
+    ],
+    "icon_url": "https://cdn.modrinth.com/data/wGKYL7st/0958df960eca663066fa1cd821e75ff9c44ab716_96.webp",
+    "raw_icon_url": "https://cdn.modrinth.com/data/wGKYL7st/ec708f6b60ed75fceab14e0848e9906f99dd84e1.png",
+    "issues_url": "https://github.com/ZsoltMolnarrr/CombatRoll/issues",
+    "source_url": "https://github.com/ZsoltMolnarrr/CombatRoll",
+    "wiki_url": null,
+    "discord_url": "https://discord.gg/KN9b3pjFTM",
+    "donation_urls": [],
+    "gallery": [
+      {
+        "url": "https://cdn.modrinth.com/data/wGKYL7st/images/8228e127d69411329e540060f5b0f5322778fdfb_350.webp",
+        "raw_url": "https://cdn.modrinth.com/data/wGKYL7st/images/a76b8371abdb17c1f502b293eb1fc9f6a259fb9d.png",
+        "featured": false,
+        "title": "title",
+        "description": null,
+        "created": "2022-09-20T16:32:49.285246Z",
+        "ordering": 0
+      }
+    ],
+    "color": 3882312,
+    "thread_id": "wGKYL7st",
+    "monetization_status": "monetized"
+  },
+  "versions": [
+    {
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_and_server",
+      "id": "FT7t1n1a",
+      "project_id": "wGKYL7st",
+      "author_id": "CUHgJfv9",
+      "featured": false,
+      "name": "2.0.6+1.21.1",
+      "version_number": "2.0.6+1.21.1-neoforge",
+      "changelog": "# 2.0.6\n\n- Update some translations\n",
+      "changelog_url": null,
+      "date_published": "2025-12-17T23:19:11.253603Z",
+      "downloads": 117217,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "6jPCN8OD",
+          "hashes": {
+            "sha512": "2f75b0865c6f342bc7f0fe8abb6e161befae64dd23ad73bc2ed5b6aa892055ee886d63d061afa9323f3056c5ba39621226b712d2435168c5fb8f856cebd27c16",
+            "sha1": "8b9676996e2b49520ac29d92e6068089c5f40baa"
+          },
+          "url": "https://cdn.modrinth.com/data/wGKYL7st/versions/FT7t1n1a/combat_roll-neoforge-2.0.6%2B1.21.1.jar",
+          "filename": "combat_roll-neoforge-2.0.6+1.21.1.jar",
+          "primary": true,
+          "size": 193381,
+          "file_type": null
+        }
+      ],
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "9s6osm5g",
+          "file_name": null,
+          "dependency_type": "required"
+        },
+        {
+          "version_id": null,
+          "project_id": "gedNE4y2",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ]
+    },
+    {
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_and_server",
+      "id": "dO3XGXuP",
+      "project_id": "wGKYL7st",
+      "author_id": "CUHgJfv9",
+      "featured": false,
+      "name": "2.0.5+1.21.1",
+      "version_number": "2.0.5+1.21.1-neoforge",
+      "changelog": "# 2.0.5\n\n- Fix roll recharge attribute changes not applied dynamically\n",
+      "changelog_url": null,
+      "date_published": "2025-08-17T09:45:12.704954Z",
+      "downloads": 43636,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "mRYe3pRp",
+          "hashes": {
+            "sha512": "212666dbd175e97cf12d7beb57099a9d94268e87b78835df745a05525209475aa0e46d2c7011a6222d2c13564d3ab7d9596d1604502ae4317735adc46706e9be",
+            "sha1": "7794c743c524430560c9606d1bc17f9721f06628"
+          },
+          "url": "https://cdn.modrinth.com/data/wGKYL7st/versions/dO3XGXuP/combat_roll-neoforge-2.0.5%2B1.21.1.jar",
+          "filename": "combat_roll-neoforge-2.0.5+1.21.1.jar",
+          "primary": true,
+          "size": 192601,
+          "file_type": null
+        }
+      ],
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "gedNE4y2",
+          "file_name": null,
+          "dependency_type": "required"
+        },
+        {
+          "version_id": null,
+          "project_id": "9s6osm5g",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ]
+    },
+    {
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_and_server",
+      "id": "R7D0sles",
+      "project_id": "wGKYL7st",
+      "author_id": "CUHgJfv9",
+      "featured": false,
+      "name": "2.0.4+1.21.1",
+      "version_number": "2.0.4+1.21.1-neoforge",
+      "changelog": "# 2.0.4\n\n- Update translations\n",
+      "changelog_url": null,
+      "date_published": "2025-05-01T20:24:10.525255Z",
+      "downloads": 35251,
+      "version_type": "beta",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "jJjUSudA",
+          "hashes": {
+            "sha1": "1f79f7ff3aba626bd16de413c41fc00d1fd9d053",
+            "sha512": "a85c3fd65a940d93d90676954a6a2dcba18dca9a431752b659a407f6d13421a02f1faf744c012f887ef5de780203d3522b0f784133d6f528e02a74ad09973fbd"
+          },
+          "url": "https://cdn.modrinth.com/data/wGKYL7st/versions/R7D0sles/combat_roll-neoforge-2.0.4%2B1.21.1.jar",
+          "filename": "combat_roll-neoforge-2.0.4+1.21.1.jar",
+          "primary": true,
+          "size": 192506,
+          "file_type": null
+        }
+      ],
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "9s6osm5g",
+          "file_name": null,
+          "dependency_type": "required"
+        },
+        {
+          "version_id": null,
+          "project_id": "gedNE4y2",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ]
+    },
+    {
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_and_server",
+      "id": "EBH9UlQk",
+      "project_id": "wGKYL7st",
+      "author_id": "CUHgJfv9",
+      "featured": false,
+      "name": "2.0.3+1.21.1",
+      "version_number": "2.0.3+1.21.1-neoforge",
+      "changelog": "# 2.0.3\n\n- Fix potential HUD rendering issues\n",
+      "changelog_url": null,
+      "date_published": "2025-04-24T22:25:51.592494Z",
+      "downloads": 1255,
+      "version_type": "beta",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "J5N3KbNP",
+          "hashes": {
+            "sha1": "7997497d38da922a74b0ec335423be8b6a16f2c2",
+            "sha512": "1a3855892dbf0f6ed0d602bd3429651e60c93234fe87b364940c4c4a6103290131224beedc9cd6dbfa63e339c49dbeadbb50d18b6be2d9ace68688c73c4d6a9a"
+          },
+          "url": "https://cdn.modrinth.com/data/wGKYL7st/versions/EBH9UlQk/combat_roll-neoforge-2.0.3%2B1.21.1.jar",
+          "filename": "combat_roll-neoforge-2.0.3+1.21.1.jar",
+          "primary": true,
+          "size": 191741,
+          "file_type": null
+        }
+      ],
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "gedNE4y2",
+          "file_name": null,
+          "dependency_type": "required"
+        },
+        {
+          "version_id": null,
+          "project_id": "9s6osm5g",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ]
+    },
+    {
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_and_server",
+      "id": "IGf35iiG",
+      "project_id": "wGKYL7st",
+      "author_id": "CUHgJfv9",
+      "featured": false,
+      "name": "2.0.2+1.21.1",
+      "version_number": "2.0.2+1.21.1-neoforge",
+      "changelog": "# 2.0.2\n\n- Fix HUD widget showing while HUD is hidden #53\n",
+      "changelog_url": null,
+      "date_published": "2024-12-12T22:45:26.095069Z",
+      "downloads": 15866,
+      "version_type": "beta",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "n88kipVW",
+          "hashes": {
+            "sha1": "53ad70bbfaa4ed859b7233e8e32fe46dc2ba6bfc",
+            "sha512": "f6308c01b8ca8cfd8dd546bf3b1e50d538a956f631165c1c7589408174bd510418b99ff7f499015049c35707125fce8b2f06e800ef356bf2e9280a19c94600d1"
+          },
+          "url": "https://cdn.modrinth.com/data/wGKYL7st/versions/IGf35iiG/combat_roll-neoforge-2.0.2%2B1.21.1.jar",
+          "filename": "combat_roll-neoforge-2.0.2+1.21.1.jar",
+          "primary": true,
+          "size": 191700,
+          "file_type": null
+        }
+      ],
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "9s6osm5g",
+          "file_name": null,
+          "dependency_type": "required"
+        },
+        {
+          "version_id": null,
+          "project_id": "gedNE4y2",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ]
+    },
+    {
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_and_server",
+      "id": "264e2l8J",
+      "project_id": "wGKYL7st",
+      "author_id": "CUHgJfv9",
+      "featured": false,
+      "name": "2.0.1+1.21.1",
+      "version_number": "2.0.1+1.21.1-neoforge",
+      "changelog": "# 2.0.1\n\n- (NeoForge) Fix faulty inclusion of TinyConfig, crashing alongside Better Combat mod\n- (Fabric) Fix connection failure to dedicated servers\n- Support Minecraft 1.21 and 1.21.1\n",
+      "changelog_url": null,
+      "date_published": "2024-09-07T18:31:05.552523Z",
+      "downloads": 2277,
+      "version_type": "beta",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "CDiB31f9",
+          "hashes": {
+            "sha512": "05cb971cbb232da016496eb524ed50883d92705a70eb408bbaac17b0c3f8beca7e8b505773c15932d859c68003996e5bc5f8e2ac54f1bbee760ef61c0d7f87ef",
+            "sha1": "ea553ec16391602e0979464e961f7a765a5b1e34"
+          },
+          "url": "https://cdn.modrinth.com/data/wGKYL7st/versions/264e2l8J/combat_roll-neoforge-2.0.1%2B1.21.1.jar",
+          "filename": "combat_roll-neoforge-2.0.1+1.21.1.jar",
+          "primary": true,
+          "size": 191588,
+          "file_type": null
+        }
+      ],
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "gedNE4y2",
+          "file_name": null,
+          "dependency_type": "required"
+        },
+        {
+          "version_id": null,
+          "project_id": "9s6osm5g",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ]
+    },
+    {
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_and_server",
+      "id": "ZLQTnvZK",
+      "project_id": "wGKYL7st",
+      "author_id": "CUHgJfv9",
+      "featured": false,
+      "name": "2.0.0+1.21.1",
+      "version_number": "2.0.0+1.21.1-neoforge",
+      "changelog": "# 1.4.0\n\n- Add support for NeoForge (goodbye legacy Forge)\n- Rewritten packet handling backbone\n",
+      "changelog_url": null,
+      "date_published": "2024-09-07T15:01:40.097699Z",
+      "downloads": 137,
+      "version_type": "beta",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "CWujRu1d",
+          "hashes": {
+            "sha512": "6cdfbc037b859770fc40d332d98d1ae6070c7123ac7c1efe39da89293c205a2abe3088c93375d066789b6535b642934112b546686506d6a54c814ce4b1233084",
+            "sha1": "0a25d5fca33afd8204f807f0756283207f0c8fec"
+          },
+          "url": "https://cdn.modrinth.com/data/wGKYL7st/versions/ZLQTnvZK/combat_roll-neoforge-2.0.0%2B1.21.1.jar",
+          "filename": "combat_roll-neoforge-2.0.0+1.21.1.jar",
+          "primary": true,
+          "size": 191067,
+          "file_type": null
+        }
+      ],
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "gedNE4y2",
+          "file_name": null,
+          "dependency_type": "required"
+        },
+        {
+          "version_id": null,
+          "project_id": "9s6osm5g",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "LGPL 2.1"
+issueTrackerURL="https://github.com/Darkhax-Minecraft/Enchantment-Descriptions/issues"
+
+[[mods]]
+modId = "enchdesc"
+version = "21.1.11"
+displayName = "EnchantmentDescriptions"
+updateJSONURL = "https://updates.blamejared.com/get?n=enchdesc&gv=1.21.1&ml=neoforge"
+displayURL = "https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions"
+logoFile="logo_enchdesc.png"
+logoBlur = false
+credits = "This project is made possible with Patreon support from players like you. Thank you! "
+authors = "Darkhax"
+description = "Adds descriptions of enchantment effects to their descriptions."
+
+[[mixins]]
+config = "enchdesc.mixins.json"
+
+[[mixins]]
+config = "enchdesc.neoforge.mixins.json"
+
+[[dependencies.enchdesc]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.233,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.enchdesc]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1, 1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.enchdesc]]
+modId = "bookshelf"
+type = "required"
+versionRange = "[21.1, 21.2)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.enchdesc]]
+modId = "prickle"
+type = "required"
+versionRange = "[21.1, 21.2)"
+ordering = "NONE"
+side = "BOTH"

@@ -1,0 +1,232 @@
+Compiled from "ClientEventHandler.java"
+public class org.xiyu.spartanweaponryunofficial.event.ClientEventHandler {
+  public org.xiyu.spartanweaponryunofficial.event.ClientEventHandler();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void onMouseEvent(net.neoforged.neoforge.client.event.InputEvent$MouseButton$Post);
+    Code:
+       0: invokestatic  #7                  // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+       3: astore_1
+       4: aload_1
+       5: getfield      #13                 // Field net/minecraft/client/Minecraft.level:Lnet/minecraft/client/multiplayer/ClientLevel;
+       8: ifnull        25
+      11: aload_1
+      12: getfield      #17                 // Field net/minecraft/client/Minecraft.screen:Lnet/minecraft/client/gui/screens/Screen;
+      15: ifnonnull     25
+      18: aload_1
+      19: invokevirtual #21                 // Method net/minecraft/client/Minecraft.isPaused:()Z
+      22: ifeq          26
+      25: return
+      26: aload_0
+      27: invokevirtual #25                 // Method net/neoforged/neoforge/client/event/InputEvent$MouseButton$Post.getButton:()I
+      30: getstatic     #31                 // Field org/xiyu/spartanweaponryunofficial/client/KeyBinds.KEY_ACCESS_QUIVER:Lnet/minecraft/client/KeyMapping;
+      33: invokevirtual #37                 // Method net/minecraft/client/KeyMapping.getKey:()Lcom/mojang/blaze3d/platform/InputConstants$Key;
+      36: invokevirtual #43                 // Method com/mojang/blaze3d/platform/InputConstants$Key.getValue:()I
+      39: if_icmpne     60
+      42: aload_0
+      43: invokevirtual #48                 // Method net/neoforged/neoforge/client/event/InputEvent$MouseButton$Post.getAction:()I
+      46: iconst_1
+      47: if_icmpne     60
+      50: new           #53                 // class org/xiyu/spartanweaponryunofficial/network/QuiverAccessPacket
+      53: dup
+      54: invokespecial #55                 // Method org/xiyu/spartanweaponryunofficial/network/QuiverAccessPacket."<init>":()V
+      57: invokestatic  #56                 // Method org/xiyu/spartanweaponryunofficial/network/NetworkHandler.sendPacketToServer:(Lnet/minecraft/network/protocol/common/custom/CustomPacketPayload;)V
+      60: return
+
+  public static void onKeyEvent(net.neoforged.neoforge.client.event.InputEvent$Key);
+    Code:
+       0: invokestatic  #7                  // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+       3: astore_1
+       4: aload_1
+       5: getfield      #13                 // Field net/minecraft/client/Minecraft.level:Lnet/minecraft/client/multiplayer/ClientLevel;
+       8: ifnull        25
+      11: aload_1
+      12: getfield      #17                 // Field net/minecraft/client/Minecraft.screen:Lnet/minecraft/client/gui/screens/Screen;
+      15: ifnonnull     25
+      18: aload_1
+      19: invokevirtual #21                 // Method net/minecraft/client/Minecraft.isPaused:()Z
+      22: ifeq          26
+      25: return
+      26: aload_0
+      27: invokevirtual #62                 // Method net/neoforged/neoforge/client/event/InputEvent$Key.getKey:()I
+      30: getstatic     #31                 // Field org/xiyu/spartanweaponryunofficial/client/KeyBinds.KEY_ACCESS_QUIVER:Lnet/minecraft/client/KeyMapping;
+      33: invokevirtual #37                 // Method net/minecraft/client/KeyMapping.getKey:()Lcom/mojang/blaze3d/platform/InputConstants$Key;
+      36: invokevirtual #43                 // Method com/mojang/blaze3d/platform/InputConstants$Key.getValue:()I
+      39: if_icmpne     60
+      42: aload_0
+      43: invokevirtual #66                 // Method net/neoforged/neoforge/client/event/InputEvent$Key.getAction:()I
+      46: iconst_1
+      47: if_icmpne     60
+      50: new           #53                 // class org/xiyu/spartanweaponryunofficial/network/QuiverAccessPacket
+      53: dup
+      54: invokespecial #55                 // Method org/xiyu/spartanweaponryunofficial/network/QuiverAccessPacket."<init>":()V
+      57: invokestatic  #56                 // Method org/xiyu/spartanweaponryunofficial/network/NetworkHandler.sendPacketToServer:(Lnet/minecraft/network/protocol/common/custom/CustomPacketPayload;)V
+      60: return
+
+  public static void onRenderTooltip(net.neoforged.neoforge.client.event.RenderTooltipEvent$GatherComponents);
+    Code:
+       0: aload_0
+       1: invokevirtual #67                 // Method net/neoforged/neoforge/client/event/RenderTooltipEvent$GatherComponents.getItemStack:()Lnet/minecraft/world/item/ItemStack;
+       4: astore_1
+       5: invokestatic  #73                 // Method org/xiyu/spartanweaponryunofficial/util/WeaponOilConfig.isEnabled:()Z
+       8: ifeq          161
+      11: aload_1
+      12: getstatic     #78                 // Field org/xiyu/spartanweaponryunofficial/api/tags/ModItemTags.OILABLE_WEAPONS:Lnet/minecraft/tags/TagKey;
+      15: invokevirtual #84                 // Method net/minecraft/world/item/ItemStack.is:(Lnet/minecraft/tags/TagKey;)Z
+      18: ifeq          161
+      21: aload_1
+      22: getstatic     #90                 // Field org/xiyu/spartanweaponryunofficial/init/ModCapabilities.OIL_CAPABILITY:Lnet/neoforged/neoforge/capabilities/ItemCapability;
+      25: invokevirtual #96                 // Method net/minecraft/world/item/ItemStack.getCapability:(Lnet/neoforged/neoforge/capabilities/ItemCapability;)Ljava/lang/Object;
+      28: checkcast     #100                // class org/xiyu/spartanweaponryunofficial/capability/IOilHandler
+      31: astore_2
+      32: aload_2
+      33: ifnull        161
+      36: aload_2
+      37: invokeinterface #102,  1          // InterfaceMethod org/xiyu/spartanweaponryunofficial/capability/IOilHandler.isOiled:()Z
+      42: ifeq          137
+      45: aload_2
+      46: invokeinterface #105,  1          // InterfaceMethod org/xiyu/spartanweaponryunofficial/capability/IOilHandler.getEffect:()Ljava/util/Optional;
+      51: invokevirtual #109                // Method java/util/Optional.isPresent:()Z
+      54: ifeq          137
+      57: aload_2
+      58: invokeinterface #105,  1          // InterfaceMethod org/xiyu/spartanweaponryunofficial/capability/IOilHandler.getEffect:()Ljava/util/Optional;
+      63: invokevirtual #114                // Method java/util/Optional.get:()Ljava/lang/Object;
+      66: checkcast     #118                // class org/xiyu/spartanweaponryunofficial/api/oil/OilEffect
+      69: astore_3
+      70: aload_2
+      71: invokeinterface #120,  1          // InterfaceMethod org/xiyu/spartanweaponryunofficial/capability/IOilHandler.getPotion:()Ljava/util/Optional;
+      76: astore        4
+      78: aload         4
+      80: invokedynamic #123,  0            // InvokeDynamic #0:apply:()Ljava/util/function/Function;
+      85: invokevirtual #127                // Method java/util/Optional.map:(Ljava/util/function/Function;)Ljava/util/Optional;
+      88: aload_3
+      89: invokedynamic #131,  0            // InvokeDynamic #1:get:(Lorg/xiyu/spartanweaponryunofficial/api/oil/OilEffect;)Ljava/util/function/Supplier;
+      94: invokevirtual #134                // Method java/util/Optional.orElseGet:(Ljava/util/function/Supplier;)Ljava/lang/Object;
+      97: checkcast     #85                 // class net/minecraft/world/item/ItemStack
+     100: astore        5
+     102: aload_0
+     103: invokevirtual #138                // Method net/neoforged/neoforge/client/event/RenderTooltipEvent$GatherComponents.getTooltipElements:()Ljava/util/List;
+     106: iconst_1
+     107: new           #142                // class org/xiyu/spartanweaponryunofficial/inventory/tooltip/OilCoatingTooltip
+     110: dup
+     111: aload         5
+     113: aload_2
+     114: invokeinterface #144,  1          // InterfaceMethod org/xiyu/spartanweaponryunofficial/capability/IOilHandler.getUsesLeft:()I
+     119: aload_3
+     120: invokevirtual #147                // Method org/xiyu/spartanweaponryunofficial/api/oil/OilEffect.getMaxUses:()I
+     123: invokespecial #150                // Method org/xiyu/spartanweaponryunofficial/inventory/tooltip/OilCoatingTooltip."<init>":(Lnet/minecraft/world/item/ItemStack;II)V
+     126: invokestatic  #153                // Method com/mojang/datafixers/util/Either.right:(Ljava/lang/Object;)Lcom/mojang/datafixers/util/Either;
+     129: invokeinterface #159,  3          // InterfaceMethod java/util/List.add:(ILjava/lang/Object;)V
+     134: goto          161
+     137: aload_0
+     138: invokevirtual #138                // Method net/neoforged/neoforge/client/event/RenderTooltipEvent$GatherComponents.getTooltipElements:()Ljava/util/List;
+     141: iconst_1
+     142: ldc           #167                // String tooltip.spartan_weaponry_unofficial.oilable
+     144: invokestatic  #169                // InterfaceMethod net/minecraft/network/chat/Component.translatable:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+     147: getstatic     #175                // Field net/minecraft/ChatFormatting.BLUE:Lnet/minecraft/ChatFormatting;
+     150: invokevirtual #181                // Method net/minecraft/network/chat/MutableComponent.withStyle:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+     153: invokestatic  #187                // Method com/mojang/datafixers/util/Either.left:(Ljava/lang/Object;)Lcom/mojang/datafixers/util/Either;
+     156: invokeinterface #159,  3          // InterfaceMethod java/util/List.add:(ILjava/lang/Object;)V
+     161: return
+
+  public static void onRenderGuiOverlayPre(net.neoforged.neoforge.client.event.RenderGuiLayerEvent$Pre);
+    Code:
+       0: invokestatic  #7                  // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+       3: astore_1
+       4: aload_0
+       5: invokevirtual #190                // Method net/neoforged/neoforge/client/event/RenderGuiLayerEvent$Pre.getName:()Lnet/minecraft/resources/ResourceLocation;
+       8: getstatic     #196                // Field net/neoforged/neoforge/client/gui/VanillaGuiLayers.CROSSHAIR:Lnet/minecraft/resources/ResourceLocation;
+      11: invokevirtual #202                // Method net/minecraft/resources/ResourceLocation.equals:(Ljava/lang/Object;)Z
+      14: ifeq          38
+      17: aload_1
+      18: getfield      #208                // Field net/minecraft/client/Minecraft.player:Lnet/minecraft/client/player/LocalPlayer;
+      21: invokevirtual #212                // Method net/minecraft/client/player/LocalPlayer.getMainHandItem:()Lnet/minecraft/world/item/ItemStack;
+      24: getstatic     #217                // Field org/xiyu/spartanweaponryunofficial/api/tags/ModItemTags.HAS_CUSTOM_CROSSHAIR:Lnet/minecraft/tags/TagKey;
+      27: invokevirtual #84                 // Method net/minecraft/world/item/ItemStack.is:(Lnet/minecraft/tags/TagKey;)Z
+      30: ifeq          38
+      33: aload_0
+      34: iconst_1
+      35: invokevirtual #220                // Method net/neoforged/neoforge/client/event/RenderGuiLayerEvent$Pre.setCanceled:(Z)V
+      38: return
+
+  public static void onTooltip(net.neoforged.neoforge.event.entity.player.ItemTooltipEvent);
+    Code:
+       0: aload_0
+       1: invokevirtual #224                // Method net/neoforged/neoforge/event/entity/player/ItemTooltipEvent.getItemStack:()Lnet/minecraft/world/item/ItemStack;
+       4: astore_1
+       5: invokestatic  #227                // Method net/neoforged/fml/loading/FMLLoader.isProduction:()Z
+       8: ifne          69
+      11: aload_1
+      12: invokestatic  #232                // Method org/xiyu/spartanweaponryunofficial/util/ItemStackDataHelper.hasTag:(Lnet/minecraft/world/item/ItemStack;)Z
+      15: ifeq          69
+      18: aload_0
+      19: invokevirtual #238                // Method net/neoforged/neoforge/event/entity/player/ItemTooltipEvent.getFlags:()Lnet/minecraft/world/item/TooltipFlag;
+      22: invokeinterface #242,  1          // InterfaceMethod net/minecraft/world/item/TooltipFlag.isAdvanced:()Z
+      27: ifeq          69
+      30: aload_1
+      31: invokestatic  #247                // Method org/xiyu/spartanweaponryunofficial/util/ItemStackDataHelper.getTag:(Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/nbt/CompoundTag;
+      34: invokevirtual #251                // Method net/minecraft/nbt/CompoundTag.toString:()Ljava/lang/String;
+      37: astore_2
+      38: aload_0
+      39: invokevirtual #257                // Method net/neoforged/neoforge/event/entity/player/ItemTooltipEvent.getToolTip:()Ljava/util/List;
+      42: getstatic     #260                // Field net/minecraft/ChatFormatting.DARK_GRAY:Lnet/minecraft/ChatFormatting;
+      45: invokestatic  #263                // Method java/lang/String.valueOf:(Ljava/lang/Object;)Ljava/lang/String;
+      48: aload_2
+      49: invokedynamic #269,  0            // InvokeDynamic #2:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      54: invokestatic  #273                // InterfaceMethod net/minecraft/network/chat/Component.literal:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+      57: getstatic     #276                // Field net/minecraft/ChatFormatting.DARK_PURPLE:Lnet/minecraft/ChatFormatting;
+      60: invokevirtual #181                // Method net/minecraft/network/chat/MutableComponent.withStyle:(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;
+      63: invokeinterface #279,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      68: pop
+      69: return
+
+  public static void onScreenInitPost(net.neoforged.neoforge.client.event.ScreenEvent$Init$Post);
+    Code:
+       0: getstatic     #281                // Field org/xiyu/spartanweaponryunofficial/client/ClientHelper.lastConfigScreen:Lnet/minecraft/client/gui/screens/Screen;
+       3: ifnull        64
+       6: aload_0
+       7: invokevirtual #286                // Method net/neoforged/neoforge/client/event/ScreenEvent$Init$Post.getScreen:()Lnet/minecraft/client/gui/screens/Screen;
+      10: getstatic     #281                // Field org/xiyu/spartanweaponryunofficial/client/ClientHelper.lastConfigScreen:Lnet/minecraft/client/gui/screens/Screen;
+      13: if_acmpne     64
+      16: aload_0
+      17: invokevirtual #286                // Method net/neoforged/neoforge/client/event/ScreenEvent$Init$Post.getScreen:()Lnet/minecraft/client/gui/screens/Screen;
+      20: getfield      #292                // Field net/minecraft/client/gui/screens/Screen.width:I
+      23: istore_1
+      24: ldc_w         #298                // String Discord
+      27: invokestatic  #273                // InterfaceMethod net/minecraft/network/chat/Component.literal:(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;
+      30: aload_0
+      31: invokedynamic #300,  0            // InvokeDynamic #3:onPress:(Lnet/neoforged/neoforge/client/event/ScreenEvent$Init$Post;)Lnet/minecraft/client/gui/components/Button$OnPress;
+      36: invokestatic  #304                // Method net/minecraft/client/gui/components/Button.builder:(Lnet/minecraft/network/chat/Component;Lnet/minecraft/client/gui/components/Button$OnPress;)Lnet/minecraft/client/gui/components/Button$Builder;
+      39: iload_1
+      40: bipush        80
+      42: isub
+      43: bipush        10
+      45: isub
+      46: bipush        10
+      48: bipush        80
+      50: bipush        20
+      52: invokevirtual #310                // Method net/minecraft/client/gui/components/Button$Builder.bounds:(IIII)Lnet/minecraft/client/gui/components/Button$Builder;
+      55: invokevirtual #316                // Method net/minecraft/client/gui/components/Button$Builder.build:()Lnet/minecraft/client/gui/components/Button;
+      58: astore_2
+      59: aload_0
+      60: aload_2
+      61: invokevirtual #320                // Method net/neoforged/neoforge/client/event/ScreenEvent$Init$Post.addListener:(Lnet/minecraft/client/gui/components/events/GuiEventListener;)V
+      64: return
+
+  private static void lambda$onScreenInitPost$1(net.neoforged.neoforge.client.event.ScreenEvent$Init$Post, net.minecraft.client.gui.components.Button);
+    Code:
+       0: aload_0
+       1: invokevirtual #286                // Method net/neoforged/neoforge/client/event/ScreenEvent$Init$Post.getScreen:()Lnet/minecraft/client/gui/screens/Screen;
+       4: ldc_w         #324                // String https://discord.com/invite/h88UDxwUHm
+       7: invokestatic  #326                // Method net/minecraft/client/gui/screens/ConfirmLinkScreen.confirmLinkNow:(Lnet/minecraft/client/gui/screens/Screen;Ljava/lang/String;)V
+      10: return
+
+  private static net.minecraft.world.item.ItemStack lambda$onRenderTooltip$0(org.xiyu.spartanweaponryunofficial.api.oil.OilEffect);
+    Code:
+       0: aload_0
+       1: invokestatic  #332                // Method org/xiyu/spartanweaponryunofficial/util/OilHelper.makeOilStack:(Lorg/xiyu/spartanweaponryunofficial/api/oil/OilEffect;)Lnet/minecraft/world/item/ItemStack;
+       4: areturn
+}

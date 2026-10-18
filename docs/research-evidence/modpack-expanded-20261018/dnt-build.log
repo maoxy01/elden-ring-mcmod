@@ -1,0 +1,27 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.12/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+
+> Task :compileJava
+D:\codexout\mcmod\src\main\java\com\dsh\eldencombat\compat\DntDataCompat.java:15: ����: [removal] EventBusSubscriber �е� bus() �ѹ�ʱ, �ұ��Ϊ��ɾ��
+@EventBusSubscriber(modid=EldenCombat.MODID, bus=EventBusSubscriber.Bus.MOD)
+                                             ^
+D:\codexout\mcmod\src\main\java\com\dsh\eldencombat\compat\DntDataCompat.java:15: ����: [removal] EventBusSubscriber �е� Bus �ѹ�ʱ, �ұ��Ϊ��ɾ��
+@EventBusSubscriber(modid=EldenCombat.MODID, bus=EventBusSubscriber.Bus.MOD)
+                                                                   ^
+2 ������
+
+> Task :generateEquipment2d UP-TO-DATE
+> Task :syncArt UP-TO-DATE
+> Task :processResources
+> Task :classes
+> Task :jarJar NO-SOURCE
+> Task :jar
+
+> Task :verifyJarHasNoHarness
+verifyJarHasNoHarness: OK (no *Harness* entry)
+
+[Incubating] Problems report is available at: file:///D:/codexout/mcmod/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 35s
+7 actionable tasks: 4 executed, 3 up-to-date

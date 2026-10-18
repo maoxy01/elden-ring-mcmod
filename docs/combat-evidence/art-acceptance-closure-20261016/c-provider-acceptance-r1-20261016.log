@@ -1,0 +1,718 @@
+[1610月2026 20:46:23.387] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientdev, --version, 21.1.219, --assetIndex, 17, --assetsDir, C:\\Users\\30869\\.gradle\\caches\\neoformruntime\\assets, --gameDir, ., --fml.fmlVersion, 4.0.42, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.219, --fml.neoFormVersion, 20240808.144430, --quickPlaySingleplayer, codex-player-smoke]
+[1610月2026 20:46:23.391] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.12.1+1-LTS
+[1610月2026 20:46:23.392] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.12.1 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[1610月2026 20:46:23.486] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[1610月2026 20:46:23.589] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[1610月2026 20:46:23.754] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[1610月2026 20:46:23.816] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/30869/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23138!/ Service=ModLauncher Env=CLIENT
+[1610月2026 20:46:23.915] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 5060 Laptop GPU/PCIe/SSE2 GL version 4.6.0 NVIDIA 616.64, NVIDIA Corporation
+[1610月2026 20:46:24.226] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[1610月2026 20:46:24.228] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		Elden Combat 0.2.0 (eldencombat)
+		Minecraft 1.21.1 (minecraft)
+		NeoForge 21.1.219 (neoforge)
+		Spartan Weaponry Unofficial 1.2.3 (spartan_weaponry_unofficial)
+[1610月2026 20:46:25.197] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
+[1610月2026 20:46:25.203] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientdev' with arguments [--version, 21.1.219, --gameDir, ., --assetsDir, C:\Users\30869\.gradle\caches\neoformruntime\assets, --assetIndex, 17, --quickPlaySingleplayer, codex-player-smoke]
+[1610月2026 20:46:25.634] [main/WARN] [mixin/]: Error loading class: journeymap/client/properties/MiniMapProperties (java.lang.ClassNotFoundException: journeymap.client.properties.MiniMapProperties)
+[1610月2026 20:46:27.110] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 229 Datafixer optimizations took 257 milliseconds
+[1610月2026 20:46:27.282] [pool-8-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[1610月2026 20:46:31.525] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[1610月2026 20:46:31.528] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[1610月2026 20:46:31.529] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[1610月2026 20:46:31.530] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[1610月2026 20:46:31.530] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[1610月2026 20:46:31.647] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/D:/codexout/mcmod/build/moddev/artifacts/neoforge-21.1.219.jar%23189!/assets/.mcassetsroot' uses unexpected schema
+[1610月2026 20:46:31.648] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/D:/codexout/mcmod/build/moddev/artifacts/neoforge-21.1.219.jar%23189!/data/.mcassetsroot' uses unexpected schema
+[1610月2026 20:46:31.676] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[1610月2026 20:46:31.683] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[1610月2026 20:46:31.752] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
+[1610月2026 20:46:31.949] [modloading-worker-0/INFO] [Spartan Weaponry Unofficial/]: Constructing Mod: Spartan Weaponry Unofficial
+[1610月2026 20:46:31.950] [modloading-worker-0/INFO] [Spartan Weaponry Unofficial/]: Initialising API! Version: 15
+[1610月2026 20:46:31.954] [modloading-worker-0/INFO] [Spartan Weaponry Unofficial/]: Spartan Weaponry API version 15 has been initialized!
+[1610月2026 20:46:31.983] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.219, for MC 1.21.1
+[1610月2026 20:46:32.041] [modloading-worker-0/INFO] [EldenCombat/]: [EldenCombat] ServerCombat 已注册到游戏事件总线（单例，一次）
+[1610月2026 20:46:32.041] [modloading-worker-0/INFO] [EldenCombat/]: [EldenCombat] 纯原版战斗扩展 loaded (MC 1.21.1 / NeoForge 21.1.219)
+[1610月2026 20:46:32.581] [modloading-sync-worker/INFO] [Spartan Weaponry Unofficial/]: Updating config settings!
+[1610月2026 20:46:32.889] [Render thread/INFO] [net.neoforged.neoforge.gametest.GameTestHooks/]: Enabled Gametest Namespaces: []
+[1610月2026 20:46:32.917] [Render thread/INFO] [Spartan Weaponry Unofficial/]: Registering Model Layers!
+[1610月2026 20:46:32.921] [Render thread/INFO] [Spartan Weaponry Unofficial/]: Model Layer registration complete!
+[1610月2026 20:46:32.921] [Render thread/INFO] [Spartan Weaponry Unofficial/]: Registering Entity Renderers!
+[1610月2026 20:46:33.072] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/spartan_weaponry_unofficial, mod/neoforge, mod/eldencombat
+[1610月2026 20:46:33.081] [Worker-Main-1/INFO] [Spartan Weaponry Unofficial/]: Setting up Spartan Weaponry Unofficial!
+[1610月2026 20:46:33.232] [Worker-Main-12/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-15.1.05.hex, loading
+[1610月2026 20:46:33.232] [Worker-Main-17/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.05.hex, loading
+[1610月2026 20:46:33.295] [Render thread/INFO] [EldenCombat/]: [grace] 配置已载入 D:\codexout\mcmod\build\clientSmoke\config\eldencombat-grace.json（休息恢复：FP=FULL 生命=KEEP 精力=KEEP 药瓶=KEEP）
+[1610月2026 20:46:33.311] [Render thread/INFO] [EldenCombat/]: [EldenCombat] 战斗配置已载入: D:\codexout\mcmod\build\clientSmoke\config\eldencombat-combat.json
+[1610月2026 20:46:33.353] [Render thread/INFO] [EldenCombat/]: ASH_CATALOG_ENTRY: eldencombat:spinning_slash 「回旋斩」 武器分组=slashing 武器数=5 FP=8.0 段数=1
+[1610月2026 20:46:33.354] [Render thread/INFO] [EldenCombat/]: ASH_CATALOG_ENTRY: eldencombat:heavy_thrust 「重刺」 武器分组=thrusting 武器数=5 FP=9.0 段数=1
+[1610月2026 20:46:33.354] [Render thread/INFO] [EldenCombat/]: ASH_CATALOG_ENTRY: eldencombat:stamp_upward_cut 「踏前上斩」 武器分组=cleaving 武器数=5 FP=11.0 段数=1
+[1610月2026 20:46:33.355] [Render thread/INFO] [EldenCombat/]: ASH_CATALOG_REGISTERED: 实际支持普通战灰 3 件：eldencombat:spinning_slash, eldencombat:heavy_thrust, eldencombat:stamp_upward_cut
+[1610月2026 20:46:33.371] [Render thread/INFO] [EldenCombat/]: ASH_OWNERSHIP_INSTALLED: 战灰解锁走服务端持久化存档（SavedData，UUID 为键，幂等授予）
+[1610月2026 20:46:33.375] [Render thread/INFO] [EldenCombat/]: GRACE_UNAVAILABLE: 缺少依赖 [waystones, balm]；赐福接口显示不可用，普通战斗功能不受影响
+[1610月2026 20:46:33.386] [Worker-Main-20/INFO] [Spartan Weaponry Unofficial/]: Setting up Client for Spartan Weaponry Unofficial!
+[1610月2026 20:46:33.586] [Worker-Main-23/WARN] [net.minecraft.client.renderer.texture.SpriteLoader/]: Texture eldencombat:item/blank with size 1x1 limits mip level from 4 to 0
+[1610月2026 20:46:35.136] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[1610月2026 20:46:35.136] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[1610月2026 20:46:35.557] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on 扬声器 (Realtek(R) Audio)
+[1610月2026 20:46:35.559] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[1610月2026 20:46:35.616] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[1610月2026 20:46:35.623] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[1610月2026 20:46:35.624] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[1610月2026 20:46:35.624] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[1610月2026 20:46:35.625] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[1610月2026 20:46:35.627] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[1610月2026 20:46:35.627] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[1610月2026 20:46:35.627] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[1610月2026 20:46:35.628] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[1610月2026 20:46:35.640] [Render thread/INFO] [eldencombat/equipment2d/]: Equipment 2D routes admitted: 0 live (0 provider chain(s)), 0 not active, 0 admitted entry/entries still awaiting visual acceptance
+[1610月2026 20:46:35.696] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x0 minecraft:textures/atlas/particles.png-atlas
+[1610月2026 20:46:35.698] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[1610月2026 20:46:35.698] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[1610月2026 20:46:35.698] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[1610月2026 20:46:35.698] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[1610月2026 20:46:35.719] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[1610月2026 20:46:35.756] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
+[1610月2026 20:46:35.757] [Render thread/INFO] [EldenCombat/]: [EldenCombat] Weapon resource cache ready: 41 entries
+[1610月2026 20:46:35.758] [Render thread/INFO] [EldenCombat/]: [skills] 战技姿态就绪：8 个
+[1610月2026 20:46:35.758] [Render thread/INFO] [EldenCombat/]: [EldenCombat] 武器姿态校正就绪：0 条
+[1610月2026 20:46:35.829] [Render thread/WARN] [net.neoforged.neoforge.common.CommonHooks/WP]: The following mods have version differences that were not resolved:
+eldencombat (version 0.1.0 -> 0.2.0)
+neoforge (version 21.1.209 -> 21.1.219)
+Things may not work well.
+[1610月2026 20:46:36.379] [Worker-Main-20/INFO] [Spartan Weaponry Unofficial/]: Adding Longbow and Heavy Crossbow related loot to the Village Fletcher Loot Table!
+[1610月2026 20:46:36.412] [Worker-Main-20/INFO] [Spartan Weaponry Unofficial/]: Adding Diamond Weapons to the End City Treasure Loot Table!
+[1610月2026 20:46:36.415] [Worker-Main-20/INFO] [Spartan Weaponry Unofficial/]: Adding Iron Weapons to the Village Weaponsmith Loot Table!
+[1610月2026 20:46:36.511] [Worker-Main-20/INFO] [Spartan Weaponry Unofficial/]: Finished registering commands for Spartan Weaponry Unofficial!
+[1610月2026 20:46:36.814] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1562 recipes
+[1610月2026 20:46:37.041] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1670 advancements
+[1610月2026 20:46:37.045] [Render thread/INFO] [EldenCombat/]: [talismans] 护符数据载入 4 件
+[1610月2026 20:46:37.047] [Render thread/INFO] [EldenCombat/]: [consumables] 药物数据载入 3 种
+[1610月2026 20:46:37.054] [Render thread/WARN] [net.minecraft.core.MappedRegistry/]: Not all defined tags for registry ResourceKey[minecraft:root / minecraft:item] are present in data pack: spartan_weaponry_unofficial:boomerangs, spartan_weaponry_unofficial:heavy_crossbows
+[1610月2026 20:46:37.277] [Render thread/INFO] [Spartan Weaponry Unofficial/]: Finished initialising Weapon Traits & Attributes! Took 6.881ms
+[1610月2026 20:46:37.350] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.1
+[1610月2026 20:46:37.351] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[1610月2026 20:46:37.765] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[1610月2026 20:46:37.819] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
+[1610月2026 20:46:38.282] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 51%
+[1610月2026 20:46:38.337] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[1610月2026 20:46:38.338] [Server thread/WARN] [net.neoforged.neoforge.common.TagConventionLogWarning/]: 
+   Dev warning - Legacy Tags detected. Please migrate your 'forge' namespace tags to the 'c' namespace! See net.neoforged.neoforge.common.Tags.java for all tags.
+   NOTE: Many tags have been moved around or renamed. Some new ones were added so please review the new tags.
+    And make sure you follow tag conventions for new tags! The convention is `c` with nouns generally being plural and adjectives being singular.
+   You can disable this message in NeoForge's common config by setting `logLegacyTagWarnings` to "SILENCED" or see individual tags with "DEV_VERBOSE".
+
+[1610月2026 20:46:38.339] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 559 ms
+[1610月2026 20:46:38.352] [Server thread/INFO] [EldenCombat/]: [skills] 追忆战技参数载入 8 项
+[1610月2026 20:46:38.352] [Server thread/INFO] [EldenCombat/]: [weapons] 武器数值档载入 41 件
+[1610月2026 20:46:38.414] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] [Server] [etest] load start
+[1610月2026 20:46:38.424] [Server thread/INFO] [EldenCombat/]: [EldenCombat] 已载入骨骼资产: 19 骨骼 / 38 方块 / 8 个动作
+[1610月2026 20:46:38.536] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 直剑轻击总长 (期望 22，实际 22)
+[1610月2026 20:46:38.537] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 直剑轻击消耗 (期望 15.0，实际 15.0)
+[1610月2026 20:46:38.537] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 直剑轻击窗口 (期望 8-12，实际 8-12)
+[1610月2026 20:46:38.537] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 直剑轻击伤害 (期望 5.0，实际 5.0)
+[1610月2026 20:46:38.537] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 大剑轻击总长 (期望 30，实际 30)
+[1610月2026 20:46:38.538] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 大剑轻击消耗 (期望 20.0，实际 20.0)
+[1610月2026 20:46:38.538] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 大剑轻击窗口 (期望 12-17，实际 12-17)
+[1610月2026 20:46:38.538] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 大剑轻击伤害 (期望 7.0，实际 7.0)
+[1610月2026 20:46:38.538] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 重击窗口 (期望 15-20，实际 15-20)
+[1610月2026 20:46:38.538] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 重击消耗 (期望 25.0，实际 25.0)
+[1610月2026 20:46:38.538] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 重击直剑伤害 (期望 8.0，实际 8.0)
+[1610月2026 20:46:38.538] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 重击大剑伤害 (期望 11.0，实际 11.0)
+[1610月2026 20:46:38.539] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 满蓄力重击窗口 (期望 16-22，实际 16-22)
+[1610月2026 20:46:38.539] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 满蓄力消耗 (期望 35.0，实际 35.0)
+[1610月2026 20:46:38.539] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 满蓄力大剑伤害 (期望 15.0，实际 15.0)
+[1610月2026 20:46:38.539] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 满蓄力直剑伤害 (期望 11.0，实际 11.0)
+[1610月2026 20:46:38.539] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 蓄力达满 tick (期望 20，实际 20)
+[1610月2026 20:46:38.539] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 蓄力自动释放上限 (期望 30，实际 30)
+[1610月2026 20:46:38.539] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 翻滚消耗 (期望 22.0，实际 22.0)
+[1610月2026 20:46:38.540] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 翻滚总长 (期望 20，实际 20)
+[1610月2026 20:46:38.540] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 翻滚无敌窗口 (期望 4-11，实际 4-11)
+[1610月2026 20:46:38.540] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 弹反消耗 (期望 15.0，实际 15.0)
+[1610月2026 20:46:38.540] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 弹反总长 (期望 18，实际 18)
+[1610月2026 20:46:38.540] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 弹反成功窗口 (期望 3-7，实际 3-7)
+[1610月2026 20:46:38.540] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 喝药总长 (期望 28，实际 28)
+[1610月2026 20:46:38.540] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 喝药生效 tick (期望 18，实际 18)
+[1610月2026 20:46:38.540] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 喝药回复 (期望 8.0，实际 8.0)
+[1610月2026 20:46:38.540] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 初始药瓶次数 (期望 4，实际 4)
+[1610月2026 20:46:38.540] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 精力上限 (期望 100.0，实际 100.0)
+[1610月2026 20:46:38.540] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 精力恢复延迟 (期望 12，实际 12)
+[1610月2026 20:46:38.540] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Boss 生命 (期望 200.0，实际 200.0)
+[1610月2026 20:46:38.540] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Boss 二阶段阈值 (期望 0.6，实际 0.6)
+[1610月2026 20:46:38.540] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Boss 失衡上限 (期望 100.0，实际 100.0)
+[1610月2026 20:46:38.540] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 失衡恢复延迟 (期望 80，实际 80)
+[1610月2026 20:46:38.540] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 崩解窗口下限 (期望 40，实际 40)
+[1610月2026 20:46:38.540] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 崩解易伤倍率 (期望 1.5，实际 1.5)
+[1610月2026 20:46:38.540] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 崩解窗口取动作与下限的较大者 (期望 70，实际 70)
+[1610月2026 20:46:38.540] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 崩解窗口不足动作时长时用配置下限 (期望 40，实际 40)
+[1610月2026 20:46:38.540] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 未崩解无额外易伤 (期望 1.0，实际 1.0)
+[1610月2026 20:46:38.540] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 崩解期易伤生效 (期望 1.5，实际 1.5)
+[1610月2026 20:46:38.540] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 单人失衡上限不缩放 (期望 100.0，实际 100.0)
+[1610月2026 20:46:38.540] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 两人失衡上限 ×1.5 (期望 150.0，实际 150.0)
+[1610月2026 20:46:38.541] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 盾防锥角 (期望 120.0，实际 120.0)
+[1610月2026 20:46:38.541] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 破防硬直 (期望 24，实际 24)
+[1610月2026 20:46:38.541] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 锁定范围 (期望 24.0，实际 24.0)
+[1610月2026 20:46:38.541] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 解除锁定范围 (期望 32.0，实际 32.0)
+[1610月2026 20:46:38.541] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 轻击前摇不产生判定
+[1610月2026 20:46:38.541] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 轻击窗口起点生效
+[1610月2026 20:46:38.541] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 轻击窗口终点不含
+[1610月2026 20:46:38.541] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 弹反窗口边界 2 不生效
+[1610月2026 20:46:38.541] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 弹反窗口边界 3 生效
+[1610月2026 20:46:38.541] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 弹反窗口边界 6 生效
+[1610月2026 20:46:38.541] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 弹反窗口边界 7 不生效
+[1610月2026 20:46:38.541] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 同一序号首次命中
+[1610月2026 20:46:38.541] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 同一序号重复命中被拒绝
+[1610月2026 20:46:38.541] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 新序号重新可命中
+[1610月2026 20:46:38.541] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 翻滚窗口前非无敌
+[1610月2026 20:46:38.541] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 翻滚窗口内无敌
+[1610月2026 20:46:38.541] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 翻滚窗口后非无敌
+[1610月2026 20:46:38.541] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 正面 0 度在盾防锥内
+[1610月2026 20:46:38.541] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 侧面 59 度在盾防锥内
+[1610月2026 20:46:38.541] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 背后 180 度不在盾防锥内
+[1610月2026 20:46:38.541] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 精力不足以继续挡（应破防）
+[1610月2026 20:46:38.541] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 精力足够可挡
+[1610月2026 20:46:38.543] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 破防期间盾防失效
+[1610月2026 20:46:38.543] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 破防结束后恢复
+[1610月2026 20:46:38.543] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 木杖横扫可弹反
+[1610月2026 20:46:38.543] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 匕首可弹反
+[1610月2026 20:46:38.543] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 木杖下砸不可弹反
+[1610月2026 20:46:38.543] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 黄金锤不可弹反
+[1610月2026 20:46:38.543] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 连续两次弹反可触发失衡
+[1610月2026 20:46:38.543] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 首版不存在处决动作
+[1610月2026 20:46:38.543] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 重置后无残留无敌
+[1610月2026 20:46:38.543] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 喝药中断未到生效时刻不消耗
+[1610月2026 20:46:38.543] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 喝药生效时刻 (期望 18，实际 18)
+[1610月2026 20:46:38.544] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 喝药消耗一次 (期望 3，实际 3)
+[1610月2026 20:46:38.544] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 线段穿过包围盒命中
+[1610月2026 20:46:38.544] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 线段偏离包围盒不命中
+[1610月2026 20:46:38.544] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 上一 tick 判定体补漏
+[1610月2026 20:46:38.544] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 盒体距离计算
+[1610月2026 20:46:38.544] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 骨骼数量 (期望 19，实际 19)
+[1610月2026 20:46:38.544] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 方块数量 (期望 38，实际 38)
+[1610月2026 20:46:38.544] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 尾巴骨骼数量 (期望 3，实际 3)
+[1610月2026 20:46:38.544] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 尾巴方块数量 (期望 3，实际 3)
+[1610月2026 20:46:38.544] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 尾巴骨骼链 tail_01 -> tail_02 -> tail_03
+[1610月2026 20:46:38.544] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 存在 staff_socket 与 spectral_socket
+[1610月2026 20:46:38.544] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作数量 (期望 8，实际 8)
+[1610月2026 20:46:38.544] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 idle
+[1610月2026 20:46:38.545] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 walk
+[1610月2026 20:46:38.545] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 staff_sweep
+[1610月2026 20:46:38.545] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 staff_slam
+[1610月2026 20:46:38.545] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 dagger_slash
+[1610月2026 20:46:38.545] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 hammer_slam
+[1610月2026 20:46:38.545] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 stagger
+[1610月2026 20:46:38.545] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 death
+[1610月2026 20:46:38.545] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 匕首动作有 equip 事件
+[1610月2026 20:46:38.545] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 黄金锤动作有 equip 事件
+[1610月2026 20:46:38.545] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 死亡动作取消武器显示
+[1610月2026 20:46:38.545] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 骨盆原点 y = 1.5 方块
+[1610月2026 20:46:38.545] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 头部原点高于骨盆
+[1610月2026 20:46:38.545] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 躯干包围盒在合理范围
+[1610月2026 20:46:38.545] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 木杖判定体长度大于 1.5 方块
+[1610月2026 20:46:38.545] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 黄金锤锤头盒在握持点附近
+[1610月2026 20:46:38.546] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player bone/cube count false
+[1610月2026 20:46:38.546] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Skin and overlay UV bounds false
+[1610月2026 20:46:38.546] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Native skin face orientation false
+[1610月2026 20:46:38.546] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Native overlay orientation false
+[1610月2026 20:46:38.546] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD idle
+[1610月2026 20:46:38.546] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD light_1
+[1610月2026 20:46:38.546] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD heavy_windup
+[1610月2026 20:46:38.546] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD heavy_release
+[1610月2026 20:46:38.546] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD charged_release
+[1610月2026 20:46:38.546] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD roll
+[1610月2026 20:46:38.546] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD parry
+[1610月2026 20:46:38.546] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD drink
+[1610月2026 20:46:38.546] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD guard_idle
+[1610月2026 20:46:38.546] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD guard_break
+[1610月2026 20:46:38.546] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD hit_stagger
+[1610月2026 20:46:38.546] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD death
+[1610月2026 20:46:38.546] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD idle
+[1610月2026 20:46:38.546] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD idle
+[1610月2026 20:46:38.546] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD idle
+[1610月2026 20:46:38.547] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD idle
+[1610月2026 20:46:38.547] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD walk
+[1610月2026 20:46:38.547] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD walk
+[1610月2026 20:46:38.547] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD walk
+[1610月2026 20:46:38.547] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD walk
+[1610月2026 20:46:38.547] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD run
+[1610月2026 20:46:38.547] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD run
+[1610月2026 20:46:38.547] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD run
+[1610月2026 20:46:38.548] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD run
+[1610月2026 20:46:38.548] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD guard_idle
+[1610月2026 20:46:38.548] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD guard_idle
+[1610月2026 20:46:38.548] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD guard_idle
+[1610月2026 20:46:38.548] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD guard_idle
+[1610月2026 20:46:38.548] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD light_1
+[1610月2026 20:46:38.548] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD light_1
+[1610月2026 20:46:38.548] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD light_1
+[1610月2026 20:46:38.548] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD light_1
+[1610月2026 20:46:38.548] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD light_2
+[1610月2026 20:46:38.548] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD light_2
+[1610月2026 20:46:38.549] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD light_2
+[1610月2026 20:46:38.549] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD light_2
+[1610月2026 20:46:38.549] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD heavy_windup
+[1610月2026 20:46:38.549] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD heavy_windup
+[1610月2026 20:46:38.549] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD heavy_windup
+[1610月2026 20:46:38.549] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD heavy_windup
+[1610月2026 20:46:38.549] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD heavy_release
+[1610月2026 20:46:38.549] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD heavy_release
+[1610月2026 20:46:38.549] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD heavy_release
+[1610月2026 20:46:38.549] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD heavy_release
+[1610月2026 20:46:38.549] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD charged_release
+[1610月2026 20:46:38.549] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD charged_release
+[1610月2026 20:46:38.549] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD charged_release
+[1610月2026 20:46:38.549] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD charged_release
+[1610月2026 20:46:38.549] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD roll
+[1610月2026 20:46:38.549] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD roll
+[1610月2026 20:46:38.549] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD roll
+[1610月2026 20:46:38.549] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD roll
+[1610月2026 20:46:38.549] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD parry
+[1610月2026 20:46:38.550] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD parry
+[1610月2026 20:46:38.550] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD parry
+[1610月2026 20:46:38.550] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD parry
+[1610月2026 20:46:38.550] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD guard_hit
+[1610月2026 20:46:38.550] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD guard_hit
+[1610月2026 20:46:38.550] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD guard_hit
+[1610月2026 20:46:38.550] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD guard_hit
+[1610月2026 20:46:38.550] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD guard_break
+[1610月2026 20:46:38.550] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD guard_break
+[1610月2026 20:46:38.550] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD guard_break
+[1610月2026 20:46:38.550] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD guard_break
+[1610月2026 20:46:38.550] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD drink
+[1610月2026 20:46:38.550] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD drink
+[1610月2026 20:46:38.551] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD drink
+[1610月2026 20:46:38.551] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD drink
+[1610月2026 20:46:38.551] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD hit_stagger
+[1610月2026 20:46:38.551] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD hit_stagger
+[1610月2026 20:46:38.551] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD hit_stagger
+[1610月2026 20:46:38.551] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD hit_stagger
+[1610月2026 20:46:38.551] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD death
+[1610月2026 20:46:38.551] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD death
+[1610月2026 20:46:38.551] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD death
+[1610月2026 20:46:38.551] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD death
+[1610月2026 20:46:38.551] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD idle
+[1610月2026 20:46:38.551] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD light_1
+[1610月2026 20:46:38.551] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD heavy_windup
+[1610月2026 20:46:38.551] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD heavy_release
+[1610月2026 20:46:38.551] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD charged_release
+[1610月2026 20:46:38.553] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD roll
+[1610月2026 20:46:38.553] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD parry
+[1610月2026 20:46:38.553] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD drink
+[1610月2026 20:46:38.553] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD guard_idle
+[1610月2026 20:46:38.553] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD guard_break
+[1610月2026 20:46:38.553] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD hit_stagger
+[1610月2026 20:46:38.553] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD death
+[1610月2026 20:46:38.553] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD idle
+[1610月2026 20:46:38.553] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD idle
+[1610月2026 20:46:38.553] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD idle
+[1610月2026 20:46:38.553] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD idle
+[1610月2026 20:46:38.553] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD walk
+[1610月2026 20:46:38.553] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD walk
+[1610月2026 20:46:38.553] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD walk
+[1610月2026 20:46:38.553] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD walk
+[1610月2026 20:46:38.553] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD run
+[1610月2026 20:46:38.554] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD run
+[1610月2026 20:46:38.554] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD run
+[1610月2026 20:46:38.554] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD run
+[1610月2026 20:46:38.554] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD guard_idle
+[1610月2026 20:46:38.554] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD guard_idle
+[1610月2026 20:46:38.554] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD guard_idle
+[1610月2026 20:46:38.554] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD guard_idle
+[1610月2026 20:46:38.554] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD light_1
+[1610月2026 20:46:38.554] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD light_1
+[1610月2026 20:46:38.554] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD light_1
+[1610月2026 20:46:38.555] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD light_1
+[1610月2026 20:46:38.555] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD light_2
+[1610月2026 20:46:38.555] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD light_2
+[1610月2026 20:46:38.555] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD light_2
+[1610月2026 20:46:38.555] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD light_2
+[1610月2026 20:46:38.555] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD heavy_windup
+[1610月2026 20:46:38.555] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD heavy_windup
+[1610月2026 20:46:38.555] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD heavy_windup
+[1610月2026 20:46:38.555] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD heavy_windup
+[1610月2026 20:46:38.556] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD heavy_release
+[1610月2026 20:46:38.556] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD heavy_release
+[1610月2026 20:46:38.556] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD heavy_release
+[1610月2026 20:46:38.556] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD heavy_release
+[1610月2026 20:46:38.556] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD charged_release
+[1610月2026 20:46:38.556] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD charged_release
+[1610月2026 20:46:38.556] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD charged_release
+[1610月2026 20:46:38.556] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD charged_release
+[1610月2026 20:46:38.556] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD roll
+[1610月2026 20:46:38.557] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD roll
+[1610月2026 20:46:38.557] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD roll
+[1610月2026 20:46:38.557] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD roll
+[1610月2026 20:46:38.557] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD parry
+[1610月2026 20:46:38.557] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD parry
+[1610月2026 20:46:38.557] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD parry
+[1610月2026 20:46:38.557] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD parry
+[1610月2026 20:46:38.557] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD guard_hit
+[1610月2026 20:46:38.557] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD guard_hit
+[1610月2026 20:46:38.557] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD guard_hit
+[1610月2026 20:46:38.557] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD guard_hit
+[1610月2026 20:46:38.557] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD guard_break
+[1610月2026 20:46:38.557] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD guard_break
+[1610月2026 20:46:38.557] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD guard_break
+[1610月2026 20:46:38.557] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD guard_break
+[1610月2026 20:46:38.558] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD drink
+[1610月2026 20:46:38.558] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD drink
+[1610月2026 20:46:38.558] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD drink
+[1610月2026 20:46:38.558] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD drink
+[1610月2026 20:46:38.558] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD hit_stagger
+[1610月2026 20:46:38.558] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD hit_stagger
+[1610月2026 20:46:38.558] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD hit_stagger
+[1610月2026 20:46:38.558] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD hit_stagger
+[1610月2026 20:46:38.558] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD death
+[1610月2026 20:46:38.558] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD death
+[1610月2026 20:46:38.558] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD death
+[1610月2026 20:46:38.558] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD death
+[1610月2026 20:46:38.558] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player bone/cube count true
+[1610月2026 20:46:38.558] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Skin and overlay UV bounds true
+[1610月2026 20:46:38.558] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Native skin face orientation true
+[1610月2026 20:46:38.558] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Native overlay orientation true
+[1610月2026 20:46:38.559] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD idle
+[1610月2026 20:46:38.559] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD light_1
+[1610月2026 20:46:38.559] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD heavy_windup
+[1610月2026 20:46:38.559] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD heavy_release
+[1610月2026 20:46:38.559] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD charged_release
+[1610月2026 20:46:38.559] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD roll
+[1610月2026 20:46:38.559] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD parry
+[1610月2026 20:46:38.559] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD drink
+[1610月2026 20:46:38.560] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD guard_idle
+[1610月2026 20:46:38.560] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD guard_break
+[1610月2026 20:46:38.560] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD hit_stagger
+[1610月2026 20:46:38.560] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD death
+[1610月2026 20:46:38.560] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD idle
+[1610月2026 20:46:38.560] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD idle
+[1610月2026 20:46:38.560] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD idle
+[1610月2026 20:46:38.560] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD idle
+[1610月2026 20:46:38.560] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD walk
+[1610月2026 20:46:38.560] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD walk
+[1610月2026 20:46:38.560] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD walk
+[1610月2026 20:46:38.560] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD walk
+[1610月2026 20:46:38.560] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD run
+[1610月2026 20:46:38.560] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD run
+[1610月2026 20:46:38.560] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD run
+[1610月2026 20:46:38.560] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD run
+[1610月2026 20:46:38.560] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD guard_idle
+[1610月2026 20:46:38.560] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD guard_idle
+[1610月2026 20:46:38.561] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD guard_idle
+[1610月2026 20:46:38.561] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD guard_idle
+[1610月2026 20:46:38.561] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD light_1
+[1610月2026 20:46:38.561] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD light_1
+[1610月2026 20:46:38.561] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD light_1
+[1610月2026 20:46:38.561] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD light_1
+[1610月2026 20:46:38.561] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD light_2
+[1610月2026 20:46:38.561] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD light_2
+[1610月2026 20:46:38.561] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD light_2
+[1610月2026 20:46:38.561] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD light_2
+[1610月2026 20:46:38.561] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD heavy_windup
+[1610月2026 20:46:38.561] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD heavy_windup
+[1610月2026 20:46:38.561] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD heavy_windup
+[1610月2026 20:46:38.561] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD heavy_windup
+[1610月2026 20:46:38.561] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD heavy_release
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD heavy_release
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD heavy_release
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD heavy_release
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD charged_release
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD charged_release
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD charged_release
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD charged_release
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD roll
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD roll
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD roll
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD roll
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD parry
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD parry
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD parry
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD parry
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD guard_hit
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD guard_hit
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD guard_hit
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD guard_hit
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD guard_break
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD guard_break
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD guard_break
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD guard_break
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD drink
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD drink
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD drink
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD drink
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD hit_stagger
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD hit_stagger
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD hit_stagger
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD hit_stagger
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD death
+[1610月2026 20:46:38.562] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD death
+[1610月2026 20:46:38.564] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD death
+[1610月2026 20:46:38.564] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD death
+[1610月2026 20:46:38.564] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD idle
+[1610月2026 20:46:38.564] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD light_1
+[1610月2026 20:46:38.565] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD heavy_windup
+[1610月2026 20:46:38.565] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD heavy_release
+[1610月2026 20:46:38.565] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD charged_release
+[1610月2026 20:46:38.565] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD roll
+[1610月2026 20:46:38.565] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD parry
+[1610月2026 20:46:38.565] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD drink
+[1610月2026 20:46:38.565] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD guard_idle
+[1610月2026 20:46:38.565] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD guard_break
+[1610月2026 20:46:38.565] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD hit_stagger
+[1610月2026 20:46:38.565] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD death
+[1610月2026 20:46:38.565] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD idle
+[1610月2026 20:46:38.565] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD idle
+[1610月2026 20:46:38.565] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD idle
+[1610月2026 20:46:38.565] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD idle
+[1610月2026 20:46:38.565] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD walk
+[1610月2026 20:46:38.565] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD walk
+[1610月2026 20:46:38.566] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD walk
+[1610月2026 20:46:38.566] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD walk
+[1610月2026 20:46:38.566] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD run
+[1610月2026 20:46:38.566] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD run
+[1610月2026 20:46:38.566] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD run
+[1610月2026 20:46:38.566] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD run
+[1610月2026 20:46:38.566] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD guard_idle
+[1610月2026 20:46:38.566] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD guard_idle
+[1610月2026 20:46:38.566] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD guard_idle
+[1610月2026 20:46:38.566] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD guard_idle
+[1610月2026 20:46:38.566] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD light_1
+[1610月2026 20:46:38.566] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD light_1
+[1610月2026 20:46:38.566] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD light_1
+[1610月2026 20:46:38.566] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD light_1
+[1610月2026 20:46:38.566] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD light_2
+[1610月2026 20:46:38.566] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD light_2
+[1610月2026 20:46:38.566] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD light_2
+[1610月2026 20:46:38.566] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD light_2
+[1610月2026 20:46:38.566] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD heavy_windup
+[1610月2026 20:46:38.566] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD heavy_windup
+[1610月2026 20:46:38.566] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD heavy_windup
+[1610月2026 20:46:38.567] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD heavy_windup
+[1610月2026 20:46:38.567] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD heavy_release
+[1610月2026 20:46:38.567] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD heavy_release
+[1610月2026 20:46:38.567] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD heavy_release
+[1610月2026 20:46:38.567] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD heavy_release
+[1610月2026 20:46:38.567] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD charged_release
+[1610月2026 20:46:38.567] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD charged_release
+[1610月2026 20:46:38.567] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD charged_release
+[1610月2026 20:46:38.567] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD charged_release
+[1610月2026 20:46:38.567] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD roll
+[1610月2026 20:46:38.567] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD roll
+[1610月2026 20:46:38.567] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD roll
+[1610月2026 20:46:38.567] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD roll
+[1610月2026 20:46:38.567] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD parry
+[1610月2026 20:46:38.567] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD parry
+[1610月2026 20:46:38.568] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD parry
+[1610月2026 20:46:38.568] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD parry
+[1610月2026 20:46:38.568] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD guard_hit
+[1610月2026 20:46:38.568] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD guard_hit
+[1610月2026 20:46:38.568] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD guard_hit
+[1610月2026 20:46:38.568] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD guard_hit
+[1610月2026 20:46:38.568] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD guard_break
+[1610月2026 20:46:38.569] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD guard_break
+[1610月2026 20:46:38.569] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD guard_break
+[1610月2026 20:46:38.569] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD guard_break
+[1610月2026 20:46:38.569] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD drink
+[1610月2026 20:46:38.569] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD drink
+[1610月2026 20:46:38.569] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD drink
+[1610月2026 20:46:38.569] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD drink
+[1610月2026 20:46:38.569] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD hit_stagger
+[1610月2026 20:46:38.569] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD hit_stagger
+[1610月2026 20:46:38.569] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD hit_stagger
+[1610月2026 20:46:38.569] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD hit_stagger
+[1610月2026 20:46:38.570] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD death
+[1610月2026 20:46:38.570] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD death
+[1610月2026 20:46:38.570] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD death
+[1610月2026 20:46:38.570] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD death
+[1610月2026 20:46:38.570] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Native armor orientation
+[1610月2026 20:46:38.570] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Configured hit-start retiming
+[1610月2026 20:46:38.570] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Configured hit-end retiming
+[1610月2026 20:46:38.570] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Configured recovery retiming
+[1610月2026 20:46:38.570] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Full charge retiming
+[1610月2026 20:46:38.570] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Unsorted equip events
+[1610月2026 20:46:38.570] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Event zero fires once
+[1610月2026 20:46:38.570] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Loop boundary event
+[1610月2026 20:46:38.570] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Skipped frame events
+[1610月2026 20:46:38.570] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Fast blade crosses between endpoints
+[1610月2026 20:46:38.570] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Sweep outside target misses
+[1610月2026 20:46:38.570] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No execution/jump attack IDs
+[1610月2026 20:46:38.570] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Non-finite direction rejected
+[1610月2026 20:46:38.658] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] [Server] [etest] MARGIT_SUMMONED
+[1610月2026 20:46:38.738] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
+[1610月2026 20:46:38.738] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[1610月2026 20:46:39.206] [Render thread/INFO] [Spartan Weaponry Unofficial/]: Finished initialising Weapon Traits & Attributes! Took 1.5282ms
+[1610月2026 20:46:39.363] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:6ca73236] logged in with entity id 2 at (7.5, -60.0, -0.5)
+[1610月2026 20:46:39.396] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[1610月2026 20:46:39.838] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 2 advancements
+[1610月2026 20:46:40.080] [Render thread/INFO] [EldenCombat/]: ART_PROVIDER_REGISTRY: "eldencombat:dagger" -> spartan_weaponry_unofficial:iron_dagger actual=org.xiyu.spartanweaponryunofficial.item.SwordBaseItem
+[1610月2026 20:46:40.080] [Render thread/INFO] [EldenCombat/]: ART_PROVIDER_REGISTRY: "eldencombat:great_hammer" -> spartan_weaponry_unofficial:iron_battle_hammer actual=org.xiyu.spartanweaponryunofficial.item.SwordBaseItem
+[1610月2026 20:46:40.080] [Render thread/INFO] [EldenCombat/]: ART_PROVIDER_REGISTRY: "eldencombat:greataxe" -> spartan_weaponry_unofficial:iron_battleaxe actual=org.xiyu.spartanweaponryunofficial.item.SwordBaseItem
+[1610月2026 20:46:40.082] [Render thread/INFO] [EldenCombat/]: ART_PROVIDER_REGISTRY: "eldencombat:halberd" -> spartan_weaponry_unofficial:iron_halberd actual=org.xiyu.spartanweaponryunofficial.item.SwordBaseItem
+[1610月2026 20:46:40.082] [Render thread/INFO] [EldenCombat/]: ART_PROVIDER_REGISTRY: "eldencombat:hammer" -> spartan_weaponry_unofficial:iron_flanged_mace actual=org.xiyu.spartanweaponryunofficial.item.SwordBaseItem
+[1610月2026 20:46:40.082] [Render thread/INFO] [EldenCombat/]: ART_PROVIDER_REGISTRY: "eldencombat:katana" -> spartan_weaponry_unofficial:iron_katana actual=org.xiyu.spartanweaponryunofficial.item.SwordBaseItem
+[1610月2026 20:46:40.082] [Render thread/INFO] [EldenCombat/]: ART_PROVIDER_REGISTRY: "eldencombat:long_bow" -> spartan_weaponry_unofficial:longbow_iron_strengthened actual=org.xiyu.spartanweaponryunofficial.item.LongbowItem
+[1610月2026 20:46:40.082] [Render thread/INFO] [EldenCombat/]: ART_PROVIDER_REGISTRY: "eldencombat:scythe" -> spartan_weaponry_unofficial:iron_scythe actual=org.xiyu.spartanweaponryunofficial.item.SwordBaseItem
+[1610月2026 20:46:40.082] [Render thread/INFO] [EldenCombat/]: ART_PROVIDER_REGISTRY: "eldencombat:spear" -> spartan_weaponry_unofficial:iron_spear actual=org.xiyu.spartanweaponryunofficial.item.SwordBaseItem
+[1610月2026 20:46:40.082] [Render thread/INFO] [EldenCombat/]: ART_PROVIDER_REGISTRY: "eldencombat:thrusting_sword" -> spartan_weaponry_unofficial:iron_rapier actual=org.xiyu.spartanweaponryunofficial.item.SwordBaseItem
+[1610月2026 20:46:40.187] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:flail|FIRST_PERSON_RIGHT_HAND|eldencombat:item/2d/flail_front sourceDepth=0.0625 actualDepth=0.0425 targetDepth=0.0425 quads=82 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[eldencombat:item/2d/flail_front]
+[1610月2026 20:46:40.192] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:flail|GUI|eldencombat:item/2d/flail_gui16 sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=44 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[eldencombat:item/2d/flail_gui16]
+[1610月2026 20:46:40.202] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:dagger|GUI|spartan_weaponry_unofficial:item/iron_dagger sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=34 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_dagger]
+[1610月2026 20:46:40.205] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:great_hammer|GUI|spartan_weaponry_unofficial:item/iron_battle_hammer sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=46 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_battle_hammer]
+[1610月2026 20:46:40.207] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:greataxe|GUI|spartan_weaponry_unofficial:item/iron_battleaxe sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=58 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_battleaxe]
+[1610月2026 20:46:40.210] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:halberd|GUI|spartan_weaponry_unofficial:item/iron_halberd sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=118 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_halberd]
+[1610月2026 20:46:40.212] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:hammer|GUI|spartan_weaponry_unofficial:item/iron_flanged_mace sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=50 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_flanged_mace]
+[1610月2026 20:46:40.214] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:katana|GUI|spartan_weaponry_unofficial:item/iron_katana sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=56 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_katana]
+[1610月2026 20:46:40.219] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:long_bow|GUI|spartan_weaponry_unofficial:item/longbow_iron_strengthened sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=62 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_longbow_standby]
+[1610月2026 20:46:40.222] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:scythe|GUI|spartan_weaponry_unofficial:item/iron_scythe sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=111 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_scythe]
+[1610月2026 20:46:40.235] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 4 advancements
+[1610月2026 20:46:40.525] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:flail|THIRD_PERSON_RIGHT_HAND|eldencombat:item/2d/flail_front sourceDepth=0.0625 actualDepth=1.4941404 targetDepth=1.4941404 quads=82 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[eldencombat:item/2d/flail_front]
+[1610月2026 20:46:40.530] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:spear|GUI|spartan_weaponry_unofficial:item/iron_spear sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=110 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_spear]
+[1610月2026 20:46:40.531] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:thrusting_sword|GUI|spartan_weaponry_unofficial:item/iron_rapier sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=57 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_rapier]
+[1610月2026 20:46:41.794] [IO-Worker-4/INFO] [EldenCombat/]: ART_CAPTURE: art-provider-all-inventory Saved screenshot as art-provider-all-inventory.png
+[1610月2026 20:46:41.890] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:long_bow|FIRST_PERSON_RIGHT_HAND|spartan_weaponry_unofficial:item/longbow_iron_strengthened sourceDepth=0.0625 actualDepth=0.0425 targetDepth=0.0425 quads=62 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_longbow_standby]
+[1610月2026 20:46:42.487] [Render thread/INFO] [EldenCombat/]: ART_PROVIDER_USE_START: keyUse held down; real input path, not a one-shot useItem
+[1610月2026 20:46:42.487] [Render thread/INFO] [EldenCombat/]: ART_PROVIDER_USE: useTicks=0 clientUsing=false clientElapsed=0 pull=0.0 held=eldencombat:long_bow
+[1610月2026 20:46:42.488] [Server thread/INFO] [EldenCombat/]: ART_PROVIDER_SERVER_USE: clientUseTicks=0 serverUsing=false serverUseTicks=0 arrows=16
+[1610月2026 20:46:42.545] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:long_bow|FIRST_PERSON_RIGHT_HAND|spartan_weaponry_unofficial:item/longbow_iron_strengthened_pulling_0 sourceDepth=0.0625 actualDepth=0.042520013 targetDepth=0.04252001 quads=59 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_longbow_pulling_0]
+[1610月2026 20:46:42.585] [Render thread/INFO] [EldenCombat/]: ART_PROVIDER_USE: useTicks=2 clientUsing=true clientElapsed=2 pull=0.1 held=eldencombat:long_bow
+[1610月2026 20:46:42.585] [Server thread/INFO] [EldenCombat/]: ART_PROVIDER_SERVER_USE: clientUseTicks=2 serverUsing=true serverUseTicks=1 arrows=16
+[1610月2026 20:46:42.686] [Render thread/INFO] [EldenCombat/]: ART_PROVIDER_USE: useTicks=4 clientUsing=true clientElapsed=4 pull=0.2 held=eldencombat:long_bow
+[1610月2026 20:46:42.687] [Server thread/INFO] [EldenCombat/]: ART_PROVIDER_SERVER_USE: clientUseTicks=4 serverUsing=true serverUseTicks=3 arrows=16
+[1610月2026 20:46:42.777] [IO-Worker-1/INFO] [EldenCombat/]: ART_CAPTURE: art-provider-bow-use-5 Saved screenshot as art-provider-bow-use-5.png
+[1610月2026 20:46:42.788] [Render thread/INFO] [EldenCombat/]: ART_PROVIDER_USE: useTicks=6 clientUsing=true clientElapsed=6 pull=0.3 held=eldencombat:long_bow
+[1610月2026 20:46:42.788] [Server thread/INFO] [EldenCombat/]: ART_PROVIDER_SERVER_USE: clientUseTicks=6 serverUsing=true serverUseTicks=5 arrows=16
+[1610月2026 20:46:42.884] [Render thread/INFO] [EldenCombat/]: ART_PROVIDER_USE: useTicks=8 clientUsing=true clientElapsed=8 pull=0.4 held=eldencombat:long_bow
+[1610月2026 20:46:42.884] [Server thread/INFO] [EldenCombat/]: ART_PROVIDER_SERVER_USE: clientUseTicks=8 serverUsing=true serverUseTicks=7 arrows=16
+[1610月2026 20:46:42.985] [Render thread/INFO] [EldenCombat/]: ART_PROVIDER_USE: useTicks=10 clientUsing=true clientElapsed=10 pull=0.5 held=eldencombat:long_bow
+[1610月2026 20:46:42.987] [Server thread/INFO] [EldenCombat/]: ART_PROVIDER_SERVER_USE: clientUseTicks=10 serverUsing=true serverUseTicks=9 arrows=16
+[1610月2026 20:46:43.087] [Render thread/INFO] [EldenCombat/]: ART_PROVIDER_USE: useTicks=12 clientUsing=true clientElapsed=12 pull=0.6 held=eldencombat:long_bow
+[1610月2026 20:46:43.087] [Server thread/INFO] [EldenCombat/]: ART_PROVIDER_SERVER_USE: clientUseTicks=12 serverUsing=true serverUseTicks=11 arrows=16
+[1610月2026 20:46:43.140] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:long_bow|FIRST_PERSON_RIGHT_HAND|spartan_weaponry_unofficial:item/longbow_iron_strengthened_pulling_1 sourceDepth=0.0625 actualDepth=0.044798087 targetDepth=0.044798087 quads=57 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_longbow_pulling_1]
+[1610月2026 20:46:43.182] [Render thread/INFO] [EldenCombat/]: ART_PROVIDER_USE: useTicks=14 clientUsing=true clientElapsed=14 pull=0.7 held=eldencombat:long_bow
+[1610月2026 20:46:43.182] [Server thread/INFO] [EldenCombat/]: ART_PROVIDER_SERVER_USE: clientUseTicks=14 serverUsing=true serverUseTicks=13 arrows=16
+[1610月2026 20:46:43.217] [IO-Worker-5/INFO] [EldenCombat/]: ART_CAPTURE: art-provider-bow-use-14 Saved screenshot as art-provider-bow-use-14.png
+[1610月2026 20:46:43.282] [Render thread/INFO] [EldenCombat/]: ART_PROVIDER_USE: useTicks=16 clientUsing=true clientElapsed=16 pull=0.8 held=eldencombat:long_bow
+[1610月2026 20:46:43.282] [Server thread/INFO] [EldenCombat/]: ART_PROVIDER_SERVER_USE: clientUseTicks=16 serverUsing=true serverUseTicks=15 arrows=16
+[1610月2026 20:46:43.304] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] [Server] [etest] verify start
+[1610月2026 20:46:43.304] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] [Server] [etest] DAMAGE_PIPELINE_OBSERVED
+[1610月2026 20:46:43.317] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [Server] [etest] verify start
+[1610月2026 20:46:43.319] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] [Server] [etest] DAMAGE_PIPELINE_OBSERVED
+[1610月2026 20:46:43.383] [Render thread/INFO] [EldenCombat/]: ART_PROVIDER_USE: useTicks=18 clientUsing=true clientElapsed=18 pull=0.9 held=eldencombat:long_bow
+[1610月2026 20:46:43.384] [Server thread/INFO] [EldenCombat/]: ART_PROVIDER_SERVER_USE: clientUseTicks=18 serverUsing=true serverUseTicks=17 arrows=16
+[1610月2026 20:46:43.384] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:long_bow|FIRST_PERSON_RIGHT_HAND|spartan_weaponry_unofficial:item/longbow_iron_strengthened_pulling_2 sourceDepth=0.0625 actualDepth=0.046081882 targetDepth=0.046081886 quads=52 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_longbow_pulling_2]
+[1610月2026 20:46:43.435] [Render thread/INFO] [EldenCombat/]: ART_PROVIDER_STATES: all 4 usable provider states actually drawn: [spartan_weaponry_unofficial:item/longbow_iron_strengthened, spartan_weaponry_unofficial:item/longbow_iron_strengthened_pulling_0, spartan_weaponry_unofficial:item/longbow_iron_strengthened_pulling_1, spartan_weaponry_unofficial:item/longbow_iron_strengthened_pulling_2]
+[1610月2026 20:46:43.446] [Render thread/INFO] [EldenCombat/]: ART_PROVIDER_BAD_RESOURCE: actual resource-pack reload overrides spartan_weaponry_unofficial:item/longbow_iron_strengthened
+[1610月2026 20:46:43.450] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/spartan_weaponry_unofficial, mod/neoforge, mod/eldencombat, file/art-acceptance-bad.zip
+[1610月2026 20:46:43.453] [Worker-Main-4/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.05.hex, loading
+[1610月2026 20:46:43.464] [Worker-Main-15/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-15.1.05.hex, loading
+[1610月2026 20:46:43.468] [Render thread/INFO] [eldencombat/equipment2d/]: ART_FALLBACK_DRAW: legacy|eldencombat:long_bow|FIRST_PERSON_RIGHT_HAND
+[1610月2026 20:46:43.473] [Render thread/INFO] [eldencombat/equipment2d/]: ART_FALLBACK_DRAW: legacy|eldencombat:long_bow|GUI
+[1610月2026 20:46:43.485] [Render thread/INFO] [eldencombat/equipment2d/]: ART_FALLBACK_DRAW: legacy|eldencombat:long_bow|THIRD_PERSON_RIGHT_HAND
+[1610月2026 20:46:43.505] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[1610月2026 20:46:43.598] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[1610月2026 20:46:43.614] [Worker-Main-13/WARN] [net.minecraft.client.renderer.texture.SpriteLoader/]: Texture eldencombat:item/blank with size 1x1 limits mip level from 4 to 0
+[1610月2026 20:46:43.629] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[1610月2026 20:46:43.629] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[1610月2026 20:46:44.357] [Worker-Main-20/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model spartan_weaponry_unofficial:longbow_iron_strengthened#inventory:
+    minecraft:textures/atlas/blocks.png:eldencombat:acceptance_missing_texture
+[1610月2026 20:46:44.358] [Worker-Main-20/WARN] [net.minecraft.client.resources.model.ModelManager/]: Missing textures in model spartan_weaponry_unofficial:item/longbow_iron_strengthened#standalone:
+    minecraft:textures/atlas/blocks.png:eldencombat:acceptance_missing_texture
+[1610月2026 20:46:44.443] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[1610月2026 20:46:44.444] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[1610月2026 20:46:44.841] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on 扬声器 (Realtek(R) Audio)
+[1610月2026 20:46:44.841] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[1610月2026 20:46:44.884] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[1610月2026 20:46:44.896] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[1610月2026 20:46:44.897] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[1610月2026 20:46:44.897] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[1610月2026 20:46:44.897] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[1610月2026 20:46:44.899] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[1610月2026 20:46:44.899] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[1610月2026 20:46:44.900] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[1610月2026 20:46:44.900] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[1610月2026 20:46:44.908] [Render thread/INFO] [eldencombat/equipment2d/]: Equipment 2D routes admitted: 42 live (14 provider chain(s)), 0 not active, 42 admitted entry/entries still awaiting visual acceptance
+[1610月2026 20:46:44.927] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x0 minecraft:textures/atlas/particles.png-atlas
+[1610月2026 20:46:44.929] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[1610月2026 20:46:44.929] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[1610月2026 20:46:44.929] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[1610月2026 20:46:44.929] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[1610月2026 20:46:44.939] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[1610月2026 20:46:44.960] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
+[1610月2026 20:46:44.961] [Render thread/INFO] [EldenCombat/]: [EldenCombat] Weapon resource cache ready: 41 entries
+[1610月2026 20:46:44.961] [Render thread/INFO] [EldenCombat/]: [skills] 战技姿态就绪：8 个
+[1610月2026 20:46:44.961] [Render thread/INFO] [EldenCombat/]: [EldenCombat] 武器姿态校正就绪：0 条
+[1610月2026 20:46:44.965] [Render thread/INFO] [eldencombat/equipment2d/]: ART_FALLBACK_DRAW: legacy|eldencombat:long_bow|FIRST_PERSON_RIGHT_HAND
+[1610月2026 20:46:44.965] [Render thread/INFO] [eldencombat/equipment2d/]: ART_FALLBACK_DRAW: legacy|eldencombat:long_bow|GUI
+[1610月2026 20:46:44.966] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:dagger|GUI|spartan_weaponry_unofficial:item/iron_dagger sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=34 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_dagger]
+[1610月2026 20:46:44.966] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:great_hammer|GUI|spartan_weaponry_unofficial:item/iron_battle_hammer sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=46 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_battle_hammer]
+[1610月2026 20:46:44.967] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:greataxe|GUI|spartan_weaponry_unofficial:item/iron_battleaxe sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=58 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_battleaxe]
+[1610月2026 20:46:44.967] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:halberd|GUI|spartan_weaponry_unofficial:item/iron_halberd sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=118 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_halberd]
+[1610月2026 20:46:44.968] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:hammer|GUI|spartan_weaponry_unofficial:item/iron_flanged_mace sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=50 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_flanged_mace]
+[1610月2026 20:46:44.968] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:katana|GUI|spartan_weaponry_unofficial:item/iron_katana sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=56 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_katana]
+[1610月2026 20:46:44.969] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:scythe|GUI|spartan_weaponry_unofficial:item/iron_scythe sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=111 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_scythe]
+[1610月2026 20:46:45.975] [Render thread/INFO] [eldencombat/equipment2d/]: ART_FALLBACK_DRAW: legacy|eldencombat:long_bow|THIRD_PERSON_RIGHT_HAND
+[1610月2026 20:46:45.975] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:spear|GUI|spartan_weaponry_unofficial:item/iron_spear sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=110 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_spear]
+[1610月2026 20:46:45.976] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:thrusting_sword|GUI|spartan_weaponry_unofficial:item/iron_rapier sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=57 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_rapier]
+[1610月2026 20:46:47.473] [Render thread/INFO] [EldenCombat/]: ART_PROVIDER_FALLBACK_FRAME: loading overlay gone, 10 overlay-free frames with screen=InventoryScreen
+[1610月2026 20:46:47.497] [IO-Worker-4/INFO] [EldenCombat/]: ART_CAPTURE: art-provider-bad-resource-fallback Saved screenshot as art-provider-bad-resource-fallback.png
+[1610月2026 20:46:47.528] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/spartan_weaponry_unofficial, mod/neoforge, mod/eldencombat
+[1610月2026 20:46:47.531] [Worker-Main-6/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.05.hex, loading
+[1610月2026 20:46:47.531] [Worker-Main-12/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-15.1.05.hex, loading
+[1610月2026 20:46:47.553] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[1610月2026 20:46:47.580] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[1610月2026 20:46:47.587] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[1610月2026 20:46:47.587] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[1610月2026 20:46:47.735] [Worker-Main-1/WARN] [net.minecraft.client.renderer.texture.SpriteLoader/]: Texture eldencombat:item/blank with size 1x1 limits mip level from 4 to 0
+[1610月2026 20:46:48.285] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[1610月2026 20:46:48.285] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[1610月2026 20:46:48.611] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on 扬声器 (Realtek(R) Audio)
+[1610月2026 20:46:48.612] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[1610月2026 20:46:48.688] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[1610月2026 20:46:48.704] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[1610月2026 20:46:48.705] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[1610月2026 20:46:48.705] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[1610月2026 20:46:48.706] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[1610月2026 20:46:48.708] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[1610月2026 20:46:48.708] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[1610月2026 20:46:48.709] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[1610月2026 20:46:48.709] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[1610月2026 20:46:48.721] [Render thread/INFO] [eldencombat/equipment2d/]: Equipment 2D routes admitted: 42 live (14 provider chain(s)), 0 not active, 42 admitted entry/entries still awaiting visual acceptance
+[1610月2026 20:46:48.728] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x0 minecraft:textures/atlas/particles.png-atlas
+[1610月2026 20:46:48.730] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[1610月2026 20:46:48.731] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[1610月2026 20:46:48.731] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[1610月2026 20:46:48.731] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[1610月2026 20:46:48.741] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[1610月2026 20:46:48.760] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
+[1610月2026 20:46:48.760] [Render thread/INFO] [EldenCombat/]: [EldenCombat] Weapon resource cache ready: 41 entries
+[1610月2026 20:46:48.760] [Render thread/INFO] [EldenCombat/]: [skills] 战技姿态就绪：8 个
+[1610月2026 20:46:48.760] [Render thread/INFO] [EldenCombat/]: [EldenCombat] 武器姿态校正就绪：0 条
+[1610月2026 20:46:48.763] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:long_bow|FIRST_PERSON_RIGHT_HAND|spartan_weaponry_unofficial:item/longbow_iron_strengthened sourceDepth=0.0625 actualDepth=0.0425 targetDepth=0.0425 quads=62 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_longbow_standby]
+[1610月2026 20:46:48.764] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:long_bow|GUI|spartan_weaponry_unofficial:item/longbow_iron_strengthened sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=62 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_longbow_standby]
+[1610月2026 20:46:48.764] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:dagger|GUI|spartan_weaponry_unofficial:item/iron_dagger sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=34 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_dagger]
+[1610月2026 20:46:48.765] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:great_hammer|GUI|spartan_weaponry_unofficial:item/iron_battle_hammer sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=46 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_battle_hammer]
+[1610月2026 20:46:48.765] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:greataxe|GUI|spartan_weaponry_unofficial:item/iron_battleaxe sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=58 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_battleaxe]
+[1610月2026 20:46:48.765] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:halberd|GUI|spartan_weaponry_unofficial:item/iron_halberd sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=118 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_halberd]
+[1610月2026 20:46:48.765] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:hammer|GUI|spartan_weaponry_unofficial:item/iron_flanged_mace sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=50 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_flanged_mace]
+[1610月2026 20:46:48.766] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:katana|GUI|spartan_weaponry_unofficial:item/iron_katana sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=56 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_katana]
+[1610月2026 20:46:48.766] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:scythe|GUI|spartan_weaponry_unofficial:item/iron_scythe sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=111 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_scythe]
+[1610月2026 20:46:49.771] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:long_bow|THIRD_PERSON_RIGHT_HAND|spartan_weaponry_unofficial:item/longbow_iron_strengthened sourceDepth=0.0625 actualDepth=1.4941405 targetDepth=1.4941405 quads=62 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_longbow_standby]
+[1610月2026 20:46:49.771] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:spear|GUI|spartan_weaponry_unofficial:item/iron_spear sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=110 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_spear]
+[1610月2026 20:46:49.771] [Render thread/INFO] [eldencombat/equipment2d/]: ART_DRAW: eldencombat:thrusting_sword|GUI|spartan_weaponry_unofficial:item/iron_rapier sourceDepth=0.0625 actualDepth=1.0 targetDepth=1.0 quads=57 passes=[net.minecraft.client.resources.model.SimpleBakedModel] textures=[spartan_weaponry_unofficial:item/iron_rapier]
+[1610月2026 20:46:51.285] [IO-Worker-1/INFO] [EldenCombat/]: ART_CAPTURE: art-provider-restored Saved screenshot as art-provider-restored.png
+[1610月2026 20:46:51.315] [Render thread/INFO] [EldenCombat/]: ART_PROVIDER_COMPLETE: 10 real provider routes, longbow states, broken resource fallback and reload recovery
+[1610月2026 20:46:51.321] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[1610月2026 20:46:51.355] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[1610月2026 20:46:51.355] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[1610月2026 20:46:51.366] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[1610月2026 20:46:51.413] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[1610月2026 20:46:51.413] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[1610月2026 20:46:51.413] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[1610月2026 20:46:52.296] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[1610月2026 20:46:52.310] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[1610月2026 20:46:52.313] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[1610月2026 20:46:52.321] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (codex-player-smoke): All chunks are saved
+[1610月2026 20:46:52.321] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[1610月2026 20:46:52.321] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[1610月2026 20:46:52.321] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved

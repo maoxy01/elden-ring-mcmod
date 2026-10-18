@@ -1,0 +1,197 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.12/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :generateEquipment2d UP-TO-DATE
+> Task :syncArt UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :downloadAssets UP-TO-DATE
+> Task :writeClientLegacyClasspath UP-TO-DATE
+> Task :prepareClientRun
+> Task :prepareMinimapDefaults SKIPPED
+
+> Task :runClient
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+[06:49:22] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientdev, --version, 21.1.219, --assetIndex, 17, --assetsDir, C:\\Users\\30869\\.gradle\\caches\\neoformruntime\\assets, --gameDir, ., --fml.fmlVersion, 4.0.42, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.219, --fml.neoFormVersion, 20240808.144430, --quickPlaySingleplayer, vfx-integration]
+[06:49:22] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.12.1+1-LTS
+[06:49:22] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.12.1 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[06:49:22] [main/INFO] [ne.ne.fm.lo.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[06:49:22] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[06:49:22] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[06:49:22] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/30869/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23138!/ Service=ModLauncher Env=CLIENT
+[06:49:23] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 5060 Laptop GPU/PCIe/SSE2 GL version 4.6.0 NVIDIA 616.64, NVIDIA Corporation
+[06:49:23] [main/INFO] [ne.ne.fm.lo.mo.lo.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[06:49:23] [main/INFO] [ne.ne.fm.lo.mo.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		Elden Combat 0.2.0 (eldencombat)
+		Minecraft 1.21.1 (minecraft)
+		NeoForge 21.1.219 (neoforge)
+[06:49:24] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
+[06:49:24] [main/INFO] [cp.mo.mo.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientdev' with arguments [--version, 21.1.219, --gameDir, ., --assetsDir, C:\Users\30869\.gradle\caches\neoformruntime\assets, --assetIndex, 17, --quickPlaySingleplayer, vfx-integration]
+[06:49:24] [main/WARN] [mixin/]: Error loading class: journeymap/client/properties/MiniMapProperties (java.lang.ClassNotFoundException: journeymap.client.properties.MiniMapProperties)
+[06:49:26] [Datafixer Bootstrap/INFO] [mojang/DataFixerBuilder]: 229 Datafixer optimizations took 336 milliseconds
+[06:49:26] [pool-7-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[06:49:31] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[06:49:31] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[06:49:31] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[06:49:31] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[06:49:31] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[06:49:31] [Render thread/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/D:/codexout/mcmod/build/moddev/artifacts/neoforge-21.1.219.jar%23189!/assets/.mcassetsroot' uses unexpected schema
+[06:49:31] [Render thread/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/D:/codexout/mcmod/build/moddev/artifacts/neoforge-21.1.219.jar%23189!/data/.mcassetsroot' uses unexpected schema
+[06:49:31] [Render thread/INFO] [mojang/YggdrasilAuthenticationService]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[06:49:31] [Render thread/INFO] [minecraft/Minecraft]: Setting user: Dev
+[06:49:32] [Render thread/INFO] [minecraft/Minecraft]: Backend library: LWJGL version 3.3.3+5
+[06:49:32] [modloading-worker-0/INFO] [ne.ne.ne.co.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.219, for MC 1.21.1
+[06:49:32] [modloading-worker-0/INFO] [EldenCombat/]: [EldenCombat] ServerCombat 已注册到游戏事件总线（单例，一次）
+[06:49:32] [modloading-worker-0/INFO] [EldenCombat/]: [EldenCombat] 纯原版战斗扩展 loaded (MC 1.21.1 / NeoForge 21.1.219)
+[06:49:33] [Render thread/INFO] [ne.ne.ne.ga.GameTestHooks/]: Enabled Gametest Namespaces: []
+[06:49:33] [Render thread/INFO] [minecraft/ReloadableResourceManager]: Reloading ResourceManager: vanilla, mod_resources, mod/neoforge, mod/eldencombat
+[06:49:33] [Worker-Main-3/INFO] [minecraft/UnihexProvider]: Found unifont_all_no_pua-15.1.05.hex, loading
+[06:49:33] [Worker-Main-14/INFO] [minecraft/UnihexProvider]: Found unifont_jp_patch-15.1.05.hex, loading
+[06:49:33] [Render thread/INFO] [EldenCombat/]: [grace] 配置已载入 D:\codexout\mcmod\build\vfxSmoke\config\eldencombat-grace.json（休息恢复：FP=FULL 生命=KEEP 精力=KEEP 药瓶=KEEP）
+[06:49:33] [Render thread/INFO] [EldenCombat/]: [EldenCombat] 战斗配置已载入: D:\codexout\mcmod\build\vfxSmoke\config\eldencombat-combat.json
+[06:49:33] [Render thread/INFO] [EldenCombat/]: ASH_CATALOG_ENTRY: eldencombat:spinning_slash 「回旋斩」 武器分组=slashing 武器数=5 FP=8.0 段数=1
+[06:49:33] [Render thread/INFO] [EldenCombat/]: ASH_CATALOG_ENTRY: eldencombat:heavy_thrust 「重刺」 武器分组=thrusting 武器数=5 FP=9.0 段数=1
+[06:49:33] [Render thread/INFO] [EldenCombat/]: ASH_CATALOG_ENTRY: eldencombat:stamp_upward_cut 「踏前上斩」 武器分组=cleaving 武器数=5 FP=11.0 段数=1
+[06:49:33] [Render thread/INFO] [EldenCombat/]: ASH_CATALOG_REGISTERED: 实际支持普通战灰 3 件：eldencombat:spinning_slash, eldencombat:heavy_thrust, eldencombat:stamp_upward_cut
+[06:49:33] [Render thread/INFO] [EldenCombat/]: ASH_OWNERSHIP_INSTALLED: 战灰解锁走服务端持久化存档（SavedData，UUID 为键，幂等授予）
+[06:49:33] [Render thread/INFO] [EldenCombat/]: GRACE_UNAVAILABLE: 缺少依赖 [waystones, balm]；赐福接口显示不可用，普通战斗功能不受影响
+[06:49:33] [Worker-Main-10/WARN] [minecraft/SpriteLoader]: Texture eldencombat:item/blank with size 1x1 limits mip level from 4 to 0
+[06:49:35] [Render thread/WARN] [minecraft/SoundEngine]: Missing sound for event: minecraft:item.goat_horn.play
+[06:49:35] [Render thread/WARN] [minecraft/SoundEngine]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[06:49:35] [Render thread/INFO] [mojang/Library]: OpenAL initialized on device OpenAL Soft on 扬声器 (Realtek(R) Audio)
+[06:49:35] [Render thread/INFO] [minecraft/SoundEngine]: Sound engine started
+[06:49:36] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[06:49:36] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[06:49:36] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[06:49:36] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[06:49:36] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[06:49:36] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[06:49:36] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[06:49:36] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[06:49:36] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[06:49:36] [Render thread/INFO] [eldencombat/equipment2d/]: Equipment 2D routes admitted: 0 live (0 provider chain(s)), 0 not active, 0 admitted entry/entries still awaiting visual acceptance
+[06:49:36] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x1024x0 minecraft:textures/atlas/particles.png-atlas
+[06:49:36] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[06:49:36] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[06:49:36] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[06:49:36] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[06:49:36] [Render thread/WARN] [minecraft/ShaderInstance]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[06:49:36] [Render thread/INFO] [ne.ne.ne.cl.en.an.js.AnimationLoader/]: Loaded 0 entity animations
+[06:49:36] [Render thread/INFO] [EldenCombat/]: [EldenCombat] Weapon resource cache ready: 41 entries
+[06:49:36] [Render thread/INFO] [EldenCombat/]: [skills] 战技姿态就绪：8 个
+[06:49:36] [Render thread/INFO] [EldenCombat/]: [EldenCombat] 武器姿态校正就绪：0 条
+[06:49:37] [Render thread/INFO] [minecraft/RecipeManager]: Loaded 1314 recipes
+[06:49:37] [Render thread/INFO] [minecraft/AdvancementTree]: Loaded 1399 advancements
+[06:49:37] [Render thread/INFO] [EldenCombat/]: [talismans] 护符数据载入 4 件
+[06:49:37] [Render thread/INFO] [EldenCombat/]: [consumables] 药物数据载入 3 种
+[06:49:37] [Server thread/INFO] [minecraft/IntegratedServer]: Starting integrated minecraft server version 1.21.1
+[06:49:37] [Server thread/INFO] [minecraft/MinecraftServer]: Generating keypair
+[06:49:37] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing start region for dimension minecraft:overworld
+[06:49:38] [progressListener/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 0%
+[06:49:38] [Server thread/INFO] [ne.ne.ne.se.pe.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[06:49:38] [progressListener/INFO] [minecraft/LoggerChunkProgressListener]: Time elapsed: 333 ms
+[06:49:38] [Server thread/INFO] [EldenCombat/]: [skills] 追忆战技参数载入 8 项
+[06:49:38] [Server thread/INFO] [EldenCombat/]: [weapons] 武器数值档载入 41 件
+[06:49:38] [Server thread/INFO] [minecraft/IntegratedServer]: Changing view distance to 6, from 10
+[06:49:38] [Server thread/INFO] [minecraft/IntegratedServer]: Changing simulation distance to 5, from 0
+[06:49:38] [Server thread/INFO] [minecraft/PlayerList]: Dev[local:E:89197500] logged in with entity id 1 at (0.0, 81.0, 5.972812034221669)
+[06:49:38] [Server thread/INFO] [minecraft/MinecraftServer]: Dev joined the game
+[06:49:39] [Render thread/INFO] [minecraft/AdvancementTree]: Loaded 2 advancements
+[06:49:39] [Render thread/INFO] [EldenCombat/]: VFX_AIM tick=0 frame=0 locked=false want=(-180.000,-9.505) back=false afterYaw=-180.000 afterHead=-180.000 eye=(0.000,81.000,5.973) target=(0.000,82.000,0.000)
+[06:49:39] [Server thread/INFO] [EldenCombat/]: VFX_SMOKE_SCENE 0 takers_flames night=false
+[06:49:39] [Server thread/INFO] [EldenCombat/]: VFX_SMOKE_INPUT takers_flames frame=10 result=STARTED
+[06:49:39] [Render thread/INFO] [EldenCombat/]: [skill-fx] route flame_front loaded 16/16 frames from the particle atlas
+[06:49:39] [Render thread/INFO] [EldenCombat/]: VFX_SUBMIT lod=FULL id=wave/3 phase=0 frame=0 path=sprite lanes=0 quads=0
+[06:49:39] [Render thread/INFO] [EldenCombat/]: [skill-fx] Particle atlas sprite ready: eldencombat:flame_front/frame_00
+[06:49:39] [Render thread/INFO] [EldenCombat/]: VFX_LANE segment=0 frame=20 wave=3 flame=true age=1 pos=(0.000,81.000,0.000) drawable=8 unknown=0 obstructed=0
+[06:49:39] [Render thread/INFO] [EldenCombat/]: VFX_SUBMIT lod=FULL id=wave/3 phase=0 frame=0 path=sprite lanes=8 quads=8 art=(-2.344,81.000,0.000) cam=(0.000,82.620,0.000) camYaw=0.0 camPitch=15.6 dist=2.849 forwardDot=0.153
+[06:49:39] [Render thread/INFO] [EldenCombat/]: VFX_SUBMIT lod=FULL id=wave/3 phase=0 frame=0 path=sprite lanes=16 quads=16 art=(-2.344,81.000,0.000) cam=(0.000,82.620,0.000) camYaw=0.0 camPitch=15.6 dist=2.849 forwardDot=0.153
+[06:49:39] [Render thread/INFO] [EldenCombat/]: VFX_SUBMIT lod=FULL id=wave/3 phase=0 frame=0 path=sprite lanes=15 quads=15 art=(-2.344,81.000,0.650) cam=(0.000,82.620,0.000) camYaw=0.0 camPitch=14.3 dist=2.922 forwardDot=0.352
+[06:49:39] [Render thread/INFO] [EldenCombat/]: VFX_SUBMIT lod=FULL id=wave/3 phase=0 frame=1 path=sprite lanes=15 quads=15 art=(-2.344,81.000,1.066) cam=(0.000,82.620,0.000) camYaw=0.0 camPitch=14.3 dist=3.042 forwardDot=0.471
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_SUBMIT lod=FULL id=wave/3 phase=0 frame=1 path=sprite lanes=14 quads=14 art=(-2.344,81.000,1.300) cam=(0.000,82.620,0.000) camYaw=0.0 camPitch=14.3 dist=3.132 forwardDot=0.530
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_SUBMIT lod=FULL id=wave/3 phase=0 frame=2 path=sprite lanes=14 quads=14 art=(-2.344,81.000,1.742) cam=(0.000,82.620,0.000) camYaw=0.0 camPitch=14.3 dist=3.339 forwardDot=0.625
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_LANE segment=0 frame=24 wave=3 flame=true age=5 pos=(0.000,81.100,1.950) drawable=13 unknown=0 obstructed=0
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_SUBMIT lod=FULL id=wave/3 phase=0 frame=2 path=sprite lanes=13 quads=13 art=(-2.344,81.000,1.950) cam=(0.000,82.620,0.000) camYaw=0.0 camPitch=14.3 dist=3.453 forwardDot=0.663
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_SUBMIT lod=FULL id=wave/3 phase=0 frame=3 path=sprite lanes=13 quads=13 art=(-2.344,81.000,2.405) cam=(0.000,82.620,0.000) camYaw=0.0 camPitch=14.3 dist=3.729 forwardDot=0.732
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_SUBMIT lod=FULL id=wave/3 phase=0 frame=4 path=sprite lanes=13 quads=13 art=(-2.344,81.000,3.055) cam=(0.000,82.620,0.000) camYaw=0.0 camPitch=14.3 dist=4.177 forwardDot=0.804
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_SUBMIT lod=FULL id=wave/3 phase=0 frame=5 path=sprite lanes=13 quads=13 art=(-2.344,81.000,3.822) cam=(0.000,82.620,0.000) camYaw=0.0 camPitch=14.3 dist=4.767 forwardDot=0.861
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_TARGET_LOCK segment=0 frame=28 target=(0.000,81.600,4.000) source=(0.000,81.600,3.900) horizontal=3.900 min=4.000 wave=true travel=4.550 follows=true
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_SHOT_REQ name=vfx-00-takers_flames-live1-028.png tick=28 frame=28 eye=(0.000,82.620,0.000) yaw=0.000 pitch=14.304 live=1 effects=[wave#3 pos=(0.00,81.10,4.55) dist=4.66 dot=1.000 age=8]
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_SHOT_LANDED vfx-00-takers_flames-live1-028.png shots=1
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_LANE segment=0 frame=28 wave=3 flame=true age=9 pos=(0.000,81.100,4.550) drawable=13 unknown=0 obstructed=0
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_SUBMIT lod=FULL id=wave/3 phase=0 frame=6 path=sprite lanes=13 quads=13 art=(-2.344,81.000,4.550) cam=(0.000,82.620,0.000) camYaw=0.0 camPitch=14.3 dist=5.368 forwardDot=0.896
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_SUBMIT lod=FULL id=wave/3 phase=0 frame=7 path=sprite lanes=13 quads=13 art=(-2.344,81.000,5.590) cam=(0.000,82.620,0.000) camYaw=0.0 camPitch=14.3 dist=6.274 forwardDot=0.927
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE_ARM segment=0 frame=30 window=5 ticks
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE segment=0 frame=31 eye=(0.000,82.620,0.000) yaw=180.000 pitch=-14.304 target=(0.000,81.632,3.876) centre=(0.000,81.600,5.850) near=Infinity front=0 onScreen=0 centreDepth=-5.921 visible=false visibleStrict=false
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE segment=0 frame=31 eye=(0.000,82.620,0.000) yaw=180.000 pitch=-14.304 target=(0.000,81.632,3.876) centre=(0.000,81.600,5.850) near=Infinity front=0 onScreen=0 centreDepth=-5.921 visible=false visibleStrict=false
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE segment=0 frame=31 eye=(0.000,82.620,0.000) yaw=180.000 pitch=-14.304 target=(0.000,81.632,3.876) centre=(0.000,81.600,5.850) near=Infinity front=0 onScreen=0 centreDepth=-5.921 visible=false visibleStrict=false
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_SUBMIT lod=FULL id=wave/3 phase=0 frame=8 path=sprite lanes=13 quads=13 art=(-2.344,82.596,6.240) cam=(0.000,82.620,0.000) camYaw=180.0 camPitch=-14.3 dist=6.666 forwardDot=-0.908
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE segment=0 frame=31 eye=(0.000,82.620,0.000) yaw=180.000 pitch=-14.304 target=(0.000,81.632,3.876) centre=(0.000,81.600,6.500) near=Infinity front=0 onScreen=0 centreDepth=-6.550 visible=false visibleStrict=false
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE segment=0 frame=31 eye=(0.000,82.620,0.000) yaw=180.000 pitch=-14.304 target=(0.000,81.632,3.876) centre=(0.000,81.600,6.500) near=Infinity front=0 onScreen=0 centreDepth=-6.550 visible=false visibleStrict=false
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE segment=0 frame=31 eye=(0.000,82.620,0.000) yaw=180.000 pitch=-14.304 target=(0.000,81.632,3.876) centre=(0.000,81.600,6.500) near=Infinity front=0 onScreen=0 centreDepth=-6.550 visible=false visibleStrict=false
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE segment=0 frame=32 eye=(0.000,82.620,0.000) yaw=180.000 pitch=-14.304 target=(0.000,81.632,3.876) centre=(0.000,81.600,6.500) near=Infinity front=0 onScreen=0 centreDepth=-6.550 visible=false visibleStrict=false
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE segment=0 frame=32 eye=(0.000,82.620,0.000) yaw=180.000 pitch=-14.304 target=(0.000,81.632,3.876) centre=(0.000,81.600,6.500) near=Infinity front=0 onScreen=0 centreDepth=-6.550 visible=false visibleStrict=false
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE segment=0 frame=32 eye=(0.000,82.620,0.000) yaw=180.000 pitch=-14.304 target=(0.000,81.632,3.876) centre=(0.000,81.600,6.500) near=Infinity front=0 onScreen=0 centreDepth=-6.550 visible=false visibleStrict=false
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_SUBMIT lod=FULL id=wave/3 phase=0 frame=9 path=sprite lanes=13 quads=13 art=(-2.344,82.596,6.903) cam=(0.000,82.620,0.000) camYaw=180.0 camPitch=-14.3 dist=7.290 forwardDot=-0.918
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE segment=0 frame=32 eye=(0.000,82.620,0.000) yaw=180.000 pitch=-14.304 target=(0.000,81.632,3.876) centre=(0.000,81.600,7.150) near=Infinity front=0 onScreen=0 centreDepth=-7.180 visible=false visibleStrict=false
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE segment=0 frame=32 eye=(0.000,82.620,0.000) yaw=180.000 pitch=-14.304 target=(0.000,81.632,3.876) centre=(0.000,81.600,7.150) near=Infinity front=0 onScreen=0 centreDepth=-7.180 visible=false visibleStrict=false
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE segment=0 frame=32 eye=(0.000,82.620,0.000) yaw=180.000 pitch=-14.304 target=(0.000,81.632,3.876) centre=(0.000,81.600,7.150) near=Infinity front=0 onScreen=0 centreDepth=-7.180 visible=false visibleStrict=false
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_LANE segment=0 frame=32 wave=3 flame=true age=13 pos=(0.000,81.100,7.150) drawable=8 unknown=6 obstructed=0
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_SUBMIT lod=FULL id=wave/3 phase=0 frame=9 path=sprite lanes=8 quads=8 art=(-0.469,81.000,7.150) cam=(0.000,82.620,0.000) camYaw=180.0 camPitch=-14.3 dist=7.346 forwardDot=-0.998
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE segment=0 frame=33 eye=(0.000,82.620,0.000) yaw=180.000 pitch=-14.304 target=(0.000,81.632,3.876) centre=(0.000,81.600,7.150) near=Infinity front=0 onScreen=0 centreDepth=-7.180 visible=false visibleStrict=false
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE segment=0 frame=33 eye=(0.000,82.620,0.000) yaw=180.000 pitch=-14.304 target=(0.000,81.632,3.876) centre=(0.000,81.600,7.150) near=Infinity front=0 onScreen=0 centreDepth=-7.180 visible=false visibleStrict=false
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE segment=0 frame=33 eye=(0.000,82.620,0.000) yaw=180.000 pitch=-14.304 target=(0.000,81.632,3.876) centre=(0.000,81.600,7.150) near=Infinity front=0 onScreen=0 centreDepth=-7.180 visible=false visibleStrict=false
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_SUBMIT lod=FULL id=wave/3 phase=0 frame=10 path=sprite lanes=8 quads=8 art=(-0.469,81.000,7.553) cam=(0.000,82.620,0.000) camYaw=180.0 camPitch=-14.3 dist=7.739 forwardDot=-0.997
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE segment=0 frame=33 eye=(0.000,82.620,0.000) yaw=180.000 pitch=-14.304 target=(0.000,81.632,3.876) centre=(0.000,81.600,7.800) near=Infinity front=0 onScreen=0 centreDepth=-7.810 visible=false visibleStrict=false
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE segment=0 frame=33 eye=(0.000,82.620,0.000) yaw=180.000 pitch=-14.304 target=(0.000,81.632,3.876) centre=(0.000,81.600,7.800) near=Infinity front=0 onScreen=0 centreDepth=-7.810 visible=false visibleStrict=false
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE segment=0 frame=33 eye=(0.000,82.620,0.000) yaw=180.000 pitch=-14.304 target=(0.000,81.632,3.876) centre=(0.000,81.600,7.800) near=Infinity front=0 onScreen=0 centreDepth=-7.810 visible=false visibleStrict=false
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_SUBMIT lod=FULL id=wave/3 phase=0 frame=10 path=sprite lanes=1 quads=1 art=(-0.469,81.000,7.800) cam=(0.000,82.620,0.000) camYaw=180.0 camPitch=-14.3 dist=7.980 forwardDot=-0.997
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE segment=0 frame=34 eye=(0.000,82.620,0.000) yaw=180.000 pitch=-14.304 target=(0.000,81.632,3.876) centre=(0.000,81.600,7.800) near=Infinity front=0 onScreen=0 centreDepth=-7.810 visible=false visibleStrict=false
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE segment=0 frame=34 eye=(0.000,82.620,0.000) yaw=180.000 pitch=-14.304 target=(0.000,81.632,3.876) centre=(0.000,81.600,7.800) near=Infinity front=0 onScreen=0 centreDepth=-7.810 visible=false visibleStrict=false
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE segment=0 frame=34 eye=(0.000,82.620,0.000) yaw=180.000 pitch=-14.304 target=(0.000,81.632,3.876) centre=(0.000,81.600,8.450) near=Infinity front=0 onScreen=0 centreDepth=-8.440 visible=false visibleStrict=false
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE segment=0 frame=34 eye=(0.000,82.620,0.000) yaw=180.000 pitch=-14.304 target=(0.000,81.632,3.876) centre=(0.000,81.600,8.450) near=Infinity front=0 onScreen=0 centreDepth=-8.440 visible=false visibleStrict=false
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_SUBMIT lod=FULL id=wave/3 phase=0 frame=11 path=sprite lanes=1 quads=1 art=(-0.469,81.000,8.320) cam=(0.000,82.620,0.000) camYaw=180.0 camPitch=-14.3 dist=8.489 forwardDot=-0.997
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE segment=0 frame=34 eye=(0.000,82.620,0.000) yaw=180.000 pitch=-14.304 target=(0.000,81.632,3.876) centre=(0.000,81.600,8.450) near=Infinity front=0 onScreen=0 centreDepth=-8.440 visible=false visibleStrict=false
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE segment=0 frame=34 eye=(0.000,82.620,0.000) yaw=180.000 pitch=-14.304 target=(0.000,81.632,3.876) centre=(0.000,81.600,8.450) near=Infinity front=0 onScreen=0 centreDepth=-8.440 visible=false visibleStrict=false
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_SUBMIT lod=FULL id=wave/3 phase=0 frame=11 path=sprite lanes=0 quads=0
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE segment=0 frame=35 eye=(0.000,82.620,0.000) yaw=180.000 pitch=-14.304 target=(0.000,81.632,3.876) centre=(0.000,81.600,8.450) near=Infinity front=0 onScreen=0 centreDepth=-8.440 visible=false visibleStrict=false
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE segment=0 frame=35 eye=(0.000,82.620,0.000) yaw=180.000 pitch=-14.304 target=(0.000,81.632,3.876) centre=(0.000,81.600,8.450) near=Infinity front=0 onScreen=0 centreDepth=-8.440 visible=false visibleStrict=false
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE segment=0 frame=35 eye=(0.000,82.620,0.000) yaw=180.000 pitch=-14.304 target=(0.000,81.632,3.876) centre=(0.000,81.600,9.100) near=Infinity front=0 onScreen=0 centreDepth=-9.070 visible=false visibleStrict=false
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE segment=0 frame=35 eye=(0.000,82.620,0.000) yaw=180.000 pitch=-14.304 target=(0.000,81.632,3.876) centre=(0.000,81.600,9.100) near=Infinity front=0 onScreen=0 centreDepth=-9.070 visible=false visibleStrict=false
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_SUBMIT lod=FULL id=wave/3 phase=0 frame=12 path=sprite lanes=0 quads=0
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_CAMERA_NEGATIVE segment=0 frame=35 eye=(0.000,82.620,0.000) yaw=180.000 pitch=-14.304 target=(0.000,81.632,3.876) centre=(0.000,81.600,9.100) near=Infinity front=0 onScreen=0 centreDepth=-9.070 visible=false visibleStrict=false
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_LANE segment=0 frame=36 wave=3 flame=true age=17 pos=(0.000,81.100,9.750) drawable=0 unknown=16 obstructed=0
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_SUBMIT lod=FULL id=wave/3 phase=0 frame=13 path=sprite lanes=0 quads=0
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_SHOT_REQ name=vfx-00-takers_flames-live2-038.png tick=38 frame=38 eye=(0.000,82.620,0.000) yaw=0.000 pitch=14.304 live=1 effects=[wave#3 pos=(0.00,81.10,10.40) dist=10.45 dot=0.988 age=18]
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_SHOT_LANDED vfx-00-takers_flames-live2-038.png shots=2
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_SUBMIT lod=FULL id=wave/3 phase=0 frame=14 path=sprite lanes=0 quads=0
+[06:49:40] [Render thread/INFO] [EldenCombat/]: VFX_AIM tick=40 frame=40 locked=true want=(-0.000,14.304) back=false afterYaw=-0.000 afterHead=-0.000 eye=(0.000,82.620,0.000) target=(0.000,81.632,3.876)
+[06:49:41] [Render thread/INFO] [EldenCombat/]: VFX_SHOT_REQ name=vfx-00-takers_flames-clean-044.png tick=44 frame=44 eye=(0.000,82.620,0.000) yaw=0.000 pitch=14.304 live=0 effects=[]
+[06:49:41] [Render thread/INFO] [EldenCombat/]: VFX_SHOT_LANDED vfx-00-takers_flames-clean-044.png shots=3
+[06:49:41] [Render thread/INFO] [EldenCombat/]: VFX_SHOT_DIFF segment=0 id=takers_flames live=vfx-00-takers_flames-live1-028.png clean=vfx-00-takers_flames-clean-044.png changed=29114 total=409920 threshold=300
+[06:49:41] [Render thread/INFO] [EldenCombat/]: VFX_SHOT_DIFF segment=0 id=takers_flames live=vfx-00-takers_flames-live2-038.png clean=vfx-00-takers_flames-clean-044.png changed=0 total=409920 threshold=300
+[06:49:42] [Render thread/INFO] [EldenCombat/]: VFX_AIM tick=80 frame=80 locked=true want=(-0.000,14.304) back=false afterYaw=-0.000 afterHead=-0.000 eye=(0.000,82.620,0.000) target=(0.000,81.632,3.876)
+[06:49:44] [Render thread/INFO] [EldenCombat/]: VFX_SMOKE_CLEANUP takers_flames entities=0
+[06:49:44] [Render thread/INFO] [EldenCombat/]: VFX_SMOKE_SEGMENT segment=0 id=takers_flames night=false gatePasses=34 enclosing=0 invisible=0 negative=29/29 skipped=0 armed=true shots=3 liveShots=2 subjectPairs=2 subjectBest=29114 maxAimError=0 aimSkipped=12 sample=[f28 eye=(0.000,82.620,0.000) eyeDelta=0.000 yaw=0.000 pitch=14.304 target=(0.000,81.632,3.876) near=2.837 ndc=[-0.424,-0.674,0.424,0.614] front=8 onScreen=8 aimErr=0.000 visible=true | f29 eye=(0.000,82.620,0.000) eyeDelta=0.000 yaw=0.000 pitch=14.304 target=(0.000,81.632,3.876) near=2.837 ndc=[-0.424,-0.674,0.424,0.614] front=8 onScreen=8 aimErr=0.000 visible=true | f29 eye=(0.000,82.620,0.000) eyeDelta=0.000 yaw=0.000 pitch=14.304 target=(0.000,81.632,3.876) near=2.837 ndc=[-0.424,-0.674,0.424,0.614] front=8 onScreen=8 aimErr=0.000 visible=true] fails=[]
+[06:49:44] [Render thread/INFO] [EldenCombat/]: VFX_SMOKE_COMPLETE: 1 segments; real-camera eye/head-yaw framing gate, backwards negative control and bounded captures; screenshots are fixture evidence, not manual acceptance
+[06:49:44] [Render thread/INFO] [minecraft/Minecraft]: Stopping!
+[06:49:44] [Server thread/INFO] [minecraft/ServerGamePacketListenerImpl]: Dev lost connection: Disconnected
+[06:49:44] [Server thread/INFO] [minecraft/MinecraftServer]: Dev left the game
+[06:49:44] [Server thread/INFO] [minecraft/ServerCommonPacketListenerImpl]: Stopping singleplayer server as player logged out
+[06:49:44] [Server thread/INFO] [minecraft/MinecraftServer]: Stopping server
+[06:49:44] [Server thread/INFO] [minecraft/MinecraftServer]: Saving players
+[06:49:44] [Server thread/INFO] [minecraft/MinecraftServer]: Saving worlds
+[06:49:44] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[06:49:45] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[06:49:45] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[06:49:45] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (vfx-integration): All chunks are saved
+[06:49:45] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[06:49:45] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[06:49:45] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage: All dimensions are saved
+
+BUILD SUCCESSFUL in 33s
+9 actionable tasks: 2 executed, 7 up-to-date

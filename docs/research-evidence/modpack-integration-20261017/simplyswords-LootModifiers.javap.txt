@@ -1,0 +1,641 @@
+Compiled from "ModLootTableModifiers.java"
+public class net.sweenus.simplyswords.util.ModLootTableModifiers {
+  private static final com.google.common.base.Supplier<java.util.List<net.minecraft.world.item.Item>> swords;
+
+  private static final java.util.Set<dev.architectury.registry.registries.RegistrySupplier<? extends net.minecraft.world.item.Item>> lootableSuppliers;
+
+  private static java.util.Set<net.minecraft.world.item.Item> lootableItems;
+
+  public net.sweenus.simplyswords.util.ModLootTableModifiers();
+    Code:
+       0: aload_0
+       1: invokespecial #59                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void init();
+    Code:
+       0: getstatic     #66                 // Field dev/architectury/event/events/common/LootEvent.MODIFY_LOOT_TABLE:Ldev/architectury/event/Event;
+       3: invokedynamic #83,  0             // InvokeDynamic #0:modifyLootTable:()Ldev/architectury/event/events/common/LootEvent$ModifyLootTable;
+       8: invokeinterface #89,  2           // InterfaceMethod dev/architectury/event/Event.register:(Ljava/lang/Object;)V
+      13: getstatic     #66                 // Field dev/architectury/event/events/common/LootEvent.MODIFY_LOOT_TABLE:Ldev/architectury/event/Event;
+      16: invokedynamic #94,  0             // InvokeDynamic #1:modifyLootTable:()Ldev/architectury/event/events/common/LootEvent$ModifyLootTable;
+      21: invokeinterface #89,  2           // InterfaceMethod dev/architectury/event/Event.register:(Ljava/lang/Object;)V
+      26: getstatic     #66                 // Field dev/architectury/event/events/common/LootEvent.MODIFY_LOOT_TABLE:Ldev/architectury/event/Event;
+      29: invokedynamic #99,  0             // InvokeDynamic #2:modifyLootTable:()Ldev/architectury/event/events/common/LootEvent$ModifyLootTable;
+      34: invokeinterface #89,  2           // InterfaceMethod dev/architectury/event/Event.register:(Ljava/lang/Object;)V
+      39: return
+
+  public static boolean isLootableUnique(net.minecraft.world.item.Item);
+    Code:
+       0: getstatic     #104                // Field lootableItems:Ljava/util/Set;
+       3: invokeinterface #110,  1          // InterfaceMethod java/util/Set.isEmpty:()Z
+       8: ifeq          43
+      11: getstatic     #112                // Field lootableSuppliers:Ljava/util/Set;
+      14: invokeinterface #116,  1          // InterfaceMethod java/util/Set.stream:()Ljava/util/stream/Stream;
+      19: invokedynamic #131,  0            // InvokeDynamic #3:apply:()Ljava/util/function/Function;
+      24: invokeinterface #137,  2          // InterfaceMethod java/util/stream/Stream.map:(Ljava/util/function/Function;)Ljava/util/stream/Stream;
+      29: invokestatic  #143                // Method java/util/stream/Collectors.toSet:()Ljava/util/stream/Collector;
+      32: invokeinterface #147,  2          // InterfaceMethod java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+      37: checkcast     #106                // class java/util/Set
+      40: putstatic     #104                // Field lootableItems:Ljava/util/Set;
+      43: getstatic     #104                // Field lootableItems:Ljava/util/Set;
+      46: aload_0
+      47: invokevirtual #153                // Method net/minecraft/world/item/Item.asItem:()Lnet/minecraft/world/item/Item;
+      50: invokeinterface #157,  2          // InterfaceMethod java/util/Set.contains:(Ljava/lang/Object;)Z
+      55: ireturn
+
+  private static void lambda$init$6(net.minecraft.resources.ResourceKey, dev.architectury.event.events.common.LootEvent$LootTableModificationContext, boolean);
+    Code:
+       0: aload_0
+       1: invokevirtual #167                // Method net/minecraft/resources/ResourceKey.location:()Lnet/minecraft/resources/ResourceLocation;
+       4: astore_3
+       5: getstatic     #173                // Field net/sweenus/simplyswords/config/LootConfig.INSTANCE:Lnet/sweenus/simplyswords/config/LootConfig;
+       8: getfield      #177                // Field net/sweenus/simplyswords/config/LootConfig.enableLootDrops:Lme/fzzyhmstrs/fzzy_config/validation/misc/ValidatedBoolean;
+      11: invokevirtual #180                // Method me/fzzyhmstrs/fzzy_config/validation/misc/ValidatedBoolean.get:()Ljava/lang/Object;
+      14: checkcast     #182                // class java/lang/Boolean
+      17: invokevirtual #185                // Method java/lang/Boolean.booleanValue:()Z
+      20: ifeq          157
+      23: getstatic     #173                // Field net/sweenus/simplyswords/config/LootConfig.INSTANCE:Lnet/sweenus/simplyswords/config/LootConfig;
+      26: getfield      #189                // Field net/sweenus/simplyswords/config/LootConfig.uniqueLootTableOptions:Lme/fzzyhmstrs/fzzy_config/validation/collection/ValidatedIdentifierMap;
+      29: aload_3
+      30: invokevirtual #194                // Method me/fzzyhmstrs/fzzy_config/validation/collection/ValidatedIdentifierMap.get:(Lnet/minecraft/resources/ResourceLocation;)Ljava/lang/Object;
+      33: checkcast     #196                // class java/lang/Float
+      36: astore        4
+      38: aload         4
+      40: ifnull        157
+      43: aload         4
+      45: invokevirtual #200                // Method java/lang/Float.floatValue:()F
+      48: fconst_0
+      49: fcmpl
+      50: ifle          157
+      53: aload_3
+      54: invokevirtual #206                // Method net/minecraft/resources/ResourceLocation.getPath:()Ljava/lang/String;
+      57: ldc           #208                // String chests
+      59: invokevirtual #213                // Method java/lang/String.contains:(Ljava/lang/CharSequence;)Z
+      62: ifne          157
+      65: invokestatic  #217                // Method net/minecraft/world/level/storage/loot/LootPool.lootPool:()Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+      68: fconst_1
+      69: invokestatic  #223                // Method net/minecraft/world/level/storage/loot/providers/number/ConstantValue.exactly:(F)Lnet/minecraft/world/level/storage/loot/providers/number/ConstantValue;
+      72: invokevirtual #227                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.setRolls:(Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+      75: aload         4
+      77: invokevirtual #200                // Method java/lang/Float.floatValue:()F
+      80: ldc           #228                // float 100.0f
+      82: fdiv
+      83: invokestatic  #234                // Method net/minecraft/world/level/storage/loot/predicates/LootItemRandomChanceCondition.randomChance:(F)Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder;
+      86: invokevirtual #238                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.when:(Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+      89: getstatic     #244                // Field net/sweenus/simplyswords/registry/ComponentTypeRegistry.AWAKENING:Ldev/architectury/registry/registries/RegistrySupplier;
+      92: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+      97: checkcast     #249                // class net/minecraft/core/component/DataComponentType
+     100: getstatic     #255                // Field net/sweenus/simplyswords/item/component/AwakeningComponent.DORMANT:Lnet/sweenus/simplyswords/item/component/AwakeningComponent;
+     103: invokestatic  #261                // Method net/minecraft/world/level/storage/loot/functions/SetComponentsFunction.setComponent:(Lnet/minecraft/core/component/DataComponentType;Ljava/lang/Object;)Lnet/minecraft/world/level/storage/loot/functions/LootItemConditionalFunction$Builder;
+     106: invokevirtual #264                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.apply:(Lnet/minecraft/world/level/storage/loot/functions/LootItemFunction$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     109: astore        5
+     111: getstatic     #266                // Field swords:Lcom/google/common/base/Supplier;
+     114: invokeinterface #269,  1          // InterfaceMethod com/google/common/base/Supplier.get:()Ljava/lang/Object;
+     119: checkcast     #271                // class java/util/List
+     122: invokeinterface #272,  1          // InterfaceMethod java/util/List.stream:()Ljava/util/stream/Stream;
+     127: invokedynamic #282,  0            // InvokeDynamic #4:test:()Ljava/util/function/Predicate;
+     132: invokeinterface #286,  2          // InterfaceMethod java/util/stream/Stream.filter:(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+     137: aload         5
+     139: invokedynamic #298,  0            // InvokeDynamic #5:accept:(Lnet/minecraft/world/level/storage/loot/LootPool$Builder;)Ljava/util/function/Consumer;
+     144: invokeinterface #302,  2          // InterfaceMethod java/util/stream/Stream.forEach:(Ljava/util/function/Consumer;)V
+     149: aload_1
+     150: aload         5
+     152: invokeinterface #306,  2          // InterfaceMethod dev/architectury/event/events/common/LootEvent$LootTableModificationContext.addPool:(Lnet/minecraft/world/level/storage/loot/LootPool$Builder;)V
+     157: return
+
+  private static void lambda$init$5(net.minecraft.world.level.storage.loot.LootPool$Builder, net.minecraft.world.item.Item);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+       5: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+       8: pop
+       9: return
+
+  private static boolean lambda$init$4(net.minecraft.world.item.Item);
+    Code:
+       0: getstatic     #173                // Field net/sweenus/simplyswords/config/LootConfig.INSTANCE:Lnet/sweenus/simplyswords/config/LootConfig;
+       3: getfield      #329                // Field net/sweenus/simplyswords/config/LootConfig.disabledUniqueWeaponLoot:Lme/fzzyhmstrs/fzzy_config/validation/collection/ValidatedSet;
+       6: aload_0
+       7: invokevirtual #332                // Method me/fzzyhmstrs/fzzy_config/validation/collection/ValidatedSet.contains:(Ljava/lang/Object;)Z
+      10: ifne          24
+      13: aload_0
+      14: invokestatic  #334                // Method isLootableUnique:(Lnet/minecraft/world/item/Item;)Z
+      17: ifeq          24
+      20: iconst_1
+      21: goto          25
+      24: iconst_0
+      25: ireturn
+
+  private static void lambda$init$3(net.minecraft.resources.ResourceKey, dev.architectury.event.events.common.LootEvent$LootTableModificationContext, boolean);
+    Code:
+       0: aload_0
+       1: invokevirtual #167                // Method net/minecraft/resources/ResourceKey.location:()Lnet/minecraft/resources/ResourceLocation;
+       4: astore_3
+       5: getstatic     #173                // Field net/sweenus/simplyswords/config/LootConfig.INSTANCE:Lnet/sweenus/simplyswords/config/LootConfig;
+       8: getfield      #177                // Field net/sweenus/simplyswords/config/LootConfig.enableLootDrops:Lme/fzzyhmstrs/fzzy_config/validation/misc/ValidatedBoolean;
+      11: invokevirtual #180                // Method me/fzzyhmstrs/fzzy_config/validation/misc/ValidatedBoolean.get:()Ljava/lang/Object;
+      14: checkcast     #182                // class java/lang/Boolean
+      17: invokevirtual #185                // Method java/lang/Boolean.booleanValue:()Z
+      20: ifeq          384
+      23: aload_3
+      24: invokevirtual #206                // Method net/minecraft/resources/ResourceLocation.getPath:()Ljava/lang/String;
+      27: ldc           #208                // String chests
+      29: invokevirtual #213                // Method java/lang/String.contains:(Ljava/lang/CharSequence;)Z
+      32: ifeq          384
+      35: aload_3
+      36: invokevirtual #206                // Method net/minecraft/resources/ResourceLocation.getPath:()Ljava/lang/String;
+      39: ldc_w         #336                // String spectrum
+      42: invokevirtual #213                // Method java/lang/String.contains:(Ljava/lang/CharSequence;)Z
+      45: ifne          384
+      48: getstatic     #173                // Field net/sweenus/simplyswords/config/LootConfig.INSTANCE:Lnet/sweenus/simplyswords/config/LootConfig;
+      51: getfield      #339                // Field net/sweenus/simplyswords/config/LootConfig.enableLootInVillages:Lme/fzzyhmstrs/fzzy_config/validation/misc/ValidatedBoolean;
+      54: invokevirtual #180                // Method me/fzzyhmstrs/fzzy_config/validation/misc/ValidatedBoolean.get:()Ljava/lang/Object;
+      57: checkcast     #182                // class java/lang/Boolean
+      60: invokevirtual #185                // Method java/lang/Boolean.booleanValue:()Z
+      63: ifne          79
+      66: aload_3
+      67: invokevirtual #206                // Method net/minecraft/resources/ResourceLocation.getPath:()Ljava/lang/String;
+      70: ldc_w         #341                // String village
+      73: invokevirtual #213                // Method java/lang/String.contains:(Ljava/lang/CharSequence;)Z
+      76: ifne          384
+      79: invokestatic  #217                // Method net/minecraft/world/level/storage/loot/LootPool.lootPool:()Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+      82: fconst_1
+      83: invokestatic  #223                // Method net/minecraft/world/level/storage/loot/providers/number/ConstantValue.exactly:(F)Lnet/minecraft/world/level/storage/loot/providers/number/ConstantValue;
+      86: invokevirtual #227                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.setRolls:(Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+      89: getstatic     #173                // Field net/sweenus/simplyswords/config/LootConfig.INSTANCE:Lnet/sweenus/simplyswords/config/LootConfig;
+      92: getfield      #345                // Field net/sweenus/simplyswords/config/LootConfig.rareLootTableWeight:Lme/fzzyhmstrs/fzzy_config/validation/number/ValidatedFloat;
+      95: invokevirtual #348                // Method me/fzzyhmstrs/fzzy_config/validation/number/ValidatedFloat.get:()Ljava/lang/Object;
+      98: checkcast     #196                // class java/lang/Float
+     101: invokevirtual #200                // Method java/lang/Float.floatValue:()F
+     104: ldc           #228                // float 100.0f
+     106: fdiv
+     107: invokestatic  #234                // Method net/minecraft/world/level/storage/loot/predicates/LootItemRandomChanceCondition.randomChance:(F)Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder;
+     110: invokevirtual #238                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.when:(Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     113: invokestatic  #352                // Method net/minecraft/world/level/storage/loot/functions/EnchantRandomlyFunction.randomEnchantment:()Lnet/minecraft/world/level/storage/loot/functions/EnchantRandomlyFunction$Builder;
+     116: invokevirtual #264                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.apply:(Lnet/minecraft/world/level/storage/loot/functions/LootItemFunction$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     119: getstatic     #357                // Field net/sweenus/simplyswords/registry/ItemsRegistry.DIAMOND_LONGSWORD:Ldev/architectury/registry/registries/RegistrySupplier;
+     122: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     127: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     130: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     133: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     136: getstatic     #362                // Field net/sweenus/simplyswords/registry/ItemsRegistry.DIAMOND_TWINBLADE:Ldev/architectury/registry/registries/RegistrySupplier;
+     139: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     144: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     147: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     150: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     153: getstatic     #365                // Field net/sweenus/simplyswords/registry/ItemsRegistry.DIAMOND_RAPIER:Ldev/architectury/registry/registries/RegistrySupplier;
+     156: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     161: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     164: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     167: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     170: getstatic     #368                // Field net/sweenus/simplyswords/registry/ItemsRegistry.DIAMOND_CUTLASS:Ldev/architectury/registry/registries/RegistrySupplier;
+     173: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     178: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     181: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     184: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     187: getstatic     #371                // Field net/sweenus/simplyswords/registry/ItemsRegistry.DIAMOND_KATANA:Ldev/architectury/registry/registries/RegistrySupplier;
+     190: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     195: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     198: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     201: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     204: getstatic     #374                // Field net/sweenus/simplyswords/registry/ItemsRegistry.DIAMOND_SPEAR:Ldev/architectury/registry/registries/RegistrySupplier;
+     207: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     212: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     215: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     218: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     221: getstatic     #377                // Field net/sweenus/simplyswords/registry/ItemsRegistry.DIAMOND_GLAIVE:Ldev/architectury/registry/registries/RegistrySupplier;
+     224: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     229: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     232: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     235: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     238: getstatic     #380                // Field net/sweenus/simplyswords/registry/ItemsRegistry.DIAMOND_WARGLAIVE:Ldev/architectury/registry/registries/RegistrySupplier;
+     241: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     246: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     249: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     252: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     255: getstatic     #383                // Field net/sweenus/simplyswords/registry/ItemsRegistry.DIAMOND_SAI:Ldev/architectury/registry/registries/RegistrySupplier;
+     258: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     263: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     266: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     269: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     272: getstatic     #386                // Field net/sweenus/simplyswords/registry/ItemsRegistry.DIAMOND_CLAYMORE:Ldev/architectury/registry/registries/RegistrySupplier;
+     275: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     280: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     283: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     286: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     289: getstatic     #389                // Field net/sweenus/simplyswords/registry/ItemsRegistry.DIAMOND_GREATHAMMER:Ldev/architectury/registry/registries/RegistrySupplier;
+     292: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     297: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     300: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     303: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     306: getstatic     #392                // Field net/sweenus/simplyswords/registry/ItemsRegistry.DIAMOND_CHAKRAM:Ldev/architectury/registry/registries/RegistrySupplier;
+     309: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     314: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     317: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     320: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     323: getstatic     #395                // Field net/sweenus/simplyswords/registry/ItemsRegistry.DIAMOND_GREATAXE:Ldev/architectury/registry/registries/RegistrySupplier;
+     326: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     331: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     334: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     337: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     340: getstatic     #398                // Field net/sweenus/simplyswords/registry/ItemsRegistry.DIAMOND_SCYTHE:Ldev/architectury/registry/registries/RegistrySupplier;
+     343: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     348: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     351: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     354: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     357: getstatic     #401                // Field net/sweenus/simplyswords/registry/ItemsRegistry.DIAMOND_HALBERD:Ldev/architectury/registry/registries/RegistrySupplier;
+     360: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     365: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     368: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     371: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     374: astore        4
+     376: aload_1
+     377: aload         4
+     379: invokeinterface #306,  2          // InterfaceMethod dev/architectury/event/events/common/LootEvent$LootTableModificationContext.addPool:(Lnet/minecraft/world/level/storage/loot/LootPool$Builder;)V
+     384: return
+
+  private static void lambda$init$2(net.minecraft.resources.ResourceKey, dev.architectury.event.events.common.LootEvent$LootTableModificationContext, boolean);
+    Code:
+       0: aload_0
+       1: invokevirtual #167                // Method net/minecraft/resources/ResourceKey.location:()Lnet/minecraft/resources/ResourceLocation;
+       4: astore_3
+       5: getstatic     #173                // Field net/sweenus/simplyswords/config/LootConfig.INSTANCE:Lnet/sweenus/simplyswords/config/LootConfig;
+       8: getfield      #177                // Field net/sweenus/simplyswords/config/LootConfig.enableLootDrops:Lme/fzzyhmstrs/fzzy_config/validation/misc/ValidatedBoolean;
+      11: invokevirtual #180                // Method me/fzzyhmstrs/fzzy_config/validation/misc/ValidatedBoolean.get:()Ljava/lang/Object;
+      14: checkcast     #182                // class java/lang/Boolean
+      17: invokevirtual #185                // Method java/lang/Boolean.booleanValue:()Z
+      20: ifeq          639
+      23: aload_3
+      24: invokevirtual #206                // Method net/minecraft/resources/ResourceLocation.getPath:()Ljava/lang/String;
+      27: ldc           #208                // String chests
+      29: invokevirtual #213                // Method java/lang/String.contains:(Ljava/lang/CharSequence;)Z
+      32: ifeq          639
+      35: aload_3
+      36: invokevirtual #206                // Method net/minecraft/resources/ResourceLocation.getPath:()Ljava/lang/String;
+      39: ldc_w         #336                // String spectrum
+      42: invokevirtual #213                // Method java/lang/String.contains:(Ljava/lang/CharSequence;)Z
+      45: ifne          639
+      48: getstatic     #173                // Field net/sweenus/simplyswords/config/LootConfig.INSTANCE:Lnet/sweenus/simplyswords/config/LootConfig;
+      51: getfield      #339                // Field net/sweenus/simplyswords/config/LootConfig.enableLootInVillages:Lme/fzzyhmstrs/fzzy_config/validation/misc/ValidatedBoolean;
+      54: invokevirtual #180                // Method me/fzzyhmstrs/fzzy_config/validation/misc/ValidatedBoolean.get:()Ljava/lang/Object;
+      57: checkcast     #182                // class java/lang/Boolean
+      60: invokevirtual #185                // Method java/lang/Boolean.booleanValue:()Z
+      63: ifne          79
+      66: aload_3
+      67: invokevirtual #206                // Method net/minecraft/resources/ResourceLocation.getPath:()Ljava/lang/String;
+      70: ldc_w         #341                // String village
+      73: invokevirtual #213                // Method java/lang/String.contains:(Ljava/lang/CharSequence;)Z
+      76: ifne          639
+      79: invokestatic  #217                // Method net/minecraft/world/level/storage/loot/LootPool.lootPool:()Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+      82: fconst_1
+      83: invokestatic  #223                // Method net/minecraft/world/level/storage/loot/providers/number/ConstantValue.exactly:(F)Lnet/minecraft/world/level/storage/loot/providers/number/ConstantValue;
+      86: invokevirtual #227                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.setRolls:(Lnet/minecraft/world/level/storage/loot/providers/number/NumberProvider;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+      89: getstatic     #173                // Field net/sweenus/simplyswords/config/LootConfig.INSTANCE:Lnet/sweenus/simplyswords/config/LootConfig;
+      92: getfield      #404                // Field net/sweenus/simplyswords/config/LootConfig.standardLootTableWeight:Lme/fzzyhmstrs/fzzy_config/validation/number/ValidatedFloat;
+      95: invokevirtual #348                // Method me/fzzyhmstrs/fzzy_config/validation/number/ValidatedFloat.get:()Ljava/lang/Object;
+      98: checkcast     #196                // class java/lang/Float
+     101: invokevirtual #200                // Method java/lang/Float.floatValue:()F
+     104: ldc           #228                // float 100.0f
+     106: fdiv
+     107: invokestatic  #234                // Method net/minecraft/world/level/storage/loot/predicates/LootItemRandomChanceCondition.randomChance:(F)Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder;
+     110: invokevirtual #238                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.when:(Lnet/minecraft/world/level/storage/loot/predicates/LootItemCondition$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     113: invokestatic  #352                // Method net/minecraft/world/level/storage/loot/functions/EnchantRandomlyFunction.randomEnchantment:()Lnet/minecraft/world/level/storage/loot/functions/EnchantRandomlyFunction$Builder;
+     116: invokevirtual #264                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.apply:(Lnet/minecraft/world/level/storage/loot/functions/LootItemFunction$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     119: getstatic     #407                // Field net/sweenus/simplyswords/registry/ItemsRegistry.IRON_LONGSWORD:Ldev/architectury/registry/registries/RegistrySupplier;
+     122: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     127: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     130: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     133: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     136: getstatic     #410                // Field net/sweenus/simplyswords/registry/ItemsRegistry.IRON_TWINBLADE:Ldev/architectury/registry/registries/RegistrySupplier;
+     139: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     144: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     147: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     150: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     153: getstatic     #413                // Field net/sweenus/simplyswords/registry/ItemsRegistry.IRON_RAPIER:Ldev/architectury/registry/registries/RegistrySupplier;
+     156: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     161: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     164: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     167: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     170: getstatic     #416                // Field net/sweenus/simplyswords/registry/ItemsRegistry.IRON_CUTLASS:Ldev/architectury/registry/registries/RegistrySupplier;
+     173: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     178: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     181: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     184: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     187: getstatic     #419                // Field net/sweenus/simplyswords/registry/ItemsRegistry.IRON_KATANA:Ldev/architectury/registry/registries/RegistrySupplier;
+     190: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     195: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     198: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     201: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     204: getstatic     #422                // Field net/sweenus/simplyswords/registry/ItemsRegistry.IRON_GLAIVE:Ldev/architectury/registry/registries/RegistrySupplier;
+     207: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     212: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     215: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     218: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     221: getstatic     #425                // Field net/sweenus/simplyswords/registry/ItemsRegistry.IRON_WARGLAIVE:Ldev/architectury/registry/registries/RegistrySupplier;
+     224: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     229: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     232: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     235: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     238: getstatic     #428                // Field net/sweenus/simplyswords/registry/ItemsRegistry.IRON_SPEAR:Ldev/architectury/registry/registries/RegistrySupplier;
+     241: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     246: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     249: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     252: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     255: getstatic     #431                // Field net/sweenus/simplyswords/registry/ItemsRegistry.IRON_SAI:Ldev/architectury/registry/registries/RegistrySupplier;
+     258: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     263: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     266: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     269: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     272: getstatic     #434                // Field net/sweenus/simplyswords/registry/ItemsRegistry.IRON_CLAYMORE:Ldev/architectury/registry/registries/RegistrySupplier;
+     275: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     280: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     283: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     286: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     289: getstatic     #437                // Field net/sweenus/simplyswords/registry/ItemsRegistry.IRON_CHAKRAM:Ldev/architectury/registry/registries/RegistrySupplier;
+     292: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     297: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     300: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     303: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     306: getstatic     #440                // Field net/sweenus/simplyswords/registry/ItemsRegistry.IRON_GREATAXE:Ldev/architectury/registry/registries/RegistrySupplier;
+     309: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     314: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     317: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     320: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     323: getstatic     #443                // Field net/sweenus/simplyswords/registry/ItemsRegistry.IRON_GREATHAMMER:Ldev/architectury/registry/registries/RegistrySupplier;
+     326: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     331: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     334: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     337: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     340: getstatic     #446                // Field net/sweenus/simplyswords/registry/ItemsRegistry.IRON_SCYTHE:Ldev/architectury/registry/registries/RegistrySupplier;
+     343: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     348: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     351: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     354: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     357: getstatic     #449                // Field net/sweenus/simplyswords/registry/ItemsRegistry.IRON_HALBERD:Ldev/architectury/registry/registries/RegistrySupplier;
+     360: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     365: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     368: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     371: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     374: getstatic     #452                // Field net/sweenus/simplyswords/registry/ItemsRegistry.GOLD_LONGSWORD:Ldev/architectury/registry/registries/RegistrySupplier;
+     377: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     382: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     385: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     388: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     391: getstatic     #455                // Field net/sweenus/simplyswords/registry/ItemsRegistry.GOLD_TWINBLADE:Ldev/architectury/registry/registries/RegistrySupplier;
+     394: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     399: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     402: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     405: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     408: getstatic     #458                // Field net/sweenus/simplyswords/registry/ItemsRegistry.GOLD_RAPIER:Ldev/architectury/registry/registries/RegistrySupplier;
+     411: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     416: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     419: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     422: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     425: getstatic     #461                // Field net/sweenus/simplyswords/registry/ItemsRegistry.GOLD_CUTLASS:Ldev/architectury/registry/registries/RegistrySupplier;
+     428: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     433: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     436: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     439: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     442: getstatic     #464                // Field net/sweenus/simplyswords/registry/ItemsRegistry.GOLD_KATANA:Ldev/architectury/registry/registries/RegistrySupplier;
+     445: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     450: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     453: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     456: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     459: getstatic     #467                // Field net/sweenus/simplyswords/registry/ItemsRegistry.GOLD_GLAIVE:Ldev/architectury/registry/registries/RegistrySupplier;
+     462: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     467: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     470: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     473: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     476: getstatic     #470                // Field net/sweenus/simplyswords/registry/ItemsRegistry.GOLD_WARGLAIVE:Ldev/architectury/registry/registries/RegistrySupplier;
+     479: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     484: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     487: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     490: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     493: getstatic     #473                // Field net/sweenus/simplyswords/registry/ItemsRegistry.GOLD_SPEAR:Ldev/architectury/registry/registries/RegistrySupplier;
+     496: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     501: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     504: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     507: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     510: getstatic     #476                // Field net/sweenus/simplyswords/registry/ItemsRegistry.GOLD_SAI:Ldev/architectury/registry/registries/RegistrySupplier;
+     513: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     518: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     521: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     524: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     527: getstatic     #479                // Field net/sweenus/simplyswords/registry/ItemsRegistry.GOLD_CLAYMORE:Ldev/architectury/registry/registries/RegistrySupplier;
+     530: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     535: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     538: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     541: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     544: getstatic     #482                // Field net/sweenus/simplyswords/registry/ItemsRegistry.GOLD_GREATHAMMER:Ldev/architectury/registry/registries/RegistrySupplier;
+     547: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     552: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     555: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     558: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     561: getstatic     #485                // Field net/sweenus/simplyswords/registry/ItemsRegistry.GOLD_CHAKRAM:Ldev/architectury/registry/registries/RegistrySupplier;
+     564: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     569: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     572: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     575: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     578: getstatic     #488                // Field net/sweenus/simplyswords/registry/ItemsRegistry.GOLD_GREATAXE:Ldev/architectury/registry/registries/RegistrySupplier;
+     581: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     586: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     589: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     592: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     595: getstatic     #491                // Field net/sweenus/simplyswords/registry/ItemsRegistry.GOLD_SCYTHE:Ldev/architectury/registry/registries/RegistrySupplier;
+     598: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     603: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     606: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     609: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     612: getstatic     #494                // Field net/sweenus/simplyswords/registry/ItemsRegistry.GOLD_HALBERD:Ldev/architectury/registry/registries/RegistrySupplier;
+     615: invokeinterface #247,  1          // InterfaceMethod dev/architectury/registry/registries/RegistrySupplier.get:()Ljava/lang/Object;
+     620: checkcast     #359                // class net/minecraft/world/level/ItemLike
+     623: invokestatic  #321                // Method net/minecraft/world/level/storage/loot/entries/LootItem.lootTableItem:(Lnet/minecraft/world/level/ItemLike;)Lnet/minecraft/world/level/storage/loot/entries/LootPoolSingletonContainer$Builder;
+     626: invokevirtual #325                // Method net/minecraft/world/level/storage/loot/LootPool$Builder.add:(Lnet/minecraft/world/level/storage/loot/entries/LootPoolEntryContainer$Builder;)Lnet/minecraft/world/level/storage/loot/LootPool$Builder;
+     629: astore        4
+     631: aload_1
+     632: aload         4
+     634: invokeinterface #306,  2          // InterfaceMethod dev/architectury/event/events/common/LootEvent$LootTableModificationContext.addPool:(Lnet/minecraft/world/level/storage/loot/LootPool$Builder;)V
+     639: return
+
+  private static java.util.List lambda$static$1();
+    Code:
+       0: getstatic     #502                // Field net/minecraft/core/registries/BuiltInRegistries.ITEM:Lnet/minecraft/core/DefaultedRegistry;
+       3: invokeinterface #505,  1          // InterfaceMethod net/minecraft/core/DefaultedRegistry.stream:()Ljava/util/stream/Stream;
+       8: invokedynamic #510,  0            // InvokeDynamic #6:test:()Ljava/util/function/Predicate;
+      13: invokeinterface #286,  2          // InterfaceMethod java/util/stream/Stream.filter:(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+      18: invokeinterface #513,  1          // InterfaceMethod java/util/stream/Stream.toList:()Ljava/util/List;
+      23: areturn
+
+  private static boolean lambda$static$0(net.minecraft.world.item.Item);
+    Code:
+       0: aload_0
+       1: instanceof    #516                // class net/sweenus/simplyswords/item/UniqueWeaponItem
+       4: ireturn
+
+  static {};
+    Code:
+       0: invokedynamic #525,  0            // InvokeDynamic #7:get:()Lcom/google/common/base/Supplier;
+       5: invokestatic  #531                // Method com/google/common/base/Suppliers.memoize:(Lcom/google/common/base/Supplier;)Lcom/google/common/base/Supplier;
+       8: putstatic     #266                // Field swords:Lcom/google/common/base/Supplier;
+      11: bipush        38
+      13: anewarray     #246                // class dev/architectury/registry/registries/RegistrySupplier
+      16: dup
+      17: iconst_0
+      18: getstatic     #534                // Field net/sweenus/simplyswords/registry/ItemsRegistry.WATCHER_CLAYMORE:Ldev/architectury/registry/registries/RegistrySupplier;
+      21: aastore
+      22: dup
+      23: iconst_1
+      24: getstatic     #537                // Field net/sweenus/simplyswords/registry/ItemsRegistry.BRIMSTONE_CLAYMORE:Ldev/architectury/registry/registries/RegistrySupplier;
+      27: aastore
+      28: dup
+      29: iconst_2
+      30: getstatic     #540                // Field net/sweenus/simplyswords/registry/ItemsRegistry.STORMS_EDGE:Ldev/architectury/registry/registries/RegistrySupplier;
+      33: aastore
+      34: dup
+      35: iconst_3
+      36: getstatic     #543                // Field net/sweenus/simplyswords/registry/ItemsRegistry.STORMSCALE:Ldev/architectury/registry/registries/RegistrySupplier;
+      39: aastore
+      40: dup
+      41: iconst_4
+      42: getstatic     #546                // Field net/sweenus/simplyswords/registry/ItemsRegistry.STORMBRINGER:Ldev/architectury/registry/registries/RegistrySupplier;
+      45: aastore
+      46: dup
+      47: iconst_5
+      48: getstatic     #549                // Field net/sweenus/simplyswords/registry/ItemsRegistry.BRAMBLETHORN:Ldev/architectury/registry/registries/RegistrySupplier;
+      51: aastore
+      52: dup
+      53: bipush        6
+      55: getstatic     #552                // Field net/sweenus/simplyswords/registry/ItemsRegistry.WATCHING_WARGLAIVE:Ldev/architectury/registry/registries/RegistrySupplier;
+      58: aastore
+      59: dup
+      60: bipush        7
+      62: getstatic     #555                // Field net/sweenus/simplyswords/registry/ItemsRegistry.TOXIC_LONGSWORD:Ldev/architectury/registry/registries/RegistrySupplier;
+      65: aastore
+      66: dup
+      67: bipush        8
+      69: getstatic     #558                // Field net/sweenus/simplyswords/registry/ItemsRegistry.EMBERBLADE:Ldev/architectury/registry/registries/RegistrySupplier;
+      72: aastore
+      73: dup
+      74: bipush        9
+      76: getstatic     #561                // Field net/sweenus/simplyswords/registry/ItemsRegistry.FROSTFALL:Ldev/architectury/registry/registries/RegistrySupplier;
+      79: aastore
+      80: dup
+      81: bipush        10
+      83: getstatic     #564                // Field net/sweenus/simplyswords/registry/ItemsRegistry.SOULPYRE:Ldev/architectury/registry/registries/RegistrySupplier;
+      86: aastore
+      87: dup
+      88: bipush        11
+      90: getstatic     #567                // Field net/sweenus/simplyswords/registry/ItemsRegistry.MOLTEN_EDGE:Ldev/architectury/registry/registries/RegistrySupplier;
+      93: aastore
+      94: dup
+      95: bipush        12
+      97: getstatic     #570                // Field net/sweenus/simplyswords/registry/ItemsRegistry.LIVYATAN:Ldev/architectury/registry/registries/RegistrySupplier;
+     100: aastore
+     101: dup
+     102: bipush        13
+     104: getstatic     #573                // Field net/sweenus/simplyswords/registry/ItemsRegistry.ICEWHISPER:Ldev/architectury/registry/registries/RegistrySupplier;
+     107: aastore
+     108: dup
+     109: bipush        14
+     111: getstatic     #576                // Field net/sweenus/simplyswords/registry/ItemsRegistry.ARCANETHYST:Ldev/architectury/registry/registries/RegistrySupplier;
+     114: aastore
+     115: dup
+     116: bipush        15
+     118: getstatic     #579                // Field net/sweenus/simplyswords/registry/ItemsRegistry.THUNDERBRAND:Ldev/architectury/registry/registries/RegistrySupplier;
+     121: aastore
+     122: dup
+     123: bipush        16
+     125: getstatic     #582                // Field net/sweenus/simplyswords/registry/ItemsRegistry.HEARTHFLAME:Ldev/architectury/registry/registries/RegistrySupplier;
+     128: aastore
+     129: dup
+     130: bipush        17
+     132: getstatic     #585                // Field net/sweenus/simplyswords/registry/ItemsRegistry.TWISTED_BLADE:Ldev/architectury/registry/registries/RegistrySupplier;
+     135: aastore
+     136: dup
+     137: bipush        18
+     139: getstatic     #588                // Field net/sweenus/simplyswords/registry/ItemsRegistry.SOULRENDER:Ldev/architectury/registry/registries/RegistrySupplier;
+     142: aastore
+     143: dup
+     144: bipush        19
+     146: getstatic     #591                // Field net/sweenus/simplyswords/registry/ItemsRegistry.SOULKEEPER:Ldev/architectury/registry/registries/RegistrySupplier;
+     149: aastore
+     150: dup
+     151: bipush        20
+     153: getstatic     #594                // Field net/sweenus/simplyswords/registry/ItemsRegistry.SOULSTEALER:Ldev/architectury/registry/registries/RegistrySupplier;
+     156: aastore
+     157: dup
+     158: bipush        21
+     160: getstatic     #597                // Field net/sweenus/simplyswords/registry/ItemsRegistry.MJOLNIR:Ldev/architectury/registry/registries/RegistrySupplier;
+     163: aastore
+     164: dup
+     165: bipush        22
+     167: getstatic     #600                // Field net/sweenus/simplyswords/registry/ItemsRegistry.SLUMBERING_LICHBLADE:Ldev/architectury/registry/registries/RegistrySupplier;
+     170: aastore
+     171: dup
+     172: bipush        23
+     174: getstatic     #603                // Field net/sweenus/simplyswords/registry/ItemsRegistry.SHADOWSTING:Ldev/architectury/registry/registries/RegistrySupplier;
+     177: aastore
+     178: dup
+     179: bipush        24
+     181: getstatic     #606                // Field net/sweenus/simplyswords/registry/ItemsRegistry.DORMANT_RELIC:Ldev/architectury/registry/registries/RegistrySupplier;
+     184: aastore
+     185: dup
+     186: bipush        25
+     188: getstatic     #609                // Field net/sweenus/simplyswords/registry/ItemsRegistry.WHISPERWIND:Ldev/architectury/registry/registries/RegistrySupplier;
+     191: aastore
+     192: dup
+     193: bipush        26
+     195: getstatic     #612                // Field net/sweenus/simplyswords/registry/ItemsRegistry.EMBERLASH:Ldev/architectury/registry/registries/RegistrySupplier;
+     198: aastore
+     199: dup
+     200: bipush        27
+     202: getstatic     #615                // Field net/sweenus/simplyswords/registry/ItemsRegistry.WAXWEAVER:Ldev/architectury/registry/registries/RegistrySupplier;
+     205: aastore
+     206: dup
+     207: bipush        28
+     209: getstatic     #618                // Field net/sweenus/simplyswords/registry/ItemsRegistry.HIVEHEART:Ldev/architectury/registry/registries/RegistrySupplier;
+     212: aastore
+     213: dup
+     214: bipush        29
+     216: getstatic     #621                // Field net/sweenus/simplyswords/registry/ItemsRegistry.STARS_EDGE:Ldev/architectury/registry/registries/RegistrySupplier;
+     219: aastore
+     220: dup
+     221: bipush        30
+     223: getstatic     #624                // Field net/sweenus/simplyswords/registry/ItemsRegistry.WICKPIERCER:Ldev/architectury/registry/registries/RegistrySupplier;
+     226: aastore
+     227: dup
+     228: bipush        31
+     230: getstatic     #627                // Field net/sweenus/simplyswords/registry/ItemsRegistry.TEMPEST:Ldev/architectury/registry/registries/RegistrySupplier;
+     233: aastore
+     234: dup
+     235: bipush        32
+     237: getstatic     #630                // Field net/sweenus/simplyswords/registry/ItemsRegistry.FLAMEWIND:Ldev/architectury/registry/registries/RegistrySupplier;
+     240: aastore
+     241: dup
+     242: bipush        33
+     244: getstatic     #633                // Field net/sweenus/simplyswords/registry/ItemsRegistry.RIBBONCLEAVER:Ldev/architectury/registry/registries/RegistrySupplier;
+     247: aastore
+     248: dup
+     249: bipush        34
+     251: getstatic     #636                // Field net/sweenus/simplyswords/registry/ItemsRegistry.RIFTMANE:Ldev/architectury/registry/registries/RegistrySupplier;
+     254: aastore
+     255: dup
+     256: bipush        35
+     258: getstatic     #639                // Field net/sweenus/simplyswords/registry/ItemsRegistry.DAWNQUIVER:Ldev/architectury/registry/registries/RegistrySupplier;
+     261: aastore
+     262: dup
+     263: bipush        36
+     265: getstatic     #642                // Field net/sweenus/simplyswords/registry/ItemsRegistry.CAELESTIS:Ldev/architectury/registry/registries/RegistrySupplier;
+     268: aastore
+     269: dup
+     270: bipush        37
+     272: getstatic     #645                // Field net/sweenus/simplyswords/registry/ItemsRegistry.WRAITHFANG:Ldev/architectury/registry/registries/RegistrySupplier;
+     275: aastore
+     276: invokestatic  #649                // InterfaceMethod java/util/Set.of:([Ljava/lang/Object;)Ljava/util/Set;
+     279: putstatic     #112                // Field lootableSuppliers:Ljava/util/Set;
+     282: invokestatic  #652                // InterfaceMethod java/util/Set.of:()Ljava/util/Set;
+     285: putstatic     #104                // Field lootableItems:Ljava/util/Set;
+     288: return
+}

@@ -1,0 +1,807 @@
+[
+  {
+    "archive": "sodium-neoforge-0.6.13+mc1.21.1.jar",
+    "mods": [
+      {
+        "id": "sodium",
+        "version": "0.6.13+mc1.21.1"
+      }
+    ],
+    "modLoader": "javafml",
+    "loaderVersion": "[4,)",
+    "dependencies": [
+      {
+        "owner": "sodium",
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "1.21.1",
+        "ordering": "NONE",
+        "side": "CLIENT"
+      },
+      {
+        "owner": "sodium",
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.82,)",
+        "ordering": "NONE",
+        "side": "CLIENT"
+      },
+      {
+        "owner": "sodium",
+        "modId": "embeddium",
+        "type": "incompatible",
+        "reason": "Sodium and Embeddium cannot be used together. Please remove Embeddium.",
+        "versionRange": "[0.0.1,)",
+        "ordering": "NONE",
+        "side": "CLIENT"
+      }
+    ],
+    "license": "Polyform-Shield-1.0.0"
+  },
+  {
+    "archive": "sodium-neoforge-0.6.13+mc1.21.1.jar!/META-INF/jarjar/fabric-api-base-0.4.42+d1308ded19.jar",
+    "mods": [
+      {
+        "id": "fabric_api_base",
+        "version": "${file.jarVersion}"
+      }
+    ],
+    "modLoader": "javafml",
+    "loaderVersion": "[1,)",
+    "dependencies": [
+      {
+        "owner": "fabric_api_base",
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.115,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "owner": "fabric_api_base",
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,1.22)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ],
+    "license": "Apache-2.0"
+  },
+  {
+    "archive": "sodium-neoforge-0.6.13+mc1.21.1.jar!/META-INF/jarjar/fabric-block-view-api-v2-1.0.10+9afaaf8c19.jar",
+    "mods": [
+      {
+        "id": "fabric_block_view_api_v2",
+        "version": "${file.jarVersion}"
+      }
+    ],
+    "modLoader": "javafml",
+    "loaderVersion": "[1,)",
+    "dependencies": [
+      {
+        "owner": "fabric_block_view_api_v2",
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.115,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "owner": "fabric_block_view_api_v2",
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,1.22)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ],
+    "license": "Apache-2.0"
+  },
+  {
+    "archive": "sodium-neoforge-0.6.13+mc1.21.1.jar!/META-INF/jarjar/fabric-renderer-api-v1-3.4.0+9c40919e19.jar",
+    "mods": [
+      {
+        "id": "fabric_renderer_api_v1",
+        "version": "${file.jarVersion}"
+      }
+    ],
+    "modLoader": "javafml",
+    "loaderVersion": "[1,)",
+    "dependencies": [
+      {
+        "owner": "fabric_renderer_api_v1",
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.115,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "owner": "fabric_renderer_api_v1",
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,1.22)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "owner": "fabric_renderer_api_v1",
+        "modId": "fabric_api_base",
+        "type": "required",
+        "versionRange": "*",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ],
+    "license": "Apache-2.0"
+  },
+  {
+    "archive": "sodium-neoforge-0.6.13+mc1.21.1.jar!/META-INF/jarjar/fabric-rendering-data-attachment-v1-0.3.48+73761d2e19.jar",
+    "mods": [
+      {
+        "id": "fabric_rendering_data_attachment_v1",
+        "version": "${file.jarVersion}"
+      }
+    ],
+    "modLoader": "javafml",
+    "loaderVersion": "[1,)",
+    "dependencies": [
+      {
+        "owner": "fabric_rendering_data_attachment_v1",
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.115,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "owner": "fabric_rendering_data_attachment_v1",
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,1.22)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "owner": "fabric_rendering_data_attachment_v1",
+        "modId": "fabric_block_view_api_v2",
+        "type": "required",
+        "versionRange": "*",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ],
+    "license": "Apache-2.0"
+  },
+  {
+    "archive": "iris-neoforge-1.8.12+mc1.21.1.jar",
+    "mods": [
+      {
+        "id": "iris",
+        "version": "1.8.12-snapshot+mc1.21.1-local"
+      }
+    ],
+    "modLoader": "javafml",
+    "loaderVersion": "*",
+    "dependencies": [
+      {
+        "owner": "iris",
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21,1.21.1)",
+        "ordering": "NONE",
+        "side": "CLIENT"
+      },
+      {
+        "owner": "iris",
+        "modId": "embeddium",
+        "type": "incompatible",
+        "reason": "Iris and Embeddium cannot be used together. Please use Sodium 0.6 instead.",
+        "versionRange": "[0.0.1,)",
+        "ordering": "NONE",
+        "side": "CLIENT"
+      },
+      {
+        "owner": "iris",
+        "modId": "sodium",
+        "type": "required",
+        "reason": "Iris requires Sodium. Please install Sodium 0.6 for Iris to work.",
+        "versionRange": "[0.6,)",
+        "ordering": "NONE",
+        "side": "CLIENT"
+      }
+    ],
+    "license": "LGPL-3.0-only"
+  },
+  {
+    "archive": "iris-neoforge-1.8.12+mc1.21.1.jar!/META-INF/jarjar/fabric-api-base-0.4.42+d1308ded19.jar",
+    "mods": [
+      {
+        "id": "fabric_api_base",
+        "version": "${file.jarVersion}"
+      }
+    ],
+    "modLoader": "javafml",
+    "loaderVersion": "[1,)",
+    "dependencies": [
+      {
+        "owner": "fabric_api_base",
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.169,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "owner": "fabric_api_base",
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,1.22)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ],
+    "license": "Apache-2.0"
+  },
+  {
+    "archive": "iris-neoforge-1.8.12+mc1.21.1.jar!/META-INF/jarjar/fabric-block-view-api-v2-1.0.10+9afaaf8c19.jar",
+    "mods": [
+      {
+        "id": "fabric_block_view_api_v2",
+        "version": "${file.jarVersion}"
+      }
+    ],
+    "modLoader": "javafml",
+    "loaderVersion": "[1,)",
+    "dependencies": [
+      {
+        "owner": "fabric_block_view_api_v2",
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.115,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "owner": "fabric_block_view_api_v2",
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,1.22)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ],
+    "license": "Apache-2.0"
+  },
+  {
+    "archive": "iris-neoforge-1.8.12+mc1.21.1.jar!/META-INF/jarjar/fabric-renderer-api-v1-3.4.0+acb05a3919.jar",
+    "mods": [
+      {
+        "id": "fabric_renderer_api_v1",
+        "version": "${file.jarVersion}"
+      }
+    ],
+    "modLoader": "javafml",
+    "loaderVersion": "[1,)",
+    "dependencies": [
+      {
+        "owner": "fabric_renderer_api_v1",
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.57,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "owner": "fabric_renderer_api_v1",
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,1.22)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "owner": "fabric_renderer_api_v1",
+        "modId": "fabric_api_base",
+        "type": "required",
+        "versionRange": "*",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ],
+    "license": "Apache-2.0"
+  },
+  {
+    "archive": "iris-neoforge-1.8.12+mc1.21.1.jar!/META-INF/jarjar/fabric-rendering-data-attachment-v1-0.3.48+73761d2e19.jar",
+    "mods": [
+      {
+        "id": "fabric_rendering_data_attachment_v1",
+        "version": "${file.jarVersion}"
+      }
+    ],
+    "modLoader": "javafml",
+    "loaderVersion": "[1,)",
+    "dependencies": [
+      {
+        "owner": "fabric_rendering_data_attachment_v1",
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.115,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "owner": "fabric_rendering_data_attachment_v1",
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,1.22)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "owner": "fabric_rendering_data_attachment_v1",
+        "modId": "fabric_block_view_api_v2",
+        "type": "required",
+        "versionRange": "*",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ],
+    "license": "Apache-2.0"
+  },
+  {
+    "archive": "entityculling-neoforge-1.11.3-mc1.21.1.jar",
+    "mods": [
+      {
+        "id": "entityculling",
+        "version": "1.11.3"
+      }
+    ],
+    "modLoader": "javafml",
+    "loaderVersion": "[1,)",
+    "dependencies": [
+      {
+        "owner": "entityculling",
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1]",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "owner": "entityculling",
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[20.2,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ],
+    "license": "tr7zw Protective License"
+  },
+  {
+    "archive": "entityculling-neoforge-1.11.3-mc1.21.1.jar!/META-INF/jars/TRansition-1.0.26-1.21.1-neoforge-SNAPSHOT.jar",
+    "mods": [
+      {
+        "id": "transition",
+        "version": "1.0.26"
+      }
+    ],
+    "modLoader": "javafml",
+    "loaderVersion": "[1,)",
+    "dependencies": [
+      {
+        "owner": "transition",
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1]",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "owner": "transition",
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[20.2,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ],
+    "license": "MIT"
+  },
+  {
+    "archive": "entityculling-neoforge-1.11.3-mc1.21.1.jar!/META-INF/jars/TRender-1.0.17-1.21.1-neoforge-SNAPSHOT.jar",
+    "mods": [
+      {
+        "id": "trender",
+        "version": "1.0.17"
+      }
+    ],
+    "modLoader": "javafml",
+    "loaderVersion": "[1,)",
+    "dependencies": [
+      {
+        "owner": "trender",
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1]",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "owner": "trender",
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[20.2,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ],
+    "license": "MIT"
+  },
+  {
+    "archive": "cloth-config-15.0.140-neoforge.jar",
+    "mods": [
+      {
+        "id": "cloth_config",
+        "version": "15.0.140"
+      }
+    ],
+    "modLoader": "javafml",
+    "loaderVersion": "[1,)",
+    "dependencies": [
+      {
+        "owner": "cloth_config",
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.0.110-beta,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ],
+    "license": "GNU LGPLv3"
+  },
+  {
+    "archive": "ferritecore-7.0.3-neoforge.jar",
+    "mods": [
+      {
+        "id": "ferritecore",
+        "version": "7.0.3"
+      }
+    ],
+    "modLoader": "javafml",
+    "loaderVersion": "[1,)",
+    "dependencies": [
+      {
+        "owner": "ferritecore",
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.218,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "owner": "ferritecore",
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,1.22)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ],
+    "license": "MIT"
+  },
+  {
+    "archive": "lithium-neoforge-0.15.4+mc1.21.1.jar",
+    "mods": [
+      {
+        "id": "lithium",
+        "version": "0.15.4+mc1.21.1"
+      }
+    ],
+    "modLoader": "javafml",
+    "loaderVersion": "*",
+    "dependencies": [
+      {
+        "owner": "lithium",
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21, 1.21.1]",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ],
+    "license": "LGPL-3.0-only"
+  },
+  {
+    "archive": "jei-1.21.1-neoforge-19.27.0.340.jar",
+    "mods": [
+      {
+        "id": "jei",
+        "version": "19.27.0.340"
+      }
+    ],
+    "modLoader": "javafml",
+    "loaderVersion": "[4,)",
+    "dependencies": [
+      {
+        "owner": "jei",
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.0.118-beta,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "owner": "jei",
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21, 1.21.1)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ],
+    "license": "The MIT License (MIT)"
+  },
+  {
+    "archive": "simplyswords-neoforge-1.70.2-1.21.1.jar",
+    "mods": [
+      {
+        "id": "simplyswords",
+        "version": "1.70.2-1.21.1"
+      }
+    ],
+    "modLoader": "javafml",
+    "loaderVersion": "[4,)",
+    "dependencies": [
+      {
+        "owner": "simplyswords",
+        "modId": "neoforge",
+        "mandatory": true,
+        "versionRange": "[4,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "owner": "simplyswords",
+        "modId": "minecraft",
+        "mandatory": true,
+        "versionRange": "[1.21, 1.22)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "owner": "simplyswords",
+        "modId": "architectury",
+        "mandatory": true,
+        "versionRange": "[13.0.11,)",
+        "ordering": "AFTER",
+        "side": "BOTH"
+      },
+      {
+        "owner": "simplyswords",
+        "modId": "fzzy_config",
+        "mandatory": true,
+        "versionRange": "[0.6.6,)",
+        "ordering": "AFTER",
+        "side": "BOTH"
+      },
+      {
+        "owner": "simplyswords",
+        "modId": "simplytooltips",
+        "mandatory": true,
+        "versionRange": "[0.1,)",
+        "ordering": "NONE",
+        "side": "CLIENT"
+      }
+    ],
+    "license": "Timefall Development License"
+  },
+  {
+    "archive": "fzzy_config-0.7.7+1.21+neoforge.jar",
+    "mods": [
+      {
+        "id": "fzzy_config",
+        "version": "0.7.7+1.21+neoforge"
+      }
+    ],
+    "modLoader": "javafml",
+    "loaderVersion": "[1,)",
+    "dependencies": [
+      {
+        "owner": "fzzy_config",
+        "modId": "neoforge",
+        "type": "REQUIRED",
+        "versionRange": "[21.0.0-beta,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "owner": "fzzy_config",
+        "modId": "minecraft",
+        "type": "REQUIRED",
+        "versionRange": "[1.21,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "owner": "fzzy_config",
+        "modId": "kotlinforforge",
+        "type": "REQUIRED",
+        "versionRange": "[5.3.0,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ],
+    "license": "TDL-M (https://github.com/fzzyhmstrs/Timefall-Development-Licence-Modified)"
+  },
+  {
+    "archive": "architectury-13.0.11-neoforge.jar",
+    "mods": [
+      {
+        "id": "architectury",
+        "version": "13.0.11"
+      }
+    ],
+    "modLoader": "javafml",
+    "loaderVersion": "[1,)",
+    "dependencies": [
+      {
+        "owner": "architectury",
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "owner": "architectury",
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.0.110-beta,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ],
+    "license": "GNU LGPLv3"
+  },
+  {
+    "archive": "SimplyTooltips-neoforge-0.1.5.jar",
+    "mods": [
+      {
+        "id": "simplytooltips",
+        "version": "0.1.5"
+      }
+    ],
+    "modLoader": "javafml",
+    "loaderVersion": "[2,)",
+    "dependencies": [
+      {
+        "owner": "simplytooltips",
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "owner": "simplytooltips",
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "owner": "simplytooltips",
+        "modId": "architectury",
+        "type": "required",
+        "versionRange": "[13.0.8,)",
+        "ordering": "AFTER",
+        "side": "BOTH"
+      },
+      {
+        "owner": "simplytooltips",
+        "modId": "fzzy_config",
+        "mandatory": true,
+        "versionRange": "[0.6.6,)",
+        "ordering": "AFTER",
+        "side": "BOTH"
+      }
+    ],
+    "license": "Timefall Development License 1.2"
+  },
+  {
+    "archive": "dungeons-and-taverns-v4.4.4.jar",
+    "mods": [
+      {
+        "id": "mr_dungeons_andtaverns",
+        "version": "1-v4.4.4"
+      }
+    ],
+    "modLoader": "javafml",
+    "loaderVersion": "[1,)",
+    "dependencies": [],
+    "license": "LicenseRef-All-Rights-Reserved"
+  },
+  {
+    "archive": "lootr-neoforge-1.21.1-1.11.38.127.jar",
+    "mods": [
+      {
+        "id": "lootr",
+        "version": "1.21.1-1.11.38.127"
+      }
+    ],
+    "modLoader": "javafml",
+    "loaderVersion": "[2,)",
+    "dependencies": [
+      {
+        "owner": "lootr",
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "1.21.1"
+      },
+      {
+        "owner": "lootr",
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.195,)"
+      }
+    ],
+    "license": "https://github.com/noobanidus/Lootr/blob/1.16/LICENSE"
+  },
+  {
+    "archive": "kotlinforforge-5.12.0-all.jar!/META-INF/jarjar/thedarkcolour.kffmod-5.12.0.jar",
+    "mods": [
+      {
+        "id": "kotlinforforge",
+        "version": "5.12.0"
+      }
+    ],
+    "modLoader": "kotlinforforge",
+    "loaderVersion": "[5,)",
+    "dependencies": [
+      {
+        "owner": "kotlinforforge",
+        "modId": "minecraft",
+        "mandatory": true,
+        "type": "required",
+        "versionRange": "[1.20.6,1.21.9)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ],
+    "license": "LGPL"
+  },
+  {
+    "archive": "eldencombat-0.2.0.jar",
+    "mods": [
+      {
+        "id": "eldencombat",
+        "version": "0.2.0"
+      }
+    ],
+    "modLoader": "javafml",
+    "loaderVersion": "[4,)",
+    "dependencies": [
+      {
+        "owner": "eldencombat",
+        "modId": "neoforge",
+        "type": "required",
+        "versionRange": "[21.1.219,)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      },
+      {
+        "owner": "eldencombat",
+        "modId": "minecraft",
+        "type": "required",
+        "versionRange": "[1.21.1,1.21.2)",
+        "ordering": "NONE",
+        "side": "BOTH"
+      }
+    ],
+    "license": "All Rights Reserved"
+  }
+]

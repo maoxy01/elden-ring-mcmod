@@ -2,6 +2,8 @@
 
 当前版本为 **0.2.0 开发候选版**，Minecraft 1.21.1 / NeoForge 21.1.219 / Java 21。最近工作见 [2026-10-18 进度快照](docs/GITHUB-PROGRESS-SNAPSHOT-20261018.md)与[整合候选交付说明](docs/MODPACK-CANDIDATE-DELIVERY-20261018.md)。下文0.1.0仅为历史记录。
 
+[下载0.2.0最新开发候选与校验清单](https://github.com/seekyuri/elden-ring-mcmod/releases/tag/v0.2.0-dev-20261018)。包含第一人称修补JAR、PCL ZIP与mrpack；新修补尚未实机复验，6项CurseForge依赖按包内说明补装。[完整同步范围](docs/GITHUB-FULL-SYNC-20261018.md)。
+
 0.2.0 开发候选：Minecraft 1.21.1 / NeoForge 21.1.219 / Java 21。纯原版战斗扩展，原版玩家关节与普攻，八个追忆战技、自制装备、强化/质变首版已接入。PCL 新实例安装仍未验收。
 
 统筹负责计划、派工与审查；战斗部门提供框架、接口与验收合同，DSH负责后续具体实现，美术负责资产。两部门严格串行。优先采用成熟模组与配置，只补必要的法环适配。

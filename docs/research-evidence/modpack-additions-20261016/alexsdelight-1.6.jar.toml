@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="All Rights Reserved"
+
+[[mods]]
+
+modId="alexsdelight"
+version="1.6"
+displayName="Alexs Delight"
+authors="NCP Bails, ianm1647"
+description='''Adds compatibility between Alexs Mobs and Farmers Delight'''
+
+[[dependencies.alexsdelight]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1.218,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.alexsdelight]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1]"
+    ordering="NONE"
+    side="BOTH"
+
+

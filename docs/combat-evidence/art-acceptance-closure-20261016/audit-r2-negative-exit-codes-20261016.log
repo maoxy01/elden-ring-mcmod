@@ -1,0 +1,40 @@
+﻿=== 用坏样本当正式包跑：必须 OVERALL FAIL 且退出 1（R2 门禁证明） ===
+--- sample=missing-resource exit=1
+label                    = real-package
+jarMissing/Mismatch      = 1/0
+jarUnexpected2dPng       = 0
+problems                 = 1
+  FAIL: missing in jar: assets/eldencombat/textures/item/2d/ballista_standby.png
+RESULT                   = FAIL
+OVERALL                  = FAIL
+--- sample=wrong-target-path exit=1
+label                    = real-package
+jarMissing/Mismatch      = 1/0
+jarUnexpected2dPng       = 1
+problems                 = 2
+  FAIL: missing in jar: assets/eldencombat/textures/item/2d/ballista_standby.png
+  FAIL: unexpected texture in jar 2d namespace: assets/eldencombat/textures/item/2d/zz_moved_wrong_path.png
+RESULT                   = FAIL
+OVERALL                  = FAIL
+--- sample=swapped-content exit=1
+label                    = real-package
+jarMissing/Mismatch      = 0/1
+jarUnexpected2dPng       = 0
+problems                 = 1
+  FAIL: jar content differs: assets/eldencombat/textures/item/2d/ballista_standby.png
+RESULT                   = FAIL
+OVERALL                  = FAIL
+--- sample=missing-ui-icon exit=1
+label                    = real-package
+jarMissing/Mismatch      = 1/0
+jarUnexpected2dPng       = 0
+problems                 = 1
+  FAIL: missing in jar: assets/eldencombat/textures/ui/spinning_slash.png
+RESULT                   = FAIL
+OVERALL                  = FAIL
+--- sample=protected-tampered exit=1
+label                    = real-package
+protectedChanged/Missing = 466/0
+problems                 = 466
+RESULT                   = FAIL
+OVERALL                  = FAIL

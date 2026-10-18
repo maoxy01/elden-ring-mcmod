@@ -1,0 +1,71 @@
+[17:14:50.541] [main/INFO] [Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.neoForgeVersion, 21.1.219, --fml.fmlVersion, 4.0.42, --fml.mcVersion, 1.21.1, --fml.neoFormVersion, 20240808.144430, --nogui] 
+[17:14:50.543] [main/INFO] [Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.12.1+1-LTS 
+[17:14:50.544] [main/INFO] [Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.12.1 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0 
+[17:14:50.632] [main/INFO] [loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserver 
+[17:14:50.665] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/D:/codexout/mcmod/build/modpack-expanded-20261018/standalone-server/libraries/net/fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/sponge-mixin-0.15.2+mixin.0.8.7.jar%2373!/ Service=ModLauncher Env=SERVER 
+[17:14:50.889] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "server-1.21.1-20240808.144430-srg.jar" [locator: production server provider +net.neoforged:neoforge:21.1.219:server] 
+[17:14:50.915] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "neoforge-21.1.219-universal.jar" [locator: PathBasedLocator[name=neoforge, paths=[libraries\net\neoforged\neoforge\21.1.219\neoforge-21.1.219-universal.jar]], reader: mod manifest] 
+[17:14:50.924] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "eldencombat-0.2.0.jar" [locator: {mods folder locator at D:\codexout\mcmod\build\modpack-expanded-20261018\standalone-server\mods}, reader: mod manifest] 
+[17:14:51.005] [main/INFO] [loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection 
+[17:14:51.005] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found gamelibrary file "mixinextras-neoforge-0.5.0.jar" [parent: neoforge-21.1.219-universal.jar, locator: jarinjar, reader: mod manifest] 
+[17:14:51.005] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "net.neoforged.neoforge-coremods-21.1.219.jar" [parent: neoforge-21.1.219-universal.jar, locator: jarinjar, reader: mod manifest] 
+[17:14:51.007] [main/INFO] [loading.moddiscovery.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		Elden Combat 0.2.0 (eldencombat)
+		Minecraft 1.21.1 (minecraft)
+		NeoForge 21.1.219 (neoforge) 
+[17:14:51.258] [main/INFO] [mixin/]: Compatibility level set to JAVA_21 
+[17:14:51.263] [main/INFO] [LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments [--nogui] 
+[17:14:51.411] [main/WARN] [mixin/]: Error loading class: net/combat_roll/network/ServerNetwork (java.lang.ClassNotFoundException: net.combat_roll.network.ServerNetwork) 
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+[17:14:52] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[17:14:55] [modloading-worker-0/INFO] [ne.ne.ne.co.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.219, for MC 1.21.1
+[17:14:55] [modloading-worker-0/INFO] [EldenCombat/]: [EldenCombat] ServerCombat ��ע�ᵽ��Ϸ�¼����ߣ�������һ�Σ�
+[17:14:55] [modloading-worker-0/INFO] [EldenCombat/]: [EldenCombat] ��ԭ��ս����չ loaded (MC 1.21.1 / NeoForge 21.1.219)
+[17:14:55] [modloading-sync-worker/INFO] [EldenCombat/]: [grace] ���������� D:\codexout\mcmod\build\modpack-expanded-20261018\standalone-server\config\eldencombat-grace.json����Ϣ�ָ���FP=FULL ����=KEEP ����=KEEP ҩƿ=KEEP��
+[17:14:55] [modloading-sync-worker/INFO] [EldenCombat/]: [EldenCombat] ս������������: D:\codexout\mcmod\build\modpack-expanded-20261018\standalone-server\config\eldencombat-combat.json
+[17:14:55] [modloading-sync-worker/INFO] [EldenCombat/]: ASH_CATALOG_ENTRY: eldencombat:spinning_slash ������ն�� ��������=slashing ������=5 FP=8.0 ����=1
+[17:14:55] [modloading-sync-worker/INFO] [EldenCombat/]: ASH_CATALOG_ENTRY: eldencombat:heavy_thrust ���ش̡� ��������=thrusting ������=5 FP=9.0 ����=1
+[17:14:55] [modloading-sync-worker/INFO] [EldenCombat/]: ASH_CATALOG_ENTRY: eldencombat:stamp_upward_cut ��̤ǰ��ն�� ��������=cleaving ������=5 FP=11.0 ����=1
+[17:14:55] [modloading-sync-worker/INFO] [EldenCombat/]: ASH_CATALOG_REGISTERED: ʵ��֧����ͨս�� 3 ����eldencombat:spinning_slash, eldencombat:heavy_thrust, eldencombat:stamp_upward_cut
+[17:14:55] [modloading-sync-worker/INFO] [EldenCombat/]: ASH_OWNERSHIP_INSTALLED: ս�ҽ����߷���˳־û��浵��SavedData��UUID Ϊ�����ݵ����裩
+[17:14:55] [modloading-sync-worker/INFO] [EldenCombat/]: GRACE_UNAVAILABLE: ȱ������ [waystones, balm]���͸��ӿ���ʾ�����ã���ͨս�����ܲ���Ӱ��
+[17:14:55] [main/INFO] [mojang/YggdrasilAuthenticationService]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[17:14:55] [main/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/D:/codexout/mcmod/build/modpack-expanded-20261018/standalone-server/libraries/net/minecraft/server/1.21.1-20240808.144430/server-1.21.1-20240808.144430-srg.jar%23118!/assets/.mcassetsroot' uses unexpected schema
+[17:14:55] [main/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/D:/codexout/mcmod/build/modpack-expanded-20261018/standalone-server/libraries/net/minecraft/server/1.21.1-20240808.144430/server-1.21.1-20240808.144430-srg.jar%23118!/data/.mcassetsroot' uses unexpected schema
+[17:14:55] [main/INFO] [minecraft/Main]: No existing world data, creating new world
+[17:14:56] [main/INFO] [minecraft/RecipeManager]: Loaded 1314 recipes
+[17:14:56] [main/INFO] [minecraft/AdvancementTree]: Loaded 1399 advancements
+[17:14:56] [main/INFO] [EldenCombat/]: [talismans] ������������ 4 ��
+[17:14:56] [main/INFO] [EldenCombat/]: [consumables] ҩ���������� 3 ��
+[17:14:56] [Server thread/INFO] [minecraft/DedicatedServer]: Starting minecraft server version 1.21.1
+[17:14:56] [Server thread/INFO] [minecraft/DedicatedServer]: Loading properties
+[17:14:56] [Server thread/INFO] [minecraft/DedicatedServer]: Default game type: SURVIVAL
+[17:14:56] [Server thread/INFO] [minecraft/MinecraftServer]: Generating keypair
+[17:14:56] [Server thread/INFO] [minecraft/DedicatedServer]: Starting Minecraft server on 127.0.0.1:25570
+[17:14:56] [Server thread/INFO] [minecraft/ServerConnectionListener]: Using default channel type
+[17:14:57] [Server thread/INFO] [minecraft/DedicatedServer]: Preparing level "standalone-world"
+[17:15:00] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing start region for dimension minecraft:overworld
+[17:15:00] [Worker-Main-2/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 2%
+[17:15:01] [Worker-Main-3/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 2%
+[17:15:01] [Worker-Main-3/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 18%
+[17:15:02] [Worker-Main-3/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 51%
+[17:15:02] [Server thread/INFO] [minecraft/LoggerChunkProgressListener]: Time elapsed: 2045 ms
+[17:15:02] [Server thread/INFO] [minecraft/DedicatedServer]: Done (5.923s)! For help, type "help"
+[17:15:02] [Server thread/INFO] [ne.ne.ne.se.pe.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[17:15:02] [Server thread/INFO] [EldenCombat/]: [skills] ׷��ս���������� 8 ��
+[17:15:02] [Server thread/INFO] [EldenCombat/]: [weapons] ������ֵ������ 41 ��
+[17:15:02] [Server thread/INFO] [minecraft/MinecraftServer]: [Not Secure] [Server] PACK_RELEASE_STARTED
+[17:15:12] [Server thread/INFO] [minecraft/MinecraftServer]: [Not Secure] [Server] PACK_RELEASE_STOP
+[17:15:12] [Server thread/INFO] [minecraft/MinecraftServer]: Stopping server
+[17:15:12] [Server thread/INFO] [minecraft/MinecraftServer]: Saving players
+[17:15:12] [Server thread/INFO] [minecraft/MinecraftServer]: Saving worlds
+[17:15:13] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[standalone-world]'/minecraft:overworld
+[17:15:13] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[standalone-world]'/minecraft:the_nether
+[17:15:13] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[standalone-world]'/minecraft:the_end
+[17:15:13] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (standalone-world): All chunks are saved
+[17:15:13] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[17:15:13] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[17:15:13] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage: All dimensions are saved

@@ -1,0 +1,2277 @@
+[
+  {
+    "archive": "sodium-neoforge-0.6.13+mc1.21.1.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[4,)",
+      "license": "Polyform-Shield-1.0.0",
+      "mods": [
+        {
+          "modId": "sodium",
+          "version": "0.6.13+mc1.21.1",
+          "displayName": "Sodium",
+          "logoFile": "sodium-icon.png",
+          "authors": "JellySquid (jellysquid3), IMS212",
+          "credits": "bytzo, PepperCode1, FlashyReese, altrisi, Grayray75, Madis0, Johni0702, comp500, coderbot16, Moulberry, MCRcortex, Altirix, embeddedt, pajicadvance, Kroppeb, douira, burgerindividual, TwistedZero, Leo40Git, haykam821, muzikbike",
+          "description": "Sodium is a powerful rendering engine for Minecraft which improves frame rates and reduces lag spikes.\n",
+          "provides": [
+            "indium"
+          ]
+        }
+      ],
+      "modproperties": {
+        "sodium": {
+          "fabric-renderer-api-v1:contains_renderer": true
+        }
+      },
+      "dependencies": {
+        "sodium": [
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "1.21.1",
+            "ordering": "NONE",
+            "side": "CLIENT"
+          },
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21.1.82,)",
+            "ordering": "NONE",
+            "side": "CLIENT"
+          },
+          {
+            "modId": "embeddium",
+            "type": "incompatible",
+            "reason": "Sodium and Embeddium cannot be used together. Please remove Embeddium.",
+            "versionRange": "[0.0.1,)",
+            "ordering": "NONE",
+            "side": "CLIENT"
+          }
+        ]
+      },
+      "mixins": [
+        {
+          "config": "sodium-common.mixins.json"
+        },
+        {
+          "config": "sodium-neoforge.mixins.json"
+        }
+      ]
+    }
+  },
+  {
+    "archive": "sodium-neoforge-0.6.13+mc1.21.1.jar!/META-INF/jarjar/fabric-api-base-0.4.42+d1308ded19.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[1,)",
+      "license": "Apache-2.0",
+      "issueTrackerURL": "https://github.com/Sinytra/ForgifiedFabricAPI/issues",
+      "mods": [
+        {
+          "modId": "fabric_api_base",
+          "version": "${file.jarVersion}",
+          "displayName": "Forgified Fabric API Base",
+          "logoFile": "assets/fabric-api-base/icon.png",
+          "authors": "Sinytra, FabricMC",
+          "description": "Contains the essentials for Fabric API modules.",
+          "provides": [
+            "fabric-api-base"
+          ],
+          "displayURL": "https://github.com/Sinytra/ForgifiedFabricAPI"
+        }
+      ],
+      "dependencies": {
+        "fabric_api_base": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21.1.115,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21.1,1.22)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "archive": "sodium-neoforge-0.6.13+mc1.21.1.jar!/META-INF/jarjar/fabric-block-view-api-v2-1.0.10+9afaaf8c19.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[1,)",
+      "license": "Apache-2.0",
+      "issueTrackerURL": "https://github.com/Sinytra/ForgifiedFabricAPI/issues",
+      "mods": [
+        {
+          "modId": "fabric_block_view_api_v2",
+          "version": "${file.jarVersion}",
+          "displayName": "Forgified Fabric BlockView API (v2)",
+          "logoFile": "assets/fabric-block-view-api-v2/icon.png",
+          "authors": "Sinytra, FabricMC",
+          "description": "Hooks for block views",
+          "provides": [
+            "fabric-block-view-api-v2"
+          ],
+          "displayURL": "https://github.com/Sinytra/ForgifiedFabricAPI"
+        }
+      ],
+      "dependencies": {
+        "fabric_block_view_api_v2": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21.1.115,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21.1,1.22)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      },
+      "mixins": [
+        {
+          "config": "fabric-block-view-api-v2.mixins.json"
+        },
+        {
+          "config": "fabric-block-view-api-v2.client.mixins.json"
+        }
+      ]
+    }
+  },
+  {
+    "archive": "sodium-neoforge-0.6.13+mc1.21.1.jar!/META-INF/jarjar/fabric-renderer-api-v1-3.4.0+9c40919e19.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[1,)",
+      "license": "Apache-2.0",
+      "displayTest": "IGNORE_ALL_VERSION",
+      "issueTrackerURL": "https://github.com/Sinytra/ForgifiedFabricAPI/issues",
+      "mods": [
+        {
+          "modId": "fabric_renderer_api_v1",
+          "version": "${file.jarVersion}",
+          "displayName": "Forgified Fabric Renderer API (v1)",
+          "logoFile": "assets/fabric-renderer-api-v1/icon.png",
+          "authors": "Sinytra, FabricMC",
+          "description": "Defines rendering extensions for dynamic/fancy block and item models.",
+          "provides": [
+            "fabric-renderer-api-v1"
+          ],
+          "displayURL": "https://github.com/Sinytra/ForgifiedFabricAPI"
+        }
+      ],
+      "dependencies": {
+        "fabric_renderer_api_v1": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21.1.115,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21.1,1.22)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "fabric_api_base",
+            "type": "required",
+            "versionRange": "*",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      },
+      "mixins": [
+        {
+          "config": "fabric-renderer-api-v1.mixins.json"
+        },
+        {
+          "config": "fabric-renderer-api-v1.debughud.mixins.json"
+        }
+      ]
+    }
+  },
+  {
+    "archive": "sodium-neoforge-0.6.13+mc1.21.1.jar!/META-INF/jarjar/fabric-rendering-data-attachment-v1-0.3.48+73761d2e19.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[1,)",
+      "license": "Apache-2.0",
+      "issueTrackerURL": "https://github.com/Sinytra/ForgifiedFabricAPI/issues",
+      "mods": [
+        {
+          "modId": "fabric_rendering_data_attachment_v1",
+          "version": "${file.jarVersion}",
+          "displayName": "Forgified Fabric Rendering Data Attachment (v1)",
+          "logoFile": "assets/fabric-rendering-data-attachment-v1/icon.png",
+          "authors": "Sinytra, FabricMC",
+          "description": "Thread-safe hooks for block entity data use during terrain rendering.",
+          "provides": [
+            "fabric-rendering-data-attachment-v1"
+          ],
+          "displayURL": "https://github.com/Sinytra/ForgifiedFabricAPI"
+        }
+      ],
+      "dependencies": {
+        "fabric_rendering_data_attachment_v1": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21.1.115,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21.1,1.22)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "fabric_block_view_api_v2",
+            "type": "required",
+            "versionRange": "*",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      },
+      "mixins": [
+        {
+          "config": "fabric-rendering-data-attachment-v1.mixins.json"
+        },
+        {
+          "config": "fabric-rendering-data-attachment-v1.client.mixins.json"
+        }
+      ]
+    }
+  },
+  {
+    "archive": "iris-neoforge-1.8.12+mc1.21.1.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "*",
+      "license": "LGPL-3.0-only",
+      "mods": [
+        {
+          "modId": "iris",
+          "version": "1.8.12-snapshot+mc1.21.1-local",
+          "displayName": "Iris",
+          "logoFile": "iris-logo.png",
+          "authors": "coderbot, IMS212",
+          "description": "Iris is a modern shaders mod for Minecraft intended to be compatible with existing OptiFine shader packs.\n",
+          "sodium:options": {
+            "mixin.features.render.world.sky": false
+          }
+        }
+      ],
+      "dependencies": {
+        "iris": [
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21,1.21.1)",
+            "ordering": "NONE",
+            "side": "CLIENT"
+          },
+          {
+            "modId": "embeddium",
+            "type": "incompatible",
+            "reason": "Iris and Embeddium cannot be used together. Please use Sodium 0.6 instead.",
+            "versionRange": "[0.0.1,)",
+            "ordering": "NONE",
+            "side": "CLIENT"
+          },
+          {
+            "modId": "sodium",
+            "type": "required",
+            "reason": "Iris requires Sodium. Please install Sodium 0.6 for Iris to work.",
+            "versionRange": "[0.6,)",
+            "ordering": "NONE",
+            "side": "CLIENT"
+          }
+        ]
+      },
+      "mixins": [
+        {
+          "config": "mixins.iris.json"
+        },
+        {
+          "config": "mixins.iris.fantastic.json"
+        },
+        {
+          "config": "mixins.iris.vertexformat.json"
+        },
+        {
+          "config": "iris-batched-entity-rendering.mixins.json"
+        },
+        {
+          "config": "mixins.iris.compat.sodium.json"
+        },
+        {
+          "config": "mixins.iris.compat.dh.json"
+        },
+        {
+          "config": "mixins.iris.forge.json"
+        }
+      ]
+    }
+  },
+  {
+    "archive": "iris-neoforge-1.8.12+mc1.21.1.jar!/META-INF/jarjar/fabric-api-base-0.4.42+d1308ded19.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[1,)",
+      "license": "Apache-2.0",
+      "issueTrackerURL": "https://github.com/Sinytra/ForgifiedFabricAPI/issues",
+      "mods": [
+        {
+          "modId": "fabric_api_base",
+          "version": "${file.jarVersion}",
+          "displayName": "Forgified Fabric API Base",
+          "logoFile": "assets/fabric-api-base/icon.png",
+          "authors": "Sinytra, FabricMC",
+          "description": "Contains the essentials for Fabric API modules.",
+          "provides": [
+            "fabric-api-base"
+          ],
+          "displayURL": "https://github.com/Sinytra/ForgifiedFabricAPI"
+        }
+      ],
+      "dependencies": {
+        "fabric_api_base": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21.1.169,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21.1,1.22)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "archive": "iris-neoforge-1.8.12+mc1.21.1.jar!/META-INF/jarjar/fabric-block-view-api-v2-1.0.10+9afaaf8c19.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[1,)",
+      "license": "Apache-2.0",
+      "issueTrackerURL": "https://github.com/Sinytra/ForgifiedFabricAPI/issues",
+      "mods": [
+        {
+          "modId": "fabric_block_view_api_v2",
+          "version": "${file.jarVersion}",
+          "displayName": "Forgified Fabric BlockView API (v2)",
+          "logoFile": "assets/fabric-block-view-api-v2/icon.png",
+          "authors": "Sinytra, FabricMC",
+          "description": "Hooks for block views",
+          "provides": [
+            "fabric-block-view-api-v2"
+          ],
+          "displayURL": "https://github.com/Sinytra/ForgifiedFabricAPI"
+        }
+      ],
+      "dependencies": {
+        "fabric_block_view_api_v2": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21.1.115,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21.1,1.22)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      },
+      "mixins": [
+        {
+          "config": "fabric-block-view-api-v2.mixins.json"
+        },
+        {
+          "config": "fabric-block-view-api-v2.client.mixins.json"
+        }
+      ]
+    }
+  },
+  {
+    "archive": "iris-neoforge-1.8.12+mc1.21.1.jar!/META-INF/jarjar/fabric-renderer-api-v1-3.4.0+acb05a3919.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[1,)",
+      "license": "Apache-2.0",
+      "displayTest": "IGNORE_ALL_VERSION",
+      "issueTrackerURL": "https://github.com/Sinytra/ForgifiedFabricAPI/issues",
+      "mods": [
+        {
+          "modId": "fabric_renderer_api_v1",
+          "version": "${file.jarVersion}",
+          "displayName": "Forgified Fabric Renderer API (v1)",
+          "logoFile": "assets/fabric-renderer-api-v1/icon.png",
+          "authors": "Sinytra, FabricMC",
+          "description": "Defines rendering extensions for dynamic/fancy block and item models.",
+          "provides": [
+            "fabric-renderer-api-v1"
+          ],
+          "displayURL": "https://github.com/Sinytra/ForgifiedFabricAPI"
+        }
+      ],
+      "dependencies": {
+        "fabric_renderer_api_v1": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21.1.57,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21.1,1.22)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "fabric_api_base",
+            "type": "required",
+            "versionRange": "*",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      },
+      "mixins": [
+        {
+          "config": "fabric-renderer-api-v1.mixins.json"
+        },
+        {
+          "config": "fabric-renderer-api-v1.debughud.mixins.json"
+        }
+      ]
+    }
+  },
+  {
+    "archive": "iris-neoforge-1.8.12+mc1.21.1.jar!/META-INF/jarjar/fabric-rendering-data-attachment-v1-0.3.48+73761d2e19.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[1,)",
+      "license": "Apache-2.0",
+      "issueTrackerURL": "https://github.com/Sinytra/ForgifiedFabricAPI/issues",
+      "mods": [
+        {
+          "modId": "fabric_rendering_data_attachment_v1",
+          "version": "${file.jarVersion}",
+          "displayName": "Forgified Fabric Rendering Data Attachment (v1)",
+          "logoFile": "assets/fabric-rendering-data-attachment-v1/icon.png",
+          "authors": "Sinytra, FabricMC",
+          "description": "Thread-safe hooks for block entity data use during terrain rendering.",
+          "provides": [
+            "fabric-rendering-data-attachment-v1"
+          ],
+          "displayURL": "https://github.com/Sinytra/ForgifiedFabricAPI"
+        }
+      ],
+      "dependencies": {
+        "fabric_rendering_data_attachment_v1": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21.1.115,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21.1,1.22)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "fabric_block_view_api_v2",
+            "type": "required",
+            "versionRange": "*",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      },
+      "mixins": [
+        {
+          "config": "fabric-rendering-data-attachment-v1.mixins.json"
+        },
+        {
+          "config": "fabric-rendering-data-attachment-v1.client.mixins.json"
+        }
+      ]
+    }
+  },
+  {
+    "archive": "entityculling-neoforge-1.11.3-mc1.21.1.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[1,)",
+      "issueTrackerURL": "https://github.com/tr7zw/EntityCulling/issues",
+      "license": "tr7zw Protective License",
+      "mods": [
+        {
+          "modId": "entityculling",
+          "version": "1.11.3",
+          "displayName": "EntityCulling",
+          "displayURL": "https://modrinth.com/mod/entityculling",
+          "logoFile": "icon.png",
+          "iconFile": "icon.png",
+          "bannerFile": "icon.png",
+          "authors": "tr7zw",
+          "description": "This mod uses async path-tracing to hide Tiles/Entities that are not visible.\n",
+          "displayTest": "IGNORE_ALL_VERSION"
+        }
+      ],
+      "mixins": [
+        {
+          "config": "entityculling.mixins.json"
+        }
+      ],
+      "dependencies": {
+        "entityculling": [
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21.1]",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[20.2,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "archive": "entityculling-neoforge-1.11.3-mc1.21.1.jar!/META-INF/jars/TRansition-1.0.26-1.21.1-neoforge-SNAPSHOT.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[1,)",
+      "issueTrackerURL": "https://github.com/tr7zw/TRansition/issues",
+      "license": "MIT",
+      "mods": [
+        {
+          "modId": "transition",
+          "version": "1.0.26",
+          "displayName": "TRansition",
+          "displayURL": "https://github.com/tr7zw/TRansition",
+          "logoFile": "icon.png",
+          "iconFile": "icon.png",
+          "bannerFile": "icon.png",
+          "authors": "tr7zw",
+          "description": "Library to transition between Modloaders and Minecraft versions\n",
+          "displayTest": "IGNORE_ALL_VERSION"
+        }
+      ],
+      "mixins": [
+        {
+          "config": "transition.mixins.json"
+        }
+      ],
+      "dependencies": {
+        "transition": [
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21.1]",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[20.2,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "archive": "entityculling-neoforge-1.11.3-mc1.21.1.jar!/META-INF/jars/TRender-1.0.17-1.21.1-neoforge-SNAPSHOT.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[1,)",
+      "issueTrackerURL": "https://github.com/tr7zw/TRender/issues",
+      "license": "MIT",
+      "mods": [
+        {
+          "modId": "trender",
+          "version": "1.0.17",
+          "displayName": "TRender",
+          "displayURL": "https://github.com/tr7zw/TRender",
+          "logoFile": "icon.png",
+          "iconFile": "icon.png",
+          "bannerFile": "icon.png",
+          "authors": "tr7zw",
+          "description": "Multi version rendering library based on CottonMC LibGui\n",
+          "displayTest": "IGNORE_ALL_VERSION"
+        }
+      ],
+      "mixins": [
+        {
+          "config": "trender.mixins.json"
+        }
+      ],
+      "dependencies": {
+        "trender": [
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21.1]",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[20.2,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "archive": "cloth-config-15.0.140-neoforge.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[1,)",
+      "issueTrackerURL": "https://github.com/architectury/ClothConfig/issues/",
+      "displayURL": "https://www.curseforge.com/minecraft/mc-mods/cloth-config-forge/",
+      "logoFile": "icon.png",
+      "authors": "shedaniel",
+      "license": "GNU LGPLv3",
+      "mods": [
+        {
+          "modId": "cloth_config",
+          "version": "15.0.140",
+          "displayName": "Cloth Config v15 API",
+          "description": "An API for config screens.\n"
+        }
+      ],
+      "dependencies": {
+        "cloth_config": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21.0.110-beta,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "archive": "ferritecore-7.0.3-neoforge.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[1,)",
+      "license": "MIT",
+      "mods": [
+        {
+          "modId": "ferritecore",
+          "version": "7.0.3",
+          "displayName": "Ferrite Core",
+          "authors": "malte0811",
+          "description": "Reduces memory usage.\n",
+          "logoFile": "logo.png"
+        }
+      ],
+      "dependencies": {
+        "ferritecore": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21.1.218,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21.1,1.22)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      },
+      "mixins": [
+        {
+          "config": "ferritecore.predicates.mixin.json"
+        },
+        {
+          "config": "ferritecore.fastmap.mixin.json"
+        },
+        {
+          "config": "ferritecore.mrl.mixin.json"
+        },
+        {
+          "config": "ferritecore.dedupmultipart.mixin.json"
+        },
+        {
+          "config": "ferritecore.blockstatecache.mixin.json"
+        },
+        {
+          "config": "ferritecore.dedupbakedquad.mixin.json"
+        },
+        {
+          "config": "ferritecore.threaddetec.mixin.json"
+        },
+        {
+          "config": "ferritecore.modelsides.mixin.json"
+        },
+        {
+          "config": "ferritecore.datacomponents.mixin.json"
+        },
+        {
+          "config": "ferritecore.accessors.mixin.json"
+        }
+      ]
+    }
+  },
+  {
+    "archive": "lithium-neoforge-0.15.4+mc1.21.1.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "*",
+      "license": "LGPL-3.0-only",
+      "mods": [
+        {
+          "modId": "lithium",
+          "version": "0.15.4+mc1.21.1",
+          "displayName": "Lithium",
+          "logoFile": "assets/lithium/lithium-icon.png",
+          "authors": "2No2Name, JellySquid",
+          "credits": "",
+          "description": "Lithium is a free and open-source optimization mod for Minecraft which makes a wide range of performance improvements to the game.\n"
+        }
+      ],
+      "modproperties": {
+        "lithium": {}
+      },
+      "dependencies": {
+        "lithium": [
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21, 1.21.1]",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      },
+      "mixins": [
+        {
+          "config": "lithium.mixins.json"
+        },
+        {
+          "config": "lithium-neoforge.mixins.json"
+        }
+      ]
+    }
+  },
+  {
+    "archive": "jei-1.21.1-neoforge-19.27.0.340.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[4,)",
+      "issueTrackerURL": "https://github.com/mezz/JustEnoughItems/issues?q=is%3Aissue",
+      "license": "The MIT License (MIT)",
+      "mods": [
+        {
+          "modId": "jei",
+          "version": "19.27.0.340",
+          "displayName": "Just Enough Items",
+          "displayURL": "https://www.curseforge.com/minecraft/mc-mods/jei",
+          "authors": "mezz",
+          "description": "JEI is an item and recipe viewing mod for Minecraft, built from the ground up for stability and performance.\n"
+        }
+      ],
+      "dependencies": {
+        "jei": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21.0.118-beta,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21, 1.21.1)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      },
+      "modproperties": {
+        "jei": {
+          "catalogueImageIcon": "jei-icon.png"
+        }
+      }
+    }
+  },
+  {
+    "archive": "simplyswords-neoforge-1.70.2-1.21.1.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[4,)",
+      "issueTrackerURL": "https://github.com/Sweenus/SimplySwords/issues",
+      "license": "Timefall Development License",
+      "mixins": [
+        {
+          "config": "simplyswords.mixins.json"
+        },
+        {
+          "config": "simplyswords-common.mixins.json"
+        }
+      ],
+      "mods": [
+        {
+          "modId": "simplyswords",
+          "version": "1.70.2-1.21.1",
+          "displayName": "Simply Swords",
+          "authors": "Sweenus",
+          "credits": "Hootea (Art), Konsyliarz42 (Art), KreloX (Contributor), Fzzyhmstrs (Contributor), RosemaryThyme (Contributor), DestrSpirit (Contributor)",
+          "description": "A variety of unique weapons to add to your minecraft repertoire\n",
+          "logoFile": "icon.png",
+          "modProperties": {
+            "fzzy_config": "simplyswords:loot"
+          }
+        }
+      ],
+      "dependencies": {
+        "simplyswords": [
+          {
+            "modId": "neoforge",
+            "mandatory": true,
+            "versionRange": "[4,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "mandatory": true,
+            "versionRange": "[1.21, 1.22)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "architectury",
+            "mandatory": true,
+            "versionRange": "[13.0.11,)",
+            "ordering": "AFTER",
+            "side": "BOTH"
+          },
+          {
+            "modId": "fzzy_config",
+            "mandatory": true,
+            "versionRange": "[0.6.6,)",
+            "ordering": "AFTER",
+            "side": "BOTH"
+          },
+          {
+            "modId": "simplytooltips",
+            "mandatory": true,
+            "versionRange": "[0.1,)",
+            "ordering": "NONE",
+            "side": "CLIENT"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "archive": "fzzy_config-0.7.7+1.21+neoforge.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[1,)",
+      "issueTrackerURL": "https://github.com/fzzyhmstrs/fconfig/issues",
+      "license": "TDL-M (https://github.com/fzzyhmstrs/Timefall-Development-Licence-Modified)",
+      "mods": [
+        {
+          "modId": "fzzy_config",
+          "version": "0.7.7+1.21+neoforge",
+          "displayName": "Fzzy Config",
+          "authors": "fzzyhmstrs",
+          "description": "Configuration engine with automatic GUI generation, client-server syncing, powerful validation and error handling, and much more.\n",
+          "logoFile": "icon.png"
+        }
+      ],
+      "dependencies": {
+        "fzzy_config": [
+          {
+            "modId": "neoforge",
+            "type": "REQUIRED",
+            "versionRange": "[21.0.0-beta,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "REQUIRED",
+            "versionRange": "[1.21,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "kotlinforforge",
+            "type": "REQUIRED",
+            "versionRange": "[5.3.0,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "archive": "architectury-13.0.11-neoforge.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[1,)",
+      "issueTrackerURL": "https://github.com/shedaniel/architectury/issues",
+      "license": "GNU LGPLv3",
+      "mods": [
+        {
+          "modId": "architectury",
+          "version": "13.0.11",
+          "displayName": "Architectury",
+          "authors": "shedaniel",
+          "description": "A intermediary api aimed to ease developing multiplatform mods.\n",
+          "logoFile": "icon.png",
+          "license": "LGPL-3"
+        }
+      ],
+      "dependencies": {
+        "architectury": [
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21.0.110-beta,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      },
+      "mixins": [
+        {
+          "config": "architectury.mixins.json"
+        },
+        {
+          "config": "architectury-common.mixins.json"
+        }
+      ]
+    }
+  },
+  {
+    "archive": "SimplyTooltips-neoforge-0.1.5.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[2,)",
+      "license": "Timefall Development License 1.2",
+      "mods": [
+        {
+          "modId": "simplytooltips",
+          "version": "0.1.5",
+          "displayName": "Simply Tooltips",
+          "authors": "Sweenus",
+          "description": "Modern data driven tooltip renderer for Simply mods. Optionally available for other vanilla and modded items.\n",
+          "logoFile": "assets/simplytooltips/icon.png"
+        }
+      ],
+      "dependencies": {
+        "simplytooltips": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21.1,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "architectury",
+            "type": "required",
+            "versionRange": "[13.0.8,)",
+            "ordering": "AFTER",
+            "side": "BOTH"
+          },
+          {
+            "modId": "fzzy_config",
+            "mandatory": true,
+            "versionRange": "[0.6.6,)",
+            "ordering": "AFTER",
+            "side": "BOTH"
+          }
+        ]
+      },
+      "mixins": [
+        {
+          "config": "simplytooltips.mixins.json"
+        }
+      ]
+    }
+  },
+  {
+    "archive": "dungeons-and-taverns-v4.4.4.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[1,)",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "showAsResourcePack": false,
+      "mods": [
+        {
+          "modId": "mr_dungeons_andtaverns",
+          "version": "1-v4.4.4",
+          "displayName": "Dungeons and Taverns",
+          "description": "A Structure Datapack adding dungeons, taverns and other structures to find while you explore the world.",
+          "logoFile": "dungeons-and-taverns_pack.png",
+          "updateJSONURL": "https://api.modrinth.com/updates/tpehi7ww/forge_updates.json?neoforge=only",
+          "credits": "Generated by Modrinth",
+          "authors": "NovaWostra, Konci, Walls",
+          "displayURL": "https://modrinth.com/datapack/dungeons-and-taverns"
+        }
+      ]
+    }
+  },
+  {
+    "archive": "lootr-neoforge-1.21.1-1.11.38.127.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[2,)",
+      "issueTrackerURL": "https://github.com/noobanidus/Lootr/issues",
+      "license": "https://github.com/noobanidus/Lootr/blob/1.16/LICENSE",
+      "mods": [
+        {
+          "modId": "lootr",
+          "version": "1.21.1-1.11.38.127",
+          "displayName": "Lootr",
+          "displayURL": "https://minecraft.curseforge.com/projects/lootr",
+          "authors": "Noobanidus",
+          "description": "Generates unique loot for each player that opens a loot container."
+        }
+      ],
+      "mixins": [
+        {
+          "config": "lootr-common.mixins.json"
+        },
+        {
+          "config": "lootr-neoforge.mixins.json"
+        },
+        {
+          "config": "lootr-neoforge-digsite_workshop.mixins.json",
+          "requiredMods": [
+            "digsite_workshop"
+          ]
+        }
+      ],
+      "dependencies": {
+        "lootr": [
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "1.21.1"
+          },
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21.1.195,)"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "archive": "kotlinforforge-5.12.0-all.jar!/META-INF/jarjar/thedarkcolour.kffmod-5.12.0.jar",
+    "metadata": {
+      "modLoader": "kotlinforforge",
+      "loaderVersion": "[5,)",
+      "license": "LGPL",
+      "mods": [
+        {
+          "modId": "kotlinforforge",
+          "version": "5.12.0",
+          "displayName": "Kotlin For Forge",
+          "logoFile": "kotlinforforge_icon.png",
+          "credits": "thedarkcolour and his \"minions\"",
+          "authors": "thedarkcolour",
+          "description": "Makes Kotlin forge-friendly\n"
+        }
+      ],
+      "dependencies": {
+        "kotlinforforge": [
+          {
+            "modId": "minecraft",
+            "mandatory": true,
+            "type": "required",
+            "versionRange": "[1.20.6,1.21.9)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      },
+      "modproperties": {
+        "kotlinforforge": {
+          "catalogueImageIcon": "kotlinforforge_icon.png"
+        }
+      }
+    }
+  },
+  {
+    "archive": "combat_roll-neoforge-2.0.6+1.21.1.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[2,)",
+      "license": "GPL-3.0",
+      "mods": [
+        {
+          "modId": "combat_roll",
+          "version": "2.0.6+1.21.1",
+          "displayName": "Combat Roll",
+          "authors": "Daedelus",
+          "description": "Adds combat roll ability, with related attributes and enchantments.\n",
+          "logoFile": "icon.png"
+        }
+      ],
+      "dependencies": {
+        "combat_roll": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21.0,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "playeranimator",
+            "type": "required",
+            "versionRange": "[1,)",
+            "ordering": "AFTER",
+            "side": "BOTH"
+          }
+        ]
+      },
+      "mixins": [
+        {
+          "config": "combat_roll.mixins.json"
+        }
+      ]
+    }
+  },
+  {
+    "archive": "ItemBorders-1.21-neoforge-1.2.5.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[1,)",
+      "license": "CC BY-NC-ND 4.0",
+      "mods": [
+        {
+          "modId": "itemborders",
+          "version": "1.2.5",
+          "displayName": "Item Borders",
+          "displayURL": "https://anthonyhilyard.com/",
+          "updateJSONURL": "https://mc-update-check.anthonyhilyard.com/513769",
+          "logoFile": "icon.png",
+          "authors": "Grend",
+          "description": "Adds colored borders around items to indicate rarity."
+        }
+      ],
+      "dependencies": {
+        "itemborders": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21.0,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "iceberg",
+            "type": "required",
+            "versionRange": "[1.2.1,)",
+            "ordering": "AFTER",
+            "side": "BOTH"
+          },
+          {
+            "modId": "prism",
+            "type": "required",
+            "versionRange": "[1.0.7,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "legendarytooltips",
+            "type": "optional",
+            "versionRange": "[1.4.7,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      },
+      "mixins": [
+        {
+          "config": "itemborders.mixins.json"
+        },
+        {
+          "config": "itemborders.neoforge.mixins.json"
+        }
+      ]
+    }
+  },
+  {
+    "archive": "toughnessbar-1.21.1-9.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[4,)",
+      "license": "Unlicense",
+      "mods": [
+        {
+          "modId": "toughnessbar",
+          "version": "9",
+          "displayName": "Toughness Bar",
+          "authors": "paypur, Tfarecnim",
+          "description": "toughness bar"
+        }
+      ],
+      "dependencies": {
+        "toughnessbar": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21.1.0,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21.1, 1.22)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "archive": "sophisticatedbackpacks-1.21.1-3.25.21.1475.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[4,)",
+      "license": "All Rights Reserved",
+      "issueTrackerURL": "https://github.com/P3pp3rF1y/SophisticatedBackpacks/issues",
+      "mods": [
+        {
+          "modId": "sophisticatedbackpacks",
+          "version": "3.25.21",
+          "displayName": "Sophisticated Backpacks",
+          "displayURL": "https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks",
+          "logoFile": "logo.png",
+          "credits": "Created by P3pp3rF1y and art by Ridanisaurus.",
+          "authors": "P3pp3rF1y, Ridanisaurus",
+          "description": "Fancy and functional backpacks."
+        }
+      ],
+      "accessTransformers": [
+        {
+          "file": "META-INF/accesstransformer.cfg"
+        }
+      ],
+      "dependencies": {
+        "sophisticatedbackpacks": [
+          {
+            "modId": "sophisticatedcore",
+            "type": "required",
+            "versionRange": "[1.3.98,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21.1.0,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21.1,1.21.2)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "archive": "sophisticatedcore-1.21.1-1.3.100.1348.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[4,)",
+      "license": "All Rights Reserved",
+      "issueTrackerURL": "https://github.com/P3pp3rF1y/SophisticatedCore/issues",
+      "mods": [
+        {
+          "modId": "sophisticatedcore",
+          "version": "1.3.100",
+          "displayName": "Sophisticated Core",
+          "displayURL": "https://www.curseforge.com/minecraft/mc-mods/sophisticated-core",
+          "logoFile": "logo.png",
+          "credits": "Created by P3pp3rF1y",
+          "authors": "P3pp3rF1y",
+          "description": "A library / shared functionality mod for Sophisticated Storage and Backpacks"
+        }
+      ],
+      "accessTransformers": [
+        {
+          "file": "META-INF/accesstransformer.cfg"
+        }
+      ],
+      "mixins": [
+        {
+          "config": "sophisticatedcore.mixins.json"
+        }
+      ],
+      "dependencies": {
+        "sophisticatedcore": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21.1.0,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21.1,1.21.2)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "archive": "dummmmmmy-1.21-2.1.2-neoforge.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "*",
+      "license": "Supplementaries Team License v.1.5",
+      "issueTrackerURL": "https://github.com/MehVahdJukaar/DuMmmMmmy/issues",
+      "mixins": [
+        {
+          "config": "dummmmmmy.mixins.json"
+        },
+        {
+          "config": "dummmmmmy-common.mixins.json"
+        }
+      ],
+      "mods": [
+        {
+          "modId": "dummmmmmy",
+          "version": "1.21-2.1.2",
+          "displayName": "MmmMmmMmmMmm",
+          "logoFile": "icon.png",
+          "authors": "Mehvahdjukaar, Bonusboni, Gooigipunch, Plantkillable",
+          "credits": "MehVahdJukaar",
+          "description": "Don't hurt me pls :S",
+          "modUrl": "https://www.curseforge.com/minecraft/mc-mods/mmmmmmmmmmmm",
+          "itemIcon": "dummmmmmy:target_dummy"
+        }
+      ],
+      "dependencies": {
+        "dummmmmmy": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "*",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21.1]",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "moonlight",
+            "type": "required",
+            "referralUrl": "https://www.curseforge.com/minecraft/mc-mods/selene",
+            "versionRange": "[1.21-3.2.3,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "archive": "FpsReducer2-neoforge-1.21-2.10.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[4,)",
+      "license": "All Rights Reserved",
+      "issueTrackerURL": "https://minecraft.curseforge.com/projects/fps-reducer/issues",
+      "mods": [
+        {
+          "modId": "fpsreducer",
+          "version": "1.21-2.10",
+          "displayName": "FPS Reducer",
+          "displayURL": "https://minecraft.curseforge.com/projects/fps-reducer",
+          "logoFile": "fpsreducer_logo.png",
+          "authors": "bre2el",
+          "displayTest": "IGNORE_ALL_VERSION",
+          "description": "Reduce GPU and CPU utilization during no operation."
+        }
+      ],
+      "mixins": [
+        {
+          "config": "fpsreducer.mixins.json"
+        }
+      ],
+      "accessTransformers": [
+        {
+          "file": "META-INF/accesstransformer.cfg"
+        }
+      ],
+      "dependencies": {
+        "fpsreducer": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21.0.110-beta,)",
+            "ordering": "NONE",
+            "side": "CLIENT"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21,1.22)",
+            "ordering": "NONE",
+            "side": "CLIENT"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "archive": "enchdesc-neoforge-1.21.1-21.1.9.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[4,)",
+      "license": "LGPL 2.1",
+      "issueTrackerURL": "https://github.com/Darkhax-Minecraft/Enchantment-Descriptions/issues",
+      "mods": [
+        {
+          "modId": "enchdesc",
+          "version": "21.1.9",
+          "displayName": "EnchantmentDescriptions",
+          "updateJSONURL": "https://updates.blamejared.com/get?n=enchdesc&gv=1.21.1&ml=neoforge",
+          "displayURL": "https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions",
+          "logoFile": "logo_enchdesc.png",
+          "logoBlur": false,
+          "credits": "This project is made possible with Patreon support from players like you. Thank you! lothrazar, Spencer Gilbert, Tobias Ward, techsquirrel, Pongo Sapiens, noobanidus, Darkosto",
+          "authors": "Darkhax",
+          "description": "Adds descriptions of enchantment effects to their descriptions."
+        }
+      ],
+      "mixins": [
+        {
+          "config": "enchdesc.mixins.json"
+        },
+        {
+          "config": "enchdesc.neoforge.mixins.json"
+        }
+      ],
+      "dependencies": {
+        "enchdesc": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21.1.61,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21.1, 1.22)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "bookshelf",
+            "type": "required",
+            "versionRange": "[21.1, 21.2)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "prickle",
+            "type": "required",
+            "versionRange": "[21.1, 21.2)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "archive": "FarmersDelight-1.21.1-1.3.4.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[4,)",
+      "issueTrackerURL": "https://github.com/vectorwing/FarmersDelight/issues",
+      "license": "MIT License",
+      "mods": [
+        {
+          "modId": "farmersdelight",
+          "version": "1.3.4",
+          "displayName": "Farmer's Delight",
+          "displayURL": "https://github.com/vectorwing/FarmersDelight",
+          "logoFile": "logo.png",
+          "logoBlur": false,
+          "credits": "Chloe Dawn, Grimmauld, CDAGaming, TelepathicGrunt, XFactHD, GizmoThemoonPig, ConductiveFoam, simibubi, MerchantPug, Jozufozu, bagel, Silk, SkySom, Eutro, RaymondBlaze and many others!",
+          "authors": "vectorwing",
+          "description": "A cozy farming and cooking expansion for Minecraft!",
+          "enumExtensions": "META-INF/enumextensions.json",
+          "itemIcon": "farmersdelight:stove",
+          "configBackground": "minecraft:textures/block/bricks.png"
+        }
+      ],
+      "mixins": [
+        {
+          "config": "farmersdelight.mixins.json"
+        }
+      ],
+      "dependencies": {
+        "farmersdelight": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21.1.219,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21.1]",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "crafttweaker",
+            "type": "optional",
+            "versionRange": "[14.0.6,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "archive": "player-animation-lib-forge-2.0.4+1.21.1.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "*",
+      "license": "MIT",
+      "mods": [
+        {
+          "modId": "playeranimator",
+          "version": "2.0.4+1.21.1",
+          "displayURL": "https://github.com/KosmX/minecraftPlayerAnimator",
+          "displayName": "Player Animator",
+          "authors": "KosmX",
+          "description": "A lightweight library to easily animate the player"
+        }
+      ],
+      "mixins": [
+        {
+          "config": "playerAnimator-common.mixins.json"
+        }
+      ],
+      "dependencies": {
+        "playeranimator": [
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "mandatory": true,
+            "versionRange": "[1.21,1.21.2)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "archive": "Iceberg-1.21.1-neoforge-1.3.2.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[1,)",
+      "license": "CC BY-NC-ND 4.0",
+      "mods": [
+        {
+          "modId": "iceberg",
+          "version": "1.3.2",
+          "displayName": "Iceberg",
+          "displayURL": "https://anthonyhilyard.com/",
+          "updateJSONURL": "https://mc-update-check.anthonyhilyard.com/520110",
+          "logoFile": "icon.png",
+          "authors": "Grend",
+          "description": "A library containing events, helpers, and utilities to make modding easier."
+        }
+      ],
+      "dependencies": {
+        "iceberg": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21.1.54,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21.1]",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "advancementplaques",
+            "type": "optional",
+            "versionRange": "[1.6.3,)",
+            "ordering": "BEFORE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "legendarytooltips",
+            "type": "optional",
+            "versionRange": "[1.5.2,)",
+            "ordering": "BEFORE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "equipmentcompare",
+            "type": "optional",
+            "versionRange": "[1.3.13,)",
+            "ordering": "BEFORE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "merchantmarkers",
+            "type": "optional",
+            "versionRange": "[1.3.4,)",
+            "ordering": "BEFORE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "itemborders",
+            "type": "optional",
+            "versionRange": "[1.2.4,)",
+            "ordering": "BEFORE",
+            "side": "BOTH"
+          }
+        ]
+      },
+      "mixins": [
+        {
+          "config": "iceberg.mixins.json"
+        },
+        {
+          "config": "iceberg.neoforge.mixins.json"
+        }
+      ],
+      "modproperties": {
+        "iceberg": {
+          "configuredProviders": [
+            "com.anthonyhilyard.iceberg.compat.configured.IcebergConfigProvider"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "archive": "Prism-1.21.1-neoforge-1.0.11.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[1,)",
+      "license": "CC BY-NC-ND 4.0",
+      "mods": [
+        {
+          "modId": "prism",
+          "version": "1.0.11",
+          "displayName": "Prism",
+          "displayURL": "https://anthonyhilyard.com/",
+          "updateJSONURL": "https://mc-update-check.anthonyhilyard.com/638111",
+          "logoFile": "icon.png",
+          "authors": "Grend",
+          "description": "A library all about color! Provides lots of color-related functionality for dependent mods."
+        }
+      ],
+      "dependencies": {
+        "prism": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21.1.60,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21.1]",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      },
+      "mixins": [
+        {
+          "config": "prism.mixins.json"
+        }
+      ]
+    }
+  },
+  {
+    "archive": "moonlight-1.21.1-3.7.2-neoforge.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "license": "Supplementaries Team License v.1.5",
+      "issueTrackerURL": "https://github.com/MehVahdJukaar/moonlight/issues",
+      "loaderVersion": "*",
+      "mixins": [
+        {
+          "config": "moonlight.mixins.json"
+        },
+        {
+          "config": "moonlight-common.mixins.json"
+        }
+      ],
+      "mods": [
+        {
+          "modId": "moonlight",
+          "version": "1.21.1-3.7.2",
+          "displayName": "Moonlight Lib",
+          "logoFile": "icon.png",
+          "iconFile": "icon.png",
+          "authors": "MehVahdJukaar",
+          "credits": "MehVahdJukaar",
+          "description": "A small library with many cool unique features, from dynamic asset generation to dynamic villager schedules, data driven trades and Map Markers, simple multi loader utilities and more",
+          "modUrl": "https://www.curseforge.com/minecraft/mc-mods/selene"
+        }
+      ],
+      "dependencies": {
+        "moonlight": [
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21.1]",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "archive": "moonlight-1.21.1-3.7.2-neoforge.jar!/META-INF/jarjar/codecui-neoforge-1.21.1-1.4.7.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[1,)",
+      "license": "MIT",
+      "issueTrackerURL": "https://github.com/MehVahdJukaar/codecui/issues",
+      "mixins": [
+        {
+          "config": "codecui.mixins.json"
+        },
+        {
+          "config": "codecui-codec.mixins.json"
+        }
+      ],
+      "mods": [
+        {
+          "modId": "codecui",
+          "version": "1.21.1-1.4.7",
+          "displayName": "CodecUI",
+          "logoFile": "icon.png",
+          "iconFile": "icon.png",
+          "authors": "MehVahdJukaar",
+          "credits": "MehVahdJukaar",
+          "description": "Declarative schemas and auto-generated editor GUIs for DataFixerUpper codecs",
+          "modUrl": "https://github.com/MehVahdJukaar/codecui"
+        }
+      ],
+      "dependencies": {
+        "codecui": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21.1, 1.21.2)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "archive": "bookshelf-neoforge-1.21.1-21.1.81.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[4,)",
+      "license": "LGPL 2.1",
+      "issueTrackerURL": "https://github.com/Darkhax-Minecraft/Bookshelf/issues",
+      "mods": [
+        {
+          "modId": "bookshelf",
+          "version": "21.1.81",
+          "displayName": "Bookshelf",
+          "updateJSONURL": "https://updates.blamejared.com/get?n=bookshelf&gv=1.21.1&ml=neoforge",
+          "displayURL": "https://www.curseforge.com/minecraft/mc-mods/bookshelf",
+          "logoFile": "logo_bookshelf.png",
+          "logoBlur": false,
+          "credits": "This project is made possible with Patreon support from players like you. Thank you! lothrazar, Spencer Gilbert, Tobias Ward, techsquirrel, Pongo Sapiens, noobanidus, Darkosto",
+          "authors": "Darkhax",
+          "description": "Bookshelf is a library mod that provides code, frameworks, and utilities for other mods. Many mods make use of Bookshelf and are powered by its code."
+        }
+      ],
+      "mixins": [
+        {
+          "config": "bookshelf.mixins.json"
+        },
+        {
+          "config": "bookshelf.neoforge.mixins.json"
+        }
+      ],
+      "dependencies": {
+        "bookshelf": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21.1.209,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21.1, 1.22)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "archive": "prickle-neoforge-1.21.1-21.1.11.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[4,)",
+      "license": "LGPL 2.1",
+      "issueTrackerURL": "https://github.com/Darkhax-Minecraft/PrickleMC/issues",
+      "mods": [
+        {
+          "modId": "prickle",
+          "version": "21.1.11",
+          "displayName": "PrickleMC",
+          "updateJSONURL": "https://updates.blamejared.com/get?n=prickle&gv=1.21.1&ml=neoforge",
+          "displayURL": "https://www.curseforge.com/minecraft/mc-mods/prickle",
+          "logoFile": "logo_prickle.png",
+          "logoBlur": false,
+          "credits": "This project is made possible with Patreon support from players like you. Thank you! lothrazar, Spencer Gilbert, Tobias Ward, Solorah, Pongo Sapiens, noobanidus, Darkosto",
+          "authors": "Darkhax",
+          "description": "Bringing Prickle, the JSON based configuration file format to Minecraft."
+        }
+      ],
+      "mixins": [
+        {
+          "config": "prickle.mixins.json"
+        },
+        {
+          "config": "prickle.neoforge.mixins.json"
+        }
+      ],
+      "dependencies": {
+        "prickle": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21.1.61,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21.1, 1.22)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "archive": "IMBlocker-5.6.2.1-neoforge+1.20.6-1.21.8.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[2,)",
+      "issueTrackerURL": "https://github.com/reserveword/IMBlocker/issues",
+      "license": "GPL3 or higher",
+      "mods": [
+        {
+          "modId": "imblocker",
+          "version": "5.6.2.1",
+          "displayName": "IMBlocker",
+          "displayURL": "https://github.com/reserveword/IMBlocker",
+          "logoFile": "imblocker.png",
+          "credits": "TimmyOVO's InputMethodBlocker for inspiring me to make this mod",
+          "authors": "reserveword, LitnhJacuzzi",
+          "description": "Blocks Input Methods when you're not using it.\n在你不打字的时候自动关闭输入法"
+        }
+      ],
+      "mixins": [
+        {
+          "config": "imblocker-neoforge.mixins.json"
+        }
+      ]
+    }
+  },
+  {
+    "archive": "alexsmobs-1.22.17.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[4,)",
+      "license": "GPL-3.0",
+      "issueTrackerURL": "https://github.com/Alex-the-666/AlexsMobs/issues",
+      "mods": [
+        {
+          "modId": "alexsmobs",
+          "version": "1.22.17",
+          "displayName": "Alex's Mobs",
+          "displayURL": "https://www.curseforge.com/minecraft/mc-mods/alexs-mobs",
+          "logoFile": "alexs_mobs.png",
+          "authors": "Alexthe668, Carro1001, Paint_Ninja, Raguto",
+          "description": "New, original, engaging, and aesthetic mobs for Minecraft."
+        }
+      ],
+      "dependencies": {
+        "alexsmobs": [
+          {
+            "modId": "citadel",
+            "mandatory": true,
+            "versionRange": "[2.6.0,)",
+            "ordering": "AFTER",
+            "side": "BOTH"
+          },
+          {
+            "modId": "neoforge",
+            "mandatory": true,
+            "versionRange": "[21.1.0,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      },
+      "modproperties": {
+        "alexsmobs": {
+          "catalogueItemIcon": "alexsmobs:bear_dust"
+        }
+      }
+    }
+  },
+  {
+    "archive": "citadel-1.21.1-2.7.6.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[4,)",
+      "license": "GNU LESSER GENERAL PUBLIC LICENSE",
+      "mods": [
+        {
+          "modId": "citadel",
+          "version": "2.7.6",
+          "displayName": "Citadel",
+          "logoFile": "citadel.png",
+          "credits": "Gegy1000",
+          "authors": "Alexthe666",
+          "description": "A shared code library for many of Alexthe666's mods. Code used from LLibrary with permission."
+        }
+      ],
+      "mixins": [
+        {
+          "config": "citadel.mixins.json"
+        }
+      ],
+      "dependencies": {
+        "citadel": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[4,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21, 1.22)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      },
+      "accessTransformers": [
+        {
+          "file": "META-INF/accesstransformer.cfg"
+        }
+      ]
+    }
+  },
+  {
+    "archive": "alexsdelight-1.6.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[1,)",
+      "license": "All Rights Reserved",
+      "mods": [
+        {
+          "modId": "alexsdelight",
+          "version": "1.6",
+          "displayName": "Alexs Delight",
+          "authors": "NCP Bails, ianm1647",
+          "description": "Adds compatibility between Alexs Mobs and Farmers Delight"
+        }
+      ],
+      "dependencies": {
+        "alexsdelight": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21.1.218,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21.1]",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "archive": "MemorySweep-1.21.1-neoforge-2.0.3-fix.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[2,)",
+      "issueTrackerURL": "https://github.com/Tki-sor/MemorySweep/issues",
+      "license": "MIT",
+      "mods": [
+        {
+          "modId": "memorysweep",
+          "version": "2.0.3",
+          "displayName": "MemorySweep",
+          "authors": "Tki_sor",
+          "displayURL": "https://www.curseforge.com/minecraft/mc-mods/memorysweep",
+          "description": "\n"
+        }
+      ],
+      "dependencies": {
+        "memorysweep": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21.1,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "architectury",
+            "type": "required",
+            "versionRange": "[13.0.8,)",
+            "ordering": "AFTER",
+            "side": "BOTH"
+          }
+        ]
+      },
+      "mixins": [
+        {
+          "config": "memorysweep.mixins.json"
+        }
+      ]
+    }
+  },
+  {
+    "archive": "overloadedarmorbar-neoforge-1.21-2.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[2,)",
+      "license": "CC0-1.0",
+      "mods": [
+        {
+          "modId": "overloadedarmorbar",
+          "version": "2",
+          "displayName": "OverloadedArmorBar",
+          "logoFile": "overloadedarmorbar.png",
+          "credits": "",
+          "authors": "Jared",
+          "description": "Enhanced armor bar rendering for armor levels above diamond"
+        }
+      ],
+      "dependencies": {
+        "overloadedarmorbar": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[2,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "archive": "fastleafdecay-35.jar",
+    "metadata": {
+      "modLoader": "javafml",
+      "loaderVersion": "[4,)",
+      "license": "All Rights Reserved",
+      "mods": [
+        {
+          "modId": "fastleafdecay",
+          "version": "35",
+          "displayName": "FastLeafDecay",
+          "authors": "Olafski",
+          "description": "Increases leaves decay rate, so that you won't end up with a bunch of floating leaves."
+        }
+      ],
+      "dependencies": {
+        "fastleafdecay": [
+          {
+            "modId": "neoforge",
+            "type": "required",
+            "versionRange": "[21.1.0,)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          },
+          {
+            "modId": "minecraft",
+            "type": "required",
+            "versionRange": "[1.21.1, 1.22)",
+            "ordering": "NONE",
+            "side": "BOTH"
+          }
+        ]
+      }
+    }
+  }
+]

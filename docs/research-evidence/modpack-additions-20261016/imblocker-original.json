@@ -1,0 +1,1595 @@
+{
+  "project": {
+    "client_side": "required",
+    "server_side": "unsupported",
+    "game_versions": [
+      "1.16.5",
+      "1.17",
+      "1.17.1",
+      "1.18",
+      "1.18.1",
+      "1.18.2",
+      "1.19",
+      "1.19.1",
+      "1.19.2",
+      "1.19.3",
+      "1.19.4",
+      "1.20",
+      "1.20.1",
+      "1.20.2",
+      "1.20.3",
+      "1.20.4",
+      "1.20.5",
+      "1.20.6",
+      "1.21",
+      "1.21.1",
+      "1.21.2",
+      "1.21.3",
+      "1.21.4",
+      "1.21.5",
+      "1.21.6",
+      "1.21.7",
+      "1.21.8",
+      "1.21.9",
+      "1.21.10",
+      "1.21.11",
+      "26.1-snapshot-11",
+      "26.1",
+      "26.1.1",
+      "26.2-snapshot-1",
+      "26.1.2",
+      "26.2-snapshot-2",
+      "26.2-snapshot-3",
+      "26.2",
+      "26.3-snapshot-4",
+      "26.3-snapshot-5",
+      "26.3-snapshot-6",
+      "26.3-snapshot-7",
+      "26.3-snapshot-8",
+      "26.3-snapshot-9",
+      "26.3-snapshot-10",
+      "26.3-pre-1",
+      "26.3-pre-2",
+      "26.3-pre-3",
+      "26.3",
+      "26.4-snapshot-1"
+    ],
+    "environment": [
+      "client_and_server",
+      "client_only"
+    ],
+    "id": "WMDesFsZ",
+    "slug": "imblocker-original",
+    "project_type": "mod",
+    "team": "pPx0eAz0",
+    "organization": null,
+    "title": "IMBlocker",
+    "description": "A mod for Minecraft helping control input method",
+    "body": "# IMBlocker\n<details>\n<summary>English Description</summary>\n\n## Overview\nIMBlocker is a mod that aims to provide complete IME features for Minecraft as well as slightly improve your typing experience.\n\n## Features\nThe major features and platform compatiblity of the mod are as follows:\n 1. Automatically set the IME state based on current input context.\n 2. Monitor the chat input and automatically set the temporary English state if command syntax is detected.\n 3. Make candidate window be able to follow the caret position.\n 4. In-game rendering of IME content.\n\n|Feature|Windows|macOS|Linux (X11)|Linux (Wayland)|\n|:---:|:---:|:---:|:---:|:---:|\n|Auto State-Switching|Supported|Supported|Supported|Supported|\n|Command Auto-EN|Supported|Supported|Supported|Supported|\n|Caret Tracking|Supported|Supported|Supported|26.1+ or [HDR Mod](https://github.com/rrtt217/Minecraft-HDR-Mod)|\n|IngameIME|Supported|Unsupported|Unsupported|Unsupported|\n\n**Note: We recommend enabling the ingame IME only if your input method has display issues in exclusive fullscreen.**\n\n## Special Workarounds\nThis mod includes following platform-specific workarounds:\n - Prevents non-character keys being leaked to the game while candidates showing on macOS/Linux (<26.3).\n - Allows characters to be typed into the game after calling `SDL_StopTextInput`.\n\n## Compatibility with Custom-GUI Mods\nIMBlocker provides complete IME features for third-party text widgets through a unified focus management system and a generic abstraction layer for widgets, along with Mixin technology. Mods listed below feature the same level of IME enhancements as vanilla:\n - Roughly Enough Items\n - EMI\n - Axiom\n - Replay Mod\n - FTB Library\n - Meteor Client\n - LibGui\n - Reese's Sodium Options\n - BlockUI\n - SuperMartijn642's Core Lib\n - Notes\n - Essential Mod*\n - Armourer's Workshop\n - ModernUI\n - LDLib2\n\n*On Fabric, you need to extract the file named \"essential-<32-bit code>.jar\" from the root directory of its mod JAR and **only** put this file into your mod folder.\n\nIf the mod you are using is not listed here and its input widgets cannot activate the IME after gaining focus, please use **screen whitelist** as a temporary solution and give feedback.\n\n## What Does It Offer after 26.1?\nTL;DR IMBlocker's focus tracking is **virtually precise**, which is essential for setting the IME state. Additionally, this mod provides many customizable options and compatibility with third-party widgets, which are not practical to implement in vanilla code.\n\n**IMPORTANT: This mod might be essential for all modpack players after 26.3, regardless of their language. The reason is that custom-implemented text input widgets cannot be recognized by vanilla to notify the SDL backend when focused, while `SDL_StopTextInput` blocks all character input. If you're the developer of this kind of mods, we recommend *only* implementing basic `SDL_StartTextInput` and `SDL_StopTextInput` stuff and conditionally disable them *if IMBlocker is present*. A typical implementation using existed Minecraft API looks like this:**\n```java\n......\npublic class MyTextInputWidget {\n    ......\n    public void setFocused(boolean isFocused) {\n        ......\n        Minecraft.getInstance().textInputManager().onTextInputFocusChange(this, isFocused);\n    }\n}\n```\n**IMBlocker will automatically redirect Minecraft API to its dedicated implementation. For further technical support, please contact us on Discord or Github.**\n\n</details>\n\n## 概述\nIMBlocker 是一个致力于为 Minecraft 提供完整输入法支持并根据场景增强输入体验的模组。\n\n## 功能\n本模组当前包含的主要功能及跨平台支持情况如下：\n 1. 自动根据当前输入上下文调整输入法的激活状态；\n 2. 监测聊天栏文本是否为命令格式并自动切换临时中英文状态；\n 3. 令输入法候选框能够实时跟踪文本光标；\n 4. 游戏内渲染输入法 UI。\n\n|功能序号|Windows|macOS|Linux (X11)|Linux (Wayland)|\n|:---:|:---:|:---:|:---:|:---:|\n|1|完全支持|完全支持|完全支持|完全支持|\n|2|完全支持|完全支持|完全支持|完全支持|\n|3|完全支持|完全支持|完全支持|26.1+ 或 [HDR Mod](https://github.com/rrtt217/Minecraft-HDR-Mod)|\n|4|完全支持|不支持|不支持|不支持|\n\n**注意：游戏内输入法仅推荐在独占全屏模式下输入法自身 UI 有显示问题时启用，此功能在 26.3 以后仍会保留为可选项，需通过 Cloth Config 开启。**\n\n## 特殊修复\n本模组当前主要包含以下特定平台问题的修复：\n 1. 修复 macOS/Linux 下候选词显示时控制按键泄漏至游戏的问题（<26.3）；\n 2. 修复 SDL 后端下 `SDL_StopTextInput` 导致无法输入任何字符的问题。\n\n## 与自定义界面模组的兼容性\n本模组使用定制焦点管理系统以及通用组件抽象层配合 Mixin 技术对第三方模组内的自定义文本组件提供完整的输入法支持，目前以下模组拥有与原版相同级别的输入法增强：\n - Roughly Enough Items\n - EMI\n - Axiom\n - Replay Mod\n - FTB Library\n - Meteor Client\n - LibGui\n - Reese's Sodium Options\n - BlockUI\n - SuperMartijn642's Core Lib\n - Notes\n - Essential Mod*\n - Armourer's Workshop\n - ModernUI\n - LDLib2\n\n*在 Fabric 下使用此模组时需要手动使用压缩软件将其 JAR 根目录下名为“essential-<32位序列码>”的文件提取到模组文件夹并**移除原模组文件**\n\n如果您使用的模组未在此列出且其中的输入框无法在获得焦点后激活输入法，请先将**屏幕白名单**用作临时方案并进行反馈。\n\n## 对于 26.1+ 版本的作用\n简而言之，IMBlocker 拥有近乎**完全精准**的焦点管理策略，正确的焦点状态是能够正确设置输入法状态的必要条件。同时，本模组还提供多种原版不便实现的可定制选项以及大规模第三方组件的兼容性。\n\n**重要信息：从 26.3 开始，所有大型整合包玩家无论使用何种语言都可能需要安装此模组，因为 SDL 禁用输入法的实现会阻止所有字符的输入，这些自定义界面的模组中的文本组件会因为原版无法识别其焦点而无法通知 SDL 启用输入。若您是此类模组的开发者，我们推荐在检测到 IMBlocker *不* 存在时仅在文本组件焦点发生变化时调用基本的 `SDL_StartTextInput` 和 `SDL_StopTextInput` 函数，基于现成 Minecraft API 的典型实现示例如下：**\n```java\n......\npublic class MyTextInputWidget {\n    ......\n    public void setFocused(boolean isFocused) {\n        ......\n        Minecraft.getInstance().textInputManager().onTextInputFocusChange(this, isFocused);\n    }\n}\n```\n**IMBlocker 会自动将原版输入法 API 的调用重定向至其专有实现。更多技术支持请在 Discord 或 Github 上与我们联系。**",
+    "body_url": null,
+    "published": "2023-06-18T04:11:30.015712Z",
+    "updated": "2026-10-02T02:25:44.678506Z",
+    "approved": "2023-06-20T02:19:31.35305Z",
+    "queued": "2023-06-18T05:40:47.619771Z",
+    "status": "approved",
+    "requested_status": "approved",
+    "moderator_message": null,
+    "license": {
+      "id": "GPL-3.0-only",
+      "name": "GNU General Public License v3.0 only",
+      "url": "https://github.com/reserveword/IMBlocker/blob/master/LICENSE"
+    },
+    "downloads": 14380817,
+    "followers": 249,
+    "categories": [
+      "utility"
+    ],
+    "additional_categories": [],
+    "loaders": [
+      "fabric",
+      "forge",
+      "neoforge"
+    ],
+    "versions": [
+      "E5Z3dhh2",
+      "dPxGhD8g",
+      "TEUfTjU1",
+      "K6cO1Fif",
+      "N0CbmHlO",
+      "ltIVozF9",
+      "jqQmD1Dx",
+      "7q5u8b7z",
+      "9V3pJgw7",
+      "KLU2dkdX",
+      "Lq7yGiu7",
+      "zDsnnYlt",
+      "POfDI6qe",
+      "i9bOalx4",
+      "a0Kb0Vgl",
+      "MVSZCzcN",
+      "iNy1TlJw",
+      "tQ3YnhO7",
+      "XSo6oYiJ",
+      "5NQslNuv",
+      "UljaVSlV",
+      "tTgdJ7Yw",
+      "SPkBxmxk",
+      "GodzL5LD",
+      "kL4D95wh",
+      "Ydf6ucp3",
+      "5fSauIL7",
+      "wdrtPK2p",
+      "JzoAbiRt",
+      "gvY4yPlz",
+      "Xns81CRa",
+      "3TwCyLOs",
+      "tjdSxuxu",
+      "p3GbUvzX",
+      "XtyJRPQi",
+      "h0XF1IVY",
+      "kVYNcSYl",
+      "5X1Q1g2u",
+      "Tsl0om8h",
+      "VNLLWmkc",
+      "grwKIGVc",
+      "CuEU6Y1A",
+      "IayNNSnu",
+      "d5gjg1QO",
+      "6gjNApIh",
+      "F45jaIaE",
+      "giRsNb9i",
+      "pOgVFoi9",
+      "aTBkMMeX",
+      "CIdH0JQr",
+      "72smjFfU",
+      "pmId3lcV",
+      "2AzTAzY2",
+      "CouZoFOg",
+      "5HsANX1d",
+      "81tbcOeb",
+      "jAzYJPw5",
+      "6PCOWcm2",
+      "Vv4iC4YR",
+      "B34iplUx",
+      "bJY9G53S",
+      "eFTeDcdE",
+      "BZem119r",
+      "aWM7CBL9",
+      "oixXQcLZ",
+      "5YsmwHra",
+      "Q7qm7EAo",
+      "3EYPLZ0K",
+      "cQYYO956",
+      "75FRps5W",
+      "6oemKCRE",
+      "jSWUyXWa",
+      "vqhzTeuW",
+      "GXJtiPUf",
+      "t2AEozEw",
+      "LmhDYuMz",
+      "D2M7Ytps",
+      "FI4Ubozd",
+      "9Uqp1wNi",
+      "ducWbnJN",
+      "pzWU66mJ",
+      "Zb8NkBvD",
+      "P0eejgIE",
+      "wkxUYVCG",
+      "lEWHYwbv",
+      "VlojK7Ty",
+      "pgUHk6AD",
+      "ZjacBs6Z",
+      "yJ9VCXRX",
+      "i3X8CCQ1",
+      "FGYhLbmY",
+      "YAwsxiW0",
+      "YiovKGcK",
+      "Q8vFo92N",
+      "j55gjy9S",
+      "lzYtwTLb",
+      "kW4aJ8lh",
+      "WTgnin9e",
+      "LAdolByT",
+      "LxViwxkG",
+      "ELn4cSmw",
+      "NaNVOqNC",
+      "4v3Sx0xA",
+      "f7DPrNRZ",
+      "Y0MhxxPc",
+      "dH4Iejf6",
+      "TOp0vTRK",
+      "5RupnXil",
+      "aPU8fDw5",
+      "6XnV6Gqd",
+      "pqm5KOAS",
+      "4ywy41Dt",
+      "K4xnyT4i",
+      "eEdOZgQa",
+      "Ae6CEh2l",
+      "H9kBCSHN",
+      "G1kXnLvL",
+      "AIVYMKP7",
+      "8QlKHHZg",
+      "23LGfZjP",
+      "anWv9DYh",
+      "BO7litNl",
+      "u1ode5o8",
+      "a80aLKzq",
+      "ONNIIjcZ",
+      "wSPbNle0",
+      "s9gm1AKM",
+      "Xx4I5Odx",
+      "W35xWwqY",
+      "m4lho5WY",
+      "71N89qvb",
+      "2kdnDPqG",
+      "Ej5bCamY",
+      "gw1lrpIS",
+      "LUWp7TYH",
+      "fbdGdZoE",
+      "GEzXmM75",
+      "TAMzGI72",
+      "otMtf6PJ",
+      "EtUvhDhV",
+      "xtaSbkNv",
+      "QsWHBAQP",
+      "ipIuECHy",
+      "gom4UX66",
+      "g85fdqxk",
+      "pS9zB2Im",
+      "PmA26GES",
+      "Sm1XhBBQ",
+      "nGgKwCUa",
+      "4zhN8sMs",
+      "4aH4AbC5",
+      "hMMYc3vE",
+      "MQ96z3kk",
+      "BMDhZRaV",
+      "QshPBLar",
+      "BO7fgnmM",
+      "JHAcp8qU",
+      "nq23Cx5H",
+      "wyjkNzzu",
+      "r7k3kkNC",
+      "I1yKY90z",
+      "H1HUp8v5",
+      "mBZzAJ00",
+      "db8JhmmV",
+      "IDRaVLEy",
+      "pbiOmCwL",
+      "PlM3eTfA",
+      "IimTHoq3",
+      "hXYtiMlY",
+      "J8ZeiG9x",
+      "JCFs4e8D",
+      "FE6q4GBN",
+      "MmNj9XMx",
+      "ewAruo2L",
+      "Nx836GWF",
+      "FHqjI6JX",
+      "45vUAF8X",
+      "VyswcG4w",
+      "Ol9K5Sjm",
+      "svGziE2F",
+      "nXMrYxq8",
+      "tv3Oiu2O",
+      "YiB2d89P",
+      "nRLlzGpB",
+      "BKOiydts",
+      "4CF0W992"
+    ],
+    "icon_url": "https://cdn.modrinth.com/data/WMDesFsZ/681ebabfa43cbbbe80bf8eb54f123780c3852ef4_96.webp",
+    "raw_icon_url": "https://cdn.modrinth.com/data/WMDesFsZ/027917cd3417c31eba53fd0e2b6ebff337b33596.png",
+    "issues_url": "https://github.com/reserveword/IMBlocker/issues",
+    "source_url": "https://github.com/reserveword/IMBlocker",
+    "wiki_url": null,
+    "discord_url": "https://discord.gg/7GbyuCwn8J",
+    "donation_urls": [],
+    "gallery": [],
+    "color": 263172,
+    "thread_id": "WMDesFsZ",
+    "monetization_status": "monetized"
+  },
+  "versions": [
+    {
+      "game_versions": [
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5",
+        "1.21.6",
+        "1.21.7",
+        "1.21.8"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_only",
+      "id": "BKOiydts",
+      "project_id": "WMDesFsZ",
+      "author_id": "3Ew32jzc",
+      "featured": true,
+      "name": "IMBlocker-v5.6.2.1-neoforge",
+      "version_number": "5.6.2.1",
+      "changelog": "修复 macOS 下配置类注入异常的问题\n\n[历史更新日志](https://github.com/reserveword/IMBlocker/blob/master/Changelog_History.md)",
+      "changelog_url": null,
+      "date_published": "2026-10-02T02:24:11.153544Z",
+      "downloads": 13613,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "c5l1ajbV",
+          "hashes": {
+            "sha512": "4cdb92f60ab7b2101feda57e9e18b4b03835430496f75e21c2ff4adce911dc2aaa5aa26825cf3c4e507754b5d1f696deb800348d7c753616457ea874ac22400e",
+            "sha1": "259f0c47808ae0d9476733e9f51e8dcf12210e72"
+          },
+          "url": "https://cdn.modrinth.com/data/WMDesFsZ/versions/BKOiydts/IMBlocker-5.6.2.1-neoforge%2B1.20.6-1.21.8.jar",
+          "filename": "IMBlocker-5.6.2.1-neoforge+1.20.6-1.21.8.jar",
+          "primary": true,
+          "size": 225646,
+          "file_type": null
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "game_versions": [
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5",
+        "1.21.6",
+        "1.21.7",
+        "1.21.8"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_only",
+      "id": "nXMrYxq8",
+      "project_id": "WMDesFsZ",
+      "author_id": "3Ew32jzc",
+      "featured": false,
+      "name": "IMBlocker-v5.6.2-neoforge",
+      "version_number": "5.6.2",
+      "changelog": " - Forge：添加 LDLib2 的兼容层\n - 与操作系统绑定的配置项现在仅在对应平台上可见\n\n[历史更新日志](https://github.com/reserveword/IMBlocker/blob/master/Changelog_History.md)",
+      "changelog_url": null,
+      "date_published": "2026-09-30T11:44:40.948153Z",
+      "downloads": 2184,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "KlkpafvF",
+          "hashes": {
+            "sha512": "81f1cefa6fbfff9bb5ab6dbfed0479df5620e119a2e16213b46fab43d612039b29a119e6d0d20021848c1a1b72ea30e74bec8bb9bdd82d40bfd0ac6315f5f89e",
+            "sha1": "84c38f3dfe76109547d1ce2109dd197d1bbccfeb"
+          },
+          "url": "https://cdn.modrinth.com/data/WMDesFsZ/versions/nXMrYxq8/IMBlocker-5.6.2-neoforge%2B1.20.6-1.21.8.jar",
+          "filename": "IMBlocker-5.6.2-neoforge+1.20.6-1.21.8.jar",
+          "primary": true,
+          "size": 225648,
+          "file_type": null
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "game_versions": [
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5",
+        "1.21.6",
+        "1.21.7",
+        "1.21.8"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_only",
+      "id": "JCFs4e8D",
+      "project_id": "WMDesFsZ",
+      "author_id": "3Ew32jzc",
+      "featured": false,
+      "name": "IMBlocker-v5.6.1-neoforge",
+      "version_number": "5.6.1",
+      "changelog": " - macOS: 修复预编辑字符可能残留显示的问题\n - 提升了输入法渲染层的兼容性\n - 提升游戏窗口注入类的优先级以保证缩放值及时同步\n\n[历史更新日志](https://github.com/reserveword/IMBlocker/blob/master/Changelog_History.md)",
+      "changelog_url": null,
+      "date_published": "2026-09-12T08:21:04.55918Z",
+      "downloads": 14872,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "xoe9UV2L",
+          "hashes": {
+            "sha512": "1f9c64d44f87d133a75182cb4565c340cf6891498c7d04b117b2b5874184d282c8a6201305e8698e19e64d8ef9a45d71484631c0305f6d2dee19de0fd66fa14a",
+            "sha1": "ae2f4c8b929d923b6fd637b5158fd93082a0fdb2"
+          },
+          "url": "https://cdn.modrinth.com/data/WMDesFsZ/versions/JCFs4e8D/IMBlocker-5.6.1-neoforge%2B1.20.6-1.21.8.jar",
+          "filename": "IMBlocker-5.6.1-neoforge+1.20.6-1.21.8.jar",
+          "primary": true,
+          "size": 222741,
+          "file_type": null
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "game_versions": [
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5",
+        "1.21.6",
+        "1.21.7",
+        "1.21.8"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_and_server",
+      "id": "I1yKY90z",
+      "project_id": "WMDesFsZ",
+      "author_id": "3Ew32jzc",
+      "featured": false,
+      "name": "IMBlocker-v5.6.0-neoforge",
+      "version_number": "5.6.0",
+      "changelog": "# v5.6.0\n## 新功能\n - Linux (X11)：使用原生系统函数控制输入法状态，不再需要配置命令\n - Linux (X11)：已实现候选框跟踪文本光标\n - macOS：已实现候选框跟踪文本光标\n - macOS：现在预编辑字符可以在游戏内显示\n - 为中州韵输入法新增 `RIME` 英文状态实现方式，注意事项：\n   - Windows：需要将输入法安装目录添加至 `PATH`\n   - macOS：需要从 Github 安装最新的 nightly build\n   - Linux：仅支持 fcitx5-rime，**ibus-rime 不受支持**\n - 原生兼容 LDLib2 模组\n - 增加命令前缀正则表达式配置，可以加入“/”以外的命令前缀\n## 修复与改进\n - Windows：修复初始焦点状态可能不正确的问题\n - macOS：现在 `DISABLE_IM` 英文状态实现方式可正常输入字符\n - 完全修复部分平台高 DPI 缩放下候选框坐标不正确的问题\n - 略微提升文本光标位置的计算精度\n - 模拟字符定位焦点现在以黑名单形式与屏幕关联\n## 杂项\n - Reese's Sodium Options 的支持版本调整为 2.2.0+\n\n[历史更新日志](https://github.com/reserveword/IMBlocker/blob/master/Changelog_History.md)\n\n---\n**至此，本模组所有计划内功能已全部实现，正式进入长期维护阶段**",
+      "changelog_url": null,
+      "date_published": "2026-09-06T12:24:44.998043Z",
+      "downloads": 4573,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "XgPlEgXh",
+          "hashes": {
+            "sha512": "78c6716e23fc7f3a42234c630d29e35a12c4e25c2d84210036139e12f3f1006ea81347b651e38b3d5fe30dcb402c358dd47e9feced215026e5fa0a4a7b7e9959",
+            "sha1": "f45876fd802815a84ec0da777c8f1f93079969da"
+          },
+          "url": "https://cdn.modrinth.com/data/WMDesFsZ/versions/I1yKY90z/IMBlocker-5.6.0-neoforge%2B1.20.6-1.21.8.jar",
+          "filename": "IMBlocker-5.6.0-neoforge+1.20.6-1.21.8.jar",
+          "primary": true,
+          "size": 222572,
+          "file_type": null
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "game_versions": [
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5",
+        "1.21.6",
+        "1.21.7",
+        "1.21.8"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_only",
+      "id": "gom4UX66",
+      "project_id": "WMDesFsZ",
+      "author_id": "3Ew32jzc",
+      "featured": false,
+      "name": "IMBlocker-v5.5.4-neoforge",
+      "version_number": "5.5.4",
+      "changelog": " - 默认屏幕白名单中的项目现在强制生效以防止误删\n - 屏幕记录开启时现在会在左上角显示当前屏幕的类名以方便对照编辑白名单\n\n[历史更新日志](https://github.com/reserveword/IMBlocker/blob/master/Changelog_History.md)",
+      "changelog_url": null,
+      "date_published": "2026-05-30T04:29:12.999339Z",
+      "downloads": 129434,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "7uZLBO31",
+          "hashes": {
+            "sha1": "4910d4aeab9e5d23b4facb592a18136e64caf3e5",
+            "sha512": "db3d5aa66c2037645db83dac512476edb48d02e2c6ee9f30ce17265c817ff297154f8f65b0076620b83d0bfd7d398c0409d9e37e9f8fdad0707cf16bfa485f50"
+          },
+          "url": "https://cdn.modrinth.com/data/WMDesFsZ/versions/gom4UX66/IMBlocker-5.5.4-neoforge%2B1.20.6-1.21.8.jar",
+          "filename": "IMBlocker-5.5.4-neoforge+1.20.6-1.21.8.jar",
+          "primary": true,
+          "size": 196761,
+          "file_type": null
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "game_versions": [
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5",
+        "1.21.6",
+        "1.21.7",
+        "1.21.8"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_only",
+      "id": "LUWp7TYH",
+      "project_id": "WMDesFsZ",
+      "author_id": "3Ew32jzc",
+      "featured": false,
+      "name": "IMBlocker-v5.5.3-neoforge",
+      "version_number": "5.5.3",
+      "changelog": "Linux：支持特定环境下定制的输入法控制增强实现（[#143](https://github.com/reserveword/IMBlocker/issues/143)）\n\n[历史更新日志](https://github.com/reserveword/IMBlocker/blob/master/Changelog_History.md)",
+      "changelog_url": null,
+      "date_published": "2026-05-03T10:44:09.177275Z",
+      "downloads": 107201,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "2mTu2lL2",
+          "hashes": {
+            "sha512": "2709adf811cc2a097e3b9f39e77ea89e9151c224e0c759d4dbdfaef2dcc3f704f694b768bda0c145a20fd34af9d35ae980938f86105bfd29e7e99d5d5cbb2215",
+            "sha1": "e2a708e02e1fb0a473ba1bae1cc5757858d8f7ce"
+          },
+          "url": "https://cdn.modrinth.com/data/WMDesFsZ/versions/LUWp7TYH/IMBlocker-5.5.3-neoforge%2B1.20.6-1.21.8.jar",
+          "filename": "IMBlocker-5.5.3-neoforge+1.20.6-1.21.8.jar",
+          "primary": true,
+          "size": 195664,
+          "file_type": null
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "game_versions": [
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5",
+        "1.21.6",
+        "1.21.7",
+        "1.21.8"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_only",
+      "id": "s9gm1AKM",
+      "project_id": "WMDesFsZ",
+      "author_id": "3Ew32jzc",
+      "featured": false,
+      "name": "IMBlocker-v5.5.2-neoforge",
+      "version_number": "5.5.2",
+      "changelog": " - 原生兼容 ModernUI 模组\n - Linux：输入法关闭时自动禁用键盘补丁以解决快捷键冲突导致的锁键问题\n\n[历史更新日志](https://github.com/reserveword/IMBlocker/blob/master/Changelog_History.md)",
+      "changelog_url": null,
+      "date_published": "2026-05-01T10:54:13.282481Z",
+      "downloads": 1741,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "4AV46l6j",
+          "hashes": {
+            "sha1": "278a330dab32a68e6111df1913cc2e7a8e8d0c82",
+            "sha512": "f65f8174b4e89aad3b99808c6404b62e64cded75e52737a588a35e82408aba973739977564627237ce379f8fc16808433d5dc94f2196c58be441c93628f15482"
+          },
+          "url": "https://cdn.modrinth.com/data/WMDesFsZ/versions/s9gm1AKM/IMBlocker-5.5.2-neoforge%2B1.20.6-1.21.8.jar",
+          "filename": "IMBlocker-5.5.2-neoforge+1.20.6-1.21.8.jar",
+          "primary": true,
+          "size": 195064,
+          "file_type": null
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "game_versions": [
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5",
+        "1.21.6",
+        "1.21.7",
+        "1.21.8"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_only",
+      "id": "8QlKHHZg",
+      "project_id": "WMDesFsZ",
+      "author_id": "3Ew32jzc",
+      "featured": false,
+      "name": "IMBlocker-v5.5.1-neoforge",
+      "version_number": "5.5.1",
+      "changelog": "兼容 Axiom 5.4.1 并且**不再兼容以前的 Axiom 版本**\n\n[历史更新日志](https://github.com/reserveword/IMBlocker/blob/master/Changelog_History.md)",
+      "changelog_url": null,
+      "date_published": "2026-04-26T04:59:32.625726Z",
+      "downloads": 17914,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "D3HMZTEV",
+          "hashes": {
+            "sha1": "b7c89ef7691d42eec19c83a2368f9c537dbf0392",
+            "sha512": "8200435590e865f402eeb40815cc711ed56dba02e3759ae1a88d36f7e187e8fdaaef4d3eadca19c8796fbdc984eb99731143f0e2ac130f5f57a6c3726b5dc3a4"
+          },
+          "url": "https://cdn.modrinth.com/data/WMDesFsZ/versions/8QlKHHZg/IMBlocker-5.5.1-neoforge%2B1.20.6-1.21.8.jar",
+          "filename": "IMBlocker-5.5.1-neoforge+1.20.6-1.21.8.jar",
+          "primary": true,
+          "size": 190204,
+          "file_type": null
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "game_versions": [
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5",
+        "1.21.6",
+        "1.21.7",
+        "1.21.8"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_only",
+      "id": "4ywy41Dt",
+      "project_id": "WMDesFsZ",
+      "author_id": "3Ew32jzc",
+      "featured": false,
+      "name": "IMBlocker-v5.5.0-neoforge",
+      "version_number": "5.5.0",
+      "changelog": "# v5.5.0\n## 新功能\nWindows 游戏内输入法已完成全版本移植\n## 其他改进\n增强了对 FTB Library 文本组件的焦点识别和光标跟踪\n### ⚠ 已知问题  \n原版 **1.20.x** 的字体渲染系统存在严重缺陷，若使用**英特尔显卡**运行游戏并启用游戏内输入法，当输入速度较快、候选词内容更新频率较高时有概率导致显卡驱动崩溃并使游戏画面**永久冻结**，此问题已证明无法以不牺牲模组兼容性的方式解决，故暂时提供以下缓解方案：  \n - 禁用游戏内输入法并安装无边框全屏模组，使用无边框窗口全屏时系统弹窗不会导致英特尔显卡闪屏\n - 安装能够修改原版字体渲染的模组（如 ModernUI、Caxton 等）并确保其**完全接管所有字符的渲染**\n - 将帧率限制在最大帧率的 60% 以下并**关闭垂直同步**（此方法不能完全避免冻结，只能降低概率）  \n\n需要注意的是，此问题目前基本只在含有大量文本的模组自定义界面显示时触发，纯原版几乎没有触发记录，可以先观察此问题是否在自己的设备上复现再决定是否采用缓解方案\n\n[历史更新日志](https://github.com/reserveword/IMBlocker/blob/master/Changelog_History.md)",
+      "changelog_url": null,
+      "date_published": "2026-04-15T07:24:28.945446Z",
+      "downloads": 17087,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "yETKa06m",
+          "hashes": {
+            "sha1": "83a7f3a9161172a4aeb6b1dc9b6025a9fdebbab3",
+            "sha512": "26c0d0da7365dea1ba6e8fca13bfbb10653fd5eb63174a2c7228e8edb26bae2e21fecca687afcd0536f77086b92304f44ddce465db284f0b7b4e8c86a22cb0b0"
+          },
+          "url": "https://cdn.modrinth.com/data/WMDesFsZ/versions/4ywy41Dt/IMBlocker-5.5.0-neoforge%2B1.20.6-1.21.8.jar",
+          "filename": "IMBlocker-5.5.0-neoforge+1.20.6-1.21.8.jar",
+          "primary": true,
+          "size": 190225,
+          "file_type": null
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "game_versions": [
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5",
+        "1.21.6",
+        "1.21.7",
+        "1.21.8"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_only",
+      "id": "FGYhLbmY",
+      "project_id": "WMDesFsZ",
+      "author_id": "3Ew32jzc",
+      "featured": false,
+      "name": "IMBlocker-v5.4.6.1-neoforge",
+      "version_number": "5.4.6.1",
+      "changelog": "修复 SFM 4.27.0+ 以及旧版 FTB Library 的兼容问题\n\n[历史更新日志](https://github.com/reserveword/IMBlocker/blob/master/Changelog_History.md)",
+      "changelog_url": null,
+      "date_published": "2025-12-09T03:58:34.094481Z",
+      "downloads": 145304,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "n2aF5jUh",
+          "hashes": {
+            "sha1": "1a2d28e1f112314e5b4b47c49fd8790c3a86d316",
+            "sha512": "2ded1c5e02df659a0b47983bdacb327273316841c5842dc414be3fedd13060716c20280ec5e9397cd18f07d98b8bd10cfe701eb87c242f2e0566c944db1e1606"
+          },
+          "url": "https://cdn.modrinth.com/data/WMDesFsZ/versions/FGYhLbmY/IMBlocker-5.4.6.1-neoforge%2B1.20.6-1.21.8.jar",
+          "filename": "IMBlocker-5.4.6.1-neoforge+1.20.6-1.21.8.jar",
+          "primary": true,
+          "size": 169399,
+          "file_type": null
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "game_versions": [
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5",
+        "1.21.6",
+        "1.21.7",
+        "1.21.8"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_only",
+      "id": "lEWHYwbv",
+      "project_id": "WMDesFsZ",
+      "author_id": "3Ew32jzc",
+      "featured": false,
+      "name": "IMBlocker-v5.4.6-neoforge",
+      "version_number": "5.4.6",
+      "changelog": " - 原生兼容时装工坊（Armourer's Workshop）模组\n - 屏幕白名单现在默认包含机械动力剪贴板\n\n[历史更新日志](https://github.com/reserveword/IMBlocker/blob/master/Changelog_History.md)",
+      "changelog_url": null,
+      "date_published": "2025-11-05T07:55:37.178942Z",
+      "downloads": 23471,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "zncuw5aJ",
+          "hashes": {
+            "sha512": "ef1fb1d8383ca4b53c443303d7856e81bfbc1ea8e01e5eac6e548b3167cd8d429ae0897e9da6fd7d77fe36c6e377ea81449c07c6f2e7697763f50ffd7e0a9d60",
+            "sha1": "fd60cb640e76f061da092608a31eae0b1952692a"
+          },
+          "url": "https://cdn.modrinth.com/data/WMDesFsZ/versions/lEWHYwbv/IMBlocker-5.4.6-neoforge%2B1.20.6-1.21.8.jar",
+          "filename": "IMBlocker-5.4.6-neoforge+1.20.6-1.21.8.jar",
+          "primary": true,
+          "size": 165672,
+          "file_type": null
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "game_versions": [
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5",
+        "1.21.6",
+        "1.21.7",
+        "1.21.8"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_only",
+      "id": "P0eejgIE",
+      "project_id": "WMDesFsZ",
+      "author_id": "3Ew32jzc",
+      "featured": false,
+      "name": "IMBlocker-v5.4.5-neoforge",
+      "version_number": "5.4.5",
+      "changelog": "将超级工厂管理器（SFM）中代码编辑器的默认中英文状态设置为英文\n\n[历史更新日志](https://github.com/reserveword/IMBlocker/blob/master/Changelog_History.md)",
+      "changelog_url": null,
+      "date_published": "2025-10-19T14:59:27.193503Z",
+      "downloads": 5572,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "v3EQ2cXN",
+          "hashes": {
+            "sha512": "40721001d53ecc35fbc5af56a2762b05ddff595ca2bce596bf644df2ee3526039736285b97a7736927cb4c774a651fda5661b148f64fea0f58fcbaf63bccf2c1",
+            "sha1": "c54f072ca644b55865f15339cb69ba97cd091566"
+          },
+          "url": "https://cdn.modrinth.com/data/WMDesFsZ/versions/P0eejgIE/IMBlocker-5.4.5-neoforge%2B1.20.6-1.21.8.jar",
+          "filename": "IMBlocker-5.4.5-neoforge+1.20.6-1.21.8.jar",
+          "primary": true,
+          "size": 162389,
+          "file_type": null
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "game_versions": [
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5",
+        "1.21.6",
+        "1.21.7",
+        "1.21.8"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_only",
+      "id": "9Uqp1wNi",
+      "project_id": "WMDesFsZ",
+      "author_id": "3Ew32jzc",
+      "featured": false,
+      "name": "IMBlocker-v5.4.4-neoforge",
+      "version_number": "5.4.4",
+      "changelog": " - 改进了英文状态的实现方式，现在可以正常对非微软系列输入法生效，详见游戏内配置项\n - 原生兼容 Essential Mod。在 Fabric 下此模组需要[额外配置](https://github.com/reserveword/IMBlocker?tab=readme-ov-file#已支持的具有自定义gui实现的模组)\n\n[历史更新日志](https://github.com/LitnhJacuzzi/IMBlocker/blob/dev/Changelog_History.md)",
+      "changelog_url": null,
+      "date_published": "2025-09-23T15:41:23.433366Z",
+      "downloads": 11790,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "F2watrEk",
+          "hashes": {
+            "sha512": "db83aac763148b602609e403f1531b69ccc0f981b33334538c42a3b6bbb5ef9cb3632efde7dfab3ea311dc4f99f825eace90842cee8fde544b76ae9045e1c393",
+            "sha1": "f691c06da3250553889a04d0447c3a2b33ea98cb"
+          },
+          "url": "https://cdn.modrinth.com/data/WMDesFsZ/versions/9Uqp1wNi/IMBlocker-5.4.4-neoforge%2B1.20.6-1.21.8.jar",
+          "filename": "IMBlocker-5.4.4-neoforge+1.20.6-1.21.8.jar",
+          "primary": true,
+          "size": 161336,
+          "file_type": null
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "game_versions": [
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5",
+        "1.21.6",
+        "1.21.7",
+        "1.21.8"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_only",
+      "id": "GXJtiPUf",
+      "project_id": "WMDesFsZ",
+      "author_id": "3Ew32jzc",
+      "featured": false,
+      "name": "IMBlocker-v5.4.3.1-neoforge",
+      "version_number": "5.4.3.1",
+      "changelog": "完全解决 FTB 文本框的性能问题（[#114](https://github.com/reserveword/IMBlocker/issues/114)）\n\n## v5.4.3\n - 所有文本光标回调触发时进行额外验证以防止某些模组滥用引发性能问题（[#114](https://github.com/reserveword/IMBlocker/issues/114)）\n - 增强可见性检测技术的模组兼容性\n - 增加实用 Linux 兼容性设置，包括：\n   - 启用从 GLFW 回调层防止候选词显示时控制按键泄漏至游戏的补丁（[#104](https://github.com/reserveword/IMBlocker/issues/104)）\n   - 可配置的 IBus/Fcitx5 输入法控制终端命令（[#112](https://github.com/reserveword/IMBlocker/issues/112)）\n\n[历史更新日志](https://github.com/LitnhJacuzzi/IMBlocker/blob/dev/Changelog_History.md)",
+      "changelog_url": null,
+      "date_published": "2025-08-24T12:59:27.520303Z",
+      "downloads": 16056,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "tgmFe8Q5",
+          "hashes": {
+            "sha512": "b50fff5486b7680735bbef34f7c1b40d7fa4ed348e86ce4a4aef15cbedd64a9632e9c632a93e81e8238679eb69957010cb0ca4ef82d6736c49e8c919386c05f9",
+            "sha1": "105304aa3f79ac4947ec3349fbe9a23920ba0f49"
+          },
+          "url": "https://cdn.modrinth.com/data/WMDesFsZ/versions/GXJtiPUf/IMBlocker-5.4.3.1-neoforge-1.20.6%2B.jar",
+          "filename": "IMBlocker-5.4.3.1-neoforge-1.20.6+.jar",
+          "primary": true,
+          "size": 153266,
+          "file_type": null
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "game_versions": [
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5",
+        "1.21.6",
+        "1.21.7",
+        "1.21.8"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_only",
+      "id": "6oemKCRE",
+      "project_id": "WMDesFsZ",
+      "author_id": "3Ew32jzc",
+      "featured": false,
+      "name": "IMBlocker-v5.4.3-neoforge",
+      "version_number": "5.4.3",
+      "changelog": " - 所有文本光标回调触发时进行额外验证以防止某些模组滥用引发性能问题（[#114](https://github.com/reserveword/IMBlocker/issues/114)）\n - 增强可见性检测技术的模组兼容性\n - 增加实用 Linux 兼容性设置，包括：\n   - 启用从 GLFW 回调层防止候选词显示时控制按键泄漏至游戏的补丁（[#104](https://github.com/reserveword/IMBlocker/issues/104)）\n   - 可配置的 IBus/Fcitx5 输入法控制终端命令（[#112](https://github.com/reserveword/IMBlocker/issues/112)）\n\n[历史更新日志](https://github.com/LitnhJacuzzi/IMBlocker/blob/dev/Changelog_History.md)",
+      "changelog_url": null,
+      "date_published": "2025-08-24T05:46:11.643227Z",
+      "downloads": 492,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "jh2N0ig7",
+          "hashes": {
+            "sha512": "5aafb7348e6bc3dc827eec9e603badc3a5becdd6e152762730fb1c379bc901aeb192a574c20425918a78a2caeb434f04987d5faae903ac818a69d82e1ae7637c",
+            "sha1": "534c62b517da3e14fd1973d7f1a47ceb71faff5b"
+          },
+          "url": "https://cdn.modrinth.com/data/WMDesFsZ/versions/6oemKCRE/IMBlocker-5.4.3-neoforge-1.20.6%2B.jar",
+          "filename": "IMBlocker-5.4.3-neoforge-1.20.6+.jar",
+          "primary": true,
+          "size": 152601,
+          "file_type": null
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "game_versions": [
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5",
+        "1.21.6",
+        "1.21.7",
+        "1.21.8"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_only",
+      "id": "5YsmwHra",
+      "project_id": "WMDesFsZ",
+      "author_id": "3Ew32jzc",
+      "featured": false,
+      "name": "IMBlocker-v5.4.2-neoforge",
+      "version_number": "5.4.2",
+      "changelog": "增加首选中英文状态配置项，用于指定文本框获得焦点后输入法的初始中英文状态\n\n[历史更新日志](https://github.com/LitnhJacuzzi/IMBlocker/blob/dev/Changelog_History.md)",
+      "changelog_url": null,
+      "date_published": "2025-08-12T03:23:21.242531Z",
+      "downloads": 23391,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "GNPQTMX7",
+          "hashes": {
+            "sha1": "2e7759184b9f9ba2936ecc16919403657625ecb7",
+            "sha512": "b81b03c88da9a8c35a3355b3593194e399323f0b8bddc723f2ba0c0968de77bff1fbd023bf87f9f87d93b539f1117485f8682289558914fcecd2ddd6da5b7a1b"
+          },
+          "url": "https://cdn.modrinth.com/data/WMDesFsZ/versions/5YsmwHra/IMBlocker-5.4.2-neoforge-1.20.6%2B.jar",
+          "filename": "IMBlocker-5.4.2-neoforge-1.20.6+.jar",
+          "primary": true,
+          "size": 146192,
+          "file_type": null
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "game_versions": [
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5",
+        "1.21.6",
+        "1.21.7",
+        "1.21.8"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_only",
+      "id": "BZem119r",
+      "project_id": "WMDesFsZ",
+      "author_id": "3Ew32jzc",
+      "featured": false,
+      "name": "IMBlocker-v5.4.1.1-neoforge",
+      "version_number": "5.4.1.1",
+      "changelog": "在游戏主类访问接口的类加载阶段创建实例以避免空指针访问（[#109](https://github.com/reserveword/IMBlocker/issues/109)）",
+      "changelog_url": null,
+      "date_published": "2025-07-25T15:19:07.402087Z",
+      "downloads": 14691,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "CgaGNFUb",
+          "hashes": {
+            "sha1": "8d7efb64b5fef949c1ca6ae20b820477c82bb611",
+            "sha512": "94fdb744ebc8ec490e51e84141f2cc0cefb2df189d59ebe66dc42bf895ddd6bc2f94fd68d60c6cccc96faeb62e6821e7c2f13195ab74ba55efc171db7cd29e88"
+          },
+          "url": "https://cdn.modrinth.com/data/WMDesFsZ/versions/BZem119r/IMBlocker-5.4.1.1-neoforge-1.20.6%2B.jar",
+          "filename": "IMBlocker-5.4.1.1-neoforge-1.20.6+.jar",
+          "primary": true,
+          "size": 144599,
+          "file_type": null
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "game_versions": [
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5",
+        "1.21.6",
+        "1.21.7",
+        "1.21.8"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_only",
+      "id": "6PCOWcm2",
+      "project_id": "WMDesFsZ",
+      "author_id": "3Ew32jzc",
+      "featured": false,
+      "name": "IMBlocker-v5.4.1-neoforge",
+      "version_number": "5.4.1",
+      "changelog": " - 修复与 Ixeris 一起使用时本模组功能不生效的问题\n - 修复 5.4.0.x 与 Easy Anvils 的微小兼容问题\n - 原生兼容 Notes（笔记）模组",
+      "changelog_url": null,
+      "date_published": "2025-07-25T07:40:50.157136Z",
+      "downloads": 403,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "V0920VbM",
+          "hashes": {
+            "sha512": "01164fcc99c8e2f3351898300dc46cbb5eeec57f383cb925b6420c675a63478ccd1f392895c390fbfa79854e52e1631c56dad3f7fd828515a52cf2e7ee7fd87a",
+            "sha1": "628c5bbebf813f8389ebb7c25958127287be8ee0"
+          },
+          "url": "https://cdn.modrinth.com/data/WMDesFsZ/versions/6PCOWcm2/IMBlocker-5.4.1-neoforge-1.20.6%2B.jar",
+          "filename": "IMBlocker-5.4.1-neoforge-1.20.6+.jar",
+          "primary": true,
+          "size": 144362,
+          "file_type": null
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "game_versions": [
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5",
+        "1.21.6",
+        "1.21.7"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_only",
+      "id": "CouZoFOg",
+      "project_id": "WMDesFsZ",
+      "author_id": "3Ew32jzc",
+      "featured": false,
+      "name": "IMBlocker-v5.4.0-neoforge",
+      "version_number": "5.4.0",
+      "changelog": "# v5.4.0 ([#106](https://github.com/reserveword/IMBlocker/pull/106))\n**此版本包含重要的技术和功能更新**\n## 修复与改进\n - 在类加载阶段创建默认配置实例以避免空指针访问（[#105](https://github.com/reserveword/IMBlocker/issues/105)）\n - (Neo)Forge 现在包含所有已兼容模组的注入类以支持信雅互联\n - 修复 Axiom 编辑器打开时输入法候选框位置未随游戏内容偏移的问题\n - 修复屏幕白名单配置项编辑后需要重启游戏才生效的问题\n## 新功能\n - 使用更严格的可见性检测和候选队列机制处理多焦点竞争问题，大幅提升焦点组件的定位精度\n - 增加使用模拟字符定位焦点组件的选项（详细信息见游戏内配置项）\n - **输入法候选框现在可以定位至 Axiom 的文本光标**\n##\n※本模组核心模块的源代码现在包含详细的文档和注释",
+      "changelog_url": null,
+      "date_published": "2025-07-10T08:47:38.378453Z",
+      "downloads": 10387,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "rRCiBWaf",
+          "hashes": {
+            "sha1": "c7cc409fbc7ef6c18978f75d440a51eb5b1fd086",
+            "sha512": "9df89ed7dcf94cbe4e5e75c7af9eab503945efc06ac8b7a3b8b31701dc4fe2ac9447b64092d88964033899aa1c6bb9e5b33503d7a0df746db427a5431a931ae4"
+          },
+          "url": "https://cdn.modrinth.com/data/WMDesFsZ/versions/CouZoFOg/IMBlocker-5.4.0-neoforge-1.20.6%2B.jar",
+          "filename": "IMBlocker-5.4.0-neoforge-1.20.6+.jar",
+          "primary": true,
+          "size": 141092,
+          "file_type": null
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "game_versions": [
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5",
+        "1.21.6"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_only",
+      "id": "CIdH0JQr",
+      "project_id": "WMDesFsZ",
+      "author_id": "3Ew32jzc",
+      "featured": false,
+      "name": "IMBlocker-v5.3.1-neoforge",
+      "version_number": "5.3.1",
+      "changelog": "为 Forge 添加钠视频界面的兼容  \n过滤 JourneyMap 的全屏地图产生的无效焦点请求  \n**注意：如果从5.3.0之前的版本更新到此版本，请先阅读5.3.0版本的更新日志！**",
+      "changelog_url": null,
+      "date_published": "2025-06-20T15:24:27.09244Z",
+      "downloads": 10133,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "JLM4M6f9",
+          "hashes": {
+            "sha1": "bb5c1553a4d965d07001239fdc7bc518825b7bfc",
+            "sha512": "9ca07598bae46bad9e151095b751d87e395e8c61e852bdd4ae48f4e6aa322e4233fec89009894c7168c945448cdd3ae2560b8fb14def94f6157eed8e1efa4b7f"
+          },
+          "url": "https://cdn.modrinth.com/data/WMDesFsZ/versions/CIdH0JQr/IMBlocker-5.3.1-neoforge-1.20.6%2B.jar",
+          "filename": "IMBlocker-5.3.1-neoforge-1.20.6+.jar",
+          "primary": true,
+          "size": 111990,
+          "file_type": null
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "game_versions": [
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5",
+        "1.21.6"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_only",
+      "id": "F45jaIaE",
+      "project_id": "WMDesFsZ",
+      "author_id": "3Ew32jzc",
+      "featured": false,
+      "name": "IMBlocker-v5.3.0-neoforge",
+      "version_number": "5.3.0",
+      "changelog": "# v5.3.0 ([#102](https://github.com/reserveword/IMBlocker/pull/102))\n**⚠注意⚠：此版本更新内容较多，请仔细阅读更新日志**\n## 修复与改进\n**从此版本开始，所有平台统一使用 Cloth Config 管理配置项，如需更改默认配置，请安装它！**  \n修复 ModMenu 以外的模组菜单无法打开配置界面的问题（[#96](https://github.com/reserveword/IMBlocker/issues/96)）  \n修复 Minecraft 1.21.6 启动游戏崩溃的问题（[#100](https://github.com/reserveword/IMBlocker/issues/100)）  \n添加 Windows 兼容性设置配置选项，帮助解决部分输入法的兼容问题（[#98](https://github.com/reserveword/IMBlocker/issues/98)）  \nWindows：文本光标超出文本框边界时候选词框将定位至距其最近的文本框边界  \n白名单屏幕匹配机制现在为`instanceof`（**此配置项可能需要重新编辑，详见[下文](#白名单调整说明)**）  \n改进了 Windows 全屏模式下的窗口属性，使其能还原到正确的窗口状态  \n更新模组 Logo（by [@Halogly](https://github.com/Halogly)，[#101](https://github.com/reserveword/IMBlocker/issues/101)）\n### 白名单调整说明\n从先前的版本更新至此版本后，屏幕白名单配置项需要作出一定调整。为降低操作门槛，这里直接给出具体调整步骤，**在完成第三个步骤前先不要更新模组版本**：\n- 首先记录下当前的屏幕白名单为列表 A\n- 然后**重置**屏幕白名单并记录为列表 B（此时即为老版默认白名单）\n- 将 A 中同时属于 B 的元素除去（即集合操作A-B）得到列表 C\n- 更新模组版本后再次重置屏幕白名单并添加列表 C 中的内容至白名单\n## 新功能\n新增原生兼容模组：BlockUI、SuperMartijn642's Core Lib  \nWindows：合成字符串的字体大小现在可以自动根据界面尺寸调整",
+      "changelog_url": null,
+      "date_published": "2025-06-19T17:00:28.31663Z",
+      "downloads": 779,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "Rsm5D5St",
+          "hashes": {
+            "sha1": "d0982e990a4810ea9c189dc58a4af6e347227f2d",
+            "sha512": "7d429c5988e27dc9eeff4516cc89352570e79aacb2426258be53ddbfeb053c3e402cf1494b2b2d610dbcb70d3037c2468ed1174e0cb2d41ab2a3ad175f84823c"
+          },
+          "url": "https://cdn.modrinth.com/data/WMDesFsZ/versions/F45jaIaE/IMBlocker-5.3.0-neoforge-1.20.6%2B.jar",
+          "filename": "IMBlocker-5.3.0-neoforge-1.20.6+.jar",
+          "primary": true,
+          "size": 110726,
+          "file_type": null
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "game_versions": [
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_only",
+      "id": "grwKIGVc",
+      "project_id": "WMDesFsZ",
+      "author_id": "3Ew32jzc",
+      "featured": false,
+      "name": "IMBlocker-v5.2.2-neoforge",
+      "version_number": "5.2.2",
+      "changelog": "修复原版文本框小概率出现的无效文本光标索引导致的崩溃（[#93](https://github.com/reserveword/IMBlocker/issues/93)）  \n增强对多行文本框的支持（原版/FTB Library）",
+      "changelog_url": null,
+      "date_published": "2025-05-27T07:14:45.630366Z",
+      "downloads": 10435,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "lBHjN2mO",
+          "hashes": {
+            "sha512": "74a46a076f237397a51427a854f45f379fe46e9e2ffe081b72c359c7f0794245e95025f1c5c36f6b234e569f1f4ef41cbf2ec832072cabf3e8e9a2a5f898a2bf",
+            "sha1": "defa06b57046d8628c6bda6432030ac0fa2fbaf6"
+          },
+          "url": "https://cdn.modrinth.com/data/WMDesFsZ/versions/grwKIGVc/IMBlocker-5.2.2-neoforge-1.20.6%2B.jar",
+          "filename": "IMBlocker-5.2.2-neoforge-1.20.6+.jar",
+          "primary": true,
+          "size": 90202,
+          "file_type": null
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "game_versions": [
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_only",
+      "id": "5X1Q1g2u",
+      "project_id": "WMDesFsZ",
+      "author_id": "3Ew32jzc",
+      "featured": false,
+      "name": "IMBlocker-v5.2.1-neoforge",
+      "version_number": "5.2.1",
+      "changelog": "NeoForge：修复屏幕记录功能失效的问题  \nFabric：支持[LibGui](https://github.com/CottonMC/LibGui)  \nFabric/NeoForge：完全适配Reese's Sodium Options  \n\n现在输入法候选框可实时追踪除Axiom外所有已兼容模组的文本光标（Axiom组件非Java实现注入成本较大）    \n若未出现重大漏洞，这是本模组短期内最后一次更新  \n\n### Full Changelog\nhttps://github.com/LitnhJacuzzi/IMBlocker/compare/f55633c..b2cc830 ",
+      "changelog_url": null,
+      "date_published": "2025-05-12T08:52:50.264361Z",
+      "downloads": 5562,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "sAloVwo8",
+          "hashes": {
+            "sha1": "7c785b7c905a2a029f8ce9bd30fb9899f0aeba41",
+            "sha512": "6e1e4907a1aac49dbe7f14b711f0e298bc3b271e85a91ec69b6c7ac20be5f2461f4355ecb872ec6c1e6674479d3fa08007da5c10b6a09b0233a80883f73efc12"
+          },
+          "url": "https://cdn.modrinth.com/data/WMDesFsZ/versions/5X1Q1g2u/IMBlocker-5.2.1-neoforge-1.20.6%2B.jar",
+          "filename": "IMBlocker-5.2.1-neoforge-1.20.6+.jar",
+          "primary": true,
+          "size": 81205,
+          "file_type": null
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "game_versions": [
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_only",
+      "id": "3TwCyLOs",
+      "project_id": "WMDesFsZ",
+      "author_id": "3Ew32jzc",
+      "featured": false,
+      "name": "IMBlocker-v5.1.2-neoforge",
+      "version_number": "5.1.2",
+      "changelog": "## 修复与改进\n修复调用FTB内部组件方法可能导致的空指针异常（[#88](https://github.com/reserveword/IMBlocker/issues/88)）  \n防止模组内部系统方法与被注入类的方法重名，这可能会解决一些潜在的冲突  \n## 新功能\n输入法候选框现在可以实时跟踪Meteor Client的文本光标",
+      "changelog_url": null,
+      "date_published": "2025-05-02T12:18:26.445161Z",
+      "downloads": 4306,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "6YP9vHNK",
+          "hashes": {
+            "sha1": "d2598d230b4a566fdd8b7e215cff8f64a8f79ba3",
+            "sha512": "6a315207e8aa1b42d150e1e642bf3321ab74401cfcdd6803b8e286507f69bfe731e1cf18ceb56c28243de0973270a3526c32f4ead099057bc764a3cd65603f64"
+          },
+          "url": "https://cdn.modrinth.com/data/WMDesFsZ/versions/3TwCyLOs/IMBlocker-5.1.2-neoforge-1.20.6%2B.jar",
+          "filename": "IMBlocker-5.1.2-neoforge-1.20.6+.jar",
+          "primary": true,
+          "size": 74050,
+          "file_type": null
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "game_versions": [
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_only",
+      "id": "gvY4yPlz",
+      "project_id": "WMDesFsZ",
+      "author_id": "3Ew32jzc",
+      "featured": false,
+      "name": "IMBlocker-v5.1.1-neoforge",
+      "version_number": "5.1.1",
+      "changelog": "Windows：增强输入法候选框的定位功能\n\n\n",
+      "changelog_url": null,
+      "date_published": "2025-05-01T11:53:02.010749Z",
+      "downloads": 535,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "qiF8goxO",
+          "hashes": {
+            "sha512": "bfc82d8c30cc8078497be4635e25376cc1f5223a3e261e01e9ee6192a93d129404628bba84f1fb7ec2ecf76b3db67caaaa1988fea671eb8a0f794aed114a017c",
+            "sha1": "11209b463cef69bb6900c6a8791e2a1f7746bedd"
+          },
+          "url": "https://cdn.modrinth.com/data/WMDesFsZ/versions/gvY4yPlz/IMBlocker-5.1.1-neoforge-1.20.6%2B.jar",
+          "filename": "IMBlocker-5.1.1-neoforge-1.20.6+.jar",
+          "primary": true,
+          "size": 72869,
+          "file_type": null
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "game_versions": [
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_only",
+      "id": "Ydf6ucp3",
+      "project_id": "WMDesFsZ",
+      "author_id": "3Ew32jzc",
+      "featured": false,
+      "name": "IMBlocker-v5.1.0-neoforge",
+      "version_number": "5.1.0",
+      "changelog": "# v5.1.0 \nby LitnhJacuzzi([#65](https://github.com/reserveword/IMBlocker/pull/65), [#81](https://github.com/reserveword/IMBlocker/pull/81))\n## 修复与改进\n使用标准焦点管理系统完全重写底层架构，修复所有主要漏洞  \n移除新架构下不再需要的配置项目  \n增强版本兼容范围，分离不同的模组加载器  \n增加对部分forge模组的支持  \n修正默认白名单屏幕列表（可能需要重置该列表以生效）\n## 新增功能\nWindows：输入法候选框现在能自动定位至文本框  \nWindows：输入法候选框现在能在全屏模式下显示  \n为无法在检测到聊天栏命令格式时自动切换中英文状态的输入法提供替代方案（新配置项）  \n命令方块界面的命令输入框默认中英文状态现在为英文\n\n\n",
+      "changelog_url": null,
+      "date_published": "2025-04-30T08:54:38.025128Z",
+      "downloads": 667,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "aIEdBxRK",
+          "hashes": {
+            "sha1": "1cdaa62deafb81e9fc92014b503e3f55a16caa4f",
+            "sha512": "6cf470d1c741a061df4e800065e98921014e5e8d35531f51f66e637227d3cc00708a30774a115c25b464ed246fd05f027fde4a5548ac738213a16143e922a953"
+          },
+          "url": "https://cdn.modrinth.com/data/WMDesFsZ/versions/Ydf6ucp3/IMBlocker-5.1.0-neoforge-1.20.6%2B.jar",
+          "filename": "IMBlocker-5.1.0-neoforge-1.20.6+.jar",
+          "primary": true,
+          "size": 72221,
+          "file_type": null
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "game_versions": [
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4"
+      ],
+      "loaders": [
+        "fabric",
+        "neoforge"
+      ],
+      "environment": "client_only",
+      "id": "SPkBxmxk",
+      "project_id": "WMDesFsZ",
+      "author_id": "3Ew32jzc",
+      "featured": true,
+      "name": "IMBlocker-v5.0.2",
+      "version_number": "5.0.2",
+      "changelog": "更新输入状态检测手段\n删除旧输入状态检测手段\n添加兼容性代码\n现已可在Windows、linux、mac平台上运行\n",
+      "changelog_url": null,
+      "date_published": "2025-01-08T11:49:19.300179Z",
+      "downloads": 113548,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "hM74ucIf",
+          "hashes": {
+            "sha1": "0023646959d5b7ddf4c2892b5d469398f40e88cd",
+            "sha512": "4d58fe976d98634bd6e2b8301a9fe1b4e815033970f0fa6e8d7473e0d9d5dcfe208b34e18cd04850a60c49be67cb1c1992888e9388a4022a7a94e79d8ef27c86"
+          },
+          "url": "https://cdn.modrinth.com/data/WMDesFsZ/versions/SPkBxmxk/IMBlocker-5.0.2-1.20.6%2B.jar",
+          "filename": "IMBlocker-5.0.2-1.20.6+.jar",
+          "primary": true,
+          "size": 70870,
+          "file_type": null
+        }
+      ],
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "P7dR8mSH",
+          "file_name": null,
+          "dependency_type": "required"
+        },
+        {
+          "version_id": null,
+          "project_id": "mOgUt4GM",
+          "file_name": null,
+          "dependency_type": "optional"
+        },
+        {
+          "version_id": null,
+          "project_id": "9s6osm5g",
+          "file_name": null,
+          "dependency_type": "optional"
+        }
+      ]
+    },
+    {
+      "game_versions": [
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4"
+      ],
+      "loaders": [
+        "fabric",
+        "neoforge"
+      ],
+      "environment": "client_only",
+      "id": "5NQslNuv",
+      "project_id": "WMDesFsZ",
+      "author_id": "3Ew32jzc",
+      "featured": false,
+      "name": "IMBlocker-v5.0.1",
+      "version_number": "5.0.1",
+      "changelog": "更新输入状态检测手段\n删除旧输入状态检测手段\n添加兼容性代码\n现已可在Windows、linux、mac平台上运行\n",
+      "changelog_url": null,
+      "date_published": "2025-01-07T19:21:00.212607Z",
+      "downloads": 1004,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "GdDPEQjZ",
+          "hashes": {
+            "sha1": "79704c5f79dc7d1d8f9211c27b010d25680d86e1",
+            "sha512": "837cd816498e26f72b8408498c0c16442c68be83e5a4c0d4e6ab61dff1245bee4cc3104fe678d507c4793f745f97965c2b60015f3259859fc26b90ae80c15c46"
+          },
+          "url": "https://cdn.modrinth.com/data/WMDesFsZ/versions/5NQslNuv/IMBlocker-5.0.1-1.20.6%2B.jar",
+          "filename": "IMBlocker-5.0.1-1.20.6+.jar",
+          "primary": true,
+          "size": 70677,
+          "file_type": null
+        }
+      ],
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "P7dR8mSH",
+          "file_name": null,
+          "dependency_type": "required"
+        },
+        {
+          "version_id": null,
+          "project_id": "9s6osm5g",
+          "file_name": null,
+          "dependency_type": "optional"
+        },
+        {
+          "version_id": null,
+          "project_id": "mOgUt4GM",
+          "file_name": null,
+          "dependency_type": "optional"
+        }
+      ]
+    }
+  ]
+}

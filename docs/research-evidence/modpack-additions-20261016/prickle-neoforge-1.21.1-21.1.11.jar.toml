@@ -1,0 +1,36 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "LGPL 2.1"
+issueTrackerURL="https://github.com/Darkhax-Minecraft/PrickleMC/issues"
+
+[[mods]]
+modId = "prickle"
+version = "21.1.11"
+displayName = "PrickleMC"
+updateJSONURL = "https://updates.blamejared.com/get?n=prickle&gv=1.21.1&ml=neoforge"
+displayURL = "https://www.curseforge.com/minecraft/mc-mods/prickle"
+logoFile="logo_prickle.png"
+logoBlur = false
+credits = "This project is made possible with Patreon support from players like you. Thank you! lothrazar, Spencer Gilbert, Tobias Ward, Solorah, Pongo Sapiens, noobanidus, Darkosto"
+authors = "Darkhax"
+description = "Bringing Prickle, the JSON based configuration file format to Minecraft."
+
+[[mixins]]
+config = "prickle.mixins.json"
+
+[[mixins]]
+config = "prickle.neoforge.mixins.json"
+
+[[dependencies.prickle]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.61,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.prickle]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1, 1.22)"
+ordering = "NONE"
+side = "BOTH"

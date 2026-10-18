@@ -1,0 +1,47 @@
+Outputting log to file neoforge-21.1.219-installer.jar.log
+JVM info: Eclipse Adoptium - 21.0.12.1 - 21.0.12.1+1-LTS
+java.net.preferIPv4Stack=true
+Current Time: 17/10/2026 15:55:57
+Host: maven.neoforged.net [108.160.169.37]
+Host: libraries.minecraft.net [150.171.110.131]
+Host: launchermeta.mojang.com [150.171.110.131]
+Host: piston-meta.mojang.com [150.171.110.131]
+Host: sessionserver.mojang.com [150.171.110.108]
+Found java version 21.0.12.1
+Target Directory: .
+Following redirect: https://neoforged.net/mirrorlist.json
+Considering Minecraft server jar
+Downloading library from https://piston-meta.mojang.com/v1/packages/499680d659b7a0ccb2fa9a809c345c5baf2ace7d/1.21.1.json
+	Download completed: Checksum validated.
+Downloading library from https://piston-data.mojang.com/v1/objects/59353fb40c36d304f2035d51e7d6e6baa98dc05c/server.jar
+10￦ﾜﾈ 17, 2026 3:58:14 ￤ﾸﾋ￥ﾍﾈ net.minecraftforge.installer.Downloader download
+￨ﾭﾦ￥ﾑﾊ: Failed to download from https://piston-data.mojang.com/v1/objects/59353fb40c36d304f2035d51e7d6e6baa98dc05c/server.jar
+java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:278)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:489)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readFully(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decodeInputRecord(SSLSocketInputRecord.java:243)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:181)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:111)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1508)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1479)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1066)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:345)
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:420)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399)
+	at java.base/sun.net.www.MeteredStream.read(MeteredStream.java:131)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(HttpURLConnection.java:3733)
+	at net.minecraftforge.installer.actions.ProgressCallback$1.read(ProgressCallback.java:109)
+	at java.base/java.io.InputStream.transferTo(InputStream.java:796)
+	at java.base/java.nio.file.Files.copy(Files.java:3164)
+	at net.minecraftforge.installer.Downloader.download(Downloader.java:122)
+	at net.minecraftforge.installer.actions.ServerInstall.run(ServerInstall.java:89)
+	at net.minecraftforge.installer.SimpleInstaller.main(SimpleInstaller.java:174)
+Downloading minecraft server failed, invalid checksum.
+Try again, or manually place server jar to skip download.
+There was an error during installation

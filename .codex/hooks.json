@@ -1,0 +1,32 @@
+{
+  "description": "Project goal context reminders. No blocking, tool rewriting or automatic continuation.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "^(startup|resume|clear|compact|fork)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -NoProfile -File \"D:/codexout/mcmod/tools/codex/goal-reminder.ps1\"",
+            "timeout": 10,
+            "statusMessage": "Restoring project goal",
+            "additionalContextLimit": 2000
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell.exe -NoProfile -File \"D:/codexout/mcmod/tools/codex/goal-reminder.ps1\"",
+            "timeout": 10,
+            "statusMessage": "Restoring project goal",
+            "additionalContextLimit": 2000
+          }
+        ]
+      }
+    ]
+  }
+}

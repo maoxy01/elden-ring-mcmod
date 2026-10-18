@@ -1,0 +1,1883 @@
+[
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "uG7oHgw6",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.7.7+1.21+neoforge",
+    "version_number": "0.7.7+1.21+neoforge",
+    "changelog": "## Breaking changes in 0.7.x\r\n* `ValidatedEnumMap` is removed\r\n* Removed all methods and properties marked as Deprecated and for removal 0.7.0\r\n  * `SmallSpriteDecoration#<init>`\r\n  * `SpriteDecorated#textureSet` & `textures` is now a required override\r\n  * `SpriteDecoration#<init>`\r\n  * `CustomButtonWidget#<init>` & builder is now only non-override method for adding custom button\r\n  * Removed `ActiveButtonWidget`\r\n  * Removed `TextlessActionWidget`\r\n  * `DynamicListWidget.EntryPos` and implementations made `internal`\r\n  * `PopupWidget` position elements; `LayoutWidget` no longer inherits from the PopupWidget variant\r\n  * Removed deprecated overrides of `PopupController` from `PopupParentElement`\r\n  * `SuggestionWindowListener` and `SuggestionWindowProvider` moved out of `internal` sub-package\r\n  * Removed `ImmutableRelPos`\r\n  * `RenderUtil#renderBlur`\r\n* Throughout FzzyConfig `Translatable.Result` has been replaced with `Translatable.ResultProvider`. This affects `EntrySearcher` as well as `Searcher.SearchContent`\r\n\r\n-------------------------------------\r\n\r\n### Additions\r\n* Added zh_cn lang support (thank you Po-Cu on github)\r\n* Added the ability to copy-paste from/to outside of Minecraft into/out of settings\r\n* Added `platform` method to `PlatformApi`. This returns an enum providing `FABRIC`, `FORGE`, or `NEOFORGE`, which can be checked via their method `forgelike()` to quickly see if the platform is one of the forge-like types.\r\n\r\n### Changes\r\n* Improved how Registrar generics work so that registrars now return a `RegistryEntry<F>`, `F` being the specific type of the registered object rather than it's more generic supertype (`Item`, `Block`, etc.)\r\n\r\n### Fixes\r\n* Removed unneeded metadata warning in 1.20.1 forge version.\r\n* Crash possibly caused with use of `ValidatedIdentifier.ofRegistryKey`\r\n* Fixed Neo instances seeing blank popups under certain inconsistent circumstances\r\n* Fixed issue with ValidatedSet translation\r\n* Fixed decoder expeption on Neo for very large configs\r\n* Fixed `registerAndLoadNoGuiConfig` not properly hiding the config from the GUI in all circumstances\r\n* Fixed translation issue in datagen\r\n* Fixed issues with some packet registration on some more obscure Neo versions\r\n* Fixed enums with non-CAPS member naming of `ValidatedEnum` not deserializing properly.",
+    "changelog_url": null,
+    "date_published": "2026-09-15T00:36:53.806083Z",
+    "downloads": 241646,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "o4GfP18j",
+        "hashes": {
+          "sha512": "ef03b411b0e1b241a9952e1a8fdac61979665953eb5f28116aac06530964e7378eb20a78594a47ba4d942c74dfa20d550c292014b5de8e63c42b882a33aef5a5",
+          "sha1": "518eadc53c065a74a49207769209c116e77d1849"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/uG7oHgw6/fzzy_config-0.7.7%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.7.7+1.21+neoforge.jar",
+        "primary": true,
+        "size": 2392693,
+        "file_type": null
+      },
+      {
+        "id": "bJ8thhsM",
+        "hashes": {
+          "sha512": "81f32dfddf6fc40fbf057412a03fd1d719c560da67c57dd2f18482412bbed338bfee7e9b7a32334126121856db458cc90613ef433ef07b84ad89a9444b2a6362",
+          "sha1": "94de341a71bcc798ea230cd5a100a74eff5a62d9"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/uG7oHgw6/fzzy_config-0.7.7%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.7.7+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 713652,
+        "file_type": "sources-jar"
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "MAPG6cXE",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.7.6+1.21+neoforge",
+    "version_number": "0.7.6+1.21+neoforge",
+    "changelog": "## Breaking changes in 0.7.x\n* `ValidatedEnumMap` is removed\n* Removed all methods and properties marked as Deprecated and for removal 0.7.0\n  * `SmallSpriteDecoration#<init>`\n  * `SpriteDecorated#textureSet` & `textures` is now a required override\n  * `SpriteDecoration#<init>`\n  * `CustomButtonWidget#<init>` & builder is now only non-override method for adding custom button\n  * Removed `ActiveButtonWidget`\n  * Removed `TextlessActionWidget`\n  * `DynamicListWidget.EntryPos` and implementations made `internal`\n  * `PopupWidget` position elements; `LayoutWidget` no longer inherits from the PopupWidget variant\n  * Removed deprecated overrides of `PopupController` from `PopupParentElement`\n  * `SuggestionWindowListener` and `SuggestionWindowProvider` moved out of `internal` sub-package\n  * Removed `ImmutableRelPos`\n  * `RenderUtil#renderBlur`\n* Throughout FzzyConfig `Translatable.Result` has been replaced with `Translatable.ResultProvider`. This affects `EntrySearcher` as well as `Searcher.SearchContent`\n\n-------------------------------------\n\n### Additions\n* Various documentation updates for the Provider systems, including a wiki update\n\n### Changes\n* `ValidatedField.translationProvider`, `ValidatedField.descriptionProvider`, `ValidatedField.attachProvider`, and the associated `Provider` types are now static (as well as instance methods) so java users won't have to call `.Companion.` anymore (but can)\n\n### Fixes\n* Deprecated settings are properly read in from file for handling. They are still ignored in network traffic.\n* The options in `ValidatedChoiceList` and similar settings with an \"inline\" widget layout now properly show the tooltip for the individual options as well as the settings overall tooltip",
+    "changelog_url": null,
+    "date_published": "2026-02-03T01:49:45.873692Z",
+    "downloads": 2758024,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "kO6lZ6Sw",
+        "hashes": {
+          "sha1": "c0910f9b975aaab8545ce950539748fb33d704d1",
+          "sha512": "6071890aba7f2273c9fd508914acc7850de9d986423760f9ce416875ffa04eea2ad71a7a6f4d5f90f0625a672f6f54606778d11151b155f3fd98c223c61a4a6d"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/MAPG6cXE/fzzy_config-0.7.6%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.7.6+1.21+neoforge.jar",
+        "primary": true,
+        "size": 2369895,
+        "file_type": null
+      },
+      {
+        "id": "nUIQbqim",
+        "hashes": {
+          "sha1": "f8bba0bf8d651737611dbca7625a9ee3efa7c7de",
+          "sha512": "07568bcb37fa2512089ca6bce63ea0d46e900f1f4ea07a853093add3a508dd4fdcc1dbe83c6b1d5d1b9bd67fe9154755ccef7b03b5571d073180e6bfdb9e9e5b"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/MAPG6cXE/fzzy_config-0.7.6%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.7.6+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 703152,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "D9zI6UFX",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.7.5+1.21+neoforge",
+    "version_number": "0.7.5+1.21+neoforge",
+    "changelog": "## Breaking changes in 0.7.x\n* `ValidatedEnumMap` is removed\n* Removed all methods and properties marked as Deprecated and for removal 0.7.0\n  * `SmallSpriteDecoration#<init>`\n  * `SpriteDecorated#textureSet` & `textures` is now a required override\n  * `SpriteDecoration#<init>`\n  * `CustomButtonWidget#<init>` & builder is now only non-override method for adding custom button\n  * Removed `ActiveButtonWidget`\n  * Removed `TextlessActionWidget`\n  * `DynamicListWidget.EntryPos` and implementations made `internal`\n  * `PopupWidget` position elements; `LayoutWidget` no longer inherits from the PopupWidget variant\n  * Removed deprecated overrides of `PopupController` from `PopupParentElement`\n  * `SuggestionWindowListener` and `SuggestionWindowProvider` moved out of `internal` sub-package\n  * Removed `ImmutableRelPos`\n  * `RenderUtil#renderBlur`\n* Throughout FzzyConfig `Translatable.Result` has been replaced with `Translatable.ResultProvider`. This affects `EntrySearcher` as well as `Searcher.SearchContent`\n\n-------------------------------------\n\n### Additions\n* Several new utilities added to `FcText`\n* Added a basic `Provider` system to Validated Fields\n  * Use `ValidatedField.translationProvider` to attach a custom translation provider function to a field.\n  * Use `ValidatedField.descriptionProvider` to attach a custom description (tooltip) provider function to a field.\n  * Use `ValidatedField.attachProvider` to attach an arbitrary value provider. This system is experimental and currently largely unused except for some widget names\n  * For validation with titles like \"Edit Map...\" you can attach a `WIDGET_TITLE` provider to create custom widget labels\n  * There will be much more work put into this and related systems in 0.8.0 and beyond\n* New `ConfigDeprecated` annotation. Use this to mark a setting as deprecated in the config.\n  * It won't appear in GUIs\n  * It won't be serialized to save files or networking\n  * It WILL still be read in from files\n  * This can be used in combination with a `Version` annotation to update a setting while still being able to use the old setting to update/inform the content of the new one.\n\n### Changes\n* `ThreadingUtils` (the file watcher utility) now uses kotlin coroutines internally and has more robust startup and shutdown processes\n* Updated change detection system; may introduce niche regressions. Please open an issue if you encounter any strange behavior with \"actions\" \n\n### Fixes\n* Fixed restart detection when syncing for mapped settings (`ValidatedCondition`, `ValidatedMapped`, etc.)\n* Fixed action reporting for changes made inside `ValidatedAny`\n* (1.20.1) fixed tooltips not showing up in config screens until you \"click into\" them (or tab in)\n* (1.20.1) fixed sliders \"stealing\" input outside their widget bounds",
+    "changelog_url": null,
+    "date_published": "2026-01-19T17:34:13.65097Z",
+    "downloads": 84517,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "9YlpEWLM",
+        "hashes": {
+          "sha1": "81b9e4796cc40a04a6fa0cdf2682b326de726133",
+          "sha512": "7caa441d98e90cde0780b69c73552d8cf2db0f883febd1eb35bd0f66f105cd5052ca07da3ad4359fa3b5e3f4bd18969bd7d4b1a5967fb17be5c8dd9ddc50c9ab"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/D9zI6UFX/fzzy_config-0.7.5%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.7.5+1.21+neoforge.jar",
+        "primary": true,
+        "size": 2367696,
+        "file_type": null
+      },
+      {
+        "id": "ELqNLcJn",
+        "hashes": {
+          "sha512": "b45874d4e23c625de251476ed0006ea9c384ccf4364dbde9ea016074e38399c9bacbf0a0bb837e4fa7d01cc5fa5cd61f11d24b4c67fb66a0628942c4f082805d",
+          "sha1": "17949b58ccaa2497dee2c651e38633d458dc723e"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/D9zI6UFX/fzzy_config-0.7.5%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.7.5+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 702695,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "Mo5GSG4l",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.7.4+1.21+neoforge",
+    "version_number": "0.7.4+1.21+neoforge",
+    "changelog": "## Breaking changes in 0.7.x\n* `ValidatedEnumMap` is removed\n* Removed all methods and properties marked as Deprecated and for removal 0.7.0\n  * `SmallSpriteDecoration#<init>`\n  * `SpriteDecorated#textureSet` & `textures` is now a required override\n  * `SpriteDecoration#<init>`\n  * `CustomButtonWidget#<init>` & builder is now only non-override method for adding custom button\n  * Removed `ActiveButtonWidget`\n  * Removed `TextlessActionWidget`\n  * `DynamicListWidget.EntryPos` and implementations made `internal`\n  * `PopupWidget` position elements; `LayoutWidget` no longer inherits from the PopupWidget variant\n  * Removed deprecated overrides of `PopupController` from `PopupParentElement`\n  * `SuggestionWindowListener` and `SuggestionWindowProvider` moved out of `internal` sub-package\n  * Removed `ImmutableRelPos`\n  * `RenderUtil#renderBlur`\n* Throughout FzzyConfig `Translatable.Result` has been replaced with `Translatable.ResultProvider`. This affects `EntrySearcher` as well as `Searcher.SearchContent`\n\n-------------------------------------\n\n### Additions\n* Config updates made in the file (.toml, .json5, etc.) will be automatically updated live in-game, and synced as appropriate.\n* New `onUpdateServer` events that take a `ServerUpdateContext`. The old events are deprecated. They will stop working (no crashes) in 0.8.0, with full removal scheduled for 0.9.0\n  * For registered events, migrate to the v2 API\n* New `RegistryBuilder` platform system for creating modded registries in a loader-agnostic way, along with other registry-related utils.\n  * Call via `PlatformApi#createRegistryBuilder`. Much like registrars, a builder is created for a specific namespace.\n\n### Changes\n* `ValidatedEnum` now has more widget types, including `INLINE` and `SCROLLABLE`\n* `ValidationResult.bimap` error nesting order flipped, the output results error context is now the parent context\n\n### Fixes\n* Fixed desc and prefix keys being broken for Config classes\n* Config groups, especially deeply nested groups, behave properly now when opening and closing repeatedly",
+    "changelog_url": null,
+    "date_published": "2025-12-14T05:55:48.903641Z",
+    "downloads": 193423,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "kax1jc5X",
+        "hashes": {
+          "sha1": "2c6651f0563a4f800e0857e424ac01c1e42f80f7",
+          "sha512": "b689aa793cfa63598cbad6fa137f91376e039c8abbc64acdc53fe26da75574b88214a313eaa6f40f72262a999c254c0cecea3be84f086ec4416a52dd56bc002f"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/Mo5GSG4l/fzzy_config-0.7.4%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.7.4+1.21+neoforge.jar",
+        "primary": true,
+        "size": 2348703,
+        "file_type": null
+      },
+      {
+        "id": "lsCJTdWP",
+        "hashes": {
+          "sha512": "a7a9364a0540d9b70cc5c7ecabf185e9ce71a5bd4d4781f0ac34e5b573025b3a7dc1077a35d599fd3cff4c5c46ba64f70f169e717916313ace95b0dae6ace77b",
+          "sha1": "d1a4b8c4e59b068d05fc51ddd890e6879629af19"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/Mo5GSG4l/fzzy_config-0.7.4%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.7.4+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 698329,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "656NUHDc",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.7.3+1.21+neoforge",
+    "version_number": "0.7.3+1.21+neoforge",
+    "changelog": "## Breaking changes in 0.7.x\n* `ValidatedEnumMap` is removed\n* Removed all methods and properties marked as Deprecated and for removal 0.7.0\n  * `SmallSpriteDecoration#<init>`\n  * `SpriteDecorated#textureSet` & `textures` is now a required override\n  * `SpriteDecoration#<init>`\n  * `CustomButtonWidget#<init>` & builder is now only non-override method for adding custom button\n  * Removed `ActiveButtonWidget`\n  * Removed `TextlessActionWidget`\n  * `DynamicListWidget.EntryPos` and implementations made `internal`\n  * `PopupWidget` position elements; `LayoutWidget` no longer inherits from the PopupWidget variant\n  * Removed deprecated overrides of `PopupController` from `PopupParentElement`\n  * `SuggestionWindowListener` and `SuggestionWindowProvider` moved out of `internal` sub-package\n  * Removed `ImmutableRelPos`\n  * `RenderUtil#renderBlur`\n* Throughout FzzyConfig `Translatable.Result` has been replaced with `Translatable.ResultProvider`. This affects `EntrySearcher` as well as `Searcher.SearchContent`\n\n-------------------------------------\n\n### Additions\n* Added new `CustomWidget` interface. This will be used for abstracting all FC widgets away from directly interacting with `Element`, `Widget`, etc. to reduce porting headache going forward. Updates related to CustomWidget will be sprinkled into the next versions.\n* New `CustomTextWidget` utilizing said CustomWidget interface.\n* Added `syncConfig` method to the `NetworkApi` for manually syncing a server-side config to clients.\n* Added uk_ua translation\n\n### Changes\n* `CustomMultilineTextWidget` now has an align-right method\n* `Relevant` has gained three new methods for modifier checks, `needsCtrl`, `needsShift`, `needsAlt`\n* `PopupWidget`'s wrapped `LayoutWidget` now contributes to re-sizing the popup based on the dimensions it would like.\n\n### Fixes\n* Validated Collections now resolve their contents lazily on serialize, allowing for proper implementation of mapped registry objects (items, blocks, etc.) in loaders that defer their registration.\n* `ConfigGroup` now acts properly with nested `collapsedByDefault`\n* `ConfigApi.buildTranslations` can now \"see\" inside objects that may be wrapping a translated object (such as `ValidatedAny`)\n* Configs packet size limit increased to avoid problems with serializing large configs.\n* (1.21.9) fixed keybinds showing as \"Button 70\" etc.\n* `ValidationResult.reportTo` no longer reports an error context has header information only.",
+    "changelog_url": null,
+    "date_published": "2025-10-09T02:41:05.794891Z",
+    "downloads": 393470,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "fxRSsOBu",
+        "hashes": {
+          "sha512": "941d8a054f61b8446a9777a1bee0089ae311f6319801bf0b2d250d9f56c79c20d28c4c86017d4c032f4034f94fb672e7c089dd7a6d0500ec8f93639795d2c9ba",
+          "sha1": "5080991f845375be2d9ffe87538d64ced1a9e576"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/656NUHDc/fzzy_config-0.7.3%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.7.3+1.21+neoforge.jar",
+        "primary": true,
+        "size": 2299079,
+        "file_type": null
+      },
+      {
+        "id": "1EblnnZt",
+        "hashes": {
+          "sha1": "9a5164ddd278d586ab75ee39ec464808db5b9dd7",
+          "sha512": "c9af743a893597db9069d3c35fe013d7e7b1c938f3f5217a0546ef7800e1fe7a4f492ab8827037c6e4828a20543a3fe2973e8e40f3ef9760645a96ffb6c1ef01"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/656NUHDc/fzzy_config-0.7.3%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.7.3+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 681868,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "ZWbJxzBB",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.7.2+1.21+neoforge",
+    "version_number": "0.7.2+1.21+neoforge",
+    "changelog": "## Breaking changes in 0.7.x\n* `ValidatedEnumMap` is removed\n* Removed all methods and properties marked as Deprecated and for removal 0.7.0\n  * `SmallSpriteDecoration#<init>`\n  * `SpriteDecorated#textureSet` & `textures` is now a required override\n  * `SpriteDecoration#<init>`\n  * `CustomButtonWidget#<init>` & builder is now only non-override method for adding custom button\n  * Removed `ActiveButtonWidget`\n  * Removed `TextlessActionWidget`\n  * `DynamicListWidget.EntryPos` and implementations made `internal`\n  * `PopupWidget` position elements; `LayoutWidget` no longer inherits from the PopupWidget variant\n  * Removed deprecated overrides of `PopupController` from `PopupParentElement`\n  * `SuggestionWindowListener` and `SuggestionWindowProvider` moved out of `internal` sub-package\n  * Removed `ImmutableRelPos`\n  * `RenderUtil#renderBlur`\n* Throughout FzzyConfig `Translatable.Result` has been replaced with `Translatable.ResultProvider`. This affects `EntrySearcher` as well as `Searcher.SearchContent`\n\n-------------------------------------\n\n### Additions\n* `ValidatedColor` has a new presets feature. These presets will be displayed in a \"sub-pane\" to the right of the main color popup.\n  * There are pre-defined presets based on MC color enums, or you can define your own presets using `ValidatedColor#withColorPresets`\n* New `ValidatedNumber#setFormat` extension function lets you define a custom `DecimalFormat` for your number settings\n* PopupWidgets can now have \"child\" layouts that appear as sub-panes either to the right or below the main popup.\n  * Create a child layout with a pair of `pushChildLayout` and `popChildLayout` in the Builder.\n  * This child layout can have completely different spacing, padding, and so on.\n  * All the elements added to this child will be navigable alongside the main popup.\n\n### Changes\n* Configs marked with `SaveType.SEPARATE` can now be opened out of the world (if it's entries can be) without caring about permissions checking, because the clients version will be considered separately anyway\n* Deprecated the constructor of `LayoutWidget` in favor of a builder pattern. Migrate any custom LayoutWidget impls asap; removal scheduled for 0.8.0\n\n### Fixes\n* (1.21.6+) the Changes widget now properly displays its number of changes\n* (1.21.6+) popups properly blur the underlying screen content again\n* Fixed `ValidatedCondition` not passing widget size changes to it's delegate widget\n* ",
+    "changelog_url": null,
+    "date_published": "2025-08-03T16:42:19.098354Z",
+    "downloads": 248895,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "a287w1qS",
+        "hashes": {
+          "sha512": "ae1d5c32323066cdf018cf714362181adcea37cdc0408914e1598963b0457ad3001f5da599006e1a434a838324859d622f5cc438998ec334cab173efd3b64f00",
+          "sha1": "c6461086edbb70354ae91a4a559d3adc7188c787"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/ZWbJxzBB/fzzy_config-0.7.2%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.7.2+1.21+neoforge.jar",
+        "primary": true,
+        "size": 2261392,
+        "file_type": null
+      },
+      {
+        "id": "AcpQS93W",
+        "hashes": {
+          "sha512": "450f6dda6afa72c4378654f8c2ebf2796615167b558b517f267ccddf1b3b6e9b6b609f9954c1b3cfffbe8531c4965e20aa08dbf4fc14f43560bdaf75c181fd1d",
+          "sha1": "36c7f3a345e9e97a036888dbb8632eeb9199ccc8"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/ZWbJxzBB/fzzy_config-0.7.2%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.7.2+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 666505,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "wFIc6GXf",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.7.1+1.21+neoforge",
+    "version_number": "0.7.1+1.21+neoforge",
+    "changelog": "## Breaking changes in 0.7.0\n* `ValidatedEnumMap` is removed\n* Removed all methods and properties marked as Deprecated and for removal 0.7.0\n  * `SmallSpriteDecoration#<init>`\n  * `SpriteDecorated#textureSet` & `textures` is now a required override\n  * `SpriteDecoration#<init>`\n  * `CustomButtonWidget#<init>` & builder is now only non-override method for adding custom button\n  * Removed `ActiveButtonWidget`\n  * Removed `TextlessActionWidget`\n  * `DynamicListWidget.EntryPos` and implementations made `internal`\n  * `PopupWidget` position elements; `LayoutWidget` no longer inherits from the PopupWidget variant\n  * Removed deprecated overrides of `PopupController` from `PopupParentElement`\n  * `SuggestionWindowListener` and `SuggestionWindowProvider` moved out of `internal` sub-package\n  * Removed `ImmutableRelPos`\n  * `RenderUtil#renderBlur`\n* Throughout FzzyConfig `Translatable.Result` has been replaced with `Translatable.ResultProvider`. This affects `EntrySearcher` as well as `Searcher.SearchContent`\n\n-------------------------------------\n\n### Additions\n* New `@IgnoreCommentsForDesc` annotation. Use on your config class to have the translation parser ignore `@Comment` and `@TomlComment` for in-game descriptions.\n\n### Changes\n* Configs marked with `SaveType.SEPARATE` can now be opened out of the world (if it's entries can be) without caring about permissions checking, because the clients version will be considered separately anyway\n\n### Fixes\n* Fixed issue with config parser incorrectly ignoring transients in certain cases\n* Config GUI entries no longer show their tooltips from behind the header/footer\n* Config groups now scroll correctly when collapsed/opened\n* Fixed potential concurrency issue with config registration on Neoforge. All versions have the fix just in case.\n* Expressions now print their constants properly in \"plain\" format (0.0000003) vs (3E-7) so they properly back-parse their printed version.",
+    "changelog_url": null,
+    "date_published": "2025-07-14T20:10:59.704484Z",
+    "downloads": 174990,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "vEzaw2g8",
+        "hashes": {
+          "sha1": "646cb73ff1b33aa4fd08c9fb4b7d92496f81f6f9",
+          "sha512": "8f911352f36bb7bbe293daa292fd44a3baf5510e02363a31c8614e32276d6075b082828c91bfca36f216955d343932da8c879da0184bc9c9b9f14b6f604abefd"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/wFIc6GXf/fzzy_config-0.7.1%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.7.1+1.21+neoforge.jar",
+        "primary": true,
+        "size": 2206689,
+        "file_type": null
+      },
+      {
+        "id": "6wHDYHDQ",
+        "hashes": {
+          "sha512": "e62da6adf2026a241f083524651ae37ce53549dea0d9a7722bf8218da9a41676fae18a5a1c936c4a297551a40049474fd4fe9b03ad9867d173df0994787746e5",
+          "sha1": "0c6b1476d8429dea276313dae51d0dbc5c147112"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/wFIc6GXf/fzzy_config-0.7.1%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.7.1+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 651701,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "ivCvlsDg",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.7.0+1.21+neoforge",
+    "version_number": "0.7.0+1.21+neoforge",
+    "changelog": "## Breaking changes in 0.7.0\n* `ValidatedEnumMap` is removed\n* Removed all methods and properties marked as Deprecated and for removal 0.7.0\n  * `SmallSpriteDecoration#<init>`\n  * `SpriteDecorated#textureSet` & `textures` is now a required override\n  * `SpriteDecoration#<init>`\n  * `CustomButtonWidget#<init>` & builder is now only non-override method for adding custom button\n  * Removed `ActiveButtonWidget`\n  * Removed `TextlessActionWidget`\n  * `DynamicListWidget.EntryPos` and implementations made `internal`\n  * `PopupWidget` position elements; `LayoutWidget` no longer inherits from the PopupWidget variant\n  * Removed deprecated overrides of `PopupController` from `PopupParentElement`\n  * `SuggestionWindowListener` and `SuggestionWindowProvider` moved out of `internal` sub-package\n  * Removed `ImmutableRelPos`\n  * `RenderUtil#renderBlur`\n* Throughout FzzyConfig `Translatable.Result` has been replaced with `Translatable.ResultProvider`. This affects `EntrySearcher` as well as `Searcher.SearchContent`\n\n-------------------------------------\n\n### Additions\n* New `Translatable.Name`, `Translatable.Desc`, and `Translatable.Prefix` annotations for data generation of lang files\n  * Corresponding `ConfigApi.buildTranslations` and `ConfigApiJava.buildTranslations` methods for hooking a config into a data generator\n  * Also created a simple registered objects translation builder at `ConfigApi.platform().buildRegistryTranslations` Used for either `RegistrySupplier` objects built by a `Registrar` or `Identifier` used in a traditional registration system\n* Added `ConfigScreenProvider`, allowing for registering of custom screen implementations in place of the Fzzy Config built in\n  * API Call `registerScreenProvider` added for registering your provider\n* `afterClose` event in `PopupWidget`\n* `isPressed` method in `Relevant` interface (which is used by `FzzyKeybind` and `ValidatedKeybind`), which allows for assertive checking for a key state, above the existing reactive response method `relevant`\n* Overhauled the error handling system in `ValidationResult` with a new `ErrorEntry` system and dramatically improved process flow for building complex errors and passing exceptions and other context information\n  * Also introduced more functional methods like `inmap`, `outmap`, and `bimap`\n\n### Changes\n* Upgraded `CustomMultilineTextWidget` to handle click and hover events, as well as now implementing a custom `MultilineText` implementation\n* `ValidatedField` bails out of deserialization only on critical errors, now letting correction take its course more often\n* The `Registrar` system is no longer marked as experimental. Any further changes to the system will follow the standard released content deprecation and update system\n* Methods using the old error handling system of string lists are marked for removal 0.8.0\n* Slight improvements of overall memory footprint\n\n### Fixes\n* `ConfigGroup.Pop` properly pops multiple times if attached to one setting multiple times\n* Clicking off of a context menu into a slider properly updates the slider value\n* Search and Restore Defaults options in the context menu work again\n* `ClickableTextWidget` and `CustomMultilineTextWidget` now properly show hover events",
+    "changelog_url": null,
+    "date_published": "2025-05-26T23:55:47.52352Z",
+    "downloads": 395562,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "CW5cMSqT",
+        "hashes": {
+          "sha512": "a8010da84e8b388e411934625e65691da1e92edf7eefe58fea9d9e342395a075c8cb889d80b56788e052c624d0055b5c6ead084fff721fa2d4374e626f6c1e5f",
+          "sha1": "7f698629286b6f2b703850e7323c31e8ec2d6679"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/ivCvlsDg/fzzy_config-0.7.0%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.7.0+1.21+neoforge.jar",
+        "primary": true,
+        "size": 2203119,
+        "file_type": null
+      },
+      {
+        "id": "fVe0aKl5",
+        "hashes": {
+          "sha512": "beaa6c82955d5f10d37e8019adfb7004509ba9539137e639baeeb13b002efb35c64be0cd58d2976cb637ffd83786c3e7518d6721f856b0724f4cdc160ef8d672",
+          "sha1": "143f3fc88e020b2510dab0061134a599186dfe61"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/ivCvlsDg/fzzy_config-0.7.0%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.7.0+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 650956,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "q0YufUQB",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.6.9+1.21+neoforge",
+    "version_number": "0.6.9+1.21+neoforge",
+    "changelog": "## Reminder of breaking changes in 0.6.x\n* `ValidatedEntityAttribute` is removed\n* `Custom[Widgets]` are moved from the internal widget package to the custom package\n* Several widgets and other classes have been deleted\n* `PopupWidget` has many deprecations, and probably at least one breaking change despite my best efforts. Deprecations scheduled for removal 0.7.0\n* As of 0.6.3, `ActiveButtonWidget` is unused and deprecated, marked for removal by 0.7.0\n* As of 0.6.3, `TextlessActionWidget` is unused and deprecated, marked for removal by 0.7.0\n* Possibly more, I didn't take great notes\n\n## As of 0.6.0, 1.20.4 and 1.20.6 will no longer be receiving active updates.\n\n-------------------------------------\n\n### Additions\n* Improved average config load time by approx. 10%.\n\n### Changes\n* `ValidatedKeybind` now stores the keycode in the output file based on a string key, rather than the raw int; but it will still accept the raw int for up-conversion purposes or if the key falls outside the typical set of GLFW keys.\n  * The format for the key is the same as the minecraft one with the `key.[type]` prefix removed (except for mouse buttons, those start with `mouse.`)\n  * For example, page down is `page.down` versus the minecraft `key.keyboard.page.down`\n  * And right click is `mouse.right` versus `key.mouse.right`\n* `ValidatedTriState` will now accept boolean inputs from the file, if a user accidentally uses `true` or `false` instead of the intended enum form `\"true\"` or `\"false\"`\n* \"Excess\" fields (fields that used to exist in a config but no longer do, for example) are now reported as deserialization errors and removed from the read file. \n\n### Fixes\n* Integer-type text-box number validation no longer accepts decimal inputs, and the text-box in general no longer accepts any characters except numbers, the minus sign, and decimal if it is a floating-point number.\n* Fixed the search passing text not dynamically updating based on current pass-fail state of the input test.\n* Validated Any now properly translates basic settings (again, don't know when this broke)\n* Fixed servers not properly parsing updates sent from the client, introduced in 0.6.7\n* Config screen managers are now properly invalidated on joining a new world (with potentially new config values to care about)\n* Narration of the search bar and search bar option buttons works better, and can recover better from being \"interrupted\"\n* Deserialization fixes:\n  * Basic validation (plain fields) now properly report their errors, leading to a correction of the config file as needed.\n  * `ValidatedAny` is now robust against changing the number of fields in the wrapped object. Previously adding fields and then trying to read the pre-existing config file would result in total failure for the object, reverting to defaults.",
+    "changelog_url": null,
+    "date_published": "2025-04-09T23:15:14.267993Z",
+    "downloads": 293449,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "vnwthinx",
+        "hashes": {
+          "sha512": "c85aa294c267c8125998c0fe509b658e397006319361f2fc0587d9e52abf376432b7be6bddbb525bdb735f3b59575c97830291a7afe0fe38568a907d81bd304a",
+          "sha1": "5510784a9c9b8488ac76cc7d6d74315418be2b54"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/q0YufUQB/fzzy_config-0.6.9%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.6.9+1.21+neoforge.jar",
+        "primary": true,
+        "size": 2144031,
+        "file_type": null
+      },
+      {
+        "id": "90gNQAr7",
+        "hashes": {
+          "sha1": "267327a1a5e41a3f7f9ea0fab4da5f321689c0b9",
+          "sha512": "d2be9c70fa98c6e4b4d22f67fbd88f482e0018b9578e24caa8d1ca28f26cf0c173fa16e9c8198ce0314c65166c1ac4424a5c7aef6bc95cf78e7cf9c1dcd409fb"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/q0YufUQB/fzzy_config-0.6.9%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.6.9+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 644007,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "EvL6wbwK",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.6.8+1.21+neoforge",
+    "version_number": "0.6.8+1.21+neoforge",
+    "changelog": "## Reminder of breaking changes in 0.6.x\n* `ValidatedEntityAttribute` is removed\n* `Custom[Widgets]` are moved from the internal widget package to the custom package\n* Several widgets and other classes have been deleted\n* `PopupWidget` has many deprecations, and probably at least one breaking change despite my best efforts. Deprecations scheduled for removal 0.7.0\n* As of 0.6.3, `ActiveButtonWidget` is unused and deprecated, marked for removal by 0.7.0\n* As of 0.6.3, `TextlessActionWidget` is unused and deprecated, marked for removal by 0.7.0\n* Possibly more, I didn't take great notes\n\n## As of 0.6.0, 1.20.4 and 1.20.6 will no longer be receiving active updates.\n\n-------------------------------------\n\n### Additions\n* Updated to 1.21.5\n* Searches now propagate through sub-menus and other \"children\" results that aren't themselves valid but contain sub-entries that are valid will show a dashed outline and the tooltip will list the valid sub-entries\n  * Searches can now be automatically passed to sub-menus. By default, alt-click will pass the search\n  * The main search bar now has some buttons! A menu button which opens the new search config menu, and a clear button to quickly clear the search bar.\n* Added new `SaveType` method in `Config`\n  * `OVERWRITE` - Client configs will be overwritten when receiving a sync from a server. Default and previous behavior\n  * `SEPARATE` - Client configs will not be saved locally when updated from a server. Actions that modify gamestate before sync can't be included in these config type (`Action.RESTART` and `Action.RELOG`), as they won't be able to properly sync up this game state if they can't overwrite the local file.\n* New `Translatable.ResultProvider` super-class for more nuanced and efficient storage of translation results. Currently, half-wired-in until 0.7.0.\n  * Scope-based `Result` can be cached with the new `Translatable.createScopedResult`\n* New function utilities for suppliers, functions, and predicates that always return the same value\n\n### Changes\n* `Translatable.Result` now implements `Searcher.SearchContent` directly, and is now deprecated in favor of the new `ResultProvider`\n  * In 0.7.0, all Result constructors will be made internal in favor of using `Translatable.createResult`/`Translatable.createScopedResult`\n* `ConfigEntry` can now process searches using the `ContentBuilder.searchResult` method. This presents valid \"child\" search results when the parent list is searched.\n* `ValidatedAny` now has its own search bar\n* `ConfigScreenManager` passes Config and entry Content misc. context to entry creators\n\n### Fixes\n* Fixed unnecessary re-saving of configs on single player configuration\n* Fix a variety of edge cases and niche issues involving searching\n* Popups for settings that are translated with `@Translation` (or the entire class is marked with `@Translation`) will now properly render the translated name in the popup header\n* Search filtering now properly resets when a screen is returned to. The search bar menu has a setting to enable caching behavior where the search will be maintained when the screen is re-opened from a child.\n* Fixed accidental niche API break of `ConfigGroup` involving kotlin constructors.",
+    "changelog_url": null,
+    "date_published": "2025-03-29T21:56:29.490137Z",
+    "downloads": 25324,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "hCsazqGS",
+        "hashes": {
+          "sha1": "d7957a3a0c85808acd052b082b4fb00778368562",
+          "sha512": "038db4314d6e90b360d3a4335c98bd3bdb96342f8dd34f4ca88634ee9079e706150e5652f3e4dd5366e1d282fa76712f280282113d2b0c9c67d9b14922454c29"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/EvL6wbwK/fzzy_config-0.6.8%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.6.8+1.21+neoforge.jar",
+        "primary": true,
+        "size": 2126624,
+        "file_type": null
+      },
+      {
+        "id": "TVNpIR6h",
+        "hashes": {
+          "sha512": "dd7682b108ccd06843c62c3318b8169669bdcbf5f7ceaa0b867628de524f79d8878e5b3f6c334b4eda83d91147bc8e62c8fb34a7c54d121ca26973a4ab677f5c",
+          "sha1": "3c30ba68c285152717feba98948defdf24397712"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/EvL6wbwK/fzzy_config-0.6.8%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.6.8+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 638965,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "Bvj7WMlM",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.6.7+1.21+neoforge",
+    "version_number": "0.6.7+1.21+neoforge",
+    "changelog": "## Reminder of breaking changes in 0.6.x\n* `ValidatedEntityAttribute` is removed\n* `Custom[Widgets]` are moved from the internal widget package to the custom package\n* Several widgets and other classes have been deleted\n* `PopupWidget` has many deprecations, and probably at least one breaking change despite my best efforts. Deprecations scheduled for removal 0.7.0\n* As of 0.6.3, `ActiveButtonWidget` is unused and deprecated, marked for removal by 0.7.0\n* As of 0.6.3, `TextlessActionWidget` is unused and deprecated, marked for removal by 0.7.0\n* Possibly more, I didn't take great notes\n\n## As of 0.6.0, 1.20.4 and 1.20.6 will no longer be receiving active updates.\n\n-------------------------------------\n\n### Additions\n* Configs now support different save file formats beyond just TOML. Current offerings are `TOML`, `JSON`, `JSON5`, `JSONC`. Select your desired format by overriding `fileType` in the config class.\n  * JSON5 and JSONC will automatically carry over comments made with `@Comment` or `@TomlComment`\n\n### Changes\n* Broke out `PopupController` from `PopupParentElement`, allowing for smoother implementation of popups into existing screens.\n\n### Fixes\n* Fixed unnecessary re-saving of configs on single player configuration.",
+    "changelog_url": null,
+    "date_published": "2025-03-21T21:25:36.984114Z",
+    "downloads": 16305,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "f84ostAl",
+        "hashes": {
+          "sha512": "47c2b5eecd3a165e6189bd6e9d4ce62356c38a43edc24bf559369d1e46722de03c31c8b6495b67642a5a4ca472220993862d2723bdf87902e80629aa25ec04fe",
+          "sha1": "6cf912fccff17cdad84cb7b2d3d2a01ed216d84a"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/Bvj7WMlM/fzzy_config-0.6.7%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.6.7+1.21+neoforge.jar",
+        "primary": true,
+        "size": 2048082,
+        "file_type": null
+      },
+      {
+        "id": "jxYZNARI",
+        "hashes": {
+          "sha1": "f8735f05a379a7b2aada3147b15ceba406071666",
+          "sha512": "cac092e2b6df5bb9c224e2e3dd9eabe507c13ca85a9a6f37a86600096ee61e2724639d841d6465d3a179716b23b73afa01e89ad2a429b8abe9d9038003f6ed15"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/Bvj7WMlM/fzzy_config-0.6.7%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.6.7+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 613286,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "CHv8PmHJ",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.6.6+1.21+neoforge",
+    "version_number": "0.6.6+1.21+neoforge",
+    "changelog": "## Reminder of breaking changes in 0.6.x\n* `ValidatedEntityAttribute` is removed\n* `Custom[Widgets]` are moved from the internal widget package to the custom package\n* Several widgets and other classes have been deleted\n* `PopupWidget` has many deprecations, and probably at least one breaking change despite my best efforts. Deprecations scheduled for removal 0.7.0\n* As of 0.6.3, `ActiveButtonWidget` is unused and deprecated, marked for removal by 0.7.0\n* As of 0.6.3, `TextlessActionWidget` is unused and deprecated, marked for removal by 0.7.0\n* Possibly more, I didn't take great notes\n\n## As of 0.6.0, 1.20.4 and 1.20.6 will no longer be receiving active updates.\n\n-------------------------------------\n\n### Additions\n* `@RootConfig` annotation for marking a config as a \"root\" config. The settings will appear \"inline\" with the landing page config buttons, instead of in its own sub-GUI. All other aspects of the config interaction remain unchanged; loading, saving, calling from, etc. so an existing config can be marked as root with no breakage.\n* Added a greyed-out placeholder button for configs that aren't yet loaded but have been promised via the fabric.mod.json or mods.toml.\n* New `ConfigApi.isScreenOpen`/`ConfigApiJava.isSceenOpen` methods for checking if a Config GUI is currently open.\n* `DynamicListWidget` has a new `scrollToEntry` method for scrolling directly to a list element.\n* `ConfigApi.openScreen` now supports passing in scope args for scrolling to them and opening them as applicable. If you have a config `my_mod:config` with a Object setting `coolObject`, passing `my_mod.config.coolObject` to `openScreen` will open the config GUI, scroll to the object setting, and open the object editing popup.\n* New `EntryOpener` interface for entries that have something to open on request. This is typically used for validation that has a popup edit menu.\n\n### Changes\n* The networking api methods `registerLenient[side]` are now ported to all versions for usage parity.\n* If a config is loaded after screens for a mod have been initialized, the manager will be invalidated and rebuilt (as needed) with the new total loaded config set considered.\n* `ValidatedColor` popups now have a submit button for the hex string textbox, and the alpha edit box will be completely missing if the color doesn't support transparency.\n\n### Fixes\n* GUI keys are no longer pressable \"past\" an open popup, and multiple of the same popup can no longer be opened with keybinds.\n* `ConfigGroup` now has an optional constructor parameter to start the config collapsed.\n* Ingredients and Colors now work as keys/values in validated collections. \n  * Ingredients can no longer be interacted with outside of worlds.\n* The screen manager now locks while constructing a requested screen to prevent recursive screen building if the construction process somehow calls for opening the same screen.\n* `ValidatedColor` properly shows and accepts only 6-digit hex when it doesn't support transparency.\n* Popups for `ValidatedIdentifier` and `ValidatedTagKey` properly focus their textboxes on open again, and their textboxes are aligned properly again.\n* Fixed Go-to menu scroll bar disappearing if you were dragging it and moved the mouse off of the menu. The scrollbar disappearing when the menu isn't hovered is intended behavior.\n* Right click menus properly pass clicks \"past\" themselves, allowing actions to be taken when \"clicking off\" of them (including \"moving\" the menu to the newly clicked spot.)",
+    "changelog_url": null,
+    "date_published": "2025-03-16T22:30:32.356038Z",
+    "downloads": 17845,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "W1YuxUjQ",
+        "hashes": {
+          "sha512": "02e20323ef9431ab132f81909292a106d162409c8a1253edac82cae62c76c173517927255ec6817e7c376778da3ab9ad801633de77f9316a0f755e6dd4a4828c",
+          "sha1": "79f19aa994cfe68ad41416d7d97d9fbd182d4ca0"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/CHv8PmHJ/fzzy_config-0.6.6%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.6.6+1.21+neoforge.jar",
+        "primary": true,
+        "size": 2034409,
+        "file_type": null
+      },
+      {
+        "id": "smjxaRxA",
+        "hashes": {
+          "sha1": "9a22883ac64d8a60794d0ec0fae596db5b3aa703",
+          "sha512": "a3177380727618d28ffea5089d930fa3949a70e238b29192140242253893dd477278d6256a66b4da4ba802d67246ef5b6dbe434501c9b646f956fa42ab263bec"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/CHv8PmHJ/fzzy_config-0.6.6%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.6.6+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 607378,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "dbKrw8gW",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.6.5+1.21+neoforge",
+    "version_number": "0.6.5+1.21+neoforge",
+    "changelog": "## Reminder of breaking changes in 0.6.x\n* `ValidatedEntityAttribute` is removed\n* `Custom[Widgets]` are moved from the internal widget package to the custom package\n* Several widgets and other classes have been deleted\n* `PopupWidget` has many deprecations, and probably at least one breaking change despite my best efforts. Deprecations scheduled for removal 0.7.0\n* As of 0.6.3, `ActiveButtonWidget` is unused and deprecated, marked for removal by 0.7.0\n* As of 0.6.3, `TextlessActionWidget` is unused and deprecated, marked for removal by 0.7.0\n* Possibly more, I didn't take great notes\n\n## As of 0.6.0, 1.20.4 and 1.20.6 will no longer be receiving active updates.\n\n-------------------------------------\n\n### Additions\n* Fzzy Config's wiki is now hosted with ModdedMC! Check it out:\n  * [![Wiki Link Icon](https://i.imgur.com/Ber97Pl.png)](https://moddedmc.wiki/en/project/fzzy-config/docs)\n* Added `WidgetEntry` for easy creation of Dynamic Lists wrapping a collection of widgets.\n* New widget type `SCROLLABLE` for `ValidatedChoiceList` and `ValidatedChoice` which opens a scrollable and searchable widget list\n* `ValidatedChoice` now includes the `INLINE` widget type previously only available on the list version\n* `ValidatedChoiceList` now has its own decorator, distinguishing it from a normal list \n* Added new `TriState` utility enum and corresponding `ValidatedTriState` validation for configs. Like most tri-states, has TRUE, FALSE, and DEFAULT choices, and two different widget options for selecting between them.\n* Added a `FzzyKeybind` system that builds on the `ContextType` system introduced in 0.6.0.\n  * Define basic or compound (multiple choice) keybinds with or without modifiers (ctrl, shift, alt)\n  * `ValidatedKeybind` validation added for configurable keybind handling.\n  * Keybinds still need to be handled by other Fzzy Config context handling methods, this is a structured method for setting up and configuring context types.\n  * For a robust example, see Fzzy Configs built-in keybind config and `ConfigScreen` context handler that is used to handle GUI inputs.\n* Added `wdithFunction` and `heightFunction` to `PopupWidget`, allowing for dynamic sizing based on screen and previous dimension context.\n* Fzzy Config finally has its own config! `keybinds.toml` controls the inputs used for interacting with Config GUIs.\n\n### Changes\n* __Registrar System__: `RegistrySupplier` now implements `RegistryEntry` directly, as well as passing its reference entry. This includes a breaking experimental change, `getKey` has changed to `getRegistryKey`\n* Improved the narration of `ValidatedChoice` and `ValidatedChoiceList`\n* Improved the memory footprint of `DynamicListWidget`, deferring several allocations until needed\n* Shortened in-GUI changelogs related to Validated Object changes.\n* In-GUI usage information popup updated with a list widget and configurable keybind entries.\n* The Config GUI info screen has been updated with a list view of the GUI keybinds. These keybinds can be edited (and this list is secretly a custom config GUI for Fzzy Configs built-in Keybinds config)\n* `ConfigScreenManager` now caches config GUI templates incrementally, instead of front-loading all screen templates at once. This has some side effects, namely that each screen now has a separate Update Manager, so restoring defaults, reverting changes, etc. is now sectioned off per-config instead of global to the namespace. The \"Root\" screen update manager can see any loaded children managers, so changes can be managed from the root screen into any child screens that have been loaded and modified.\n\n\n### Fixes\n* Fixed done button on config screens saying \"back\" when they should say \"done\" in certain circumstances\n* Fixed `ValidatedAny` popup saying \"Revert Changes\" for both the revert and restore defaults button\n* Certain validation types now properly determine their default- and changed-state, namely Validated Objects.\n* `ValidatedCondition` now properly considers its conditions when determining default and changed states. A Validated Condition that has failed conditions will always be considered \"default\"\n* Fixed various typos and other content issues with some KDoc entries\n* `ConfigScreenNarrator` now properly strips out formatting codes before narrating the text content (this also affects the vanilla screen narrator)\n* Fixed `ValidatedIdentifier` config widgets not being properly navigable with keyboard.\n* (NeoForge) fixed network crash involving clients without Fzzy Config trying to join a server with it.\n* (1.20.1) fixed texture issue with the context and go-to menus.",
+    "changelog_url": null,
+    "date_published": "2025-03-06T21:56:19.288438Z",
+    "downloads": 11235,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "Ylz9MvsE",
+        "hashes": {
+          "sha1": "d6a93732f67552ab2259ba8a053b426653c35017",
+          "sha512": "cc52283fa2f041d16c3b07b144edb9dc1c063fde1ba9fa785ba68b34d627f043d23ddc30c0d6f8ad5c10bf7c4e33f26d20d7ef26981e4dfa1a3b3a11ba726e7c"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/dbKrw8gW/fzzy_config-0.6.5%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.6.5+1.21+neoforge.jar",
+        "primary": true,
+        "size": 2010299,
+        "file_type": null
+      },
+      {
+        "id": "wvJctAVu",
+        "hashes": {
+          "sha512": "e4403823d14b0f84e71d02b44ef0e3d675f5a145c50f2ddab99ddf526a5531dbfc6f6f0ad8212f641b481ee8bd076cc969fb9c6752f8cdf01411449253637e8a",
+          "sha1": "31c6e51d468f43e6430826404922b61894af01f0"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/dbKrw8gW/fzzy_config-0.6.5%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.6.5+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 600523,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "7wnDBiIi",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.6.4+1.21+neoforge",
+    "version_number": "0.6.4+1.21+neoforge",
+    "changelog": "## Reminder of breaking changes in 0.6.x\n* `ValidatedEntityAttribute` is removed\n* `Custom[Widgets]` are moved from the internal widget package to the custom package\n* Several widgets and other classes have been deleted\n* `PopupWidget` has many deprecations, and probably at least one breaking change despite my best efforts\n* As of 0.6.3, `ActiveButtonWidget` is unused and deprecated, marked for removal by 0.7.0\n* As of 0.6.3, `TextlessActionWidget` is unused and deprecated, marked for removal by 0.7.0\n* Possibly more, I didn't take great notes\n\n## Registrar is still marked experimental with anticipated stability by 0.7.0\n\n## As of 0.6.0, 1.20.4 and 1.20.6 will no longer be receiving active updates.\n\n-------------------------------------\n\n### Additions\n* New `TextureProvider` interface for generic provision of textures based on active/hovered state.\n* `Single` and `Quad` variants of `TextureSet` added for sets with one texture regardless of state, and sets with all four textures different, respectively.\n\n### Changes\n* `TextureSet` now implements the `TextureProvider` interface\n* `CustomPressableWidget` and therefore `CustomButtonWidget` now use `TextureProvider` instead of directly `TextureSet` in their implementations.\n* `textureSet` method of `SpriteDecorated` is now deprecated and defaulted, with a scheduled removal of 0.7.0.\n  * `SpriteDecoration` and `SmallSpriteDecoration` constructors with `TextureSet` are likewise deprecated, with new overloads taking `TextureProvider`\n* The texture sets in `TextureIds` are now explicitly typed as `TextureProvider` instead. \n* Improved the lazy-loading and/or reduced duplicate loading of certain elements in lists and screens. This effort will expand in the future to further FCs goal of only ever loading a resource upon it being needed.\n* `ValidatedChoiceList` now shows highlights around \"unselected\" options to better indicate that they are still active button elements.\n\n### Fixes\n* Fixed `ValidatedChoiceList` popup widgets being too narrow for the popup with very short choice titles.\n* Remove stray dev-environment logging from `LayoutWidget`",
+    "changelog_url": null,
+    "date_published": "2025-02-01T01:26:18.497849Z",
+    "downloads": 27204,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "fOOxqLkZ",
+        "hashes": {
+          "sha512": "c8f2b99b1d4790e9bf2ea2e5a116a7d09d6a32577adf549a15ff6174589df8e5ce6dbd87e1d37b3d4d03d895234d668afd1b9cb9c822a2da56582c23826be8b0",
+          "sha1": "56c8434db68994b495c6afc614bb2f304771cf09"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/7wnDBiIi/fzzy_config-0.6.4%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.6.4+1.21+neoforge.jar",
+        "primary": true,
+        "size": 1900717,
+        "file_type": null
+      },
+      {
+        "id": "nE1Y6IPl",
+        "hashes": {
+          "sha512": "ab495dc9d58074088e339393e7c87a2d83deb07797b7b0dcc2264add34fff301acc2f94587daee08c832cf7b735868127f89b8358a8c52042f2c559449e388f1",
+          "sha1": "efa9f96a2247a70d81aeaafd7ff88f245494de46"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/7wnDBiIi/fzzy_config-0.6.4%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.6.4+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 558308,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "WOTAjeSn",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.6.3+1.21+neoforge",
+    "version_number": "0.6.3+1.21+neoforge",
+    "changelog": "## Reminder of breaking changes in 0.6.x\n* `ValidatedEntityAttribute` is removed\n* `Custom[Widgets]` are moved from the internal widget package to the custom package\n* Several widgets and other classes have been deleted\n* `PopupWidget` has many deprecations, and probably at least one breaking change despite my best efforts\n* As of 0.6.3, `ActiveButtonWidget` is unused and deprecated, marked for removal by 0.7.0\n* As of 0.6.3, `TextlessActionWidget` is unused and deprecated, marked for removal by 0.7.0\n* Possibly more, I didn't take great notes\n\n## Registrar is still marked experimental with anticipated stability by 0.7.0\n\n## As of 0.6.0, 1.20.4 and 1.20.6 will no longer be receiving active updates.\n\n-------------------------------------\n\n### Additions\n* new validation `ValidatedChoiceList`. Similar to `ValidatedChoice`, but the list version allows for enabling/disabling of none to all of the possible options while the Choice is one and always one of the choices from the options.\n  * New `toChoiceSet` helper method in `ValidatedList`, `ValidatedSet`, and `ValidatedChoice` for creation of choice lists from the backing validation.\n* Added `testVersion` method to `PlatformApi` for platform-agnostic testing of MC or mod version\n* `CustomButtonWidget` now accepts an `activeSupplier` to dynamically update active state, and a `messageSupplier` to dynamically update the button label. See the builder for details.\n\n### Changes\n* `@Validated[Number].Restrict` annotations now accept an optional `ValidatedNumber.WidgetType` with the new third param `type`\n* Reimplemented all instances of `ActiveButtonWidget` as built or extended-from `CustomButtonWidget`, and ActiveButtonWidget is now deprecated.\n* Reimplemented all instances of `TextlessActionWidget` as built `CustomButtonWidget`, and TextlessActionWidget is now deprecated.\n\n### Fixes\n* Fixed suggestion windows not being properly linked up in the config screen.\n* Several popups, widgets, and so on have better layout and positioning; fixed several weird overlap and underlap issues among other things. \n* Top and bottom of scrollable lists now position better.\n* Fixed searching leading to entries \"hiding\" above the top of the viewport, needing you to scroll up to find them despite not having a scroll bar potentially\n* Group collapsing now properly positions the bottom of the setting list at the bottom of the list viewport when applicable",
+    "changelog_url": null,
+    "date_published": "2025-01-24T21:44:14.596187Z",
+    "downloads": 2686,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "eMDgIyAh",
+        "hashes": {
+          "sha512": "bf95c9c5345a60c264b4a9a3fb177c959cac22c51cbc1dee60f8729f4a268209bfad06a19a4870bca84cff2043bfcf59318f204de9722ca05e39105f04108ebe",
+          "sha1": "efe3003e5dad841837c3b28e74dde6e3cd60405c"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/WOTAjeSn/fzzy_config-0.6.3%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.6.3+1.21+neoforge.jar",
+        "primary": true,
+        "size": 1892798,
+        "file_type": null
+      },
+      {
+        "id": "Lpgva6ua",
+        "hashes": {
+          "sha1": "37a2fc50ccf753b8bbee0672f158960d18fb7f20",
+          "sha512": "a3cc0b2cc24ce0297a742d00890844f439961cdbefcd0586672334dcbf3509318718ecc634c6665c2f5164116ca4fca086ee77bbf9d511821bddc64ef2f13a40"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/WOTAjeSn/fzzy_config-0.6.3%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.6.3+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 555316,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "P28CUCue",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.6.2+1.21+neoforge",
+    "version_number": "0.6.2+1.21+neoforge",
+    "changelog": "## Reminder of breaking changes in 0.6.x\n* `ValidatedEntityAttribute` is removed\n* `Custom[Widgets]` are moved from the internal widget package to the custom package\n* Several widgets and other classes have been deleted\n* `PopupWidget` has many deprecations, and probably at least one breaking change despite my best efforts\n* Possibly more, I didn't take great notes\n\n## Registrar is still marked experimental with anticipated stability by 0.7.0\n\n## As of 0.6.0, 1.20.4 and 1.20.6 will no longer be receiving active updates.\n\n-------------------------------------\n\n### Additions\n* New `drawNineSlice` and `renderBlur` methods in `RenderUtil` for matching method signatures across versions. Part of an ongoing effort to unify the API across all versions.\n* Added `open  ContextMenuPopup` to `Popups` for easy third party creation of context menus.\n* New `flatBuild` in `ContextResultBuilder` that flattens the context map groups into one map.\n\n### Changes\n* None.\n\n### Fixes\n* `ContextResultBuilder` build and other utility methods no longer accidentally internal.\n* (1.21.4) fixed the included version of Fabric Permissions API being outdated.",
+    "changelog_url": null,
+    "date_published": "2025-01-18T00:12:47.40609Z",
+    "downloads": 1622,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "uZZ5VoTE",
+        "hashes": {
+          "sha512": "9965cfc6d2d8e4c3e00a208172b6f3e89e564e116d68c07b4f61d29b214275c228a4f271a0ed31f5a3d9f7ec1f92319515f49e328b71cf5877ac06e5ca6828e1",
+          "sha1": "9ea1f8500035f9fa4f0fa5fef6d45da99a1e28f4"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/P28CUCue/fzzy_config-0.6.2%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.6.2+1.21+neoforge.jar",
+        "primary": true,
+        "size": 1855541,
+        "file_type": null
+      },
+      {
+        "id": "okWIrXGN",
+        "hashes": {
+          "sha512": "d50400663f2c261211429dc92a9477b205f91fc01150aa51d419a8921ce5987fec01338fc4914fa27d848e19215801f3f87dfb09682dc026ddd63cb0ef0e505d",
+          "sha1": "e8ab158e78e68b4c0589b417449775caaf45b994"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/P28CUCue/fzzy_config-0.6.2%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.6.2+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 543756,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "LTKOzfxK",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.6.1+1.21+neoforge",
+    "version_number": "0.6.1+1.21+neoforge",
+    "changelog": "## Reminder of breaking changes in 0.6.x\n* `ValidatedEntityAttribute` is removed\n* `Custom[Widgets]` are moved from the internal widget package to the custom package\n* Several widgets and other classes have been deleted\n* `PopupWidget` has many deprecations, and probably at least one breaking change despite my best efforts\n* Possibly more, I didn't take great notes\n\n## Registrar is still marked experimental with anticipated stability by 0.7.0\n\n## As of 0.6.0, 1.20.4 and 1.20.6 will no longer be receiving active updates.\n\n-------------------------------------\n\n### Additions\n* New `drawNineSlice` and `renderBlur` methods in `RenderUtil` for matching method signatures across versions. Part of an ongoing effort to unify the API across all versions.\n* Added `open  ContextMenuPopup` to `Popups` for easy third party creation of context menus.\n* New `flatBuild` in `ContextResultBuilder` that flattens the context map groups into one map.\n\n### Changes\n* None.\n\n### Fixes\n* `ContextResultBuilder` build and other utility methods no longer accidentally internal.\n* (1.21.4) fixed the included version of Fabric Permissions API being outdated.",
+    "changelog_url": null,
+    "date_published": "2025-01-17T19:04:33.521843Z",
+    "downloads": 141,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "eY6WDUIG",
+        "hashes": {
+          "sha1": "d40e9f837ee8eab76b83fef4977ba178370283fa",
+          "sha512": "4bc741466fc6abcfd85534cb0b3b331e3f01bb2b15dc8deccc99bdbaa787ab50fb9aaa91570d7020fd7413de1d707f13b94f3259930eb7f1a3ca365385f7ef42"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/LTKOzfxK/fzzy_config-0.6.1%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.6.1+1.21+neoforge.jar",
+        "primary": true,
+        "size": 1855524,
+        "file_type": null
+      },
+      {
+        "id": "ZMR3zKgp",
+        "hashes": {
+          "sha512": "1ce3765d977555516793b7b724df8b9899087070edb2966f865ceb030d25508ab4accc5198731892f8cc87f7b5f7cbfefb2b0edec5d00230c02d6dc63da3f5aa",
+          "sha1": "a4a4f17d376398393f5d1a5dd60ad0a5d5864a50"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/LTKOzfxK/fzzy_config-0.6.1%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.6.1+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 543749,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "texVoa1V",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.6.0+1.21+neoforge",
+    "version_number": "0.6.0+1.21+neoforge",
+    "changelog": "## Version 0.6.0 implements several breaking changes, please update implementations as needed, and feel free to reach out to discuss issues that come up.\n* `ValidatedEntityAttribute` is removed\n* `Custom[Widgets]` are moved from the internal widget package to the custom package\n* Several widgets and other classes have been deleted\n* `PopupWidget` has many deprecations, and probably at least one breaking change despite my best efforts\n* Possibly more, I didn't take great notes\n\n## Registrar is still marked experimental with anticipated stability by 0.7.0\n\n## As of 0.6.0, 1.20.4 and 1.20.6 will no longer be receiving active updates.\n\n-------------------------------------\n\n### Additions\n* Created a ground-up list widget system with `CustomListWidget` and the built-in implementation `DynamicListWidget`. This new list is more powerful than the vanilla lists, allowing for varying heights for each element, hiding/unhiding individual entries, built in searching of entries, and more.\n* Created `Searcher` system for building simple search implementations from a collection of elements.\n* `ValidatedPair` and corresponding method `ValidatedPair.pairWith`. This new validation joins two settings into one, and displays their widgets side-by-side. This is convenient for number ranges and so on.\n* Validated numbers now have a third widget type, `TEXTBOX_WITH_BUTTONS`. The standard entrybox also has a small up and down button with this layout.\n* Added custom ScreenNarrator implementation for config screens with several improvements and bug fixes over the vanilla narrator.\n\n#### Translatable Updates\n* `Translatable` now includes a `prefix` element. Add a lang key for a setting, section, or config to add inline \"prefix text\" that appears above the setting or at the top of the setting list, respectively. This pairs well with the next addition\n* For implementations of `Translatable`, be sure to override `hasPrefix`, `prefix`, and `prefixKey` as needed.\n\n#### Config Groups\n* Added new Config Group system. Groups are inline, collapsible collections of settings. Groups are an excellent place to add a prefix, to provide a general description of what the settings inside the group do.\n* Groups can be nested, though this is probably not needed in most circumstances\n\n#### Screen Anchors\n* Configs, Sections, and Groups are now Anchors, much like anchors in a web page.\n* A new go-to menu in the bottom left (accessible by pressing Ctrl + E also) allows you to quickly navigate between all the anchors of the current config namespace.\n\n#### Context Action System\n* Created new keybind-like `ContextAction` system that allows for powerful handling of context actions and key presses.\n* Automatically builds context menus as applicable to the right-clicked element.\n* Handles complex keybinds like ctrl-shift-C, etc.\n* Handles inputs in a layered manner, allowing each layer to only capture the inputs it cares about, passing the input\n* Added several new keybinds\n  * F1: Opens info screen\n  * Ctrl + E: Opens goto menu\n  * Backspace: Return to the previous config screen\n  * Home: Scrolls to the top of the config list\n  * End: Scrolls to the bottom of the config list \n  * (Context menu): You can now fully clear collection settings with the Clear command.\n\n#### EntryCreator\n* New system for creating list entries in an orderly manner\n* `ValidatedField` now has several helper methods for easily creating custom entries without needing to fully re-implement the base design.\n\n#### LayoutWidget\n* `LayoutWidget` added, a generalization and improvement of the system in `PopupWidget`. This widget can be used to create automatically laid out collections of widgets using a DOM-like layout model.\n* Entry creators and several other systems in FC now use these layouts.\n\n### Changes\n* The Result Provider API is promoted to stable\n* The `Pos` system now implements `Supplier`\n* Overhauled the `Decoration` system, now `Decorated`, a simple Drawable-like interface that allows passing of different types of icons to various FC systems, dynamically rendered, animated, etc.\n* Most custom widget implementations now use a `TextureSet` system for defining textures to use in various hovered and focused states\n\n### Fixes\n* Fix apparent concurrent modification problem with screen scope registration.\n* Moved catalogue compat back to somewhere that Catalogue can actually find it.\n* Fix crash on suggestion windows trying to substring empty suggestions.\n* Fix config objects that don't implement `equals` not mapping properly between de/serializations, which improperly caused resets of data.\n* Fixed bug with update de/serialization not working properly on nested config sections",
+    "changelog_url": null,
+    "date_published": "2025-01-07T02:59:40.758845Z",
+    "downloads": 3395,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "6EojykBJ",
+        "hashes": {
+          "sha512": "8b04ee0283b15a7799f5bcc23ae500a8e429e651ffabaab2aacf81da9ae15d5d5459866d4e30909aad521575fcacdf3c9a20d96530b9ae625c4e0bfa17f8ccac",
+          "sha1": "67c6c411c9ad1e1c66f442b0395c618b75274715"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/texVoa1V/fzzy_config-0.6.0%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.6.0+1.21+neoforge.jar",
+        "primary": true,
+        "size": 1854517,
+        "file_type": null
+      },
+      {
+        "id": "4xhftxpm",
+        "hashes": {
+          "sha512": "362ecfface177b7668b153f3ea6e8da220de6de44c182628a9bf25107fafb44c2236d7be6951c59a3dcc9867a3f6139cc123f4c71c355a285ce93123dce24fba",
+          "sha1": "a9db5238b744168eaf7b796712c471dd707e63c7"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/texVoa1V/fzzy_config-0.6.0%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.6.0+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 542791,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "53dgIsE9",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.5.9+1.21+neoforge",
+    "version_number": "0.5.9+1.21+neoforge",
+    "changelog": "## Scheduled API removal in 0.6.0: `ValidatedEntityAttribute`. Reimplement usages of this class as needed.\n\n### Additions\n* New `isDev` method in `PlatformApi` for checking if the instance is running in a development environment.\n* Implemented a barebones `Registrar` system for platform-agnostic registration of objects. This API is experimental, with scheduled stability by 0.6.0.\n  * Registers objects into `RegistrySupplier` instances, much like the (Neo)Forge deferred registry system.\n* Added `onRegisteredClient` and `onRegisteredServer` to the `EventApi` for listening to config registrations and only acting after the config has been successfully registered.\n* New version of `ValidatedField.validateAndSet`, `validateAndSetFlagged` that accepts `EntryFlag.Flag` (and inspects the field own flags) and changes set behavior based on flags present.\n  * `EntryFlag.Flag.QUIET`: flagged field won't call listeners on change\n  * `EntryFlag.Flag.STRONG`: field `validateAndSet`/`validateAndSetFlagged` will use strong validation. Weak validation is standard.\n  * `EntryFlag.Flag.UPDATE`: field will update its current sync state when the value is set.\n* Added overload to `ValidationResult.report` that takes a string consumer directly for immediate reporting of issues.\n* New `Codecs` helper class in PortingUtils for handling version-agnostic Packet Codecs. Thanks Mojang.\n\n### Changes\n* `ConfigApi.isConfigLoaded(scope)` has been deprecated in favor of `ConfigApi.isConfigLoaded(scope, type)`. This new overload can check for client configs; the now-deprecated method only checked synced ones.\n  * Also consider the new register event instead of trying to check for config load yourself.\n* Scheduled `ValidatedEntityAttribute` for removal in **0.6.0**. It is completely unused as far as I can tell with a github-wide search, and quite an unstable concept in general. If needed, a similar validation can be built for your own usage.\n\n### Fixes\n* Fixed inaccurate docs in `ValidatedEntityAttribute.Builder` and `EntityAttributeInstanceHolder`",
+    "changelog_url": null,
+    "date_published": "2024-12-07T00:00:15.573156Z",
+    "downloads": 4481,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "Gsx731xX",
+        "hashes": {
+          "sha1": "40752eb6525a5acb1f6bd40993a8944664c237f8",
+          "sha512": "f57af746db0c107f2feb272dcb230b6c0c4ce979b2bfb44c73c6cf63e2e9144b5f01103b261829441350fbe8887cc1e0a0f712bd34af55ada9dc489834fa9aa2"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/53dgIsE9/fzzy_config-0.5.9%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.5.9+1.21+neoforge.jar",
+        "primary": true,
+        "size": 1543362,
+        "file_type": null
+      },
+      {
+        "id": "70xXLCY6",
+        "hashes": {
+          "sha512": "ffcb3969cd461ca29351f6f370c47c8806195fab6f595183ba796251f1f5b6e3a96468a2f4216c4ec0133f5bff46baa89f1528249d3408d00951de80706a5155",
+          "sha1": "c8f39fd852cb5e71e439eb2cf2c10d3bdf31af48"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/53dgIsE9/fzzy_config-0.5.9%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.5.9+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 424227,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "wESpkMW0",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.5.8+1.21+neoforge",
+    "version_number": "0.5.8+1.21+neoforge",
+    "changelog": "### Additions\n* None.\n\n### Changes\n* None.\n\n### Fixes\n* Fixed `@IgnoreVisibility` not handling private classes with non-private members\n* Fixed `transient` not working properly for de/serialization\n* `ConfigSection` now properly marks it's internal key as transient.",
+    "changelog_url": null,
+    "date_published": "2024-11-24T15:40:30.288742Z",
+    "downloads": 2322,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "1l3coo6U",
+        "hashes": {
+          "sha512": "c7f2ae47a210bad76d74371bd222a93382afa0f4808cd85968483ef2ec35cb2e35ec5363d8836976380eb0312ab173c0ca8645b9fc7cc995bfefc4ad81b5634d",
+          "sha1": "3d5797e756c25dbf09a0e580e6402d3587f34028"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/wESpkMW0/fzzy_config-0.5.8%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.5.8+1.21+neoforge.jar",
+        "primary": true,
+        "size": 1512950,
+        "file_type": null
+      },
+      {
+        "id": "UAwkLqSI",
+        "hashes": {
+          "sha1": "c1579f6d2863c4f924fdcaefa687cde2a99b90b1",
+          "sha512": "de5f06ee182b676a21dec3491d55cd404feb928b958046f82bf50e0f37e732fe66dbba716aa65cc775edb88f466afe8b715b77f37a9a9e3628f0c0b6a6b6000e"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/wESpkMW0/fzzy_config-0.5.8%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.5.8+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 416130,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "OBu6FL2u",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.5.7+1.21+neoforge",
+    "version_number": "0.5.7+1.21+neoforge",
+    "changelog": "### Additions\n* New `ConfigScreenWidget` for easily creating a textless 20x20 widget to open your config from another screen.\n  * Pass in your config's base scope (mod_id usually)\n  * Define a position absolutely, or choose a corner to anchor the widget to, and an optional padding (default 4px)\n  * Remember to add your new widget to the screens drawable children!\n\n### Changes\n* `TextlessButtonWidget` is no longer final; make a custom implementation if you want!\n\n### Fixes\n* Fixed `ValidatedField.toSet(collection)` returning a list, not a set.\n  * WARNING: This may potentially be a breaking change, if any mods have used `toSet` and accepted that it returns a `ValidatedList` instead, rather than raising an issue with me. Their field will now not match the type returned.\n  * Not marking this as a major patch since any mods that did this were working with broken state, not stable API",
+    "changelog_url": null,
+    "date_published": "2024-11-16T19:28:20.571066Z",
+    "downloads": 2204,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "a07pbgBg",
+        "hashes": {
+          "sha1": "69ce3f058afa209870ac59e2ba83a3478b567b33",
+          "sha512": "d73aa48bdd5d200a04a321ed7b8949b3c5158a39523a2671a07285161ac58de060a3850c419a894c4bea01a5a9d8f5e1a1d9bf85f02b9753a81ed0f8b300f650"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/OBu6FL2u/fzzy_config-0.5.7%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.5.7+1.21+neoforge.jar",
+        "primary": true,
+        "size": 1511829,
+        "file_type": null
+      },
+      {
+        "id": "8GFuYnud",
+        "hashes": {
+          "sha1": "2b3ea4925d35ed63108644de00ad9b37aea662d4",
+          "sha512": "8b5816d67eb690b562140a5779a4730beb1ed6b849727c2f93611d280bd7cf231608c727ebee2eb87f24b539460ce83e347bc9a6f2823c5342af6650c7f55269"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/OBu6FL2u/fzzy_config-0.5.7%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.5.7+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 415726,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "74aEky0E",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.5.6+1.21+neoforge",
+    "version_number": "0.5.6+1.21+neoforge",
+    "changelog": "### Additions\n* Added a flag system `EntryFlag` to `ValidatedField` and `ConfigAction`. Currently only has one flag `REQUIRES_WORLD`. A field marked with REQUIRES_WORLD marks that the player needs to be in-game for the setting to work properly. The config screen will show Not in Game instead of the setting, when not in game.\n* Added `ofDynamicKey` builder methods to `ValidatedIdentifier`. Use of `ofRegistryKey` for non-synced dynamic registries (Loot registries, or modded dynamic registries that don't sync, primarily) is now deprecated and will log a warning. `ofDynamicKey` handles synchronization of predicated registry lists more robustly.\n* Added zh_tw translations\n\n### Changes\n* `ValidatedIdentifier` now automatically applies `REQUIRES_WORLD` to validation for dynamic registries, which require the world to be loaded. They will now not be available out of game.\n  * Validation wrappers (lists, ValidatedCondition, etc.) will inherit their delegates flags automatically\n* ConfigActions based on `ClickAction.RUN_COMMAND` or `ClickAction.SUGGEST_COMMAND` now automatically apply `REQUIRES_WORLD`\n\n### Fixes\n* `ValidatedIdentifier` without validation no longer tries to \"force\" you to use the minecraft namespace in the text box\n* Enums revert to their proper default when automatically validated (plain field in the config)\n* Config actions now respect permissions",
+    "changelog_url": null,
+    "date_published": "2024-10-26T20:26:05.154986Z",
+    "downloads": 2971,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "HqVXhnjp",
+        "hashes": {
+          "sha512": "6cf39aad76ba65ed8b89812d15a91a926dca1ada9f9dd2e3534e88f7d5fbb935e149361751a2ed116203bc5f6bd682a81f75ea6636917af3b7cae6b69b5eb2e1",
+          "sha1": "513e26e9c533081a1951ac1aa84816bc83160522"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/74aEky0E/fzzy_config-0.5.6%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.5.6+1.21+neoforge.jar",
+        "primary": true,
+        "size": 1496656,
+        "file_type": null
+      },
+      {
+        "id": "hS1UAyy8",
+        "hashes": {
+          "sha512": "b3d1ca45dd857032d70431f21730247c936a2605c468131bb9c939113363ae97fe3664b5bd0f601df326b7e707ac91becb93f8a2f355d2dc012b0c157eaf2e40",
+          "sha1": "42ddd4433f1b4a4e57cae6573b35b9816d706b05"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/74aEky0E/fzzy_config-0.5.6%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.5.6+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 411290,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "QnK4hh2y",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.5.5+1.21+neoforge",
+    "version_number": "0.5.5+1.21+neoforge",
+    "changelog": "### Additions\n* None.\n\n### Changes\n* None.\n\n### Fixes\n* `ValidatedIdentifier.ofRegistryKey` now works properly with the three types of tables that apparently aren't in the normal dynamic registry manager (loot, functions, predicates)\n* ValidatedMaps have better popup error reporting\n* Error catching overall improved\n* Fixed class-level `@Translation` negation not being respected\n* `ValidatedAny` recognizes and prioritizes `Translatable` entries like normal config settings do",
+    "changelog_url": null,
+    "date_published": "2024-10-21T22:30:28.68746Z",
+    "downloads": 2636,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "QCBwl42c",
+        "hashes": {
+          "sha1": "efa8e1c793c612ff76a49e731f0ec621a77193f1",
+          "sha512": "63975f27bdcb804ab9c9a041dd646a6f68550b19329aa5ed6e772710e61b9a3432d401c2003d803f526f5e11b4b02ec8454986f5c93b464c894f78765f44e4d4"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/QnK4hh2y/fzzy_config-0.5.5%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.5.5+1.21+neoforge.jar",
+        "primary": true,
+        "size": 1480627,
+        "file_type": null
+      },
+      {
+        "id": "2qQydDpp",
+        "hashes": {
+          "sha1": "fe0b74be22b22ecadac33658a63bd15f3a39cd0e",
+          "sha512": "d350c005ad50338e3b396332f8a49c94ec19bb793bb8ca11c16a950c2a000f6c6c1601c2958ce9be86186f26a1def14e665e467e28cfcc7c6f86bbd481e2e923"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/QnK4hh2y/fzzy_config-0.5.5%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.5.5+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 405060,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "QteeAucz",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.5.4+1.21+neoforge",
+    "version_number": "0.5.4+1.21+neoforge",
+    "changelog": "### Additions\n* new `ValdiatedCondition` validation wrapper. Gate the wrapped value behind conditional checks added via `withCondition` when `get` is called. If checks fail, a fallback will be supplied instead of the stored \"live\" value, and the setting will be locked in-GUI.\n  * New methods `toCondition` in `ValidatedField` to convert one to a ValidatedCondition\n* `Text.isEmpty()` and `Text.isNotEmpty()` extension functions in FcText\n* `toLinebreakText` in FcText to convert a list of text into one text split by newlines\n\n### Changes\n* Config settings with names that don't fit into the row (truncated with ellipses) will now have the full name appear in the tooltip\n* Archived documentation versions below 0.4.0. If you need to reference a specific older version for some reason, feel free to contact me.\n\n### Fixes\n* Translatable things now properly have their translations respected if they are wrapped with automatic validation.\n* Fixed context menu (right click menu) showing under text in some cases\n* Config entries ('rows') are better at compositing their tooltip information onto any native tooltip the containing widget wants to render.\n* Improved narration of config entry tooltips; stacking action narrations after the tooltip narration as needed.",
+    "changelog_url": null,
+    "date_published": "2024-10-16T02:18:13.390266Z",
+    "downloads": 827,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "GXvAo6UQ",
+        "hashes": {
+          "sha1": "c312f8f99b39c61e2d6e0e9ec389be37a9d5ddd7",
+          "sha512": "3baf3073d1604740fe274852cc2f5a2f63b5deda401dbf16aa483213c7d6dec91a81c4999ba22eb6a2311a5e4ce9b05bf577999998777c5df819cc67848331d9"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/QteeAucz/fzzy_config-0.5.4%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.5.4+1.21+neoforge.jar",
+        "primary": true,
+        "size": 1465792,
+        "file_type": null
+      },
+      {
+        "id": "FspK8oLO",
+        "hashes": {
+          "sha1": "85bb46bd07715373c37bd3cb44d357ba8e05c792",
+          "sha512": "b38eb457acb6e41d06e9dadd5ac9f0b99a9138fdd7a5b7cc52abd2483c2bd2b626291c2643d544852387fe9b1600222b955dae20231e9c07640fe8e97950153f"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/QteeAucz/fzzy_config-0.5.4%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.5.4+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 402957,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "plgW2dxx",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.5.3+1.21+neoforge",
+    "version_number": "0.5.3+1.21+neoforge",
+    "changelog": "### Additions\n* New _**experimental**_ Result Provider api; providing a framework for reflectively accessing any config value via string scopes\n  * Create result providers for any configurable type, providers soft fail to fallbacks given during creation\n  * Results are dynamically updated as the config changes, no need for relogging, reloading, etc.\n  * Built in argument handling system for performing actions on the scope requested - check the size of a list, check if a list contains a value, scale a result, anything you can dream up.\n  * Check the [wiki article](https://github.com/fzzyhmstrs/fconfig/wiki/Result-Providers) for an example use case.\n\n### Changes\n* None.\n\n### Fixes\n* Restart screen now properly shows when a restart-causing change is received.\n* Pressing tab on suggestions now properly tabs the result into the setting text field instead of changing focus to the next widget (done button etc.)\n* `ValidatedIdentifier.ofRegistryKey` now takes `? extends Registry` like the other helper method types, instead of just `Registry`.",
+    "changelog_url": null,
+    "date_published": "2024-10-13T00:59:04.87583Z",
+    "downloads": 1019,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "sAaR4XyI",
+        "hashes": {
+          "sha512": "03666dc27d190e16ba1ff29041c68a32b8d3cc6544d1efdc1e8ae11d4ae6cd6dbe7305fdf28112cd95964d666d6e8980bce9f4fedf69291368c96955db2cdddc",
+          "sha1": "882cf17d0e783d2e67d549eb71b2df9065041b0a"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/plgW2dxx/fzzy_config-0.5.3%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.5.3+1.21+neoforge.jar",
+        "primary": true,
+        "size": 1449733,
+        "file_type": null
+      },
+      {
+        "id": "Sq7Fv0CM",
+        "hashes": {
+          "sha1": "cbadd1a61711ba7770ab137a44ab8fa6d1240ac7",
+          "sha512": "a17dd9eb0e6824a4f7a5b345e7f0c70d6f832b9c7a3fc108a9726dccb8bd317d63767b4cfb61a425452668870fa9b7427b325deff87bd436b37b1e1c410f456d"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/plgW2dxx/fzzy_config-0.5.3%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.5.3+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 397594,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "1WoxDRQx",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.5.2+1.21+neoforge",
+    "version_number": "0.5.2+1.21+neoforge",
+    "changelog": "### Additions\n* Search field now has a tooltip and shows \"Search\" when the search query is empty\n  * Search also now has several modes, described in the tooltip. Search setting descriptions, negate searches, and more.\n\n### Changes\n* `ValidatedEnum` popups now center the enum buttons on popups with very long enum names\n* Many internal refactors to further move away from referencing version specific MC code outside util classes\n* Further implement Custom widgets and remove more vanilla widget references\n\n### Fixes\n* Fixed number widgets sometimes freezing if their allowable range was low (<1.0)\n* Fixed integer type slider left/right button incrementing on ranges <10 min to max\n* Fixed search bar and done button moving strangely on resize\n* Fixed setting entry tooltips appearing for entries \"tucked\" under the header or footer when hovered over",
+    "changelog_url": null,
+    "date_published": "2024-10-04T03:55:50.383916Z",
+    "downloads": 19567,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "59OfNUTv",
+        "hashes": {
+          "sha512": "13408424cbf6b92b2d1446ee56a47d65a54c1f541fc2a8d04dd7debadcfa0ffba0647b0b346b274563f84108a72ddd173cdccff06f0793e4245bbbd348c190a8",
+          "sha1": "1903cb37ea6e3332401f4c72391a3fa3e054add3"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/1WoxDRQx/fzzy_config-0.5.2%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.5.2+1.21+neoforge.jar",
+        "primary": true,
+        "size": 1426552,
+        "file_type": null
+      },
+      {
+        "id": "83vjqhbp",
+        "hashes": {
+          "sha512": "b81e2f6497d8cc3f70a036ac8329ced50463b8b1c0697cca4f544aadb53e87f2017d6ef5ef1be28ac828b794e0c8dfe38f67f64b851fc52c3e7294f7f979fc44",
+          "sha1": "7ae5df3b1363a31006f9268e81b3c86e89cbb2f5"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/1WoxDRQx/fzzy_config-0.5.2%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.5.2+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 383810,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "Q1bP2mEC",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.5.1+1.21+neoforge",
+    "version_number": "0.5.1+1.21+neoforge",
+    "changelog": "### Additions\n* Added a decimal format to `ValidatedFloat` and `Double`; the values within will now be formatted like `#.##`, instead of showing the entire fractional part.\n* Added exception if a `ValidatedNumber` is provided with a min >= max.\n* Added `Item`, `Block`, `EntityType`, and `Fluid` as types that can be automatically wrapped with validation without having to specify it yourself.\n\n### Changes\n* Using `@Translation` at the config-level will add the option to use the prefix itself as a lang key for the config title.\n\n### Fixes\n* Fixed tooltip alert for the `RELOAD_RESOURCES` action on config-level alerts\n* Fixed `@Translation` not working for config sections\n* Inherited config classes fully work again\n* Fixed mapped values not instancing themselves properly; which was breaking mapped lists, maps, and other collection views in the GUI.\n* Restore config ordering from alphabetical to declared-order in the TOML outputs. Superclasses will appear after the direct class fields.",
+    "changelog_url": null,
+    "date_published": "2024-10-03T00:46:38.896161Z",
+    "downloads": 206,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "UFN3QDnD",
+        "hashes": {
+          "sha1": "ee319a146aee0aad0144bf35ba2dac72b526f7a1",
+          "sha512": "2fc407c7ab5894415cfd2802464ed970d49313100754766389eb3a035d584751b5c64a3564f5ea94a564ad7eeca4e8f13cdddd8c7ce0a980b0a3fedac26d0da6"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/Q1bP2mEC/fzzy_config-0.5.1%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.5.1+1.21+neoforge.jar",
+        "primary": true,
+        "size": 1415839,
+        "file_type": null
+      },
+      {
+        "id": "YO2M9bLF",
+        "hashes": {
+          "sha1": "48824ad4fcfbaa80c5d050782b72643a1f74a276",
+          "sha512": "e0237ac01b10b672b6f27c744b2d177130777b359a1b82989d27be1b20f0a9deed05eb87aadcb318b03ebf5e5ad28610774d3f0923f238ad52f23aa0b0350e45"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/Q1bP2mEC/fzzy_config-0.5.1%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.5.1+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 379763,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "ofiyGdmv",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.5.0+1.21+neoforge",
+    "version_number": "0.5.0+1.21+neoforge",
+    "changelog": "### Additions\n* Added `ValidatedField` mapping. Validation can be mapped to validation of any other convertible type with the new `map` methods.\n  * New helper class `ValidatedRegistryType` maps `ValidatedIdentifier` to registry objects, allowing for easy direct implmentation of setting based on registry objects (Items, Blocks, etc) without having to later map the identifiers yourself.\n* `ValidatedField` now has a helper `codec` method for generating a Codec of the underlying type.\n* `ValidatedField` now has a listener system that triggers on any `set` of the field. This listener is a `Consumer<ValidatedField<T>>` and is added with `withListener`\n* Added `EventApi` and corresponding direct implementations in the `Config` class\n  * like other sub-apis, access this Api through the `ConfigApi`\n  * `onSyncClient` - fires when a config is synced to a client\n  * `onUpdateClient` - fires when a config is updated in-game on the client side\n  * `onUpdateServer` - fires when a config is updated in-game on the server side\n* Added `ConfigAction`, which can be used to add arbitrary on-click buttons in the Config GUI. Use them to link to your wiki, open a patchouli guide book, give the player an item, etc.\n* Added extremely basic `PlatformApi` for simple cross-loader tasks like checking if the game state is client-sided or not.\n\n### Changes\n* Specialized widgets no longer internally extend `PressableWidget` or `ButtonWidget`, which was causing issues with Visual Overhaul or any other mod that leaks the constructor of the widget. It is recommended to use the `Custom` variants of those classes for any custom validation implementation.\n\n### Fixes\n* `ValidatedIdentifier` can now bind to dynamic registries using the `ofRegistryKey` initializer methods.\n* Fix syncing on login not working.\n* Fixed updates on client-only configs sometimes blasting the log with the full config contents.",
+    "changelog_url": null,
+    "date_published": "2024-09-25T21:53:28.881198Z",
+    "downloads": 1172,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "RtWy3BCY",
+        "hashes": {
+          "sha1": "5e818589e70410b7c399cace61e12d31829fec66",
+          "sha512": "5c36a9f81a5f80ee70812b67748cc489fe1534d0b4e5abae8d2b1ab04bdfc1f6b59c54fb82f25b02f6c628500fcaaf5f254a94ea5c7d45847f8d3d230d91beae"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/ofiyGdmv/fzzy_config-0.5.0%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.5.0+1.21+neoforge.jar",
+        "primary": true,
+        "size": 1411758,
+        "file_type": null
+      },
+      {
+        "id": "TfENCyfv",
+        "hashes": {
+          "sha512": "3aaa05aca7c377627e059c0bc203e0678125a6d5fe869e99bbeeb9fd1fcb9f66cc5f70723169cc81de06a3f0cfffac676e903d9ed756cf392a3a729149ccfd25",
+          "sha1": "41dfed414c21915c5c48779a2b4a2b0cc34e0f52"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/ofiyGdmv/fzzy_config-0.5.0%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.5.0+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 378705,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "NzrIH6HE",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.4.3+1.21+neoforge",
+    "version_number": "0.4.3+1.21+neoforge",
+    "changelog": "### Additions\n* None\n\n### Changes\n* None\n\n### Fixes\n* Revert `@JvmStatic` addition in ConfigApi that accidentally breaks code using the previous way, thanks to Kotlins assertion of an \"additional\" static simply being false (it replaces with a static)",
+    "changelog_url": null,
+    "date_published": "2024-09-14T03:15:16.777587Z",
+    "downloads": 1827,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "NJkPLVF9",
+        "hashes": {
+          "sha1": "340b07d06c569f07ad718503ef575596bea32959",
+          "sha512": "84d8aeb2795ef6a73a5810130cf76386f967372fbd2b07bee80d371d0e8df7c2e300f30d4294609f19166ba0594d256de04081a75bf76bc01225515bef4a9e92"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/NzrIH6HE/fzzy_config-0.4.3%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.4.3+1.21+neoforge.jar",
+        "primary": true,
+        "size": 1366258,
+        "file_type": null
+      },
+      {
+        "id": "XIWwbuNx",
+        "hashes": {
+          "sha512": "6692f1144414c8c263e14864fba36485be353e3592116223a810d3c8f8eb42586d74f66a0896823ddb656854809432884cbf9680efdd9478b853a9a43b32ad58",
+          "sha1": "544e56dd6c7d4d0c403bb3239caf794c41bb0a25"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/NzrIH6HE/fzzy_config-0.4.3%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.4.3+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 351264,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "4vQliLEp",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.4.2+1.21+neoforge",
+    "version_number": "0.4.2+1.21+neoforge",
+    "changelog": "### Additions\n* Added new helper extension functions to `FcText`.\n  * `MutableText#command` cleanly defines a Run Command click action\n  * `MutableText#tooltip` adds a hovered tooltip to text\n  * `MutableText#underline` underlines the text\n  * `MutableText#bold` bolds the text\n  * `MutableText#italic` italicizes the text\n  * `MutableText#strikethrough` strikes through the text\n  * `MutableText#colored` colors the text with any RGB color\n  * `Any#transSupplied` translates the receiver, with a supplied fallback literal if necessary. Useful if the fallback is computationally intensive\n  * `Any#descSupplied` describes the receiver, with a supplied fallback literal if necessary. Useful if the fallback is computationally intensive\n* Added new `Translation` annotation. Yet another way to translate your in-game config settings!\n  * If applied to a config, section, or object, all the settings within will use the prefix provided in their translation keys instead of the normal class-path based one.\n  * If applied to a setting, that setting will use the specified prefix. It can also be used to turn off translation for a setting if you want the normal translation scheme to apply for all settings except the negation-annotated ones.\n  * With a prefix, your settings will have a lang key of `prefix.[fieldName]` and `prefix.[fieldName].desc`. This applies to all instances of the field, so repeating units of the same setting will share a lang key!\n* Added new \"Not in Game\" uneditable setting to better show that you need to connect to a world to access it.\n* Added new client commands that technically can be used in-game or for other purposes. Mostly they are \"internal\" for use with the changed action messages.\n  * `/fzzy_config_restart` shuts down the client\n  * `/fzzy_config_leave_game` disconnects you from the current game and returns you to the proper title screen.\n  * `/fzzy_config_reload_resources` reloads resources (F3+T)\n\n### Changes\n* Action chat messages now include a click event with commands corresponding to the needed action (`RELOG` will have a leave game click action, and so on)\n\n### Fixes\n* Config screens properly understand when you are not in a game, or when the config is client-only. Configs accessed outside a game should more accurately display the settings you have access to\n* Documentation mod links point to the mod pages now instead of the Modrinth/CF homepage.\n* Fixed missing docs and `@JvmStatic` for `ConfigApi#network`\n",
+    "changelog_url": null,
+    "date_published": "2024-09-14T01:20:33.857232Z",
+    "downloads": 93,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "vKq7c820",
+        "hashes": {
+          "sha512": "cdb2b22daac17320332a33558d3c48ae10b67cd26b70b8cd43edffa4ff17725f89ddcf67f008a775093595a523ae178bba38d292ec6b6a0a484b0cac084ca587",
+          "sha1": "f9e104a17539f2de9f3c17ac84b40a3d370ce02c"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/4vQliLEp/fzzy_config-0.4.2%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.4.2+1.21+neoforge.jar",
+        "primary": true,
+        "size": 1366208,
+        "file_type": null
+      },
+      {
+        "id": "VwYV0Hgs",
+        "hashes": {
+          "sha512": "eb7d8a0a70e2513178ade629df4ae8fe319c27798c8f427057249ddd4f3c49653d0976b2d49d14d08f6b482062f7550779f661f1f579490561d17cdda1883d82",
+          "sha1": "2d1a215abd780058fecd8c71bff9d9caa6bc78d5"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/4vQliLEp/fzzy_config-0.4.2%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.4.2+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 351266,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "LBGv941w",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.4.1-fix1+1.21+neoforge",
+    "version_number": "0.4.1-fix1+1.21+neoforge",
+    "changelog": "### Additions\n* None\n\n### Changes\n* None\n\n### Fixes\n* Config screens are registered to the mod list screen as they should be.",
+    "changelog_url": null,
+    "date_published": "2024-09-11T01:30:16.102576Z",
+    "downloads": 284,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "fDuGLWVa",
+        "hashes": {
+          "sha512": "f00b31261a3512ddebdbbfe6c4326563337bef63f231d9f61e9874b25ee30e0f5ad7aaae7a92a580384a36b3d5ad975405726d1578861bda95c9258bab4808b9",
+          "sha1": "5e20df0b78047e1df299ad76ee1f636283fcb991"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/LBGv941w/fzzy_config-0.4.1-fix1%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.4.1-fix1+1.21+neoforge.jar",
+        "primary": true,
+        "size": 1358938,
+        "file_type": null
+      },
+      {
+        "id": "hzZpjVW6",
+        "hashes": {
+          "sha1": "9f944c29562094cd1e1ae6d79e93c107c56ad41e",
+          "sha512": "afe16919c40667468d38c9c1dd755328b849ff671341e66c99176aedc8be7687b772b1ce75629583d16e34f7f4c989b9414d5614682611d8c5c8bbdc1b981383"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/LBGv941w/fzzy_config-0.4.1-fix1%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.4.1-fix1+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 348591,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "ZmlxZPl9",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.4.1+1.21+neoforge",
+    "version_number": "0.4.1+1.21+neoforge",
+    "changelog": "### Additions\n* Created new networking API for facilitating cross-platform play phase networking.\n* added new `configure_update list` command to list the current quarantined updates, to help get the proper id names now that the argument for the command is a simple string.\n\n### Changes\n* The `configure_update` command now uses a string argument to avoid needing to serialize a custom argument. Fzzy config should work with vanilla clients again.\n\n### Fixes\n* Fixed forge 1.20.1 not actually initializing properly",
+    "changelog_url": null,
+    "date_published": "2024-09-09T22:19:08.831216Z",
+    "downloads": 148,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "yf3FECvw",
+        "hashes": {
+          "sha512": "8beff6374b6104ddf0a8d56d1b80b77f302d52806dde6509e55d608a1cf048893f6751a36f4aff23292607734f1a3228e6d2a981504287c54d9dd755cc59a08d",
+          "sha1": "bac65cd0d48f09cc940e6b2f2de8ecd9f2426632"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/ZmlxZPl9/fzzy_config-0.4.1%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.4.1+1.21+neoforge.jar",
+        "primary": true,
+        "size": 1358731,
+        "file_type": null
+      },
+      {
+        "id": "72aYToty",
+        "hashes": {
+          "sha1": "87465dc8482db86f29a74b6ea13c29381410788f",
+          "sha512": "6380fc23657e6ffe738df4e7d9af7a43bd5f2fde2fec2d65f8602816c5557d6c7ab1139e9bed97eb6aa07aa10c6d4bb252a2082c5562d96235563f1f109689e4"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/ZmlxZPl9/fzzy_config-0.4.1%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.4.1+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 348502,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "jHtANHBQ",
+    "project_id": "hYykXjDp",
+    "author_id": "ANKRvkxl",
+    "featured": false,
+    "name": "fzzy_config-0.4.0+1.21+neoforge",
+    "version_number": "0.4.0+1.21+neoforge",
+    "changelog": "### Additions\n* **Port to NeoForge! This is an initial port, please notify me of any problems you run into in my issue tracker or discord**\n* Added `@WithCustomPerms` and `@AdminLevel` for definition of user permissions using LuckPerms/Forge Permissions API \"Node\" style permissions\n  * Added new update quarantine. If an update is suspect, Fzzy Config will quarantine it instead of applying it or outright deleting it. Admins will be notified and have the opportunity to inspect it with a new `/configure_update` command, accepting or denying the update as needed.\n* Added new `@RequiresAction` annotation that supplants the functionality of the now-deprecated RequiresRestart\n  * RESTART - same functionality from RequiresRestart\n  * RELOG - prompts the user to disconnect and reconnect from the world or server\n  * RELOAD_BOTH - prompts a reload of both datapacks and resource packs\n  * RELOAD_DATA - prompts a reload of datapacks\n  * RELOAD_RESOURCES - prompts a reload of resource packs\n* New icons for the new Actions alert system that will appear on the left side of the config, replacing the one \"!\" symbol\n* Added `ValidatedString#fromValues` for creation of a Validated string with a vararg set of allowable strings, no list wrapper needed.\n\n### Changes\n* Deprecated `@RequiresRestart`\n* Permission checks are better at ignoring single player games.\n* Tooltips for required actions are now presented when hovering over the icons themselves, rather than as a header in the main setting tooltip. The tooltip when using keyboard navigation now appends action alerts after the setting description, not before, to avoid having to sit through a bunch of alerts before learning what the setting even does.\n* Internally refactored all fabric-related code into common access points.\n* If a setting forward fails, Fzzy Config now alerts the sender of the problem.\n* Removed environment annotations. Modders pay attention to your source sets! This is to facilitate multiloader more effectively.\n* Updated or tweaked KDoc in many places\n\n### Fixes\n* `ValidatedChoice` now properly updates its tooltip after each selection change.\n* Added `ConfigApiJava` into the most recent versions.\n* Added missing widget and translationProvider optional parameters in `ValidatedSet#toChoices`",
+    "changelog_url": null,
+    "date_published": "2024-09-08T21:07:17.842318Z",
+    "downloads": 197,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "NPi1Norx",
+        "hashes": {
+          "sha1": "d8d9cd5acfbfc15e3a1c3282d7b11db73c971c9f",
+          "sha512": "ac685b9d559c939790cb196dab838d4729d2f9630a947b373754f1e520db093df0bfd82bfdf7abc53a7b402bd46f02b37a86223362a2d76f259929b67ae76293"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/jHtANHBQ/fzzy_config-0.4.0%2B1.21%2Bneoforge.jar",
+        "filename": "fzzy_config-0.4.0+1.21+neoforge.jar",
+        "primary": true,
+        "size": 1343561,
+        "file_type": null
+      },
+      {
+        "id": "Y0WX6Llx",
+        "hashes": {
+          "sha1": "7a27e48d1182d781acc05ae02cace57d8a3e6470",
+          "sha512": "f7be7f63797f1f33eced4b9271fbcda9e1a7035f1b4348e403c18313fed744f2f1f62d00c47a7da78d94e2cd4c4c4db214323812085c00442d899d036acaac96"
+        },
+        "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/jHtANHBQ/fzzy_config-0.4.0%2B1.21%2Bneoforge-sources.jar",
+        "filename": "fzzy_config-0.4.0+1.21+neoforge-sources.jar",
+        "primary": false,
+        "size": 339794,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ordsPcFz",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  }
+]

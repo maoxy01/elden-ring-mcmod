@@ -1,0 +1,73 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="CC BY-NC-ND 4.0"
+
+[[mods]]
+	modId="iceberg"
+	version="1.3.2"
+	displayName="Iceberg"
+	displayURL="https://anthonyhilyard.com/"
+	updateJSONURL="https://mc-update-check.anthonyhilyard.com/520110"
+	logoFile="icon.png"
+	authors="Grend"
+	description="A library containing events, helpers, and utilities to make modding easier."
+
+[[dependencies.iceberg]]
+	modId="neoforge"
+	type="required"
+	versionRange="[21.1.54,)"
+	ordering="NONE"
+	side="BOTH"
+
+[[dependencies.iceberg]]
+	modId="minecraft"
+	type="required"
+	versionRange="[1.21.1]"
+	ordering="NONE"
+	side="BOTH"
+
+[[dependencies.iceberg]]
+	modId="advancementplaques"
+	type="optional"
+	versionRange="[1.6.3,)"
+	ordering="BEFORE"
+	side="BOTH"
+
+[[dependencies.iceberg]]
+	modId="legendarytooltips"
+	type="optional"
+	versionRange="[1.5.2,)"
+	ordering="BEFORE"
+	side="BOTH"
+
+[[dependencies.iceberg]]
+	modId="equipmentcompare"
+	type="optional"
+	versionRange="[1.3.13,)"
+	ordering="BEFORE"
+	side="BOTH"
+
+[[dependencies.iceberg]]
+	modId="merchantmarkers"
+	type="optional"
+	versionRange="[1.3.4,)"
+	ordering="BEFORE"
+	side="BOTH"
+
+[[dependencies.iceberg]]
+	modId="itemborders"
+	type="optional"
+	versionRange="[1.2.4,)"
+	ordering="BEFORE"
+	side="BOTH"
+
+[[mixins]]
+	config="iceberg.mixins.json"
+
+[[mixins]]
+	config="iceberg.neoforge.mixins.json"
+
+[modproperties.iceberg]
+	configuredProviders=[
+		"com.anthonyhilyard.iceberg.compat.configured.IcebergConfigProvider"
+	]

@@ -1,0 +1,25 @@
+# Make sure this is set to "kotlinforforge"
+modLoader="kotlinforforge"
+# Make sure this is set to the appropriate version range
+loaderVersion="[5,)" # Require at least 5.x
+license='LGPL'
+
+[[mods]]
+modId="kotlinforforge"
+version="5.12.0"
+displayName="Kotlin For Forge"
+logoFile="kotlinforforge_icon.png"
+credits="thedarkcolour and his \"minions\""
+authors="thedarkcolour"
+description='''
+Makes Kotlin forge-friendly
+'''
+[[dependencies.kotlinforforge]]
+modId="minecraft"
+mandatory=true
+type="required"
+versionRange="[1.20.6,1.21.9)"
+ordering="NONE"
+side="BOTH"
+[modproperties.kotlinforforge]
+catalogueImageIcon="kotlinforforge_icon.png"

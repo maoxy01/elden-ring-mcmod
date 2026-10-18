@@ -1,0 +1,40 @@
+modLoader="javafml" #mandatory
+loaderVersion="[4,)" #mandatory
+
+license="All Rights Reserved"
+issueTrackerURL="https://github.com/P3pp3rF1y/SophisticatedBackpacks/issues"
+
+[[mods]]
+modId="sophisticatedbackpacks"
+version="3.25.8"
+displayName="Sophisticated Backpacks"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks"
+logoFile="logo.png"
+credits="Created by P3pp3rF1y and art by Ridanisaurus."
+authors="P3pp3rF1y, Ridanisaurus"
+description='''Fancy and functional backpacks.'''
+
+[[accessTransformers]]
+file="META-INF/accesstransformer.cfg"
+
+[[dependencies.sophisticatedbackpacks]]
+modId="sophisticatedcore"
+type="required"
+versionRange="[1.3.76,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.sophisticatedbackpacks]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.0,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.sophisticatedbackpacks]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="BOTH"
+

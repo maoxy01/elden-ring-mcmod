@@ -1,0 +1,30 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="CC BY-NC-ND 4.0"
+
+[[mods]]
+modId="prism"
+version="1.0.11"
+displayName="Prism"
+displayURL="https://anthonyhilyard.com/"
+updateJSONURL="https://mc-update-check.anthonyhilyard.com/638111"
+logoFile="icon.png"
+authors="Grend"
+description='''A library all about color! Provides lots of color-related functionality for dependent mods.'''
+
+[[dependencies.prism]]
+	modId="neoforge"
+	type="required"
+	versionRange="[21.1.60,)"
+	ordering="NONE"
+	side="BOTH"
+
+[[dependencies.prism]]
+	modId="minecraft"
+	type="required"
+	versionRange="[1.21.1]"
+	ordering="NONE"
+	side="BOTH"
+
+[[mixins]]
+	config="prism.mixins.json"

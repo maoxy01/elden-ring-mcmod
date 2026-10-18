@@ -1,0 +1,7 @@
+﻿VFX 动作语义修正 终态（2026-10-17，DSH）
+- 单测: gradlew test exit 0（223 项 / 0 失败 / 1 跳过，含新增离地锁回归 2 项）
+- 动作语义夹具: runClient -PvfxSmoke -PvfxSemantics exit 0, VFX_SEMANTICS_COMPLETE: 8 skill(s)
+- 负例（旧参数）: runClient -PvfxSmoke -PvfxSemantics -PvfxLegacyHop exit 1
+    失败项: gold_breaker 前冲1.64/起跳1.71(0.96x); destined_death 1.83/2.36(0.78x); waterfowl_dance channels=2/3
+- 夹具盲区实测: 相机实体=盔甲架 -> apex=81.000 horizontal=0.000; 相机给回玩家 -> apex=82.75 horizontal=3.19
+- 发布 JAR: build/libs/eldencombat-0.2.0.jar SHA256 5FDD235A3F6E85EC15F79FBFB0B30D997DC22809B1A9EE581A8200B88DC95A74（1179 条目 / 0 个 *Harness*）

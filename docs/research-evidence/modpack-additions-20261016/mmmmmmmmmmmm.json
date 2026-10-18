@@ -1,0 +1,761 @@
+{
+  "project": {
+    "client_side": "required",
+    "server_side": "required",
+    "game_versions": [
+      "1.18",
+      "1.18.1",
+      "1.18.2",
+      "1.19",
+      "1.19.1",
+      "1.19.2",
+      "1.19.3",
+      "1.19.4",
+      "1.20.1",
+      "1.21",
+      "1.21.1",
+      "26.1.2"
+    ],
+    "environment": [
+      "client_and_server"
+    ],
+    "id": "Adega8YN",
+    "slug": "mmmmmmmmmmmm",
+    "project_type": "mod",
+    "team": "BuHgkJRZ",
+    "organization": null,
+    "title": "MmmMmmMmmMmm",
+    "description": "Target Dummy that show damage dealt and can be equipped with armor",
+    "body": "\nThis is a small mod that adds exactly one item: a Target Dummy.\n\nThe dummy can be placed in the world, where it'll stand silently, judging your every action. It'll wiggle funny if you hit it, screaming large numbers of damage at you. It can be dressed up to look even more awesome. This will please the dummy, making the numbers smaller.\n\nTL;DR: target dummies show damage dealt to them and can be equipped with armor\n\n \n\nUsage:\nRight click on a block with a target dummy to place it. He can be rotated 16 different directions depending on the way you face when you place it, similar to an armor stand.\n\nYou can start dressing the little dude with all kind of armors and equipment. Just right click him with the desired item. To unequip a certain armor piece just click on his corresponding body part.\n\nGot tired of testing your dps? You can remove the dummy just by shift left clicking him with an empty hand!\n\n \n\nAdditional features:\nHave you ever wanted to test your new smite sword but couldn't because there are no skellies around? Well fear no more, you can now equip the dummy with and undead mob head and it will change its type accordingly!\nSimilarly you can equip him with a turtle helmet to make it a water mob or with a pillager banner to turn it into a pillager mob. Note that he still won't be attacked by other mobs (maybe it a future update), he'll just take more damage from appropriate enchantment and so on.\n\n \n\n Need automating? You can dispense the dummy using a dispenser and you can break him by removing the block under his feet.\n \n\n Don't like how much he swings or the new skin? Well you can easily change that by using the mod config file. You can additionally choose between static and dynamic dps messages and you can make the numbers show hearths instead of damage.\nTry shearing the dummies to get a different skin!\n\n \n\nYou can also equip them with a pumpkin or jack o lantern and they'll act as scarecrows, scaring nearby animals\n \n\n \n\nFull list of changes from original 1.12 bonusboni's mod:\n \n\nLots of stuff here, more than half of the mod was re written.\n\nNew skin!\nAdded support for more than one damage number. They now have a fading animation to clarify which is the newest.\nNumbers change their colors depending on the type of damage dealt. For example critical hits are red and lightning damage is yellow. Try it out!\nAdded dispenser support\nCan mimic mob types by equipping different items.\nUpdated the model and animation so that the head stays attached to the body\nThe dummy now reacts to all damage types\nCan be killed with /kill command, by withers and by void damage.\nDps number now appears on the status bar. You can choose between static and dynamic dps in the config.\nAdded configs to change a few aesthetic things\nEquipping and unequipping functions alot more like an armor stand\nBase is a bit smaller and centered on the block grid\nCustom armor models from other mods render properly (only 1.16 for now)\nSwinging animation is not much smoother\nAct as scarecrows when equipped with a pumpkin\nFixed some bugs\n",
+    "body_url": null,
+    "published": "2022-11-13T02:03:58.377412Z",
+    "updated": "2026-09-17T12:05:56.427716Z",
+    "approved": "2022-11-13T02:32:08.078685Z",
+    "queued": null,
+    "status": "approved",
+    "requested_status": null,
+    "moderator_message": null,
+    "license": {
+      "id": "CC0-1.0",
+      "name": "Creative Commons Zero v1.0 Universal",
+      "url": null
+    },
+    "downloads": 13089447,
+    "followers": 930,
+    "categories": [
+      "utility"
+    ],
+    "additional_categories": [
+      "decoration",
+      "game-mechanics"
+    ],
+    "loaders": [
+      "fabric",
+      "forge",
+      "neoforge"
+    ],
+    "versions": [
+      "qo2XMMhP",
+      "XYByr7D5",
+      "La9N7Ttu",
+      "zCPdDOOP",
+      "gEbry6GM",
+      "lTTirNtq",
+      "NKpNuhkD",
+      "zFPaMFa0",
+      "yMmYJ5I3",
+      "HPj6DZ24",
+      "S6QNPOFv",
+      "2ykUPWwJ",
+      "PcKbqBY4",
+      "Jt0fxF3M",
+      "ZganhQm7",
+      "hGI5KQLh",
+      "mQfY3H0A",
+      "rY6H6hgv",
+      "UvxYYzDm",
+      "EI0ydz1r",
+      "9nNuKVUq",
+      "ydAkQ5P1",
+      "TFlgTQCK",
+      "owOKOJTn",
+      "AAiySuI2",
+      "UxWhycwZ",
+      "OktgetPL",
+      "4IxqrWac",
+      "aD0lXWYG",
+      "Wsi8MeIx",
+      "evFX9Ei5",
+      "WovXXEkH",
+      "VEQbqZhv",
+      "EwVfOzqs",
+      "xzyrFq6U",
+      "oejSEBjB",
+      "7MCqqDqj",
+      "8gDpcYEM",
+      "GClsjyQs",
+      "zQNItGls",
+      "fkn90qf0",
+      "G6J2yYte",
+      "sQU1xRdi",
+      "qhumF2VU",
+      "QOOGkq3O",
+      "VFmZdzCp",
+      "xVBLDt8m",
+      "FxnUacjh",
+      "s1thtpLn",
+      "rbotmafd",
+      "dGifKxWx",
+      "v0spf9jE",
+      "sJQnQaMg",
+      "5kujqgKn",
+      "8JckO35K",
+      "QEO0CrpO",
+      "IKj5wbhH",
+      "xH13cuu8",
+      "TQl3sj1z",
+      "iBzF4aPL",
+      "zwjdnxxq",
+      "wmBJI3zP",
+      "15D70qSo",
+      "NLG8HOhY",
+      "kDOX4QqW",
+      "gPss13UC",
+      "RaClaPUJ",
+      "1lUjy629",
+      "NRqFuyt1",
+      "W4kreeaE",
+      "Ku7wBUSo",
+      "ehPPBLBm",
+      "o2545dR2",
+      "IwQ2C8ir",
+      "cW10IFuy",
+      "LUaKZqUd",
+      "d1TKoLnB",
+      "fcSXO1Qb",
+      "L8421Hiw",
+      "CSS3KuSz",
+      "4CScWyO3",
+      "sHdoBLpl",
+      "bJE2Owsg",
+      "J1XcbT7Q",
+      "EVM2meAw",
+      "WO6cRMMs",
+      "NXooLzAf",
+      "ARuuU3Qq",
+      "NVB5pQRZ",
+      "zAahRq2q",
+      "tE6suZ1B",
+      "l7knRSW7",
+      "ZRy2etbK",
+      "MHozEq9h",
+      "X5fft3Vp",
+      "nnQq1ivl",
+      "c1HMqDvI",
+      "6VosBxNt",
+      "PQzuABde",
+      "yEtrTeQg",
+      "sno57gO4",
+      "7ugh68ok",
+      "1FiCsx0K",
+      "nmUUS6Aa",
+      "mYjh0FSZ",
+      "TDcs0XKH",
+      "xcE78LTW",
+      "DldwQTMc"
+    ],
+    "icon_url": "https://cdn.modrinth.com/data/Adega8YN/f5e7ffbd18426c584bd43b59770fb2965d420c9f.png",
+    "raw_icon_url": "https://cdn.modrinth.com/data/Adega8YN/f5e7ffbd18426c584bd43b59770fb2965d420c9f.png",
+    "issues_url": null,
+    "source_url": null,
+    "wiki_url": null,
+    "discord_url": "https://discord.com/invite/qdKRTDf8Cv",
+    "donation_urls": [
+      {
+        "id": "patreon",
+        "platform": "Patreon",
+        "url": "https://www.patreon.com/user?u=53696377"
+      }
+    ],
+    "gallery": [],
+    "color": 4863266,
+    "thread_id": "Adega8YN",
+    "monetization_status": "monetized"
+  },
+  "versions": [
+    {
+      "game_versions": [
+        "1.21.1"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_and_server",
+      "id": "DldwQTMc",
+      "project_id": "Adega8YN",
+      "author_id": "BU21lLGA",
+      "featured": false,
+      "name": "dummmmmmy-1.21-2.1.2-neoforge",
+      "version_number": "1.21-2.1.2",
+      "changelog": "fixed an issue with number color",
+      "changelog_url": null,
+      "date_published": "2026-09-17T12:05:56.427716Z",
+      "downloads": 33905,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "Dj0I2Poj",
+          "hashes": {
+            "sha512": "822fb8cfb22fb64893f3ac9000e6c68f49ffdc2816161bca7b06db6b51d0e6839f2a20ce36cb36518519ec01a04f4f852fe8c253da3020836f99f8bf4fa55609",
+            "sha1": "87fb529cbb220a33fedf45a4a6f2269b8e00fffe"
+          },
+          "url": "https://cdn.modrinth.com/data/Adega8YN/versions/DldwQTMc/dummmmmmy-1.21-2.1.2-neoforge.jar",
+          "filename": "dummmmmmy-1.21-2.1.2-neoforge.jar",
+          "primary": true,
+          "size": 215883,
+          "file_type": null
+        }
+      ],
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "twkfQtEc",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ]
+    },
+    {
+      "game_versions": [
+        "1.21.1"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_and_server",
+      "id": "TDcs0XKH",
+      "project_id": "Adega8YN",
+      "author_id": "BU21lLGA",
+      "featured": false,
+      "name": "dummmmmmy-1.21-2.1.1-neoforge",
+      "version_number": "1.21-2.1.1",
+      "changelog": "- fixed an issue with particle light",
+      "changelog_url": null,
+      "date_published": "2026-09-10T19:08:28.367008Z",
+      "downloads": 15180,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "o4Ec9G6U",
+          "hashes": {
+            "sha512": "2da46d045916c68365423130cdfac79352f46a517f61cb53a74ae8d8e60077c15b56602c27d12ee0e6b8dd3806cbc16cdcef6ea1fc58726ea25e0c2ad3437712",
+            "sha1": "190a16efb18e5cbe62376b1ae5751e25652be5fe"
+          },
+          "url": "https://cdn.modrinth.com/data/Adega8YN/versions/TDcs0XKH/dummmmmmy-1.21-2.1.1-neoforge.jar",
+          "filename": "dummmmmmy-1.21-2.1.1-neoforge.jar",
+          "primary": true,
+          "size": 214761,
+          "file_type": null
+        }
+      ],
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "twkfQtEc",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ]
+    },
+    {
+      "game_versions": [
+        "1.21.1"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_and_server",
+      "id": "PQzuABde",
+      "project_id": "Adega8YN",
+      "author_id": "BU21lLGA",
+      "featured": false,
+      "name": "dummmmmmy-1.21-2.1.0-neoforge",
+      "version_number": "1.21-2.1.0",
+      "changelog": "- reworked the configs: categories now have icons, scarecrow and damage numbers are proper feature toggles you can switch off wholesale, and boss settings moved to their own category. Some values will reset to default\n- added a punchable dummy on the config screen. It watches your cursor, and hitting it makes straw fly\n- translations\n",
+      "changelog_url": null,
+      "date_published": "2026-07-26T03:06:02.920818Z",
+      "downloads": 85802,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "4Hop5TT6",
+          "hashes": {
+            "sha512": "c29956bc87851cdfda7990fd43b024b5a2c7491964a654e701ec58277dcc62935865fe980ffc6730698208d5a84552c747a458572cdfaa729972f5ee00ea4513",
+            "sha1": "05825b9457466f7f25f929663cbd768aaf5ac308"
+          },
+          "url": "https://cdn.modrinth.com/data/Adega8YN/versions/PQzuABde/dummmmmmy-neoforge-1.21-2.1.0.jar",
+          "filename": "dummmmmmy-neoforge-1.21-2.1.0.jar",
+          "primary": true,
+          "size": 214030,
+          "file_type": null
+        }
+      ],
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "twkfQtEc",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ]
+    },
+    {
+      "game_versions": [
+        "1.21.1"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_and_server",
+      "id": "nnQq1ivl",
+      "project_id": "Adega8YN",
+      "author_id": "BU21lLGA",
+      "featured": false,
+      "name": "1.21-2.0.12-neoforge",
+      "version_number": "1.21-2.0.12-neoforge",
+      "changelog": "- translations",
+      "changelog_url": null,
+      "date_published": "2026-04-18T06:28:23.544116Z",
+      "downloads": 206141,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "NmTrRW2s",
+          "hashes": {
+            "sha512": "40ab2e23ddd8253dc2369654de3d95ddf16739a4a219040bff67c557b11a114d48fed7dc7dc9270040d357af7510fec0dd8600be1d421c50de7c2ff8e5b81982",
+            "sha1": "0e69c2a8e4e51df42e45b2d6deb3a855bdf8dce6"
+          },
+          "url": "https://cdn.modrinth.com/data/Adega8YN/versions/nnQq1ivl/dummmmmmy-1.21-2.0.12-neoforge.jar",
+          "filename": "dummmmmmy-1.21-2.0.12-neoforge.jar",
+          "primary": true,
+          "size": 219158,
+          "file_type": null
+        }
+      ],
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "twkfQtEc",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ]
+    },
+    {
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_and_server",
+      "id": "l7knRSW7",
+      "project_id": "Adega8YN",
+      "author_id": "BU21lLGA",
+      "featured": false,
+      "name": "1.21-2.0.11-neoforge",
+      "version_number": "1.21-2.0.11-neoforge",
+      "changelog": "added critical strike mod compat. thanks to Daedelus",
+      "changelog_url": null,
+      "date_published": "2025-11-10T15:54:37.372022Z",
+      "downloads": 167916,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "TazqNmo1",
+          "hashes": {
+            "sha512": "f40b29690a17ec9dfc71bf382c3cd12f943f2710b3db40f55237f5f33924e98cde91bb956ab380a6239e32d8ab4f7ad07e54e98a5eaf324dcc2d70be24d512fb",
+            "sha1": "1bdaf699dd40c03c96a85f64ae9b54a8e40bb539"
+          },
+          "url": "https://cdn.modrinth.com/data/Adega8YN/versions/l7knRSW7/dummmmmmy-1.21-2.0.11-neoforge.jar",
+          "filename": "dummmmmmy-1.21-2.0.11-neoforge.jar",
+          "primary": true,
+          "size": 218920,
+          "file_type": null
+        }
+      ],
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "twkfQtEc",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ]
+    },
+    {
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_and_server",
+      "id": "NXooLzAf",
+      "project_id": "Adega8YN",
+      "author_id": "BU21lLGA",
+      "featured": false,
+      "name": "neoforge_1.21-2.0.9",
+      "version_number": "neoforge_1.21-2.0.9",
+      "changelog": "fixed particles spawned with command and unusual velocities",
+      "changelog_url": null,
+      "date_published": "2025-07-29T20:10:43.401901Z",
+      "downloads": 100547,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "q4HARCSf",
+          "hashes": {
+            "sha512": "88aea5cd83df3c376ba520571dd2e17f9213a7ebd1d2023bfe137b3cf51f3c5e070d3569b34f4f42ed865e7dd711c48d55b422e1347cebe3e0d840b9b45af518",
+            "sha1": "dd8e3d92088f8b29a35354801fd83a5332b7ec9b"
+          },
+          "url": "https://cdn.modrinth.com/data/Adega8YN/versions/NXooLzAf/dummmmmmy-1.21-2.0.9-neoforge.jar",
+          "filename": "dummmmmmy-1.21-2.0.9-neoforge.jar",
+          "primary": true,
+          "size": 216906,
+          "file_type": null
+        }
+      ],
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "twkfQtEc",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ]
+    },
+    {
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_and_server",
+      "id": "J1XcbT7Q",
+      "project_id": "Adega8YN",
+      "author_id": "BU21lLGA",
+      "featured": false,
+      "name": "neoforge_1.21-2.0.8",
+      "version_number": "neoforge_1.21-2.0.8",
+      "changelog": "improved shield logic",
+      "changelog_url": null,
+      "date_published": "2025-06-02T14:52:21.48589Z",
+      "downloads": 286878,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "JKT1h2iz",
+          "hashes": {
+            "sha1": "20520cfe2b4a6f6d5a64c07105b19ba9931eca55",
+            "sha512": "7af95739e7ef848000767364f8176c8473a461291e3c214215632a09a081d1baed4516f752c8adb9109004c69625c636c912fe902765a1b76b5d1958f880233f"
+          },
+          "url": "https://cdn.modrinth.com/data/Adega8YN/versions/J1XcbT7Q/dummmmmmy-1.21-2.0.8-neoforge.jar",
+          "filename": "dummmmmmy-1.21-2.0.8-neoforge.jar",
+          "primary": true,
+          "size": 216887,
+          "file_type": null
+        }
+      ],
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "twkfQtEc",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ]
+    },
+    {
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_and_server",
+      "id": "4CScWyO3",
+      "project_id": "Adega8YN",
+      "author_id": "BU21lLGA",
+      "featured": false,
+      "name": "neoforge_1.21-2.0.7",
+      "version_number": "neoforge_1.21-2.0.7",
+      "changelog": "- removed unused configs\n- fixed pets not counting as player attack source\n- renaming a dummy with a number will give the dummy that max health",
+      "changelog_url": null,
+      "date_published": "2025-02-25T23:12:31.234807Z",
+      "downloads": 122825,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "7LEM0uvu",
+          "hashes": {
+            "sha1": "4321e4f081b8deb873dd8017a436d317598681d6",
+            "sha512": "84a94ed2db0327691665b2c186eed74d85d727050e08782e39e69c00ac71de39b6b6707ee2040a9d9613c2af222b85508612600f506fc7dcbdc224f82b0c719f"
+          },
+          "url": "https://cdn.modrinth.com/data/Adega8YN/versions/4CScWyO3/dummmmmmy-1.21-2.0.7-neoforge.jar",
+          "filename": "dummmmmmy-1.21-2.0.7-neoforge.jar",
+          "primary": true,
+          "size": 214214,
+          "file_type": null
+        }
+      ],
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "twkfQtEc",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ]
+    },
+    {
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_and_server",
+      "id": "cW10IFuy",
+      "project_id": "Adega8YN",
+      "author_id": "BU21lLGA",
+      "featured": false,
+      "name": "neoforge_1.21-2.0.6",
+      "version_number": "neoforge_1.21-2.0.6",
+      "changelog": "fixed some enchantment code keeping the server level loaded in memory when in the main screen",
+      "changelog_url": null,
+      "date_published": "2024-10-03T12:48:23.471442Z",
+      "downloads": 18508,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "UzzLK5PU",
+          "hashes": {
+            "sha1": "7ff0c4769c118a8c7e4aca394f452764dc723d7e",
+            "sha512": "3089b415feadf53ed996b4b35954adf0d4dfec95721c34e7cfd5821f698f6a0af1f8447a2496fc2364e88f126e6e2b910e9f4614a9107da06699e323e8c3fbc9"
+          },
+          "url": "https://cdn.modrinth.com/data/Adega8YN/versions/cW10IFuy/dummmmmmy-1.21-2.0.6-neoforge.jar",
+          "filename": "dummmmmmy-1.21-2.0.6-neoforge.jar",
+          "primary": true,
+          "size": 213188,
+          "file_type": null
+        }
+      ],
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "twkfQtEc",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ]
+    },
+    {
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_and_server",
+      "id": "W4kreeaE",
+      "project_id": "Adega8YN",
+      "author_id": "BU21lLGA",
+      "featured": false,
+      "name": "neoforge_1.21-2.0.4",
+      "version_number": "neoforge_1.21-2.0.4",
+      "changelog": "- dummy boss bar will be removed when dummy is killed\n- dummy will no longer trigger pressure plates\n- added es_mx translation",
+      "changelog_url": null,
+      "date_published": "2024-09-19T13:25:13.730321Z",
+      "downloads": 1092,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "71MtkSHy",
+          "hashes": {
+            "sha512": "b0a2988e99b9dc6eebb5464fbe05b70de78bc33ba7fc7c038ef4b1027046cde60c95f8210c16c3485d8502caaf7b108b8d8205becd14e0511dcb0cff8cd3cf9e",
+            "sha1": "c8143bae2a2a761677c75bacbcbe1f592a41f467"
+          },
+          "url": "https://cdn.modrinth.com/data/Adega8YN/versions/W4kreeaE/dummmmmmy-1.21-2.0.4-neoforge.jar",
+          "filename": "dummmmmmy-1.21-2.0.4-neoforge.jar",
+          "primary": true,
+          "size": 213081,
+          "file_type": null
+        }
+      ],
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "twkfQtEc",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ]
+    },
+    {
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_and_server",
+      "id": "gPss13UC",
+      "project_id": "Adega8YN",
+      "author_id": "BU21lLGA",
+      "featured": false,
+      "name": "neoforge_1.21-2.0.3",
+      "version_number": "neoforge_1.21-2.0.3",
+      "changelog": "fixed an issue with very high damage values spawning way too many particles",
+      "changelog_url": null,
+      "date_published": "2024-09-11T18:08:26.566478Z",
+      "downloads": 294,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "pimACOkR",
+          "hashes": {
+            "sha512": "b3f592d3612bcc9cae0de62bc77de0faba40ba2211777d15f973055f2ac9f1603422621b673f458be3d08fdb0579ce1d4eacc549cc35ca62dac42ade5d0a5ad3",
+            "sha1": "65119c8842e2accc95c8c0c8a3382c65fa4fe3c2"
+          },
+          "url": "https://cdn.modrinth.com/data/Adega8YN/versions/gPss13UC/dummmmmmy-1.21-2.0.3-neoforge.jar",
+          "filename": "dummmmmmy-1.21-2.0.3-neoforge.jar",
+          "primary": true,
+          "size": 212722,
+          "file_type": null
+        }
+      ],
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "twkfQtEc",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ]
+    },
+    {
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_and_server",
+      "id": "iBzF4aPL",
+      "project_id": "Adega8YN",
+      "author_id": "BU21lLGA",
+      "featured": false,
+      "name": "neoforge_1.20-2.0.2",
+      "version_number": "neoforge_1.20-2.0.2",
+      "changelog": "added hay particles when hitting a dummy",
+      "changelog_url": null,
+      "date_published": "2024-09-10T11:30:48.222404Z",
+      "downloads": 133,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "djs46wn6",
+          "hashes": {
+            "sha512": "45b792a05dc9080bc0bf35245e2fdb67db3620dfe6d8bff9f9ffba7f4874e514d502740c54333c88e2688d82aeaf78289647baf00f77f8734657e881bb28df3a",
+            "sha1": "4d8f3e499f035fb21023d63d89fc862c39e72dbc"
+          },
+          "url": "https://cdn.modrinth.com/data/Adega8YN/versions/iBzF4aPL/dummmmmmy-1.20-2.0.2-neoforge.jar",
+          "filename": "dummmmmmy-1.20-2.0.2-neoforge.jar",
+          "primary": true,
+          "size": 212679,
+          "file_type": null
+        }
+      ],
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "twkfQtEc",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ]
+    },
+    {
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "loaders": [
+        "neoforge"
+      ],
+      "environment": "client_and_server",
+      "id": "xH13cuu8",
+      "project_id": "Adega8YN",
+      "author_id": "BU21lLGA",
+      "featured": false,
+      "name": "neoforge_1.20-2.0.0",
+      "version_number": "neoforge_1.20-2.0.0",
+      "changelog": "- updated to 1.21\n- dummies can now equip shields\n- many improvements and optimizations to mod internals\n- added new tags for items which determine the dummy mob type",
+      "changelog_url": null,
+      "date_published": "2024-09-09T13:59:01.672878Z",
+      "downloads": 302,
+      "version_type": "release",
+      "status": "listed",
+      "requested_status": null,
+      "files": [
+        {
+          "id": "em0vbIRY",
+          "hashes": {
+            "sha1": "c72ad97fd0c16e7a64a93e7f104c8dbafa589043",
+            "sha512": "53ec8c093080855a8442ae65c52a8c413f3a1b5765ff86e7ccba8b86105ffbc621daed840841a0632e9b7b02a1858b7da1e03ffbf477ab0bbf0f0327578bf401"
+          },
+          "url": "https://cdn.modrinth.com/data/Adega8YN/versions/xH13cuu8/dummmmmmy-1.20-2.0.0-neoforge.jar",
+          "filename": "dummmmmmy-1.20-2.0.0-neoforge.jar",
+          "primary": true,
+          "size": 200550,
+          "file_type": null
+        }
+      ],
+      "dependencies": []
+    }
+  ]
+}

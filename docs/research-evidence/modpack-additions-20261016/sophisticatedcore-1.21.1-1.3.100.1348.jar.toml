@@ -1,0 +1,35 @@
+modLoader="javafml" #mandatory
+loaderVersion="[4,)" #mandatory
+
+license="All Rights Reserved"
+issueTrackerURL="https://github.com/P3pp3rF1y/SophisticatedCore/issues"
+
+[[mods]]
+modId="sophisticatedcore"
+version="1.3.100"
+displayName="Sophisticated Core"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/sophisticated-core"
+logoFile="logo.png"
+credits="Created by P3pp3rF1y"
+authors="P3pp3rF1y"
+description='''A library / shared functionality mod for Sophisticated Storage and Backpacks'''
+
+[[accessTransformers]]
+file="META-INF/accesstransformer.cfg"
+
+[[mixins]]
+config = "sophisticatedcore.mixins.json"
+
+[[dependencies.sophisticatedcore]] #optional
+modId="neoforge" #mandatory
+type="required" #mandatory
+versionRange="[21.1.0,)" #mandatory
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.sophisticatedcore]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="BOTH"

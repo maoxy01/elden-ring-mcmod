@@ -1,0 +1,36 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "LGPL 2.1"
+issueTrackerURL="https://github.com/Darkhax-Minecraft/Bookshelf/issues"
+
+[[mods]]
+modId = "bookshelf"
+version = "21.1.81"
+displayName = "Bookshelf"
+updateJSONURL = "https://updates.blamejared.com/get?n=bookshelf&gv=1.21.1&ml=neoforge"
+displayURL = "https://www.curseforge.com/minecraft/mc-mods/bookshelf"
+logoFile="logo_bookshelf.png"
+logoBlur = false
+credits = "This project is made possible with Patreon support from players like you. Thank you! lothrazar, Spencer Gilbert, Tobias Ward, techsquirrel, Pongo Sapiens, noobanidus, Darkosto"
+authors = "Darkhax"
+description = "Bookshelf is a library mod that provides code, frameworks, and utilities for other mods. Many mods make use of Bookshelf and are powered by its code."
+
+[[mixins]]
+config = "bookshelf.mixins.json"
+
+[[mixins]]
+config = "bookshelf.neoforge.mixins.json"
+
+[[dependencies.bookshelf]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.209,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.bookshelf]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1, 1.22)"
+ordering = "NONE"
+side = "BOTH"

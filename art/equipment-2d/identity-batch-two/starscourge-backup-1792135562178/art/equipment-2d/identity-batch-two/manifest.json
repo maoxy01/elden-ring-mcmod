@@ -1,0 +1,1706 @@
+{
+  "date": "2026-10-16",
+  "candidates": [
+    {
+      "id": "flail",
+      "name": "连枷",
+      "category": "ordinary",
+      "source": "art/weapons/flail.model.json",
+      "sourceHash": "e1aaea3ec5d481dee9a6debd2540792ca7581109e1dffbaab87d8cf24ae646d9",
+      "delivery": "own_sprite",
+      "strict2d": true,
+      "legacySelectionPreserved": false,
+      "worldLengthBlocks": 1.2240000000000002,
+      "ratioToPlayer": 0.68,
+      "ratioEvidence": "provisional_art_estimate",
+      "variants": [
+        {
+          "state": "front",
+          "file": "sprites/flail_front.png",
+          "url": "sprites/flail_front.png",
+          "sha256": "4e7f9d695fb3873e025f79ace4377b77e49694d7eec9f54aef7d69162a1c3deb",
+          "size": [
+            32,
+            32
+          ],
+          "boundsInclusive": [
+            2,
+            2,
+            29,
+            29
+          ],
+          "opaquePixels": 168,
+          "colors": 19,
+          "components8": [
+            168
+          ],
+          "transparentMargin": true,
+          "anchorPixels": [
+            6.5,
+            25.5
+          ],
+          "before": "before/flail_front.png",
+          "beforeHash": "8fa569ad433e9715edb39bcb2112bc9a307037e700b02e31d1727e0f6232d105"
+        },
+        {
+          "state": "gui_16",
+          "file": "sprites/flail_gui_16.png",
+          "url": "sprites/flail_gui_16.png",
+          "sha256": "cc118822dedb7a6f55ff731c8602566fc0bfe11b2a46e70842d47a2cbcefc6cc",
+          "size": [
+            16,
+            16
+          ],
+          "boundsInclusive": [
+            1,
+            1,
+            14,
+            14
+          ],
+          "opaquePixels": 51,
+          "colors": 18,
+          "components8": [
+            51
+          ],
+          "transparentMargin": true,
+          "anchorPixels": [
+            3.5,
+            12.5
+          ],
+          "before": "before/flail_gui_16.png",
+          "beforeHash": "7ae5e66d4ebb936155d284902d4dfcfb56313061e7f2bf3896aa472fd9475ef4"
+        },
+        {
+          "state": "gui_32",
+          "file": "sprites/flail_gui_32.png",
+          "url": "sprites/flail_gui_32.png",
+          "sha256": "4e7f9d695fb3873e025f79ace4377b77e49694d7eec9f54aef7d69162a1c3deb",
+          "size": [
+            32,
+            32
+          ],
+          "boundsInclusive": [
+            2,
+            2,
+            29,
+            29
+          ],
+          "opaquePixels": 168,
+          "colors": 19,
+          "components8": [
+            168
+          ],
+          "transparentMargin": true,
+          "anchorPixels": [
+            6.5,
+            25.5
+          ],
+          "before": "before/flail_gui_32.png",
+          "beforeHash": "8fa569ad433e9715edb39bcb2112bc9a307037e700b02e31d1727e0f6232d105"
+        }
+      ],
+      "gui": [],
+      "axisImageDegrees": -45,
+      "interfaces": [
+        "Rest-pose sprite only; articulated attack motion is outside the sprite asset",
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
+      ],
+      "runtimeIntegrated": false,
+      "inGameAccepted": false,
+      "anchorPixels": [
+        6.5,
+        25.5
+      ],
+      "sourceSpanPixels": 34.93939389392352,
+      "projection": {
+        "angleDegrees": 45,
+        "modelUnitsPerPixel": 0.8586296628693793,
+        "boneRestRotationsApplied": true
+      },
+      "publication": "Project-owned derivative; no provider pixels",
+      "anchorMethod": "Projected local grip with at most 3px opaque-pixel snapping, game calibration pending",
+      "leftHand": {
+        "anchorPixels": [
+          25.5,
+          25.5
+        ],
+        "previewMirrorOnly": true,
+        "runtime": "Preserve provider left display or calibrate own left hand independently"
+      },
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 1.1210268878422616,
+        "anchorLocalModelUnits": [
+          -4.75,
+          -4.75,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "features": [
+        "柄、链、锤头三区",
+        "交错金属链环",
+        "暗头与冷灰链节"
+      ],
+      "reference": null,
+      "referenceHash": null,
+      "referencePolicy": "Own category design, not a named Elden Ring weapon",
+      "status": "user_selected_art_current",
+      "thickness": {
+        "units": 1,
+        "blocks": 0.0625,
+        "ZIndependentOfXY": true
+      },
+      "selectionRegistry": "art/equipment-2d/full/selected-art.json"
+    },
+    {
+      "id": "heavy_thrusting_sword",
+      "name": "重刺剑",
+      "category": "ordinary",
+      "source": "art/weapons/heavy_thrusting_sword.model.json",
+      "sourceHash": "7ce8cc9252d215210c0699745b1b24b29229f30ee77f28477c72115a7659cc46",
+      "delivery": "own_sprite",
+      "strict2d": true,
+      "legacySelectionPreserved": false,
+      "worldLengthBlocks": 1.512,
+      "ratioToPlayer": 0.84,
+      "ratioEvidence": "provisional_art_estimate",
+      "variants": [
+        {
+          "state": "front",
+          "file": "sprites/heavy_thrusting_sword_front.png",
+          "url": "sprites/heavy_thrusting_sword_front.png",
+          "sha256": "f54eb75553da6c4faac4e219b87cc7f37b8aa8a5fa7d7b6e7347b7e9cb018e9a",
+          "size": [
+            32,
+            32
+          ],
+          "boundsInclusive": [
+            2,
+            2,
+            29,
+            29
+          ],
+          "opaquePixels": 170,
+          "colors": 13,
+          "components8": [
+            170
+          ],
+          "transparentMargin": true,
+          "anchorPixels": [
+            7.5,
+            24.5
+          ],
+          "before": "before/heavy_thrusting_sword_front.png",
+          "beforeHash": "b662c6a40437607d1f3b6171f76aa5b26291443806f1da54f4ba09feb4392e25"
+        },
+        {
+          "state": "gui_16",
+          "file": "sprites/heavy_thrusting_sword_gui_16.png",
+          "url": "sprites/heavy_thrusting_sword_gui_16.png",
+          "sha256": "783216f871b44edba2e94f1793caff2ff870b999d0a27dace0938b4ff8f00110",
+          "size": [
+            16,
+            16
+          ],
+          "boundsInclusive": [
+            1,
+            1,
+            14,
+            14
+          ],
+          "opaquePixels": 58,
+          "colors": 11,
+          "components8": [
+            58
+          ],
+          "transparentMargin": true,
+          "anchorPixels": [
+            3.5,
+            12.5
+          ],
+          "before": "before/heavy_thrusting_sword_gui_16.png",
+          "beforeHash": "207e4e4bb05d67af0fff90e59cbbe85cebb1dc0c35bab63f50cdbb87e4f5673d"
+        },
+        {
+          "state": "gui_32",
+          "file": "sprites/heavy_thrusting_sword_gui_32.png",
+          "url": "sprites/heavy_thrusting_sword_gui_32.png",
+          "sha256": "f54eb75553da6c4faac4e219b87cc7f37b8aa8a5fa7d7b6e7347b7e9cb018e9a",
+          "size": [
+            32,
+            32
+          ],
+          "boundsInclusive": [
+            2,
+            2,
+            29,
+            29
+          ],
+          "opaquePixels": 170,
+          "colors": 13,
+          "components8": [
+            170
+          ],
+          "transparentMargin": true,
+          "anchorPixels": [
+            7.5,
+            24.5
+          ],
+          "before": "before/heavy_thrusting_sword_gui_32.png",
+          "beforeHash": "b662c6a40437607d1f3b6171f76aa5b26291443806f1da54f4ba09feb4392e25"
+        }
+      ],
+      "gui": [],
+      "axisImageDegrees": -45,
+      "interfaces": [
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
+      ],
+      "runtimeIntegrated": false,
+      "inGameAccepted": false,
+      "anchorPixels": [
+        7.5,
+        24.5
+      ],
+      "sourceSpanPixels": 37.83806953549348,
+      "projection": {
+        "angleDegrees": 45,
+        "modelUnitsPerPixel": 1.136421612621237,
+        "boneRestRotationsApplied": true
+      },
+      "publication": "Project-owned derivative; no provider pixels",
+      "anchorMethod": "Projected local grip with at most 3px opaque-pixel snapping, game calibration pending",
+      "leftHand": {
+        "anchorPixels": [
+          24.5,
+          24.5
+        ],
+        "previewMirrorOnly": true,
+        "runtime": "Preserve provider left display or calibrate own left hand independently"
+      },
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 1.2787121698852542,
+        "anchorLocalModelUnits": [
+          -4.25,
+          -4.25,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "features": [
+        "加厚刃根",
+        "纵向暗脊与尖刺刃",
+        "环抱式护手"
+      ],
+      "reference": null,
+      "referenceHash": null,
+      "referencePolicy": "Own category design, not a named Elden Ring weapon",
+      "status": "user_selected_art_current",
+      "thickness": {
+        "units": 1,
+        "blocks": 0.0625,
+        "ZIndependentOfXY": true
+      },
+      "selectionRegistry": "art/equipment-2d/full/selected-art.json"
+    },
+    {
+      "id": "hand_of_malenia",
+      "name": "玛莲妮亚的义手刀",
+      "category": "remembrance",
+      "source": "art/remembrance-game/hand_of_malenia.model.json",
+      "sourceHash": "d10c3c5c152ec92f99ac0bb020e98ef7eb86aa1628fd36223c0f7525cc9da6a3",
+      "delivery": "own_sprite",
+      "strict2d": true,
+      "legacySelectionPreserved": false,
+      "worldLengthBlocks": 1.9440000000000002,
+      "ratioToPlayer": 1.08,
+      "ratioEvidence": "provisional_art_estimate",
+      "variants": [
+        {
+          "state": "front",
+          "file": "sprites/hand_of_malenia_front.png",
+          "url": "sprites/hand_of_malenia_front.png",
+          "sha256": "02f8042ce642a38170d189c4c3ee050edc29686c31e023f0e2701733cb3d1092",
+          "size": [
+            64,
+            64
+          ],
+          "boundsInclusive": [
+            2,
+            7,
+            60,
+            57
+          ],
+          "opaquePixels": 346,
+          "colors": 12,
+          "components8": [
+            346
+          ],
+          "transparentMargin": true,
+          "anchorPixels": [
+            12.5,
+            46.5
+          ],
+          "before": "before/hand_of_malenia_front.png",
+          "beforeHash": "219e407e5ebc8dfd62121398a8b9bfc9ba85b8def05c0b1fc756e90db9fd7ad8"
+        },
+        {
+          "state": "gui_16",
+          "file": "sprites/hand_of_malenia_gui_16.png",
+          "url": "sprites/hand_of_malenia_gui_16.png",
+          "sha256": "c8db5346d4f550a38b2c56c7cc7dfe3798fce93202d5795b24aa55716880b048",
+          "size": [
+            16,
+            16
+          ],
+          "boundsInclusive": [
+            1,
+            2,
+            14,
+            13
+          ],
+          "opaquePixels": 35,
+          "colors": 8,
+          "components8": [
+            35
+          ],
+          "transparentMargin": true,
+          "anchorPixels": [
+            3.5,
+            11.5
+          ],
+          "before": "before/hand_of_malenia_gui_16.png",
+          "beforeHash": "cf8e8881308650f76cc86748860693b7aabc04bb1a02f08aa833215f82cf77e0"
+        },
+        {
+          "state": "gui_32",
+          "file": "sprites/hand_of_malenia_gui_32.png",
+          "url": "sprites/hand_of_malenia_gui_32.png",
+          "sha256": "ed55434952ab79f51c82dd783eef94d687f19b0f43bb814cb2464f33e85dc77f",
+          "size": [
+            32,
+            32
+          ],
+          "boundsInclusive": [
+            2,
+            4,
+            29,
+            27
+          ],
+          "opaquePixels": 88,
+          "colors": 10,
+          "components8": [
+            88
+          ],
+          "transparentMargin": true,
+          "anchorPixels": [
+            7.5,
+            22.5
+          ],
+          "before": "before/hand_of_malenia_gui_32.png",
+          "beforeHash": "146970a60415b54d2d8a5b94a8a959b93afba2585d813775bcf6227d359c1478"
+        }
+      ],
+      "gui": [],
+      "axisImageDegrees": -45,
+      "interfaces": [
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
+      ],
+      "runtimeIntegrated": false,
+      "inGameAccepted": false,
+      "anchorPixels": [
+        12.5,
+        46.5
+      ],
+      "sourceSpanPixels": 75.11560560801357,
+      "projection": {
+        "angleDegrees": 45,
+        "modelUnitsPerPixel": 0.7188918942063234,
+        "boneRestRotationsApplied": true
+      },
+      "publication": "Project-owned derivative; no provider pixels",
+      "anchorMethod": "Projected local grip with at most 3px opaque-pixel snapping, game calibration pending",
+      "leftHand": {
+        "anchorPixels": [
+          51.5,
+          46.5
+        ],
+        "previewMirrorOnly": true,
+        "runtime": "Preserve provider left display or calibrate own left hand independently"
+      },
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 1.6563269242513692,
+        "anchorLocalModelUnits": [
+          -4.875,
+          -3.625,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "features": [
+        "刃根顺接连续弧线",
+        "刀尖渐细无突鼓",
+        "保留金属刃面与浅金刃缘"
+      ],
+      "reference": "dist/法环武器图标/武器/10322_玛莲妮亚的义手刀.png",
+      "referenceHash": "9dbaf80f4bf7b90a12b57c65ba10d0275db602926b1091c286e64c672f7f19c8",
+      "referencePolicy": "Structure/color reference only; no extracted pixels",
+      "status": "user_selected_art_current",
+      "thickness": {
+        "units": 1,
+        "blocks": 0.0625,
+        "ZIndependentOfXY": true
+      },
+      "curveProfile": {
+        "startY": 8,
+        "endY": 45,
+        "center": "0.5 + 4.2*t*t",
+        "halfWidth": "(1.55-0.2*t) * (1-smoothstep(clamp((t-0.7)/0.3,0,1)))",
+        "tipTaperStartsAt": 0.7,
+        "samples": 144
+      },
+      "curveRevision": "2026-10-16",
+      "selectionRegistry": "art/equipment-2d/full/selected-art.json"
+    },
+    {
+      "id": "malikeths_black_blade",
+      "name": "玛利喀斯的黑剑",
+      "category": "remembrance",
+      "source": "art/remembrance-game/malikeths_black_blade.model.json",
+      "sourceHash": "02d461612502c1b25c41cc15a59bfae2a33630bb8f7cc5f45da633d1098718b6",
+      "delivery": "own_sprite",
+      "strict2d": true,
+      "legacySelectionPreserved": false,
+      "worldLengthBlocks": 2.3040000000000003,
+      "ratioToPlayer": 1.28,
+      "ratioEvidence": "provisional_art_estimate",
+      "variants": [
+        {
+          "state": "front",
+          "file": "sprites/malikeths_black_blade_front.png",
+          "url": "sprites/malikeths_black_blade_front.png",
+          "sha256": "9ca6338cd054f7a4c9d38afc7191599ad4e1d7299e0a22e721c3c7cbaf976fdc",
+          "size": [
+            64,
+            64
+          ],
+          "boundsInclusive": [
+            2,
+            2,
+            61,
+            61
+          ],
+          "opaquePixels": 790,
+          "colors": 18,
+          "components8": [
+            790
+          ],
+          "transparentMargin": true,
+          "anchorPixels": [
+            13.5,
+            50.5
+          ],
+          "before": "before/malikeths_black_blade_front.png",
+          "beforeHash": "f8cc334cfe82122f61644252f3e1064d811926c249fa125b23a1f03da133b856"
+        },
+        {
+          "state": "gui_16",
+          "file": "sprites/malikeths_black_blade_gui_16.png",
+          "url": "sprites/malikeths_black_blade_gui_16.png",
+          "sha256": "0fe56f0519492a15fed0302cdf29ca8ddf2200122144ee79da2ca511934558cb",
+          "size": [
+            16,
+            16
+          ],
+          "boundsInclusive": [
+            1,
+            1,
+            14,
+            14
+          ],
+          "opaquePixels": 60,
+          "colors": 10,
+          "components8": [
+            60
+          ],
+          "transparentMargin": true,
+          "anchorPixels": [
+            3.5,
+            12.5
+          ],
+          "before": "before/malikeths_black_blade_gui_16.png",
+          "beforeHash": "b02cb814a5f995c2e28d4a4f4090189042a4d46dfc266f25f0f8edf64b1fd221"
+        },
+        {
+          "state": "gui_32",
+          "file": "sprites/malikeths_black_blade_gui_32.png",
+          "url": "sprites/malikeths_black_blade_gui_32.png",
+          "sha256": "3218efcebf925e5894d3a61321b2bed0237fd200fa0b5294c33ac32dd8fc9e51",
+          "size": [
+            32,
+            32
+          ],
+          "boundsInclusive": [
+            2,
+            2,
+            29,
+            29
+          ],
+          "opaquePixels": 185,
+          "colors": 15,
+          "components8": [
+            185
+          ],
+          "transparentMargin": true,
+          "anchorPixels": [
+            7.5,
+            24.5
+          ],
+          "before": "before/malikeths_black_blade_gui_32.png",
+          "beforeHash": "d75f7803a502dbf4b392eeaf575da1ddd3c8ea8773d1b4abffb1de05b6d410cc"
+        }
+      ],
+      "gui": [],
+      "axisImageDegrees": -45,
+      "interfaces": [
+        "Per-item display, GUI selection, both hands, classic/slim, first/third-person validation"
+      ],
+      "runtimeIntegrated": false,
+      "inGameAccepted": false,
+      "anchorPixels": [
+        13.5,
+        50.5
+      ],
+      "sourceSpanPixels": 82.02438661763952,
+      "projection": {
+        "angleDegrees": 45,
+        "modelUnitsPerPixel": 0.7071067811865475,
+        "boneRestRotationsApplied": true
+      },
+      "publication": "Project-owned derivative; no provider pixels",
+      "anchorMethod": "Projected local grip with at most 3px opaque-pixel snapping, game calibration pending",
+      "leftHand": {
+        "anchorPixels": [
+          50.5,
+          50.5
+        ],
+        "previewMirrorOnly": true,
+        "runtime": "Preserve provider left display or calibrate own left hand independently"
+      },
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 1.797709267700751,
+        "anchorLocalModelUnits": [
+          -4.625,
+          -4.625,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "features": [
+        "层叠黑岩刃",
+        "浅灰断面",
+        "贴刃金裂与宽护手"
+      ],
+      "reference": "dist/法环武器图标/武器/10122_玛利喀斯的黑剑.png",
+      "referenceHash": "74443c942890d0991a0241d7e12cd0a82852a293e1b8ea5c51946c831d2b2c2c",
+      "referencePolicy": "Structure/color reference only; no extracted pixels",
+      "status": "user_selected_art_current",
+      "thickness": {
+        "units": 1,
+        "blocks": 0.0625,
+        "ZIndependentOfXY": true
+      },
+      "selectionRegistry": "art/equipment-2d/full/selected-art.json"
+    }
+  ],
+  "audit": [],
+  "models": [
+    {
+      "file": "models/flail_front.json",
+      "sha256": "449ba2f81c5e7317f27d0a389377c4bdaa9ff6379c57d4b618b5136c875de9ce",
+      "texture": "sprites/flail_front.png",
+      "textureHash": "4e7f9d695fb3873e025f79ace4377b77e49694d7eec9f54aef7d69162a1c3deb",
+      "baseThicknessUnits": 1,
+      "displayPolicy": "Reuse item XY/grip calibration; local Z follows vanilla independently"
+    },
+    {
+      "file": "models/flail_gui_16.json",
+      "sha256": "acbf5f3c48a25b1ceab1e9733d8b595889014cce399a5ad78e958d126a6eb813",
+      "texture": "sprites/flail_gui_16.png",
+      "textureHash": "cc118822dedb7a6f55ff731c8602566fc0bfe11b2a46e70842d47a2cbcefc6cc",
+      "baseThicknessUnits": 1,
+      "displayPolicy": "Reuse item XY/grip calibration; local Z follows vanilla independently"
+    },
+    {
+      "file": "models/flail_gui_32.json",
+      "sha256": "b7cdfe597714b53ba21cf08f0d2d36a4aecc3214ad3323140d414401778905ae",
+      "texture": "sprites/flail_gui_32.png",
+      "textureHash": "4e7f9d695fb3873e025f79ace4377b77e49694d7eec9f54aef7d69162a1c3deb",
+      "baseThicknessUnits": 1,
+      "displayPolicy": "Reuse item XY/grip calibration; local Z follows vanilla independently"
+    },
+    {
+      "file": "models/heavy_thrusting_sword_front.json",
+      "sha256": "475c9e9c11852e75895a0dc19719d09aac87308de8f0b9495365f54e1754a425",
+      "texture": "sprites/heavy_thrusting_sword_front.png",
+      "textureHash": "f54eb75553da6c4faac4e219b87cc7f37b8aa8a5fa7d7b6e7347b7e9cb018e9a",
+      "baseThicknessUnits": 1,
+      "displayPolicy": "Reuse item XY/grip calibration; local Z follows vanilla independently"
+    },
+    {
+      "file": "models/heavy_thrusting_sword_gui_16.json",
+      "sha256": "b443eb6887201b035b4d125780b81b6a75f711ce161b8a37afec1ea98c58e22f",
+      "texture": "sprites/heavy_thrusting_sword_gui_16.png",
+      "textureHash": "783216f871b44edba2e94f1793caff2ff870b999d0a27dace0938b4ff8f00110",
+      "baseThicknessUnits": 1,
+      "displayPolicy": "Reuse item XY/grip calibration; local Z follows vanilla independently"
+    },
+    {
+      "file": "models/heavy_thrusting_sword_gui_32.json",
+      "sha256": "0aebeebd7b7ad297599e005c7d71abf7d26a95351081c8271b651011ea61fa8b",
+      "texture": "sprites/heavy_thrusting_sword_gui_32.png",
+      "textureHash": "f54eb75553da6c4faac4e219b87cc7f37b8aa8a5fa7d7b6e7347b7e9cb018e9a",
+      "baseThicknessUnits": 1,
+      "displayPolicy": "Reuse item XY/grip calibration; local Z follows vanilla independently"
+    },
+    {
+      "file": "models/hand_of_malenia_front.json",
+      "sha256": "c488da0e4143134cdc5cb096e5707b8d981f4aa9f5c839f6c2f7ea719b075a33",
+      "texture": "sprites/hand_of_malenia_front.png",
+      "textureHash": "02f8042ce642a38170d189c4c3ee050edc29686c31e023f0e2701733cb3d1092",
+      "baseThicknessUnits": 1,
+      "displayPolicy": "Reuse item XY/grip calibration; local Z follows vanilla independently"
+    },
+    {
+      "file": "models/hand_of_malenia_gui_16.json",
+      "sha256": "2db8fc208e03203a8484ed58a557f4bddd3af3e17f00dd040477ce2c2cf35b12",
+      "texture": "sprites/hand_of_malenia_gui_16.png",
+      "textureHash": "c8db5346d4f550a38b2c56c7cc7dfe3798fce93202d5795b24aa55716880b048",
+      "baseThicknessUnits": 1,
+      "displayPolicy": "Reuse item XY/grip calibration; local Z follows vanilla independently"
+    },
+    {
+      "file": "models/hand_of_malenia_gui_32.json",
+      "sha256": "bdfb0deea9af75b1e57c26a3609c37ab7e74f3e537a8aaaaf0995f8bb2124539",
+      "texture": "sprites/hand_of_malenia_gui_32.png",
+      "textureHash": "ed55434952ab79f51c82dd783eef94d687f19b0f43bb814cb2464f33e85dc77f",
+      "baseThicknessUnits": 1,
+      "displayPolicy": "Reuse item XY/grip calibration; local Z follows vanilla independently"
+    },
+    {
+      "file": "models/malikeths_black_blade_front.json",
+      "sha256": "ceb2eec6e013979435affc9660de00ff1838336c55374b149cc0392ffbf91af0",
+      "texture": "sprites/malikeths_black_blade_front.png",
+      "textureHash": "9ca6338cd054f7a4c9d38afc7191599ad4e1d7299e0a22e721c3c7cbaf976fdc",
+      "baseThicknessUnits": 1,
+      "displayPolicy": "Reuse item XY/grip calibration; local Z follows vanilla independently"
+    },
+    {
+      "file": "models/malikeths_black_blade_gui_16.json",
+      "sha256": "bcf3bc768e93754052fd9386084b63e13210d7d75fbcb41c924fee944936a293",
+      "texture": "sprites/malikeths_black_blade_gui_16.png",
+      "textureHash": "0fe56f0519492a15fed0302cdf29ca8ddf2200122144ee79da2ca511934558cb",
+      "baseThicknessUnits": 1,
+      "displayPolicy": "Reuse item XY/grip calibration; local Z follows vanilla independently"
+    },
+    {
+      "file": "models/malikeths_black_blade_gui_32.json",
+      "sha256": "56302cbd37ae4cdfe3b211fa81cf710e61608a7216b75a6b3388cea703fd9405",
+      "texture": "sprites/malikeths_black_blade_gui_32.png",
+      "textureHash": "3218efcebf925e5894d3a61321b2bed0237fd200fa0b5294c33ac32dd8fc9e51",
+      "baseThicknessUnits": 1,
+      "displayPolicy": "Reuse item XY/grip calibration; local Z follows vanilla independently"
+    }
+  ],
+  "publication": {
+    "ownDerivedPixelPngs": [
+      {
+        "file": "sprites/flail_front.png",
+        "sha256": "4e7f9d695fb3873e025f79ace4377b77e49694d7eec9f54aef7d69162a1c3deb"
+      },
+      {
+        "file": "sprites/flail_gui_16.png",
+        "sha256": "cc118822dedb7a6f55ff731c8602566fc0bfe11b2a46e70842d47a2cbcefc6cc"
+      },
+      {
+        "file": "sprites/flail_gui_32.png",
+        "sha256": "4e7f9d695fb3873e025f79ace4377b77e49694d7eec9f54aef7d69162a1c3deb"
+      },
+      {
+        "file": "sprites/heavy_thrusting_sword_front.png",
+        "sha256": "f54eb75553da6c4faac4e219b87cc7f37b8aa8a5fa7d7b6e7347b7e9cb018e9a"
+      },
+      {
+        "file": "sprites/heavy_thrusting_sword_gui_16.png",
+        "sha256": "783216f871b44edba2e94f1793caff2ff870b999d0a27dace0938b4ff8f00110"
+      },
+      {
+        "file": "sprites/heavy_thrusting_sword_gui_32.png",
+        "sha256": "f54eb75553da6c4faac4e219b87cc7f37b8aa8a5fa7d7b6e7347b7e9cb018e9a"
+      },
+      {
+        "file": "sprites/hand_of_malenia_front.png",
+        "sha256": "02f8042ce642a38170d189c4c3ee050edc29686c31e023f0e2701733cb3d1092"
+      },
+      {
+        "file": "sprites/hand_of_malenia_gui_16.png",
+        "sha256": "c8db5346d4f550a38b2c56c7cc7dfe3798fce93202d5795b24aa55716880b048"
+      },
+      {
+        "file": "sprites/hand_of_malenia_gui_32.png",
+        "sha256": "ed55434952ab79f51c82dd783eef94d687f19b0f43bb814cb2464f33e85dc77f"
+      },
+      {
+        "file": "sprites/malikeths_black_blade_front.png",
+        "sha256": "9ca6338cd054f7a4c9d38afc7191599ad4e1d7299e0a22e721c3c7cbaf976fdc"
+      },
+      {
+        "file": "sprites/malikeths_black_blade_gui_16.png",
+        "sha256": "0fe56f0519492a15fed0302cdf29ca8ddf2200122144ee79da2ca511934558cb"
+      },
+      {
+        "file": "sprites/malikeths_black_blade_gui_32.png",
+        "sha256": "3218efcebf925e5894d3a61321b2bed0237fd200fa0b5294c33ac32dd8fc9e51"
+      }
+    ],
+    "provenance": "Project-owned designs, modified palette and structure; no extracted reference image pixels copied",
+    "excluded": [
+      "before/",
+      "evidence/",
+      "preview screenshots"
+    ],
+    "selection": "All four user-selected candidates synchronized byte-for-byte to full art. No runtime admission."
+  },
+  "protectedFiles": [
+    {
+      "file": "art/equipment-2d/full/equipment-42.json",
+      "sha256": "af3f693017d303693e0d782e4ca640778f3080192640141c5c0dce6118f83650"
+    },
+    {
+      "file": "art/equipment-2d/full/publishable-assets.json",
+      "sha256": "fbc2a8c59273fcf51ae14a126c5207c1ad26dc79572e5a2b2386157550e18cf1"
+    },
+    {
+      "file": "art/equipment-2d/full/display-overrides.json",
+      "sha256": "daefa157e7bb37dcd89bbb2e54863bda31b1bdec948d4a71c2d80d7b1a18dcf0"
+    },
+    {
+      "file": "art/equipment-2d/user-edits/selected.json",
+      "sha256": "6e8ebcc8d03394f78dc5418dd4f535d5b5de9802db80e5715a8f05a3680a507a"
+    },
+    {
+      "file": "art/equipment-2d/shape-review/selection.json",
+      "sha256": "df0bcdc5f34a3974a3c6a278fabb981089da75cd0d528093265a70649aa3bcb8"
+    },
+    {
+      "file": "art/equipment-reuse/research-only-full/minecraft_item_iron_axe.png",
+      "sha256": "8dea40bac06c6f14bb0ad9e8b47de63250f6d6a46ae9439b85ddd1377f1edb49"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/blasphemous_blade_front.png",
+      "sha256": "b1dd0845df8c7d1ae03d2dc8971c95bd5feeb38a663ac178c452f758a47d4807"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/blasphemous_blade_gui_16.png",
+      "sha256": "bfa6b87bfd0962621443103d628b1394f7f531391572d1437a8196964db7384a"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/blasphemous_blade_gui_32.png",
+      "sha256": "81fa3ae13393fab55612609b29b82d1ede57089ef94a1ce48ca1f6fcf34b66f6"
+    },
+    {
+      "file": "art/remembrance-game/blasphemous_blade.model.json",
+      "sha256": "5ba45a03eeacbf04e0234f97e8fbc564518854456b311b260ff7ec0a664bf1c5"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/claw_front.png",
+      "sha256": "820086c28bd89e47410d8ce25278bb60fdfb9dd27da3c6ed99851b479e8b0448"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/claw_gui_16.png",
+      "sha256": "71bc9aa098374de0fdbdf8e9cc5d61d4bdb3147495be36115b7aab1048fdfcad"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/claw_gui_32.png",
+      "sha256": "820086c28bd89e47410d8ce25278bb60fdfb9dd27da3c6ed99851b479e8b0448"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/colossal_sword_front.png",
+      "sha256": "db47425ee3575c976586920e15c75da5284cdd2cfaf1ff71dde6ea845eb20e9b"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/colossal_sword_gui_16.png",
+      "sha256": "dd10d7adc5019fc26cb958d257c955644edbf339c7ea2bf31f7c7f5d97bb5032"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/colossal_sword_gui_32.png",
+      "sha256": "db47425ee3575c976586920e15c75da5284cdd2cfaf1ff71dde6ea845eb20e9b"
+    },
+    {
+      "file": "art/weapons/colossal_sword.model.json",
+      "sha256": "38c4243b23f4ffe633728e874254950ea2d334bf5e2ac9d50428839b6edd088e"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/colossal_weapon_front.png",
+      "sha256": "7888c9b2a211838c0bc8f79df0327e337033099ba00c1aaa0dbea255eef6228e"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/colossal_weapon_gui_16.png",
+      "sha256": "7873168d1642e2ca28f44eb0cc65090d8e69ca40689fc308e5b3e9eb9f8820dd"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/colossal_weapon_gui_32.png",
+      "sha256": "7888c9b2a211838c0bc8f79df0327e337033099ba00c1aaa0dbea255eef6228e"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/curved_greatsword_front.png",
+      "sha256": "81d8f608cdb37299a5e93b0b7a3e6f457d4ce0e7e5985c068812a6b41ecb456a"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/curved_greatsword_gui_16.png",
+      "sha256": "bd1d80ef36d0a3f6eb03743febddf7228437ecbf8ed22882ddd5a836dab51d22"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/curved_greatsword_gui_32.png",
+      "sha256": "81d8f608cdb37299a5e93b0b7a3e6f457d4ce0e7e5985c068812a6b41ecb456a"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/curved_sword_front.png",
+      "sha256": "9ba22da08bed0377c9fdaba14e64b3d4656bd9b143446650f8639a01b0b0f358"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/curved_sword_gui_16.png",
+      "sha256": "cc708a5cd50d665c1d09f69ca6e99122ddaca1759872fd2a2d1056fe08bd7628"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/curved_sword_gui_32.png",
+      "sha256": "9ba22da08bed0377c9fdaba14e64b3d4656bd9b143446650f8639a01b0b0f358"
+    },
+    {
+      "file": "art/equipment-reuse/research-only-full/spartan_weaponry_unofficial_item_iron_dagger.png",
+      "sha256": "9b6bfb4c9e24cd51e214f7ef42f0dea4aa40b4b3ecf6ae03b2dd36cb5c269889"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/fist_front.png",
+      "sha256": "66bed568bff0bfc81cb246d9b9f363aa594d167740a65bb909e688962adb5963"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/fist_gui_16.png",
+      "sha256": "a290f629c0542dc1b9874e355dacf9392476d0c36dc179f73c08f2dbf5767257"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/fist_gui_32.png",
+      "sha256": "66bed568bff0bfc81cb246d9b9f363aa594d167740a65bb909e688962adb5963"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/flail_front.png",
+      "sha256": "4e7f9d695fb3873e025f79ace4377b77e49694d7eec9f54aef7d69162a1c3deb"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/flail_gui_16.png",
+      "sha256": "cc118822dedb7a6f55ff731c8602566fc0bfe11b2a46e70842d47a2cbcefc6cc"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/flail_gui_32.png",
+      "sha256": "4e7f9d695fb3873e025f79ace4377b77e49694d7eec9f54aef7d69162a1c3deb"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/glintstone_staff_front.png",
+      "sha256": "a3c1116c42faded25902e6bad1e899631e3362071d037c1f2dd6066f185b6b15"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/glintstone_staff_gui_16.png",
+      "sha256": "81b1642a7834d791a2aff8f0a6b68edb0b813bf93fd13439bc1760c69a2b7e7b"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/glintstone_staff_gui_32.png",
+      "sha256": "a3c1116c42faded25902e6bad1e899631e3362071d037c1f2dd6066f185b6b15"
+    },
+    {
+      "file": "art/equipment-reuse/research-only-full/spartan_weaponry_unofficial_item_iron_battle_hammer.png",
+      "sha256": "786bda78713ad232f70a5ed903d115f83b754a8c84268f33bd11bda6327ba440"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_shield_front.png",
+      "sha256": "b976a1b60fd93fc0f1ea53d61ba2848c7a453d669c7d97c8b19a6538d8353ab0"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_shield_back.png",
+      "sha256": "2049334e221383bb2ecf45d17553480d8a8bbb555dd46d8f251104ebc3f515eb"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_shield_gui_16.png",
+      "sha256": "fa357dc1e6cbecc4208f925e044cbc91f02f6fa3680e38d5d2e60e0278d1f1cc"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_shield_gui_32.png",
+      "sha256": "b976a1b60fd93fc0f1ea53d61ba2848c7a453d669c7d97c8b19a6538d8353ab0"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_spear_front.png",
+      "sha256": "dcb63808aff849ccb26140a6d17e6331a2d4118c1ccf76030fb3fafeaeb6d845"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_spear_gui_16.png",
+      "sha256": "9de113803b41fe7c804135f2de571836d492d1516ca496c60d99d1e5bf50e73b"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_spear_gui_32.png",
+      "sha256": "dcb63808aff849ccb26140a6d17e6331a2d4118c1ccf76030fb3fafeaeb6d845"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_sword_front.png",
+      "sha256": "89cb5cb0ec6861d9efd3733015d3158af6a04d67dc9ac7187ff5ccfc3a0c605e"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_sword_gui_16.png",
+      "sha256": "cf5d85e25968a2705221c8284301eb47d34e02d508bfff15a2a634e1e2b37903"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_sword_gui_32.png",
+      "sha256": "89cb5cb0ec6861d9efd3733015d3158af6a04d67dc9ac7187ff5ccfc3a0c605e"
+    },
+    {
+      "file": "art/weapons/great_sword.model.json",
+      "sha256": "1998e1196d6512539b9bd444ffb45d7cc2c01ba93c9a491396e49e218cd5cb89"
+    },
+    {
+      "file": "art/equipment-reuse/research-only-full/spartan_weaponry_unofficial_item_iron_battleaxe.png",
+      "sha256": "12c8873c5337e44c92189b300beaab1a79338a8fd4ffaf72997f45b733285c05"
+    },
+    {
+      "file": "art/equipment-reuse/research-only-full/spartan_weaponry_unofficial_item_iron_halberd.png",
+      "sha256": "0b7287044b50ef09679dfc15f02a90e3ba39763e8371f0bd7d8e023783ea1be3"
+    },
+    {
+      "file": "art/equipment-reuse/research-only-full/spartan_weaponry_unofficial_item_iron_flanged_mace.png",
+      "sha256": "586bd014d18ddec5b859981996ce18fd0c5621ff812fed2892ddeb18788bf8e3"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/hand_of_malenia_front.png",
+      "sha256": "02f8042ce642a38170d189c4c3ee050edc29686c31e023f0e2701733cb3d1092"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/hand_of_malenia_gui_16.png",
+      "sha256": "c8db5346d4f550a38b2c56c7cc7dfe3798fce93202d5795b24aa55716880b048"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/hand_of_malenia_gui_32.png",
+      "sha256": "ed55434952ab79f51c82dd783eef94d687f19b0f43bb814cb2464f33e85dc77f"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/heavy_thrusting_sword_front.png",
+      "sha256": "f54eb75553da6c4faac4e219b87cc7f37b8aa8a5fa7d7b6e7347b7e9cb018e9a"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/heavy_thrusting_sword_gui_16.png",
+      "sha256": "783216f871b44edba2e94f1793caff2ff870b999d0a27dace0938b4ff8f00110"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/heavy_thrusting_sword_gui_32.png",
+      "sha256": "f54eb75553da6c4faac4e219b87cc7f37b8aa8a5fa7d7b6e7347b7e9cb018e9a"
+    },
+    {
+      "file": "art/equipment-reuse/research-only-full/spartan_weaponry_unofficial_item_iron_katana.png",
+      "sha256": "5d36d9d9cde6a0e21663497f27134a3b5595ca52a04743046b44d46137bd51f2"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/malikeths_black_blade_front.png",
+      "sha256": "9ca6338cd054f7a4c9d38afc7191599ad4e1d7299e0a22e721c3c7cbaf976fdc"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/malikeths_black_blade_gui_16.png",
+      "sha256": "0fe56f0519492a15fed0302cdf29ca8ddf2200122144ee79da2ca511934558cb"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/malikeths_black_blade_gui_32.png",
+      "sha256": "3218efcebf925e5894d3a61321b2bed0237fd200fa0b5294c33ac32dd8fc9e51"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/marikas_hammer_front.png",
+      "sha256": "7e59dba480ce20dbf9af424ba113b28b143cd30a5803be1b9bfd7a5836e50b35"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/marikas_hammer_gui_16.png",
+      "sha256": "afa47f604c91e05c56796bd473d17558cabf5097526e36a09fea1ab8ddce9039"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/marikas_hammer_gui_32.png",
+      "sha256": "8d75736caab3ce598b6f9362c5fdb86ddac893e2beacf426c35869d6738d63e2"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/mohgwyns_sacred_spear_front.png",
+      "sha256": "6292ee959c495328b396c4995dce726ca5866d5ad86bb23add64cdcfb3719219"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/mohgwyns_sacred_spear_gui_16.png",
+      "sha256": "756b4d19cda85165dd6689625b9ffb537b8423d5b738f3e2522c2429d7b40050"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/mohgwyns_sacred_spear_gui_32.png",
+      "sha256": "02333a8a3ed18ff0d8bcf5cd1ddf16d3fdff6d87c5a89a9b2d81aa708452c060"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/morgotts_cursed_sword_front.png",
+      "sha256": "7cb6ce7b76cdedd938aed4df0a533f0fc07e7aaadbc22c0195e2491d341d6898"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/morgotts_cursed_sword_gui_16.png",
+      "sha256": "6a6a26f9cb524054605a10e5d1493281d2f9cc32518d59e1cf0c502ebfd2eb79"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/morgotts_cursed_sword_gui_32.png",
+      "sha256": "84e26698066dc6030440adffdd257f6ca449abca8de8c6aca7f40ea087b27281"
+    },
+    {
+      "file": "art/remembrance-game/morgotts_cursed_sword.model.json",
+      "sha256": "48c54c1fd42b55774c572562a95cfcc7561ec28f81a7d44d34f38e93b27be398"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/sacred_relic_sword_front.png",
+      "sha256": "ccb1bb5e9925b9769a52986725ccc11a8ba072260cd9bf6ff6ba37804c2aa7c0"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/sacred_relic_sword_gui_16.png",
+      "sha256": "07eb2af666dff153272e7520aec664ccb293876313fedde28c3bed1609672bc9"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/sacred_relic_sword_gui_32.png",
+      "sha256": "7e622df7915270b2b4c00e6a5bf9270902a94e6e8054a32f551d2ad86019b731"
+    },
+    {
+      "file": "art/remembrance-game/sacred_relic_sword.model.json",
+      "sha256": "08b87d3c10ec94f62b4e8bdd205108a396d16ed381f477e919aba71cf62176cb"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/sacred_seal_front.png",
+      "sha256": "ad75f2e1f7740f34683f23280a5aee019dad5cd1c9bf493ebb11cdb0e904bc02"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/sacred_seal_gui_16.png",
+      "sha256": "b7ad756622ff0e71a4c58853014c66d40259fc1d9f6a995de358262e00785ecd"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/sacred_seal_gui_32.png",
+      "sha256": "ad75f2e1f7740f34683f23280a5aee019dad5cd1c9bf493ebb11cdb0e904bc02"
+    },
+    {
+      "file": "art/equipment-reuse/research-only-full/spartan_weaponry_unofficial_item_iron_scythe.png",
+      "sha256": "0291c6ec030e4ee0b1a3a5a13ae265bfda11146a3bdced7309a90969d1740eaa"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/shield_front.png",
+      "sha256": "4d8b8910bf740857a01409cd3cc79db057f21d947358245a1dbf44b593d4e02f"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/shield_back.png",
+      "sha256": "4f3bb1107ab552db1525ab064c2dd4d767a18a246e5df1cfd1d3c01eb9f922e5"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/shield_gui_16.png",
+      "sha256": "7178de447c7b890a4c14e9fe619ff6da664580be728e050b522a9746f2c8f488"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/shield_gui_32.png",
+      "sha256": "4d8b8910bf740857a01409cd3cc79db057f21d947358245a1dbf44b593d4e02f"
+    },
+    {
+      "file": "art/weapons/shield.model.json",
+      "sha256": "1a5dd65c0b17b784c5bdf7d8c7106de58bf719aa6034e167c2ddd6f90f8a03e5"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/small_shield_front.png",
+      "sha256": "f1086f97b0e0863035daa0f023620df92de8de5d371fdf8436d6b19ac76400fd"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/small_shield_back.png",
+      "sha256": "3c32620a9116c5cdd1d73a119429d1a80da4434803170e8b0900b236664a5ca8"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/small_shield_gui_16.png",
+      "sha256": "b075a133121d085b5964c5f4e121133704c1c833dee5c714dc88ca7b63e98b6e"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/small_shield_gui_32.png",
+      "sha256": "f1086f97b0e0863035daa0f023620df92de8de5d371fdf8436d6b19ac76400fd"
+    },
+    {
+      "file": "art/equipment-reuse/research-only-full/spartan_weaponry_unofficial_item_iron_spear.png",
+      "sha256": "7ccb62abfa5b7e6c3c3459eea4f0d010c5baffc5ce0239997317eade7110f611"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/starscourge_greatsword_front.png",
+      "sha256": "270c60fe9edff3b0de34263dc2251da19f4fc47995f9c585646537e6ce009a43"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/starscourge_greatsword_gui_16.png",
+      "sha256": "75613912fbe9d2aff913321e60602ddeaaa2afd661a784d23a6758670dc39de1"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/starscourge_greatsword_gui_32.png",
+      "sha256": "c3dabb266a7044811738bb5189bca81b3fe929887129f3ab74f313da59f64fa3"
+    },
+    {
+      "file": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
+      "sha256": "ed1fa2f83955583e70a19791455d13989e8bd93b1d7240e775a57141022bed6b"
+    },
+    {
+      "file": "art/equipment-reuse/research-only-full/spartan_weaponry_unofficial_item_iron_rapier.png",
+      "sha256": "c6a266a69c3a2f9e2c10d3eb5e089d2d9ce196f37064c7269b5760fbb01e5a39"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/twinblade_front.png",
+      "sha256": "9fe41e9e23aad1af5360bfa3382884de2a3943d784da2490c91a31c8c4d65ec6"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/twinblade_gui_16.png",
+      "sha256": "2bafecd2d307a62a2a67fbaa346e2e3edd7d0f5b145a8cd2e2a6081d74bc439e"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/twinblade_gui_32.png",
+      "sha256": "9fe41e9e23aad1af5360bfa3382884de2a3943d784da2490c91a31c8c4d65ec6"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/whip_front.png",
+      "sha256": "889b40b5c0736ceda9c44e6e67ec7122ac43d2ab7c5b61fd0515d65d624fd321"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/whip_gui_16.png",
+      "sha256": "54deebb7a374bfa90f1148e52d07a122c26956189a430afa36551fdf6975146b"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/whip_gui_32.png",
+      "sha256": "889b40b5c0736ceda9c44e6e67ec7122ac43d2ab7c5b61fd0515d65d624fd321"
+    },
+    {
+      "file": "art/equipment-reuse/research-only-full/minecraft_item_bow.png",
+      "sha256": "6f62b5a5eac576af20f1ddd79e69df37b19a036691aa26b7523753f995e3dd8d"
+    },
+    {
+      "file": "art/equipment-reuse/research-only-full/minecraft_item_bow_pulling_0.png",
+      "sha256": "2b74f847291e4faf72b584d56347d77fca6cb0aa538b3a36d3e426caee656e85"
+    },
+    {
+      "file": "art/equipment-reuse/research-only-full/minecraft_item_bow_pulling_1.png",
+      "sha256": "503a22646cda89117bc881cd75b9d14124eb37d12813ebd1a2e71ff53ff60828"
+    },
+    {
+      "file": "art/equipment-reuse/research-only-full/minecraft_item_bow_pulling_2.png",
+      "sha256": "778090baec36ae4eb2071b0eab425c18f0ded8316b23100842b7c818119d93ea"
+    },
+    {
+      "file": "art/equipment-reuse/research-only-full/spartan_weaponry_unofficial_item_iron_longbow_standby.png",
+      "sha256": "f38bef997a78b428afc372d276af06019d813730dde0f754a9f7ae21ddbd2fd3"
+    },
+    {
+      "file": "art/equipment-reuse/research-only-full/spartan_weaponry_unofficial_item_iron_longbow_pulling_0.png",
+      "sha256": "f5323ebfd63436e2eec9f5641944a9a8ff44da4e3eea6950100c8fc7a6c7c0c0"
+    },
+    {
+      "file": "art/equipment-reuse/research-only-full/spartan_weaponry_unofficial_item_iron_longbow_pulling_1.png",
+      "sha256": "164819f202dcbf9686d0d999071588e04c1a067bc4f23fd1fbf3d8a36b514ceb"
+    },
+    {
+      "file": "art/equipment-reuse/research-only-full/spartan_weaponry_unofficial_item_iron_longbow_pulling_2.png",
+      "sha256": "f6d08da1bd5a846c833c55fd9989bf0d827c7c3371b8b8b69aa91a9479b65c38"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_bow_standby.png",
+      "sha256": "5c7087618f4e25306b03e54edba87a695f2c34162e5e37c6945c7b2fec4d50f2"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_bow_pulling_0.png",
+      "sha256": "edd44e5ff6e5343f8531dc28d205c327b7b546fb9cb4572d5627e44dfd63f14e"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_bow_pulling_1.png",
+      "sha256": "296d1bc65f777a063e6b35902623484f7a62fb37f7fd7f23d82adf64fa52eb99"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_bow_pulling_2.png",
+      "sha256": "a182bf464f993b2a24ad58b3b30766d9af3a5f95fa9a98c431d7b7e9e0a74427"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_bow_gui_16.png",
+      "sha256": "98c22a84e68bcd603f0171eac66974fdbf62a3f0b4dcde2902efc40562a2786b"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_bow_gui_32.png",
+      "sha256": "5c7087618f4e25306b03e54edba87a695f2c34162e5e37c6945c7b2fec4d50f2"
+    },
+    {
+      "file": "art/equipment-reuse/research-only-full/minecraft_item_crossbow_standby.png",
+      "sha256": "d80198aab62618c015e419ca10123a311a4a2bdac3a1803c275dece6c25f9ad9"
+    },
+    {
+      "file": "art/equipment-reuse/research-only-full/minecraft_item_crossbow_pulling_0.png",
+      "sha256": "e598e107632359e8e159236f2131310382a753ed228e048c7e18b9582c760644"
+    },
+    {
+      "file": "art/equipment-reuse/research-only-full/minecraft_item_crossbow_pulling_1.png",
+      "sha256": "bb88f1f5ccd125106421fc7085dba231c4621866074a0a00a33eab296bf32956"
+    },
+    {
+      "file": "art/equipment-reuse/research-only-full/minecraft_item_crossbow_pulling_2.png",
+      "sha256": "cb02abd9a65a77d1f8a6a6c9052b29a2de6dd77e2c7e68258b1346aac21c22c3"
+    },
+    {
+      "file": "art/equipment-reuse/research-only-full/minecraft_item_crossbow_arrow.png",
+      "sha256": "f33edfaadd4dfc05e885a84a1e38df2a222477847f404b97246511aca0550aa0"
+    },
+    {
+      "file": "art/equipment-reuse/research-only-full/minecraft_item_crossbow_firework.png",
+      "sha256": "3baa2ca59e51795c11c08413a33c2c3174ac6fa91ecad742d92490a3afe6a9bd"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/ballista_standby.png",
+      "sha256": "fd1214ba72c476321506daa9b37b081334d01719223d42788159a3f71b5f1187"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/ballista_loading_0.png",
+      "sha256": "4e511965a33528a79b15c51decf19754c94dd891c2fe05f43266e43ff9a156f5"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/ballista_loading_1.png",
+      "sha256": "06bc0c4c44e36c4cd4fa265569dd2c390938a290f16aa219e36491303d3c0ecc"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/ballista_loading_2.png",
+      "sha256": "966092bd7b11f19a483359f2235589c5313fa8950077aebbb9888e78cf5caa93"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/ballista_loaded.png",
+      "sha256": "b271db88985a03ac1710c66c6e99ee3c0c9a86a0edab49830f9ac59cac780520"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/ballista_gui_16.png",
+      "sha256": "afe33746ef263ab784d32e69b745a6da38b98299ecce34c8fdbdd6d65e5aa1fc"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/ballista_gui_32.png",
+      "sha256": "fd1214ba72c476321506daa9b37b081334d01719223d42788159a3f71b5f1187"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/test_flask_full.png",
+      "sha256": "ab44c1373d2dbb6508aa63c2fb144a354e26dfdfd9d33f841179e86ec8f7f4f5"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/test_flask_gui_16.png",
+      "sha256": "d0a849c74a13059ab918b67bf7edb75b3edb5d87c3a0b314995ae3f44ab94121"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/test_flask_gui_32.png",
+      "sha256": "ab44c1373d2dbb6508aa63c2fb144a354e26dfdfd9d33f841179e86ec8f7f4f5"
+    },
+    {
+      "file": "art/equipment-2d/full/selected-art.json",
+      "sha256": "212eaa1585c640eb9d1256c8a2e914ec13ff1b6258a7c2207e22aadedcee6219"
+    }
+  ],
+  "sideChecks": {
+    "starscourge": {
+      "status": "blocked_pending_provenance_and_selection",
+      "files": [
+        {
+          "file": "sprites/starscourge_greatsword_front.png",
+          "actual": "270c60fe9edff3b0de34263dc2251da19f4fc47995f9c585646537e6ce009a43",
+          "assetManifest": "a0c23427a30d1f21824e0639d5ea89339e8422f206168b1bc01c0332d23b5c70",
+          "whitelist": "a0c23427a30d1f21824e0639d5ea89339e8422f206168b1bc01c0332d23b5c70",
+          "match": false
+        },
+        {
+          "file": "sprites/starscourge_greatsword_gui_16.png",
+          "actual": "75613912fbe9d2aff913321e60602ddeaaa2afd661a784d23a6758670dc39de1",
+          "assetManifest": "75613912fbe9d2aff913321e60602ddeaaa2afd661a784d23a6758670dc39de1",
+          "whitelist": "75613912fbe9d2aff913321e60602ddeaaa2afd661a784d23a6758670dc39de1",
+          "match": true
+        },
+        {
+          "file": "sprites/starscourge_greatsword_gui_32.png",
+          "actual": "c3dabb266a7044811738bb5189bca81b3fe929887129f3ab74f313da59f64fa3",
+          "assetManifest": "c3dabb266a7044811738bb5189bca81b3fe929887129f3ab74f313da59f64fa3",
+          "whitelist": "c3dabb266a7044811738bb5189bca81b3fe929887129f3ab74f313da59f64fa3",
+          "match": true
+        }
+      ],
+      "reason": "Current bitmap protected. Historical receipts record hashes but do not establish author or user selection of latest edit. No whitelist change."
+    },
+    "ballista": {
+      "file": "art/equipment-2d/full/display-overrides.json",
+      "sha256": "daefa157e7bb37dcd89bbb2e54863bda31b1bdec948d4a71c2d80d7b1a18dcf0",
+      "override": {
+        "contexts": {
+          "thirdperson_righthand": {
+            "rotation": [
+              -90,
+              0,
+              -60
+            ],
+            "translation": [
+              4.38062,
+              0.1,
+              0.932114
+            ],
+            "scale": [
+              1.85464,
+              1.85464,
+              1.85464
+            ]
+          },
+          "thirdperson_lefthand": {
+            "rotation": [
+              -90,
+              0,
+              30
+            ],
+            "translation": [
+              -2.027734,
+              0.1,
+              -0.784999
+            ],
+            "scale": [
+              1.85464,
+              1.85464,
+              1.85464
+            ]
+          },
+          "firstperson_righthand": {
+            "rotation": [
+              -90,
+              0,
+              -55
+            ],
+            "translation": [
+              4.285734,
+              3.2,
+              4.127692
+            ],
+            "scale": [
+              1.85464,
+              1.85464,
+              1.85464
+            ]
+          },
+          "firstperson_lefthand": {
+            "rotation": [
+              -90,
+              0,
+              35
+            ],
+            "translation": [
+              -2.860691,
+              3.2,
+              2.867585
+            ],
+            "scale": [
+              1.85464,
+              1.85464,
+              1.85464
+            ]
+          },
+          "ground": {
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "translation": [
+              3.99562,
+              3.49562,
+              0
+            ],
+            "scale": [
+              1.85464,
+              1.85464,
+              1.85464
+            ]
+          },
+          "fixed": {
+            "rotation": [
+              0,
+              180,
+              0
+            ],
+            "translation": [
+              -4.74562,
+              -0.25438,
+              0
+            ],
+            "scale": [
+              1.85464,
+              1.85464,
+              1.85464
+            ]
+          },
+          "head": {
+            "rotation": [
+              0,
+              180,
+              0
+            ],
+            "translation": [
+              -4.74562,
+              12.74562,
+              7
+            ],
+            "scale": [
+              1.85464,
+              1.85464,
+              1.85464
+            ]
+          },
+          "gui": {
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "blocking": {},
+        "accepted": false,
+        "note": "grip pixel moved from the stock's tail (7.5,24.5) to just behind the lock (12.5,19.5): a crossbow is held on the stock behind the trigger, not by the butt, otherwise the prod ends up a block away from the fist. Values re-derived by build-display-candidates.py with only the grip pixel changed. Evidence: docs/combat-evidence/bugfix-grip-smoke-20261015.log"
+      },
+      "worldLengthBlocks": 1.4400000000000002,
+      "sourceSpanPixels": 24.845791213456728,
+      "states": [
+        {
+          "state": "standby",
+          "anchorPixels": [
+            7.5,
+            24.5
+          ],
+          "opaque": true,
+          "calibrationNoteAnchorPixels": [
+            12.5,
+            19.5
+          ],
+          "calibrationNoteAnchorOpaque": true
+        },
+        {
+          "state": "loading_0",
+          "anchorPixels": [
+            7.5,
+            24.5
+          ],
+          "opaque": true,
+          "calibrationNoteAnchorPixels": [
+            12.5,
+            19.5
+          ],
+          "calibrationNoteAnchorOpaque": true
+        },
+        {
+          "state": "loading_1",
+          "anchorPixels": [
+            7.5,
+            24.5
+          ],
+          "opaque": true,
+          "calibrationNoteAnchorPixels": [
+            12.5,
+            19.5
+          ],
+          "calibrationNoteAnchorOpaque": true
+        },
+        {
+          "state": "loading_2",
+          "anchorPixels": [
+            7.5,
+            24.5
+          ],
+          "opaque": true,
+          "calibrationNoteAnchorPixels": [
+            12.5,
+            19.5
+          ],
+          "calibrationNoteAnchorOpaque": true
+        },
+        {
+          "state": "loaded",
+          "anchorPixels": [
+            7.5,
+            24.5
+          ],
+          "opaque": true,
+          "calibrationNoteAnchorPixels": [
+            12.5,
+            19.5
+          ],
+          "calibrationNoteAnchorOpaque": true
+        }
+      ],
+      "decision": "Keep all calibrated transforms and existing grip. Opaque anchor alone does not prove physical hand placement; no unverified offset."
+    }
+  },
+  "validation": {
+    "browser": true,
+    "protectedUnchanged": false,
+    "humanBlindTest": false,
+    "inGameAccepted": false,
+    "captureDirectory": "art/equipment-2d/identity-batch-two/qa-1792135149160",
+    "sourceHashScope": "candidates_4_and_protected_snapshots_not_42_asset_audit",
+    "browserChecks": [
+      {
+        "width": 1280,
+        "noOverflow": true,
+        "native16And32": true,
+        "hiddenNames": true,
+        "revealedNames": true,
+        "leftHandCapture": true
+      },
+      {
+        "width": 390,
+        "noOverflow": true,
+        "native16And32": true,
+        "hiddenNames": true,
+        "revealedNames": true,
+        "leftHandCapture": true
+      }
+    ],
+    "authorVisualReview": true,
+    "authorVisualReviewScope": "Author inspected current flail/heavy thrusting sword/black blade at 1280 and latest selected Malenia at 1280 plus 390 comparison; not independent blind review or game acceptance.",
+    "authorVisualReviewEvidence": [
+      "art/equipment-2d/identity-batch-two/selection-qa-1792134781975/flail-1280-right.png",
+      "art/equipment-2d/identity-batch-two/selection-qa-1792134781975/heavy_thrusting_sword-1280-right.png",
+      "art/equipment-2d/identity-batch-two/selection-qa-1792134781975/malikeths_black_blade-1280-left-dark.png",
+      "art/equipment-2d/identity-batch-two/selection-qa-1792135012744/hand_of_malenia-1280-right.png",
+      "art/equipment-2d/identity-batch-two/selection-qa-1792135012744/malenia-selected-comparison-390.png"
+    ],
+    "authorVerdicts": {
+      "flail": "32px chain legibility improved,16px holes merge",
+      "heavy_thrusting_sword": "Guard identity improved; small blade-root detail limited",
+      "hand_of_malenia": "Late continuous taper selected by user; thin curved gold silhouette retained, subtle detail limited at16",
+      "malikeths_black_blade": "User selected black-metal candidate; dark-background planes clearer, small cracks simplified at16"
+    },
+    "protectionBaselineRevision": {
+      "reason": "Explicit user selection promoted to current art",
+      "receipt": "art/equipment-2d/identity-batch-two/malenia-selection.json",
+      "changedFiles": [
+        {
+          "file": "art/equipment-2d/full/equipment-42.json",
+          "before": "203ee0f37a697f92953ee7b7d8d003dd3ce160a156dabcd9da650637f333fc50",
+          "after": "af3f693017d303693e0d782e4ca640778f3080192640141c5c0dce6118f83650"
+        },
+        {
+          "file": "art/equipment-2d/full/publishable-assets.json",
+          "before": "291b62570874cf50901628e7bbaa1b97097408d100fcb5df8cdd8fad3de4ae8b",
+          "after": "fbc2a8c59273fcf51ae14a126c5207c1ad26dc79572e5a2b2386157550e18cf1"
+        },
+        {
+          "file": "art/equipment-2d/full/sprites/hand_of_malenia_front.png",
+          "before": "985221803266ba34af3e4b5edc38cd383f68e578ab4e8f40443ae7412e310223",
+          "after": "02f8042ce642a38170d189c4c3ee050edc29686c31e023f0e2701733cb3d1092"
+        },
+        {
+          "file": "art/equipment-2d/full/sprites/hand_of_malenia_gui_16.png",
+          "before": "eb04a6c46cda357a1faaad06b57197a5ec681010b3f2b0d9994a1cb152100d40",
+          "after": "c8db5346d4f550a38b2c56c7cc7dfe3798fce93202d5795b24aa55716880b048"
+        },
+        {
+          "file": "art/equipment-2d/full/sprites/hand_of_malenia_gui_32.png",
+          "before": "033871f5058ae12444a18521e4d1dc17687b37dee9d133d5f676c6a5a8176fd9",
+          "after": "ed55434952ab79f51c82dd783eef94d687f19b0f43bb814cb2464f33e85dc77f"
+        },
+        {
+          "file": "art/equipment-2d/full/selected-art.json",
+          "before": "f122c3387f022905dd11e01ce8b73750c4fb0052663964f819feae9049c69f47",
+          "after": "212eaa1585c640eb9d1256c8a2e914ec13ff1b6258a7c2207e22aadedcee6219"
+        }
+      ]
+    },
+    "sourceAuditEntriesChecked": 0,
+    "staticHashCoverage": {
+      "auditedIds": [],
+      "candidateCount": 4,
+      "candidatePngs": 12,
+      "modelFiles": 12,
+      "protectedSnapshots": 131,
+      "note": "Protected snapshots verify unchanged bytes against a recorded baseline; they are not a fresh per-asset source/metadata audit."
+    },
+    "protectionBaselineHistory": [
+      {
+        "reason": "Explicit user selection promoted to current art",
+        "receipt": "art/equipment-2d/identity-batch-two/selection.json",
+        "changedFiles": [
+          {
+            "file": "art/equipment-2d/full/equipment-42.json",
+            "before": "a1b9f1f4dffa83bc060f000eecbd15f78205752c38d374dd853281b805954b88",
+            "after": "203ee0f37a697f92953ee7b7d8d003dd3ce160a156dabcd9da650637f333fc50"
+          },
+          {
+            "file": "art/equipment-2d/full/publishable-assets.json",
+            "before": "d049451639174afd78168d36bfa40f0c42e906b83bbab3240e8629efbc88b093",
+            "after": "291b62570874cf50901628e7bbaa1b97097408d100fcb5df8cdd8fad3de4ae8b"
+          },
+          {
+            "file": "art/equipment-2d/full/sprites/flail_front.png",
+            "before": "8fa569ad433e9715edb39bcb2112bc9a307037e700b02e31d1727e0f6232d105",
+            "after": "4e7f9d695fb3873e025f79ace4377b77e49694d7eec9f54aef7d69162a1c3deb"
+          },
+          {
+            "file": "art/equipment-2d/full/sprites/flail_gui_16.png",
+            "before": "7ae5e66d4ebb936155d284902d4dfcfb56313061e7f2bf3896aa472fd9475ef4",
+            "after": "cc118822dedb7a6f55ff731c8602566fc0bfe11b2a46e70842d47a2cbcefc6cc"
+          },
+          {
+            "file": "art/equipment-2d/full/sprites/flail_gui_32.png",
+            "before": "8fa569ad433e9715edb39bcb2112bc9a307037e700b02e31d1727e0f6232d105",
+            "after": "4e7f9d695fb3873e025f79ace4377b77e49694d7eec9f54aef7d69162a1c3deb"
+          },
+          {
+            "file": "art/equipment-2d/full/sprites/heavy_thrusting_sword_front.png",
+            "before": "b662c6a40437607d1f3b6171f76aa5b26291443806f1da54f4ba09feb4392e25",
+            "after": "f54eb75553da6c4faac4e219b87cc7f37b8aa8a5fa7d7b6e7347b7e9cb018e9a"
+          },
+          {
+            "file": "art/equipment-2d/full/sprites/heavy_thrusting_sword_gui_16.png",
+            "before": "207e4e4bb05d67af0fff90e59cbbe85cebb1dc0c35bab63f50cdbb87e4f5673d",
+            "after": "783216f871b44edba2e94f1793caff2ff870b999d0a27dace0938b4ff8f00110"
+          },
+          {
+            "file": "art/equipment-2d/full/sprites/heavy_thrusting_sword_gui_32.png",
+            "before": "b662c6a40437607d1f3b6171f76aa5b26291443806f1da54f4ba09feb4392e25",
+            "after": "f54eb75553da6c4faac4e219b87cc7f37b8aa8a5fa7d7b6e7347b7e9cb018e9a"
+          },
+          {
+            "file": "art/equipment-2d/full/sprites/malikeths_black_blade_front.png",
+            "before": "f8cc334cfe82122f61644252f3e1064d811926c249fa125b23a1f03da133b856",
+            "after": "9ca6338cd054f7a4c9d38afc7191599ad4e1d7299e0a22e721c3c7cbaf976fdc"
+          },
+          {
+            "file": "art/equipment-2d/full/sprites/malikeths_black_blade_gui_16.png",
+            "before": "b02cb814a5f995c2e28d4a4f4090189042a4d46dfc266f25f0f8edf64b1fd221",
+            "after": "0fe56f0519492a15fed0302cdf29ca8ddf2200122144ee79da2ca511934558cb"
+          },
+          {
+            "file": "art/equipment-2d/full/sprites/malikeths_black_blade_gui_32.png",
+            "before": "d75f7803a502dbf4b392eeaf575da1ddd3c8ea8773d1b4abffb1de05b6d410cc",
+            "after": "3218efcebf925e5894d3a61321b2bed0237fd200fa0b5294c33ac32dd8fc9e51"
+          }
+        ]
+      }
+    ]
+  }
+}

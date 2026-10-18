@@ -1,0 +1,37 @@
+{
+  "game_versions": [
+    "1.21.1"
+  ],
+  "loaders": [
+    "neoforge"
+  ],
+  "environment": "client_only",
+  "id": "eieYbWYb",
+  "project_id": "NNAgCjsB",
+  "author_id": "Qnt13hO8",
+  "featured": false,
+  "name": "1.11.3-1.21.1 - NeoForge",
+  "version_number": "1.11.3",
+  "changelog": "## What's Changed\r\n- Fix frustumculling not using whitelist, Fix frustum-culling using the uninflated hitbox. Fix [#341](https://github.com/tr7zw/EntityCulling/issues/341). This should fix any weird pop-in/outs happening when just turning the camera\r\n- Make the entity reference weak to prevent leaks caused by Fabric API. Fix [#6](https://github.com/tr7zw/TRansition/issues/6) . Over multiple corners, TRansition(one of my libs) with FabricAPI caused a leak of the entire level when leaving a world, wasting memory. \r\n\r\n**Full Changelog**: https://github.com/tr7zw/EntityCulling/compare/1.11.2...1.11.3\n",
+  "changelog_url": null,
+  "date_published": "2026-10-08T16:52:03.416509Z",
+  "downloads": 177875,
+  "version_type": "release",
+  "status": "listed",
+  "requested_status": null,
+  "files": [
+    {
+      "id": "VZ418MMC",
+      "hashes": {
+        "sha512": "93e83dd690b91d610be29451b34836c9daa7e08bd952f88ffa07c62d8774bbaac2ff0c6768d2cbf1b14f47d0b86f98cef9fd341e0d29bd37207eaf4aa2abea63",
+        "sha1": "f122f84f329793675b2625d51b77f990d7de3579"
+      },
+      "url": "https://cdn.modrinth.com/data/NNAgCjsB/versions/eieYbWYb/entityculling-neoforge-1.11.3-mc1.21.1.jar",
+      "filename": "entityculling-neoforge-1.11.3-mc1.21.1.jar",
+      "primary": true,
+      "size": 1510075,
+      "file_type": null
+    }
+  ],
+  "dependencies": []
+}

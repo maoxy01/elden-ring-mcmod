@@ -1,0 +1,102 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.12/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+
+> Task :compileJava
+D:\codexout\mcmod\src\main\java\com\dsh\eldencombat\client\EldenCombatClient.java:30: 警告: [removal] EventBusSubscriber 中的 bus() 已过时, 且标记为待删除
+@EventBusSubscriber(modid = EldenCombat.MODID, value = Dist.CLIENT, bus = EventBusSubscriber.Bus.MOD)
+                                                                    ^
+D:\codexout\mcmod\src\main\java\com\dsh\eldencombat\client\EldenCombatClient.java:30: 警告: [removal] EventBusSubscriber 中的 Bus 已过时, 且标记为待删除
+@EventBusSubscriber(modid = EldenCombat.MODID, value = Dist.CLIENT, bus = EventBusSubscriber.Bus.MOD)
+                                                                                            ^
+注: 某些输入文件使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+2 个警告
+
+> Task :generateEquipment2d
+Equipment 2D status report (42 entries):
+  eldencombat:axe -> ready: runtime references minecraft:item/iron_axe (no generated wrapper)
+  eldencombat:ballista -> ready: generated 7 admitted assets, base state standby
+  eldencombat:blasphemous_blade -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:blasphemous_blade -> ready: generated 3 admitted assets, base state front
+  eldencombat:claw -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:claw -> ready: generated 3 admitted assets, base state front
+  eldencombat:colossal_sword -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:colossal_sword -> ready: generated 3 admitted assets, base state front
+  eldencombat:colossal_weapon -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:colossal_weapon -> ready: generated 3 admitted assets, base state front
+  eldencombat:crossbow -> ready: runtime references minecraft:item/crossbow (no generated wrapper)
+  eldencombat:curved_greatsword -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:curved_greatsword -> ready: generated 3 admitted assets, base state front
+  eldencombat:curved_sword -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:curved_sword -> ready: generated 3 admitted assets, base state front
+  eldencombat:dagger -> ready: runtime references spartan_weaponry_unofficial:item/iron_dagger (no generated wrapper)
+  eldencombat:fist -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:fist -> ready: generated 3 admitted assets, base state front
+  eldencombat:flail -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:flail -> ready: generated 3 admitted assets, base state front
+  eldencombat:glintstone_staff -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:glintstone_staff -> ready: generated 3 admitted assets, base state front
+  eldencombat:great_bow -> ready: generated 6 admitted assets, base state standby
+  eldencombat:great_bow -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:great_hammer -> ready: runtime references spartan_weaponry_unofficial:item/iron_battle_hammer (no generated wrapper)
+  eldencombat:great_shield -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:great_shield -> ready: generated 4 admitted assets, base state front
+  eldencombat:great_spear -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:great_spear -> ready: generated 3 admitted assets, base state front
+  eldencombat:great_sword -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:great_sword -> ready: generated 3 admitted assets, base state front
+  eldencombat:greataxe -> ready: runtime references spartan_weaponry_unofficial:item/iron_battleaxe (no generated wrapper)
+  eldencombat:halberd -> ready: runtime references spartan_weaponry_unofficial:item/iron_halberd (no generated wrapper)
+  eldencombat:hammer -> ready: runtime references spartan_weaponry_unofficial:item/iron_flanged_mace (no generated wrapper)
+  eldencombat:hand_of_malenia -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:hand_of_malenia -> ready: generated 3 admitted assets, base state front
+  eldencombat:heavy_thrusting_sword -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:heavy_thrusting_sword -> ready: generated 3 admitted assets, base state front
+  eldencombat:katana -> ready: runtime references spartan_weaponry_unofficial:item/iron_katana (no generated wrapper)
+  eldencombat:long_bow -> ready: runtime references spartan_weaponry_unofficial:item/longbow_iron_strengthened (no generated wrapper)
+  eldencombat:malikeths_black_blade -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:malikeths_black_blade -> ready: generated 3 admitted assets, base state front
+  eldencombat:marikas_hammer -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:marikas_hammer -> ready: generated 3 admitted assets, base state front
+  eldencombat:mohgwyns_sacred_spear -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:mohgwyns_sacred_spear -> ready: generated 3 admitted assets, base state front
+  eldencombat:morgotts_cursed_sword -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:morgotts_cursed_sword -> ready: generated 3 admitted assets, base state front
+  eldencombat:sacred_relic_sword -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:sacred_relic_sword -> ready: generated 3 admitted assets, base state front
+  eldencombat:sacred_seal -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:sacred_seal -> ready: generated 3 admitted assets, base state front
+  eldencombat:scythe -> ready: runtime references spartan_weaponry_unofficial:item/iron_scythe (no generated wrapper)
+  eldencombat:shield -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:shield -> ready: generated 4 admitted assets, base state front
+  eldencombat:short_bow -> ready: runtime references minecraft:item/bow (no generated wrapper)
+  eldencombat:small_shield -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:small_shield -> ready: generated 4 admitted assets, base state front
+  eldencombat:spear -> ready: runtime references spartan_weaponry_unofficial:item/iron_spear (no generated wrapper)
+  eldencombat:starscourge_greatsword -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:starscourge_greatsword -> ready: generated 3 admitted assets, base state front
+  eldencombat:straight_sword -> ready: runtime references minecraft:item/iron_sword (no generated wrapper)
+  eldencombat:test_flask -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:test_flask -> ready: generated 3 admitted assets, base state full
+  eldencombat:thrusting_sword -> ready: runtime references spartan_weaponry_unofficial:item/iron_rapier (no generated wrapper)
+  eldencombat:twinblade -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:twinblade -> ready: generated 3 admitted assets, base state front
+  eldencombat:whip -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:whip -> ready: generated 3 admitted assets, base state front
+2D route coverage: 42 entries; own_sprite=28, vanilla_model=4, provider_model=10; ready=42, pending=0; generated files=216
+
+> Task :syncArt
+> Task :processResources
+> Task :classes
+> Task :jarJar NO-SOURCE
+> Task :jar
+> Task :compileTestJava
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+> Task :test
+
+[Incubating] Problems report is available at: file:///D:/codexout/mcmod/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 21s
+8 actionable tasks: 7 executed, 1 up-to-date

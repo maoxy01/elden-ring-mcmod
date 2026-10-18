@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>传说魔法与祷告 · 美术审看</title>
+<link rel="stylesheet" href="preview.css">
+<script src="preview-data.js" defer></script><script src="preview.js" defer></script>
+</head>
+<body>
+<header><h1>传说魔法与祷告</h1><nav><a href="#collection">七种法术</a><a href="#sources">提取参考</a><a href="DESIGN.md">设计记录</a></nav></header>
+<main>
+<section class="workbench" data-ui aria-label="动态特效审看">
+ <div class="toolbar">
+  <label>法术 <select id="spell"></select></label>
+  <label>场景 <select id="background" aria-label="场景"><option value="dark">暗色野外</option><option value="light">明亮野外</option><option value="clear">透明底</option></select></label>
+  <label>速度 <select id="speed" aria-label="速度"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option></select></label>
+  <button id="play" type="button" aria-label="暂停" title="暂停">Ⅱ</button>
+  <button id="restart" type="button" aria-label="重播" title="重播">↺</button>
+  <label class="comparison-toggle"><input id="previous" type="checkbox">旧版对照</label>
+ </div>
+ <div class="viewport"><canvas id="stage" width="256" height="192" aria-label="法术动态样片"></canvas></div>
+ <div class="timeline"><label for="time">进度</label><input id="time" type="range" min="0" max="23" value="13" step="1"><output id="frame">14 / 24</output></div>
+ <div class="caption"><h2 id="name">彗星亚兹勒</h2><p id="idea"></p><p id="motion"></p><a id="atlas" href="atlases/comet_azur.png">透明序列图集</a></div>
+</section>
+<section id="collection" class="collection"><h2>七种法术</h2><div class="gallery" id="gallery"></div></section>
+<section id="sources" class="sources"><h2>提取参考</h2><p>本机提取贴图与参数关联。样片是重新构图的像素演绎，不是原版 FXR 的完整播放。</p><div id="references" class="references"></div><p class="boundary">本机研究与美术审看，未取得原游戏素材再分发许可。未接入游戏，未进行实机验收。</p></section>
+</main>
+<footer><a href="manifest.json">素材与来源清单</a><a href="../../dist/法环特效素材/按技能浏览.html">原始素材图鉴</a><a href="../../docs/LEGENDARY-SPELLS-ART-HANDOFF-20261016.md">美术交接</a></footer>
+<noscript><p>静帧与透明序列见 <a href="manifest.json">素材清单</a>。</p><img src="posters/comet_azur.png" alt="彗星亚兹勒静帧"></noscript>
+</body></html>

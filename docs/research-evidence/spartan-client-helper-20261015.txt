@@ -1,0 +1,819 @@
+Compiled from "ClientHelper.java"
+public class org.xiyu.spartanweaponryunofficial.client.ClientHelper {
+  public static net.minecraft.client.gui.screens.Screen lastConfigScreen;
+
+  public static final net.minecraft.client.gui.LayeredDraw$Layer LOAD_STATE;
+
+  public static final net.minecraft.client.gui.LayeredDraw$Layer QUIVER_AMMO;
+
+  public static final net.minecraft.client.gui.LayeredDraw$Layer OIL_USES;
+
+  public static final net.minecraft.client.gui.LayeredDraw$Layer NEW_CROSSHAIR;
+
+  public static final net.minecraft.client.color.item.ItemColor COLOR_TIPPED_PROJECTILE;
+
+  public static final net.minecraft.client.color.item.ItemColor COLOR_OIL;
+
+  public org.xiyu.spartanweaponryunofficial.client.ClientHelper();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void registerConfigScreen(net.neoforged.fml.ModContainer);
+    Code:
+       0: aload_0
+       1: ldc           #7                  // class net/neoforged/neoforge/client/gui/IConfigScreenFactory
+       3: invokedynamic #9,  0              // InvokeDynamic #0:createScreen:()Lnet/neoforged/neoforge/client/gui/IConfigScreenFactory;
+       8: invokevirtual #13                 // Method net/neoforged/fml/ModContainer.registerExtensionPoint:(Ljava/lang/Class;Lnet/neoforged/fml/IExtensionPoint;)V
+      11: return
+
+  public static void registerItemColoursHandler(net.neoforged.neoforge.client.event.RegisterColorHandlersEvent$Item);
+    Code:
+       0: aload_0
+       1: getstatic     #19                 // Field COLOR_TIPPED_PROJECTILE:Lnet/minecraft/client/color/item/ItemColor;
+       4: bipush        9
+       6: anewarray     #25                 // class net/minecraft/world/level/ItemLike
+       9: dup
+      10: iconst_0
+      11: getstatic     #27                 // Field org/xiyu/spartanweaponryunofficial/init/ModItems.TIPPED_WOODEN_ARROW:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      14: invokevirtual #33                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      17: checkcast     #25                 // class net/minecraft/world/level/ItemLike
+      20: aastore
+      21: dup
+      22: iconst_1
+      23: getstatic     #39                 // Field org/xiyu/spartanweaponryunofficial/init/ModItems.TIPPED_COPPER_ARROW:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      26: invokevirtual #33                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      29: checkcast     #25                 // class net/minecraft/world/level/ItemLike
+      32: aastore
+      33: dup
+      34: iconst_2
+      35: getstatic     #42                 // Field org/xiyu/spartanweaponryunofficial/init/ModItems.TIPPED_IRON_ARROW:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      38: invokevirtual #33                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      41: checkcast     #25                 // class net/minecraft/world/level/ItemLike
+      44: aastore
+      45: dup
+      46: iconst_3
+      47: getstatic     #45                 // Field org/xiyu/spartanweaponryunofficial/init/ModItems.TIPPED_DIAMOND_ARROW:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      50: invokevirtual #33                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      53: checkcast     #25                 // class net/minecraft/world/level/ItemLike
+      56: aastore
+      57: dup
+      58: iconst_4
+      59: getstatic     #48                 // Field org/xiyu/spartanweaponryunofficial/init/ModItems.TIPPED_NETHERITE_ARROW:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      62: invokevirtual #33                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      65: checkcast     #25                 // class net/minecraft/world/level/ItemLike
+      68: aastore
+      69: dup
+      70: iconst_5
+      71: getstatic     #51                 // Field org/xiyu/spartanweaponryunofficial/init/ModItems.TIPPED_BOLT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      74: invokevirtual #33                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      77: checkcast     #25                 // class net/minecraft/world/level/ItemLike
+      80: aastore
+      81: dup
+      82: bipush        6
+      84: getstatic     #54                 // Field org/xiyu/spartanweaponryunofficial/init/ModItems.TIPPED_COPPER_BOLT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      87: invokevirtual #33                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      90: checkcast     #25                 // class net/minecraft/world/level/ItemLike
+      93: aastore
+      94: dup
+      95: bipush        7
+      97: getstatic     #57                 // Field org/xiyu/spartanweaponryunofficial/init/ModItems.TIPPED_DIAMOND_BOLT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     100: invokevirtual #33                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+     103: checkcast     #25                 // class net/minecraft/world/level/ItemLike
+     106: aastore
+     107: dup
+     108: bipush        8
+     110: getstatic     #60                 // Field org/xiyu/spartanweaponryunofficial/init/ModItems.TIPPED_NETHERITE_BOLT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     113: invokevirtual #33                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+     116: checkcast     #25                 // class net/minecraft/world/level/ItemLike
+     119: aastore
+     120: invokevirtual #63                 // Method net/neoforged/neoforge/client/event/RegisterColorHandlersEvent$Item.register:(Lnet/minecraft/client/color/item/ItemColor;[Lnet/minecraft/world/level/ItemLike;)V
+     123: aload_0
+     124: getstatic     #69                 // Field COLOR_OIL:Lnet/minecraft/client/color/item/ItemColor;
+     127: iconst_1
+     128: anewarray     #25                 // class net/minecraft/world/level/ItemLike
+     131: dup
+     132: iconst_0
+     133: getstatic     #72                 // Field org/xiyu/spartanweaponryunofficial/init/ModItems.WEAPON_OIL:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     136: invokevirtual #33                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+     139: checkcast     #25                 // class net/minecraft/world/level/ItemLike
+     142: aastore
+     143: invokevirtual #63                 // Method net/neoforged/neoforge/client/event/RegisterColorHandlersEvent$Item.register:(Lnet/minecraft/client/color/item/ItemColor;[Lnet/minecraft/world/level/ItemLike;)V
+     146: return
+
+  public static void registerCurioRenders();
+    Code:
+       0: getstatic     #75                 // Field org/xiyu/spartanweaponryunofficial/capability/CuriosHelper.LOADED:Z
+       3: ifeq          9
+       6: invokestatic  #81                 // Method org/xiyu/spartanweaponryunofficial/client/model/CurioRenderer.register:()V
+       9: return
+
+  public static void registerMeleeWeaponPropertyOverrides(org.xiyu.spartanweaponryunofficial.item.SwordBaseItem);
+    Code:
+       0: aload_0
+       1: getstatic     #85                 // Field org/xiyu/spartanweaponryunofficial/api/ModelOverrides.BLOCKING:Lnet/minecraft/resources/ResourceLocation;
+       4: aload_0
+       5: invokedynamic #91,  0             // InvokeDynamic #1:call:(Lorg/xiyu/spartanweaponryunofficial/item/SwordBaseItem;)Lnet/minecraft/client/renderer/item/ItemPropertyFunction;
+      10: invokestatic  #95                 // Method net/minecraft/client/renderer/item/ItemProperties.register:(Lnet/minecraft/world/item/Item;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/renderer/item/ItemPropertyFunction;)V
+      13: aload_0
+      14: invokevirtual #100                // Method org/xiyu/spartanweaponryunofficial/item/SwordBaseItem.getAsItem:()Lorg/xiyu/spartanweaponryunofficial/item/SwordBaseItem;
+      17: astore_1
+      18: aload_1
+      19: getstatic     #106                // Field org/xiyu/spartanweaponryunofficial/api/ModelOverrides.THROWING:Lnet/minecraft/resources/ResourceLocation;
+      22: aload_0
+      23: invokedynamic #109,  0            // InvokeDynamic #2:call:(Lorg/xiyu/spartanweaponryunofficial/item/SwordBaseItem;)Lnet/minecraft/client/renderer/item/ItemPropertyFunction;
+      28: invokestatic  #95                 // Method net/minecraft/client/renderer/item/ItemProperties.register:(Lnet/minecraft/world/item/Item;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/renderer/item/ItemPropertyFunction;)V
+      31: return
+
+  public static void registerHeavyCrossbowPropertyOverrides(org.xiyu.spartanweaponryunofficial.item.HeavyCrossbowItem);
+    Code:
+       0: aload_0
+       1: getstatic     #110                // Field org/xiyu/spartanweaponryunofficial/api/ModelOverrides.PULL:Lnet/minecraft/resources/ResourceLocation;
+       4: aload_0
+       5: invokedynamic #113,  0            // InvokeDynamic #3:call:(Lorg/xiyu/spartanweaponryunofficial/item/HeavyCrossbowItem;)Lnet/minecraft/client/renderer/item/ItemPropertyFunction;
+      10: invokestatic  #95                 // Method net/minecraft/client/renderer/item/ItemProperties.register:(Lnet/minecraft/world/item/Item;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/renderer/item/ItemPropertyFunction;)V
+      13: aload_0
+      14: getstatic     #116                // Field org/xiyu/spartanweaponryunofficial/api/ModelOverrides.PULLING:Lnet/minecraft/resources/ResourceLocation;
+      17: invokedynamic #119,  0            // InvokeDynamic #4:call:()Lnet/minecraft/client/renderer/item/ItemPropertyFunction;
+      22: invokestatic  #95                 // Method net/minecraft/client/renderer/item/ItemProperties.register:(Lnet/minecraft/world/item/Item;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/renderer/item/ItemPropertyFunction;)V
+      25: aload_0
+      26: getstatic     #122                // Field org/xiyu/spartanweaponryunofficial/api/ModelOverrides.CHARGED:Lnet/minecraft/resources/ResourceLocation;
+      29: aload_0
+      30: invokedynamic #125,  0            // InvokeDynamic #5:call:(Lorg/xiyu/spartanweaponryunofficial/item/HeavyCrossbowItem;)Lnet/minecraft/client/renderer/item/ItemPropertyFunction;
+      35: invokestatic  #95                 // Method net/minecraft/client/renderer/item/ItemProperties.register:(Lnet/minecraft/world/item/Item;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/renderer/item/ItemPropertyFunction;)V
+      38: return
+
+  public static void registerLongbowPropertyOverrides(org.xiyu.spartanweaponryunofficial.item.LongbowItem);
+    Code:
+       0: aload_0
+       1: getstatic     #116                // Field org/xiyu/spartanweaponryunofficial/api/ModelOverrides.PULLING:Lnet/minecraft/resources/ResourceLocation;
+       4: invokedynamic #126,  0            // InvokeDynamic #6:call:()Lnet/minecraft/client/renderer/item/ItemPropertyFunction;
+       9: invokestatic  #95                 // Method net/minecraft/client/renderer/item/ItemProperties.register:(Lnet/minecraft/world/item/Item;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/renderer/item/ItemPropertyFunction;)V
+      12: aload_0
+      13: getstatic     #110                // Field org/xiyu/spartanweaponryunofficial/api/ModelOverrides.PULL:Lnet/minecraft/resources/ResourceLocation;
+      16: aload_0
+      17: invokedynamic #127,  0            // InvokeDynamic #7:call:(Lorg/xiyu/spartanweaponryunofficial/item/LongbowItem;)Lnet/minecraft/client/renderer/item/ItemPropertyFunction;
+      22: invokestatic  #95                 // Method net/minecraft/client/renderer/item/ItemProperties.register:(Lnet/minecraft/world/item/Item;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/renderer/item/ItemPropertyFunction;)V
+      25: return
+
+  public static void registerThrowingWeaponPropertyOverrides(org.xiyu.spartanweaponryunofficial.item.ThrowingWeaponItem);
+    Code:
+       0: aload_0
+       1: getstatic     #106                // Field org/xiyu/spartanweaponryunofficial/api/ModelOverrides.THROWING:Lnet/minecraft/resources/ResourceLocation;
+       4: invokedynamic #130,  0            // InvokeDynamic #8:call:()Lnet/minecraft/client/renderer/item/ItemPropertyFunction;
+       9: invokestatic  #95                 // Method net/minecraft/client/renderer/item/ItemProperties.register:(Lnet/minecraft/world/item/Item;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/renderer/item/ItemPropertyFunction;)V
+      12: aload_0
+      13: getstatic     #131                // Field org/xiyu/spartanweaponryunofficial/api/ModelOverrides.EMPTY:Lnet/minecraft/resources/ResourceLocation;
+      16: aload_0
+      17: invokedynamic #134,  0            // InvokeDynamic #9:call:(Lorg/xiyu/spartanweaponryunofficial/item/ThrowingWeaponItem;)Lnet/minecraft/client/renderer/item/ItemPropertyFunction;
+      22: invokestatic  #95                 // Method net/minecraft/client/renderer/item/ItemProperties.register:(Lnet/minecraft/world/item/Item;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/renderer/item/ItemPropertyFunction;)V
+      25: return
+
+  public static void registerQuiverPropertyOverrides(org.xiyu.spartanweaponryunofficial.item.QuiverBaseItem);
+    Code:
+       0: aload_0
+       1: getstatic     #137                // Field org/xiyu/spartanweaponryunofficial/api/ModelOverrides.ARROW:Lnet/minecraft/resources/ResourceLocation;
+       4: aload_0
+       5: invokedynamic #140,  0            // InvokeDynamic #10:call:(Lorg/xiyu/spartanweaponryunofficial/item/QuiverBaseItem;)Lnet/minecraft/client/renderer/item/ItemPropertyFunction;
+      10: invokestatic  #95                 // Method net/minecraft/client/renderer/item/ItemProperties.register:(Lnet/minecraft/world/item/Item;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/renderer/item/ItemPropertyFunction;)V
+      13: return
+
+  public static void registerEntityRenders(net.neoforged.neoforge.client.event.EntityRenderersEvent$RegisterRenderers);
+    Code:
+       0: ldc           #143                // String Registering Entity Renderers!
+       2: invokestatic  #145                // Method org/xiyu/spartanweaponryunofficial/util/Log.info:(Ljava/lang/Object;)V
+       5: aload_0
+       6: getstatic     #151                // Field org/xiyu/spartanweaponryunofficial/init/ModEntities.ARROW_SW:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       9: invokevirtual #33                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      12: checkcast     #156                // class net/minecraft/world/entity/EntityType
+      15: invokedynamic #158,  0            // InvokeDynamic #11:create:()Lnet/minecraft/client/renderer/entity/EntityRendererProvider;
+      20: invokevirtual #162                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers.registerEntityRenderer:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;)V
+      23: aload_0
+      24: getstatic     #168                // Field org/xiyu/spartanweaponryunofficial/init/ModEntities.ARROW_EXPLOSIVE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      27: invokevirtual #33                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      30: checkcast     #156                // class net/minecraft/world/entity/EntityType
+      33: invokedynamic #171,  0            // InvokeDynamic #12:create:()Lnet/minecraft/client/renderer/entity/EntityRendererProvider;
+      38: invokevirtual #162                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers.registerEntityRenderer:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;)V
+      41: aload_0
+      42: getstatic     #172                // Field org/xiyu/spartanweaponryunofficial/init/ModEntities.BOLT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      45: invokevirtual #33                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      48: checkcast     #156                // class net/minecraft/world/entity/EntityType
+      51: invokedynamic #175,  0            // InvokeDynamic #13:create:()Lnet/minecraft/client/renderer/entity/EntityRendererProvider;
+      56: invokevirtual #162                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers.registerEntityRenderer:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;)V
+      59: aload_0
+      60: getstatic     #176                // Field org/xiyu/spartanweaponryunofficial/init/ModEntities.BOLT_SPECTRAL:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      63: invokevirtual #33                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      66: checkcast     #156                // class net/minecraft/world/entity/EntityType
+      69: invokedynamic #175,  0            // InvokeDynamic #13:create:()Lnet/minecraft/client/renderer/entity/EntityRendererProvider;
+      74: invokevirtual #162                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers.registerEntityRenderer:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;)V
+      77: aload_0
+      78: getstatic     #179                // Field org/xiyu/spartanweaponryunofficial/init/ModEntities.THROWING_WEAPON:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      81: invokevirtual #33                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      84: checkcast     #156                // class net/minecraft/world/entity/EntityType
+      87: invokedynamic #182,  0            // InvokeDynamic #14:create:()Lnet/minecraft/client/renderer/entity/EntityRendererProvider;
+      92: invokevirtual #162                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers.registerEntityRenderer:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;)V
+      95: aload_0
+      96: getstatic     #183                // Field org/xiyu/spartanweaponryunofficial/init/ModEntities.THROWING_KNIFE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      99: invokevirtual #33                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+     102: checkcast     #156                // class net/minecraft/world/entity/EntityType
+     105: invokedynamic #182,  0            // InvokeDynamic #14:create:()Lnet/minecraft/client/renderer/entity/EntityRendererProvider;
+     110: invokevirtual #162                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers.registerEntityRenderer:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;)V
+     113: aload_0
+     114: getstatic     #186                // Field org/xiyu/spartanweaponryunofficial/init/ModEntities.TOMAHAWK:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     117: invokevirtual #33                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+     120: checkcast     #156                // class net/minecraft/world/entity/EntityType
+     123: invokedynamic #189,  0            // InvokeDynamic #15:create:()Lnet/minecraft/client/renderer/entity/EntityRendererProvider;
+     128: invokevirtual #162                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers.registerEntityRenderer:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;)V
+     131: aload_0
+     132: getstatic     #190                // Field org/xiyu/spartanweaponryunofficial/init/ModEntities.JAVELIN:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     135: invokevirtual #33                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+     138: checkcast     #156                // class net/minecraft/world/entity/EntityType
+     141: invokedynamic #193,  0            // InvokeDynamic #16:create:()Lnet/minecraft/client/renderer/entity/EntityRendererProvider;
+     146: invokevirtual #162                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers.registerEntityRenderer:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;)V
+     149: aload_0
+     150: getstatic     #194                // Field org/xiyu/spartanweaponryunofficial/init/ModEntities.BOOMERANG:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     153: invokevirtual #33                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+     156: checkcast     #156                // class net/minecraft/world/entity/EntityType
+     159: invokedynamic #197,  0            // InvokeDynamic #17:create:()Lnet/minecraft/client/renderer/entity/EntityRendererProvider;
+     164: invokevirtual #162                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers.registerEntityRenderer:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;)V
+     167: aload_0
+     168: getstatic     #198                // Field org/xiyu/spartanweaponryunofficial/init/ModEntities.DYNAMITE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     171: invokevirtual #33                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+     174: checkcast     #156                // class net/minecraft/world/entity/EntityType
+     177: invokedynamic #201,  0            // InvokeDynamic #18:create:()Lnet/minecraft/client/renderer/entity/EntityRendererProvider;
+     182: invokevirtual #162                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers.registerEntityRenderer:(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;)V
+     185: aload_0
+     186: getstatic     #202                // Field org/xiyu/spartanweaponryunofficial/init/ModBlockEntities.EXTENDED_SKULL_TYPE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+     189: invokevirtual #33                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+     192: checkcast     #207                // class net/minecraft/world/level/block/entity/BlockEntityType
+     195: invokedynamic #209,  0            // InvokeDynamic #19:create:()Lnet/minecraft/client/renderer/blockentity/BlockEntityRendererProvider;
+     200: invokevirtual #212                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterRenderers.registerBlockEntityRenderer:(Lnet/minecraft/world/level/block/entity/BlockEntityType;Lnet/minecraft/client/renderer/blockentity/BlockEntityRendererProvider;)V
+     203: return
+
+  public static void registerModelLayers(net.neoforged.neoforge.client.event.EntityRenderersEvent$RegisterLayerDefinitions);
+    Code:
+       0: ldc           #216                // String Registering Model Layers!
+       2: invokestatic  #145                // Method org/xiyu/spartanweaponryunofficial/util/Log.info:(Ljava/lang/Object;)V
+       5: aload_0
+       6: getstatic     #218                // Field org/xiyu/spartanweaponryunofficial/client/renderer/entity/ModelLayers.SMALL_ARROW_QUIVER:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+       9: invokedynamic #224,  0            // InvokeDynamic #20:get:()Ljava/util/function/Supplier;
+      14: invokevirtual #227                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions.registerLayerDefinition:(Lnet/minecraft/client/model/geom/ModelLayerLocation;Ljava/util/function/Supplier;)V
+      17: aload_0
+      18: getstatic     #233                // Field org/xiyu/spartanweaponryunofficial/client/renderer/entity/ModelLayers.MEDIUM_ARROW_QUIVER:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+      21: invokedynamic #236,  0            // InvokeDynamic #21:get:()Ljava/util/function/Supplier;
+      26: invokevirtual #227                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions.registerLayerDefinition:(Lnet/minecraft/client/model/geom/ModelLayerLocation;Ljava/util/function/Supplier;)V
+      29: aload_0
+      30: getstatic     #237                // Field org/xiyu/spartanweaponryunofficial/client/renderer/entity/ModelLayers.LARGE_ARROW_QUIVER:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+      33: invokedynamic #240,  0            // InvokeDynamic #22:get:()Ljava/util/function/Supplier;
+      38: invokevirtual #227                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions.registerLayerDefinition:(Lnet/minecraft/client/model/geom/ModelLayerLocation;Ljava/util/function/Supplier;)V
+      41: aload_0
+      42: getstatic     #241                // Field org/xiyu/spartanweaponryunofficial/client/renderer/entity/ModelLayers.SMALL_BOLT_QUIVER:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+      45: invokedynamic #244,  0            // InvokeDynamic #23:get:()Ljava/util/function/Supplier;
+      50: invokevirtual #227                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions.registerLayerDefinition:(Lnet/minecraft/client/model/geom/ModelLayerLocation;Ljava/util/function/Supplier;)V
+      53: aload_0
+      54: getstatic     #245                // Field org/xiyu/spartanweaponryunofficial/client/renderer/entity/ModelLayers.MEDIUM_BOLT_QUIVER:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+      57: invokedynamic #248,  0            // InvokeDynamic #24:get:()Ljava/util/function/Supplier;
+      62: invokevirtual #227                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions.registerLayerDefinition:(Lnet/minecraft/client/model/geom/ModelLayerLocation;Ljava/util/function/Supplier;)V
+      65: aload_0
+      66: getstatic     #249                // Field org/xiyu/spartanweaponryunofficial/client/renderer/entity/ModelLayers.LARGE_BOLT_QUIVER:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+      69: invokedynamic #252,  0            // InvokeDynamic #25:get:()Ljava/util/function/Supplier;
+      74: invokevirtual #227                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions.registerLayerDefinition:(Lnet/minecraft/client/model/geom/ModelLayerLocation;Ljava/util/function/Supplier;)V
+      77: aload_0
+      78: getstatic     #253                // Field org/xiyu/spartanweaponryunofficial/client/renderer/entity/ModelLayers.BLAZE_HEAD:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+      81: invokedynamic #256,  0            // InvokeDynamic #26:get:()Ljava/util/function/Supplier;
+      86: invokevirtual #227                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions.registerLayerDefinition:(Lnet/minecraft/client/model/geom/ModelLayerLocation;Ljava/util/function/Supplier;)V
+      89: aload_0
+      90: getstatic     #257                // Field org/xiyu/spartanweaponryunofficial/client/renderer/entity/ModelLayers.ENDERMAN_HEAD:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+      93: invokedynamic #260,  0            // InvokeDynamic #27:get:()Ljava/util/function/Supplier;
+      98: invokevirtual #227                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions.registerLayerDefinition:(Lnet/minecraft/client/model/geom/ModelLayerLocation;Ljava/util/function/Supplier;)V
+     101: aload_0
+     102: getstatic     #261                // Field org/xiyu/spartanweaponryunofficial/client/renderer/entity/ModelLayers.SPIDER_HEAD:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+     105: invokedynamic #264,  0            // InvokeDynamic #28:get:()Ljava/util/function/Supplier;
+     110: invokevirtual #227                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions.registerLayerDefinition:(Lnet/minecraft/client/model/geom/ModelLayerLocation;Ljava/util/function/Supplier;)V
+     113: aload_0
+     114: getstatic     #265                // Field org/xiyu/spartanweaponryunofficial/client/renderer/entity/ModelLayers.CAVE_SPIDER_HEAD:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+     117: invokedynamic #264,  0            // InvokeDynamic #28:get:()Ljava/util/function/Supplier;
+     122: invokevirtual #227                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions.registerLayerDefinition:(Lnet/minecraft/client/model/geom/ModelLayerLocation;Ljava/util/function/Supplier;)V
+     125: aload_0
+     126: getstatic     #268                // Field org/xiyu/spartanweaponryunofficial/client/renderer/entity/ModelLayers.ZOMBIFIED_PIGLIN_HEAD:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+     129: invokedynamic #271,  0            // InvokeDynamic #29:get:()Ljava/util/function/Supplier;
+     134: invokevirtual #227                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions.registerLayerDefinition:(Lnet/minecraft/client/model/geom/ModelLayerLocation;Ljava/util/function/Supplier;)V
+     137: aload_0
+     138: getstatic     #272                // Field org/xiyu/spartanweaponryunofficial/client/renderer/entity/ModelLayers.HUSK_HEAD:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+     141: invokedynamic #275,  0            // InvokeDynamic #30:get:()Ljava/util/function/Supplier;
+     146: invokevirtual #227                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions.registerLayerDefinition:(Lnet/minecraft/client/model/geom/ModelLayerLocation;Ljava/util/function/Supplier;)V
+     149: aload_0
+     150: getstatic     #276                // Field org/xiyu/spartanweaponryunofficial/client/renderer/entity/ModelLayers.STRAY_SKULL:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+     153: invokedynamic #279,  0            // InvokeDynamic #31:get:()Ljava/util/function/Supplier;
+     158: invokevirtual #227                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions.registerLayerDefinition:(Lnet/minecraft/client/model/geom/ModelLayerLocation;Ljava/util/function/Supplier;)V
+     161: aload_0
+     162: getstatic     #280                // Field org/xiyu/spartanweaponryunofficial/client/renderer/entity/ModelLayers.DROWNED_HEAD:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+     165: invokedynamic #279,  0            // InvokeDynamic #31:get:()Ljava/util/function/Supplier;
+     170: invokevirtual #227                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions.registerLayerDefinition:(Lnet/minecraft/client/model/geom/ModelLayerLocation;Ljava/util/function/Supplier;)V
+     173: aload_0
+     174: getstatic     #283                // Field org/xiyu/spartanweaponryunofficial/client/renderer/entity/ModelLayers.ILLAGER_HEAD:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+     177: invokedynamic #286,  0            // InvokeDynamic #32:get:()Ljava/util/function/Supplier;
+     182: invokevirtual #227                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions.registerLayerDefinition:(Lnet/minecraft/client/model/geom/ModelLayerLocation;Ljava/util/function/Supplier;)V
+     185: aload_0
+     186: getstatic     #287                // Field org/xiyu/spartanweaponryunofficial/client/renderer/entity/ModelLayers.WITCH_HEAD:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+     189: invokedynamic #290,  0            // InvokeDynamic #33:get:()Ljava/util/function/Supplier;
+     194: invokevirtual #227                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions.registerLayerDefinition:(Lnet/minecraft/client/model/geom/ModelLayerLocation;Ljava/util/function/Supplier;)V
+     197: ldc_w         #291                // String Model Layer registration complete!
+     200: invokestatic  #145                // Method org/xiyu/spartanweaponryunofficial/util/Log.info:(Ljava/lang/Object;)V
+     203: return
+
+  public static void registerSkullModels(net.neoforged.neoforge.client.event.EntityRenderersEvent$CreateSkullModels);
+    Code:
+       0: aload_0
+       1: invokevirtual #293                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$CreateSkullModels.getEntityModelSet:()Lnet/minecraft/client/model/geom/EntityModelSet;
+       4: astore_1
+       5: aload_0
+       6: getstatic     #299                // Field org/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types.BLAZE:Lorg/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types;
+       9: new           #305                // class net/minecraft/client/model/SkullModel
+      12: dup
+      13: aload_1
+      14: getstatic     #253                // Field org/xiyu/spartanweaponryunofficial/client/renderer/entity/ModelLayers.BLAZE_HEAD:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+      17: invokevirtual #307                // Method net/minecraft/client/model/geom/EntityModelSet.bakeLayer:(Lnet/minecraft/client/model/geom/ModelLayerLocation;)Lnet/minecraft/client/model/geom/ModelPart;
+      20: invokespecial #313                // Method net/minecraft/client/model/SkullModel."<init>":(Lnet/minecraft/client/model/geom/ModelPart;)V
+      23: invokevirtual #316                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$CreateSkullModels.registerSkullModel:(Lnet/minecraft/world/level/block/SkullBlock$Type;Lnet/minecraft/client/model/SkullModelBase;)V
+      26: aload_0
+      27: getstatic     #320                // Field org/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types.ENDERMAN:Lorg/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types;
+      30: new           #323                // class org/xiyu/spartanweaponryunofficial/client/renderer/entity/EndermanHeadModel
+      33: dup
+      34: aload_1
+      35: getstatic     #257                // Field org/xiyu/spartanweaponryunofficial/client/renderer/entity/ModelLayers.ENDERMAN_HEAD:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+      38: invokevirtual #307                // Method net/minecraft/client/model/geom/EntityModelSet.bakeLayer:(Lnet/minecraft/client/model/geom/ModelLayerLocation;)Lnet/minecraft/client/model/geom/ModelPart;
+      41: invokespecial #325                // Method org/xiyu/spartanweaponryunofficial/client/renderer/entity/EndermanHeadModel."<init>":(Lnet/minecraft/client/model/geom/ModelPart;)V
+      44: invokevirtual #316                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$CreateSkullModels.registerSkullModel:(Lnet/minecraft/world/level/block/SkullBlock$Type;Lnet/minecraft/client/model/SkullModelBase;)V
+      47: aload_0
+      48: getstatic     #326                // Field org/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types.SPIDER:Lorg/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types;
+      51: new           #305                // class net/minecraft/client/model/SkullModel
+      54: dup
+      55: aload_1
+      56: getstatic     #261                // Field org/xiyu/spartanweaponryunofficial/client/renderer/entity/ModelLayers.SPIDER_HEAD:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+      59: invokevirtual #307                // Method net/minecraft/client/model/geom/EntityModelSet.bakeLayer:(Lnet/minecraft/client/model/geom/ModelLayerLocation;)Lnet/minecraft/client/model/geom/ModelPart;
+      62: invokespecial #313                // Method net/minecraft/client/model/SkullModel."<init>":(Lnet/minecraft/client/model/geom/ModelPart;)V
+      65: invokevirtual #316                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$CreateSkullModels.registerSkullModel:(Lnet/minecraft/world/level/block/SkullBlock$Type;Lnet/minecraft/client/model/SkullModelBase;)V
+      68: aload_0
+      69: getstatic     #329                // Field org/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types.CAVE_SPIDER:Lorg/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types;
+      72: new           #305                // class net/minecraft/client/model/SkullModel
+      75: dup
+      76: aload_1
+      77: getstatic     #265                // Field org/xiyu/spartanweaponryunofficial/client/renderer/entity/ModelLayers.CAVE_SPIDER_HEAD:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+      80: invokevirtual #307                // Method net/minecraft/client/model/geom/EntityModelSet.bakeLayer:(Lnet/minecraft/client/model/geom/ModelLayerLocation;)Lnet/minecraft/client/model/geom/ModelPart;
+      83: invokespecial #313                // Method net/minecraft/client/model/SkullModel."<init>":(Lnet/minecraft/client/model/geom/ModelPart;)V
+      86: invokevirtual #316                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$CreateSkullModels.registerSkullModel:(Lnet/minecraft/world/level/block/SkullBlock$Type;Lnet/minecraft/client/model/SkullModelBase;)V
+      89: aload_0
+      90: getstatic     #332                // Field org/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types.ZOMBIE_PIGLIN:Lorg/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types;
+      93: new           #335                // class net/minecraft/client/model/PiglinHeadModel
+      96: dup
+      97: aload_1
+      98: getstatic     #268                // Field org/xiyu/spartanweaponryunofficial/client/renderer/entity/ModelLayers.ZOMBIFIED_PIGLIN_HEAD:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+     101: invokevirtual #307                // Method net/minecraft/client/model/geom/EntityModelSet.bakeLayer:(Lnet/minecraft/client/model/geom/ModelLayerLocation;)Lnet/minecraft/client/model/geom/ModelPart;
+     104: invokespecial #337                // Method net/minecraft/client/model/PiglinHeadModel."<init>":(Lnet/minecraft/client/model/geom/ModelPart;)V
+     107: invokevirtual #316                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$CreateSkullModels.registerSkullModel:(Lnet/minecraft/world/level/block/SkullBlock$Type;Lnet/minecraft/client/model/SkullModelBase;)V
+     110: aload_0
+     111: getstatic     #338                // Field org/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types.HUSK:Lorg/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types;
+     114: new           #305                // class net/minecraft/client/model/SkullModel
+     117: dup
+     118: aload_1
+     119: getstatic     #272                // Field org/xiyu/spartanweaponryunofficial/client/renderer/entity/ModelLayers.HUSK_HEAD:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+     122: invokevirtual #307                // Method net/minecraft/client/model/geom/EntityModelSet.bakeLayer:(Lnet/minecraft/client/model/geom/ModelLayerLocation;)Lnet/minecraft/client/model/geom/ModelPart;
+     125: invokespecial #313                // Method net/minecraft/client/model/SkullModel."<init>":(Lnet/minecraft/client/model/geom/ModelPart;)V
+     128: invokevirtual #316                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$CreateSkullModels.registerSkullModel:(Lnet/minecraft/world/level/block/SkullBlock$Type;Lnet/minecraft/client/model/SkullModelBase;)V
+     131: aload_0
+     132: getstatic     #341                // Field org/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types.STRAY:Lorg/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types;
+     135: new           #305                // class net/minecraft/client/model/SkullModel
+     138: dup
+     139: aload_1
+     140: getstatic     #276                // Field org/xiyu/spartanweaponryunofficial/client/renderer/entity/ModelLayers.STRAY_SKULL:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+     143: invokevirtual #307                // Method net/minecraft/client/model/geom/EntityModelSet.bakeLayer:(Lnet/minecraft/client/model/geom/ModelLayerLocation;)Lnet/minecraft/client/model/geom/ModelPart;
+     146: invokespecial #313                // Method net/minecraft/client/model/SkullModel."<init>":(Lnet/minecraft/client/model/geom/ModelPart;)V
+     149: invokevirtual #316                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$CreateSkullModels.registerSkullModel:(Lnet/minecraft/world/level/block/SkullBlock$Type;Lnet/minecraft/client/model/SkullModelBase;)V
+     152: aload_0
+     153: getstatic     #344                // Field org/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types.DROWNED:Lorg/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types;
+     156: new           #305                // class net/minecraft/client/model/SkullModel
+     159: dup
+     160: aload_1
+     161: getstatic     #280                // Field org/xiyu/spartanweaponryunofficial/client/renderer/entity/ModelLayers.DROWNED_HEAD:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+     164: invokevirtual #307                // Method net/minecraft/client/model/geom/EntityModelSet.bakeLayer:(Lnet/minecraft/client/model/geom/ModelLayerLocation;)Lnet/minecraft/client/model/geom/ModelPart;
+     167: invokespecial #313                // Method net/minecraft/client/model/SkullModel."<init>":(Lnet/minecraft/client/model/geom/ModelPart;)V
+     170: invokevirtual #316                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$CreateSkullModels.registerSkullModel:(Lnet/minecraft/world/level/block/SkullBlock$Type;Lnet/minecraft/client/model/SkullModelBase;)V
+     173: aload_0
+     174: getstatic     #347                // Field org/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types.ILLAGER:Lorg/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types;
+     177: new           #305                // class net/minecraft/client/model/SkullModel
+     180: dup
+     181: aload_1
+     182: getstatic     #283                // Field org/xiyu/spartanweaponryunofficial/client/renderer/entity/ModelLayers.ILLAGER_HEAD:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+     185: invokevirtual #307                // Method net/minecraft/client/model/geom/EntityModelSet.bakeLayer:(Lnet/minecraft/client/model/geom/ModelLayerLocation;)Lnet/minecraft/client/model/geom/ModelPart;
+     188: invokespecial #313                // Method net/minecraft/client/model/SkullModel."<init>":(Lnet/minecraft/client/model/geom/ModelPart;)V
+     191: invokevirtual #316                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$CreateSkullModels.registerSkullModel:(Lnet/minecraft/world/level/block/SkullBlock$Type;Lnet/minecraft/client/model/SkullModelBase;)V
+     194: aload_0
+     195: getstatic     #350                // Field org/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types.WITCH:Lorg/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types;
+     198: new           #305                // class net/minecraft/client/model/SkullModel
+     201: dup
+     202: aload_1
+     203: getstatic     #287                // Field org/xiyu/spartanweaponryunofficial/client/renderer/entity/ModelLayers.WITCH_HEAD:Lnet/minecraft/client/model/geom/ModelLayerLocation;
+     206: invokevirtual #307                // Method net/minecraft/client/model/geom/EntityModelSet.bakeLayer:(Lnet/minecraft/client/model/geom/ModelLayerLocation;)Lnet/minecraft/client/model/geom/ModelPart;
+     209: invokespecial #313                // Method net/minecraft/client/model/SkullModel."<init>":(Lnet/minecraft/client/model/geom/ModelPart;)V
+     212: invokevirtual #316                // Method net/neoforged/neoforge/client/event/EntityRenderersEvent$CreateSkullModels.registerSkullModel:(Lnet/minecraft/world/level/block/SkullBlock$Type;Lnet/minecraft/client/model/SkullModelBase;)V
+     215: return
+
+  public static void registerSkullTextures();
+    Code:
+       0: getstatic     #353                // Field net/minecraft/client/renderer/blockentity/SkullBlockRenderer.SKIN_BY_TYPE:Ljava/util/Map;
+       3: getstatic     #299                // Field org/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types.BLAZE:Lorg/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types;
+       6: ldc_w         #359                // String minecraft
+       9: ldc_w         #361                // String textures/entity/blaze.png
+      12: invokestatic  #363                // Method net/minecraft/resources/ResourceLocation.tryBuild:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      15: invokeinterface #369,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      20: pop
+      21: getstatic     #353                // Field net/minecraft/client/renderer/blockentity/SkullBlockRenderer.SKIN_BY_TYPE:Ljava/util/Map;
+      24: getstatic     #320                // Field org/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types.ENDERMAN:Lorg/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types;
+      27: ldc_w         #377                // String spartan_weaponry_unofficial
+      30: ldc_w         #379                // String textures/entity/skull/enderman_head.png
+      33: invokestatic  #363                // Method net/minecraft/resources/ResourceLocation.tryBuild:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      36: invokeinterface #369,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      41: pop
+      42: getstatic     #353                // Field net/minecraft/client/renderer/blockentity/SkullBlockRenderer.SKIN_BY_TYPE:Ljava/util/Map;
+      45: getstatic     #326                // Field org/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types.SPIDER:Lorg/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types;
+      48: ldc_w         #359                // String minecraft
+      51: ldc_w         #381                // String textures/entity/spider/spider.png
+      54: invokestatic  #363                // Method net/minecraft/resources/ResourceLocation.tryBuild:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      57: invokeinterface #369,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      62: pop
+      63: getstatic     #353                // Field net/minecraft/client/renderer/blockentity/SkullBlockRenderer.SKIN_BY_TYPE:Ljava/util/Map;
+      66: getstatic     #329                // Field org/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types.CAVE_SPIDER:Lorg/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types;
+      69: ldc_w         #359                // String minecraft
+      72: ldc_w         #383                // String textures/entity/spider/cave_spider.png
+      75: invokestatic  #363                // Method net/minecraft/resources/ResourceLocation.tryBuild:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      78: invokeinterface #369,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      83: pop
+      84: getstatic     #353                // Field net/minecraft/client/renderer/blockentity/SkullBlockRenderer.SKIN_BY_TYPE:Ljava/util/Map;
+      87: getstatic     #332                // Field org/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types.ZOMBIE_PIGLIN:Lorg/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types;
+      90: ldc_w         #359                // String minecraft
+      93: ldc_w         #385                // String textures/entity/piglin/zombified_piglin.png
+      96: invokestatic  #363                // Method net/minecraft/resources/ResourceLocation.tryBuild:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      99: invokeinterface #369,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     104: pop
+     105: getstatic     #353                // Field net/minecraft/client/renderer/blockentity/SkullBlockRenderer.SKIN_BY_TYPE:Ljava/util/Map;
+     108: getstatic     #338                // Field org/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types.HUSK:Lorg/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types;
+     111: ldc_w         #359                // String minecraft
+     114: ldc_w         #387                // String textures/entity/zombie/husk.png
+     117: invokestatic  #389                // Method net/minecraft/resources/ResourceLocation.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+     120: invokeinterface #369,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     125: pop
+     126: getstatic     #353                // Field net/minecraft/client/renderer/blockentity/SkullBlockRenderer.SKIN_BY_TYPE:Ljava/util/Map;
+     129: getstatic     #341                // Field org/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types.STRAY:Lorg/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types;
+     132: ldc_w         #377                // String spartan_weaponry_unofficial
+     135: ldc_w         #392                // String textures/entity/skull/stray_skull.png
+     138: invokestatic  #389                // Method net/minecraft/resources/ResourceLocation.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+     141: invokeinterface #369,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     146: pop
+     147: getstatic     #353                // Field net/minecraft/client/renderer/blockentity/SkullBlockRenderer.SKIN_BY_TYPE:Ljava/util/Map;
+     150: getstatic     #344                // Field org/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types.DROWNED:Lorg/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types;
+     153: ldc_w         #377                // String spartan_weaponry_unofficial
+     156: ldc_w         #394                // String textures/entity/skull/drowned_head.png
+     159: invokestatic  #389                // Method net/minecraft/resources/ResourceLocation.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+     162: invokeinterface #369,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     167: pop
+     168: getstatic     #353                // Field net/minecraft/client/renderer/blockentity/SkullBlockRenderer.SKIN_BY_TYPE:Ljava/util/Map;
+     171: getstatic     #347                // Field org/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types.ILLAGER:Lorg/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types;
+     174: ldc_w         #359                // String minecraft
+     177: ldc_w         #396                // String textures/entity/illager/pillager.png
+     180: invokestatic  #389                // Method net/minecraft/resources/ResourceLocation.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+     183: invokeinterface #369,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     188: pop
+     189: getstatic     #353                // Field net/minecraft/client/renderer/blockentity/SkullBlockRenderer.SKIN_BY_TYPE:Ljava/util/Map;
+     192: getstatic     #350                // Field org/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types.WITCH:Lorg/xiyu/spartanweaponryunofficial/block/ExtendedSkullBlock$Types;
+     195: ldc_w         #359                // String minecraft
+     198: ldc_w         #398                // String textures/entity/witch.png
+     201: invokestatic  #389                // Method net/minecraft/resources/ResourceLocation.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+     204: invokeinterface #369,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     209: pop
+     210: return
+
+  public static void registerScreens(net.neoforged.neoforge.client.event.RegisterMenuScreensEvent);
+    Code:
+       0: aload_0
+       1: getstatic     #400                // Field org/xiyu/spartanweaponryunofficial/init/ModMenus.QUIVER_ARROW:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       4: invokevirtual #33                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+       7: checkcast     #405                // class net/minecraft/world/inventory/MenuType
+      10: invokedynamic #407,  0            // InvokeDynamic #34:create:()Lnet/minecraft/client/gui/screens/MenuScreens$ScreenConstructor;
+      15: invokevirtual #410                // Method net/neoforged/neoforge/client/event/RegisterMenuScreensEvent.register:(Lnet/minecraft/world/inventory/MenuType;Lnet/minecraft/client/gui/screens/MenuScreens$ScreenConstructor;)V
+      18: aload_0
+      19: getstatic     #415                // Field org/xiyu/spartanweaponryunofficial/init/ModMenus.QUIVER_BOLT:Lnet/neoforged/neoforge/registries/DeferredHolder;
+      22: invokevirtual #33                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      25: checkcast     #405                // class net/minecraft/world/inventory/MenuType
+      28: invokedynamic #418,  0            // InvokeDynamic #35:create:()Lnet/minecraft/client/gui/screens/MenuScreens$ScreenConstructor;
+      33: invokevirtual #410                // Method net/neoforged/neoforge/client/event/RegisterMenuScreensEvent.register:(Lnet/minecraft/world/inventory/MenuType;Lnet/minecraft/client/gui/screens/MenuScreens$ScreenConstructor;)V
+      36: return
+
+  public static void registerHudOverlays(net.neoforged.neoforge.client.event.RegisterGuiLayersEvent);
+    Code:
+       0: aload_0
+       1: ldc_w         #377                // String spartan_weaponry_unofficial
+       4: ldc_w         #419                // String load_state
+       7: invokestatic  #389                // Method net/minecraft/resources/ResourceLocation.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      10: getstatic     #421                // Field LOAD_STATE:Lnet/minecraft/client/gui/LayeredDraw$Layer;
+      13: invokevirtual #425                // Method net/neoforged/neoforge/client/event/RegisterGuiLayersEvent.registerAboveAll:(Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/gui/LayeredDraw$Layer;)V
+      16: aload_0
+      17: ldc_w         #377                // String spartan_weaponry_unofficial
+      20: ldc_w         #431                // String quiver_ammo
+      23: invokestatic  #389                // Method net/minecraft/resources/ResourceLocation.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      26: getstatic     #433                // Field QUIVER_AMMO:Lnet/minecraft/client/gui/LayeredDraw$Layer;
+      29: invokevirtual #425                // Method net/neoforged/neoforge/client/event/RegisterGuiLayersEvent.registerAboveAll:(Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/gui/LayeredDraw$Layer;)V
+      32: aload_0
+      33: ldc_w         #377                // String spartan_weaponry_unofficial
+      36: ldc_w         #436                // String oil_uses
+      39: invokestatic  #389                // Method net/minecraft/resources/ResourceLocation.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      42: getstatic     #438                // Field OIL_USES:Lnet/minecraft/client/gui/LayeredDraw$Layer;
+      45: invokevirtual #425                // Method net/neoforged/neoforge/client/event/RegisterGuiLayersEvent.registerAboveAll:(Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/gui/LayeredDraw$Layer;)V
+      48: aload_0
+      49: getstatic     #441                // Field net/neoforged/neoforge/client/gui/VanillaGuiLayers.CROSSHAIR:Lnet/minecraft/resources/ResourceLocation;
+      52: ldc_w         #377                // String spartan_weaponry_unofficial
+      55: ldc_w         #446                // String crosshair
+      58: invokestatic  #389                // Method net/minecraft/resources/ResourceLocation.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      61: getstatic     #448                // Field NEW_CROSSHAIR:Lnet/minecraft/client/gui/LayeredDraw$Layer;
+      64: invokevirtual #451                // Method net/neoforged/neoforge/client/event/RegisterGuiLayersEvent.registerAbove:(Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/client/gui/LayeredDraw$Layer;)V
+      67: return
+
+  public static void registerTooltipComponents(net.neoforged.neoforge.client.event.RegisterClientTooltipComponentFactoriesEvent);
+    Code:
+       0: aload_0
+       1: ldc_w         #455                // class org/xiyu/spartanweaponryunofficial/inventory/tooltip/QuiverTooltip
+       4: invokedynamic #457,  0            // InvokeDynamic #36:apply:()Ljava/util/function/Function;
+       9: invokevirtual #461                // Method net/neoforged/neoforge/client/event/RegisterClientTooltipComponentFactoriesEvent.register:(Ljava/lang/Class;Ljava/util/function/Function;)V
+      12: aload_0
+      13: ldc_w         #466                // class org/xiyu/spartanweaponryunofficial/inventory/tooltip/OilCoatingTooltip
+      16: invokedynamic #468,  0            // InvokeDynamic #37:apply:()Ljava/util/function/Function;
+      21: invokevirtual #461                // Method net/neoforged/neoforge/client/event/RegisterClientTooltipComponentFactoriesEvent.register:(Ljava/lang/Class;Ljava/util/function/Function;)V
+      24: return
+
+  private static net.minecraft.client.model.geom.builders.LayerDefinition lambda$registerModelLayers$14();
+    Code:
+       0: invokestatic  #469                // Method net/minecraft/client/model/PiglinHeadModel.createHeadModel:()Lnet/minecraft/client/model/geom/builders/MeshDefinition;
+       3: bipush        64
+       5: bipush        64
+       7: invokestatic  #473                // Method net/minecraft/client/model/geom/builders/LayerDefinition.create:(Lnet/minecraft/client/model/geom/builders/MeshDefinition;II)Lnet/minecraft/client/model/geom/builders/LayerDefinition;
+      10: areturn
+
+  private static net.minecraft.client.renderer.entity.EntityRenderer lambda$registerEntityRenders$13(net.minecraft.client.renderer.entity.EntityRendererProvider$Context);
+    Code:
+       0: new           #478                // class org/xiyu/spartanweaponryunofficial/client/renderer/entity/SimpleArrowRenderer
+       3: dup
+       4: aload_0
+       5: ldc_w         #377                // String spartan_weaponry_unofficial
+       8: ldc_w         #480                // String textures/entity/projectiles/explosive_arrow.png
+      11: invokestatic  #363                // Method net/minecraft/resources/ResourceLocation.tryBuild:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      14: invokespecial #482                // Method org/xiyu/spartanweaponryunofficial/client/renderer/entity/SimpleArrowRenderer."<init>":(Lnet/minecraft/client/renderer/entity/EntityRendererProvider$Context;Lnet/minecraft/resources/ResourceLocation;)V
+      17: areturn
+
+  private static float lambda$registerQuiverPropertyOverrides$12(org.xiyu.spartanweaponryunofficial.item.QuiverBaseItem, net.minecraft.world.item.ItemStack, net.minecraft.client.multiplayer.ClientLevel, net.minecraft.world.entity.LivingEntity, int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #485                // Method org/xiyu/spartanweaponryunofficial/item/QuiverBaseItem.getAmmoCount:(Lnet/minecraft/world/item/ItemStack;)I
+       5: i2f
+       6: freturn
+
+  private static float lambda$registerThrowingWeaponPropertyOverrides$11(org.xiyu.spartanweaponryunofficial.item.ThrowingWeaponItem, net.minecraft.world.item.ItemStack, net.minecraft.client.multiplayer.ClientLevel, net.minecraft.world.entity.LivingEntity, int);
+    Code:
+       0: aload_2
+       1: ifnull        8
+       4: aload_2
+       5: goto          14
+       8: invokestatic  #491                // Method net/minecraft/client/Minecraft.getInstance:()Lnet/minecraft/client/Minecraft;
+      11: getfield      #497                // Field net/minecraft/client/Minecraft.level:Lnet/minecraft/client/multiplayer/ClientLevel;
+      14: astore        5
+      16: aload_1
+      17: invokestatic  #501                // Method org/xiyu/spartanweaponryunofficial/util/ItemStackDataHelper.getTag:(Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/nbt/CompoundTag;
+      20: ldc_w         #509                // String AmmoUsed
+      23: invokevirtual #511                // Method net/minecraft/nbt/CompoundTag.getInt:(Ljava/lang/String;)I
+      26: aload_0
+      27: aload_1
+      28: aload         5
+      30: invokevirtual #517                // Method org/xiyu/spartanweaponryunofficial/item/ThrowingWeaponItem.getMaxAmmo:(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;)I
+      33: if_icmpne     40
+      36: fconst_1
+      37: goto          41
+      40: fconst_0
+      41: freturn
+
+  private static float lambda$registerThrowingWeaponPropertyOverrides$10(net.minecraft.world.item.ItemStack, net.minecraft.client.multiplayer.ClientLevel, net.minecraft.world.entity.LivingEntity, int);
+    Code:
+       0: aload_2
+       1: ifnull        18
+       4: aload_0
+       5: aload_2
+       6: invokevirtual #521                // Method net/minecraft/world/entity/LivingEntity.getUseItem:()Lnet/minecraft/world/item/ItemStack;
+       9: invokevirtual #527                // Method net/minecraft/world/item/ItemStack.getItem:()Lnet/minecraft/world/item/Item;
+      12: invokevirtual #533                // Method net/minecraft/world/item/ItemStack.is:(Lnet/minecraft/world/item/Item;)Z
+      15: ifne          20
+      18: fconst_0
+      19: freturn
+      20: aload_2
+      21: invokevirtual #537                // Method net/minecraft/world/entity/LivingEntity.isUsingItem:()Z
+      24: ifeq          31
+      27: fconst_1
+      28: goto          32
+      31: fconst_0
+      32: freturn
+
+  private static float lambda$registerLongbowPropertyOverrides$9(org.xiyu.spartanweaponryunofficial.item.LongbowItem, net.minecraft.world.item.ItemStack, net.minecraft.client.multiplayer.ClientLevel, net.minecraft.world.entity.LivingEntity, int);
+    Code:
+       0: aload_3
+       1: ifnull        21
+       4: aload_3
+       5: invokevirtual #521                // Method net/minecraft/world/entity/LivingEntity.getUseItem:()Lnet/minecraft/world/item/ItemStack;
+       8: aload_1
+       9: if_acmpne     21
+      12: aload_0
+      13: aload_1
+      14: aload_3
+      15: invokevirtual #541                // Method org/xiyu/spartanweaponryunofficial/item/LongbowItem.getNockProgress:(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/LivingEntity;)F
+      18: goto          22
+      21: fconst_0
+      22: freturn
+
+  private static float lambda$registerLongbowPropertyOverrides$8(net.minecraft.world.item.ItemStack, net.minecraft.client.multiplayer.ClientLevel, net.minecraft.world.entity.LivingEntity, int);
+    Code:
+       0: aload_2
+       1: ifnull        23
+       4: aload_2
+       5: invokevirtual #537                // Method net/minecraft/world/entity/LivingEntity.isUsingItem:()Z
+       8: ifeq          23
+      11: aload_2
+      12: invokevirtual #521                // Method net/minecraft/world/entity/LivingEntity.getUseItem:()Lnet/minecraft/world/item/ItemStack;
+      15: aload_0
+      16: if_acmpne     23
+      19: fconst_1
+      20: goto          24
+      23: fconst_0
+      24: freturn
+
+  private static float lambda$registerHeavyCrossbowPropertyOverrides$7(org.xiyu.spartanweaponryunofficial.item.HeavyCrossbowItem, net.minecraft.world.item.ItemStack, net.minecraft.client.multiplayer.ClientLevel, net.minecraft.world.entity.LivingEntity, int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #547                // Method org/xiyu/spartanweaponryunofficial/item/HeavyCrossbowItem.isLoaded:(Lnet/minecraft/world/item/ItemStack;)Z
+       5: ifeq          12
+       8: fconst_1
+       9: goto          13
+      12: fconst_0
+      13: freturn
+
+  private static float lambda$registerHeavyCrossbowPropertyOverrides$6(net.minecraft.world.item.ItemStack, net.minecraft.client.multiplayer.ClientLevel, net.minecraft.world.entity.LivingEntity, int);
+    Code:
+       0: aload_2
+       1: ifnull        23
+       4: aload_2
+       5: invokevirtual #537                // Method net/minecraft/world/entity/LivingEntity.isUsingItem:()Z
+       8: ifeq          23
+      11: aload_2
+      12: invokevirtual #521                // Method net/minecraft/world/entity/LivingEntity.getUseItem:()Lnet/minecraft/world/item/ItemStack;
+      15: aload_0
+      16: if_acmpne     23
+      19: fconst_1
+      20: goto          24
+      23: fconst_0
+      24: freturn
+
+  private static float lambda$registerHeavyCrossbowPropertyOverrides$5(org.xiyu.spartanweaponryunofficial.item.HeavyCrossbowItem, net.minecraft.world.item.ItemStack, net.minecraft.client.multiplayer.ClientLevel, net.minecraft.world.entity.LivingEntity, int);
+    Code:
+       0: aload_3
+       1: ifnull        32
+       4: aload_0
+       5: aload_1
+       6: invokevirtual #547                // Method org/xiyu/spartanweaponryunofficial/item/HeavyCrossbowItem.isLoaded:(Lnet/minecraft/world/item/ItemStack;)Z
+       9: ifeq          16
+      12: fconst_0
+      13: goto          31
+      16: aload_0
+      17: aload_1
+      18: aload_3
+      19: invokevirtual #553                // Method org/xiyu/spartanweaponryunofficial/item/HeavyCrossbowItem.getLoadingTicks:(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/LivingEntity;)I
+      22: i2f
+      23: aload_0
+      24: aload_1
+      25: aload_2
+      26: invokevirtual #557                // Method org/xiyu/spartanweaponryunofficial/item/HeavyCrossbowItem.getFullLoadTicks:(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;)I
+      29: i2f
+      30: fdiv
+      31: freturn
+      32: fconst_0
+      33: freturn
+
+  private static float lambda$registerMeleeWeaponPropertyOverrides$4(org.xiyu.spartanweaponryunofficial.item.SwordBaseItem, net.minecraft.world.item.ItemStack, net.minecraft.client.multiplayer.ClientLevel, net.minecraft.world.entity.LivingEntity, int);
+    Code:
+       0: aload_3
+       1: ifnull        34
+       4: aload_0
+       5: getstatic     #560                // Field org/xiyu/spartanweaponryunofficial/api/WeaponTraits.THROWABLE:Lnet/neoforged/neoforge/registries/DeferredHolder;
+       8: invokevirtual #33                 // Method net/neoforged/neoforge/registries/DeferredHolder.get:()Ljava/lang/Object;
+      11: checkcast     #565                // class org/xiyu/spartanweaponryunofficial/api/trait/WeaponTrait
+      14: invokevirtual #567                // Method org/xiyu/spartanweaponryunofficial/item/SwordBaseItem.hasWeaponTrait:(Lorg/xiyu/spartanweaponryunofficial/api/trait/WeaponTrait;)Z
+      17: ifeq          34
+      20: aload_1
+      21: aload_3
+      22: invokevirtual #521                // Method net/minecraft/world/entity/LivingEntity.getUseItem:()Lnet/minecraft/world/item/ItemStack;
+      25: invokevirtual #527                // Method net/minecraft/world/item/ItemStack.getItem:()Lnet/minecraft/world/item/Item;
+      28: invokevirtual #533                // Method net/minecraft/world/item/ItemStack.is:(Lnet/minecraft/world/item/Item;)Z
+      31: ifne          36
+      34: fconst_0
+      35: freturn
+      36: aload_3
+      37: invokevirtual #537                // Method net/minecraft/world/entity/LivingEntity.isUsingItem:()Z
+      40: ifeq          47
+      43: fconst_1
+      44: goto          48
+      47: fconst_0
+      48: freturn
+
+  private static float lambda$registerMeleeWeaponPropertyOverrides$3(org.xiyu.spartanweaponryunofficial.item.SwordBaseItem, net.minecraft.world.item.ItemStack, net.minecraft.client.multiplayer.ClientLevel, net.minecraft.world.entity.LivingEntity, int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: getstatic     #571                // Field org/xiyu/spartanweaponryunofficial/api/ModToolActions.MELEE_BLOCK:Lnet/neoforged/neoforge/common/ItemAbility;
+       5: invokevirtual #577                // Method org/xiyu/spartanweaponryunofficial/item/SwordBaseItem.canPerformAction:(Lnet/minecraft/world/item/ItemStack;Lnet/neoforged/neoforge/common/ItemAbility;)Z
+       8: ifeq          34
+      11: aload_3
+      12: ifnull        34
+      15: aload_3
+      16: invokevirtual #537                // Method net/minecraft/world/entity/LivingEntity.isUsingItem:()Z
+      19: ifeq          34
+      22: aload_3
+      23: invokevirtual #521                // Method net/minecraft/world/entity/LivingEntity.getUseItem:()Lnet/minecraft/world/item/ItemStack;
+      26: aload_1
+      27: if_acmpne     34
+      30: fconst_1
+      31: goto          35
+      34: fconst_0
+      35: freturn
+
+  private static int lambda$static$2(net.minecraft.world.item.ItemStack, int);
+    Code:
+       0: aload_0
+       1: invokestatic  #581                // Method org/xiyu/spartanweaponryunofficial/util/OilHelper.getOilFromStack:(Lnet/minecraft/world/item/ItemStack;)Lorg/xiyu/spartanweaponryunofficial/api/oil/OilEffect;
+       4: astore_2
+       5: aload_2
+       6: aload_0
+       7: invokevirtual #587                // Method org/xiyu/spartanweaponryunofficial/api/oil/OilEffect.getColor:(Lnet/minecraft/world/item/ItemStack;)I
+      10: istore_3
+      11: iload_1
+      12: iconst_1
+      13: if_icmpne     24
+      16: ldc_w         #592                // int -16777216
+      19: iload_3
+      20: ior
+      21: goto          25
+      24: iconst_m1
+      25: ireturn
+
+  private static int lambda$static$1(net.minecraft.world.item.ItemStack, int);
+    Code:
+       0: iload_1
+       1: iconst_1
+       2: if_icmpne     24
+       5: aload_0
+       6: getstatic     #593                // Field net/minecraft/core/component/DataComponents.POTION_CONTENTS:Lnet/minecraft/core/component/DataComponentType;
+       9: getstatic     #599                // Field net/minecraft/world/item/alchemy/PotionContents.EMPTY:Lnet/minecraft/world/item/alchemy/PotionContents;
+      12: invokevirtual #604                // Method net/minecraft/world/item/ItemStack.getOrDefault:(Lnet/minecraft/core/component/DataComponentType;Ljava/lang/Object;)Ljava/lang/Object;
+      15: checkcast     #600                // class net/minecraft/world/item/alchemy/PotionContents
+      18: invokevirtual #608                // Method net/minecraft/world/item/alchemy/PotionContents.getColor:()I
+      21: goto          25
+      24: iconst_m1
+      25: ireturn
+
+  private static net.minecraft.client.gui.screens.Screen lambda$registerConfigScreen$0(net.neoforged.fml.ModContainer, net.minecraft.client.gui.screens.Screen);
+    Code:
+       0: new           #611                // class net/neoforged/neoforge/client/gui/ConfigurationScreen
+       3: dup
+       4: aload_0
+       5: aload_1
+       6: invokespecial #613                // Method net/neoforged/neoforge/client/gui/ConfigurationScreen."<init>":(Lnet/neoforged/fml/ModContainer;Lnet/minecraft/client/gui/screens/Screen;)V
+       9: astore_2
+      10: aload_2
+      11: putstatic     #616                // Field lastConfigScreen:Lnet/minecraft/client/gui/screens/Screen;
+      14: aload_2
+      15: areturn
+
+  static {};
+    Code:
+       0: aconst_null
+       1: putstatic     #616                // Field lastConfigScreen:Lnet/minecraft/client/gui/screens/Screen;
+       4: invokedynamic #620,  0            // InvokeDynamic #38:render:()Lnet/minecraft/client/gui/LayeredDraw$Layer;
+       9: putstatic     #421                // Field LOAD_STATE:Lnet/minecraft/client/gui/LayeredDraw$Layer;
+      12: invokedynamic #624,  0            // InvokeDynamic #39:render:()Lnet/minecraft/client/gui/LayeredDraw$Layer;
+      17: putstatic     #433                // Field QUIVER_AMMO:Lnet/minecraft/client/gui/LayeredDraw$Layer;
+      20: invokedynamic #625,  0            // InvokeDynamic #40:render:()Lnet/minecraft/client/gui/LayeredDraw$Layer;
+      25: putstatic     #438                // Field OIL_USES:Lnet/minecraft/client/gui/LayeredDraw$Layer;
+      28: invokedynamic #626,  0            // InvokeDynamic #41:render:()Lnet/minecraft/client/gui/LayeredDraw$Layer;
+      33: putstatic     #448                // Field NEW_CROSSHAIR:Lnet/minecraft/client/gui/LayeredDraw$Layer;
+      36: invokedynamic #627,  0            // InvokeDynamic #42:getColor:()Lnet/minecraft/client/color/item/ItemColor;
+      41: putstatic     #19                 // Field COLOR_TIPPED_PROJECTILE:Lnet/minecraft/client/color/item/ItemColor;
+      44: invokedynamic #630,  0            // InvokeDynamic #43:getColor:()Lnet/minecraft/client/color/item/ItemColor;
+      49: putstatic     #69                 // Field COLOR_OIL:Lnet/minecraft/client/color/item/ItemColor;
+      52: return
+}

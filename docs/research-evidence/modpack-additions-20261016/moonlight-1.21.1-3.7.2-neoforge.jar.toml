@@ -1,0 +1,33 @@
+
+modLoader = "javafml"
+
+license = "Supplementaries Team License v.1.5"
+issueTrackerURL = "https://github.com/MehVahdJukaar/moonlight/issues"
+loaderVersion = "*"
+
+[[mixins]]
+config = "moonlight.mixins.json"
+[[mixins]]
+config = "moonlight-common.mixins.json"
+
+[[mods]]
+modId = "moonlight"
+version = "1.21.1-3.7.2"
+displayName = "Moonlight Lib"
+logoFile = "icon.png"
+iconFile = "icon.png"
+authors = "MehVahdJukaar"
+credits = "MehVahdJukaar"
+description = '''A small library with many cool unique features, from dynamic asset generation to dynamic villager schedules, data driven trades and Map Markers, simple multi loader utilities and more'''
+modUrl = "https://www.curseforge.com/minecraft/mc-mods/selene"
+
+
+[[dependencies.moonlight]]
+    modId = "minecraft"
+    type = "required"
+    versionRange = "[1.21.1]"
+    ordering = "NONE"
+    side = "BOTH"
+
+
+

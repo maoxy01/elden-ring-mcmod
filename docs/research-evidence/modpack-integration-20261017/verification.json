@@ -1,0 +1,36 @@
+{
+  "status": "static_verified_runtime_pending",
+  "verifiedThirdPartyFiles": 14,
+  "missingRequiredModIds": 0,
+  "rangeDeclarationsChecked": 55,
+  "versionSupportMatrixFallbacks": [
+    {
+      "owner": "iris",
+      "range": "[1.21,1.21.1)",
+      "actual": "1.21.1",
+      "acceptedAs": "1.21"
+    },
+    {
+      "owner": "jei",
+      "range": "[1.21, 1.21.1)",
+      "actual": "1.21.1",
+      "acceptedAs": "1.21"
+    }
+  ],
+  "runtimeTested": false,
+  "sides": {
+    "client": {
+      "jars": 15,
+      "requiredDependencyDeclarations": 55,
+      "missingModIds": [],
+      "runtimeTested": false
+    },
+    "server": {
+      "jars": 10,
+      "requiredDependencyDeclarations": 18,
+      "missingModIds": [],
+      "runtimeTested": false
+    }
+  },
+  "baselineUnchanged": true
+}

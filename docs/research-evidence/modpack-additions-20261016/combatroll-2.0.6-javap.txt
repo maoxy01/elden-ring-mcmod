@@ -1,0 +1,281 @@
+Compiled from "ServerConfig.java"
+public class net.combat_roll.config.ServerConfig implements me.shedaniel.autoconfig.ConfigData {
+  public int invulnerable_ticks_upon_roll;
+
+  public int roll_duration;
+
+  public boolean allow_auto_jump_while_rolling;
+
+  public boolean allow_jump_while_rolling;
+
+  public boolean allow_rolling_while_weapon_cooldown;
+
+  public boolean allow_rolling_while_airborn;
+
+  public float exhaust_on_roll;
+
+  public float food_level_required;
+
+  public float roll_cooldown;
+
+  public float additional_roll_distance;
+
+  public net.combat_roll.config.ServerConfig();
+    Code:
+       0: aload_0
+       1: invokespecial #39                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: iconst_0
+       6: putfield      #41                 // Field invulnerable_ticks_upon_roll:I
+       9: aload_0
+      10: bipush        8
+      12: putfield      #43                 // Field roll_duration:I
+      15: aload_0
+      16: iconst_1
+      17: putfield      #45                 // Field allow_auto_jump_while_rolling:Z
+      20: aload_0
+      21: iconst_0
+      22: putfield      #47                 // Field allow_jump_while_rolling:Z
+      25: aload_0
+      26: iconst_0
+      27: putfield      #49                 // Field allow_rolling_while_weapon_cooldown:Z
+      30: aload_0
+      31: iconst_0
+      32: putfield      #51                 // Field allow_rolling_while_airborn:Z
+      35: aload_0
+      36: ldc           #52                 // float 0.1f
+      38: putfield      #54                 // Field exhaust_on_roll:F
+      41: aload_0
+      42: ldc           #55                 // float 6.0f
+      44: putfield      #57                 // Field food_level_required:F
+      47: aload_0
+      48: ldc           #58                 // float 4.0f
+      50: putfield      #60                 // Field roll_cooldown:F
+      53: aload_0
+      54: fconst_0
+      55: putfield      #62                 // Field additional_roll_distance:F
+      58: return
+}
+Compiled from "ServerNetwork.java"
+public class net.combat_roll.network.ServerNetwork {
+  public static java.lang.String configSerialized;
+
+  public net.combat_roll.network.ServerNetwork();
+    Code:
+       0: aload_0
+       1: invokespecial #47                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void initializeHandlers();
+    Code:
+       0: getstatic     #56                 // Field net/combat_roll/CombatRollMod.config:Lnet/combat_roll/config/ServerConfig;
+       3: invokestatic  #60                 // Method net/combat_roll/network/Packets$ConfigSync.serialize:(Lnet/combat_roll/config/ServerConfig;)Ljava/lang/String;
+       6: putstatic     #62                 // Field configSerialized:Ljava/lang/String;
+       9: return
+
+  public static void handleRollPublish(net.combat_roll.network.Packets$RollPublish, net.minecraft.server.MinecraftServer, net.minecraft.server.level.ServerPlayer);
+    Code:
+       0: aload_1
+       1: invokevirtual #73                 // Method net/minecraft/server/MinecraftServer.getAllLevels:()Ljava/lang/Iterable;
+       4: aload_2
+       5: invokedynamic #93,  0             // InvokeDynamic #0:apply:(Lnet/minecraft/server/level/ServerPlayer;)Lcom/google/common/base/Predicate;
+      10: invokestatic  #99                 // Method com/google/common/collect/Iterables.tryFind:(Ljava/lang/Iterable;Lcom/google/common/base/Predicate;)Lcom/google/common/base/Optional;
+      13: invokevirtual #105                // Method com/google/common/base/Optional.orNull:()Ljava/lang/Object;
+      16: checkcast     #107                // class net/minecraft/server/level/ServerLevel
+      19: astore_3
+      20: aload_0
+      21: invokevirtual #111                // Method net/combat_roll/network/Packets$RollPublish.velocity:()Lnet/minecraft/world/phys/Vec3;
+      24: astore        4
+      26: new           #15                 // class net/combat_roll/network/Packets$RollAnimation
+      29: dup
+      30: aload_2
+      31: invokevirtual #117                // Method net/minecraft/server/level/ServerPlayer.getId:()I
+      34: aload_0
+      35: invokevirtual #121                // Method net/combat_roll/network/Packets$RollPublish.visuals:()Lnet/combat_roll/client/RollEffect$Visuals;
+      38: aload_0
+      39: invokevirtual #111                // Method net/combat_roll/network/Packets$RollPublish.velocity:()Lnet/minecraft/world/phys/Vec3;
+      42: invokespecial #124                // Method net/combat_roll/network/Packets$RollAnimation."<init>":(ILnet/combat_roll/client/RollEffect$Visuals;Lnet/minecraft/world/phys/Vec3;)V
+      45: astore        5
+      47: aload_2
+      48: invokestatic  #130                // Method net/combat_roll/Platform.tracking:(Lnet/minecraft/server/level/ServerPlayer;)Ljava/util/Collection;
+      51: aload_2
+      52: aload         5
+      54: invokedynamic #143,  0            // InvokeDynamic #1:accept:(Lnet/minecraft/server/level/ServerPlayer;Lnet/combat_roll/network/Packets$RollAnimation;)Ljava/util/function/Consumer;
+      59: invokeinterface #149,  2          // InterfaceMethod java/util/Collection.forEach:(Ljava/util/function/Consumer;)V
+      64: aload_3
+      65: invokevirtual #153                // Method net/minecraft/server/level/ServerLevel.getServer:()Lnet/minecraft/server/MinecraftServer;
+      68: aload_2
+      69: aload         4
+      71: invokedynamic #163,  0            // InvokeDynamic #2:run:(Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/phys/Vec3;)Ljava/lang/Runnable;
+      76: invokevirtual #167                // Method net/minecraft/server/MinecraftServer.executeIfPossible:(Ljava/lang/Runnable;)V
+      79: return
+
+  private static void lambda$handleRollPublish$3(net.minecraft.server.level.ServerPlayer, net.minecraft.world.phys.Vec3);
+    Code:
+       0: aload_0
+       1: checkcast     #177                // class net/combat_roll/api/RollInvulnerable
+       4: getstatic     #56                 // Field net/combat_roll/CombatRollMod.config:Lnet/combat_roll/config/ServerConfig;
+       7: getfield      #183                // Field net/combat_roll/config/ServerConfig.invulnerable_ticks_upon_roll:I
+      10: invokeinterface #187,  2          // InterfaceMethod net/combat_roll/api/RollInvulnerable.setRollInvulnerableTicks:(I)V
+      15: aload_0
+      16: getstatic     #56                 // Field net/combat_roll/CombatRollMod.config:Lnet/combat_roll/config/ServerConfig;
+      19: getfield      #191                // Field net/combat_roll/config/ServerConfig.exhaust_on_roll:F
+      22: invokevirtual #195                // Method net/minecraft/server/level/ServerPlayer.causeFoodExhaustion:(F)V
+      25: getstatic     #199                // Field net/combat_roll/api/event/ServerSideRollEvents.PLAYER_START_ROLLING:Lnet/combat_roll/api/event/Event;
+      28: checkcast     #23                 // class net/combat_roll/api/event/Event$Proxy
+      31: astore_2
+      32: aload_2
+      33: getfield      #203                // Field net/combat_roll/api/event/Event$Proxy.handlers:Ljava/util/List;
+      36: aload_0
+      37: aload_1
+      38: invokedynamic #213,  0            // InvokeDynamic #3:accept:(Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/phys/Vec3;)Ljava/util/function/Consumer;
+      43: invokeinterface #216,  2          // InterfaceMethod java/util/List.forEach:(Ljava/util/function/Consumer;)V
+      48: return
+
+  private static void lambda$handleRollPublish$2(net.minecraft.server.level.ServerPlayer, net.minecraft.world.phys.Vec3, net.combat_roll.api.event.ServerSideRollEvents$PlayerStartRolling);
+    Code:
+       0: aload_2
+       1: aload_0
+       2: aload_1
+       3: invokeinterface #223,  3          // InterfaceMethod net/combat_roll/api/event/ServerSideRollEvents$PlayerStartRolling.onPlayerStartedRolling:(Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/phys/Vec3;)V
+       8: return
+
+  private static void lambda$handleRollPublish$1(net.minecraft.server.level.ServerPlayer, net.combat_roll.network.Packets$RollAnimation, net.minecraft.server.level.ServerPlayer);
+    Code:
+       0: aload_2
+       1: invokevirtual #117                // Method net/minecraft/server/level/ServerPlayer.getId:()I
+       4: aload_0
+       5: invokevirtual #117                // Method net/minecraft/server/level/ServerPlayer.getId:()I
+       8: if_icmpeq     26
+      11: aload_2
+      12: getstatic     #231                // Field net/combat_roll/network/Packets$RollAnimation.PACKET_ID:Lnet/minecraft/network/protocol/common/custom/CustomPacketPayload$Type;
+      15: invokestatic  #235                // Method net/combat_roll/Platform.networkS2C_CanSend:(Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/network/protocol/common/custom/CustomPacketPayload$Type;)Z
+      18: ifeq          26
+      21: aload_2
+      22: aload_1
+      23: invokestatic  #239                // Method net/combat_roll/Platform.networkS2C_Send:(Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/network/protocol/common/custom/CustomPacketPayload;)V
+      26: goto          34
+      29: astore_3
+      30: aload_3
+      31: invokevirtual #242                // Method java/lang/Exception.printStackTrace:()V
+      34: return
+    Exception table:
+       from    to  target type
+           0    26    29   Class java/lang/Exception
+
+  private static boolean lambda$handleRollPublish$0(net.minecraft.server.level.ServerPlayer, net.minecraft.server.level.ServerLevel);
+    Code:
+       0: aload_1
+       1: aload_0
+       2: invokevirtual #249                // Method net/minecraft/server/level/ServerPlayer.level:()Lnet/minecraft/world/level/Level;
+       5: if_acmpne     12
+       8: iconst_1
+       9: goto          13
+      12: iconst_0
+      13: ireturn
+
+  static {};
+    Code:
+       0: ldc           #252                // String
+       2: putstatic     #62                 // Field configSerialized:Ljava/lang/String;
+       5: return
+}
+Compiled from "ClientPlayerEntityMixin.java"
+public class net.combat_roll.mixin.ClientPlayerEntityMixin implements net.combat_roll.internals.RollingEntity {
+  private net.combat_roll.internals.RollManager rollManager;
+
+  protected net.minecraft.client.Minecraft minecraft;
+
+  public net.combat_roll.mixin.ClientPlayerEntityMixin();
+    Code:
+       0: aload_0
+       1: invokespecial #25                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: new           #27                 // class net/combat_roll/internals/RollManager
+       8: dup
+       9: invokespecial #28                 // Method net/combat_roll/internals/RollManager."<init>":()V
+      12: putfield      #30                 // Field rollManager:Lnet/combat_roll/internals/RollManager;
+      15: return
+
+  public net.combat_roll.internals.RollManager getRollManager();
+    Code:
+       0: aload_0
+       1: getfield      #30                 // Field rollManager:Lnet/combat_roll/internals/RollManager;
+       4: areturn
+
+  private void tick_TAIL(org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: aload_0
+       1: checkcast     #45                 // class net/minecraft/client/player/LocalPlayer
+       4: astore_2
+       5: aload_2
+       6: ifnull        17
+       9: aload_0
+      10: getfield      #30                 // Field rollManager:Lnet/combat_roll/internals/RollManager;
+      13: aload_2
+      14: invokevirtual #49                 // Method net/combat_roll/internals/RollManager.tick:(Lnet/minecraft/client/player/LocalPlayer;)V
+      17: return
+
+  private void tickMovement_ModifyInput(org.spongepowered.asm.mixin.injection.callback.CallbackInfo);
+    Code:
+       0: aload_0
+       1: checkcast     #45                 // class net/minecraft/client/player/LocalPlayer
+       4: astore_2
+       5: getstatic     #65                 // Field net/combat_roll/CombatRollMod.config:Lnet/combat_roll/config/ServerConfig;
+       8: astore_3
+       9: aload_3
+      10: getfield      #71                 // Field net/combat_roll/config/ServerConfig.allow_jump_while_rolling:Z
+      13: ifne          34
+      16: aload_0
+      17: getfield      #30                 // Field rollManager:Lnet/combat_roll/internals/RollManager;
+      20: invokevirtual #75                 // Method net/combat_roll/internals/RollManager.isRolling:()Z
+      23: ifeq          34
+      26: aload_2
+      27: getfield      #79                 // Field net/minecraft/client/player/LocalPlayer.input:Lnet/minecraft/client/player/Input;
+      30: iconst_0
+      31: putfield      #84                 // Field net/minecraft/client/player/Input.jumping:Z
+      34: return
+
+  public void shouldAutoJump_HEAD(org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable<java.lang.Boolean>);
+    Code:
+       0: getstatic     #65                 // Field net/combat_roll/CombatRollMod.config:Lnet/combat_roll/config/ServerConfig;
+       3: astore_2
+       4: aload_2
+       5: ifnull        37
+       8: aload_0
+       9: getfield      #30                 // Field rollManager:Lnet/combat_roll/internals/RollManager;
+      12: invokevirtual #75                 // Method net/combat_roll/internals/RollManager.isRolling:()Z
+      15: ifeq          37
+      18: aload_2
+      19: getfield      #96                 // Field net/combat_roll/config/ServerConfig.allow_auto_jump_while_rolling:Z
+      22: ifne          37
+      25: aload_1
+      26: iconst_0
+      27: invokestatic  #102                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+      30: invokevirtual #108                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable.setReturnValue:(Ljava/lang/Object;)V
+      33: aload_1
+      34: invokevirtual #111                // Method org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable.cancel:()V
+      37: return
+}
+Compiled from "ServerSideRollEvents.java"
+public class net.combat_roll.api.event.ServerSideRollEvents {
+  public static final net.combat_roll.api.event.Event<net.combat_roll.api.event.ServerSideRollEvents$PlayerStartRolling> PLAYER_START_ROLLING;
+
+  public net.combat_roll.api.event.ServerSideRollEvents();
+    Code:
+       0: aload_0
+       1: invokespecial #20                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  static {};
+    Code:
+       0: new           #9                  // class net/combat_roll/api/event/Event$Proxy
+       3: dup
+       4: invokespecial #24                 // Method net/combat_roll/api/event/Event$Proxy."<init>":()V
+       7: putstatic     #26                 // Field PLAYER_START_ROLLING:Lnet/combat_roll/api/event/Event;
+      10: return
+}
+Compiled from "ServerSideRollEvents.java"
+public interface net.combat_roll.api.event.ServerSideRollEvents$PlayerStartRolling {
+  public abstract void onPlayerStartedRolling(net.minecraft.server.level.ServerPlayer, net.minecraft.world.phys.Vec3);
+}

@@ -1,0 +1,472 @@
+{
+  "schemaVersion": 1,
+  "observedDate": "2026-10-18",
+  "formalReleaseApproved": false,
+  "ownJarSha256": "4d8ec7dd3d6d7de79d285dc474c407a01831877aac76203c12bdf5f893625338",
+  "candidateLockSha256": "d5e1b01fa6aa54a5aec6c5d1bc8291ab99c689b7255f2085f0e535bb3e298fb1",
+  "formalLockSha256": "e2795047bf804deff9595c03ee24f85bc75ec8518222809c532aa94a661647bf",
+  "unitTestXml": {
+    "errors": 0,
+    "suites": 37,
+    "failures": 0,
+    "skipped": 1,
+    "tests": 246
+  },
+  "testTaskActuallyExecuted": true,
+  "noHarness": true,
+  "jarDifference": {
+    "added": [
+      "com/dsh/eldencombat/compat/DntDataCompat.class",
+      "datapacks/dnt_4_4_4/data/minecraft/advancement/give_quest_trader_trade.json",
+      "datapacks/dnt_4_4_4/data/minecraft/advancement/wander_add_map.json",
+      "datapacks/dnt_4_4_4/pack.mcmeta"
+    ],
+    "changed": [],
+    "allExistingEntriesUnchanged": true,
+    "removed": []
+  },
+  "instances": [
+    {
+      "exactSetVerified": true,
+      "ownSha256": "4d8ec7dd3d6d7de79d285dc474c407a01831877aac76203c12bdf5f893625338",
+      "jarCount": 37,
+      "path": "build/modpack-expanded-20261017/pcl/.minecraft/versions/Elden Combat 0.2.0 - Vanilla Combat",
+      "name": "pcl-client",
+      "files": [
+        {
+          "sha512": "ce58f34d05d96c0a109a5cea23c741f6bdb2e6be31fc087c5989274cefca5f10ba0c08c62083cf554a51f2c7667bf46e4164383f675c844e77633aef2659996b",
+          "path": "mods/sodium-neoforge-0.6.13+mc1.21.1.jar"
+        },
+        {
+          "sha512": "57b8026a3c3c433cf6123d63dc6ce7e11f6d480a72926370db1fc7f2b06059bc16a753ecd7e7af659c19e90b592103196b0e89585ce4f0744a4ca433f59bcf1a",
+          "path": "mods/iris-neoforge-1.8.12+mc1.21.1.jar"
+        },
+        {
+          "sha512": "93e83dd690b91d610be29451b34836c9daa7e08bd952f88ffa07c62d8774bbaac2ff0c6768d2cbf1b14f47d0b86f98cef9fd341e0d29bd37207eaf4aa2abea63",
+          "path": "mods/entityculling-neoforge-1.11.3-mc1.21.1.jar"
+        },
+        {
+          "sha512": "aaf9b010955b8cd294e5a92f069985b18729fd5e2cf22d351f1dff9680f15488688803ec41e77e941cbde130ceb535014ca4c868047d80ab69c2d508e216654d",
+          "path": "mods/cloth-config-15.0.140-neoforge.jar"
+        },
+        {
+          "sha512": "19af89a2075bb10a63884fa853ebf84b02c79dc3242430ecdad056fd764fdcde367a7303276b329df01b0736e2ef264c5d80c7dc92c6aebd244f556a230bb417",
+          "path": "mods/ferritecore-7.0.3-neoforge.jar"
+        },
+        {
+          "sha512": "2735da2088b88a8bdcd4ad02a2b6fffbfd3925557cefd4fa54b5477dfb9e582ea7f521300c060f57dff1325dd21bff276b7333363ad3371ed6893e3de9eca9cd",
+          "path": "mods/lithium-neoforge-0.15.4+mc1.21.1.jar"
+        },
+        {
+          "sha512": "8bad8eb3c8e974f867e23e4d74598f603c5fbf03eb5356a386dd37cb9fa23e08ad1f58be6b7be50d2fbf9d3fbfaeac8584c70ced736df4b8f82c7c75be242998",
+          "path": "mods/jei-1.21.1-neoforge-19.27.0.340.jar"
+        },
+        {
+          "sha512": "9a231c0068318e7f62e3d5dfd81660b3f8efdcae9bcf83cfc3637c897fed29aac1941ef8007e8b29f0badfdce0c8047cfb73cd1ea486f25c69197384adfc8dcd",
+          "path": "mods/simplyswords-neoforge-1.70.2-1.21.1.jar"
+        },
+        {
+          "sha512": "ef03b411b0e1b241a9952e1a8fdac61979665953eb5f28116aac06530964e7378eb20a78594a47ba4d942c74dfa20d550c292014b5de8e63c42b882a33aef5a5",
+          "path": "mods/fzzy_config-0.7.7+1.21+neoforge.jar"
+        },
+        {
+          "sha512": "d9f7c3bb8162577dfb461ffdf04bd6a3563c7586934a0e2a744c14421beffb8286f0d88d4c758317003f20f99fe8072a39b9d675af061e036970d36db36027f0",
+          "path": "mods/architectury-13.0.11-neoforge.jar"
+        },
+        {
+          "sha512": "7be6beb5f72c03b7c9f44568c11577f2ba50aec8d16af34d860294718cd2ab550691a8e82756d96c6f0bdd1111e2de8aa68db970c5762be659ad4aec69940ebd",
+          "path": "mods/SimplyTooltips-neoforge-0.1.5.jar"
+        },
+        {
+          "sha512": "83069dc336bcc212059f753923373d9522aa5953bf4b4fe2a8cfa666b4e28d2d017daa66c4b35e315c3be8d1ad60c2872879dd47cc1f47665ebbfd102da76976",
+          "path": "mods/dungeons-and-taverns-v4.4.4.jar"
+        },
+        {
+          "sha512": "7496051c1ba98f8801b8eb81773d1baec16166c3d2c5682476bd6f9433f794095099cea609fd5610525edb7c450b1bacd0011a31763e91c77c9a0034c8245ca3",
+          "path": "mods/lootr-neoforge-1.21.1-1.11.38.127.jar"
+        },
+        {
+          "sha512": "b8c3942f4d33179edf3f102f3d870b99dd436f8b8236dbbd31aa51b888162c692cfd88927295f24dc8b4375232f4c6c17360c5d6c4823f93cbcd7cf4bdc8bd14",
+          "path": "mods/kotlinforforge-5.12.0-all.jar"
+        },
+        {
+          "sha512": "2f75b0865c6f342bc7f0fe8abb6e161befae64dd23ad73bc2ed5b6aa892055ee886d63d061afa9323f3056c5ba39621226b712d2435168c5fb8f856cebd27c16",
+          "path": "mods/combat_roll-neoforge-2.0.6+1.21.1.jar"
+        },
+        {
+          "sha512": "050917782aba18d6f5bd9cc71462e96195d2124e8a99f538ac40c45e38de69e0f95fce4efa3835b6df364ac543ede7a5ec6084b78e03fe15a072ed3cee05e4f5",
+          "path": "mods/ItemBorders-1.21-neoforge-1.2.5.jar"
+        },
+        {
+          "sha512": "76bf0a51b0cbbf0c1195db0320c741ddcd9b943d667da926b80830bbdb30ae2a0ed88f636c86323a6bd14805e5e8682b3f8eef7b0fa09ff062db272eb5297223",
+          "path": "mods/toughnessbar-1.21.1-9.jar"
+        },
+        {
+          "sha512": "3a566835aabb55a0a9256f790640ab0683b720165be05e955077b3e071704b64096111c1570a519002571302b573088a6cdc340edafc68bd3aca437e0bb257c7",
+          "path": "mods/sophisticatedbackpacks-1.21.1-3.25.21.1475.jar"
+        },
+        {
+          "sha512": "bcb478305357d973f48f539429f9b472f7ab65173bf202477e8b76bca096288dc85d4079fb690d7730e5ad3cae36532d102390b8df3230fe268678049dd4a8a8",
+          "path": "mods/sophisticatedcore-1.21.1-1.3.100.1348.jar"
+        },
+        {
+          "sha512": "822fb8cfb22fb64893f3ac9000e6c68f49ffdc2816161bca7b06db6b51d0e6839f2a20ce36cb36518519ec01a04f4f852fe8c253da3020836f99f8bf4fa55609",
+          "path": "mods/dummmmmmy-1.21-2.1.2-neoforge.jar"
+        },
+        {
+          "sha512": "6c631bc46a3f785fd43356710510a241f6b851ea7e8c59e0dbb9af8c3919a24e3e1eb2ca3075b82979ced5cad2625c92a78ac9eabbd9ff8d8161fc20ac7c7107",
+          "path": "mods/FpsReducer2-neoforge-1.21-2.10.jar"
+        },
+        {
+          "sha512": "22258e118552e690ae77ad1a13e5dfe69bf94bdd765d2e614e2e4cc7410c406866b7937b54e8475660bba858b0eadb7efd430146563301143643622622d2c928",
+          "path": "mods/enchdesc-neoforge-1.21.1-21.1.9.jar"
+        },
+        {
+          "sha512": "1f6f8796469f747cff36f477b4f589a3d69613882399f9ee7f86db36c7bca9aa4828731f43db15dc6c7f5a4c1bbe3d4092a232e8cef010b09cec0581848fda90",
+          "path": "mods/FarmersDelight-1.21.1-1.3.4.jar"
+        },
+        {
+          "sha512": "fc00450fb6c95ec1779021bdc726122dacb5915c6baddaacc981cd221b01b8db35f2a0dfde5d6fa6766d877266dc82f58854f571ea53cc5c4d468b80e1548a5f",
+          "path": "mods/player-animation-lib-forge-2.0.4+1.21.1.jar"
+        },
+        {
+          "sha512": "19d33195cfee0a640f40fb64d82346df7ac970ddb43ed68ba2dacb4793b18d577fd57dd43a4c2e94f731487c024b8d7ebcc52721764ec9d8a87bd68fc7df5c96",
+          "path": "mods/Iceberg-1.21.1-neoforge-1.3.2.jar"
+        },
+        {
+          "sha512": "b3539b5dba6414b5f6db126dd703a0923984c1fa11a53e50090eb1b03ec3ef3a09fc048ae2d03b8241e4d182ec4e942cc905d0f3e7366608fd8a0bb2509f55f4",
+          "path": "mods/Prism-1.21.1-neoforge-1.0.11.jar"
+        },
+        {
+          "sha512": "b4e8efba91e5f46729928335cce8952ad70af3e33b851e8cf4887a24346f7bbdfe3609f8cc482f76a715aa050bf39e7048ee97b33183e5c358f149bc3678183c",
+          "path": "mods/moonlight-1.21.1-3.7.2-neoforge.jar"
+        },
+        {
+          "sha512": "78d4577a8e8fbb241216968475dd73f5b9e5efeb7da802b18a4e6c290e49af6cb4a5676e9855d0d8ff3613f967812e4bd363bbb9196c17c954d19454f84b2214",
+          "path": "mods/bookshelf-neoforge-1.21.1-21.1.81.jar"
+        },
+        {
+          "sha512": "154d42795ccf1f3e07714775cdb82fd5db17574319286ced13d86b0456b64e4cf5bb89ffbcbfcefce67b73ed0b83e4e2944e493d79d9a385ff9de23006ee7bf5",
+          "path": "mods/prickle-neoforge-1.21.1-21.1.11.jar"
+        },
+        {
+          "sha512": "4cdb92f60ab7b2101feda57e9e18b4b03835430496f75e21c2ff4adce911dc2aaa5aa26825cf3c4e507754b5d1f696deb800348d7c753616457ea874ac22400e",
+          "path": "mods/IMBlocker-5.6.2.1-neoforge+1.20.6-1.21.8.jar"
+        },
+        {
+          "sha512": "9f57f20693bb187c54f6d68dc34592b87d0e55a5a4628ad097b0aa39afe165f4a834b83b6590d803e64bac0b1230a8f46369bfe45851a3cc964cf3d88f235277",
+          "path": "mods/alexsmobs-1.22.17.jar"
+        },
+        {
+          "sha512": "81fd425d8910da30d9ce130213e518ed3acf6d6b63c98396668126e17f99f4d8e17348de7f6147ed3639ca59a3d3d79e1f0d78937972732fda04b7ac8a886547",
+          "path": "mods/citadel-1.21.1-2.7.6.jar"
+        },
+        {
+          "sha512": "b0998752d5a17aaf56cbf60028f0328a0823452159e0418de34ecf5bb701e638db4eb698cf55969249c3096f78ff4c06c58e031113c96331360f074a398c92ab",
+          "path": "mods/alexsdelight-1.6.jar"
+        },
+        {
+          "sha512": "8e7e27a9c1f3a5c293f6982562645bf5ca8ff36aeff00f1d5f59d7220033a4b25dbde606bae5a3e0aa19efc37673cdb350f6322add7277f86783468a63b5c3dd",
+          "path": "mods/MemorySweep-1.21.1-neoforge-2.0.3-fix.jar"
+        },
+        {
+          "sha512": "c68b66a2043354b7563509d9da6992b85d287cfeee0bf84c296d4af3d349dad053c481a95d49a80cae1e6ad566c95bdd1b4c063cbc1fee989ff781d75e0a8f57",
+          "path": "mods/overloadedarmorbar-neoforge-1.21-2.jar"
+        },
+        {
+          "sha512": "795f7e5a03b65705d18901fe28034df771e1843aabd16bfe49fe77b534938424ce26f3d0f723cd78ada058989bb758d14f091ca111f0b1e4d195e8baa031bbc5",
+          "path": "mods/fastleafdecay-35.jar"
+        }
+      ]
+    },
+    {
+      "exactSetVerified": true,
+      "ownSha256": "4d8ec7dd3d6d7de79d285dc474c407a01831877aac76203c12bdf5f893625338",
+      "jarCount": 37,
+      "path": "build/modpack-expanded-20261018/instances-ready/client",
+      "name": "staged-client",
+      "files": [
+        {
+          "sha512": "ce58f34d05d96c0a109a5cea23c741f6bdb2e6be31fc087c5989274cefca5f10ba0c08c62083cf554a51f2c7667bf46e4164383f675c844e77633aef2659996b",
+          "path": "mods/sodium-neoforge-0.6.13+mc1.21.1.jar"
+        },
+        {
+          "sha512": "57b8026a3c3c433cf6123d63dc6ce7e11f6d480a72926370db1fc7f2b06059bc16a753ecd7e7af659c19e90b592103196b0e89585ce4f0744a4ca433f59bcf1a",
+          "path": "mods/iris-neoforge-1.8.12+mc1.21.1.jar"
+        },
+        {
+          "sha512": "93e83dd690b91d610be29451b34836c9daa7e08bd952f88ffa07c62d8774bbaac2ff0c6768d2cbf1b14f47d0b86f98cef9fd341e0d29bd37207eaf4aa2abea63",
+          "path": "mods/entityculling-neoforge-1.11.3-mc1.21.1.jar"
+        },
+        {
+          "sha512": "aaf9b010955b8cd294e5a92f069985b18729fd5e2cf22d351f1dff9680f15488688803ec41e77e941cbde130ceb535014ca4c868047d80ab69c2d508e216654d",
+          "path": "mods/cloth-config-15.0.140-neoforge.jar"
+        },
+        {
+          "sha512": "19af89a2075bb10a63884fa853ebf84b02c79dc3242430ecdad056fd764fdcde367a7303276b329df01b0736e2ef264c5d80c7dc92c6aebd244f556a230bb417",
+          "path": "mods/ferritecore-7.0.3-neoforge.jar"
+        },
+        {
+          "sha512": "2735da2088b88a8bdcd4ad02a2b6fffbfd3925557cefd4fa54b5477dfb9e582ea7f521300c060f57dff1325dd21bff276b7333363ad3371ed6893e3de9eca9cd",
+          "path": "mods/lithium-neoforge-0.15.4+mc1.21.1.jar"
+        },
+        {
+          "sha512": "8bad8eb3c8e974f867e23e4d74598f603c5fbf03eb5356a386dd37cb9fa23e08ad1f58be6b7be50d2fbf9d3fbfaeac8584c70ced736df4b8f82c7c75be242998",
+          "path": "mods/jei-1.21.1-neoforge-19.27.0.340.jar"
+        },
+        {
+          "sha512": "9a231c0068318e7f62e3d5dfd81660b3f8efdcae9bcf83cfc3637c897fed29aac1941ef8007e8b29f0badfdce0c8047cfb73cd1ea486f25c69197384adfc8dcd",
+          "path": "mods/simplyswords-neoforge-1.70.2-1.21.1.jar"
+        },
+        {
+          "sha512": "ef03b411b0e1b241a9952e1a8fdac61979665953eb5f28116aac06530964e7378eb20a78594a47ba4d942c74dfa20d550c292014b5de8e63c42b882a33aef5a5",
+          "path": "mods/fzzy_config-0.7.7+1.21+neoforge.jar"
+        },
+        {
+          "sha512": "d9f7c3bb8162577dfb461ffdf04bd6a3563c7586934a0e2a744c14421beffb8286f0d88d4c758317003f20f99fe8072a39b9d675af061e036970d36db36027f0",
+          "path": "mods/architectury-13.0.11-neoforge.jar"
+        },
+        {
+          "sha512": "7be6beb5f72c03b7c9f44568c11577f2ba50aec8d16af34d860294718cd2ab550691a8e82756d96c6f0bdd1111e2de8aa68db970c5762be659ad4aec69940ebd",
+          "path": "mods/SimplyTooltips-neoforge-0.1.5.jar"
+        },
+        {
+          "sha512": "83069dc336bcc212059f753923373d9522aa5953bf4b4fe2a8cfa666b4e28d2d017daa66c4b35e315c3be8d1ad60c2872879dd47cc1f47665ebbfd102da76976",
+          "path": "mods/dungeons-and-taverns-v4.4.4.jar"
+        },
+        {
+          "sha512": "7496051c1ba98f8801b8eb81773d1baec16166c3d2c5682476bd6f9433f794095099cea609fd5610525edb7c450b1bacd0011a31763e91c77c9a0034c8245ca3",
+          "path": "mods/lootr-neoforge-1.21.1-1.11.38.127.jar"
+        },
+        {
+          "sha512": "b8c3942f4d33179edf3f102f3d870b99dd436f8b8236dbbd31aa51b888162c692cfd88927295f24dc8b4375232f4c6c17360c5d6c4823f93cbcd7cf4bdc8bd14",
+          "path": "mods/kotlinforforge-5.12.0-all.jar"
+        },
+        {
+          "sha512": "2f75b0865c6f342bc7f0fe8abb6e161befae64dd23ad73bc2ed5b6aa892055ee886d63d061afa9323f3056c5ba39621226b712d2435168c5fb8f856cebd27c16",
+          "path": "mods/combat_roll-neoforge-2.0.6+1.21.1.jar"
+        },
+        {
+          "sha512": "050917782aba18d6f5bd9cc71462e96195d2124e8a99f538ac40c45e38de69e0f95fce4efa3835b6df364ac543ede7a5ec6084b78e03fe15a072ed3cee05e4f5",
+          "path": "mods/ItemBorders-1.21-neoforge-1.2.5.jar"
+        },
+        {
+          "sha512": "76bf0a51b0cbbf0c1195db0320c741ddcd9b943d667da926b80830bbdb30ae2a0ed88f636c86323a6bd14805e5e8682b3f8eef7b0fa09ff062db272eb5297223",
+          "path": "mods/toughnessbar-1.21.1-9.jar"
+        },
+        {
+          "sha512": "3a566835aabb55a0a9256f790640ab0683b720165be05e955077b3e071704b64096111c1570a519002571302b573088a6cdc340edafc68bd3aca437e0bb257c7",
+          "path": "mods/sophisticatedbackpacks-1.21.1-3.25.21.1475.jar"
+        },
+        {
+          "sha512": "bcb478305357d973f48f539429f9b472f7ab65173bf202477e8b76bca096288dc85d4079fb690d7730e5ad3cae36532d102390b8df3230fe268678049dd4a8a8",
+          "path": "mods/sophisticatedcore-1.21.1-1.3.100.1348.jar"
+        },
+        {
+          "sha512": "822fb8cfb22fb64893f3ac9000e6c68f49ffdc2816161bca7b06db6b51d0e6839f2a20ce36cb36518519ec01a04f4f852fe8c253da3020836f99f8bf4fa55609",
+          "path": "mods/dummmmmmy-1.21-2.1.2-neoforge.jar"
+        },
+        {
+          "sha512": "6c631bc46a3f785fd43356710510a241f6b851ea7e8c59e0dbb9af8c3919a24e3e1eb2ca3075b82979ced5cad2625c92a78ac9eabbd9ff8d8161fc20ac7c7107",
+          "path": "mods/FpsReducer2-neoforge-1.21-2.10.jar"
+        },
+        {
+          "sha512": "22258e118552e690ae77ad1a13e5dfe69bf94bdd765d2e614e2e4cc7410c406866b7937b54e8475660bba858b0eadb7efd430146563301143643622622d2c928",
+          "path": "mods/enchdesc-neoforge-1.21.1-21.1.9.jar"
+        },
+        {
+          "sha512": "1f6f8796469f747cff36f477b4f589a3d69613882399f9ee7f86db36c7bca9aa4828731f43db15dc6c7f5a4c1bbe3d4092a232e8cef010b09cec0581848fda90",
+          "path": "mods/FarmersDelight-1.21.1-1.3.4.jar"
+        },
+        {
+          "sha512": "fc00450fb6c95ec1779021bdc726122dacb5915c6baddaacc981cd221b01b8db35f2a0dfde5d6fa6766d877266dc82f58854f571ea53cc5c4d468b80e1548a5f",
+          "path": "mods/player-animation-lib-forge-2.0.4+1.21.1.jar"
+        },
+        {
+          "sha512": "19d33195cfee0a640f40fb64d82346df7ac970ddb43ed68ba2dacb4793b18d577fd57dd43a4c2e94f731487c024b8d7ebcc52721764ec9d8a87bd68fc7df5c96",
+          "path": "mods/Iceberg-1.21.1-neoforge-1.3.2.jar"
+        },
+        {
+          "sha512": "b3539b5dba6414b5f6db126dd703a0923984c1fa11a53e50090eb1b03ec3ef3a09fc048ae2d03b8241e4d182ec4e942cc905d0f3e7366608fd8a0bb2509f55f4",
+          "path": "mods/Prism-1.21.1-neoforge-1.0.11.jar"
+        },
+        {
+          "sha512": "b4e8efba91e5f46729928335cce8952ad70af3e33b851e8cf4887a24346f7bbdfe3609f8cc482f76a715aa050bf39e7048ee97b33183e5c358f149bc3678183c",
+          "path": "mods/moonlight-1.21.1-3.7.2-neoforge.jar"
+        },
+        {
+          "sha512": "78d4577a8e8fbb241216968475dd73f5b9e5efeb7da802b18a4e6c290e49af6cb4a5676e9855d0d8ff3613f967812e4bd363bbb9196c17c954d19454f84b2214",
+          "path": "mods/bookshelf-neoforge-1.21.1-21.1.81.jar"
+        },
+        {
+          "sha512": "154d42795ccf1f3e07714775cdb82fd5db17574319286ced13d86b0456b64e4cf5bb89ffbcbfcefce67b73ed0b83e4e2944e493d79d9a385ff9de23006ee7bf5",
+          "path": "mods/prickle-neoforge-1.21.1-21.1.11.jar"
+        },
+        {
+          "sha512": "4cdb92f60ab7b2101feda57e9e18b4b03835430496f75e21c2ff4adce911dc2aaa5aa26825cf3c4e507754b5d1f696deb800348d7c753616457ea874ac22400e",
+          "path": "mods/IMBlocker-5.6.2.1-neoforge+1.20.6-1.21.8.jar"
+        },
+        {
+          "sha512": "9f57f20693bb187c54f6d68dc34592b87d0e55a5a4628ad097b0aa39afe165f4a834b83b6590d803e64bac0b1230a8f46369bfe45851a3cc964cf3d88f235277",
+          "path": "mods/alexsmobs-1.22.17.jar"
+        },
+        {
+          "sha512": "81fd425d8910da30d9ce130213e518ed3acf6d6b63c98396668126e17f99f4d8e17348de7f6147ed3639ca59a3d3d79e1f0d78937972732fda04b7ac8a886547",
+          "path": "mods/citadel-1.21.1-2.7.6.jar"
+        },
+        {
+          "sha512": "b0998752d5a17aaf56cbf60028f0328a0823452159e0418de34ecf5bb701e638db4eb698cf55969249c3096f78ff4c06c58e031113c96331360f074a398c92ab",
+          "path": "mods/alexsdelight-1.6.jar"
+        },
+        {
+          "sha512": "8e7e27a9c1f3a5c293f6982562645bf5ca8ff36aeff00f1d5f59d7220033a4b25dbde606bae5a3e0aa19efc37673cdb350f6322add7277f86783468a63b5c3dd",
+          "path": "mods/MemorySweep-1.21.1-neoforge-2.0.3-fix.jar"
+        },
+        {
+          "sha512": "c68b66a2043354b7563509d9da6992b85d287cfeee0bf84c296d4af3d349dad053c481a95d49a80cae1e6ad566c95bdd1b4c063cbc1fee989ff781d75e0a8f57",
+          "path": "mods/overloadedarmorbar-neoforge-1.21-2.jar"
+        },
+        {
+          "sha512": "795f7e5a03b65705d18901fe28034df771e1843aabd16bfe49fe77b534938424ce26f3d0f723cd78ada058989bb758d14f091ca111f0b1e4d195e8baa031bbc5",
+          "path": "mods/fastleafdecay-35.jar"
+        }
+      ]
+    },
+    {
+      "exactSetVerified": true,
+      "ownSha256": "4d8ec7dd3d6d7de79d285dc474c407a01831877aac76203c12bdf5f893625338",
+      "jarCount": 22,
+      "path": "build/modpack-expanded-20261018/instances-ready/server",
+      "name": "staged-server",
+      "files": [
+        {
+          "sha512": "aaf9b010955b8cd294e5a92f069985b18729fd5e2cf22d351f1dff9680f15488688803ec41e77e941cbde130ceb535014ca4c868047d80ab69c2d508e216654d",
+          "path": "mods/cloth-config-15.0.140-neoforge.jar"
+        },
+        {
+          "sha512": "19af89a2075bb10a63884fa853ebf84b02c79dc3242430ecdad056fd764fdcde367a7303276b329df01b0736e2ef264c5d80c7dc92c6aebd244f556a230bb417",
+          "path": "mods/ferritecore-7.0.3-neoforge.jar"
+        },
+        {
+          "sha512": "2735da2088b88a8bdcd4ad02a2b6fffbfd3925557cefd4fa54b5477dfb9e582ea7f521300c060f57dff1325dd21bff276b7333363ad3371ed6893e3de9eca9cd",
+          "path": "mods/lithium-neoforge-0.15.4+mc1.21.1.jar"
+        },
+        {
+          "sha512": "9a231c0068318e7f62e3d5dfd81660b3f8efdcae9bcf83cfc3637c897fed29aac1941ef8007e8b29f0badfdce0c8047cfb73cd1ea486f25c69197384adfc8dcd",
+          "path": "mods/simplyswords-neoforge-1.70.2-1.21.1.jar"
+        },
+        {
+          "sha512": "ef03b411b0e1b241a9952e1a8fdac61979665953eb5f28116aac06530964e7378eb20a78594a47ba4d942c74dfa20d550c292014b5de8e63c42b882a33aef5a5",
+          "path": "mods/fzzy_config-0.7.7+1.21+neoforge.jar"
+        },
+        {
+          "sha512": "d9f7c3bb8162577dfb461ffdf04bd6a3563c7586934a0e2a744c14421beffb8286f0d88d4c758317003f20f99fe8072a39b9d675af061e036970d36db36027f0",
+          "path": "mods/architectury-13.0.11-neoforge.jar"
+        },
+        {
+          "sha512": "83069dc336bcc212059f753923373d9522aa5953bf4b4fe2a8cfa666b4e28d2d017daa66c4b35e315c3be8d1ad60c2872879dd47cc1f47665ebbfd102da76976",
+          "path": "mods/dungeons-and-taverns-v4.4.4.jar"
+        },
+        {
+          "sha512": "7496051c1ba98f8801b8eb81773d1baec16166c3d2c5682476bd6f9433f794095099cea609fd5610525edb7c450b1bacd0011a31763e91c77c9a0034c8245ca3",
+          "path": "mods/lootr-neoforge-1.21.1-1.11.38.127.jar"
+        },
+        {
+          "sha512": "b8c3942f4d33179edf3f102f3d870b99dd436f8b8236dbbd31aa51b888162c692cfd88927295f24dc8b4375232f4c6c17360c5d6c4823f93cbcd7cf4bdc8bd14",
+          "path": "mods/kotlinforforge-5.12.0-all.jar"
+        },
+        {
+          "sha512": "2f75b0865c6f342bc7f0fe8abb6e161befae64dd23ad73bc2ed5b6aa892055ee886d63d061afa9323f3056c5ba39621226b712d2435168c5fb8f856cebd27c16",
+          "path": "mods/combat_roll-neoforge-2.0.6+1.21.1.jar"
+        },
+        {
+          "sha512": "3a566835aabb55a0a9256f790640ab0683b720165be05e955077b3e071704b64096111c1570a519002571302b573088a6cdc340edafc68bd3aca437e0bb257c7",
+          "path": "mods/sophisticatedbackpacks-1.21.1-3.25.21.1475.jar"
+        },
+        {
+          "sha512": "bcb478305357d973f48f539429f9b472f7ab65173bf202477e8b76bca096288dc85d4079fb690d7730e5ad3cae36532d102390b8df3230fe268678049dd4a8a8",
+          "path": "mods/sophisticatedcore-1.21.1-1.3.100.1348.jar"
+        },
+        {
+          "sha512": "822fb8cfb22fb64893f3ac9000e6c68f49ffdc2816161bca7b06db6b51d0e6839f2a20ce36cb36518519ec01a04f4f852fe8c253da3020836f99f8bf4fa55609",
+          "path": "mods/dummmmmmy-1.21-2.1.2-neoforge.jar"
+        },
+        {
+          "sha512": "1f6f8796469f747cff36f477b4f589a3d69613882399f9ee7f86db36c7bca9aa4828731f43db15dc6c7f5a4c1bbe3d4092a232e8cef010b09cec0581848fda90",
+          "path": "mods/FarmersDelight-1.21.1-1.3.4.jar"
+        },
+        {
+          "sha512": "fc00450fb6c95ec1779021bdc726122dacb5915c6baddaacc981cd221b01b8db35f2a0dfde5d6fa6766d877266dc82f58854f571ea53cc5c4d468b80e1548a5f",
+          "path": "mods/player-animation-lib-forge-2.0.4+1.21.1.jar"
+        },
+        {
+          "sha512": "b4e8efba91e5f46729928335cce8952ad70af3e33b851e8cf4887a24346f7bbdfe3609f8cc482f76a715aa050bf39e7048ee97b33183e5c358f149bc3678183c",
+          "path": "mods/moonlight-1.21.1-3.7.2-neoforge.jar"
+        },
+        {
+          "sha512": "9f57f20693bb187c54f6d68dc34592b87d0e55a5a4628ad097b0aa39afe165f4a834b83b6590d803e64bac0b1230a8f46369bfe45851a3cc964cf3d88f235277",
+          "path": "mods/alexsmobs-1.22.17.jar"
+        },
+        {
+          "sha512": "81fd425d8910da30d9ce130213e518ed3acf6d6b63c98396668126e17f99f4d8e17348de7f6147ed3639ca59a3d3d79e1f0d78937972732fda04b7ac8a886547",
+          "path": "mods/citadel-1.21.1-2.7.6.jar"
+        },
+        {
+          "sha512": "b0998752d5a17aaf56cbf60028f0328a0823452159e0418de34ecf5bb701e638db4eb698cf55969249c3096f78ff4c06c58e031113c96331360f074a398c92ab",
+          "path": "mods/alexsdelight-1.6.jar"
+        },
+        {
+          "sha512": "8e7e27a9c1f3a5c293f6982562645bf5ca8ff36aeff00f1d5f59d7220033a4b25dbde606bae5a3e0aa19efc37673cdb350f6322add7277f86783468a63b5c3dd",
+          "path": "mods/MemorySweep-1.21.1-neoforge-2.0.3-fix.jar"
+        },
+        {
+          "sha512": "795f7e5a03b65705d18901fe28034df771e1843aabd16bfe49fe77b534938424ce26f3d0f723cd78ada058989bb758d14f091ca111f0b1e4d195e8baa031bbc5",
+          "path": "mods/fastleafdecay-35.jar"
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "sha256": "857354f5fc51d0478c9a44598a45c6ee8dd1b7ce3598812a28fce9daba8e5938",
+      "name": "EldenCombat-0.2.0-integration-candidate-PCL.zip"
+    },
+    {
+      "sha256": "857354f5fc51d0478c9a44598a45c6ee8dd1b7ce3598812a28fce9daba8e5938",
+      "name": "EldenCombat-0.2.0-integration-candidate.mrpack"
+    }
+  ],
+  "tests": {
+    "standaloneServer": "pass_start_save_exit0_no_errors_pack_absent",
+    "multiplayer": "pending",
+    "client": "not_started_budget_rejected",
+    "dntInstalledServer": "pass_start_save_exit0_no_errors_pack_enabled",
+    "backpackRestart": "pending",
+    "shaderAndHud": "pending",
+    "nativeTraderWorkflow": "pending",
+    "performance": "pending"
+  },
+  "clientBudget": {
+    "commitFreeGiB": 9.59,
+    "thresholdLowered": false,
+    "evidence": "single-seed-command.log",
+    "requiredPhysicalGiB": 4,
+    "requiredCommitGiB": 12,
+    "physicalFreeGiB": 4.33
+  },
+  "pcl": {
+    "jarUpdated": true,
+    "oldJarBackup": "build/modpack-expanded-20261018/baseline/pcl-eldencombat-0.2.0.jar",
+    "playerWorldsModified": false,
+    "newClientStarted": false
+  },
+  "sourceFiles": [
+    "src/main/java/com/dsh/eldencombat/compat/DntDataCompat.java",
+    "src/main/resources/datapacks/dnt_4_4_4/pack.mcmeta",
+    "src/main/resources/datapacks/dnt_4_4_4/data/minecraft/advancement/give_quest_trader_trade.json",
+    "src/main/resources/datapacks/dnt_4_4_4/data/minecraft/advancement/wander_add_map.json"
+  ],
+  "unmet": [
+    "LazyDFU Forge for Minecraft 1.21.1"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "game_versions": [
+    "1.21",
+    "1.21.1"
+  ],
+  "loaders": [
+    "neoforge"
+  ],
+  "environment": "client_and_server",
+  "id": "uG7oHgw6",
+  "project_id": "hYykXjDp",
+  "author_id": "ANKRvkxl",
+  "featured": false,
+  "name": "fzzy_config-0.7.7+1.21+neoforge",
+  "version_number": "0.7.7+1.21+neoforge",
+  "changelog": "## Breaking changes in 0.7.x\r\n* `ValidatedEnumMap` is removed\r\n* Removed all methods and properties marked as Deprecated and for removal 0.7.0\r\n  * `SmallSpriteDecoration#<init>`\r\n  * `SpriteDecorated#textureSet` & `textures` is now a required override\r\n  * `SpriteDecoration#<init>`\r\n  * `CustomButtonWidget#<init>` & builder is now only non-override method for adding custom button\r\n  * Removed `ActiveButtonWidget`\r\n  * Removed `TextlessActionWidget`\r\n  * `DynamicListWidget.EntryPos` and implementations made `internal`\r\n  * `PopupWidget` position elements; `LayoutWidget` no longer inherits from the PopupWidget variant\r\n  * Removed deprecated overrides of `PopupController` from `PopupParentElement`\r\n  * `SuggestionWindowListener` and `SuggestionWindowProvider` moved out of `internal` sub-package\r\n  * Removed `ImmutableRelPos`\r\n  * `RenderUtil#renderBlur`\r\n* Throughout FzzyConfig `Translatable.Result` has been replaced with `Translatable.ResultProvider`. This affects `EntrySearcher` as well as `Searcher.SearchContent`\r\n\r\n-------------------------------------\r\n\r\n### Additions\r\n* Added zh_cn lang support (thank you Po-Cu on github)\r\n* Added the ability to copy-paste from/to outside of Minecraft into/out of settings\r\n* Added `platform` method to `PlatformApi`. This returns an enum providing `FABRIC`, `FORGE`, or `NEOFORGE`, which can be checked via their method `forgelike()` to quickly see if the platform is one of the forge-like types.\r\n\r\n### Changes\r\n* Improved how Registrar generics work so that registrars now return a `RegistryEntry<F>`, `F` being the specific type of the registered object rather than it's more generic supertype (`Item`, `Block`, etc.)\r\n\r\n### Fixes\r\n* Removed unneeded metadata warning in 1.20.1 forge version.\r\n* Crash possibly caused with use of `ValidatedIdentifier.ofRegistryKey`\r\n* Fixed Neo instances seeing blank popups under certain inconsistent circumstances\r\n* Fixed issue with ValidatedSet translation\r\n* Fixed decoder expeption on Neo for very large configs\r\n* Fixed `registerAndLoadNoGuiConfig` not properly hiding the config from the GUI in all circumstances\r\n* Fixed translation issue in datagen\r\n* Fixed issues with some packet registration on some more obscure Neo versions\r\n* Fixed enums with non-CAPS member naming of `ValidatedEnum` not deserializing properly.",
+  "changelog_url": null,
+  "date_published": "2026-09-15T00:36:53.806083Z",
+  "downloads": 241646,
+  "version_type": "release",
+  "status": "listed",
+  "requested_status": null,
+  "files": [
+    {
+      "id": "o4GfP18j",
+      "hashes": {
+        "sha512": "ef03b411b0e1b241a9952e1a8fdac61979665953eb5f28116aac06530964e7378eb20a78594a47ba4d942c74dfa20d550c292014b5de8e63c42b882a33aef5a5",
+        "sha1": "518eadc53c065a74a49207769209c116e77d1849"
+      },
+      "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/uG7oHgw6/fzzy_config-0.7.7%2B1.21%2Bneoforge.jar",
+      "filename": "fzzy_config-0.7.7+1.21+neoforge.jar",
+      "primary": true,
+      "size": 2392693,
+      "file_type": null
+    },
+    {
+      "id": "bJ8thhsM",
+      "hashes": {
+        "sha512": "81f32dfddf6fc40fbf057412a03fd1d719c560da67c57dd2f18482412bbed338bfee7e9b7a32334126121856db458cc90613ef433ef07b84ad89a9444b2a6362",
+        "sha1": "94de341a71bcc798ea230cd5a100a74eff5a62d9"
+      },
+      "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/uG7oHgw6/fzzy_config-0.7.7%2B1.21%2Bneoforge-sources.jar",
+      "filename": "fzzy_config-0.7.7+1.21+neoforge-sources.jar",
+      "primary": false,
+      "size": 713652,
+      "file_type": "sources-jar"
+    }
+  ],
+  "dependencies": [
+    {
+      "version_id": null,
+      "project_id": "ordsPcFz",
+      "file_name": null,
+      "dependency_type": "required"
+    }
+  ]
+}

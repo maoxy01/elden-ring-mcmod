@@ -1,0 +1,101 @@
+{
+  "project": {
+    "client_side": "optional",
+    "server_side": "optional",
+    "game_versions": [
+      "1.14",
+      "1.14.1",
+      "1.14.2",
+      "1.14.3",
+      "1.14.4",
+      "1.15",
+      "1.15.1",
+      "1.15.2",
+      "1.16",
+      "1.16.1",
+      "1.16.2",
+      "1.16.3",
+      "1.16.4",
+      "1.16.5",
+      "1.17",
+      "1.17.1",
+      "1.18",
+      "1.18.1",
+      "1.18.2",
+      "1.19",
+      "1.19.1",
+      "1.19.2",
+      "1.19.3",
+      "1.19.4",
+      "1.20",
+      "1.20.1",
+      "1.20.2",
+      "1.20.3",
+      "1.20.4",
+      "1.20.5",
+      "1.20.6"
+    ],
+    "environment": [
+      "client_or_server_prefers_both"
+    ],
+    "id": "hvFnDODi",
+    "slug": "lazydfu",
+    "project_type": "mod",
+    "team": "7w9mvv0o",
+    "organization": null,
+    "title": "LazyDFU",
+    "description": "Makes the game boot faster by deferring non-essential initialization",
+    "body": "LazyDFU is an optimization mod for Minecraft that defers unnecessary initialization work so that it is only performed if required. Specifically, it makes the initialization of DataFixerUpper \"lazy\" - that is, it will not immediately create the rules required to migrate data from older versions of Minecraft to newer versions until it actually needs to do so.\n\n**This mod is for Fabric/Quilt**\n\n## Compatibility\n\nLazyDFU 0.1.2 is compatible with Minecraft 1.14 through 1.18.2, and works on the client and server side.\n\nLazyDFU 0.1.3 is compatible with Minecraft 1.19 and above, however Mojang now implements the functionality LazyDFU provides on the server side. The client still initializes all DFU rules by default, so LazyDFU hooks into the native client functionality that enables DFU rule baking and turns it into a no-op.\n\n**As of Minecraft 1.19.4 and above, however, Mojang has significantly optimized DFU initialization enough that this mod is no longer necessary in many configurations. It will continue to be supported for older versions of Minecraft.**\n\n## Sponsor me!\n\nDid this mod make Minecraft playable for you? [Chip in a bit of money](https://github.com/sponsors/astei) so I can continue developing it.\n\n## Why does it work?\n\nDataFixerUpper (often abbreviated to DFU) is the Minecraft component responsible for handling world upgrades from older versions of Minecraft to newer versions. DFU is initialized very early in the Minecraft startup process - in fact, it's initialized before the game window even appears. It is laughably overengineered and very slow, but it's what Mojang gives us to work with.\n\nAs part of the DFU initialization process, it caches rules required to convert from older versions to MInecraft through every version in between, up to the version of the game being launched. This process takes place in the background, but it is _extremely_ slow, as it is both CPU and memory intensive. With Minecraft 1.16.5, I have measured this process take 9 seconds on a Ryzen 9 3900X desktop (a high-end desktop CPU released in 2019) and 57 seconds on a laptop with an i5-8250U (a mid-range laptop chip from 2017).\n\nAll LazyDFU does is stop this process - it lets DFU initialize, but it will force it to not cache all these rules. As a result, the DFU rules are only compiled when a world needs to be converted. This means it is possible you may see lag spikes if LazyDFU forces the game to compile migration rules, but once complete there is no performance penalty.\n\n## Prove it to me\n\nI [recorded a video](https://www.youtube.com/watch?v=gXDqJ598kKA) that shows you how effective LazyDFU is.\n\n## Comparing it to other mods\n\nIn comparison to other mods, LazyDFU has the primary advantage of being _simple_, _safe_, and having _low impact_ on the game.\n\n* LazyDFU is a very simple mod. The entire mod is about a dozen lines of code, about as uncomplicated as a mod can get, while still delivering huge benefits. (This means it's also an ideal mod to use to experiment with a new Mixin platform!)\n* LazyDFU is highly compatible and safe. LazyDFU is extremely unlikely to conflict with other mods. This mod is based on a similar patch in [Paper](https://papermc.io) that had been in use for over a year with no reported issues with migrating to newer versions of Minecraft. (Paper has since changed to replacing Mojang's data fixers with a highly optimized implementation of its own.)",
+    "body_url": null,
+    "published": "2021-01-04T05:14:07.259717Z",
+    "updated": "2022-06-08T01:13:20.410914Z",
+    "approved": "2021-01-04T05:14:07.259717Z",
+    "queued": null,
+    "status": "approved",
+    "requested_status": null,
+    "moderator_message": null,
+    "license": {
+      "id": "MIT",
+      "name": "MIT License",
+      "url": null
+    },
+    "downloads": 14978450,
+    "followers": 4142,
+    "categories": [
+      "optimization"
+    ],
+    "additional_categories": [],
+    "loaders": [
+      "fabric"
+    ],
+    "versions": [
+      "8tFjDrHf",
+      "aBDhdWUD",
+      "C6e265zK",
+      "4SHylIO9"
+    ],
+    "icon_url": "https://cdn.modrinth.com/data/hvFnDODi/48fa17d2335d565ac51cd9d75b3755cee061e409_96.webp",
+    "raw_icon_url": "https://cdn.modrinth.com/data/hvFnDODi/icon.png",
+    "issues_url": "https://github.com/astei/lazydfu/issues",
+    "source_url": "https://github.com/astei/lazydfu",
+    "wiki_url": null,
+    "discord_url": "https://discord.gg/RUGArxEQ8J",
+    "donation_urls": [
+      {
+        "id": "paypal",
+        "platform": "Paypal",
+        "url": "https://paypal.me/terminalvelocity1"
+      },
+      {
+        "id": "github",
+        "platform": "Github",
+        "url": "https://github.com/sponsors/astei"
+      }
+    ],
+    "gallery": [],
+    "color": 11242611,
+    "thread_id": "hvFnDODi",
+    "monetization_status": "monetized"
+  },
+  "versions": []
+}

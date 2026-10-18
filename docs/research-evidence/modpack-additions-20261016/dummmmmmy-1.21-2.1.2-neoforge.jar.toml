@@ -1,0 +1,44 @@
+modLoader = "javafml"
+loaderVersion = "*"
+
+license = "Supplementaries Team License v.1.5"
+issueTrackerURL = "https://github.com/MehVahdJukaar/DuMmmMmmy/issues"
+
+[[mixins]]
+    config = "dummmmmmy.mixins.json"
+[[mixins]]
+    config = "dummmmmmy-common.mixins.json"
+
+[[mods]]
+    modId = "dummmmmmy"
+    version = "1.21-2.1.2"
+    displayName = "MmmMmmMmmMmm"
+    logoFile = "icon.png"
+    authors = "Mehvahdjukaar, Bonusboni, Gooigipunch, Plantkillable"
+    credits = "MehVahdJukaar"
+    description = '''Don't hurt me pls :S'''
+    modUrl = "https://www.curseforge.com/minecraft/mc-mods/mmmmmmmmmmmm"
+    itemIcon = "dummmmmmy:target_dummy"
+
+[[dependencies.dummmmmmy]]
+    modId = "neoforge"
+    type = "required"
+    versionRange = "*"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[dependencies.dummmmmmy]]
+    modId = "minecraft"
+    type = "required"
+    versionRange = "[1.21.1]"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[dependencies.dummmmmmy]]
+    modId = "moonlight"
+    type = "required"
+    referralUrl = "https://www.curseforge.com/minecraft/mc-mods/selene"
+    versionRange = "[1.21-3.2.3,)"
+    ordering = "NONE"
+    side = "BOTH"
+

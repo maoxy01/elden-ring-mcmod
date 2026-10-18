@@ -1,0 +1,996 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.12/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+
+> Task :compileJava
+注: D:\codexout\mcmod\src\main\java\com\dsh\eldencombat\testing\ClientSmokeHarness.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+
+> Task :generateEquipment2d
+Equipment 2D status report (41 entries):
+  eldencombat:axe -> ready: runtime references minecraft:item/iron_axe (no generated wrapper)
+  eldencombat:ballista -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:ballista -> ready: generated 7 admitted assets, base state standby
+  eldencombat:blasphemous_blade -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:blasphemous_blade -> ready: generated 3 admitted assets, base state front
+  eldencombat:claw -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:claw -> ready: generated 3 admitted assets, base state front
+  eldencombat:colossal_sword -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:colossal_sword -> ready: generated 3 admitted assets, base state front
+  eldencombat:colossal_weapon -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:colossal_weapon -> ready: generated 3 admitted assets, base state front
+  eldencombat:crossbow -> ready: runtime references minecraft:item/crossbow (no generated wrapper)
+  eldencombat:curved_greatsword -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:curved_greatsword -> ready: generated 3 admitted assets, base state front
+  eldencombat:curved_sword -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:curved_sword -> ready: generated 3 admitted assets, base state front
+  eldencombat:dagger -> ready: runtime references spartan_weaponry_unofficial:item/iron_dagger (no generated wrapper)
+  eldencombat:fist -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:fist -> ready: generated 3 admitted assets, base state front
+  eldencombat:flail -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:flail -> ready: generated 3 admitted assets, base state front
+  eldencombat:glintstone_staff -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:glintstone_staff -> ready: generated 3 admitted assets, base state front
+  eldencombat:great_bow -> ready: generated 6 admitted assets, base state standby
+  eldencombat:great_bow -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:great_hammer -> ready: runtime references spartan_weaponry_unofficial:item/iron_battle_hammer (no generated wrapper)
+  eldencombat:great_shield -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:great_shield -> ready: generated 4 admitted assets, base state front
+  eldencombat:great_spear -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:great_spear -> ready: generated 3 admitted assets, base state front
+  eldencombat:great_sword -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:great_sword -> ready: generated 3 admitted assets, base state front
+  eldencombat:greataxe -> ready: runtime references spartan_weaponry_unofficial:item/iron_battleaxe (no generated wrapper)
+  eldencombat:halberd -> ready: runtime references spartan_weaponry_unofficial:item/iron_halberd (no generated wrapper)
+  eldencombat:hammer -> ready: runtime references spartan_weaponry_unofficial:item/iron_flanged_mace (no generated wrapper)
+  eldencombat:hand_of_malenia -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:hand_of_malenia -> ready: generated 3 admitted assets, base state front
+  eldencombat:heavy_thrusting_sword -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:heavy_thrusting_sword -> ready: generated 3 admitted assets, base state front
+  eldencombat:katana -> ready: runtime references spartan_weaponry_unofficial:item/iron_katana (no generated wrapper)
+  eldencombat:long_bow -> ready: runtime references spartan_weaponry_unofficial:item/longbow_iron_strengthened (no generated wrapper)
+  eldencombat:malikeths_black_blade -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:malikeths_black_blade -> ready: generated 3 admitted assets, base state front
+  eldencombat:marikas_hammer -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:marikas_hammer -> ready: generated 3 admitted assets, base state front
+  eldencombat:mohgwyns_sacred_spear -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:mohgwyns_sacred_spear -> ready: generated 3 admitted assets, base state front
+  eldencombat:morgotts_cursed_sword -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:morgotts_cursed_sword -> ready: generated 3 admitted assets, base state front
+  eldencombat:sacred_relic_sword -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:sacred_relic_sword -> ready: generated 3 admitted assets, base state front
+  eldencombat:sacred_seal -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:sacred_seal -> ready: generated 3 admitted assets, base state front
+  eldencombat:scythe -> ready: runtime references spartan_weaponry_unofficial:item/iron_scythe (no generated wrapper)
+  eldencombat:shield -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:shield -> ready: generated 4 admitted assets, base state front
+  eldencombat:short_bow -> ready: runtime references minecraft:item/bow (no generated wrapper)
+  eldencombat:small_shield -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:small_shield -> ready: generated 4 admitted assets, base state front
+  eldencombat:spear -> ready: runtime references spartan_weaponry_unofficial:item/iron_spear (no generated wrapper)
+  eldencombat:straight_sword -> ready: runtime references minecraft:item/iron_sword (no generated wrapper)
+  eldencombat:test_flask -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:test_flask -> ready: generated 3 admitted assets, base state full
+  eldencombat:thrusting_sword -> ready: runtime references spartan_weaponry_unofficial:item/iron_rapier (no generated wrapper)
+  eldencombat:twinblade -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:twinblade -> ready: generated 3 admitted assets, base state front
+  eldencombat:whip -> ready on a derived display candidate; visual acceptance still pending (humanAccepted=false)
+  eldencombat:whip -> ready: generated 3 admitted assets, base state front
+2D route coverage: 42 entries; own_sprite=28, vanilla_model=4, provider_model=10; ready=41, pending=1; generated files=209
+
+> Task :syncArt UP-TO-DATE
+> Task :processResources
+> Task :classes
+> Task :downloadAssets UP-TO-DATE
+> Task :writeClientLegacyClasspath UP-TO-DATE
+> Task :prepareClientRun UP-TO-DATE
+
+> Task :prepareClientSmokeWorld
+[smoke] 已准备客户端测试存档 build/clientSmoke/saves/codex-player-smoke
+
+> Task :prepareMinimapDefaults SKIPPED
+
+> Task :runClient
+WARN StatusConsoleListener Advanced terminal features are not available in this environment
+[22:53:22] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientdev, --version, 21.1.219, --assetIndex, 17, --assetsDir, C:\\Users\\30869\\.gradle\\caches\\neoformruntime\\assets, --gameDir, ., --fml.fmlVersion, 4.0.42, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.219, --fml.neoFormVersion, 20240808.144430, --uuid, 00000000-0000-0000-0000-000000000009, --quickPlaySingleplayer, codex-player-smoke]
+[22:53:22] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.12.1+1-LTS
+[22:53:22] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.12.1 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[22:53:22] [main/INFO] [ne.ne.fm.lo.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[22:53:22] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[22:53:23] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[22:53:23] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/30869/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23138!/ Service=ModLauncher Env=CLIENT
+[22:53:23] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 5060 Laptop GPU/PCIe/SSE2 GL version 4.6.0 NVIDIA 616.64, NVIDIA Corporation
+[22:53:23] [main/INFO] [ne.ne.fm.lo.mo.lo.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[22:53:23] [main/INFO] [ne.ne.fm.lo.mo.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		Elden Combat 0.2.0 (eldencombat)
+		Minecraft 1.21.1 (minecraft)
+		NeoForge 21.1.219 (neoforge)
+[22:53:24] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
+[22:53:24] [main/INFO] [cp.mo.mo.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientdev' with arguments [--version, 21.1.219, --gameDir, ., --assetsDir, C:\Users\30869\.gradle\caches\neoformruntime\assets, --uuid, 00000000-0000-0000-0000-000000000009, --assetIndex, 17, --quickPlaySingleplayer, codex-player-smoke]
+[22:53:25] [main/WARN] [mixin/]: Error loading class: journeymap/client/properties/MiniMapProperties (java.lang.ClassNotFoundException: journeymap.client.properties.MiniMapProperties)
+[22:53:26] [Datafixer Bootstrap/INFO] [mojang/DataFixerBuilder]: 229 Datafixer optimizations took 270 milliseconds
+[22:53:27] [pool-7-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[22:53:31] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[22:53:31] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[22:53:31] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[22:53:31] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[22:53:31] [main/WARN] [minecraft/Commands]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[22:53:32] [Render thread/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/D:/codexout/mcmod/build/moddev/artifacts/neoforge-21.1.219.jar%23189!/assets/.mcassetsroot' uses unexpected schema
+[22:53:32] [Render thread/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/D:/codexout/mcmod/build/moddev/artifacts/neoforge-21.1.219.jar%23189!/data/.mcassetsroot' uses unexpected schema
+[22:53:32] [Render thread/INFO] [mojang/YggdrasilAuthenticationService]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[22:53:32] [Render thread/INFO] [minecraft/Minecraft]: Setting user: Dev
+[22:53:32] [Render thread/INFO] [minecraft/Minecraft]: Backend library: LWJGL version 3.3.3+5
+[22:53:32] [modloading-worker-0/INFO] [ne.ne.ne.co.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.219, for MC 1.21.1
+[22:53:32] [modloading-worker-0/INFO] [EldenCombat/]: [EldenCombat] ServerCombat 已注册到游戏事件总线（单例，一次）
+[22:53:32] [modloading-worker-0/INFO] [EldenCombat/]: [EldenCombat] 纯原版战斗扩展 loaded (MC 1.21.1 / NeoForge 21.1.219)
+[22:53:33] [Render thread/INFO] [ne.ne.ne.ga.GameTestHooks/]: Enabled Gametest Namespaces: []
+[22:53:33] [Render thread/INFO] [minecraft/ReloadableResourceManager]: Reloading ResourceManager: vanilla, mod_resources, mod/neoforge, mod/eldencombat
+[22:53:34] [Worker-Main-2/INFO] [minecraft/UnihexProvider]: Found unifont_all_no_pua-15.1.05.hex, loading
+[22:53:34] [Render thread/INFO] [EldenCombat/]: [grace] 配置已载入 D:\codexout\mcmod\build\clientSmoke\config\eldencombat-grace.json（休息恢复：FP=FULL 生命=KEEP 精力=KEEP 药瓶=KEEP）
+[22:53:34] [Render thread/INFO] [EldenCombat/]: [EldenCombat] 战斗配置已载入: D:\codexout\mcmod\build\clientSmoke\config\eldencombat-combat.json
+[22:53:34] [Worker-Main-20/INFO] [minecraft/UnihexProvider]: Found unifont_jp_patch-15.1.05.hex, loading
+[22:53:34] [Render thread/INFO] [EldenCombat/]: ASH_CATALOG_ENTRY: eldencombat:spinning_slash 「回旋斩」 武器分组=slashing 武器数=5 FP=8.0 段数=1
+[22:53:34] [Render thread/INFO] [EldenCombat/]: ASH_CATALOG_ENTRY: eldencombat:heavy_thrust 「重刺」 武器分组=thrusting 武器数=5 FP=9.0 段数=1
+[22:53:34] [Render thread/INFO] [EldenCombat/]: ASH_CATALOG_ENTRY: eldencombat:stamp_upward_cut 「踏前上斩」 武器分组=cleaving 武器数=5 FP=11.0 段数=1
+[22:53:34] [Render thread/INFO] [EldenCombat/]: ASH_CATALOG_REGISTERED: 实际支持普通战灰 3 件：eldencombat:spinning_slash, eldencombat:heavy_thrust, eldencombat:stamp_upward_cut
+[22:53:34] [Render thread/INFO] [EldenCombat/]: ASH_OWNERSHIP_INSTALLED: 战灰解锁走服务端持久化存档（SavedData，UUID 为键，幂等授予）
+[22:53:34] [Render thread/INFO] [EldenCombat/]: GRACE_UNAVAILABLE: 缺少依赖 [waystones, balm]；赐福接口显示不可用，普通战斗功能不受影响
+[22:53:34] [Worker-Main-13/WARN] [minecraft/SpriteLoader]: Texture eldencombat:item/blank with size 1x1 limits mip level from 4 to 0
+[22:53:36] [Render thread/WARN] [minecraft/SoundEngine]: Missing sound for event: minecraft:item.goat_horn.play
+[22:53:36] [Render thread/WARN] [minecraft/SoundEngine]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[22:53:36] [Render thread/INFO] [mojang/Library]: OpenAL initialized on device OpenAL Soft on 扬声器 (Realtek(R) Audio)
+[22:53:37] [Render thread/INFO] [minecraft/SoundEngine]: Sound engine started
+[22:53:37] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[22:53:37] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[22:53:37] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[22:53:37] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[22:53:37] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[22:53:37] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[22:53:37] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[22:53:37] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[22:53:37] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[22:53:37] [Render thread/INFO] [eldencombat/equipment2d/]: Equipment 2D routes admitted: 0 live (0 provider chain(s)), 0 not active, 0 admitted entry/entries still awaiting visual acceptance
+[22:53:37] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x1024x0 minecraft:textures/atlas/particles.png-atlas
+[22:53:37] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[22:53:37] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[22:53:37] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[22:53:37] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[22:53:37] [Render thread/WARN] [minecraft/ShaderInstance]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[22:53:37] [Render thread/INFO] [ne.ne.ne.cl.en.an.js.AnimationLoader/]: Loaded 0 entity animations
+[22:53:37] [Render thread/INFO] [EldenCombat/]: [EldenCombat] Weapon resource cache ready: 41 entries
+[22:53:37] [Render thread/INFO] [EldenCombat/]: [skills] 战技姿态就绪：8 个
+[22:53:37] [Render thread/INFO] [EldenCombat/]: [EldenCombat] 武器姿态校正就绪：0 条
+[22:53:37] [Render thread/WARN] [ne.ne.ne.co.CommonHooks/WP]: The following mods have version differences that were not resolved:
+eldencombat (version 0.1.0 -> 0.2.0)
+neoforge (version 21.1.209 -> 21.1.219)
+Things may not work well.
+[22:53:38] [Render thread/INFO] [minecraft/RecipeManager]: Loaded 1314 recipes
+[22:53:39] [Render thread/INFO] [minecraft/AdvancementTree]: Loaded 1399 advancements
+[22:53:39] [Render thread/INFO] [EldenCombat/]: [talismans] 护符数据载入 4 件
+[22:53:39] [Render thread/INFO] [EldenCombat/]: [consumables] 药物数据载入 3 种
+[22:53:39] [Server thread/INFO] [minecraft/IntegratedServer]: Starting integrated minecraft server version 1.21.1
+[22:53:39] [Server thread/INFO] [minecraft/MinecraftServer]: Generating keypair
+[22:53:40] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing start region for dimension minecraft:overworld
+[22:53:40] [progressListener/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 2%
+[22:53:41] [progressListener/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 51%
+[22:53:41] [progressListener/INFO] [minecraft/LoggerChunkProgressListener]: Time elapsed: 930 ms
+[22:53:41] [Server thread/INFO] [ne.ne.ne.se.pe.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [skills] 追忆战技参数载入 8 项
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [weapons] 武器数值档载入 41 件
+[22:53:41] [Server thread/INFO] [minecraft/MinecraftServer]: [Not Secure] [Server] [etest] load start
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [EldenCombat] 已载入骨骼资产: 19 骨骼 / 38 方块 / 8 个动作
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 直剑轻击总长 (期望 22，实际 22)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 直剑轻击消耗 (期望 15.0，实际 15.0)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 直剑轻击窗口 (期望 8-12，实际 8-12)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 直剑轻击伤害 (期望 5.0，实际 5.0)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 大剑轻击总长 (期望 30，实际 30)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 大剑轻击消耗 (期望 20.0，实际 20.0)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 大剑轻击窗口 (期望 12-17，实际 12-17)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 大剑轻击伤害 (期望 7.0，实际 7.0)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 重击窗口 (期望 15-20，实际 15-20)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 重击消耗 (期望 25.0，实际 25.0)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 重击直剑伤害 (期望 8.0，实际 8.0)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 重击大剑伤害 (期望 11.0，实际 11.0)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 满蓄力重击窗口 (期望 16-22，实际 16-22)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 满蓄力消耗 (期望 35.0，实际 35.0)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 满蓄力大剑伤害 (期望 15.0，实际 15.0)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 满蓄力直剑伤害 (期望 11.0，实际 11.0)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 蓄力达满 tick (期望 20，实际 20)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 蓄力自动释放上限 (期望 30，实际 30)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 翻滚消耗 (期望 22.0，实际 22.0)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 翻滚总长 (期望 20，实际 20)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 翻滚无敌窗口 (期望 4-11，实际 4-11)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 弹反消耗 (期望 15.0，实际 15.0)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 弹反总长 (期望 18，实际 18)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 弹反成功窗口 (期望 3-7，实际 3-7)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 喝药总长 (期望 28，实际 28)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 喝药生效 tick (期望 18，实际 18)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 喝药回复 (期望 8.0，实际 8.0)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 初始药瓶次数 (期望 4，实际 4)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 精力上限 (期望 100.0，实际 100.0)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 精力恢复延迟 (期望 12，实际 12)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Boss 生命 (期望 200.0，实际 200.0)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Boss 二阶段阈值 (期望 0.6，实际 0.6)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Boss 失衡上限 (期望 100.0，实际 100.0)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 失衡恢复延迟 (期望 80，实际 80)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 崩解窗口下限 (期望 40，实际 40)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 崩解易伤倍率 (期望 1.5，实际 1.5)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 崩解窗口取动作与下限的较大者 (期望 70，实际 70)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 崩解窗口不足动作时长时用配置下限 (期望 40，实际 40)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 未崩解无额外易伤 (期望 1.0，实际 1.0)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 崩解期易伤生效 (期望 1.5，实际 1.5)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 单人失衡上限不缩放 (期望 100.0，实际 100.0)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 两人失衡上限 ×1.5 (期望 150.0，实际 150.0)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 盾防锥角 (期望 120.0，实际 120.0)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 破防硬直 (期望 24，实际 24)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 锁定范围 (期望 24.0，实际 24.0)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 解除锁定范围 (期望 32.0，实际 32.0)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 轻击前摇不产生判定
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 轻击窗口起点生效
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 轻击窗口终点不含
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 弹反窗口边界 2 不生效
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 弹反窗口边界 3 生效
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 弹反窗口边界 6 生效
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 弹反窗口边界 7 不生效
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 同一序号首次命中
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 同一序号重复命中被拒绝
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 新序号重新可命中
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 翻滚窗口前非无敌
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 翻滚窗口内无敌
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 翻滚窗口后非无敌
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 正面 0 度在盾防锥内
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 侧面 59 度在盾防锥内
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 背后 180 度不在盾防锥内
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 精力不足以继续挡（应破防）
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 精力足够可挡
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 破防期间盾防失效
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 破防结束后恢复
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 木杖横扫可弹反
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 匕首可弹反
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 木杖下砸不可弹反
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 黄金锤不可弹反
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 连续两次弹反可触发失衡
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 首版不存在处决动作
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 重置后无残留无敌
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 喝药中断未到生效时刻不消耗
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 喝药生效时刻 (期望 18，实际 18)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 喝药消耗一次 (期望 3，实际 3)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 线段穿过包围盒命中
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 线段偏离包围盒不命中
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 上一 tick 判定体补漏
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 盒体距离计算
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 骨骼数量 (期望 19，实际 19)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 方块数量 (期望 38，实际 38)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 尾巴骨骼数量 (期望 3，实际 3)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 尾巴方块数量 (期望 3，实际 3)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 尾巴骨骼链 tail_01 -> tail_02 -> tail_03
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 存在 staff_socket 与 spectral_socket
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作数量 (期望 8，实际 8)
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 walk
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 staff_sweep
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 staff_slam
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 dagger_slash
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 hammer_slam
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 stagger
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 动作存在 death
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 匕首动作有 equip 事件
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 黄金锤动作有 equip 事件
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 死亡动作取消武器显示
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 骨盆原点 y = 1.5 方块
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 头部原点高于骨盆
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 躯干包围盒在合理范围
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 木杖判定体长度大于 1.5 方块
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS 黄金锤锤头盒在握持点附近
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player bone/cube count false
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Skin and overlay UV bounds false
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Native skin face orientation false
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Native overlay orientation false
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD light_1
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD heavy_windup
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD heavy_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD charged_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD roll
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD parry
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD drink
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD guard_idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD guard_break
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD hit_stagger
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false LIGHT_SWORD death
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD walk
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD walk
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD walk
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD walk
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD run
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD run
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD run
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD run
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD guard_idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD guard_idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD guard_idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD guard_idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD light_1
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD light_1
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD light_1
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD light_1
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD light_2
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD light_2
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD light_2
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD light_2
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD heavy_windup
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD heavy_windup
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD heavy_windup
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD heavy_windup
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD heavy_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD heavy_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD heavy_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD heavy_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD charged_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD charged_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD charged_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD charged_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD roll
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD roll
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD roll
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD roll
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD parry
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD parry
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD parry
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD parry
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD guard_hit
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD guard_hit
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD guard_hit
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD guard_hit
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD guard_break
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD guard_break
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD guard_break
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD guard_break
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD drink
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD drink
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD drink
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD drink
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD hit_stagger
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD hit_stagger
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD hit_stagger
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD hit_stagger
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false LIGHT_SWORD death
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false LIGHT_SWORD death
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false LIGHT_SWORD death
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false LIGHT_SWORD death
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD light_1
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD heavy_windup
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD heavy_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD charged_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD roll
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD parry
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD drink
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD guard_idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD guard_break
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD hit_stagger
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip false GREAT_SWORD death
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD walk
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD walk
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD walk
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD walk
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD run
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD run
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD run
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD run
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD guard_idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD guard_idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD guard_idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD guard_idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD light_1
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD light_1
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD light_1
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD light_1
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD light_2
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD light_2
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD light_2
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD light_2
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD heavy_windup
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD heavy_windup
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD heavy_windup
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD heavy_windup
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD heavy_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD heavy_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD heavy_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD heavy_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD charged_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD charged_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD charged_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD charged_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD roll
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD roll
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD roll
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD roll
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD parry
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD parry
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD parry
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD parry
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD guard_hit
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD guard_hit
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD guard_hit
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD guard_hit
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD guard_break
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD guard_break
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD guard_break
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD guard_break
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD drink
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD drink
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD drink
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD drink
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD hit_stagger
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD hit_stagger
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD hit_stagger
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD hit_stagger
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade false GREAT_SWORD death
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands false GREAT_SWORD death
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement false GREAT_SWORD death
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip false GREAT_SWORD death
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player bone/cube count true
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Skin and overlay UV bounds true
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Native skin face orientation true
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Native overlay orientation true
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD light_1
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD heavy_windup
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD heavy_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD charged_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD roll
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD parry
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD drink
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD guard_idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD guard_break
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD hit_stagger
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true LIGHT_SWORD death
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD walk
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD walk
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD walk
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD walk
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD run
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD run
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD run
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD run
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD guard_idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD guard_idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD guard_idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD guard_idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD light_1
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD light_1
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD light_1
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD light_1
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD light_2
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD light_2
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD light_2
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD light_2
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD heavy_windup
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD heavy_windup
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD heavy_windup
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD heavy_windup
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD heavy_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD heavy_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD heavy_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD heavy_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD charged_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD charged_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD charged_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD charged_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD roll
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD roll
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD roll
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD roll
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD parry
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD parry
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD parry
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD parry
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD guard_hit
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD guard_hit
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD guard_hit
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD guard_hit
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD guard_break
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD guard_break
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD guard_break
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD guard_break
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD drink
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD drink
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD drink
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD drink
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD hit_stagger
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD hit_stagger
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD hit_stagger
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD hit_stagger
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true LIGHT_SWORD death
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true LIGHT_SWORD death
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true LIGHT_SWORD death
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true LIGHT_SWORD death
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD light_1
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD heavy_windup
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD heavy_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD charged_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD roll
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD parry
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD drink
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD guard_idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD guard_break
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD hit_stagger
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Player clip true GREAT_SWORD death
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD walk
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD walk
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD walk
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD walk
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD run
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD run
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD run
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD run
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD guard_idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD guard_idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD guard_idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD guard_idle
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD light_1
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD light_1
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD light_1
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD light_1
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD light_2
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD light_2
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD light_2
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD light_2
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD heavy_windup
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD heavy_windup
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD heavy_windup
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD heavy_windup
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD heavy_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD heavy_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD heavy_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD heavy_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD charged_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD charged_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD charged_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD charged_release
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD roll
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD roll
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD roll
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD roll
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD parry
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD parry
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD parry
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD parry
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD guard_hit
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD guard_hit
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD guard_hit
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD guard_hit
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD guard_break
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD guard_break
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD guard_break
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD guard_break
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD drink
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD drink
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD drink
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD drink
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD hit_stagger
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD hit_stagger
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD hit_stagger
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD hit_stagger
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Finite bones/blade true GREAT_SWORD death
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Mirrored hands true GREAT_SWORD death
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No visual root X/Z displacement true GREAT_SWORD death
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Two-handed grip true GREAT_SWORD death
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Native armor orientation
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Configured hit-start retiming
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Configured hit-end retiming
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Configured recovery retiming
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Full charge retiming
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Unsorted equip events
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Event zero fires once
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Loop boundary event
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Skipped frame events
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Fast blade crosses between endpoints
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Sweep outside target misses
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS No execution/jump attack IDs
+[22:53:41] [Server thread/INFO] [EldenCombat/]: [selftest] PASS Non-finite direction rejected
+[22:53:41] [Server thread/INFO] [minecraft/MinecraftServer]: [Not Secure] [Server] [etest] MARGIT_SUMMONED
+[22:53:41] [Server thread/INFO] [minecraft/IntegratedServer]: Changing view distance to 12, from 10
+[22:53:41] [Server thread/INFO] [minecraft/IntegratedServer]: Changing simulation distance to 12, from 0
+[22:53:42] [Server thread/INFO] [minecraft/PlayerList]: Dev[local:E:b001e4d0] logged in with entity id 2 at (5.5, -60.0, -5.5)
+[22:53:42] [Server thread/INFO] [minecraft/MinecraftServer]: Dev joined the game
+[22:53:43] [Render thread/INFO] [minecraft/AdvancementTree]: Loaded 2 advancements
+[22:53:43] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: grip fixture uses actual WIDE player skin
+[22:53:43] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_RUNTIME: skin=WIDE uuid=00000000-0000-0000-0000-000000000009 FOV=40; development classes/resources, not installed release JAR
+[22:53:44] [Server thread/INFO] [EldenCombat/]: CLIENT_SMOKE: 428 shared checks passed
+[22:53:45] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-diamond-third-right
+[22:53:45] [IO-Worker-4/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 00-ref-grip-diamond-third-right.png Saved screenshot as 00-ref-grip-diamond-third-right.png
+[22:53:46] [Server thread/INFO] [minecraft/MinecraftServer]: [Not Secure] [Server] [etest] verify start
+[22:53:46] [Server thread/INFO] [minecraft/MinecraftServer]: [Not Secure] [Server] [etest] DAMAGE_PIPELINE_OBSERVED
+[22:53:46] [Render thread/INFO] [minecraft/ChatComponent]: [System] [CHAT] [Server] [etest] verify start
+[22:53:46] [Render thread/INFO] [minecraft/ChatComponent]: [System] [CHAT] [Server] [etest] DAMAGE_PIPELINE_OBSERVED
+[22:53:47] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-diamond-third-left
+[22:53:47] [IO-Worker-2/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 01-ref-grip-diamond-third-left.png Saved screenshot as 01-ref-grip-diamond-third-left.png
+[22:53:49] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-diamond-first-right
+[22:53:49] [IO-Worker-4/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 02-ref-grip-diamond-first-right.png Saved screenshot as 02-ref-grip-diamond-first-right.png
+[22:53:49] [Server thread/INFO] [minecraft/MinecraftServer]: [Not Secure] [Server] [etest] MARGIT_REMOVED_AFTER_DEATH
+[22:53:49] [Server thread/INFO] [minecraft/MinecraftServer]: [Not Secure] [Server] [etest] DONE
+[22:53:49] [Render thread/INFO] [minecraft/ChatComponent]: [System] [CHAT] [Server] [etest] MARGIT_REMOVED_AFTER_DEATH
+[22:53:49] [Render thread/INFO] [minecraft/ChatComponent]: [System] [CHAT] [Server] [etest] DONE
+[22:53:51] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-diamond-first-left
+[22:53:51] [IO-Worker-4/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 03-ref-grip-diamond-first-left.png Saved screenshot as 03-ref-grip-diamond-first-left.png
+[22:53:52] [Render thread/WARN] [eldencombat/equipment2d/]: Equipment 2D provider chain unavailable, legacy model kept: eldencombat:thrusting_sword -> spartan_weaponry_unofficial:models/item/iron_rapier.json, eldencombat:great_hammer -> spartan_weaponry_unofficial:models/item/iron_battle_hammer.json, eldencombat:hammer -> spartan_weaponry_unofficial:models/item/iron_flanged_mace.json, eldencombat:greataxe -> spartan_weaponry_unofficial:models/item/iron_battleaxe.json, eldencombat:dagger -> spartan_weaponry_unofficial:models/item/iron_dagger.json, eldencombat:spear -> spartan_weaponry_unofficial:models/item/iron_spear.json, eldencombat:long_bow -> spartan_weaponry_unofficial:models/item/longbow_iron_strengthened_pulling_1.json, eldencombat:long_bow -> spartan_weaponry_unofficial:models/item/longbow_iron_strengthened_pulling_0.json, eldencombat:long_bow -> spartan_weaponry_unofficial:models/item/longbow_iron_strengthened.json, eldencombat:long_bow -> spartan_weaponry_unofficial:models/item/longbow_iron_strengthened_pulling_2.json, eldencombat:katana -> spartan_weaponry_unofficial:models/item/iron_katana.json, eldencombat:halberd -> spartan_weaponry_unofficial:models/item/iron_halberd.json, eldencombat:scythe -> spartan_weaponry_unofficial:models/item/iron_scythe.json
+[22:53:53] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-straight-third-right
+[22:53:53] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 04-ref-grip-straight-third-right.png Saved screenshot as 04-ref-grip-straight-third-right.png
+[22:53:55] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-straight-third-off-left
+[22:53:55] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 05-ref-grip-straight-third-off-left.png Saved screenshot as 05-ref-grip-straight-third-off-left.png
+[22:53:57] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-straight-third-left
+[22:53:57] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 06-ref-grip-straight-third-left.png Saved screenshot as 06-ref-grip-straight-third-left.png
+[22:53:59] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-straight-third-off-right
+[22:53:59] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 07-ref-grip-straight-third-off-right.png Saved screenshot as 07-ref-grip-straight-third-off-right.png
+[22:54:01] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-straight-first-right
+[22:54:01] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 08-ref-grip-straight-first-right.png Saved screenshot as 08-ref-grip-straight-first-right.png
+[22:54:03] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-straight-first-off-left
+[22:54:03] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 09-ref-grip-straight-first-off-left.png Saved screenshot as 09-ref-grip-straight-first-off-left.png
+[22:54:05] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-straight-first-left
+[22:54:05] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 10-ref-grip-straight-first-left.png Saved screenshot as 10-ref-grip-straight-first-left.png
+[22:54:07] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-straight-first-off-right
+[22:54:07] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 11-ref-grip-straight-first-off-right.png Saved screenshot as 11-ref-grip-straight-first-off-right.png
+[22:54:09] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-great-third-right
+[22:54:09] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:great_sword right grip is 0.051318984 blocks from the RIGHT palm centre; gap to the vanilla counterpart placement is 0.017609987 blocks
+[22:54:09] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 12-ref-grip-great-third-right.png Saved screenshot as 12-ref-grip-great-third-right.png
+[22:54:11] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-great-third-off-left
+[22:54:11] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:great_sword left grip is 0.05131176 blocks from the LEFT palm centre; gap to the vanilla counterpart placement is 0.017605543 blocks
+[22:54:11] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 13-ref-grip-great-third-off-left.png Saved screenshot as 13-ref-grip-great-third-off-left.png
+[22:54:13] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-great-third-left
+[22:54:13] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:great_sword left grip is 0.05131412 blocks from the LEFT palm centre; gap to the vanilla counterpart placement is 0.017608635 blocks
+[22:54:13] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 14-ref-grip-great-third-left.png Saved screenshot as 14-ref-grip-great-third-left.png
+[22:54:15] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-great-third-off-right
+[22:54:15] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:great_sword right grip is 0.051313087 blocks from the RIGHT palm centre; gap to the vanilla counterpart placement is 0.017607633 blocks
+[22:54:15] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 15-ref-grip-great-third-off-right.png Saved screenshot as 15-ref-grip-great-third-off-right.png
+[22:54:17] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-great-first-right
+[22:54:17] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 16-ref-grip-great-first-right.png Saved screenshot as 16-ref-grip-great-first-right.png
+[22:54:19] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-great-first-off-left
+[22:54:19] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 17-ref-grip-great-first-off-left.png Saved screenshot as 17-ref-grip-great-first-off-left.png
+[22:54:21] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-great-first-left
+[22:54:21] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 18-ref-grip-great-first-left.png Saved screenshot as 18-ref-grip-great-first-left.png
+[22:54:23] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-great-first-off-right
+[22:54:23] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 19-ref-grip-great-first-off-right.png Saved screenshot as 19-ref-grip-great-first-off-right.png
+[22:54:25] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-colossal-third-right
+[22:54:25] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:colossal_sword right grip is 0.05131654 blocks from the RIGHT palm centre; gap to the vanilla counterpart placement is 0.017608533 blocks
+[22:54:25] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 20-ref-grip-colossal-third-right.png Saved screenshot as 20-ref-grip-colossal-third-right.png
+[22:54:27] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-colossal-third-off-left
+[22:54:27] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:colossal_sword left grip is 0.051316503 blocks from the LEFT palm centre; gap to the vanilla counterpart placement is 0.017608348 blocks
+[22:54:27] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 21-ref-grip-colossal-third-off-left.png Saved screenshot as 21-ref-grip-colossal-third-off-left.png
+[22:54:29] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-colossal-third-left
+[22:54:29] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:colossal_sword left grip is 0.051314168 blocks from the LEFT palm centre; gap to the vanilla counterpart placement is 0.01760883 blocks
+[22:54:29] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 22-ref-grip-colossal-third-left.png Saved screenshot as 22-ref-grip-colossal-third-left.png
+[22:54:31] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-colossal-third-off-right
+[22:54:31] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:colossal_sword right grip is 0.051319662 blocks from the RIGHT palm centre; gap to the vanilla counterpart placement is 0.01760812 blocks
+[22:54:31] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 23-ref-grip-colossal-third-off-right.png Saved screenshot as 23-ref-grip-colossal-third-off-right.png
+[22:54:33] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-colossal-first-right
+[22:54:33] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 24-ref-grip-colossal-first-right.png Saved screenshot as 24-ref-grip-colossal-first-right.png
+[22:54:35] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-colossal-first-off-left
+[22:54:35] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 25-ref-grip-colossal-first-off-left.png Saved screenshot as 25-ref-grip-colossal-first-off-left.png
+[22:54:37] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-colossal-first-left
+[22:54:37] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 26-ref-grip-colossal-first-left.png Saved screenshot as 26-ref-grip-colossal-first-left.png
+[22:54:39] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-colossal-first-off-right
+[22:54:39] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 27-ref-grip-colossal-first-off-right.png Saved screenshot as 27-ref-grip-colossal-first-off-right.png
+[22:54:41] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-spear-third-right
+[22:54:41] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: live handle center overlaps RIGHT palm, distance=0.05131812
+[22:54:41] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 28-ref-grip-spear-third-right.png Saved screenshot as 28-ref-grip-spear-third-right.png
+[22:54:43] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-spear-third-off-left
+[22:54:43] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: live handle center overlaps LEFT palm, distance=0.05131432
+[22:54:43] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 29-ref-grip-spear-third-off-left.png Saved screenshot as 29-ref-grip-spear-third-off-left.png
+[22:54:45] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-spear-third-left
+[22:54:45] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: live handle center overlaps LEFT palm, distance=0.05131837
+[22:54:45] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 30-ref-grip-spear-third-left.png Saved screenshot as 30-ref-grip-spear-third-left.png
+[22:54:47] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-spear-third-off-right
+[22:54:47] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: live handle center overlaps RIGHT palm, distance=0.05131794
+[22:54:47] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 31-ref-grip-spear-third-off-right.png Saved screenshot as 31-ref-grip-spear-third-off-right.png
+[22:54:49] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-spear-first-right
+[22:54:49] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 32-ref-grip-spear-first-right.png Saved screenshot as 32-ref-grip-spear-first-right.png
+[22:54:51] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-spear-first-off-left
+[22:54:51] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 33-ref-grip-spear-first-off-left.png Saved screenshot as 33-ref-grip-spear-first-off-left.png
+[22:54:53] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-spear-first-left
+[22:54:53] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 34-ref-grip-spear-first-left.png Saved screenshot as 34-ref-grip-spear-first-left.png
+[22:54:55] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-spear-first-off-right
+[22:54:55] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 35-ref-grip-spear-first-off-right.png Saved screenshot as 35-ref-grip-spear-first-off-right.png
+[22:54:57] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-shield-third-right
+[22:54:57] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:shield right grip is 0.16572694 blocks from the RIGHT palm centre; gap to the vanilla counterpart placement is 1.074538E-7 blocks
+[22:54:57] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 36-ref-grip-shield-third-right.png Saved screenshot as 36-ref-grip-shield-third-right.png
+[22:54:59] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-shield-third-off-left
+[22:54:59] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:shield left grip is 0.16572975 blocks from the LEFT palm centre; gap to the vanilla counterpart placement is 7.629467E-6 blocks
+[22:54:59] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 37-ref-grip-shield-third-off-left.png Saved screenshot as 37-ref-grip-shield-third-off-left.png
+[22:55:01] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-shield-third-left
+[22:55:01] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:shield left grip is 0.16572922 blocks from the LEFT palm centre; gap to the vanilla counterpart placement is 3.071953E-8 blocks
+[22:55:01] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 38-ref-grip-shield-third-left.png Saved screenshot as 38-ref-grip-shield-third-left.png
+[22:55:03] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-shield-third-off-right
+[22:55:03] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:shield right grip is 0.16573657 blocks from the RIGHT palm centre; gap to the vanilla counterpart placement is 9.685755E-8 blocks
+[22:55:03] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 39-ref-grip-shield-third-off-right.png Saved screenshot as 39-ref-grip-shield-third-off-right.png
+[22:55:05] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-shield-first-right
+[22:55:05] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 40-ref-grip-shield-first-right.png Saved screenshot as 40-ref-grip-shield-first-right.png
+[22:55:07] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-shield-first-off-left
+[22:55:07] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 41-ref-grip-shield-first-off-left.png Saved screenshot as 41-ref-grip-shield-first-off-left.png
+[22:55:09] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-shield-first-left
+[22:55:09] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 42-ref-grip-shield-first-left.png Saved screenshot as 42-ref-grip-shield-first-left.png
+[22:55:11] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-shield-first-off-right
+[22:55:11] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 43-ref-grip-shield-first-off-right.png Saved screenshot as 43-ref-grip-shield-first-off-right.png
+[22:55:13] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-bow-third-right
+[22:55:13] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: live handle center overlaps RIGHT palm, distance=0.05131252
+[22:55:13] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 44-ref-grip-bow-third-right.png Saved screenshot as 44-ref-grip-bow-third-right.png
+[22:55:15] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-bow-third-off-left
+[22:55:15] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: live handle center overlaps LEFT palm, distance=0.05132409
+[22:55:15] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 45-ref-grip-bow-third-off-left.png Saved screenshot as 45-ref-grip-bow-third-off-left.png
+[22:55:17] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-bow-third-left
+[22:55:17] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: live handle center overlaps LEFT palm, distance=0.05132061
+[22:55:17] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 46-ref-grip-bow-third-left.png Saved screenshot as 46-ref-grip-bow-third-left.png
+[22:55:19] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-bow-third-off-right
+[22:55:19] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: live handle center overlaps RIGHT palm, distance=0.05131339
+[22:55:19] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 47-ref-grip-bow-third-off-right.png Saved screenshot as 47-ref-grip-bow-third-off-right.png
+[22:55:21] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-bow-first-right
+[22:55:21] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 48-ref-grip-bow-first-right.png Saved screenshot as 48-ref-grip-bow-first-right.png
+[22:55:23] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-bow-first-off-left
+[22:55:23] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 49-ref-grip-bow-first-off-left.png Saved screenshot as 49-ref-grip-bow-first-off-left.png
+[22:55:25] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-bow-first-left
+[22:55:25] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 50-ref-grip-bow-first-left.png Saved screenshot as 50-ref-grip-bow-first-left.png
+[22:55:27] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-bow-first-off-right
+[22:55:27] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 51-ref-grip-bow-first-off-right.png Saved screenshot as 51-ref-grip-bow-first-off-right.png
+[22:55:29] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-great-shield-third-right
+[22:55:29] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:great_shield right grip is 0.16572584 blocks from the RIGHT palm centre; gap to the vanilla counterpart placement is 1.5259051E-5 blocks
+[22:55:29] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 52-ref-grip-great-shield-third-right.png Saved screenshot as 52-ref-grip-great-shield-third-right.png
+[22:55:31] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-great-shield-third-off-left
+[22:55:31] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:great_shield left grip is 0.1657246 blocks from the LEFT palm centre; gap to the vanilla counterpart placement is 6.664002E-8 blocks
+[22:55:31] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 53-ref-grip-great-shield-third-off-left.png Saved screenshot as 53-ref-grip-great-shield-third-off-left.png
+[22:55:33] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-great-shield-third-left
+[22:55:33] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:great_shield left grip is 0.16573466 blocks from the LEFT palm centre; gap to the vanilla counterpart placement is 7.629427E-6 blocks
+[22:55:33] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 54-ref-grip-great-shield-third-left.png Saved screenshot as 54-ref-grip-great-shield-third-left.png
+[22:55:35] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-great-shield-third-off-right
+[22:55:35] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:great_shield right grip is 0.16572876 blocks from the RIGHT palm centre; gap to the vanilla counterpart placement is 1.3328004E-7 blocks
+[22:55:35] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 55-ref-grip-great-shield-third-off-right.png Saved screenshot as 55-ref-grip-great-shield-third-off-right.png
+[22:55:37] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-great-shield-first-right
+[22:55:37] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 56-ref-grip-great-shield-first-right.png Saved screenshot as 56-ref-grip-great-shield-first-right.png
+[22:55:39] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-great-shield-first-off-left
+[22:55:39] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 57-ref-grip-great-shield-first-off-left.png Saved screenshot as 57-ref-grip-great-shield-first-off-left.png
+[22:55:41] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-great-shield-first-left
+[22:55:41] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 58-ref-grip-great-shield-first-left.png Saved screenshot as 58-ref-grip-great-shield-first-left.png
+[22:55:43] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-great-shield-first-off-right
+[22:55:43] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 59-ref-grip-great-shield-first-off-right.png Saved screenshot as 59-ref-grip-great-shield-first-off-right.png
+[22:55:45] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-small-shield-third-right
+[22:55:45] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:small_shield right grip is 0.16573294 blocks from the RIGHT palm centre; gap to the vanilla counterpart placement is 7.4505806E-8 blocks
+[22:55:45] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 60-ref-grip-small-shield-third-right.png Saved screenshot as 60-ref-grip-small-shield-third-right.png
+[22:55:47] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-small-shield-third-off-left
+[22:55:47] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:small_shield left grip is 0.1657367 blocks from the LEFT palm centre; gap to the vanilla counterpart placement is 1.525879E-5 blocks
+[22:55:47] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 61-ref-grip-small-shield-third-off-left.png Saved screenshot as 61-ref-grip-small-shield-third-off-left.png
+[22:55:49] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-small-shield-third-left
+[22:55:49] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:small_shield left grip is 0.16572368 blocks from the LEFT palm centre; gap to the vanilla counterpart placement is 7.629427E-6 blocks
+[22:55:49] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 62-ref-grip-small-shield-third-left.png Saved screenshot as 62-ref-grip-small-shield-third-left.png
+[22:55:51] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-small-shield-third-off-right
+[22:55:51] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:small_shield right grip is 0.16572484 blocks from the RIGHT palm centre; gap to the vanilla counterpart placement is 7.629642E-6 blocks
+[22:55:51] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 63-ref-grip-small-shield-third-off-right.png Saved screenshot as 63-ref-grip-small-shield-third-off-right.png
+[22:55:53] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-small-shield-first-right
+[22:55:53] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 64-ref-grip-small-shield-first-right.png Saved screenshot as 64-ref-grip-small-shield-first-right.png
+[22:55:55] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-small-shield-first-off-left
+[22:55:55] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 65-ref-grip-small-shield-first-off-left.png Saved screenshot as 65-ref-grip-small-shield-first-off-left.png
+[22:55:57] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-small-shield-first-left
+[22:55:57] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 66-ref-grip-small-shield-first-left.png Saved screenshot as 66-ref-grip-small-shield-first-left.png
+[22:55:59] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-small-shield-first-off-right
+[22:55:59] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 67-ref-grip-small-shield-first-off-right.png Saved screenshot as 67-ref-grip-small-shield-first-off-right.png
+[22:56:01] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-great-bow-third-right
+[22:56:01] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:great_bow right grip is 0.117289945 blocks from the RIGHT palm centre; gap to the vanilla counterpart placement is 0.28941917 blocks
+[22:56:01] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 68-ref-grip-great-bow-third-right.png Saved screenshot as 68-ref-grip-great-bow-third-right.png
+[22:56:03] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-great-bow-third-off-left
+[22:56:03] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:great_bow left grip is 0.11730162 blocks from the LEFT palm centre; gap to the vanilla counterpart placement is 0.28945166 blocks
+[22:56:03] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 69-ref-grip-great-bow-third-off-left.png Saved screenshot as 69-ref-grip-great-bow-third-off-left.png
+[22:56:05] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-great-bow-third-left
+[22:56:05] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:great_bow left grip is 0.11730583 blocks from the LEFT palm centre; gap to the vanilla counterpart placement is 0.28944778 blocks
+[22:56:05] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 70-ref-grip-great-bow-third-left.png Saved screenshot as 70-ref-grip-great-bow-third-left.png
+[22:56:07] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-great-bow-third-off-right
+[22:56:07] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:great_bow right grip is 0.11730702 blocks from the RIGHT palm centre; gap to the vanilla counterpart placement is 0.28944457 blocks
+[22:56:07] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 71-ref-grip-great-bow-third-off-right.png Saved screenshot as 71-ref-grip-great-bow-third-off-right.png
+[22:56:09] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-great-bow-first-right
+[22:56:09] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 72-ref-grip-great-bow-first-right.png Saved screenshot as 72-ref-grip-great-bow-first-right.png
+[22:56:11] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-great-bow-first-off-left
+[22:56:11] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 73-ref-grip-great-bow-first-off-left.png Saved screenshot as 73-ref-grip-great-bow-first-off-left.png
+[22:56:13] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-great-bow-first-left
+[22:56:13] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 74-ref-grip-great-bow-first-left.png Saved screenshot as 74-ref-grip-great-bow-first-left.png
+[22:56:15] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-great-bow-first-off-right
+[22:56:15] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 75-ref-grip-great-bow-first-off-right.png Saved screenshot as 75-ref-grip-great-bow-first-off-right.png
+[22:56:17] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-ballista-third-right
+[22:56:17] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:ballista right grip is 0.18061432 blocks from the RIGHT palm centre; gap to the vanilla counterpart placement is 0.30578098 blocks
+[22:56:17] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 76-ref-grip-ballista-third-right.png Saved screenshot as 76-ref-grip-ballista-third-right.png
+[22:56:19] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-ballista-third-off-left
+[22:56:19] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:ballista left grip is 0.20921004 blocks from the LEFT palm centre; gap to the vanilla counterpart placement is 0.30579188 blocks
+[22:56:19] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 77-ref-grip-ballista-third-off-left.png Saved screenshot as 77-ref-grip-ballista-third-off-left.png
+[22:56:21] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-ballista-third-left
+[22:56:21] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:ballista left grip is 0.2092105 blocks from the LEFT palm centre; gap to the vanilla counterpart placement is 0.30579245 blocks
+[22:56:21] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 78-ref-grip-ballista-third-left.png Saved screenshot as 78-ref-grip-ballista-third-left.png
+[22:56:23] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-ballista-third-off-right
+[22:56:23] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:ballista right grip is 0.18061008 blocks from the RIGHT palm centre; gap to the vanilla counterpart placement is 0.30578947 blocks
+[22:56:23] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 79-ref-grip-ballista-third-off-right.png Saved screenshot as 79-ref-grip-ballista-third-off-right.png
+[22:56:25] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-ballista-first-right
+[22:56:25] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 80-ref-grip-ballista-first-right.png Saved screenshot as 80-ref-grip-ballista-first-right.png
+[22:56:27] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-ballista-first-off-left
+[22:56:27] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 81-ref-grip-ballista-first-off-left.png Saved screenshot as 81-ref-grip-ballista-first-off-left.png
+[22:56:29] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-ballista-first-left
+[22:56:29] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 82-ref-grip-ballista-first-left.png Saved screenshot as 82-ref-grip-ballista-first-left.png
+[22:56:31] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-ballista-first-off-right
+[22:56:31] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 83-ref-grip-ballista-first-off-right.png Saved screenshot as 83-ref-grip-ballista-first-off-right.png
+[22:56:33] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-whip-third-right
+[22:56:33] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:whip right grip is 0.05131831 blocks from the RIGHT palm centre; gap to the vanilla counterpart placement is 0.12819271 blocks
+[22:56:33] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 84-ref-grip-whip-third-right.png Saved screenshot as 84-ref-grip-whip-third-right.png
+[22:56:35] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-whip-third-off-left
+[22:56:35] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:whip left grip is 0.051316254 blocks from the LEFT palm centre; gap to the vanilla counterpart placement is 0.12819086 blocks
+[22:56:35] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 85-ref-grip-whip-third-off-left.png Saved screenshot as 85-ref-grip-whip-third-off-left.png
+[22:56:37] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-whip-third-left
+[22:56:37] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:whip left grip is 0.051319133 blocks from the LEFT palm centre; gap to the vanilla counterpart placement is 0.12820491 blocks
+[22:56:37] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 86-ref-grip-whip-third-left.png Saved screenshot as 86-ref-grip-whip-third-left.png
+[22:56:39] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-whip-third-off-right
+[22:56:39] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:whip right grip is 0.051314823 blocks from the RIGHT palm centre; gap to the vanilla counterpart placement is 0.12819721 blocks
+[22:56:39] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 87-ref-grip-whip-third-off-right.png Saved screenshot as 87-ref-grip-whip-third-off-right.png
+[22:56:41] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-whip-first-right
+[22:56:41] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 88-ref-grip-whip-first-right.png Saved screenshot as 88-ref-grip-whip-first-right.png
+[22:56:43] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-whip-first-off-left
+[22:56:43] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 89-ref-grip-whip-first-off-left.png Saved screenshot as 89-ref-grip-whip-first-off-left.png
+[22:56:45] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-whip-first-left
+[22:56:45] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 90-ref-grip-whip-first-left.png Saved screenshot as 90-ref-grip-whip-first-left.png
+[22:56:47] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-whip-first-off-right
+[22:56:47] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 91-ref-grip-whip-first-off-right.png Saved screenshot as 91-ref-grip-whip-first-off-right.png
+[22:56:49] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-scythe-third-right
+[22:56:49] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: live handle center overlaps RIGHT palm, distance=0.05131814
+[22:56:49] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 92-ref-grip-scythe-third-right.png Saved screenshot as 92-ref-grip-scythe-third-right.png
+[22:56:51] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-scythe-third-off-left
+[22:56:51] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: live handle center overlaps LEFT palm, distance=0.051314723
+[22:56:51] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 93-ref-grip-scythe-third-off-left.png Saved screenshot as 93-ref-grip-scythe-third-off-left.png
+[22:56:53] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-scythe-third-left
+[22:56:53] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: live handle center overlaps LEFT palm, distance=0.05131983
+[22:56:53] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 94-ref-grip-scythe-third-left.png Saved screenshot as 94-ref-grip-scythe-third-left.png
+[22:56:55] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-scythe-third-off-right
+[22:56:55] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: live handle center overlaps RIGHT palm, distance=0.051313415
+[22:56:55] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 95-ref-grip-scythe-third-off-right.png Saved screenshot as 95-ref-grip-scythe-third-off-right.png
+[22:56:57] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-scythe-first-right
+[22:56:57] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 96-ref-grip-scythe-first-right.png Saved screenshot as 96-ref-grip-scythe-first-right.png
+[22:56:59] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-scythe-first-off-left
+[22:56:59] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 97-ref-grip-scythe-first-off-left.png Saved screenshot as 97-ref-grip-scythe-first-off-left.png
+[22:57:01] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-scythe-first-left
+[22:57:01] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 98-ref-grip-scythe-first-left.png Saved screenshot as 98-ref-grip-scythe-first-left.png
+[22:57:03] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-scythe-first-off-right
+[22:57:03] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 99-ref-grip-scythe-first-off-right.png Saved screenshot as 99-ref-grip-scythe-first-off-right.png
+[22:57:05] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-axe-third-right
+[22:57:05] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 100-ref-grip-axe-third-right.png Saved screenshot as 100-ref-grip-axe-third-right.png
+[22:57:07] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-axe-third-off-left
+[22:57:07] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 101-ref-grip-axe-third-off-left.png Saved screenshot as 101-ref-grip-axe-third-off-left.png
+[22:57:09] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-axe-third-left
+[22:57:09] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 102-ref-grip-axe-third-left.png Saved screenshot as 102-ref-grip-axe-third-left.png
+[22:57:11] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-axe-third-off-right
+[22:57:11] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 103-ref-grip-axe-third-off-right.png Saved screenshot as 103-ref-grip-axe-third-off-right.png
+[22:57:13] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-axe-first-right
+[22:57:13] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 104-ref-grip-axe-first-right.png Saved screenshot as 104-ref-grip-axe-first-right.png
+[22:57:15] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-axe-first-off-left
+[22:57:15] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 105-ref-grip-axe-first-off-left.png Saved screenshot as 105-ref-grip-axe-first-off-left.png
+[22:57:17] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-axe-first-left
+[22:57:17] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 106-ref-grip-axe-first-left.png Saved screenshot as 106-ref-grip-axe-first-left.png
+[22:57:19] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-axe-first-off-right
+[22:57:19] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 107-ref-grip-axe-first-off-right.png Saved screenshot as 107-ref-grip-axe-first-off-right.png
+[22:57:21] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-vanilla-shield-third-right
+[22:57:21] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 108-ref-grip-vanilla-shield-third-right.png Saved screenshot as 108-ref-grip-vanilla-shield-third-right.png
+[22:57:23] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-vanilla-shield-third-off-left
+[22:57:23] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 109-ref-grip-vanilla-shield-third-off-left.png Saved screenshot as 109-ref-grip-vanilla-shield-third-off-left.png
+[22:57:25] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-vanilla-shield-third-left
+[22:57:25] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 110-ref-grip-vanilla-shield-third-left.png Saved screenshot as 110-ref-grip-vanilla-shield-third-left.png
+[22:57:27] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-vanilla-shield-third-off-right
+[22:57:27] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 111-ref-grip-vanilla-shield-third-off-right.png Saved screenshot as 111-ref-grip-vanilla-shield-third-off-right.png
+[22:57:29] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-vanilla-shield-first-right
+[22:57:29] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 112-ref-grip-vanilla-shield-first-right.png Saved screenshot as 112-ref-grip-vanilla-shield-first-right.png
+[22:57:31] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-vanilla-shield-first-off-left
+[22:57:31] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 113-ref-grip-vanilla-shield-first-off-left.png Saved screenshot as 113-ref-grip-vanilla-shield-first-off-left.png
+[22:57:33] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-vanilla-shield-first-left
+[22:57:33] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 114-ref-grip-vanilla-shield-first-left.png Saved screenshot as 114-ref-grip-vanilla-shield-first-left.png
+[22:57:35] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-vanilla-shield-first-off-right
+[22:57:35] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 115-ref-grip-vanilla-shield-first-off-right.png Saved screenshot as 115-ref-grip-vanilla-shield-first-off-right.png
+[22:57:36] [Render thread/INFO] [minecraft/AdvancementTree]: Loaded 3 advancements
+[22:57:37] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-vanilla-bow-third-right
+[22:57:37] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 116-ref-grip-vanilla-bow-third-right.png Saved screenshot as 116-ref-grip-vanilla-bow-third-right.png
+[22:57:39] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-vanilla-bow-third-off-left
+[22:57:39] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 117-ref-grip-vanilla-bow-third-off-left.png Saved screenshot as 117-ref-grip-vanilla-bow-third-off-left.png
+[22:57:41] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-vanilla-bow-third-left
+[22:57:41] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 118-ref-grip-vanilla-bow-third-left.png Saved screenshot as 118-ref-grip-vanilla-bow-third-left.png
+[22:57:43] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-vanilla-bow-third-off-right
+[22:57:43] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 119-ref-grip-vanilla-bow-third-off-right.png Saved screenshot as 119-ref-grip-vanilla-bow-third-off-right.png
+[22:57:45] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-vanilla-bow-first-right
+[22:57:45] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 120-ref-grip-vanilla-bow-first-right.png Saved screenshot as 120-ref-grip-vanilla-bow-first-right.png
+[22:57:47] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-vanilla-bow-first-off-left
+[22:57:47] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 121-ref-grip-vanilla-bow-first-off-left.png Saved screenshot as 121-ref-grip-vanilla-bow-first-off-left.png
+[22:57:49] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-vanilla-bow-first-left
+[22:57:49] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 122-ref-grip-vanilla-bow-first-left.png Saved screenshot as 122-ref-grip-vanilla-bow-first-left.png
+[22:57:51] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-vanilla-bow-first-off-right
+[22:57:51] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 123-ref-grip-vanilla-bow-first-off-right.png Saved screenshot as 123-ref-grip-vanilla-bow-first-off-right.png
+[22:57:53] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-vanilla-crossbow-third-right
+[22:57:53] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 124-ref-grip-vanilla-crossbow-third-right.png Saved screenshot as 124-ref-grip-vanilla-crossbow-third-right.png
+[22:57:55] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-vanilla-crossbow-third-off-left
+[22:57:55] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 125-ref-grip-vanilla-crossbow-third-off-left.png Saved screenshot as 125-ref-grip-vanilla-crossbow-third-off-left.png
+[22:57:57] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-vanilla-crossbow-third-left
+[22:57:57] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 126-ref-grip-vanilla-crossbow-third-left.png Saved screenshot as 126-ref-grip-vanilla-crossbow-third-left.png
+[22:57:59] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-vanilla-crossbow-third-off-right
+[22:57:59] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 127-ref-grip-vanilla-crossbow-third-off-right.png Saved screenshot as 127-ref-grip-vanilla-crossbow-third-off-right.png
+[22:58:01] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-vanilla-crossbow-first-right
+[22:58:01] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 128-ref-grip-vanilla-crossbow-first-right.png Saved screenshot as 128-ref-grip-vanilla-crossbow-first-right.png
+[22:58:03] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-vanilla-crossbow-first-off-left
+[22:58:03] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 129-ref-grip-vanilla-crossbow-first-off-left.png Saved screenshot as 129-ref-grip-vanilla-crossbow-first-off-left.png
+[22:58:05] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-vanilla-crossbow-first-left
+[22:58:05] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 130-ref-grip-vanilla-crossbow-first-left.png Saved screenshot as 130-ref-grip-vanilla-crossbow-first-left.png
+[22:58:07] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-vanilla-crossbow-first-off-right
+[22:58:07] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 131-ref-grip-vanilla-crossbow-first-off-right.png Saved screenshot as 131-ref-grip-vanilla-crossbow-first-off-right.png
+[22:58:09] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-straight-third-light_attack
+[22:58:09] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 132-ref-grip-straight-third-light_attack.png Saved screenshot as 132-ref-grip-straight-third-light_attack.png
+[22:58:11] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-straight-third-guard
+[22:58:11] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 133-ref-grip-straight-third-guard.png Saved screenshot as 133-ref-grip-straight-third-guard.png
+[22:58:13] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-straight-first-light_attack
+[22:58:13] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 134-ref-grip-straight-first-light_attack.png Saved screenshot as 134-ref-grip-straight-first-light_attack.png
+[22:58:15] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-straight-first-guard
+[22:58:15] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 135-ref-grip-straight-first-guard.png Saved screenshot as 135-ref-grip-straight-first-guard.png
+[22:58:17] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-great-third-light_attack
+[22:58:17] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:great_sword right grip is 0.05132258 blocks from the RIGHT palm centre; gap to the vanilla counterpart placement is 0.017610192 blocks
+[22:58:17] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 136-ref-grip-great-third-light_attack.png Saved screenshot as 136-ref-grip-great-third-light_attack.png
+[22:58:19] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-great-third-guard
+[22:58:19] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:great_sword right grip is 0.05131819 blocks from the RIGHT palm centre; gap to the vanilla counterpart placement is 0.017609568 blocks
+[22:58:19] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 137-ref-grip-great-third-guard.png Saved screenshot as 137-ref-grip-great-third-guard.png
+[22:58:21] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-great-first-light_attack
+[22:58:21] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 138-ref-grip-great-first-light_attack.png Saved screenshot as 138-ref-grip-great-first-light_attack.png
+[22:58:23] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-great-first-guard
+[22:58:23] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 139-ref-grip-great-first-guard.png Saved screenshot as 139-ref-grip-great-first-guard.png
+[22:58:25] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-colossal-third-light_attack
+[22:58:25] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:colossal_sword right grip is 0.051316503 blocks from the RIGHT palm centre; gap to the vanilla counterpart placement is 0.017611446 blocks
+[22:58:25] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 140-ref-grip-colossal-third-light_attack.png Saved screenshot as 140-ref-grip-colossal-third-light_attack.png
+[22:58:27] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-colossal-third-guard
+[22:58:27] [Render thread/INFO] [EldenCombat/]: CLIENT_GRIP_2D: eldencombat:colossal_sword right grip is 0.051323157 blocks from the RIGHT palm centre; gap to the vanilla counterpart placement is 0.017605493 blocks
+[22:58:27] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 141-ref-grip-colossal-third-guard.png Saved screenshot as 141-ref-grip-colossal-third-guard.png
+[22:58:29] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-colossal-first-light_attack
+[22:58:29] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 142-ref-grip-colossal-first-light_attack.png Saved screenshot as 142-ref-grip-colossal-first-light_attack.png
+[22:58:31] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-grip-colossal-first-guard
+[22:58:31] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 143-ref-grip-colossal-first-guard.png Saved screenshot as 143-ref-grip-colossal-first-guard.png
+[22:58:33] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-bow-draw-0
+[22:58:33] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: live handle center overlaps RIGHT palm, distance=0.051318683
+[22:58:33] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 144-ref-bow-draw-0.png Saved screenshot as 144-ref-bow-draw-0.png
+[22:58:35] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-bow-draw-10
+[22:58:35] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: live handle center overlaps RIGHT palm, distance=0.051315855
+[22:58:35] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 145-ref-bow-draw-10.png Saved screenshot as 145-ref-bow-draw-10.png
+[22:58:37] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: fixture height retained: ref-bow-draw-20
+[22:58:37] [Render thread/INFO] [EldenCombat/]: CLIENT_NETWORK_PASS: live handle center overlaps RIGHT palm, distance=0.051314797
+[22:58:37] [IO-Worker-3/INFO] [EldenCombat/]: CLIENT_SMOKE_CAPTURE: 146-ref-bow-draw-20.png Saved screenshot as 146-ref-bow-draw-20.png
+[22:58:38] [Render thread/INFO] [EldenCombat/]: CLIENT_SMOKE_PASS: all 147 visual fixtures rendered
+[22:58:38] [Render thread/INFO] [minecraft/Minecraft]: Stopping!
+[22:58:38] [Server thread/INFO] [minecraft/ServerGamePacketListenerImpl]: Dev lost connection: Disconnected
+[22:58:38] [Server thread/INFO] [minecraft/MinecraftServer]: Dev left the game
+[22:58:38] [Server thread/INFO] [minecraft/ServerCommonPacketListenerImpl]: Stopping singleplayer server as player logged out
+[22:58:38] [Server thread/INFO] [minecraft/MinecraftServer]: Stopping server
+[22:58:38] [Server thread/INFO] [minecraft/MinecraftServer]: Saving players
+[22:58:38] [Server thread/INFO] [minecraft/MinecraftServer]: Saving worlds
+[22:58:39] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[22:58:39] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[22:58:39] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[22:58:39] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (codex-player-smoke): All chunks are saved
+[22:58:39] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[22:58:39] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[22:58:39] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage: All dimensions are saved
+
+[Incubating] Problems report is available at: file:///D:/codexout/mcmod/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 5m 37s
+10 actionable tasks: 5 executed, 5 up-to-date
