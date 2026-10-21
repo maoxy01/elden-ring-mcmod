@@ -1,0 +1,1415 @@
+{
+  "version": 1,
+  "note": "人工/实机校准覆盖。生成器只读本文件，绝不回写：display-candidates.json 是可重建的派生基线，这里是用户看过游戏后调过的值，重跑任何生成脚本都不会抹掉。每个上下文整条替换（rotation+translation+scale 一起），未列出的上下文保持候选值；translation 单位与模型 JSON 一致（1/16 格）。accepted=true 表示用户已确认观感，由用户自己写入，生成器不代填。",
+  "schema": {
+    "overrides": {
+      "<assetId>": {
+        "contexts": {
+          "<context>": {
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "blocking": {
+          "<context>": {
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "translation": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        "accepted": false,
+        "note": "为什么这么调"
+      }
+    }
+  },
+  "overrides": {
+    "ballista": {
+      "contexts": {
+        "thirdperson_righthand": {
+          "rotation": [
+            -90.0,
+            0.0,
+            -60.0
+          ],
+          "translation": [
+            4.38062,
+            0.1,
+            0.932114
+          ],
+          "scale": [
+            1.85464,
+            1.85464,
+            1.85464
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            -90.0,
+            0.0,
+            30.0
+          ],
+          "translation": [
+            -2.027734,
+            0.1,
+            -0.784999
+          ],
+          "scale": [
+            1.85464,
+            1.85464,
+            1.85464
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            -35,
+            0,
+            -55
+          ],
+          "translation": [
+            8.19156,
+            0.69769,
+            -6.79226
+          ],
+          "scale": [
+            0.68111,
+            0.68111,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            -35,
+            0,
+            55
+          ],
+          "translation": [
+            0.12844898868574361,
+            0.6976900000000001,
+            -6.792259999999999
+          ],
+          "scale": [
+            0.68111,
+            0.68111,
+            0.68
+          ]
+        },
+        "ground": {
+          "rotation": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "translation": [
+            3.99562,
+            3.49562,
+            0.0
+          ],
+          "scale": [
+            1.85464,
+            1.85464,
+            1.85464
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            0.0,
+            180.0,
+            0.0
+          ],
+          "translation": [
+            -4.74562,
+            -0.25438,
+            -0.0
+          ],
+          "scale": [
+            1.85464,
+            1.85464,
+            1.85464
+          ]
+        },
+        "head": {
+          "rotation": [
+            0.0,
+            180.0,
+            0.0
+          ],
+          "translation": [
+            -4.74562,
+            12.74562,
+            7.0
+          ],
+          "scale": [
+            1.85464,
+            1.85464,
+            1.85464
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "blocking": {},
+      "accepted": false,
+      "note": "2026-10-19 native Blockbench Display; lower-corner carry; requires game review",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261019/projects/ballista.bbmodel",
+        "sha256": "519df697e19c28b9cdc3cead942cb6f451f56cfbc3a77f2a359b62c921f0615b",
+        "source": "Native Display slots, no export-time recalibration"
+      }
+    },
+    "blasphemous_blade": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            12.418749999999818,
+            -21.871500000000196,
+            50.814130000000205
+          ],
+          "translation": [
+            3.64519,
+            1.84493,
+            -6.23021
+          ],
+          "scale": [
+            0.83723,
+            0.83723,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            12.418749999999818,
+            -21.871500000000196,
+            -50.814130000000205
+          ],
+          "translation": [
+            4.674808019674995,
+            1.7560458630811056,
+            -5.826571629888313
+          ],
+          "scale": [
+            0.83723,
+            0.83723,
+            0.68
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-19 native Blockbench Display; lower-corner carry; requires game review",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261019/projects/blasphemous_blade.bbmodel",
+        "sha256": "bdeddeaa6f4b85182796e560ed74ac93bc5faac6da78bdfa716813a161f72a2c",
+        "source": "Native Display slots, no export-time recalibration"
+      }
+    },
+    "claw": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            10.009739999999965,
+            -23.027579999999944,
+            46.285449999999855
+          ],
+          "translation": [
+            4.10401,
+            1.07406,
+            -6.75219
+          ],
+          "scale": [
+            0.51136,
+            0.51136,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            10.009739999999965,
+            -23.027579999999944,
+            -46.285449999999855
+          ],
+          "translation": [
+            4.215988958150653,
+            1.0657870949921933,
+            -6.705318618814622
+          ],
+          "scale": [
+            0.51136,
+            0.51136,
+            0.68
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-19 native Blockbench Display; lower-corner carry; requires game review",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261019/projects/claw.bbmodel",
+        "sha256": "980abb7295a23fafd85808a6e5ba381093181079751e3e5be290ba467590c6e2",
+        "source": "Native Display slots, no export-time recalibration"
+      }
+    },
+    "colossal_sword": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            12.277489999999943,
+            -21.948390000000018,
+            50.209569999999985
+          ],
+          "translation": [
+            3.66862,
+            2.19976,
+            -6.1579
+          ],
+          "scale": [
+            0.86857,
+            0.86857,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            12.277489999999943,
+            -21.948390000000018,
+            -50.209569999999985
+          ],
+          "translation": [
+            4.651380783972494,
+            2.1155452254883245,
+            -5.7709258006505
+          ],
+          "scale": [
+            0.86857,
+            0.86857,
+            0.68
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-19 native Blockbench Display; lower-corner carry; requires game review",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261019/projects/colossal_sword.bbmodel",
+        "sha256": "63f9a814b5c3b3136be7459f02b3a8c40f517cdbf3c106589cbe554ea2f66a78",
+        "source": "Native Display slots, no export-time recalibration"
+      }
+    },
+    "colossal_weapon": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            9.359480000000076,
+            -23.28702999999996,
+            42.63202000000001
+          ],
+          "translation": [
+            4.33922,
+            1.123,
+            -6.35655
+          ],
+          "scale": [
+            0.89046,
+            0.89046,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            9.359480000000076,
+            -23.28702999999996,
+            -42.63202000000001
+          ],
+          "translation": [
+            3.980778269703529,
+            1.1480891771871073,
+            -6.508769442535769
+          ],
+          "scale": [
+            0.89046,
+            0.89046,
+            0.68
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-19 native Blockbench Display; lower-corner carry; requires game review",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261019/projects/colossal_weapon.bbmodel",
+        "sha256": "6b75ed2566685d538d466a40fc647c11e6dadbc9e336d9407409fc950fa53bfb",
+        "source": "Native Display slots, no export-time recalibration"
+      }
+    },
+    "curved_greatsword": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            16.826210000000174,
+            -18.765190000000075,
+            60.19315999999981
+          ],
+          "translation": [
+            3.08049,
+            1.89466,
+            -5.94568
+          ],
+          "scale": [
+            0.99894,
+            0.99894,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            16.826210000000174,
+            -18.765190000000075,
+            -60.19315999999981
+          ],
+          "translation": [
+            5.239501882253232,
+            1.682326980871217,
+            -5.243560059846162
+          ],
+          "scale": [
+            0.99894,
+            0.99894,
+            0.68
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-19 native Blockbench Display; lower-corner carry; requires game review",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261019/projects/curved_greatsword.bbmodel",
+        "sha256": "fda3cba6e3a8ba90b74fa029db942f34894a5f9014b051626a7be409b7efa4c3",
+        "source": "Native Display slots, no export-time recalibration"
+      }
+    },
+    "curved_sword": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            17.096340000000055,
+            -18.520989999999983,
+            62.95218999999997
+          ],
+          "translation": [
+            3.09766,
+            1.97196,
+            -5.88318
+          ],
+          "scale": [
+            0.94957,
+            0.94957,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            17.096340000000055,
+            -18.520989999999983,
+            -62.95218999999997
+          ],
+          "translation": [
+            5.222339094989097,
+            1.7627134074129076,
+            -5.202858690978144
+          ],
+          "scale": [
+            0.94957,
+            0.94957,
+            0.68
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-19 native Blockbench Display; lower-corner carry; requires game review",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261019/projects/curved_sword.bbmodel",
+        "sha256": "d322f35d6468b734c97d55249b0dfaaa39653e6ff06f81dccaba60a4425b6acd",
+        "source": "Native Display slots, no export-time recalibration"
+      }
+    },
+    "fist": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            5.763309999999819,
+            -24.36828000000014,
+            35.26564999999982
+          ],
+          "translation": [
+            4.29302,
+            -0.75913,
+            -7.05457
+          ],
+          "scale": [
+            0.34897,
+            0.34897,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            5.763309999999819,
+            -24.36828000000014,
+            -35.26564999999982
+          ],
+          "translation": [
+            4.026983839037557,
+            -0.7470293054050963,
+            -7.174462699857229
+          ],
+          "scale": [
+            0.34897,
+            0.34897,
+            0.68
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-19 native Blockbench Display; lower-corner carry; requires game review",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261019/projects/fist.bbmodel",
+        "sha256": "8b1dd3cc7b3f47a76e37680a46e281357d71782e85cd223b7cf4da7bfdbbb5cc",
+        "source": "Native Display slots, no export-time recalibration"
+      }
+    },
+    "flail": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            10.794760000000224,
+            -22.685699999999997,
+            46.30627000000004
+          ],
+          "translation": [
+            4.03204,
+            2.46467,
+            -6.11338
+          ],
+          "scale": [
+            0.90567,
+            0.90567,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            10.794760000000224,
+            -22.685699999999997,
+            -46.30627000000004
+          ],
+          "translation": [
+            4.287963940355411,
+            2.444633508889888,
+            -6.008292821392734
+          ],
+          "scale": [
+            0.90567,
+            0.90567,
+            0.68
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-19 native Blockbench Display; lower-corner carry; requires game review",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261019/projects/flail.bbmodel",
+        "sha256": "0e3c5eef579ecc6290701990ec01e076b29d4862504d045211d0fc8791be9bb4",
+        "source": "Native Display slots, no export-time recalibration"
+      }
+    },
+    "glintstone_staff": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            12.745359999999891,
+            -21.689060000000154,
+            52.46837000000005
+          ],
+          "translation": [
+            3.57502,
+            1.8554,
+            -6.36743
+          ],
+          "scale": [
+            0.9133,
+            0.9133,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            12.745359999999891,
+            -21.689060000000154,
+            -52.46837000000005
+          ],
+          "translation": [
+            4.744985555436819,
+            1.7527402591762793,
+            -5.913568478949945
+          ],
+          "scale": [
+            0.9133,
+            0.9133,
+            0.68
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-19 native Blockbench Display; lower-corner carry; requires game review",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261019/projects/glintstone_staff.bbmodel",
+        "sha256": "f6bfabacb0f6e06d2a18aa9a7cd8fd19b21ff5d30e248fe1eb2e927512298436",
+        "source": "Native Display slots, no export-time recalibration"
+      }
+    },
+    "great_bow": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -25,
+            -155
+          ],
+          "translation": [
+            6.3076,
+            1.37753,
+            -6.19856
+          ],
+          "scale": [
+            0.79249,
+            0.79249,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            -25,
+            155
+          ],
+          "translation": [
+            2.012405544562349,
+            1.37753,
+            -8.201442067835465
+          ],
+          "scale": [
+            0.79249,
+            0.79249,
+            0.68
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-19 native Blockbench Display; lower-corner carry; requires game review",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261019/projects/great_bow.bbmodel",
+        "sha256": "992679a94220b000cbce71fc6037d9f30b8aede6f824755ecd55ec73509263f4",
+        "source": "Native Display slots, no export-time recalibration"
+      }
+    },
+    "great_spear": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            12.73228999999992,
+            -21.696480000000065,
+            51.43301999999994
+          ],
+          "translation": [
+            3.59865,
+            2.39573,
+            -6.23692
+          ],
+          "scale": [
+            0.89715,
+            0.89715,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            12.73228999999992,
+            -21.696480000000065,
+            -51.43301999999994
+          ],
+          "translation": [
+            4.721357707786171,
+            2.2972791817506235,
+            -5.801204363182678
+          ],
+          "scale": [
+            0.89715,
+            0.89715,
+            0.68
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-19 native Blockbench Display; lower-corner carry; requires game review",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261019/projects/great_spear.bbmodel",
+        "sha256": "0ddf0bdb2f10fea6b5dfa72d84fe0051bb152499867844c0015371c3a9297aa0",
+        "source": "Native Display slots, no export-time recalibration"
+      }
+    },
+    "great_sword": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            12.73228999999992,
+            -26,
+            50.43301999999994
+          ],
+          "translation": [
+            3.66867,
+            1.0268,
+            -6.16362
+          ],
+          "scale": [
+            0.89715,
+            0.89715,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            12.73228999999992,
+            -26,
+            -50.43301999999994
+          ],
+          "translation": [
+            4.586425115428961,
+            0.9281465687976516,
+            -5.727007655228383
+          ],
+          "scale": [
+            0.89715,
+            0.89715,
+            0.68
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-19 native Blockbench Display; lower-corner carry; requires game review",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261019/projects/great_sword.bbmodel",
+        "sha256": "46b34cca70c2f445c501814367e32f25fea373b58ef1ad712f19dfbb5dc7aaa6",
+        "source": "Native Display slots, no export-time recalibration"
+      }
+    },
+    "hand_of_malenia": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            16.11781000000019,
+            -19.371160000000145,
+            56.928049999999985
+          ],
+          "translation": [
+            3.84335,
+            1.69081,
+            -5.81011
+          ],
+          "scale": [
+            0.88926,
+            0.88926,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            16.11781000000019,
+            -19.371160000000145,
+            -56.928049999999985
+          ],
+          "translation": [
+            4.476652650560177,
+            1.6289958402392628,
+            -5.596199403452248
+          ],
+          "scale": [
+            0.88926,
+            0.88926,
+            0.68
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-19 native Blockbench Display; lower-corner carry; requires game review",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261019/projects/hand_of_malenia.bbmodel",
+        "sha256": "176e6a6fd460e833f20e0fd628506dd8bc13e53a37427b686c2b87cfff4ef95c",
+        "source": "Native Display slots, no export-time recalibration"
+      }
+    },
+    "heavy_thrusting_sword": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            12.70508000000018,
+            -21.71190999999999,
+            51.43543
+          ],
+          "translation": [
+            3.59837,
+            1.75741,
+            -6.23944
+          ],
+          "scale": [
+            0.89735,
+            0.89735,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            12.70508000000018,
+            -21.71190999999999,
+            -51.43543
+          ],
+          "translation": [
+            4.721626503431654,
+            1.6590410235613628,
+            -5.803122808157461
+          ],
+          "scale": [
+            0.89735,
+            0.89735,
+            0.68
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-19 native Blockbench Display; lower-corner carry; requires game review",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261019/projects/heavy_thrusting_sword.bbmodel",
+        "sha256": "73b8c3758f5e9e78f71e5c9359c432c67012f5712862859a9fdda47ba541435b",
+        "source": "Native Display slots, no export-time recalibration"
+      }
+    },
+    "malikeths_black_blade": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            6.066530000000057,
+            24.298809999999776,
+            50.0964899999999
+          ],
+          "translation": [
+            3.72764,
+            1.74864,
+            -6.44375
+          ],
+          "scale": [
+            0.81645,
+            0.81645,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            6.066530000000057,
+            24.298809999999776,
+            -50.0964899999999
+          ],
+          "translation": [
+            4.592362324146887,
+            1.7899003568351448,
+            -6.831979094070161
+          ],
+          "scale": [
+            0.81645,
+            0.81645,
+            0.68
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-19 native Blockbench Display; lower-corner carry; requires game review",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261019/projects/malikeths_black_blade.bbmodel",
+        "sha256": "b69e3d7d8c122a22e854fe229b053cf0ff60a4a9c6dcd7e8b23c4c60517383cb",
+        "source": "Native Display slots, no export-time recalibration"
+      }
+    },
+    "marikas_hammer": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            9.75651999999991,
+            -23.13112000000001,
+            43.91949000000022
+          ],
+          "translation": [
+            4.25682,
+            1.97433,
+            -6.21329
+          ],
+          "scale": [
+            0.85358,
+            0.85358,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            9.75651999999991,
+            -23.13112000000001,
+            -43.91949000000022
+          ],
+          "translation": [
+            4.063184829229858,
+            1.9883473147539448,
+            -6.294810384673273
+          ],
+          "scale": [
+            0.85358,
+            0.85358,
+            0.68
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-19 native Blockbench Display; lower-corner carry; requires game review",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261019/projects/marikas_hammer.bbmodel",
+        "sha256": "1844f27e61c14c5034e488392c22e64fd503bd4f2159787bdaa2b977a0cb6f9d",
+        "source": "Native Display slots, no export-time recalibration"
+      }
+    },
+    "mohgwyns_sacred_spear": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            12.741979999999785,
+            -21.690979999999854,
+            52.459229999999934
+          ],
+          "translation": [
+            3.62308,
+            1.47177,
+            -6.43489
+          ],
+          "scale": [
+            0.81222,
+            0.81222,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            12.741979999999785,
+            -21.690979999999854,
+            -52.459229999999934
+          ],
+          "translation": [
+            4.696918901066963,
+            1.3775603660814637,
+            -6.01827241870172
+          ],
+          "scale": [
+            0.81222,
+            0.81222,
+            0.68
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-19 native Blockbench Display; lower-corner carry; requires game review",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261019/projects/mohgwyns_sacred_spear.bbmodel",
+        "sha256": "230383c2c689d7c29c8d325a2d3326733c0c3443c8a82247fa9c35537d223f60",
+        "source": "Native Display slots, no export-time recalibration"
+      }
+    },
+    "morgotts_cursed_sword": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            18.658420000000206,
+            -16.945349999999962,
+            63.4061499999998
+          ],
+          "translation": [
+            3.65303,
+            1.71461,
+            -5.59545
+          ],
+          "scale": [
+            0.86634,
+            0.86634,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            18.658420000000206,
+            -16.945349999999962,
+            -63.4061499999998
+          ],
+          "translation": [
+            4.66696588220956,
+            1.6157740997742454,
+            -5.302752638505807
+          ],
+          "scale": [
+            0.86634,
+            0.86634,
+            0.68
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-19 native Blockbench Display; lower-corner carry; requires game review",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261019/projects/morgotts_cursed_sword.bbmodel",
+        "sha256": "25c6d9cea44805c447e1e4067e2c48f33d2ed58b58cc95d4c47366b632ba85ed",
+        "source": "Native Display slots, no export-time recalibration"
+      }
+    },
+    "sacred_relic_sword": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            12.498219999999947,
+            -21.827710000000025,
+            50.80168000000003
+          ],
+          "translation": [
+            3.61365,
+            2.18253,
+            -6.16011
+          ],
+          "scale": [
+            0.80331,
+            0.80331,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            12.498219999999947,
+            -21.827710000000025,
+            -50.80168000000003
+          ],
+          "translation": [
+            4.706352597859322,
+            2.087815667412432,
+            -5.7328184342164485
+          ],
+          "scale": [
+            0.80331,
+            0.80331,
+            0.68
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-19 native Blockbench Display; lower-corner carry; requires game review",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261019/projects/sacred_relic_sword.bbmodel",
+        "sha256": "1cd83fb833de1f45d31e5ecbe74b9cf29b218d79baba66d3dac723411c772fbe",
+        "source": "Native Display slots, no export-time recalibration"
+      }
+    },
+    "sacred_seal": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            8.188380000000052,
+            -23.702839999999924,
+            44.69506000000001
+          ],
+          "translation": [
+            4.10197,
+            -0.49889,
+            -7.06729
+          ],
+          "scale": [
+            0.19595,
+            0.19595,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            8.188380000000052,
+            -23.702839999999924,
+            -44.69506000000001
+          ],
+          "translation": [
+            4.218033892169542,
+            -0.5061474783897728,
+            -7.016854134470512
+          ],
+          "scale": [
+            0.19595,
+            0.19595,
+            0.68
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-19 native Blockbench Display; lower-corner carry; requires game review",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261019/projects/sacred_seal.bbmodel",
+        "sha256": "f16f036ea46f3af385b7173a9939db6c697b5e4edf297bd18cf420d4b2b5650f",
+        "source": "Native Display slots, no export-time recalibration"
+      }
+    },
+    "starscourge_greatsword": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            15.722490000000107,
+            -19.689060000000154,
+            55.80855999999994
+          ],
+          "translation": [
+            3.8193,
+            1.62577,
+            -5.87806
+          ],
+          "scale": [
+            0.90597,
+            0.90597,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            15.722490000000107,
+            -19.689060000000154,
+            -55.80855999999994
+          ],
+          "translation": [
+            4.500690843227193,
+            1.5596983164236606,
+            -5.643356186597891
+          ],
+          "scale": [
+            0.90597,
+            0.90597,
+            0.68
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-19 native Blockbench Display; lower-corner carry; requires game review",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261019/projects/starscourge_greatsword.bbmodel",
+        "sha256": "0e0a426a8c24bfe883fc202cba3d07f5381b1e02d6eb78115774f9a51da8e596",
+        "source": "Native Display slots, no export-time recalibration"
+      }
+    },
+    "twinblade": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            -12.732100000000173,
+            21.696590000000015,
+            -123.56750000000011
+          ],
+          "translation": [
+            4.41514,
+            0.67179,
+            -7.31126
+          ],
+          "scale": [
+            0.7924,
+            0.7924,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            -12.732100000000173,
+            21.696590000000015,
+            123.56750000000011
+          ],
+          "translation": [
+            3.904853679184934,
+            0.7165368641696331,
+            -7.11321990730808
+          ],
+          "scale": [
+            0.7924,
+            0.7924,
+            0.68
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-19 native Blockbench Display; lower-corner carry; requires game review",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261019/projects/twinblade.bbmodel",
+        "sha256": "2215f4c3f5e6b6a33ca9016e7dd55aa5af8a81fdeb035d8a7bb8bdadd3bcbb38",
+        "source": "Native Display slots, no export-time recalibration"
+      }
+    },
+    "whip": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            -4.747739999999794,
+            -24.573539999999866,
+            29.14273000000003
+          ],
+          "translation": [
+            3.20271,
+            4.1296,
+            -8.27458
+          ],
+          "scale": [
+            1.26063,
+            1.26063,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            -4.747739999999794,
+            -24.573539999999866,
+            -29.14273000000003
+          ],
+          "translation": [
+            5.117294260461788,
+            4.202063824689074,
+            -7.402088208689972
+          ],
+          "scale": [
+            1.26063,
+            1.26063,
+            0.68
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-19 native Blockbench Display; lower-corner carry; requires game review",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261019/projects/whip.bbmodel",
+        "sha256": "71bdd4c8fc6709418a47d0c1c737093ad41889840b3237e05ac687838bde8486",
+        "source": "Native Display slots, no export-time recalibration"
+      }
+    },
+    "great_shield": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -180,
+            5
+          ],
+          "translation": [
+            -0.50289,
+            1.62128,
+            -4
+          ],
+          "scale": [
+            1.50171,
+            1.50171,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            -180,
+            -5
+          ],
+          "translation": [
+            -1.3163290952564708,
+            1.62128,
+            -4
+          ],
+          "scale": [
+            1.50171,
+            1.50171,
+            0.68
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-19 native Blockbench Display; lower-corner carry; requires game review",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261019/projects/great_shield.bbmodel",
+        "sha256": "1893302c4d0369c55564eb5107c13684c9a84b4a3c9c23734ff11ea307b70a3a",
+        "source": "Native Display slots, no export-time recalibration"
+      }
+    },
+    "shield": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -180,
+            5
+          ],
+          "translation": [
+            -0.63103,
+            1.51375,
+            -4
+          ],
+          "scale": [
+            1.02857,
+            1.02857,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            -180,
+            -5
+          ],
+          "translation": [
+            -1.1881808814670929,
+            1.51375,
+            -4
+          ],
+          "scale": [
+            1.02857,
+            1.02857,
+            0.68
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-19 native Blockbench Display; lower-corner carry; requires game review",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261019/projects/shield.bbmodel",
+        "sha256": "b44a6a59996272ebfb88843a04c60198e7fadb9d85bf818ba63fec19013744cf",
+        "source": "Native Display slots, no export-time recalibration"
+      }
+    },
+    "small_shield": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -180,
+            5
+          ],
+          "translation": [
+            -0.75361,
+            1.4109,
+            -4
+          ],
+          "scale": [
+            0.576,
+            0.576,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            -180,
+            -5
+          ],
+          "translation": [
+            -1.0656149269617483,
+            1.4109,
+            -4
+          ],
+          "scale": [
+            0.576,
+            0.576,
+            0.68
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-19 native Blockbench Display; lower-corner carry; requires game review",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261019/projects/small_shield.bbmodel",
+        "sha256": "ee0b9304af82f45bc4de02b4dde89c8b565f173326c0733f159a847d31afd154",
+        "source": "Native Display slots, no export-time recalibration"
+      }
+    },
+    "test_flask": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            25
+          ],
+          "translation": [
+            1.13,
+            2.86341,
+            1.16874
+          ],
+          "scale": [
+            0.42857,
+            0.42857,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            -90,
+            -25
+          ],
+          "translation": [
+            1.13,
+            2.86341,
+            1.0912659014938313
+          ],
+          "scale": [
+            0.42857,
+            0.42857,
+            0.68
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "2026-10-19 native Blockbench Display; lower-corner carry; requires game review",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261019/projects/test_flask.bbmodel",
+        "sha256": "039b4bf62bc8546d730343576efc9f11bb1f6ba0d9beca87e4aee40641ea8877",
+        "source": "Native Display slots, no export-time recalibration"
+      }
+    }
+  }
+}

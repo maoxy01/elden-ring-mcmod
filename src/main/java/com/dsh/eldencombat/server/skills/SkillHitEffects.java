@@ -31,18 +31,29 @@ public final class SkillHitEffects {
      * 若沿用原版 20 tick 无敌帧，同一段内的连续命中会被静默丢弃。
      */
     public static float hurt(ServerPlayer owner, LivingEntity target, float damage, float impact, boolean dot) {
-        if (!validTarget(owner, target)) return 0;
         DamageSource source = dot ? owner.damageSources().indirectMagic(owner, owner)
                 : owner.damageSources().playerAttack(owner);
-        // 护符的伤害加成对所有战技生效（普攻走 HitResolver，同样乘这个倍率）
-        float applied = damage * com.dsh.eldencombat.server.Talismans.damageMultiplier(owner);
+        return hurt(owner, target, damage, impact, dot, source);
+    }
+
+    /** Holy/magical projectiles must not inherit the physical player-attack damage type. */
+    public static float hurtMagic(ServerPlayer owner, LivingEntity target, float damage, float impact) {
+        return hurt(owner, target, damage, impact, false, owner.damageSources().indirectMagic(owner, owner));
+    }
+
+    private static float hurt(ServerPlayer owner, LivingEntity target, float damage, float impact, boolean dot,
+                              DamageSource source) {
+        if (!validTarget(owner, target)) return 0;
+        // Skill boosts apply to direct skill hits, not fixed/status damage-over-time ticks.
+        float applied = damage * (dot ? com.dsh.eldencombat.server.Talismans.damageMultiplier(owner)
+                : com.dsh.eldencombat.server.Talismans.skillDamageMultiplier(owner));
         // 崩解易伤（§6）：只对崩解窗口内的 Boss 生效，未崩解时倍率为 1
         if (target instanceof com.dsh.eldencombat.entity.MargitEntity margit) {
             applied *= margit.damageTakenMultiplier();
         }
         // §2：武器成长倍率（强化等级 / 质变 / 属性补正）——战技同样吃武器成长
         applied *= (float) com.dsh.eldencombat.item.WeaponStacks.damageMultiplier(
-                owner.getMainHandItem(), com.dsh.eldencombat.server.PlayerAttributes.of(owner));
+                owner.getMainHandItem(), com.dsh.eldencombat.server.PlayerAttributes.effective(owner));
         target.invulnerableTime = 0;
         float before = target.getHealth();
         return target.hurt(source, applied) ? Math.max(0, before - target.getHealth()) : 0;

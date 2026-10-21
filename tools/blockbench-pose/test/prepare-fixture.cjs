@@ -1,0 +1,10 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path');
+const root=path.resolve(process.env.ELDEN_PROJECT||'D:/codexout/mcmod');
+const Core=require('../core.cjs')(fs,path,require('node:crypto'));
+const destination=path.join(root,'tools/blockbench-pose/evidence/source-fixture');
+fs.mkdirSync(path.join(destination,Core.POSES),{recursive:true});
+fs.mkdirSync(path.dirname(path.join(destination,Core.PARAMETERS)),{recursive:true});
+fs.copyFileSync(path.join(root,Core.PARAMETERS),path.join(destination,Core.PARAMETERS));
+for(const item of Core.catalog(root))fs.copyFileSync(item.file,path.join(destination,Core.POSES,item.id+'.json'));
+console.log('Prepared save-test copies only: '+destination);

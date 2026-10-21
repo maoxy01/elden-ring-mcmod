@@ -147,6 +147,15 @@ public final class Talismans {
         return totals(player).damageMultiplier();
     }
 
+    public static float skillDamageMultiplier(ServerPlayer player) {
+        var totals = totals(player);
+        return totals.damageMultiplier() * (1f + totals.effects().skillDamage());
+    }
+
+    public static float staminaRegenPerSecond(ServerPlayer player) {
+        return totals(player).effects().staminaRegenPerSecond();
+    }
+
     public static float damageTakenMultiplier(ServerPlayer player) {
         return totals(player).damageTakenMultiplier();
     }
@@ -307,6 +316,17 @@ public final class Talismans {
         reconcile(player, loadout);
         TalismanAggregate totals = totals(player);
         SkillServerEvents.fp(player).setBonusMaxFp(totals.maxFpBonus());
+        var health = player.getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH);
+        var healthId = ResourceLocation.fromNamespaceAndPath(EldenCombat.MODID, "talisman_health");
+        if (health != null) {
+            health.removeModifier(healthId);
+            if (totals.effects().maxHealth() > 0) health.addTransientModifier(
+                    new net.minecraft.world.entity.ai.attributes.AttributeModifier(healthId,
+                            totals.effects().maxHealth(), net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation.ADD_VALUE));
+            player.setHealth(Math.min(player.getHealth(), player.getMaxHealth()));
+        }
+        player.getData(ModAttachments.COMBAT_STATE).setBonusMaxStamina(totals.effects().maxStamina(), EldenCombat.config());
+        com.dsh.eldencombat.server.ServerCombat.syncNow(player);
         SkillServerEvents.sync(player);
     }
 
@@ -482,6 +502,7 @@ public final class Talismans {
             }
             specs = Map.copyOf(loaded);
             EldenCombat.LOGGER.info("[talismans] 护符数据载入 {} 件", specs.size());
+            refreshAll();
             broadcastDisplay();
         }
     }

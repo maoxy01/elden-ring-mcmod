@@ -1,8 +1,21 @@
 # Elden Combat 0.2.0
 
+**2026-10-21 工作快照**：[项目文档入口](docs/README.md) · [全部文档分类](docs/FILE-CATALOG.md) · [美术工程](art/README.md) · [开发工具](tools/README.md) · [本次整理与上传范围](docs/REPOSITORY-ORGANIZATION-20261021.md)。GitHub 当前地址为 [maoxy01/elden-ring-mcmod](https://github.com/maoxy01/elden-ring-mcmod)。
+
+| 目录 | 内容 |
+| --- | --- |
+| `src/` | 模组 Java、资源与测试 |
+| `art/` | 可编辑模型、贴图、候选及视觉证据 |
+| `tools/` | 制作、导出、核查及 Blockbench 插件源码 |
+| `gradle/` | 构建辅助与 Wrapper |
+| `modpack/`、`modpack-defaults/` | 精确依赖锁、配置、打包脚本与默认设置 |
+| `docs/` | 当前入口、交接、审查及日期历史记录 |
+
+当前源码包含赐福/护符、手甲与握姿、战斗 HUD 及制作工具的后续改动。亵渎火焰 rev5 仍为美术候选。用户握姿工作稿保留，完整测试曾有一项哈希门禁失败，后续 HUD 定向检查通过；见[当前 HUD 交接与验收边界](docs/COMBAT-HUD-DESIGN-20261021.md)。本次上传不代表全包已验收，也没有重发安装包。
+
 当前版本为 **0.2.0 开发候选版**，Minecraft 1.21.1 / NeoForge 21.1.219 / Java 21。最近工作见 [2026-10-18 进度快照](docs/GITHUB-PROGRESS-SNAPSHOT-20261018.md)与[整合候选交付说明](docs/MODPACK-CANDIDATE-DELIVERY-20261018.md)。下文0.1.0仅为历史记录。
 
-[下载0.2.0最新开发候选与校验清单](https://github.com/seekyuri/elden-ring-mcmod/releases/tag/v0.2.0-dev-20261018)。包含第一人称修补JAR、PCL ZIP与mrpack；新修补尚未实机复验，6项CurseForge依赖按包内说明补装。[完整同步范围](docs/GITHUB-FULL-SYNC-20261018.md)。
+[下载2026-10-18开发候选与校验清单](https://github.com/maoxy01/elden-ring-mcmod/releases/tag/v0.2.0-dev-20261018)。这是当时的 JAR、PCL ZIP 与 mrpack，未包含本次工作快照的所有后续改动；6项CurseForge依赖按包内说明补装。[当时同步范围](docs/GITHUB-FULL-SYNC-20261018.md)。
 
 0.2.0 开发候选：Minecraft 1.21.1 / NeoForge 21.1.219 / Java 21。纯原版战斗扩展，原版玩家关节与普攻，八个追忆战技、自制装备、强化/质变首版已接入。PCL 新实例安装仍未验收。
 

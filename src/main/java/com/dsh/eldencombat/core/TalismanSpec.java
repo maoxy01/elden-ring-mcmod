@@ -8,7 +8,7 @@ import com.google.gson.JsonObject;
  * <p>数据目录：{@code data/<namespace>/talismans/<id>.json}
  * <pre>
  * {
- *   "name": "战士壶碎片",
+ *   "name": "自定义护符（旧字段兼容示例）",
  *   "series": "jar",        // 可选：系列（同系列限制用；不写 = 无系列，不受同系列限制）
  *   "maxFp": 30,            // FP 上限加成（绝对值）
  *   "staminaRegen": 0.25,   // 精力恢复速率加成（+25%）
@@ -23,7 +23,12 @@ import com.google.gson.JsonObject;
  * 因此不会互相覆盖（§3.6）。聚合与上下限见 {@link TalismanAggregate} / {@link TalismanRules}。
  */
 public record TalismanSpec(String id, String displayName, String series, float maxFp, float staminaRegen,
-                           float damage, float damageReduction, float heal) {
+                           float damage, float damageReduction, float heal, TalismanEffects effects) {
+
+    public TalismanSpec(String id, String displayName, String series, float maxFp, float staminaRegen,
+                        float damage, float damageReduction, float heal) {
+        this(id, displayName, series, maxFp, staminaRegen, damage, damageReduction, heal, TalismanEffects.NONE);
+    }
 
     public static final TalismanSpec NONE =
             new TalismanSpec("", "", "", 0f, 0f, 0f, 0f, 0f);
@@ -71,7 +76,8 @@ public record TalismanSpec(String id, String displayName, String series, float m
                 number(json, "staminaRegen"),
                 number(json, "damage"),
                 number(json, "damageReduction"),
-                number(json, "heal"));
+                number(json, "heal"),
+                TalismanEffects.parse(json.has("effects") ? json.getAsJsonObject("effects") : null));
     }
 
     private static float number(JsonObject json, String key) {
@@ -84,6 +90,7 @@ public record TalismanSpec(String id, String displayName, String series, float m
 
     public String describe() {
         return String.format("%s(%s) FP上限+%.0f 精力恢复+%.0f%% 伤害+%.0f%% 减伤%.0f%% 治疗+%.1f",
-                displayName, id, maxFp, staminaRegen * 100f, damage * 100f, damageReduction * 100f, heal);
+                displayName, id, maxFp, staminaRegen * 100f, damage * 100f, damageReduction * 100f, heal)
+                + (effects.equals(TalismanEffects.NONE) ? "" : " " + effects.describe());
     }
 }

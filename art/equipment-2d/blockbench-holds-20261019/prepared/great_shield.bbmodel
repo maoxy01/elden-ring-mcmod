@@ -1,0 +1,268 @@
+{
+  "meta": {
+    "format_version": "5.0",
+    "model_format": "java_block",
+    "box_uv": false
+  },
+  "name": "EC_Hold_great_shield",
+  "resolution": {
+    "width": 32,
+    "height": 32
+  },
+  "elements": [
+    {
+      "name": "sprite_rectangle_0",
+      "uuid": "b11a6402-f02d-44f3-8b78-efbc397d97c5",
+      "type": "cube",
+      "box_uv": false,
+      "autouv": 0,
+      "from": [
+        2.0,
+        1.0,
+        7.5
+      ],
+      "to": [
+        14.0,
+        15.0,
+        8.5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            28,
+            2,
+            4,
+            30
+          ],
+          "texture": 1
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            28,
+            30
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            4,
+            2,
+            5,
+            3
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            4,
+            2,
+            5,
+            3
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            4,
+            2,
+            5,
+            3
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            4,
+            2,
+            5,
+            3
+          ],
+          "texture": 0
+        }
+      }
+    }
+  ],
+  "outliner": [
+    "b11a6402-f02d-44f3-8b78-efbc397d97c5"
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "translation": [
+        2.0,
+        -1.624571,
+        4.375429
+      ],
+      "scale": [
+        1.501714,
+        1.501714,
+        1.501714
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "translation": [
+        2.0,
+        -1.624571,
+        3.624571
+      ],
+      "scale": [
+        1.501714,
+        1.501714,
+        1.501714
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0.0,
+        180.0,
+        5.0
+      ],
+      "translation": [
+        -0.50289,
+        -8.492225,
+        0.0
+      ],
+      "scale": [
+        1.501714,
+        1.501714,
+        1.501714
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0.0,
+        180.0,
+        5.0
+      ],
+      "translation": [
+        -1.174784,
+        -8.683669,
+        -0.0
+      ],
+      "scale": [
+        1.501714,
+        1.501714,
+        1.501714
+      ]
+    },
+    "ground": {
+      "rotation": [
+        -0.0,
+        0.0,
+        -0.0
+      ],
+      "translation": [
+        -0.375429,
+        2.375429,
+        0.0
+      ],
+      "scale": [
+        1.501714,
+        1.501714,
+        1.501714
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "translation": [
+        0.275429,
+        0.475429,
+        -0.6
+      ],
+      "scale": [
+        1.501714,
+        1.501714,
+        1.501714
+      ]
+    },
+    "head": {
+      "rotation": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "translation": [
+        8.375429,
+        5.375429,
+        15.0
+      ],
+      "scale": [
+        1.501714,
+        1.501714,
+        1.501714
+      ]
+    },
+    "gui": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "inheritance": "fixed"
+  },
+  "textures": [
+    {
+      "name": "great_shield_front.png",
+      "id": "0",
+      "uuid": "da19005e-3ca3-4d51-9ed9-0bee8f4c1a6b",
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACNElEQVR4AcxX3ysEURQ+s34kPxa7HiRChPKjSPJCeUV58+LB3+bBizdC3hSFJMqPQooiebCLFWljR9/NmY67s3fm7m6x9c357nfOPeebmW1nNkJ//Pl/BvoHB9xcGJsYdyUmZ6ZcQGo6R15Cv+BFvQJd7c16/8B1UQ1cXt8FDtQLjAYanDevnnlT5IUAJNoiSQS1Zk1GcK5RhT4HowHUj9IXAZ1uBfU8Jyia/FQAr39M02DyQa2hQ5MRHD1MCDRg2lyMXEEGhueGCCjESEEGChnMe60N9E73EIOb8BqRtbDR2kDYxlyXSL3Ta+rVA+scrQzIMzxbPeceJLms8QoMxMqAoU/eqbwM7O5cUSpW6g01nXU8Wkk10RoP3qYfEtpAeV9cbcHlzvUDgxyKTIaQlwhtIH2aUPvQHFAL7cA6G9HSvsvQBrBbb7z0NEILt9208tCGtIJeo0TDwcoA+mAAAC4BDZBaGG5tgJviezBbv0/zLRfUcbDBsnXM2wDfb0wEB8BtYW0AgwC/Qbl0v1rWrAzIAfJ+Sy5reIgpWhngRnKgSeOcKVoZwGCAGx4sHhLAa+QAXoeJVgbCNLStCTSwRyUEXDkfdF4XV88APAfAnxrK6SjW+EvjHCIQZCjQgN7gPlNLgJ8uNdQAUvPjRgOPbpW3R3IWbzIxRatbe1XEQR968lzmvYzgxQQ1EkYDstDE8/lDwv2yDJwcHTu5sL255UisL685gNSCOA/mmGWAE8WKQX2+AQAA//808RtFAAAABklEQVQDAIIkHFBDavdLAAAAAElFTkSuQmCC"
+    },
+    {
+      "name": "great_shield_back.png",
+      "id": "1",
+      "uuid": "31d55c23-4a94-4733-9770-019b444f7eb6",
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA3UlEQVR4AeyUMQrCQBBFvwGxiZ21hWIjWAkeQAQPYOEZLTyAIB5AsBJsRAtrO9OIoLLFhGGyaHCNZmACn5nZ/SF/H0si/PkpX4DhePQoUhK4l0A3vgDnE1yVClmXH3ezN4Db+JUsgBEwAroJ9PodkKaTwUe/Dh0ErscEpPa9mvbyyOTh1fmlj886CPDE3+6NgA4CtVYM0iG6pb28D+Th1fmlj886CPDEvN9u9iDN5mu+lbvXTSD3MV8YjYAR8BLYJXWg0YSrUiHrvruYCbBaLCtFSobIBJCG0Pnd+08AAAD//2wwER4AAAAGSURBVAMA7NzOQfr60nwAAAAASUVORK5CYII="
+    }
+  ],
+  "unhandled_root_fields": {
+    "hold_source": {
+      "id": "great_shield",
+      "textureSha256": "2d430a3ffd3b099af2c109fb73f85afef4e4247692b4354e1dbded08cca5a37d",
+      "anchorPixels": [
+        16.5,
+        16.5
+      ],
+      "canvas": [
+        32,
+        32
+      ],
+      "worldLengthBlocks": 1.314,
+      "nativeSource": "art/equipment-2d/blockbench-all-items-20261018",
+      "inGameAccepted": false
+    }
+  }
+}

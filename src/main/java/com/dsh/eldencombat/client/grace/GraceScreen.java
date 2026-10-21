@@ -80,7 +80,7 @@ public final class GraceScreen extends AbstractContainerScreen<GraceMenu> {
         ashPage = Math.min(ashPage, pages(state.ashes().size()) - 1);
         buildTravel();
         buildAsh();
-        addRenderableWidget(Button.builder(Component.literal("休息（恢复 FP）"), pressed -> rest())
+        addRenderableWidget(Button.builder(Component.literal("休息（恢复资源）"), pressed -> rest())
                 .bounds(leftPos + LEFT_X, topPos + BUTTON_Y, COL_W, 20).build());
         if (!state.boundAsh().isEmpty()) {
             var remove = addRenderableWidget(Button.builder(Component.literal("卸除战灰"), pressed -> removeAsh())
@@ -167,7 +167,9 @@ public final class GraceScreen extends AbstractContainerScreen<GraceMenu> {
         graphics.drawString(font, "旅行 · 已发现 " + state.nodes().size() + " 处", LEFT_X, 18, WHITE, false);
         graphics.drawString(font, "战灰装配", RIGHT_X, 18, WHITE, false);
         if (!state.notice().isEmpty()) {
-            graphics.drawString(font, state.notice(), imageWidth - 8 - font.width(state.notice()), 6, AMBER, false);
+            int available = Math.max(24, imageWidth - 24 - font.width(getTitle()));
+            String notice = fit(font, state.notice(), available);
+            graphics.drawString(font, notice, imageWidth - 8 - font.width(notice), 6, AMBER, false);
         }
         if (state.nodes().isEmpty()) {
             graphics.drawString(font, "还没有发现的赐福", LEFT_X, ROWS_Y + 4, GRAY, false);

@@ -129,7 +129,7 @@ public final class ServerCombat {
         }
 
         if (!state.combatMode) {
-            state.tickStamina(config, tick, false, Talismans.staminaRegenMultiplier(player));
+            state.tickStamina(config, tick, false, Talismans.staminaRegenMultiplier(player), Talismans.staminaRegenPerSecond(player));
             sync(player, state);
             return;
         }
@@ -188,7 +188,7 @@ public final class ServerCombat {
 
         CombatEffects.playerTick(player,state,tick);
         state.finishIfDone(tick);
-        state.tickStamina(config, tick, state.shieldActive(tick), Talismans.staminaRegenMultiplier(player));
+        state.tickStamina(config, tick, state.shieldActive(tick), Talismans.staminaRegenMultiplier(player), Talismans.staminaRegenPerSecond(player));
         validateLockOn(player, state, config);
 
         sync(player, state);
@@ -223,7 +223,7 @@ public final class ServerCombat {
                 state.actionSequence,
                 state.actionStartTick,
                 state.stamina,
-                EldenCombat.config().stamina.max,
+                state.maxStamina(EldenCombat.config()),
                 state.potionCharges,
                 state.targetId,
                 state.combatMode, state.guarding, weapon.name(),

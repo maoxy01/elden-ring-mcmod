@@ -1,0 +1,84 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "eldencombat:takers_embers",
+			"basic_render_parameters": {
+				"material": "particles_add",
+				"texture": "textures/particle/particles"
+			}
+		},
+		"components": {
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": "math.random(0.8, 1.6)"
+			},
+			"minecraft:particle_initial_speed": "math.random(0.3, 0.9)",
+			"minecraft:particle_motion_dynamic": {
+				"linear_acceleration": [
+					0,
+					0.4,
+					0
+				],
+				"linear_drag_coefficient": 0.5
+			},
+			"minecraft:particle_appearance_billboard": {
+				"size": [
+					"(math.lerp(0.1, 0.03, variable.particle_age / variable.particle_lifetime)) * (1 + (variable.particle_random_3 - 0.5) * 0.5)",
+					"(math.lerp(0.1, 0.03, variable.particle_age / variable.particle_lifetime)) * (1 + (variable.particle_random_3 - 0.5) * 0.5)"
+				],
+				"facing_camera_mode": "lookat_xyz",
+				"uv": {
+					"texture_width": 128,
+					"texture_height": 128,
+					"uv": [
+						10,
+						26
+					],
+					"uv_size": [
+						4,
+						4
+					]
+				}
+			},
+			"minecraft:emitter_lifetime_once": {
+				"active_time": 0.3
+			},
+			"minecraft:emitter_shape_disc": {
+				"radius": 0.5,
+				"plane_normal": [
+					0,
+					1,
+					0
+				],
+				"surface_only": false,
+				"direction": [
+					0,
+					0.5,
+					0.85
+				]
+			},
+			"minecraft:particle_appearance_tinting": {
+				"color": {
+					"gradient": {
+						"0.00": [
+							1,
+							0.824,
+							0.478,
+							1
+						],
+						"1.00": [
+							1,
+							0.353,
+							0.102,
+							0
+						]
+					},
+					"interpolant": "variable.particle_age / variable.particle_lifetime"
+				}
+			},
+			"minecraft:emitter_rate_instant": {
+				"num_particles": 8
+			}
+		}
+	}
+}

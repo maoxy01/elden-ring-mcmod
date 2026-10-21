@@ -107,7 +107,11 @@ public final class GraceMenuActions {
         var result = GraceOperations.rest(player, graceId);
         if (!result.accepted()) return "无法休息：" + result.reason();
         var fp = SkillServerEvents.fp(player);
-        return "已休息：FP " + Math.round(fp.fp()) + "/" + Math.round(fp.maxFp());
+        var combat = player.getData(com.dsh.eldencombat.registry.ModAttachments.COMBAT_STATE);
+        return "已休息：生命 " + Math.round(player.getHealth()) + "/" + Math.round(player.getMaxHealth())
+                + "，FP " + Math.round(fp.fp()) + "/" + Math.round(fp.maxFp())
+                + "，精力 " + Math.round(combat.stamina) + "/" + Math.round(combat.maxStamina(com.dsh.eldencombat.EldenCombat.config()))
+                + "，药瓶 " + combat.potionCharges;
     }
 
     private static String travel(ServerPlayer player, UUID target, int sequence) {

@@ -62,9 +62,22 @@ public final class GraceService {
             }
         });
         NeoForge.EVENT_BUS.register(new GraceService());
+        Balm.getEvents().onEvent(net.blay09.mods.waystones.api.event.WaystoneActivatedEvent.class, event -> {
+            if (event.getPlayer() instanceof ServerPlayer player) {
+                GraceDiscovery.admit(player, event.getWaystone());
+                syncNodes(player);
+            }
+        });
+        Balm.getEvents().onEvent(net.blay09.mods.waystones.api.event.WaystoneRemovedEvent.class, event -> {
+            var server = net.neoforged.neoforge.server.ServerLifecycleHooks.getCurrentServer();
+            if (server != null && server.isSameThread())
+                GraceRegistry.get(server).unregister(event.getWaystone().getWaystoneUid());
+        });
         EldenCombat.LOGGER.info("GRACE_ADAPTER_READY: 赐福适配器已装载（Waystones+Balm）；荒野默认策略，原生 Pre 与 requirements 双重门禁");
         Balm.getEvents().onEvent(WaystoneTeleportEvent.Pre.class,event->{
             var context=event.getContext();
+            if (context.getTargetWaystone() != null && context.getEntity() instanceof ServerPlayer player)
+                GraceDiscovery.admit(player, context.getTargetWaystone());
             if(context.getTargetWaystone()!=null&&context.getEntity() instanceof ServerPlayer player&&GraceRegistry.get(player.server).contains(context.getTargetWaystone().getWaystoneUid())) {
                 String rejection=reject(player,context.getTargetWaystone());
                 if(rejection!=null||(pending.containsKey(player.getUUID())&&pending.get(player.getUUID())!=context)) {
@@ -212,6 +225,7 @@ public final class GraceService {
         if(!(event.getEntity() instanceof ServerPlayer player))return;
         if(event.isCanceled()||player.isShiftKeyDown())return;
         var node=WaystonesAPI.getWaystoneAt(player.serverLevel(),event.getPos());
+        node.ifPresent(value -> GraceDiscovery.admit(player, value));
         if(node.isEmpty()||!GraceRegistry.get(player.server).contains(node.get().getWaystoneUid()))return;
         if(!WaystonesAPI.isWaystoneActivated(player,node.get()))return;
         var access=GraceOperations.localAccess(player,node.get().getWaystoneUid());

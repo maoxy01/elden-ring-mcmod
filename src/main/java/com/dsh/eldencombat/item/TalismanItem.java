@@ -63,6 +63,20 @@ public final class TalismanItem extends Item {
         if (spec.damage() != 0) lines.add(Component.literal("伤害 " + percent(spec.damage())).withStyle(ChatFormatting.RED));
         if (spec.damageReduction() != 0) lines.add(Component.literal("受伤 " + percent(-spec.damageReduction())).withStyle(ChatFormatting.GOLD));
         if (spec.heal() != 0) lines.add(Component.literal("治疗量 +" + spec.heal()).withStyle(ChatFormatting.LIGHT_PURPLE));
+        var effects = spec.effects();
+        if (effects.skillDamage() > 0) lines.add(Component.literal("战技直接伤害 " + percent(effects.skillDamage()))
+                .withStyle(ChatFormatting.RED));
+        if (effects.physicalReduction() > 0) lines.add(Component.literal("物理减伤：PvE "
+                + percent(effects.physicalReduction()) + " / PvP " + percent(effects.pvpPhysicalReduction()))
+                .withStyle(ChatFormatting.GOLD));
+        if (effects.staminaRegenPerSecond() > 0) lines.add(Component.literal(String.format("精力恢复 +%.2f/秒（MC单位）",
+                effects.staminaRegenPerSecond())).withStyle(ChatFormatting.GREEN));
+        if (effects.strength() > 0 || effects.dexterity() > 0) lines.add(Component.literal("力量 +"
+                + effects.strength() + " / 灵巧 +" + effects.dexterity()).withStyle(ChatFormatting.RED));
+        if (effects.maxHealth() > 0 || effects.maxStamina() > 0) lines.add(Component.literal("生命上限 +"
+                + effects.maxHealth() + " / 精力上限 +" + effects.maxStamina() + "（MC适配）").withStyle(ChatFormatting.GREEN));
+        if (effects.attackDamageTaken() > 0) lines.add(Component.literal("受到攻击伤害 "
+                + percent(effects.attackDamageTaken())).withStyle(ChatFormatting.DARK_RED));
         lines.add(Component.literal("右键装备（第一个空护符槽）/ 栏满时再右键卸下").withStyle(ChatFormatting.DARK_GRAY));
     }
 

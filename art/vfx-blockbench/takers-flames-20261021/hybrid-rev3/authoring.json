@@ -1,0 +1,301 @@
+{
+  "project": "69dc567c-d35b-6d5e-a91f-ca743cda2ee5",
+  "version": "5.2.2",
+  "elements": 60,
+  "textures": 17,
+  "history": 1,
+  "contract": {
+    "date": "2026-10-21",
+    "revision": 3,
+    "palette": "3e5bd33d-3c33-c1d6-9601-0d6c2ebd0a13",
+    "ground": [
+      {
+        "index": 0,
+        "texture": "e7e2c8aa-bbcb-8960-3a25-c04e4b7712cb"
+      },
+      {
+        "index": 1,
+        "texture": "8e50e6c9-43d4-649a-007b-017b9b2f2578"
+      },
+      {
+        "index": 2,
+        "texture": "c9909bbc-681d-56fa-8468-259bcd3c17f9"
+      },
+      {
+        "index": 3,
+        "texture": "09d218a1-55cd-50dc-c787-97f659d1eed6"
+      },
+      {
+        "index": 4,
+        "texture": "b96d6dfc-9403-8322-526e-d33000104289"
+      },
+      {
+        "index": 5,
+        "texture": "516930ae-9996-d414-007f-54139bacd572"
+      },
+      {
+        "index": 6,
+        "texture": "b1d565fd-20a1-40b4-1055-9c31b926de6b"
+      },
+      {
+        "index": 7,
+        "texture": "025757cd-1d7f-6fd6-352b-5c2069ca0705"
+      },
+      {
+        "index": 8,
+        "texture": "6da4ff54-b5aa-d487-3d8d-066774906302"
+      },
+      {
+        "index": 9,
+        "texture": "4f8a04b3-7cd0-4260-53b3-4fd369fb5a16"
+      },
+      {
+        "index": 10,
+        "texture": "b9cc223b-c67e-c842-f656-04dad2629ba8"
+      },
+      {
+        "index": 11,
+        "texture": "0afdc91e-c174-9e5e-65c0-ee3ed3203a2f"
+      },
+      {
+        "index": 12,
+        "texture": "d4475157-4bd5-7584-9c70-bce685a5e036"
+      },
+      {
+        "index": 13,
+        "texture": "f3407e7c-0384-0d0a-21dd-d38f4ae4ef1b"
+      },
+      {
+        "index": 14,
+        "texture": "53f7ca61-bd0e-7d09-197d-9f666e119e4a"
+      },
+      {
+        "index": 15,
+        "texture": "becd35c2-6b4f-59e3-b1dd-1fecbd6b4dc4"
+      }
+    ],
+    "parentCandidate": "hybrid/takers-flames-hybrid.bbmodel",
+    "supersedes": "hybrid-rev2",
+    "runtimeIntegrated": false,
+    "animation": "ff3d2f00-f22f-3ea1-521c-543f8a110880",
+    "schedule": {
+      "vents": [
+        {
+          "name": "lava_vent_0",
+          "origin": [
+            -31,
+            0,
+            -4
+          ],
+          "maxHeightBlocks": 1.3125,
+          "modelElements": 6,
+          "topWidthUnits": 2.8
+        },
+        {
+          "name": "lava_vent_1",
+          "origin": [
+            -16,
+            0,
+            3
+          ],
+          "maxHeightBlocks": 2.1875,
+          "modelElements": 6,
+          "topWidthUnits": 2.8
+        },
+        {
+          "name": "lava_vent_2",
+          "origin": [
+            0,
+            0,
+            -2
+          ],
+          "maxHeightBlocks": 2.9375,
+          "modelElements": 6,
+          "topWidthUnits": 2.8
+        },
+        {
+          "name": "lava_vent_3",
+          "origin": [
+            16,
+            0,
+            4
+          ],
+          "maxHeightBlocks": 2.0625,
+          "modelElements": 6,
+          "topWidthUnits": 2.8
+        },
+        {
+          "name": "lava_vent_4",
+          "origin": [
+            30,
+            0,
+            -5
+          ],
+          "maxHeightBlocks": 1.5625,
+          "modelElements": 6,
+          "topWidthUnits": 2.8
+        }
+      ],
+      "debris": [
+        {
+          "name": "flying_crust_0",
+          "origin": [
+            -8,
+            0,
+            -8
+          ],
+          "launch": 0.14,
+          "apex": 0.52,
+          "land": 1.2
+        },
+        {
+          "name": "flying_crust_1",
+          "origin": [
+            -18,
+            0,
+            7
+          ],
+          "launch": 0.165,
+          "apex": 0.545,
+          "land": 1.2249999999999999
+        },
+        {
+          "name": "flying_crust_2",
+          "origin": [
+            -28,
+            0,
+            -8
+          ],
+          "launch": 0.19,
+          "apex": 0.5700000000000001,
+          "land": 1.25
+        },
+        {
+          "name": "flying_crust_3",
+          "origin": [
+            8,
+            0,
+            7
+          ],
+          "launch": 0.21500000000000002,
+          "apex": 0.595,
+          "land": 1.275
+        },
+        {
+          "name": "flying_crust_4",
+          "origin": [
+            18,
+            0,
+            -8
+          ],
+          "launch": 0.24000000000000002,
+          "apex": 0.62,
+          "land": 1.3
+        },
+        {
+          "name": "flying_crust_5",
+          "origin": [
+            28,
+            0,
+            7
+          ],
+          "launch": 0.265,
+          "apex": 0.645,
+          "land": 1.325
+        }
+      ],
+      "plates": [
+        {
+          "name": "ground_plate_0",
+          "origin": [
+            -31,
+            0,
+            -15
+          ]
+        },
+        {
+          "name": "ground_plate_1",
+          "origin": [
+            -22,
+            0,
+            12
+          ]
+        },
+        {
+          "name": "ground_plate_2",
+          "origin": [
+            -10,
+            0,
+            -16
+          ]
+        },
+        {
+          "name": "ground_plate_3",
+          "origin": [
+            4,
+            0,
+            15
+          ]
+        },
+        {
+          "name": "ground_plate_4",
+          "origin": [
+            18,
+            0,
+            -15
+          ]
+        },
+        {
+          "name": "ground_plate_5",
+          "origin": [
+            30,
+            0,
+            12
+          ]
+        },
+        {
+          "name": "ground_plate_6",
+          "origin": [
+            -36,
+            0,
+            2
+          ]
+        },
+        {
+          "name": "ground_plate_7",
+          "origin": [
+            36,
+            0,
+            -4
+          ]
+        }
+      ]
+    },
+    "budget": {
+      "solidBoxes": 44,
+      "fireBoxes": 30,
+      "groundPlates": 8,
+      "flyingCrust": 6,
+      "groundQuads": 1,
+      "emberBurst": 12,
+      "ashMaxAlive": 6
+    },
+    "particlePreviewFormat": "Snowstorm/Bedrock authoring reference only; Java NeoForge needs client adaptation",
+    "sizeBlocks": [
+      5,
+      3.1,
+      4
+    ],
+    "rev3": {
+      "heatRamp": "body 0/8/1/2 then 1/9/2/10 then 2/10/3/11; core 2/3/4/10 then 3/4/11/11 then uniform 11",
+      "coreInset": true,
+      "coreZProtrusion": 0.22,
+      "nearWhiteRemoved": true,
+      "tipTier": {
+        "from": "h*0.70",
+        "width": 2.8,
+        "depth": 3.2
+      }
+    }
+  }
+}

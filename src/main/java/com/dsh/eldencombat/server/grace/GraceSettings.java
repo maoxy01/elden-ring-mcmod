@@ -15,10 +15,10 @@ import java.nio.file.Path;
 /**
  * 赐福服务的**唯一配置处**（{@code config/eldencombat-grace.json}），{@code /eldencombat reload} 可热读。
  *
- * <p>资源恢复规则集中在这里，默认值 = 既有行为：
+ * <p>资源恢复规则集中在这里，2026-10-19起新配置默认采用完整休息：
  * <ul>
- *   <li>休息只回 FP（{@code restFp = FULL}，其余 {@code KEEP}）；</li>
- *   <li>生命/精力/药瓶必须显式改成 {@code FULL} 才会恢复，且都接**现有权威状态**
+ *   <li>休息恢复生命、FP、精力和药瓶；已有配置的显式 KEEP 仍受尊重；</li>
+ *   <li>所有恢复都接**现有权威状态**
  *       （原版生命值、{@link com.dsh.eldencombat.core.CombatState} 的精力与药瓶），不新造第二份资源；</li>
  *   <li>旅行与打开菜单**永不**恢复资源，只有 {@link GraceRest#rest} 读这份配置；</li>
  *   <li>重生点没有接到本项目权威状态，所以这里**故意没有**对应开关——不能被静默启用，
@@ -29,7 +29,7 @@ public final class GraceSettings {
 
     /** 休息时某项资源的处理规则。 */
     public enum Rest {
-        /** 保持不动（默认，除 FP 外） */
+        /** 保持不动 */
         KEEP,
         /** 补满（FP / 生命 / 精力 / 药瓶都接到现有权威状态） */
         FULL
@@ -48,9 +48,11 @@ public final class GraceSettings {
 
     // ---- 休息恢复规则 ----
     public Rest restFp = Rest.FULL;
-    public Rest restHealth = Rest.KEEP;
-    public Rest restStamina = Rest.KEEP;
-    public Rest restFlasks = Rest.KEEP;
+    public Rest restHealth = Rest.FULL;
+    public Rest restStamina = Rest.FULL;
+    public Rest restFlasks = Rest.FULL;
+    /** Cure mapped ailments only; beneficial potion effects and survival resources are retained. */
+    public boolean restCleanse = true;
 
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
     private static volatile GraceSettings current = new GraceSettings();
@@ -109,8 +111,8 @@ public final class GraceSettings {
         pendingTimeoutTicks = Math.max(20, pendingTimeoutTicks);
         snapshotLimit = Math.min(4096, Math.max(1, snapshotLimit));
         restFp = restFp == null ? Rest.FULL : restFp;
-        restHealth = restHealth == null ? Rest.KEEP : restHealth;
-        restStamina = restStamina == null ? Rest.KEEP : restStamina;
-        restFlasks = restFlasks == null ? Rest.KEEP : restFlasks;
+        restHealth = restHealth == null ? Rest.FULL : restHealth;
+        restStamina = restStamina == null ? Rest.FULL : restStamina;
+        restFlasks = restFlasks == null ? Rest.FULL : restFlasks;
     }
 }

@@ -52,14 +52,14 @@
       "contexts": {
         "thirdperson_righthand": {
           "rotation": [
-            -90.0,
-            0.0,
-            -60.0
+            -90,
+            0,
+            35.19443000000001
           ],
           "translation": [
-            4.38062,
-            0.1,
-            0.932114
+            1.89841,
+            -2,
+            -8.9843
           ],
           "scale": [
             1.85464,
@@ -69,14 +69,14 @@
         },
         "thirdperson_lefthand": {
           "rotation": [
-            -90.0,
-            0.0,
-            30.0
+            -90,
+            0,
+            -65.19443000000001
           ],
           "translation": [
-            -2.027734,
-            0.1,
-            -0.784999
+            3.84807,
+            -2,
+            -8.46189
           ],
           "scale": [
             1.85464,
@@ -86,36 +86,36 @@
         },
         "firstperson_righthand": {
           "rotation": [
-            -35.0,
-            0.0,
-            -55.0
+            -72.54071000000022,
+            -4.1153800000001866,
+            37.340999999999894
           ],
           "translation": [
-            2.559512,
-            7.032986,
-            -6.746956
+            0.30966,
+            4.45463,
+            -0.52792
           ],
           "scale": [
-            0.75679,
-            0.75679,
-            0.75679
+            0.68111,
+            0.68111,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            -35.0,
-            0.0,
-            35.0
+            -72.18543,
+            -2.002530000000206,
+            -56.40048999999999
           ],
           "translation": [
-            -5.517855,
-            8.199669,
-            -7.563876
+            2.46828,
+            4.45464,
+            -0.14728
           ],
           "scale": [
-            0.607839,
-            0.607839,
-            0.607839
+            0.68111,
+            0.68111,
+            0.68
           ]
         },
         "ground": {
@@ -189,927 +189,2479 @@
       },
       "blocking": {},
       "accepted": false,
-      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+      "note": "Latest 20261021 model; vanilla palm reference, authored blade roll; game review pending",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/projects/ballista.bbmodel",
+        "sha256": "573b6d65af9560ee97d71b011b28fccd432c35bf608dedf7a338f637c70a27c4",
+        "sourceModelSha256": "12e98dd49000fa68bf991656165624cf635779672fa315d56c7bea2ee5baa7f6",
+        "source": "Blockbench native Display slots; no export-time recalibration"
+      },
+      "latestModelCalibration": {
+        "sourceModel": "items/ballista.bbmodel",
+        "sourceSha256": "12e98dd49000fa68bf991656165624cf635779672fa315d56c7bea2ee5baa7f6",
+        "sourceRoot": "art/equipment-2d/blockbench-all-items-20261018"
+      }
     },
     "blasphemous_blade": {
       "contexts": {
         "firstperson_righthand": {
           "rotation": [
-            12.418746,
-            -21.871501,
-            55.814134
+            12.418749999999818,
+            -21.871500000000196,
+            50.814130000000205
           ],
           "translation": [
-            -2.97944,
-            8.488148,
-            -6.330048
+            0.61519,
+            4.49839,
+            0.6197
           ],
           "scale": [
-            0.93026,
-            0.93026,
-            0.93026
+            0.83723,
+            0.83723,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            3.795677,
-            24.728505,
-            -34.237881
+            12.418749999999818,
+            -21.871500000000196,
+            -50.814130000000205
           ],
           "translation": [
-            -2.951585,
-            8.490617,
-            -6.330396
+            1.64481,
+            4.4095,
+            1.02333
           ],
           "scale": [
-            0.929888,
-            0.929888,
-            0.929888
+            0.83723,
+            0.83723,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55.190000000000055
+          ],
+          "translation": [
+            0,
+            7.42795,
+            -0.13439
+          ],
+          "scale": [
+            1.36001,
+            1.36001,
+            1.36001
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55.190000000000055
+          ],
+          "translation": [
+            0,
+            7.42795,
+            -0.13439
+          ],
+          "scale": [
+            1.36001,
+            1.36001,
+            1.36001
           ]
         }
       },
       "accepted": false,
-      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+      "note": "Latest 20261021 model; vanilla palm reference, authored blade roll; game review pending",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/projects/blasphemous_blade.bbmodel",
+        "sha256": "66b33c82d2c164931ad7d1652f194a67f56af1f3e76f45496b4849414f228c92",
+        "sourceModelSha256": "6f0f3715248668d721df3786a60f6a353d5bff4a999581fac896217f88a11327",
+        "source": "Blockbench native Display slots; no export-time recalibration"
+      },
+      "latestModelCalibration": {
+        "sourceModel": "items/blasphemous_blade.bbmodel",
+        "sourceSha256": "6f0f3715248668d721df3786a60f6a353d5bff4a999581fac896217f88a11327",
+        "sourceRoot": "art/equipment-2d/blockbench-all-items-20261018"
+      }
     },
     "claw": {
       "contexts": {
         "firstperson_righthand": {
           "rotation": [
-            10.009744,
-            -23.027581,
-            49.28545
+            10.009739999999965,
+            -23.027579999999944,
+            46.285449999999855
           ],
           "translation": [
-            -2.127221,
-            5.534348,
-            -6.76446
+            4.112191946701942,
+            0.6832868815437796,
+            -6.81763090695522
           ],
           "scale": [
-            0.568175,
-            0.568175,
-            0.568175
+            0.4366330988999534,
+            0.4366330988999534,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            1.044823,
-            24.97956,
-            -27.472892
+            10.009739999999965,
+            -23.027579999999944,
+            -46.285449999999855
           ],
           "translation": [
-            -2.742563,
-            5.425846,
-            -6.76446
+            4.207807011448711,
+            0.6762229263058583,
+            -6.777609011584653
           ],
           "scale": [
-            0.568175,
-            0.568175,
-            0.568175
+            0.4366330988999534,
+            0.4366330988999534,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            54.07900000000018
+          ],
+          "translation": [
+            0,
+            1.2653,
+            1.025052
+          ],
+          "scale": [
+            0.495046,
+            0.495046,
+            0.495046
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -54.07900000000018
+          ],
+          "translation": [
+            0,
+            1.2653,
+            1.025052
+          ],
+          "scale": [
+            0.495046,
+            0.495046,
+            0.495046
           ]
         }
       },
       "accepted": false,
-      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+      "note": "Latest 20261021 model; vanilla palm reference, authored blade roll; game review pending",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/fallbacks/claw.bbmodel",
+        "sha256": "e498b0408fc5176c0a3aebf3901148e9015bda6a7b96c197bde059c23c43fe07",
+        "source": "Native incomplete-resource fallback; primary is arm-mounted worn mesh"
+      },
+      "latestModelCalibration": {
+        "sourceModel": "items/claw.bbmodel",
+        "sourceSha256": "5622c8f14c1ba95571228feb3cf833322df55caa07e269780136f9aa69f3f7a2",
+        "sourceRoot": "art/equipment-2d/blockbench-all-items-20261018"
+      }
     },
     "colossal_sword": {
       "contexts": {
         "firstperson_righthand": {
           "rotation": [
-            12.277485,
-            -21.948388,
-            55.209571
+            12.277489999999943,
+            -21.948390000000018,
+            50.209569999999985
           ],
           "translation": [
-            -2.98581,
-            8.885698,
-            -6.26293
+            0.63862,
+            4.85323,
+            0.69201
           ],
           "scale": [
-            0.96508,
-            0.96508,
-            0.96508
+            0.86857,
+            0.86857,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            3.63035,
-            24.751788,
-            -33.616839
+            12.277489999999943,
+            -21.948390000000018,
+            -50.209569999999985
           ],
           "translation": [
-            -3.089157,
-            8.907692,
-            -6.257145
+            1.62138,
+            4.76902,
+            1.07899
           ],
           "scale": [
-            0.971039,
-            0.971039,
-            0.971039
+            0.86857,
+            0.86857,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55
+          ],
+          "translation": [
+            0,
+            12.74931,
+            -1.04274
+          ],
+          "scale": [
+            2.12782,
+            2.12782,
+            2.12782
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55
+          ],
+          "translation": [
+            0,
+            12.74931,
+            -1.04274
+          ],
+          "scale": [
+            2.12782,
+            2.12782,
+            2.12782
           ]
         }
       },
       "accepted": false,
-      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+      "note": "Latest 20261021 model; vanilla palm reference, authored blade roll; game review pending",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/projects/colossal_sword.bbmodel",
+        "sha256": "a4c5326a3aaf2609c48c7b2d286d5d2ba3ea0a8fbbb55c8f031d909dae6c2798",
+        "sourceModelSha256": "805a4ff2c21c896bd5067e10ee9ac9ca6a62375ab3a1c3bcb82a9521b9887b30",
+        "source": "Blockbench native Display slots; no export-time recalibration"
+      },
+      "latestModelCalibration": {
+        "sourceModel": "items/colossal_sword.bbmodel",
+        "sourceSha256": "805a4ff2c21c896bd5067e10ee9ac9ca6a62375ab3a1c3bcb82a9521b9887b30",
+        "sourceRoot": "art/equipment-2d/blockbench-all-items-20261018"
+      }
     },
     "colossal_weapon": {
       "contexts": {
         "firstperson_righthand": {
           "rotation": [
-            9.35948,
-            -23.287034,
-            47.632015
+            9.359480000000076,
+            -23.28702999999996,
+            42.63202000000001
           ],
           "translation": [
-            -2.141324,
-            7.747277,
-            -6.441563
+            1.30922,
+            3.77647,
+            0.49336
           ],
           "scale": [
-            0.989403,
-            0.989403,
-            0.989403
+            0.89046,
+            0.89046,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            0.32606,
-            24.99801,
-            -25.771543
+            9.359480000000076,
+            -23.28702999999996,
+            -42.63202000000001
           ],
           "translation": [
-            -3.375402,
-            7.160023,
-            -6.495207
+            0.95078,
+            3.80156,
+            0.34114
           ],
           "scale": [
-            0.919423,
-            0.919423,
-            0.919423
+            0.89046,
+            0.89046,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55
+          ],
+          "translation": [
+            0,
+            9.68859,
+            -0.50305
+          ],
+          "scale": [
+            2.1092,
+            2.1092,
+            2.1092
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55
+          ],
+          "translation": [
+            0,
+            9.68859,
+            -0.50305
+          ],
+          "scale": [
+            2.1092,
+            2.1092,
+            2.1092
           ]
         }
       },
       "accepted": false,
-      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+      "note": "Latest 20261021 model; vanilla palm reference, authored blade roll; game review pending",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/projects/colossal_weapon.bbmodel",
+        "sha256": "5c3253db711d81168ccfd7defc78c710ad715448c47291fecc6c0004eb1eb5f1",
+        "sourceModelSha256": "b2661f420d1675bb6761e7461c226ec68f408ceb09e59f8501841f6ef885f6bc",
+        "source": "Blockbench native Display slots; no export-time recalibration"
+      },
+      "latestModelCalibration": {
+        "sourceModel": "items/colossal_weapon.bbmodel",
+        "sourceSha256": "b2661f420d1675bb6761e7461c226ec68f408ceb09e59f8501841f6ef885f6bc",
+        "sourceRoot": "art/equipment-2d/blockbench-all-items-20261018"
+      }
     },
     "curved_greatsword": {
       "contexts": {
         "firstperson_righthand": {
           "rotation": [
-            16.826206,
-            -18.765192,
-            63.193163
+            13.257309999999961,
+            3.8635300000000825,
+            59.7210399999999
           ],
           "translation": [
-            -3.381416,
-            8.368651,
-            -5.96209
+            0.03812,
+            4.52365,
+            0.99561
           ],
           "scale": [
-            1.079106,
-            1.079106,
-            1.079106
+            0.99894,
+            0.99894,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            9.245527,
-            23.330357,
-            -42.306027
+            21.067829999999958,
+            -171.7876000000001,
+            -42.226160000000164
           ],
           "translation": [
-            -2.52939,
-            8.479294,
-            -5.970169
+            1.74981,
+            4.41664,
+            1.58924
           ],
           "scale": [
-            1.072063,
-            1.072063,
-            1.072063
+            0.99894,
+            0.99894,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            90,
+            53.32600999999977
+          ],
+          "translation": [
+            0,
+            7.80189,
+            2.19784
+          ],
+          "scale": [
+            1.61622,
+            1.61622,
+            1.61622
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            -90,
+            -53.32600999999977
+          ],
+          "translation": [
+            0,
+            7.80189,
+            2.19784
+          ],
+          "scale": [
+            1.61622,
+            1.61622,
+            1.61622
           ]
         }
       },
       "accepted": false,
-      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+      "note": "Latest 20261021 model; vanilla palm reference, authored blade roll; game review pending",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/projects/curved_greatsword.bbmodel",
+        "sha256": "6529d31ee7ebf8eb32886a7ebc241e147b3fdf452615d7e99501ed0fa8c618f0",
+        "sourceModelSha256": "5b169dbbb30b58dd7bf8dfa2b95c608ddb6fe6ed18a66e4c4f0b4fb09742dc1e",
+        "source": "Blockbench native Display slots; no export-time recalibration"
+      },
+      "edgeFacingCalibration": {
+        "project": "art/equipment-2d/edge-facing-20261020/curved_greatsword.bbmodel",
+        "method": "Analytical axial roll; native Display and game review pending",
+        "replacesFirstPersonNativeCalibration": true,
+        "tipPixels": [
+          28.5,
+          6.5
+        ]
+      },
+      "latestModelCalibration": {
+        "sourceModel": "items/curved_greatsword.bbmodel",
+        "sourceSha256": "5b169dbbb30b58dd7bf8dfa2b95c608ddb6fe6ed18a66e4c4f0b4fb09742dc1e",
+        "sourceRoot": "art/equipment-2d/blockbench-all-items-20261018"
+      }
     },
     "curved_sword": {
       "contexts": {
         "firstperson_righthand": {
           "rotation": [
-            17.096341,
-            -18.520986,
-            65.952185
+            13.096640000000207,
+            4.138860000000022,
+            62.441359999999804
           ],
           "translation": [
-            -3.311337,
-            8.222456,
-            -5.946047
+            0.06272,
+            4.61528,
+            1.00452
           ],
           "scale": [
-            0.985514,
-            0.985514,
-            0.985514
+            0.94957,
+            0.94957,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            9.600527,
-            23.193303,
-            -45.118896
+            21.607530000000224,
+            -172.90463,
+            -42.90065999999979
           ],
           "translation": [
-            -2.549245,
-            8.356833,
-            -5.946047
+            2.00333,
+            4.45333,
+            1.64007
           ],
           "scale": [
-            0.985514,
-            0.985514,
-            0.985514
+            0.94957,
+            0.94957,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            90,
+            58.75610000000006
+          ],
+          "translation": [
+            0,
+            5.13911,
+            2.23859
+          ],
+          "scale": [
+            1.07661,
+            1.07661,
+            1.07661
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            -90,
+            -58.75610000000006
+          ],
+          "translation": [
+            0,
+            5.13911,
+            2.23859
+          ],
+          "scale": [
+            1.07661,
+            1.07661,
+            1.07661
           ]
         }
       },
       "accepted": false,
-      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+      "note": "Latest 20261021 model; vanilla palm reference, authored blade roll; game review pending",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/projects/curved_sword.bbmodel",
+        "sha256": "62b5fb445871d7cd93875c7726600e125a7c1725dbeb2fd71a41f351337f019b",
+        "sourceModelSha256": "5800b966586b89bcb260b4af592d6e1c1a156b37487d65bdc0436ad8bc8be6bd",
+        "source": "Blockbench native Display slots; no export-time recalibration"
+      },
+      "edgeFacingCalibration": {
+        "project": "art/equipment-2d/edge-facing-20261020/curved_sword.bbmodel",
+        "method": "Analytical axial roll; native Display and game review pending",
+        "replacesFirstPersonNativeCalibration": true,
+        "tipPixels": [
+          27.5,
+          7.5
+        ]
+      },
+      "latestModelCalibration": {
+        "sourceModel": "items/curved_sword.bbmodel",
+        "sourceSha256": "5800b966586b89bcb260b4af592d6e1c1a156b37487d65bdc0436ad8bc8be6bd",
+        "sourceRoot": "art/equipment-2d/blockbench-all-items-20261018"
+      }
     },
     "fist": {
       "contexts": {
         "firstperson_righthand": {
           "rotation": [
-            5.763313,
-            -24.368276,
-            38.265652
+            5.763309999999819,
+            -24.36828000000014,
+            35.26564999999982
           ],
           "translation": [
-            -1.817495,
-            3.503517,
-            -7.058105
+            4.256994267420244,
+            -0.9868653451707304,
+            -7.093956042141229
           ],
           "scale": [
-            0.387744,
-            0.387744,
-            0.387744
+            0.25445728524065053,
+            0.25445728524065053,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            -3.482917,
-            24.771655,
-            -16.255158
+            5.763309999999819,
+            -24.36828000000014,
+            -35.26564999999982
           ],
           "translation": [
-            -2.339025,
-            3.411557,
-            -7.058105
+            4.063009571617314,
+            -0.9780419222514385,
+            -7.181377800246059
           ],
           "scale": [
-            0.387744,
-            0.387744,
-            0.387744
+            0.25445728524065053,
+            0.25445728524065053,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            54.896999999999935
+          ],
+          "translation": [
+            0,
+            -0.623812,
+            1.316606
+          ],
+          "scale": [
+            0.2885,
+            0.2885,
+            0.2885
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -54.896999999999935
+          ],
+          "translation": [
+            0,
+            -0.623812,
+            1.316606
+          ],
+          "scale": [
+            0.2885,
+            0.2885,
+            0.2885
           ]
         }
       },
       "accepted": false,
-      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+      "note": "Latest 20261021 model; vanilla palm reference, authored blade roll; game review pending",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/fallbacks/fist.bbmodel",
+        "sha256": "2d3d56184128ff85f40db6e4e4fa3d230b3bd52ccdaf92deed9a6bd43fba589d",
+        "source": "Native incomplete-resource fallback; primary is arm-mounted worn mesh"
+      },
+      "latestModelCalibration": {
+        "sourceModel": "items/fist.bbmodel",
+        "sourceSha256": "2451593d58c47819de0152d7ac223e1935b66ec0f42337202ade9210109840a7",
+        "sourceRoot": "art/equipment-2d/blockbench-all-items-20261018"
+      }
     },
     "flail": {
       "contexts": {
         "firstperson_righthand": {
           "rotation": [
-            10.794756,
-            -22.685703,
-            51.306265
+            10.794760000000224,
+            -22.685699999999997,
+            46.30627000000004
           ],
           "translation": [
-            -2.605076,
-            9.213684,
-            -6.222905
+            1.00204,
+            5.11815,
+            0.73652
           ],
           "scale": [
-            1.006302,
-            1.006302,
-            1.006302
+            0.90567,
+            0.90567,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            1.925642,
-            24.930482,
-            -29.560412
+            10.794760000000224,
+            -22.685699999999997,
+            -46.30627000000004
           ],
           "translation": [
-            -3.598102,
-            9.230246,
-            -6.195261
+            1.25796,
+            5.09811,
+            0.84161
           ],
           "scale": [
-            1.034772,
-            1.034772,
-            1.034772
+            0.90567,
+            0.90567,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55
+          ],
+          "translation": [
+            0,
+            6.08892,
+            0.13167
+          ],
+          "scale": [
+            1.12103,
+            1.12103,
+            1.12103
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55
+          ],
+          "translation": [
+            0,
+            6.08892,
+            0.13167
+          ],
+          "scale": [
+            1.12103,
+            1.12103,
+            1.12103
           ]
         }
       },
       "accepted": false,
-      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+      "note": "Latest 20261021 model; vanilla palm reference, authored blade roll; game review pending",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/projects/flail.bbmodel",
+        "sha256": "d2a3dcb8a208a3251beec3ea3a6c224f1d47b4e03d3519a0e6079c70eafc5e5f",
+        "sourceModelSha256": "2af10fe000425b41e7ffe3300a5795acefda36fc33c256976f5acbd98516e340",
+        "source": "Blockbench native Display slots; no export-time recalibration"
+      },
+      "latestModelCalibration": {
+        "sourceModel": "items/flail.bbmodel",
+        "sourceSha256": "2af10fe000425b41e7ffe3300a5795acefda36fc33c256976f5acbd98516e340",
+        "sourceRoot": "art/equipment-2d/blockbench-all-items-20261018"
+      }
     },
     "glintstone_staff": {
       "contexts": {
         "firstperson_righthand": {
           "rotation": [
-            12.74536,
-            -21.689056,
-            56.468366
+            12.745359999999891,
+            -21.689060000000154,
+            52.46837000000005
           ],
           "translation": [
-            -2.914264,
-            7.791496,
-            -6.422114
+            0.54502,
+            3.8689,
+            0.48248
           ],
           "scale": [
-            1.014775,
-            1.014775,
-            1.014775
+            0.9133,
+            0.9133,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            4.179951,
-            24.67026,
-            -34.931495
+            12.745359999999891,
+            -21.689060000000154,
+            -52.46837000000005
           ],
           "translation": [
-            -2.756352,
-            7.701569,
-            -6.439058
+            1.71498,
+            3.76624,
+            0.93634
           ],
           "scale": [
-            0.992671,
-            0.992671,
-            0.992671
+            0.9133,
+            0.9133,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55
+          ],
+          "translation": [
+            0,
+            7.49388,
+            -0.11606
+          ],
+          "scale": [
+            1.68898,
+            1.68898,
+            1.68898
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55
+          ],
+          "translation": [
+            0,
+            7.49388,
+            -0.11606
+          ],
+          "scale": [
+            1.68898,
+            1.68898,
+            1.68898
           ]
         }
       },
       "accepted": false,
-      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+      "note": "Latest 20261021 model; vanilla palm reference, authored blade roll; game review pending",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/projects/glintstone_staff.bbmodel",
+        "sha256": "5b5f0965890cbd94837cd0f26053f6edc30e19ca47b1b49286a93a87c7ef12c2",
+        "sourceModelSha256": "f20712ca4c362dca09fa2571d914dd5f193aa52af9568ef809de3a1b63a62055",
+        "source": "Blockbench native Display slots; no export-time recalibration"
+      },
+      "latestModelCalibration": {
+        "sourceModel": "items/glintstone_staff.bbmodel",
+        "sourceSha256": "f20712ca4c362dca09fa2571d914dd5f193aa52af9568ef809de3a1b63a62055",
+        "sourceRoot": "art/equipment-2d/blockbench-all-items-20261018"
+      }
     },
     "great_bow": {
       "contexts": {
         "firstperson_righthand": {
           "rotation": [
-            -0.0,
-            -25.0,
-            -155.0
+            0,
+            -25,
+            -130
           ],
           "translation": [
-            0.466219,
-            6.721702,
-            -6.087288
+            1.56522,
+            4.27652,
+            0.34799
           ],
           "scale": [
-            0.880544,
-            0.880544,
-            0.880544
+            0.67362,
+            0.67362,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            -0.0,
-            25.0,
-            155.0
+            0,
+            155,
+            130
           ],
           "translation": [
-            -4.306219,
-            6.721702,
-            -6.087288
+            1.56524,
+            4.27652,
+            0.34801
           ],
           "scale": [
-            0.880544,
-            0.880544,
-            0.880544
+            0.67362,
+            0.67362,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            -80,
+            80,
+            129.89499999999998
+          ],
+          "translation": [
+            -0.85294,
+            -3.65224,
+            7.06743
+          ],
+          "scale": [
+            2.07485,
+            2.07485,
+            2.07485
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            -80,
+            -100,
+            -129.89499999999998
+          ],
+          "translation": [
+            -0.85294,
+            -3.65224,
+            7.06743
+          ],
+          "scale": [
+            2.07485,
+            2.07485,
+            2.07485
           ]
         }
       },
       "accepted": false,
-      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+      "note": "Latest 20261021 model; vanilla palm reference, authored blade roll; game review pending",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/projects/great_bow.bbmodel",
+        "sha256": "b6162ee183521ba4e384010154b97ccc5260b03031e63013cc74e2049dd7bb80",
+        "sourceModelSha256": "d5a9c7c01d0d1f0068f6f97f82635e4b9997eea52e84895ca29eae97c01e8517",
+        "source": "Blockbench native Display slots; no export-time recalibration"
+      },
+      "latestModelCalibration": {
+        "sourceModel": "items/great_bow.bbmodel",
+        "sourceSha256": "d5a9c7c01d0d1f0068f6f97f82635e4b9997eea52e84895ca29eae97c01e8517",
+        "sourceRoot": "art/equipment-2d/blockbench-all-items-20261018"
+      }
     },
     "great_spear": {
       "contexts": {
         "firstperson_righthand": {
           "rotation": [
-            12.732294,
-            -21.696482,
-            56.433018
+            12.73228999999992,
+            -21.696480000000065,
+            51.43301999999994
           ],
           "translation": [
-            -3.023482,
-            8.384829,
-            -6.333986
+            0.56865,
+            4.40924,
+            0.613
           ],
           "scale": [
-            0.996829,
-            0.996829,
-            0.996829
+            0.89715,
+            0.89715,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            4.164525,
-            24.67271,
-            -34.894537
+            12.73228999999992,
+            -21.696480000000065,
+            -51.43301999999994
           ],
           "translation": [
-            -2.868751,
-            8.371005,
-            -6.3399
+            1.69135,
+            4.31079,
+            1.04871
           ],
           "scale": [
-            0.990022,
-            0.990022,
-            0.990022
+            0.89715,
+            0.89715,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55
+          ],
+          "translation": [
+            0,
+            13.95562,
+            -1.25544
+          ],
+          "scale": [
+            2.58195,
+            2.58195,
+            2.58195
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55
+          ],
+          "translation": [
+            0,
+            13.95562,
+            -1.25544
+          ],
+          "scale": [
+            2.58195,
+            2.58195,
+            2.58195
           ]
         }
       },
       "accepted": false,
-      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+      "note": "Latest 20261021 model; vanilla palm reference, authored blade roll; game review pending",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/projects/great_spear.bbmodel",
+        "sha256": "0d7fe8006b13ebcc2abf679e5a691ff73e82b19ffcbd877fdef136cd211332dc",
+        "sourceModelSha256": "9e7fa4483dc1daeb8666d8c334d53c34234e5d1e076cf7eca4616c3e45c69e02",
+        "source": "Blockbench native Display slots; no export-time recalibration"
+      },
+      "latestModelCalibration": {
+        "sourceModel": "items/great_spear.bbmodel",
+        "sourceSha256": "9e7fa4483dc1daeb8666d8c334d53c34234e5d1e076cf7eca4616c3e45c69e02",
+        "sourceRoot": "art/equipment-2d/blockbench-all-items-20261018"
+      }
     },
     "great_sword": {
       "contexts": {
         "firstperson_righthand": {
           "rotation": [
-            12.732294,
-            -21.696482,
-            56.433018
+            12.73228999999992,
+            -26,
+            50.43301999999994
           ],
           "translation": [
-            -3.023482,
-            8.384829,
-            -6.333986
+            0.67112,
+            4.86883,
+            0.61469
           ],
           "scale": [
-            0.996829,
-            0.996829,
-            0.996829
+            0.89715,
+            0.89715,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            4.164525,
-            24.67271,
-            -34.894537
+            12.73228999999992,
+            -26,
+            -50.43301999999994
           ],
           "translation": [
-            -2.868751,
-            8.371005,
-            -6.3399
+            1.58888,
+            4.77018,
+            1.0513
           ],
           "scale": [
-            0.990022,
-            0.990022,
-            0.990022
+            0.89715,
+            0.89715,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55
+          ],
+          "translation": [
+            0,
+            6.64842,
+            0.03301
+          ],
+          "scale": [
+            1.34744,
+            1.34744,
+            1.34744
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55
+          ],
+          "translation": [
+            0,
+            6.64842,
+            0.03301
+          ],
+          "scale": [
+            1.34744,
+            1.34744,
+            1.34744
           ]
         }
       },
       "accepted": false,
-      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+      "note": "Latest 20261021 model; vanilla palm reference, authored blade roll; game review pending",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/projects/great_sword.bbmodel",
+        "sha256": "b09a64be4f6ccf6aaf13f3ea29e1a6d303de3d8724d3eb8b28ab506d523c1006",
+        "sourceModelSha256": "221c4d4cf2880d1550b7dc823fb98e9e0525ce19cacf7637f2664e0566c11715",
+        "source": "Blockbench native Display slots; no export-time recalibration"
+      },
+      "latestModelCalibration": {
+        "sourceModel": "items/great_sword.bbmodel",
+        "sourceSha256": "221c4d4cf2880d1550b7dc823fb98e9e0525ce19cacf7637f2664e0566c11715",
+        "sourceRoot": "art/equipment-2d/blockbench-all-items-20261018"
+      }
     },
     "hand_of_malenia": {
       "contexts": {
         "firstperson_righthand": {
           "rotation": [
-            16.117813,
-            -19.371164,
-            61.928049
+            12.924039999999877,
+            3.615229999999883,
+            56.48122999999987
           ],
           "translation": [
-            -2.763079,
-            8.344606,
-            -5.836957
+            0.83699,
+            4.38701,
+            0.87444
           ],
           "scale": [
-            0.988062,
-            0.988062,
-            0.988062
+            0.88926,
+            0.88926,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            8.327469,
-            23.656814,
-            -40.906358
+            20.121909999999843,
+            -170.43897000000015,
+            -41.05382000000009
           ],
           "translation": [
-            -3.098719,
-            8.247923,
-            -5.845572
+            2.26596,
+            4.1552,
+            1.286
           ],
           "scale": [
-            0.981817,
-            0.981817,
-            0.981817
+            0.88926,
+            0.88926,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            90,
+            46.64814999999999
+          ],
+          "translation": [
+            0,
+            8.666,
+            0.26226
+          ],
+          "scale": [
+            1.65633,
+            1.65633,
+            1.65633
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            -90,
+            -46.64814999999999
+          ],
+          "translation": [
+            0,
+            8.666,
+            0.26226
+          ],
+          "scale": [
+            1.65633,
+            1.65633,
+            1.65633
           ]
         }
       },
       "accepted": false,
-      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+      "note": "Latest 20261021 model; vanilla palm reference, authored blade roll; game review pending",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/projects/hand_of_malenia.bbmodel",
+        "sha256": "bd2c0670221d7606819831139a35d6dd1d6cfbc8cc96945fb6586497b9078bb4",
+        "sourceModelSha256": "79f605b059a43322c526d3d16122f3528752afb07f03eb795fb90c252632c56a",
+        "source": "Blockbench native Display slots; no export-time recalibration"
+      },
+      "edgeFacingCalibration": {
+        "project": "art/equipment-2d/edge-facing-20261020/hand_of_malenia.bbmodel",
+        "method": "Analytical axial roll; native Display and game review pending",
+        "replacesFirstPersonNativeCalibration": true,
+        "tipPixels": [
+          60.5,
+          4.5
+        ]
+      },
+      "latestModelCalibration": {
+        "sourceModel": "items/hand_of_malenia.bbmodel",
+        "sourceSha256": "79f605b059a43322c526d3d16122f3528752afb07f03eb795fb90c252632c56a",
+        "sourceRoot": "art/equipment-2d/blockbench-all-items-20261018"
+      }
     },
     "heavy_thrusting_sword": {
       "contexts": {
         "firstperson_righthand": {
           "rotation": [
-            12.705079,
-            -21.711914,
-            56.435426
+            12.70508000000018,
+            -21.71190999999999,
+            51.43543
           ],
           "translation": [
-            -3.023844,
-            8.386597,
-            -6.336948
+            0.56837,
+            4.4109,
+            0.61047
           ],
           "scale": [
-            0.997055,
-            0.997055,
-            0.997055
+            0.89735,
+            0.89735,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            4.132406,
-            24.67778,
-            -34.893601
+            12.70508000000018,
+            -21.71190999999999,
+            -51.43543
           ],
           "translation": [
-            -2.869011,
-            8.372755,
-            -6.342845
+            1.69163,
+            4.31253,
+            1.04679
           ],
           "scale": [
-            0.990242,
-            0.990242,
-            0.990242
+            0.89735,
+            0.89735,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55.13999999999987
+          ],
+          "translation": [
+            0,
+            6.23835,
+            0.08625
+          ],
+          "scale": [
+            1.27871,
+            1.27871,
+            1.27871
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55.13999999999987
+          ],
+          "translation": [
+            0,
+            6.23835,
+            0.08625
+          ],
+          "scale": [
+            1.27871,
+            1.27871,
+            1.27871
           ]
         }
       },
       "accepted": false,
-      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+      "note": "Latest 20261021 model; vanilla palm reference, authored blade roll; game review pending",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/projects/heavy_thrusting_sword.bbmodel",
+        "sha256": "5bbc029cff912cdccb52df57abbf73435aaced9bd2471b97278ce9c0d5b74419",
+        "sourceModelSha256": "ede5853258fc2ae972b7991b3ff0f20f1c372e509661d803ca0dec737c68204a",
+        "source": "Blockbench native Display slots; no export-time recalibration"
+      },
+      "latestModelCalibration": {
+        "sourceModel": "items/heavy_thrusting_sword.bbmodel",
+        "sourceSha256": "ede5853258fc2ae972b7991b3ff0f20f1c372e509661d803ca0dec737c68204a",
+        "sourceRoot": "art/equipment-2d/blockbench-all-items-20261018"
+      }
     },
     "malikeths_black_blade": {
       "contexts": {
         "firstperson_righthand": {
           "rotation": [
-            6.066525,
-            24.29881,
-            55.096491
+            6.066530000000057,
+            10.298809999999776,
+            50.0964899999999
           ],
           "translation": [
-            -2.868036,
-            8.323685,
-            -6.157004
+            0.66326,
+            4.41381,
+            0.29638
           ],
           "scale": [
-            0.907164,
-            0.907164,
-            0.907164
+            0.81645,
+            0.81645,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            14.314053,
-            -20.715969,
-            -33.774175
+            2.841559999999845,
+            -164.58955000000014,
+            -34.34582
           ],
           "translation": [
-            -3.007288,
-            8.336759,
-            -6.150386
+            2.0818,
+            4.38816,
+            -0.35195
           ],
           "scale": [
-            0.912919,
-            0.912919,
-            0.912919
+            0.81645,
+            0.81645,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            90,
+            39.608000000000175
+          ],
+          "translation": [
+            0,
+            10.37913,
+            0.3344
+          ],
+          "scale": [
+            1.79771,
+            1.79771,
+            1.79771
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            -90,
+            -39.608000000000175
+          ],
+          "translation": [
+            0,
+            10.37913,
+            0.3344
+          ],
+          "scale": [
+            1.79771,
+            1.79771,
+            1.79771
           ]
         }
       },
       "accepted": false,
-      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+      "note": "Latest 20261021 model; vanilla palm reference, authored blade roll; game review pending",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/projects/malikeths_black_blade.bbmodel",
+        "sha256": "baea410ad47680f3e9216069aa4aea026fc66fe3bf4f25a762c5f842c62b3ca5",
+        "sourceModelSha256": "55140c8e54c55de565f2a55e299de97eb4c24e98c51c628af73c28baf7db1f8f",
+        "source": "Blockbench native Display slots; no export-time recalibration"
+      },
+      "edgeFacingCalibration": {
+        "project": "art/equipment-2d/edge-facing-20261020/malikeths_black_blade.bbmodel",
+        "method": "Analytical axial roll; native Display and game review pending",
+        "replacesFirstPersonNativeCalibration": true,
+        "tipPixels": [
+          56.5,
+          2.5
+        ]
+      },
+      "latestModelCalibration": {
+        "sourceModel": "items/malikeths_black_blade.bbmodel",
+        "sourceSha256": "55140c8e54c55de565f2a55e299de97eb4c24e98c51c628af73c28baf7db1f8f",
+        "sourceRoot": "art/equipment-2d/blockbench-all-items-20261018"
+      }
     },
     "marikas_hammer": {
       "contexts": {
         "firstperson_righthand": {
           "rotation": [
-            9.756523,
-            -23.131116,
-            48.919493
+            9.75651999999991,
+            -23.13112000000001,
+            43.91949000000022
           ],
           "translation": [
-            -2.288451,
-            8.349875,
-            -6.364143
+            1.22682,
+            4.62779,
+            0.63661
           ],
           "scale": [
-            0.896151,
-            0.896151,
-            0.896151
+            0.85358,
+            0.85358,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            0.763776,
-            24.98908,
-            -27.087494
+            9.75651999999991,
+            -23.13112000000001,
+            -43.91949000000022
           ],
           "translation": [
-            -3.446156,
-            7.759241,
-            -6.419321
+            1.03318,
+            4.64181,
+            0.55509
           ],
           "scale": [
-            0.836993,
-            0.836993,
-            0.836993
+            0.85358,
+            0.85358,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            54.628000000000156
+          ],
+          "translation": [
+            0,
+            4.91366,
+            0.38063
+          ],
+          "scale": [
+            0.96778,
+            0.96778,
+            0.96778
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -54.628000000000156
+          ],
+          "translation": [
+            0,
+            4.91366,
+            0.38063
+          ],
+          "scale": [
+            0.96778,
+            0.96778,
+            0.96778
           ]
         }
       },
       "accepted": false,
-      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+      "note": "Latest 20261021 model; vanilla palm reference, authored blade roll; game review pending",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/projects/marikas_hammer.bbmodel",
+        "sha256": "d83805a3fbbaf49de18ff6b4f5289913e10741f9fd4a428571e635454d8ab674",
+        "sourceModelSha256": "a1e6d378e1b7f0f26f1611f9270e010a6e6439b089db39cc0b5cd74b1e053bde",
+        "source": "Blockbench native Display slots; no export-time recalibration"
+      },
+      "latestModelCalibration": {
+        "sourceModel": "items/marikas_hammer.bbmodel",
+        "sourceSha256": "a1e6d378e1b7f0f26f1611f9270e010a6e6439b089db39cc0b5cd74b1e053bde",
+        "sourceRoot": "art/equipment-2d/blockbench-all-items-20261018"
+      }
     },
     "mohgwyns_sacred_spear": {
       "contexts": {
         "firstperson_righthand": {
           "rotation": [
-            12.741982,
-            -21.690977,
-            56.459226
+            12.741979999999785,
+            -21.690979999999854,
+            52.459229999999934
           ],
           "translation": [
-            -2.804439,
-            7.217491,
-            -6.507485
+            0.59308,
+            3.48527,
+            0.41502
           ],
           "scale": [
-            0.874264,
-            0.874264,
-            0.874264
+            0.81222,
+            0.81222,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            4.175962,
-            24.670894,
-            -34.921938
+            12.741979999999785,
+            -21.690979999999854,
+            -52.459229999999934
           ],
           "translation": [
-            -2.677528,
-            7.212529,
-            -6.511418
+            1.66692,
+            3.39106,
+            0.83163
           ],
           "scale": [
-            0.869299,
-            0.869299,
-            0.869299
+            0.81222,
+            0.81222,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55.041999999999916
+          ],
+          "translation": [
+            0,
+            12.34805,
+            -0.98232
+          ],
+          "scale": [
+            2.53427,
+            2.53427,
+            2.53427
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55.041999999999916
+          ],
+          "translation": [
+            0,
+            12.34805,
+            -0.98232
+          ],
+          "scale": [
+            2.53427,
+            2.53427,
+            2.53427
           ]
         }
       },
       "accepted": false,
-      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+      "note": "Latest 20261021 model; vanilla palm reference, authored blade roll; game review pending",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/projects/mohgwyns_sacred_spear.bbmodel",
+        "sha256": "48508e0f795cf9052e91ea258ba62526168fb8f174d6bf63c4cd8982380ecf1b",
+        "sourceModelSha256": "e4207b69a18df3e7c5c5bd87f581a4c6c5431feb3e5176639fe14024b16c73f5",
+        "source": "Blockbench native Display slots; no export-time recalibration"
+      },
+      "latestModelCalibration": {
+        "sourceModel": "items/mohgwyns_sacred_spear.bbmodel",
+        "sourceSha256": "e4207b69a18df3e7c5c5bd87f581a4c6c5431feb3e5176639fe14024b16c73f5",
+        "sourceRoot": "art/equipment-2d/blockbench-all-items-20261018"
+      }
     },
     "morgotts_cursed_sword": {
       "contexts": {
         "firstperson_righthand": {
           "rotation": [
-            18.658418,
-            -16.945346,
-            65.406151
+            15.08811999999989,
+            4.364669999999933,
+            63.007970000000114
           ],
           "translation": [
-            -2.68596,
-            8.373009,
-            -5.483431
+            0.63959,
+            4.41037,
+            1.11132
           ],
           "scale": [
-            0.962598,
-            0.962598,
-            0.962598
+            0.86618,
+            0.86618,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            11.712539,
-            22.244048,
-            -44.912786
+            22.554279999999835,
+            -173.66177000000016,
+            -44.352660000000014
           ],
           "translation": [
-            -3.181186,
-            8.251864,
-            -5.493192
+            2.40758,
+            4.12414,
+            1.56899
           ],
           "scale": [
-            0.957124,
-            0.957124,
-            0.957124
+            0.86618,
+            0.86618,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            90,
+            50.484010000000126
+          ],
+          "translation": [
+            0,
+            10.10791,
+            -0.04401
+          ],
+          "scale": [
+            1.81682,
+            1.81682,
+            1.81682
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            -90,
+            -50.484010000000126
+          ],
+          "translation": [
+            0,
+            10.10791,
+            -0.04401
+          ],
+          "scale": [
+            1.81682,
+            1.81682,
+            1.81682
           ]
         }
       },
       "accepted": false,
-      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+      "note": "Latest 20261021 model; vanilla palm reference, authored blade roll; game review pending",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/projects/morgotts_cursed_sword.bbmodel",
+        "sha256": "8c9c935c30141ddce026bc85ac1e3832ab5cf92fd56c5adfcd913c7f96978285",
+        "sourceModelSha256": "20585fd5710cbff6cb8a29ea21182b245d1b64eb9d187b6c510dde225cbd923d",
+        "source": "Blockbench native Display slots; no export-time recalibration"
+      },
+      "edgeFacingCalibration": {
+        "project": "art/equipment-2d/edge-facing-20261020/morgotts_cursed_sword.bbmodel",
+        "method": "Analytical axial roll; native Display and game review pending",
+        "replacesFirstPersonNativeCalibration": true,
+        "tipPixels": [
+          59.5,
+          9.5
+        ]
+      },
+      "latestModelCalibration": {
+        "sourceModel": "items/morgotts_cursed_sword.bbmodel",
+        "sourceSha256": "20585fd5710cbff6cb8a29ea21182b245d1b64eb9d187b6c510dde225cbd923d",
+        "sourceRoot": "art/equipment-2d/blockbench-all-items-20261018"
+      }
     },
     "sacred_relic_sword": {
       "contexts": {
         "firstperson_righthand": {
           "rotation": [
-            12.498222,
-            -21.82771,
-            55.801681
+            12.498219999999947,
+            -21.827710000000025,
+            50.80168000000003
           ],
           "translation": [
-            -3.045469,
-            8.861525,
-            -6.264919
+            0.58365,
+            4.83602,
+            0.6898
           ],
           "scale": [
-            0.892566,
-            0.892566,
-            0.892566
+            0.80331,
+            0.80331,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            3.888924,
-            24.714903,
-            -34.234846
+            12.498219999999947,
+            -21.827710000000025,
+            -50.80168000000003
           ],
           "translation": [
-            -3.01712,
-            8.863362,
-            -6.265374
+            1.67635,
+            4.74131,
+            1.11709
           ],
           "scale": [
-            0.892132,
-            0.892132,
-            0.892132
+            0.80331,
+            0.80331,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55
+          ],
+          "translation": [
+            0,
+            8.23982,
+            -0.24759
+          ],
+          "scale": [
+            1.34034,
+            1.34034,
+            1.34034
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55
+          ],
+          "translation": [
+            0,
+            8.23982,
+            -0.24759
+          ],
+          "scale": [
+            1.34034,
+            1.34034,
+            1.34034
           ]
         }
       },
       "accepted": false,
-      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+      "note": "Latest 20261021 model; vanilla palm reference, authored blade roll; game review pending",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/projects/sacred_relic_sword.bbmodel",
+        "sha256": "0a6b8a58875842675359171e1a7f37667f3ca1abe1e5b84c0314d884bc1bbfb8",
+        "sourceModelSha256": "8364f874a46787cfb233e948953fbe2b0ef0e7e4c24a57d3c10507fda6a8e465",
+        "source": "Blockbench native Display slots; no export-time recalibration"
+      },
+      "latestModelCalibration": {
+        "sourceModel": "items/sacred_relic_sword.bbmodel",
+        "sourceSha256": "8364f874a46787cfb233e948953fbe2b0ef0e7e4c24a57d3c10507fda6a8e465",
+        "sourceRoot": "art/equipment-2d/blockbench-all-items-20261018"
+      }
     },
     "sacred_seal": {
       "contexts": {
         "firstperson_righthand": {
           "rotation": [
-            8.188385,
-            -23.702843,
-            44.695056
+            8.188380000000052,
+            -23.702839999999924,
+            44.69506000000001
           ],
           "translation": [
-            -1.984478,
-            3.783456,
-            -7.05255
+            1.07197,
+            0.73462,
+            -0.21738
           ],
           "scale": [
-            0.217717,
-            0.217717,
-            0.217717
+            0.19595,
+            0.19595,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            -0.944484,
-            24.983299,
-            -22.764694
+            8.188380000000052,
+            -23.702839999999924,
+            -44.69506000000001
           ],
           "translation": [
-            -2.277857,
-            3.731726,
-            -7.05255
+            1.18803,
+            0.72737,
+            -0.16695
           ],
           "scale": [
-            0.217717,
-            0.217717,
-            0.217717
+            0.19595,
+            0.19595,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            55
+          ],
+          "translation": [
+            0,
+            -0.10319,
+            1.14375
+          ],
+          "scale": [
+            0.22216,
+            0.22216,
+            0.22216
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -55
+          ],
+          "translation": [
+            0,
+            -0.10319,
+            1.14375
+          ],
+          "scale": [
+            0.22216,
+            0.22216,
+            0.22216
           ]
         }
       },
       "accepted": false,
-      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+      "note": "Latest 20261021 model; vanilla palm reference, authored blade roll; game review pending",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/projects/sacred_seal.bbmodel",
+        "sha256": "759c4bad71f58d28f90ec9f37d0dfea6f93abde20066485e2da441f3fd7f4c88",
+        "sourceModelSha256": "561f917b8dc7e11c5939480264b47a824d0b544d3ef98782f7d58fbe6718ad41",
+        "source": "Blockbench native Display slots; no export-time recalibration"
+      },
+      "latestModelCalibration": {
+        "sourceModel": "items/sacred_seal.bbmodel",
+        "sourceSha256": "561f917b8dc7e11c5939480264b47a824d0b544d3ef98782f7d58fbe6718ad41",
+        "sourceRoot": "art/equipment-2d/blockbench-all-items-20261018"
+      }
     },
     "starscourge_greatsword": {
       "contexts": {
         "firstperson_righthand": {
           "rotation": [
-            15.722491,
-            -19.68906,
-            60.808562
+            15.722490000000107,
+            -19.689060000000154,
+            55.80855999999994
           ],
           "translation": [
-            -2.789374,
-            8.321858,
-            -5.90116
+            0.77612,
+            4.47835,
+            1.02299
           ],
           "scale": [
-            1.015953,
-            1.015953,
-            1.015953
+            0.94102,
+            0.94102,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            7.822858,
-            23.819614,
-            -39.715893
+            15.722490000000107,
+            -19.689060000000154,
+            -55.80855999999994
           ],
           "translation": [
-            -3.066232,
-            8.234615,
-            -5.909597
+            1.48388,
+            4.40972,
+            1.26678
           ],
           "scale": [
-            1.009353,
-            1.009353,
-            1.009353
+            0.94102,
+            0.94102,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            56.31399999999985
+          ],
+          "translation": [
+            0,
+            8.57833,
+            0.67666
+          ],
+          "scale": [
+            1.69065,
+            1.69065,
+            1.69065
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -56.31399999999985
+          ],
+          "translation": [
+            0,
+            8.57833,
+            0.67666
+          ],
+          "scale": [
+            1.69065,
+            1.69065,
+            1.69065
           ]
         }
       },
       "accepted": false,
-      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+      "note": "Latest 20261021 model; vanilla palm reference, authored blade roll; game review pending",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/projects/starscourge_greatsword.bbmodel",
+        "sha256": "362f191ea3488a4c9c2aada2e8c93ae0bb5e6407d4e41c302139ea3f792fe9ff",
+        "sourceModelSha256": "0a27036bc38eb348c03009726c7621459ec015d013ab81ddd3606d0250ed24da",
+        "source": "Blockbench native Display slots; no export-time recalibration"
+      },
+      "latestModelCalibration": {
+        "sourceModel": "items/starscourge_greatsword.bbmodel",
+        "sourceSha256": "0a27036bc38eb348c03009726c7621459ec015d013ab81ddd3606d0250ed24da",
+        "sourceRoot": "art/equipment-2d/blockbench-all-items-20261018"
+      }
     },
     "twinblade": {
       "contexts": {
         "firstperson_righthand": {
           "rotation": [
-            -12.732102,
-            21.696591,
-            -123.567502
+            -12.732100000000173,
+            21.696590000000015,
+            -123.56750000000011
           ],
           "translation": [
-            -1.636506,
-            7.715324,
-            -7.323621
+            1.38514,
+            0.36528,
+            -0.46135
           ],
           "scale": [
-            0.880448,
-            0.880448,
-            0.880448
+            0.7924,
+            0.7924,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            -4.164298,
-            -24.672746,
-            145.106006
+            -12.732100000000173,
+            21.696590000000015,
+            123.56750000000011
           ],
           "translation": [
-            -2.192917,
-            7.617507,
-            -7.321153
+            0.87486,
+            0.41002,
+            -0.26331
           ],
           "scale": [
-            0.862866,
-            0.862866,
-            0.862866
+            0.7924,
+            0.7924,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            54.98199999999997
+          ],
+          "translation": [
+            0,
+            -1.43828,
+            0.80815
+          ],
+          "scale": [
+            1.81268,
+            1.81268,
+            1.81268
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -54.98199999999997
+          ],
+          "translation": [
+            0,
+            -1.43828,
+            0.80815
+          ],
+          "scale": [
+            1.81268,
+            1.81268,
+            1.81268
           ]
         }
       },
       "accepted": false,
-      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+      "note": "Latest 20261021 model; vanilla palm reference, authored blade roll; game review pending",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/projects/twinblade.bbmodel",
+        "sha256": "d80b4f0a08d25d8fff018da7553458e843dbf59e7e3ab2370cc2ff66adec1837",
+        "sourceModelSha256": "a1ef6709d2e12c76670e1f081cf51906d9e619ce396eaa5d4d6bb7a986d7cda8",
+        "source": "Blockbench native Display slots; no export-time recalibration"
+      },
+      "latestModelCalibration": {
+        "sourceModel": "items/twinblade.bbmodel",
+        "sourceSha256": "a1ef6709d2e12c76670e1f081cf51906d9e619ce396eaa5d4d6bb7a986d7cda8",
+        "sourceRoot": "art/equipment-2d/blockbench-all-items-20261018"
+      }
     },
     "whip": {
       "contexts": {
         "firstperson_righthand": {
           "rotation": [
-            -4.747744,
-            -24.573541,
-            34.142729
+            -4.747739999999794,
+            -24.573539999999866,
+            29.14273000000003
           ],
           "translation": [
-            -3.658819,
-            10.899914,
-            -8.690523
+            0.17271,
+            6.7831,
+            -1.42468
           ],
           "scale": [
-            1.400696,
-            1.400696,
-            1.400696
+            1.26063,
+            1.26063,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            -13.223558,
-            21.409841,
-            -12.666774
+            -4.747739999999794,
+            -24.573539999999866,
+            -29.14273000000003
           ],
           "translation": [
-            -3.128163,
-            10.92039,
-            -8.677923
+            2.08729,
+            6.85557,
+            -0.55218
           ],
           "scale": [
-            1.388855,
-            1.388855,
-            1.388855
+            1.26063,
+            1.26063,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            74.56800000000021
+          ],
+          "translation": [
+            0,
+            10.3292,
+            -14.1406
+          ],
+          "scale": [
+            3.15129,
+            3.15129,
+            3.15129
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            -74.56800000000021
+          ],
+          "translation": [
+            0,
+            10.3292,
+            -14.1406
+          ],
+          "scale": [
+            3.15129,
+            3.15129,
+            3.15129
           ]
         }
       },
       "accepted": false,
-      "note": "2026-10-18 first-person framing candidate; world/third-person unchanged; requires game visual acceptance"
+      "note": "Latest 20261021 model; vanilla palm reference, authored blade roll; game review pending",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/projects/whip.bbmodel",
+        "sha256": "5c20d43b352ceff5f242997a5be0a0f18f28ff2edbca771acfc2793f2532dfa5",
+        "sourceModelSha256": "fc30e63eeb967ad8f54047c29a6a853a44fa08fef4f3dc18cf996ec323df557a",
+        "source": "Blockbench native Display slots; no export-time recalibration"
+      },
+      "latestModelCalibration": {
+        "sourceModel": "items/whip.bbmodel",
+        "sourceSha256": "fc30e63eeb967ad8f54047c29a6a853a44fa08fef4f3dc18cf996ec323df557a",
+        "sourceRoot": "art/equipment-2d/blockbench-all-items-20261018"
+      }
+    },
+    "great_shield": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -180,
+            5
+          ],
+          "translation": [
+            -0.50289,
+            1.62128,
+            -4
+          ],
+          "scale": [
+            1.50171,
+            1.50171,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            -180,
+            -5
+          ],
+          "translation": [
+            -1.31633,
+            1.62128,
+            -4
+          ],
+          "scale": [
+            1.50171,
+            1.50171,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            2,
+            -1.62457,
+            4.37543
+          ],
+          "scale": [
+            1.50171,
+            1.50171,
+            1.50171
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            2,
+            -1.62457,
+            3.62457
+          ],
+          "scale": [
+            1.50171,
+            1.50171,
+            1.50171
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "Latest 20261021 model; vanilla palm reference, authored blade roll; game review pending",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/projects/great_shield.bbmodel",
+        "sha256": "c191c8ac9ee086646e1af48c9746eddf7b0793014b22d02e467ddeb7ee71c299",
+        "sourceModelSha256": "f063ac6bc2cc75eea79a4a19f812c26a5887faa59b2c3d231c310966a30384ac",
+        "source": "Blockbench native Display slots; no export-time recalibration"
+      },
+      "latestModelCalibration": {
+        "sourceModel": "items/great_shield.bbmodel",
+        "sourceSha256": "f063ac6bc2cc75eea79a4a19f812c26a5887faa59b2c3d231c310966a30384ac",
+        "sourceRoot": "art/equipment-2d/blockbench-all-items-20261018"
+      },
+      "blocking": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -180,
+            -5
+          ],
+          "translation": [
+            -2.5683304161818374,
+            4.686722408571234,
+            -5
+          ],
+          "scale": [
+            1.501714,
+            1.501714,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            -180,
+            -5
+          ],
+          "translation": [
+            -3.3163301786069117,
+            4.621280909038956,
+            -5
+          ],
+          "scale": [
+            1.501714,
+            1.501714,
+            0.68
+          ]
+        }
+      },
+      "nativeBlockingCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/grip-audit/candidates/projects/great_shield_blocking.bbmodel",
+        "sha256": "e6cc1cc84f8f785f4518cbfac2bcd19e50f9abf76f4866485468d30481a45795",
+        "source": "Blockbench native guard review; game acceptance pending"
+      }
+    },
+    "shield": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -180,
+            5
+          ],
+          "translation": [
+            -0.63103,
+            1.51375,
+            -4
+          ],
+          "scale": [
+            1.02857,
+            1.02857,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            -180,
+            -5
+          ],
+          "translation": [
+            -1.18818,
+            1.51375,
+            -4
+          ],
+          "scale": [
+            1.02857,
+            1.02857,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            2,
+            -1.74286,
+            4.25714
+          ],
+          "scale": [
+            1.02857,
+            1.02857,
+            1.02857
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            2,
+            -1.74286,
+            3.74286
+          ],
+          "scale": [
+            1.02857,
+            1.02857,
+            1.02857
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "Latest 20261021 model; vanilla palm reference, authored blade roll; game review pending",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/projects/shield.bbmodel",
+        "sha256": "e512a54198a9e400da4140eb56481ae5b32aa5179ac4486c47458c3a7af81993",
+        "sourceModelSha256": "1d701669cfb4173c1af1852265f1be13f5e74d7aaea19b83360f1efdb084d1d3",
+        "source": "Blockbench native Display slots; no export-time recalibration"
+      },
+      "latestModelCalibration": {
+        "sourceModel": "items/shield.bbmodel",
+        "sourceSha256": "1d701669cfb4173c1af1852265f1be13f5e74d7aaea19b83360f1efdb084d1d3",
+        "sourceRoot": "art/equipment-2d/blockbench-all-items-20261018"
+      },
+      "blocking": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -180,
+            -5
+          ],
+          "translation": [
+            -2.675852663899241,
+            4.5585731619965895,
+            -5
+          ],
+          "scale": [
+            1.028571,
+            1.028571,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            -180,
+            -5
+          ],
+          "translation": [
+            -3.1881811523047032,
+            4.513750227259739,
+            -5
+          ],
+          "scale": [
+            1.028571,
+            1.028571,
+            0.68
+          ]
+        }
+      },
+      "nativeBlockingCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/grip-audit/candidates/projects/shield_blocking.bbmodel",
+        "sha256": "7d2ff85422dcb11d5a09835d3351481bc4efb9d3ce37c5ce0d464355accdd6ee",
+        "source": "Blockbench native guard review; game acceptance pending"
+      }
+    },
+    "small_shield": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -180,
+            5
+          ],
+          "translation": [
+            -0.75361,
+            1.4109,
+            -4
+          ],
+          "scale": [
+            0.576,
+            0.576,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            -180,
+            -5
+          ],
+          "translation": [
+            -1.06561,
+            1.4109,
+            -4
+          ],
+          "scale": [
+            0.576,
+            0.576,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            2,
+            -1.856,
+            4.144
+          ],
+          "scale": [
+            0.576,
+            0.576,
+            0.576
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            0,
+            90,
+            0
+          ],
+          "translation": [
+            2,
+            -1.856,
+            3.856
+          ],
+          "scale": [
+            0.576,
+            0.576,
+            0.576
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "Latest 20261021 model; vanilla palm reference, authored blade roll; game review pending",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/projects/small_shield.bbmodel",
+        "sha256": "6576d6c3cec80c7188e2c339e4f007a026666df8ff80ecbef2f980b044c6f931",
+        "sourceModelSha256": "5811673c77438eaedcd2bcb2312b065c39ea5204f454aece95fa8c45e7a06c25",
+        "source": "Blockbench native Display slots; no export-time recalibration"
+      },
+      "latestModelCalibration": {
+        "sourceModel": "items/small_shield.bbmodel",
+        "sourceSha256": "5811673c77438eaedcd2bcb2312b065c39ea5204f454aece95fa8c45e7a06c25",
+        "sourceRoot": "art/equipment-2d/blockbench-all-items-20261018"
+      },
+      "blocking": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -180,
+            -5
+          ],
+          "translation": [
+            -2.7787108539113254,
+            4.436000853911326,
+            -5
+          ],
+          "scale": [
+            0.576,
+            0.576,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            -180,
+            -5
+          ],
+          "translation": [
+            -3.0656149269617483,
+            4.4109,
+            -5
+          ],
+          "scale": [
+            0.576,
+            0.576,
+            0.68
+          ]
+        }
+      },
+      "nativeBlockingCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/grip-audit/candidates/projects/small_shield_blocking.bbmodel",
+        "sha256": "e5faa71eefc9c9304c96eb694fafd01333fe4ff9c250ffe7d32b62a1cf5cbbf2",
+        "source": "Blockbench native guard review; game acceptance pending"
+      }
+    },
+    "test_flask": {
+      "contexts": {
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            -90,
+            25
+          ],
+          "translation": [
+            1.13,
+            2.86341,
+            1.16874
+          ],
+          "scale": [
+            0.42857,
+            0.42857,
+            0.68
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            -90,
+            -25
+          ],
+          "translation": [
+            1.13,
+            2.86341,
+            1.09127
+          ],
+          "scale": [
+            0.42857,
+            0.42857,
+            0.68
+          ]
+        },
+        "thirdperson_righthand": {
+          "rotation": [
+            90,
+            0,
+            0
+          ],
+          "translation": [
+            -0.10714,
+            -2,
+            1.67857
+          ],
+          "scale": [
+            0.42857,
+            0.42857,
+            0.42857
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            90,
+            0,
+            0
+          ],
+          "translation": [
+            0.10714,
+            -2,
+            1.67857
+          ],
+          "scale": [
+            0.42857,
+            0.42857,
+            0.42857
+          ]
+        }
+      },
+      "accepted": false,
+      "note": "Latest 20261021 model; vanilla palm reference, authored blade roll; game review pending",
+      "nativeCalibration": {
+        "project": "art/equipment-2d/blockbench-holds-20261021/projects/test_flask.bbmodel",
+        "sha256": "091268857a37ba85057f0f4448512c23483577aa3ddab27b0942a4aa522a86ed",
+        "sourceModelSha256": "859578a1f84c2ca7747ac0d46fb54b9e84220f71df796e5c30448d15d851d837",
+        "source": "Blockbench native Display slots; no export-time recalibration"
+      },
+      "latestModelCalibration": {
+        "sourceModel": "items/test_flask.bbmodel",
+        "sourceSha256": "859578a1f84c2ca7747ac0d46fb54b9e84220f71df796e5c30448d15d851d837",
+        "sourceRoot": "art/equipment-2d/blockbench-all-items-20261018"
+      }
     }
   }
 }

@@ -20,7 +20,7 @@ class TalismanAggregateTest {
         return TalismanSpec.parse(id, JsonParser.parseString(json).getAsJsonObject());
     }
 
-    /** 当前四件数据包护符的真实数值（docs 与 resources 同步）。 */
+    /** 旧版数据包样本，验证自定义数据包的兼容语义；不是当前内置数值。 */
     private static final List<TalismanSpec> SHIPPED = List.of(
             parse("eldencombat:warrior_jar_shard", "{\"name\":\"战士壶碎片\",\"staminaRegen\":0.20,\"damage\":0.08}"),
             parse("eldencombat:radagon_soreseal", "{\"name\":\"拉达冈的烙印\",\"maxFp\":30,\"staminaRegen\":0.10,\"damageReduction\":-0.10}"),

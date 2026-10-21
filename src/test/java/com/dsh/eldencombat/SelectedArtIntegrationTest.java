@@ -15,7 +15,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.security.MessageDigest;
 import java.util.HexFormat;
-import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -79,19 +78,16 @@ class SelectedArtIntegrationTest {
     @Test
     void generatedResourcesMatchTheNewSelectionsAndUiMasters() throws Exception {
         var whitelist = json("art/equipment-2d/full/publishable-assets.json");
-        Set<String> selected = Set.of("flail", "heavy_thrusting_sword", "hand_of_malenia",
-                "malikeths_black_blade", "starscourge_greatsword");
         int images = 0;
         for (var value : whitelist.getAsJsonArray("include")) {
             var asset = value.getAsJsonObject();
             String name = Path.of(asset.get("file").getAsString()).getFileName().toString();
-            if (selected.stream().noneMatch(id -> name.startsWith(id + "_"))) continue;
             String target = "build/resources/main/assets/eldencombat/textures/item/2d/" + name
                     .replace("_gui_16", "_gui16").replace("_gui_32", "_gui32");
             assertEquals(asset.get("sha256").getAsString(), hash(Path.of(target)));
             images++;
         }
-        assertEquals(15, images);
+        assertEquals(94, images);
         var ui = json("art/ui-pixel/assets.json");
         for (var value : ui.getAsJsonArray("assets")) {
             var asset = value.getAsJsonObject();
@@ -99,8 +95,24 @@ class SelectedArtIntegrationTest {
                     .getAsString().split(":", 2)[1];
             assertEquals(asset.get("sha256").getAsString(), hash(Path.of(target)));
         }
-        assertEquals("daefa157e7bb37dcd89bbb2e54863bda31b1bdec948d4a71c2d80d7b1a18dcf0",
-                hash(Path.of("art/equipment-2d/full/display-overrides.json")));
+        var overrides = json("art/equipment-2d/full/display-overrides.json").getAsJsonObject("overrides");
+        int nativeItems = 0;
+        for (var value : overrides.entrySet()) {
+            var item = value.getValue().getAsJsonObject();
+            var source = item.getAsJsonObject("nativeCalibration");
+            if (source == null) continue;
+            Path project = Path.of(source.get("project").getAsString());
+            assertEquals(source.get("sha256").getAsString(), hash(project), value.getKey());
+            var exported = json(project.getParent().getParent().resolve("exports")
+                    .resolve(value.getKey() + ".json").toString()).getAsJsonObject("display");
+            for (String context : new String[]{"firstperson_righthand", "firstperson_lefthand"}) {
+                var configured = item.getAsJsonObject("contexts").getAsJsonObject(context);
+                var nativeFrame = exported.getAsJsonObject(context);
+                assertEquals(nativeFrame, configured, value.getKey() + " " + context);
+            }
+            nativeItems++;
+        }
+        assertEquals(28, nativeItems);
     }
 
     @Test

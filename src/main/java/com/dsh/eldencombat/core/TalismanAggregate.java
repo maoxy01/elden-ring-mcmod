@@ -13,9 +13,9 @@ import java.util.List;
  * 所以单槽 + 默认规则下的数值与旧实现逐位相同。
  */
 public record TalismanAggregate(int count, float maxFp, float staminaRegen, float damage,
-                                float damageReduction, float heal) {
+                                float damageReduction, float heal, TalismanEffects effects) {
 
-    public static final TalismanAggregate NONE = new TalismanAggregate(0, 0f, 0f, 0f, 0f, 0f);
+    public static final TalismanAggregate NONE = new TalismanAggregate(0, 0f, 0f, 0f, 0f, 0f, TalismanEffects.NONE);
 
     /** 没有任何护符生效。 */
     public boolean isNone() {
@@ -59,7 +59,7 @@ public record TalismanAggregate(int count, float maxFp, float staminaRegen, floa
                 clamp(damage, -0.9f, limits.maxDamageBonus),
                 // 减伤允许为负（"烙印"类护符是有代价的：更脆），下限 -1（受伤 ×2）
                 clamp(reduction, -1f, limits.maxDamageReduction),
-                clamp(heal, 0f, limits.maxHealBonus));
+                clamp(heal, 0f, limits.maxHealBonus), TalismanEffects.of(specs));
     }
 
     /** FP 上限加成（绝对值）。 */
@@ -89,7 +89,8 @@ public record TalismanAggregate(int count, float maxFp, float staminaRegen, floa
 
     public String describe() {
         return String.format("护符数=%d FP上限+%.0f 精力×%.2f 伤害×%.2f 受伤×%.2f 治疗+%.1f",
-                count, maxFp, staminaRegenMultiplier(), damageMultiplier(), damageTakenMultiplier(), heal);
+                count, maxFp, staminaRegenMultiplier(), damageMultiplier(), damageTakenMultiplier(), heal)
+                + (effects.equals(TalismanEffects.NONE) ? "" : " " + effects.describe());
     }
 
     private static float clamp(float value, float min, float max) {

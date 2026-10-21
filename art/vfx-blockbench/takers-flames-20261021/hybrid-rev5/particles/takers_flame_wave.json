@@ -1,0 +1,93 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "eldencombat:takers_flame_wave",
+			"basic_render_parameters": {
+				"material": "particles_add",
+				"texture": "textures/flame_atlas"
+			}
+		},
+		"components": {
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": "math.random(0.35, 0.75)"
+			},
+			"minecraft:particle_initial_speed": "math.random(0.25, 0.75)",
+			"minecraft:particle_motion_dynamic": {
+				"linear_acceleration": [
+					0,
+					0.25,
+					0
+				],
+				"linear_drag_coefficient": 0.25
+			},
+			"minecraft:particle_appearance_billboard": {
+				"size": [
+					"math.lerp(0.18, 0.52, variable.particle_age / variable.particle_lifetime)",
+					"math.lerp(0.18, 0.52, variable.particle_age / variable.particle_lifetime)"
+				],
+				"facing_camera_mode": "lookat_xyz",
+				"uv": {
+					"texture_width": 16,
+					"texture_height": 512,
+					"flipbook": {
+						"base_UV": [
+							0,
+							0
+						],
+						"size_UV": [
+							16,
+							16
+						],
+						"step_UV": [
+							0,
+							16
+						],
+						"frames_per_second": 32,
+						"max_frame": 32,
+						"stretch_to_lifetime": false,
+						"loop": true
+					}
+				}
+			},
+			"minecraft:particle_appearance_tinting": {
+				"color": {
+					"gradient": {
+						"0.00": [
+							1,
+							0.604,
+							0.235,
+							1
+						],
+						"1.00": [
+							0.812,
+							0.227,
+							0.047,
+							1
+						]
+					},
+					"interpolant": "variable.particle_age / variable.particle_lifetime"
+				}
+			},
+			"minecraft:emitter_shape_box": {
+				"half_dimensions": [
+					0.45,
+					0.1,
+					0.45
+				],
+				"direction": [
+					0,
+					0.75,
+					0.2
+				]
+			},
+			"minecraft:emitter_lifetime_once": {
+				"active_time": 0.95
+			},
+			"minecraft:emitter_rate_steady": {
+				"spawn_rate": 74,
+				"max_particles": 150
+			}
+		}
+	}
+}

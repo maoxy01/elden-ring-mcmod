@@ -8,7 +8,34 @@
     "displayCandidates": "art/equipment-2d/full/display-candidates.json",
     "displayOverrides": "art/equipment-2d/full/display-overrides.json",
     "calibratedItems": [
-      "eldencombat:ballista"
+      "eldencombat:ballista",
+      "eldencombat:blasphemous_blade",
+      "eldencombat:claw",
+      "eldencombat:colossal_sword",
+      "eldencombat:colossal_weapon",
+      "eldencombat:curved_greatsword",
+      "eldencombat:curved_sword",
+      "eldencombat:fist",
+      "eldencombat:flail",
+      "eldencombat:glintstone_staff",
+      "eldencombat:great_bow",
+      "eldencombat:great_shield",
+      "eldencombat:great_spear",
+      "eldencombat:great_sword",
+      "eldencombat:hand_of_malenia",
+      "eldencombat:heavy_thrusting_sword",
+      "eldencombat:malikeths_black_blade",
+      "eldencombat:marikas_hammer",
+      "eldencombat:mohgwyns_sacred_spear",
+      "eldencombat:morgotts_cursed_sword",
+      "eldencombat:sacred_relic_sword",
+      "eldencombat:sacred_seal",
+      "eldencombat:shield",
+      "eldencombat:small_shield",
+      "eldencombat:starscourge_greatsword",
+      "eldencombat:test_flask",
+      "eldencombat:twinblade",
+      "eldencombat:whip"
     ],
     "ownSourceRoot": "art/equipment-2d/full",
     "deniedRoots": [
@@ -150,7 +177,7 @@
           24.5
         ],
         "worldLengthBlocks": 1.44,
-        "sourceSpanPixels": 24.845791213457
+        "sourceSpanPixels": 24.84579
       },
       "derived": {
         "anchorLocalModelUnits": [
@@ -158,7 +185,7 @@
           -4.25,
           0.0
         ],
-        "uniformXYScale": 1.854640071798,
+        "uniformXYScale": 1.854640162378,
         "note": "a=(16*x/W-8, 8-16*y/H, 0) in centred model units; aBlock=a/16; s=worldLengthBlocks*W/sourceSpanPixels"
       },
       "states": {
@@ -196,7 +223,7 @@
         "measuredSpriteAxisDegrees": 135.0,
         "appliedAxisDegrees": 0.0,
         "notes": [
-          "principal axis is weak (anisotropy 2.08/1.28); in-plane rotation pinned to 0"
+          "principal axis is weak (anisotropy 1.81/1.28); in-plane rotation pinned to 0"
         ],
         "calibratedContexts": [
           "firstperson_lefthand",
@@ -214,12 +241,12 @@
           "rotation": [
             -90.0,
             0.0,
-            -60.0
+            35.19443000000001
           ],
           "translation": [
-            4.38062,
-            0.1,
-            0.932114
+            1.89841,
+            -2.0,
+            -8.9843
           ],
           "scale": [
             1.85464,
@@ -231,12 +258,12 @@
           "rotation": [
             -90.0,
             0.0,
-            30.0
+            -65.19443000000001
           ],
           "translation": [
-            -2.027734,
-            0.1,
-            -0.784999
+            3.84807,
+            -2.0,
+            -8.46189
           ],
           "scale": [
             1.85464,
@@ -246,36 +273,36 @@
         },
         "firstperson_righthand": {
           "rotation": [
-            -35.0,
-            0.0,
-            -55.0
+            -72.54071000000022,
+            -4.1153800000001866,
+            37.340999999999894
           ],
           "translation": [
-            2.559512,
-            7.032986,
-            -6.746956
+            0.30966,
+            4.45463,
+            -0.52792
           ],
           "scale": [
-            0.75679,
-            0.75679,
-            0.75679
+            0.68111,
+            0.68111,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            -35.0,
-            0.0,
-            35.0
+            -72.18543,
+            -2.002530000000206,
+            -56.40048999999999
           ],
           "translation": [
-            -5.517855,
-            8.199669,
-            -7.563876
+            2.46828,
+            4.45464,
+            -0.14728
           ],
           "scale": [
-            0.607839,
-            0.607839,
-            0.607839
+            0.68111,
+            0.68111,
+            0.68
           ]
         },
         "ground": {
@@ -360,7 +387,7 @@
       "blockers": [],
       "notes": [
         "firework/extra ammo art not delivered; a charged firework is a reachable but uncovered state and falls back to the legacy model",
-        "principal axis is weak (anisotropy 2.08/1.28); in-plane rotation pinned to 0",
+        "principal axis is weak (anisotropy 1.81/1.28); in-plane rotation pinned to 0",
         "user_calibration: firstperson_lefthand, firstperson_righthand, fixed, ground, gui, head, thirdperson_lefthand, thirdperson_righthand replaced from art\\equipment-2d\\full\\display-overrides.json; the derivation is kept as the recoverable baseline",
         "display source: derived candidate from the vanilla reference pose and the item's own grip pixel; t = p - R.S.a, one origin, one unit"
       ],
@@ -391,7 +418,7 @@
           50.5
         ],
         "worldLengthBlocks": 1.728,
-        "sourceSpanPixels": 81.317279836453
+        "sourceSpanPixels": 81.31728
       },
       "derived": {
         "anchorLocalModelUnits": [
@@ -399,7 +426,7 @@
           -4.625,
           0.0
         ],
-        "uniformXYScale": 1.360006141652,
+        "uniformXYScale": 1.360006138917,
         "note": "a=(16*x/W-8, 8-16*y/H, 0) in centred model units; aBlock=a/16; s=worldLengthBlocks*W/sourceSpanPixels"
       },
       "states": {
@@ -417,95 +444,101 @@
         "policy": "the candidate display declares the left hand explicitly; it is not a horizontal flip of the texture"
       },
       "displaySource": {
-        "kind": "derived_candidate",
+        "kind": "derived_candidate+user_calibration",
         "reference": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
         "referenceImage": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
         "referenceAnchorPixels": [
           3.5,
           12.5
         ],
-        "measuredSpriteAxisDegrees": 44.774,
-        "appliedAxisDegrees": 0.226,
-        "notes": []
+        "measuredSpriteAxisDegrees": 44.81,
+        "appliedAxisDegrees": 0.19,
+        "notes": [],
+        "calibratedContexts": [
+          "firstperson_lefthand",
+          "firstperson_righthand",
+          "thirdperson_lefthand",
+          "thirdperson_righthand"
+        ]
       },
       "display": {
         "thirdperson_righthand": {
           "rotation": [
             0.0,
             -90.0,
-            55.226
+            55.190000000000055
           ],
           "translation": [
-            -0.0,
-            7.426954,
-            -0.139893
+            0.0,
+            7.42795,
+            -0.13439
           ],
           "scale": [
-            1.360006,
-            1.360006,
-            1.360006
+            1.36001,
+            1.36001,
+            1.36001
           ]
         },
         "thirdperson_lefthand": {
           "rotation": [
             0.0,
             90.0,
-            -55.226
+            -55.190000000000055
           ],
           "translation": [
             0.0,
-            7.426954,
-            -0.139893
+            7.42795,
+            -0.13439
           ],
           "scale": [
-            1.360006,
-            1.360006,
-            1.360006
+            1.36001,
+            1.36001,
+            1.36001
           ]
         },
         "firstperson_righthand": {
           "rotation": [
-            12.418746,
-            -21.871501,
-            55.814134
+            12.418749999999818,
+            -21.871500000000196,
+            50.814130000000205
           ],
           "translation": [
-            -2.97944,
-            8.488148,
-            -6.330048
+            0.61519,
+            4.49839,
+            0.6197
           ],
           "scale": [
-            0.93026,
-            0.93026,
-            0.93026
+            0.83723,
+            0.83723,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            3.795677,
-            24.728505,
-            -34.237881
+            12.418749999999818,
+            -21.871500000000196,
+            -50.814130000000205
           ],
           "translation": [
-            -2.951585,
-            8.490617,
-            -6.330396
+            1.64481,
+            4.4095,
+            1.02333
           ],
           "scale": [
-            0.929888,
-            0.929888,
-            0.929888
+            0.83723,
+            0.83723,
+            0.68
           ]
         },
         "ground": {
           "rotation": [
             -0.0,
             0.0,
-            0.226
+            0.19
           ],
           "translation": [
-            4.015169,
-            6.06479,
+            4.019135,
+            6.060852,
             0.0
           ],
           "scale": [
@@ -518,11 +551,11 @@
           "rotation": [
             0.0,
             180.0,
-            0.226
+            0.19
           ],
           "translation": [
-            -1.765169,
-            1.81479,
+            -1.769135,
+            1.810852,
             -0.0
           ],
           "scale": [
@@ -535,11 +568,11 @@
           "rotation": [
             0.0,
             180.0,
-            0.226
+            0.19
           ],
           "translation": [
-            -1.765169,
-            14.81479,
+            -1.769135,
+            14.810852,
             7.0
           ],
           "scale": [
@@ -568,16 +601,17 @@
         "inheritance": "fixed"
       },
       "displayBlocking": null,
-      "displayStatus": "candidate_not_game_verified",
+      "displayStatus": "calibrated_not_game_verified",
       "acceptance": {
-        "state": "pending_visual",
+        "state": "calibrated_pending_visual",
         "humanAccepted": false,
-        "displayStatus": "candidate_not_game_verified",
+        "displayStatus": "calibrated_not_game_verified",
         "note": "visual acceptance is a receipt; it never gates readiness and it never blocks a structurally complete candidate from rendering"
       },
       "fallback": "legacy_builtin_entity",
       "blockers": [],
       "notes": [
+        "user_calibration: firstperson_lefthand, firstperson_righthand, thirdperson_lefthand, thirdperson_righthand replaced from art\\equipment-2d\\full\\display-overrides.json; the derivation is kept as the recoverable baseline",
         "display source: derived candidate from the vanilla reference pose and the item's own grip pixel; t = p - R.S.a, one origin, one unit"
       ],
       "runtimeIntegrated": true,
@@ -607,7 +641,7 @@
           23.5
         ],
         "worldLengthBlocks": 0.558,
-        "sourceSpanPixels": 30.798428691681
+        "sourceSpanPixels": 36.06938
       },
       "derived": {
         "anchorLocalModelUnits": [
@@ -615,7 +649,7 @@
           -3.75,
           0.0
         ],
-        "uniformXYScale": 0.57976983757,
+        "uniformXYScale": 0.49504593647,
         "note": "a=(16*x/W-8, 8-16*y/H, 0) in centred model units; aBlock=a/16; s=worldLengthBlocks*W/sourceSpanPixels"
       },
       "states": {
@@ -633,135 +667,141 @@
         "policy": "the candidate display declares the left hand explicitly; it is not a horizontal flip of the texture"
       },
       "displaySource": {
-        "kind": "derived_candidate",
+        "kind": "derived_candidate+user_calibration",
         "reference": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
         "referenceImage": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
         "referenceAnchorPixels": [
           3.5,
           12.5
         ],
-        "measuredSpriteAxisDegrees": 45.0,
-        "appliedAxisDegrees": 0.0,
-        "notes": []
+        "measuredSpriteAxisDegrees": 45.921,
+        "appliedAxisDegrees": -0.921,
+        "notes": [],
+        "calibratedContexts": [
+          "firstperson_lefthand",
+          "firstperson_righthand",
+          "thirdperson_lefthand",
+          "thirdperson_righthand"
+        ]
       },
       "display": {
         "thirdperson_righthand": {
           "rotation": [
             0.0,
             -90.0,
-            55.0
+            54.07900000000018
           ],
           "translation": [
             0.0,
-            1.700796,
-            0.905412
+            1.2653,
+            1.025052
           ],
           "scale": [
-            0.57977,
-            0.57977,
-            0.57977
+            0.495046,
+            0.495046,
+            0.495046
           ]
         },
         "thirdperson_lefthand": {
           "rotation": [
             0.0,
             90.0,
-            -55.0
+            -54.07900000000018
           ],
           "translation": [
-            -0.0,
-            1.700796,
-            0.905412
+            0.0,
+            1.2653,
+            1.025052
           ],
           "scale": [
-            0.57977,
-            0.57977,
-            0.57977
+            0.495046,
+            0.495046,
+            0.495046
           ]
         },
         "firstperson_righthand": {
           "rotation": [
-            10.009744,
-            -23.027581,
-            49.28545
+            10.009739999999965,
+            -23.027579999999944,
+            46.285449999999855
           ],
           "translation": [
-            -2.127221,
-            5.534348,
-            -6.76446
+            4.112191946701942,
+            0.6832868815437796,
+            -6.81763090695522
           ],
           "scale": [
-            0.568175,
-            0.568175,
-            0.568175
+            0.4366330988999534,
+            0.4366330988999534,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            1.044823,
-            24.97956,
-            -27.472892
+            10.009739999999965,
+            -23.027579999999944,
+            -46.285449999999855
           ],
           "translation": [
-            -2.742563,
-            5.425846,
-            -6.76446
+            4.207807011448711,
+            0.6762229263058583,
+            -6.777609011584653
           ],
           "scale": [
-            0.568175,
-            0.568175,
-            0.568175
+            0.4366330988999534,
+            0.4366330988999534,
+            0.68
           ]
         },
         "ground": {
           "rotation": [
             -0.0,
             0.0,
-            -0.0
+            -0.921
           ],
           "translation": [
-            -0.075863,
-            1.924137,
+            -0.363978,
+            1.576343,
             0.0
           ],
           "scale": [
-            0.57977,
-            0.57977,
-            0.57977
+            0.495046,
+            0.495046,
+            0.495046
           ]
         },
         "fixed": {
           "rotation": [
             0.0,
             180.0,
-            0.0
+            -0.921
           ],
           "translation": [
-            2.325863,
-            -2.325863,
+            2.613978,
+            -2.673657,
             0.0
           ],
           "scale": [
-            0.57977,
-            0.57977,
-            0.57977
+            0.495046,
+            0.495046,
+            0.495046
           ]
         },
         "head": {
           "rotation": [
             0.0,
             180.0,
-            0.0
+            -0.921
           ],
           "translation": [
-            2.325863,
-            10.674137,
+            2.613978,
+            10.326343,
             7.0
           ],
           "scale": [
-            0.57977,
-            0.57977,
-            0.57977
+            0.495046,
+            0.495046,
+            0.495046
           ]
         },
         "gui": {
@@ -784,16 +824,17 @@
         "inheritance": "fixed"
       },
       "displayBlocking": null,
-      "displayStatus": "candidate_not_game_verified",
+      "displayStatus": "calibrated_not_game_verified",
       "acceptance": {
-        "state": "pending_visual",
+        "state": "calibrated_pending_visual",
         "humanAccepted": false,
-        "displayStatus": "candidate_not_game_verified",
+        "displayStatus": "calibrated_not_game_verified",
         "note": "visual acceptance is a receipt; it never gates readiness and it never blocks a structurally complete candidate from rendering"
       },
       "fallback": "legacy_builtin_entity",
       "blockers": [],
       "notes": [
+        "user_calibration: firstperson_lefthand, firstperson_righthand, thirdperson_lefthand, thirdperson_righthand replaced from art\\equipment-2d\\full\\display-overrides.json; the derivation is kept as the recoverable baseline",
         "display source: derived candidate from the vanilla reference pose and the item's own grip pixel; t = p - R.S.a, one origin, one unit"
       ],
       "runtimeIntegrated": true,
@@ -823,7 +864,7 @@
           25.5
         ],
         "worldLengthBlocks": 2.484,
-        "sourceSpanPixels": 37.356584666459
+        "sourceSpanPixels": 37.35658
       },
       "derived": {
         "anchorLocalModelUnits": [
@@ -831,7 +872,7 @@
           -4.75,
           0.0
         ],
-        "uniformXYScale": 2.127817644726,
+        "uniformXYScale": 2.127817910526,
         "note": "a=(16*x/W-8, 8-16*y/H, 0) in centred model units; aBlock=a/16; s=worldLengthBlocks*W/sourceSpanPixels"
       },
       "states": {
@@ -850,7 +891,7 @@
       },
       "legacySelectionPreserved": true,
       "displaySource": {
-        "kind": "derived_candidate",
+        "kind": "derived_candidate+user_calibration",
         "reference": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
         "referenceImage": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
         "referenceAnchorPixels": [
@@ -859,7 +900,13 @@
         ],
         "measuredSpriteAxisDegrees": 45.0,
         "appliedAxisDegrees": 0.0,
-        "notes": []
+        "notes": [],
+        "calibratedContexts": [
+          "firstperson_lefthand",
+          "firstperson_righthand",
+          "thirdperson_lefthand",
+          "thirdperson_righthand"
+        ]
       },
       "display": {
         "thirdperson_righthand": {
@@ -869,14 +916,14 @@
             55.0
           ],
           "translation": [
-            -0.0,
-            12.749307,
-            -1.042739
+            0.0,
+            12.74931,
+            -1.04274
           ],
           "scale": [
-            2.127818,
-            2.127818,
-            2.127818
+            2.12782,
+            2.12782,
+            2.12782
           ]
         },
         "thirdperson_lefthand": {
@@ -887,47 +934,47 @@
           ],
           "translation": [
             0.0,
-            12.749307,
-            -1.042739
+            12.74931,
+            -1.04274
           ],
           "scale": [
-            2.127818,
-            2.127818,
-            2.127818
+            2.12782,
+            2.12782,
+            2.12782
           ]
         },
         "firstperson_righthand": {
           "rotation": [
-            12.277485,
-            -21.948388,
-            55.209571
+            12.277489999999943,
+            -21.948390000000018,
+            50.209569999999985
           ],
           "translation": [
-            -2.98581,
-            8.885698,
-            -6.26293
+            0.63862,
+            4.85323,
+            0.69201
           ],
           "scale": [
-            0.96508,
-            0.96508,
-            0.96508
+            0.86857,
+            0.86857,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            3.63035,
-            24.751788,
-            -33.616839
+            12.277489999999943,
+            -21.948390000000018,
+            -50.209569999999985
           ],
           "translation": [
-            -3.089157,
-            8.907692,
-            -6.257145
+            1.62138,
+            4.76902,
+            1.07899
           ],
           "scale": [
-            0.971039,
-            0.971039,
-            0.971039
+            0.86857,
+            0.86857,
+            0.68
           ]
         },
         "ground": {
@@ -937,8 +984,8 @@
             -0.0
           ],
           "translation": [
-            7.857134,
-            9.857134,
+            7.857135,
+            9.857135,
             0.0
           ],
           "scale": [
@@ -954,8 +1001,8 @@
             0.0
           ],
           "translation": [
-            -5.607134,
-            5.607134,
+            -5.607135,
+            5.607135,
             -0.0
           ],
           "scale": [
@@ -971,8 +1018,8 @@
             0.0
           ],
           "translation": [
-            -5.607134,
-            18.607134,
+            -5.607135,
+            18.607135,
             7.0
           ],
           "scale": [
@@ -1001,17 +1048,18 @@
         "inheritance": "fixed"
       },
       "displayBlocking": null,
-      "displayStatus": "candidate_not_game_verified",
+      "displayStatus": "calibrated_not_game_verified",
       "acceptance": {
-        "state": "pending_visual",
+        "state": "calibrated_pending_visual",
         "humanAccepted": false,
-        "displayStatus": "candidate_not_game_verified",
+        "displayStatus": "calibrated_not_game_verified",
         "note": "visual acceptance is a receipt; it never gates readiness and it never blocks a structurally complete candidate from rendering"
       },
       "fallback": "legacy_builtin_entity",
       "blockers": [],
       "notes": [
         "legacy_selection_preserved: the 2D route is a candidate alongside the user-selected legacy source and does not overwrite it",
+        "user_calibration: firstperson_lefthand, firstperson_righthand, thirdperson_lefthand, thirdperson_righthand replaced from art\\equipment-2d\\full\\display-overrides.json; the derivation is kept as the recoverable baseline",
         "display source: derived candidate from the vanilla reference pose and the item's own grip pixel; t = p - R.S.a, one origin, one unit"
       ],
       "runtimeIntegrated": true,
@@ -1041,7 +1089,7 @@
           23.5
         ],
         "worldLengthBlocks": 2.16,
-        "sourceSpanPixels": 32.770741859128
+        "sourceSpanPixels": 32.77074
       },
       "derived": {
         "anchorLocalModelUnits": [
@@ -1049,7 +1097,7 @@
           -3.75,
           0.0
         ],
-        "uniformXYScale": 2.109198513025,
+        "uniformXYScale": 2.109198632683,
         "note": "a=(16*x/W-8, 8-16*y/H, 0) in centred model units; aBlock=a/16; s=worldLengthBlocks*W/sourceSpanPixels"
       },
       "states": {
@@ -1067,7 +1115,7 @@
         "policy": "the candidate display declares the left hand explicitly; it is not a horizontal flip of the texture"
       },
       "displaySource": {
-        "kind": "derived_candidate",
+        "kind": "derived_candidate+user_calibration",
         "reference": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
         "referenceImage": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
         "referenceAnchorPixels": [
@@ -1076,7 +1124,13 @@
         ],
         "measuredSpriteAxisDegrees": 45.0,
         "appliedAxisDegrees": 0.0,
-        "notes": []
+        "notes": [],
+        "calibratedContexts": [
+          "firstperson_lefthand",
+          "firstperson_righthand",
+          "thirdperson_lefthand",
+          "thirdperson_righthand"
+        ]
       },
       "display": {
         "thirdperson_righthand": {
@@ -1086,14 +1140,14 @@
             55.0
           ],
           "translation": [
-            -0.0,
-            9.688592,
-            -0.503052
+            0.0,
+            9.68859,
+            -0.50305
           ],
           "scale": [
-            2.109199,
-            2.109199,
-            2.109199
+            2.1092,
+            2.1092,
+            2.1092
           ]
         },
         "thirdperson_lefthand": {
@@ -1104,47 +1158,47 @@
           ],
           "translation": [
             0.0,
-            9.688592,
-            -0.503052
+            9.68859,
+            -0.50305
           ],
           "scale": [
-            2.109199,
-            2.109199,
-            2.109199
+            2.1092,
+            2.1092,
+            2.1092
           ]
         },
         "firstperson_righthand": {
           "rotation": [
-            9.35948,
-            -23.287034,
-            47.632015
+            9.359480000000076,
+            -23.28702999999996,
+            42.63202000000001
           ],
           "translation": [
-            -2.141324,
-            7.747277,
-            -6.441563
+            1.30922,
+            3.77647,
+            0.49336
           ],
           "scale": [
-            0.989403,
-            0.989403,
-            0.989403
+            0.89046,
+            0.89046,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            0.32606,
-            24.99801,
-            -25.771543
+            9.359480000000076,
+            -23.28702999999996,
+            -42.63202000000001
           ],
           "translation": [
-            -3.375402,
-            7.160023,
-            -6.495207
+            0.95078,
+            3.80156,
+            0.34114
           ],
           "scale": [
-            0.919423,
-            0.919423,
-            0.919423
+            0.89046,
+            0.89046,
+            0.68
           ]
         },
         "ground": {
@@ -1154,8 +1208,8 @@
             -0.0
           ],
           "translation": [
-            5.659494,
-            7.659494,
+            5.659495,
+            7.659495,
             0.0
           ],
           "scale": [
@@ -1171,8 +1225,8 @@
             0.0
           ],
           "translation": [
-            -3.409494,
-            3.409494,
+            -3.409495,
+            3.409495,
             -0.0
           ],
           "scale": [
@@ -1188,8 +1242,8 @@
             0.0
           ],
           "translation": [
-            -3.409494,
-            16.409494,
+            -3.409495,
+            16.409495,
             7.0
           ],
           "scale": [
@@ -1218,16 +1272,17 @@
         "inheritance": "fixed"
       },
       "displayBlocking": null,
-      "displayStatus": "candidate_not_game_verified",
+      "displayStatus": "calibrated_not_game_verified",
       "acceptance": {
-        "state": "pending_visual",
+        "state": "calibrated_pending_visual",
         "humanAccepted": false,
-        "displayStatus": "candidate_not_game_verified",
+        "displayStatus": "calibrated_not_game_verified",
         "note": "visual acceptance is a receipt; it never gates readiness and it never blocks a structurally complete candidate from rendering"
       },
       "fallback": "legacy_builtin_entity",
       "blockers": [],
       "notes": [
+        "user_calibration: firstperson_lefthand, firstperson_righthand, thirdperson_lefthand, thirdperson_righthand replaced from art\\equipment-2d\\full\\display-overrides.json; the derivation is kept as the recoverable baseline",
         "display source: derived candidate from the vanilla reference pose and the item's own grip pixel; t = p - R.S.a, one origin, one unit"
       ],
       "runtimeIntegrated": true,
@@ -1404,7 +1459,7 @@
           23.5
         ],
         "worldLengthBlocks": 1.746,
-        "sourceSpanPixels": 35.557369568238
+        "sourceSpanPixels": 34.56966
       },
       "derived": {
         "anchorLocalModelUnits": [
@@ -1412,7 +1467,7 @@
           -3.75,
           0.0
         ],
-        "uniformXYScale": 1.571319832666,
+        "uniformXYScale": 1.616214912151,
         "note": "a=(16*x/W-8, 8-16*y/H, 0) in centred model units; aBlock=a/16; s=worldLengthBlocks*W/sourceSpanPixels"
       },
       "states": {
@@ -1430,135 +1485,141 @@
         "policy": "the candidate display declares the left hand explicitly; it is not a horizontal flip of the texture"
       },
       "displaySource": {
-        "kind": "derived_candidate",
+        "kind": "derived_candidate+user_calibration",
         "reference": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
         "referenceImage": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
         "referenceAnchorPixels": [
           3.5,
           12.5
         ],
-        "measuredSpriteAxisDegrees": 50.038,
-        "appliedAxisDegrees": -5.038,
-        "notes": []
+        "measuredSpriteAxisDegrees": 51.308,
+        "appliedAxisDegrees": -6.308,
+        "notes": [],
+        "calibratedContexts": [
+          "firstperson_lefthand",
+          "firstperson_righthand",
+          "thirdperson_lefthand",
+          "thirdperson_righthand"
+        ]
       },
       "display": {
         "thirdperson_righthand": {
           "rotation": [
             0.0,
-            -90.0,
-            49.962
+            90.0,
+            53.32600999999977
           ],
           "translation": [
             0.0,
-            7.57628,
-            1.223959
+            7.80189,
+            2.19784
           ],
           "scale": [
-            1.57132,
-            1.57132,
-            1.57132
+            1.61622,
+            1.61622,
+            1.61622
           ]
         },
         "thirdperson_lefthand": {
           "rotation": [
             0.0,
-            90.0,
-            -49.962
+            -90.0,
+            -53.32600999999977
           ],
           "translation": [
-            -0.0,
-            7.57628,
-            1.223959
+            0.0,
+            7.80189,
+            2.19784
           ],
           "scale": [
-            1.57132,
-            1.57132,
-            1.57132
+            1.61622,
+            1.61622,
+            1.61622
           ]
         },
         "firstperson_righthand": {
           "rotation": [
-            16.826206,
-            -18.765192,
-            63.193163
+            13.257309999999961,
+            3.8635300000000825,
+            59.7210399999999
           ],
           "translation": [
-            -3.381416,
-            8.368651,
-            -5.96209
+            0.03812,
+            4.52365,
+            0.99561
           ],
           "scale": [
-            1.079106,
-            1.079106,
-            1.079106
+            0.99894,
+            0.99894,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            9.245527,
-            23.330357,
-            -42.306027
+            21.067829999999958,
+            -171.7876000000001,
+            -42.226160000000164
           ],
           "translation": [
-            -2.52939,
-            8.479294,
-            -5.970169
+            1.74981,
+            4.41664,
+            1.58924
           ],
           "scale": [
-            1.072063,
-            1.072063,
-            1.072063
+            0.99894,
+            0.99894,
+            0.68
           ]
         },
         "ground": {
           "rotation": [
             -0.0,
             0.0,
-            -5.038
+            -6.308
           ],
           "translation": [
-            4.919763,
-            5.033237,
+            5.243246,
+            5.019403,
             0.0
           ],
           "scale": [
-            1.57132,
-            1.57132,
-            1.57132
+            1.616215,
+            1.616215,
+            1.616215
           ]
         },
         "fixed": {
           "rotation": [
             0.0,
             180.0,
-            -5.038
+            -6.308
           ],
           "translation": [
-            -2.669763,
-            0.783237,
+            -2.993246,
+            0.769403,
             -0.0
           ],
           "scale": [
-            1.57132,
-            1.57132,
-            1.57132
+            1.616215,
+            1.616215,
+            1.616215
           ]
         },
         "head": {
           "rotation": [
             0.0,
             180.0,
-            -5.038
+            -6.308
           ],
           "translation": [
-            -2.669763,
-            13.783237,
+            -2.993246,
+            13.769403,
             7.0
           ],
           "scale": [
-            1.57132,
-            1.57132,
-            1.57132
+            1.616215,
+            1.616215,
+            1.616215
           ]
         },
         "gui": {
@@ -1581,16 +1642,17 @@
         "inheritance": "fixed"
       },
       "displayBlocking": null,
-      "displayStatus": "candidate_not_game_verified",
+      "displayStatus": "calibrated_not_game_verified",
       "acceptance": {
-        "state": "pending_visual",
+        "state": "calibrated_pending_visual",
         "humanAccepted": false,
-        "displayStatus": "candidate_not_game_verified",
+        "displayStatus": "calibrated_not_game_verified",
         "note": "visual acceptance is a receipt; it never gates readiness and it never blocks a structurally complete candidate from rendering"
       },
       "fallback": "legacy_builtin_entity",
       "blockers": [],
       "notes": [
+        "user_calibration: firstperson_lefthand, firstperson_righthand, thirdperson_lefthand, thirdperson_righthand replaced from art\\equipment-2d\\full\\display-overrides.json; the derivation is kept as the recoverable baseline",
         "display source: derived candidate from the vanilla reference pose and the item's own grip pixel; t = p - R.S.a, one origin, one unit"
       ],
       "runtimeIntegrated": true,
@@ -1620,7 +1682,7 @@
           23.5
         ],
         "worldLengthBlocks": 1.098,
-        "sourceSpanPixels": 34.939393893924
+        "sourceSpanPixels": 32.6357
       },
       "derived": {
         "anchorLocalModelUnits": [
@@ -1628,7 +1690,7 @@
           -3.75,
           0.0
         ],
-        "uniformXYScale": 1.005627061153,
+        "uniformXYScale": 1.076612421367,
         "note": "a=(16*x/W-8, 8-16*y/H, 0) in centred model units; aBlock=a/16; s=worldLengthBlocks*W/sourceSpanPixels"
       },
       "states": {
@@ -1646,135 +1708,141 @@
         "policy": "the candidate display declares the left hand explicitly; it is not a horizontal flip of the texture"
       },
       "displaySource": {
-        "kind": "derived_candidate",
+        "kind": "derived_candidate+user_calibration",
         "reference": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
         "referenceImage": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
         "referenceAnchorPixels": [
           3.5,
           12.5
         ],
-        "measuredSpriteAxisDegrees": 48.124,
-        "appliedAxisDegrees": -3.124,
-        "notes": []
+        "measuredSpriteAxisDegrees": 53.364,
+        "appliedAxisDegrees": -8.364,
+        "notes": [],
+        "calibratedContexts": [
+          "firstperson_lefthand",
+          "firstperson_righthand",
+          "thirdperson_lefthand",
+          "thirdperson_righthand"
+        ]
       },
       "display": {
         "thirdperson_righthand": {
           "rotation": [
             0.0,
-            -90.0,
-            51.876
+            90.0,
+            58.75610000000006
           ],
           "translation": [
             0.0,
-            4.758701,
-            1.421677
+            5.13911,
+            2.23859
           ],
           "scale": [
-            1.005627,
-            1.005627,
-            1.005627
+            1.07661,
+            1.07661,
+            1.07661
           ]
         },
         "thirdperson_lefthand": {
           "rotation": [
             0.0,
-            90.0,
-            -51.876
+            -90.0,
+            -58.75610000000006
           ],
           "translation": [
-            -0.0,
-            4.758701,
-            1.421677
+            0.0,
+            5.13911,
+            2.23859
           ],
           "scale": [
-            1.005627,
-            1.005627,
-            1.005627
+            1.07661,
+            1.07661,
+            1.07661
           ]
         },
         "firstperson_righthand": {
           "rotation": [
-            17.096341,
-            -18.520986,
-            65.952185
+            13.096640000000207,
+            4.138860000000022,
+            62.441359999999804
           ],
           "translation": [
-            -3.311337,
-            8.222456,
-            -5.946047
+            0.06272,
+            4.61528,
+            1.00452
           ],
           "scale": [
-            0.985514,
-            0.985514,
-            0.985514
+            0.94957,
+            0.94957,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            9.600527,
-            23.193303,
-            -45.118896
+            21.607530000000224,
+            -172.90463,
+            -42.90065999999979
           ],
           "translation": [
-            -2.549245,
-            8.356833,
-            -5.946047
+            2.00333,
+            4.45333,
+            1.64007
           ],
           "scale": [
-            0.985514,
-            0.985514,
-            0.985514
+            0.94957,
+            0.94957,
+            0.68
           ]
         },
         "ground": {
           "rotation": [
             -0.0,
             0.0,
-            -3.124
+            -8.364
           ],
           "translation": [
-            2.725144,
-            3.25518,
+            3.396788,
+            3.000479,
             0.0
           ],
           "scale": [
-            1.005627,
-            1.005627,
-            1.005627
+            1.076612,
+            1.076612,
+            1.076612
           ]
         },
         "fixed": {
           "rotation": [
             0.0,
             180.0,
-            -3.124
+            -8.364
           ],
           "translation": [
-            -0.475144,
-            -0.99482,
+            -1.146788,
+            -1.249521,
             -0.0
           ],
           "scale": [
-            1.005627,
-            1.005627,
-            1.005627
+            1.076612,
+            1.076612,
+            1.076612
           ]
         },
         "head": {
           "rotation": [
             0.0,
             180.0,
-            -3.124
+            -8.364
           ],
           "translation": [
-            -0.475144,
-            12.00518,
+            -1.146788,
+            11.750479,
             7.0
           ],
           "scale": [
-            1.005627,
-            1.005627,
-            1.005627
+            1.076612,
+            1.076612,
+            1.076612
           ]
         },
         "gui": {
@@ -1797,16 +1865,17 @@
         "inheritance": "fixed"
       },
       "displayBlocking": null,
-      "displayStatus": "candidate_not_game_verified",
+      "displayStatus": "calibrated_not_game_verified",
       "acceptance": {
-        "state": "pending_visual",
+        "state": "calibrated_pending_visual",
         "humanAccepted": false,
-        "displayStatus": "candidate_not_game_verified",
+        "displayStatus": "calibrated_not_game_verified",
         "note": "visual acceptance is a receipt; it never gates readiness and it never blocks a structurally complete candidate from rendering"
       },
       "fallback": "legacy_builtin_entity",
       "blockers": [],
       "notes": [
+        "user_calibration: firstperson_lefthand, firstperson_righthand, thirdperson_lefthand, thirdperson_righthand replaced from art\\equipment-2d\\full\\display-overrides.json; the derivation is kept as the recoverable baseline",
         "display source: derived candidate from the vanilla reference pose and the item's own grip pixel; t = p - R.S.a, one origin, one unit"
       ],
       "runtimeIntegrated": true,
@@ -1939,7 +2008,7 @@
           19.5
         ],
         "worldLengthBlocks": 0.306,
-        "sourceSpanPixels": 24.748737341529
+        "sourceSpanPixels": 33.94113
       },
       "derived": {
         "anchorLocalModelUnits": [
@@ -1947,7 +2016,7 @@
           -1.75,
           0.0
         ],
-        "uniformXYScale": 0.39565654865,
+        "uniformXYScale": 0.288499528448,
         "note": "a=(16*x/W-8, 8-16*y/H, 0) in centred model units; aBlock=a/16; s=worldLengthBlocks*W/sourceSpanPixels"
       },
       "states": {
@@ -1965,135 +2034,141 @@
         "policy": "the candidate display declares the left hand explicitly; it is not a horizontal flip of the texture"
       },
       "displaySource": {
-        "kind": "derived_candidate",
+        "kind": "derived_candidate+user_calibration",
         "reference": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
         "referenceImage": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
         "referenceAnchorPixels": [
           3.5,
           12.5
         ],
-        "measuredSpriteAxisDegrees": 45.48,
-        "appliedAxisDegrees": -0.48,
-        "notes": []
+        "measuredSpriteAxisDegrees": 45.103,
+        "appliedAxisDegrees": -0.103,
+        "notes": [],
+        "calibratedContexts": [
+          "firstperson_lefthand",
+          "firstperson_righthand",
+          "thirdperson_lefthand",
+          "thirdperson_righthand"
+        ]
       },
       "display": {
         "thirdperson_righthand": {
           "rotation": [
             0.0,
             -90.0,
-            54.52
+            54.896999999999935
           ],
           "translation": [
             0.0,
-            -0.361472,
-            1.277375
+            -0.623812,
+            1.316606
           ],
           "scale": [
-            0.395657,
-            0.395657,
-            0.395657
+            0.2885,
+            0.2885,
+            0.2885
           ]
         },
         "thirdperson_lefthand": {
           "rotation": [
             0.0,
             90.0,
-            -54.52
+            -54.896999999999935
           ],
           "translation": [
-            -0.0,
-            -0.361472,
-            1.277375
+            0.0,
+            -0.623812,
+            1.316606
           ],
           "scale": [
-            0.395657,
-            0.395657,
-            0.395657
+            0.2885,
+            0.2885,
+            0.2885
           ]
         },
         "firstperson_righthand": {
           "rotation": [
-            5.763313,
-            -24.368276,
-            38.265652
+            5.763309999999819,
+            -24.36828000000014,
+            35.26564999999982
           ],
           "translation": [
-            -1.817495,
-            3.503517,
-            -7.058105
+            4.256994267420244,
+            -0.9868653451707304,
+            -7.093956042141229
           ],
           "scale": [
-            0.387744,
-            0.387744,
-            0.387744
+            0.25445728524065053,
+            0.25445728524065053,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            -3.482917,
-            24.771655,
-            -16.255158
+            5.763309999999819,
+            -24.36828000000014,
+            -35.26564999999982
           ],
           "translation": [
-            -2.339025,
-            3.411557,
-            -7.058105
+            4.063009571617314,
+            -0.9780419222514385,
+            -7.181377800246059
           ],
           "scale": [
-            0.387744,
-            0.387744,
-            0.387744
+            0.25445728524065053,
+            0.25445728524065053,
+            0.68
           ]
         },
         "ground": {
           "rotation": [
             -0.0,
             0.0,
-            -0.48
+            -0.103
           ],
           "translation": [
-            -1.551825,
-            0.436574,
+            -1.744219,
+            0.253966,
             0.0
           ],
           "scale": [
-            0.395657,
-            0.395657,
-            0.395657
+            0.2885,
+            0.2885,
+            0.2885
           ]
         },
         "fixed": {
           "rotation": [
             0.0,
             180.0,
-            -0.48
+            -0.103
           ],
           "translation": [
-            3.801825,
-            -3.813426,
+            3.994219,
+            -3.996034,
             0.0
           ],
           "scale": [
-            0.395657,
-            0.395657,
-            0.395657
+            0.2885,
+            0.2885,
+            0.2885
           ]
         },
         "head": {
           "rotation": [
             0.0,
             180.0,
-            -0.48
+            -0.103
           ],
           "translation": [
-            3.801825,
-            9.186574,
+            3.994219,
+            9.003966,
             7.0
           ],
           "scale": [
-            0.395657,
-            0.395657,
-            0.395657
+            0.2885,
+            0.2885,
+            0.2885
           ]
         },
         "gui": {
@@ -2116,16 +2191,17 @@
         "inheritance": "fixed"
       },
       "displayBlocking": null,
-      "displayStatus": "candidate_not_game_verified",
+      "displayStatus": "calibrated_not_game_verified",
       "acceptance": {
-        "state": "pending_visual",
+        "state": "calibrated_pending_visual",
         "humanAccepted": false,
-        "displayStatus": "candidate_not_game_verified",
+        "displayStatus": "calibrated_not_game_verified",
         "note": "visual acceptance is a receipt; it never gates readiness and it never blocks a structurally complete candidate from rendering"
       },
       "fallback": "legacy_builtin_entity",
       "blockers": [],
       "notes": [
+        "user_calibration: firstperson_lefthand, firstperson_righthand, thirdperson_lefthand, thirdperson_righthand replaced from art\\equipment-2d\\full\\display-overrides.json; the derivation is kept as the recoverable baseline",
         "display source: derived candidate from the vanilla reference pose and the item's own grip pixel; t = p - R.S.a, one origin, one unit"
       ],
       "runtimeIntegrated": true,
@@ -2155,7 +2231,7 @@
           25.5
         ],
         "worldLengthBlocks": 1.224,
-        "sourceSpanPixels": 34.939393893924
+        "sourceSpanPixels": 34.93939
       },
       "derived": {
         "anchorLocalModelUnits": [
@@ -2163,7 +2239,7 @@
           -4.75,
           0.0
         ],
-        "uniformXYScale": 1.121026887842,
+        "uniformXYScale": 1.121027012778,
         "note": "a=(16*x/W-8, 8-16*y/H, 0) in centred model units; aBlock=a/16; s=worldLengthBlocks*W/sourceSpanPixels"
       },
       "states": {
@@ -2181,7 +2257,7 @@
         "policy": "the candidate display declares the left hand explicitly; it is not a horizontal flip of the texture"
       },
       "displaySource": {
-        "kind": "derived_candidate",
+        "kind": "derived_candidate+user_calibration",
         "reference": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
         "referenceImage": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
         "referenceAnchorPixels": [
@@ -2190,7 +2266,13 @@
         ],
         "measuredSpriteAxisDegrees": 45.0,
         "appliedAxisDegrees": 0.0,
-        "notes": []
+        "notes": [],
+        "calibratedContexts": [
+          "firstperson_lefthand",
+          "firstperson_righthand",
+          "thirdperson_lefthand",
+          "thirdperson_righthand"
+        ]
       },
       "display": {
         "thirdperson_righthand": {
@@ -2200,14 +2282,14 @@
             55.0
           ],
           "translation": [
-            -0.0,
-            6.088922,
-            0.131667
+            0.0,
+            6.08892,
+            0.13167
           ],
           "scale": [
-            1.121027,
-            1.121027,
-            1.121027
+            1.12103,
+            1.12103,
+            1.12103
           ]
         },
         "thirdperson_lefthand": {
@@ -2218,47 +2300,47 @@
           ],
           "translation": [
             0.0,
-            6.088922,
-            0.131667
+            6.08892,
+            0.13167
           ],
           "scale": [
-            1.121027,
-            1.121027,
-            1.121027
+            1.12103,
+            1.12103,
+            1.12103
           ]
         },
         "firstperson_righthand": {
           "rotation": [
-            10.794756,
-            -22.685703,
-            51.306265
+            10.794760000000224,
+            -22.685699999999997,
+            46.30627000000004
           ],
           "translation": [
-            -2.605076,
-            9.213684,
-            -6.222905
+            1.00204,
+            5.11815,
+            0.73652
           ],
           "scale": [
-            1.006302,
-            1.006302,
-            1.006302
+            0.90567,
+            0.90567,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            1.925642,
-            24.930482,
-            -29.560412
+            10.794760000000224,
+            -22.685699999999997,
+            -46.30627000000004
           ],
           "translation": [
-            -3.598102,
-            9.230246,
-            -6.195261
+            1.25796,
+            5.09811,
+            0.84161
           ],
           "scale": [
-            1.034772,
-            1.034772,
-            1.034772
+            0.90567,
+            0.90567,
+            0.68
           ]
         },
         "ground": {
@@ -2332,16 +2414,17 @@
         "inheritance": "fixed"
       },
       "displayBlocking": null,
-      "displayStatus": "candidate_not_game_verified",
+      "displayStatus": "calibrated_not_game_verified",
       "acceptance": {
-        "state": "pending_visual",
+        "state": "calibrated_pending_visual",
         "humanAccepted": false,
-        "displayStatus": "candidate_not_game_verified",
+        "displayStatus": "calibrated_not_game_verified",
         "note": "visual acceptance is a receipt; it never gates readiness and it never blocks a structurally complete candidate from rendering"
       },
       "fallback": "legacy_builtin_entity",
       "blockers": [],
       "notes": [
+        "user_calibration: firstperson_lefthand, firstperson_righthand, thirdperson_lefthand, thirdperson_righthand replaced from art\\equipment-2d\\full\\display-overrides.json; the derivation is kept as the recoverable baseline",
         "display source: derived candidate from the vanilla reference pose and the item's own grip pixel; t = p - R.S.a, one origin, one unit"
       ],
       "runtimeIntegrated": true,
@@ -2371,7 +2454,7 @@
           23.5
         ],
         "worldLengthBlocks": 1.98,
-        "sourceSpanPixels": 37.513875549265
+        "sourceSpanPixels": 37.51388
       },
       "derived": {
         "anchorLocalModelUnits": [
@@ -2379,7 +2462,7 @@
           -3.75,
           0.0
         ],
-        "uniformXYScale": 1.688975054491,
+        "uniformXYScale": 1.688974854107,
         "note": "a=(16*x/W-8, 8-16*y/H, 0) in centred model units; aBlock=a/16; s=worldLengthBlocks*W/sourceSpanPixels"
       },
       "states": {
@@ -2397,7 +2480,7 @@
         "policy": "the candidate display declares the left hand explicitly; it is not a horizontal flip of the texture"
       },
       "displaySource": {
-        "kind": "derived_candidate",
+        "kind": "derived_candidate+user_calibration",
         "reference": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
         "referenceImage": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
         "referenceAnchorPixels": [
@@ -2406,7 +2489,13 @@
         ],
         "measuredSpriteAxisDegrees": 45.0,
         "appliedAxisDegrees": 0.0,
-        "notes": []
+        "notes": [],
+        "calibratedContexts": [
+          "firstperson_lefthand",
+          "firstperson_righthand",
+          "thirdperson_lefthand",
+          "thirdperson_righthand"
+        ]
       },
       "display": {
         "thirdperson_righthand": {
@@ -2416,14 +2505,14 @@
             55.0
           ],
           "translation": [
-            -0.0,
-            7.493877,
-            -0.116065
+            0.0,
+            7.49388,
+            -0.11606
           ],
           "scale": [
-            1.688975,
-            1.688975,
-            1.688975
+            1.68898,
+            1.68898,
+            1.68898
           ]
         },
         "thirdperson_lefthand": {
@@ -2434,47 +2523,47 @@
           ],
           "translation": [
             0.0,
-            7.493877,
-            -0.116065
+            7.49388,
+            -0.11606
           ],
           "scale": [
-            1.688975,
-            1.688975,
-            1.688975
+            1.68898,
+            1.68898,
+            1.68898
           ]
         },
         "firstperson_righthand": {
           "rotation": [
-            12.74536,
-            -21.689056,
-            56.468366
+            12.745359999999891,
+            -21.689060000000154,
+            52.46837000000005
           ],
           "translation": [
-            -2.914264,
-            7.791496,
-            -6.422114
+            0.54502,
+            3.8689,
+            0.48248
           ],
           "scale": [
-            1.014775,
-            1.014775,
-            1.014775
+            0.9133,
+            0.9133,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            4.179951,
-            24.67026,
-            -34.931495
+            12.745359999999891,
+            -21.689060000000154,
+            -52.46837000000005
           ],
           "translation": [
-            -2.756352,
-            7.701569,
-            -6.439058
+            1.71498,
+            3.76624,
+            0.93634
           ],
           "scale": [
-            0.992671,
-            0.992671,
-            0.992671
+            0.9133,
+            0.9133,
+            0.68
           ]
         },
         "ground": {
@@ -2548,16 +2637,17 @@
         "inheritance": "fixed"
       },
       "displayBlocking": null,
-      "displayStatus": "candidate_not_game_verified",
+      "displayStatus": "calibrated_not_game_verified",
       "acceptance": {
-        "state": "pending_visual",
+        "state": "calibrated_pending_visual",
         "humanAccepted": false,
-        "displayStatus": "candidate_not_game_verified",
+        "displayStatus": "calibrated_not_game_verified",
         "note": "visual acceptance is a receipt; it never gates readiness and it never blocks a structurally complete candidate from rendering"
       },
       "fallback": "legacy_builtin_entity",
       "blockers": [],
       "notes": [
+        "user_calibration: firstperson_lefthand, firstperson_righthand, thirdperson_lefthand, thirdperson_righthand replaced from art\\equipment-2d\\full\\display-overrides.json; the derivation is kept as the recoverable baseline",
         "display source: derived candidate from the vanilla reference pose and the item's own grip pixel; t = p - R.S.a, one origin, one unit"
       ],
       "runtimeIntegrated": true,
@@ -2590,7 +2680,7 @@
           20.5
         ],
         "worldLengthBlocks": 2.34,
-        "sourceSpanPixels": 36.089297996762
+        "sourceSpanPixels": 36.0893
       },
       "derived": {
         "anchorLocalModelUnits": [
@@ -2598,7 +2688,7 @@
           -2.25,
           0.0
         ],
-        "uniformXYScale": 2.07485332651,
+        "uniformXYScale": 2.07485321134,
         "note": "a=(16*x/W-8, 8-16*y/H, 0) in centred model units; aBlock=a/16; s=worldLengthBlocks*W/sourceSpanPixels"
       },
       "states": {
@@ -2619,97 +2709,101 @@
         "policy": "the candidate display declares the left hand explicitly; it is not a horizontal flip of the texture"
       },
       "displaySource": {
-        "kind": "derived_candidate",
+        "kind": "derived_candidate+user_calibration",
         "reference": "minecraft:item/bow",
         "referenceImage": "art/equipment-reuse/research-only-full/minecraft_item_bow.png",
         "referenceAnchorPixels": [
           5.5,
           7.5
         ],
-        "measuredSpriteAxisDegrees": 45.0,
-        "appliedAxisDegrees": 180.0,
-        "notes": [
-          "art_orientation_180: the sprite's mass lies on the opposite side of its principal axis from the reference icon's (perpendicular third moment -0.1651 vs 0.3558), so the canvas is drawn 180 degrees round from the vanilla art and the rotation carries the compensating half-turn"
+        "measuredSpriteAxisDegrees": 44.895,
+        "appliedAxisDegrees": 0.105,
+        "notes": [],
+        "calibratedContexts": [
+          "firstperson_lefthand",
+          "firstperson_righthand",
+          "thirdperson_lefthand",
+          "thirdperson_righthand"
         ]
       },
       "display": {
         "thirdperson_righthand": {
           "rotation": [
             -80.0,
-            -100.0,
-            140.0
+            80.0,
+            129.89499999999998
           ],
           "translation": [
-            -0.850848,
-            -3.664116,
-            7.066431
+            -0.85294,
+            -3.65224,
+            7.06743
           ],
           "scale": [
-            2.074853,
-            2.074853,
-            2.074853
+            2.07485,
+            2.07485,
+            2.07485
           ]
         },
         "thirdperson_lefthand": {
           "rotation": [
             -80.0,
-            80.0,
-            -140.0
+            -100.0,
+            -129.89499999999998
           ],
           "translation": [
-            -0.850848,
-            -3.664116,
-            7.066431
+            -0.85294,
+            -3.65224,
+            7.06743
           ],
           "scale": [
-            2.074853,
-            2.074853,
-            2.074853
+            2.07485,
+            2.07485,
+            2.07485
           ]
         },
         "firstperson_righthand": {
           "rotation": [
-            -0.0,
+            0.0,
             -25.0,
-            -155.0
+            -130.0
           ],
           "translation": [
-            0.466219,
-            6.721702,
-            -6.087288
+            1.56522,
+            4.27652,
+            0.34799
           ],
           "scale": [
-            0.880544,
-            0.880544,
-            0.880544
+            0.67362,
+            0.67362,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            -0.0,
-            25.0,
-            155.0
+            0.0,
+            155.0,
+            130.0
           ],
           "translation": [
-            -4.306219,
-            6.721702,
-            -6.087288
+            1.56524,
+            4.27652,
+            0.34801
           ],
           "scale": [
-            0.880544,
-            0.880544,
-            0.880544
+            0.67362,
+            0.67362,
+            0.68
           ]
         },
         "ground": {
           "rotation": [
             -0.0,
             0.0,
-            180.0
+            0.105
           ],
           "translation": [
-            3.41842,
-            -2.41842,
+            -5.926967,
+            6.909857,
             0.0
           ],
           "scale": [
@@ -2722,12 +2816,12 @@
           "rotation": [
             0.0,
             180.0,
-            180.0
+            0.105
           ],
           "translation": [
-            -2.16842,
-            -4.16842,
-            -0.0
+            7.176967,
+            5.159857,
+            0.0
           ],
           "scale": [
             2.074853,
@@ -2739,11 +2833,11 @@
           "rotation": [
             0.0,
             180.0,
-            180.0
+            0.105
           ],
           "translation": [
-            -2.16842,
-            8.83158,
+            7.176967,
+            18.159857,
             7.0
           ],
           "scale": [
@@ -2772,18 +2866,18 @@
         "inheritance": "fixed"
       },
       "displayBlocking": null,
-      "displayStatus": "candidate_not_game_verified",
+      "displayStatus": "calibrated_not_game_verified",
       "acceptance": {
-        "state": "pending_visual",
+        "state": "calibrated_pending_visual",
         "humanAccepted": false,
-        "displayStatus": "candidate_not_game_verified",
+        "displayStatus": "calibrated_not_game_verified",
         "note": "visual acceptance is a receipt; it never gates readiness and it never blocks a structurally complete candidate from rendering"
       },
       "fallback": "legacy_builtin_entity",
       "blockers": [],
       "notes": [
         "pull states are bound to the own bow's real use progress; artDrawFraction is a visual fraction only",
-        "art_orientation_180: the sprite's mass lies on the opposite side of its principal axis from the reference icon's (perpendicular third moment -0.1651 vs 0.3558), so the canvas is drawn 180 degrees round from the vanilla art and the rotation carries the compensating half-turn",
+        "user_calibration: firstperson_lefthand, firstperson_righthand, thirdperson_lefthand, thirdperson_righthand replaced from art\\equipment-2d\\full\\display-overrides.json; the derivation is kept as the recoverable baseline",
         "display source: derived candidate from the vanilla reference pose and the item's own grip pixel; t = p - R.S.a, one origin, one unit"
       ],
       "runtimeIntegrated": true,
@@ -2950,7 +3044,7 @@
         "policy": "the candidate display declares the left hand explicitly; it is not a horizontal flip of the texture"
       },
       "displaySource": {
-        "kind": "derived_candidate",
+        "kind": "derived_candidate+user_calibration",
         "reference": "minecraft:item/shield (builtin/entity: handle at the model origin, geometry around the origin); blocking pose from minecraft:item/shield_blocking",
         "referenceImage": null,
         "referenceAnchorPixels": [
@@ -2961,6 +3055,14 @@
         "appliedAxisDegrees": 0.0,
         "notes": [
           "grip at the declared reference point; the sprite is near-isotropic so no in-plane rotation is implied by the art"
+        ],
+        "calibratedContexts": [
+          "blocking:firstperson_lefthand",
+          "blocking:firstperson_righthand",
+          "firstperson_lefthand",
+          "firstperson_righthand",
+          "thirdperson_lefthand",
+          "thirdperson_righthand"
         ]
       },
       "display": {
@@ -2972,13 +3074,13 @@
           ],
           "translation": [
             2.0,
-            -1.624571,
-            4.375429
+            -1.62457,
+            4.37543
           ],
           "scale": [
-            1.501714,
-            1.501714,
-            1.501714
+            1.50171,
+            1.50171,
+            1.50171
           ]
         },
         "thirdperson_lefthand": {
@@ -2989,47 +3091,47 @@
           ],
           "translation": [
             2.0,
-            -1.624571,
-            3.624571
+            -1.62457,
+            3.62457
           ],
           "scale": [
-            1.501714,
-            1.501714,
-            1.501714
+            1.50171,
+            1.50171,
+            1.50171
           ]
         },
         "firstperson_righthand": {
           "rotation": [
             0.0,
-            180.0,
+            -180.0,
             5.0
           ],
           "translation": [
             -0.50289,
-            -8.492225,
-            0.0
+            1.62128,
+            -4.0
           ],
           "scale": [
-            1.501714,
-            1.501714,
-            1.501714
+            1.50171,
+            1.50171,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
             0.0,
-            180.0,
-            5.0
+            -180.0,
+            -5.0
           ],
           "translation": [
-            -1.174784,
-            -8.683669,
-            -0.0
+            -1.31633,
+            1.62128,
+            -4.0
           ],
           "scale": [
-            1.501714,
-            1.501714,
-            1.501714
+            1.50171,
+            1.50171,
+            0.68
           ]
         },
         "ground": {
@@ -3140,35 +3242,35 @@
         "firstperson_righthand": {
           "rotation": [
             0.0,
-            180.0,
+            -180.0,
             -5.0
           ],
           "translation": [
-            -3.825216,
-            -3.683669,
-            -1.0
+            -2.5683304161818374,
+            4.686722408571234,
+            -5.0
           ],
           "scale": [
             1.501714,
             1.501714,
-            1.501714
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
             0.0,
-            180.0,
+            -180.0,
             -5.0
           ],
           "translation": [
-            -4.49711,
-            -5.492225,
-            -1.0
+            -3.3163301786069117,
+            4.621280909038956,
+            -5.0
           ],
           "scale": [
             1.501714,
             1.501714,
-            1.501714
+            0.68
           ]
         },
         "ground": {
@@ -3224,11 +3326,11 @@
         },
         "inheritance": "fixed"
       },
-      "displayStatus": "candidate_not_game_verified",
+      "displayStatus": "calibrated_not_game_verified",
       "acceptance": {
-        "state": "pending_visual",
+        "state": "calibrated_pending_visual",
         "humanAccepted": false,
-        "displayStatus": "candidate_not_game_verified",
+        "displayStatus": "calibrated_not_game_verified",
         "note": "visual acceptance is a receipt; it never gates readiness and it never blocks a structurally complete candidate from rendering"
       },
       "fallback": "legacy_builtin_entity",
@@ -3236,6 +3338,7 @@
       "notes": [
         "blocking re-poses both faces of the same geometry; no new texture and no new defence resolution",
         "grip at the declared reference point; the sprite is near-isotropic so no in-plane rotation is implied by the art",
+        "user_calibration: blocking:firstperson_lefthand, blocking:firstperson_righthand, firstperson_lefthand, firstperson_righthand, thirdperson_lefthand, thirdperson_righthand replaced from art\\equipment-2d\\full\\display-overrides.json; the derivation is kept as the recoverable baseline",
         "display source: derived candidate from the vanilla reference pose and the item's own grip pixel; t = p - R.S.a, one origin, one unit"
       ],
       "runtimeIntegrated": true,
@@ -3265,7 +3368,7 @@
           24.5
         ],
         "worldLengthBlocks": 3.06,
-        "sourceSpanPixels": 37.924825672653
+        "sourceSpanPixels": 37.92483
       },
       "derived": {
         "anchorLocalModelUnits": [
@@ -3273,7 +3376,7 @@
           -4.25,
           0.0
         ],
-        "uniformXYScale": 2.581949903875,
+        "uniformXYScale": 2.581949609267,
         "note": "a=(16*x/W-8, 8-16*y/H, 0) in centred model units; aBlock=a/16; s=worldLengthBlocks*W/sourceSpanPixels"
       },
       "states": {
@@ -3291,7 +3394,7 @@
         "policy": "the candidate display declares the left hand explicitly; it is not a horizontal flip of the texture"
       },
       "displaySource": {
-        "kind": "derived_candidate",
+        "kind": "derived_candidate+user_calibration",
         "reference": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
         "referenceImage": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
         "referenceAnchorPixels": [
@@ -3300,7 +3403,13 @@
         ],
         "measuredSpriteAxisDegrees": 45.0,
         "appliedAxisDegrees": 0.0,
-        "notes": []
+        "notes": [],
+        "calibratedContexts": [
+          "firstperson_lefthand",
+          "firstperson_righthand",
+          "thirdperson_lefthand",
+          "thirdperson_righthand"
+        ]
       },
       "display": {
         "thirdperson_righthand": {
@@ -3310,9 +3419,9 @@
             55.0
           ],
           "translation": [
-            -0.0,
-            13.955623,
-            -1.255445
+            0.0,
+            13.95562,
+            -1.25544
           ],
           "scale": [
             2.58195,
@@ -3328,8 +3437,8 @@
           ],
           "translation": [
             0.0,
-            13.955623,
-            -1.255445
+            13.95562,
+            -1.25544
           ],
           "scale": [
             2.58195,
@@ -3339,36 +3448,36 @@
         },
         "firstperson_righthand": {
           "rotation": [
-            12.732294,
-            -21.696482,
-            56.433018
+            12.73228999999992,
+            -21.696480000000065,
+            51.43301999999994
           ],
           "translation": [
-            -3.023482,
-            8.384829,
-            -6.333986
+            0.56865,
+            4.40924,
+            0.613
           ],
           "scale": [
-            0.996829,
-            0.996829,
-            0.996829
+            0.89715,
+            0.89715,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            4.164525,
-            24.67271,
-            -34.894537
+            12.73228999999992,
+            -21.696480000000065,
+            -51.43301999999994
           ],
           "translation": [
-            -2.868751,
-            8.371005,
-            -6.3399
+            1.69135,
+            4.31079,
+            1.04871
           ],
           "scale": [
-            0.990022,
-            0.990022,
-            0.990022
+            0.89715,
+            0.89715,
+            0.68
           ]
         },
         "ground": {
@@ -3378,8 +3487,8 @@
             -0.0
           ],
           "translation": [
-            8.723287,
-            10.723287,
+            8.723286,
+            10.723286,
             0.0
           ],
           "scale": [
@@ -3395,8 +3504,8 @@
             0.0
           ],
           "translation": [
-            -6.473287,
-            6.473287,
+            -6.473286,
+            6.473286,
             -0.0
           ],
           "scale": [
@@ -3412,8 +3521,8 @@
             0.0
           ],
           "translation": [
-            -6.473287,
-            19.473287,
+            -6.473286,
+            19.473286,
             7.0
           ],
           "scale": [
@@ -3442,16 +3551,17 @@
         "inheritance": "fixed"
       },
       "displayBlocking": null,
-      "displayStatus": "candidate_not_game_verified",
+      "displayStatus": "calibrated_not_game_verified",
       "acceptance": {
-        "state": "pending_visual",
+        "state": "calibrated_pending_visual",
         "humanAccepted": false,
-        "displayStatus": "candidate_not_game_verified",
+        "displayStatus": "calibrated_not_game_verified",
         "note": "visual acceptance is a receipt; it never gates readiness and it never blocks a structurally complete candidate from rendering"
       },
       "fallback": "legacy_builtin_entity",
       "blockers": [],
       "notes": [
+        "user_calibration: firstperson_lefthand, firstperson_righthand, thirdperson_lefthand, thirdperson_righthand replaced from art\\equipment-2d\\full\\display-overrides.json; the derivation is kept as the recoverable baseline",
         "display source: derived candidate from the vanilla reference pose and the item's own grip pixel; t = p - R.S.a, one origin, one unit"
       ],
       "runtimeIntegrated": true,
@@ -3481,7 +3591,7 @@
           24.5
         ],
         "worldLengthBlocks": 1.584,
-        "sourceSpanPixels": 37.618080759124
+        "sourceSpanPixels": 37.61808
       },
       "derived": {
         "anchorLocalModelUnits": [
@@ -3489,7 +3599,7 @@
           -4.25,
           0.0
         ],
-        "uniformXYScale": 1.347437162586,
+        "uniformXYScale": 1.347437189777,
         "note": "a=(16*x/W-8, 8-16*y/H, 0) in centred model units; aBlock=a/16; s=worldLengthBlocks*W/sourceSpanPixels"
       },
       "states": {
@@ -3508,7 +3618,7 @@
       },
       "legacySelectionPreserved": true,
       "displaySource": {
-        "kind": "derived_candidate",
+        "kind": "derived_candidate+user_calibration",
         "reference": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
         "referenceImage": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
         "referenceAnchorPixels": [
@@ -3517,7 +3627,13 @@
         ],
         "measuredSpriteAxisDegrees": 45.0,
         "appliedAxisDegrees": 0.0,
-        "notes": []
+        "notes": [],
+        "calibratedContexts": [
+          "firstperson_lefthand",
+          "firstperson_righthand",
+          "thirdperson_lefthand",
+          "thirdperson_righthand"
+        ]
       },
       "display": {
         "thirdperson_righthand": {
@@ -3527,14 +3643,14 @@
             55.0
           ],
           "translation": [
-            -0.0,
-            6.648424,
-            0.033011
+            0.0,
+            6.64842,
+            0.03301
           ],
           "scale": [
-            1.347437,
-            1.347437,
-            1.347437
+            1.34744,
+            1.34744,
+            1.34744
           ]
         },
         "thirdperson_lefthand": {
@@ -3545,47 +3661,47 @@
           ],
           "translation": [
             0.0,
-            6.648424,
-            0.033011
+            6.64842,
+            0.03301
           ],
           "scale": [
-            1.347437,
-            1.347437,
-            1.347437
+            1.34744,
+            1.34744,
+            1.34744
           ]
         },
         "firstperson_righthand": {
           "rotation": [
-            12.732294,
-            -21.696482,
-            56.433018
+            12.73228999999992,
+            -26.0,
+            50.43301999999994
           ],
           "translation": [
-            -3.023482,
-            8.384829,
-            -6.333986
+            0.67112,
+            4.86883,
+            0.61469
           ],
           "scale": [
-            0.996829,
-            0.996829,
-            0.996829
+            0.89715,
+            0.89715,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            4.164525,
-            24.67271,
-            -34.894537
+            12.73228999999992,
+            -26.0,
+            -50.43301999999994
           ],
           "translation": [
-            -2.868751,
-            8.371005,
-            -6.3399
+            1.58888,
+            4.77018,
+            1.0513
           ],
           "scale": [
-            0.990022,
-            0.990022,
-            0.990022
+            0.89715,
+            0.89715,
+            0.68
           ]
         },
         "ground": {
@@ -3659,17 +3775,18 @@
         "inheritance": "fixed"
       },
       "displayBlocking": null,
-      "displayStatus": "candidate_not_game_verified",
+      "displayStatus": "calibrated_not_game_verified",
       "acceptance": {
-        "state": "pending_visual",
+        "state": "calibrated_pending_visual",
         "humanAccepted": false,
-        "displayStatus": "candidate_not_game_verified",
+        "displayStatus": "calibrated_not_game_verified",
         "note": "visual acceptance is a receipt; it never gates readiness and it never blocks a structurally complete candidate from rendering"
       },
       "fallback": "legacy_builtin_entity",
       "blockers": [],
       "notes": [
         "legacy_selection_preserved: the 2D route is a candidate alongside the user-selected legacy source and does not overwrite it",
+        "user_calibration: firstperson_lefthand, firstperson_righthand, thirdperson_lefthand, thirdperson_righthand replaced from art\\equipment-2d\\full\\display-overrides.json; the derivation is kept as the recoverable baseline",
         "display source: derived candidate from the vanilla reference pose and the item's own grip pixel; t = p - R.S.a, one origin, one unit"
       ],
       "runtimeIntegrated": true,
@@ -4008,7 +4125,7 @@
           46.5
         ],
         "worldLengthBlocks": 1.944,
-        "sourceSpanPixels": 75.115605608014
+        "sourceSpanPixels": 75.11561
       },
       "derived": {
         "anchorLocalModelUnits": [
@@ -4016,7 +4133,7 @@
           -3.625,
           0.0
         ],
-        "uniformXYScale": 1.656326924251,
+        "uniformXYScale": 1.656326827406,
         "note": "a=(16*x/W-8, 8-16*y/H, 0) in centred model units; aBlock=a/16; s=worldLengthBlocks*W/sourceSpanPixels"
       },
       "states": {
@@ -4034,95 +4151,101 @@
         "policy": "the candidate display declares the left hand explicitly; it is not a horizontal flip of the texture"
       },
       "displaySource": {
-        "kind": "derived_candidate",
+        "kind": "derived_candidate+user_calibration",
         "reference": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
         "referenceImage": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
         "referenceAnchorPixels": [
           3.5,
           12.5
         ],
-        "measuredSpriteAxisDegrees": 49.135,
-        "appliedAxisDegrees": -4.135,
-        "notes": []
+        "measuredSpriteAxisDegrees": 49.02,
+        "appliedAxisDegrees": -4.02,
+        "notes": [],
+        "calibratedContexts": [
+          "firstperson_lefthand",
+          "firstperson_righthand",
+          "thirdperson_lefthand",
+          "thirdperson_righthand"
+        ]
       },
       "display": {
         "thirdperson_righthand": {
           "rotation": [
             0.0,
-            -90.0,
-            50.865
+            90.0,
+            46.64814999999999
           ],
           "translation": [
             0.0,
-            8.725501,
-            1.878392
+            8.666,
+            0.26226
           ],
           "scale": [
-            1.656327,
-            1.656327,
-            1.656327
+            1.65633,
+            1.65633,
+            1.65633
           ]
         },
         "thirdperson_lefthand": {
           "rotation": [
             0.0,
-            90.0,
-            -50.865
+            -90.0,
+            -46.64814999999999
           ],
           "translation": [
-            -0.0,
-            8.725501,
-            1.878392
+            0.0,
+            8.666,
+            0.26226
           ],
           "scale": [
-            1.656327,
-            1.656327,
-            1.656327
+            1.65633,
+            1.65633,
+            1.65633
           ]
         },
         "firstperson_righthand": {
           "rotation": [
-            16.117813,
-            -19.371164,
-            61.928049
+            12.924039999999877,
+            3.615229999999883,
+            56.48122999999987
           ],
           "translation": [
-            -2.763079,
-            8.344606,
-            -5.836957
+            0.83699,
+            4.38701,
+            0.87444
           ],
           "scale": [
-            0.988062,
-            0.988062,
-            0.988062
+            0.88926,
+            0.88926,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            8.327469,
-            23.656814,
-            -40.906358
+            20.121909999999843,
+            -170.43897000000015,
+            -41.05382000000009
           ],
           "translation": [
-            -3.098719,
-            8.247923,
-            -5.845572
+            2.26596,
+            4.1552,
+            1.286
           ],
           "scale": [
-            0.981817,
-            0.981817,
-            0.981817
+            0.88926,
+            0.88926,
+            0.68
           ]
         },
         "ground": {
           "rotation": [
             -0.0,
             0.0,
-            -4.135
+            -4.02
           ],
           "translation": [
-            6.236517,
-            5.156323,
+            6.225648,
+            5.173345,
             0.0
           ],
           "scale": [
@@ -4135,11 +4258,11 @@
           "rotation": [
             0.0,
             180.0,
-            -4.135
+            -4.02
           ],
           "translation": [
-            -3.986517,
-            0.906323,
+            -3.975648,
+            0.923345,
             -0.0
           ],
           "scale": [
@@ -4152,11 +4275,11 @@
           "rotation": [
             0.0,
             180.0,
-            -4.135
+            -4.02
           ],
           "translation": [
-            -3.986517,
-            13.906323,
+            -3.975648,
+            13.923345,
             7.0
           ],
           "scale": [
@@ -4185,16 +4308,17 @@
         "inheritance": "fixed"
       },
       "displayBlocking": null,
-      "displayStatus": "candidate_not_game_verified",
+      "displayStatus": "calibrated_not_game_verified",
       "acceptance": {
-        "state": "pending_visual",
+        "state": "calibrated_pending_visual",
         "humanAccepted": false,
-        "displayStatus": "candidate_not_game_verified",
+        "displayStatus": "calibrated_not_game_verified",
         "note": "visual acceptance is a receipt; it never gates readiness and it never blocks a structurally complete candidate from rendering"
       },
       "fallback": "legacy_builtin_entity",
       "blockers": [],
       "notes": [
+        "user_calibration: firstperson_lefthand, firstperson_righthand, thirdperson_lefthand, thirdperson_righthand replaced from art\\equipment-2d\\full\\display-overrides.json; the derivation is kept as the recoverable baseline",
         "display source: derived candidate from the vanilla reference pose and the item's own grip pixel; t = p - R.S.a, one origin, one unit"
       ],
       "runtimeIntegrated": true,
@@ -4224,7 +4348,7 @@
           24.5
         ],
         "worldLengthBlocks": 1.512,
-        "sourceSpanPixels": 37.838069535493
+        "sourceSpanPixels": 37.83807
       },
       "derived": {
         "anchorLocalModelUnits": [
@@ -4232,7 +4356,7 @@
           -4.25,
           0.0
         ],
-        "uniformXYScale": 1.278712169885,
+        "uniformXYScale": 1.278712154188,
         "note": "a=(16*x/W-8, 8-16*y/H, 0) in centred model units; aBlock=a/16; s=worldLengthBlocks*W/sourceSpanPixels"
       },
       "states": {
@@ -4250,95 +4374,101 @@
         "policy": "the candidate display declares the left hand explicitly; it is not a horizontal flip of the texture"
       },
       "displaySource": {
-        "kind": "derived_candidate",
+        "kind": "derived_candidate+user_calibration",
         "reference": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
         "referenceImage": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
         "referenceAnchorPixels": [
           3.5,
           12.5
         ],
-        "measuredSpriteAxisDegrees": 44.924,
-        "appliedAxisDegrees": 0.076,
-        "notes": []
+        "measuredSpriteAxisDegrees": 44.86,
+        "appliedAxisDegrees": 0.14,
+        "notes": [],
+        "calibratedContexts": [
+          "firstperson_lefthand",
+          "firstperson_righthand",
+          "thirdperson_lefthand",
+          "thirdperson_righthand"
+        ]
       },
       "display": {
         "thirdperson_righthand": {
           "rotation": [
             0.0,
             -90.0,
-            55.076
+            55.13999999999987
           ],
           "translation": [
-            -0.0,
-            6.239857,
-            0.094701
+            0.0,
+            6.23835,
+            0.08625
           ],
           "scale": [
-            1.278712,
-            1.278712,
-            1.278712
+            1.27871,
+            1.27871,
+            1.27871
           ]
         },
         "thirdperson_lefthand": {
           "rotation": [
             0.0,
             90.0,
-            -55.076
+            -55.13999999999987
           ],
           "translation": [
             0.0,
-            6.239857,
-            0.094701
+            6.23835,
+            0.08625
           ],
           "scale": [
-            1.278712,
-            1.278712,
-            1.278712
+            1.27871,
+            1.27871,
+            1.27871
           ]
         },
         "firstperson_righthand": {
           "rotation": [
-            12.705079,
-            -21.711914,
-            56.435426
+            12.70508000000018,
+            -21.71190999999999,
+            51.43543
           ],
           "translation": [
-            -3.023844,
-            8.386597,
-            -6.336948
+            0.56837,
+            4.4109,
+            0.61047
           ],
           "scale": [
-            0.997055,
-            0.997055,
-            0.997055
+            0.89735,
+            0.89735,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            4.132406,
-            24.67778,
-            -34.893601
+            12.70508000000018,
+            -21.71190999999999,
+            -51.43543
           ],
           "translation": [
-            -2.869011,
-            8.372755,
-            -6.342845
+            1.69163,
+            4.31253,
+            1.04679
           ],
           "scale": [
-            0.990242,
-            0.990242,
-            0.990242
+            0.89735,
+            0.89735,
+            0.68
           ]
         },
         "ground": {
           "rotation": [
             -0.0,
             0.0,
-            0.076
+            0.14
           ],
           "translation": [
-            3.177313,
-            5.191731,
+            3.171231,
+            5.197789,
             0.0
           ],
           "scale": [
@@ -4351,11 +4481,11 @@
           "rotation": [
             0.0,
             180.0,
-            0.076
+            0.14
           ],
           "translation": [
-            -0.927313,
-            0.941731,
+            -0.921231,
+            0.947789,
             -0.0
           ],
           "scale": [
@@ -4368,11 +4498,11 @@
           "rotation": [
             0.0,
             180.0,
-            0.076
+            0.14
           ],
           "translation": [
-            -0.927313,
-            13.941731,
+            -0.921231,
+            13.947789,
             7.0
           ],
           "scale": [
@@ -4401,16 +4531,17 @@
         "inheritance": "fixed"
       },
       "displayBlocking": null,
-      "displayStatus": "candidate_not_game_verified",
+      "displayStatus": "calibrated_not_game_verified",
       "acceptance": {
-        "state": "pending_visual",
+        "state": "calibrated_pending_visual",
         "humanAccepted": false,
-        "displayStatus": "candidate_not_game_verified",
+        "displayStatus": "calibrated_not_game_verified",
         "note": "visual acceptance is a receipt; it never gates readiness and it never blocks a structurally complete candidate from rendering"
       },
       "fallback": "legacy_builtin_entity",
       "blockers": [],
       "notes": [
+        "user_calibration: firstperson_lefthand, firstperson_righthand, thirdperson_lefthand, thirdperson_righthand replaced from art\\equipment-2d\\full\\display-overrides.json; the derivation is kept as the recoverable baseline",
         "display source: derived candidate from the vanilla reference pose and the item's own grip pixel; t = p - R.S.a, one origin, one unit"
       ],
       "runtimeIntegrated": true,
@@ -4655,7 +4786,7 @@
           50.5
         ],
         "worldLengthBlocks": 2.304,
-        "sourceSpanPixels": 82.02438661764
+        "sourceSpanPixels": 82.02439
       },
       "derived": {
         "anchorLocalModelUnits": [
@@ -4663,7 +4794,7 @@
           -4.625,
           0.0
         ],
-        "uniformXYScale": 1.797709267701,
+        "uniformXYScale": 1.79770919357,
         "note": "a=(16*x/W-8, 8-16*y/H, 0) in centred model units; aBlock=a/16; s=worldLengthBlocks*W/sourceSpanPixels"
       },
       "states": {
@@ -4681,17 +4812,23 @@
         "policy": "the candidate display declares the left hand explicitly; it is not a horizontal flip of the texture"
       },
       "displaySource": {
-        "kind": "derived_candidate",
+        "kind": "derived_candidate+user_calibration",
         "reference": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
         "referenceImage": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
         "referenceAnchorPixels": [
           3.5,
           12.5
         ],
-        "measuredSpriteAxisDegrees": 46.526,
-        "appliedAxisDegrees": -1.526,
+        "measuredSpriteAxisDegrees": 46.536,
+        "appliedAxisDegrees": -1.536,
         "notes": [
           "held edge correction: roll 180 degrees around the blade's longitudinal axis; translation is re-derived from the unchanged grip, with GUI/world display unchanged"
+        ],
+        "calibratedContexts": [
+          "firstperson_lefthand",
+          "firstperson_righthand",
+          "thirdperson_lefthand",
+          "thirdperson_righthand"
         ]
       },
       "display": {
@@ -4699,79 +4836,79 @@
           "rotation": [
             0.0,
             90.0,
-            39.578
+            39.608000000000175
           ],
           "translation": [
-            -0.0,
-            10.378549,
-            0.328274
+            0.0,
+            10.37913,
+            0.3344
           ],
           "scale": [
-            1.797709,
-            1.797709,
-            1.797709
+            1.79771,
+            1.79771,
+            1.79771
           ]
         },
         "thirdperson_lefthand": {
           "rotation": [
             0.0,
             -90.0,
-            -39.578
+            -39.608000000000175
           ],
           "translation": [
             0.0,
-            10.378549,
-            0.328274
+            10.37913,
+            0.3344
           ],
           "scale": [
-            1.797709,
-            1.797709,
-            1.797709
+            1.79771,
+            1.79771,
+            1.79771
           ]
         },
         "firstperson_righthand": {
           "rotation": [
-            6.066525,
-            24.29881,
-            55.096491
+            6.066530000000057,
+            10.298809999999776,
+            50.0964899999999
           ],
           "translation": [
-            -2.868036,
-            8.323685,
-            -6.157004
+            0.66326,
+            4.41381,
+            0.29638
           ],
           "scale": [
-            0.907164,
-            0.907164,
-            0.907164
+            0.81645,
+            0.81645,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            14.314053,
-            -20.715969,
-            -33.774175
+            2.841559999999845,
+            -164.58955000000014,
+            -34.34582
           ],
           "translation": [
-            -3.007288,
-            8.336759,
-            -6.150386
+            2.0818,
+            4.38816,
+            -0.35195
           ],
           "scale": [
-            0.912919,
-            0.912919,
-            0.912919
+            0.81645,
+            0.81645,
+            0.68
           ]
         },
         "ground": {
           "rotation": [
             -0.0,
             0.0,
-            -1.526
+            -1.536
           ],
           "translation": [
-            6.282874,
-            7.840039,
+            6.284286,
+            7.838549,
             0.0
           ],
           "scale": [
@@ -4784,11 +4921,11 @@
           "rotation": [
             0.0,
             180.0,
-            -1.526
+            -1.536
           ],
           "translation": [
-            -4.032874,
-            3.590039,
+            -4.034286,
+            3.588549,
             -0.0
           ],
           "scale": [
@@ -4801,11 +4938,11 @@
           "rotation": [
             0.0,
             180.0,
-            -1.526
+            -1.536
           ],
           "translation": [
-            -4.032874,
-            16.590039,
+            -4.034286,
+            16.588549,
             7.0
           ],
           "scale": [
@@ -4834,17 +4971,18 @@
         "inheritance": "fixed"
       },
       "displayBlocking": null,
-      "displayStatus": "candidate_not_game_verified",
+      "displayStatus": "calibrated_not_game_verified",
       "acceptance": {
-        "state": "pending_visual",
+        "state": "calibrated_pending_visual",
         "humanAccepted": false,
-        "displayStatus": "candidate_not_game_verified",
+        "displayStatus": "calibrated_not_game_verified",
         "note": "visual acceptance is a receipt; it never gates readiness and it never blocks a structurally complete candidate from rendering"
       },
       "fallback": "legacy_builtin_entity",
       "blockers": [],
       "notes": [
         "held edge correction: roll 180 degrees around the blade's longitudinal axis; translation is re-derived from the unchanged grip, with GUI/world display unchanged",
+        "user_calibration: firstperson_lefthand, firstperson_righthand, thirdperson_lefthand, thirdperson_righthand replaced from art\\equipment-2d\\full\\display-overrides.json; the derivation is kept as the recoverable baseline",
         "display source: derived candidate from the vanilla reference pose and the item's own grip pixel; t = p - R.S.a, one origin, one unit"
       ],
       "runtimeIntegrated": true,
@@ -4874,7 +5012,7 @@
           50.5
         ],
         "worldLengthBlocks": 1.044,
-        "sourceSpanPixels": 73.06770072261
+        "sourceSpanPixels": 69.04035
       },
       "derived": {
         "anchorLocalModelUnits": [
@@ -4882,7 +5020,7 @@
           -4.625,
           0.0
         ],
-        "uniformXYScale": 0.914439613389,
+        "uniformXYScale": 0.967781884072,
         "note": "a=(16*x/W-8, 8-16*y/H, 0) in centred model units; aBlock=a/16; s=worldLengthBlocks*W/sourceSpanPixels"
       },
       "states": {
@@ -4900,135 +5038,141 @@
         "policy": "the candidate display declares the left hand explicitly; it is not a horizontal flip of the texture"
       },
       "displaySource": {
-        "kind": "derived_candidate",
+        "kind": "derived_candidate+user_calibration",
         "reference": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
         "referenceImage": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
         "referenceAnchorPixels": [
           3.5,
           12.5
         ],
-        "measuredSpriteAxisDegrees": 44.72,
-        "appliedAxisDegrees": 0.28,
-        "notes": []
+        "measuredSpriteAxisDegrees": 45.372,
+        "appliedAxisDegrees": -0.372,
+        "notes": [],
+        "calibratedContexts": [
+          "firstperson_lefthand",
+          "firstperson_righthand",
+          "thirdperson_lefthand",
+          "thirdperson_righthand"
+        ]
       },
       "display": {
         "thirdperson_righthand": {
           "rotation": [
             0.0,
             -90.0,
-            55.28
+            54.628000000000156
           ],
           "translation": [
-            -0.0,
-            4.557911,
-            0.371945
+            0.0,
+            4.91366,
+            0.38063
           ],
           "scale": [
-            0.91444,
-            0.91444,
-            0.91444
+            0.96778,
+            0.96778,
+            0.96778
           ]
         },
         "thirdperson_lefthand": {
           "rotation": [
             0.0,
             90.0,
-            -55.28
+            -54.628000000000156
           ],
           "translation": [
             0.0,
-            4.557911,
-            0.371945
+            4.91366,
+            0.38063
           ],
           "scale": [
-            0.91444,
-            0.91444,
-            0.91444
+            0.96778,
+            0.96778,
+            0.96778
           ]
         },
         "firstperson_righthand": {
           "rotation": [
-            9.756523,
-            -23.131116,
-            48.919493
+            9.75651999999991,
+            -23.13112000000001,
+            43.91949000000022
           ],
           "translation": [
-            -2.288451,
-            8.349875,
-            -6.364143
+            1.22682,
+            4.62779,
+            0.63661
           ],
           "scale": [
-            0.896151,
-            0.896151,
-            0.896151
+            0.85358,
+            0.85358,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            0.763776,
-            24.98908,
-            -27.087494
+            9.75651999999991,
+            -23.13112000000001,
+            -43.91949000000022
           ],
           "translation": [
-            -3.446156,
-            7.759241,
-            -6.419321
+            1.03318,
+            4.64181,
+            0.55509
           ],
           "scale": [
-            0.836993,
-            0.836993,
-            0.836993
+            0.85358,
+            0.85358,
+            0.68
           ]
         },
         "ground": {
           "rotation": [
             -0.0,
             0.0,
-            0.28
+            -0.372
           ],
           "translation": [
-            1.958565,
-            3.999901,
+            2.254958,
+            4.196836,
             0.0
           ],
           "scale": [
-            0.91444,
-            0.91444,
-            0.91444
+            0.967782,
+            0.967782,
+            0.967782
           ]
         },
         "fixed": {
           "rotation": [
             0.0,
             180.0,
-            0.28
+            -0.372
           ],
           "translation": [
-            0.291435,
-            -0.250099,
-            0.0
+            -0.004958,
+            -0.053164,
+            -0.0
           ],
           "scale": [
-            0.91444,
-            0.91444,
-            0.91444
+            0.967782,
+            0.967782,
+            0.967782
           ]
         },
         "head": {
           "rotation": [
             0.0,
             180.0,
-            0.28
+            -0.372
           ],
           "translation": [
-            0.291435,
-            12.749901,
+            -0.004958,
+            12.946836,
             7.0
           ],
           "scale": [
-            0.91444,
-            0.91444,
-            0.91444
+            0.967782,
+            0.967782,
+            0.967782
           ]
         },
         "gui": {
@@ -5051,16 +5195,17 @@
         "inheritance": "fixed"
       },
       "displayBlocking": null,
-      "displayStatus": "candidate_not_game_verified",
+      "displayStatus": "calibrated_not_game_verified",
       "acceptance": {
-        "state": "pending_visual",
+        "state": "calibrated_pending_visual",
         "humanAccepted": false,
-        "displayStatus": "candidate_not_game_verified",
+        "displayStatus": "calibrated_not_game_verified",
         "note": "visual acceptance is a receipt; it never gates readiness and it never blocks a structurally complete candidate from rendering"
       },
       "fallback": "legacy_builtin_entity",
       "blockers": [],
       "notes": [
+        "user_calibration: firstperson_lefthand, firstperson_righthand, thirdperson_lefthand, thirdperson_righthand replaced from art\\equipment-2d\\full\\display-overrides.json; the derivation is kept as the recoverable baseline",
         "display source: derived candidate from the vanilla reference pose and the item's own grip pixel; t = p - R.S.a, one origin, one unit"
       ],
       "runtimeIntegrated": true,
@@ -5090,7 +5235,7 @@
           47.5
         ],
         "worldLengthBlocks": 3.15,
-        "sourceSpanPixels": 82.115626202309
+        "sourceSpanPixels": 79.54951
       },
       "derived": {
         "anchorLocalModelUnits": [
@@ -5098,7 +5243,7 @@
           -3.875,
           0.0
         ],
-        "uniformXYScale": 2.45507474428,
+        "uniformXYScale": 2.534270795634,
         "note": "a=(16*x/W-8, 8-16*y/H, 0) in centred model units; aBlock=a/16; s=worldLengthBlocks*W/sourceSpanPixels"
       },
       "states": {
@@ -5116,135 +5261,141 @@
         "policy": "the candidate display declares the left hand explicitly; it is not a horizontal flip of the texture"
       },
       "displaySource": {
-        "kind": "derived_candidate",
+        "kind": "derived_candidate+user_calibration",
         "reference": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
         "referenceImage": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
         "referenceAnchorPixels": [
           3.5,
           12.5
         ],
-        "measuredSpriteAxisDegrees": 45.0,
-        "appliedAxisDegrees": 0.0,
-        "notes": []
+        "measuredSpriteAxisDegrees": 44.958,
+        "appliedAxisDegrees": 0.042,
+        "notes": [],
+        "calibratedContexts": [
+          "firstperson_lefthand",
+          "firstperson_righthand",
+          "thirdperson_lefthand",
+          "thirdperson_righthand"
+        ]
       },
       "display": {
         "thirdperson_righthand": {
           "rotation": [
             0.0,
             -90.0,
-            55.0
+            55.041999999999916
           ],
           "translation": [
-            -0.0,
-            11.922417,
-            -0.896936
+            0.0,
+            12.34805,
+            -0.98232
           ],
           "scale": [
-            2.455075,
-            2.455075,
-            2.455075
+            2.53427,
+            2.53427,
+            2.53427
           ]
         },
         "thirdperson_lefthand": {
           "rotation": [
             0.0,
             90.0,
-            -55.0
+            -55.041999999999916
           ],
           "translation": [
             0.0,
-            11.922417,
-            -0.896936
+            12.34805,
+            -0.98232
           ],
           "scale": [
-            2.455075,
-            2.455075,
-            2.455075
+            2.53427,
+            2.53427,
+            2.53427
           ]
         },
         "firstperson_righthand": {
           "rotation": [
-            12.741982,
-            -21.690977,
-            56.459226
+            12.741979999999785,
+            -21.690979999999854,
+            52.459229999999934
           ],
           "translation": [
-            -2.804439,
-            7.217491,
-            -6.507485
+            0.59308,
+            3.48527,
+            0.41502
           ],
           "scale": [
-            0.874264,
-            0.874264,
-            0.874264
+            0.81222,
+            0.81222,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            4.175962,
-            24.670894,
-            -34.921938
+            12.741979999999785,
+            -21.690979999999854,
+            -52.459229999999934
           ],
           "translation": [
-            -2.677528,
-            7.212529,
-            -6.511418
+            1.66692,
+            3.39106,
+            0.83163
           ],
           "scale": [
-            0.869299,
-            0.869299,
-            0.869299
+            0.81222,
+            0.81222,
+            0.68
           ]
         },
         "ground": {
           "rotation": [
             -0.0,
             0.0,
-            -0.0
+            0.042
           ],
           "translation": [
-            7.263415,
-            9.263415,
+            7.563098,
+            9.577495,
             0.0
           ],
           "scale": [
-            2.455075,
-            2.455075,
-            2.455075
+            2.534271,
+            2.534271,
+            2.534271
           ]
         },
         "fixed": {
           "rotation": [
             0.0,
             180.0,
-            0.0
+            0.042
           ],
           "translation": [
-            -5.013415,
-            5.013415,
+            -5.313098,
+            5.327495,
             -0.0
           ],
           "scale": [
-            2.455075,
-            2.455075,
-            2.455075
+            2.534271,
+            2.534271,
+            2.534271
           ]
         },
         "head": {
           "rotation": [
             0.0,
             180.0,
-            0.0
+            0.042
           ],
           "translation": [
-            -5.013415,
-            18.013415,
+            -5.313098,
+            18.327495,
             7.0
           ],
           "scale": [
-            2.455075,
-            2.455075,
-            2.455075
+            2.534271,
+            2.534271,
+            2.534271
           ]
         },
         "gui": {
@@ -5267,16 +5418,17 @@
         "inheritance": "fixed"
       },
       "displayBlocking": null,
-      "displayStatus": "candidate_not_game_verified",
+      "displayStatus": "calibrated_not_game_verified",
       "acceptance": {
-        "state": "pending_visual",
+        "state": "calibrated_pending_visual",
         "humanAccepted": false,
-        "displayStatus": "candidate_not_game_verified",
+        "displayStatus": "calibrated_not_game_verified",
         "note": "visual acceptance is a receipt; it never gates readiness and it never blocks a structurally complete candidate from rendering"
       },
       "fallback": "legacy_builtin_entity",
       "blockers": [],
       "notes": [
+        "user_calibration: firstperson_lefthand, firstperson_righthand, thirdperson_lefthand, thirdperson_righthand replaced from art\\equipment-2d\\full\\display-overrides.json; the derivation is kept as the recoverable baseline",
         "display source: derived candidate from the vanilla reference pose and the item's own grip pixel; t = p - R.S.a, one origin, one unit"
       ],
       "runtimeIntegrated": true,
@@ -5306,7 +5458,7 @@
           45.5
         ],
         "worldLengthBlocks": 2.088,
-        "sourceSpanPixels": 73.539105243401
+        "sourceSpanPixels": 73.5527
       },
       "derived": {
         "anchorLocalModelUnits": [
@@ -5314,7 +5466,7 @@
           -3.375,
           0.0
         ],
-        "uniformXYScale": 1.817155641991,
+        "uniformXYScale": 1.81681977684,
         "note": "a=(16*x/W-8, 8-16*y/H, 0) in centred model units; aBlock=a/16; s=worldLengthBlocks*W/sourceSpanPixels"
       },
       "states": {
@@ -5332,135 +5484,141 @@
         "policy": "the candidate display declares the left hand explicitly; it is not a horizontal flip of the texture"
       },
       "displaySource": {
-        "kind": "derived_candidate",
+        "kind": "derived_candidate+user_calibration",
         "reference": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
         "referenceImage": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
         "referenceAnchorPixels": [
           3.5,
           12.5
         ],
-        "measuredSpriteAxisDegrees": 53.795,
-        "appliedAxisDegrees": -8.795,
-        "notes": []
+        "measuredSpriteAxisDegrees": 43.093,
+        "appliedAxisDegrees": 1.907,
+        "notes": [],
+        "calibratedContexts": [
+          "firstperson_lefthand",
+          "firstperson_righthand",
+          "thirdperson_lefthand",
+          "thirdperson_righthand"
+        ]
       },
       "display": {
         "thirdperson_righthand": {
           "rotation": [
             0.0,
-            -90.0,
-            46.205
+            90.0,
+            50.484010000000126
           ],
           "translation": [
             0.0,
-            9.967447,
-            3.772166
+            10.10791,
+            -0.04401
           ],
           "scale": [
-            1.817156,
-            1.817156,
-            1.817156
+            1.81682,
+            1.81682,
+            1.81682
           ]
         },
         "thirdperson_lefthand": {
           "rotation": [
             0.0,
-            90.0,
-            -46.205
+            -90.0,
+            -50.484010000000126
           ],
           "translation": [
-            -0.0,
-            9.967447,
-            3.772166
+            0.0,
+            10.10791,
+            -0.04401
           ],
           "scale": [
-            1.817156,
-            1.817156,
-            1.817156
+            1.81682,
+            1.81682,
+            1.81682
           ]
         },
         "firstperson_righthand": {
           "rotation": [
-            18.658418,
-            -16.945346,
-            65.406151
+            15.08811999999989,
+            4.364669999999933,
+            63.007970000000114
           ],
           "translation": [
-            -2.68596,
-            8.373009,
-            -5.483431
+            0.63959,
+            4.41037,
+            1.11132
           ],
           "scale": [
-            0.962598,
-            0.962598,
-            0.962598
+            0.86618,
+            0.86618,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            11.712539,
-            22.244048,
-            -44.912786
+            22.554279999999835,
+            -173.66177000000016,
+            -44.352660000000014
           ],
           "translation": [
-            -3.181186,
-            8.251864,
-            -5.493192
+            2.40758,
+            4.12414,
+            1.56899
           ],
           "scale": [
-            0.957124,
-            0.957124,
-            0.957124
+            0.86618,
+            0.86618,
+            0.68
           ]
         },
         "ground": {
           "rotation": [
             -0.0,
             0.0,
-            -8.795
+            1.907
           ],
           "translation": [
-            8.340084,
-            4.317385,
+            7.305949,
+            6.203337,
             0.0
           ],
           "scale": [
-            1.817156,
-            1.817156,
-            1.817156
+            1.81682,
+            1.81682,
+            1.81682
           ]
         },
         "fixed": {
           "rotation": [
             0.0,
             180.0,
-            -8.795
+            1.907
           ],
           "translation": [
-            -6.090084,
-            0.067385,
+            -5.055949,
+            1.953337,
             -0.0
           ],
           "scale": [
-            1.817156,
-            1.817156,
-            1.817156
+            1.81682,
+            1.81682,
+            1.81682
           ]
         },
         "head": {
           "rotation": [
             0.0,
             180.0,
-            -8.795
+            1.907
           ],
           "translation": [
-            -6.090084,
-            13.067385,
+            -5.055949,
+            14.953337,
             7.0
           ],
           "scale": [
-            1.817156,
-            1.817156,
-            1.817156
+            1.81682,
+            1.81682,
+            1.81682
           ]
         },
         "gui": {
@@ -5483,16 +5641,17 @@
         "inheritance": "fixed"
       },
       "displayBlocking": null,
-      "displayStatus": "candidate_not_game_verified",
+      "displayStatus": "calibrated_not_game_verified",
       "acceptance": {
-        "state": "pending_visual",
+        "state": "calibrated_pending_visual",
         "humanAccepted": false,
-        "displayStatus": "candidate_not_game_verified",
+        "displayStatus": "calibrated_not_game_verified",
         "note": "visual acceptance is a receipt; it never gates readiness and it never blocks a structurally complete candidate from rendering"
       },
       "fallback": "legacy_builtin_entity",
       "blockers": [],
       "notes": [
+        "user_calibration: firstperson_lefthand, firstperson_righthand, thirdperson_lefthand, thirdperson_righthand replaced from art\\equipment-2d\\full\\display-overrides.json; the derivation is kept as the recoverable baseline",
         "display source: derived candidate from the vanilla reference pose and the item's own grip pixel; t = p - R.S.a, one origin, one unit"
       ],
       "runtimeIntegrated": true,
@@ -5522,7 +5681,7 @@
           52.5
         ],
         "worldLengthBlocks": 1.71,
-        "sourceSpanPixels": 81.650820770975
+        "sourceSpanPixels": 81.65082
       },
       "derived": {
         "anchorLocalModelUnits": [
@@ -5530,7 +5689,7 @@
           -5.125,
           0.0
         ],
-        "uniformXYScale": 1.340341700997,
+        "uniformXYScale": 1.340341713653,
         "note": "a=(16*x/W-8, 8-16*y/H, 0) in centred model units; aBlock=a/16; s=worldLengthBlocks*W/sourceSpanPixels"
       },
       "states": {
@@ -5548,7 +5707,7 @@
         "policy": "the candidate display declares the left hand explicitly; it is not a horizontal flip of the texture"
       },
       "displaySource": {
-        "kind": "derived_candidate",
+        "kind": "derived_candidate+user_calibration",
         "reference": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
         "referenceImage": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
         "referenceAnchorPixels": [
@@ -5557,7 +5716,13 @@
         ],
         "measuredSpriteAxisDegrees": 45.0,
         "appliedAxisDegrees": 0.0,
-        "notes": []
+        "notes": [],
+        "calibratedContexts": [
+          "firstperson_lefthand",
+          "firstperson_righthand",
+          "thirdperson_lefthand",
+          "thirdperson_righthand"
+        ]
       },
       "display": {
         "thirdperson_righthand": {
@@ -5567,14 +5732,14 @@
             55.0
           ],
           "translation": [
-            -0.0,
-            8.239815,
-            -0.247594
+            0.0,
+            8.23982,
+            -0.24759
           ],
           "scale": [
-            1.340342,
-            1.340342,
-            1.340342
+            1.34034,
+            1.34034,
+            1.34034
           ]
         },
         "thirdperson_lefthand": {
@@ -5585,47 +5750,47 @@
           ],
           "translation": [
             0.0,
-            8.239815,
-            -0.247594
+            8.23982,
+            -0.24759
           ],
           "scale": [
-            1.340342,
-            1.340342,
-            1.340342
+            1.34034,
+            1.34034,
+            1.34034
           ]
         },
         "firstperson_righthand": {
           "rotation": [
-            12.498222,
-            -21.82771,
-            55.801681
+            12.498219999999947,
+            -21.827710000000025,
+            50.80168000000003
           ],
           "translation": [
-            -3.045469,
-            8.861525,
-            -6.264919
+            0.58365,
+            4.83602,
+            0.6898
           ],
           "scale": [
-            0.892566,
-            0.892566,
-            0.892566
+            0.80331,
+            0.80331,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            3.888924,
-            24.714903,
-            -34.234846
+            12.498219999999947,
+            -21.827710000000025,
+            -50.80168000000003
           ],
           "translation": [
-            -3.01712,
-            8.863362,
-            -6.265374
+            1.67635,
+            4.74131,
+            1.11709
           ],
           "scale": [
-            0.892132,
-            0.892132,
-            0.892132
+            0.80331,
+            0.80331,
+            0.68
           ]
         },
         "ground": {
@@ -5699,16 +5864,17 @@
         "inheritance": "fixed"
       },
       "displayBlocking": null,
-      "displayStatus": "candidate_not_game_verified",
+      "displayStatus": "calibrated_not_game_verified",
       "acceptance": {
-        "state": "pending_visual",
+        "state": "calibrated_pending_visual",
         "humanAccepted": false,
-        "displayStatus": "candidate_not_game_verified",
+        "displayStatus": "calibrated_not_game_verified",
         "note": "visual acceptance is a receipt; it never gates readiness and it never blocks a structurally complete candidate from rendering"
       },
       "fallback": "legacy_builtin_entity",
       "blockers": [],
       "notes": [
+        "user_calibration: firstperson_lefthand, firstperson_righthand, thirdperson_lefthand, thirdperson_righthand replaced from art\\equipment-2d\\full\\display-overrides.json; the derivation is kept as the recoverable baseline",
         "display source: derived candidate from the vanilla reference pose and the item's own grip pixel; t = p - R.S.a, one origin, one unit"
       ],
       "runtimeIntegrated": true,
@@ -5738,7 +5904,7 @@
           24.5
         ],
         "worldLengthBlocks": 0.216,
-        "sourceSpanPixels": 31.112698372208
+        "sourceSpanPixels": 31.1127
       },
       "derived": {
         "anchorLocalModelUnits": [
@@ -5746,7 +5912,7 @@
           -4.25,
           0.0
         ],
-        "uniformXYScale": 0.222160094162,
+        "uniformXYScale": 0.222160082539,
         "note": "a=(16*x/W-8, 8-16*y/H, 0) in centred model units; aBlock=a/16; s=worldLengthBlocks*W/sourceSpanPixels"
       },
       "states": {
@@ -5764,7 +5930,7 @@
         "policy": "the candidate display declares the left hand explicitly; it is not a horizontal flip of the texture"
       },
       "displaySource": {
-        "kind": "derived_candidate",
+        "kind": "derived_candidate+user_calibration",
         "reference": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
         "referenceImage": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
         "referenceAnchorPixels": [
@@ -5773,7 +5939,13 @@
         ],
         "measuredSpriteAxisDegrees": 45.0,
         "appliedAxisDegrees": 0.0,
-        "notes": []
+        "notes": [],
+        "calibratedContexts": [
+          "firstperson_lefthand",
+          "firstperson_righthand",
+          "thirdperson_lefthand",
+          "thirdperson_righthand"
+        ]
       },
       "display": {
         "thirdperson_righthand": {
@@ -5784,8 +5956,8 @@
           ],
           "translation": [
             0.0,
-            -0.103191,
-            1.143746
+            -0.10319,
+            1.14375
           ],
           "scale": [
             0.22216,
@@ -5800,9 +5972,9 @@
             -55.0
           ],
           "translation": [
-            -0.0,
-            -0.103191,
-            1.143746
+            0.0,
+            -0.10319,
+            1.14375
           ],
           "scale": [
             0.22216,
@@ -5812,36 +5984,36 @@
         },
         "firstperson_righthand": {
           "rotation": [
-            8.188385,
-            -23.702843,
-            44.695056
+            8.188380000000052,
+            -23.702839999999924,
+            44.69506000000001
           ],
           "translation": [
-            -1.984478,
-            3.783456,
-            -7.05255
+            1.07197,
+            0.73462,
+            -0.21738
           ],
           "scale": [
-            0.217717,
-            0.217717,
-            0.217717
+            0.19595,
+            0.19595,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            -0.944484,
-            24.983299,
-            -22.764694
+            8.188380000000052,
+            -23.702839999999924,
+            -44.69506000000001
           ],
           "translation": [
-            -2.277857,
-            3.731726,
-            -7.05255
+            1.18803,
+            0.72737,
+            -0.16695
           ],
           "scale": [
-            0.217717,
-            0.217717,
-            0.217717
+            0.19595,
+            0.19595,
+            0.68
           ]
         },
         "ground": {
@@ -5915,16 +6087,17 @@
         "inheritance": "fixed"
       },
       "displayBlocking": null,
-      "displayStatus": "candidate_not_game_verified",
+      "displayStatus": "calibrated_not_game_verified",
       "acceptance": {
-        "state": "pending_visual",
+        "state": "calibrated_pending_visual",
         "humanAccepted": false,
-        "displayStatus": "candidate_not_game_verified",
+        "displayStatus": "calibrated_not_game_verified",
         "note": "visual acceptance is a receipt; it never gates readiness and it never blocks a structurally complete candidate from rendering"
       },
       "fallback": "legacy_builtin_entity",
       "blockers": [],
       "notes": [
+        "user_calibration: firstperson_lefthand, firstperson_righthand, thirdperson_lefthand, thirdperson_righthand replaced from art\\equipment-2d\\full\\display-overrides.json; the derivation is kept as the recoverable baseline",
         "display source: derived candidate from the vanilla reference pose and the item's own grip pixel; t = p - R.S.a, one origin, one unit"
       ],
       "runtimeIntegrated": true,
@@ -6091,7 +6264,7 @@
         "policy": "the candidate display declares the left hand explicitly; it is not a horizontal flip of the texture"
       },
       "displaySource": {
-        "kind": "derived_candidate",
+        "kind": "derived_candidate+user_calibration",
         "reference": "minecraft:item/shield (builtin/entity: handle at the model origin, geometry around the origin); blocking pose from minecraft:item/shield_blocking",
         "referenceImage": null,
         "referenceAnchorPixels": [
@@ -6102,6 +6275,14 @@
         "appliedAxisDegrees": 0.0,
         "notes": [
           "grip at the declared reference point; the sprite is near-isotropic so no in-plane rotation is implied by the art"
+        ],
+        "calibratedContexts": [
+          "blocking:firstperson_lefthand",
+          "blocking:firstperson_righthand",
+          "firstperson_lefthand",
+          "firstperson_righthand",
+          "thirdperson_lefthand",
+          "thirdperson_righthand"
         ]
       },
       "display": {
@@ -6113,13 +6294,13 @@
           ],
           "translation": [
             2.0,
-            -1.742857,
-            4.257143
+            -1.74286,
+            4.25714
           ],
           "scale": [
-            1.028571,
-            1.028571,
-            1.028571
+            1.02857,
+            1.02857,
+            1.02857
           ]
         },
         "thirdperson_lefthand": {
@@ -6130,47 +6311,47 @@
           ],
           "translation": [
             2.0,
-            -1.742857,
-            3.742857
+            -1.74286,
+            3.74286
           ],
           "scale": [
-            1.028571,
-            1.028571,
-            1.028571
+            1.02857,
+            1.02857,
+            1.02857
           ]
         },
         "firstperson_righthand": {
           "rotation": [
             0.0,
-            180.0,
+            -180.0,
             5.0
           ],
           "translation": [
-            -0.631035,
-            -8.599752,
-            0.0
+            -0.63103,
+            1.51375,
+            -4.0
           ],
           "scale": [
-            1.028571,
-            1.028571,
-            1.028571
+            1.02857,
+            1.02857,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
             0.0,
-            180.0,
-            5.0
+            -180.0,
+            -5.0
           ],
           "translation": [
-            -1.067257,
-            -8.811814,
-            -0.0
+            -1.18818,
+            1.51375,
+            -4.0
           ],
           "scale": [
-            1.028571,
-            1.028571,
-            1.028571
+            1.02857,
+            1.02857,
+            0.68
           ]
         },
         "ground": {
@@ -6281,35 +6462,35 @@
         "firstperson_righthand": {
           "rotation": [
             0.0,
-            180.0,
+            -180.0,
             -5.0
           ],
           "translation": [
-            -3.932743,
-            -3.811814,
-            -1.0
+            -2.675852663899241,
+            4.5585731619965895,
+            -5.0
           ],
           "scale": [
             1.028571,
             1.028571,
-            1.028571
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
             0.0,
-            180.0,
+            -180.0,
             -5.0
           ],
           "translation": [
-            -4.368965,
-            -5.599752,
-            -1.0
+            -3.1881811523047032,
+            4.513750227259739,
+            -5.0
           ],
           "scale": [
             1.028571,
             1.028571,
-            1.028571
+            0.68
           ]
         },
         "ground": {
@@ -6365,11 +6546,11 @@
         },
         "inheritance": "fixed"
       },
-      "displayStatus": "candidate_not_game_verified",
+      "displayStatus": "calibrated_not_game_verified",
       "acceptance": {
-        "state": "pending_visual",
+        "state": "calibrated_pending_visual",
         "humanAccepted": false,
-        "displayStatus": "candidate_not_game_verified",
+        "displayStatus": "calibrated_not_game_verified",
         "note": "visual acceptance is a receipt; it never gates readiness and it never blocks a structurally complete candidate from rendering"
       },
       "fallback": "legacy_builtin_entity",
@@ -6377,6 +6558,7 @@
       "notes": [
         "blocking re-poses both faces of the same geometry; no new texture and no new defence resolution",
         "grip at the declared reference point; the sprite is near-isotropic so no in-plane rotation is implied by the art",
+        "user_calibration: blocking:firstperson_lefthand, blocking:firstperson_righthand, firstperson_lefthand, firstperson_righthand, thirdperson_lefthand, thirdperson_righthand replaced from art\\equipment-2d\\full\\display-overrides.json; the derivation is kept as the recoverable baseline",
         "display source: derived candidate from the vanilla reference pose and the item's own grip pixel; t = p - R.S.a, one origin, one unit"
       ],
       "runtimeIntegrated": true,
@@ -6549,7 +6731,7 @@
         "policy": "the candidate display declares the left hand explicitly; it is not a horizontal flip of the texture"
       },
       "displaySource": {
-        "kind": "derived_candidate",
+        "kind": "derived_candidate+user_calibration",
         "reference": "minecraft:item/shield (builtin/entity: handle at the model origin, geometry around the origin); blocking pose from minecraft:item/shield_blocking",
         "referenceImage": null,
         "referenceAnchorPixels": [
@@ -6560,6 +6742,14 @@
         "appliedAxisDegrees": 0.0,
         "notes": [
           "grip at the declared reference point; the sprite is near-isotropic so no in-plane rotation is implied by the art"
+        ],
+        "calibratedContexts": [
+          "blocking:firstperson_lefthand",
+          "blocking:firstperson_righthand",
+          "firstperson_lefthand",
+          "firstperson_righthand",
+          "thirdperson_lefthand",
+          "thirdperson_righthand"
         ]
       },
       "display": {
@@ -6600,35 +6790,35 @@
         "firstperson_righthand": {
           "rotation": [
             0.0,
-            180.0,
+            -180.0,
             5.0
           ],
           "translation": [
-            -0.753608,
-            -8.702603,
-            0.0
+            -0.75361,
+            1.4109,
+            -4.0
           ],
           "scale": [
             0.576,
             0.576,
-            0.576
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
             0.0,
-            180.0,
-            5.0
+            -180.0,
+            -5.0
           ],
           "translation": [
-            -0.964406,
-            -8.934387,
-            -0.0
+            -1.06561,
+            1.4109,
+            -4.0
           ],
           "scale": [
             0.576,
             0.576,
-            0.576
+            0.68
           ]
         },
         "ground": {
@@ -6739,35 +6929,35 @@
         "firstperson_righthand": {
           "rotation": [
             0.0,
-            180.0,
+            -180.0,
             -5.0
           ],
           "translation": [
-            -4.035594,
-            -3.934387,
-            -1.0
+            -2.7787108539113254,
+            4.436000853911326,
+            -5.0
           ],
           "scale": [
             0.576,
             0.576,
-            0.576
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
             0.0,
-            180.0,
+            -180.0,
             -5.0
           ],
           "translation": [
-            -4.246392,
-            -5.702603,
-            -1.0
+            -3.0656149269617483,
+            4.4109,
+            -5.0
           ],
           "scale": [
             0.576,
             0.576,
-            0.576
+            0.68
           ]
         },
         "ground": {
@@ -6823,11 +7013,11 @@
         },
         "inheritance": "fixed"
       },
-      "displayStatus": "candidate_not_game_verified",
+      "displayStatus": "calibrated_not_game_verified",
       "acceptance": {
-        "state": "pending_visual",
+        "state": "calibrated_pending_visual",
         "humanAccepted": false,
-        "displayStatus": "candidate_not_game_verified",
+        "displayStatus": "calibrated_not_game_verified",
         "note": "visual acceptance is a receipt; it never gates readiness and it never blocks a structurally complete candidate from rendering"
       },
       "fallback": "legacy_builtin_entity",
@@ -6835,6 +7025,7 @@
       "notes": [
         "blocking re-poses both faces of the same geometry; no new texture and no new defence resolution",
         "grip at the declared reference point; the sprite is near-isotropic so no in-plane rotation is implied by the art",
+        "user_calibration: blocking:firstperson_lefthand, blocking:firstperson_righthand, firstperson_lefthand, firstperson_righthand, thirdperson_lefthand, thirdperson_righthand replaced from art\\equipment-2d\\full\\display-overrides.json; the derivation is kept as the recoverable baseline",
         "display source: derived candidate from the vanilla reference pose and the item's own grip pixel; t = p - R.S.a, one origin, one unit"
       ],
       "runtimeIntegrated": true,
@@ -6967,7 +7158,7 @@
           46.5
         ],
         "worldLengthBlocks": 1.98,
-        "sourceSpanPixels": 77.138921583987
+        "sourceSpanPixels": 74.95332
       },
       "derived": {
         "anchorLocalModelUnits": [
@@ -6975,7 +7166,7 @@
           -3.625,
           0.0
         ],
-        "uniformXYScale": 1.642750474053,
+        "uniformXYScale": 1.690652261968,
         "note": "a=(16*x/W-8, 8-16*y/H, 0) in centred model units; aBlock=a/16; s=worldLengthBlocks*W/sourceSpanPixels"
       },
       "states": {
@@ -6993,135 +7184,141 @@
         "policy": "the candidate display declares the left hand explicitly; it is not a horizontal flip of the texture"
       },
       "displaySource": {
-        "kind": "derived_candidate",
+        "kind": "derived_candidate+user_calibration",
         "reference": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
         "referenceImage": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
         "referenceAnchorPixels": [
           3.5,
           12.5
         ],
-        "measuredSpriteAxisDegrees": 49.072,
-        "appliedAxisDegrees": -4.072,
-        "notes": []
+        "measuredSpriteAxisDegrees": 43.686,
+        "appliedAxisDegrees": 1.314,
+        "notes": [],
+        "calibratedContexts": [
+          "firstperson_lefthand",
+          "firstperson_righthand",
+          "thirdperson_lefthand",
+          "thirdperson_righthand"
+        ]
       },
       "display": {
         "thirdperson_righthand": {
           "rotation": [
             0.0,
             -90.0,
-            50.928
+            56.31399999999985
           ],
           "translation": [
             0.0,
-            8.324736,
-            1.604975
+            8.57833,
+            0.67666
           ],
           "scale": [
-            1.64275,
-            1.64275,
-            1.64275
+            1.69065,
+            1.69065,
+            1.69065
           ]
         },
         "thirdperson_lefthand": {
           "rotation": [
             0.0,
             90.0,
-            -50.928
+            -56.31399999999985
           ],
           "translation": [
-            -0.0,
-            8.324736,
-            1.604975
+            0.0,
+            8.57833,
+            0.67666
           ],
           "scale": [
-            1.64275,
-            1.64275,
-            1.64275
+            1.69065,
+            1.69065,
+            1.69065
           ]
         },
         "firstperson_righthand": {
           "rotation": [
-            15.722491,
-            -19.68906,
-            60.808562
+            15.722490000000107,
+            -19.689060000000154,
+            55.80855999999994
           ],
           "translation": [
-            -2.789374,
-            8.321858,
-            -5.90116
+            0.77612,
+            4.47835,
+            1.02299
           ],
           "scale": [
-            1.015953,
-            1.015953,
-            1.015953
+            0.94102,
+            0.94102,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            7.822858,
-            23.819614,
-            -39.715893
+            15.722490000000107,
+            -19.689060000000154,
+            -55.80855999999994
           ],
           "translation": [
-            -3.066232,
-            8.234615,
-            -5.909597
+            1.48388,
+            4.40972,
+            1.26678
           ],
           "scale": [
-            1.009353,
-            1.009353,
-            1.009353
+            0.94102,
+            0.94102,
+            0.68
           ]
         },
         "ground": {
           "rotation": [
             -0.0,
             0.0,
-            -4.072
+            1.314
           ],
           "translation": [
-            5.751404,
-            5.150424,
+            5.426671,
+            6.056311,
             0.0
           ],
           "scale": [
-            1.64275,
-            1.64275,
-            1.64275
+            1.690652,
+            1.690652,
+            1.690652
           ]
         },
         "fixed": {
           "rotation": [
             0.0,
             180.0,
-            -4.072
+            1.314
           ],
           "translation": [
-            -3.501404,
-            0.900424,
+            -3.176671,
+            1.806311,
             -0.0
           ],
           "scale": [
-            1.64275,
-            1.64275,
-            1.64275
+            1.690652,
+            1.690652,
+            1.690652
           ]
         },
         "head": {
           "rotation": [
             0.0,
             180.0,
-            -4.072
+            1.314
           ],
           "translation": [
-            -3.501404,
-            13.900424,
+            -3.176671,
+            14.806311,
             7.0
           ],
           "scale": [
-            1.64275,
-            1.64275,
-            1.64275
+            1.690652,
+            1.690652,
+            1.690652
           ]
         },
         "gui": {
@@ -7144,16 +7341,17 @@
         "inheritance": "fixed"
       },
       "displayBlocking": null,
-      "displayStatus": "candidate_not_game_verified",
+      "displayStatus": "calibrated_not_game_verified",
       "acceptance": {
-        "state": "pending_visual",
+        "state": "calibrated_pending_visual",
         "humanAccepted": false,
-        "displayStatus": "candidate_not_game_verified",
+        "displayStatus": "calibrated_not_game_verified",
         "note": "visual acceptance is a receipt; it never gates readiness and it never blocks a structurally complete candidate from rendering"
       },
       "fallback": "legacy_builtin_entity",
       "blockers": [],
       "notes": [
+        "user_calibration: firstperson_lefthand, firstperson_righthand, thirdperson_lefthand, thirdperson_righthand replaced from art\\equipment-2d\\full\\display-overrides.json; the derivation is kept as the recoverable baseline",
         "display source: derived candidate from the vanilla reference pose and the item's own grip pixel; t = p - R.S.a, one origin, one unit"
       ],
       "runtimeIntegrated": true,
@@ -7272,7 +7470,7 @@
         "policy": "the candidate display declares the left hand explicitly; it is not a horizontal flip of the texture"
       },
       "displaySource": {
-        "kind": "derived_candidate",
+        "kind": "derived_candidate+user_calibration",
         "reference": "minecraft:item/generated (icon centre is the grip)",
         "referenceImage": null,
         "referenceAnchorPixels": [
@@ -7283,41 +7481,47 @@
         "appliedAxisDegrees": 0.0,
         "notes": [
           "grip at the declared reference point; the sprite is near-isotropic so no in-plane rotation is implied by the art"
+        ],
+        "calibratedContexts": [
+          "firstperson_lefthand",
+          "firstperson_righthand",
+          "thirdperson_lefthand",
+          "thirdperson_righthand"
         ]
       },
       "display": {
         "thirdperson_righthand": {
           "rotation": [
-            -0.0,
+            90.0,
             0.0,
-            -0.0
+            0.0
           ],
           "translation": [
-            -0.107143,
-            2.678571,
-            1.0
+            -0.10714,
+            -2.0,
+            1.67857
           ],
           "scale": [
-            0.428571,
-            0.428571,
-            0.428571
+            0.42857,
+            0.42857,
+            0.42857
           ]
         },
         "thirdperson_lefthand": {
           "rotation": [
-            -0.0,
+            90.0,
             0.0,
-            -0.0
+            0.0
           ],
           "translation": [
-            0.107143,
-            2.678571,
-            1.0
+            0.10714,
+            -2.0,
+            1.67857
           ],
           "scale": [
-            0.428571,
-            0.428571,
-            0.428571
+            0.42857,
+            0.42857,
+            0.42857
           ]
         },
         "firstperson_righthand": {
@@ -7328,30 +7532,30 @@
           ],
           "translation": [
             1.13,
-            2.863406,
-            1.168737
+            2.86341,
+            1.16874
           ],
           "scale": [
-            0.428571,
-            0.428571,
-            0.428571
+            0.42857,
+            0.42857,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
             0.0,
             -90.0,
-            25.0
+            -25.0
           ],
           "translation": [
             1.13,
-            2.953967,
-            1.362946
+            2.86341,
+            1.09127
           ],
           "scale": [
-            0.428571,
-            0.428571,
-            0.428571
+            0.42857,
+            0.42857,
+            0.68
           ]
         },
         "ground": {
@@ -7425,17 +7629,18 @@
         "inheritance": "fixed"
       },
       "displayBlocking": null,
-      "displayStatus": "candidate_not_game_verified",
+      "displayStatus": "calibrated_not_game_verified",
       "acceptance": {
-        "state": "pending_visual",
+        "state": "calibrated_pending_visual",
         "humanAccepted": false,
-        "displayStatus": "candidate_not_game_verified",
+        "displayStatus": "calibrated_not_game_verified",
         "note": "visual acceptance is a receipt; it never gates readiness and it never blocks a structurally complete candidate from rendering"
       },
       "fallback": "legacy_builtin_entity",
       "blockers": [],
       "notes": [
         "grip at the declared reference point; the sprite is near-isotropic so no in-plane rotation is implied by the art",
+        "user_calibration: firstperson_lefthand, firstperson_righthand, thirdperson_lefthand, thirdperson_righthand replaced from art\\equipment-2d\\full\\display-overrides.json; the derivation is kept as the recoverable baseline",
         "display source: derived candidate from the vanilla reference pose and the item's own grip pixel; t = p - R.S.a, one origin, one unit"
       ],
       "runtimeIntegrated": true,
@@ -7568,7 +7773,7 @@
           16.5
         ],
         "worldLengthBlocks": 2.16,
-        "sourceSpanPixels": 38.131387903986
+        "sourceSpanPixels": 38.13139
       },
       "derived": {
         "anchorLocalModelUnits": [
@@ -7576,7 +7781,7 @@
           -0.25,
           0.0
         ],
-        "uniformXYScale": 1.812679889178,
+        "uniformXYScale": 1.812679789538,
         "note": "a=(16*x/W-8, 8-16*y/H, 0) in centred model units; aBlock=a/16; s=worldLengthBlocks*W/sourceSpanPixels"
       },
       "states": {
@@ -7594,28 +7799,34 @@
         "policy": "the candidate display declares the left hand explicitly; it is not a horizontal flip of the texture"
       },
       "displaySource": {
-        "kind": "derived_candidate",
+        "kind": "derived_candidate+user_calibration",
         "reference": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
         "referenceImage": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
         "referenceAnchorPixels": [
           3.5,
           12.5
         ],
-        "measuredSpriteAxisDegrees": 45.0,
-        "appliedAxisDegrees": 0.0,
-        "notes": []
+        "measuredSpriteAxisDegrees": 45.018,
+        "appliedAxisDegrees": -0.018,
+        "notes": [],
+        "calibratedContexts": [
+          "firstperson_lefthand",
+          "firstperson_righthand",
+          "thirdperson_lefthand",
+          "thirdperson_righthand"
+        ]
       },
       "display": {
         "thirdperson_righthand": {
           "rotation": [
             0.0,
             -90.0,
-            55.0
+            54.98199999999997
           ],
           "translation": [
             0.0,
-            -1.438474,
-            0.808184
+            -1.43828,
+            0.80815
           ],
           "scale": [
             1.81268,
@@ -7627,12 +7838,12 @@
           "rotation": [
             0.0,
             90.0,
-            -55.0
+            -54.98199999999997
           ],
           "translation": [
-            -0.0,
-            -1.438474,
-            0.808184
+            0.0,
+            -1.43828,
+            0.80815
           ],
           "scale": [
             1.81268,
@@ -7642,47 +7853,47 @@
         },
         "firstperson_righthand": {
           "rotation": [
-            -12.732102,
-            21.696591,
-            -123.567502
+            -12.732100000000173,
+            21.696590000000015,
+            -123.56750000000011
           ],
           "translation": [
-            -1.636506,
-            7.715324,
-            -7.323621
+            1.38514,
+            0.36528,
+            -0.46135
           ],
           "scale": [
-            0.880448,
-            0.880448,
-            0.880448
+            0.7924,
+            0.7924,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            -4.164298,
-            -24.672746,
-            145.106006
+            -12.732100000000173,
+            21.696590000000015,
+            123.56750000000011
           ],
           "translation": [
-            -2.192917,
-            7.617507,
-            -7.321153
+            0.87486,
+            0.41002,
+            -0.26331
           ],
           "scale": [
-            0.862866,
-            0.862866,
-            0.862866
+            0.7924,
+            0.7924,
+            0.68
           ]
         },
         "ground": {
           "rotation": [
             -0.0,
             0.0,
-            -0.0
+            -0.018
           ],
           "translation": [
-            -2.70317,
-            0.20317,
+            -2.703028,
+            0.203312,
             0.0
           ],
           "scale": [
@@ -7695,11 +7906,11 @@
           "rotation": [
             0.0,
             180.0,
-            0.0
+            -0.018
           ],
           "translation": [
-            4.95317,
-            -4.04683,
+            4.953028,
+            -4.046688,
             0.0
           ],
           "scale": [
@@ -7712,11 +7923,11 @@
           "rotation": [
             0.0,
             180.0,
-            0.0
+            -0.018
           ],
           "translation": [
-            4.95317,
-            8.95317,
+            4.953028,
+            8.953312,
             7.0
           ],
           "scale": [
@@ -7745,16 +7956,17 @@
         "inheritance": "fixed"
       },
       "displayBlocking": null,
-      "displayStatus": "candidate_not_game_verified",
+      "displayStatus": "calibrated_not_game_verified",
       "acceptance": {
-        "state": "pending_visual",
+        "state": "calibrated_pending_visual",
         "humanAccepted": false,
-        "displayStatus": "candidate_not_game_verified",
+        "displayStatus": "calibrated_not_game_verified",
         "note": "visual acceptance is a receipt; it never gates readiness and it never blocks a structurally complete candidate from rendering"
       },
       "fallback": "legacy_builtin_entity",
       "blockers": [],
       "notes": [
+        "user_calibration: firstperson_lefthand, firstperson_righthand, thirdperson_lefthand, thirdperson_righthand replaced from art\\equipment-2d\\full\\display-overrides.json; the derivation is kept as the recoverable baseline",
         "display source: derived candidate from the vanilla reference pose and the item's own grip pixel; t = p - R.S.a, one origin, one unit"
       ],
       "runtimeIntegrated": true,
@@ -7784,7 +7996,7 @@
           27.5
         ],
         "worldLengthBlocks": 2.736,
-        "sourceSpanPixels": 27.782901486849
+        "sourceSpanPixels": 27.7829
       },
       "derived": {
         "anchorLocalModelUnits": [
@@ -7792,7 +8004,7 @@
           -5.75,
           0.0
         ],
-        "uniformXYScale": 3.151290733311,
+        "uniformXYScale": 3.151290901958,
         "note": "a=(16*x/W-8, 8-16*y/H, 0) in centred model units; aBlock=a/16; s=worldLengthBlocks*W/sourceSpanPixels"
       },
       "states": {
@@ -7810,95 +8022,101 @@
         "policy": "the candidate display declares the left hand explicitly; it is not a horizontal flip of the texture"
       },
       "displaySource": {
-        "kind": "derived_candidate",
+        "kind": "derived_candidate+user_calibration",
         "reference": "minecraft:item/handheld with minecraft:item/generated for gui/ground/fixed/head",
         "referenceImage": "art/equipment-reuse/research-only-full/minecraft_item_iron_sword.png",
         "referenceAnchorPixels": [
           3.5,
           12.5
         ],
-        "measuredSpriteAxisDegrees": 24.563,
-        "appliedAxisDegrees": 20.437,
-        "notes": []
+        "measuredSpriteAxisDegrees": 25.432,
+        "appliedAxisDegrees": 19.568,
+        "notes": [],
+        "calibratedContexts": [
+          "firstperson_lefthand",
+          "firstperson_righthand",
+          "thirdperson_lefthand",
+          "thirdperson_righthand"
+        ]
       },
       "display": {
         "thirdperson_righthand": {
           "rotation": [
             0.0,
             -90.0,
-            75.437
+            74.56800000000021
           ],
           "translation": [
-            -0.0,
-            10.091568,
-            -14.315591
+            0.0,
+            10.3292,
+            -14.1406
           ],
           "scale": [
-            3.151291,
-            3.151291,
-            3.151291
+            3.15129,
+            3.15129,
+            3.15129
           ]
         },
         "thirdperson_lefthand": {
           "rotation": [
             0.0,
             90.0,
-            -75.437
+            -74.56800000000021
           ],
           "translation": [
             0.0,
-            10.091568,
-            -14.315591
+            10.3292,
+            -14.1406
           ],
           "scale": [
-            3.151291,
-            3.151291,
-            3.151291
+            3.15129,
+            3.15129,
+            3.15129
           ]
         },
         "firstperson_righthand": {
           "rotation": [
-            -4.747744,
-            -24.573541,
-            34.142729
+            -4.747739999999794,
+            -24.573539999999866,
+            29.14273000000003
           ],
           "translation": [
-            -3.658819,
-            10.899914,
-            -8.690523
+            0.17271,
+            6.7831,
+            -1.42468
           ],
           "scale": [
-            1.400696,
-            1.400696,
-            1.400696
+            1.26063,
+            1.26063,
+            0.68
           ]
         },
         "firstperson_lefthand": {
           "rotation": [
-            -13.223558,
-            21.409841,
-            -12.666774
+            -4.747739999999794,
+            -24.573539999999866,
+            -29.14273000000003
           ],
           "translation": [
-            -3.128163,
-            10.92039,
-            -8.677923
+            2.08729,
+            6.85557,
+            -0.55218
           ],
           "scale": [
-            1.388855,
-            1.388855,
-            1.388855
+            1.26063,
+            1.26063,
+            0.68
           ]
         },
         "ground": {
           "rotation": [
             -0.0,
             0.0,
-            20.437
+            19.568
           ],
           "translation": [
-            -1.932954,
-            19.205202,
+            -1.637926,
+            19.198157,
             0.0
           ],
           "scale": [
@@ -7911,11 +8129,11 @@
           "rotation": [
             0.0,
             180.0,
-            20.437
+            19.568
           ],
           "translation": [
-            4.182954,
-            14.955202,
+            3.887926,
+            14.948157,
             0.0
           ],
           "scale": [
@@ -7928,11 +8146,11 @@
           "rotation": [
             0.0,
             180.0,
-            20.437
+            19.568
           ],
           "translation": [
-            4.182954,
-            27.955202,
+            3.887926,
+            27.948157,
             7.0
           ],
           "scale": [
@@ -7961,16 +8179,17 @@
         "inheritance": "fixed"
       },
       "displayBlocking": null,
-      "displayStatus": "candidate_not_game_verified",
+      "displayStatus": "calibrated_not_game_verified",
       "acceptance": {
-        "state": "pending_visual",
+        "state": "calibrated_pending_visual",
         "humanAccepted": false,
-        "displayStatus": "candidate_not_game_verified",
+        "displayStatus": "calibrated_not_game_verified",
         "note": "visual acceptance is a receipt; it never gates readiness and it never blocks a structurally complete candidate from rendering"
       },
       "fallback": "legacy_builtin_entity",
       "blockers": [],
       "notes": [
+        "user_calibration: firstperson_lefthand, firstperson_righthand, thirdperson_lefthand, thirdperson_righthand replaced from art\\equipment-2d\\full\\display-overrides.json; the derivation is kept as the recoverable baseline",
         "display source: derived candidate from the vanilla reference pose and the item's own grip pixel; t = p - R.S.a, one origin, one unit"
       ],
       "runtimeIntegrated": true,
@@ -8858,10 +9077,11 @@
   ],
   "externalProviderStatus": "pending: adapter implemented with runtime capability detection, but the provider package is still installed=null and runtimeRegistryVerified=false",
   "firstPersonPresentation": {
-    "date": "2026-10-18",
-    "status": "projection_checked_runtime_pending",
-    "tool": "tools/equipment2d/calibrate-first-person.py",
-    "scope": "own weapons, first-person only; no world/third-person/GUI/artwork change",
-    "humanAccepted": false
+    "date": "2026-10-21",
+    "status": "native_blockbench_checked_game_pending",
+    "source": "art/equipment-2d/blockbench-holds-20261021",
+    "humanAccepted": false,
+    "runtimeAccepted": false,
+    "policy": "Native Display exports; per-item grip; arm-mounted claw/fist; no automatic game launch"
   }
 }

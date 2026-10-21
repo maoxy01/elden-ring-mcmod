@@ -29,6 +29,18 @@ public final class CombatState {
     /** 最近一次消耗精力的 tick（用于恢复延迟） */
     public long lastStaminaUseTick = Long.MIN_VALUE;
     public float stamina;
+    private float bonusMaxStamina;
+
+    public float maxStamina(CombatConfig config) {
+        return config.stamina.max + bonusMaxStamina;
+    }
+
+    /** Capacity changes never refill stamina. */
+    public void setBonusMaxStamina(float bonus, CombatConfig config) {
+        ensureInit(config);
+        bonusMaxStamina = Float.isFinite(bonus) ? Math.clamp(bonus, 0, 10000) : 0;
+        stamina = Math.min(stamina, maxStamina(config));
+    }
 
     /** 战斗模式开关（关闭后回到原版挖掘模式） */
     public boolean combatMode;
@@ -71,7 +83,7 @@ public final class CombatState {
     }
 
     public void initFrom(CombatConfig config) {
-        this.stamina = config.stamina.max;
+        this.stamina = maxStamina(config);
         this.potionCharges = config.drink.charges;
     }
 
@@ -80,7 +92,7 @@ public final class CombatState {
      * （{@link #reset} 会清守卫/连击/动作，休息不该顺手清掉这些）。
      */
     public void refillStamina(CombatConfig config) {
-        this.stamina = config.stamina.max;
+        this.stamina = maxStamina(config);
     }
 
     /** 赐福休息类恢复：只把药瓶补满（现有权威字段 {@link #potionCharges}）。 */
@@ -108,7 +120,7 @@ public final class CombatState {
         actionWeapon = WeaponClass.NONE;
         actionItem = "";
         guardImpactTick = Long.MIN_VALUE;
-        stamina = config.stamina.max;
+        stamina = maxStamina(config);
         potionCharges = config.drink.charges;
     }
 
@@ -205,14 +217,20 @@ public final class CombatState {
      * @param regenMultiplier 护符/药物等来源的恢复速率倍率（1 = 无加成）
      */
     public void tickStamina(CombatConfig config, long now, boolean guardingNow, float regenMultiplier) {
+        tickStamina(config, now, guardingNow, regenMultiplier, 0);
+    }
+
+    public void tickStamina(CombatConfig config, long now, boolean guardingNow, float regenMultiplier,
+                            float flatRegenPerSecond) {
         if (lastStaminaUseTick != Long.MIN_VALUE && now - lastStaminaUseTick < config.stamina.regenDelayTicks) {
             return;
         }
         float multiplier = Float.isFinite(regenMultiplier) ? Math.max(0.1f, regenMultiplier) : 1f;
-        float rate = config.stamina.regenPerTick * multiplier
+        float flat = Float.isFinite(flatRegenPerSecond) ? Math.max(0, flatRegenPerSecond) / 20f : 0;
+        float rate = (config.stamina.regenPerTick * multiplier + flat)
                 * (guardingNow ? config.stamina.guardRegenMultiplier : 1f);
-        if (stamina < config.stamina.max) {
-            stamina = Math.min(config.stamina.max, stamina + rate);
+        if (stamina < maxStamina(config)) {
+            stamina = Math.min(maxStamina(config), stamina + rate);
         }
     }
 

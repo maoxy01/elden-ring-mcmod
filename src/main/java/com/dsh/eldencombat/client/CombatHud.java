@@ -1,127 +1,125 @@
 package com.dsh.eldencombat.client;
 
 import com.dsh.eldencombat.EldenCombat;
-import com.dsh.eldencombat.entity.MargitEntity;
+import com.mojang.blaze3d.systems.RenderSystem;
+import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.RenderGuiEvent;
+import net.neoforged.neoforge.client.event.RenderGuiLayerEvent;
+import net.neoforged.neoforge.client.gui.VanillaGuiLayers;
 
-/**
- * 战斗 HUD：HP / 精力 / FP（蓝条）/ 药瓶 / 当前动作。
- *
- * <p>同样必须挂在游戏事件总线上（{@code RenderGuiEvent.Post} 是 GAME 总线事件）。
- * FP 只读 {@link ClientSkills} 的客户端镜像——那是服务端同步下来的展示值，
- * 客户端不参与任何 FP 结算，也不存在"蓝条自己涨"的充能机制。
- */
+/** Native stats and boss bars stay in place; combat replaces only the XP display. */
 @EventBusSubscriber(modid = EldenCombat.MODID, value = Dist.CLIENT)
 public final class CombatHud {
+    private static final ResourceLocation STAMINA_BACKGROUND = sprite("experience_bar_background");
+    private static final ResourceLocation STAMINA_PROGRESS = sprite("experience_bar_progress");
+    private static final ResourceLocation JUMP_BACKGROUND = sprite("jump_bar_background");
+    private static final ResourceLocation JUMP_PROGRESS = sprite("jump_bar_progress");
+    private static final ResourceLocation JUMP_COOLDOWN = sprite("jump_bar_cooldown");
 
-    private static final int BAR_WIDTH = 150;
-    private static final int BAR_HEIGHT = 6;
-    /** 精力条与 FP 条的颜色（HP 条沿用旧色） */
-    private static final int STAMINA_COLOR = 0xFF7FB069;
-    private static final int FP_COLOR = 0xFF3F7FD0;
-    /** 失衡条：常态金色，崩解期红/亮黄交替爆闪 */
-    private static final int POISE_COLOR = 0xFFC9A227;
-    private static final int BROKEN_COLOR = 0xFFFF3B30;
-    private static final int BROKEN_FLASH_COLOR = 0xFFFFF1A8;
-    /** 失衡条只在 Boss 处于这个距离内时显示 */
-    private static final double POISE_BAR_RANGE = 32.0;
+    private CombatHud() {}
 
-    private CombatHud() {
+    private static ResourceLocation sprite(String name) {
+        return ResourceLocation.withDefaultNamespace("hud/" + name);
+    }
+
+    private static boolean visible(Minecraft mc) {
+        return mc.player != null && mc.level != null && !mc.options.hideGui && !mc.player.isSpectator();
+    }
+
+    private static boolean combat(Minecraft mc) {
+        return visible(mc) && mc.player.isAlive() && ClientCombat.combatMode();
+    }
+
+    @SubscribeEvent
+    public static void onLayer(RenderGuiLayerEvent.Pre event) {
+        Minecraft mc = Minecraft.getInstance();
+        if (!combat(mc)) return;
+        var layer = event.getName();
+        if (VanillaGuiLayers.EXPERIENCE_BAR.equals(layer)) {
+            event.setCanceled(true);
+            // Reserve another row for mounted jump charge, leaving the stamina slot fixed.
+            if (mc.player.jumpableVehicle() != null) {
+                mc.gui.leftHeight += 8;
+                mc.gui.rightHeight += 8;
+            }
+        } else if (VanillaGuiLayers.SELECTED_ITEM_NAME.equals(layer)) {
+            // Keep the native tooltip, font and timer; lift its own layer above the FP label.
+            event.setCanceled(true);
+            var graphics = event.getGuiGraphics();
+            var layout = CombatHudLayout.at(graphics.guiWidth(), graphics.guiHeight(), mc.gui.leftHeight, mc.gui.rightHeight);
+            int nativeY = graphics.guiHeight() - Math.max(59, Math.max(mc.gui.leftHeight, mc.gui.rightHeight) + 9);
+            if (!mc.gameMode.canHurtPlayer()) nativeY += 14;
+            graphics.pose().pushPose();
+            try {
+                graphics.pose().translate(0, -layout.selectedItemLift(nativeY, mc.font.lineHeight), 0);
+                event.getLayer().render(graphics, event.getPartialTick());
+            } finally {
+                graphics.pose().popPose();
+            }
+        } else if (VanillaGuiLayers.EXPERIENCE_LEVEL.equals(layer)
+                || VanillaGuiLayers.JUMP_METER.equals(layer)) {
+            event.setCanceled(true);
+        }
     }
 
     @SubscribeEvent
     public static void onRender(RenderGuiEvent.Post event) {
-        Minecraft minecraft = Minecraft.getInstance();
-        if (minecraft.player == null || minecraft.options.hideGui || !ClientCombat.combatMode()) {
-            return;
-        }
+        Minecraft mc = Minecraft.getInstance();
+        if (!visible(mc)) return;
         GuiGraphics graphics = event.getGuiGraphics();
-        int centerX = graphics.guiWidth() / 2;
-        int x = centerX - BAR_WIDTH / 2;
-        int y = graphics.guiHeight() - 110;
-        PresentationRoutes.drawIcon(graphics,"fp",x-18,y+2*(BAR_HEIGHT+3)-5);
+        drawMapEntry(mc, graphics);
+        if (!combat(mc)) return;
 
-        float health = minecraft.player.getHealth() / Math.max(1.0f, minecraft.player.getMaxHealth());
-        drawBar(graphics, x, y, health, 0xFFC0392B);
-
-        float stamina = ClientCombat.maxStamina() <= 0 ? 0 : ClientCombat.stamina() / ClientCombat.maxStamina();
-        drawBar(graphics, x, y + BAR_HEIGHT + 3, stamina, STAMINA_COLOR);
-
-        // FP（蓝条）：阈值来自服务端同步，单人 -PmanualSkills 下服务端就是"永远满"的状态
-        drawBar(graphics, x, y + 2 * (BAR_HEIGHT + 3), ClientSkills.ratio(), FP_COLOR);
-        graphics.drawString(minecraft.font,
-                Component.literal(String.format("FP %.0f/%.0f", ClientSkills.fp(), ClientSkills.maxFp())),
-                x + BAR_WIDTH + 4, y + 2 * (BAR_HEIGHT + 3) - 2, 0xFF9FC3F0, true);
-
-        graphics.drawString(minecraft.font, Component.literal("药瓶 " + ClientCombat.potionCharges()),
-                x, y + 3 * (BAR_HEIGHT + 3) + 2, 0xFFE8E8E8, true);
-
-        // 失衡条（§6 削韧 payoff）：只读 Boss 实体同步下来的 DATA_STAGGER / DATA_BROKEN，
-        // 客户端不参与失衡结算。崩解窗口内整条爆闪，玩家才知道"现在该全力输出"。
-        MargitEntity boss = nearestBoss(minecraft);
-        if (boss != null) {
-            int poiseY = y + 4 * (BAR_HEIGHT + 3) + 6;
-            float ratio = boss.staggerValue() / Math.max(1f, boss.poiseMax());
-            boolean broken = boss.isBroken();
-            long time = minecraft.level == null ? 0 : minecraft.level.getGameTime();
-            int color = broken ? ((time / 4) % 2 == 0 ? BROKEN_COLOR : BROKEN_FLASH_COLOR) : POISE_COLOR;
-            drawBar(graphics, x, poiseY, broken ? 1f : ratio, color);
-            graphics.drawString(minecraft.font,
-                    Component.literal(broken ? "崩解 +50%" : String.format("失衡 %.0f%%", Math.max(0f, ratio) * 100f)),
-                    x + BAR_WIDTH + 4, poiseY - 2, broken ? BROKEN_COLOR : 0xFFC9A227, true);
+        var layout = CombatHudLayout.at(graphics.guiWidth(), graphics.guiHeight(), mc.gui.leftHeight, mc.gui.rightHeight);
+        drawNativeBar(graphics, STAMINA_BACKGROUND, STAMINA_PROGRESS, layout.staminaX(), layout.staminaY(),
+                CombatHudLayout.filled(ClientCombat.stamina(), ClientCombat.maxStamina(), CombatHudLayout.STAMINA_WIDTH));
+        var vehicle = mc.player.jumpableVehicle();
+        if (vehicle != null) {
+            drawNativeBar(graphics, JUMP_BACKGROUND, vehicle.getJumpCooldown() > 0 ? JUMP_COOLDOWN : JUMP_PROGRESS,
+                    layout.staminaX(), layout.jumpY(), vehicle.getJumpCooldown() > 0 ? CombatHudLayout.STAMINA_WIDTH
+                            : CombatHudLayout.filled(mc.player.getJumpRidingScale(), 1, CombatHudLayout.STAMINA_WIDTH));
         }
 
-        String action = ClientCombat.actionId();
-        int sequence = ClientCombat.actionSequence();
-        long tick = (minecraft.level == null ? 0 : minecraft.level.getGameTime()) - ClientCombat.actionStartTick();
-        String lock = ClientCombat.lockedId() >= 0 ? ("锁定 #" + ClientCombat.lockedId()) : "未锁定";
-        graphics.drawString(minecraft.font,
-                Component.literal(action + " #" + sequence + " +" + Math.max(0, tick) + "t  " + lock),
-                x, y - 11, 0xFFD0D0D0, true);
+        int x = layout.fpX(), y = layout.fpY();
+        graphics.fill(x - 1, y - 1, x + CombatHudLayout.FP_WIDTH + 1, y + CombatHudLayout.FP_HEIGHT + 1, 0xC0000000);
+        graphics.fill(x, y, x + CombatHudLayout.FP_WIDTH, y + CombatHudLayout.FP_HEIGHT, 0xFF17253A);
+        int filled = CombatHudLayout.filled(ClientSkills.fp(), ClientSkills.maxFp(), CombatHudLayout.FP_WIDTH);
+        if (filled > 0) graphics.fill(x, y, x + filled, y + CombatHudLayout.FP_HEIGHT, 0xFF3F7FD0);
+        graphics.drawString(mc.font, Component.translatable("hud.eldencombat.fp", Math.round(ClientSkills.fp()),
+                Math.round(ClientSkills.maxFp())), x, y - 10, 0xFF9FC3F0, true);
+    }
 
-        // 施放中的战技（阶段 + 段数）：客户端镜像，用于确认"按键真的被服务端受理了"
-        if (ClientSkills.casting()) {
-            graphics.drawString(minecraft.font,
-                    Component.literal("战技 " + ClientSkills.activeSkillId() + " 段" + ClientSkills.stageIndex()),
-                    x, y - 22, 0xFFFFD98A, true);
-        } else if (!ClientSkills.lastSkillId().isEmpty()) {
-            graphics.drawString(minecraft.font,
-                    Component.literal("上次战技 " + ClientSkills.lastSkillId()),
-                    x, y - 22, 0xFFBFBFBF, true);
+    private static void drawNativeBar(GuiGraphics graphics, ResourceLocation background, ResourceLocation progress,
+                                      int x, int y, int filled) {
+        RenderSystem.enableBlend();
+        try {
+            graphics.blitSprite(background, x, y, CombatHudLayout.STAMINA_WIDTH, CombatHudLayout.STAMINA_HEIGHT);
+            if (filled > 0) graphics.blitSprite(progress, CombatHudLayout.STAMINA_WIDTH, CombatHudLayout.STAMINA_HEIGHT,
+                    0, 0, x, y, filled, CombatHudLayout.STAMINA_HEIGHT);
+        } finally {
+            RenderSystem.disableBlend();
         }
     }
 
-    /** 最近的 Boss（在 {@link #POISE_BAR_RANGE} 内）；没有就不画失衡条。 */
-    private static MargitEntity nearestBoss(Minecraft minecraft) {
-        if (minecraft.level == null || minecraft.player == null) {
-            return null;
+    private static void drawMapEntry(Minecraft mc, GuiGraphics graphics) {
+        KeyMapping mapKey = null;
+        for (var mapping : mc.options.keyMappings) {
+            if (mapping.getName().equals("key.journeymap.map_toggle_alt")) { mapKey = mapping; break; }
         }
-        MargitEntity nearest = null;
-        double best = POISE_BAR_RANGE;
-        for (MargitEntity boss : minecraft.level.getEntitiesOfClass(MargitEntity.class,
-                minecraft.player.getBoundingBox().inflate(POISE_BAR_RANGE))) {
-            double distance = boss.distanceTo(minecraft.player);
-            if (distance <= best) {
-                best = distance;
-                nearest = boss;
-            }
-        }
-        return nearest;
-    }
-
-    private static void drawBar(GuiGraphics graphics, int x, int y, float ratio, int color) {
-        float clamped = Math.max(0f, Math.min(1f, ratio));
-        graphics.fill(x - 1, y - 1, x + BAR_WIDTH + 1, y + BAR_HEIGHT + 1, 0xC0000000);
-        graphics.fill(x, y, x + BAR_WIDTH, y + BAR_HEIGHT, 0xFF2A2A2A);
-        int filled = (int) (BAR_WIDTH * clamped);
-        if (filled > 0) {
-            graphics.fill(x, y, x + filled, y + BAR_HEIGHT, color);
-        }
+        Component hint = mapKey == null ? Component.translatable("hud.eldencombat.map_unavailable")
+                : mapKey.isUnbound() ? Component.translatable("hud.eldencombat.map_unbound")
+                : Component.translatable("hud.eldencombat.map_key", mapKey.getTranslatedKeyMessage());
+        Component title = Component.translatable("hud.eldencombat.grace_map");
+        int width = Math.max(60, Math.max(mc.font.width(title), mc.font.width(hint)) + 12);
+        graphics.fill(6, 6, 6 + width, 34, 0x80000000);
+        graphics.drawString(mc.font, title, 12, 10, 0xFFE2CD91, true);
+        graphics.drawString(mc.font, hint, 12, 22, mapKey == null ? 0xFF999999 : 0xFFE8E8E8, true);
     }
 }

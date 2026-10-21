@@ -1,0 +1,1 @@
+({animationAdd:Animation.prototype.add.toString().slice(0,1300),animationGet:Animation.prototype.getBoneAnimator.toString().slice(0,1500),keyframe:BoneAnimator.prototype.addKeyframe.toString().slice(0,2000),textureEdit:Texture.prototype.edit.toString().slice(0,800),groupFeatures:Object.keys(Group.properties),mode:Modes.selected?.id})

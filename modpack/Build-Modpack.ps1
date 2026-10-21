@@ -41,7 +41,7 @@ try {
         !$toml.Contains('versionRange = "[1.21.1,1.21.2)"')) { throw 'Unexpected JAR dependencies' }
     if(@($zip.Entries|Where-Object FullName -Match 'Harness').Count) { throw 'Test harness leaked into release' }
     $mixins=(Read-Entry $zip 'eldencombat.mixins.json')|ConvertFrom-Json
-    $expectedClient=@('PlayerModelPoseMixin','JourneyMapSizeMixin','ItemRendererEquipment2dMixin','CombatRollManagerMixin')
+    $expectedClient=@('PlayerModelPoseMixin','JourneyMapSizeMixin','ItemRendererEquipment2dMixin','CombatRollManagerMixin','ItemInHandWornMixin','PlayerRendererWornMixin')
     if(($mixins.client -join ',') -ne ($expectedClient -join ',') -or ($mixins.mixins -join ',') -ne 'CombatRollServerMixin') { throw 'Unexpected mixin set' }
     foreach($mixin in @($mixins.client)+@($mixins.mixins)) {
         if(!$zip.GetEntry("com/dsh/eldencombat/mixin/$mixin.class")){throw "Missing mixin class $mixin"}
@@ -107,7 +107,7 @@ $receipt=[ordered]@{name=$metadata.name;version=$version;minecraft=$lock.minecra
 $payload=[ordered]@{}
 $payload['modrinth.index.json']=$utf8.GetBytes(($metadata|ConvertTo-Json -Depth 12)+"`n")
 $payload["overrides/mods/$jarName"]=[IO.File]::ReadAllBytes($jar)
-foreach($relative in @('config/eldencombat-combat.json','config/combat_roll/server.json5')) {
+foreach($relative in @('config/eldencombat-combat.json','config/eldencombat-grace.json','config/combat_roll/server.json5')) {
     if($relative.Contains('combat_roll') -and 'combat_roll' -notin $modIds){continue}
     $payload["overrides/$relative"]=[IO.File]::ReadAllBytes((Join-Path $PSScriptRoot "overrides/$relative"))
 }

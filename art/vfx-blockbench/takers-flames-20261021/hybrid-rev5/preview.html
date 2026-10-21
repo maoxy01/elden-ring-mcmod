@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>亵渎 · 掠夺火焰 rev5（纯粒子）</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,"Microsoft YaHei",sans-serif;background:#141614;color:#e7ece7}
+body{margin:0}header{padding:16px 22px;border-bottom:1px solid #2b302b}
+h1{font-size:19px;margin:0 0 4px}p{margin:0;font-size:13px;color:#9aa79a}
+main{max-width:1180px;margin:auto;padding:18px}nav{display:flex;gap:10px;align-items:center;margin-bottom:12px}
+button,select,input{font:inherit;color:inherit;background:#1d211d;border:1px solid #3a423a;border-radius:4px;height:36px}
+button{padding:0 14px;cursor:pointer}select,input[type=range]{flex:1;min-width:80px}
+.stage{background:#0d0f0d;border:1px solid #2b302b;aspect-ratio:1280/800}
+.stage img{width:100%;height:100%;object-fit:contain;image-rendering:pixelated}
+footer{padding:14px 22px;border-top:1px solid #2b302b;font-size:12px;color:#8b978b}
+code{background:#1d211d;padding:1px 5px;border-radius:3px}
+</style></head>
+<body>
+<header><h1>亵渎 · 掠夺火焰 · rev5</h1><p>纯粒子候选：无地面贴图、无岩浆面，只剩末端两个柱体盒</p></header>
+<main>
+<nav>
+  <button id="play">播放</button>
+  <select id="view"><option value="oblique">斜侧</option><option value="ahead">正面</option></select>
+  <input id="frame" type="range" min="0" max="15" value="7" step="1">
+  <output id="counter">08 / 16</output>
+</nav>
+<div class="stage"><img id="img" src="qa/oblique-07.png" alt="rev5 纯粒子预览"></div>
+</main>
+<footer>
+16 帧对应 1.6s 审查循环。截图须把时间轴按 0.01s 步进让粒子累积，跳帧截不到粒子。
+粒子 JSON 在 <code>particles/</code>，是 Snowstorm/Bedrock 格式，仅作授权参考，Java 侧需重新映射到原版粒子。
+</footer>
+<script>
+const v=document.getElementById('view'),f=document.getElementById('frame'),img=document.getElementById('img'),c=document.getElementById('counter'),p=document.getElementById('play');
+let playing=false,timer=null;
+function draw(){const n=String(f.value).padStart(2,'0');img.src='qa/'+v.value+'-'+n+'.png';c.value=String(Number(f.value)+1).padStart(2,'0')+' / 16';}
+v.onchange=draw;f.oninput=draw;
+p.onclick=()=>{playing=!playing;p.textContent=playing?'暂停':'播放';if(playing){timer=setInterval(()=>{f.value=(Number(f.value)+1)%16;draw();},100);}else{clearInterval(timer);}};
+draw();
+</script></body></html>

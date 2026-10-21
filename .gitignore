@@ -47,3 +47,22 @@ art/.taste-skill/
 art/equipment-reuse/research-only-full/
 # Keep project previews, QA, selection snapshots and research receipts in Git.
 # Raw extracted game archives and third-party binaries remain local.
+
+# Recoverable local backups; keep dated authoring projects and QA in Git.
+**/backup/
+**/_backup_*/
+*.v1-backup
+art/equipment-2d/blockbench-holds-20261021/frozen-hud-baseline/
+
+# Mojang resource copies used only as local modelling references.
+# Recreate with tools/equipment2d/import-official-holds.py when needed.
+art/equipment-2d/official-holds-20261020/
+
+# Local credentials, player data and native crash dumps.
+*.p12
+*.pfx
+*.dmp
+**/launcher_accounts.json
+**/launcher_profiles.json
+**/usercache.json
+**/saves/

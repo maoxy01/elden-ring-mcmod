@@ -94,7 +94,7 @@ public final class HitResolver {
                 damage *= broken.damageTakenMultiplier();
             }
             damage *= (float) com.dsh.eldencombat.item.WeaponStacks.damageMultiplier(
-                    player.getMainHandItem(), PlayerAttributes.of(player));
+                    player.getMainHandItem(), PlayerAttributes.effective(player));
             if (!target.hurt(player.damageSources().playerAttack(player), damage)) continue;
             CombatEffects.hit(player,target);
             if (target instanceof MargitEntity margit) {
@@ -155,7 +155,7 @@ public final class HitResolver {
                 continue;
             }
             boolean damaged = player.hurt(MargitDamageSource.of(boss, attack),
-                    attack.damage * Talismans.damageTakenMultiplier(player));
+                    attack.damage);
             if (Boolean.getBoolean("eldencombat.epicSmoke")) EldenCombat.LOGGER.info("EPIC_SMOKE_CONTACT: {} accepted={} playerHealth={}",clipId,damaged,player.getHealth());
         }
     }

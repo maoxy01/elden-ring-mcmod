@@ -308,8 +308,8 @@ public final class ClientSmokeHarness {
                             net.minecraft.network.chat.Component.empty()).getString()),
                             "talisman item components survived actual world restart");
                     require(Math.abs(com.dsh.eldencombat.server.skills.SkillServerEvents.fp(p).maxFp()-100f)<1.0e-4f,
-                            "talisman max-FP bonus re-applied on login (no FP talisman equipped)");
-                    require(Math.abs(com.dsh.eldencombat.server.Talismans.damageMultiplier(p)-1.08f)<1.0e-4f,
+                            "talisman max-FP bonus re-applied on login (no resource-capacity talisman equipped)");
+                    require(Math.abs(com.dsh.eldencombat.server.Talismans.skillDamageMultiplier(p)-1.10f)<1.0e-4f,
                             "talisman value outlet recomputed after restart");
                     EldenCombat.LOGGER.info("TALISMAN_RESTART_PASS: 护符 ItemStack（含自定义名组件）在真实关服/重启后保留，登录时重新应用数值");
                     require(!SkillDriver.cast(p).isCasting(),"reload has no transient cast");
@@ -876,10 +876,10 @@ public final class ClientSmokeHarness {
             require(com.dsh.eldencombat.server.Talismans.equip(p,
                     new ItemStack(ModItems.RADAGON_SORESEAL.get()))
                     ==com.dsh.eldencombat.server.Talismans.Result.EQUIPPED,
-                    "FP talisman equipped before the dimension transfer");
-            require(Math.abs(com.dsh.eldencombat.server.Talismans.maxFpBonus(p)-30f)<1.0e-4f
-                            &&Math.abs(com.dsh.eldencombat.server.skills.SkillServerEvents.fp(p).maxFp()-130f)<1.0e-4f,
-                    "talisman FP bonus applied before the dimension transfer");
+                    "resource-capacity talisman equipped before the dimension transfer");
+            require(Math.abs(com.dsh.eldencombat.server.Talismans.totals(p).effects().maxHealth()-5f)<1.0e-4f
+                            &&Math.abs(com.dsh.eldencombat.server.skills.SkillServerEvents.fp(p).maxFp()-100f)<1.0e-4f,
+                    "talisman resource bonus applied before the dimension transfer");
             p.teleportTo(p.server.getLevel(net.minecraft.world.level.Level.NETHER),0,90,0,0,0);
         });
         if(frame==56) onServer(mc,p->{
@@ -889,9 +889,9 @@ public final class ClientSmokeHarness {
             // §3.4「切维度」前半程：护符容器与它的上限加成一起到了另一个维度，且没有借切维度补 FP
             require(com.dsh.eldencombat.server.Talismans.loadout(p).get(0).is(ModItems.RADAGON_SORESEAL.get()),
                     "talisman container survived the cross-dimension transfer");
-            require(Math.abs(com.dsh.eldencombat.server.Talismans.maxFpBonus(p)-30f)<1.0e-4f
-                            &&Math.abs(com.dsh.eldencombat.server.skills.SkillServerEvents.fp(p).maxFp()-130f)<1.0e-4f,
-                    "talisman FP bonus still applied inside the other dimension");
+            require(Math.abs(com.dsh.eldencombat.server.Talismans.totals(p).effects().maxHealth()-5f)<1.0e-4f
+                            &&Math.abs(com.dsh.eldencombat.server.skills.SkillServerEvents.fp(p).maxFp()-100f)<1.0e-4f,
+                    "talisman resource bonus still applied inside the other dimension");
             p.teleportTo(p.server.overworld(),0,81,0,0,0);
         });
         // ---- §3 护符闭环：迁移 / 组件保留 / 聚合出口 / 多槽配置 / 上限与刷 FP / 死亡保留 / 客户端同步 ----
@@ -948,13 +948,13 @@ public final class ClientSmokeHarness {
                     "stored ItemStack keeps the damage component");
             require(p.getItemInHand(net.minecraft.world.InteractionHand.MAIN_HAND).isEmpty(),"equipping consumed exactly the held item");
             // §3.3 数值出口必须是"读容器聚合"的结果
-            require(Math.abs(com.dsh.eldencombat.server.Talismans.damageMultiplier(p)-1.08f)<1.0e-4f,
-                    "damage outlet reads the container aggregate (x1.08)");
-            require(Math.abs(com.dsh.eldencombat.server.Talismans.staminaRegenMultiplier(p)-1.20f)<1.0e-4f,
-                    "stamina outlet reads the container aggregate (x1.20)");
+            require(Math.abs(com.dsh.eldencombat.server.Talismans.skillDamageMultiplier(p)-1.10f)<1.0e-4f,
+                    "damage outlet reads the container aggregate (skill x1.10)");
+            require(Math.abs(com.dsh.eldencombat.server.Talismans.staminaRegenMultiplier(p)-1.0f)<1.0e-4f,
+                    "stamina outlet reads the container aggregate (no passive regen)");
             require(Math.abs(com.dsh.eldencombat.server.Talismans.maxFpBonus(p))<1.0e-4f,
                     "warrior jar shard has no FP bonus");
-            EldenCombat.LOGGER.info("TALISMAN_EQUIP_PASS: 真实装备 → 槽0 保留 customName/DAMAGE 组件；出口 伤害×1.08 精力×1.20");
+            EldenCombat.LOGGER.info("TALISMAN_EQUIP_PASS: 真实装备 → 槽0 保留 customName/DAMAGE 组件；出口 战技×1.10，无额外精力恢复");
         });
         if(frame==62) onServer(mc,p->{
             // 槽数 1→3：写配置 + 走 /eldencombat reload 的同一条路径（读配置 + refreshAll）
@@ -971,11 +971,11 @@ public final class ClientSmokeHarness {
             require(com.dsh.eldencombat.server.TalismanEquipment.equipFromHand(p,
                     net.minecraft.world.InteractionHand.MAIN_HAND)==com.dsh.eldencombat.server.TalismanEquipment.Status.EQUIPPED,
                     "second talisman equipped into slot 2");
-            require(Math.abs(com.dsh.eldencombat.server.Talismans.damageTakenMultiplier(p)-0.82f)<1.0e-4f,
-                    "aggregate damage taken x0.82 (18% reduction from slot 2)");
-            require(Math.abs(com.dsh.eldencombat.server.Talismans.healBonus(p)-1.0f)<1.0e-4f,
-                    "aggregate heal +1.0 from slot 2");
-            require(Math.abs(com.dsh.eldencombat.server.Talismans.damageMultiplier(p)-1.08f)<1.0e-4f,
+            require(Math.abs(com.dsh.eldencombat.server.Talismans.totals(p).effects().incomingMultiplier(true,true,false)-0.90f)<1.0e-4f,
+                    "aggregate physical PvE damage taken x0.90 from slot 2");
+            require(Math.abs(com.dsh.eldencombat.server.Talismans.healBonus(p))<1.0e-4f,
+                    "shield has no invented heal bonus");
+            require(Math.abs(com.dsh.eldencombat.server.Talismans.skillDamageMultiplier(p)-1.10f)<1.0e-4f,
                     "slot 1 damage bonus still aggregated alongside slot 2");
             // 重复同款：有空格时按集中规则拒绝（不是"静默换掉"）
             var duplicate=new ItemStack(ModItems.WARRIOR_JAR_SHARD.get());
@@ -983,7 +983,7 @@ public final class ClientSmokeHarness {
             require(com.dsh.eldencombat.server.TalismanEquipment.equipFromHand(p,
                     net.minecraft.world.InteractionHand.MAIN_HAND)==com.dsh.eldencombat.server.TalismanEquipment.Status.REJECTED,
                     "duplicate talisman rejected by the centralized rule");
-            require(Math.abs(com.dsh.eldencombat.server.Talismans.damageMultiplier(p)-1.08f)<1.0e-4f
+            require(Math.abs(com.dsh.eldencombat.server.Talismans.skillDamageMultiplier(p)-1.10f)<1.0e-4f
                             &&loadout.get(0).is(ModItems.WARRIOR_JAR_SHARD.get())
                             &&loadout.get(1).is(ModItems.DRAGONCREST_SHIELD_TALISMAN.get()),
                     "rejected duplicate changed nothing");
@@ -993,8 +993,8 @@ public final class ClientSmokeHarness {
             require(com.dsh.eldencombat.server.TalismanEquipment.equipFromHand(p,
                     net.minecraft.world.InteractionHand.MAIN_HAND)==com.dsh.eldencombat.server.TalismanEquipment.Status.EQUIPPED,
                     "third talisman equipped into slot 3");
-            require(Math.abs(com.dsh.eldencombat.server.Talismans.staminaRegenMultiplier(p)-1.50f)<1.0e-4f,
-                    "aggregate sums slot 1 + slot 3 stamina regen (0.20+0.30 -> x1.50)");
+            require(Math.abs(com.dsh.eldencombat.server.Talismans.staminaRegenPerSecond(p)-3.5555556f)<1.0e-4f,
+                    "aggregate sums slot 1 + slot 3 stamina regen (flat converted turtle recovery +3.5556/s)");
             require(loadout.firstEmpty()<0,"all three configured slots are full");
             // 栏满时右键同一件 = 卸下（保留旧的切换手感，也是"只能右键"时的唯一卸下途径）
             p.setItemSlot(EquipmentSlot.MAINHAND,new ItemStack(ModItems.WARRIOR_JAR_SHARD.get()));
@@ -1010,7 +1010,7 @@ public final class ClientSmokeHarness {
             require(com.dsh.eldencombat.server.TalismanEquipment.replace(p,0,
                     net.minecraft.world.InteractionHand.MAIN_HAND)==com.dsh.eldencombat.server.TalismanEquipment.Status.EQUIPPED,
                     "talisman put back into slot 1 for the later phases");
-            EldenCombat.LOGGER.info("TALISMAN_MULTISLOT_PASS: 槽数 1→3 经配置 reload 生效；三件聚合 受伤×0.82 治疗+1.0 精力×1.50；重复同款被拒；栏满右键=卸下");
+            EldenCombat.LOGGER.info("TALISMAN_MULTISLOT_PASS: 槽数 1→3 经配置 reload 生效；三件聚合 物理PvE受伤×0.90、治疗+0、精力恢复+3.5556/s；重复同款被拒；栏满右键=卸下");
         });
         if(frame==64) onServer(mc,p->{
             // 槽数 3→1：槽外物品必须退回背包，绝不销毁
@@ -1025,39 +1025,38 @@ public final class ClientSmokeHarness {
                     "both overflow talismans were returned to the inventory, not destroyed");
             require(com.dsh.eldencombat.server.Talismans.loadout(p).get(0).is(ModItems.WARRIOR_JAR_SHARD.get()),
                     "slot 1 kept its talisman through the slot-count change");
-            require(Math.abs(com.dsh.eldencombat.server.Talismans.staminaRegenMultiplier(p)-1.20f)<1.0e-4f,
-                    "only slot 1 remains in the aggregate (regen x1.20)");
+            require(Math.abs(com.dsh.eldencombat.server.Talismans.staminaRegenMultiplier(p)-1.0f)<1.0e-4f,
+                    "only slot 1 remains in the aggregate (no jar regen)");
             require(Math.abs(com.dsh.eldencombat.server.Talismans.healBonus(p))<1.0e-4f
                             &&Math.abs(com.dsh.eldencombat.server.Talismans.damageTakenMultiplier(p)-1.0f)<1.0e-4f,
                     "returned talismans no longer contribute to the aggregate");
             EldenCombat.LOGGER.info("TALISMAN_SLOT_SHRINK_PASS: 槽数 3→1 时槽外两件护符都退回背包（物品守恒，未销毁）");
         });
         if(frame==66) onServer(mc,p->{
-            // §3.4 FP 上限：装上 +30，换下回落；反复换装不能补 FP
+            // 原作烙印经 MC 资源单位适配；换装只改上限，不恢复生命/FP/精力。
+            float baseHealthCap=p.getMaxHealth();
+            p.setHealth(7);
+            var combat=p.getData(ModAttachments.COMBAT_STATE);
+            combat.stamina=37;
             var seal=new ItemStack(ModItems.RADAGON_SORESEAL.get());
             p.setItemSlot(EquipmentSlot.MAINHAND,seal);
             require(com.dsh.eldencombat.server.TalismanEquipment.replace(p,0,
                     net.minecraft.world.InteractionHand.MAIN_HAND)==com.dsh.eldencombat.server.TalismanEquipment.Status.EQUIPPED,
-                    "replace entry equipped the FP talisman into slot 1");
+                    "seal equipped through the real replacement entry");
             var fp=com.dsh.eldencombat.server.skills.SkillServerEvents.fp(p);
-            require(Math.abs(fp.bonusMaxFp()-30f)<1.0e-4f,"FP bonus +30 applied from the container");
-            require(Math.abs(fp.maxFp()-130f)<1.0e-4f,"max FP is 100+30");
-            require(fp.fp()==37,"equipping an FP talisman does not refill FP");
-            require(countItem(p,ModItems.WARRIOR_JAR_SHARD.get())>0,"replaced talisman returned to the inventory");
-            fp.setFp(100);
+            require(Math.abs(p.getMaxHealth()-baseHealthCap-5)<1.0e-4f,"seal health capacity applied once");
+            require(combat.maxStamina(EldenCombat.config())==110,"seal stamina capacity applied once");
+            require(p.getHealth()==7&&combat.stamina==37&&fp.fp()==37,"equipping does not refill resources");
+            require(fp.bonusMaxFp()==0&&fp.maxFp()==100,"Radagon seal does not grant FP");
             var jar=new ItemStack(ModItems.WARRIOR_JAR_SHARD.get());
             p.setItemSlot(EquipmentSlot.MAINHAND,jar);
-            require(com.dsh.eldencombat.server.TalismanEquipment.replace(p,0,
-                    net.minecraft.world.InteractionHand.MAIN_HAND)==com.dsh.eldencombat.server.TalismanEquipment.Status.EQUIPPED,
-                    "swap back to the non-FP talisman");
-            require(fp.fp()==100&&Math.abs(fp.maxFp()-100f)<1.0e-4f,
-                    "FP stays at 100 after the max-FP bonus is removed (no clamping loss, no refill)");
-            var seal2=new ItemStack(ModItems.RADAGON_SORESEAL.get());
-            p.setItemSlot(EquipmentSlot.MAINHAND,seal2);
             com.dsh.eldencombat.server.TalismanEquipment.replace(p,0,net.minecraft.world.InteractionHand.MAIN_HAND);
-            require(fp.fp()==100&&Math.abs(fp.maxFp()-130f)<1.0e-4f,
-                    "re-equipping the FP talisman raises the cap without refilling current FP");
-            EldenCombat.LOGGER.info("TALISMAN_FP_PASS: 上限 100→130→100 随容器变化；反复换装当前 FP 恒为 100（无法刷 FP）");
+            require(p.getMaxHealth()==baseHealthCap&&combat.maxStamina(EldenCombat.config())==100,
+                    "removing seal removes only its resource capacity bonuses");
+            p.setItemSlot(EquipmentSlot.MAINHAND,new ItemStack(ModItems.RADAGON_SORESEAL.get()));
+            com.dsh.eldencombat.server.TalismanEquipment.replace(p,0,net.minecraft.world.InteractionHand.MAIN_HAND);
+            require(p.getHealth()==7&&combat.stamina==37&&fp.fp()==37,"re-equipping cannot heal");
+            EldenCombat.LOGGER.info("TALISMAN_CAPACITY_PASS: MC容量生命+5/精力+10；力敏各+5；反复换装不恢复资源，无FP加成");
             // 死亡保留相位用带自定义名的护符
             var named=new ItemStack(ModItems.WARRIOR_JAR_SHARD.get());
             named.set(net.minecraft.core.component.DataComponents.CUSTOM_NAME,
@@ -1075,8 +1074,8 @@ public final class ClientSmokeHarness {
                 if(p.isChangingDimension())p.connection.teleport(p.getX(),p.getY(),p.getZ(),p.getYRot(),p.getXRot());
                 // §3.4「切维度」后半程：回到主世界后容器与上限加成仍在，且没有补 FP
                 require(com.dsh.eldencombat.server.Talismans.loadout(p).get(0).is(ModItems.RADAGON_SORESEAL.get())
-                                &&Math.abs(com.dsh.eldencombat.server.skills.SkillServerEvents.fp(p).maxFp()-130f)<1.0e-4f,
-                        "talisman container and FP bonus survived the return trip");
+                                &&Math.abs(com.dsh.eldencombat.server.skills.SkillServerEvents.fp(p).maxFp()-100f)<1.0e-4f,
+                        "talisman container and resource bonus survived the return trip");
             });
             EldenCombat.LOGGER.info("TALISMAN_DIMENSION_HANDSHAKE: 重发位置包，客户端 screen={}",mc.screen);
         }
@@ -1141,7 +1140,7 @@ public final class ClientSmokeHarness {
             require(stored.get(net.minecraft.core.component.DataComponents.CUSTOM_NAME)!=null
                     &&"烟测护符·死亡保留".contentEquals(stored.get(net.minecraft.core.component.DataComponents.CUSTOM_NAME).getString()),
                     "talisman custom-name component survived actual death/respawn");
-            require(Math.abs(com.dsh.eldencombat.server.Talismans.damageMultiplier(p)-1.08f)<1.0e-4f,
+            require(Math.abs(com.dsh.eldencombat.server.Talismans.skillDamageMultiplier(p)-1.10f)<1.0e-4f,
                     "talisman outlet recomputed after respawn");
             EldenCombat.LOGGER.info("TALISMAN_DEATH_PASS: 护符与自定义名组件在真实死亡/重生后保留，数值出口重生后重新生效");
             com.dsh.eldencombat.server.Talismans.syncDisplay(p);

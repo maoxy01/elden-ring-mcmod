@@ -137,13 +137,13 @@ public final class EquipmentRenderer extends BlockEntityWithoutLevelRenderer {
                 display.translate(-.5f, -.5f, -.5f);
                 pose.mulPose(new Matrix4f(display.last().pose()).invert());
                 boolean bow = item.getItem() instanceof net.minecraft.world.item.BowItem;
-                pose.translate(left ? .12f : -.12f, bow ? .48f : .24f, -.45f);
+                pose.translate(left ? -.26f : .26f, bow ? .14f : -.22f, -.45f);
                 pose.mulPose(com.mojang.math.Axis.YP.rotationDegrees(left ? 25f : -25f));
                 pose.mulPose(com.mojang.math.Axis.ZP.rotationDegrees(left ? 35f : 55f));
                 WeaponCorrections.get(BuiltInRegistries.ITEM.getKey(item.getItem()).getPath()).apply(pose);
                 var profile = entry.proportion();
-                float length = profile == null ? 1.10f
-                        : Math.min(1.10f, profile.ratioToPlayer() * profile.referencePlayerHeight());
+                float length = profile == null ? 1.00f
+                        : Math.min(1.00f, profile.ratioToPlayer() * profile.referencePlayerHeight());
                 float scale = length / Math.max(.001f, (float)(bounds.maxY() - bounds.minY()));
                 pose.mulPose(WeaponDisplayTransforms.matrix(bounds, view, left, scale,
                         profile == null ? 0 : profile.gripX(), profile == null ? 0 : profile.gripY(),

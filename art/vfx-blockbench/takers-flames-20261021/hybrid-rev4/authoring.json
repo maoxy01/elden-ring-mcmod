@@ -1,0 +1,243 @@
+{
+  "project": "fb1c3c62-4c49-f275-c910-a478c93c28ba",
+  "version": "5.2.2",
+  "elements": 46,
+  "textures": 17,
+  "contract": {
+    "date": "2026-10-21",
+    "revision": 4,
+    "palette": "6be87ac8-7a77-34cb-ffbc-56a2cf0fc013",
+    "ground": [
+      {
+        "index": 0,
+        "texture": "0df0460a-85f3-e26b-1a6f-f65cef0d0479"
+      },
+      {
+        "index": 1,
+        "texture": "dc9ba856-89e6-20ad-f1d3-6d8736e6d022"
+      },
+      {
+        "index": 2,
+        "texture": "915a06ab-cf4b-2b03-231b-ca8949172558"
+      },
+      {
+        "index": 3,
+        "texture": "b553686b-196d-e0cb-6cd2-71e3e518b688"
+      },
+      {
+        "index": 4,
+        "texture": "3e5a5aef-4814-4551-98d5-42ad073c5594"
+      },
+      {
+        "index": 5,
+        "texture": "eb2d7cb7-c4d3-b846-a3dc-55dcb903dee8"
+      },
+      {
+        "index": 6,
+        "texture": "349f0333-291e-45e2-c8e7-1f0960faaa0b"
+      },
+      {
+        "index": 7,
+        "texture": "cd5a4b0f-4a36-408b-274a-0072a8a6b4b5"
+      },
+      {
+        "index": 8,
+        "texture": "824212bb-9a65-be92-e63d-217c81c0f24b"
+      },
+      {
+        "index": 9,
+        "texture": "feca3b27-f788-4a41-1a87-164b32872ad2"
+      },
+      {
+        "index": 10,
+        "texture": "08873274-a0f2-b82b-2c0d-133c425423ce"
+      },
+      {
+        "index": 11,
+        "texture": "04b0e4a0-f377-3b4d-d1b1-460e71590eae"
+      },
+      {
+        "index": 12,
+        "texture": "1c9372b8-8445-8a8d-4cda-cf1c046d997d"
+      },
+      {
+        "index": 13,
+        "texture": "67365f31-7fb7-6ddf-99bf-154b7344f435"
+      },
+      {
+        "index": 14,
+        "texture": "da4e3e4a-5697-2d90-ef11-86fa4551465a"
+      },
+      {
+        "index": 15,
+        "texture": "691be58c-5ecd-daa0-b528-bd40271c80ef"
+      }
+    ],
+    "parentCandidate": "hybrid/takers-flames-hybrid.bbmodel",
+    "supersedes": "hybrid-rev3",
+    "motif": "forward-rushing flame wave emitted from the blade",
+    "runtimeIntegrated": false,
+    "animation": "875c4451-fbdd-afc0-30fb-75bdf4a1058b",
+    "schedule": {
+      "wall": [
+        {
+          "front": "flame_front_0",
+          "tail": "flame_tail_0",
+          "x": -32,
+          "frontHeightUnits": 26,
+          "tailHeightUnits": 12
+        },
+        {
+          "front": "flame_front_1",
+          "tail": "flame_tail_1",
+          "x": -16,
+          "frontHeightUnits": 30,
+          "tailHeightUnits": 14
+        },
+        {
+          "front": "flame_front_2",
+          "tail": "flame_tail_2",
+          "x": 0,
+          "frontHeightUnits": 34,
+          "tailHeightUnits": 16
+        },
+        {
+          "front": "flame_front_3",
+          "tail": "flame_tail_3",
+          "x": 16,
+          "frontHeightUnits": 30,
+          "tailHeightUnits": 14
+        },
+        {
+          "front": "flame_front_4",
+          "tail": "flame_tail_4",
+          "x": 32,
+          "frontHeightUnits": 26,
+          "tailHeightUnits": 12
+        }
+      ],
+      "plates": [
+        {
+          "name": "ground_plate_0",
+          "origin": [
+            -24,
+            0,
+            -20
+          ]
+        },
+        {
+          "name": "ground_plate_1",
+          "origin": [
+            -8,
+            0,
+            -20
+          ]
+        },
+        {
+          "name": "ground_plate_2",
+          "origin": [
+            8,
+            0,
+            -20
+          ]
+        },
+        {
+          "name": "ground_plate_3",
+          "origin": [
+            24,
+            0,
+            -20
+          ]
+        }
+      ],
+      "debris": [
+        {
+          "name": "flying_crust_0",
+          "origin": [
+            -6,
+            0,
+            6
+          ],
+          "launch": 0.22,
+          "apex": 0.5,
+          "land": 1.15
+        },
+        {
+          "name": "flying_crust_1",
+          "origin": [
+            -19,
+            0,
+            6
+          ],
+          "launch": 0.24,
+          "apex": 0.52,
+          "land": 1.17
+        },
+        {
+          "name": "flying_crust_2",
+          "origin": [
+            -32,
+            0,
+            6
+          ],
+          "launch": 0.26,
+          "apex": 0.54,
+          "land": 1.19
+        },
+        {
+          "name": "flying_crust_3",
+          "origin": [
+            6,
+            0,
+            6
+          ],
+          "launch": 0.28,
+          "apex": 0.56,
+          "land": 1.21
+        },
+        {
+          "name": "flying_crust_4",
+          "origin": [
+            19,
+            0,
+            6
+          ],
+          "launch": 0.3,
+          "apex": 0.58,
+          "land": 1.23
+        },
+        {
+          "name": "flying_crust_5",
+          "origin": [
+            32,
+            0,
+            6
+          ],
+          "launch": 0.32,
+          "apex": 0.6,
+          "land": 1.25
+        }
+      ]
+    },
+    "budget": {
+      "solidBoxes": 30,
+      "flameBoxes": 20,
+      "groundPlates": 4,
+      "flyingCrust": 6,
+      "groundQuads": 1
+    },
+    "forwardAxis": "+Z",
+    "lateralAxis": "+X",
+    "wallWidthBlocks": 5,
+    "wallDepthBlocks": 1.5,
+    "frontHeightBlocks": 2.125,
+    "tailHeightBlocks": 1,
+    "sizeBlocks": [
+      5,
+      2.2,
+      2.5
+    ],
+    "healFeedbackLayer": "not modeled in rev4; blade flash + brief embers belong to the hit feedback pass",
+    "particlePreviewFormat": "Snowstorm/Bedrock authoring reference only; Java NeoForge needs client adaptation"
+  }
+}

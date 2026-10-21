@@ -124,6 +124,12 @@ public final class EldenCombatClient {
      */
     @SubscribeEvent
     public static void onRegisterReloadListeners(RegisterClientReloadListenersEvent event) {
+        event.registerReloadListener(new net.minecraft.server.packs.resources.SimplePreparableReloadListener<java.util.Map<String, WornHandGear.Pair>>() {
+            @Override protected java.util.Map<String, WornHandGear.Pair> prepare(net.minecraft.server.packs.resources.ResourceManager manager,
+                    net.minecraft.util.profiling.ProfilerFiller profiler) { return WornHandGear.prepare(manager); }
+            @Override protected void apply(java.util.Map<String, WornHandGear.Pair> prepared,
+                    net.minecraft.server.packs.resources.ResourceManager manager, net.minecraft.util.profiling.ProfilerFiller profiler) { WornHandGear.apply(prepared); }
+        });
         event.registerReloadListener(new PresentationRoutes());
         event.registerReloadListener(com.dsh.eldencombat.client.equipment2d.EquipmentRouteSnapshot.create());
         event.registerReloadListener(new net.minecraft.server.packs.resources.SimplePreparableReloadListener<com.dsh.eldencombat.effects.FxPalette.Data>() {
@@ -175,6 +181,14 @@ public final class EldenCombatClient {
                 WeaponCorrections.apply(prepared);
             }
         });
+    }
+
+    @SubscribeEvent
+    public static void onAddPlayerLayers(EntityRenderersEvent.AddLayers event) {
+        for (var skin : event.getSkins()) {
+            net.minecraft.client.renderer.entity.player.PlayerRenderer renderer = event.getSkin(skin);
+            if (renderer != null) renderer.addLayer(new WornHandLayer(renderer));
+        }
     }
 
     @SubscribeEvent

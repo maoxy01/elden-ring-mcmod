@@ -2,6 +2,7 @@ package com.dsh.eldencombat.network;
 
 import com.dsh.eldencombat.EldenCombat;
 import com.dsh.eldencombat.core.TalismanSpec;
+import com.dsh.eldencombat.core.TalismanEffects;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
@@ -41,6 +42,16 @@ public record TalismanDataPayload(List<TalismanSpec> entries) implements CustomP
                     buf.writeFloat(spec.damage());
                     buf.writeFloat(spec.damageReduction());
                     buf.writeFloat(spec.heal());
+                    TalismanEffects e = spec.effects();
+                    buf.writeFloat(e.skillDamage());
+                    buf.writeFloat(e.physicalReduction());
+                    buf.writeFloat(e.pvpPhysicalReduction());
+                    buf.writeFloat(e.attackDamageTaken());
+                    buf.writeFloat(e.staminaRegenPerSecond());
+                    buf.writeFloat(e.maxHealth());
+                    buf.writeFloat(e.maxStamina());
+                    buf.writeVarInt(e.strength());
+                    buf.writeVarInt(e.dexterity());
                 }
             },
             buf -> {
@@ -51,7 +62,9 @@ public record TalismanDataPayload(List<TalismanSpec> entries) implements CustomP
                 List<TalismanSpec> entries = new ArrayList<>(count);
                 for (int i = 0; i < count; i++) {
                     entries.add(new TalismanSpec(buf.readUtf(128), buf.readUtf(256), buf.readUtf(64),
-                            buf.readFloat(), buf.readFloat(), buf.readFloat(), buf.readFloat(), buf.readFloat()));
+                            buf.readFloat(), buf.readFloat(), buf.readFloat(), buf.readFloat(), buf.readFloat(),
+                            new TalismanEffects(buf.readFloat(), buf.readFloat(), buf.readFloat(), buf.readFloat(),
+                                    buf.readFloat(), buf.readFloat(), buf.readFloat(), buf.readVarInt(), buf.readVarInt())));
                 }
                 return new TalismanDataPayload(List.copyOf(entries));
             });

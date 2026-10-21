@@ -209,16 +209,25 @@ class Equipment2dRoutingTest {
     @Test
     void blackBladeReversesItsEdgeWithoutReversingItsLongitudinalDirection() throws Exception {
         var entry = EquipmentRouteSnapshot.parse(json(ROUTE)).get("eldencombat:malikeths_black_blade");
-        // Basis measured from the selected PNG used in the reported screenshot, before the fix.
-        double angle = Math.toRadians(43.474);
+        var candidate = json(CANDIDATES).getAsJsonObject("items").getAsJsonObject(entry.assetId());
+        var orientation = candidate.getAsJsonObject("axis");
+        assertEquals(180.0, orientation.get("heldBladeRollDegrees").getAsDouble(), 1e-6);
+        // Artwork can be revised and the camera pose can be calibrated. The authored edge reversal
+        // remains a half-turn around the current sprite's longitudinal axis in the derived baseline.
+        double angle = Math.toRadians(orientation.get("heldBladeAxisFromXDegrees").getAsDouble());
         Vector3f along = new Vector3f((float) Math.cos(angle), (float) Math.sin(angle), 0);
         Vector3f edge = new Vector3f(-along.y, along.x, 0);
         for (String context : List.of("firstperson_righthand", "firstperson_lefthand",
                 "thirdperson_righthand", "thirdperson_lefthand")) {
             boolean left = context.endsWith("lefthand");
             Matrix4f before = normalizedRotation(contextSpec(REFERENCES.get("melee"), context).matrix(left))
-                    .rotateZ((float) Math.toRadians(-1.526));
-            Matrix4f after = entry.display().resolve(context).matrix(left);
+                    .rotateZ((float) Math.toRadians(orientation.get("appliedAxisDegrees").getAsDouble()));
+            JsonObject baseline = candidate.getAsJsonObject("display").getAsJsonObject(context);
+            float[] rotation = triple(baseline, "rotation");
+            Matrix4f after = new Matrix4f().rotate(new Quaternionf().rotationXYZ(
+                    (float) Math.toRadians(rotation[0]),
+                    (float) Math.toRadians((left ? -1 : 1) * rotation[1]),
+                    (float) Math.toRadians((left ? -1 : 1) * rotation[2])));
             assertEquals(0, before.transformDirection(new Vector3f(along)).normalize()
                     .distance(after.transformDirection(new Vector3f(along)).normalize()), 1e-5, context + " tip");
             assertEquals(0, before.transformDirection(new Vector3f(edge)).normalize().negate()
@@ -226,6 +235,17 @@ class Equipment2dRoutingTest {
             assertEquals(0, before.transformDirection(new Vector3f(0, 0, 1)).normalize().negate()
                     .distance(after.transformDirection(new Vector3f(0, 0, 1)).normalize()), 1e-5, context + " face");
             assertTrue(after.determinant3x3() > 0, context + " uses a rotation, not negative UV scale");
+            if (context.startsWith("thirdperson_")) {
+                assertFrame(baseline, entry.display().resolve(context), context + " world pose");
+            } else {
+                var override = json(OVERRIDES).getAsJsonObject("overrides").getAsJsonObject(entry.assetId());
+                Path nativeProject = Path.of(override.getAsJsonObject("nativeCalibration").get("project").getAsString());
+                var nativeDisplay = json(nativeProject.getParent().getParent().resolve("exports")
+                        .resolve(entry.assetId() + ".json")).getAsJsonObject("display");
+                assertFrame(nativeDisplay.getAsJsonObject(context), entry.display().resolve(context),
+                        context + " native camera calibration");
+                assertTrue(entry.display().resolve(context).matrix(left).determinant3x3() > 0);
+            }
         }
     }
 

@@ -250,7 +250,7 @@ public class GoldenWaveEntity extends Entity {
                 continue;
             }
             if (!hitTargets.add(target.getId())) continue;
-            if (SkillHitEffects.hurt(player, target, damage, poiseDamage, false) > 0) {
+            if (SkillHitEffects.hurtMagic(player, target, damage, poiseDamage) > 0) {
                 dealtDamage = true;
                 healOwner(owner);
             }

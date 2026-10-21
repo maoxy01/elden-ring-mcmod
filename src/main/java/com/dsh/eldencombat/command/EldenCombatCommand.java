@@ -112,7 +112,7 @@ public final class EldenCombatCommand {
         ItemStack held = player.getMainHandItem();
         String text = com.dsh.eldencombat.item.WeaponStacks.describe(held)
                 + "（含属性补正 ×" + String.format("%.2f", com.dsh.eldencombat.item.WeaponStacks.damageMultiplier(
-                held, com.dsh.eldencombat.server.PlayerAttributes.of(player))) + "）";
+                held, com.dsh.eldencombat.server.PlayerAttributes.effective(player))) + "）";
         context.getSource().sendSuccess(() -> Component.literal(text), false);
         return Command.SINGLE_SUCCESS;
     }
@@ -307,7 +307,7 @@ public final class EldenCombatCommand {
         state.ensureInit(EldenCombat.config());
         var cast = com.dsh.eldencombat.server.skills.SkillDriver.cast(player);
         String text = "引擎=纯原版 战斗模式=" + state.combatMode
-                + " 精力=" + String.format("%.1f / %.1f", state.stamina, EldenCombat.config().stamina.max)
+                + " 精力=" + String.format("%.1f / %.1f", state.stamina, state.maxStamina(EldenCombat.config()))
                 + " 战技=" + (cast.isCasting() ? cast.skillId() + " 段" + cast.stageIndex() + " " + cast.stage() : "无")
                 + " 游戏模式=" + player.gameMode.getGameModeForPlayer()
                 + " 喝药=" + player.isUsingItem();

@@ -1,0 +1,3838 @@
+{
+  "date": "2026-10-21",
+  "original": {
+    "id": "flame_front",
+    "skillId": "eldencombat:takers_flames",
+    "kind": "FLAME_FRONT",
+    "name": "掠夺火焰",
+    "frameSize": [
+      64,
+      64
+    ],
+    "anchorPixels": [
+      32,
+      58
+    ],
+    "worldSizeBlocks": [
+      5,
+      3.5
+    ],
+    "sourceDefaults": {
+      "windupTicks": 9,
+      "activeTicks": 4,
+      "recoveryTicks": 5,
+      "visualEntityTicks": 40,
+      "waveSpeedBlocksPerTick": 0.65,
+      "effectRangeBlocks": 12,
+      "effectLifespanUpperBoundTicks": 40,
+      "baseRadiusBlocks": 2.5,
+      "maxRadiusBlocks": 2.5
+    },
+    "plane": {
+      "basisU": [
+        1,
+        0,
+        0
+      ],
+      "basisV": [
+        0,
+        1,
+        0
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "cameraFacing": false,
+      "space": "wave-local upright across travel; bottom attached to lane terrain",
+      "attachOffsetBlocks": [
+        0,
+        0,
+        0
+      ]
+    },
+    "laneContract": {
+      "lanes": 16,
+      "sourcePixelsPerLane": 4,
+      "worldWidth": "2 * visualRadius(partialTick)",
+      "worldHeightBlocks": 3.5,
+      "uvRangeForLane": "[lane/16, (lane+1)/16]",
+      "blockedMask": "omit lane if ((blockedLanes >>> lane) & 1) != 0",
+      "formationDistanceBlocks": 4,
+      "edgeSpeedFactor": 0.55,
+      "lagGridBlocks": 0.125,
+      "lag": "same WaveFront local offsets as current server",
+      "doNotDrawAsSingleQuad": true,
+      "animationClock": "visualProgress(partialTick)"
+    },
+    "event": "wave entity spawn on ACTIVE; terrain and wall discard authoritative",
+    "assetId": "eldencombat:vfx2d/flame_front",
+    "frameCount": 16,
+    "frames": [
+      {
+        "index": 0,
+        "file": "textures/particle/flame_front/frame_00.png",
+        "spriteId": "eldencombat:flame_front/frame_00",
+        "atlasRectPixels": [
+          2,
+          2,
+          64,
+          64
+        ],
+        "sampleProgress": 0.03125
+      },
+      {
+        "index": 1,
+        "file": "textures/particle/flame_front/frame_01.png",
+        "spriteId": "eldencombat:flame_front/frame_01",
+        "atlasRectPixels": [
+          70,
+          2,
+          64,
+          64
+        ],
+        "sampleProgress": 0.09375
+      },
+      {
+        "index": 2,
+        "file": "textures/particle/flame_front/frame_02.png",
+        "spriteId": "eldencombat:flame_front/frame_02",
+        "atlasRectPixels": [
+          138,
+          2,
+          64,
+          64
+        ],
+        "sampleProgress": 0.15625
+      },
+      {
+        "index": 3,
+        "file": "textures/particle/flame_front/frame_03.png",
+        "spriteId": "eldencombat:flame_front/frame_03",
+        "atlasRectPixels": [
+          206,
+          2,
+          64,
+          64
+        ],
+        "sampleProgress": 0.21875
+      },
+      {
+        "index": 4,
+        "file": "textures/particle/flame_front/frame_04.png",
+        "spriteId": "eldencombat:flame_front/frame_04",
+        "atlasRectPixels": [
+          2,
+          70,
+          64,
+          64
+        ],
+        "sampleProgress": 0.28125
+      },
+      {
+        "index": 5,
+        "file": "textures/particle/flame_front/frame_05.png",
+        "spriteId": "eldencombat:flame_front/frame_05",
+        "atlasRectPixels": [
+          70,
+          70,
+          64,
+          64
+        ],
+        "sampleProgress": 0.34375
+      },
+      {
+        "index": 6,
+        "file": "textures/particle/flame_front/frame_06.png",
+        "spriteId": "eldencombat:flame_front/frame_06",
+        "atlasRectPixels": [
+          138,
+          70,
+          64,
+          64
+        ],
+        "sampleProgress": 0.40625
+      },
+      {
+        "index": 7,
+        "file": "textures/particle/flame_front/frame_07.png",
+        "spriteId": "eldencombat:flame_front/frame_07",
+        "atlasRectPixels": [
+          206,
+          70,
+          64,
+          64
+        ],
+        "sampleProgress": 0.46875
+      },
+      {
+        "index": 8,
+        "file": "textures/particle/flame_front/frame_08.png",
+        "spriteId": "eldencombat:flame_front/frame_08",
+        "atlasRectPixels": [
+          2,
+          138,
+          64,
+          64
+        ],
+        "sampleProgress": 0.53125
+      },
+      {
+        "index": 9,
+        "file": "textures/particle/flame_front/frame_09.png",
+        "spriteId": "eldencombat:flame_front/frame_09",
+        "atlasRectPixels": [
+          70,
+          138,
+          64,
+          64
+        ],
+        "sampleProgress": 0.59375
+      },
+      {
+        "index": 10,
+        "file": "textures/particle/flame_front/frame_10.png",
+        "spriteId": "eldencombat:flame_front/frame_10",
+        "atlasRectPixels": [
+          138,
+          138,
+          64,
+          64
+        ],
+        "sampleProgress": 0.65625
+      },
+      {
+        "index": 11,
+        "file": "textures/particle/flame_front/frame_11.png",
+        "spriteId": "eldencombat:flame_front/frame_11",
+        "atlasRectPixels": [
+          206,
+          138,
+          64,
+          64
+        ],
+        "sampleProgress": 0.71875
+      },
+      {
+        "index": 12,
+        "file": "textures/particle/flame_front/frame_12.png",
+        "spriteId": "eldencombat:flame_front/frame_12",
+        "atlasRectPixels": [
+          2,
+          206,
+          64,
+          64
+        ],
+        "sampleProgress": 0.78125
+      },
+      {
+        "index": 13,
+        "file": "textures/particle/flame_front/frame_13.png",
+        "spriteId": "eldencombat:flame_front/frame_13",
+        "atlasRectPixels": [
+          70,
+          206,
+          64,
+          64
+        ],
+        "sampleProgress": 0.84375
+      },
+      {
+        "index": 14,
+        "file": "textures/particle/flame_front/frame_14.png",
+        "spriteId": "eldencombat:flame_front/frame_14",
+        "atlasRectPixels": [
+          138,
+          206,
+          64,
+          64
+        ],
+        "sampleProgress": 0.90625
+      },
+      {
+        "index": 15,
+        "file": "textures/particle/flame_front/frame_15.png",
+        "spriteId": "eldencombat:flame_front/frame_15",
+        "atlasRectPixels": [
+          206,
+          206,
+          64,
+          64
+        ],
+        "sampleProgress": 0.96875
+      }
+    ],
+    "anchorNormalized": [
+      0.5,
+      0.90625
+    ],
+    "atlas": {
+      "file": "atlases/flame_front.png",
+      "width": 272,
+      "height": 272,
+      "columns": 4,
+      "rows": 4,
+      "paddingPixels": 2,
+      "notRuntimeAtlas": true
+    },
+    "sampling": {
+      "filter": "nearest",
+      "pixelBlockSize": 2,
+      "logicalFrameSize": [
+        32,
+        32
+      ],
+      "frameIndex": "min(15, floor(clamp(progress,0,1) * 16))",
+      "partialTickRecommended": true,
+      "normalLifetimeExit": "draw nothing when progress >= 1; obey entity discard earlier"
+    },
+    "palette": [
+      [
+        65,
+        20,
+        25
+      ],
+      [
+        133,
+        29,
+        23
+      ],
+      [
+        215,
+        56,
+        22
+      ],
+      [
+        250,
+        125,
+        35
+      ],
+      [
+        255,
+        210,
+        96
+      ]
+    ],
+    "vertexTint": [
+      255,
+      255,
+      255
+    ],
+    "tintChannels": {
+      "bakedRgb": true,
+      "alpha": "opacity only",
+      "separateRecolorMask": null,
+      "warning": "Do not multiply colored RGB by bone/death/obsidian palette again"
+    },
+    "timeline": {
+      "normalizedStages": [
+        {
+          "stage": "appear",
+          "from": 0,
+          "to": 0.18,
+          "frames": [
+            0,
+            2
+          ]
+        },
+        {
+          "stage": "main",
+          "from": 0.18,
+          "to": 0.65,
+          "frames": [
+            3,
+            10
+          ]
+        },
+        {
+          "stage": "dissolve",
+          "from": 0.65,
+          "to": 1,
+          "frames": [
+            11,
+            15
+          ]
+        }
+      ],
+      "damageTriggers": false,
+      "hitFeedbackIncluded": false,
+      "opacity": "authored quantized alpha; no extra per-tick multiplier required",
+      "burstPlayback": "sample wave entity progress; independent of cast recovery"
+    },
+    "lod": {
+      "normalMainPlanes": 16,
+      "core": "same frame and plane; omit secondary decorations, never explosion or boxes",
+      "hidden": "draw nothing"
+    },
+    "provenance": {
+      "method": "original parameterized pixel raster source, no provider pixels copied",
+      "license": "CC0-1.0",
+      "source": "art/tooling/vfx-eight-clips.mjs",
+      "influences": "Minecraft hard-edge finite palette and existing server event/profile contracts, not copied game textures"
+    }
+  },
+  "protection": [
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/ClientCombat.java",
+      "sha256": "71217792b7fda7b263dc1071609ac50f78a52890dc0aa249e856592ce81590fd"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/ClientSkills.java",
+      "sha256": "a1cab7f1f69e0ac831b54016dddac565e917af125ac0a50b29181acc92a1dc44"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/CombatHud.java",
+      "sha256": "40089b4a9fee4012ef488680ca81a0a83d8fc3b806aaf55bff64657a7724b1f9"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/CombatHudLayout.java",
+      "sha256": "695ab3949e885d546f512d4b5c84e187958f9ba986ac73b2ca92e1a1de2133c5"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/CombatParticle.java",
+      "sha256": "9de6477a081435fa7e31ecc024a01d68a133882724034ea1ce11e30adba88217"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/effects/ArtworkRenderer.java",
+      "sha256": "257c04d9a745ed732ca3330e4ca0f926b008fb72d7127dc679cdd3afd725cda6"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/effects/FxGeometryCache.java",
+      "sha256": "02c254ab30c2ade66f70700705fed561789f3a417f3b91ceb5e0a39ad268a1ce"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/effects/FxRenderBudget.java",
+      "sha256": "a068b9b71673e8a60e144083299e275109f6a3539293a29df75d2570c8a055a1"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/effects/FxResources.java",
+      "sha256": "22873298142b381611fcf472d27457c2c2bb996226078c2ff8dcfe294dff4c29"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/effects/GoldenWaveRenderer.java",
+      "sha256": "75b6d14fc59c158d225e07ac383d323cec4f986b7b80336211c9bf2950cd3662"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/effects/SkillEffectMeshRenderer.java",
+      "sha256": "6bf839ed4b0446107fd4f1648342b00458c90b295dbabbadc2f43b6ac2fd81c7"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/effects/SkillEffectRenderer.java",
+      "sha256": "5774216c564af1e258b41bd67983a22235ef8861c159e6e888e78be6953f3a49"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/effects/SkillEffectRenderTypes.java",
+      "sha256": "6935fa7ddc1f0d04147d15bbc60c3f38dfe8dbac343a74c14b6fcc4b8062dfa0"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/effects/SkillOutlineRenderer.java",
+      "sha256": "e4d9cd0f448ef12144f4ca0246618eceaedc87d068c4f747e2b8183f3435670a"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/effects/SkillSlashSpriteRenderer.java",
+      "sha256": "c8b2b6ae5bfd456a8900d9d0a8e03612c7ceb83345913b389c38250c204d218c"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/effects/VfxDiagnosticLayers.java",
+      "sha256": "01d2ebcc5114e113095f93b166aa1eced638a8556920b7d7424b871bec3f1343"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/effects/WaveArtworkVisibility.java",
+      "sha256": "2f734a0285ff674f3016c272635e0d9ac7f551aa6c220d5e65cfddb4a088bad9"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/effects/WaveVisualBounds.java",
+      "sha256": "20fd9d29529ca7bbb40a4681f114e3715aa2a50acf288653ebbb59f829db4bb1"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/EldenCombatClient.java",
+      "sha256": "732d787e2525e18f0554bdd1430efb7d3bbfefaa9e3d2c3b7de5e9c2831a15ac"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/equipment2d/EquipmentDisplay.java",
+      "sha256": "d15f2a80657d0a04f8b1f608412d9b96f27af9b89eb5794b6a090854f43cc2bc"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/equipment2d/EquipmentGeometry.java",
+      "sha256": "6c71c05c9ecccd5ce702d26ce18456784bf4ec40f2aacdc5bd4ef9978b543c4e"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/equipment2d/EquipmentModelResources.java",
+      "sha256": "f1aa497e780e34aff0ac10093de6a396e2f6a3e7a6d73c469cf6ad216d98a340"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/equipment2d/EquipmentPredicates.java",
+      "sha256": "08c7cdec5996b18b940709ddbb3ee4c07ad0bed152120a9c85e24651c62a9af5"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/equipment2d/EquipmentRenderContext.java",
+      "sha256": "beaf4a1222e5646c6abdb714175e109a1b63fac3e830ddafa11b78d28644fb1f"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/equipment2d/EquipmentRouteRenderer.java",
+      "sha256": "71fb4786b9790e2bb69829d77a04d096e431440b4803ab4a54d6314ab036b922"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/equipment2d/EquipmentRouteSnapshot.java",
+      "sha256": "75d6afd1d50d1ffec34ed1a6f5ef8c37a1b39788abb87594016269d136a0ec1c"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/equipment2d/EquipmentStateResolver.java",
+      "sha256": "f8c6809639b1ac59a2c442a80f0c411428ef0306b8989089ad9051afe691f513"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/equipment2d/ItemSpriteGeometry.java",
+      "sha256": "cd6615e72165cc8a3bc166720b6c28ef87216433da185196dc213d5c55b9b49b"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/equipment2d/ItemThickness.java",
+      "sha256": "01634565adeaa5da042f5700e9402644d1b26d54749f790cdb5fe8c79140ee7b"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/equipment2d/ProviderModelAdapter.java",
+      "sha256": "180cbe2a9a3c14c0ffbfe40d79c30dcd7b3df30fe2cabb139ed51615bcf2ecff"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/EquipmentRenderer.java",
+      "sha256": "cd294a797cf3243523e51a48599b6c5f263959aa7538e488c9c4715cea7ca6fd"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/grace/AshUi.java",
+      "sha256": "62131bbacb08c21c539b465b8376863ca480ac406b6f2d95cb2942c32795de16"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/grace/GraceClientActions.java",
+      "sha256": "b9882a98d70178b21eb658281432661e517349e237fd05c37a028a1815ec4413"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/grace/GraceMapPlugin.java",
+      "sha256": "80e75e224eda3d7aaf8cff0f10a046056ca6a85f9e84960a7cde7a46c24f44da"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/grace/GraceScreen.java",
+      "sha256": "c846eed8e089c73a32447bcfa82b6b56ee3a04f526f86533e455d540ea238fe2"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/grace/GraceScreenState.java",
+      "sha256": "f282ab422cfc6af983f5c6ae1eff1f94939ef8baf06327155a24afbb8f2f14e3"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/grace/MinimapSize.java",
+      "sha256": "3a8838251b605640aa98ed178506b48223854c69bca9a0bb8a0517272e17e3a0"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/MargitModelRenderer.java",
+      "sha256": "4b3b9917b1a8906648746fffde8893dd6a868d4a0638cf62bd72a0d490104269"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/MargitRenderer.java",
+      "sha256": "b4bab21b096cde24af8bc78e39751d20bd4b9b785077ee23ba06bbc448b09977"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/PresentationRoutes.java",
+      "sha256": "a1f2493ab0075d0ce7a53ec2b08a09cc222244fea2b437cbb98db3b434d9cdc0"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/RollClient.java",
+      "sha256": "715f4faf59261a2971dd8af96b7a8cd3481054183891c6f6d2fa7daddcbfe8eb"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/SkillPoseAnimator.java",
+      "sha256": "70bdc5e1494d715f80da7dcdf81145d581eeeb191ec72e2ac9cc8ba3a9bd3d83"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/TalismanClientData.java",
+      "sha256": "ce07428457f7b67392cd944edc9c559803ffb7789010a225904c13f4fa090000"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/WeaponAssets.java",
+      "sha256": "36d7aeac4607d832f89e2147ac65b5b6af47a554571cda966e62ea6d99fd8dbf"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/WeaponCorrections.java",
+      "sha256": "bcd5f50fbd33c0c889786cde6570ff09d262679c36c8b302064ce0617128c73f"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/WeaponMesh.java",
+      "sha256": "0a816c9024e9ba2de3dd0c488cc75d555ceacf2719c66ffb5b0bf7d291c34af7"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/WornHandGear.java",
+      "sha256": "4901430886c3418b5ed31b6693979c42f697afef921a6af4aaa4dddc19efc902"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/client/WornHandLayer.java",
+      "sha256": "1cf6ec08947abcbb35c01afd5ad9446c3d47e97cc1c1df4a459711b97d93bd11"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/command/EldenCombatCommand.java",
+      "sha256": "5a902717e21f175b1d7c2340726adc84b2b183cfd08c6bfdec7d14b96e4c98af"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/command/SkillTestCommand.java",
+      "sha256": "89a2032da9b596484ae94cffcb5669f188a2d8e39bba0ba9c67ec769c0b2fa71"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/compat/AlexSpawnCompat.java",
+      "sha256": "33b609e332b6ebe885faaeda0738996760e490307caedee4fd8406c804892b4c"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/compat/CombatRollCompat.java",
+      "sha256": "884be0adc1f593a65efc7b637e5f6a4477beca7e1a1809963db75136d754fb83"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/compat/DntDataCompat.java",
+      "sha256": "18c3ab9c450be472ea5ee2ce430d46e26ae1117dce6a38fc246822a173ef0b86"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/compat/RollPrediction.java",
+      "sha256": "59f50734339a10b04b8ff0dc2b92de4dd65dc7e165156421d6d4dc11dacc25f7"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/ActionId.java",
+      "sha256": "df9bbc722135a889bcf5950eba00f8d8d7ad1c2f09357b9c1a6f082c4231c621"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/ActionSpec.java",
+      "sha256": "449eb5e7336b840c1f1e5ed91ad026d28695bccae9d874670afc15d9b7b341dc"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/Affinity.java",
+      "sha256": "400737074a4e9505b2083f16c135a8b31ff3876445593db0ea4f8a598a05ddcc"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/AshRewardTable.java",
+      "sha256": "366917b88fa9099049cefc9ac9f0da00c9f3d016775eba360397f86816cb73d9"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/AshUnlockSet.java",
+      "sha256": "df21a8abdc5a14f9da5afb88dc2b0833f071506c33fdaf4c8fb9b08fe2b1775a"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/AshWeaponGroups.java",
+      "sha256": "73dfc01f6aa35fb29a574a59b7b3e6203fce690a5b4b7d7ffda1c1afcd9bb4ca"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/AttributeKind.java",
+      "sha256": "b952813c719f4b17f88b2a1765ec19a90f6f36e2414491a5cb310c1bb4953024"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/AttributeSet.java",
+      "sha256": "e746479ef0d6dba5c0866b8ff84fba14561670059fe6abf2c772e4869b0cecb3"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/CombatConfig.java",
+      "sha256": "1ca026f7b7fa62327d861e8337559d84fe571f979fa9c41e15841197364f80e3"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/CombatRules.java",
+      "sha256": "6358a9b8d311cb47f7204d22d4e5a71f32f5b5fc457d76b1e019b38e004419a9"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/CombatState.java",
+      "sha256": "388189d47e65058a179e973fe4d63f2a12f830d2cac9d79a146a3230a1ce7d12"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/ConsumableSpec.java",
+      "sha256": "29f48a8ab6f2a604fd24cb2412ecfc58cfbc0540fac9af06e6a18ca4bafaf688"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/CoreLog.java",
+      "sha256": "55ad735f20cad85ffd083cf8507b9f355558b320c90ded37f473df23053d8f97"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/CorrectionGrade.java",
+      "sha256": "8017b3b28afdd9e839a7bcac803fdd637f6192aa9c2ef2ee47a55529020d0543"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/geom/Box.java",
+      "sha256": "aec7017105379b39329b707efc5fd09fbe6a124a36cea24b4f8e892473c4b967"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/geom/Collision.java",
+      "sha256": "2fac7b588b7160b36cc5952e4ce8e3c4e68b7985ee869dfe181bf0650d06b7dd"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/HitWindow.java",
+      "sha256": "a520a26b0bdcc4552d748c74fa98940a01d46a820ef7a041faf4b700fe366380"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/IntentType.java",
+      "sha256": "507eb58edaab3ac8678d2432d641e048c86a650fb52e1f4c21b3f92b05b9b3a5"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/PoiseMath.java",
+      "sha256": "ef600c1b0b7b3d9f98fde7535a2d238360a8bcaafb52032122092fb024821770"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/RollChargeState.java",
+      "sha256": "7115bc813c09ec3442c3b1b59e88c4fbf4c8b1a26366b1eec4769bdbf5deae6a"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/SkillPoseData.java",
+      "sha256": "d26f5d25f2495f1eda451f793cb57c040d1e80bca7b2591e9930ef2b69c33711"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/TalismanAggregate.java",
+      "sha256": "05715810ded5fc9fe07b2e41e0db19239b412a69e69d50bed82db6eee40345a6"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/TalismanEffects.java",
+      "sha256": "cd1f6bee8f3f8a987ca02b74860934f63e8969fc682652739b0eb0d575620212"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/TalismanIds.java",
+      "sha256": "916a85390471e74e76ea3e1240150b7af10a523fdfc2fa76e8de7ea58f933330"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/TalismanRules.java",
+      "sha256": "f309582b166f9d24d5bead3c9218bbadaf3b3dd423a27287bd4596734be52a6a"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/TalismanSpec.java",
+      "sha256": "565f79b4a9f4d7de357a54f78327f507a0785e847520f352b0e3ee2c25085adc"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/UpgradeMath.java",
+      "sha256": "89e00d15d882e699926da09d6ebc1992eedc3175eda56546c8e3edca484e85a2"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/WeaponClass.java",
+      "sha256": "1a738a390b7a03597855725aedb919caaa69857babbeea9b1c39776170e75bf2"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/WeaponDefinition.java",
+      "sha256": "9533a3f8fb1218447abab33ee419c3cfc97b239da45e6676a384cadda37b7aa8"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/WeaponDefinitions.java",
+      "sha256": "ed111baae2442458f6f1c9c86c289fbd6ef7a0d9323cc2accd4fe9b0b470ed66"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/WeaponDisplayTransforms.java",
+      "sha256": "09d3a43f09c35b770d80cd777fb3e8cabcb7c922fe75e6b8cc4b0dbafbfeb167"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/WeaponProfile.java",
+      "sha256": "5b4d6526b0168716c899dc87c9fcd548daad39d84c9385fa353d5eb08736c806"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/WeaponProfiles.java",
+      "sha256": "105509d3cbc50e558d790c5203681917076b99d1c73675ac41d8e0ca9169d614"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/WeaponProportions.java",
+      "sha256": "1c9b353f7cdd700b9159e988cb4e331ecdb74ff961ddceee5669f2011be665c1"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/core/WeaponState.java",
+      "sha256": "6e0a323f7c8a16feb4535f191d3cfaa69f6e8026116f1c298179a8dc66a0e63c"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/crafting/WeaponForgingRecipe.java",
+      "sha256": "c39471f55c6b54cb5acd7e0c69d83a77ffbfbe91c367f5309872e6958028e4a0"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/effects/FxArtwork.java",
+      "sha256": "37e97944830dc6a6ed4a38eadfb2edaf422cedcbc8dfa65ffe07d4bf01ca8ccb"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/effects/FxPalette.java",
+      "sha256": "a1af8392ae29054c63b405da3f1f7cfa4886472b3e3d1814e438bac6e7f9c39c"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/effects/FxSlashRoute.java",
+      "sha256": "319ddcbae55c04f4fbc36d88133f0527f8bafc9cd0346c90201cc95ff648c840"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/effects/SkillEffectMesh.java",
+      "sha256": "3b393bd6a2976cd73e89d853c0906f2c279e439563f70c81d6d1aa35215310f8"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/effects/SkillOutlineShapes.java",
+      "sha256": "05771d7aa10c5d5ae32d1cd6cc42269c82ebbbedc73874079c1f221fb3528d23"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/effects/SkillSlashSprites.java",
+      "sha256": "4b77a927c4860376344a60b1cf992889a1802423d029d4085b1a482da311a62b"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/effects/VfxBudget.java",
+      "sha256": "7d564f8bce88d9dc9d88da4f29c26c76f17d350b6d25b247a68ff755d3c049dc"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/effects/VfxCameraMath.java",
+      "sha256": "a84378b5309041465782b1145fe9aec333ef27bc308345d610489aef985f307a"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/effects/VfxCaptureSequence.java",
+      "sha256": "5f54920c442732355239810612224586eff8eef5284fdcadb2a71f707d376bf6"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/effects/VfxDrawPlan.java",
+      "sha256": "e12a0d409e5ff425d4c8974549f1da5e383d36f90da8d2e7c771f3ccc404d104"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/effects/VfxFrameBudget.java",
+      "sha256": "fc399efd9100430e44cfa1fbea5565771925ef8f4ed3db8d48d17219b65703b7"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/effects/VfxShotComparison.java",
+      "sha256": "8f416eab04e0033a582275a569c5a4d29c81fa0c6ff2b35d482d38ef2b2afb44"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/effects/WaveFront.java",
+      "sha256": "4e2f9d6f9c1d46d7cb61f97ab9520eaa98e22e92d3116c53c4475b4dd604f724"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/EldenCombat.java",
+      "sha256": "543b3927aed97b29e086b643524a69279524351ed17a890905a57a44aec3b24e"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/entity/MargitEntity.java",
+      "sha256": "4b1204bc917b364a9daf0684f563da7b631553df502249ad30621c632da4de3a"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/entity/skill/GoldenWaveEntity.java",
+      "sha256": "62eebf22992c3ee660acb41b0d9f598f0dfbb157b2141bfcdffdc1ee45794c80"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/entity/skill/SkillEffectEntity.java",
+      "sha256": "9e767220fa5c855e52ac4c88e6c891aacd9af232357c370c642dc115f2dd96a1"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/item/ConsumableItem.java",
+      "sha256": "ccc0cd4969e498e14e2ce80e2f605db1d543e0aa9d17bb1a81442785defaa7ac"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/item/EldenWeaponItem.java",
+      "sha256": "7eb8743a76928e1f8be00dddcebbc54b0ce3c01f8e9f815986ada826ec4fc44b"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/item/HealingFlaskItem.java",
+      "sha256": "ce5292fda7fc2ecc66cb4fff4f7dbfeb73c45c7fd40c801d8f5798d48a990fe6"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/item/TalismanItem.java",
+      "sha256": "dd7e7c01410d3484aa7d44f13a38d38a5787e98720913e6c227bfc17ed8d5ba5"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/item/WeaponStacks.java",
+      "sha256": "96d62d7fa804ed00e45da33849dee58456b27c6ef5f2d30f96e5471e7ac37169"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/mixin/CombatRollManagerMixin.java",
+      "sha256": "35e527f839d671ee55948755d8d007c665087ad10865ee1a1e68db3704aed96f"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/mixin/CombatRollServerMixin.java",
+      "sha256": "246b364ee44a569b038704d3e087a05755ba9cf1ea208e05d0d67ec4a6e91456"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/mixin/ItemInHandWornMixin.java",
+      "sha256": "b776b1a7727c2e8d2723bb4452c59feec5641216ec16eefa25eb5fe5871c23d8"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/mixin/ItemRendererEquipment2dMixin.java",
+      "sha256": "6db18d1ca3b89880c531f1f808fb0ad49cf184d18f5c6f83f21b2f4a6507a7fd"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/mixin/JourneyMapSizeMixin.java",
+      "sha256": "4e102b5847caf80bc6071ce09db3c2749a152d0b0f2b47ede3e9d69f4baeea76"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/mixin/PlayerModelPoseMixin.java",
+      "sha256": "777848b246a6c2fa17fcbb0c841dc7bac136101703df43075d0552d57197822d"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/mixin/PlayerRendererWornMixin.java",
+      "sha256": "c7424d38b5bb0905fb939f3a3227b2832c289037bd526c25a682029fdd606628"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/network/ClientPayloadTrampoline.java",
+      "sha256": "873c727f4342cd1180b10762c94593b4f06fc1a41e8b7dbb5ba9d1c01579abcb"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/network/CombatIntentPayload.java",
+      "sha256": "4e5c3ae64ae110d7706022a54b2b30d4f6a4e3293d8b184f22a1a78f22426714"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/network/CombatStatePayload.java",
+      "sha256": "b27cbc52a3345ad526453f67136725503c0f83b92c9780274487189369cf3620"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/network/FpSyncPayload.java",
+      "sha256": "0bc5045f1c963ff45e8bcec1663883a55c53fa4ce82001879d10bb781833a175"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/network/GraceMenuActionPayload.java",
+      "sha256": "7af1d1961f6455005791f60b453d50aba8de1d84d251bf66ce10c0d48499fc51"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/network/GraceMenuStatePayload.java",
+      "sha256": "51522f09741713d79ec6fa072d6371443c7ca5706820e97975e35bde4d37d867"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/network/GraceNodesPayload.java",
+      "sha256": "afa12b2b072b489a587d06f46c5a2bfac9cfa70fc0cc77c870c6c8c6d5f2e477"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/network/GraceTravelPayload.java",
+      "sha256": "fdd3dd8868c833365dd2b05e3a722186af0bde32d6d46bdb105609cd3dbeda4f"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/network/LockOnPayload.java",
+      "sha256": "5c6e794cad4796e9ee74dd1e3b3d7e6702a7567ab0d2a360ab7ccd4aa500b34a"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/network/RollRejectedPayload.java",
+      "sha256": "07d1f802ee5f3665673996c3e96ff1ef5fc08abfa3e71f4c77af632f3955061a"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/network/SkillCastPayload.java",
+      "sha256": "9032a33093ef95e24d748b632bf55e633681161cf0c4ce4d042ab78e6c2ae9f2"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/network/TalismanDataPayload.java",
+      "sha256": "cdb255553690e4fe9dee2360b19489dfc4306d2ef464545ab6f7b726d2bcaadf"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/registry/AttributeSetCodec.java",
+      "sha256": "a504b5ed0e2f12578838da747cb2b80498f6ee5cf21c6e2a3f71ca8b1e200a04"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/registry/ModAttachments.java",
+      "sha256": "62360ae3d03169e7d6bb4a2339da69584d922f0be816ad55b54252c22d0f8cf1"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/registry/ModDataComponents.java",
+      "sha256": "cd26793281c5b07e3d886d344ee1801faa927e4b449ff3e9fb9fe226915cf1b6"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/registry/ModEntities.java",
+      "sha256": "f12d00f24745a6e8d2b4df6a71c428a4548a0aff08e36515f7f0d09a151b1e06"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/registry/ModItems.java",
+      "sha256": "bb48b91c086da806fa4c6522cfd9f3a637e86137a912fc6cb611aaeb546bbcc9"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/registry/ModMenus.java",
+      "sha256": "ba01958691875c914770219ae410f62e3e625f12ac99f114283dc8b06328a67c"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/registry/ModParticles.java",
+      "sha256": "2d3885b5986b4c40a10e6f5209bbb444b76b98fe070e81b6bd8ca12d8638183e"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/registry/ModPayloads.java",
+      "sha256": "e70f43e54a0bbf3c616850b9eaf0fd0f320c7d22ce7252d560b64321bc218b8d"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/registry/ModRecipes.java",
+      "sha256": "ea709c47eef0201157d154d50de2ce3f9a8667319550edd9640e38ccce112785"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/registry/WeaponStateCodec.java",
+      "sha256": "bcb1d79affd5099da8cdf1a70591970b650a9fac36392d97b8aee26b2790c84b"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/CombatDataEvents.java",
+      "sha256": "dcf3d9c0f6ee38587a849c667f589a006c75b4d4ed189eee3ca9cc31128c7d46"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/CombatEffects.java",
+      "sha256": "6974ea16bb9c53cb1fe206f25aa6d389949eab3105338f7c440af70c5a24875d"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/Consumables.java",
+      "sha256": "8817bf6194e249c52d7a7bfa03a95410c9e5e7c0d104340ea1dbe3b4650937bc"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/grace/GraceAccess.java",
+      "sha256": "e852b9716c182830a2a0ed3e5f4f0f228aea1db8493f343619ad9d71ec2bac30"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/grace/GraceBootstrap.java",
+      "sha256": "a89b7bcd893988d10b8415e6827e2a11e3810cea36c60c8280b26cfb0a21cd49"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/grace/GraceDependencies.java",
+      "sha256": "c76fc71aa3fcee3f3146a944e1265d3460895b3a0023ada149373e785509270a"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/grace/GraceDiscovery.java",
+      "sha256": "ad63b4855a2a6e5194cbcdf51165e7a2b2b009f588ee901a7c6282ab22bb876c"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/grace/GraceMenu.java",
+      "sha256": "ab808d7d5a81ddb66a0281602e0be91ef3a4c68714120b9645e2e3892ed0f96d"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/grace/GraceMenuActions.java",
+      "sha256": "c0e6c050850e5b136b4b30ff3176c78e7276b46e05318e42e80bb4ca3040c97a"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/grace/GraceOperations.java",
+      "sha256": "3367b71712c559b5a74b6293c1a9033825d16655eefbcbc45a18a854dd3e2981"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/grace/GraceRegistry.java",
+      "sha256": "47dfe8c7ae470a748f0713f5c977e3c92b5a71dc062f86d0de60a3ad023c76fb"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/grace/GraceRest.java",
+      "sha256": "f4d2ba965ff73befab6e0af325e3af164b738d829c0997685d591ff1a44a8846"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/grace/GraceService.java",
+      "sha256": "d7778e039c384ceb4b6af640b965ecd7d7dfedd87fccb7c5add9aeac38f27fd8"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/grace/GraceSettings.java",
+      "sha256": "a9b31d20930faa25e498e9df69b9004df44b34cb9107e0e07ec8438b9ee74ff8"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/HitResolver.java",
+      "sha256": "5d95cd6354966c44198c2b1560d69673b561c8defb900e3e9b2cb36044268d65"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/MargitDamageSource.java",
+      "sha256": "26d870f6817ced8452ee5fa88adee131fa8de9361994e8a2a6d3f2fbdf4f41c7"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/PlayerAppearance.java",
+      "sha256": "d846ae280954701c306229e3e7348f3c68c8a24ef20483c9549b961cb4b71dcb"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/PlayerAttributes.java",
+      "sha256": "acaa89982c4f0b35c071671b36c9e51bcd1e3dfe39ad7f380b0ef4461b9c0852"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/ServerCombat.java",
+      "sha256": "89b90fed786a3200af76dbdac9cfa2a98ff6b26b930a5ea498252ba2c671b838"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/AshBindings.java",
+      "sha256": "4d121dd17b31f13b5c399580633b0980f8d381a56a18dea1af8cef8f0535c96f"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/AshRewards.java",
+      "sha256": "6894e62339719b0887721fdf9dd114f17d054181fd71f9ff1232c7f7a4ff512e"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/AshUnlockData.java",
+      "sha256": "a40be7d8a2c431320048ab7789bb0316d9834f16fd6bcac7625aad87fdf4bd4c"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/AshUnlocks.java",
+      "sha256": "98658d913a7be94535c0cd5a8f4df0acefc7787307da60930260771319fc9277"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/AshWorkshop.java",
+      "sha256": "6b6cb92caef078f541a28913dcb8b9d3b7601d84362337f867179b896a45c9b7"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/DeathMark.java",
+      "sha256": "bd3dcc49bc2ddf6592a1ed199959c6eb35366dacb26cef7222c0d0305d7e86fd"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/DestinedDeathEffects.java",
+      "sha256": "6002c4c4b84ad82edd130db5519ac11158e6157645aff8cff36897f82628c220"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/FpStateCodec.java",
+      "sha256": "ed977240306a6013bd6bcdecadbb1478d00e8537f566e97e30442ec1838ac15d"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/LandingSupport.java",
+      "sha256": "74900914acd601874b892da9fe1ec9f4aae164e4815f1ab4c686738f636ba3fc"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/LocalSourceMotion.java",
+      "sha256": "56bbb97b538e05eca9be57eda08b76f4cab2a646cac8905d23dcf85def90ff77"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/OrdinaryAshCatalog.java",
+      "sha256": "3a606d6db33ce7c31ef05a420a1a97b505722f0bc1b1a4cfef0fbcfc96518934"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/OrdinaryAshes.java",
+      "sha256": "1d10157f11fccaf65eacb418dd84765d382d91a72bb754d766707654034f5f2a"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/OrdinaryAshRuntime.java",
+      "sha256": "61018a01932c486b27d9862626e4d445d78e57c762e9eb838854f1d6256874a0"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/package-info.java",
+      "sha256": "63cc3ba946c0087b691200afa667ebd66a908e8082e4aa65b3b30447cf8e7c29"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/PlayerFpState.java",
+      "sha256": "d18b495a662c17aa280a787e8637580deed45d82a5c785eb6694be6beaee1d2e"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/RemembranceRuntime.java",
+      "sha256": "5932d4378a3671e0616e9a2bdc0bf08fea78f900f6249b7beb4890fad12ea2cf"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/RemembranceSkillSpec.java",
+      "sha256": "b066e7cf3ae596451b84a2b8ae465081c45fe20a6504b691b6bb685b956b2c72"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/RemembranceWeaponRules.java",
+      "sha256": "c3e00b330efba3e7637699a9b02dcc51bd916a47f8bbef15e1c9e488037f04cc"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/SkillCasting.java",
+      "sha256": "674656266c410ff5291b8f8ad12933fc8ee311cdab9a42c5b40b325d296b0820"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/SkillCastState.java",
+      "sha256": "e5d6acfc2edb10fae9d0946e5d384aec407ee6b901cfa6d7fd3cd56278d339ad"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/SkillDriver.java",
+      "sha256": "cca34cf33b911c431e84a15b6e1129b3c7a6a410a34af005f2be5f55bdbb0ed7"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/SkillHitEffects.java",
+      "sha256": "6fa79d9436ee58483752716b5977a15e6eeddd326d8828f07a65b2ffc9c91067"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/SkillInterrupts.java",
+      "sha256": "9e1b03654811c872129bccc35c9e7a49fc0a72e0370bec80e00b76cc9d1115ea"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/SkillLanding.java",
+      "sha256": "e94c57ebe9d569779c0c2dbd6c3edea0d760d063ed09f42e3912db931a655959"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/SkillMotion.java",
+      "sha256": "b34b220970da5c51433a834dfd5791788aed19fd4fb32653dfd8d33437dea8d7"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/SkillMovementBudget.java",
+      "sha256": "9c2cea673875dac4d1ac971ed6bb840eeed8a2e04fe7e85b7edd47b86c2c349f"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/SkillServerEvents.java",
+      "sha256": "8b04a90898235fed891131ac091fdd4b8ff99723f08307df68d0be0e4585aa8c"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/SkillTransactions.java",
+      "sha256": "4d719b59ad7e10118ee0a5a8729812c30c6cb99eddf237d15af7212fa4a063f6"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/skills/WaveStep.java",
+      "sha256": "7ab396dc8982c9caa3e4f0116652fa7629b1da5c36357c49e0680d614635e6ad"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/TalismanCombatEvents.java",
+      "sha256": "6587b73e84fca9892cc53c83db4bf0cd2387aefbf0f5bdb611d40fc82109553a"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/TalismanEquipment.java",
+      "sha256": "f4330aabd4d2e844eedd3015ab1dbbe744a4da34e16aac81c64536b861efa9a0"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/TalismanLoadout.java",
+      "sha256": "5a3ae73e051bc85ee6680eb1c51aed0710c302eda99ca1772fd80a2dd2865f47"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/Talismans.java",
+      "sha256": "b0edf8e2ec4bbe939ca86cf0bb8cd0cb0306fcd14e0d8a17a851551a3bc99227"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/WeaponAttributes.java",
+      "sha256": "c29beb71c4d1b53ff43d45213efc7acc57cf1abc8fff8f5bba5ff1e7d9951aed"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/server/Weapons.java",
+      "sha256": "b3687b6676fef7cb41e33085fbac6997ccde9c7a4b259923bf2b88cd72bca502"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/skeleton/AnimationClip.java",
+      "sha256": "d91d5c61e5ddac932e8400a728fb34c1df2677d075718e864e6ca08bcf51747c"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/skeleton/BossHitGeometry.java",
+      "sha256": "9d6d181535dc9d8714f0ce5f7825f74b9e489f2cfd5dc2dd1b85c9f7d4d2f035"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/skeleton/ClipTiming.java",
+      "sha256": "34de8ecd5b92702f6c71f1e77568757dad5aa57fb14cadbdff968432f6643755"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/skeleton/CubeGeometry.java",
+      "sha256": "0d638bab3dfc9d96318cb814982b06f0a79ed4540fa431c8ebc0cad8907b5e25"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/skeleton/HitVolumes.java",
+      "sha256": "4444c83a20bd60d704e559e12d15dd1b4c67502063780ba1add4b63a864e1e41"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/skeleton/ModelData.java",
+      "sha256": "cf050aa7d64a4a1dc54b78622b3b472a64df4057942c952fb5211e2a408501c0"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/skeleton/PlayerAssets.java",
+      "sha256": "5daea3aaebea374d9d0fb042571d2135d498fee2cae1500c8ba963cca3a0ec40"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/skeleton/SkeletonAssets.java",
+      "sha256": "617e325d6523fb6682f5496219c8b1c0e347416e8798264334ee21582886ddcc"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/skeleton/SkeletonData.java",
+      "sha256": "8e21d097fbb1b789f66236c76f2e53374530b7302589feeda1dbc51d6b67ae5b"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/skeleton/SkeletonPose.java",
+      "sha256": "c33cffa750190a93bc8db8968d89058c9ac7d7923722f1e1ec5b38dae9a979b5"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/skeleton/SkinLayout.java",
+      "sha256": "6d8da19064b7b454c493d642c07ff41c293aaad31147594fd00cd84f0d1e92ff"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/skeleton/WeaponMeshData.java",
+      "sha256": "bd861e5eeb3e26fff790563bd15cd323d39bf09485bfbb8ae3f0aeb8a2b04c1c"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/testing/AshSmokeHarness.java",
+      "sha256": "eece2fe160ac065e2dbec42aa721c34317c667bcce9b1b52ae896b7fdf111f5b"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/testing/ClientSmokeHarness.java",
+      "sha256": "fde4d489368e503164ecb9fb7a6b630b90882a46e8675a1acf58e5724ec372d9"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/testing/GraceArtAcceptanceHarness.java",
+      "sha256": "d307c4c01889b636e2ab56536e0fb87cd854c117d1d18112414f9d28f6995338"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/testing/GraceClientPrototypeHarness.java",
+      "sha256": "4a5b0004c6cd6e56f37db804e2308fe1b7d899e8fe48b78946e2664480b4019d"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/testing/GracePrototypeHarness.java",
+      "sha256": "134966d0ece847a3721c08e87ce8bbc3c1bbd64314acf6a736507901c2c2f400"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/testing/PackIntegrationClientHarness.java",
+      "sha256": "1ace198596a50ab6ad0ce03d285612beda12b8ac267c554088a94edf54d186c6"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/testing/PackIntegrationHarness.java",
+      "sha256": "c155fbf25dfae1cb0983639fbe4c5d1ec1fb89d422a45852cddddf93ac070685"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/testing/PlayerAssetChecks.java",
+      "sha256": "3fc5992afda6bf7d611662549e9761b8b101bb9d10ea1543fe1bf6c2980df472"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/testing/SelectedArtAcceptanceHarness.java",
+      "sha256": "834e2222c3fe320b02eb33206362c45524320a7f7acb1614f7f7a9164502f23e"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/testing/SelfTest.java",
+      "sha256": "21fec5f7305f0acb50d987b338eae156eb6e0b8d503a53aa2602f20eb7522d26"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/testing/ServerSmokeHarness.java",
+      "sha256": "aa122490a8858ec8cb4a1e52f07f4ed0859b562635032b3f472fc2b0c2105ce5"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/testing/VfxFixedHarness.java",
+      "sha256": "7bed3300cc84cabdf4bd60586fe2a9d88daae636628a1044c6ff0f9e2cfc06b6"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/testing/VfxIntegrationHarness.java",
+      "sha256": "e0491260cedfac2e1ba1c2914ff64f37701dafb0e217671e5dc3d72758c773c9"
+    },
+    {
+      "file": "src/main/java/com/dsh/eldencombat/testing/VfxSemanticsHarness.java",
+      "sha256": "faa62dcb01270a68e2bd4acffd67a6aef5935fecbc25829a0da0ca2589265d58"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/fx/palette.json",
+      "sha256": "62d5b1928ddc9764b459912d4d5b0ec88bf486a21ef7007a8315cce5385dca29"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/axe.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/ballista.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/blasphemous_blade.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/claw.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/colossal_sword.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/colossal_weapon.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/crossbow.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/curved_greatsword.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/curved_sword.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/dagger.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/fist.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/flail.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/glintstone_staff.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/greataxe.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/great_bow.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/great_hammer.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/great_shield.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/great_spear.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/great_sword.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/halberd.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/hammer.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/hand_of_malenia.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/heavy_thrusting_sword.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/katana.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/long_bow.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/malikeths_black_blade.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/marikas_hammer.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/mohgwyns_sacred_spear.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/morgotts_cursed_sword.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/sacred_relic_sword.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/sacred_seal.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/scythe.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/shield.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/short_bow.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/small_shield.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/spear.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/starscourge_greatsword.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/straight_sword.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/thrusting_sword.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/twinblade.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/item_skins/whip.json",
+      "sha256": "f74019015ad9b38a09c404b37d7d45ce02f0f1f4a315cb0ea6353070bc4c55b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/lang/en_us.json",
+      "sha256": "b7a811eb107eac3ab248b25c9c676cdf07326ede6a351bd527191cf68fce1aa0"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/lang/zh_cn.json",
+      "sha256": "30da0ac00948dce1523da9dd66727b5858ef48f7317cb57e97c803827d47e35d"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/affinity_template_blood.json",
+      "sha256": "faa6761429e20a28409cd92da7f61a78fbcc3b170437c3e38ae8648cfa948002"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/affinity_template_fire.json",
+      "sha256": "2c7944fee57bdbb88c7abcdd1acbd218e68b2d515aa1bfb16743d8e258270a4d"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/affinity_template_heavy.json",
+      "sha256": "0ffbe985e8a2969e37ed67043953355bd9be045c2d582a59a6706961294972a3"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/affinity_template_keen.json",
+      "sha256": "6235af51cb1f878c86f60b22cb8c3f4564f3af019757b930f40b878d64319814"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/affinity_template_magic.json",
+      "sha256": "2ad537fbce3af3cdac1428936a5a5dcb21bf377a4d1c5ba344565a480986e523"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/affinity_template_occult.json",
+      "sha256": "dd064637267bf711efedc6c408da2d3822a543c8734c00db140bd144722f18d5"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/affinity_template_quality.json",
+      "sha256": "8e2576a22a713f12cb9073433f013d5554e7f380d74f8723430ee5088d712f85"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/affinity_template_sacred.json",
+      "sha256": "883d3382757573d5ac1609d14fdb7438321a585cba09417064b0d9d4c7f49e19"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/ancient_dragon_smithing_stone.json",
+      "sha256": "76eeca117161cfb553d5cdd9bc17d6c4be65b2fd6f882b78abf9a9924da9c4f3"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/ancient_dragon_somber_stone.json",
+      "sha256": "2a086ee5a4ec61d59aa91158478b4ae480444c9ea185495df628eae226d64733"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/axe.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/ballista.json",
+      "sha256": "1b240627a3b417b54f3c2aeb21e14ea76e48e57c647eb75b87f123b24be23b91"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/bell_bearing_1.json",
+      "sha256": "9d5cc62ef0249c41049fcbd94459661d970715e4e23fa88d3bed7d3f46797ca8"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/bell_bearing_2.json",
+      "sha256": "6f8319b507da4e0eb3b980687926c225484c96212ed4baadda7bbc6130d2de3f"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/bell_bearing_3.json",
+      "sha256": "6bf707d2e00a7890f1dcf9006dd516ac44d5ea18135812b67e2cb79369297f0a"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/bell_bearing_4.json",
+      "sha256": "c64aa83b46ff89aa90761c2f3a8fdad2e100d99beb693156c6f185126bde1a95"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/blasphemous_blade.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/blood_resin.json",
+      "sha256": "78a327a63dbe4375fd568b3d545bcc2ed932af64fc94909f3c63cbbb564976e0"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/claw.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/colossal_sword.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/colossal_weapon.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/crossbow.json",
+      "sha256": "1b240627a3b417b54f3c2aeb21e14ea76e48e57c647eb75b87f123b24be23b91"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/curved_greatsword.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/curved_sword.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/dagger.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/dragoncrest_shield_talisman.json",
+      "sha256": "7dbe8384f7b7bea34610fb9fc9aa3104ba4024240a29c5845ba15c3e28b3869a"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/fire_ember.json",
+      "sha256": "5cbcdac45d795412cceb32d3f27d24bde928b05a5842aa8902834586af54545a"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/fist.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/flail.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/flame_grant_me_strength.json",
+      "sha256": "19a1982e08659a2a4dcf6592a4c338656c40c3c2e0d4b46f8c180d7f20e931c8"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/glintstone_dust.json",
+      "sha256": "ddff6f462ee0461972d7e30f353c2883be0f29f576a9575778cc423c327c3abb"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/glintstone_staff.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/greataxe.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/great_bow.json",
+      "sha256": "1e5f778f97843919789d51cb65bbffec65e58c30c4b145823072d7e3e361e58b"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/great_hammer.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/great_shield.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/great_spear.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/great_sword.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/green_turtle_talisman.json",
+      "sha256": "613088792327242bf8455b98745e5535139b80c42bf4ffd29c748872f6055ff5"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/halberd.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/hammer.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/hand_of_malenia.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/heavy_scale.json",
+      "sha256": "bd49fb77daf583bdc2f5a27fa5fca96fbd2edc389550dcde1c37cca0b9b220f7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/heavy_thrusting_sword.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/ironjar_aromatic.json",
+      "sha256": "e4a958bc717aa38fe743ed7fc722c1b76672373c429419aac52ce238bf31de11"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/katana.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/keen_scale.json",
+      "sha256": "493572a76eb9e72b9084bf86207f49f2f12427f0d9964a90d15af3e218f0a657"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/long_bow.json",
+      "sha256": "1e5f778f97843919789d51cb65bbffec65e58c30c4b145823072d7e3e361e58b"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/malikeths_black_blade.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/margit_spawn_egg.json",
+      "sha256": "d2d67b22443c23da9188100f1a63ddf1f7ec4e0e4a3dcc4e6a1d04d87b2213ef"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/marikas_hammer.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/mohgwyns_sacred_spear.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/morgotts_cursed_sword.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/occult_crystal.json",
+      "sha256": "06a1b350dfa9fa9fa4f7c00bed63e73ff83444d141f887632ad522b4a4197a84"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/quality_scale.json",
+      "sha256": "e4d386756488b2b1121ff81dc5d2754077ce36f73070686585f38117460c7a85"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/radagon_soreseal.json",
+      "sha256": "245e0a7176cffff7edf24dc45a51b138dd8330992d5354170da3a8e71bff55b6"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/reforge_template.json",
+      "sha256": "56e67091a978241eca7c8748752d1d358e095f38a42824234c2b0f3d658e2dda"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/remorse_tear.json",
+      "sha256": "7b1bbf5241f5ede23157c8550cde49ab5a7baddabb914989a3f8d167c4bdf201"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/sacred_crystal.json",
+      "sha256": "79c828ecee4ae876e0270873595c48e643da2c708461833228cd386fae3bd4f2"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/sacred_relic_sword.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/sacred_seal.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/scythe.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/shield.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/short_bow.json",
+      "sha256": "1e5f778f97843919789d51cb65bbffec65e58c30c4b145823072d7e3e361e58b"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/small_shield.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/smithing_stone_1.json",
+      "sha256": "a4fb949fe841a5b2edca3c892d77c9a9cab0f5b4554199e38dc907ce8b163ce8"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/smithing_stone_2.json",
+      "sha256": "3d3330e0db9aaeaa145ed8e51b297bccf1027d8ce4f0e6754cd211ec46f6c16f"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/smithing_stone_3.json",
+      "sha256": "38d191bc23e3b4d6803ec46558955ab7d75bae72089a0ba189b622f668859245"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/smithing_stone_4.json",
+      "sha256": "ae893ef44faf4c256b14151f7a55207dad215b5406bc8cd85220f23fe60e7378"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/smithing_stone_5.json",
+      "sha256": "4b236ba26d664251b0588c551322cc98f494b39db0b88264a9e28afafbeb5824"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/smithing_stone_6.json",
+      "sha256": "d748a33c0067a457035f3f70b0ce9739e8c29e9cb595c22b26daeaa423145b79"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/smithing_stone_7.json",
+      "sha256": "e560addd75a3411b8093134093632f1caaee58fab60cfd848750e7e2aa22b9dc"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/smithing_stone_8.json",
+      "sha256": "36c91628a07f638eb16ed09dcc6f74e4202f6ff90d197e7fb1e01f764c03fdc0"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/somber_smithing_stone_1.json",
+      "sha256": "61d8e525c44b63ee84c7827d050b556a118f434673777225272b91e8417ffb65"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/somber_smithing_stone_2.json",
+      "sha256": "6802cdc11f3575a2f0b593acaef16db80f68292608f40f854ecfa02876a3c70b"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/somber_smithing_stone_3.json",
+      "sha256": "104f0aaa21b0d6515d5004ae9877147891f090ead8ca39fce79e41c87c0cd825"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/somber_smithing_stone_4.json",
+      "sha256": "4b5ff85b4a9bacb2289fad29d8d501bb22f3d6ff2ba6af47ac140b6f2e11eff3"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/somber_smithing_stone_5.json",
+      "sha256": "7ab3c7bc2bfb169d719096a95f32e32b0159a8918f87a64bcf038741d6dba1b3"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/somber_upgrade_template_1.json",
+      "sha256": "789bdcc9b2efcc5d3177f838fababd3608e7d69c52fff6f7c8ef6d8fe5fa797c"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/somber_upgrade_template_2.json",
+      "sha256": "aebd88ca7de93ced2a523d7927d0172ab36d605ea8fb8b5a43494fa13674396b"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/somber_upgrade_template_3.json",
+      "sha256": "b465a11d5bf10c0b466a51c003f4dbe1b8848e8a504a992d7eac74fbbdd348b6"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/somber_upgrade_template_4.json",
+      "sha256": "03ae809a8407c9d025e70f23ce529a730c850acf9784fb69856d2a1cbfe4ea91"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/somber_upgrade_template_5.json",
+      "sha256": "12680ba3211ea03484ecc9ba05df4b101f841749fb968d1ae766b2d3a7ecf129"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/spear.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/starlight_shard.json",
+      "sha256": "3078b418ba544341767e6c729c049a41ebdf97138f0481f609ae2a47cf7e0ea9"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/starscourge_greatsword.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/straight_sword.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/test_flask.json",
+      "sha256": "d3f18f592274738fa79952f474dc973659cebe42995b4ac47bc013ccabe7358b"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/thrusting_sword.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/twinblade.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/upgrade_template_1.json",
+      "sha256": "be11117df9af48f34fe813ea08a7ac928a90bd60c6e573cc37044fe9767dc292"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/upgrade_template_2.json",
+      "sha256": "db03e40610e4479e6c6d1d62f1b1a99bacec9933e3cd4610361b81e07b4d421d"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/upgrade_template_3.json",
+      "sha256": "a5a77f079f67a5083f2b0cfeb95864d61832c2345a0ada60c8e32ea1f691e33e"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/upgrade_template_4.json",
+      "sha256": "697718cf47763ae4a368d5343945523a3a372c6472ae3bdd6095461c4a412090"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/upgrade_template_5.json",
+      "sha256": "ebf7c89701efb38593f02c090f9d7eb90843f7640dc9cf463a584a49e1238c9c"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/upgrade_template_6.json",
+      "sha256": "8de42f5b585228b03ddd8c7bba86266364f8c6e57515399ed94d20e6efd7c99c"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/upgrade_template_7.json",
+      "sha256": "578c5b460852b92bd52377a7792b2f3e00c72f8fdccdda7d7fe2a4772ab0fc31"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/upgrade_template_8.json",
+      "sha256": "7b526e5cdedbc9da4ccc7a92d0b3c50c354b627740aebba5711e424e6f023f4f"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/warrior_jar_shard.json",
+      "sha256": "9b24cb577eb46df31eecb92fd0e93bac17c432966b5948a8658150061777142d"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/weapon_placeholder.json",
+      "sha256": "26522e38e6da776d1dac10c88daa964c2391d905790b62689368de71184d365c"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/weapon_placeholder_bow.json",
+      "sha256": "82be693ff0d8d69a30eb3edf665247d5d9d2001b3ea43dfb300ebc47927fcd73"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/weapon_placeholder_crossbow.json",
+      "sha256": "a418601473d8eade11731e7b1edb4ab9492b3b796546445350c6c24d92541f6c"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/models/item/whip.json",
+      "sha256": "ea92d96629d292d26e4ae03994580db8b3c72e875ce63236050aa853138ee2b7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/particles/dust.json",
+      "sha256": "8a9dfeb137ba17b8663ff533dba31af40985f538481c7d575d465b70001dad75"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/particles/heal.json",
+      "sha256": "aff167ab098e52c16e3f6e05b3d6785396e7c1623eccad7312b5ffda84c6adea"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/particles/spark.json",
+      "sha256": "dded60b1f340dfce0a07c3c39cb004b19b670ee201d254d6d1803cd161853b0e"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/routes/2d.json",
+      "sha256": "a52534adaf747e082e00dc9f8b5aae70b37bf6b5189b9b4c91758d0540f2cb5b"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/skill_poses/bloodboon_ritual.json",
+      "sha256": "11dabc888e339fb49329ffa17ea51e45d438d7d26f59335bef54fb557e1231cd"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/skill_poses/cursed_blood_slice.json",
+      "sha256": "df8d6e8f8646d43195141f019c7a9b757926b93a2708642f11c28d5c204fb87a"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/skill_poses/destined_death.json",
+      "sha256": "0150d8a3d65508d63b2c690f2fde03e479f9c5e0739af6e8b7567ccecad8c419"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/skill_poses/gold_breaker.json",
+      "sha256": "4cacc9a5ec85ee255b93643fdaa507e46f7a1448124d18b4c5231653e7d6ac5f"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/skill_poses/starcaller_cry.json",
+      "sha256": "132c98081d0c1aebf1df5ccb0cee873a018a99293cf7d4c0b5cb98459d61841c"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/skill_poses/takers_flames.json",
+      "sha256": "eb894429150915aba1f6fa62b909c991384b6b56fde3a0fcdc8d1816986455b5"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/skill_poses/waterfowl_dance.json",
+      "sha256": "346859679cd5b64a487d17b509bb7da1404dee3689eb076118b70945f3f76a53"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/skill_poses/wave_of_gold.json",
+      "sha256": "f0125a3a8857f9bc44743b63e6cd5d80c909eb4d32381fc2beb4eb5c68fc6dd7"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/affinity_template_blood.png",
+      "sha256": "2f25ca8b6c5b68fa7b1a4d5735f9f4c4d807fa109531fa8308dbb739f56cbede"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/affinity_template_fire.png",
+      "sha256": "eecd1e554b361ad60855b5205a77ae1f45cc1fc06eddeff25f9df7844bbe157a"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/affinity_template_heavy.png",
+      "sha256": "dd6176647334a45e4a76fb8bb52ad954d82bbce9e002593b5c9c5351a2bc1514"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/affinity_template_keen.png",
+      "sha256": "c184273c9e4b420e6222b87223bcb03d49b15efaed16788d9b413e68783cf98e"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/affinity_template_magic.png",
+      "sha256": "e750f4ebff7992ef26cb9256fac18759de07ddb5f1b477ebf6d84499559097cc"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/affinity_template_occult.png",
+      "sha256": "56ac74a9e65864bd30a65aa707514f6759b9acea03ec5e5576e8d061c1ead7f9"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/affinity_template_quality.png",
+      "sha256": "81d15cd4de139a75582b402e47be316c5f0bbffe77d1609707f572e691fd4bac"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/affinity_template_sacred.png",
+      "sha256": "954d217764195590c0a8d046db1ef2592d9c640a0e739d5899d0a79b1fbadf5f"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/ancient_dragon_smithing_stone.png",
+      "sha256": "c69134731ad155cd4c36dfcfc84cde1301b9ccb89b25d57d36d4b2964fbc1932"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/ancient_dragon_somber_stone.png",
+      "sha256": "32b08aff5b4a51d248ea92395c41cac28244100624013c9411194ed9c3e60fb2"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/bell_bearing_1.png",
+      "sha256": "3af58bc605fc546251d003b1f6ce0d4c4c7a281c9a3fa644c0b3873079e53779"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/bell_bearing_2.png",
+      "sha256": "3af58bc605fc546251d003b1f6ce0d4c4c7a281c9a3fa644c0b3873079e53779"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/bell_bearing_3.png",
+      "sha256": "3af58bc605fc546251d003b1f6ce0d4c4c7a281c9a3fa644c0b3873079e53779"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/bell_bearing_4.png",
+      "sha256": "3af58bc605fc546251d003b1f6ce0d4c4c7a281c9a3fa644c0b3873079e53779"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/blank.png",
+      "sha256": "43739c566e26fd7cb88f69d3864ea34740372f5ee99acac169e090beffbce5c6"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/blood_resin.png",
+      "sha256": "2bf31950f5b348ce63aa6c466824f3075dc60135c1fa362ab712d7a52ec517a4"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/dragoncrest_shield_talisman.png",
+      "sha256": "a489a06530e96c1d17774552144e11ecd669df76967aed201293bab2caadcfd2"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/fire_ember.png",
+      "sha256": "61a560acb6268f5a4a6f816a5ad42647cff9ca8f6434382c9ce79b4e61b77834"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/flame_grant_me_strength.png",
+      "sha256": "0a6e8bd035d6a9d0b3229027c8cf43818d66febc99248a3574936dcd4ca9bf6f"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/glintstone_dust.png",
+      "sha256": "f9b19594545d791d4ad353f424aad3370c446131882f9e39c03e62cd6ec24f46"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/green_turtle_talisman.png",
+      "sha256": "3531eb39fade01a307889eba067f583e1e9dc1fa9789d1e16c231b32a9a62716"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/heavy_scale.png",
+      "sha256": "ceb080ee0f93ca7fb66f40dab17fa2c3fb2711e24e19a280ea3408abd80a2fb9"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/ironjar_aromatic.png",
+      "sha256": "8bd3427c775fee625b89d5d1e2c9814e5f7c2fad85a5086c5dba87b6bfbbafcc"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/keen_scale.png",
+      "sha256": "f004cefc6b002d3e6f35fbda736dea5e8d765d494e16217909612aefbf27869e"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/occult_crystal.png",
+      "sha256": "8d0c7391c5e89cda2aa121c491ff6ffd4319e946dbcc3ede5c51f93ecb2dba19"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/quality_scale.png",
+      "sha256": "3fd9b306576303985a829ac6c8d034f2a11f8946fcc223834e34dfad41f85177"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/radagon_soreseal.png",
+      "sha256": "527f3e399f865cb3291a05e36e0e71005f30bae5f180ab7cf5b3f12b9d8d8dd0"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/reforge_template.png",
+      "sha256": "8a5bb3348c993f3bb63350ef474fdafec299aca65ef4cc23eed216d9066dd796"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/remorse_tear.png",
+      "sha256": "9eb8d54bd580bd7a07528990315fb4cbdb70f27f49f0f4a524f09a307ab20345"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/sacred_crystal.png",
+      "sha256": "49941a608292481c2715674f1ad88e4cb3c13a76f001159923aef596e6b13117"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/smithing_stone_1.png",
+      "sha256": "027851e1479747d92b014a61c1552a4fb53f0ee24bfb94504e22b577bd3f422b"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/smithing_stone_2.png",
+      "sha256": "9075105dccb0e5ad1f0c8796648ceafcc930a69b5408d3006c908527361caf6a"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/smithing_stone_3.png",
+      "sha256": "8ab5873d6ab09d54c85d2fdfdeb4a0439898d203ed31ac8627742c0a9bbc697d"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/smithing_stone_4.png",
+      "sha256": "b40f14c155d49ca18ed7d17ef296391ee0fb32538db78ec552d987e0bc1612b4"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/smithing_stone_5.png",
+      "sha256": "500f321480072e48b110c37c5ea3ecb018fdd2ba817f9be6d08d7b1aff5fa2a1"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/smithing_stone_6.png",
+      "sha256": "0a87db45cf366068edbeb6eccaa2a8ef30590e64acefd72357071894aaf6426a"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/smithing_stone_7.png",
+      "sha256": "0577f38e49295e8809edc493ebe0ed8ba39fa478bdc0e50d57cc9774a8000052"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/smithing_stone_8.png",
+      "sha256": "b9d878635697cfab4e28a8fa3bbbc78ca5ecdb3c5e4b4c2ea1ae9a515e38dfa4"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/somber_smithing_stone_1.png",
+      "sha256": "a314210f134374ae3cd14ab8bc96aa3142e378f914ae511e2d5ba4155497f401"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/somber_smithing_stone_2.png",
+      "sha256": "065f4043bc2be413d5e48be1bdaed66a4d1bdb6572f968761dbe4a0cd33bd695"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/somber_smithing_stone_3.png",
+      "sha256": "903839f0935d0e7eb62b2122fe2d19c40623bc22ff9ca5b79f4e0e10fc61b84d"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/somber_smithing_stone_4.png",
+      "sha256": "f5097f096a589d0a1edf4dc4afdc78ba8753f5c673355f1d2326cc394c52029b"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/somber_smithing_stone_5.png",
+      "sha256": "51b660305a8da2cb36d6ecd65422bf0cace30cf25587fac6e93c1690e460fc16"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/somber_upgrade_template_1.png",
+      "sha256": "27e741ccd8dd8e57b0e66893b44f4a93cbd13f983da9768d6da6c44874368175"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/somber_upgrade_template_2.png",
+      "sha256": "399a143bb86d08e9fbab4769d634ac137d2af6608f33b52e105a56ca6ee2a729"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/somber_upgrade_template_3.png",
+      "sha256": "f487ca89777ff7a389a3a22edd47331dd5f1c5561a4b8f72cfa7b2ff3beef97e"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/somber_upgrade_template_4.png",
+      "sha256": "a19ac41cd5cce1fa4e9822428227dc74fd7cd9fbcbe413aa4455e9014851084f"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/somber_upgrade_template_5.png",
+      "sha256": "37cb0dbd9718161429e0d0f21c077b7c5c2e6ae084c1b0a105a90b4937e0a193"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/starlight_shard.png",
+      "sha256": "cf4efeb717581a81be101f4080316eea74c8f1bc9272170f5a8372462b7ae604"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/upgrade_template_1.png",
+      "sha256": "18fefa4b3d118d9e162a7ba9c3f1ff37353c87db4d6a5f184dc9cf270cc4580e"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/upgrade_template_2.png",
+      "sha256": "1c09ace40b80654b1995616dc521d63d9b0422fdc59bfa7421a8afa5bab519de"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/upgrade_template_3.png",
+      "sha256": "522c36114772fb54800351f5124deda2f855e9f328e69af01cfcebf8df59b34d"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/upgrade_template_4.png",
+      "sha256": "34cfbdffe7ba80c1274c248127b760b49e716c83356082f84936d005e845354c"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/upgrade_template_5.png",
+      "sha256": "63a6ce0efdf5464033c92fea40cb81f2e50113e507bd1c3f0cc406d24395a8a1"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/upgrade_template_6.png",
+      "sha256": "8243ad56edd13fde0ef925161fd751cde48cf7deeb8e0cc8b4519af9d63fd570"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/upgrade_template_7.png",
+      "sha256": "2dabace9a51654c8a320299be79f69c96ed58e79fa725a5e93706130792cd4fa"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/upgrade_template_8.png",
+      "sha256": "bd4e07929f6e4d5ee8bfec33d1a07d9a64b59b996e5d424f031601008989240f"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/warrior_jar_shard.png",
+      "sha256": "09547e586f0e995e28fe03857379928e8cc01e12630ef4efa7cee9a0549d3182"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/textures/item/worn_hands.png",
+      "sha256": "ef32c287c33ac0d64d72fb17766c885ccc9fd83ab7c98a5894ea5438d3d102af"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/worn/claw_left.json",
+      "sha256": "afb65111c9ddabfbb1e4b165382a72497099c4d53d35c069e548dcff4d6e0a2a"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/worn/claw_right.json",
+      "sha256": "da21eeed93578dd72ccdf0402f48889d7798106c6f5e9d4805f745c09bf4eaba"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/worn/fist_left.json",
+      "sha256": "41b086d20c6f726781d8d6d7bac8315370028a60f605deb95edfd73ae1903395"
+    },
+    {
+      "file": "src/main/resources/assets/eldencombat/worn/fist_right.json",
+      "sha256": "56b5291d259e8678007fb29963b04826bab80819785d42933da67a17032217e4"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/consumables/flame_grant_me_strength.json",
+      "sha256": "240e6c75c4a92514db8b26aa4a495c746a324d2fc067663550b8458a3757096b"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/consumables/ironjar_aromatic.json",
+      "sha256": "903d52934abcddfb706bedff9c5f3500275b70f512d42c116cbf6686a620c8d1"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/consumables/starlight_shard.json",
+      "sha256": "8b0914ba9a99f7d33114bb37efb6df91a992894bce51c40cc29ce892d27e7ced"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/dsh_skills/remembrance_parameters.json",
+      "sha256": "d973661d0607072c064f8a9ead8a1fc2ab806d6ff1bbfbe85996a6d20c71fa09"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/recipe/affinity_blood.json",
+      "sha256": "50fb78595a891cb937634aecfb045c6ef0dc0b6d58fc590a4200644ef8b323ee"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/recipe/affinity_fire.json",
+      "sha256": "e843283dc9030504f301b342ea0ddd56ca9809d9573cd69117f8d9a53443ad3b"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/recipe/affinity_heavy.json",
+      "sha256": "7d2bdb8945053b11a5f93b71433aadeda03a2a1d106904f285ceda093090770a"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/recipe/affinity_keen.json",
+      "sha256": "8269bd3099d49b4fe9ae742fb4b3dfa2f9986d389707f1e2e7fcf824a664d78f"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/recipe/affinity_magic.json",
+      "sha256": "164367065ca1117ce7a1f5cf4e15e0827169d21767a5280a0924b0ab7dd8dd28"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/recipe/affinity_occult.json",
+      "sha256": "4a10f15359ce5b05050533e4419300b177ab8f592e9634a469e482544a0ffd2e"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/recipe/affinity_quality.json",
+      "sha256": "d11473c1e72fde8a814ced942f5de0a0e9e5702abdcf920f858ccc8246c79b9f"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/recipe/affinity_sacred.json",
+      "sha256": "991c25b590054694f3a12861a1e945a86cd0360c952626cb2d80a31d54929b17"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/recipe/reforge.json",
+      "sha256": "2843751dec2bed811395cd2aa3d5f9cbbd24b83ca95cd36789fb0d6168e24950"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/recipe/upgrade_normal_1.json",
+      "sha256": "657bfd6639efa47bb6afeb8d6c7bb3cf2ef4fbbdb011131c1f885c4104095a3e"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/recipe/upgrade_normal_2.json",
+      "sha256": "424543c9b2d1ef4e7791a974d5e64c0e176776a6b17ff5a1882d3321e388deac"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/recipe/upgrade_normal_3.json",
+      "sha256": "b0aa8051a31519c64dd2a792744fc220912a99fe4a143e3f08f819ece1f1ec89"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/recipe/upgrade_normal_4.json",
+      "sha256": "4c9f717abf6e4ae1fbcd04ad85c3d07b6a97a4f49870e043b681f4371ddbf4d2"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/recipe/upgrade_normal_5.json",
+      "sha256": "a942083acd7190ae1bd40f7bf642610f7afdb6b67bd5195488b46cddbd625fb2"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/recipe/upgrade_normal_6.json",
+      "sha256": "e47088ce85171a3f1d8afc1a413b2c3976bb11cd4fc73a9971d1455565b52876"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/recipe/upgrade_normal_7.json",
+      "sha256": "e99c82c391668d0bd1be8fca7fa9e02691abd96e18f279268ecd97d12c5a70a3"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/recipe/upgrade_normal_8.json",
+      "sha256": "c57eb756b11617a3ceec273e5fd503507fc8be83f9b53ce3e4f5f3f6dfaa0029"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/recipe/upgrade_normal_ancient.json",
+      "sha256": "9ea67a85e1c37575a18677b0d3ac4d95f9c3909f1d1fe61a90265236f33897dc"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/recipe/upgrade_somber_1.json",
+      "sha256": "0305d858c0ac91055d5399088d93f568354ce83069a41af2550f0c036525213d"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/recipe/upgrade_somber_2.json",
+      "sha256": "090e296bf472f6a6527c1de8e6c89c2515e18ab8a5ba75a271613aaea5d682a7"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/recipe/upgrade_somber_3.json",
+      "sha256": "bcc822b714bf2ccf91e741385bc2eef85ee2f371861c7e944b2179a71adb3820"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/recipe/upgrade_somber_4.json",
+      "sha256": "1bf58a90552d22abc39eeca89f23a1cefb4085fb069e45a00ee70e28714dcdb6"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/recipe/upgrade_somber_5.json",
+      "sha256": "f882ea128f6ab33c9299f342a9bc54be0c6898f71954726bb2d2500fee2eb4a3"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/recipe/upgrade_somber_ancient.json",
+      "sha256": "d6ac438467947c7e21e8fc39f66482121a1119d52dc4498abdde62b1d21dbf27"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/tags/damage_type/talisman_physical.json",
+      "sha256": "f29423548eda175e23e5e1e4e8ae112cd6f5cb26ede2a8a1e51694ae65b9312d"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/tags/item/great_swords.json",
+      "sha256": "e3877a55ef73756cbd5762f26df1ac4799b4967905c198aac8d29f641b0d4aa7"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/tags/item/light_swords.json",
+      "sha256": "171cf33b9d41d2675a09ad9d5f8cbc1acd68595096831628d138b4abaf975894"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/tags/item/normal_weapons.json",
+      "sha256": "c0340b16b22e446972ddebd5da681c6ffd80aeff32224fa99ad4a6c15d3812a9"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/tags/item/remembrance_weapons.json",
+      "sha256": "81a7c819ae2326a8e1efd06e888fff00b388b262c9330eadc142897aaa3e0628"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/tags/item/shields.json",
+      "sha256": "03fefcf2be08353ae47dd431ad8fa3cb853fc5d45097c538922bdb1f44745502"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/tags/item/weapons.json",
+      "sha256": "3dfd16a02951e0aa10863999fa48759f305b78433cb36decb2c89aba059409b8"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/talismans/dragoncrest_shield_talisman.json",
+      "sha256": "b6d1ce5cf0653c9d81d5108d209cef2c09489b49a5290699f9165d66dd75b026"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/talismans/green_turtle_talisman.json",
+      "sha256": "73d911d25fcb2eee710082b6b54892a01caec6112d52fa93626f8687fe6c9e38"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/talismans/radagon_soreseal.json",
+      "sha256": "b14b826efaa0b56c848be310ee1069a68033cb1df2282a6c32cf91241b7a6175"
+    },
+    {
+      "file": "src/main/resources/data/eldencombat/talismans/warrior_jar_shard.json",
+      "sha256": "d47bd42385faacd0e72437e83318dd5f5584203d1ac4b83fa4165f13389d039e"
+    },
+    {
+      "file": "src/main/resources/data/minecraft/tags/item/swords.json",
+      "sha256": "0cab19a4bbe8e60338de3eae72b0e0227920ef5a9b73a49f96ea28f7d3952001"
+    },
+    {
+      "file": "src/main/resources/datapacks/dnt_4_4_4/data/minecraft/advancement/give_quest_trader_trade.json",
+      "sha256": "9ca0da91d1d3b4a9099d1d4ae8c7ceeaf6c871b101cc26125150179f62f500b1"
+    },
+    {
+      "file": "src/main/resources/datapacks/dnt_4_4_4/data/minecraft/advancement/wander_add_map.json",
+      "sha256": "21b11674b18c3fb0d8292095cf7c12bca82ef4054ec3f1cd8d1e0222d1655629"
+    },
+    {
+      "file": "src/main/resources/datapacks/dnt_4_4_4/pack.mcmeta",
+      "sha256": "45ba7b9d02507f19e6e7ff861a79a3b326ad304dd0323cf8698ffec3f1c594f0"
+    },
+    {
+      "file": "src/main/resources/eldencombat.mixins.json",
+      "sha256": "47e452ab1b8be15dfc44dc301462168c6515922ff4d1ee0b9e38ab79ece9967a"
+    },
+    {
+      "file": "src/main/resources/META-INF/neoforge.mods.toml",
+      "sha256": "4bb5920da53b8aff8cab24ee224eb0a663205e29e3a1c62b2a24c2f06cbc0a26"
+    },
+    {
+      "file": "src/main/resources/pack.mcmeta",
+      "sha256": "670c7a1dc768bd17689df303f0ec6d13da99a210c589a208b41ac3750918e67a"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/AshRewardTableTest.java",
+      "sha256": "d682cea4b8d1741ac941ec78b7ebc54f886ef6ab29900d90ae39e027bf44a8aa"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/AshUnlockSetTest.java",
+      "sha256": "78e7e15e8b49cbe2a9e34a9ded00b584b1ce3358d1d29116ecd80ae45e968a4c"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/BossHitGeometryTest.java",
+      "sha256": "a64665a04dc4983d225d85c02308ac82ddea7635ae0a30dc3f150813784a6772"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/CombatHudLayoutTest.java",
+      "sha256": "fef916b5b27e30820a7210cbc69ee98055116e87592cf6e3e8c46053618ffb63"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/core/RollChargeStateTest.java",
+      "sha256": "6058c3d58fc4daa6da79a20deadfb3ad94384f0e96e0dbe0834ad6f7dc7cc25b"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/Equipment2dRegressionTest.java",
+      "sha256": "3c6031059931b9d69b6f8832067089da4c9d7061fb31fb66e6f8bc70d9a3cff9"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/Equipment2dRoutingTest.java",
+      "sha256": "be93c53bb9f93f21d6f4cd51a47c73ed4e2c77f167d267890063c7a96e29ec1a"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/FlatEquipmentAssetsTest.java",
+      "sha256": "a51909cb8cf2eb31542bce47b1130314507d66a5055adab67bb43f502e604aec"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/FxArtworkTest.java",
+      "sha256": "0e9ac3a76431f012871c449b1cd8c25a699d22b68dd9406bdb51dc566a256da1"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/FxSlashRouteTest.java",
+      "sha256": "9f4b0fc6639b3408547fcf443183d542bf32eb88b1efb23c83ee0d1be6f27d14"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/GraceSettingsTest.java",
+      "sha256": "25ac9762ee54909f0fb0956de440751b231336e2d56f1318873916c896005a05"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/GripContactTest.java",
+      "sha256": "2370d14fab6b2b652ea6a2cb700ab84b50e2bbbb7ba51f2a934a87da6318af54"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/LocalSourceMotionTest.java",
+      "sha256": "1678ab8082cfe32a157382f529ac6e1ecc86ed96982feefb260abfb6e173c20f"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/ManualUnlimitedFpTest.java",
+      "sha256": "b3086de7a15a13675d9d73f9a996c909f6d5c0244271f411729c5e2fabf6cd62"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/OrdinaryAshCatalogTest.java",
+      "sha256": "b9c104a52b33ceac26aa8a6a48a091103885882120adbf9b53909619f3ddc2c8"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/PoiseMathTest.java",
+      "sha256": "c369ba91fdd8490d57ffa728fd402f72103b2528d62c6562e89307c55852915f"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/RemainingSkillsTest.java",
+      "sha256": "dd4e9d08a7f60e9573e5bf2cd3c758c20253784fa0177558a887d809d81e44d9"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/RemembranceSkillsTest.java",
+      "sha256": "27ed267f1303d5a514980eea5f693f40d422ea66ea6499e3ebb43e095d27c373"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/SelectedArtIntegrationTest.java",
+      "sha256": "c00151eb26e34882fe90840c5ce9ab4b0ca89dc3d1a2998470880f8110206cea"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/SelfTestTest.java",
+      "sha256": "86f10c17f8bcc5420d46ed1102d24039fb6da71f9348f791a6ede70cfad01445"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/SkillCommitBoundaryTest.java",
+      "sha256": "14097f1b4d49703cb867744361b3426f1e01e8b6610c4be65a555c39d74a192d"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/SkillEffectMeshTest.java",
+      "sha256": "a1b8b66aa40410d65b87433315f5c088faa5dda59eeea513d77a73b1505f2a89"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/SkillLandingTest.java",
+      "sha256": "a78333ab0854d695698c1f30f376aae3728ce3530659693ed188ca2cb5ffad15"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/SkillPoseDataTest.java",
+      "sha256": "ebf1d4d7936a1398637360997b803c90a7287b5f8ac26f5329c9d21f048b5af8"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/SkillSlashSpritesTest.java",
+      "sha256": "ea6bea3a63c57ff0fa7aa24aee1b0bb0a65a4e705ee205a22d21117ed96243dc"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/TalismanAggregateTest.java",
+      "sha256": "e4295430484dade20e27bc357f4cb871727c62e5e36dbdb31b4fcc9e9cef9198"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/TalismanConsumableDataTest.java",
+      "sha256": "f6c33995f6b632361d61e86542e3e137e2f7c342fbb130baa9ace874b23686ee"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/TalismanIdsTest.java",
+      "sha256": "6a609206c6cbaf0f4bb71fb481a00629b23226622c1595f89cdc8ceba3e6e128"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/TalismanMechanicsTest.java",
+      "sha256": "96bb6fc4c2d4b9d49704aaa0ecd2dc0ac2c915855eada326e2b65616eecfee5c"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/TalismanPayloadTest.java",
+      "sha256": "4c83227d8df4cf88b2ee2c30a649a28135fde603764a709727b2e95e8d35d078"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/TalismanRulesTest.java",
+      "sha256": "cacc170667ed4e2b9770b5eed6c731b25e1fb7626858161a0cf016e2bc4aef7c"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/VfxCameraMathTest.java",
+      "sha256": "bb8555593ca791e45e6dabbbb45753fe75175759114580e7ac527eb885ad7f86"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/VfxCaptureSequenceTest.java",
+      "sha256": "c2c5b6c36cc55f2948282e0eb2fe4ad902dc19d8b63cf429efd36fbe8c529940"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/VfxDrawPlanTest.java",
+      "sha256": "b05b163d3a4f6fa912efa66d746e9258bacc3bde014b0a59c62de752ac9fbe37"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/VfxPipelineTest.java",
+      "sha256": "1c09df713b2268139c9c4d4769f5184db02c6f8cfdb2663cb2adfcf7bb43780b"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/VfxShotComparisonTest.java",
+      "sha256": "d6c3763b7d7de36453e5e075fd76ae4cd63fbcb886e1d70a931f8e39f73b03aa"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/WaveVisualBoundsTest.java",
+      "sha256": "51b1777ab8fbc5668dc54882e5354f447e680a7eb4f930d3de3e6bb32ed38f79"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/WeaponDisplayTransformsTest.java",
+      "sha256": "56c97d68ae576f813cabc7cfd688cd595e3700cedb809fbf6d5d55d4664e999d"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/WeaponMeshDataTest.java",
+      "sha256": "9b1f94322b80e07d7217f463550dc4c9f23fb731d79820b930dd88e04f7ff4ed"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/WeaponNamespaceTest.java",
+      "sha256": "53b1eb608b485dcfc77b2af8ef03537d4d17fabf2dac990012b63aa637ed5ad4"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/WeaponProfilesTest.java",
+      "sha256": "f2b42b586b3d290b3ab9b616e1c44b0114a1446808c76638ffc38c1e099b2023"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/WeaponProgressionTest.java",
+      "sha256": "66ee38009e16ea9319352ff4c1245127923239c47ed28dc1b043d3df91ff7e1e"
+    },
+    {
+      "file": "src/test/java/com/dsh/eldencombat/WornHandGeometryTest.java",
+      "sha256": "b2db3d8007426e7cd5ecae24bd1bbc12e5f4cd2097f10db566193914bbc7f2a4"
+    },
+    {
+      "file": "art/vfx-2d/atlases/blood_flame.png",
+      "sha256": "69c3c47d94ba4bc023786b68f8f49eee69193e15c897947d4bc5051f46f2a4f3"
+    },
+    {
+      "file": "art/vfx-2d/atlases/blood_ritual.png",
+      "sha256": "9fff6700e1bb22b6bed6df78bdac3e109ae732ededb290b6942218ae380ba8d4"
+    },
+    {
+      "file": "art/vfx-2d/atlases/cursed_slash.png",
+      "sha256": "08ec08bdc1d4bb44b4d2879df05532240391206dbc6d2cf8b1ac058bebdbaffb"
+    },
+    {
+      "file": "art/vfx-2d/atlases/death_slash.png",
+      "sha256": "39a1f72180b10017d4d506051b87a7d0a083cf07ea0eca26ff3b8288f7ba20aa"
+    },
+    {
+      "file": "art/vfx-2d/atlases/flame_front.png",
+      "sha256": "c773bf2a1fd0a430081bfa96df816b479bd8dfbbd7739d2d7a5b71f538da8424"
+    },
+    {
+      "file": "art/vfx-2d/atlases/gold_impact.png",
+      "sha256": "81ab78f664a28f9e5962e3da5807834c986012625876bb5e9f32975ba8bfc83e"
+    },
+    {
+      "file": "art/vfx-2d/atlases/gold_wave.png",
+      "sha256": "1703e4c5562767070f14a76e1e40ab2b6b9b0f7f5496bc7bc1a0b503a19d2c06"
+    },
+    {
+      "file": "art/vfx-2d/atlases/gravity_impact.png",
+      "sha256": "371194592cb1b4432cac0612a4222af1cc02b6169af3a8f7c6889c3dca3595a5"
+    },
+    {
+      "file": "art/vfx-2d/atlases/gravity_pull.png",
+      "sha256": "54e96dd02cb61a770add98f68cbd5df504b6c790b9384a1acd27652baa348a4d"
+    },
+    {
+      "file": "art/vfx-2d/atlases/waterfowl.png",
+      "sha256": "552f4e257220bb26b0bf201f2e25f1d850d2b59aba3c39e4ee4d03a5756564d8"
+    },
+    {
+      "file": "art/vfx-2d/eight-1440-blocked.png",
+      "sha256": "14faeb4323871955187c0d31193244ed1c96747f7bc7a8e05af8cd1cffd8e412"
+    },
+    {
+      "file": "art/vfx-2d/eight-1440-dark.png",
+      "sha256": "6afe951ec2477a7562beea72a8a782394470d3c4382d4b03b334473c635afa3c"
+    },
+    {
+      "file": "art/vfx-2d/eight-1440-light.png",
+      "sha256": "ec4f6c4777ea17ed11ae1af69044b4715a139c81f7410e243445bf967915129e"
+    },
+    {
+      "file": "art/vfx-2d/eight-1440-secondary.png",
+      "sha256": "fe56d7edc405cd564be6c9be0925b703b3ba36cb6346f4f9114623f8c9b9a4f8"
+    },
+    {
+      "file": "art/vfx-2d/eight-390-blocked.png",
+      "sha256": "d2b04f29e63e28e763847615dd1217f7eff698e5a382453dc55cf06ade41dfea"
+    },
+    {
+      "file": "art/vfx-2d/eight-390-dark.png",
+      "sha256": "99f404ca8d6181fd516888339743765688dc7c6cd97e409996a0271281ea32a9"
+    },
+    {
+      "file": "art/vfx-2d/eight-390-light.png",
+      "sha256": "a0096598fa5e17f4eb967f3bd8cdc39d209a3721372550059941d3b50f3341b4"
+    },
+    {
+      "file": "art/vfx-2d/eight-390-secondary.png",
+      "sha256": "8b6e960277fda303b3997373ba87a8f254cb1c32c8903f66fb69a6a1ea34969c"
+    },
+    {
+      "file": "art/vfx-2d/LICENSE.txt",
+      "sha256": "aff03a686db4fbd1ff6d4724946ce67d7f5800954c80f576c8e407231e933ba2"
+    },
+    {
+      "file": "art/vfx-2d/manifest.json",
+      "sha256": "3bc5c46d60cf8d8606431aaab973ab34b07063c47e33a321540ebe7dedff3970"
+    },
+    {
+      "file": "art/vfx-2d/pixel-source.json",
+      "sha256": "dd0cf85b6e9a2475846055c66047ef1f2bb647453456169d3d06e13d4ebc86df"
+    },
+    {
+      "file": "art/vfx-2d/preview-1440-dark.png",
+      "sha256": "e47c8a98a397cc966bfac6e7bd868b47c5326aae109cc42fa07bf1d46f7c0b2f"
+    },
+    {
+      "file": "art/vfx-2d/preview-1440-light.png",
+      "sha256": "41c61d2a1ff75a2373ba379e36cc10e2e0086ad8d721f8c3b5944f33fd2c1d42"
+    },
+    {
+      "file": "art/vfx-2d/preview-data.js",
+      "sha256": "7b1a6f9c6d670820191783f43834244764401922d0b159d8fc1eeb0d4362f0bf"
+    },
+    {
+      "file": "art/vfx-2d/preview-eight.js",
+      "sha256": "194dc31733ededd023e1144e92d03f43bc4e23b0ed52a1bbf82c74391481a339"
+    },
+    {
+      "file": "art/vfx-2d/preview.html",
+      "sha256": "2e773e87fb85006d0eda758579f1aca4f10e157a96f69c6ebc94d014e5334ca8"
+    },
+    {
+      "file": "art/vfx-2d/preview.js",
+      "sha256": "610cfd846fe21883b846ca899441457431cb31482db5a4be4652b1caa8134b9d"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_flame/frame_00.png",
+      "sha256": "a554ae6bbc1931e810e8e77ec31dc132cd5d86fa932db3a3b3ebd01f2de9cf0e"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_flame/frame_01.png",
+      "sha256": "a048d64a3a73334abe62d03fac053ae039cf3a2de9efe1da64c93784dfd9a225"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_flame/frame_02.png",
+      "sha256": "28098084b1923f8aab1367c5c5f5fb43140637749d5aa1ce1151979ee955b082"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_flame/frame_03.png",
+      "sha256": "782ff609e75a5e5c91c0753c094675841d16a5cf341441f27dfc724f43584861"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_flame/frame_04.png",
+      "sha256": "c8e8f3b8104c02d9b9dff7095dd17be5842c6a12bf8784368d21591841730faf"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_flame/frame_05.png",
+      "sha256": "ce89fa46728d070622f4bab4785e3a66a212a6b4cd910d77e6018d4a6199bfda"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_flame/frame_06.png",
+      "sha256": "629637fa12d4dec576a29e5feab2f94cf0017df5363a20c69331633a7395c72e"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_flame/frame_07.png",
+      "sha256": "eef3d8fa8893502b1cf93bc665f6501dafd157285479a1a6df3a9ca27b2e51f9"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_flame/frame_08.png",
+      "sha256": "40fcfda1bbfa0559552fd48b68851fff4d8f11cda45433a9382332e1a1412c39"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_flame/frame_09.png",
+      "sha256": "9970402236a76b86c6b7a7a7e52178de32afc60da173d071893bf061a79699fe"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_flame/frame_10.png",
+      "sha256": "320d6287c84bb4dd70a84ab02c3c350d0e359fa988714cc4db79aaf719a1e847"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_flame/frame_11.png",
+      "sha256": "d2d3e9dd4294aff088fb724ecb5e9670fb39b30a3eafb186110bbba5f7d555dc"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_flame/frame_12.png",
+      "sha256": "52308c3fe76d73d100ffa199597cf54276fe689bb88b1ad344e25adf5adce3f1"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_flame/frame_13.png",
+      "sha256": "d3203288df4a35d8a472f4d2b8d799404a9770e456a453420a82dcf2235193a7"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_flame/frame_14.png",
+      "sha256": "a1c07a7d0f0194d99975a9ddd4aa3e7b98f1c0a7ec5f01b59f7b1e6fece4132b"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_flame/frame_15.png",
+      "sha256": "fb2aa0e45c4e98583c81cd30b1d6d25d185b1cc44c987c0381ff5b6018b0181a"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_ritual/frame_00.png",
+      "sha256": "c6c8fcf7821a6f1b3d69543f31d321f62728669153fab5da0bccf8d895928c79"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_ritual/frame_01.png",
+      "sha256": "fd0b85bacbaaf83df19cd1f4afca7b475ebd3f3b8c9e40b938b47d2d24f9492f"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_ritual/frame_02.png",
+      "sha256": "fa1be90af16e033c9cf83792d7c259acddb0a3f44ef132516135b8ce347c8b66"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_ritual/frame_03.png",
+      "sha256": "1d89187e00e198e4ffe8b719deb7a401d92c428f6d4717df43555de2f79d2978"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_ritual/frame_04.png",
+      "sha256": "2f06e61924c8ab01ac33ecdd93bc75bb390474b9b40fa6a61b8fce0148739f7b"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_ritual/frame_05.png",
+      "sha256": "7dfa1ec6fa27114dbf8491ed32d1928d9855820f86ea5ccbfabf37babcf0cbea"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_ritual/frame_06.png",
+      "sha256": "4cdd5a59dff1343064d3912049f3d1ba18aed6a36ab9e512302fa1ac2b04f716"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_ritual/frame_07.png",
+      "sha256": "9d70019315511b1ed49f0116051e70e6198a8bd2192edeabcc0b0bedf5a8126f"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_ritual/frame_08.png",
+      "sha256": "20e138427b556173e1e449fa8f8ac77a9c42aa95da1d9775e8c6f876eef18d92"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_ritual/frame_09.png",
+      "sha256": "5ffd1ba513cbcb701184ddaf10dcc5df379bd9259801a34ddcd63db5a421b580"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_ritual/frame_10.png",
+      "sha256": "0900f79ebef84d2015e3ebf48f7fec0c5b42f96ae0549927e001cae818519c30"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_ritual/frame_11.png",
+      "sha256": "108efd730d69ba22a8938827c668fea24cdd418356e483ba638708285e116230"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_ritual/frame_12.png",
+      "sha256": "f682f21cbc992bed579fdeb8388e27a7a6cbde590b5a851e46473d1905a07bb8"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_ritual/frame_13.png",
+      "sha256": "3da0c3fae0ec6011e5440bcde66e903f1bd3d547a1c076ab162ad0c3c62046c2"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_ritual/frame_14.png",
+      "sha256": "340080090f5d1ac46f92eb4686248a0cf82bf4c7dd105b2533a0577887fbe13d"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/blood_ritual/frame_15.png",
+      "sha256": "6d9087da3deee67151ac9d96e56553fdcf964c5f1665c648b0eb143011e34137"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/cursed_slash/frame_00.png",
+      "sha256": "891b4cbddd589312081121ef27defe3c33d72fc9d02c28db73cfa8cc771edc4c"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/cursed_slash/frame_01.png",
+      "sha256": "2e78dc043c2576d53f9490241b6a7ba18084a05380be6979cb1c378bfdd9ab6e"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/cursed_slash/frame_02.png",
+      "sha256": "4ad2f8be7e4819e69ee0aef9f1e581f0ab73d7746236e04896383808b0e135a8"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/cursed_slash/frame_03.png",
+      "sha256": "043fae4653b39fa92511095d72dd5a5f763baa2b210d997159459a32f9a8cabd"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/cursed_slash/frame_04.png",
+      "sha256": "e578c87d4c2a4415709a54a84dc65705e7af33fee20003c26217ff4a9c8a5f1d"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/cursed_slash/frame_05.png",
+      "sha256": "5555e45f9e5ccd39a74154f3ec3149d50a913b1c8ba630e0ca0ed82467e96a74"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/cursed_slash/frame_06.png",
+      "sha256": "a061dd4ee2d98d5ce0bfac9dfaf1007cf19350e6dde66efd33e58c85a71271fe"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/cursed_slash/frame_07.png",
+      "sha256": "9150ff0da8c9127bd540b8069b06caa25d875eaf30b5d44268b51173f0d0b139"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/cursed_slash/frame_08.png",
+      "sha256": "5efee97be774d34774774052b38eb0fbeec8385463456d9ae13c6c8c4c1d4230"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/cursed_slash/frame_09.png",
+      "sha256": "caee4219a27971f244658c57dbe5b896c3f3d6bc7f62706cacc65a1ab9c0f270"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/cursed_slash/frame_10.png",
+      "sha256": "b8b9765eea5e968d34083d601f97e8e8de25332cf7a6408255d6c725ca1a2fef"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/cursed_slash/frame_11.png",
+      "sha256": "13e8ccfc000d9c2cb4dc5be70e1a7e89aaf329843196f333c6b98c22c67b507b"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/cursed_slash/frame_12.png",
+      "sha256": "a56bb7bdb897a11d57e82f61e2ff55704b2f299e4f57c2b0974347184a5d933a"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/cursed_slash/frame_13.png",
+      "sha256": "b140ddc0b669ba21b1c869773ead48f9f0cc1bc864f05407cea560eb2b4c7cd4"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/cursed_slash/frame_14.png",
+      "sha256": "c365a1ded522a7f174b034638646a73de6c79097e2cdfd258328ea6502a6a519"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/cursed_slash/frame_15.png",
+      "sha256": "ba7cb110e92ee018d4ee441a73afc881eec0de914c21963701b31c2e54c2e7e4"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/death_slash/frame_00.png",
+      "sha256": "b598d38c93da9c1e2c4d4cb36390bb00914d74a4a509db05c2d8c55477fd9ea2"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/death_slash/frame_01.png",
+      "sha256": "2e93f3f1ce5cca458aa7ffdbc043eb769ce13ac9f0634a3cfb000853030b9281"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/death_slash/frame_02.png",
+      "sha256": "ea79db27957606b45a506fa484509bbda07ef3d800cbf19a188cc8803fbb185f"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/death_slash/frame_03.png",
+      "sha256": "e8b3e98343fce7f98a31fbd860478fd4df454756be28275e1e20e9c23a91faf1"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/death_slash/frame_04.png",
+      "sha256": "b24a97daa31b7ff9ad8b2bb893d2df5d4036ffc74f7227d14ef0a509737960a0"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/death_slash/frame_05.png",
+      "sha256": "aed808380d4d7178b551c9cb972ccad53db30ffd3794a936d7d64d24dfae2f99"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/death_slash/frame_06.png",
+      "sha256": "a5339c6e479093308f43bc45a212694de670f5daedcc36cdf5dc3a9fffeb898f"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/death_slash/frame_07.png",
+      "sha256": "ada8f76be2376c3474a00c1bb12022d3edf4f0220e729296ae7ec78a9c9a896c"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/death_slash/frame_08.png",
+      "sha256": "37cf25ee416a20a6ad0c0b7978618c521115fc516caa9d154505168586c74e5f"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/death_slash/frame_09.png",
+      "sha256": "d0ebdb9cca7f2f217e202740b577c215a4d1864f7215590ad67e09b8731e6550"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/death_slash/frame_10.png",
+      "sha256": "647e53354057369a9a63cf69120122796e9e7e1324877c3cd790f3cd8a6f1f17"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/death_slash/frame_11.png",
+      "sha256": "f1619f0aba6a7ceff3e6597bb01709b12e15351c80d34a4add96c05b2b94c56a"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/death_slash/frame_12.png",
+      "sha256": "35a8a1d78936f34d7f99acac55b79a3710ff0243b88a9e3c67f73ac769839c24"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/death_slash/frame_13.png",
+      "sha256": "ffdc29665aafdf48eefbc4eea191d41e55154b9312dbed0cd99dbbcbf477b65f"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/death_slash/frame_14.png",
+      "sha256": "a14ffc97fe569b8dc462cb65d40e3ea898b75f7e62eaae000b09e66f9785d78f"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/death_slash/frame_15.png",
+      "sha256": "7abc57e56e6049bc7df7a102413215958f2da7a224a6f19e98098755ba0cd33d"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/flame_front/frame_00.png",
+      "sha256": "1668e84fb47621ec5c58da40c587e7fc0cf968b165d6b16d837b83e65098fa04"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/flame_front/frame_01.png",
+      "sha256": "efe233ea60a4c56ce9e091b3b5c7938b6131225f248985e4ce7c84485f0439bf"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/flame_front/frame_02.png",
+      "sha256": "e1c97e94d0740fc504449eaf6fad00cc97adb90c72eb13a561b6634bdaf722e0"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/flame_front/frame_03.png",
+      "sha256": "483bda9c6222f520b8eb315c41eaabdcda710daae41e8dafcb3ad915b27b2a0f"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/flame_front/frame_04.png",
+      "sha256": "bb796c56937e6debb20b9edeb158cbef46e4fbd8210ced97477c1a39efa07c4c"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/flame_front/frame_05.png",
+      "sha256": "a7e1fcbcb116014facb67161f19e3d8891f42631ae6767b7f1c27a0947befc9b"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/flame_front/frame_06.png",
+      "sha256": "60949efebfd42c66aa2c2ad3c60f7d04fe59c7d4fec0a89e8665ddd81b424736"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/flame_front/frame_07.png",
+      "sha256": "32218772f41ed8dd2da7cd6babac6042b78870b32516e680b973a1a8da5b556b"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/flame_front/frame_08.png",
+      "sha256": "945e18b658684ea050bdbee868048fc4b3b4d7a2a2f75dfdd50a1f7888ea3a2b"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/flame_front/frame_09.png",
+      "sha256": "d558658b8aad048115657e4c8a0b1d0220d6eb275dde7002deb3883aafe6524d"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/flame_front/frame_10.png",
+      "sha256": "483f66bf6dc7843bc6c1e04e9f7bb3c29d2d794a751cab38ed2c049def2d5518"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/flame_front/frame_11.png",
+      "sha256": "a9cc4e1c1bea4f290485606ff1cfbf15bae17b60abb5dfbf2138dc53108a1372"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/flame_front/frame_12.png",
+      "sha256": "f92f619a7b58ee29a49f8b37c05bc94b773ea900901294dee9f8154f3858349f"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/flame_front/frame_13.png",
+      "sha256": "0c2ab246ad3a9e3d1706dd777363e9145bbdbe41ba5bb5c1969363002f1cbc6d"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/flame_front/frame_14.png",
+      "sha256": "ea7774d3ce1e06ada6cceed9c77c9bfc4cf873949f3f340b3272fad6b3c47ab3"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/flame_front/frame_15.png",
+      "sha256": "6cbfd6e5ed415b63e88601ce64191116e2e8bcb3a398808f8c460407a564d218"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_impact/frame_00.png",
+      "sha256": "a3bfae654ef9b536790493583297efeab6455f35d3026dbeb0f2f1b973814e1f"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_impact/frame_01.png",
+      "sha256": "bd0187f88497f2044afd5dfb33b24e1d9c017cd2fe5aa84e140b9ce5bd4f9391"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_impact/frame_02.png",
+      "sha256": "5d781d1007e8a609bacb3689d945bae5421ba4def31a72bfa5ce6b72b9a1bc01"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_impact/frame_03.png",
+      "sha256": "4da07b13b6d7fcf2c4f7305a8407949a7abffc7c3c78b20b74863b3374f5ee19"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_impact/frame_04.png",
+      "sha256": "0f8f70ba3f7371bcc2f061071f4ea93d02b6ab4ba96abdb5862603a030480816"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_impact/frame_05.png",
+      "sha256": "b96842b1885281bd4384ca5b82f25220f1a0627434665e0a659fdb2057ebd1c9"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_impact/frame_06.png",
+      "sha256": "961870d0d44926db4e22be57a0e605ed03a05003102cfc620ae56743fa5d06b3"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_impact/frame_07.png",
+      "sha256": "b22901b3673ebdd36ae31bf0ab80eb591b3486677c5fea142b2487c80c9472e4"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_impact/frame_08.png",
+      "sha256": "fd1a0201c99ee682295d2584033ff9f8a4529b59a02c5b30d912d8dde4d9e646"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_impact/frame_09.png",
+      "sha256": "1408abe6c2b6cd7d9383b35de9c6c8d9cfbd671f5c9d943931fab084e4c4913f"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_impact/frame_10.png",
+      "sha256": "2d6f4ae896f4ec5d7edb93cb88caecafb24fe66acfba167f3a04cab8202053ff"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_impact/frame_11.png",
+      "sha256": "ea6cd6b5950d3049fbb93893c1eda7a9ee34713fcd4f181daebadb0d68d694aa"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_impact/frame_12.png",
+      "sha256": "4d3cc1d1886fa8f462d2c945b3ea4743d1143b46f207e5c2d57f1b75400bc1c8"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_impact/frame_13.png",
+      "sha256": "c4a1c620bf13a5c054971af08498830184dcbcbc42aff7f806e82b8700d7d523"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_impact/frame_14.png",
+      "sha256": "5fa2e29a9c368f64b7214cf109edf53de42f9d5d3a61b078d9283e3c5fb8aaae"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_impact/frame_15.png",
+      "sha256": "ac4ba23de1d6a46637fd72762c89ba1831f05ae598372b9ea2d0a34882e5b0a6"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_wave/frame_00.png",
+      "sha256": "69fe767dba48134f3c3d96c1bb626bde8293c2246a54e3da94ab9e2bd126fc61"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_wave/frame_01.png",
+      "sha256": "b29d8f4e1234eae9b0f28b3ab053535937bcdcd6943f1b895b69ae2fccbbfa5a"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_wave/frame_02.png",
+      "sha256": "01fb4568f00a6760eb9c2ecbe2490f6ad16c3349722406ee94741808f8dd5971"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_wave/frame_03.png",
+      "sha256": "a3644a5f256301a1863fda823f00a4ff4d6864f1e3b99c7802ec8529ed1a56a3"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_wave/frame_04.png",
+      "sha256": "9ad210de19e665f01c1e6ca0cba8769f785d294c5208363a9b9b6892bea8300b"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_wave/frame_05.png",
+      "sha256": "a5f6573dd8f8feb07914dcfcfd46f4adf5f7883342693c05a5b689b64d4210cd"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_wave/frame_06.png",
+      "sha256": "74d707fa0868887471f7b1811b62d43cae31b30bd939df25e74e908e2eb576f7"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_wave/frame_07.png",
+      "sha256": "767ba66b5d8fd6e648624cf4f77cb8b295509675925db728821d05d05ee6a86c"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_wave/frame_08.png",
+      "sha256": "dcf6cd27352a927ee0696093f0ce9560e998fc9e44f5a51cee460962851f1ac1"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_wave/frame_09.png",
+      "sha256": "aaf607d3abd7e8609552a654cdad01814cb68f985783d9638b1409b718fe4f3f"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_wave/frame_10.png",
+      "sha256": "ca917a3f6e395189d0a36e8b4121b822bbbe5f36316d3ca4c994e5eae5b40bce"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_wave/frame_11.png",
+      "sha256": "a8164f8a094a2a18f8cce3cec69dfbbbe48df9b2cb4090a497b658615429bec2"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_wave/frame_12.png",
+      "sha256": "f4412112e30bb9460f9accd95becde49da88d8de10867340a7ba73dac5c7112d"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_wave/frame_13.png",
+      "sha256": "1b7914f89f35d4b4adab21433653e1391542535c702cdadced8a25f84c6ac1f3"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_wave/frame_14.png",
+      "sha256": "a37435881e5bdcdbb273a34386e84466d5904e6408ff1c9e007e4a03d293445d"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gold_wave/frame_15.png",
+      "sha256": "2d433276606970ecbcfba686e4ca608a573a76fd57abc471caec3f34b9c4b622"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_impact/frame_00.png",
+      "sha256": "cfcede4ffbb99f77321e00a8f112be3d2649d6d77782affbceb7693dc1ac891c"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_impact/frame_01.png",
+      "sha256": "27f05af476598d8f53d7cdd67032f9d52b89b923a67f7ca6a333313a1ce514e7"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_impact/frame_02.png",
+      "sha256": "0a0ea4da4e93334f60336a4874b333e519254bb82b7fc194c4e2399936c0be26"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_impact/frame_03.png",
+      "sha256": "c8e00686536a7c0e0e8470021fd35f31fbdcb0b90018271afc36397c441359d1"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_impact/frame_04.png",
+      "sha256": "dce722a5b784160204591d5c9175289872026ecd72f7f38a591f3367f5a62887"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_impact/frame_05.png",
+      "sha256": "e7adef295b3723766cc4a12e040f5fe37d0c1ab1acf9aaec2f8171c572975571"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_impact/frame_06.png",
+      "sha256": "d216184a48deeae277082a0a7c0342d28cc0e93da83ffacf0d8ada2cbbef0380"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_impact/frame_07.png",
+      "sha256": "72f70cf3d0b1ed9b38937aa9ae2c9fab415ee468931383f735d83325d2484477"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_impact/frame_08.png",
+      "sha256": "f12c6e73acbf1c0bcce9474ca893523119ec23ef0d4d4430a894d6c3fe866107"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_impact/frame_09.png",
+      "sha256": "924069e33d052ac850de89768c0474adcf907885d21a657b496770cc7c01ec99"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_impact/frame_10.png",
+      "sha256": "2072c02a5e842ef6ced79efe48ec59e96281db5158ec28ad0fb76cfd8d7fb8ce"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_impact/frame_11.png",
+      "sha256": "47d44f1bbbeec68226858df83f0281ad68545ca1bfd8e4a1de8050d6e5655690"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_impact/frame_12.png",
+      "sha256": "63297f7cd488a4d2877de29de0d2eb4108d3071a6f0d5aa6dcec4b7dc49c33e6"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_impact/frame_13.png",
+      "sha256": "acaaba6c208471160848f4658cbd66237b707fbab1ced4eae7785b4864f9b85c"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_impact/frame_14.png",
+      "sha256": "86f9103e61ff33b8348a7f6e435ece7483461ff59131e98f7e11c0dfac1c22da"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_impact/frame_15.png",
+      "sha256": "b8fb6b217fa0428043bf1a3ea829202216db603f5812c089c750e2c145b6bd3c"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_pull/frame_00.png",
+      "sha256": "90cea972b670d18b787e0881914a21ae13e91004dd0d69cef2caead8772c2390"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_pull/frame_01.png",
+      "sha256": "0e4d53082b079f576ffde54e86646ecf4420633805c8d9dd75c83557c3f04043"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_pull/frame_02.png",
+      "sha256": "27a90d89cccde3c7c8c9170fbf803511a9ad61f7bba9e0545184952795141ede"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_pull/frame_03.png",
+      "sha256": "91c5347cc6f26bf55fad7262a49c0c31419e0203ada74b375769a5fc1959338f"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_pull/frame_04.png",
+      "sha256": "7ea6845138fb7d8959837efef03a357c7b88f83828f944161b1fc683b1a62033"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_pull/frame_05.png",
+      "sha256": "b28b7cc5ff015312715be48a1d451326ab277634d059bedbc20bf58c86ca02f3"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_pull/frame_06.png",
+      "sha256": "b927cad7fd157f9dcf2aa512c90aac9202e634d8a9c0d2f44c9cd693a1037d1a"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_pull/frame_07.png",
+      "sha256": "bff09248a20a3e3aaf30df329b7c7fc3f199828b24beda19e939f8f36ea671ad"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_pull/frame_08.png",
+      "sha256": "924d13f97ade15dda9d5776f96480f6ba4920ce19a7f51f53a960931c0ae88a5"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_pull/frame_09.png",
+      "sha256": "5e75b99449ac7f1d1165376161ef97bbbf3fae56a2e38bb3798aabc0cbddf5ab"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_pull/frame_10.png",
+      "sha256": "ce85403dd8111f4080cfc7db14d5137a37f94b5f8174e62c340fe07a812b34b3"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_pull/frame_11.png",
+      "sha256": "b53c2795962b85157970d72d9d7770ace93e046db8319276de0a7512379047b6"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_pull/frame_12.png",
+      "sha256": "d0f9586e8f52c772a9912ace331a2190046e759db53e84afbf766ad54a870fa7"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_pull/frame_13.png",
+      "sha256": "50204249c96ee7e6f17e8ac751a2d2043681d717adcd818ce971d88aaa1a01c3"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_pull/frame_14.png",
+      "sha256": "eb009dba26b98210ec0f12864359275b03946f49487ba1c6c36164b6fc4db32d"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/gravity_pull/frame_15.png",
+      "sha256": "abdd730dacc433be2aa32a0ddd3ef2298d33252351835a6795358b8a0d298940"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/waterfowl/frame_00.png",
+      "sha256": "03defc06cc3fd341c5750166718b9c83fb18277a4f6ac4617cf45a2e061a8844"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/waterfowl/frame_01.png",
+      "sha256": "d51550c56a93465cb1da75d9230cb6c9fa764207c6b4b4c0a33d6d3b2c35dd8a"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/waterfowl/frame_02.png",
+      "sha256": "de6c7f46134c73f44ad0bb3df983bd4866d9ded13428888fec078a96473ba6ec"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/waterfowl/frame_03.png",
+      "sha256": "0be2dc8c6f8a580fbc6c64d674d305c4ad075d91c8d7e9fc77c40711546ef709"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/waterfowl/frame_04.png",
+      "sha256": "9fc2ce0610e34fb728a49f79925a5d5bb9f3ba6b2162bb84d544762f5eaf0078"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/waterfowl/frame_05.png",
+      "sha256": "64c2a3b493d04c8cb7eb1cdcd3e2f62dd745d2c1db2104211d5021aca2fa949f"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/waterfowl/frame_06.png",
+      "sha256": "ed8bdea0bbf438677cfd4b92f3d728992aac4938d27f0cce59ef2cf13042a187"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/waterfowl/frame_07.png",
+      "sha256": "763437c9c6cef95eed821e09f6daa0cb3b2c8bd828a803ede5fce2128739273c"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/waterfowl/frame_08.png",
+      "sha256": "1ad99dbde308d33c1ac993f173b29325bdf3e111222fff9a6b0e04b38d7222c3"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/waterfowl/frame_09.png",
+      "sha256": "78504f9e38a1cacb0bb43329045442289b20ea9c41df47f8d1f106f12b953fcd"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/waterfowl/frame_10.png",
+      "sha256": "c1152ec8b3c6f9c704e1493dd08d96df04cd5b592dfa138f6cf93a4ed55dfa39"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/waterfowl/frame_11.png",
+      "sha256": "96bc7e17ff9da9b8e156bd72a57b1cb06b14ff39568ecfd0bb63f9b88b0c628f"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/waterfowl/frame_12.png",
+      "sha256": "6c8620c17edae09b8e55d87684d75b9ce9b0989fb424a88472c26a5a642d95fc"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/waterfowl/frame_13.png",
+      "sha256": "18b55b652956b1a7701bcad3b088e0b9b8446384a3bf259063721a7fe88d8e44"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/waterfowl/frame_14.png",
+      "sha256": "ba65718dda6e5002cce1e3eef540fdb80b419b8a09731ecb9e4c8172cd825bc8"
+    },
+    {
+      "file": "art/vfx-2d/textures/particle/waterfowl/frame_15.png",
+      "sha256": "7599d4f055035487289cbdd41c164ca3c48bc380a9ba5976a5828438491c32e6"
+    },
+    {
+      "file": "art/vfx-2d/validation.json",
+      "sha256": "32dac9ec515d7fd4e0a31b49a87d988ed537478de24ae3ca50461bd43e755f30"
+    },
+    {
+      "file": "art/equipment-2d/full/display-candidates.json",
+      "sha256": "84731827b419bef66d61b8a9a7388d26213dfc44c816c61dc0dc124633887526"
+    },
+    {
+      "file": "art/equipment-2d/full/display-overrides.json",
+      "sha256": "aefd6e04f0f9c8b5c65dfb6fb300bcb96d09149a9c2355ec6221c34cb8d22183"
+    },
+    {
+      "file": "art/equipment-2d/full/equipment-42.json",
+      "sha256": "dd503941cdacabd68bc8f1e57b0ecde2805cbfcbe7de2785a93d4ea1040bc5d9"
+    },
+    {
+      "file": "art/equipment-2d/full/full-1440-dark.png",
+      "sha256": "b485fdb097776a3ee65452bd45be5675e4a9e5e296781186cdfd2abacea35848"
+    },
+    {
+      "file": "art/equipment-2d/full/full-1440-left-slim.png",
+      "sha256": "ca013b437cecbb7d0077f15485a18f914bb4832ea67200e04b3f2f40d79c3a6c"
+    },
+    {
+      "file": "art/equipment-2d/full/full-1440-light.png",
+      "sha256": "86c8abb11e0a7493ee12a8c594415775ab972807acce62e929ca31059d71fc2c"
+    },
+    {
+      "file": "art/equipment-2d/full/full-1440-scale.png",
+      "sha256": "16cef5b983ebda9f5a31707c5e15eedcd376ba75c216ff82248f0b926675de54"
+    },
+    {
+      "file": "art/equipment-2d/full/full-390-dark.png",
+      "sha256": "a3b770311f2caf3d48170cc5a62f418e234d4ef3a594790735f4cc9679b8f5fb"
+    },
+    {
+      "file": "art/equipment-2d/full/full-390-left-slim.png",
+      "sha256": "796c07628c622bd636ffe5b4636de88bf37e7fa4fd49813bc48194bae80bb341"
+    },
+    {
+      "file": "art/equipment-2d/full/full-390-light.png",
+      "sha256": "d1b55bc98c58f08287e9e57ea204a9f41f338c09f846e030475d4f92086797e9"
+    },
+    {
+      "file": "art/equipment-2d/full/full-390-scale.png",
+      "sha256": "f1f72c336db51c6527e29acd01ddbeb6eac0afb0491d8357d2c1d1ec8e1f4586"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/ballista.json",
+      "sha256": "70933d4ba6e635735448b05a10f70ba30cd5a4fc033018cc051d4dfa90eb4f6c"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/ballista__loaded.json",
+      "sha256": "fca356a034f9338495cb73d3589310a6ba15d3a7ad784bf2b92a3f521765269e"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/ballista__loading_0.json",
+      "sha256": "aa3e48e86165dbea6c3720ef868ad2be0dd1ce82db68952648b43d5c5356731a"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/ballista__loading_1.json",
+      "sha256": "d08d9d8ce3a453d1877c3bb96b938aaed5d684a2874d9e0436899c4d491b566c"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/ballista__loading_2.json",
+      "sha256": "da6d8eb77cb5e5b4f91afc6efcfc78e3ef7c5542de4477ba252d4c2bc36a857f"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/blasphemous_blade.json",
+      "sha256": "4a396a4489482966b304b267e31161606759a468f0775f218afb8934c915e71c"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/claw.json",
+      "sha256": "569a12b55ccc3f9e24d1942e0acbfcd5bbe63ce8e80ec2644e800cbce28a92b0"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/colossal_sword.json",
+      "sha256": "16c02e6d84574a08ad315c3062486a417258a638263f8690caf8cb07b1328347"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/colossal_weapon.json",
+      "sha256": "0323ae7f443ccf5f22841961ccfbefd8d0fbc5781f6fb671a023251696d4acdb"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/curved_greatsword.json",
+      "sha256": "7f220ce86f6345e5162307dd9173476ee815527b382d5b24ac1615704dcf2e06"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/curved_sword.json",
+      "sha256": "a044a119bb3239c5a9f8c6c8596e6fe864bd32c09c80ff708be14f3f5d3750aa"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/fist.json",
+      "sha256": "92972149b45139862a701dacc51dbc5078849ed8edf5b5b0eba23fe68e35c920"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/flail.json",
+      "sha256": "17d3c8d98fb2660a94a251c55bdd0a9dac6cf5a88290c2433ca07c86b4b451d2"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/glintstone_staff.json",
+      "sha256": "dadfa92d2810996ad25bcd903dd547cbde2035c4ab4bb03f4493376bea838910"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/great_bow.json",
+      "sha256": "fa93088881db177683c90800479fcbd901e7e53a544ae0c7197c16971f51bac2"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/great_bow__pulling_0.json",
+      "sha256": "3650bcb1b2debaacd57102afca2893def95de4e29ffa410c4822f6771b585d45"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/great_bow__pulling_1.json",
+      "sha256": "3b1242480d565c990259a3a7e6eed3374a01500d552ac9f97ff82fc110b73b04"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/great_bow__pulling_2.json",
+      "sha256": "3cbf1a53f932b55505a50f5e71d0b2b8df64889de826b9e59a3d216a33a1278c"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/great_spear.json",
+      "sha256": "02fa4a6ca2d0961cbe9643df8023c847b2cd39063714c672890d653c58af8cd2"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/great_sword.json",
+      "sha256": "02034223fe779e2ffe01022e792d1ae29913c1c80d272d8c6efb8789763d2134"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/hand_of_malenia.json",
+      "sha256": "a2bac4a87fc892948afb7385330f4cd26c0468d5cab7d31be300770969df2186"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/heavy_thrusting_sword.json",
+      "sha256": "0d4f83f7ee651b5b8284e71720741271829c396e7f68a007ab48a2c9fd189181"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/malikeths_black_blade.json",
+      "sha256": "38f99706bf4465cf873d5000d5733b56db92a13c60f8a2e064d24159d80b3476"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/marikas_hammer.json",
+      "sha256": "7b31eb7048fbe6769ab7a4604c36b43a224cb3465f164382f16d64e44ac6c0d2"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/mohgwyns_sacred_spear.json",
+      "sha256": "6e1bfeb7baf0c16c46c9a958067d948f1ae4eaaa32f1ed42c19042096e99621d"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/morgotts_cursed_sword.json",
+      "sha256": "68872f064b220eee1fb0378cb6d7774ec56c40ac2b8295dc518932d944ef3015"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/sacred_relic_sword.json",
+      "sha256": "08be14383ee43e5a79d4aed21426f66792c228074d34841e8f42b2db911c4532"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/sacred_seal.json",
+      "sha256": "47f6dad153605aa94d6f2ec7f05aeb6248d4a3bdbe09a62754c06cf28a050b27"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/starscourge_greatsword.json",
+      "sha256": "6e0a491e0c43bbd3661437d4b27c0f475bdb295872933715a7d600b3de29096e"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/test_flask.json",
+      "sha256": "df1f6535635beac94aa9d27a5b28aa0c617412bb8ddf33402b260d91572a770f"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/twinblade.json",
+      "sha256": "0e20370db225e8efeaf3c31d9fb86d71b89f5a8692beea608dbbc945aa1fdc6f"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models/whip.json",
+      "sha256": "b22519a434f07a99a24b8ca570875f5d1c625153417a7ee5b014ee95b8a3716b"
+    },
+    {
+      "file": "art/equipment-2d/full/native-held-models.json",
+      "sha256": "137664d9341cc249df3878266c0ddd086ee018b662b59aeb843a2d2514c31435"
+    },
+    {
+      "file": "art/equipment-2d/full/preview-data.js",
+      "sha256": "11c6d9b8e8fd35de784c4285fdfa439b7f4884dc067957db47d8b37384485450"
+    },
+    {
+      "file": "art/equipment-2d/full/preview.html",
+      "sha256": "6a2c6b7bf7dc12dbcab43530997e02bf02fc3a832a45ee086247bc00cdc5314b"
+    },
+    {
+      "file": "art/equipment-2d/full/preview.js",
+      "sha256": "beeee9851f7d8c90a7117efdefe59e4d598a05b8c7a78a47c0dcc4a34b99e268"
+    },
+    {
+      "file": "art/equipment-2d/full/publishable-assets.json",
+      "sha256": "24983e8dc4428cd6260c5031b258b4a6fcb2e122dcdf711aaaca97a25918842b"
+    },
+    {
+      "file": "art/equipment-2d/full/selected-art.json",
+      "sha256": "d1246d3c1115be68e7d4bd2125c4cddff351605fbd5b888a2fb2265074a423e6"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/ballista_gui_16.png",
+      "sha256": "77e18f94f8aa7380ff733a6c4ab131060959e40d42cc918f39e4c1c148c19bf9"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/ballista_gui_32.png",
+      "sha256": "e367619f7944ed6bf1373d54f330d96ab9f797985b3b33b2f822fee07eddfd52"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/ballista_loaded.png",
+      "sha256": "cd8a6f73f3b4e26f6d59f710d509f683115924377650e3b1378d15f6d838d8d5"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/ballista_loading_0.png",
+      "sha256": "97e92727942c991479cca184ed5a3eb7da44b1b67932e6aec842bb85aa78f2ee"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/ballista_loading_1.png",
+      "sha256": "2ad18f539bf80e2fe679579121615873c2d6efb763cc51c66a696a563e976b0f"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/ballista_loading_2.png",
+      "sha256": "067af2b0b8d21c7dbe4403a47701d09d9df3ac0ea094c4210e1c2f338d09baa6"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/ballista_standby.png",
+      "sha256": "e367619f7944ed6bf1373d54f330d96ab9f797985b3b33b2f822fee07eddfd52"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/blasphemous_blade_front.png",
+      "sha256": "60e7210adaf35ecbe0cb91a19a46562eb015d16f4c82bd771998a2b75aa7efc2"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/blasphemous_blade_gui_16.png",
+      "sha256": "adec26c32c39d21e739ab94acd02a80c5628bc979e949ef5a8dd3c073c63d426"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/blasphemous_blade_gui_32.png",
+      "sha256": "8f44659a6c72b61066f4543c3eb2a0c3f0710cf9818850ca946f7ef77666b025"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/claw_front.png",
+      "sha256": "2955cf37d923333a095da8602031bbf9194e0c09d59e0170a2bfa4750703da9d"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/claw_gui_16.png",
+      "sha256": "b02cc660a05d1832a5da21ff2c66ee39bf7633308fb065e10c877e7694b32826"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/claw_gui_32.png",
+      "sha256": "2955cf37d923333a095da8602031bbf9194e0c09d59e0170a2bfa4750703da9d"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/colossal_sword_front.png",
+      "sha256": "a615b920fbbe5608f60696ec3c2d6f1e39df1affb63ea3561bdd2dd6e2736cf9"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/colossal_sword_gui_16.png",
+      "sha256": "aa717a21a60dda26810131cd8eb7f9a9265bc27ca9659da5a517df731ae8cffd"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/colossal_sword_gui_32.png",
+      "sha256": "a615b920fbbe5608f60696ec3c2d6f1e39df1affb63ea3561bdd2dd6e2736cf9"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/colossal_weapon_front.png",
+      "sha256": "6470451448c1929db8c8aec6abbb5797a71059f91e4bd30754dc1035285594b6"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/colossal_weapon_gui_16.png",
+      "sha256": "cdf3ae70eb1761f0f2667662efe879a4b80dbcd2e4ccb62b058a71a6ad826ce7"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/colossal_weapon_gui_32.png",
+      "sha256": "6470451448c1929db8c8aec6abbb5797a71059f91e4bd30754dc1035285594b6"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/curved_greatsword_front.png",
+      "sha256": "a2af9bcf256f4f4fa92ec62ff5d9f62605768f397015595697709524e120617a"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/curved_greatsword_gui_16.png",
+      "sha256": "649d9a1d47b89c54cc0b1428c5906a2f4ef5ce7d9458c8955a10f2e1e10fda2f"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/curved_greatsword_gui_32.png",
+      "sha256": "a2af9bcf256f4f4fa92ec62ff5d9f62605768f397015595697709524e120617a"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/curved_sword_front.png",
+      "sha256": "26835aa1f7db2c70fc0a55e1cea94aba0f8af8b8c5babee85766a9dfd9f23ba7"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/curved_sword_gui_16.png",
+      "sha256": "759b46b6e8f3ba5f70776f45c35d65062d985f6aa5e144df6f3161b211f77d7a"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/curved_sword_gui_32.png",
+      "sha256": "26835aa1f7db2c70fc0a55e1cea94aba0f8af8b8c5babee85766a9dfd9f23ba7"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/fist_front.png",
+      "sha256": "1a38ada5cc760f59d908f28a147b3eab354b61932f14ef54e0f7efdd09cc99b9"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/fist_gui_16.png",
+      "sha256": "198d774b8ebe87a8033befcc0eff267ebd4ff769ab79daeba81a6925db974c22"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/fist_gui_32.png",
+      "sha256": "1a38ada5cc760f59d908f28a147b3eab354b61932f14ef54e0f7efdd09cc99b9"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/flail_front.png",
+      "sha256": "b42b7bc62a53246ef2abf2e454156445a279e8d952c7a2699cf3caaaf34f20da"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/flail_gui_16.png",
+      "sha256": "3fa0614720552dfcfa86d3eb6e6fcb955a07d86d54dc29733d93b9672d46ee63"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/flail_gui_32.png",
+      "sha256": "b42b7bc62a53246ef2abf2e454156445a279e8d952c7a2699cf3caaaf34f20da"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/glintstone_staff_front.png",
+      "sha256": "625122615b46d7fd17e8a2e00cbdb53010102059e4e771d5a7dfbd879aac6b19"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/glintstone_staff_gui_16.png",
+      "sha256": "c42a53c5918ad62049733719190c08470ad4a98b456c05889d7284dc1970906b"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/glintstone_staff_gui_32.png",
+      "sha256": "625122615b46d7fd17e8a2e00cbdb53010102059e4e771d5a7dfbd879aac6b19"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_bow_gui_16.png",
+      "sha256": "b829690b5527fd48c3aece768c076fb60aec5761f7ea387a03235cbac4829481"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_bow_gui_32.png",
+      "sha256": "380666e907d615d7b7ef1de6302965a162d457520215b9c1ab157ef66fb771f3"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_bow_pulling_0.png",
+      "sha256": "3746c0d3c6a1ca95d04cbd3a41909884854388a8af9595e3d93854a91eecbb34"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_bow_pulling_1.png",
+      "sha256": "d81a3eb1c7e94d4e4356f81df204a599676ca042af014205670ab760f74c13f3"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_bow_pulling_2.png",
+      "sha256": "b3d351f437307bf0e881f112b291c4fdcb24941d0cf888aa660e996835be6f4a"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_bow_standby.png",
+      "sha256": "380666e907d615d7b7ef1de6302965a162d457520215b9c1ab157ef66fb771f3"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_shield_back.png",
+      "sha256": "95aef4055067509db782a2bc06f9540bf797b9d714a13c70ae2c02e98363dce5"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_shield_front.png",
+      "sha256": "2d430a3ffd3b099af2c109fb73f85afef4e4247692b4354e1dbded08cca5a37d"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_shield_gui_16.png",
+      "sha256": "708db1bf0312a953ddb57a70e1eb1f2f385416331d675e595ff675db01c13301"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_shield_gui_32.png",
+      "sha256": "2d430a3ffd3b099af2c109fb73f85afef4e4247692b4354e1dbded08cca5a37d"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_spear_front.png",
+      "sha256": "c99ba8a6ddb4a02fe7367a6536a5ca4a5ffc41ef179482bc8fd691adb0b2d784"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_spear_gui_16.png",
+      "sha256": "437aeaf73630aea7ccec5aba84b1e4279830f79843ded166b7c28a11d0ee3c1f"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_spear_gui_32.png",
+      "sha256": "c99ba8a6ddb4a02fe7367a6536a5ca4a5ffc41ef179482bc8fd691adb0b2d784"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_sword_front.png",
+      "sha256": "ddcf9bfa6da695e99a08dc847a5480502039e673530bcbc00b59ef86b22e9b96"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_sword_gui_16.png",
+      "sha256": "7f3f23101e3672b95306d15cf68a4f02b57cb8b0eb32ec0b8bd3cfce66abd82c"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/great_sword_gui_32.png",
+      "sha256": "ddcf9bfa6da695e99a08dc847a5480502039e673530bcbc00b59ef86b22e9b96"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/hand_of_malenia_front.png",
+      "sha256": "009b8f459eea8ec4f82d55b357ed4f73e2b22e79d0b758c7f37b973569828501"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/hand_of_malenia_gui_16.png",
+      "sha256": "a62b11697a86fd230214293b3950177bab0fc754f170a8bef9272c0dd48c1546"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/hand_of_malenia_gui_32.png",
+      "sha256": "9f721bd2648100d15ee4a1307d7646b753befd4d99dc9e0542fa7a7120abcd78"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/heavy_thrusting_sword_front.png",
+      "sha256": "ac5e7db9b2c83d7908be9d7ab995e399be423441b87ce9e4e242622e6fbe539b"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/heavy_thrusting_sword_gui_16.png",
+      "sha256": "5ba14bc30d1a6c0614ea164ce84ccbbeab34a8ad0e81495029a14465a37ae698"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/heavy_thrusting_sword_gui_32.png",
+      "sha256": "ac5e7db9b2c83d7908be9d7ab995e399be423441b87ce9e4e242622e6fbe539b"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/malikeths_black_blade_front.png",
+      "sha256": "6d5505ecf04a497927f086304cc5136380e4f3fc2960429845886c7b640cd6c3"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/malikeths_black_blade_gui_16.png",
+      "sha256": "21d1d8b4b88214828f4cd860eb90c3c2a659a2e424158ee58dedb29b52915fb7"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/malikeths_black_blade_gui_32.png",
+      "sha256": "647574c8b103a4f573beda0df8697d2e963850ba6b0d4e0b5f7ccb7a99711a49"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/marikas_hammer_front.png",
+      "sha256": "a196ec286aa0a4b7a2b3a0ee6c546e53cf1d78ede82ed5c03249a8c9839f2e57"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/marikas_hammer_gui_16.png",
+      "sha256": "e8f7380c8da07bd53568ffa98a304722e7a374c144b100c7782f81687676a3d6"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/marikas_hammer_gui_32.png",
+      "sha256": "3e52fa0678966627697679d09c3743e0d194f9743f196b8d3595899afe599ca9"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/mohgwyns_sacred_spear_front.png",
+      "sha256": "e6e2dc642a85425b1aee09ba4f3fcc12396f40635446487ed5b780e814a4af4e"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/mohgwyns_sacred_spear_gui_16.png",
+      "sha256": "93eaca1969452d2c3b2702cf82546c3bee1a0b0929158f71ce9a333b9ae7ac7e"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/mohgwyns_sacred_spear_gui_32.png",
+      "sha256": "b128614b8d02e35438bcc221fa3a5fce0f0b533254dfa9cad061e0fa3274e9a7"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/morgotts_cursed_sword_front.png",
+      "sha256": "b8eb485058cca13e4b223299d0071be23fca27e6c90e166c5db93993b8109b36"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/morgotts_cursed_sword_gui_16.png",
+      "sha256": "f268746afc0e9354096b43eb6458ab177fa068e95403f76f801344cad9d5646c"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/morgotts_cursed_sword_gui_32.png",
+      "sha256": "95bee7ba5a033e402e27db5deedc80ac4026fd92b0282aa4948ccf93cbe1d642"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/sacred_relic_sword_front.png",
+      "sha256": "9a938de0274b9ca61fffee43b74c655002a50b64ce799d3072f1faa71f477f06"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/sacred_relic_sword_gui_16.png",
+      "sha256": "6910cb13c9109a755efb1033f4134e1ed04987e73ed6893e4cff4925fe124494"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/sacred_relic_sword_gui_32.png",
+      "sha256": "3e14d62b0d980c5c140d69f10784eb096a4cc0ba74c04abb9d723e227a9d6d65"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/sacred_seal_front.png",
+      "sha256": "0e83c01d4600a8651ebf9992c50740e69bd3b76757e595bc0cf8d565a8c0717a"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/sacred_seal_gui_16.png",
+      "sha256": "afeb201c8e72fd91d5066f49be698c5d532e8f5b6dddf64171ef75a1c734518f"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/sacred_seal_gui_32.png",
+      "sha256": "0e83c01d4600a8651ebf9992c50740e69bd3b76757e595bc0cf8d565a8c0717a"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/shield_back.png",
+      "sha256": "0a08c59e2c5c5b002741a942ae3a411b36c93615d1334ee11e3853be6be60086"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/shield_front.png",
+      "sha256": "b3c85a76eae23f93cc5075f37c13f12498b6b352265030cac498e1e278b17d89"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/shield_gui_16.png",
+      "sha256": "555a912eba1cce3ff3067d6778322e2de2f544e666d74ef8eb22a26a857c3914"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/shield_gui_32.png",
+      "sha256": "b3c85a76eae23f93cc5075f37c13f12498b6b352265030cac498e1e278b17d89"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/small_shield_back.png",
+      "sha256": "c9e86dc0b8da5319cc5a29d31203e62f6040288120b32e333b1d3f44ed90183a"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/small_shield_front.png",
+      "sha256": "ede88587c685f8bdca4a5f2efc01d6732492f32415638d4ebb2adb373ae789df"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/small_shield_gui_16.png",
+      "sha256": "e176ddd090c5bbccaffab77aebe45f4244764620d583f84dc3ed10560f2a4b3a"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/small_shield_gui_32.png",
+      "sha256": "ede88587c685f8bdca4a5f2efc01d6732492f32415638d4ebb2adb373ae789df"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/starscourge_greatsword_front.png",
+      "sha256": "486ede885bf85e925fb4f003f9f6e89f3f800ff912bbe9a7221399e09e38e553"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/starscourge_greatsword_gui_16.png",
+      "sha256": "6eab3029e10163b888d14c4d0bc73d54f3cb944610500443537011c1a10b2493"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/starscourge_greatsword_gui_32.png",
+      "sha256": "2e7dc8678dc62fd11a7b57c371f7a746d9d839f33978cc76e88076ba901ff9bd"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/test_flask_full.png",
+      "sha256": "e7c797a935fef0c04944300de3b485a3f0471ff4a2ea53f597087a0d335963b2"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/test_flask_gui_16.png",
+      "sha256": "e48c79e6bf3a98365964e3b086c6daa932982f9f95b6af9570a90fe83071c396"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/test_flask_gui_32.png",
+      "sha256": "e7c797a935fef0c04944300de3b485a3f0471ff4a2ea53f597087a0d335963b2"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/twinblade_front.png",
+      "sha256": "8786b250af1398472daa977f1069f844972174da23557bc926b0a8b68b939b6a"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/twinblade_gui_16.png",
+      "sha256": "fcb9446306eefabf253401aaebff87afb69ecce88f86a2ea32ec574e42a10ef9"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/twinblade_gui_32.png",
+      "sha256": "8786b250af1398472daa977f1069f844972174da23557bc926b0a8b68b939b6a"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/whip_front.png",
+      "sha256": "824acdbb40fb88ab1649d7a85b60d0a3dcec25a6ff50185ba5fe45a245fc1986"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/whip_gui_16.png",
+      "sha256": "a173f3b47147c098fcec02aba4f4c523c3d2a43b57e0de12afc238556868e2b1"
+    },
+    {
+      "file": "art/equipment-2d/full/sprites/whip_gui_32.png",
+      "sha256": "824acdbb40fb88ab1649d7a85b60d0a3dcec25a6ff50185ba5fe45a245fc1986"
+    },
+    {
+      "file": "art/equipment-2d/full/states-and-grips.png",
+      "sha256": "4a12abd43dec8b23825592c7f6cd2c159bae6e425a9385b01f97a75f300444b4"
+    },
+    {
+      "file": "art/equipment-2d/full/validation.json",
+      "sha256": "411804501d0dbf09aff370387350a94afc353f383471d294335d86f826c60ec4"
+    }
+  ],
+  "runtimeIntegrated": false
+}

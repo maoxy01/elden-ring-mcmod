@@ -54,6 +54,9 @@ tasks.register('generateEquipment2d') {
     inputs.file('art/equipment-2d/full/equipment-42.json')
     inputs.file('art/equipment-2d/full/publishable-assets.json')
     inputs.file('art/equipment-2d/full/display-overrides.json')
+    inputs.file('art/equipment-2d/full/native-held-models.json')
+    inputs.dir('art/equipment-2d/full/native-held-models')
+    inputs.dir('art/equipment-2d/blockbench-all-items-20261018/items')
     inputs.file('art/equipment-reuse/research-only-full/evidence.json')
     inputs.dir('art/equipment-2d/full/sprites')
     inputs.file('art/item-thickness/manifest.json')
@@ -76,6 +79,8 @@ tasks.register('generateEquipment2d') {
         def providerJars = admission.providerJarSha256
         def thickness = new groovy.json.JsonSlurper().parse(file('art/item-thickness/manifest.json'))
         def thicknessModels = thickness.models.collectEntries { [(it.id + '|' + it.state): it] }
+        def nativeHeld = new groovy.json.JsonSlurper().parse(file('art/equipment-2d/full/native-held-models.json'))
+                .models.collectEntries { [(it.id + '|' + it.state): it] }
 
         // ---- ID coverage: exactly the 41 registered equipment IDs plus the flask ----
         def ids = manifest.equipment.collect { it.id }
@@ -263,6 +268,33 @@ tasks.register('generateEquipment2d') {
             // Consume the delivered native extrusion, including solid two-material shield walls.
             admitted.each { state, File ignored ->
                 def artState = state.startsWith('gui') ? 'gui_' + state.substring(3) : state
+                def authored = nativeHeld[entry.id + '|' + artState]
+                if (authored != null) {
+                    def nativeRoot = file('art/equipment-2d/full/native-held-models')
+                    def nativeFile = new File(artRoot, authored.file)
+                    if (!confinedTo(nativeFile, nativeRoot) || !nativeFile.isFile() || sha256(nativeFile) != authored.sha256)
+                        throw new GradleException('Native held geometry admission failed: ' + nativeFile)
+                    def authoringRoot = file('art/equipment-2d/blockbench-all-items-20261018')
+                    def authoringFile = new File(authoringRoot, authored.sourceModel)
+                    if (!confinedTo(authoringFile, new File(authoringRoot, 'items')) || !authoringFile.isFile()
+                            || sha256(authoringFile) != authored.sourceModelSha256)
+                        throw new GradleException('Native held source changed; re-adopt latest model: ' + authoringFile)
+                    if (authored.textureFile != held[state] || sha256(admitted[state]) != authored.textureSha256)
+                        throw new GradleException('Native held texture mismatch: ' + entry.id + '/' + state)
+                    def nativeModel = new groovy.json.JsonSlurper().parse(nativeFile)
+                    if (!nativeModel.elements || nativeModel.parent != null || nativeModel.display != null
+                            || nativeModel.textures != [layer0: textureId(state as String)])
+                        throw new GradleException('Invalid native held model: ' + nativeFile)
+                    if (nativeModel.elements.any { cube ->
+                        cube.from.size() != 3 || cube.to.size() != 3 || cube.from[2] < 7 || cube.to[2] > 9
+                                || cube.faces.values().any { it.texture != '#layer0' }
+                    }) throw new GradleException('Native model escaped authored two-unit thickness: ' + nativeFile)
+                    def nativeTarget = new File(root, "assets/eldencombat/models/item/2d/${assetId}_${state}.json")
+                    nativeTarget.parentFile.mkdirs()
+                    nativeTarget.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(nativeModel)) + '\n'
+                    generated.add("assets/eldencombat/models/item/2d/${assetId}_${state}.json")
+                    return
+                }
                 def candidate = thicknessModels[entry.id + '|' + artState]
                 if (candidate == null) throw new GradleException('Missing thickness model: ' + entry.id + '/' + state)
                 def sourceModel = file('art/item-thickness/' + candidate.file)

@@ -1,0 +1,379 @@
+{
+  "schemaVersion": 1,
+  "status": "art_candidate_pending_review",
+  "skillId": "eldencombat:takers_flames",
+  "project": "takers-flames-eruption.bbmodel",
+  "authoring": "Blockbench native Texture.edit / Cube UV / Animation and Undo",
+  "runtimeIntegrated": false,
+  "layers": [
+    {
+      "id": "flame_front",
+      "role": "upright magma eruption",
+      "size": [
+        5,
+        3.5
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "plane": "XY",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "replacementFor": "eldencombat:vfx2d/flame_front",
+      "frameCount": 16,
+      "frameSize": [
+        64,
+        64
+      ],
+      "filter": "nearest",
+      "vertexTint": [
+        255,
+        255,
+        255
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "file": "textures/flame_front/frame_00.png",
+          "sha256": "18a9f0eeb8ee1427a95c8e9ab3e9235ed4128717bc86ba41ee4ba51a71ae94c9"
+        },
+        {
+          "index": 1,
+          "file": "textures/flame_front/frame_01.png",
+          "sha256": "54c637cd6f6fe2d3286e167114bbd963028f86603f1171b3924c4212ebc13465"
+        },
+        {
+          "index": 2,
+          "file": "textures/flame_front/frame_02.png",
+          "sha256": "0f1a9b58b1342a1e52503d60c29407d4945bebe54bd61c3d173d55a10c0a415a"
+        },
+        {
+          "index": 3,
+          "file": "textures/flame_front/frame_03.png",
+          "sha256": "5d61467615ff08824962a9014ef6a7eb1fc87e1d83dbcb1035002b5ee2979657"
+        },
+        {
+          "index": 4,
+          "file": "textures/flame_front/frame_04.png",
+          "sha256": "5ff0830dd14404922c52928869eaebaeceab15da4e71d7d38f3fe528634c7851"
+        },
+        {
+          "index": 5,
+          "file": "textures/flame_front/frame_05.png",
+          "sha256": "8f62e8d744f2278782e8b5bece75e3484e59cb13348e95f3f58e50e9e56fea03"
+        },
+        {
+          "index": 6,
+          "file": "textures/flame_front/frame_06.png",
+          "sha256": "5825ca215e67c8c11a059f101f0c3f689be6b33552cc51ead3e50fe46a02fced"
+        },
+        {
+          "index": 7,
+          "file": "textures/flame_front/frame_07.png",
+          "sha256": "5ff0830dd14404922c52928869eaebaeceab15da4e71d7d38f3fe528634c7851"
+        },
+        {
+          "index": 8,
+          "file": "textures/flame_front/frame_08.png",
+          "sha256": "8f62e8d744f2278782e8b5bece75e3484e59cb13348e95f3f58e50e9e56fea03"
+        },
+        {
+          "index": 9,
+          "file": "textures/flame_front/frame_09.png",
+          "sha256": "5825ca215e67c8c11a059f101f0c3f689be6b33552cc51ead3e50fe46a02fced"
+        },
+        {
+          "index": 10,
+          "file": "textures/flame_front/frame_10.png",
+          "sha256": "a061cc1c255abe1bef573cf290336e3d477022619a71cc7987c509fbfa13abef"
+        },
+        {
+          "index": 11,
+          "file": "textures/flame_front/frame_11.png",
+          "sha256": "41a7b3b207f9d0b71c37100a3f02f86989c92fb28ced23ee61a4da0f1f1f298f"
+        },
+        {
+          "index": 12,
+          "file": "textures/flame_front/frame_12.png",
+          "sha256": "bf151424a6978b1480cf0c238faf6e2dac812673cae6944f38b4b7d515203ff4"
+        },
+        {
+          "index": 13,
+          "file": "textures/flame_front/frame_13.png",
+          "sha256": "ebdfec87b9ca578ab7d04d516b64dc883f3a8861fef7c6cdc217b15aafe6f513"
+        },
+        {
+          "index": 14,
+          "file": "textures/flame_front/frame_14.png",
+          "sha256": "d28f3a9771872f8feb48db8424b3c266445c4d0c5d4593bec5026b8c39ac2b4f"
+        },
+        {
+          "index": 15,
+          "file": "textures/flame_front/frame_15.png",
+          "sha256": "bd953f06e8632190d23dc7dcb64a7fd48215e3d76c8ce20fd723efe7c592d30d"
+        }
+      ]
+    },
+    {
+      "id": "ground_rupture",
+      "role": "terrain cracks and lifted crust",
+      "size": [
+        5,
+        4
+      ],
+      "anchor": [
+        32,
+        32
+      ],
+      "plane": "XZ",
+      "offset": [
+        0,
+        0.015,
+        0
+      ],
+      "newRouteRequired": true,
+      "frameCount": 16,
+      "frameSize": [
+        64,
+        64
+      ],
+      "filter": "nearest",
+      "vertexTint": [
+        255,
+        255,
+        255
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "file": "textures/ground_rupture/frame_00.png",
+          "sha256": "8279432d3c29ef873eb1acdeeeb8f4dbdb8abf63f52643b673ff21f5778d9b01"
+        },
+        {
+          "index": 1,
+          "file": "textures/ground_rupture/frame_01.png",
+          "sha256": "46a585e114a547f4bb6c39c5b0e6f7287b6b8d4c27bdc1c10da77cebb1eb2cb2"
+        },
+        {
+          "index": 2,
+          "file": "textures/ground_rupture/frame_02.png",
+          "sha256": "f93fcb974b5395201f7390041ddedf9a4a83b8b5c610f514c00d765f4600c976"
+        },
+        {
+          "index": 3,
+          "file": "textures/ground_rupture/frame_03.png",
+          "sha256": "1780e096c62d6b296e5c78b9bd956902c720882d920d27f461692932abd85c9c"
+        },
+        {
+          "index": 4,
+          "file": "textures/ground_rupture/frame_04.png",
+          "sha256": "ac45f20e5a00dd6f6f630280cfa6d422ad59611e596555cf3c7c71154a42d27a"
+        },
+        {
+          "index": 5,
+          "file": "textures/ground_rupture/frame_05.png",
+          "sha256": "ac45f20e5a00dd6f6f630280cfa6d422ad59611e596555cf3c7c71154a42d27a"
+        },
+        {
+          "index": 6,
+          "file": "textures/ground_rupture/frame_06.png",
+          "sha256": "ac45f20e5a00dd6f6f630280cfa6d422ad59611e596555cf3c7c71154a42d27a"
+        },
+        {
+          "index": 7,
+          "file": "textures/ground_rupture/frame_07.png",
+          "sha256": "ac45f20e5a00dd6f6f630280cfa6d422ad59611e596555cf3c7c71154a42d27a"
+        },
+        {
+          "index": 8,
+          "file": "textures/ground_rupture/frame_08.png",
+          "sha256": "ac45f20e5a00dd6f6f630280cfa6d422ad59611e596555cf3c7c71154a42d27a"
+        },
+        {
+          "index": 9,
+          "file": "textures/ground_rupture/frame_09.png",
+          "sha256": "ac45f20e5a00dd6f6f630280cfa6d422ad59611e596555cf3c7c71154a42d27a"
+        },
+        {
+          "index": 10,
+          "file": "textures/ground_rupture/frame_10.png",
+          "sha256": "ac45f20e5a00dd6f6f630280cfa6d422ad59611e596555cf3c7c71154a42d27a"
+        },
+        {
+          "index": 11,
+          "file": "textures/ground_rupture/frame_11.png",
+          "sha256": "92f8d5351abe7b5e3c47f52e45ba0b80b32f409e503763ced8eaca50e88e9690"
+        },
+        {
+          "index": 12,
+          "file": "textures/ground_rupture/frame_12.png",
+          "sha256": "5f06e5d11a199a98c90494c1c0eba3fe43f533c0927373810085e8657e3c07ee"
+        },
+        {
+          "index": 13,
+          "file": "textures/ground_rupture/frame_13.png",
+          "sha256": "b61788128ab987fa31f9b11d70185d5bd44dcafbfb847e05800062d1c9c24c5d"
+        },
+        {
+          "index": 14,
+          "file": "textures/ground_rupture/frame_14.png",
+          "sha256": "b61788128ab987fa31f9b11d70185d5bd44dcafbfb847e05800062d1c9c24c5d"
+        },
+        {
+          "index": 15,
+          "file": "textures/ground_rupture/frame_15.png",
+          "sha256": "b61788128ab987fa31f9b11d70185d5bd44dcafbfb847e05800062d1c9c24c5d"
+        }
+      ]
+    },
+    {
+      "id": "eruption_debris",
+      "role": "six coarse flying crust pieces",
+      "size": [
+        5,
+        3.5
+      ],
+      "anchor": [
+        32,
+        58
+      ],
+      "plane": "XY",
+      "offset": [
+        0,
+        0,
+        0.03125
+      ],
+      "newRouteRequired": true,
+      "frameCount": 16,
+      "frameSize": [
+        64,
+        64
+      ],
+      "filter": "nearest",
+      "vertexTint": [
+        255,
+        255,
+        255
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "file": "textures/eruption_debris/frame_00.png",
+          "sha256": "27e6e829950d2205e4103211ecb2b161d961a7d3a23dc4e8acd9d6601bf2c170"
+        },
+        {
+          "index": 1,
+          "file": "textures/eruption_debris/frame_01.png",
+          "sha256": "0110e26479638ae6463e4e3cc1c01ff3b43176b01bd220b62b7b1dc7f5b03825"
+        },
+        {
+          "index": 2,
+          "file": "textures/eruption_debris/frame_02.png",
+          "sha256": "d485383cf057c23bf7bb367385904dff51b277d64e03ff1a89bba86cac9f30a1"
+        },
+        {
+          "index": 3,
+          "file": "textures/eruption_debris/frame_03.png",
+          "sha256": "d562fb7d9b54e678402afa4226ce27009f95e7f2fab4337fc94e1c0ee8101ba9"
+        },
+        {
+          "index": 4,
+          "file": "textures/eruption_debris/frame_04.png",
+          "sha256": "0440a7232e5774b00685ff0b78cb0f1b3b600561ed8649180c2ba5eb35ce6a8a"
+        },
+        {
+          "index": 5,
+          "file": "textures/eruption_debris/frame_05.png",
+          "sha256": "b24da6df55db3fae71ed0496a9d5d9b92d859020b258144451f862a9362e52bc"
+        },
+        {
+          "index": 6,
+          "file": "textures/eruption_debris/frame_06.png",
+          "sha256": "3fd462d9479a14b6443b251a127a2b751c68882709ffe94d7ce697fda22ea82f"
+        },
+        {
+          "index": 7,
+          "file": "textures/eruption_debris/frame_07.png",
+          "sha256": "877d190675bf96245cb5e858a4bf2493900d4091cbdf95588c017ee8482b14ae"
+        },
+        {
+          "index": 8,
+          "file": "textures/eruption_debris/frame_08.png",
+          "sha256": "591ed91548a2bb5cf041ca0250b2f798286010340c961715c41ec3c736795ce8"
+        },
+        {
+          "index": 9,
+          "file": "textures/eruption_debris/frame_09.png",
+          "sha256": "4b2de5bdd5a1a2154f540b60a0a04f4beb4f71de26f835737ad92e02aafc0c42"
+        },
+        {
+          "index": 10,
+          "file": "textures/eruption_debris/frame_10.png",
+          "sha256": "fb10b7d353799ce78279891bd2172302c019cc891d437e2b17003092eda68fbb"
+        },
+        {
+          "index": 11,
+          "file": "textures/eruption_debris/frame_11.png",
+          "sha256": "67db7663467f67cdfadfc2ff9af7c9cdc6bb94ad2bf4be4c8df9af4be8fc1110"
+        },
+        {
+          "index": 12,
+          "file": "textures/eruption_debris/frame_12.png",
+          "sha256": "63a8f4468f7322e4c5953051bedb7be3d0f329d659cb78bd6bcfb27814f509ea"
+        },
+        {
+          "index": 13,
+          "file": "textures/eruption_debris/frame_13.png",
+          "sha256": "c833fd1a02a737c1177a5b4ee69067a6c6b7f3d86d746305c4b4857167341b0d"
+        },
+        {
+          "index": 14,
+          "file": "textures/eruption_debris/frame_14.png",
+          "sha256": "1a5de72443858a989a17f46e60d0d649a9ed66ad3bdec759daf7d4e78cda00e9"
+        },
+        {
+          "index": 15,
+          "file": "textures/eruption_debris/frame_15.png",
+          "sha256": "27e6e829950d2205e4103211ecb2b161d961a7d3a23dc4e8acd9d6601bf2c170"
+        }
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "frames": [
+        0,
+        3
+      ],
+      "name": "open ground and start eruption"
+    },
+    {
+      "frames": [
+        4,
+        9
+      ],
+      "name": "magma peaks and ground plates lift"
+    },
+    {
+      "frames": [
+        10,
+        12
+      ],
+      "name": "chunks descend and magma shrinks"
+    },
+    {
+      "frames": [
+        13,
+        15
+      ],
+      "name": "ember cracks and ash subside"
+    }
+  ],
+  "previewOnlyCycleSeconds": 1.6,
+  "clock": "Runtime must sample existing server-synchronized wave progress; no new lifetime or replay",
+  "protection": "baseline.json"
+}

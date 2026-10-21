@@ -209,13 +209,13 @@ public final class GraceClientPrototypeHarness {
             p.connection.teleport(0.5,81,1.5,0,0);
             com.dsh.eldencombat.server.skills.SkillServerEvents.fp(p).setFp(5);
             com.dsh.eldencombat.server.skills.SkillServerEvents.sync(p);
-            // §1.5 前置：把"休息默认不恢复"的资源弄成非满值，用来证明 KEEP 规则真的按配置生效
-            // （而不是硬编码"什么都补满"）。step 40 的休息断言会核对它们**没被补满**。
+            // 前置：把资源置为非满值，随后按当前 FULL/KEEP 配置验证
+            // （而不是硬编码"什么都补满"）。step 40 核对实际恢复规则。
             var combatState=p.getData(com.dsh.eldencombat.registry.ModAttachments.COMBAT_STATE);
             combatState.stamina=1f;
             combatState.potionCharges=0;
             p.setHealth(7f);
-            EldenCombat.LOGGER.info("GRACE_MENU_REST_PRECOND: health={}/{} stamina={} flasks={}（默认规则：FP=FULL，其余 KEEP）",
+            EldenCombat.LOGGER.info("GRACE_MENU_REST_PRECOND: health={}/{} stamina={} flasks={}（按当前配置分别检查 FULL/KEEP）",
                     p.getHealth(),p.getMaxHealth(),combatState.stamina,combatState.potionCharges);
             com.dsh.eldencombat.server.grace.GraceMenuActions.open(p,nodes.getFirst().uid(),nodes.getFirst().name());
             EldenCombat.LOGGER.info("GRACE_MENU_OPEN_REQUEST: fp=5 authorized={} hidden={}",nodes.size(),hiddenUid);
@@ -239,7 +239,7 @@ public final class GraceClientPrototypeHarness {
                         +" catalog="+com.dsh.eldencombat.server.skills.OrdinaryAshCatalog.entries().size());
             EldenCombat.LOGGER.info("GRACE_MENU_SCREEN_PASS: nodes={} ashes={} fp={}/{} held={} rejection={}",
                     state.nodes().size(),state.ashes().size(),state.fp(),state.maxFp(),state.heldItem(),state.heldRejection());
-            press(mc,"休息（恢复 FP）");
+            press(mc,"休息（恢复资源）");
         }
         if(step==30){
             // 空手时战灰按钮应显示"未获得"（§2.1 没解锁），点它必须被拥有权校验挡住而不是静默装上。
@@ -257,17 +257,22 @@ public final class GraceClientPrototypeHarness {
             var fp=com.dsh.eldencombat.server.skills.SkillServerEvents.fp(p);
             if(fp.fp()!=fp.maxFp())throw new IllegalStateException("GRACE_MENU_FAIL: rest did not restore fp="+fp.fp());
             EldenCombat.LOGGER.info("GRACE_MENU_REST_PASS: fp={}/{}",Math.round(fp.fp()),Math.round(fp.maxFp()));
-            // §1.5 规则集中在 config/eldencombat-grace.json：默认只有 FP=FULL，生命/精力/药瓶是 KEEP。
-            // 断言"**没**被补满"而不是"等于某个精确值"——精力会自然回复、生命会自然再生，精确值会假失败。
             var restState=p.getData(com.dsh.eldencombat.registry.ModAttachments.COMBAT_STATE);
-            if(p.getHealth()>=p.getMaxHealth())
-                throw new IllegalStateException("GRACE_MENU_FAIL: rest refilled health although the rule is KEEP");
-            if(restState.stamina>=EldenCombat.config().stamina.max)
-                throw new IllegalStateException("GRACE_MENU_FAIL: rest refilled stamina although the rule is KEEP");
-            if(restState.potionCharges!=0)
-                throw new IllegalStateException("GRACE_MENU_FAIL: rest refilled flasks although the rule is KEEP");
-            EldenCombat.LOGGER.info("GRACE_MENU_REST_KEEP_PASS: 休息只按配置补 FP；生命 {}/{}、精力 {}、药瓶 {} 都按 KEEP 保持未满",
-                    p.getHealth(),p.getMaxHealth(),restState.stamina,restState.potionCharges);
+            var rules=com.dsh.eldencombat.server.grace.GraceSettings.current();
+            var full=com.dsh.eldencombat.server.grace.GraceSettings.Rest.FULL;
+            if(rules.restHealth==full&&p.getHealth()<p.getMaxHealth())
+                throw new IllegalStateException("GRACE_MENU_FAIL: FULL did not restore health");
+            if(rules.restStamina==full&&restState.stamina<restState.maxStamina(EldenCombat.config()))
+                throw new IllegalStateException("GRACE_MENU_FAIL: FULL did not restore effective stamina capacity");
+            if(rules.restFlasks==full&&restState.potionCharges!=EldenCombat.config().drink.charges)
+                throw new IllegalStateException("GRACE_MENU_FAIL: FULL did not restore flasks");
+            if(rules.restHealth!=full&&p.getHealth()>=p.getMaxHealth())
+                throw new IllegalStateException("GRACE_MENU_FAIL: KEEP unexpectedly refilled health");
+            if(rules.restFlasks!=full&&restState.potionCharges!=0)
+                throw new IllegalStateException("GRACE_MENU_FAIL: KEEP unexpectedly refilled flasks");
+            EldenCombat.LOGGER.info("GRACE_MENU_REST_RESOURCES_PASS: health={}/{} stamina={} flasks={} rules={}/{}/{}",
+                    p.getHealth(),p.getMaxHealth(),restState.stamina,restState.potionCharges,
+                    rules.restHealth,rules.restStamina,rules.restFlasks);
             if(!(p.containerMenu instanceof com.dsh.eldencombat.server.grace.GraceMenu))
                 throw new IllegalStateException("GRACE_MENU_FAIL: menu closed unexpectedly: "+p.containerMenu.getClass().getName());
             int menuId=p.containerMenu.containerId;

@@ -1,0 +1,177 @@
+{
+  "project": "a39322dd-5ea1-b889-a012-0a22474f3dd3",
+  "version": "5.2.2",
+  "elements": 18,
+  "textures": 18,
+  "contract": {
+    "date": "2026-10-21",
+    "revision": 5,
+    "motif": "particle flame over a molten ground sheet with ground rupture frames",
+    "supersedes": "hybrid-rev4",
+    "lavaPool": "5b6797a8-a451-762c-0e37-c63814cd6f50",
+    "lavaHot": "905a5d63-f20b-4053-5a78-6c397ae9bf18",
+    "ground": [
+      {
+        "index": 0,
+        "texture": "95461a3a-ca6a-09f1-3c84-d800c5b5082f"
+      },
+      {
+        "index": 1,
+        "texture": "86b4c8e9-b4eb-6c78-755e-59a0665818d8"
+      },
+      {
+        "index": 2,
+        "texture": "540478ca-cb60-712c-21c1-b7b807e39e44"
+      },
+      {
+        "index": 3,
+        "texture": "6b89d7df-cd87-9a0f-a647-67abc97c2449"
+      },
+      {
+        "index": 4,
+        "texture": "dfc2a716-b768-6e9c-fdb1-8c2e9c689271"
+      },
+      {
+        "index": 5,
+        "texture": "2c03854d-1335-e20f-d292-c8d0b2e379dc"
+      },
+      {
+        "index": 6,
+        "texture": "c0880eef-509c-1fb0-0f89-a5c1cee54c0a"
+      },
+      {
+        "index": 7,
+        "texture": "f9be738c-2b01-2d9c-8f5d-daf7bc553adb"
+      },
+      {
+        "index": 8,
+        "texture": "aabebe11-28b3-769f-00e0-5ef233f22dd2"
+      },
+      {
+        "index": 9,
+        "texture": "5f07f055-53e0-27fc-046f-ecb428de6224"
+      },
+      {
+        "index": 10,
+        "texture": "974bf6a5-e9e4-3702-6230-25854e059bb6"
+      },
+      {
+        "index": 11,
+        "texture": "5ebc6919-6a64-c6a3-a0ab-a8ff87bb6c8a"
+      },
+      {
+        "index": 12,
+        "texture": "e7e704ec-3da9-1c7d-e818-7de7877b9d55"
+      },
+      {
+        "index": 13,
+        "texture": "0d723ebb-7c89-a14c-64bb-2909110deceb"
+      },
+      {
+        "index": 14,
+        "texture": "033699e4-8d6b-319b-f94f-a8a3783cb651"
+      },
+      {
+        "index": 15,
+        "texture": "a6f55528-f469-f471-a110-2a2327251aca"
+      }
+    ],
+    "runtimeIntegrated": false,
+    "animation": "809e9da5-7a9c-db4f-f3c5-05aaa2493788",
+    "schedule": {
+      "surface": {
+        "pool": "lava_pool",
+        "hot": "lava_hot",
+        "poolPlane": "[-44,0.14,-20]..[44,0.14,46]",
+        "hotPlane": "[-38,0.18,-6]..[38,0.18,34]"
+      },
+      "ground": [
+        {
+          "name": "ground_frame_00",
+          "frame": 0
+        },
+        {
+          "name": "ground_frame_01",
+          "frame": 1
+        },
+        {
+          "name": "ground_frame_02",
+          "frame": 2
+        },
+        {
+          "name": "ground_frame_03",
+          "frame": 3
+        },
+        {
+          "name": "ground_frame_04",
+          "frame": 4
+        },
+        {
+          "name": "ground_frame_05",
+          "frame": 5
+        },
+        {
+          "name": "ground_frame_06",
+          "frame": 6
+        },
+        {
+          "name": "ground_frame_07",
+          "frame": 7
+        },
+        {
+          "name": "ground_frame_08",
+          "frame": 8
+        },
+        {
+          "name": "ground_frame_09",
+          "frame": 9
+        },
+        {
+          "name": "ground_frame_10",
+          "frame": 10
+        },
+        {
+          "name": "ground_frame_11",
+          "frame": 11
+        },
+        {
+          "name": "ground_frame_12",
+          "frame": 12
+        },
+        {
+          "name": "ground_frame_13",
+          "frame": 13
+        },
+        {
+          "name": "ground_frame_14",
+          "frame": 14
+        },
+        {
+          "name": "ground_frame_15",
+          "frame": 15
+        }
+      ]
+    },
+    "budget": {
+      "fireBoxes": 0,
+      "flameCarrier": "particles",
+      "lavaSheetQuads": 2,
+      "groundQuads": 16,
+      "plates": 0,
+      "flyingCrust": 0
+    },
+    "layerOrder": [
+      "ground",
+      "lava_pool 0.14",
+      "lava_hot 0.18",
+      "ground_rupture 0.24",
+      "particles"
+    ],
+    "forwardAxis": "+Z",
+    "sizeBlocks": [
+      5.5,
+      0.02,
+      4
+    ]
+  }
+}

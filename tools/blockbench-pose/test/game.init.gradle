@@ -1,0 +1,23 @@
+allprojects {
+    afterEvaluate {
+        def toolRoot = new File(project.projectDir, 'tools/blockbench-pose/test/game')
+        def extra = sourceSets.create('poseAcceptance')
+        extra.java.srcDir(toolRoot)
+        extra.compileClasspath += sourceSets.main.output + sourceSets.main.compileClasspath
+        extra.runtimeClasspath += sourceSets.main.runtimeClasspath
+        tasks.named('compilePoseAcceptanceJava') {
+            dependsOn 'classes'
+            options.release = 21
+            options.encoding = 'UTF-8'
+        }
+        neoForge.mods.eldencombat.sourceSet(extra)
+        neoForge.runs.client {
+            gameDirectory = layout.buildDirectory.dir('posePreviewAcceptance')
+            systemProperty 'eldencombat.poseEvidence', new File(project.projectDir, 'tools/blockbench-pose/evidence').absolutePath
+            programArgument '--quickPlaySingleplayer'
+            programArgument 'pose-preview'
+            programArgument '--username'
+            programArgument 'PosePreview'
+        }
+    }
+}

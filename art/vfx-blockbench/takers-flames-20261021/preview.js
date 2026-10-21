@@ -1,0 +1,6 @@
+const $=id=>document.getElementById(id);let playing=false,last=0,frame=6;
+function source(view,n){return ['hybrid','side','back'].includes(view)?'hybrid/qa/'+(view==='hybrid'?'oblique':view)+'-'+n+'.png':'qa/'+view+'-'+n+'.png';}
+function draw(){const n=String(frame).padStart(2,'0');$('frame').value=frame;$('counter').value=String(frame+1).padStart(2,'0')+' / 16';$('phase').textContent=frame<4?'开裂':frame<10?'喷发':frame<13?'回落':'余烬';$('render').src=source($('view').value,n);for(const b of document.querySelectorAll('[data-frame]'))b.setAttribute('aria-pressed',String(Number(b.dataset.frame)===frame));window.PREVIEW_FRAME=frame;window.PREVIEW_VIEW=$('view').value;}
+$('frame').oninput=()=>{frame=Number($('frame').value);draw()};$('view').onchange=draw;$('play').onclick=()=>{playing=!playing;$('play').innerHTML=playing?'&#10074;&#10074;':'&#9654;';$('play').title=playing?'暂停':'播放';$('play').setAttribute('aria-label',$('play').title)};for(const b of document.querySelectorAll('[data-frame]'))b.onclick=()=>{frame=Number(b.dataset.frame);draw()};
+for(const v of ['hybrid','side','back','oblique','comparison','ground'])for(let i=0;i<16;i++){const image=new Image();image.src=source(v,String(i).padStart(2,'0'));}
+function tick(time){if(playing&&time-last>=100){frame=(frame+1)%16;draw();last=time}requestAnimationFrame(tick)}draw();requestAnimationFrame(tick);

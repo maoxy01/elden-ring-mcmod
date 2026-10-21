@@ -1,0 +1,297 @@
+{
+  "project": "9ed1f4f1-3806-fc9b-4846-78a6e92f2d1e",
+  "version": "5.2.2",
+  "elements": 60,
+  "textures": 17,
+  "history": 5,
+  "contract": {
+    "date": "2026-10-21",
+    "palette": "bd04358c-fd2b-800e-0e0d-934477e25896",
+    "ground": [
+      {
+        "index": 0,
+        "texture": "2d434c2b-ef17-8de7-7042-1691baa257f6"
+      },
+      {
+        "index": 1,
+        "texture": "9540fa93-f6e4-3ac7-a351-27ec8dfb7961"
+      },
+      {
+        "index": 2,
+        "texture": "58e7660c-0717-d4ea-4025-878fd30cad8a"
+      },
+      {
+        "index": 3,
+        "texture": "67ca2603-8297-5824-0a7a-f3f9c7da7081"
+      },
+      {
+        "index": 4,
+        "texture": "e4dc8463-f524-42e6-78ca-4c8dd4069960"
+      },
+      {
+        "index": 5,
+        "texture": "bd05bc9f-5931-cd5f-3a1b-432ec883fe18"
+      },
+      {
+        "index": 6,
+        "texture": "dbaacb72-005b-8fcd-af4c-4231a9c37494"
+      },
+      {
+        "index": 7,
+        "texture": "ceaf5ff6-8bde-4437-7220-69142592ef86"
+      },
+      {
+        "index": 8,
+        "texture": "eac3b07b-42fe-ecc7-e92c-1877cf7f06e7"
+      },
+      {
+        "index": 9,
+        "texture": "87a0398c-0db4-35ed-daef-6dd604f479ad"
+      },
+      {
+        "index": 10,
+        "texture": "a905822b-fb17-11cb-344e-c09fae37fb08"
+      },
+      {
+        "index": 11,
+        "texture": "b8e4e602-c347-b294-6a1c-1ceea2a1b2cd"
+      },
+      {
+        "index": 12,
+        "texture": "68e381c9-cdd8-95ff-03f8-57b42bfb43ce"
+      },
+      {
+        "index": 13,
+        "texture": "ad8cc3f3-2e15-0fb5-f754-16ae2c1de220"
+      },
+      {
+        "index": 14,
+        "texture": "ec649704-2564-c760-23a7-0b2d53653d1e"
+      },
+      {
+        "index": 15,
+        "texture": "528d807b-1c06-63f6-97e5-70e1927d9ce6"
+      }
+    ],
+    "runtimeIntegrated": false,
+    "source": "Native Blockbench solid Cubes, UV, Texture.edit and animation; particle presets",
+    "animation": "73dbf522-0167-5c50-ddb8-1e48597b5b06",
+    "schedule": {
+      "vents": [
+        {
+          "name": "lava_vent_0",
+          "origin": [
+            -31,
+            0,
+            -4
+          ],
+          "maxHeightBlocks": 1.3125,
+          "modelElements": 6
+        },
+        {
+          "name": "lava_vent_1",
+          "origin": [
+            -16,
+            0,
+            3
+          ],
+          "maxHeightBlocks": 2.1875,
+          "modelElements": 6
+        },
+        {
+          "name": "lava_vent_2",
+          "origin": [
+            0,
+            0,
+            -2
+          ],
+          "maxHeightBlocks": 2.9375,
+          "modelElements": 6
+        },
+        {
+          "name": "lava_vent_3",
+          "origin": [
+            16,
+            0,
+            4
+          ],
+          "maxHeightBlocks": 2.0625,
+          "modelElements": 6
+        },
+        {
+          "name": "lava_vent_4",
+          "origin": [
+            30,
+            0,
+            -5
+          ],
+          "maxHeightBlocks": 1.5625,
+          "modelElements": 6
+        }
+      ],
+      "debris": [
+        {
+          "name": "flying_crust_0",
+          "origin": [
+            -8,
+            0,
+            -8
+          ],
+          "launch": 0.14,
+          "apex": 0.52,
+          "land": 1.2
+        },
+        {
+          "name": "flying_crust_1",
+          "origin": [
+            -18,
+            0,
+            7
+          ],
+          "launch": 0.165,
+          "apex": 0.545,
+          "land": 1.225
+        },
+        {
+          "name": "flying_crust_2",
+          "origin": [
+            -28,
+            0,
+            -8
+          ],
+          "launch": 0.19,
+          "apex": 0.57,
+          "land": 1.25
+        },
+        {
+          "name": "flying_crust_3",
+          "origin": [
+            8,
+            0,
+            7
+          ],
+          "launch": 0.215,
+          "apex": 0.595,
+          "land": 1.275
+        },
+        {
+          "name": "flying_crust_4",
+          "origin": [
+            18,
+            0,
+            -8
+          ],
+          "launch": 0.24,
+          "apex": 0.62,
+          "land": 1.3
+        },
+        {
+          "name": "flying_crust_5",
+          "origin": [
+            28,
+            0,
+            7
+          ],
+          "launch": 0.265,
+          "apex": 0.645,
+          "land": 1.325
+        }
+      ],
+      "plates": [
+        {
+          "name": "ground_plate_0",
+          "origin": [
+            -31,
+            0,
+            -15
+          ]
+        },
+        {
+          "name": "ground_plate_1",
+          "origin": [
+            -22,
+            0,
+            12
+          ]
+        },
+        {
+          "name": "ground_plate_2",
+          "origin": [
+            -10,
+            0,
+            -16
+          ]
+        },
+        {
+          "name": "ground_plate_3",
+          "origin": [
+            4,
+            0,
+            15
+          ]
+        },
+        {
+          "name": "ground_plate_4",
+          "origin": [
+            18,
+            0,
+            -15
+          ]
+        },
+        {
+          "name": "ground_plate_5",
+          "origin": [
+            30,
+            0,
+            12
+          ]
+        },
+        {
+          "name": "ground_plate_6",
+          "origin": [
+            -36,
+            0,
+            2
+          ]
+        },
+        {
+          "name": "ground_plate_7",
+          "origin": [
+            36,
+            0,
+            -4
+          ]
+        }
+      ]
+    },
+    "budget": {
+      "solidBoxes": 44,
+      "fireBoxes": 30,
+      "groundPlates": 8,
+      "flyingCrust": 6,
+      "groundQuads": 1,
+      "emberBurst": 12,
+      "ashMaxAlive": 6
+    },
+    "particlePreviewFormat": "Snowstorm/Bedrock authoring reference only; Java NeoForge needs client adaptation",
+    "sizeBlocks": [
+      5,
+      3.1,
+      4
+    ],
+    "particles": [
+      {
+        "name": "takers_embers_preview",
+        "file": "particle-preview/particles/takers_embers_preview.json",
+        "time": 0.15,
+        "burst": 12
+      },
+      {
+        "name": "takers_ash_preview",
+        "file": "particle-preview/particles/takers_ash_preview.json",
+        "time": 0.65,
+        "maxAlive": 6
+      }
+    ]
+  }
+}

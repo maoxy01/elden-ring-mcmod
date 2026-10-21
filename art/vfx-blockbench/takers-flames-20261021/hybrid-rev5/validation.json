@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-21",
+  "revision": 5,
+  "motif": "particles carry the flame; molten 5x1 sheet; ground rupture frames; end lava spire",
+  "supersedes": "hybrid-rev4 (box-based forward wall)",
+  "fireBoxes": 0,
+  "cubes": 2,
+  "locators": 5,
+  "groups": 2,
+  "textures": 1,
+  "flameRise": {
+    "carrierGroup": "flame_rise",
+    "climbUnits": 13,
+    "climbBlocks": 0.81,
+    "peakAt": "1.05s"
+  },
+  "endColumn": {
+    "group": "lava_column",
+    "boxes": 2,
+    "names": [
+      "lava_column_body",
+      "lava_column_tip"
+    ],
+    "peakBlocks": 3.25,
+    "eruptAt": "1.15s",
+    "surroundingFlame": "column_flame locator at y=42"
+  },
+  "particleEffects": [
+    "takers_ash.json",
+    "takers_column_flame.json",
+    "takers_crack_dust.json",
+    "takers_embers.json",
+    "takers_flame_wave.json"
+  ],
+  "particleKeyframes": 6,
+  "nativeCaptures": 32,
+  "captureMethod": "step timeline 0->t in 0.01s so emitters accumulate; a single seek shows no particles",
+  "reloadedFromDisk": true,
+  "runtimeIntegrated": false,
+  "particleJavaAdaptationPending": true,
+  "particlePreviewFormat": "Snowstorm/Bedrock; must be re-mapped to vanilla Java particles, not copied into the resource pack",
+  "humanAccepted": false,
+  "knownLimits": [
+    "a few flame sprites render as thin diagonal slivers in the Bedrock preview (sprite atlas quirk); Java vanilla particles will not reproduce this",
+    "end column body is a plain prism; it relies on flame particles to read as lava",
+    "heal feedback layer not modelled"
+  ],
+  "emitterBounds": {
+    "channelHalfWidthBlocks": 0.5,
+    "maxEmitterHalfWidthBlocks": 0.45,
+    "overflow": "none"
+  },
+  "captureViews": [
+    "oblique",
+    "ahead"
+  ],
+  "groundLava": "removed on request (2026-10-21): no molten ground plane in the Blockbench candidate; ground shows only rupture frames",
+  "remainingGeometry": "two end-column boxes only; all flame is particles",
+  "flameTravel": {
+    "carrier": "flame_rise",
+    "locatorY": 1,
+    "zFrom": -46,
+    "zTo": 8,
+    "yPeak": 5,
+    "note": "emitter stays near the ground so the flame is rooted; height comes from particle lifetime/speed"
+  },
+  "endColumnRate": "67/s (was 100/s, reduced by one third)",
+  "groundFrames": "removed on request: no ground texture remains in the candidate",
+  "particleRates": {
+    "flame_wave": "74/s",
+    "column_flame": "45/s",
+    "embers": "burst 8",
+    "ash": "3/s max 4",
+    "crack_dust": "burst 7"
+  }
+}

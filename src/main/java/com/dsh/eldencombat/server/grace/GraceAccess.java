@@ -19,6 +19,7 @@ public final class GraceAccess {
     private GraceAccess() {}
 
     public static String rejection(ServerPlayer player, Waystone node) {
+        GraceDiscovery.admit(player, node);
         if (!GraceRegistry.get(player.server).contains(node.getWaystoneUid()) || !node.isValid()
                 || WaystonesAPI.getWaystone(player.server, node.getWaystoneUid()).isEmpty())
             return "赐福已失效";

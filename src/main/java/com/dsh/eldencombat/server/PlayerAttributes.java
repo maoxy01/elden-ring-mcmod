@@ -25,6 +25,11 @@ public final class PlayerAttributes {
         player.setData(ModAttachments.ATTRIBUTES, set == null ? AttributeSet.EMPTY : set);
     }
 
+    /** Equipment bonuses are derived; never write them back into allocated stat points. */
+    public static AttributeSet effective(ServerPlayer player) {
+        return Talismans.totals(player).effects().attributes(of(player));
+    }
+
     /** 加点：返回加点后的值（夹在 0..99） */
     public static int add(ServerPlayer player, AttributeKind kind, int delta) {
         AttributeSet current = of(player);

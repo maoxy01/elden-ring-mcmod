@@ -72,11 +72,18 @@ public class ItemRendererEquipment2dMixin {
             return;
         }
         ResourceLocation registryId = BuiltInRegistries.ITEM.getKey(stack.getItem());
-        if (registryId == null || !EquipmentRouteRenderer.handles(registryId)) {
+        if (registryId == null) {
             return;
         }
         EquipmentRenderContext.Frame frame = EquipmentRenderContext.current(stack, context);
         LivingEntity holder = frame == null ? null : frame.holder();
+        if ((context == ItemDisplayContext.THIRD_PERSON_LEFT_HAND || context == ItemDisplayContext.THIRD_PERSON_RIGHT_HAND)
+                && holder instanceof net.minecraft.client.player.AbstractClientPlayer
+                && com.dsh.eldencombat.client.WornHandGear.handles(stack)) {
+            callback.cancel(); // The player arm layer draws this stack once, before item display transforms.
+            return;
+        }
+        if (!EquipmentRouteRenderer.handles(registryId)) return;
         int seed = frame == null ? 0 : frame.seed();
         if (EquipmentRouteRenderer.render(stack, context, leftHanded, pose, buffers, light, overlay,
                 holder, seed, registryId)) {

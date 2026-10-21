@@ -1,5 +1,8 @@
 """Calibrate only own weapon first-person displays; never edits artwork or world proportions.
 
+Historical 2026-10-18 fitting experiment. The current native Blockbench workflow supersedes it;
+do not run this over the saved 2026-10-19 display-overrides. Use sync-blockbench-holds.py instead.
+
 Uses Minecraft 1.21.1's resting hand translation / 70 degree hand projection.
 Projection evidence is a mathematical preview, not an in-game acceptance receipt.
 """

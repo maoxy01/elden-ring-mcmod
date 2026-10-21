@@ -1,5 +1,11 @@
 # 模组扩充候选交付
 
+> 最新：2026-10-19人类改由Codex直接编写赐福/护符，已完成本轮实现并安装到实际PCL实例。当前JAR SHA256为 `6ba1e702a29588d8129f89dd8a32e6939e579187de34429519e8e245a3572a3e`，交付目录 `dist/grace-talismans-20261019/`；Waystones/Balm补齐后38份第三方依赖哈希通过，客户端共39个JAR。40套257项JUnit为0失败0错误1跳过；342张PNG及武器显示/比例与此前Blockbench版一致。详见[原作核对与实现记录](CODEX-GRACE-TALISMAN-20261019.md)。本轮没有启动游戏或专服，运行验收及正式锁提升仍未完成。
+
+> 此前：2026-10-19 Blockbench校准版JAR SHA256为 `bd3773706bb766f440c85ec5de8913bfb9ae0c97e99d5b36dbded5a84a552f6b`，现已备份；当时交付目录为 `dist/blockbench-holds-20261019/`。28件/94张素材与56组原生持物参数已对齐，当时完整离线文件包含37个JAR，游戏未启动复验。详见 [Blockbench校准报告](CODEX-BLOCKBENCH-HOLDS-20261019.md)。下方旧哈希与目录保留为各自历史快照。
+
+> 2026-10-19 本机安装更新：人类要求安装包准备好后自行启动。本轮未启动游戏。已核对实际使用的 `D:/PCL/.minecraft/versions/Elden Combat 0.2.0 - Vanilla Combat`，原有31个JAR，补齐Alex’s Mobs、Citadel、Alex’s Delight、MemorySweep、Overloaded Armor Bar、Fast Leaf Decay六个锁定文件后共37个；36个第三方SHA512及项目JAR SHA256均核验通过，无额外JAR。项目JAR为 `bd4e648ea9866bfb77ff59204a92e2eeea802b57405e55d5a18f6d1a5984d769`，含第一人称修补，仍待进游戏验收。保留玩家存档、options和当前PCL内存设置。交付材料在 `dist/install-20261019/`：完整37-JAR本机离线文件备份包、标准导入包、单JAR、SHA256SUMS、使用说明及INSTALLED回执；离线包逐条目复核SHA512，标准导入包仍是30项下载引用加6项补装清单。下文10月18日路径和旧哈希保留为历史记录，正式锁未提升。
+
 2026-10-18。本轮继续人类批准的扩充整合，不启动DSH、美术或其它排队任务。当前为可安装候选，正式锁尚未提升。
 
 ## 使用现有实例

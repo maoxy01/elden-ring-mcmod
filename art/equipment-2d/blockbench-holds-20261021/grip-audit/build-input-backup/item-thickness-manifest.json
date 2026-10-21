@@ -1,0 +1,2591 @@
+{
+  "date": "2026-10-15",
+  "reference": {
+    "sourceJar": "build/moddev/artifacts/neoforge-21.1.219-sources.jar",
+    "class": "net/minecraft/client/renderer/block/model/ItemModelGenerator.java",
+    "minZ": 7.5,
+    "maxZ": 8.5,
+    "centeredMinZ": -0.03125,
+    "centeredMaxZ": 0.03125
+  },
+  "scope": "42 equipment entries and 58 other item models; no blocks, player or Boss",
+  "displayPolicy": {
+    "reference": "minecraft:item/diamond_sword",
+    "XY": "Keep existing per-item length, width, grip and rotation",
+    "Z": "Use diamond sword local Z display scale for matching context, independent of per-item XY scale",
+    "order": "T * R * scale(sx,sy,referenceSz); thickness evaluated in item-local space",
+    "zeroThicknessShield": "Use supplied solid double-material front model, not the current z=0 face renderer",
+    "fallback": "Legacy and provider drawing paths need same per-context local-Z rule"
+  },
+  "entries": [
+    {
+      "id": "eldencombat:axe",
+      "source": "art/weapons/axe.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 0.864,
+      "anchorPixels": [
+        3.5,
+        12.5
+      ],
+      "delivery": "provider_reference_only",
+      "models": [],
+      "providerPolicy": "Keep complete provider and layers; normalize local Z around model center before display. Do not scale world Z after rotation."
+    },
+    {
+      "id": "eldencombat:blasphemous_blade",
+      "source": "art/remembrance-game/blasphemous_blade.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 1.728,
+      "anchorPixels": [
+        13.5,
+        50.5
+      ],
+      "delivery": "own_sprite",
+      "models": [
+        "models/blasphemous_blade_front.json",
+        "models/blasphemous_blade_gui_16.json",
+        "models/blasphemous_blade_gui_32.json"
+      ]
+    },
+    {
+      "id": "eldencombat:claw",
+      "source": "art/weapons/claw.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 0.558,
+      "anchorPixels": [
+        8.5,
+        23.5
+      ],
+      "delivery": "own_sprite",
+      "models": [
+        "models/claw_front.json",
+        "models/claw_gui_16.json",
+        "models/claw_gui_32.json"
+      ]
+    },
+    {
+      "id": "eldencombat:colossal_sword",
+      "source": "art/weapons/colossal_sword.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 2.484,
+      "anchorPixels": [
+        6.5,
+        25.5
+      ],
+      "delivery": "own_sprite",
+      "models": [
+        "models/colossal_sword_front.json",
+        "models/colossal_sword_gui_16.json",
+        "models/colossal_sword_gui_32.json"
+      ]
+    },
+    {
+      "id": "eldencombat:colossal_weapon",
+      "source": "art/weapons/colossal_weapon.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 2.16,
+      "anchorPixels": [
+        8.5,
+        23.5
+      ],
+      "delivery": "own_sprite",
+      "models": [
+        "models/colossal_weapon_front.json",
+        "models/colossal_weapon_gui_16.json",
+        "models/colossal_weapon_gui_32.json"
+      ]
+    },
+    {
+      "id": "eldencombat:curved_greatsword",
+      "source": "art/weapons/curved_greatsword.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 1.746,
+      "anchorPixels": [
+        7.5,
+        23.5
+      ],
+      "delivery": "own_sprite",
+      "models": [
+        "models/curved_greatsword_front.json",
+        "models/curved_greatsword_gui_16.json",
+        "models/curved_greatsword_gui_32.json"
+      ]
+    },
+    {
+      "id": "eldencombat:curved_sword",
+      "source": "art/weapons/curved_sword.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 1.098,
+      "anchorPixels": [
+        6.5,
+        23.5
+      ],
+      "delivery": "own_sprite",
+      "models": [
+        "models/curved_sword_front.json",
+        "models/curved_sword_gui_16.json",
+        "models/curved_sword_gui_32.json"
+      ]
+    },
+    {
+      "id": "eldencombat:dagger",
+      "source": "art/weapons/dagger.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 0.5040000000000001,
+      "anchorPixels": [
+        3.5,
+        12.5
+      ],
+      "delivery": "provider_reference_only",
+      "models": [],
+      "providerPolicy": "Keep complete provider and layers; normalize local Z around model center before display. Do not scale world Z after rotation."
+    },
+    {
+      "id": "eldencombat:fist",
+      "source": "art/weapons/fist.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 0.30600000000000005,
+      "anchorPixels": [
+        12.5,
+        19.5
+      ],
+      "delivery": "own_sprite",
+      "models": [
+        "models/fist_front.json",
+        "models/fist_gui_16.json",
+        "models/fist_gui_32.json"
+      ]
+    },
+    {
+      "id": "eldencombat:flail",
+      "source": "art/weapons/flail.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 1.2240000000000002,
+      "anchorPixels": [
+        6.5,
+        25.5
+      ],
+      "delivery": "own_sprite",
+      "models": [
+        "models/flail_front.json",
+        "models/flail_gui_16.json",
+        "models/flail_gui_32.json"
+      ]
+    },
+    {
+      "id": "eldencombat:glintstone_staff",
+      "source": "art/weapons/glintstone_staff.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 1.9800000000000002,
+      "anchorPixels": [
+        8.5,
+        23.5
+      ],
+      "delivery": "own_sprite",
+      "models": [
+        "models/glintstone_staff_front.json",
+        "models/glintstone_staff_gui_16.json",
+        "models/glintstone_staff_gui_32.json"
+      ]
+    },
+    {
+      "id": "eldencombat:great_hammer",
+      "source": "art/weapons/great_hammer.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 1.548,
+      "anchorPixels": [
+        4.5,
+        11.5
+      ],
+      "delivery": "provider_reference_only",
+      "models": [],
+      "providerPolicy": "Keep complete provider and layers; normalize local Z around model center before display. Do not scale world Z after rotation."
+    },
+    {
+      "id": "eldencombat:great_shield",
+      "source": "art/weapons/great_shield.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 1.314,
+      "anchorPixels": [
+        16.5,
+        16.5
+      ],
+      "delivery": "own_sprite",
+      "models": [
+        "models/great_shield_front.json",
+        "models/great_shield_back.json",
+        "models/great_shield_gui_16.json",
+        "models/great_shield_gui_32.json"
+      ]
+    },
+    {
+      "id": "eldencombat:great_spear",
+      "source": "art/weapons/great_spear.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 3.06,
+      "anchorPixels": [
+        7.5,
+        24.5
+      ],
+      "delivery": "own_sprite",
+      "models": [
+        "models/great_spear_front.json",
+        "models/great_spear_gui_16.json",
+        "models/great_spear_gui_32.json"
+      ]
+    },
+    {
+      "id": "eldencombat:great_sword",
+      "source": "art/weapons/great_sword.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 1.584,
+      "anchorPixels": [
+        7.5,
+        24.5
+      ],
+      "delivery": "own_sprite",
+      "models": [
+        "models/great_sword_front.json",
+        "models/great_sword_gui_16.json",
+        "models/great_sword_gui_32.json"
+      ]
+    },
+    {
+      "id": "eldencombat:greataxe",
+      "source": "art/weapons/greataxe.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 1.494,
+      "anchorPixels": [
+        4.5,
+        11.5
+      ],
+      "delivery": "provider_reference_only",
+      "models": [],
+      "providerPolicy": "Keep complete provider and layers; normalize local Z around model center before display. Do not scale world Z after rotation."
+    },
+    {
+      "id": "eldencombat:halberd",
+      "source": "art/weapons/halberd.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 2.754,
+      "anchorPixels": [
+        12.5,
+        19.5
+      ],
+      "delivery": "provider_reference_only",
+      "models": [],
+      "providerPolicy": "Keep complete provider and layers; normalize local Z around model center before display. Do not scale world Z after rotation."
+    },
+    {
+      "id": "eldencombat:hammer",
+      "source": "art/weapons/hammer.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 0.8280000000000001,
+      "anchorPixels": [
+        4.5,
+        11.5
+      ],
+      "delivery": "provider_reference_only",
+      "models": [],
+      "providerPolicy": "Keep complete provider and layers; normalize local Z around model center before display. Do not scale world Z after rotation."
+    },
+    {
+      "id": "eldencombat:hand_of_malenia",
+      "source": "art/remembrance-game/hand_of_malenia.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 1.9440000000000002,
+      "anchorPixels": [
+        12.5,
+        46.5
+      ],
+      "delivery": "own_sprite",
+      "models": [
+        "models/hand_of_malenia_front.json",
+        "models/hand_of_malenia_gui_16.json",
+        "models/hand_of_malenia_gui_32.json"
+      ]
+    },
+    {
+      "id": "eldencombat:heavy_thrusting_sword",
+      "source": "art/weapons/heavy_thrusting_sword.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 1.512,
+      "anchorPixels": [
+        7.5,
+        24.5
+      ],
+      "delivery": "own_sprite",
+      "models": [
+        "models/heavy_thrusting_sword_front.json",
+        "models/heavy_thrusting_sword_gui_16.json",
+        "models/heavy_thrusting_sword_gui_32.json"
+      ]
+    },
+    {
+      "id": "eldencombat:katana",
+      "source": "art/weapons/katana.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 1.6380000000000001,
+      "anchorPixels": [
+        3.5,
+        12.5
+      ],
+      "delivery": "provider_reference_only",
+      "models": [],
+      "providerPolicy": "Keep complete provider and layers; normalize local Z around model center before display. Do not scale world Z after rotation."
+    },
+    {
+      "id": "eldencombat:malikeths_black_blade",
+      "source": "art/remembrance-game/malikeths_black_blade.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 2.3040000000000003,
+      "anchorPixels": [
+        13.5,
+        50.5
+      ],
+      "delivery": "own_sprite",
+      "models": [
+        "models/malikeths_black_blade_front.json",
+        "models/malikeths_black_blade_gui_16.json",
+        "models/malikeths_black_blade_gui_32.json"
+      ]
+    },
+    {
+      "id": "eldencombat:marikas_hammer",
+      "source": "art/remembrance-game/marikas_hammer.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 1.044,
+      "anchorPixels": [
+        13.5,
+        50.5
+      ],
+      "delivery": "own_sprite",
+      "models": [
+        "models/marikas_hammer_front.json",
+        "models/marikas_hammer_gui_16.json",
+        "models/marikas_hammer_gui_32.json"
+      ]
+    },
+    {
+      "id": "eldencombat:mohgwyns_sacred_spear",
+      "source": "art/remembrance-game/mohgwyns_sacred_spear.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 3.15,
+      "anchorPixels": [
+        16.5,
+        47.5
+      ],
+      "delivery": "own_sprite",
+      "models": [
+        "models/mohgwyns_sacred_spear_front.json",
+        "models/mohgwyns_sacred_spear_gui_16.json",
+        "models/mohgwyns_sacred_spear_gui_32.json"
+      ]
+    },
+    {
+      "id": "eldencombat:morgotts_cursed_sword",
+      "source": "art/remembrance-game/morgotts_cursed_sword.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 2.088,
+      "anchorPixels": [
+        10.5,
+        45.5
+      ],
+      "delivery": "own_sprite",
+      "models": [
+        "models/morgotts_cursed_sword_front.json",
+        "models/morgotts_cursed_sword_gui_16.json",
+        "models/morgotts_cursed_sword_gui_32.json"
+      ]
+    },
+    {
+      "id": "eldencombat:sacred_relic_sword",
+      "source": "art/remembrance-game/sacred_relic_sword.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 1.71,
+      "anchorPixels": [
+        11.5,
+        52.5
+      ],
+      "delivery": "own_sprite",
+      "models": [
+        "models/sacred_relic_sword_front.json",
+        "models/sacred_relic_sword_gui_16.json",
+        "models/sacred_relic_sword_gui_32.json"
+      ]
+    },
+    {
+      "id": "eldencombat:sacred_seal",
+      "source": "art/weapons/sacred_seal.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 0.216,
+      "anchorPixels": [
+        8.5,
+        24.5
+      ],
+      "delivery": "own_sprite",
+      "models": [
+        "models/sacred_seal_front.json",
+        "models/sacred_seal_gui_16.json",
+        "models/sacred_seal_gui_32.json"
+      ]
+    },
+    {
+      "id": "eldencombat:scythe",
+      "source": "art/weapons/scythe.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 2.52,
+      "anchorPixels": [
+        12.5,
+        19.5
+      ],
+      "delivery": "provider_reference_only",
+      "models": [],
+      "providerPolicy": "Keep complete provider and layers; normalize local Z around model center before display. Do not scale world Z after rotation."
+    },
+    {
+      "id": "eldencombat:shield",
+      "source": "art/weapons/shield.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 0.9,
+      "anchorPixels": [
+        16.5,
+        16.5
+      ],
+      "delivery": "own_sprite",
+      "models": [
+        "models/shield_front.json",
+        "models/shield_back.json",
+        "models/shield_gui_16.json",
+        "models/shield_gui_32.json"
+      ]
+    },
+    {
+      "id": "eldencombat:small_shield",
+      "source": "art/weapons/small_shield.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 0.5040000000000001,
+      "anchorPixels": [
+        16.5,
+        16.5
+      ],
+      "delivery": "own_sprite",
+      "models": [
+        "models/small_shield_front.json",
+        "models/small_shield_back.json",
+        "models/small_shield_gui_16.json",
+        "models/small_shield_gui_32.json"
+      ]
+    },
+    {
+      "id": "eldencombat:spear",
+      "source": "art/weapons/spear.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 2.664,
+      "anchorPixels": [
+        12.5,
+        19.5
+      ],
+      "delivery": "provider_reference_only",
+      "models": [],
+      "providerPolicy": "Keep complete provider and layers; normalize local Z around model center before display. Do not scale world Z after rotation."
+    },
+    {
+      "id": "eldencombat:starscourge_greatsword",
+      "source": "art/remembrance-game/starscourge_greatsword.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 1.9800000000000002,
+      "anchorPixels": [
+        13.5,
+        46.5
+      ],
+      "delivery": "own_sprite",
+      "models": [
+        "models/starscourge_greatsword_front.json",
+        "models/starscourge_greatsword_gui_16.json",
+        "models/starscourge_greatsword_gui_32.json"
+      ]
+    },
+    {
+      "id": "eldencombat:straight_sword",
+      "source": "art/weapons/straight_sword.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 1.08,
+      "anchorPixels": [
+        3.5,
+        12.5
+      ],
+      "delivery": "provider_reference_only",
+      "models": [],
+      "providerPolicy": "Keep complete provider and layers; normalize local Z around model center before display. Do not scale world Z after rotation."
+    },
+    {
+      "id": "eldencombat:thrusting_sword",
+      "source": "art/weapons/thrusting_sword.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 1.2060000000000002,
+      "anchorPixels": [
+        4.5,
+        11.5
+      ],
+      "delivery": "provider_reference_only",
+      "models": [],
+      "providerPolicy": "Keep complete provider and layers; normalize local Z around model center before display. Do not scale world Z after rotation."
+    },
+    {
+      "id": "eldencombat:twinblade",
+      "source": "art/weapons/twinblade.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 2.16,
+      "anchorPixels": [
+        16.5,
+        16.5
+      ],
+      "delivery": "own_sprite",
+      "models": [
+        "models/twinblade_front.json",
+        "models/twinblade_gui_16.json",
+        "models/twinblade_gui_32.json"
+      ]
+    },
+    {
+      "id": "eldencombat:whip",
+      "source": "art/weapons/whip.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 2.736,
+      "anchorPixels": [
+        11.5,
+        27.5
+      ],
+      "delivery": "own_sprite",
+      "models": [
+        "models/whip_front.json",
+        "models/whip_gui_16.json",
+        "models/whip_gui_32.json"
+      ]
+    },
+    {
+      "id": "eldencombat:short_bow",
+      "source": "art/weapons/short_bow.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 1.1880000000000002,
+      "anchorPixels": [
+        5.5,
+        7.5
+      ],
+      "delivery": "provider_reference_only",
+      "models": [],
+      "providerPolicy": "Keep complete provider and layers; normalize local Z around model center before display. Do not scale world Z after rotation."
+    },
+    {
+      "id": "eldencombat:long_bow",
+      "source": "art/weapons/long_bow.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 1.836,
+      "anchorPixels": [
+        3.5,
+        7.5
+      ],
+      "delivery": "provider_reference_only",
+      "models": [],
+      "providerPolicy": "Keep complete provider and layers; normalize local Z around model center before display. Do not scale world Z after rotation."
+    },
+    {
+      "id": "eldencombat:great_bow",
+      "source": "art/weapons/great_bow.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 2.3400000000000003,
+      "anchorPixels": [
+        20.5,
+        20.5
+      ],
+      "delivery": "own_sprite",
+      "models": [
+        "models/great_bow_standby.json",
+        "models/great_bow_pulling_0.json",
+        "models/great_bow_pulling_1.json",
+        "models/great_bow_pulling_2.json",
+        "models/great_bow_gui_16.json",
+        "models/great_bow_gui_32.json"
+      ]
+    },
+    {
+      "id": "eldencombat:crossbow",
+      "source": "art/weapons/crossbow.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 0.756,
+      "anchorPixels": [
+        9.5,
+        11.5
+      ],
+      "delivery": "provider_reference_only",
+      "models": [],
+      "providerPolicy": "Keep complete provider and layers; normalize local Z around model center before display. Do not scale world Z after rotation."
+    },
+    {
+      "id": "eldencombat:ballista",
+      "source": "art/weapons/ballista.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 1.4400000000000002,
+      "anchorPixels": [
+        7.5,
+        24.5
+      ],
+      "delivery": "own_sprite",
+      "models": [
+        "models/ballista_standby.json",
+        "models/ballista_loading_0.json",
+        "models/ballista_loading_1.json",
+        "models/ballista_loading_2.json",
+        "models/ballista_loaded.json",
+        "models/ballista_gui_16.json",
+        "models/ballista_gui_32.json"
+      ]
+    },
+    {
+      "id": "eldencombat:test_flask",
+      "source": "art/player/healing_flask.model.json",
+      "sourceDepthUnits": 1,
+      "baseThicknessUnits": 1,
+      "baseThicknessBlocks": 0.0625,
+      "lengthBlocks": 0.375,
+      "anchorPixels": [
+        16.5,
+        14.5
+      ],
+      "delivery": "own_sprite",
+      "models": [
+        "models/test_flask_full.json",
+        "models/test_flask_gui_16.json",
+        "models/test_flask_gui_32.json"
+      ]
+    }
+  ],
+  "models": [
+    {
+      "file": "models/blasphemous_blade_front.json",
+      "id": "eldencombat:blasphemous_blade",
+      "state": "front",
+      "sha256": "e41a55eafed1754a9a1d39654c8ed07c3866c4ea3831a11880ac70052fb3393b",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/blasphemous_blade_front.png",
+          "resource": "eldencombat:equipment_2d/blasphemous_blade_front",
+          "sha256": "60e7210adaf35ecbe0cb91a19a46562eb015d16f4c82bd771998a2b75aa7efc2"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/blasphemous_blade_gui_16.json",
+      "id": "eldencombat:blasphemous_blade",
+      "state": "gui_16",
+      "sha256": "437d2dc83d92fa4e86055185906d3293072a050f6048989e5f50fdd028216120",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/blasphemous_blade_gui_16.png",
+          "resource": "eldencombat:equipment_2d/blasphemous_blade_gui_16",
+          "sha256": "adec26c32c39d21e739ab94acd02a80c5628bc979e949ef5a8dd3c073c63d426"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/blasphemous_blade_gui_32.json",
+      "id": "eldencombat:blasphemous_blade",
+      "state": "gui_32",
+      "sha256": "f8f9f0aa38a562983d6450871e0d5d46ad1983c106d020c619fc983396c181e1",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/blasphemous_blade_gui_32.png",
+          "resource": "eldencombat:equipment_2d/blasphemous_blade_gui_32",
+          "sha256": "8f44659a6c72b61066f4543c3eb2a0c3f0710cf9818850ca946f7ef77666b025"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/claw_front.json",
+      "id": "eldencombat:claw",
+      "state": "front",
+      "sha256": "59e73bca3fdcb6fe1e986a13090af17f680aa7232abbc1b52257085aedd01771",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/claw_front.png",
+          "resource": "eldencombat:equipment_2d/claw_front",
+          "sha256": "7628b14ee0742b9bcab08dd35548f4cf4740fcff84892bbe4a03790ccaf8b32f"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/claw_gui_16.json",
+      "id": "eldencombat:claw",
+      "state": "gui_16",
+      "sha256": "894611b9e1664e8be3b5f09f9abe49369cc0faa8ae38bccff8c7398ba5c2df4d",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/claw_gui_16.png",
+          "resource": "eldencombat:equipment_2d/claw_gui_16",
+          "sha256": "b902bf510af90a0e66c7f2613bd804f9496a62b40a4cae2f2ec18d3133b10f5c"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/claw_gui_32.json",
+      "id": "eldencombat:claw",
+      "state": "gui_32",
+      "sha256": "7461d2ea28cdd5c207c4fc28265d9219a2f46b81f3edbf25eef70a376d57f464",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/claw_gui_32.png",
+          "resource": "eldencombat:equipment_2d/claw_gui_32",
+          "sha256": "7628b14ee0742b9bcab08dd35548f4cf4740fcff84892bbe4a03790ccaf8b32f"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/colossal_sword_front.json",
+      "id": "eldencombat:colossal_sword",
+      "state": "front",
+      "sha256": "befd73a24268f57b80d37d19d7cbb7e9e944a59e78066f9da1696c8422a43185",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/colossal_sword_front.png",
+          "resource": "eldencombat:equipment_2d/colossal_sword_front",
+          "sha256": "a615b920fbbe5608f60696ec3c2d6f1e39df1affb63ea3561bdd2dd6e2736cf9"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/colossal_sword_gui_16.json",
+      "id": "eldencombat:colossal_sword",
+      "state": "gui_16",
+      "sha256": "defbdcf3992cb2a1040800df557089b6c10d50583987e3ed8c19ccab67173f03",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/colossal_sword_gui_16.png",
+          "resource": "eldencombat:equipment_2d/colossal_sword_gui_16",
+          "sha256": "aa717a21a60dda26810131cd8eb7f9a9265bc27ca9659da5a517df731ae8cffd"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/colossal_sword_gui_32.json",
+      "id": "eldencombat:colossal_sword",
+      "state": "gui_32",
+      "sha256": "bb31a4b60b44cc2cff51fe5eaffabd34c6e9e200662452902aaedf12e581ab7a",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/colossal_sword_gui_32.png",
+          "resource": "eldencombat:equipment_2d/colossal_sword_gui_32",
+          "sha256": "a615b920fbbe5608f60696ec3c2d6f1e39df1affb63ea3561bdd2dd6e2736cf9"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/colossal_weapon_front.json",
+      "id": "eldencombat:colossal_weapon",
+      "state": "front",
+      "sha256": "9415be346185e1baa01425726ee589471e3145dd069825f2fb4ebfa5ea33804c",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/colossal_weapon_front.png",
+          "resource": "eldencombat:equipment_2d/colossal_weapon_front",
+          "sha256": "6470451448c1929db8c8aec6abbb5797a71059f91e4bd30754dc1035285594b6"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/colossal_weapon_gui_16.json",
+      "id": "eldencombat:colossal_weapon",
+      "state": "gui_16",
+      "sha256": "3f5b9f378737382c100e6d5f9419148bfb56c77359070be6bd603155cb269a7a",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/colossal_weapon_gui_16.png",
+          "resource": "eldencombat:equipment_2d/colossal_weapon_gui_16",
+          "sha256": "cdf3ae70eb1761f0f2667662efe879a4b80dbcd2e4ccb62b058a71a6ad826ce7"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/colossal_weapon_gui_32.json",
+      "id": "eldencombat:colossal_weapon",
+      "state": "gui_32",
+      "sha256": "b79d1da70b758c701e7c01d4d4d2a3c65cb76e4f002b37aad35da41344584466",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/colossal_weapon_gui_32.png",
+          "resource": "eldencombat:equipment_2d/colossal_weapon_gui_32",
+          "sha256": "6470451448c1929db8c8aec6abbb5797a71059f91e4bd30754dc1035285594b6"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/curved_greatsword_front.json",
+      "id": "eldencombat:curved_greatsword",
+      "state": "front",
+      "sha256": "e0d15c1b548776635205c86bdc41255cb752984029e7608282204399bc504c8c",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/curved_greatsword_front.png",
+          "resource": "eldencombat:equipment_2d/curved_greatsword_front",
+          "sha256": "a2af9bcf256f4f4fa92ec62ff5d9f62605768f397015595697709524e120617a"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/curved_greatsword_gui_16.json",
+      "id": "eldencombat:curved_greatsword",
+      "state": "gui_16",
+      "sha256": "06ab68c4e030212a7139b7504e3a902ccc6d89c643feb6f4b01adbbda2fb01f5",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/curved_greatsword_gui_16.png",
+          "resource": "eldencombat:equipment_2d/curved_greatsword_gui_16",
+          "sha256": "649d9a1d47b89c54cc0b1428c5906a2f4ef5ce7d9458c8955a10f2e1e10fda2f"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/curved_greatsword_gui_32.json",
+      "id": "eldencombat:curved_greatsword",
+      "state": "gui_32",
+      "sha256": "3463f9a9b9c8ccee769aa8c5694dd6157e264183d45bc8d912b4c71e6dce52e0",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/curved_greatsword_gui_32.png",
+          "resource": "eldencombat:equipment_2d/curved_greatsword_gui_32",
+          "sha256": "a2af9bcf256f4f4fa92ec62ff5d9f62605768f397015595697709524e120617a"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/curved_sword_front.json",
+      "id": "eldencombat:curved_sword",
+      "state": "front",
+      "sha256": "f929deb4062dc062fe97a25747f3a9b275083d5eeaefb9f150c6e4010b6b0424",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/curved_sword_front.png",
+          "resource": "eldencombat:equipment_2d/curved_sword_front",
+          "sha256": "26835aa1f7db2c70fc0a55e1cea94aba0f8af8b8c5babee85766a9dfd9f23ba7"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/curved_sword_gui_16.json",
+      "id": "eldencombat:curved_sword",
+      "state": "gui_16",
+      "sha256": "bbb3099d8e9bf5c8cd74b87d83e0562562a0ef8a3bf13edb5ef3f1cbd37b977a",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/curved_sword_gui_16.png",
+          "resource": "eldencombat:equipment_2d/curved_sword_gui_16",
+          "sha256": "759b46b6e8f3ba5f70776f45c35d65062d985f6aa5e144df6f3161b211f77d7a"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/curved_sword_gui_32.json",
+      "id": "eldencombat:curved_sword",
+      "state": "gui_32",
+      "sha256": "27939be820f8900e72d31a15a104cce67fc4834f12097255211524a345661dcf",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/curved_sword_gui_32.png",
+          "resource": "eldencombat:equipment_2d/curved_sword_gui_32",
+          "sha256": "26835aa1f7db2c70fc0a55e1cea94aba0f8af8b8c5babee85766a9dfd9f23ba7"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/fist_front.json",
+      "id": "eldencombat:fist",
+      "state": "front",
+      "sha256": "35fb48835978a8a2cae77763dd76bc62a516f3ce727f2286b802671297b81f44",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/fist_front.png",
+          "resource": "eldencombat:equipment_2d/fist_front",
+          "sha256": "5bc1c527ccc802694772afc7ce6553f964f8ea28bcc909c2eb33c44e626d6f8f"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/fist_gui_16.json",
+      "id": "eldencombat:fist",
+      "state": "gui_16",
+      "sha256": "4285cbe275b9df091ff8577441fe8a026e39ae39988bf75b772e7eace6287669",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/fist_gui_16.png",
+          "resource": "eldencombat:equipment_2d/fist_gui_16",
+          "sha256": "88f030cfe42ca33c778e6edbdee317b8249e93dafdb8d62e9433db1981cc5957"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/fist_gui_32.json",
+      "id": "eldencombat:fist",
+      "state": "gui_32",
+      "sha256": "968de52c0155c7ef5fe817c8842595950be4c980e5fb07123652448e13527615",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/fist_gui_32.png",
+          "resource": "eldencombat:equipment_2d/fist_gui_32",
+          "sha256": "5bc1c527ccc802694772afc7ce6553f964f8ea28bcc909c2eb33c44e626d6f8f"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/flail_front.json",
+      "id": "eldencombat:flail",
+      "state": "front",
+      "sha256": "c61fb89fcc0158308661a372575770faebc65df3c8da18160d6f52c06d2b35f1",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/flail_front.png",
+          "resource": "eldencombat:equipment_2d/flail_front",
+          "sha256": "b42b7bc62a53246ef2abf2e454156445a279e8d952c7a2699cf3caaaf34f20da"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/flail_gui_16.json",
+      "id": "eldencombat:flail",
+      "state": "gui_16",
+      "sha256": "fc8ddbbb739f76f46c5eaa693930cf868462a1582b21e3ef6bf7492c6aee8f2e",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/flail_gui_16.png",
+          "resource": "eldencombat:equipment_2d/flail_gui_16",
+          "sha256": "3fa0614720552dfcfa86d3eb6e6fcb955a07d86d54dc29733d93b9672d46ee63"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/flail_gui_32.json",
+      "id": "eldencombat:flail",
+      "state": "gui_32",
+      "sha256": "803d832cc930ce7ff36f1baa21a8d6b51b999e8d2cfb0ab35fce6694e2b64738",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/flail_gui_32.png",
+          "resource": "eldencombat:equipment_2d/flail_gui_32",
+          "sha256": "b42b7bc62a53246ef2abf2e454156445a279e8d952c7a2699cf3caaaf34f20da"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/glintstone_staff_front.json",
+      "id": "eldencombat:glintstone_staff",
+      "state": "front",
+      "sha256": "9ea8457415e62bbef6fb679bcc796a388a58831a94ce624b702e19d2766e2b01",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/glintstone_staff_front.png",
+          "resource": "eldencombat:equipment_2d/glintstone_staff_front",
+          "sha256": "625122615b46d7fd17e8a2e00cbdb53010102059e4e771d5a7dfbd879aac6b19"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/glintstone_staff_gui_16.json",
+      "id": "eldencombat:glintstone_staff",
+      "state": "gui_16",
+      "sha256": "7d678b1c2e909435e62269be776e8ff4a70bfb4f05b892bd50016f39eface9d2",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/glintstone_staff_gui_16.png",
+          "resource": "eldencombat:equipment_2d/glintstone_staff_gui_16",
+          "sha256": "c42a53c5918ad62049733719190c08470ad4a98b456c05889d7284dc1970906b"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/glintstone_staff_gui_32.json",
+      "id": "eldencombat:glintstone_staff",
+      "state": "gui_32",
+      "sha256": "a92c8ca7deb370b29cffffad49d56da981b3973ba3a3040c74cae9fbd51c5f9b",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/glintstone_staff_gui_32.png",
+          "resource": "eldencombat:equipment_2d/glintstone_staff_gui_32",
+          "sha256": "625122615b46d7fd17e8a2e00cbdb53010102059e4e771d5a7dfbd879aac6b19"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/great_shield_front.json",
+      "id": "eldencombat:great_shield",
+      "state": "front",
+      "sha256": "f29b3aaf2a3ac2f7078a5b4e60305e48e63554f042863b22a0d286d2d795ae0c",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/great_shield_front.png",
+          "resource": "eldencombat:equipment_2d/great_shield_front",
+          "sha256": "2d430a3ffd3b099af2c109fb73f85afef4e4247692b4354e1dbded08cca5a37d"
+        },
+        {
+          "source": "art/equipment-2d/full/sprites/great_shield_back.png",
+          "resource": "eldencombat:equipment_2d/great_shield_back",
+          "sha256": "95aef4055067509db782a2bc06f9540bf797b9d714a13c70ae2c02e98363dce5"
+        }
+      ],
+      "geometry": "double_material_alpha_extrusion",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/great_shield_back.json",
+      "id": "eldencombat:great_shield",
+      "state": "back",
+      "sha256": "83ee6b60c81902323f4e1e468eb0a0c6160c3afb15af037a452dd06ffd8d41cd",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/great_shield_back.png",
+          "resource": "eldencombat:equipment_2d/great_shield_back",
+          "sha256": "95aef4055067509db782a2bc06f9540bf797b9d714a13c70ae2c02e98363dce5"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/great_shield_gui_16.json",
+      "id": "eldencombat:great_shield",
+      "state": "gui_16",
+      "sha256": "5bf4a3ca1a5e2fc8c2691963345ecbea5a04c50b87854efb1007ec396065e2c3",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/great_shield_gui_16.png",
+          "resource": "eldencombat:equipment_2d/great_shield_gui_16",
+          "sha256": "708db1bf0312a953ddb57a70e1eb1f2f385416331d675e595ff675db01c13301"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/great_shield_gui_32.json",
+      "id": "eldencombat:great_shield",
+      "state": "gui_32",
+      "sha256": "4be98740613f5958f8f13b92acbb29c74e19f93459b6cce0f82e432bf244de5f",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/great_shield_gui_32.png",
+          "resource": "eldencombat:equipment_2d/great_shield_gui_32",
+          "sha256": "2d430a3ffd3b099af2c109fb73f85afef4e4247692b4354e1dbded08cca5a37d"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/great_spear_front.json",
+      "id": "eldencombat:great_spear",
+      "state": "front",
+      "sha256": "feb6c252b94f551df77a4a8316cf1e4e67854abed80164d748f2e8778ccc379f",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/great_spear_front.png",
+          "resource": "eldencombat:equipment_2d/great_spear_front",
+          "sha256": "c99ba8a6ddb4a02fe7367a6536a5ca4a5ffc41ef179482bc8fd691adb0b2d784"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/great_spear_gui_16.json",
+      "id": "eldencombat:great_spear",
+      "state": "gui_16",
+      "sha256": "95cc28fa6f85fb32a695fac0a23164660a0b496728881788b5b48d2fa3bc7080",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/great_spear_gui_16.png",
+          "resource": "eldencombat:equipment_2d/great_spear_gui_16",
+          "sha256": "437aeaf73630aea7ccec5aba84b1e4279830f79843ded166b7c28a11d0ee3c1f"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/great_spear_gui_32.json",
+      "id": "eldencombat:great_spear",
+      "state": "gui_32",
+      "sha256": "04a3c48e12fb03aa5d349b38ba8658602aea0b33eaceac68387a8c1e4263ead5",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/great_spear_gui_32.png",
+          "resource": "eldencombat:equipment_2d/great_spear_gui_32",
+          "sha256": "c99ba8a6ddb4a02fe7367a6536a5ca4a5ffc41ef179482bc8fd691adb0b2d784"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/great_sword_front.json",
+      "id": "eldencombat:great_sword",
+      "state": "front",
+      "sha256": "3a3de2513f83300736e7b988c349662afdf05d57772d859446d35d66d5f4fec2",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/great_sword_front.png",
+          "resource": "eldencombat:equipment_2d/great_sword_front",
+          "sha256": "ddcf9bfa6da695e99a08dc847a5480502039e673530bcbc00b59ef86b22e9b96"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/great_sword_gui_16.json",
+      "id": "eldencombat:great_sword",
+      "state": "gui_16",
+      "sha256": "636c76c192388b2ff083da5f460f6f9a1cf5630a470ded27ab8e05ec3c93977d",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/great_sword_gui_16.png",
+          "resource": "eldencombat:equipment_2d/great_sword_gui_16",
+          "sha256": "7f3f23101e3672b95306d15cf68a4f02b57cb8b0eb32ec0b8bd3cfce66abd82c"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/great_sword_gui_32.json",
+      "id": "eldencombat:great_sword",
+      "state": "gui_32",
+      "sha256": "c83f13ad84d46673265739e87f51385ae13c82ec58c4373591c123e2a4ee19a4",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/great_sword_gui_32.png",
+          "resource": "eldencombat:equipment_2d/great_sword_gui_32",
+          "sha256": "ddcf9bfa6da695e99a08dc847a5480502039e673530bcbc00b59ef86b22e9b96"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/hand_of_malenia_front.json",
+      "id": "eldencombat:hand_of_malenia",
+      "state": "front",
+      "sha256": "55b4795e5bee349d7e3b75e1c5443e6c20bea18148a693823059440fcb675867",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/hand_of_malenia_front.png",
+          "resource": "eldencombat:equipment_2d/hand_of_malenia_front",
+          "sha256": "009b8f459eea8ec4f82d55b357ed4f73e2b22e79d0b758c7f37b973569828501"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/hand_of_malenia_gui_16.json",
+      "id": "eldencombat:hand_of_malenia",
+      "state": "gui_16",
+      "sha256": "730e4267c995d789b2c0aa465b2ca0ea0a95a6a7117ca32aab341a0b77634213",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/hand_of_malenia_gui_16.png",
+          "resource": "eldencombat:equipment_2d/hand_of_malenia_gui_16",
+          "sha256": "a62b11697a86fd230214293b3950177bab0fc754f170a8bef9272c0dd48c1546"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/hand_of_malenia_gui_32.json",
+      "id": "eldencombat:hand_of_malenia",
+      "state": "gui_32",
+      "sha256": "42bf063cf5904a4e22127293ac03ce9bd1096a2c896001eb3b45ad095e1ba82c",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/hand_of_malenia_gui_32.png",
+          "resource": "eldencombat:equipment_2d/hand_of_malenia_gui_32",
+          "sha256": "9f721bd2648100d15ee4a1307d7646b753befd4d99dc9e0542fa7a7120abcd78"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/heavy_thrusting_sword_front.json",
+      "id": "eldencombat:heavy_thrusting_sword",
+      "state": "front",
+      "sha256": "d035db399a5d7e20f3168db9d8b26224d958bfe9e5f116cd33176d9e304df54c",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/heavy_thrusting_sword_front.png",
+          "resource": "eldencombat:equipment_2d/heavy_thrusting_sword_front",
+          "sha256": "ac5e7db9b2c83d7908be9d7ab995e399be423441b87ce9e4e242622e6fbe539b"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/heavy_thrusting_sword_gui_16.json",
+      "id": "eldencombat:heavy_thrusting_sword",
+      "state": "gui_16",
+      "sha256": "9f0c6bb81a7797222ae8fc9b165d797089f1cd3315130d627faf359e78beeebc",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/heavy_thrusting_sword_gui_16.png",
+          "resource": "eldencombat:equipment_2d/heavy_thrusting_sword_gui_16",
+          "sha256": "5ba14bc30d1a6c0614ea164ce84ccbbeab34a8ad0e81495029a14465a37ae698"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/heavy_thrusting_sword_gui_32.json",
+      "id": "eldencombat:heavy_thrusting_sword",
+      "state": "gui_32",
+      "sha256": "c9a678103dfcc22662fce76463d4fc16d46c6726b0d941db1d7b3f09ab4502cf",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/heavy_thrusting_sword_gui_32.png",
+          "resource": "eldencombat:equipment_2d/heavy_thrusting_sword_gui_32",
+          "sha256": "ac5e7db9b2c83d7908be9d7ab995e399be423441b87ce9e4e242622e6fbe539b"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/malikeths_black_blade_front.json",
+      "id": "eldencombat:malikeths_black_blade",
+      "state": "front",
+      "sha256": "5673a1575d137003e2e6079458bc20e13de143ac4b5f54edd8c2cd52dcc692de",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/malikeths_black_blade_front.png",
+          "resource": "eldencombat:equipment_2d/malikeths_black_blade_front",
+          "sha256": "6d5505ecf04a497927f086304cc5136380e4f3fc2960429845886c7b640cd6c3"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/malikeths_black_blade_gui_16.json",
+      "id": "eldencombat:malikeths_black_blade",
+      "state": "gui_16",
+      "sha256": "35a0c297634db79d35e9ee51f07f09eed16550a6910b355fc4860a0f6a046552",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/malikeths_black_blade_gui_16.png",
+          "resource": "eldencombat:equipment_2d/malikeths_black_blade_gui_16",
+          "sha256": "21d1d8b4b88214828f4cd860eb90c3c2a659a2e424158ee58dedb29b52915fb7"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/malikeths_black_blade_gui_32.json",
+      "id": "eldencombat:malikeths_black_blade",
+      "state": "gui_32",
+      "sha256": "8e68f5674a64fffb20ebcea482d1a7f14ecfde9d4acfcc30a07e2cc56105fa14",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/malikeths_black_blade_gui_32.png",
+          "resource": "eldencombat:equipment_2d/malikeths_black_blade_gui_32",
+          "sha256": "647574c8b103a4f573beda0df8697d2e963850ba6b0d4e0b5f7ccb7a99711a49"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/marikas_hammer_front.json",
+      "id": "eldencombat:marikas_hammer",
+      "state": "front",
+      "sha256": "4307ef80305c18f01b59a35c33d2a7fabcaf50040f107ade561d046985104b87",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/marikas_hammer_front.png",
+          "resource": "eldencombat:equipment_2d/marikas_hammer_front",
+          "sha256": "a196ec286aa0a4b7a2b3a0ee6c546e53cf1d78ede82ed5c03249a8c9839f2e57"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/marikas_hammer_gui_16.json",
+      "id": "eldencombat:marikas_hammer",
+      "state": "gui_16",
+      "sha256": "31fc53f39ec41a06cef540d53cd7747e5da1e29252a12af14419077143216e12",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/marikas_hammer_gui_16.png",
+          "resource": "eldencombat:equipment_2d/marikas_hammer_gui_16",
+          "sha256": "e8f7380c8da07bd53568ffa98a304722e7a374c144b100c7782f81687676a3d6"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/marikas_hammer_gui_32.json",
+      "id": "eldencombat:marikas_hammer",
+      "state": "gui_32",
+      "sha256": "a0cd5b801dff249587014882ba67f658688656dfac9ea6e6136e997b1983f1be",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/marikas_hammer_gui_32.png",
+          "resource": "eldencombat:equipment_2d/marikas_hammer_gui_32",
+          "sha256": "3e52fa0678966627697679d09c3743e0d194f9743f196b8d3595899afe599ca9"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/mohgwyns_sacred_spear_front.json",
+      "id": "eldencombat:mohgwyns_sacred_spear",
+      "state": "front",
+      "sha256": "ac84c8dd03bce346dcc02424ff60b12b89ffd4e21b535bd51c5a21a5236c1ab2",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/mohgwyns_sacred_spear_front.png",
+          "resource": "eldencombat:equipment_2d/mohgwyns_sacred_spear_front",
+          "sha256": "e6e2dc642a85425b1aee09ba4f3fcc12396f40635446487ed5b780e814a4af4e"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/mohgwyns_sacred_spear_gui_16.json",
+      "id": "eldencombat:mohgwyns_sacred_spear",
+      "state": "gui_16",
+      "sha256": "df64f47c4abfb03823eddf53e256fb6296fa1cd10a403a73a7b362a0a0ac9272",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/mohgwyns_sacred_spear_gui_16.png",
+          "resource": "eldencombat:equipment_2d/mohgwyns_sacred_spear_gui_16",
+          "sha256": "93eaca1969452d2c3b2702cf82546c3bee1a0b0929158f71ce9a333b9ae7ac7e"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/mohgwyns_sacred_spear_gui_32.json",
+      "id": "eldencombat:mohgwyns_sacred_spear",
+      "state": "gui_32",
+      "sha256": "bc80b37b8e8fdfe622be496071c99e000ec646b87b3eb17a7174dec19fd43a34",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/mohgwyns_sacred_spear_gui_32.png",
+          "resource": "eldencombat:equipment_2d/mohgwyns_sacred_spear_gui_32",
+          "sha256": "b128614b8d02e35438bcc221fa3a5fce0f0b533254dfa9cad061e0fa3274e9a7"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/morgotts_cursed_sword_front.json",
+      "id": "eldencombat:morgotts_cursed_sword",
+      "state": "front",
+      "sha256": "ace7ecba34b3f4a0e56a94c7a2a1a505bc90532d60893358bd094a54e58b67f7",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/morgotts_cursed_sword_front.png",
+          "resource": "eldencombat:equipment_2d/morgotts_cursed_sword_front",
+          "sha256": "0b9ae9ac38057d25e6e751886cb1da129f0c413a2142b87a9c0d2abab289d419"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/morgotts_cursed_sword_gui_16.json",
+      "id": "eldencombat:morgotts_cursed_sword",
+      "state": "gui_16",
+      "sha256": "b0bb2b193b7641dd0cbd5c0aad93fa3acb39f4acbdd9a39224bcea06d7056528",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/morgotts_cursed_sword_gui_16.png",
+          "resource": "eldencombat:equipment_2d/morgotts_cursed_sword_gui_16",
+          "sha256": "30f0900a42bb70ddd500043fe3e22d8b669cdceca78fb53dfd061c3786066d04"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/morgotts_cursed_sword_gui_32.json",
+      "id": "eldencombat:morgotts_cursed_sword",
+      "state": "gui_32",
+      "sha256": "7baae53d761165b936d5eb4263451b1a43e371623f86214e5bb4dfa5f75dc570",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/morgotts_cursed_sword_gui_32.png",
+          "resource": "eldencombat:equipment_2d/morgotts_cursed_sword_gui_32",
+          "sha256": "f18cc648540f395850c3b2ccc206b8414fae4ab6d864113314238818f6dec914"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/sacred_relic_sword_front.json",
+      "id": "eldencombat:sacred_relic_sword",
+      "state": "front",
+      "sha256": "3dcd8112bbd870ea02d0b4c59b49c999581581c4a4a531e54d5701b036d40f80",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/sacred_relic_sword_front.png",
+          "resource": "eldencombat:equipment_2d/sacred_relic_sword_front",
+          "sha256": "9a938de0274b9ca61fffee43b74c655002a50b64ce799d3072f1faa71f477f06"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/sacred_relic_sword_gui_16.json",
+      "id": "eldencombat:sacred_relic_sword",
+      "state": "gui_16",
+      "sha256": "1649ad1bab9685d294c3f82a22e155970782603834f2e910ebbb9d78c4f5a29c",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/sacred_relic_sword_gui_16.png",
+          "resource": "eldencombat:equipment_2d/sacred_relic_sword_gui_16",
+          "sha256": "6910cb13c9109a755efb1033f4134e1ed04987e73ed6893e4cff4925fe124494"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/sacred_relic_sword_gui_32.json",
+      "id": "eldencombat:sacred_relic_sword",
+      "state": "gui_32",
+      "sha256": "53c1c51a4a6adff673f99422d6b7d1310fd5927b3f2b1309021a094f0f1d0013",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/sacred_relic_sword_gui_32.png",
+          "resource": "eldencombat:equipment_2d/sacred_relic_sword_gui_32",
+          "sha256": "3e14d62b0d980c5c140d69f10784eb096a4cc0ba74c04abb9d723e227a9d6d65"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/sacred_seal_front.json",
+      "id": "eldencombat:sacred_seal",
+      "state": "front",
+      "sha256": "8f7cbd43a2cedf8296fb8b78b5aa034d38fad75baf165c7760f0f428b10af098",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/sacred_seal_front.png",
+          "resource": "eldencombat:equipment_2d/sacred_seal_front",
+          "sha256": "0e83c01d4600a8651ebf9992c50740e69bd3b76757e595bc0cf8d565a8c0717a"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/sacred_seal_gui_16.json",
+      "id": "eldencombat:sacred_seal",
+      "state": "gui_16",
+      "sha256": "0b368e59c9c4fe8fd41778364b4a72ed22a2783b34c404596939ae518e37cb21",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/sacred_seal_gui_16.png",
+          "resource": "eldencombat:equipment_2d/sacred_seal_gui_16",
+          "sha256": "afeb201c8e72fd91d5066f49be698c5d532e8f5b6dddf64171ef75a1c734518f"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/sacred_seal_gui_32.json",
+      "id": "eldencombat:sacred_seal",
+      "state": "gui_32",
+      "sha256": "36cbac4451602d72c44d462139ef99117e966a77928a763619999d2e39816e21",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/sacred_seal_gui_32.png",
+          "resource": "eldencombat:equipment_2d/sacred_seal_gui_32",
+          "sha256": "0e83c01d4600a8651ebf9992c50740e69bd3b76757e595bc0cf8d565a8c0717a"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/shield_front.json",
+      "id": "eldencombat:shield",
+      "state": "front",
+      "sha256": "e92eb20e65e333a91045173f6c2235b385cd39a2f8903179a28bd0b4ebfa73aa",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/shield_front.png",
+          "resource": "eldencombat:equipment_2d/shield_front",
+          "sha256": "b3c85a76eae23f93cc5075f37c13f12498b6b352265030cac498e1e278b17d89"
+        },
+        {
+          "source": "art/equipment-2d/full/sprites/shield_back.png",
+          "resource": "eldencombat:equipment_2d/shield_back",
+          "sha256": "0a08c59e2c5c5b002741a942ae3a411b36c93615d1334ee11e3853be6be60086"
+        }
+      ],
+      "geometry": "double_material_alpha_extrusion",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/shield_back.json",
+      "id": "eldencombat:shield",
+      "state": "back",
+      "sha256": "34c4b7aaeb36349b907cbc48bfc9823f64aa074c02895a3449701d039fa488d0",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/shield_back.png",
+          "resource": "eldencombat:equipment_2d/shield_back",
+          "sha256": "0a08c59e2c5c5b002741a942ae3a411b36c93615d1334ee11e3853be6be60086"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/shield_gui_16.json",
+      "id": "eldencombat:shield",
+      "state": "gui_16",
+      "sha256": "0fe0f82abf1b667b98f4666d7c44a505ee841cfadb3352262420e12a800548b0",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/shield_gui_16.png",
+          "resource": "eldencombat:equipment_2d/shield_gui_16",
+          "sha256": "555a912eba1cce3ff3067d6778322e2de2f544e666d74ef8eb22a26a857c3914"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/shield_gui_32.json",
+      "id": "eldencombat:shield",
+      "state": "gui_32",
+      "sha256": "1906ccf33d768d0a94bb60ccff62221f3bfe3be8a255747c593d1c879547af79",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/shield_gui_32.png",
+          "resource": "eldencombat:equipment_2d/shield_gui_32",
+          "sha256": "b3c85a76eae23f93cc5075f37c13f12498b6b352265030cac498e1e278b17d89"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/small_shield_front.json",
+      "id": "eldencombat:small_shield",
+      "state": "front",
+      "sha256": "e13185c2e6c6a4e8b18fdd479505879385dc063ea55420e7f92ba101becce7f5",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/small_shield_front.png",
+          "resource": "eldencombat:equipment_2d/small_shield_front",
+          "sha256": "ede88587c685f8bdca4a5f2efc01d6732492f32415638d4ebb2adb373ae789df"
+        },
+        {
+          "source": "art/equipment-2d/full/sprites/small_shield_back.png",
+          "resource": "eldencombat:equipment_2d/small_shield_back",
+          "sha256": "c9e86dc0b8da5319cc5a29d31203e62f6040288120b32e333b1d3f44ed90183a"
+        }
+      ],
+      "geometry": "double_material_alpha_extrusion",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/small_shield_back.json",
+      "id": "eldencombat:small_shield",
+      "state": "back",
+      "sha256": "061c138e25acfb1a3018b52486af1ed787e62c504cf2309df38b7e6e40d8db7f",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/small_shield_back.png",
+          "resource": "eldencombat:equipment_2d/small_shield_back",
+          "sha256": "c9e86dc0b8da5319cc5a29d31203e62f6040288120b32e333b1d3f44ed90183a"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/small_shield_gui_16.json",
+      "id": "eldencombat:small_shield",
+      "state": "gui_16",
+      "sha256": "2a366bca27331947fd6bb5518de33837120602e57504b65669d18153439fc701",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/small_shield_gui_16.png",
+          "resource": "eldencombat:equipment_2d/small_shield_gui_16",
+          "sha256": "e176ddd090c5bbccaffab77aebe45f4244764620d583f84dc3ed10560f2a4b3a"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/small_shield_gui_32.json",
+      "id": "eldencombat:small_shield",
+      "state": "gui_32",
+      "sha256": "61b573c2936c159708b26008fe71f007b7af55d39a097e4eb747baaba41faab8",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/small_shield_gui_32.png",
+          "resource": "eldencombat:equipment_2d/small_shield_gui_32",
+          "sha256": "ede88587c685f8bdca4a5f2efc01d6732492f32415638d4ebb2adb373ae789df"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/starscourge_greatsword_front.json",
+      "id": "eldencombat:starscourge_greatsword",
+      "state": "front",
+      "sha256": "e6d188c6954711b3733314ee8a6342f7cfc09af83f495bbf096c63606f7d9ca7",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/starscourge_greatsword_front.png",
+          "resource": "eldencombat:equipment_2d/starscourge_greatsword_front",
+          "sha256": "25c0b13383fb0ef6341c1882016242ab9b66e8f97b763ee5ca52db110f4c757a"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/starscourge_greatsword_gui_16.json",
+      "id": "eldencombat:starscourge_greatsword",
+      "state": "gui_16",
+      "sha256": "bc9c0a79c1e604ed69442839478369359f29638a1e425c787e35c9d8aa1586a8",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/starscourge_greatsword_gui_16.png",
+          "resource": "eldencombat:equipment_2d/starscourge_greatsword_gui_16",
+          "sha256": "96b72ef6c08447034db97d8717e34ae3b9846ae4b952c295ebaff715110f8b1e"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/starscourge_greatsword_gui_32.json",
+      "id": "eldencombat:starscourge_greatsword",
+      "state": "gui_32",
+      "sha256": "3d7783cda5f4600263049a984f4a19ad83bbebc36a0f84a388a290456aaddd4a",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/starscourge_greatsword_gui_32.png",
+          "resource": "eldencombat:equipment_2d/starscourge_greatsword_gui_32",
+          "sha256": "2da942180e4c0d229ee4c849c2464e7a00e6e5205bb39b99b3578897e12c6b82"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/twinblade_front.json",
+      "id": "eldencombat:twinblade",
+      "state": "front",
+      "sha256": "da958c5c092346e8c2c0ea12d0f2bf93c4a8036878f7021eaf9ceac01b2ce1b0",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/twinblade_front.png",
+          "resource": "eldencombat:equipment_2d/twinblade_front",
+          "sha256": "8786b250af1398472daa977f1069f844972174da23557bc926b0a8b68b939b6a"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/twinblade_gui_16.json",
+      "id": "eldencombat:twinblade",
+      "state": "gui_16",
+      "sha256": "b353423f17e847fb4c8a6d58e58ed6ee4333b82dacbf4afa2f06a86ef5909dce",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/twinblade_gui_16.png",
+          "resource": "eldencombat:equipment_2d/twinblade_gui_16",
+          "sha256": "fcb9446306eefabf253401aaebff87afb69ecce88f86a2ea32ec574e42a10ef9"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/twinblade_gui_32.json",
+      "id": "eldencombat:twinblade",
+      "state": "gui_32",
+      "sha256": "49927cba4dbaa68b0f8342e48a8dae33790097710206adad95a59262399dbe6c",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/twinblade_gui_32.png",
+          "resource": "eldencombat:equipment_2d/twinblade_gui_32",
+          "sha256": "8786b250af1398472daa977f1069f844972174da23557bc926b0a8b68b939b6a"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/whip_front.json",
+      "id": "eldencombat:whip",
+      "state": "front",
+      "sha256": "be7df2fb30de6b68f1fb533ad66f3eccf93016857950b9b760d8929ea61fe622",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/whip_front.png",
+          "resource": "eldencombat:equipment_2d/whip_front",
+          "sha256": "824acdbb40fb88ab1649d7a85b60d0a3dcec25a6ff50185ba5fe45a245fc1986"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/whip_gui_16.json",
+      "id": "eldencombat:whip",
+      "state": "gui_16",
+      "sha256": "6869c8ce304ad3b57012f631bc5fea6b9f4af2809fb0bb16af7ece733410fd95",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/whip_gui_16.png",
+          "resource": "eldencombat:equipment_2d/whip_gui_16",
+          "sha256": "a173f3b47147c098fcec02aba4f4c523c3d2a43b57e0de12afc238556868e2b1"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/whip_gui_32.json",
+      "id": "eldencombat:whip",
+      "state": "gui_32",
+      "sha256": "43669cd8c97dc1b90c89b7d654b8a1ac21427515256f7e0fb5c4a829d21e2e16",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/whip_gui_32.png",
+          "resource": "eldencombat:equipment_2d/whip_gui_32",
+          "sha256": "824acdbb40fb88ab1649d7a85b60d0a3dcec25a6ff50185ba5fe45a245fc1986"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/great_bow_standby.json",
+      "id": "eldencombat:great_bow",
+      "state": "standby",
+      "sha256": "aebf852af0a9ed697b066d9daa8e68a2a378d11ad472bb0419938e0e43278b19",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/great_bow_standby.png",
+          "resource": "eldencombat:equipment_2d/great_bow_standby",
+          "sha256": "380666e907d615d7b7ef1de6302965a162d457520215b9c1ab157ef66fb771f3"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/great_bow_pulling_0.json",
+      "id": "eldencombat:great_bow",
+      "state": "pulling_0",
+      "sha256": "3a6e25e6a86ed20d420b047858ae7f862e1044fe79b26a82f7e31d03b92cb3a3",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/great_bow_pulling_0.png",
+          "resource": "eldencombat:equipment_2d/great_bow_pulling_0",
+          "sha256": "3746c0d3c6a1ca95d04cbd3a41909884854388a8af9595e3d93854a91eecbb34"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/great_bow_pulling_1.json",
+      "id": "eldencombat:great_bow",
+      "state": "pulling_1",
+      "sha256": "3061294149230f545785f453cf25a48d7e6d82d6dcb848376af890e0ad6df9ce",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/great_bow_pulling_1.png",
+          "resource": "eldencombat:equipment_2d/great_bow_pulling_1",
+          "sha256": "d81a3eb1c7e94d4e4356f81df204a599676ca042af014205670ab760f74c13f3"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/great_bow_pulling_2.json",
+      "id": "eldencombat:great_bow",
+      "state": "pulling_2",
+      "sha256": "8b8c95334e0bb2e1e2822d946078885564f5f1293458a0b56ae5a0e86d338fd2",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/great_bow_pulling_2.png",
+          "resource": "eldencombat:equipment_2d/great_bow_pulling_2",
+          "sha256": "b3d351f437307bf0e881f112b291c4fdcb24941d0cf888aa660e996835be6f4a"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/great_bow_gui_16.json",
+      "id": "eldencombat:great_bow",
+      "state": "gui_16",
+      "sha256": "1974bbf9d7ecd405b0974d47b1554a8da6a4a250f6ad007f1fc1a1652dc20c7c",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/great_bow_gui_16.png",
+          "resource": "eldencombat:equipment_2d/great_bow_gui_16",
+          "sha256": "b829690b5527fd48c3aece768c076fb60aec5761f7ea387a03235cbac4829481"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/great_bow_gui_32.json",
+      "id": "eldencombat:great_bow",
+      "state": "gui_32",
+      "sha256": "70af076525bc7726709436b0626af5fb9eee4d9d73f406cd5f1ab43b0a7e9a76",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/great_bow_gui_32.png",
+          "resource": "eldencombat:equipment_2d/great_bow_gui_32",
+          "sha256": "380666e907d615d7b7ef1de6302965a162d457520215b9c1ab157ef66fb771f3"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/ballista_standby.json",
+      "id": "eldencombat:ballista",
+      "state": "standby",
+      "sha256": "8c65e1d1b565a952fd8f5d9580e2500f398f64a0ea27954078f421c4ffe8fea0",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/ballista_standby.png",
+          "resource": "eldencombat:equipment_2d/ballista_standby",
+          "sha256": "e367619f7944ed6bf1373d54f330d96ab9f797985b3b33b2f822fee07eddfd52"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/ballista_loading_0.json",
+      "id": "eldencombat:ballista",
+      "state": "loading_0",
+      "sha256": "4cdcd4cf6ffba23fe286994e570b3809522564f7de9315a937624d304515267c",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/ballista_loading_0.png",
+          "resource": "eldencombat:equipment_2d/ballista_loading_0",
+          "sha256": "97e92727942c991479cca184ed5a3eb7da44b1b67932e6aec842bb85aa78f2ee"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/ballista_loading_1.json",
+      "id": "eldencombat:ballista",
+      "state": "loading_1",
+      "sha256": "a9c819a0a7d2a8d046fbb63f1bdb334b5fe7d399bfde540087610ae83346e736",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/ballista_loading_1.png",
+          "resource": "eldencombat:equipment_2d/ballista_loading_1",
+          "sha256": "2ad18f539bf80e2fe679579121615873c2d6efb763cc51c66a696a563e976b0f"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/ballista_loading_2.json",
+      "id": "eldencombat:ballista",
+      "state": "loading_2",
+      "sha256": "faaa8a0e091af059302eff30c5226da2e23f14d31704b11a24239792dd908695",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/ballista_loading_2.png",
+          "resource": "eldencombat:equipment_2d/ballista_loading_2",
+          "sha256": "067af2b0b8d21c7dbe4403a47701d09d9df3ac0ea094c4210e1c2f338d09baa6"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/ballista_loaded.json",
+      "id": "eldencombat:ballista",
+      "state": "loaded",
+      "sha256": "84b1416b1a708a375ec0db8eec2dee3469987222bf87d34fbf58a165c7cb0da5",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/ballista_loaded.png",
+          "resource": "eldencombat:equipment_2d/ballista_loaded",
+          "sha256": "cd8a6f73f3b4e26f6d59f710d509f683115924377650e3b1378d15f6d838d8d5"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/ballista_gui_16.json",
+      "id": "eldencombat:ballista",
+      "state": "gui_16",
+      "sha256": "1d25bd8eb8572dede02b1e635007a4fa24b55280a209a3ecf20f19edc0a05486",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/ballista_gui_16.png",
+          "resource": "eldencombat:equipment_2d/ballista_gui_16",
+          "sha256": "77e18f94f8aa7380ff733a6c4ab131060959e40d42cc918f39e4c1c148c19bf9"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/ballista_gui_32.json",
+      "id": "eldencombat:ballista",
+      "state": "gui_32",
+      "sha256": "da6e20b303a24c6637bfc73cca860ad8b17ae4f6463cb0c27c6453e2846b5fb6",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/ballista_gui_32.png",
+          "resource": "eldencombat:equipment_2d/ballista_gui_32",
+          "sha256": "e367619f7944ed6bf1373d54f330d96ab9f797985b3b33b2f822fee07eddfd52"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/test_flask_full.json",
+      "id": "eldencombat:test_flask",
+      "state": "full",
+      "sha256": "55bb42f5105b38bca9fea9948e62b4cbd856689a5c9540eef8cb9eb7eb2dc7f8",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/test_flask_full.png",
+          "resource": "eldencombat:equipment_2d/test_flask_full",
+          "sha256": "e7c797a935fef0c04944300de3b485a3f0471ff4a2ea53f597087a0d335963b2"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/test_flask_gui_16.json",
+      "id": "eldencombat:test_flask",
+      "state": "gui_16",
+      "sha256": "9eec1e541a0ddaa7b7ac643afdf6559f0175f01a7aedcc5d4644e36a300e7ee9",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/test_flask_gui_16.png",
+          "resource": "eldencombat:equipment_2d/test_flask_gui_16",
+          "sha256": "e48c79e6bf3a98365964e3b086c6daa932982f9f95b6af9570a90fe83071c396"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    },
+    {
+      "file": "models/test_flask_gui_32.json",
+      "id": "eldencombat:test_flask",
+      "state": "gui_32",
+      "sha256": "40e8db2dc5420474c06d2046788e7fe1ffd0f660db3dbf04dbac167debb665ea",
+      "textures": [
+        {
+          "source": "art/equipment-2d/full/sprites/test_flask_gui_32.png",
+          "resource": "eldencombat:equipment_2d/test_flask_gui_32",
+          "sha256": "e7c797a935fef0c04944300de3b485a3f0471ff4a2ea53f597087a0d335963b2"
+        }
+      ],
+      "geometry": "vanilla_generated",
+      "thicknessUnits": 1
+    }
+  ],
+  "existingItems": [
+    {
+      "id": "eldencombat:affinity_template_blood",
+      "model": "src/main/resources/assets/eldencombat/models/item/affinity_template_blood.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "faa6761429e20a28409cd92da7f61a78fbcc3b170437c3e38ae8648cfa948002"
+    },
+    {
+      "id": "eldencombat:affinity_template_fire",
+      "model": "src/main/resources/assets/eldencombat/models/item/affinity_template_fire.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "2c7944fee57bdbb88c7abcdd1acbd218e68b2d515aa1bfb16743d8e258270a4d"
+    },
+    {
+      "id": "eldencombat:affinity_template_heavy",
+      "model": "src/main/resources/assets/eldencombat/models/item/affinity_template_heavy.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "0ffbe985e8a2969e37ed67043953355bd9be045c2d582a59a6706961294972a3"
+    },
+    {
+      "id": "eldencombat:affinity_template_keen",
+      "model": "src/main/resources/assets/eldencombat/models/item/affinity_template_keen.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "6235af51cb1f878c86f60b22cb8c3f4564f3af019757b930f40b878d64319814"
+    },
+    {
+      "id": "eldencombat:affinity_template_magic",
+      "model": "src/main/resources/assets/eldencombat/models/item/affinity_template_magic.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "2ad537fbce3af3cdac1428936a5a5dcb21bf377a4d1c5ba344565a480986e523"
+    },
+    {
+      "id": "eldencombat:affinity_template_occult",
+      "model": "src/main/resources/assets/eldencombat/models/item/affinity_template_occult.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "dd064637267bf711efedc6c408da2d3822a543c8734c00db140bd144722f18d5"
+    },
+    {
+      "id": "eldencombat:affinity_template_quality",
+      "model": "src/main/resources/assets/eldencombat/models/item/affinity_template_quality.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "8e2576a22a713f12cb9073433f013d5554e7f380d74f8723430ee5088d712f85"
+    },
+    {
+      "id": "eldencombat:affinity_template_sacred",
+      "model": "src/main/resources/assets/eldencombat/models/item/affinity_template_sacred.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "883d3382757573d5ac1609d14fdb7438321a585cba09417064b0d9d4c7f49e19"
+    },
+    {
+      "id": "eldencombat:ancient_dragon_smithing_stone",
+      "model": "src/main/resources/assets/eldencombat/models/item/ancient_dragon_smithing_stone.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "76eeca117161cfb553d5cdd9bc17d6c4be65b2fd6f882b78abf9a9924da9c4f3"
+    },
+    {
+      "id": "eldencombat:ancient_dragon_somber_stone",
+      "model": "src/main/resources/assets/eldencombat/models/item/ancient_dragon_somber_stone.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "2a086ee5a4ec61d59aa91158478b4ae480444c9ea185495df628eae226d64733"
+    },
+    {
+      "id": "eldencombat:bell_bearing_1",
+      "model": "src/main/resources/assets/eldencombat/models/item/bell_bearing_1.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "9d5cc62ef0249c41049fcbd94459661d970715e4e23fa88d3bed7d3f46797ca8"
+    },
+    {
+      "id": "eldencombat:bell_bearing_2",
+      "model": "src/main/resources/assets/eldencombat/models/item/bell_bearing_2.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "6f8319b507da4e0eb3b980687926c225484c96212ed4baadda7bbc6130d2de3f"
+    },
+    {
+      "id": "eldencombat:bell_bearing_3",
+      "model": "src/main/resources/assets/eldencombat/models/item/bell_bearing_3.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "6bf707d2e00a7890f1dcf9006dd516ac44d5ea18135812b67e2cb79369297f0a"
+    },
+    {
+      "id": "eldencombat:bell_bearing_4",
+      "model": "src/main/resources/assets/eldencombat/models/item/bell_bearing_4.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "c64aa83b46ff89aa90761c2f3a8fdad2e100d99beb693156c6f185126bde1a95"
+    },
+    {
+      "id": "eldencombat:blood_resin",
+      "model": "src/main/resources/assets/eldencombat/models/item/blood_resin.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "78a327a63dbe4375fd568b3d545bcc2ed932af64fc94909f3c63cbbb564976e0"
+    },
+    {
+      "id": "eldencombat:dragoncrest_shield_talisman",
+      "model": "src/main/resources/assets/eldencombat/models/item/dragoncrest_shield_talisman.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "7dbe8384f7b7bea34610fb9fc9aa3104ba4024240a29c5845ba15c3e28b3869a"
+    },
+    {
+      "id": "eldencombat:fire_ember",
+      "model": "src/main/resources/assets/eldencombat/models/item/fire_ember.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "5cbcdac45d795412cceb32d3f27d24bde928b05a5842aa8902834586af54545a"
+    },
+    {
+      "id": "eldencombat:flame_grant_me_strength",
+      "model": "src/main/resources/assets/eldencombat/models/item/flame_grant_me_strength.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "19a1982e08659a2a4dcf6592a4c338656c40c3c2e0d4b46f8c180d7f20e931c8"
+    },
+    {
+      "id": "eldencombat:glintstone_dust",
+      "model": "src/main/resources/assets/eldencombat/models/item/glintstone_dust.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "ddff6f462ee0461972d7e30f353c2883be0f29f576a9575778cc423c327c3abb"
+    },
+    {
+      "id": "eldencombat:green_turtle_talisman",
+      "model": "src/main/resources/assets/eldencombat/models/item/green_turtle_talisman.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "613088792327242bf8455b98745e5535139b80c42bf4ffd29c748872f6055ff5"
+    },
+    {
+      "id": "eldencombat:heavy_scale",
+      "model": "src/main/resources/assets/eldencombat/models/item/heavy_scale.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "bd49fb77daf583bdc2f5a27fa5fca96fbd2edc389550dcde1c37cca0b9b220f7"
+    },
+    {
+      "id": "eldencombat:ironjar_aromatic",
+      "model": "src/main/resources/assets/eldencombat/models/item/ironjar_aromatic.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "e4a958bc717aa38fe743ed7fc722c1b76672373c429419aac52ce238bf31de11"
+    },
+    {
+      "id": "eldencombat:keen_scale",
+      "model": "src/main/resources/assets/eldencombat/models/item/keen_scale.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "493572a76eb9e72b9084bf86207f49f2f12427f0d9964a90d15af3e218f0a657"
+    },
+    {
+      "id": "eldencombat:margit_spawn_egg",
+      "model": "src/main/resources/assets/eldencombat/models/item/margit_spawn_egg.json",
+      "parent": "minecraft:item/template_spawn_egg",
+      "alreadyGenerated": false,
+      "sha256": "d2d67b22443c23da9188100f1a63ddf1f7ec4e0e4a3dcc4e6a1d04d87b2213ef"
+    },
+    {
+      "id": "eldencombat:occult_crystal",
+      "model": "src/main/resources/assets/eldencombat/models/item/occult_crystal.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "06a1b350dfa9fa9fa4f7c00bed63e73ff83444d141f887632ad522b4a4197a84"
+    },
+    {
+      "id": "eldencombat:quality_scale",
+      "model": "src/main/resources/assets/eldencombat/models/item/quality_scale.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "e4d386756488b2b1121ff81dc5d2754077ce36f73070686585f38117460c7a85"
+    },
+    {
+      "id": "eldencombat:radagon_soreseal",
+      "model": "src/main/resources/assets/eldencombat/models/item/radagon_soreseal.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "245e0a7176cffff7edf24dc45a51b138dd8330992d5354170da3a8e71bff55b6"
+    },
+    {
+      "id": "eldencombat:reforge_template",
+      "model": "src/main/resources/assets/eldencombat/models/item/reforge_template.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "56e67091a978241eca7c8748752d1d358e095f38a42824234c2b0f3d658e2dda"
+    },
+    {
+      "id": "eldencombat:remorse_tear",
+      "model": "src/main/resources/assets/eldencombat/models/item/remorse_tear.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "7b1bbf5241f5ede23157c8550cde49ab5a7baddabb914989a3f8d167c4bdf201"
+    },
+    {
+      "id": "eldencombat:sacred_crystal",
+      "model": "src/main/resources/assets/eldencombat/models/item/sacred_crystal.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "79c828ecee4ae876e0270873595c48e643da2c708461833228cd386fae3bd4f2"
+    },
+    {
+      "id": "eldencombat:smithing_stone_1",
+      "model": "src/main/resources/assets/eldencombat/models/item/smithing_stone_1.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "a4fb949fe841a5b2edca3c892d77c9a9cab0f5b4554199e38dc907ce8b163ce8"
+    },
+    {
+      "id": "eldencombat:smithing_stone_2",
+      "model": "src/main/resources/assets/eldencombat/models/item/smithing_stone_2.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "3d3330e0db9aaeaa145ed8e51b297bccf1027d8ce4f0e6754cd211ec46f6c16f"
+    },
+    {
+      "id": "eldencombat:smithing_stone_3",
+      "model": "src/main/resources/assets/eldencombat/models/item/smithing_stone_3.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "38d191bc23e3b4d6803ec46558955ab7d75bae72089a0ba189b622f668859245"
+    },
+    {
+      "id": "eldencombat:smithing_stone_4",
+      "model": "src/main/resources/assets/eldencombat/models/item/smithing_stone_4.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "ae893ef44faf4c256b14151f7a55207dad215b5406bc8cd85220f23fe60e7378"
+    },
+    {
+      "id": "eldencombat:smithing_stone_5",
+      "model": "src/main/resources/assets/eldencombat/models/item/smithing_stone_5.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "4b236ba26d664251b0588c551322cc98f494b39db0b88264a9e28afafbeb5824"
+    },
+    {
+      "id": "eldencombat:smithing_stone_6",
+      "model": "src/main/resources/assets/eldencombat/models/item/smithing_stone_6.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "d748a33c0067a457035f3f70b0ce9739e8c29e9cb595c22b26daeaa423145b79"
+    },
+    {
+      "id": "eldencombat:smithing_stone_7",
+      "model": "src/main/resources/assets/eldencombat/models/item/smithing_stone_7.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "e560addd75a3411b8093134093632f1caaee58fab60cfd848750e7e2aa22b9dc"
+    },
+    {
+      "id": "eldencombat:smithing_stone_8",
+      "model": "src/main/resources/assets/eldencombat/models/item/smithing_stone_8.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "36c91628a07f638eb16ed09dcc6f74e4202f6ff90d197e7fb1e01f764c03fdc0"
+    },
+    {
+      "id": "eldencombat:somber_smithing_stone_1",
+      "model": "src/main/resources/assets/eldencombat/models/item/somber_smithing_stone_1.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "61d8e525c44b63ee84c7827d050b556a118f434673777225272b91e8417ffb65"
+    },
+    {
+      "id": "eldencombat:somber_smithing_stone_2",
+      "model": "src/main/resources/assets/eldencombat/models/item/somber_smithing_stone_2.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "6802cdc11f3575a2f0b593acaef16db80f68292608f40f854ecfa02876a3c70b"
+    },
+    {
+      "id": "eldencombat:somber_smithing_stone_3",
+      "model": "src/main/resources/assets/eldencombat/models/item/somber_smithing_stone_3.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "104f0aaa21b0d6515d5004ae9877147891f090ead8ca39fce79e41c87c0cd825"
+    },
+    {
+      "id": "eldencombat:somber_smithing_stone_4",
+      "model": "src/main/resources/assets/eldencombat/models/item/somber_smithing_stone_4.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "4b5ff85b4a9bacb2289fad29d8d501bb22f3d6ff2ba6af47ac140b6f2e11eff3"
+    },
+    {
+      "id": "eldencombat:somber_smithing_stone_5",
+      "model": "src/main/resources/assets/eldencombat/models/item/somber_smithing_stone_5.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "7ab3c7bc2bfb169d719096a95f32e32b0159a8918f87a64bcf038741d6dba1b3"
+    },
+    {
+      "id": "eldencombat:somber_upgrade_template_1",
+      "model": "src/main/resources/assets/eldencombat/models/item/somber_upgrade_template_1.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "789bdcc9b2efcc5d3177f838fababd3608e7d69c52fff6f7c8ef6d8fe5fa797c"
+    },
+    {
+      "id": "eldencombat:somber_upgrade_template_2",
+      "model": "src/main/resources/assets/eldencombat/models/item/somber_upgrade_template_2.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "aebd88ca7de93ced2a523d7927d0172ab36d605ea8fb8b5a43494fa13674396b"
+    },
+    {
+      "id": "eldencombat:somber_upgrade_template_3",
+      "model": "src/main/resources/assets/eldencombat/models/item/somber_upgrade_template_3.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "b465a11d5bf10c0b466a51c003f4dbe1b8848e8a504a992d7eac74fbbdd348b6"
+    },
+    {
+      "id": "eldencombat:somber_upgrade_template_4",
+      "model": "src/main/resources/assets/eldencombat/models/item/somber_upgrade_template_4.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "03ae809a8407c9d025e70f23ce529a730c850acf9784fb69856d2a1cbfe4ea91"
+    },
+    {
+      "id": "eldencombat:somber_upgrade_template_5",
+      "model": "src/main/resources/assets/eldencombat/models/item/somber_upgrade_template_5.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "12680ba3211ea03484ecc9ba05df4b101f841749fb968d1ae766b2d3a7ecf129"
+    },
+    {
+      "id": "eldencombat:starlight_shard",
+      "model": "src/main/resources/assets/eldencombat/models/item/starlight_shard.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "3078b418ba544341767e6c729c049a41ebdf97138f0481f609ae2a47cf7e0ea9"
+    },
+    {
+      "id": "eldencombat:upgrade_template_1",
+      "model": "src/main/resources/assets/eldencombat/models/item/upgrade_template_1.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "be11117df9af48f34fe813ea08a7ac928a90bd60c6e573cc37044fe9767dc292"
+    },
+    {
+      "id": "eldencombat:upgrade_template_2",
+      "model": "src/main/resources/assets/eldencombat/models/item/upgrade_template_2.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "db03e40610e4479e6c6d1d62f1b1a99bacec9933e3cd4610361b81e07b4d421d"
+    },
+    {
+      "id": "eldencombat:upgrade_template_3",
+      "model": "src/main/resources/assets/eldencombat/models/item/upgrade_template_3.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "a5a77f079f67a5083f2b0cfeb95864d61832c2345a0ada60c8e32ea1f691e33e"
+    },
+    {
+      "id": "eldencombat:upgrade_template_4",
+      "model": "src/main/resources/assets/eldencombat/models/item/upgrade_template_4.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "697718cf47763ae4a368d5343945523a3a372c6472ae3bdd6095461c4a412090"
+    },
+    {
+      "id": "eldencombat:upgrade_template_5",
+      "model": "src/main/resources/assets/eldencombat/models/item/upgrade_template_5.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "ebf7c89701efb38593f02c090f9d7eb90843f7640dc9cf463a584a49e1238c9c"
+    },
+    {
+      "id": "eldencombat:upgrade_template_6",
+      "model": "src/main/resources/assets/eldencombat/models/item/upgrade_template_6.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "8de42f5b585228b03ddd8c7bba86266364f8c6e57515399ed94d20e6efd7c99c"
+    },
+    {
+      "id": "eldencombat:upgrade_template_7",
+      "model": "src/main/resources/assets/eldencombat/models/item/upgrade_template_7.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "578c5b460852b92bd52377a7792b2f3e00c72f8fdccdda7d7fe2a4772ab0fc31"
+    },
+    {
+      "id": "eldencombat:upgrade_template_8",
+      "model": "src/main/resources/assets/eldencombat/models/item/upgrade_template_8.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "7b526e5cdedbc9da4ccc7a92d0b3c50c354b627740aebba5711e424e6f023f4f"
+    },
+    {
+      "id": "eldencombat:warrior_jar_shard",
+      "model": "src/main/resources/assets/eldencombat/models/item/warrior_jar_shard.json",
+      "parent": "item/generated",
+      "alreadyGenerated": true,
+      "sha256": "9b24cb577eb46df31eecb92fd0e93bac17c432966b5948a8658150061777142d"
+    }
+  ],
+  "checks": {
+    "ownModels": 94,
+    "solidShieldModels": 3,
+    "existingGeneratedItems": 57,
+    "sourceArtAndPngsUnchanged": true,
+    "existingVanillaTemplates": 1
+  },
+  "runtimeIntegrated": false,
+  "inGameAccepted": false,
+  "sourceRevisions": []
+}

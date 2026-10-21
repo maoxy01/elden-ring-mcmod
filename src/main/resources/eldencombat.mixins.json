@@ -4,6 +4,6 @@
   "package": "com.dsh.eldencombat.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": ["CombatRollServerMixin"],
-  "client": ["PlayerModelPoseMixin", "JourneyMapSizeMixin", "ItemRendererEquipment2dMixin", "CombatRollManagerMixin"],
+  "client": ["PlayerModelPoseMixin", "JourneyMapSizeMixin", "ItemRendererEquipment2dMixin", "CombatRollManagerMixin", "ItemInHandWornMixin", "PlayerRendererWornMixin"],
   "injectors": {"defaultRequire": 1}
 }

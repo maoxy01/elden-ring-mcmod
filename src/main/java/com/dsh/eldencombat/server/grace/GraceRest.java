@@ -11,7 +11,7 @@ import net.minecraft.server.level.ServerPlayer;
 /**
  * 休息的**唯一入口**（方块交互）。地图显示与旅行永不调用本类。
  *
- * <p>恢复规则集中在 {@link GraceSettings}：默认只回 FP。其他资源接现有权威状态，
+ * <p>恢复规则集中在 {@link GraceSettings}：资源接现有权威状态，
  * 恢复后必须立刻同步给客户端（FP 走 {@code SkillServerEvents.sync}，
  * 精力/药瓶走 {@code ServerCombat.syncNow}），否则客户端 HUD 会显示旧值。
  */
@@ -34,6 +34,7 @@ public final class GraceRest {
             player.setHealth(player.getMaxHealth());
         }
         var state = player.getData(ModAttachments.COMBAT_STATE);
+        state.ensureInit(EldenCombat.config());
         if (settings.restStamina == GraceSettings.Rest.FULL) {
             state.refillStamina(EldenCombat.config());
             combatChanged = true;
@@ -42,9 +43,18 @@ public final class GraceRest {
             state.refillFlasks(EldenCombat.config());
             combatChanged = true;
         }
+        if (settings.restCleanse) {
+            player.removeEffect(net.minecraft.world.effect.MobEffects.POISON);
+            player.removeEffect(net.minecraft.world.effect.MobEffects.WITHER);
+        }
 
         if (fpChanged) SkillServerEvents.sync(player);
         if (combatChanged) ServerCombat.syncNow(player);
+        player.serverLevel().sendParticles(new net.minecraft.core.particles.DustParticleOptions(
+                new org.joml.Vector3f(1f, .78f, .25f), 1f), player.getX(), player.getY() + .7,
+                player.getZ(), 16, .4, .5, .4, .01);
+        player.serverLevel().playSound(null, interactedPos, net.minecraft.sounds.SoundEvents.BEACON_ACTIVATE,
+                net.minecraft.sounds.SoundSource.BLOCKS, .35f, 1.3f);
         EldenCombat.LOGGER.info("GRACE_REST_APPLIED: player={} uid={} fp={} fpRule={} healthRule={} staminaRule={} flaskRule={}",
                 player.getUUID(), node.getWaystoneUid(), SkillServerEvents.fp(player).fp(),
                 settings.restFp, settings.restHealth, settings.restStamina, settings.restFlasks);
