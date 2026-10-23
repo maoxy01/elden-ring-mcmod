@@ -3,7 +3,7 @@
   const game=JSON.parse(fs.readFileSync(base+'/game-live.json','utf8'));
   let maxError=0,pointComparisons=0;
   for(const id of [...new Set(game.samples.map(s=>s.id))]) {
-    await EldenPoseEditor.openSkill('D:/codexout/mcmod',id);
+    await EldenPoseEditor.openSkill('D:/codexout/mcmod',id,'runtime');
     const b=Project.unhandled_root_fields.elden_pose;
     for(const row of game.samples.filter(s=>s.id===id)) {
       const state=EldenPoseEditor.Core.resolve(b.original,row.stage,row.index);
@@ -24,7 +24,7 @@
   }
   const report={passed:true,gameSamples:game.samples.length,pointComparisons,maxErrorModelUnits:maxError,toleranceModelUnits:1e-4};
   fs.writeFileSync(base+'/game-blockbench-parity.json',JSON.stringify(report,null,2));
-  await EldenPoseEditor.openSkill('D:/codexout/mcmod','destined_death');
+  await EldenPoseEditor.openSkill('D:/codexout/mcmod','destined_death','runtime');
   const b=Project.unhandled_root_fields.elden_pose;EldenPoseEditor.selectStage(b.animations.ACTIVE);Timeline.setTime(.1);Animator.preview();
   return report;
 })()

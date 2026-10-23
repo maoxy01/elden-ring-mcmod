@@ -7,65 +7,89 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.FluidTags;
 import net.neoforged.api.distmarker.Dist;
+import net.neoforged.bus.api.EventPriority;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.client.event.CustomizeGuiOverlayEvent;
 import net.neoforged.neoforge.client.event.RenderGuiEvent;
 import net.neoforged.neoforge.client.event.RenderGuiLayerEvent;
 import net.neoforged.neoforge.client.gui.VanillaGuiLayers;
+import net.neoforged.neoforge.common.NeoForge;
 
-/** Native stats and boss bars stay in place; combat replaces only the XP display. */
+/** Final V0.2 art over native HUD layers. Never changes experience, oxygen or combat state. */
 @EventBusSubscriber(modid = EldenCombat.MODID, value = Dist.CLIENT)
 public final class CombatHud {
-    private static final ResourceLocation STAMINA_BACKGROUND = sprite("experience_bar_background");
-    private static final ResourceLocation STAMINA_PROGRESS = sprite("experience_bar_progress");
-    private static final ResourceLocation JUMP_BACKGROUND = sprite("jump_bar_background");
-    private static final ResourceLocation JUMP_PROGRESS = sprite("jump_bar_progress");
-    private static final ResourceLocation JUMP_COOLDOWN = sprite("jump_bar_cooldown");
-
+    private static int rightSlot = 53;
     private CombatHud() {}
 
-    private static ResourceLocation sprite(String name) {
-        return ResourceLocation.withDefaultNamespace("hud/" + name);
+    private static ResourceLocation texture(String name) {
+        return ResourceLocation.fromNamespaceAndPath(EldenCombat.MODID, "textures/gui/hud_v02/" + name + ".png");
     }
 
     private static boolean visible(Minecraft mc) {
         return mc.player != null && mc.level != null && !mc.options.hideGui && !mc.player.isSpectator();
     }
 
-    private static boolean combat(Minecraft mc) {
-        return visible(mc) && mc.player.isAlive() && ClientCombat.combatMode();
+    private static boolean active(Minecraft mc) {
+        return visible(mc) && mc.player.isAlive() && mc.gameMode != null
+                && (mc.gameMode.canHurtPlayer() || ClientCombat.combatMode());
+    }
+
+    private static boolean airVisible(Minecraft mc) {
+        return CombatHudLayout.showAir(mc.player.isEyeInFluid(FluidTags.WATER),
+                mc.player.getAirSupply(), mc.player.getMaxAirSupply());
+    }
+
+    private static CombatHudLayout layout(Minecraft mc, GuiGraphics graphics) {
+        return CombatHudLayout.at(graphics.guiWidth(), graphics.guiHeight(),
+                mc.gui.leftHeight - CombatHudLayout.FP_RESERVATION, rightSlot);
     }
 
     @SubscribeEvent
+    public static void beginFrame(RenderGuiEvent.Pre event) { rightSlot = 53; }
+
+    @SubscribeEvent(priority = EventPriority.LOWEST)
     public static void onLayer(RenderGuiLayerEvent.Pre event) {
         Minecraft mc = Minecraft.getInstance();
-        if (!combat(mc)) return;
+        if (!active(mc)) return;
         var layer = event.getName();
-        if (VanillaGuiLayers.EXPERIENCE_BAR.equals(layer)) {
-            event.setCanceled(true);
-            // Reserve another row for mounted jump charge, leaving the stamina slot fixed.
-            if (mc.player.jumpableVehicle() != null) {
-                mc.gui.leftHeight += 8;
-                mc.gui.rightHeight += 8;
-            }
+        if (VanillaGuiLayers.HOTBAR.equals(layer)) {
+            mc.gui.leftHeight += CombatHudLayout.STAT_LIFT;
+            mc.gui.rightHeight += CombatHudLayout.STAT_LIFT;
+            shifted(event, -2);
+        } else if (VanillaGuiLayers.EXPERIENCE_BAR.equals(layer) || VanillaGuiLayers.JUMP_METER.equals(layer)) {
+            shifted(event, -2);
+        } else if (VanillaGuiLayers.EXPERIENCE_LEVEL.equals(layer)) {
+            shifted(event, -5);
+        } else if (VanillaGuiLayers.ARMOR_LEVEL.equals(layer)) {
+            shifted(event, -1);
+            if (mc.player.getArmorValue() == 0) mc.gui.leftHeight += 10;
+            mc.gui.leftHeight += CombatHudLayout.FP_RESERVATION;
+        } else if (VanillaGuiLayers.AIR_LEVEL.equals(layer)) {
+            rightSlot = Math.max(53, mc.gui.rightHeight);
+            if (!airVisible(mc)) mc.gui.rightHeight += 10;
         } else if (VanillaGuiLayers.SELECTED_ITEM_NAME.equals(layer)) {
-            // Keep the native tooltip, font and timer; lift its own layer above the FP label.
-            event.setCanceled(true);
-            var graphics = event.getGuiGraphics();
-            var layout = CombatHudLayout.at(graphics.guiWidth(), graphics.guiHeight(), mc.gui.leftHeight, mc.gui.rightHeight);
-            int nativeY = graphics.guiHeight() - Math.max(59, Math.max(mc.gui.leftHeight, mc.gui.rightHeight) + 9);
+            int nativeY = event.getGuiGraphics().guiHeight() - Math.max(59, Math.max(mc.gui.leftHeight, mc.gui.rightHeight));
             if (!mc.gameMode.canHurtPlayer()) nativeY += 14;
-            graphics.pose().pushPose();
-            try {
-                graphics.pose().translate(0, -layout.selectedItemLift(nativeY, mc.font.lineHeight), 0);
-                event.getLayer().render(graphics, event.getPartialTick());
-            } finally {
-                graphics.pose().popPose();
-            }
-        } else if (VanillaGuiLayers.EXPERIENCE_LEVEL.equals(layer)
-                || VanillaGuiLayers.JUMP_METER.equals(layer)) {
-            event.setCanceled(true);
+            shifted(event, layout(mc, event.getGuiGraphics()).selectedItemY() - nativeY);
+        }
+    }
+
+    /** Render the original layer exactly once, with an isolated pose. */
+    private static void shifted(RenderGuiLayerEvent.Pre event, int y) {
+        event.setCanceled(true);
+        var graphics = event.getGuiGraphics();
+        graphics.pose().pushPose();
+        try {
+            graphics.pose().translate(0, y, 0);
+            event.getLayer().render(graphics, event.getPartialTick());
+            // The manager skips its Post event after cancellation. Forward it once
+            // so armor/toughness and other native-layer companions still render.
+            NeoForge.EVENT_BUS.post(new RenderGuiLayerEvent.Post(graphics, event.getPartialTick(), event.getName(), event.getLayer()));
+        } finally {
+            graphics.pose().popPose();
         }
     }
 
@@ -75,51 +99,68 @@ public final class CombatHud {
         if (!visible(mc)) return;
         GuiGraphics graphics = event.getGuiGraphics();
         drawMapEntry(mc, graphics);
-        if (!combat(mc)) return;
-
-        var layout = CombatHudLayout.at(graphics.guiWidth(), graphics.guiHeight(), mc.gui.leftHeight, mc.gui.rightHeight);
-        drawNativeBar(graphics, STAMINA_BACKGROUND, STAMINA_PROGRESS, layout.staminaX(), layout.staminaY(),
-                CombatHudLayout.filled(ClientCombat.stamina(), ClientCombat.maxStamina(), CombatHudLayout.STAMINA_WIDTH));
-        var vehicle = mc.player.jumpableVehicle();
-        if (vehicle != null) {
-            drawNativeBar(graphics, JUMP_BACKGROUND, vehicle.getJumpCooldown() > 0 ? JUMP_COOLDOWN : JUMP_PROGRESS,
-                    layout.staminaX(), layout.jumpY(), vehicle.getJumpCooldown() > 0 ? CombatHudLayout.STAMINA_WIDTH
-                            : CombatHudLayout.filled(mc.player.getJumpRidingScale(), 1, CombatHudLayout.STAMINA_WIDTH));
+        if (!active(mc)) return;
+        var layout = layout(mc, graphics);
+        drawBar(graphics, "fp_bar", layout.fpX(), layout.fpY(), ClientSkills.fp(), ClientSkills.maxFp(), 81, 7);
+        if (ClientSkills.maxFp() > 0 && ClientSkills.fp() <= ClientSkills.maxFp() * .15f)
+            image(graphics, "low_resource", layout.fpX() - 10, layout.fpY(), 7, 7);
+        if (!airVisible(mc)) {
+            drawBar(graphics, "stamina_bar", layout.staminaX(), layout.staminaY(),
+                    ClientCombat.stamina(), ClientCombat.maxStamina(), 81, 7);
+            if (ClientCombat.stamina() <= 0)
+                image(graphics, "low_resource", layout.staminaX() + 84, layout.staminaY(), 7, 7);
         }
-
-        int x = layout.fpX(), y = layout.fpY();
-        graphics.fill(x - 1, y - 1, x + CombatHudLayout.FP_WIDTH + 1, y + CombatHudLayout.FP_HEIGHT + 1, 0xC0000000);
-        graphics.fill(x, y, x + CombatHudLayout.FP_WIDTH, y + CombatHudLayout.FP_HEIGHT, 0xFF17253A);
-        int filled = CombatHudLayout.filled(ClientSkills.fp(), ClientSkills.maxFp(), CombatHudLayout.FP_WIDTH);
-        if (filled > 0) graphics.fill(x, y, x + filled, y + CombatHudLayout.FP_HEIGHT, 0xFF3F7FD0);
-        graphics.drawString(mc.font, Component.translatable("hud.eldencombat.fp", Math.round(ClientSkills.fp()),
-                Math.round(ClientSkills.maxFp())), x, y - 10, 0xFF9FC3F0, true);
     }
 
-    private static void drawNativeBar(GuiGraphics graphics, ResourceLocation background, ResourceLocation progress,
-                                      int x, int y, int filled) {
+    @SubscribeEvent(priority = EventPriority.LOWEST)
+    public static void onBoss(CustomizeGuiOverlayEvent.BossEventProgress event) {
+        Minecraft mc = Minecraft.getInstance();
+        if (!visible(mc)) return;
+        event.setCanceled(true);
+        GuiGraphics graphics = event.getGuiGraphics();
+        int offset = event.getX() < 6 + mapWidth(mc) + 6 ? 38 : 0;
+        int y = event.getY() + offset;
+        if (y + 6 >= graphics.guiHeight() / 2) return;
+        drawBar(graphics, "boss_bar", event.getX(), y, event.getBossEvent().getProgress(), 1, 182, 6);
+        graphics.drawCenteredString(mc.font, event.getBossEvent().getName(), graphics.guiWidth() / 2, y - 13, 0xFFFFFF);
+        event.setIncrement(19);
+    }
+
+    private static void drawBar(GuiGraphics graphics, String bar, int x, int y, float current, float maximum, int width, int height) {
         RenderSystem.enableBlend();
         try {
-            graphics.blitSprite(background, x, y, CombatHudLayout.STAMINA_WIDTH, CombatHudLayout.STAMINA_HEIGHT);
-            if (filled > 0) graphics.blitSprite(progress, CombatHudLayout.STAMINA_WIDTH, CombatHudLayout.STAMINA_HEIGHT,
-                    0, 0, x, y, filled, CombatHudLayout.STAMINA_HEIGHT);
+            image(graphics, bar + "_background", x, y, width, height);
+            int filled = CombatHudLayout.filled(current, maximum, width - 2);
+            if (filled > 0) graphics.blit(texture(bar + "_fill"), x + 1, y + 1, 0, 0, filled, height - 2, width - 2, height - 2);
         } finally {
             RenderSystem.disableBlend();
         }
     }
 
+    private static void image(GuiGraphics graphics, String name, int x, int y, int width, int height) {
+        graphics.blit(texture(name), x, y, 0, 0, width, height, width, height);
+    }
+
+    private static KeyMapping mapKey(Minecraft mc) {
+        for (var key : mc.options.keyMappings)
+            if (key.getName().equals("key.journeymap.map_toggle_alt")) return key;
+        return null;
+    }
+
+    private static Component mapHint(Minecraft mc) {
+        KeyMapping key = mapKey(mc);
+        return key == null ? Component.translatable("hud.eldencombat.map_unavailable")
+                : key.isUnbound() ? Component.translatable("hud.eldencombat.map_unbound")
+                : Component.translatable("hud.eldencombat.map_key", key.getTranslatedKeyMessage());
+    }
+
+    private static int mapWidth(Minecraft mc) {
+        return Math.max(60, Math.max(mc.font.width(Component.translatable("hud.eldencombat.grace_map")), mc.font.width(mapHint(mc))) + 12);
+    }
+
     private static void drawMapEntry(Minecraft mc, GuiGraphics graphics) {
-        KeyMapping mapKey = null;
-        for (var mapping : mc.options.keyMappings) {
-            if (mapping.getName().equals("key.journeymap.map_toggle_alt")) { mapKey = mapping; break; }
-        }
-        Component hint = mapKey == null ? Component.translatable("hud.eldencombat.map_unavailable")
-                : mapKey.isUnbound() ? Component.translatable("hud.eldencombat.map_unbound")
-                : Component.translatable("hud.eldencombat.map_key", mapKey.getTranslatedKeyMessage());
-        Component title = Component.translatable("hud.eldencombat.grace_map");
-        int width = Math.max(60, Math.max(mc.font.width(title), mc.font.width(hint)) + 12);
-        graphics.fill(6, 6, 6 + width, 34, 0x80000000);
-        graphics.drawString(mc.font, title, 12, 10, 0xFFE2CD91, true);
-        graphics.drawString(mc.font, hint, 12, 22, mapKey == null ? 0xFF999999 : 0xFFE8E8E8, true);
+        graphics.fill(6, 6, 6 + mapWidth(mc), 34, 0x80000000);
+        graphics.drawString(mc.font, Component.translatable("hud.eldencombat.grace_map"), 12, 10, 0xFFE2CD91, true);
+        graphics.drawString(mc.font, mapHint(mc), 12, 22, mapKey(mc) == null ? 0xFF999999 : 0xFFE8E8E8, true);
     }
 }

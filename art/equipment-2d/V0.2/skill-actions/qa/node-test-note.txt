@@ -1,0 +1,9 @@
+Observed on 2026-10-23; Node --test tools/blockbench-pose/test/core.test.cjs.
+Process-local TEMP was set to build/pose-test-temp for the sandboxed write fixture.
+Exit code: 0. Tests: 6. Passed: 6. Failed: 0.
+
+Checks: existing eight skill roundtrips and runtime packages; V0.2 sources;
+unsupported animation rejection; phase fallback; safe source saves in a fixture;
+comparison against the actual Java parser/sampler and cast state.
+
+These tests do not launch Minecraft or replace native Blockbench batch reopening.

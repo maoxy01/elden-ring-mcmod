@@ -2,38 +2,48 @@ package com.dsh.eldencombat;
 
 import com.dsh.eldencombat.client.CombatHudLayout;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class CombatHudLayoutTest {
-    @Test void staminaOccupiesNativeExperienceSlotAndManaAlignsWithFood() {
+    @Test void matchesFinalArtAt480By270() {
+        var layout = CombatHudLayout.at(480, 270, 63, 53);
+        assertEquals(149, layout.fpX());
+        assertEquals(250, layout.staminaX());
+        assertEquals(207, layout.fpY());
+        assertEquals(217, layout.staminaY());
+        assertEquals(174, layout.selectedItemY());
+        assertEquals(216 - 2, layout.fpY() + CombatHudLayout.BAR_HEIGHT);
+    }
+
+    @Test void extraHealthAndMountRowsMoveTheirOwnColumn() {
         for (int width : new int[]{320, 480, 640, 854}) {
-            var layout = CombatHudLayout.at(width, 240, 49, 49);
-            assertEquals(width / 2 - 91, layout.staminaX());
-            assertEquals(240 - 29, layout.staminaY());
-            assertEquals(width / 2 + 91, layout.fpX() + CombatHudLayout.FP_WIDTH);
-            assertTrue(layout.fpY() + CombatHudLayout.FP_HEIGHT < 240 - 49);
-            assertTrue(layout.jumpY() + CombatHudLayout.STAMINA_HEIGHT < layout.staminaY());
+            var base = CombatHudLayout.at(width, 270, 63, 53);
+            var health = CombatHudLayout.at(width, 270, 83, 53);
+            var mount = CombatHudLayout.at(width, 270, 63, 83);
+            assertEquals(base.fpY() - 20, health.fpY());
+            assertEquals(base.selectedItemY() - 20, health.selectedItemY());
+            assertEquals(base.staminaY(), health.staminaY());
+            assertEquals(base.staminaY() - 30, mount.staminaY());
+            assertEquals(base.fpY(), mount.fpY());
+            assertEquals(width / 2 + 91, base.staminaX() + CombatHudLayout.BAR_WIDTH);
         }
     }
 
-    @Test void tallHealthAirAndMountStacksKeepManaAboveSelectedItemText() {
-        for (int height : new int[]{240, 360, 540}) for (int stack : new int[]{49, 59, 79, 109}) {
-            var layout = CombatHudLayout.at(640, height, stack, stack + 8);
-            int itemName = height - Math.max(59, stack + 8 + 9);
-            assertTrue(itemName - layout.selectedItemLift(itemName, 9) + 9 <= layout.fpY() - 12);
-            assertTrue(layout.fpY() + CombatHudLayout.FP_HEIGHT < height - stack - 8);
-            assertTrue(layout.fpY() - 10 >= 0);
-        }
+    @Test void airOwnsTheSlotUntilNativeBubblesDisappear() {
+        assertTrue(CombatHudLayout.showAir(true, 300, 300));
+        assertTrue(CombatHudLayout.showAir(false, 299, 300));
+        assertTrue(CombatHudLayout.showAir(true, 0, 300));
+        assertFalse(CombatHudLayout.showAir(false, 300, 300));
     }
 
-    @Test void emptyFullAndInvalidServerResourcesNeverOverflowTheTrack() {
-        assertEquals(0, CombatHudLayout.filled(0, 100, 182));
-        assertEquals(182, CombatHudLayout.filled(100, 100, 182));
-        assertEquals(91, CombatHudLayout.filled(50, 100, 182));
-        assertEquals(182, CombatHudLayout.filled(200, 100, 182));
-        assertEquals(0, CombatHudLayout.filled(-1, 100, 182));
-        assertEquals(0, CombatHudLayout.filled(1, 0, 182));
-        assertEquals(0, CombatHudLayout.filled(Float.NaN, 100, 182));
+    @Test void invalidResourcesCannotOverflowFill() {
+        assertEquals(0, CombatHudLayout.filled(0, 100, 79));
+        assertEquals(79, CombatHudLayout.filled(100, 100, 79));
+        assertEquals(39, CombatHudLayout.filled(50, 100, 79));
+        assertEquals(79, CombatHudLayout.filled(200, 100, 79));
+        assertEquals(0, CombatHudLayout.filled(-1, 100, 79));
+        assertEquals(0, CombatHudLayout.filled(1, 0, 79));
+        assertEquals(0, CombatHudLayout.filled(Float.NaN, 100, 79));
+        assertEquals(79, CombatHudLayout.filled(Float.MAX_VALUE, Float.MIN_VALUE, 79));
     }
 }

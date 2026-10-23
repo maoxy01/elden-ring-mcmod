@@ -1,0 +1,3107 @@
+{
+  "schema": "equipment-art-selection/v1",
+  "version": "V0.2",
+  "date": "2026-10-22",
+  "scope": "28 selected custom equipment assets",
+  "sourceMeaning": {
+    "dsh_worn": "DSH wearable claw/fist models",
+    "original": "Original column in mc-polish review; blockbench-all-items-20261018/items",
+    "candidate": "Latest mc-polish-20261022 candidates"
+  },
+  "runtimeInstalled": false,
+  "items": [
+    {
+      "id": "ballista",
+      "name": "弩炮",
+      "selection": "candidate",
+      "sourceModel": "art/equipment-2d/mc-polish-20261022/items/ballista.bbmodel",
+      "model": "items/ballista.bbmodel",
+      "modelSha256": "db4228611d12ee57766bee86ada7a6f2ebe1d69a0032716aab924e49ed5ee819",
+      "textures": [
+        {
+          "state": "standby",
+          "file": "textures/ballista__standby.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/ballista__standby.png",
+          "sha256": "6c7cb3d490891065cba59f749945248b06e330d2f33e9b0718a42c9a6fc7e673",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "state": "loading_0",
+          "file": "textures/ballista__loading_0.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/ballista__loading_0.png",
+          "sha256": "b0c26ec7bca1e292dde17442d572ab6ea60f68048b9d8aa747c1b14140166110",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "state": "loading_1",
+          "file": "textures/ballista__loading_1.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/ballista__loading_1.png",
+          "sha256": "7196c678dc1a46d876fe7cd45edecf8f14818ffcde8cb733af77b5de8d913efe",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "state": "loading_2",
+          "file": "textures/ballista__loading_2.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/ballista__loading_2.png",
+          "sha256": "e0ef92f37eb8222098244b8d33a0b552b60bfcf8b98104bf9056e789e44bb342",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "state": "loaded",
+          "file": "textures/ballista__loaded.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/ballista__loaded.png",
+          "sha256": "943bddcb4b361fdd970b396f95734d936801e646a7f42062b14f0ca36e8aecb9",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "state": "gui_16",
+          "file": "textures/ballista__gui_16.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/ballista__gui_16.png",
+          "sha256": "662bd8578e5b4535c42c1b68c87915e704f3c23d9278039f24abd328728c526c",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "state": "gui_32",
+          "file": "textures/ballista__gui_32.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/ballista__gui_32.png",
+          "sha256": "6c7cb3d490891065cba59f749945248b06e330d2f33e9b0718a42c9a6fc7e673",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "icons": [],
+      "previews": [
+        {
+          "view": "front",
+          "file": "preview/ballista-front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/ballista-after-front.png"
+        },
+        {
+          "view": "side",
+          "file": "preview/ballista-side.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/ballista-after-side.png"
+        }
+      ],
+      "elements": 317,
+      "exportedElements": 317,
+      "meshCount": 0,
+      "renderKind": "pixel_item",
+      "worldLengthBlocks": 1.44,
+      "anchorPixels": [
+        7.5,
+        24.5
+      ],
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 1.85464,
+        "anchorLocalModelUnits": [
+          -4.25,
+          -4.25,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "revisions": []
+    },
+    {
+      "id": "blasphemous_blade",
+      "name": "亵渎圣剑",
+      "selection": "candidate",
+      "sourceModel": "art/equipment-2d/mc-polish-20261022/items/blasphemous_blade.bbmodel",
+      "model": "items/blasphemous_blade.bbmodel",
+      "modelSha256": "83d75c44eb75222109c4f5f9091df74f1871e7b9479d6a628b7cb75d77b271b7",
+      "textures": [
+        {
+          "state": "front",
+          "file": "textures/blasphemous_blade__front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/blasphemous_blade__front.png",
+          "sha256": "222d461909f3754b98c2855731ac97448025c807341fc6f4505a995c505b149a",
+          "width": 64,
+          "height": 64
+        },
+        {
+          "state": "gui_16",
+          "file": "textures/blasphemous_blade__gui_16.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/blasphemous_blade__gui_16.png",
+          "sha256": "ff4398b4ed748a5086dc0bab1995ed74692b197c2feb32b11c69d5e3f11ff369",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "state": "gui_32",
+          "file": "textures/blasphemous_blade__gui_32.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/blasphemous_blade__gui_32.png",
+          "sha256": "b58493211f7a35a68c4ccb4eb68edd2cc86f561e052fec2a895378ec5ed8aaf3",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "icons": [],
+      "previews": [
+        {
+          "view": "front",
+          "file": "preview/blasphemous_blade-front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/blasphemous_blade-after-front.png"
+        },
+        {
+          "view": "side",
+          "file": "preview/blasphemous_blade-side.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/blasphemous_blade-after-side.png"
+        }
+      ],
+      "elements": 113,
+      "exportedElements": 113,
+      "meshCount": 0,
+      "renderKind": "pixel_item",
+      "worldLengthBlocks": 1.728,
+      "anchorPixels": [
+        13.5,
+        50.5
+      ],
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 1.36001,
+        "anchorLocalModelUnits": [
+          -4.625,
+          -4.625,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "revisions": []
+    },
+    {
+      "id": "claw",
+      "name": "钩爪",
+      "selection": "dsh_worn",
+      "sourceModel": "art/equipment-2d/worn-hand-gear-20261021/claw_worn.bbmodel",
+      "model": "items/claw_worn.bbmodel",
+      "modelSha256": "8fa7cb8684ad5f6d52ddb6a8f9988a6a02082852a272c1bb3a9437068273e623",
+      "textures": [
+        {
+          "file": "textures/worn_atlas.png",
+          "source": "art/equipment-2d/worn-hand-gear-20261021/textures/worn_atlas.png",
+          "sha256": "ef32c287c33ac0d64d72fb17766c885ccc9fd83ab7c98a5894ea5438d3d102af",
+          "width": 128,
+          "height": 128
+        }
+      ],
+      "icons": [
+        {
+          "file": "icons/claw_gui_16.png",
+          "source": "art/equipment-2d/worn-hand-gear-20261021/icons/claw_gui_16.png",
+          "sha256": "bb2a4ddd4c2f034c8b0d7e012c4778cb786efb9bbb2bc4350293d572bd045e5b"
+        },
+        {
+          "file": "icons/claw_gui_32.png",
+          "source": "art/equipment-2d/worn-hand-gear-20261021/icons/claw_gui_32.png",
+          "sha256": "42b67d221d951cfe9946e418af5e968a6639aabc132273c48468684e95daed65"
+        }
+      ],
+      "previews": [
+        {
+          "view": "front",
+          "file": "preview/claw-front.png",
+          "source": "art/equipment-2d/worn-hand-gear-20261021/qa/claw_hand_front.png"
+        },
+        {
+          "view": "side",
+          "file": "preview/claw-side.png",
+          "source": "art/equipment-2d/worn-hand-gear-20261021/qa/claw_hand_out.png"
+        }
+      ],
+      "elements": 104,
+      "exportedElements": 94,
+      "meshCount": 0,
+      "renderKind": "worn_hand_gear",
+      "bindingContract": "contracts/WEAR-CONTRACT.md",
+      "armPivotRight": [
+        -5,
+        22,
+        0
+      ],
+      "armPivotLeft": [
+        5,
+        22,
+        0
+      ]
+    },
+    {
+      "id": "colossal_sword",
+      "name": "特大剑",
+      "selection": "original",
+      "sourceModel": "art/equipment-2d/blockbench-all-items-20261018/items/colossal_sword.bbmodel",
+      "model": "items/colossal_sword.bbmodel",
+      "modelSha256": "805a4ff2c21c896bd5067e10ee9ac9ca6a62375ab3a1c3bcb82a9521b9887b30",
+      "textures": [
+        {
+          "state": "front",
+          "file": "textures/colossal_sword__front.png",
+          "source": "art/equipment-2d/blockbench-all-items-20261018/textures/colossal_sword_front.png",
+          "sha256": "a615b920fbbe5608f60696ec3c2d6f1e39df1affb63ea3561bdd2dd6e2736cf9",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "state": "gui_16",
+          "file": "textures/colossal_sword__gui_16.png",
+          "source": "art/equipment-2d/blockbench-all-items-20261018/textures/colossal_sword_gui_16.png",
+          "sha256": "aa717a21a60dda26810131cd8eb7f9a9265bc27ca9659da5a517df731ae8cffd",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "state": "gui_32",
+          "file": "textures/colossal_sword__gui_32.png",
+          "source": "art/equipment-2d/blockbench-all-items-20261018/textures/colossal_sword_gui_32.png",
+          "sha256": "a615b920fbbe5608f60696ec3c2d6f1e39df1affb63ea3561bdd2dd6e2736cf9",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "icons": [],
+      "previews": [
+        {
+          "view": "front",
+          "file": "preview/colossal_sword-front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/colossal_sword-before-front.png"
+        },
+        {
+          "view": "side",
+          "file": "preview/colossal_sword-side.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/colossal_sword-before-side.png"
+        }
+      ],
+      "elements": 70,
+      "exportedElements": 70,
+      "meshCount": 0,
+      "renderKind": "pixel_item",
+      "worldLengthBlocks": 2.484,
+      "anchorPixels": [
+        6.5,
+        25.5
+      ],
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 2.12782,
+        "anchorLocalModelUnits": [
+          -4.75,
+          -4.75,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "revisions": []
+    },
+    {
+      "id": "colossal_weapon",
+      "name": "特大武器",
+      "selection": "candidate",
+      "sourceModel": "art/equipment-2d/mc-polish-20261022/items/colossal_weapon.bbmodel",
+      "model": "items/colossal_weapon.bbmodel",
+      "modelSha256": "9c07ee30681c45260b13b5157300833782a9132dbedbe3e0b30c6c7ab7555262",
+      "textures": [
+        {
+          "state": "front",
+          "file": "textures/colossal_weapon__front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/colossal_weapon__front.png",
+          "sha256": "16b8cdedfde5fd0d48418cb3e748b5990dc434a69b3d62b185242d13419634a1",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "state": "gui_16",
+          "file": "textures/colossal_weapon__gui_16.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/colossal_weapon__gui_16.png",
+          "sha256": "a933a348c7c09fbcb6a6cba1d462034bdd530e342539b8b2bfdb0d680401039c",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "state": "gui_32",
+          "file": "textures/colossal_weapon__gui_32.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/colossal_weapon__gui_32.png",
+          "sha256": "16b8cdedfde5fd0d48418cb3e748b5990dc434a69b3d62b185242d13419634a1",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "icons": [],
+      "previews": [
+        {
+          "view": "front",
+          "file": "preview/colossal_weapon-front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/colossal_weapon-after-front.png"
+        },
+        {
+          "view": "side",
+          "file": "preview/colossal_weapon-side.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/colossal_weapon-after-side.png"
+        }
+      ],
+      "elements": 73,
+      "exportedElements": 73,
+      "meshCount": 0,
+      "renderKind": "pixel_item",
+      "worldLengthBlocks": 2.16,
+      "anchorPixels": [
+        8.5,
+        23.5
+      ],
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 2.1092,
+        "anchorLocalModelUnits": [
+          -3.75,
+          -3.75,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "revisions": []
+    },
+    {
+      "id": "curved_greatsword",
+      "name": "大曲剑",
+      "selection": "candidate",
+      "sourceModel": "art/equipment-2d/mc-polish-20261022/items/curved_greatsword.bbmodel",
+      "model": "items/curved_greatsword.bbmodel",
+      "modelSha256": "1a0c3c4d258d6d76597a36f9579812d8c75614de9d16fe4a30ece74616aa265e",
+      "textures": [
+        {
+          "state": "front",
+          "file": "textures/curved_greatsword__front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/curved_greatsword__front.png",
+          "sha256": "f9c73c00de3cdf0463edbc37193e401571303c9150a7a29f777d95e5426a5a3b",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "state": "gui_16",
+          "file": "textures/curved_greatsword__gui_16.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/curved_greatsword__gui_16.png",
+          "sha256": "0ea73da7529f9e6493bd922082abaadd8204b291b78bb5d61a1eef0efcee931c",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "state": "gui_32",
+          "file": "textures/curved_greatsword__gui_32.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/curved_greatsword__gui_32.png",
+          "sha256": "f9c73c00de3cdf0463edbc37193e401571303c9150a7a29f777d95e5426a5a3b",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "icons": [],
+      "previews": [
+        {
+          "view": "front",
+          "file": "preview/curved_greatsword-front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/curved_greatsword-after-front.png"
+        },
+        {
+          "view": "side",
+          "file": "preview/curved_greatsword-side.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/curved_greatsword-after-side.png"
+        }
+      ],
+      "elements": 57,
+      "exportedElements": 57,
+      "meshCount": 0,
+      "renderKind": "pixel_item",
+      "worldLengthBlocks": 1.746,
+      "anchorPixels": [
+        7.5,
+        23.5
+      ],
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 1.61621,
+        "anchorLocalModelUnits": [
+          -4.25,
+          -3.75,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "revisions": [
+        {
+          "name": "curved-greatsword-width-5of6-20261022",
+          "widthRatio": 0.83333,
+          "rounding": "integer pixels",
+          "bladeOnly": true
+        }
+      ]
+    },
+    {
+      "id": "curved_sword",
+      "name": "曲剑",
+      "selection": "candidate",
+      "sourceModel": "art/equipment-2d/mc-polish-20261022/items/curved_sword.bbmodel",
+      "model": "items/curved_sword.bbmodel",
+      "modelSha256": "bb84f8ff3ba441f9a11b96751e1fd0a4d2ac689e3fee9040fbd8e6409c775170",
+      "textures": [
+        {
+          "state": "front",
+          "file": "textures/curved_sword__front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/curved_sword__front.png",
+          "sha256": "f144358fd5eea59282c2472976afb8a8fc7469487b74df213c850313ab1699f2",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "state": "gui_16",
+          "file": "textures/curved_sword__gui_16.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/curved_sword__gui_16.png",
+          "sha256": "e630aeca716ab6b28ac266ec66cd0d8c37101c647cb66f9e86e0d9160a7a2baa",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "state": "gui_32",
+          "file": "textures/curved_sword__gui_32.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/curved_sword__gui_32.png",
+          "sha256": "f144358fd5eea59282c2472976afb8a8fc7469487b74df213c850313ab1699f2",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "icons": [],
+      "previews": [
+        {
+          "view": "front",
+          "file": "preview/curved_sword-front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/curved_sword-after-front.png"
+        },
+        {
+          "view": "side",
+          "file": "preview/curved_sword-side.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/curved_sword-after-side.png"
+        }
+      ],
+      "elements": 57,
+      "exportedElements": 57,
+      "meshCount": 0,
+      "renderKind": "pixel_item",
+      "worldLengthBlocks": 1.098,
+      "anchorPixels": [
+        6.5,
+        23.5
+      ],
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 1.07661,
+        "anchorLocalModelUnits": [
+          -4.75,
+          -3.75,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "revisions": []
+    },
+    {
+      "id": "fist",
+      "name": "拳套",
+      "selection": "dsh_worn",
+      "sourceModel": "art/equipment-2d/worn-hand-gear-20261021/fist_worn.bbmodel",
+      "model": "items/fist_worn.bbmodel",
+      "modelSha256": "de204285f66ff105bcf67b7464f20f8e81cbc997a9f2475b56b81e8885fe5bc2",
+      "textures": [
+        {
+          "file": "textures/worn_atlas.png",
+          "source": "art/equipment-2d/worn-hand-gear-20261021/textures/worn_atlas.png",
+          "sha256": "ef32c287c33ac0d64d72fb17766c885ccc9fd83ab7c98a5894ea5438d3d102af",
+          "width": 128,
+          "height": 128
+        }
+      ],
+      "icons": [
+        {
+          "file": "icons/fist_gui_16.png",
+          "source": "art/equipment-2d/worn-hand-gear-20261021/icons/fist_gui_16.png",
+          "sha256": "188787430bed5951123e34956d71767fd65d97ac38c2e7ed9ca92e27a65f38a0"
+        },
+        {
+          "file": "icons/fist_gui_32.png",
+          "source": "art/equipment-2d/worn-hand-gear-20261021/icons/fist_gui_32.png",
+          "sha256": "54a2c341be183d7ec4638c0fbdd411e5bc102d3de30a45e7f2ed3cbf2fda32b6"
+        }
+      ],
+      "previews": [
+        {
+          "view": "front",
+          "file": "preview/fist-front.png",
+          "source": "art/equipment-2d/worn-hand-gear-20261021/qa/fist_hand_front.png"
+        },
+        {
+          "view": "side",
+          "file": "preview/fist-side.png",
+          "source": "art/equipment-2d/worn-hand-gear-20261021/qa/fist_hand_out.png"
+        }
+      ],
+      "elements": 66,
+      "exportedElements": 56,
+      "meshCount": 0,
+      "renderKind": "worn_hand_gear",
+      "bindingContract": "contracts/WEAR-CONTRACT.md",
+      "armPivotRight": [
+        -5,
+        22,
+        0
+      ],
+      "armPivotLeft": [
+        5,
+        22,
+        0
+      ]
+    },
+    {
+      "id": "flail",
+      "name": "连枷",
+      "selection": "candidate",
+      "sourceModel": "art/equipment-2d/mc-polish-20261022/items/flail.bbmodel",
+      "model": "items/flail.bbmodel",
+      "modelSha256": "7890057b864c93eea9b79ceddec0a486bf68e956d08ead18bf6eb59418bd928a",
+      "textures": [
+        {
+          "state": "front",
+          "file": "textures/flail__front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/flail__front.png",
+          "sha256": "8a80ceb9c86a773784110d7bbf07e46b71f86c07999144b84d0e9cdb1561fcf1",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "state": "gui_16",
+          "file": "textures/flail__gui_16.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/flail__gui_16.png",
+          "sha256": "fe4f778ab37a409628f1fa2c7d735e0fae5c0c9f3f754916f2d7d9dc1f89ab91",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "state": "gui_32",
+          "file": "textures/flail__gui_32.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/flail__gui_32.png",
+          "sha256": "8a80ceb9c86a773784110d7bbf07e46b71f86c07999144b84d0e9cdb1561fcf1",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "icons": [],
+      "previews": [
+        {
+          "view": "front",
+          "file": "preview/flail-front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/flail-after-front.png"
+        },
+        {
+          "view": "side",
+          "file": "preview/flail-side.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/flail-after-side.png"
+        }
+      ],
+      "elements": 62,
+      "exportedElements": 62,
+      "meshCount": 0,
+      "renderKind": "pixel_item",
+      "worldLengthBlocks": 1.224,
+      "anchorPixels": [
+        6.5,
+        25.5
+      ],
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 1.12103,
+        "anchorLocalModelUnits": [
+          -4.75,
+          -4.75,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "revisions": []
+    },
+    {
+      "id": "glintstone_staff",
+      "name": "辉石杖",
+      "selection": "candidate",
+      "sourceModel": "art/equipment-2d/mc-polish-20261022/items/glintstone_staff.bbmodel",
+      "model": "items/glintstone_staff.bbmodel",
+      "modelSha256": "61c247eed97d1d0e198fd4c5140473063f9f108a49ff4be05ee71e5dc79ce26f",
+      "textures": [
+        {
+          "state": "front",
+          "file": "textures/glintstone_staff__front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/glintstone_staff__front.png",
+          "sha256": "dc964d0091849210c74789519cb58d5bcb6266cd8bbae643d894f0a10cbde9c9",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "state": "gui_16",
+          "file": "textures/glintstone_staff__gui_16.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/glintstone_staff__gui_16.png",
+          "sha256": "116e835b58f2c2833aae4b3a96cecff63a6cfe3c057783a91ec2d920a257faed",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "state": "gui_32",
+          "file": "textures/glintstone_staff__gui_32.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/glintstone_staff__gui_32.png",
+          "sha256": "dc964d0091849210c74789519cb58d5bcb6266cd8bbae643d894f0a10cbde9c9",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "icons": [],
+      "previews": [
+        {
+          "view": "front",
+          "file": "preview/glintstone_staff-front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/glintstone_staff-after-front.png"
+        },
+        {
+          "view": "side",
+          "file": "preview/glintstone_staff-side.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/glintstone_staff-after-side.png"
+        }
+      ],
+      "elements": 67,
+      "exportedElements": 67,
+      "meshCount": 0,
+      "renderKind": "pixel_item",
+      "worldLengthBlocks": 1.98,
+      "anchorPixels": [
+        8.5,
+        23.5
+      ],
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 1.68897,
+        "anchorLocalModelUnits": [
+          -3.75,
+          -3.75,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "revisions": []
+    },
+    {
+      "id": "great_bow",
+      "name": "大弓",
+      "selection": "candidate",
+      "sourceModel": "art/equipment-2d/mc-polish-20261022/items/great_bow.bbmodel",
+      "model": "items/great_bow.bbmodel",
+      "modelSha256": "4af068e73aa24d2828c76dd494b8037b55303d97c0d0aa663a10504aed4ac60d",
+      "textures": [
+        {
+          "state": "standby",
+          "file": "textures/great_bow__standby.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/great_bow__standby.png",
+          "sha256": "058bc074325e8b6e8b386e1b89a2c54424c75eee4b2af1d62599ff4cd6873f99",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "state": "pulling_0",
+          "file": "textures/great_bow__pulling_0.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/great_bow__pulling_0.png",
+          "sha256": "bcb92421e292ea8d55588693b2061f784e4b0d9cb2381355e42ed7f064974537",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "state": "pulling_1",
+          "file": "textures/great_bow__pulling_1.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/great_bow__pulling_1.png",
+          "sha256": "2ed0f7c04763495f71153705f1dedf451e8205f8e1fc2690581908e00bfafdc0",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "state": "pulling_2",
+          "file": "textures/great_bow__pulling_2.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/great_bow__pulling_2.png",
+          "sha256": "d803a6f54fa3994b875579b6a9570d918b0e102c7583eb02ff1a65677ef5a119",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "state": "gui_16",
+          "file": "textures/great_bow__gui_16.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/great_bow__gui_16.png",
+          "sha256": "ffe3839549ee1d6df8dac26a61241297f1a38735cf89737f8c54cb9ae7039c21",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "state": "gui_32",
+          "file": "textures/great_bow__gui_32.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/great_bow__gui_32.png",
+          "sha256": "058bc074325e8b6e8b386e1b89a2c54424c75eee4b2af1d62599ff4cd6873f99",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "icons": [],
+      "previews": [
+        {
+          "view": "front",
+          "file": "preview/great_bow-front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/great_bow-after-front.png"
+        },
+        {
+          "view": "side",
+          "file": "preview/great_bow-side.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/great_bow-after-side.png"
+        }
+      ],
+      "elements": 252,
+      "exportedElements": 252,
+      "meshCount": 0,
+      "renderKind": "pixel_item",
+      "worldLengthBlocks": 2.34,
+      "anchorPixels": [
+        20.5,
+        20.5
+      ],
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 2.07485,
+        "anchorLocalModelUnits": [
+          2.25,
+          -2.25,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "revisions": []
+    },
+    {
+      "id": "great_shield",
+      "name": "大盾",
+      "selection": "candidate",
+      "sourceModel": "art/equipment-2d/mc-polish-20261022/items/great_shield.bbmodel",
+      "model": "items/great_shield.bbmodel",
+      "modelSha256": "31a44d4a45a03fc6b6de161c289245ab1694b5dca4931b3b9b0e912f8dff2f89",
+      "textures": [
+        {
+          "state": "front",
+          "file": "textures/great_shield__front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/great_shield__front.png",
+          "sha256": "20e36931a7fdfc45fa2aeb0fb99fa15ef8bec2b826d893c080630a9515afde42",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "state": "back",
+          "file": "textures/great_shield__back.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/great_shield__back.png",
+          "sha256": "1b3b83eaef4f8465609723afc8dc2e550be9a6f46a2e59f7ce2aedc7a5122e83",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "state": "gui_16",
+          "file": "textures/great_shield__gui_16.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/great_shield__gui_16.png",
+          "sha256": "5655d0dce3199d39cc62ebd1496377f579158a0d933aa35d256fc3e1e4bbb9db",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "state": "gui_32",
+          "file": "textures/great_shield__gui_32.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/great_shield__gui_32.png",
+          "sha256": "20e36931a7fdfc45fa2aeb0fb99fa15ef8bec2b826d893c080630a9515afde42",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "icons": [],
+      "previews": [
+        {
+          "view": "front",
+          "file": "preview/great_shield-front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/great_shield-after-front.png"
+        },
+        {
+          "view": "side",
+          "file": "preview/great_shield-side.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/great_shield-after-side.png"
+        }
+      ],
+      "elements": 4,
+      "exportedElements": 4,
+      "meshCount": 0,
+      "renderKind": "pixel_item",
+      "worldLengthBlocks": 1.314,
+      "anchorPixels": [
+        16.5,
+        16.5
+      ],
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 1.50171,
+        "anchorLocalModelUnits": [
+          0.25,
+          -0.25,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "revisions": []
+    },
+    {
+      "id": "great_spear",
+      "name": "大矛",
+      "selection": "candidate",
+      "sourceModel": "art/equipment-2d/mc-polish-20261022/items/great_spear.bbmodel",
+      "model": "items/great_spear.bbmodel",
+      "modelSha256": "48b60fb9d884b879f8dfc1c035a7a1e89890a433b1cd2ac311da50b8d6e0f05a",
+      "textures": [
+        {
+          "state": "front",
+          "file": "textures/great_spear__front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/great_spear__front.png",
+          "sha256": "ed6745eff21c59a81a8e1bf3633a63f3a3d2a13461c665ba5fa17ee4e9db65ae",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "state": "gui_16",
+          "file": "textures/great_spear__gui_16.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/great_spear__gui_16.png",
+          "sha256": "74ffc84f7f5031dec85ad29433e9e1017a71e13215c467ca6f314f001309efa7",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "state": "gui_32",
+          "file": "textures/great_spear__gui_32.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/great_spear__gui_32.png",
+          "sha256": "ed6745eff21c59a81a8e1bf3633a63f3a3d2a13461c665ba5fa17ee4e9db65ae",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "icons": [],
+      "previews": [
+        {
+          "view": "front",
+          "file": "preview/great_spear-front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/great_spear-after-front.png"
+        },
+        {
+          "view": "side",
+          "file": "preview/great_spear-side.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/great_spear-after-side.png"
+        }
+      ],
+      "elements": 70,
+      "exportedElements": 70,
+      "meshCount": 0,
+      "renderKind": "pixel_item",
+      "worldLengthBlocks": 3.06,
+      "anchorPixels": [
+        7.5,
+        24.5
+      ],
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 2.58195,
+        "anchorLocalModelUnits": [
+          -4.25,
+          -4.25,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "revisions": [
+        {
+          "name": "great-spear-remake-20261022",
+          "silhouetteRebuilt": true,
+          "worldLengthPreserved": true,
+          "gripPreserved": true
+        }
+      ]
+    },
+    {
+      "id": "great_sword",
+      "name": "大剑",
+      "selection": "candidate",
+      "sourceModel": "art/equipment-2d/mc-polish-20261022/items/great_sword.bbmodel",
+      "model": "items/great_sword.bbmodel",
+      "modelSha256": "39a85c546f8fb89b0cb3affb56480e9999b58f43451f118253f9f43d3f73e50e",
+      "textures": [
+        {
+          "state": "front",
+          "file": "textures/great_sword__front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/great_sword__front.png",
+          "sha256": "782cd745e391c531a733f884b05d3ad4f8c4876f5fed9f22fb8e796d7deebf19",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "state": "gui_16",
+          "file": "textures/great_sword__gui_16.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/great_sword__gui_16.png",
+          "sha256": "dcb6db2ee2fe40759b86e8b25a7c016c1f3b0d48abaac0c81d9eb86563f8e3c7",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "state": "gui_32",
+          "file": "textures/great_sword__gui_32.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/great_sword__gui_32.png",
+          "sha256": "782cd745e391c531a733f884b05d3ad4f8c4876f5fed9f22fb8e796d7deebf19",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "icons": [],
+      "previews": [
+        {
+          "view": "front",
+          "file": "preview/great_sword-front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/great_sword-after-front.png"
+        },
+        {
+          "view": "side",
+          "file": "preview/great_sword-side.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/great_sword-after-side.png"
+        }
+      ],
+      "elements": 80,
+      "exportedElements": 80,
+      "meshCount": 0,
+      "renderKind": "pixel_item",
+      "worldLengthBlocks": 1.584,
+      "anchorPixels": [
+        7.5,
+        24.5
+      ],
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 1.34744,
+        "anchorLocalModelUnits": [
+          -4.25,
+          -4.25,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "revisions": []
+    },
+    {
+      "id": "hand_of_malenia",
+      "name": "玛莲妮亚的义手刀",
+      "selection": "candidate",
+      "sourceModel": "art/equipment-2d/mc-polish-20261022/items/hand_of_malenia.bbmodel",
+      "model": "items/hand_of_malenia.bbmodel",
+      "modelSha256": "c2a8792f17557317c9117ff9af5d9455f0c0a9eaad19be1afda327f2c5956ed5",
+      "textures": [
+        {
+          "state": "front",
+          "file": "textures/hand_of_malenia__front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/hand_of_malenia__front.png",
+          "sha256": "826c7987cb0924c4548456c45f16511d7a1438674a40554ba0da92fbdc1c4183",
+          "width": 64,
+          "height": 64
+        },
+        {
+          "state": "gui_16",
+          "file": "textures/hand_of_malenia__gui_16.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/hand_of_malenia__gui_16.png",
+          "sha256": "7a6a4010017343559583bfca9f34d1bd769735b377acc01b9c8c458381722806",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "state": "gui_32",
+          "file": "textures/hand_of_malenia__gui_32.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/hand_of_malenia__gui_32.png",
+          "sha256": "d8ff6116f458f1ce6cbf9ec0fcfbf3b43c2810143140f034c48a895e1ddf7338",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "icons": [],
+      "previews": [
+        {
+          "view": "front",
+          "file": "preview/hand_of_malenia-front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/hand_of_malenia-after-front.png"
+        },
+        {
+          "view": "side",
+          "file": "preview/hand_of_malenia-side.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/hand_of_malenia-after-side.png"
+        }
+      ],
+      "elements": 87,
+      "exportedElements": 87,
+      "meshCount": 0,
+      "renderKind": "pixel_item",
+      "worldLengthBlocks": 1.944,
+      "anchorPixels": [
+        12.5,
+        46.5
+      ],
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 1.65633,
+        "anchorLocalModelUnits": [
+          -4.875,
+          -3.625,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "revisions": []
+    },
+    {
+      "id": "heavy_thrusting_sword",
+      "name": "重刺剑",
+      "selection": "original",
+      "sourceModel": "art/equipment-2d/blockbench-all-items-20261018/items/heavy_thrusting_sword.bbmodel",
+      "model": "items/heavy_thrusting_sword.bbmodel",
+      "modelSha256": "ede5853258fc2ae972b7991b3ff0f20f1c372e509661d803ca0dec737c68204a",
+      "textures": [
+        {
+          "state": "front",
+          "file": "textures/heavy_thrusting_sword__front.png",
+          "source": "art/equipment-2d/blockbench-all-items-20261018/textures/heavy_thrusting_sword_front.png",
+          "sha256": "ac5e7db9b2c83d7908be9d7ab995e399be423441b87ce9e4e242622e6fbe539b",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "state": "gui_16",
+          "file": "textures/heavy_thrusting_sword__gui_16.png",
+          "source": "art/equipment-2d/blockbench-all-items-20261018/textures/heavy_thrusting_sword_gui_16.png",
+          "sha256": "5ba14bc30d1a6c0614ea164ce84ccbbeab34a8ad0e81495029a14465a37ae698",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "state": "gui_32",
+          "file": "textures/heavy_thrusting_sword__gui_32.png",
+          "source": "art/equipment-2d/blockbench-all-items-20261018/textures/heavy_thrusting_sword_gui_32.png",
+          "sha256": "ac5e7db9b2c83d7908be9d7ab995e399be423441b87ce9e4e242622e6fbe539b",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "icons": [],
+      "previews": [
+        {
+          "view": "front",
+          "file": "preview/heavy_thrusting_sword-front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/heavy_thrusting_sword-before-front.png"
+        },
+        {
+          "view": "side",
+          "file": "preview/heavy_thrusting_sword-side.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/heavy_thrusting_sword-before-side.png"
+        }
+      ],
+      "elements": 68,
+      "exportedElements": 68,
+      "meshCount": 0,
+      "renderKind": "pixel_item",
+      "worldLengthBlocks": 1.512,
+      "anchorPixels": [
+        7.5,
+        24.5
+      ],
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 1.27871,
+        "anchorLocalModelUnits": [
+          -4.25,
+          -4.25,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "revisions": []
+    },
+    {
+      "id": "malikeths_black_blade",
+      "name": "玛利喀斯的黑剑",
+      "selection": "candidate",
+      "sourceModel": "art/equipment-2d/mc-polish-20261022/items/malikeths_black_blade.bbmodel",
+      "model": "items/malikeths_black_blade.bbmodel",
+      "modelSha256": "3de4e24a614960f7763e090dc0aa69149086201fd4dbf0fad82686d48eb27b69",
+      "textures": [
+        {
+          "state": "front",
+          "file": "textures/malikeths_black_blade__front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/malikeths_black_blade__front.png",
+          "sha256": "d4c51ac715536cb4b42b7f302dba5e7d8af25be9ba8aac244527a674d91a4929",
+          "width": 64,
+          "height": 64
+        },
+        {
+          "state": "gui_16",
+          "file": "textures/malikeths_black_blade__gui_16.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/malikeths_black_blade__gui_16.png",
+          "sha256": "a49609b72734622d0d37aa6a484628c9abdb6b64fed15da9cd88c947eb9a56fd",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "state": "gui_32",
+          "file": "textures/malikeths_black_blade__gui_32.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/malikeths_black_blade__gui_32.png",
+          "sha256": "46e78a988ebfa71112165b2d16357318388538334dcb0be26370383ecc8d88f4",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "icons": [],
+      "previews": [
+        {
+          "view": "front",
+          "file": "preview/malikeths_black_blade-front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/malikeths_black_blade-after-front.png"
+        },
+        {
+          "view": "side",
+          "file": "preview/malikeths_black_blade-side.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/malikeths_black_blade-after-side.png"
+        }
+      ],
+      "elements": 112,
+      "exportedElements": 112,
+      "meshCount": 0,
+      "renderKind": "pixel_item",
+      "worldLengthBlocks": 2.304,
+      "anchorPixels": [
+        13.5,
+        50.5
+      ],
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 1.79771,
+        "anchorLocalModelUnits": [
+          -4.625,
+          -4.625,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "revisions": []
+    },
+    {
+      "id": "marikas_hammer",
+      "name": "玛莉卡的石槌",
+      "selection": "candidate",
+      "sourceModel": "art/equipment-2d/mc-polish-20261022/items/marikas_hammer.bbmodel",
+      "model": "items/marikas_hammer.bbmodel",
+      "modelSha256": "9615fa214e642565ac901c44575b03c03f73ff45c44fdbff1878baf51e4d67e2",
+      "textures": [
+        {
+          "state": "front",
+          "file": "textures/marikas_hammer__front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/marikas_hammer__front.png",
+          "sha256": "7d812b108133986ff9c578e901da4ad1c69f70094d821b70f7da8b0471c346aa",
+          "width": 64,
+          "height": 64
+        },
+        {
+          "state": "gui_16",
+          "file": "textures/marikas_hammer__gui_16.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/marikas_hammer__gui_16.png",
+          "sha256": "58eef06e14b10e30f1425432dbf4e8fd22b364ddbc429da22901ce16dd2dd73b",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "state": "gui_32",
+          "file": "textures/marikas_hammer__gui_32.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/marikas_hammer__gui_32.png",
+          "sha256": "5adc4a794cb0b92bd56a157a36383c4c4d14bb6d6f813d353774d744ae627757",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "icons": [],
+      "previews": [
+        {
+          "view": "front",
+          "file": "preview/marikas_hammer-front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/marikas_hammer-after-front.png"
+        },
+        {
+          "view": "side",
+          "file": "preview/marikas_hammer-side.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/marikas_hammer-after-side.png"
+        }
+      ],
+      "elements": 111,
+      "exportedElements": 111,
+      "meshCount": 0,
+      "renderKind": "pixel_item",
+      "worldLengthBlocks": 1.044,
+      "anchorPixels": [
+        13.5,
+        50.5
+      ],
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 0.96778,
+        "anchorLocalModelUnits": [
+          -4.625,
+          -4.625,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "revisions": []
+    },
+    {
+      "id": "mohgwyns_sacred_spear",
+      "name": "蒙格温圣矛",
+      "selection": "candidate",
+      "sourceModel": "art/equipment-2d/mc-polish-20261022/items/mohgwyns_sacred_spear.bbmodel",
+      "model": "items/mohgwyns_sacred_spear.bbmodel",
+      "modelSha256": "30d62ccc652d5555b54217310a49b070ce8dd5840d843ac86a77e84e18353d41",
+      "textures": [
+        {
+          "state": "front",
+          "file": "textures/mohgwyns_sacred_spear__front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/mohgwyns_sacred_spear__front.png",
+          "sha256": "c779b3dc7d0157de6b0ac16522e0ac5ac6bbcda5e2d099179eb07172cb4f2fef",
+          "width": 64,
+          "height": 64
+        },
+        {
+          "state": "gui_16",
+          "file": "textures/mohgwyns_sacred_spear__gui_16.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/mohgwyns_sacred_spear__gui_16.png",
+          "sha256": "a044ad58ac44f0ef265351852cba059465aad611403e1576f28873293fa4ad61",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "state": "gui_32",
+          "file": "textures/mohgwyns_sacred_spear__gui_32.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/mohgwyns_sacred_spear__gui_32.png",
+          "sha256": "9b0ce7adfe9fc27596dfae852e46a465c2b90d927a5c3b65658677c1f11e463a",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "icons": [],
+      "previews": [
+        {
+          "view": "front",
+          "file": "preview/mohgwyns_sacred_spear-front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/mohgwyns_sacred_spear-after-front.png"
+        },
+        {
+          "view": "side",
+          "file": "preview/mohgwyns_sacred_spear-side.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/mohgwyns_sacred_spear-after-side.png"
+        }
+      ],
+      "elements": 131,
+      "exportedElements": 131,
+      "meshCount": 0,
+      "renderKind": "pixel_item",
+      "worldLengthBlocks": 3.15,
+      "anchorPixels": [
+        16.5,
+        47.5
+      ],
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 2.53427,
+        "anchorLocalModelUnits": [
+          -3.875,
+          -3.875,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "revisions": []
+    },
+    {
+      "id": "morgotts_cursed_sword",
+      "name": "蒙葛特咒剑",
+      "selection": "candidate",
+      "sourceModel": "art/equipment-2d/mc-polish-20261022/items/morgotts_cursed_sword.bbmodel",
+      "model": "items/morgotts_cursed_sword.bbmodel",
+      "modelSha256": "0697d49f46bd64d524799437c1b73c2005f58afd7eb1f87393ffa229e441031f",
+      "textures": [
+        {
+          "state": "front",
+          "file": "textures/morgotts_cursed_sword__front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/morgotts_cursed_sword__front.png",
+          "sha256": "b6b67d8752849d8c37fdf92e11e10501b758fcb4ccccc277a0055be71a90cabf",
+          "width": 64,
+          "height": 64
+        },
+        {
+          "state": "gui_16",
+          "file": "textures/morgotts_cursed_sword__gui_16.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/morgotts_cursed_sword__gui_16.png",
+          "sha256": "7f20c4caa0e321e8f7711a3054d7328226eaf6ac384f667fa44fa5a5c6cade74",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "state": "gui_32",
+          "file": "textures/morgotts_cursed_sword__gui_32.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/morgotts_cursed_sword__gui_32.png",
+          "sha256": "0b0aad78a8221203dd882f8dadb2e349b0f3efdd15ca1475c67cb499413ed941",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "icons": [],
+      "previews": [
+        {
+          "view": "front",
+          "file": "preview/morgotts_cursed_sword-front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/morgotts_cursed_sword-after-front.png"
+        },
+        {
+          "view": "side",
+          "file": "preview/morgotts_cursed_sword-side.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/morgotts_cursed_sword-after-side.png"
+        }
+      ],
+      "elements": 100,
+      "exportedElements": 100,
+      "meshCount": 0,
+      "renderKind": "pixel_item",
+      "worldLengthBlocks": 2.088,
+      "anchorPixels": [
+        10.5,
+        45.5
+      ],
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 1.81716,
+        "anchorLocalModelUnits": [
+          -5.375,
+          -3.375,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "revisions": []
+    },
+    {
+      "id": "sacred_relic_sword",
+      "name": "神躯化剑",
+      "selection": "candidate",
+      "sourceModel": "art/equipment-2d/mc-polish-20261022/items/sacred_relic_sword.bbmodel",
+      "model": "items/sacred_relic_sword.bbmodel",
+      "modelSha256": "21776e2087f5dc7cf1d455554f674763c17bae7e878b01faf7f5ea46297c3fc6",
+      "textures": [
+        {
+          "state": "front",
+          "file": "textures/sacred_relic_sword__front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/sacred_relic_sword__front.png",
+          "sha256": "7b5244f92523270682049aef9b87869278ebcd4874dc3402f32af680189434ce",
+          "width": 64,
+          "height": 64
+        },
+        {
+          "state": "gui_16",
+          "file": "textures/sacred_relic_sword__gui_16.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/sacred_relic_sword__gui_16.png",
+          "sha256": "ec9934473096c326ba2689eb91d2fcf88bc77d0f14e6110c1169637c6ae2b013",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "state": "gui_32",
+          "file": "textures/sacred_relic_sword__gui_32.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/sacred_relic_sword__gui_32.png",
+          "sha256": "97be8217d16e78ad9ef9367e075c9248963426ba71ddb82ad18848406d08b9d7",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "icons": [],
+      "previews": [
+        {
+          "view": "front",
+          "file": "preview/sacred_relic_sword-front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/sacred_relic_sword-after-front.png"
+        },
+        {
+          "view": "side",
+          "file": "preview/sacred_relic_sword-side.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/sacred_relic_sword-after-side.png"
+        }
+      ],
+      "elements": 113,
+      "exportedElements": 113,
+      "meshCount": 0,
+      "renderKind": "pixel_item",
+      "worldLengthBlocks": 1.71,
+      "anchorPixels": [
+        11.5,
+        52.5
+      ],
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 1.34034,
+        "anchorLocalModelUnits": [
+          -5.125,
+          -5.125,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "revisions": []
+    },
+    {
+      "id": "sacred_seal",
+      "name": "圣印记",
+      "selection": "candidate",
+      "sourceModel": "art/equipment-2d/mc-polish-20261022/items/sacred_seal.bbmodel",
+      "model": "items/sacred_seal.bbmodel",
+      "modelSha256": "7ff78b3b03f433b6fbb74bfef78112af6b7406a10103c78c69a63b7411dbce4f",
+      "textures": [
+        {
+          "state": "front",
+          "file": "textures/sacred_seal__front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/sacred_seal__front.png",
+          "sha256": "f635da97f01517ebaad78efd073915288ef6421ab75239a72b76794a82dbad73",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "state": "gui_16",
+          "file": "textures/sacred_seal__gui_16.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/sacred_seal__gui_16.png",
+          "sha256": "d133a8d82f361e38b3846eec05a3b5bb09b7d52c565bbddb395225bf17cbf078",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "state": "gui_32",
+          "file": "textures/sacred_seal__gui_32.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/sacred_seal__gui_32.png",
+          "sha256": "f635da97f01517ebaad78efd073915288ef6421ab75239a72b76794a82dbad73",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "icons": [],
+      "previews": [
+        {
+          "view": "front",
+          "file": "preview/sacred_seal-front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/sacred_seal-after-front.png"
+        },
+        {
+          "view": "side",
+          "file": "preview/sacred_seal-side.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/sacred_seal-after-side.png"
+        }
+      ],
+      "elements": 67,
+      "exportedElements": 67,
+      "meshCount": 0,
+      "renderKind": "pixel_item",
+      "worldLengthBlocks": 0.216,
+      "anchorPixels": [
+        8.5,
+        24.5
+      ],
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 0.22216,
+        "anchorLocalModelUnits": [
+          -3.75,
+          -4.25,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "revisions": []
+    },
+    {
+      "id": "shield",
+      "name": "中盾",
+      "selection": "candidate",
+      "sourceModel": "art/equipment-2d/mc-polish-20261022/items/shield.bbmodel",
+      "model": "items/shield.bbmodel",
+      "modelSha256": "6e86666bf73976c9c14f87fc8e2fdae634047436e19d6abb9d1136123685dcf0",
+      "textures": [
+        {
+          "state": "front",
+          "file": "textures/shield__front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/shield__front.png",
+          "sha256": "72cd99505abcc77c354f5672a2d4841ef2fed43810f85f0fb08f0e33c4549ac3",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "state": "back",
+          "file": "textures/shield__back.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/shield__back.png",
+          "sha256": "f6d28a9ad6817eb8c7a2056147c4126b5eedcea54cd9fb7b9b1ab1f25d75ebaa",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "state": "gui_16",
+          "file": "textures/shield__gui_16.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/shield__gui_16.png",
+          "sha256": "551cc1a4ea3fa5e4656d7e5fd4288d0e7631adf04c480d9da57552623d78016d",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "state": "gui_32",
+          "file": "textures/shield__gui_32.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/shield__gui_32.png",
+          "sha256": "72cd99505abcc77c354f5672a2d4841ef2fed43810f85f0fb08f0e33c4549ac3",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "icons": [],
+      "previews": [
+        {
+          "view": "front",
+          "file": "preview/shield-front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/shield-after-front.png"
+        },
+        {
+          "view": "side",
+          "file": "preview/shield-side.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/shield-after-side.png"
+        }
+      ],
+      "elements": 30,
+      "exportedElements": 30,
+      "meshCount": 0,
+      "renderKind": "pixel_item",
+      "worldLengthBlocks": 0.9,
+      "anchorPixels": [
+        16.5,
+        16.5
+      ],
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 1.02857,
+        "anchorLocalModelUnits": [
+          0.25,
+          -0.25,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "revisions": []
+    },
+    {
+      "id": "small_shield",
+      "name": "小盾",
+      "selection": "candidate",
+      "sourceModel": "art/equipment-2d/mc-polish-20261022/items/small_shield.bbmodel",
+      "model": "items/small_shield.bbmodel",
+      "modelSha256": "95c585ea34172a74663e59f7a3f9fac2595057fd0c920f7c93ae8661833da70d",
+      "textures": [
+        {
+          "state": "front",
+          "file": "textures/small_shield__front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/small_shield__front.png",
+          "sha256": "045d9b9bfc15f31ee7fb97fd7a28c78099dbba1619d691c3b4e6f5457eb5e2c5",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "state": "back",
+          "file": "textures/small_shield__back.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/small_shield__back.png",
+          "sha256": "1022a0fb5dde20c8ab7b6758b5fb855afa80f85f52794632fc6d0e68d5c3e6d5",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "state": "gui_16",
+          "file": "textures/small_shield__gui_16.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/small_shield__gui_16.png",
+          "sha256": "d4c08f09eb2cf58e37d06c32a51cec6497934b15962b037cc5d75c6c09ab1550",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "state": "gui_32",
+          "file": "textures/small_shield__gui_32.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/small_shield__gui_32.png",
+          "sha256": "045d9b9bfc15f31ee7fb97fd7a28c78099dbba1619d691c3b4e6f5457eb5e2c5",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "icons": [],
+      "previews": [
+        {
+          "view": "front",
+          "file": "preview/small_shield-front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/small_shield-after-front.png"
+        },
+        {
+          "view": "side",
+          "file": "preview/small_shield-side.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/small_shield-after-side.png"
+        }
+      ],
+      "elements": 34,
+      "exportedElements": 34,
+      "meshCount": 0,
+      "renderKind": "pixel_item",
+      "worldLengthBlocks": 0.504,
+      "anchorPixels": [
+        16.5,
+        16.5
+      ],
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 0.576,
+        "anchorLocalModelUnits": [
+          0.25,
+          -0.25,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "revisions": []
+    },
+    {
+      "id": "starscourge_greatsword",
+      "name": "碎星大剑",
+      "selection": "candidate",
+      "sourceModel": "art/equipment-2d/mc-polish-20261022/items/starscourge_greatsword.bbmodel",
+      "model": "items/starscourge_greatsword.bbmodel",
+      "modelSha256": "2c62b21026fb5a9384ea106b493cd7da02b7fbc4edeb66c171f2baba4a1ce9c1",
+      "textures": [
+        {
+          "state": "front",
+          "file": "textures/starscourge_greatsword__front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/starscourge_greatsword__front.png",
+          "sha256": "09c393a6deaef8a049f8d7e20489ffec49e9b5c333b6d5509801dac020ef5f38",
+          "width": 64,
+          "height": 64
+        },
+        {
+          "state": "gui_16",
+          "file": "textures/starscourge_greatsword__gui_16.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/starscourge_greatsword__gui_16.png",
+          "sha256": "eafd9a2c8f7d1336cad8e6163fe35f6d040c0832ddddc327c5f9ed9c4e42ac81",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "state": "gui_32",
+          "file": "textures/starscourge_greatsword__gui_32.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/starscourge_greatsword__gui_32.png",
+          "sha256": "c515e5980b2923e1693bac164a6cd8f80f61e98cc640f1f84542eed3e6260616",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "icons": [],
+      "previews": [
+        {
+          "view": "front",
+          "file": "preview/starscourge_greatsword-front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/starscourge_greatsword-after-front.png"
+        },
+        {
+          "view": "side",
+          "file": "preview/starscourge_greatsword-side.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/starscourge_greatsword-after-side.png"
+        }
+      ],
+      "elements": 95,
+      "exportedElements": 95,
+      "meshCount": 0,
+      "renderKind": "pixel_item",
+      "worldLengthBlocks": 1.98,
+      "anchorPixels": [
+        13.5,
+        46.5
+      ],
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 1.62768,
+        "anchorLocalModelUnits": [
+          -4.625,
+          -3.625,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "revisions": [
+        {
+          "name": "stars-morgott-r2",
+          "previousNote": "保留单刃版与金纹，不在图里合成双剑；宽刃边缘和实体剑格修整。",
+          "userAuthorization": "2026-10-18: do not retain my outline",
+          "outlineLockReleased": false
+        },
+        {
+          "name": "mc-sharp-20261022",
+          "note": "Narrow steel cutting bevel and pointed tip; original axial extent retained"
+        },
+        {
+          "name": "stars-width-5of6-20261022",
+          "widthRatio": 0.83333,
+          "rounding": "integer pixels",
+          "bladeOnly": true
+        }
+      ]
+    },
+    {
+      "id": "test_flask",
+      "name": "药瓶",
+      "selection": "candidate",
+      "sourceModel": "art/equipment-2d/mc-polish-20261022/items/test_flask.bbmodel",
+      "model": "items/test_flask.bbmodel",
+      "modelSha256": "d8e9d60ec987fded6818036be51eceec77b4917a210e6d104a627512b86d9924",
+      "textures": [
+        {
+          "state": "full",
+          "file": "textures/test_flask__full.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/test_flask__full.png",
+          "sha256": "d7eead7bfaa0f317f3facac1fbd8053f9341bb563f144d4eb0fd1a1846513c2c",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "state": "gui_16",
+          "file": "textures/test_flask__gui_16.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/test_flask__gui_16.png",
+          "sha256": "8c8f454819a6df2bf4cbf43646a2730876e7dfd8cce697c29e9220816630dac8",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "state": "gui_32",
+          "file": "textures/test_flask__gui_32.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/test_flask__gui_32.png",
+          "sha256": "d7eead7bfaa0f317f3facac1fbd8053f9341bb563f144d4eb0fd1a1846513c2c",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "icons": [],
+      "previews": [
+        {
+          "view": "front",
+          "file": "preview/test_flask-front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/test_flask-after-front.png"
+        },
+        {
+          "view": "side",
+          "file": "preview/test_flask-side.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/test_flask-after-side.png"
+        }
+      ],
+      "elements": 19,
+      "exportedElements": 19,
+      "meshCount": 0,
+      "renderKind": "pixel_item",
+      "worldLengthBlocks": 0.375,
+      "anchorPixels": [
+        16.5,
+        14.5
+      ],
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 0.42857,
+        "anchorLocalModelUnits": [
+          0.25,
+          0.75,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "revisions": []
+    },
+    {
+      "id": "twinblade",
+      "name": "双头剑",
+      "selection": "candidate",
+      "sourceModel": "art/equipment-2d/mc-polish-20261022/items/twinblade.bbmodel",
+      "model": "items/twinblade.bbmodel",
+      "modelSha256": "acb69e20a04e1df35bea6e2a0eebcb08ca35304b7dba8c423da89fc8c3c80078",
+      "textures": [
+        {
+          "state": "front",
+          "file": "textures/twinblade__front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/twinblade__front.png",
+          "sha256": "57a967fc38dc2eafbc1789a1b19e4c0ded9c75d43fa64b47f14557bdf0d2492f",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "state": "gui_16",
+          "file": "textures/twinblade__gui_16.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/twinblade__gui_16.png",
+          "sha256": "8328477700c8de4b443f041590bfcc0a885cf009db6ac200d2abf9d348cb9f34",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "state": "gui_32",
+          "file": "textures/twinblade__gui_32.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/twinblade__gui_32.png",
+          "sha256": "57a967fc38dc2eafbc1789a1b19e4c0ded9c75d43fa64b47f14557bdf0d2492f",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "icons": [],
+      "previews": [
+        {
+          "view": "front",
+          "file": "preview/twinblade-front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/twinblade-after-front.png"
+        },
+        {
+          "view": "side",
+          "file": "preview/twinblade-side.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/twinblade-after-side.png"
+        }
+      ],
+      "elements": 72,
+      "exportedElements": 72,
+      "meshCount": 0,
+      "renderKind": "pixel_item",
+      "worldLengthBlocks": 2.16,
+      "anchorPixels": [
+        16.5,
+        16.5
+      ],
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 1.81268,
+        "anchorLocalModelUnits": [
+          0.25,
+          -0.25,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "revisions": []
+    },
+    {
+      "id": "whip",
+      "name": "软鞭",
+      "selection": "candidate",
+      "sourceModel": "art/equipment-2d/mc-polish-20261022/items/whip.bbmodel",
+      "model": "items/whip.bbmodel",
+      "modelSha256": "7053d0be6126da027d287c42c7084a6ab9f818a8082e19698cf1b9ddb947220f",
+      "textures": [
+        {
+          "state": "front",
+          "file": "textures/whip__front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/whip__front.png",
+          "sha256": "6fc43177fd4021607c7c5b5d5c9e97e61326741df6cfe3839a0d9f420bbffba2",
+          "width": 32,
+          "height": 32
+        },
+        {
+          "state": "gui_16",
+          "file": "textures/whip__gui_16.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/whip__gui_16.png",
+          "sha256": "d3440dac118c8745ae7bc1ff3c8f315c4c1f69c0a63cd074320fa157623601f7",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "state": "gui_32",
+          "file": "textures/whip__gui_32.png",
+          "source": "art/equipment-2d/mc-polish-20261022/textures/whip__gui_32.png",
+          "sha256": "6fc43177fd4021607c7c5b5d5c9e97e61326741df6cfe3839a0d9f420bbffba2",
+          "width": 32,
+          "height": 32
+        }
+      ],
+      "icons": [],
+      "previews": [
+        {
+          "view": "front",
+          "file": "preview/whip-front.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/whip-after-front.png"
+        },
+        {
+          "view": "side",
+          "file": "preview/whip-side.png",
+          "source": "art/equipment-2d/mc-polish-20261022/qa/whip-after-side.png"
+        }
+      ],
+      "elements": 43,
+      "exportedElements": 43,
+      "meshCount": 0,
+      "renderKind": "pixel_item",
+      "worldLengthBlocks": 2.736,
+      "anchorPixels": [
+        11.5,
+        27.5
+      ],
+      "suggestedDisplay": {
+        "status": "proposal_not_game_verified",
+        "uniformXYScale": 3.15129,
+        "anchorLocalModelUnits": [
+          -2.25,
+          -5.75,
+          0
+        ],
+        "gui": "Separate 16/32 assets when provided; never use GUI fit to set world length",
+        "firstPerson": "Per-item camera offset and palm calibration required",
+        "thirdPerson": "Map anchor to palm after a single item-axis rotation"
+      },
+      "revisions": []
+    }
+  ],
+  "files": [
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/items/ballista.bbmodel",
+      "target": "items/ballista.bbmodel",
+      "sha256": "db4228611d12ee57766bee86ada7a6f2ebe1d69a0032716aab924e49ed5ee819",
+      "bytes": 1096759
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/ballista__standby.png",
+      "target": "textures/ballista__standby.png",
+      "sha256": "6c7cb3d490891065cba59f749945248b06e330d2f33e9b0718a42c9a6fc7e673",
+      "bytes": 718
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/ballista__loading_0.png",
+      "target": "textures/ballista__loading_0.png",
+      "sha256": "b0c26ec7bca1e292dde17442d572ab6ea60f68048b9d8aa747c1b14140166110",
+      "bytes": 748
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/ballista__loading_1.png",
+      "target": "textures/ballista__loading_1.png",
+      "sha256": "7196c678dc1a46d876fe7cd45edecf8f14818ffcde8cb733af77b5de8d913efe",
+      "bytes": 743
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/ballista__loading_2.png",
+      "target": "textures/ballista__loading_2.png",
+      "sha256": "e0ef92f37eb8222098244b8d33a0b552b60bfcf8b98104bf9056e789e44bb342",
+      "bytes": 733
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/ballista__loaded.png",
+      "target": "textures/ballista__loaded.png",
+      "sha256": "943bddcb4b361fdd970b396f95734d936801e646a7f42062b14f0ca36e8aecb9",
+      "bytes": 758
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/ballista__gui_16.png",
+      "target": "textures/ballista__gui_16.png",
+      "sha256": "662bd8578e5b4535c42c1b68c87915e704f3c23d9278039f24abd328728c526c",
+      "bytes": 412
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/ballista__gui_32.png",
+      "target": "textures/ballista__gui_32.png",
+      "sha256": "6c7cb3d490891065cba59f749945248b06e330d2f33e9b0718a42c9a6fc7e673",
+      "bytes": 718
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/ballista-after-front.png",
+      "target": "preview/ballista-front.png",
+      "sha256": "265c0f16096d86f79dec0e78f2aecadf3db3057c447b8922552b23ed5f9ac449",
+      "bytes": 7961
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/ballista-after-side.png",
+      "target": "preview/ballista-side.png",
+      "sha256": "20f11b46e660a63eabd9b771909fa97a1d59639a8c3723610c239891731b9b49",
+      "bytes": 18806
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/items/blasphemous_blade.bbmodel",
+      "target": "items/blasphemous_blade.bbmodel",
+      "sha256": "83d75c44eb75222109c4f5f9091df74f1871e7b9479d6a628b7cb75d77b271b7",
+      "bytes": 401905
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/blasphemous_blade__front.png",
+      "target": "textures/blasphemous_blade__front.png",
+      "sha256": "222d461909f3754b98c2855731ac97448025c807341fc6f4505a995c505b149a",
+      "bytes": 1184
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/blasphemous_blade__gui_16.png",
+      "target": "textures/blasphemous_blade__gui_16.png",
+      "sha256": "ff4398b4ed748a5086dc0bab1995ed74692b197c2feb32b11c69d5e3f11ff369",
+      "bytes": 346
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/blasphemous_blade__gui_32.png",
+      "target": "textures/blasphemous_blade__gui_32.png",
+      "sha256": "b58493211f7a35a68c4ccb4eb68edd2cc86f561e052fec2a895378ec5ed8aaf3",
+      "bytes": 595
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/blasphemous_blade-after-front.png",
+      "target": "preview/blasphemous_blade-front.png",
+      "sha256": "7bda9a93502670f722e86788e447bf402add90fba5424aed48e41d0de2389607",
+      "bytes": 8495
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/blasphemous_blade-after-side.png",
+      "target": "preview/blasphemous_blade-side.png",
+      "sha256": "e254b71c5b48d11505bb58b342bbc5ded6bbbd538747c02363bf50350831b7a5",
+      "bytes": 18146
+    },
+    {
+      "source": "art/equipment-2d/worn-hand-gear-20261021/claw_worn.bbmodel",
+      "target": "items/claw_worn.bbmodel",
+      "sha256": "8fa7cb8684ad5f6d52ddb6a8f9988a6a02082852a272c1bb3a9437068273e623",
+      "bytes": 76098
+    },
+    {
+      "source": "art/equipment-2d/worn-hand-gear-20261021/textures/worn_atlas.png",
+      "target": "textures/worn_atlas.png",
+      "sha256": "ef32c287c33ac0d64d72fb17766c885ccc9fd83ab7c98a5894ea5438d3d102af",
+      "bytes": 8704
+    },
+    {
+      "source": "art/equipment-2d/worn-hand-gear-20261021/icons/claw_gui_16.png",
+      "target": "icons/claw_gui_16.png",
+      "sha256": "bb2a4ddd4c2f034c8b0d7e012c4778cb786efb9bbb2bc4350293d572bd045e5b",
+      "bytes": 402
+    },
+    {
+      "source": "art/equipment-2d/worn-hand-gear-20261021/icons/claw_gui_32.png",
+      "target": "icons/claw_gui_32.png",
+      "sha256": "42b67d221d951cfe9946e418af5e968a6639aabc132273c48468684e95daed65",
+      "bytes": 1005
+    },
+    {
+      "source": "art/equipment-2d/worn-hand-gear-20261021/qa/claw_hand_front.png",
+      "target": "preview/claw-front.png",
+      "sha256": "1f305451d95b85aad84a6664321ffcfde6cdc7400ed1fe87fcc8932ffe38ed3a",
+      "bytes": 16650
+    },
+    {
+      "source": "art/equipment-2d/worn-hand-gear-20261021/qa/claw_hand_out.png",
+      "target": "preview/claw-side.png",
+      "sha256": "137e9eb5651c3a99388c689780911942204c78724757e3b4f98265888d56431c",
+      "bytes": 15172
+    },
+    {
+      "source": "art/equipment-2d/blockbench-all-items-20261018/items/colossal_sword.bbmodel",
+      "target": "items/colossal_sword.bbmodel",
+      "sha256": "805a4ff2c21c896bd5067e10ee9ac9ca6a62375ab3a1c3bcb82a9521b9887b30",
+      "bytes": 171715
+    },
+    {
+      "source": "art/equipment-2d/blockbench-all-items-20261018/textures/colossal_sword_front.png",
+      "target": "textures/colossal_sword__front.png",
+      "sha256": "a615b920fbbe5608f60696ec3c2d6f1e39df1affb63ea3561bdd2dd6e2736cf9",
+      "bytes": 686
+    },
+    {
+      "source": "art/equipment-2d/blockbench-all-items-20261018/textures/colossal_sword_gui_16.png",
+      "target": "textures/colossal_sword__gui_16.png",
+      "sha256": "aa717a21a60dda26810131cd8eb7f9a9265bc27ca9659da5a517df731ae8cffd",
+      "bytes": 364
+    },
+    {
+      "source": "art/equipment-2d/blockbench-all-items-20261018/textures/colossal_sword_gui_32.png",
+      "target": "textures/colossal_sword__gui_32.png",
+      "sha256": "a615b920fbbe5608f60696ec3c2d6f1e39df1affb63ea3561bdd2dd6e2736cf9",
+      "bytes": 686
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/colossal_sword-before-front.png",
+      "target": "preview/colossal_sword-front.png",
+      "sha256": "ad3c66c9b1fc7a0c32b8e7da8a18918530a75d102ca96d680f769af5ae7c673b",
+      "bytes": 7658
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/colossal_sword-before-side.png",
+      "target": "preview/colossal_sword-side.png",
+      "sha256": "783c2eb36f2146f732bdfd929378f127a60a2d94703938fa3228102d989cc7a6",
+      "bytes": 14697
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/items/colossal_weapon.bbmodel",
+      "target": "items/colossal_weapon.bbmodel",
+      "sha256": "9c07ee30681c45260b13b5157300833782a9132dbedbe3e0b30c6c7ab7555262",
+      "bytes": 264542
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/colossal_weapon__front.png",
+      "target": "textures/colossal_weapon__front.png",
+      "sha256": "16b8cdedfde5fd0d48418cb3e748b5990dc434a69b3d62b185242d13419634a1",
+      "bytes": 635
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/colossal_weapon__gui_16.png",
+      "target": "textures/colossal_weapon__gui_16.png",
+      "sha256": "a933a348c7c09fbcb6a6cba1d462034bdd530e342539b8b2bfdb0d680401039c",
+      "bytes": 377
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/colossal_weapon__gui_32.png",
+      "target": "textures/colossal_weapon__gui_32.png",
+      "sha256": "16b8cdedfde5fd0d48418cb3e748b5990dc434a69b3d62b185242d13419634a1",
+      "bytes": 635
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/colossal_weapon-after-front.png",
+      "target": "preview/colossal_weapon-front.png",
+      "sha256": "15d8d275d4a9171b655cb9e541a5885e9c759255bb42d2f94a94078772e1a105",
+      "bytes": 7457
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/colossal_weapon-after-side.png",
+      "target": "preview/colossal_weapon-side.png",
+      "sha256": "c5bfe46e552edea7105a1ff728816cfcecbffb3a06162cce5df1cd345b63dbd1",
+      "bytes": 15769
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/items/curved_greatsword.bbmodel",
+      "target": "items/curved_greatsword.bbmodel",
+      "sha256": "1a0c3c4d258d6d76597a36f9579812d8c75614de9d16fe4a30ece74616aa265e",
+      "bytes": 395604
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/curved_greatsword__front.png",
+      "target": "textures/curved_greatsword__front.png",
+      "sha256": "f9c73c00de3cdf0463edbc37193e401571303c9150a7a29f777d95e5426a5a3b",
+      "bytes": 477
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/curved_greatsword__gui_16.png",
+      "target": "textures/curved_greatsword__gui_16.png",
+      "sha256": "0ea73da7529f9e6493bd922082abaadd8204b291b78bb5d61a1eef0efcee931c",
+      "bytes": 281
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/curved_greatsword__gui_32.png",
+      "target": "textures/curved_greatsword__gui_32.png",
+      "sha256": "f9c73c00de3cdf0463edbc37193e401571303c9150a7a29f777d95e5426a5a3b",
+      "bytes": 477
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/curved_greatsword-after-front.png",
+      "target": "preview/curved_greatsword-front.png",
+      "sha256": "917caca354d8f937f66ae12813c4395c8c6e0774f9e662abc0a7848d694f9fd9",
+      "bytes": 7060
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/curved_greatsword-after-side.png",
+      "target": "preview/curved_greatsword-side.png",
+      "sha256": "cea531c8b4a4a59de42d12a463674c79538a98fb3a0e7c575434216021a719f6",
+      "bytes": 14679
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/items/curved_sword.bbmodel",
+      "target": "items/curved_sword.bbmodel",
+      "sha256": "bb84f8ff3ba441f9a11b96751e1fd0a4d2ac689e3fee9040fbd8e6409c775170",
+      "bytes": 208487
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/curved_sword__front.png",
+      "target": "textures/curved_sword__front.png",
+      "sha256": "f144358fd5eea59282c2472976afb8a8fc7469487b74df213c850313ab1699f2",
+      "bytes": 479
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/curved_sword__gui_16.png",
+      "target": "textures/curved_sword__gui_16.png",
+      "sha256": "e630aeca716ab6b28ac266ec66cd0d8c37101c647cb66f9e86e0d9160a7a2baa",
+      "bytes": 303
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/curved_sword__gui_32.png",
+      "target": "textures/curved_sword__gui_32.png",
+      "sha256": "f144358fd5eea59282c2472976afb8a8fc7469487b74df213c850313ab1699f2",
+      "bytes": 479
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/curved_sword-after-front.png",
+      "target": "preview/curved_sword-front.png",
+      "sha256": "2ede5cdd2848c727461700bc6d201099f1a7208a65849ecd76ba9a9101a59ee3",
+      "bytes": 7078
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/curved_sword-after-side.png",
+      "target": "preview/curved_sword-side.png",
+      "sha256": "18714abc7f38d5b5d3a212129a34269a2e59a96beabd7a9384a5d085ad052ea9",
+      "bytes": 17027
+    },
+    {
+      "source": "art/equipment-2d/worn-hand-gear-20261021/fist_worn.bbmodel",
+      "target": "items/fist_worn.bbmodel",
+      "sha256": "de204285f66ff105bcf67b7464f20f8e81cbc997a9f2475b56b81e8885fe5bc2",
+      "bytes": 53155
+    },
+    {
+      "source": "art/equipment-2d/worn-hand-gear-20261021/icons/fist_gui_16.png",
+      "target": "icons/fist_gui_16.png",
+      "sha256": "188787430bed5951123e34956d71767fd65d97ac38c2e7ed9ca92e27a65f38a0",
+      "bytes": 666
+    },
+    {
+      "source": "art/equipment-2d/worn-hand-gear-20261021/icons/fist_gui_32.png",
+      "target": "icons/fist_gui_32.png",
+      "sha256": "54a2c341be183d7ec4638c0fbdd411e5bc102d3de30a45e7f2ed3cbf2fda32b6",
+      "bytes": 1543
+    },
+    {
+      "source": "art/equipment-2d/worn-hand-gear-20261021/qa/fist_hand_front.png",
+      "target": "preview/fist-front.png",
+      "sha256": "03958466a81bf6914b1266e35ca85be22ca3e7545565aaaafed97a3fb9ab278e",
+      "bytes": 16089
+    },
+    {
+      "source": "art/equipment-2d/worn-hand-gear-20261021/qa/fist_hand_out.png",
+      "target": "preview/fist-side.png",
+      "sha256": "7b0a8764bd3a8af8c13202c314c23145307398c1cf01d6a3a19d5cfb14ffc2f2",
+      "bytes": 16176
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/items/flail.bbmodel",
+      "target": "items/flail.bbmodel",
+      "sha256": "7890057b864c93eea9b79ceddec0a486bf68e956d08ead18bf6eb59418bd928a",
+      "bytes": 225035
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/flail__front.png",
+      "target": "textures/flail__front.png",
+      "sha256": "8a80ceb9c86a773784110d7bbf07e46b71f86c07999144b84d0e9cdb1561fcf1",
+      "bytes": 592
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/flail__gui_16.png",
+      "target": "textures/flail__gui_16.png",
+      "sha256": "fe4f778ab37a409628f1fa2c7d735e0fae5c0c9f3f754916f2d7d9dc1f89ab91",
+      "bytes": 330
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/flail__gui_32.png",
+      "target": "textures/flail__gui_32.png",
+      "sha256": "8a80ceb9c86a773784110d7bbf07e46b71f86c07999144b84d0e9cdb1561fcf1",
+      "bytes": 592
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/flail-after-front.png",
+      "target": "preview/flail-front.png",
+      "sha256": "c56aa83c1274348215e0362f37842a3bad06aa96e3da3617f2b8fe0a7c2bf10d",
+      "bytes": 7247
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/flail-after-side.png",
+      "target": "preview/flail-side.png",
+      "sha256": "ffd32c0ff630b0728ef8227e6d20181da2258c8e876c31ffd2d7d159d0330bf6",
+      "bytes": 17831
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/items/glintstone_staff.bbmodel",
+      "target": "items/glintstone_staff.bbmodel",
+      "sha256": "61c247eed97d1d0e198fd4c5140473063f9f108a49ff4be05ee71e5dc79ce26f",
+      "bytes": 242628
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/glintstone_staff__front.png",
+      "target": "textures/glintstone_staff__front.png",
+      "sha256": "dc964d0091849210c74789519cb58d5bcb6266cd8bbae643d894f0a10cbde9c9",
+      "bytes": 478
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/glintstone_staff__gui_16.png",
+      "target": "textures/glintstone_staff__gui_16.png",
+      "sha256": "116e835b58f2c2833aae4b3a96cecff63a6cfe3c057783a91ec2d920a257faed",
+      "bytes": 286
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/glintstone_staff__gui_32.png",
+      "target": "textures/glintstone_staff__gui_32.png",
+      "sha256": "dc964d0091849210c74789519cb58d5bcb6266cd8bbae643d894f0a10cbde9c9",
+      "bytes": 478
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/glintstone_staff-after-front.png",
+      "target": "preview/glintstone_staff-front.png",
+      "sha256": "30b7e0bdae8797fc59e41b4b8764d7ff157eebc416f29bac9c98dacbf9d06d7b",
+      "bytes": 7145
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/glintstone_staff-after-side.png",
+      "target": "preview/glintstone_staff-side.png",
+      "sha256": "fb016a897a650e006536f668ad19e5ac42be9618d75ed3bc2367e0c2ee417085",
+      "bytes": 15665
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/items/great_bow.bbmodel",
+      "target": "items/great_bow.bbmodel",
+      "sha256": "4af068e73aa24d2828c76dd494b8037b55303d97c0d0aa663a10504aed4ac60d",
+      "bytes": 870816
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/great_bow__standby.png",
+      "target": "textures/great_bow__standby.png",
+      "sha256": "058bc074325e8b6e8b386e1b89a2c54424c75eee4b2af1d62599ff4cd6873f99",
+      "bytes": 499
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/great_bow__pulling_0.png",
+      "target": "textures/great_bow__pulling_0.png",
+      "sha256": "bcb92421e292ea8d55588693b2061f784e4b0d9cb2381355e42ed7f064974537",
+      "bytes": 552
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/great_bow__pulling_1.png",
+      "target": "textures/great_bow__pulling_1.png",
+      "sha256": "2ed0f7c04763495f71153705f1dedf451e8205f8e1fc2690581908e00bfafdc0",
+      "bytes": 561
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/great_bow__pulling_2.png",
+      "target": "textures/great_bow__pulling_2.png",
+      "sha256": "d803a6f54fa3994b875579b6a9570d918b0e102c7583eb02ff1a65677ef5a119",
+      "bytes": 577
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/great_bow__gui_16.png",
+      "target": "textures/great_bow__gui_16.png",
+      "sha256": "ffe3839549ee1d6df8dac26a61241297f1a38735cf89737f8c54cb9ae7039c21",
+      "bytes": 277
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/great_bow__gui_32.png",
+      "target": "textures/great_bow__gui_32.png",
+      "sha256": "058bc074325e8b6e8b386e1b89a2c54424c75eee4b2af1d62599ff4cd6873f99",
+      "bytes": 499
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/great_bow-after-front.png",
+      "target": "preview/great_bow-front.png",
+      "sha256": "5f591b480d0bb19b8c5e32ba4c75b68a302ba2547b38d1df617a147deef8e9a1",
+      "bytes": 7365
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/great_bow-after-side.png",
+      "target": "preview/great_bow-side.png",
+      "sha256": "da47f9217dca4d8b5aba1faf95b7dff42c68f78a0a3355946106ec0397e3912a",
+      "bytes": 15137
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/items/great_shield.bbmodel",
+      "target": "items/great_shield.bbmodel",
+      "sha256": "31a44d4a45a03fc6b6de161c289245ab1694b5dca4931b3b9b0e912f8dff2f89",
+      "bytes": 42529
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/great_shield__front.png",
+      "target": "textures/great_shield__front.png",
+      "sha256": "20e36931a7fdfc45fa2aeb0fb99fa15ef8bec2b826d893c080630a9515afde42",
+      "bytes": 584
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/great_shield__back.png",
+      "target": "textures/great_shield__back.png",
+      "sha256": "1b3b83eaef4f8465609723afc8dc2e550be9a6f46a2e59f7ce2aedc7a5122e83",
+      "bytes": 299
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/great_shield__gui_16.png",
+      "target": "textures/great_shield__gui_16.png",
+      "sha256": "5655d0dce3199d39cc62ebd1496377f579158a0d933aa35d256fc3e1e4bbb9db",
+      "bytes": 345
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/great_shield__gui_32.png",
+      "target": "textures/great_shield__gui_32.png",
+      "sha256": "20e36931a7fdfc45fa2aeb0fb99fa15ef8bec2b826d893c080630a9515afde42",
+      "bytes": 584
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/great_shield-after-front.png",
+      "target": "preview/great_shield-front.png",
+      "sha256": "33cf645fd9fecf068f5885af368f45803767894ee798eb0add7ff94737b96e53",
+      "bytes": 7139
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/great_shield-after-side.png",
+      "target": "preview/great_shield-side.png",
+      "sha256": "3446cd814c8e104098e186d7e36f6b03ba61f7269ae39f6fa9126f466395ea55",
+      "bytes": 14752
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/items/great_spear.bbmodel",
+      "target": "items/great_spear.bbmodel",
+      "sha256": "48b60fb9d884b879f8dfc1c035a7a1e89890a433b1cd2ac311da50b8d6e0f05a",
+      "bytes": 437194
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/great_spear__front.png",
+      "target": "textures/great_spear__front.png",
+      "sha256": "ed6745eff21c59a81a8e1bf3633a63f3a3d2a13461c665ba5fa17ee4e9db65ae",
+      "bytes": 537
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/great_spear__gui_16.png",
+      "target": "textures/great_spear__gui_16.png",
+      "sha256": "74ffc84f7f5031dec85ad29433e9e1017a71e13215c467ca6f314f001309efa7",
+      "bytes": 292
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/great_spear__gui_32.png",
+      "target": "textures/great_spear__gui_32.png",
+      "sha256": "ed6745eff21c59a81a8e1bf3633a63f3a3d2a13461c665ba5fa17ee4e9db65ae",
+      "bytes": 537
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/great_spear-after-front.png",
+      "target": "preview/great_spear-front.png",
+      "sha256": "87e4e62da461be78a510c5c7c34c25308152b16ed2df08da8f893c726a1e4a01",
+      "bytes": 7283
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/great_spear-after-side.png",
+      "target": "preview/great_spear-side.png",
+      "sha256": "1213bd1b2cc822db938fc27e2232851ad5b3f5b34f8426c6a9b3f065b9aacf89",
+      "bytes": 13281
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/items/great_sword.bbmodel",
+      "target": "items/great_sword.bbmodel",
+      "sha256": "39a85c546f8fb89b0cb3affb56480e9999b58f43451f118253f9f43d3f73e50e",
+      "bytes": 286496
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/great_sword__front.png",
+      "target": "textures/great_sword__front.png",
+      "sha256": "782cd745e391c531a733f884b05d3ad4f8c4876f5fed9f22fb8e796d7deebf19",
+      "bytes": 628
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/great_sword__gui_16.png",
+      "target": "textures/great_sword__gui_16.png",
+      "sha256": "dcb6db2ee2fe40759b86e8b25a7c016c1f3b0d48abaac0c81d9eb86563f8e3c7",
+      "bytes": 385
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/great_sword__gui_32.png",
+      "target": "textures/great_sword__gui_32.png",
+      "sha256": "782cd745e391c531a733f884b05d3ad4f8c4876f5fed9f22fb8e796d7deebf19",
+      "bytes": 628
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/great_sword-after-front.png",
+      "target": "preview/great_sword-front.png",
+      "sha256": "37d677b477cd8b85303621ad451d02116bcd5a855fc0e9ae9f04d548b9ceba26",
+      "bytes": 7539
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/great_sword-after-side.png",
+      "target": "preview/great_sword-side.png",
+      "sha256": "8deecdf580d3f7721269c23aebd927346f70ef91997b82eb7d334ec8e29c1c27",
+      "bytes": 16872
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/items/hand_of_malenia.bbmodel",
+      "target": "items/hand_of_malenia.bbmodel",
+      "sha256": "c2a8792f17557317c9117ff9af5d9455f0c0a9eaad19be1afda327f2c5956ed5",
+      "bytes": 310687
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/hand_of_malenia__front.png",
+      "target": "textures/hand_of_malenia__front.png",
+      "sha256": "826c7987cb0924c4548456c45f16511d7a1438674a40554ba0da92fbdc1c4183",
+      "bytes": 860
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/hand_of_malenia__gui_16.png",
+      "target": "textures/hand_of_malenia__gui_16.png",
+      "sha256": "7a6a4010017343559583bfca9f34d1bd769735b377acc01b9c8c458381722806",
+      "bytes": 279
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/hand_of_malenia__gui_32.png",
+      "target": "textures/hand_of_malenia__gui_32.png",
+      "sha256": "d8ff6116f458f1ce6cbf9ec0fcfbf3b43c2810143140f034c48a895e1ddf7338",
+      "bytes": 430
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/hand_of_malenia-after-front.png",
+      "target": "preview/hand_of_malenia-front.png",
+      "sha256": "91d22b9565a076dde880b7f957a28a2657545155fdf892dfe76a16636987b2a0",
+      "bytes": 7942
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/hand_of_malenia-after-side.png",
+      "target": "preview/hand_of_malenia-side.png",
+      "sha256": "b4678d3f9d8803ee2c62de52e32744fa34aa2f210c024b478f4492f899f7c8cf",
+      "bytes": 16248
+    },
+    {
+      "source": "art/equipment-2d/blockbench-all-items-20261018/items/heavy_thrusting_sword.bbmodel",
+      "target": "items/heavy_thrusting_sword.bbmodel",
+      "sha256": "ede5853258fc2ae972b7991b3ff0f20f1c372e509661d803ca0dec737c68204a",
+      "bytes": 170470
+    },
+    {
+      "source": "art/equipment-2d/blockbench-all-items-20261018/textures/heavy_thrusting_sword_front.png",
+      "target": "textures/heavy_thrusting_sword__front.png",
+      "sha256": "ac5e7db9b2c83d7908be9d7ab995e399be423441b87ce9e4e242622e6fbe539b",
+      "bytes": 588
+    },
+    {
+      "source": "art/equipment-2d/blockbench-all-items-20261018/textures/heavy_thrusting_sword_gui_16.png",
+      "target": "textures/heavy_thrusting_sword__gui_16.png",
+      "sha256": "5ba14bc30d1a6c0614ea164ce84ccbbeab34a8ad0e81495029a14465a37ae698",
+      "bytes": 329
+    },
+    {
+      "source": "art/equipment-2d/blockbench-all-items-20261018/textures/heavy_thrusting_sword_gui_32.png",
+      "target": "textures/heavy_thrusting_sword__gui_32.png",
+      "sha256": "ac5e7db9b2c83d7908be9d7ab995e399be423441b87ce9e4e242622e6fbe539b",
+      "bytes": 588
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/heavy_thrusting_sword-before-front.png",
+      "target": "preview/heavy_thrusting_sword-front.png",
+      "sha256": "c41bfd55afb4638bcb259fb430037f85481160ab6aba5f3550d16dfaa647510b",
+      "bytes": 7399
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/heavy_thrusting_sword-before-side.png",
+      "target": "preview/heavy_thrusting_sword-side.png",
+      "sha256": "ef0efba556b90206036dad7bd2370496de31fb4f07d5c225bc58f02bf202f15b",
+      "bytes": 17144
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/items/malikeths_black_blade.bbmodel",
+      "target": "items/malikeths_black_blade.bbmodel",
+      "sha256": "3de4e24a614960f7763e090dc0aa69149086201fd4dbf0fad82686d48eb27b69",
+      "bytes": 399834
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/malikeths_black_blade__front.png",
+      "target": "textures/malikeths_black_blade__front.png",
+      "sha256": "d4c51ac715536cb4b42b7f302dba5e7d8af25be9ba8aac244527a674d91a4929",
+      "bytes": 1209
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/malikeths_black_blade__gui_16.png",
+      "target": "textures/malikeths_black_blade__gui_16.png",
+      "sha256": "a49609b72734622d0d37aa6a484628c9abdb6b64fed15da9cd88c947eb9a56fd",
+      "bytes": 294
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/malikeths_black_blade__gui_32.png",
+      "target": "textures/malikeths_black_blade__gui_32.png",
+      "sha256": "46e78a988ebfa71112165b2d16357318388538334dcb0be26370383ecc8d88f4",
+      "bytes": 577
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/malikeths_black_blade-after-front.png",
+      "target": "preview/malikeths_black_blade-front.png",
+      "sha256": "e996f6d178ae8d5f01194324eca4ef55260f25893583402246b1cb13f36f931c",
+      "bytes": 8793
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/malikeths_black_blade-after-side.png",
+      "target": "preview/malikeths_black_blade-side.png",
+      "sha256": "f37239fe1846e3b760b27b31a6dc3d38f7f4a393bdae6dca03e801bbd704dc6a",
+      "bytes": 16446
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/items/marikas_hammer.bbmodel",
+      "target": "items/marikas_hammer.bbmodel",
+      "sha256": "9615fa214e642565ac901c44575b03c03f73ff45c44fdbff1878baf51e4d67e2",
+      "bytes": 390758
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/marikas_hammer__front.png",
+      "target": "textures/marikas_hammer__front.png",
+      "sha256": "7d812b108133986ff9c578e901da4ad1c69f70094d821b70f7da8b0471c346aa",
+      "bytes": 1071
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/marikas_hammer__gui_16.png",
+      "target": "textures/marikas_hammer__gui_16.png",
+      "sha256": "58eef06e14b10e30f1425432dbf4e8fd22b364ddbc429da22901ce16dd2dd73b",
+      "bytes": 301
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/marikas_hammer__gui_32.png",
+      "target": "textures/marikas_hammer__gui_32.png",
+      "sha256": "5adc4a794cb0b92bd56a157a36383c4c4d14bb6d6f813d353774d744ae627757",
+      "bytes": 544
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/marikas_hammer-after-front.png",
+      "target": "preview/marikas_hammer-front.png",
+      "sha256": "9a469d6827b980175476abc75f00ec2ca79d73ddea1a1cba64eb65933b83501d",
+      "bytes": 8667
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/marikas_hammer-after-side.png",
+      "target": "preview/marikas_hammer-side.png",
+      "sha256": "00231dfdcd24d07f93b50bb4aca5ca1c796a5f3996978ce4d9106ffbc9b49cc3",
+      "bytes": 21025
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/items/mohgwyns_sacred_spear.bbmodel",
+      "target": "items/mohgwyns_sacred_spear.bbmodel",
+      "sha256": "30d62ccc652d5555b54217310a49b070ce8dd5840d843ac86a77e84e18353d41",
+      "bytes": 456312
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/mohgwyns_sacred_spear__front.png",
+      "target": "textures/mohgwyns_sacred_spear__front.png",
+      "sha256": "c779b3dc7d0157de6b0ac16522e0ac5ac6bbcda5e2d099179eb07172cb4f2fef",
+      "bytes": 706
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/mohgwyns_sacred_spear__gui_16.png",
+      "target": "textures/mohgwyns_sacred_spear__gui_16.png",
+      "sha256": "a044ad58ac44f0ef265351852cba059465aad611403e1576f28873293fa4ad61",
+      "bytes": 237
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/mohgwyns_sacred_spear__gui_32.png",
+      "target": "textures/mohgwyns_sacred_spear__gui_32.png",
+      "sha256": "9b0ce7adfe9fc27596dfae852e46a465c2b90d927a5c3b65658677c1f11e463a",
+      "bytes": 386
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/mohgwyns_sacred_spear-after-front.png",
+      "target": "preview/mohgwyns_sacred_spear-front.png",
+      "sha256": "478623cf6fe64f26dd350bc3f67616a9b9fd9dd5338906cc73aa74c7a58dcf6e",
+      "bytes": 8216
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/mohgwyns_sacred_spear-after-side.png",
+      "target": "preview/mohgwyns_sacred_spear-side.png",
+      "sha256": "bd9e76ab1f1d4d50f54748d8118db7f45ee698c5c966cfee7f58963d45dfc945",
+      "bytes": 14742
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/items/morgotts_cursed_sword.bbmodel",
+      "target": "items/morgotts_cursed_sword.bbmodel",
+      "sha256": "0697d49f46bd64d524799437c1b73c2005f58afd7eb1f87393ffa229e441031f",
+      "bytes": 354531
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/morgotts_cursed_sword__front.png",
+      "target": "textures/morgotts_cursed_sword__front.png",
+      "sha256": "b6b67d8752849d8c37fdf92e11e10501b758fcb4ccccc277a0055be71a90cabf",
+      "bytes": 970
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/morgotts_cursed_sword__gui_16.png",
+      "target": "textures/morgotts_cursed_sword__gui_16.png",
+      "sha256": "7f20c4caa0e321e8f7711a3054d7328226eaf6ac384f667fa44fa5a5c6cade74",
+      "bytes": 271
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/morgotts_cursed_sword__gui_32.png",
+      "target": "textures/morgotts_cursed_sword__gui_32.png",
+      "sha256": "0b0aad78a8221203dd882f8dadb2e349b0f3efdd15ca1475c67cb499413ed941",
+      "bytes": 456
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/morgotts_cursed_sword-after-front.png",
+      "target": "preview/morgotts_cursed_sword-front.png",
+      "sha256": "6399b8da5ea8786ca50d029b472c43fcf080a0073636f8fb97ea56d93dfc77e2",
+      "bytes": 8348
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/morgotts_cursed_sword-after-side.png",
+      "target": "preview/morgotts_cursed_sword-side.png",
+      "sha256": "772638bb8baf1b2eb33f595db05be38e41eaef5eac1242951d3756da92580e58",
+      "bytes": 16243
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/items/sacred_relic_sword.bbmodel",
+      "target": "items/sacred_relic_sword.bbmodel",
+      "sha256": "21776e2087f5dc7cf1d455554f674763c17bae7e878b01faf7f5ea46297c3fc6",
+      "bytes": 398445
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/sacred_relic_sword__front.png",
+      "target": "textures/sacred_relic_sword__front.png",
+      "sha256": "7b5244f92523270682049aef9b87869278ebcd4874dc3402f32af680189434ce",
+      "bytes": 961
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/sacred_relic_sword__gui_16.png",
+      "target": "textures/sacred_relic_sword__gui_16.png",
+      "sha256": "ec9934473096c326ba2689eb91d2fcf88bc77d0f14e6110c1169637c6ae2b013",
+      "bytes": 319
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/sacred_relic_sword__gui_32.png",
+      "target": "textures/sacred_relic_sword__gui_32.png",
+      "sha256": "97be8217d16e78ad9ef9367e075c9248963426ba71ddb82ad18848406d08b9d7",
+      "bytes": 507
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/sacred_relic_sword-after-front.png",
+      "target": "preview/sacred_relic_sword-front.png",
+      "sha256": "e1e2cba3b281ae16d675a0630c44eef046eb61707e26c263a9d8699f1e323e32",
+      "bytes": 8271
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/sacred_relic_sword-after-side.png",
+      "target": "preview/sacred_relic_sword-side.png",
+      "sha256": "618374e2784548897a678644283a22feb82c6de7adafd9f12790267270270528",
+      "bytes": 17314
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/items/sacred_seal.bbmodel",
+      "target": "items/sacred_seal.bbmodel",
+      "sha256": "7ff78b3b03f433b6fbb74bfef78112af6b7406a10103c78c69a63b7411dbce4f",
+      "bytes": 245712
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/sacred_seal__front.png",
+      "target": "textures/sacred_seal__front.png",
+      "sha256": "f635da97f01517ebaad78efd073915288ef6421ab75239a72b76794a82dbad73",
+      "bytes": 752
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/sacred_seal__gui_16.png",
+      "target": "textures/sacred_seal__gui_16.png",
+      "sha256": "d133a8d82f361e38b3846eec05a3b5bb09b7d52c565bbddb395225bf17cbf078",
+      "bytes": 412
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/sacred_seal__gui_32.png",
+      "target": "textures/sacred_seal__gui_32.png",
+      "sha256": "f635da97f01517ebaad78efd073915288ef6421ab75239a72b76794a82dbad73",
+      "bytes": 752
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/sacred_seal-after-front.png",
+      "target": "preview/sacred_seal-front.png",
+      "sha256": "5198d866991f92302bb0dbf3e5818c731c80ff2e60ac98fda5c98be4eb038c5b",
+      "bytes": 7718
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/sacred_seal-after-side.png",
+      "target": "preview/sacred_seal-side.png",
+      "sha256": "9790575cfb3f50e3ae3c8c776762c8a449af9e58cc90918a4f06bb9f12778f39",
+      "bytes": 19561
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/items/shield.bbmodel",
+      "target": "items/shield.bbmodel",
+      "sha256": "6e86666bf73976c9c14f87fc8e2fdae634047436e19d6abb9d1136123685dcf0",
+      "bytes": 125193
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/shield__front.png",
+      "target": "textures/shield__front.png",
+      "sha256": "72cd99505abcc77c354f5672a2d4841ef2fed43810f85f0fb08f0e33c4549ac3",
+      "bytes": 433
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/shield__back.png",
+      "target": "textures/shield__back.png",
+      "sha256": "f6d28a9ad6817eb8c7a2056147c4126b5eedcea54cd9fb7b9b1ab1f25d75ebaa",
+      "bytes": 410
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/shield__gui_16.png",
+      "target": "textures/shield__gui_16.png",
+      "sha256": "551cc1a4ea3fa5e4656d7e5fd4288d0e7631adf04c480d9da57552623d78016d",
+      "bytes": 301
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/shield__gui_32.png",
+      "target": "textures/shield__gui_32.png",
+      "sha256": "72cd99505abcc77c354f5672a2d4841ef2fed43810f85f0fb08f0e33c4549ac3",
+      "bytes": 433
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/shield-after-front.png",
+      "target": "preview/shield-front.png",
+      "sha256": "e6d15131343e577a8a60540c7864bf484fdc263b7754d9612e384fd0f96b1408",
+      "bytes": 6943
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/shield-after-side.png",
+      "target": "preview/shield-side.png",
+      "sha256": "804b837d9f6d9a031f69bb2f4834ff434f5301f4c6c7b2c15268435507864741",
+      "bytes": 16574
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/items/small_shield.bbmodel",
+      "target": "items/small_shield.bbmodel",
+      "sha256": "95c585ea34172a74663e59f7a3f9fac2595057fd0c920f7c93ae8661833da70d",
+      "bytes": 140799
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/small_shield__front.png",
+      "target": "textures/small_shield__front.png",
+      "sha256": "045d9b9bfc15f31ee7fb97fd7a28c78099dbba1619d691c3b4e6f5457eb5e2c5",
+      "bytes": 518
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/small_shield__back.png",
+      "target": "textures/small_shield__back.png",
+      "sha256": "1022a0fb5dde20c8ab7b6758b5fb855afa80f85f52794632fc6d0e68d5c3e6d5",
+      "bytes": 472
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/small_shield__gui_16.png",
+      "target": "textures/small_shield__gui_16.png",
+      "sha256": "d4c08f09eb2cf58e37d06c32a51cec6497934b15962b037cc5d75c6c09ab1550",
+      "bytes": 393
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/small_shield__gui_32.png",
+      "target": "textures/small_shield__gui_32.png",
+      "sha256": "045d9b9bfc15f31ee7fb97fd7a28c78099dbba1619d691c3b4e6f5457eb5e2c5",
+      "bytes": 518
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/small_shield-after-front.png",
+      "target": "preview/small_shield-front.png",
+      "sha256": "906ecc429169ea42bdfebef2df1743c35559c261c7af443ff2be1c100801cee9",
+      "bytes": 7007
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/small_shield-after-side.png",
+      "target": "preview/small_shield-side.png",
+      "sha256": "bbc7a8624eecf178cb614f81045298c0b2ec6461570881049439f08d9d86c8d3",
+      "bytes": 18420
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/items/starscourge_greatsword.bbmodel",
+      "target": "items/starscourge_greatsword.bbmodel",
+      "sha256": "2c62b21026fb5a9384ea106b493cd7da02b7fbc4edeb66c171f2baba4a1ce9c1",
+      "bytes": 1036563
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/starscourge_greatsword__front.png",
+      "target": "textures/starscourge_greatsword__front.png",
+      "sha256": "09c393a6deaef8a049f8d7e20489ffec49e9b5c333b6d5509801dac020ef5f38",
+      "bytes": 1261
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/starscourge_greatsword__gui_16.png",
+      "target": "textures/starscourge_greatsword__gui_16.png",
+      "sha256": "eafd9a2c8f7d1336cad8e6163fe35f6d040c0832ddddc327c5f9ed9c4e42ac81",
+      "bytes": 326
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/starscourge_greatsword__gui_32.png",
+      "target": "textures/starscourge_greatsword__gui_32.png",
+      "sha256": "c515e5980b2923e1693bac164a6cd8f80f61e98cc640f1f84542eed3e6260616",
+      "bytes": 620
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/starscourge_greatsword-after-front.png",
+      "target": "preview/starscourge_greatsword-front.png",
+      "sha256": "9bfdd75c539da45145b6d952e6608d6d24ca785b284863682f5deccd0f8b89d0",
+      "bytes": 9334
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/starscourge_greatsword-after-side.png",
+      "target": "preview/starscourge_greatsword-side.png",
+      "sha256": "fc54e4ee170f57b1583695f83a74a0181327aa75d4aa9f1dcc052a978595ddb1",
+      "bytes": 17330
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/items/test_flask.bbmodel",
+      "target": "items/test_flask.bbmodel",
+      "sha256": "d8e9d60ec987fded6818036be51eceec77b4917a210e6d104a627512b86d9924",
+      "bytes": 82059
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/test_flask__full.png",
+      "target": "textures/test_flask__full.png",
+      "sha256": "d7eead7bfaa0f317f3facac1fbd8053f9341bb563f144d4eb0fd1a1846513c2c",
+      "bytes": 339
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/test_flask__gui_16.png",
+      "target": "textures/test_flask__gui_16.png",
+      "sha256": "8c8f454819a6df2bf4cbf43646a2730876e7dfd8cce697c29e9220816630dac8",
+      "bytes": 242
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/test_flask__gui_32.png",
+      "target": "textures/test_flask__gui_32.png",
+      "sha256": "d7eead7bfaa0f317f3facac1fbd8053f9341bb563f144d4eb0fd1a1846513c2c",
+      "bytes": 339
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/test_flask-after-front.png",
+      "target": "preview/test_flask-front.png",
+      "sha256": "97869ac367419fa81050ddcc06456f6ad1f2c796d595063767b21d67ee2f1069",
+      "bytes": 6709
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/test_flask-after-side.png",
+      "target": "preview/test_flask-side.png",
+      "sha256": "8fdd04878bedeee3fc5cd97b0e1be723d74752f186c71f253dc0a40b8d19b38a",
+      "bytes": 19795
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/items/twinblade.bbmodel",
+      "target": "items/twinblade.bbmodel",
+      "sha256": "acb69e20a04e1df35bea6e2a0eebcb08ca35304b7dba8c423da89fc8c3c80078",
+      "bytes": 256578
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/twinblade__front.png",
+      "target": "textures/twinblade__front.png",
+      "sha256": "57a967fc38dc2eafbc1789a1b19e4c0ded9c75d43fa64b47f14557bdf0d2492f",
+      "bytes": 439
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/twinblade__gui_16.png",
+      "target": "textures/twinblade__gui_16.png",
+      "sha256": "8328477700c8de4b443f041590bfcc0a885cf009db6ac200d2abf9d348cb9f34",
+      "bytes": 289
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/twinblade__gui_32.png",
+      "target": "textures/twinblade__gui_32.png",
+      "sha256": "57a967fc38dc2eafbc1789a1b19e4c0ded9c75d43fa64b47f14557bdf0d2492f",
+      "bytes": 439
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/twinblade-after-front.png",
+      "target": "preview/twinblade-front.png",
+      "sha256": "c85a9a685547671e3ebd3fa99808e585e18b890db120a5796ce8983cb64eacdd",
+      "bytes": 7075
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/twinblade-after-side.png",
+      "target": "preview/twinblade-side.png",
+      "sha256": "c4ff6a7ae7662750c53e2e5fb65c2707ca251863e52be1af4386e7a2d239fde8",
+      "bytes": 14852
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/items/whip.bbmodel",
+      "target": "items/whip.bbmodel",
+      "sha256": "7053d0be6126da027d287c42c7084a6ab9f818a8082e19698cf1b9ddb947220f",
+      "bytes": 160606
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/whip__front.png",
+      "target": "textures/whip__front.png",
+      "sha256": "6fc43177fd4021607c7c5b5d5c9e97e61326741df6cfe3839a0d9f420bbffba2",
+      "bytes": 392
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/whip__gui_16.png",
+      "target": "textures/whip__gui_16.png",
+      "sha256": "d3440dac118c8745ae7bc1ff3c8f315c4c1f69c0a63cd074320fa157623601f7",
+      "bytes": 243
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/textures/whip__gui_32.png",
+      "target": "textures/whip__gui_32.png",
+      "sha256": "6fc43177fd4021607c7c5b5d5c9e97e61326741df6cfe3839a0d9f420bbffba2",
+      "bytes": 392
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/whip-after-front.png",
+      "target": "preview/whip-front.png",
+      "sha256": "58be456bb57d40eadb929fbde195b375995693725a63693c39748219f8848a1f",
+      "bytes": 6924
+    },
+    {
+      "source": "art/equipment-2d/mc-polish-20261022/qa/whip-after-side.png",
+      "target": "preview/whip-side.png",
+      "sha256": "a59304fda7f0f4f594ce1354e572dc1e2f4a40f9b184701ca425e8282f7afb3c",
+      "bytes": 11861
+    },
+    {
+      "source": "art/equipment-2d/worn-hand-gear-20261021/WEAR-CONTRACT.md",
+      "target": "contracts/WEAR-CONTRACT.md",
+      "sha256": "a6e66470cf845db25d78c9d431d7433fcfaf21a263cf42d51087137f2f704317",
+      "bytes": 4068
+    },
+    {
+      "source": "art/equipment-2d/worn-hand-gear-20261021/manifest.json",
+      "target": "contracts/dsh-worn-source-manifest.json",
+      "sha256": "80b2d6fd5e68d22f8e847aa3ded0ff7695ec0dbeb9a1dd2123d5fba54d845dae",
+      "bytes": 3199
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "schema": "worn-hand-gear/v1",
+  "generated": "2026-10-21",
+  "engine": "Blockbench 5.2.2 (desktop) + MCP risky_eval, native project save",
+  "units_per_block": 16,
+  "space": {
+    "axes": "MC 玩家模型静止姿态：+y 向上，模型正面 -z，玩家右侧 -x",
+    "player_reference": {
+      "head": [
+        24,
+        32
+      ],
+      "body": [
+        12,
+        24
+      ],
+      "arms_x": [
+        [
+          -8,
+          -4
+        ],
+        [
+          4,
+          8
+        ]
+      ],
+      "hand_y": [
+        12,
+        16
+      ],
+      "legs": [
+        0,
+        12
+      ]
+    },
+    "arm_pivot_right": [
+      -5,
+      22,
+      0
+    ],
+    "arm_pivot_left": [
+      5,
+      22,
+      0
+    ]
+  },
+  "slot": "hands",
+  "attach": {
+    "bone_right": "arm_R",
+    "bone_left": "arm_L",
+    "pivot": "组的 origin 即手臂枢轴；手臂段矩阵 × 平移(-/+5,22,0) 后按骨骼旋转绘制",
+    "mirroring": "arm_right_l 是 x=0 镜像后的独立几何（含 mesh 顶点镜像与面反序），运行时不需要再翻",
+    "texture": "textures/worn_atlas.png 单图集 128x128，逐面 UV，1 texel = 1/16 格"
+  },
+  "items": {
+    "claw": {
+      "elements": 104,
+      "cubes": 104,
+      "meshes": 0,
+      "exported": 94,
+      "groups": 6,
+      "textures": 1,
+      "bbox": [
+        [
+          -9.44,
+          5.316,
+          -2.38
+        ],
+        [
+          9.44,
+          17.8,
+          2.3
+        ]
+      ],
+      "arm_pivot_right": [
+        -5,
+        22,
+        0
+      ],
+      "arm_pivot_left": [
+        5,
+        22,
+        0
+      ],
+      "group_names": [
+        "claw | 钩爪(手甲)",
+        "ref_player",
+        "ref_arm_right",
+        "ref_arm_left",
+        "arm_right",
+        "arm_right_l"
+      ],
+      "file": "claw_worn.bbmodel",
+      "bytes": 76098,
+      "sha256": "8fa7cb8684ad5f6d52ddb6a8f9988a6a02082852a272c1bb3a9437068273e623"
+    },
+    "fist": {
+      "elements": 66,
+      "cubes": 66,
+      "meshes": 0,
+      "exported": 56,
+      "groups": 6,
+      "textures": 1,
+      "bbox": [
+        [
+          -10.01,
+          10.19,
+          -4.17
+        ],
+        [
+          10.01,
+          23.2,
+          4.01
+        ]
+      ],
+      "arm_pivot_right": [
+        -5,
+        22,
+        0
+      ],
+      "arm_pivot_left": [
+        5,
+        22,
+        0
+      ],
+      "group_names": [
+        "fist | 拳套(手甲)",
+        "ref_player",
+        "ref_arm_right",
+        "ref_arm_left",
+        "arm_right",
+        "arm_right_l"
+      ],
+      "file": "fist_worn.bbmodel",
+      "bytes": 53155,
+      "sha256": "de204285f66ff105bcf67b7464f20f8e81cbc997a9f2475b56b81e8885fe5bc2"
+    }
+  },
+  "supersedes": [
+    "art/equipment-2d/blockbench-all-items-20261018/items/claw.bbmodel",
+    "art/equipment-2d/blockbench-all-items-20261018/items/fist.bbmodel"
+  ],
+  "not_done": [
+    "游戏内渲染接线（PlayerModelPoseMixin/渲染层）",
+    "物品/槽位注册与 2d.json 路由（当前管线只接受 42 条 own_sprite）"
+  ]
+}

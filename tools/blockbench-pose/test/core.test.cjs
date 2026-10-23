@@ -15,6 +15,20 @@ test('all eight skills round-trip and all eight admitted weapon packages resolve
     const weapon=Core.weapon(root,itemId);assert.ok(weapon.textures.length);assert.ok(weapon.display.thirdperson_lefthand);
   }
 });
+test('V0.2 skill weapons use the saved grip projects rather than old runtime routes',()=>{
+  const pairs=JSON.parse(fs.readFileSync(path.join(root,'art/equipment-2d/V0.2/holds/mapping.json'),'utf8')).items;
+  for(const {itemId} of Core.catalog(root)) {
+    const row=pairs.find(r=>r.id===itemId && r.kind==='held');
+    const file=path.join(root,'art/equipment-2d/V0.2/holds',row.project);
+    const bb=JSON.parse(fs.readFileSync(file,'utf8')),weapon=Core.weapon(root,itemId,'v02');
+    assert.equal(weapon.source.sha256,Core.hash(fs.readFileSync(file)));
+    assert.deepEqual(weapon.display,bb.display);
+    assert.equal(weapon.model.elements.length,bb.elements.length);
+    assert.equal(weapon.textures[0].data,bb.textures[0].source);
+    assert.equal(weapon.source.kind,'v02');assert.equal(weapon.source.runtimeParity,false);
+    assert.notEqual(JSON.stringify(weapon.model),JSON.stringify(Core.weapon(root,itemId).model));
+  }
+});
 test('unsupported channels, curves, expressions, duplicate times and foreign bones fail closed',()=>{
   const pose={stages:{ACTIVE:{rightArm:[[0,[0,0,0]],[5,[160,0,0]]]}}};
   for(const mutate of [

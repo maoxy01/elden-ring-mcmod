@@ -1,0 +1,4242 @@
+{
+  "meta": {
+    "format_version": "5.0",
+    "model_format": "java_block",
+    "box_uv": false
+  },
+  "name": "great_bow",
+  "parent": "",
+  "java_block_version": "26.3",
+  "ambientocclusion": true,
+  "front_gui_light": false,
+  "visible_box": [
+    1,
+    1,
+    0
+  ],
+  "variable_placeholders": "",
+  "multi_file_ruleset": "",
+  "variable_placeholder_buttons": [],
+  "unhandled_root_fields": {
+    "hold_source": {
+      "id": "great_bow",
+      "state": "standby",
+      "sourceRoot": "art/equipment-2d/V0.2",
+      "sourceModel": "items/great_bow.bbmodel",
+      "sourceModelSha256": "4af068e73aa24d2828c76dd494b8037b55303d97c0d0aa663a10504aed4ac60d",
+      "textureSha256": "058bc074325e8b6e8b386e1b89a2c54424c75eee4b2af1d62599ff4cd6873f99",
+      "canvas": [
+        32,
+        32
+      ],
+      "anchorPixels": [
+        20.5,
+        20.5
+      ],
+      "modelToItemBoxScaleXY": 0.50993,
+      "runtimeAccepted": false
+    },
+    "hold_pairing": {
+      "gripSource": "art/equipment-2d/blockbench-holds-20261022/great_bow.bbmodel",
+      "gripSha256": "6baffc8a0bef76a57f328563a227737c3d96e027ec96b5cc7fa57846fe8dd3ca",
+      "selection": "candidate",
+      "displayCopiedVerbatim": true,
+      "factorSource": "original native pixel/unit basis: art/equipment-2d/blockbench-all-items-20261018/items/great_bow.bbmodel"
+    }
+  },
+  "ai_used": true,
+  "ai_agents": "codex-mcp-client",
+  "resolution": {
+    "width": 32,
+    "height": 32
+  },
+  "elements": [
+    {
+      "name": "great_bow__standby__0",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        13.9999793263,
+        13.999953498,
+        7.5
+      ],
+      "to": [
+        14.9999724535,
+        14.4999500616,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            28,
+            3,
+            30,
+            4
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            29,
+            3,
+            30,
+            4
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            28,
+            3,
+            30,
+            4
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            29,
+            3,
+            30,
+            4
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            29,
+            3,
+            30,
+            4
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            29,
+            3,
+            30,
+            4
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "f24e5980-3cb2-4eea-ab96-5cf9d046c6ef"
+    },
+    {
+      "name": "great_bow__standby__1",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        13.4999827627,
+        13.4999569344,
+        7.5
+      ],
+      "to": [
+        14.9999724535,
+        13.999953498,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            27,
+            4,
+            30,
+            5
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            28,
+            4,
+            29,
+            5
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            27,
+            4,
+            30,
+            5
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            28,
+            4,
+            29,
+            5
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            28,
+            4,
+            29,
+            5
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            28,
+            4,
+            29,
+            5
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "d55b9f0d-7a78-4728-bf76-bb3c22b2f807"
+    },
+    {
+      "name": "great_bow__standby__2",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        12.9999861991,
+        12.9999603708,
+        7.5
+      ],
+      "to": [
+        14.9999724535,
+        13.4999569344,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            26,
+            5,
+            30,
+            6
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            28,
+            5,
+            29,
+            6
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            26,
+            5,
+            30,
+            6
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            28,
+            5,
+            29,
+            6
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            28,
+            5,
+            29,
+            6
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            28,
+            5,
+            29,
+            6
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "67e2fd63-7135-4cf7-a18f-5c0bea6f2367"
+    },
+    {
+      "name": "great_bow__standby__3",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        12.4999896355,
+        12.4999638072,
+        7.5
+      ],
+      "to": [
+        14.9999724535,
+        12.9999603708,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            25,
+            6,
+            30,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            27,
+            6,
+            28,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            25,
+            6,
+            30,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            27,
+            6,
+            28,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            27,
+            6,
+            28,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            27,
+            6,
+            28,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "3f8b767d-ad7e-488b-b266-7681d915d26c"
+    },
+    {
+      "name": "great_bow__standby__4",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        11.9999879726,
+        11.9999672436,
+        7.5
+      ],
+      "to": [
+        12.9999861991,
+        12.4999638072,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            24,
+            7,
+            26,
+            8
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            25,
+            7,
+            26,
+            8
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            24,
+            7,
+            26,
+            8
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            25,
+            7,
+            26,
+            8
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            25,
+            7,
+            26,
+            8
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            25,
+            7,
+            26,
+            8
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "9b7378e1-3ad2-4590-8e4e-96195570d898"
+    },
+    {
+      "name": "great_bow__standby__5",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        11.499991409,
+        11.49997068,
+        7.5
+      ],
+      "to": [
+        12.4999896355,
+        11.9999672436,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            23,
+            8,
+            25,
+            9
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            24,
+            8,
+            25,
+            9
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            23,
+            8,
+            25,
+            9
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            24,
+            8,
+            25,
+            9
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            24,
+            8,
+            25,
+            9
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            24,
+            8,
+            25,
+            9
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "23abd95d-765d-44ea-ab75-a1e21501950f"
+    },
+    {
+      "name": "great_bow__standby__6",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        13.4999827627,
+        11.49997068,
+        7.5
+      ],
+      "to": [
+        14.9999724535,
+        12.4999638072,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            27,
+            7,
+            30,
+            9
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            28,
+            8,
+            29,
+            9
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            27,
+            7,
+            30,
+            9
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            28,
+            8,
+            29,
+            9
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            28,
+            8,
+            29,
+            9
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            28,
+            8,
+            29,
+            9
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "ffba7df9-0628-4c3e-bf1e-e7571c1de3ee"
+    },
+    {
+      "name": "great_bow__standby__7",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        10.9999948454,
+        10.9999690171,
+        7.5
+      ],
+      "to": [
+        11.9999879726,
+        11.49997068,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            22,
+            9,
+            24,
+            10
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            23,
+            9,
+            24,
+            10
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            22,
+            9,
+            24,
+            10
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            23,
+            9,
+            24,
+            10
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            23,
+            9,
+            24,
+            10
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            23,
+            9,
+            24,
+            10
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "7b36f765-20c2-40d1-b07b-8516cc6d3c48"
+    },
+    {
+      "name": "great_bow__standby__8",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        12.9999861991,
+        10.9999690171,
+        7.5
+      ],
+      "to": [
+        14.4999758899,
+        11.49997068,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            26,
+            9,
+            29,
+            10
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            27,
+            9,
+            28,
+            10
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            26,
+            9,
+            29,
+            10
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            27,
+            9,
+            28,
+            10
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            27,
+            9,
+            28,
+            10
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            27,
+            9,
+            28,
+            10
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "b648859f-4341-45be-8962-8724268a70b9"
+    },
+    {
+      "name": "great_bow__standby__9",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        10.4999982818,
+        10.4999724535,
+        7.5
+      ],
+      "to": [
+        11.499991409,
+        10.9999690171,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            21,
+            10,
+            23,
+            11
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            22,
+            10,
+            23,
+            11
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            21,
+            10,
+            23,
+            11
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            22,
+            10,
+            23,
+            11
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            22,
+            10,
+            23,
+            11
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            22,
+            10,
+            23,
+            11
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "62edb6f6-e485-4ea0-ab20-be1801a95918"
+    },
+    {
+      "name": "great_bow__standby__10",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        13.4999827627,
+        10.4999724535,
+        7.5
+      ],
+      "to": [
+        14.4999758899,
+        10.9999690171,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            27,
+            10,
+            29,
+            11
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            28,
+            10,
+            29,
+            11
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            27,
+            10,
+            29,
+            11
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            28,
+            10,
+            29,
+            11
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            28,
+            10,
+            29,
+            11
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            28,
+            10,
+            29,
+            11
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "e362be77-d43c-4740-afee-9d0b0f25a39f"
+    },
+    {
+      "name": "great_bow__standby__11",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        10.0000017182,
+        9.9999758899,
+        7.5
+      ],
+      "to": [
+        10.9999948454,
+        10.4999724535,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            20,
+            11,
+            22,
+            12
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            21,
+            11,
+            22,
+            12
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            20,
+            11,
+            22,
+            12
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            21,
+            11,
+            22,
+            12
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            21,
+            11,
+            22,
+            12
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            21,
+            11,
+            22,
+            12
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "e3756505-e218-4122-996d-92a71884a761"
+    },
+    {
+      "name": "great_bow__standby__12",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        12.9999861991,
+        9.9999758899,
+        7.5
+      ],
+      "to": [
+        13.9999793263,
+        10.4999724535,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            26,
+            11,
+            28,
+            12
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            27,
+            11,
+            28,
+            12
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            26,
+            11,
+            28,
+            12
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            27,
+            11,
+            28,
+            12
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            27,
+            11,
+            28,
+            12
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            27,
+            11,
+            28,
+            12
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "1294a2da-d84e-4d10-a7c6-929025246de0"
+    },
+    {
+      "name": "great_bow__standby__13",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        9.5000051546,
+        9.4999793263,
+        7.5
+      ],
+      "to": [
+        10.4999982818,
+        9.9999758899,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            19,
+            12,
+            21,
+            13
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            20,
+            12,
+            21,
+            13
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            19,
+            12,
+            21,
+            13
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            20,
+            12,
+            21,
+            13
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            20,
+            12,
+            21,
+            13
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            20,
+            12,
+            21,
+            13
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "9a17f071-36dd-42b8-a239-3571301b3879"
+    },
+    {
+      "name": "great_bow__standby__14",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        12.4999896355,
+        9.4999793263,
+        7.5
+      ],
+      "to": [
+        13.9999793263,
+        9.9999758899,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            25,
+            12,
+            28,
+            13
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            26,
+            12,
+            27,
+            13
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            25,
+            12,
+            28,
+            13
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            26,
+            12,
+            27,
+            13
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            26,
+            12,
+            27,
+            13
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            26,
+            12,
+            27,
+            13
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "a4ccd78a-5a56-4262-9cae-527c81d41137"
+    },
+    {
+      "name": "great_bow__standby__15",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        9.000008591,
+        8.9999827627,
+        7.5
+      ],
+      "to": [
+        10.0000017182,
+        9.4999793263,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            18,
+            13,
+            20,
+            14
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            19,
+            13,
+            20,
+            14
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            18,
+            13,
+            20,
+            14
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            19,
+            13,
+            20,
+            14
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            19,
+            13,
+            20,
+            14
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            19,
+            13,
+            20,
+            14
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "ee15d05a-e94b-417e-99d1-a0c99635448f"
+    },
+    {
+      "name": "great_bow__standby__16",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        11.9999879726,
+        8.9999827627,
+        7.5
+      ],
+      "to": [
+        13.9999793263,
+        9.4999793263,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            24,
+            13,
+            28,
+            14
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            26,
+            13,
+            27,
+            14
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            24,
+            13,
+            28,
+            14
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            26,
+            13,
+            27,
+            14
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            26,
+            13,
+            27,
+            14
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            26,
+            13,
+            27,
+            14
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "0af9c202-996b-48d4-9bb8-49252f17f65b"
+    },
+    {
+      "name": "great_bow__standby__17",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        8.5000120274,
+        8.4999861991,
+        7.5
+      ],
+      "to": [
+        9.5000051546,
+        8.9999827627,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            17,
+            14,
+            19,
+            15
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            18,
+            14,
+            19,
+            15
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            17,
+            14,
+            19,
+            15
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            18,
+            14,
+            19,
+            15
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            18,
+            14,
+            19,
+            15
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            18,
+            14,
+            19,
+            15
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "de2f1ca4-2953-4cdd-b141-502149610442"
+    },
+    {
+      "name": "great_bow__standby__18",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        11.499991409,
+        8.4999861991,
+        7.5
+      ],
+      "to": [
+        13.4999827627,
+        8.9999827627,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            23,
+            14,
+            27,
+            15
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            25,
+            14,
+            26,
+            15
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            23,
+            14,
+            27,
+            15
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            25,
+            14,
+            26,
+            15
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            25,
+            14,
+            26,
+            15
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            25,
+            14,
+            26,
+            15
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "6c70d666-e573-4209-9cb8-00d993b701a8"
+    },
+    {
+      "name": "great_bow__standby__19",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        8.0000103645,
+        7.9999896355,
+        7.5
+      ],
+      "to": [
+        9.000008591,
+        8.4999861991,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            16,
+            15,
+            18,
+            16
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            17,
+            15,
+            18,
+            16
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            16,
+            15,
+            18,
+            16
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            17,
+            15,
+            18,
+            16
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            17,
+            15,
+            18,
+            16
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            17,
+            15,
+            18,
+            16
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "673a9b3f-2ef9-48ae-bf98-1b519dae313d"
+    },
+    {
+      "name": "great_bow__standby__20",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        11.499991409,
+        7.9999896355,
+        7.5
+      ],
+      "to": [
+        12.9999861991,
+        8.4999861991,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            23,
+            15,
+            26,
+            16
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            24,
+            15,
+            25,
+            16
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            23,
+            15,
+            26,
+            16
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            24,
+            15,
+            25,
+            16
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            24,
+            15,
+            25,
+            16
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            24,
+            15,
+            25,
+            16
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "83d4c779-34ea-4bda-87e8-844eb9bf063c"
+    },
+    {
+      "name": "great_bow__standby__21",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        7.5000138009,
+        7.4999879726,
+        7.5
+      ],
+      "to": [
+        8.5000120274,
+        7.9999896355,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            15,
+            16,
+            17,
+            17
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            16,
+            16,
+            17,
+            17
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            15,
+            16,
+            17,
+            17
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            16,
+            16,
+            17,
+            17
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            16,
+            16,
+            17,
+            17
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            16,
+            16,
+            17,
+            17
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "c0a7c649-bd69-4a8a-ad52-3ee0f5e666d9"
+    },
+    {
+      "name": "great_bow__standby__22",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        10.9999948454,
+        7.4999879726,
+        7.5
+      ],
+      "to": [
+        12.4999896355,
+        7.9999896355,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            22,
+            16,
+            25,
+            17
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            23,
+            16,
+            24,
+            17
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            22,
+            16,
+            25,
+            17
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            23,
+            16,
+            24,
+            17
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            23,
+            16,
+            24,
+            17
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            23,
+            16,
+            24,
+            17
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "7d98d3cd-1be1-49bb-838c-02c0ba1fab47"
+    },
+    {
+      "name": "great_bow__standby__23",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        7.0000172373,
+        6.999991409,
+        7.5
+      ],
+      "to": [
+        8.0000103645,
+        7.4999879726,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            14,
+            17,
+            16,
+            18
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            15,
+            17,
+            16,
+            18
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            14,
+            17,
+            16,
+            18
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            15,
+            17,
+            16,
+            18
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            15,
+            17,
+            16,
+            18
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            15,
+            17,
+            16,
+            18
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "d420dddc-f715-48cb-b304-0bf9bbc5bfbb"
+    },
+    {
+      "name": "great_bow__standby__24",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        10.4999982818,
+        6.999991409,
+        7.5
+      ],
+      "to": [
+        12.4999896355,
+        7.4999879726,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            21,
+            17,
+            25,
+            18
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            23,
+            17,
+            24,
+            18
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            21,
+            17,
+            25,
+            18
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            23,
+            17,
+            24,
+            18
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            23,
+            17,
+            24,
+            18
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            23,
+            17,
+            24,
+            18
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "61c8f820-79ab-4ec4-bbe8-6303a497c747"
+    },
+    {
+      "name": "great_bow__standby__25",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        6.5000206737,
+        6.4999948454,
+        7.5
+      ],
+      "to": [
+        7.5000138009,
+        6.999991409,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            13,
+            18,
+            15,
+            19
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            14,
+            18,
+            15,
+            19
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            13,
+            18,
+            15,
+            19
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            14,
+            18,
+            15,
+            19
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            14,
+            18,
+            15,
+            19
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            14,
+            18,
+            15,
+            19
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "49d15ab6-a4d0-462a-a796-ff08661bf323"
+    },
+    {
+      "name": "great_bow__standby__26",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        9.5000051546,
+        6.4999948454,
+        7.5
+      ],
+      "to": [
+        11.9999879726,
+        6.999991409,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            19,
+            18,
+            24,
+            19
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            21,
+            18,
+            22,
+            19
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            19,
+            18,
+            24,
+            19
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            21,
+            18,
+            22,
+            19
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            21,
+            18,
+            22,
+            19
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            21,
+            18,
+            22,
+            19
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "015d24e0-f0c5-4a02-a0de-bb560a442074"
+    },
+    {
+      "name": "great_bow__standby__27",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        6.0000241101,
+        5.9999982818,
+        7.5
+      ],
+      "to": [
+        7.0000172373,
+        6.4999948454,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            12,
+            19,
+            14,
+            20
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            13,
+            19,
+            14,
+            20
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            12,
+            19,
+            14,
+            20
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            13,
+            19,
+            14,
+            20
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            13,
+            19,
+            14,
+            20
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            13,
+            19,
+            14,
+            20
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "1436b991-a7f5-4a45-a11e-3522c658862d"
+    },
+    {
+      "name": "great_bow__standby__28",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        5.5000275465,
+        5.5000017182,
+        7.5
+      ],
+      "to": [
+        6.5000206737,
+        5.9999982818,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            11,
+            20,
+            13,
+            21
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            12,
+            20,
+            13,
+            21
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            11,
+            20,
+            13,
+            21
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            12,
+            20,
+            13,
+            21
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            12,
+            20,
+            13,
+            21
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            12,
+            20,
+            13,
+            21
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "ff65b7a6-40dd-47cb-bc42-ff27c628404b"
+    },
+    {
+      "name": "great_bow__standby__29",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        9.000008591,
+        5.5000017182,
+        7.5
+      ],
+      "to": [
+        11.499991409,
+        6.4999948454,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            18,
+            19,
+            23,
+            21
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            20,
+            20,
+            21,
+            21
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            18,
+            19,
+            23,
+            21
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            20,
+            20,
+            21,
+            21
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            20,
+            20,
+            21,
+            21
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            20,
+            20,
+            21,
+            21
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "8dbb60bb-9a5d-42db-a1ef-33c87de48219"
+    },
+    {
+      "name": "great_bow__standby__30",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        5.0000309829,
+        5.0000051546,
+        7.5
+      ],
+      "to": [
+        6.0000241101,
+        5.5000017182,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            10,
+            21,
+            12,
+            22
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            11,
+            21,
+            12,
+            22
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            10,
+            21,
+            12,
+            22
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            11,
+            21,
+            12,
+            22
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            11,
+            21,
+            12,
+            22
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            11,
+            21,
+            12,
+            22
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "261fba08-6403-4d64-814f-d0936ab11238"
+    },
+    {
+      "name": "great_bow__standby__31",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        8.5000120274,
+        5.0000051546,
+        7.5
+      ],
+      "to": [
+        10.9999948454,
+        5.5000017182,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            17,
+            21,
+            22,
+            22
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            19,
+            21,
+            20,
+            22
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            17,
+            21,
+            22,
+            22
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            19,
+            21,
+            20,
+            22
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            19,
+            21,
+            20,
+            22
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            19,
+            21,
+            20,
+            22
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "23563f3e-9b6f-4b75-a9a9-49149bb97bf1"
+    },
+    {
+      "name": "great_bow__standby__32",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        4.50002932,
+        4.500008591,
+        7.5
+      ],
+      "to": [
+        5.5000275465,
+        5.0000051546,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            9,
+            22,
+            11,
+            23
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            10,
+            22,
+            11,
+            23
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            9,
+            22,
+            11,
+            23
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            10,
+            22,
+            11,
+            23
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            10,
+            22,
+            11,
+            23
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            10,
+            22,
+            11,
+            23
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "5d9e1ce7-3efb-49ec-9f21-cc04257d6788"
+    },
+    {
+      "name": "great_bow__standby__33",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        8.0000103645,
+        4.500008591,
+        7.5
+      ],
+      "to": [
+        10.4999982818,
+        5.0000051546,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            16,
+            22,
+            21,
+            23
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            18,
+            22,
+            19,
+            23
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            16,
+            22,
+            21,
+            23
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            18,
+            22,
+            19,
+            23
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            18,
+            22,
+            19,
+            23
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            18,
+            22,
+            19,
+            23
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "a2dedeaf-b2e8-48eb-bd59-d12bc4f15e3e"
+    },
+    {
+      "name": "great_bow__standby__34",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        4.0000327564000004,
+        4.0000120274,
+        7.5
+      ],
+      "to": [
+        5.0000309829,
+        4.500008591,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            8,
+            23,
+            10,
+            24
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            9,
+            23,
+            10,
+            24
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            8,
+            23,
+            10,
+            24
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            9,
+            23,
+            10,
+            24
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            9,
+            23,
+            10,
+            24
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            9,
+            23,
+            10,
+            24
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "fac3c0ac-9338-40b2-94ad-8bddb9f064b2"
+    },
+    {
+      "name": "great_bow__standby__35",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        7.0000172373,
+        4.0000120274,
+        7.5
+      ],
+      "to": [
+        9.5000051546,
+        4.500008591,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            14,
+            23,
+            19,
+            24
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            16,
+            23,
+            17,
+            24
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            14,
+            23,
+            19,
+            24
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            16,
+            23,
+            17,
+            24
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            16,
+            23,
+            17,
+            24
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            16,
+            23,
+            17,
+            24
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "e874aceb-ed42-4ae2-889b-7c57ec3a40a8"
+    },
+    {
+      "name": "great_bow__standby__36",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        3.5000361927999997,
+        3.5000103645,
+        7.5
+      ],
+      "to": [
+        4.50002932,
+        4.0000120274,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            7,
+            24,
+            9,
+            25
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            8,
+            24,
+            9,
+            25
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            7,
+            24,
+            9,
+            25
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            8,
+            24,
+            9,
+            25
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            8,
+            24,
+            9,
+            25
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            8,
+            24,
+            9,
+            25
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "2efa4970-bbe6-4854-a55e-6e4acb57e217"
+    },
+    {
+      "name": "great_bow__standby__37",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        6.5000206737,
+        3.5000103645,
+        7.5
+      ],
+      "to": [
+        9.000008591,
+        4.0000120274,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            13,
+            24,
+            18,
+            25
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            15,
+            24,
+            16,
+            25
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            13,
+            24,
+            18,
+            25
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            15,
+            24,
+            16,
+            25
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            15,
+            24,
+            16,
+            25
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            15,
+            24,
+            16,
+            25
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "d1b8f5e1-71c0-4dfb-b0b8-d540b3c779a7"
+    },
+    {
+      "name": "great_bow__standby__38",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        3.0000396292,
+        3.0000138008999997,
+        7.5
+      ],
+      "to": [
+        4.0000327564000004,
+        3.5000103645,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            6,
+            25,
+            8,
+            26
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            7,
+            25,
+            8,
+            26
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            6,
+            25,
+            8,
+            26
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            7,
+            25,
+            8,
+            26
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            7,
+            25,
+            8,
+            26
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            7,
+            25,
+            8,
+            26
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "53e60c41-61d7-4a0d-9f0d-0aecae6e7026"
+    },
+    {
+      "name": "great_bow__standby__39",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        6.0000241101,
+        3.0000138008999997,
+        7.5
+      ],
+      "to": [
+        8.0000103645,
+        3.5000103645,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            12,
+            25,
+            16,
+            26
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            14,
+            25,
+            15,
+            26
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            12,
+            25,
+            16,
+            26
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            14,
+            25,
+            15,
+            26
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            14,
+            25,
+            15,
+            26
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            14,
+            25,
+            15,
+            26
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "bd9de22d-8c28-4662-a996-0ddd80f845ef"
+    },
+    {
+      "name": "great_bow__standby__40",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        2.500043065600001,
+        2.5000172373000003,
+        7.5
+      ],
+      "to": [
+        3.5000361927999997,
+        3.0000138008999997,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            5,
+            26,
+            7,
+            27
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            6,
+            26,
+            7,
+            27
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            5,
+            26,
+            7,
+            27
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            6,
+            26,
+            7,
+            27
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            6,
+            26,
+            7,
+            27
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            6,
+            26,
+            7,
+            27
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "0d496047-7281-434e-9440-dc102bf022b1"
+    },
+    {
+      "name": "great_bow__standby__41",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        4.50002932,
+        2.5000172373000003,
+        7.5
+      ],
+      "to": [
+        5.0000309829,
+        3.0000138008999997,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            9,
+            26,
+            10,
+            27
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            9,
+            26,
+            10,
+            27
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            9,
+            26,
+            10,
+            27
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            9,
+            26,
+            10,
+            27
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            9,
+            26,
+            10,
+            27
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            9,
+            26,
+            10,
+            27
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "b691d80d-f38b-481c-8b64-75e72603f5dd"
+    },
+    {
+      "name": "great_bow__standby__42",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        5.5000275465,
+        2.5000172373000003,
+        7.5
+      ],
+      "to": [
+        7.5000138009,
+        3.0000138008999997,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            11,
+            26,
+            15,
+            27
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            13,
+            26,
+            14,
+            27
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            11,
+            26,
+            15,
+            27
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            13,
+            26,
+            14,
+            27
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            13,
+            26,
+            14,
+            27
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            13,
+            26,
+            14,
+            27
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "e54b43c4-5d57-4924-906f-dac186df9e07"
+    },
+    {
+      "name": "great_bow__standby__43",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        2.000046502,
+        2.0000206737,
+        7.5
+      ],
+      "to": [
+        7.0000172373,
+        2.5000172373000003,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            27,
+            14,
+            28
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            9,
+            27,
+            10,
+            28
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            4,
+            27,
+            14,
+            28
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            9,
+            27,
+            10,
+            28
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            9,
+            27,
+            10,
+            28
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            9,
+            27,
+            10,
+            28
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "713f582d-b586-4831-ab17-8324534871a4"
+    },
+    {
+      "name": "great_bow__standby__44",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        1.5000499384000001,
+        1.5000241101,
+        7.5
+      ],
+      "to": [
+        6.0000241101,
+        2.0000206737,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            3,
+            28,
+            12,
+            29
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            7,
+            28,
+            8,
+            29
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            3,
+            28,
+            12,
+            29
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            7,
+            28,
+            8,
+            29
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            7,
+            28,
+            8,
+            29
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            7,
+            28,
+            8,
+            29
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "60590bdf-7dab-43a1-8ff4-141ef963dfa9"
+    },
+    {
+      "name": "great_bow__standby__45",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade_direction_override": "",
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        1.5000499384000001,
+        1.0000275465000001,
+        7.5
+      ],
+      "to": [
+        4.50002932,
+        1.5000241101,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        10.25,
+        5.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            3,
+            29,
+            9,
+            30
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            6,
+            29,
+            7,
+            30
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            3,
+            29,
+            9,
+            30
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            6,
+            29,
+            7,
+            30
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            6,
+            29,
+            7,
+            30
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            6,
+            29,
+            7,
+            30
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "7ad0630a-8794-4225-8feb-8eb56221d5fc"
+    }
+  ],
+  "groups": [],
+  "outliner": [
+    "f24e5980-3cb2-4eea-ab96-5cf9d046c6ef",
+    "d55b9f0d-7a78-4728-bf76-bb3c22b2f807",
+    "67e2fd63-7135-4cf7-a18f-5c0bea6f2367",
+    "3f8b767d-ad7e-488b-b266-7681d915d26c",
+    "9b7378e1-3ad2-4590-8e4e-96195570d898",
+    "23abd95d-765d-44ea-ab75-a1e21501950f",
+    "ffba7df9-0628-4c3e-bf1e-e7571c1de3ee",
+    "7b36f765-20c2-40d1-b07b-8516cc6d3c48",
+    "b648859f-4341-45be-8962-8724268a70b9",
+    "62edb6f6-e485-4ea0-ab20-be1801a95918",
+    "e362be77-d43c-4740-afee-9d0b0f25a39f",
+    "e3756505-e218-4122-996d-92a71884a761",
+    "1294a2da-d84e-4d10-a7c6-929025246de0",
+    "9a17f071-36dd-42b8-a239-3571301b3879",
+    "a4ccd78a-5a56-4262-9cae-527c81d41137",
+    "ee15d05a-e94b-417e-99d1-a0c99635448f",
+    "0af9c202-996b-48d4-9bb8-49252f17f65b",
+    "de2f1ca4-2953-4cdd-b141-502149610442",
+    "6c70d666-e573-4209-9cb8-00d993b701a8",
+    "673a9b3f-2ef9-48ae-bf98-1b519dae313d",
+    "83d4c779-34ea-4bda-87e8-844eb9bf063c",
+    "c0a7c649-bd69-4a8a-ad52-3ee0f5e666d9",
+    "7d98d3cd-1be1-49bb-838c-02c0ba1fab47",
+    "d420dddc-f715-48cb-b304-0bf9bbc5bfbb",
+    "61c8f820-79ab-4ec4-bbe8-6303a497c747",
+    "49d15ab6-a4d0-462a-a796-ff08661bf323",
+    "015d24e0-f0c5-4a02-a0de-bb560a442074",
+    "1436b991-a7f5-4a45-a11e-3522c658862d",
+    "ff65b7a6-40dd-47cb-bc42-ff27c628404b",
+    "8dbb60bb-9a5d-42db-a1ef-33c87de48219",
+    "261fba08-6403-4d64-814f-d0936ab11238",
+    "23563f3e-9b6f-4b75-a9a9-49149bb97bf1",
+    "5d9e1ce7-3efb-49ec-9f21-cc04257d6788",
+    "a2dedeaf-b2e8-48eb-bd59-d12bc4f15e3e",
+    "fac3c0ac-9338-40b2-94ad-8bddb9f064b2",
+    "e874aceb-ed42-4ae2-889b-7c57ec3a40a8",
+    "2efa4970-bbe6-4854-a55e-6e4acb57e217",
+    "d1b8f5e1-71c0-4dfb-b0b8-d540b3c779a7",
+    "53e60c41-61d7-4a0d-9f0d-0aecae6e7026",
+    "bd9de22d-8c28-4662-a996-0ddd80f845ef",
+    "0d496047-7281-434e-9440-dc102bf022b1",
+    "b691d80d-f38b-481c-8b64-75e72603f5dd",
+    "e54b43c4-5d57-4924-906f-dac186df9e07",
+    "713f582d-b586-4831-ab17-8324534871a4",
+    "60590bdf-7dab-43a1-8ff4-141ef963dfa9",
+    "7ad0630a-8794-4225-8feb-8eb56221d5fc"
+  ],
+  "textures": [
+    {
+      "name": "great_bow__standby.png",
+      "path": "",
+      "folder": "item/v02",
+      "namespace": "eldencombat",
+      "id": "layer0",
+      "group": "",
+      "scope": 0,
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "particle": false,
+      "use_as_default": false,
+      "layers_enabled": false,
+      "sync_to_project": "",
+      "file_format": "png",
+      "render_mode": "default",
+      "render_sides": "auto",
+      "wrap_mode": "limited",
+      "pbr_channel": "color",
+      "fps": 7,
+      "force_translucent": false,
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "internal": true,
+      "saved": false,
+      "uuid": "5afd7e3c-8821-4735-b173-6111b815fd3e",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABqElEQVR4AeyWvUoDQRSFR3vB1s5CELuAL2BvEUEL9Tm0Dul9Ah9AU0TQws7CykoxbUAheYo0gQ1f4A6zk52fzcxumgQOd2Yyc79z7w7J7qoNf7YGWu9A5/iwQPLkWzXw9nRX9HtX6uRgX/iqNQPAoQ4ePwharRgQeK8/1GAZNG5A4N3bhx2BmrFRAyE4RhozYMO5+XL5nj9HuhuNGLDhVDoaTzSUuSi7gSo4MDpANKtnntWADy7tB2oqmwEf3ATa4ywGQnCp3m4/ZpINuOAkRz443ycZ8MG5dCF4koEQnOQxWqsDLjhVI8Ax1bOvtgEfnIQXl6f677bq0rHHVC0DLjgJAaPv36m6Pj9aivWQog344LT99eVHjb/+1d5srgbvf6p7P6z86bUNRRkIwUkqz5xxTOvZh4IGXHCqRoARyQAjxrHyGvDBAQiYcV0wZ5DTQCwcMCLZOqo0YMNpNcmJVI2Yp4A5j1YMCJwXSIAI4M1ZpyByCOWAk6dkABiLvDoDE7EmAoxknhpLBkgGnGgKoMhczzEuGeC9TUBmzAFy5SgZcG1KWQ+dXQAAAP//DHDYXwAAAAZJREFUAwDTQN1Bx1Q6jQAAAABJRU5ErkJggg=="
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        0,
+        90,
+        46
+      ],
+      "translation": [
+        0,
+        -2.25,
+        1.75
+      ],
+      "scale": [
+        1.49,
+        1.49,
+        0.85
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        0,
+        -90,
+        -46
+      ],
+      "translation": [
+        0,
+        -2.25,
+        1.75
+      ],
+      "scale": [
+        1.49,
+        1.49,
+        0.85
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        -180,
+        -90,
+        40
+      ],
+      "translation": [
+        1.13,
+        3.2,
+        1.13
+      ],
+      "scale": [
+        1.18,
+        1.18,
+        0.68
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        -180,
+        90,
+        -40
+      ],
+      "translation": [
+        1.13,
+        3.2,
+        1.13
+      ],
+      "scale": [
+        1.18,
+        1.18,
+        0.68
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        4.5,
+        0
+      ]
+    },
+    "head": {
+      "rotation": [
+        0,
+        -180,
+        0.10500000000001819
+      ],
+      "translation": [
+        7.17697,
+        18.15986,
+        7
+      ],
+      "scale": [
+        2.07485,
+        2.07485,
+        2.07485
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        -180,
+        0
+      ]
+    }
+  }
+}

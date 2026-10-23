@@ -1,5 +1,7 @@
 # Elden Combat 0.2.0
 
+**2026-10-23 更新**：[V0.2 选版与配对握姿](art/equipment-2d/V0.2/holds/README.md) · [新版 HUD 接入](docs/COMBAT-HUD-V02-INTEGRATION-20261023.md) · [本机整包安装回执](docs/PLAYABLE-PACK-20261023.md) · [清理及同步记录](docs/REPOSITORY-CLEANUP-20261023.md)。本机交付包与原作动作研究不包含在公开 Git 上传中；本次同步不等于游戏实机验收。
+
 **2026-10-21 工作快照**：[项目文档入口](docs/README.md) · [全部文档分类](docs/FILE-CATALOG.md) · [美术工程](art/README.md) · [开发工具](tools/README.md) · [本次整理与上传范围](docs/REPOSITORY-ORGANIZATION-20261021.md)。GitHub 当前地址为 [maoxy01/elden-ring-mcmod](https://github.com/maoxy01/elden-ring-mcmod)。
 
 | 目录 | 内容 |

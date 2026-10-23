@@ -2,6 +2,10 @@
 
 游戏实际采用的资源、可编辑工程、审查候选分别存放。目录日期用于追溯批次；不要仅按最新修改时间覆盖运行资源。
 
+2026-10-23 当前选版为 [V0.2](equipment-2d/V0.2/README.md)；继续编辑模型与已保存握姿时，优先打开 [V0.2/holds/projects](equipment-2d/V0.2/holds/projects/)，共 38 份配对工程。源握姿保留在 `equipment-2d/blockbench-holds-20261022/`，优化过程保留在 `equipment-2d/mc-polish-20261022/`。这些候选没有因目录整理而自动覆盖运行资源。
+
+新版 HUD 见 [hud-v02-20261023](ui-pixel/hud-v02-20261023/)，实际接入与验收边界见[交接记录](../docs/COMBAT-HUD-V02-INTEGRATION-20261023.md)。下表中的旧批次继续保留作来源和历史记录。
+
 | 用途 | 入口 | 使用说明 |
 | --- | --- | --- |
 | 装备可编辑总工程、独立工程与贴图 | [blockbench-all-items-20261018](equipment-2d/blockbench-all-items-20261018/) | `all-items-optimized.bbmodel`、`items/`、`textures/`；用户仍在修改握姿，读取同批清单及最新核查 |

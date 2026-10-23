@@ -29,9 +29,17 @@ function sceneSignature() {
     cubes: Cube.all.map(c => [c.uuid, c.parent?.uuid, c.from, c.to, c.origin, c.rotation, c.inflate, Object.fromEntries(Object.entries(c.faces).map(([n,f])=>[n,[f.uv,f.texture,f.rotation]]))])
   });
 }
+function sameScene(a, b) {
+  const canonical = text => {
+    const value = JSON.parse(text);
+    for (const key of ['groups', 'cubes']) value[key].sort((a,b)=>a[0].localeCompare(b[0]));
+    return JSON.stringify(value);
+  };
+  return !!b && canonical(a) === canonical(b);
+}
 function exportPose(checkScene = true) {
   const b = binding(); Core.assert(b, '请先打开项目动作');
-  if (checkScene) Core.assert(sceneSignature() === b.sceneSignature, '人物或武器几何已被修改。首版只保存动作，请撤销模型修改后再保存。');
+  if (checkScene) Core.assert(sameScene(sceneSignature(),b.sceneSignature), '人物或武器几何已被修改。首版只保存动作，请撤销模型修改后再保存。');
   const allowed = new Set([...Object.values(b.animations), b.flowAnimation]);
   Core.assert(Animation.all.every(a => allowed.has(a.uuid)), '有未绑定阶段的动画，请使用面板的新增阶段入口');
   const stages = Object.entries(b.animations).filter(([stage,id])=>findAnimation(id) || Object.hasOwn(b.original.stages,stage)).map(([stage,id]) => {
@@ -87,10 +95,9 @@ async function texturePixels(data) {
   const c=canvas.getContext('2d'); c.drawImage(image,0,0);
   return {width:image.width,height:image.height,pixels:c.getImageData(0,0,image.width,image.height).data};
 }
-async function weaponRig(b) {
-  const weapon = Core.weapon(b.root,b.spec.itemId);
+async function weaponRig(b, weapon = Core.weapon(b.root,b.spec.itemId,'v02'), existingGroup = null) {
   b.weapon = weapon;
-  const group = new Group({name:'weapon_readonly',origin:[0,0,0],locked:true}).addTo(findGroup(b.joints.rightArm)).init();
+  const group = existingGroup || new Group({name:'weapon_readonly',origin:[0,0,0],locked:true}).addTo(findGroup(b.joints.rightArm)).init();
   b.weaponGroup = group.uuid;
   const textures = {};
   for (const t of weapon.textures) {
@@ -142,11 +149,47 @@ function weaponMatrix(b) {
   m.multiply(new M().makeTranslation(sign,2,-10));
   m.multiply(new M().compose(new THREE.Vector3(sign*t[0],t[1],t[2]),q,new THREE.Vector3(...s)));
   m.multiply(new M().makeTranslation(-8,-8,-8));
+  if (b.weapon.source?.kind === 'v02') return m;
   const center=(b.depth.min+b.depth.max)/2,span=b.depth.max-b.depth.min;
   Core.assert(span>0 && s[2]!==0,'武器厚度无效');
   // diamond_sword third-person display scale is .85 in MC 1.21.1 handheld.json.
   m.multiply(new M().makeTranslation(0,0,center)).multiply(new M().makeScale(1,1,.85/(span*Math.abs(s[2])))).multiply(new M().makeTranslation(0,0,-center));
   return m;
+}
+const weaponBindingFields = ['weapon', 'weaponGroup', 'depth', 'sceneSignature', 'weaponError'];
+function weaponBindingCopy(b) {
+  return Core.clone(Object.fromEntries(weaponBindingFields.filter(key => b[key] !== undefined).map(key => [key, b[key]])));
+}
+function restoreWeaponBinding(event, side) {
+  const state = event.entry?.eldenPoseWeapon, b = binding();
+  if (!state || state.project !== Project.uuid || !b) return;
+  for (const key of weaponBindingFields) delete b[key];
+  Object.assign(b, Core.clone(state[side]));
+}
+async function refreshWeapon() {
+  let b = binding(); Core.assert(b, '请先打开动作'); access(b.root);
+  Core.assert(sameScene(sceneSignature(),b.sceneSignature), '人物或武器几何已修改，请先另存工程并撤销几何修改；刷新不会覆盖这些修改。');
+  const weapon = Core.weapon(b.root,b.spec.itemId,'v02');
+  // Decode before touching the existing rig or its undo transaction.
+  await Promise.all(weapon.textures.map(t => texturePixels(t.data)));
+  const old = findGroup(b.weaponGroup), oldCubes = Cube.all.filter(c => c.parent === old);
+  const oldIds = new Set(oldCubes.flatMap(c => Object.values(c.faces).map(f => f.texture)));
+  const oldTextures = Texture.all.filter(t => oldIds.has(t.uuid) && !Cube.all.some(c => !oldCubes.includes(c) && Object.values(c.faces).some(f => f.texture === t.uuid)));
+  const before = weaponBindingCopy(b), animations = JSON.stringify(Animation.all.map(a => a.getUndoCopy()));
+  Undo.initEdit({elements: oldCubes, outliner: true, textures: oldTextures});
+  // Keep the bone and its UUID alive: removing an animated group also removes
+  // native bone animators and can trigger a preview while their mesh is absent.
+  oldCubes.forEach(c => c.remove()); oldTextures.forEach(t => t.remove(true));
+  b = binding();
+  await weaponRig(b, weapon, old); delete b.weaponError;
+  await Promise.all(Texture.all.map(t => t.img.decode()));
+  Canvas.updateAll(); b.sceneSignature = sceneSignature();
+  const group = findGroup(b.weaponGroup), cubes = Cube.all.filter(c => c.parent === group);
+  const edit = Undo.finishEdit('刷新V0.2武器和握姿', {elements: cubes, outliner: true, textures: Texture.all.filter(t => cubes.some(c => Object.values(c.faces).some(f => f.texture === t.uuid)))});
+  edit.eldenPoseWeapon = {project: Project.uuid, before, after: weaponBindingCopy(b)};
+  Core.assert(animations === JSON.stringify(Animation.all.map(a => a.getUndoCopy())), '武器刷新意外改变了动作');
+  Animator.preview(); refresh();
+  return {id: b.id, source: weapon.source, cubes: cubes.length, animationsUnchanged: true};
 }
 function draw() {
   const b=binding(); if(!b) return;
@@ -180,7 +223,7 @@ function refresh() {
   if(!host) return;
   const b=binding(); host.style.display=b?'':'none'; if(!b) return;
   host.querySelector('[data-title]').textContent=(LABELS[b.id]||b.id)+' / '+b.spec.itemId;
-  host.querySelector('[data-root]').textContent=b.root;
+  host.querySelector('[data-root]').textContent=b.root + (b.weapon?.source?.kind === 'v02' ? ' · V0.2模型与已保存握姿' : ' · 旧运行资源');
   const select=host.querySelector('[data-stage]'),value=Animation.selected?.uuid;
   select.replaceChildren(...Object.entries(b.animations).filter(([,id])=>findAnimation(id)).map(([stage,id])=>new Option(stage,id)),new Option('完整流程（只读）',b.flowAnimation));
   select.value=value || Object.values(b.animations)[0];
@@ -188,10 +231,10 @@ function refresh() {
   host.querySelector('[data-followup]').value=b.followup?'yes':'no';
   const flow=findAnimation(b.flowAnimation); if(flow) flow.setLength(Core.flow(b.spec,b.followup).ticks/20);
   if(b.weaponError) host.querySelector('[data-warning]').textContent='武器不可用：'+b.weaponError;
-  else host.querySelector('[data-warning]').textContent='中立站姿基线；不含位移、第一人称和特效。武器及持握参数只读。';
+  else host.querySelector('[data-warning]').textContent=b.weapon?.source?.kind === 'v02' ? 'V0.2美术预览，尚未同步游戏。中立站姿基线；不含位移、第一人称和特效。' : '旧运行资源预览；可刷新为V0.2模型和已保存握姿。';
   draw();
 }
-async function openSkill(root,id) {
+async function openSkill(root,id,weaponSource='v02') {
   access(root);
   const b=Core.load(root,id);
   newProject(format);
@@ -199,7 +242,7 @@ async function openSkill(root,id) {
   Project.texture_width=Project.texture_height=64;
   Project.unhandled_root_fields.elden_pose=b;
   playerRig(b);
-  try {await weaponRig(b);} catch(error) {b.weaponError=error.message; const g=findGroup(b.weaponGroup); if(g) g.remove(); delete b.weaponGroup; delete b.weapon;}
+  try {await weaponRig(b,Core.weapon(root,b.spec.itemId,weaponSource));} catch(error) {b.weaponError=error.message; const g=findGroup(b.weaponGroup); if(g) g.remove(); delete b.weaponGroup; delete b.weapon;}
   for(const [stage,parts] of Object.entries(b.original.stages)) addStageAnimation(stage,parts,b);
   b.flowAnimation=new Animation({name:'完整流程（只读）',length:Core.flow(b.spec,false).ticks/20,snapping:20,loop:'hold',override:true}).add().uuid;
   await Promise.all(Texture.all.map(t=>t.img.decode()));
@@ -263,6 +306,7 @@ function setupPanel() {
     <div class="ep-row"><button data-addstage>新增阶段／段号覆盖</button></div>
     <label>完整流程<select data-followup><option value="no">不追击（等待窗口超时）</option><option value="yes">立即追击（最大段数）</option></select></label>
     <label>主手<select data-hand><option value="right">右手</option><option value="left">左手</option></select></label>
+    <button data-weapon>刷新V0.2武器和握姿</button>
     <div class="ep-row"><button data-prev>−1 tick</button><button data-play>播放／暂停</button><button data-next>+1 tick</button></div>
     <div class="ep-row"><label>速度<select data-speed><option value="100">1×</option><option value="50">0.5×</option><option value="25">0.25×</option></select></label><label><input type="checkbox" data-loop>循环</label></div>
     <output data-state></output><p data-warning></p>
@@ -275,6 +319,7 @@ function setupPanel() {
   on('[data-addstage]','click',addStage);
   on('[data-followup]','change',event=>{binding().followup=event.target.value==='yes'; Project.saved=false; refresh(); Animator.preview();});
   on('[data-hand]','change',event=>{binding().hand=event.target.value; Project.saved=false; draw();});
+  on('[data-weapon]','click',refreshWeapon);
   on('[data-prev]','click',()=>{Timeline.pause();Timeline.setTime(Math.max(0,Math.round(Timeline.time*20)-1)/20);Animator.preview();});
   on('[data-next]','click',()=>{Timeline.pause();Timeline.setTime(Math.min(Animation.selected.length,(Math.round(Timeline.time*20)+1)/20));Animator.preview();});
   on('[data-play]','click',()=>Timeline.playing?Timeline.pause():Timeline.start());
@@ -283,9 +328,10 @@ function setupPanel() {
   on('[data-save]','click',saveSource); on('[data-project]','click',saveProject);
 }
 Plugin.register('eldencombat_pose',{
-  title:TITLE,author:'Elden Combat tooling',description:'原版六关节战技动作和真实手持武器的离线编辑、预览及安全保存。',icon:'accessibility_new',version:'1.0.0',variant:'desktop',min_version:'5.2.2',tags:['Animation','Minecraft: Java Edition'],
+  title:TITLE,author:'Elden Combat tooling',description:'原版六关节战技动作和真实手持武器的离线编辑、预览及安全保存。',icon:'accessibility_new',version:'1.1.0',variant:'desktop',min_version:'5.2.2',tags:['Animation','Minecraft: Java Edition'],
   onload() {
     format=new ModelFormat('eldencombat_pose',{name:TITLE,icon:'accessibility_new',category:'minecraft',bone_rig:true,centered_grid:true,animation_mode:true,edit_mode:true,paint_mode:false,rotate_cubes:true,optional_box_uv:true,per_texture_uv_size:true,uv_rotation:true,euler_order:'ZYX',quaternion_interpolation:false,animation_loop_wrapping:false,show_on_start_screen:false});
+    if (Project?.format?.id === format.id) format.select();
     style=Blockbench.addCSS('#panel_elden_pose{overflow-y:auto}.elden-pose{padding:10px;display:flex;flex-direction:column;gap:8px}.elden-pose small{display:block;opacity:.7;overflow-wrap:anywhere;font-size:11px}.elden-pose label{display:flex;align-items:center;justify-content:space-between;gap:6px}.elden-pose select{min-width:0;max-width:230px}.elden-pose .ep-row{display:flex;gap:6px;justify-content:space-between}.elden-pose button{white-space:normal;min-height:28px}.elden-pose p{font-size:12px;opacity:.8}.elden-pose output{font-family:monospace}.elden-pose .ep-save{background:var(--color-accent);color:var(--color-accent_text)}');
     setupPanel();
     const open=new Action('elden_pose_open',{name:'Elden Combat：打开项目动作',icon:'accessibility_new',click:guard(()=>chooseSkill())});
@@ -294,9 +340,11 @@ Plugin.register('eldencombat_pose',{
     listen('display_animation_frame',draw);
     listen('select_project',()=>setTimeout(refresh,30));
     listen('select_mode',()=>setTimeout(()=>{refresh();draw();},30));
-    listen('finished_edit',refresh); listen('undo',()=>setTimeout(refresh,0)); listen('redo',()=>setTimeout(refresh,0));
+    listen('finished_edit',refresh);
+    listen('undo',event=>{restoreWeaponBinding(event,'before');setTimeout(refresh,0);});
+    listen('redo',event=>{restoreWeaponBinding(event,'after');setTimeout(refresh,0);});
     // Testable entry points; no filesystem write happens until saveSource is explicitly invoked.
-    globalThis.EldenPoseEditor={Core,openSkill,exportPose,saveSource,refresh,selectStage,weaponMatrix,sceneSignature,draw};
+    globalThis.EldenPoseEditor={Core,openSkill,exportPose,saveSource,refresh,selectStage,weaponMatrix,sceneSignature,draw,refreshWeapon};
     refresh();
   },
   onunload() {

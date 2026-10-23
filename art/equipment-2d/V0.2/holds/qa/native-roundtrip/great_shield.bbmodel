@@ -1,0 +1,285 @@
+{
+  "meta": {
+    "format_version": "5.0",
+    "model_format": "java_block",
+    "box_uv": false
+  },
+  "name": "great_shield",
+  "parent": "",
+  "java_block_version": "1.21.1",
+  "ambientocclusion": true,
+  "front_gui_light": false,
+  "visible_box": [
+    1,
+    1,
+    0
+  ],
+  "variable_placeholders": "",
+  "multi_file_ruleset": "",
+  "variable_placeholder_buttons": [],
+  "unhandled_root_fields": {
+    "hold_source": {
+      "id": "great_shield",
+      "state": "front",
+      "sourceRoot": "art/equipment-2d/V0.2",
+      "sourceModel": "items/great_shield.bbmodel",
+      "sourceModelSha256": "31a44d4a45a03fc6b6de161c289245ab1694b5dca4931b3b9b0e912f8dff2f89",
+      "textureSha256": "20e36931a7fdfc45fa2aeb0fb99fa15ef8bec2b826d893c080630a9515afde42",
+      "canvas": [
+        32,
+        32
+      ],
+      "anchorPixels": [
+        16.5,
+        16.5
+      ],
+      "modelToItemBoxScaleXY": 0.87705,
+      "runtimeAccepted": false
+    },
+    "hold_pairing": {
+      "gripSource": "art/equipment-2d/blockbench-holds-20261022/great_shield.bbmodel",
+      "gripSha256": "327797b3ca6c4932e322848f40d78e8b4861f5786fa4075f72a25d07224325b1",
+      "selection": "candidate",
+      "displayCopiedVerbatim": true,
+      "factorSource": "saved grip conversion basis"
+    }
+  },
+  "resolution": {
+    "width": 32,
+    "height": 32
+  },
+  "elements": [
+    {
+      "name": "great_shield__front__0",
+      "box_uv": false,
+      "render_order": "default",
+      "rescale": false,
+      "locked": false,
+      "shade": true,
+      "light_emission": 0,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        1.9999926014999998,
+        0.9999951670000007,
+        7.5
+      ],
+      "to": [
+        14.000001193500001,
+        15.0000022675,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        8.25,
+        7.75,
+        8
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            2,
+            28,
+            30
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            16,
+            16,
+            17,
+            17
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            4,
+            2,
+            28,
+            30
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            16,
+            16,
+            17,
+            17
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            16,
+            16,
+            17,
+            17
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            16,
+            16,
+            17,
+            17
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "2d8608ac-0c06-4a8c-9132-102c6ceceabc"
+    }
+  ],
+  "groups": [],
+  "outliner": [
+    "2d8608ac-0c06-4a8c-9132-102c6ceceabc"
+  ],
+  "textures": [
+    {
+      "name": "great_shield__front.png",
+      "path": "",
+      "folder": "item/v02",
+      "namespace": "eldencombat",
+      "id": "layer0",
+      "group": "",
+      "scope": 0,
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "particle": false,
+      "use_as_default": false,
+      "layers_enabled": false,
+      "sync_to_project": "",
+      "file_format": "png",
+      "render_mode": "default",
+      "render_sides": "auto",
+      "wrap_mode": "limited",
+      "pbr_channel": "color",
+      "fps": 7,
+      "force_translucent": false,
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "internal": true,
+      "saved": false,
+      "uuid": "76f53878-a44e-46a9-b7b7-d8748e57d3ac",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB/UlEQVR4AcxWPUvDUBR9EUGHVoRahA5asCBOggpC1dFBHMRF/Af+JBH/gDgoDuLgqC0IKoiCCBXrUpBaENtBQYichzdeXpL3kQS0cN79fOeeJO1L+8Qff/6fgKmZeT8OK9WKz7G8vukDPKf6qHOoNzzTOzA9WVT5jXGmAm4e2saBaoNWQHmwE/Rzn5Kzw8/kxlpTj1YAWKvdngBK7QGhYqLhi43XZijP+8Chg1GAbnMWtVQCCmt5AaQRkkpAmsG011nA6lZJEIiEYljK2VpnAbbE1IefZv/LpSBQnqyTAH6Fxzst4hDc5z1Bg8ZxEqDhSVxKJGD34Em0ip/BUN1V43j+Gp0ThGDTj2MtoLg4JLfgduOgkYGyoIaUThDqHNYC2ufvch/IARkoC+VJiFKODK0FYLdKXOstCWC7VkBZQu2RSc3iJAA8GADA50AO4Dkb31kAkeJ7sJA7E8DY3S2lnW1iAfS8MRE+AN8VzgIwCIgaFJeP6qWckwA+gD9v7vMeGqKzTgKIiA/U5aims04CMBggws5RVwAUowZQbGOdBNgQuvYYBdTzOQHg7FfxWPHE/khZvhfUGsUmQUYBJoK0da2A5sfvEct9Gnr1Ni5dvPGkE7Fk+ockgl+mMEQ6CZbQHbi/vvDicFJveBynh3sewHMmX9UYEqA2pI1N+78BAAD//6fYNGUAAAAGSURBVAMAMq8IUJ3WmuUAAAAASUVORK5CYII="
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "translation": [
+        2,
+        -1.62457,
+        4.37543
+      ],
+      "scale": [
+        1.50171,
+        1.50171,
+        1.50171
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "translation": [
+        2,
+        -1.62457,
+        3.62457
+      ],
+      "scale": [
+        1.50171,
+        1.50171,
+        1.50171
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        -180,
+        5
+      ],
+      "translation": [
+        1,
+        1.5,
+        1
+      ],
+      "scale": [
+        0.59,
+        0.59,
+        0.68
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        -180,
+        -5
+      ],
+      "translation": [
+        -1,
+        1.5,
+        1
+      ],
+      "scale": [
+        0.59,
+        0.59,
+        0.68
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "head": {
+      "rotation": [
+        0,
+        -180,
+        0
+      ],
+      "translation": [
+        8.37543,
+        5.37543,
+        15
+      ],
+      "scale": [
+        1.50171,
+        1.50171,
+        1.50171
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        -180,
+        0
+      ]
+    }
+  }
+}

@@ -158,7 +158,41 @@ module.exports = function createPoseCore(fs, path, crypto) {
     binding.sourceHash = hash(next); binding.original = clone(pose);
     return {file, backup, unchanged: false};
   }
-  function weapon(root, itemId) {
+  function weaponV02(root, itemId) {
+    const base = 'art/equipment-2d/V0.2/holds/';
+    const row = read(path.join(root, base, 'mapping.json')).items.find(r => r.id === itemId && r.kind === 'held');
+    assert(row, 'V0.2没有配对的手持模型：' + itemId);
+    const file = contained(root, base + row.project), bytes = fs.readFileSync(file), project = JSON.parse(bytes.toString('utf8').replace(/^\uFEFF/, ''));
+    assert(project.meta?.model_format === 'java_block' && project.textures.length === 1, 'V0.2手持工程必须是单贴图Java物品模型');
+    const texture = project.textures[0], resource = row.textureResource;
+    assert(texture.source?.startsWith('data:image/png;base64,'), 'V0.2工程缺少嵌入贴图');
+    assert(project.display?.thirdperson_righthand && project.display?.thirdperson_lefthand, 'V0.2工程缺少左右手握姿');
+    const groups = new Map((project.groups || []).map(g => [g.uuid, g]));
+    function checkGroups(nodes) {
+      for (const node of nodes) if (typeof node !== 'string') {
+        const group = {...groups.get(node.uuid), ...node};
+        assert(!(group.rotation || []).some(v => v !== 0) && group.export !== false, 'V0.2手持组需要先烘焙旋转或可见性');
+        checkGroups(node.children || []);
+      }
+    }
+    checkGroups(project.outliner || []);
+    const elements = project.elements.filter(e => e.export !== false).map(e => {
+      assert((!e.type || e.type === 'cube') && !(e.rotation || []).some(v => v !== 0) && !e.inflate, 'V0.2手持几何需要先烘焙');
+      const faces = Object.fromEntries(Object.entries(e.faces).filter(([,f]) => f.texture !== null && f.texture !== false).map(([side, face]) => {
+        assert(face.texture === 0 || face.texture === texture.uuid, 'V0.2几何贴图绑定不一致');
+        const uv = face.uv.map((v, axis) => v * 16 / (axis % 2 ? project.resolution.height : project.resolution.width));
+        return [side, {...face, uv, texture: '#layer0'}];
+      }));
+      return {from: clone(e.from), to: clone(e.to), faces};
+    });
+    assert(elements.length, 'V0.2模型没有可见几何');
+    return {itemId, state: row.state, display: clone(project.display),
+      model: {textures: {layer0: resource}, elements}, textures: [{resource, data: texture.source}],
+      source: {kind: 'v02', file: path.relative(root, file).replace(/\\/g, '/'), sha256: hash(bytes), runtimeParity: false}};
+  }
+  function weapon(root, itemId, source = 'runtime') {
+    if (source === 'v02') return weaponV02(root, itemId);
+    assert(source === 'runtime', '不支持的武器来源：' + source);
     const entry = read(path.join(root, ROUTES)).equipment.find(e => e.id === 'eldencombat:' + itemId);
     assert(entry?.status === 'ready' && entry.route === 'own_sprite', '武器不是可解析的 own_sprite 运行资源：' + itemId);
     const state = Object.hasOwn(entry.held || {}, 'standby') ? 'standby' : Object.keys(entry.held || {})[0];
@@ -176,7 +210,7 @@ module.exports = function createPoseCore(fs, path, crypto) {
       assert(hash(data) === t.sha256, '武器贴图校验失败：' + file);
       return {resource: t.resource, data: 'data:image/png;base64,' + data.toString('base64')};
     });
-    return {itemId, state, display: clone(entry.display), model, textures};
+    return {itemId, state, display: clone(entry.display), model, textures, source: {kind: 'runtime', runtimeParity: true}};
   }
   return {JOINTS, STAGES, POSES, PARAMETERS, ROUTES, clone, hash, assert, read, validate, sample, resolve, poseAt, flow, flowAt, duration, toEditor, toRuntime, catalog, load, exportTracks, save, weapon};
 };

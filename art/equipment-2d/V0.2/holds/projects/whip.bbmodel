@@ -1,0 +1,1641 @@
+{
+  "meta": {
+    "format_version": "5.0",
+    "model_format": "java_block",
+    "box_uv": false
+  },
+  "name": "V0.2_whip",
+  "parent": "",
+  "java_block_version": "1.21.1",
+  "ambientocclusion": true,
+  "front_gui_light": false,
+  "visible_box": [
+    1,
+    1,
+    0
+  ],
+  "variable_placeholders": "",
+  "multi_file_ruleset": "",
+  "variable_placeholder_buttons": [],
+  "unhandled_root_fields": {
+    "hold_source": {
+      "id": "whip",
+      "state": "front",
+      "sourceRoot": "art/equipment-2d/V0.2",
+      "sourceModel": "items/whip.bbmodel",
+      "sourceModelSha256": "7053d0be6126da027d287c42c7084a6ab9f818a8082e19698cf1b9ddb947220f",
+      "textureSha256": "6fc43177fd4021607c7c5b5d5c9e97e61326741df6cfe3839a0d9f420bbffba2",
+      "canvas": [
+        32,
+        32
+      ],
+      "anchorPixels": [
+        11.5,
+        27.5
+      ],
+      "modelToItemBoxScaleXY": 0.36281,
+      "runtimeAccepted": false
+    },
+    "hold_pairing": {
+      "gripSource": "art/equipment-2d/blockbench-holds-20261022/whip.bbmodel",
+      "gripSha256": "5dc8c560e652f3c841cabd8cc6951d6f96bce2b350d73ec150e7db82c0382d72",
+      "selection": "candidate",
+      "displayCopiedVerbatim": true,
+      "factorSource": "saved grip conversion basis"
+    }
+  },
+  "resolution": {
+    "width": 32,
+    "height": 32
+  },
+  "elements": [
+    {
+      "name": "whip__front__0",
+      "box_uv": false,
+      "render_order": "default",
+      "locked": false,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        9.9999962491,
+        13.4999943395,
+        7.5
+      ],
+      "to": [
+        10.9999985678,
+        14.9999923754,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        5.75,
+        2.25,
+        8.0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            20,
+            2,
+            22,
+            5
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            21,
+            3,
+            22,
+            4
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            20,
+            2,
+            22,
+            5
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            21,
+            3,
+            22,
+            4
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            21,
+            3,
+            22,
+            4
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            21,
+            3,
+            22,
+            4
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "4cd59353-74a1-4112-b570-d64a1a199b91"
+    },
+    {
+      "name": "whip__front__1",
+      "box_uv": false,
+      "render_order": "default",
+      "locked": false,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        10.499995594400001,
+        12.9999949942,
+        7.5
+      ],
+      "to": [
+        10.9999985678,
+        13.4999943395,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        5.75,
+        2.25,
+        8.0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            21,
+            5,
+            22,
+            6
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            21,
+            5,
+            22,
+            6
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            21,
+            5,
+            22,
+            6
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            21,
+            5,
+            22,
+            6
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            21,
+            5,
+            22,
+            6
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            21,
+            5,
+            22,
+            6
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "5a8a3193-dec9-491a-a301-548c5cc8941c"
+    },
+    {
+      "name": "whip__front__2",
+      "box_uv": false,
+      "render_order": "default",
+      "locked": false,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        9.9999962491,
+        12.4999920208,
+        7.5
+      ],
+      "to": [
+        11.4999979131,
+        12.9999949942,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        5.75,
+        2.25,
+        8.0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            20,
+            6,
+            23,
+            7
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            21,
+            6,
+            22,
+            7
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            20,
+            6,
+            23,
+            7
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            21,
+            6,
+            22,
+            7
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            21,
+            6,
+            22,
+            7
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            21,
+            6,
+            22,
+            7
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "fd2af058-fda2-4d42-829c-f8c16842c55b"
+    },
+    {
+      "name": "whip__front__3",
+      "box_uv": false,
+      "render_order": "default",
+      "locked": false,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        10.499995594400001,
+        8.4999972584,
+        7.5
+      ],
+      "to": [
+        11.4999979131,
+        12.4999920208,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        5.75,
+        2.25,
+        8.0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            21,
+            7,
+            23,
+            15
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            22,
+            11,
+            23,
+            12
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            21,
+            7,
+            23,
+            15
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            22,
+            11,
+            23,
+            12
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            22,
+            11,
+            23,
+            12
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            22,
+            11,
+            23,
+            12
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "b8f838ef-7fed-4531-86cf-937d31a13304"
+    },
+    {
+      "name": "whip__front__4",
+      "box_uv": false,
+      "render_order": "default",
+      "locked": false,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        9.9999962491,
+        6.9999955944000005,
+        7.5
+      ],
+      "to": [
+        10.9999985678,
+        8.4999972584,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        5.75,
+        2.25,
+        8.0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            20,
+            15,
+            22,
+            18
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            21,
+            16,
+            22,
+            17
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            20,
+            15,
+            22,
+            18
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            21,
+            16,
+            22,
+            17
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            21,
+            16,
+            22,
+            17
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            21,
+            16,
+            22,
+            17
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "9b074b95-1c3f-4f5a-88ee-466976630685"
+    },
+    {
+      "name": "whip__front__5",
+      "box_uv": false,
+      "render_order": "default",
+      "locked": false,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        9.4999969038,
+        6.4999962491000005,
+        7.5
+      ],
+      "to": [
+        10.499995594400001,
+        6.9999955944000005,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        5.75,
+        2.25,
+        8.0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            19,
+            18,
+            21,
+            19
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            20,
+            18,
+            21,
+            19
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            19,
+            18,
+            21,
+            19
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            20,
+            18,
+            21,
+            19
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            20,
+            18,
+            21,
+            19
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            20,
+            18,
+            21,
+            19
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "b8cdc6cd-929a-4a7f-83b0-aadd8ceded78"
+    },
+    {
+      "name": "whip__front__6",
+      "box_uv": false,
+      "render_order": "default",
+      "locked": false,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        8.9999975585,
+        5.9999969038,
+        7.5
+      ],
+      "to": [
+        10.499995594400001,
+        6.4999962491000005,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        5.75,
+        2.25,
+        8.0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            18,
+            19,
+            21,
+            20
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            19,
+            19,
+            20,
+            20
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            18,
+            19,
+            21,
+            20
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            19,
+            19,
+            20,
+            20
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            19,
+            19,
+            20,
+            20
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            19,
+            19,
+            20,
+            20
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "6ca592e9-8ae7-44f1-a7b2-fb3005f0d3c9"
+    },
+    {
+      "name": "whip__front__7",
+      "box_uv": false,
+      "render_order": "default",
+      "locked": false,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        8.4999982132,
+        5.4999975585000005,
+        7.5
+      ],
+      "to": [
+        9.9999962491,
+        5.9999969038,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        5.75,
+        2.25,
+        8.0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            17,
+            20,
+            20,
+            21
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            18,
+            20,
+            19,
+            21
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            17,
+            20,
+            20,
+            21
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            18,
+            20,
+            19,
+            21
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            18,
+            20,
+            19,
+            21
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            18,
+            20,
+            19,
+            21
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "38f5eb5e-a4e1-4f28-879b-d04e6c8e35b2"
+    },
+    {
+      "name": "whip__front__8",
+      "box_uv": false,
+      "render_order": "default",
+      "locked": false,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        7.9999988679000005,
+        4.9999982132,
+        7.5
+      ],
+      "to": [
+        9.4999969038,
+        5.4999975585000005,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        5.75,
+        2.25,
+        8.0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            16,
+            21,
+            19,
+            22
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            17,
+            21,
+            18,
+            22
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            16,
+            21,
+            19,
+            22
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            17,
+            21,
+            18,
+            22
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            17,
+            21,
+            18,
+            22
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            17,
+            21,
+            18,
+            22
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "c501313d-211d-4cda-b872-9ee3bad0a0f2"
+    },
+    {
+      "name": "whip__front__9",
+      "box_uv": false,
+      "render_order": "default",
+      "locked": false,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        7.4999995226,
+        4.4999988679000005,
+        7.5
+      ],
+      "to": [
+        8.9999975585,
+        4.9999982132,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        5.75,
+        2.25,
+        8.0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            15,
+            22,
+            18,
+            23
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            16,
+            22,
+            17,
+            23
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            15,
+            22,
+            18,
+            23
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            16,
+            22,
+            17,
+            23
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            16,
+            22,
+            17,
+            23
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            16,
+            22,
+            17,
+            23
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "097393e5-590b-43bb-a12d-f71ecc74f481"
+    },
+    {
+      "name": "whip__front__10",
+      "box_uv": false,
+      "render_order": "default",
+      "locked": false,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        7.0000001773000005,
+        3.9999995226,
+        7.5
+      ],
+      "to": [
+        8.4999982132,
+        4.4999988679000005,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        5.75,
+        2.25,
+        8.0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            14,
+            23,
+            17,
+            24
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            15,
+            23,
+            16,
+            24
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            14,
+            23,
+            17,
+            24
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            15,
+            23,
+            16,
+            24
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            15,
+            23,
+            16,
+            24
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            15,
+            23,
+            16,
+            24
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "72c0888f-0e3c-40d1-b3f3-4af688b901f6"
+    },
+    {
+      "name": "whip__front__11",
+      "box_uv": false,
+      "render_order": "default",
+      "locked": false,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        6.5000008320000005,
+        3.5000001773,
+        7.5
+      ],
+      "to": [
+        7.9999988679000005,
+        3.9999995226,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        5.75,
+        2.25,
+        8.0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            13,
+            24,
+            16,
+            25
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            14,
+            24,
+            15,
+            25
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            13,
+            24,
+            16,
+            25
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            14,
+            24,
+            15,
+            25
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            14,
+            24,
+            15,
+            25
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            14,
+            24,
+            15,
+            25
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "2c5814a5-2956-4e27-bf0a-a99ebf6b5ab9"
+    },
+    {
+      "name": "whip__front__12",
+      "box_uv": false,
+      "render_order": "default",
+      "locked": false,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        6.0000014867,
+        3.000000832,
+        7.5
+      ],
+      "to": [
+        7.4999995226,
+        3.5000001773,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        5.75,
+        2.25,
+        8.0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            12,
+            25,
+            15,
+            26
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            13,
+            25,
+            14,
+            26
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            12,
+            25,
+            15,
+            26
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            13,
+            25,
+            14,
+            26
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            13,
+            25,
+            14,
+            26
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            13,
+            25,
+            14,
+            26
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "1647aadd-7267-4dce-bc57-6ee9eec9779e"
+    },
+    {
+      "name": "whip__front__13",
+      "box_uv": false,
+      "render_order": "default",
+      "locked": false,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        5.4999985133,
+        2.5000014867,
+        7.5
+      ],
+      "to": [
+        7.0000001773000005,
+        3.000000832,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        5.75,
+        2.25,
+        8.0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            11,
+            26,
+            14,
+            27
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            12,
+            26,
+            13,
+            27
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            11,
+            26,
+            14,
+            27
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            12,
+            26,
+            13,
+            27
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            12,
+            26,
+            13,
+            27
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            12,
+            26,
+            13,
+            27
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "3bdfd618-0dad-4fe7-a940-54388fa0ad37"
+    },
+    {
+      "name": "whip__front__14",
+      "box_uv": false,
+      "render_order": "default",
+      "locked": false,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        4.9999991679999995,
+        1.9999985133,
+        7.5
+      ],
+      "to": [
+        6.5000008320000005,
+        2.5000014867,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        5.75,
+        2.25,
+        8.0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            10,
+            27,
+            13,
+            28
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            11,
+            27,
+            12,
+            28
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            10,
+            27,
+            13,
+            28
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            11,
+            27,
+            12,
+            28
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            11,
+            27,
+            12,
+            28
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            11,
+            27,
+            12,
+            28
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "8cd4aad2-30c0-4c35-ae85-a2d8260021aa"
+    },
+    {
+      "name": "whip__front__15",
+      "box_uv": false,
+      "render_order": "default",
+      "locked": false,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        4.4999998226999995,
+        1.499999168,
+        7.5
+      ],
+      "to": [
+        6.0000014867,
+        1.9999985133,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        5.75,
+        2.25,
+        8.0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            9,
+            28,
+            12,
+            29
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            10,
+            28,
+            11,
+            29
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            9,
+            28,
+            12,
+            29
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            10,
+            28,
+            11,
+            29
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            10,
+            28,
+            11,
+            29
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            10,
+            28,
+            11,
+            29
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "64c41c12-ce1d-4a3c-b3f5-718b8386bd8e"
+    },
+    {
+      "name": "whip__front__16",
+      "box_uv": false,
+      "render_order": "default",
+      "locked": false,
+      "export": true,
+      "scope": 0,
+      "allow_mirror_modeling": true,
+      "from": [
+        4.0000004774,
+        0.9999998227,
+        7.5
+      ],
+      "to": [
+        5.4999985133,
+        1.499999168,
+        8.5
+      ],
+      "autouv": 0,
+      "color": 0,
+      "origin": [
+        5.75,
+        2.25,
+        8.0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            8,
+            29,
+            11,
+            30
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            9,
+            29,
+            10,
+            30
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            8,
+            29,
+            11,
+            30
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            9,
+            29,
+            10,
+            30
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            9,
+            29,
+            10,
+            30
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            9,
+            29,
+            10,
+            30
+          ],
+          "texture": 0
+        }
+      },
+      "type": "cube",
+      "uuid": "3e4e3d27-ca0f-4764-9835-f740317e0b18"
+    }
+  ],
+  "groups": [],
+  "outliner": [
+    "4cd59353-74a1-4112-b570-d64a1a199b91",
+    "5a8a3193-dec9-491a-a301-548c5cc8941c",
+    "fd2af058-fda2-4d42-829c-f8c16842c55b",
+    "b8f838ef-7fed-4531-86cf-937d31a13304",
+    "9b074b95-1c3f-4f5a-88ee-466976630685",
+    "b8cdc6cd-929a-4a7f-83b0-aadd8ceded78",
+    "6ca592e9-8ae7-44f1-a7b2-fb3005f0d3c9",
+    "38f5eb5e-a4e1-4f28-879b-d04e6c8e35b2",
+    "c501313d-211d-4cda-b872-9ee3bad0a0f2",
+    "097393e5-590b-43bb-a12d-f71ecc74f481",
+    "72c0888f-0e3c-40d1-b3f3-4af688b901f6",
+    "2c5814a5-2956-4e27-bf0a-a99ebf6b5ab9",
+    "1647aadd-7267-4dce-bc57-6ee9eec9779e",
+    "3bdfd618-0dad-4fe7-a940-54388fa0ad37",
+    "8cd4aad2-30c0-4c35-ae85-a2d8260021aa",
+    "64c41c12-ce1d-4a3c-b3f5-718b8386bd8e",
+    "3e4e3d27-ca0f-4764-9835-f740317e0b18"
+  ],
+  "textures": [
+    {
+      "name": "whip__front.png",
+      "folder": "item/v02",
+      "namespace": "eldencombat",
+      "id": "layer0",
+      "group": "",
+      "scope": 0,
+      "width": 32,
+      "height": 32,
+      "uv_width": 32,
+      "uv_height": 32,
+      "particle": false,
+      "use_as_default": false,
+      "layers_enabled": false,
+      "sync_to_project": "",
+      "file_format": "png",
+      "render_mode": "default",
+      "render_sides": "auto",
+      "wrap_mode": "limited",
+      "pbr_channel": "color",
+      "fps": 7,
+      "force_translucent": false,
+      "frame_time": 1,
+      "frame_order_type": "loop",
+      "frame_order": "",
+      "frame_interpolate": false,
+      "visible": true,
+      "internal": true,
+      "saved": false,
+      "uuid": "da97a295-c043-4844-9a44-5ebb4012c8df",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABPUlEQVR4AdyVsQrCMBCGU5/AxaGb4FDcCjo5iKvgIDg5+haOTuJbODr5DuIT1Elc1EFwcRAnt8pfelAEk2tzIaDwe0J6+b+7nGlNef78H8Bo2E0hbmPFO3A7PxTkDQDG7bCOwJJ4B5LTNWA55w+JA8RRMz3en2o6iNPcQxvEAagDgNA654viAPm+ijsHzgAIxBSdAXg/AlPltO6sA2Rgis4AvA+htxnARYS2032A3zo5OwKdaXHNCQD3/AEiCoD2w3yzS9gvJDEAMucOH6qHRACK5tzhgzlkDWBjbg1ga24FIGFeGUDKvBIAmSO57MAh51ulhnA166fjSSfbo8x/PUv48cUGQOWHyyvbRsocm7EAUDluOCQsllv2LYfnTTICwPwdNlTUaynJygnMCDBf7wNUDVGSZDQC2JqZ8j8AAAD//wsnSeIAAAAGSURBVAMA5uZsQSCKjDUAAAAASUVORK5CYII="
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        0,
+        90,
+        55
+      ],
+      "translation": [
+        0,
+        4,
+        4.5
+      ],
+      "scale": [
+        1.07,
+        1.07,
+        0.85
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        0,
+        -90,
+        -55
+      ],
+      "translation": [
+        0,
+        4,
+        4.5
+      ],
+      "scale": [
+        1.07,
+        1.07,
+        0.85
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        90,
+        25
+      ],
+      "translation": [
+        3.5,
+        2.5,
+        0.8
+      ],
+      "scale": [
+        0.85,
+        0.85,
+        0.68
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        -90,
+        -25
+      ],
+      "translation": [
+        3.5,
+        2.5,
+        0.8
+      ],
+      "scale": [
+        0.85,
+        0.85,
+        0.68
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "head": {
+      "rotation": [
+        0,
+        -180,
+        19.568
+      ],
+      "translation": [
+        3.88793,
+        27.94816,
+        7
+      ],
+      "scale": [
+        3.15129,
+        3.15129,
+        3.15129
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        180,
+        0
+      ]
+    }
+  }
+}

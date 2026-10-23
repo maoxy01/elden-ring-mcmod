@@ -4,10 +4,10 @@
   const evidence='C:/Users/30869/OneDrive/文档/ChatGPT/mc模组制作/blockbench-pose/evidence';
   const rows=[];
   const preexisting=new Set(ModelProject.all.map(p=>p.uuid));
-  const first=await EldenPoseEditor.openSkill(root,'wave_of_gold');
+  const first=await EldenPoseEditor.openSkill(root,'wave_of_gold','runtime');
   let firstUsed=false;
   for(const item of EldenPoseEditor.Core.catalog(root)) {
-    const result=firstUsed?await EldenPoseEditor.openSkill(root,item.id):first;
+    const result=firstUsed?await EldenPoseEditor.openSkill(root,item.id,'runtime'):first;
     firstUsed=true;
     const b=Project.unhandled_root_fields.elden_pose;
     if(result.weaponError) throw Error(item.id+': '+result.weaponError);
